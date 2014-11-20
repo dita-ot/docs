@@ -7,7 +7,7 @@ This repository tracks the source files for the [DITA Open Toolkit documentation
 
 We welcome contributions to the DITA-OT documentation. 
 
-To request changes, you can either [create a new issue](https://github.com/dita-ot/docs/issues/new), or 
+To request changes, you can either [create a new issue](https://github.com/dita-ot/docs/issues/new), or — _even better_
 
 1. [Fork the repository][1]
 2. [Create a new branch][2], and 
@@ -19,9 +19,6 @@ In this model, change requests are tracked in feature branches that are created 
 
 If you'd like to send a pull request, create a feature branch in your fork with a name like `feature/my-proposed-changes` and issue the pull request from there. 
 
-
-
---- 
 
 [1]:    <https://help.github.com/articles/fork-a-repo/>
 [2]:    <https://help.github.com/articles/using-pull-requests/>

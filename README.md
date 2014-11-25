@@ -1,6 +1,6 @@
 # DITA Open Toolkit Documentation
 
-This repository tracks the source files for the [DITA Open Toolkit documentation](http://dita-ot.github.io/2.0/). 
+This repository tracks the source files for the [DITA Open Toolkit documentation](http://www.dita-ot.org/2.0/). 
 
 
 ## Contribution Guidelines

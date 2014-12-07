@@ -49,7 +49,7 @@ Can't store Document</msgph> message. </p>       <p>This problem occurs
 when HTML files unrelated to the current transformation are found
 in         the output directory. Delete the content of the output
 directory and run the transformation         again.</p> </section>
-<!--<section><title>Failed to load message file</title><p>In some situations, the toolkit may fail to load the message file <filepath>messages.xml</filepath> and begin to throw exceptions.</p><p>To fix this problem, you need to check if the files <filepath>resource/messages.xml</filepath> and <filepath>resource/messages.dtd</filepath> exist in the toolkit. If not, please copy them from the toolkit's root directory.</p></section>-->
+<!--<section><title>Failed to load message file</title><p>In some situations, the toolkit may fail to load the message file <filepath>messages.xml</filepath> and begin to throw exceptions.</p><p>To fix this problem, you need to check if the files <filepath>resources/messages.xml</filepath> and <filepath>resources/messages.dtd</filepath> exist in the toolkit. If not, please copy them from the toolkit's root directory.</p></section>-->
 <!--<section><title>Commas in file names</title><p>Commas in file names will cause trouble during the processing because Ant uses commas as a delimiter when processing batch files in a list. Please avoid using commas in the name of DITA files.</p></section>-->
 <section> <title>Stack Overflow error</title><p>If you receive an
 error about a stack memory overflow, increase the JVM and run the

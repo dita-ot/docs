@@ -431,7 +431,7 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
       <p>To add your own messages, create the message in an XML file
           <filepath>myMessages.xml</filepath>: </p>
       <codeblock>&lt;dummy&gt;
-  &lt;!-- See resource/messages.xml for the details. --&gt;
+  &lt;!-- See resources/messages.xml for the details. --&gt;
   &lt;message id="myMessageId" type="WARN"&gt;
     &lt;reason&gt;...&lt;/reason&gt;
     &lt;response&gt;...&lt;/response&gt;

@@ -15,7 +15,7 @@ then be used by any XSLT override.</shortdesc>
 </dlentry></dl></section>
 <example><title>Example</title><p>To add your own messages, create
 the new messages in an XML file such as <filepath>myMessages.xml</filepath>:</p><codeblock>&lt;dummy>
-  &lt;!-- See resource/messages.xml for the details. -->
+  &lt;!-- See resources/messages.xml for the details. -->
   &lt;message id="DOTXmy-msg-numW" type="WARN">
     &lt;reason>Message text&lt;/reason>
     &lt;response>How to resolve&lt;/response>

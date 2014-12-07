@@ -50,7 +50,7 @@ See the accompanying license.txt file for applicable licenses.
   </target>
 
   <target name="init" depends="check-dita-home">
-    <property name="resource.dir" location="${dita.home}/resource"/>
+    <property name="resource.dir" location="${dita.home}/resources"/>
     <property name="ditaval.file" location="${basedir}/platform.ditaval"/>
   </target>
 

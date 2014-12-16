@@ -35,6 +35,7 @@
                 <cmd/>
                 <info>
                     <ul id="basic-variables">
+                        <li><varname>install-dir</varname> is the DITA-OT installation directory path.</li>
                         <li><varname>input-file</varname> is the DITA map or DITA file that you want
                             to process.</li>
                         <li><varname>transformation-type</varname> is the transformation type.</li>
@@ -42,12 +43,11 @@
                             parameter.</li>
                         <li><varname>value</varname> is an applicable value for the optional
                             parameter.</li>
+                        <li><varname>output-dir</varname> is the output directory path for generated output.</li>
                     </ul>
                 </info>
-                <stepresult id="running-ditaot-results">If you do not specify an output directory,
-                    by default, the DITA-OT writes the output to the
-                            <filepath><varname>installation-directory</varname>\out</filepath>
-                    directory.</stepresult>
+                <stepresult id="running-ditaot-results">If you do not specify an output directory, the DITA-OT writes
+                    the output to the <filepath><varname>install-dir</varname>/out</filepath> directory.</stepresult>
             </step>
         </steps>
     </taskbody>

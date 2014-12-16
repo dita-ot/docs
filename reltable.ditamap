@@ -214,30 +214,6 @@ navtitle="JavaHelp transformation"/>
 </relheader>
 <relrow>
 <relcell>
-<topicref href="readme/command-line-tool.dita" navtitle="Command-line tool"/>
-</relcell>
-<relcell>
-<topicref href="readme/building-output-using-cl-tool.dita"
-navtitle="Building output using the command-line tool"/>
-</relcell>
-<relcell>
-<topicref href="readme/dita-ot_java_properties.dita" linking="targetonly"/>
-</relcell>
-</relrow>
-<relrow>
-<relcell>
-<topicref href="readme/command-line-tool.dita" navtitle="Command-line tool"/>
-</relcell>
-<relcell>
-<topicref href="readme/DITA-javacmd.xml"
-navtitle="Publishing DITA content from the command-line tool"/>
-</relcell>
-<relcell>
-<topicref href="readme/dita-ot_java_properties.dita"/>
-</relcell>
-</relrow>
-<relrow>
-<relcell>
 <topicref href="readme/dita2eclipsecontent.dita">
 <topicmeta>
 <linktext>Eclipse content transformation</linktext>

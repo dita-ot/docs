@@ -59,7 +59,7 @@ See the accompanying license.txt file for applicable licenses.
     <property name="message.input" location="${resource.dir}/messages.xml"/>
     <property name="message.outputtopic" location="${basedir}/readme/DITA-messages.xml"/>
 
-    <ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/>
+    <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
     <xslt in="${message.input}" out="${message.outputtopic}" style="${message.xsl}"/>
   </target>
 

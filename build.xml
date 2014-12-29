@@ -94,19 +94,6 @@ See the accompanying license.txt file for applicable licenses.
     <property name="args.filter" location="${ditaval.file}"/>
   </target>
 
-  <target name="site">
-    <local name="site.out.dir"/>
-    <property name="site.out.dir" location="${doc.out.dir}/site"/>
-
-    <dita-ot transtype="net.sourceforge.dita-ot.html" input="site.ditamap" output="${site.out.dir}">
-      <properties>
-        <property name="args.gen.task.lbl" value="YES"/>
-        <property name="args.input" value="site.ditamap"/>
-        <property name="args.rellinks" value="all"/>
-      </properties>
-    </dita-ot>
-  </target>
-
   <target name="pdf">
     <dita-ot transtype="pdf" input="userguide-book.ditamap" output="${doc.out.dir}">
       <properties>
@@ -152,6 +139,6 @@ See the accompanying license.txt file for applicable licenses.
     <delete dir="${ditaval.file}" failonerror="false"/>
   </target>
 
-  <target name="all" depends="pdf, html, htmlhelp, site"/>
+  <target name="all" depends="pdf, html, htmlhelp"/>
 
 </project>

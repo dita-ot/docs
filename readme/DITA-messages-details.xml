@@ -58,8 +58,7 @@ Additional transformation types may be available if toolkit plug-ins are install
 <strow>
 <stentry conref="DITA-messages.xml#msgs/DOTA002F-extra" conaction="pushreplace">The input parameter
 was not specified, so there is no DITA or DITAMAP file to transform. Ensure the parameter
-is set properly; see <xref href="dita-ot_ant_properties.dita">DITA-OT Ant arguments</xref> or
-<xref href="dita-ot_java_properties.dita">DITA-OT Command line tool arguments</xref>
+is set properly; see <xref href="dita-ot_ant_properties.dita">DITA-OT Ant arguments</xref> 
 if you are unsure how to specify the input file.</stentry>
 </strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTA069F-extra" conaction="pushreplace">Please ensure
@@ -74,10 +73,6 @@ stylesheet could not be loaded. Please correct the parameter to specify a valid 
 to set an extension for DITA topic documents in the temporary processing directory. Only
 "dita", ".dita", "xml", or ".xml" are allowed.</stentry>
 </strow>
-<!--strow>
-<stentry conref="DITA-messages.xml#msgs/DOTA005W-extra" conaction="pushreplace">These two parameters
-were deprecated several releases ago; please use the <codeph>args.input</codeph> parameter instead.</stentry>
-</strow-->
 <strow>
 <stentry conref="DITA-messages.xml#msgs/DOTA006W-extra" conaction="pushreplace">If the CSSPATH uses an
 absolute path, it should be one that can still be accessed after the files are moved to
@@ -96,10 +91,6 @@ with "file:" as a prefix.</stentry></strow>
 which contains content to be added to the &lt;head&gt; section of each XHTML output topic, cannot be located or read. This is
 usually caused by a typo in the parameter value. You should also ensure that the value is not specified
 with "file:" as a prefix.</stentry></strow>
-<!--strow><stentry conref="DITA-messages.xml#msgs/DOTA010E-extra" conaction="pushreplace">By default, the
-DITA-OT expects to find Apache FOP in the <filepath>fop/</filepath> directory inside of the PDF plug-in. If you
-are using an alternate renderer, or if you have placed FOP in a different directory, you will
-need to update your configuration accordingly.</stentry></strow-->
 <strow><stentry conref="DITA-messages.xml#msgs/DOTA066F-extra" conaction="pushreplace">An alternate
 stylesheet was specified to run in place of the default XSL-FO output process, but that
 stylesheet could not be loaded. Please correct the parameter to specify a valid stylesheet.</stentry></strow>
@@ -107,35 +98,9 @@ stylesheet could not be loaded. Please correct the parameter to specify a valid 
 condition is ignored, as instructed in the OASIS DITA Standard.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTA068W-extra" conaction="pushreplace">This
 condition is ignored, as instructed in the OASIS DITA Standard.</stentry></strow>
-<strow><stentry conref="DITA-messages.xml#msgs/DOTJ001F-extra" conaction="pushreplace">See
-<xref href="dita-ot_java_properties.dita"></xref> for a list of available
-parameters and values.</stentry></strow>
-<strow><stentry conref="DITA-messages.xml#msgs/DOTJ002F-extra" conaction="pushreplace">See
-<xref href="dita-ot_java_properties.dita"></xref> for a list of available
-parameters and values.</stentry></strow>
-<strow><stentry conref="DITA-messages.xml#msgs/DOTJ003F-extra" conaction="pushreplace">See
-<xref href="dita-ot_java_properties.dita"></xref> for a list of available
-parameters and values.</stentry></strow>
-<strow><stentry conref="DITA-messages.xml#msgs/DOTJ004F-extra" conaction="pushreplace">The
-transform was unable to create a temporary processing directory; this is usually caused by
-account control settings that prevent creating a temporary directory in the specified
-location. Please verify that you have permission to write to the default location, or
-specify an alternate temporary directory location. See <xref href="dita-ot_ant_properties.dita">DITA-OT Ant arguments</xref> or
-<xref href="dita-ot_java_properties.dita">DITA-OT Command line tool arguments</xref>
-for details on how to specify the temporary directory.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ005F-extra" conaction="pushreplace"></stentry></strow>
-<strow><stentry conref="DITA-messages.xml#msgs/DOTJ006F-extra" conaction="pushreplace">This message
-occurs when an Ant build calls a DITA-OT pipeline module directly instead
-of using the default call to that module. Please check that all parameters are set correctly
-in your Ant build. The syntax for extparam is "name1=value1;name2=value2".</stentry></strow>
-<strow><stentry conref="DITA-messages.xml#msgs/DOTJ007E-extra" conaction="pushreplace">If a condition
-is defined more than once (such as setting audience="all" to include, then resetting it to exclude),
-only the first definition will be used.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ009E-extra" conaction="pushreplace">The transform
 was unable to create files properly during the transform; results may not be as expected.</stentry></strow>
-<!-- 2012-06-08: seems these messages no longer exists in the code; commenting out. -->
-<!--<strow><stentry conref="DITA-messages.xml#msgs/DOTJ010E-extra" conaction="pushreplace"></stentry></strow>
-<strow><stentry conref="DITA-messages.xml#msgs/DOTJ011E-extra" conaction="pushreplace"></stentry></strow>-->
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ012F-extra" conaction="pushreplace">This message may
 indicate an invalid input file (such as accidentally specifying a PDF file as input rather
 than a DITA map file), an input file that uses elements which are not allowed, are not part
@@ -153,9 +118,6 @@ additional information to help diagnose the cause.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ014W-extra" conaction="pushreplace">An empty
 &lt;indexterm> element was found, and will appear in the index as ***. This
 index term should be removed from the source.</stentry></strow>
-<strow><stentry conref="DITA-messages.xml#msgs/DOTJ017F-extra" conaction="pushreplace">The transform
-failed because the input file was not specified; log file names are based on the name
-of the input file, so no log could be generated.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ020W-extra" conaction="pushreplace">This will
 appear when one installed plug-in requires another in order to function correctly, but the
 required plug-in is not found. The installed plug-in will be ignored.</stentry></strow>
@@ -168,8 +130,6 @@ input file or the ditaval file should change, otherwise your build is explicitly
 content.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ023E-extra" conaction="pushreplace">Check
 whether the image exists in the source location or already exists in the output directory.</stentry></strow>
-<!--<strow><stentry conref="DITA-messages.xml#msgs/DOTJ024W-extra" conaction="pushreplace">This is
-a legacy message and should no longer appear in logs.</stentry></strow>-->
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ025E-extra" conaction="pushreplace">This message
 should only appear in the following cases: <ul>
 <li>Errors earlier in the transform prevented this step of the transform from running; correct any
@@ -183,8 +143,6 @@ should only appear if an Ant build or plug-in is directly calling the toolkit's 
 module, or if earlier errors resulted in problems with some of the content.
 If the topic merge module is called correctly, then this indicates a program error
 that should be reported to the DITA-OT development team, at <xref keyref="dita-ot-issues"></xref>.</stentry></strow>
-<!-- 2012-06-08: This message no longer exists in the code; commenting out. -->
-<!--<strow><stentry conref="DITA-messages.xml#msgs/DOTJ027W-extra" conaction="pushreplace"></stentry></strow>-->
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ028E-extra" conaction="pushreplace">When
 referencing a non-DITA file, the format attribute should indicate the type of file referenced
 (such as "html" for HTML topics or "pdf" for PDF files). Otherwise, the transform may attempt
@@ -198,8 +156,6 @@ This message will only appear a specialized DITA element did not define a class 
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ031I-extra" conaction="pushreplace">This informational
 message is intended to help you catch filter conditions that may have been specified improperly;
 if the value is correct, no action is needed.</stentry></strow>
-<!-- 2012-06-08: This message no longer exists in the code; commenting out. -->
-<!--<strow><stentry conref="DITA-messages.xml#msgs/DOTJ032E-extra" conaction="pushreplace"></stentry></strow>-->
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ033E-extra" conaction="pushreplace"></stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ034F-extra" conaction="pushreplace">DITA processing
 is based on class attributes defined for every element. Usually these are defaulted in the DTD or
@@ -208,13 +164,11 @@ map or topic.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ035F-extra" conaction="pushreplace">This 
 will appear when a topic is outside the scope of the map; for example, if the main input map references
 <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be
-created outside of the output directory. Please see <xref href="dita-ot_ant_properties.dita">DITA-OT Ant arguments (outer.control and generate.copy.outer)</xref> or
-<xref href="dita-ot_java_properties.dita">DITA-OT Command line tool arguments (/outercontrol and /generateouter)</xref> for more details.</stentry></strow>
+created outside of the output directory. See <xref href="dita-ot_ant_properties.dita">DITA-OT Ant arguments (outer.control and generate.copy.outer)</xref> for details.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ036W-extra" conaction="pushreplace">This 
 will appear when a topic is outside the scope of the map; for example, if the main input map references
 <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be
-created outside of the output directory.  Please see <xref href="dita-ot_ant_properties.dita">DITA-OT Ant arguments (outer.control and generate.copy.outer)</xref> or
-<xref href="dita-ot_java_properties.dita">DITA-OT Command line tool arguments (/outercontrol and /generateouter)</xref> for more details.</stentry></strow>
+created outside of the output directory. See <xref href="dita-ot_ant_properties.dita">DITA-OT Ant arguments (outer.control and generate.copy.outer)</xref> for details.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ037W-extra" conaction="pushreplace">DITA processing
 is based on class attributes defined for every element. Usually these are defaulted in the DTD or
 Schema; if validation against the DTD or Schema is turned off, the class attributes must be explicitly included in the
@@ -257,9 +211,6 @@ for details on expected syntax and usage.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ047I-extra" conaction="pushreplace">This message
 is intended to help you locate incorrectly specified keys; if the key was specified correctly,
 this message may be ignored.</stentry></strow>
-<!--<strow><stentry conref="DITA-messages.xml#msgs/DOTJ048I-extra" conaction="pushreplace">This message
-is intended to help you locate incorrectly specified keys; if the key was specified correctly,
-this message may be ignored.</stentry></strow>-->
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ049W-extra" conaction="pushreplace">A DITA 
 Subject Scheme map was used to limit values that are available to the specified attribute.
 Please correct the attribute so that it uses one of the allowed values.</stentry></strow>
@@ -273,8 +224,7 @@ verify that the reference is correct.<p>Note that for security reasons, referenc
 of the map directory are not supported by default, as this could allow a reference to access and
 display any restricted or hidden file on the system. If you are certain that the path is valid and
 the file should be loaded, the current workaround is to set a parameter to allow
-these references. See <xref href="dita-ot_ant_properties.dita">DITA-OT Ant arguments (outer.control and generate.copy.outer)</xref> or
-<xref href="dita-ot_java_properties.dita">DITA-OT Command line tool arguments (/outercontrol and /generateouter)</xref> for details.</p></stentry></strow>
+these references. See <xref href="dita-ot_ant_properties.dita">DITA-OT Ant arguments (outer.control and generate.copy.outer)</xref> for details.</p></stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTJ052E-extra" conaction="pushreplace">The DITA-OT
 supports a special syntax on coderef elements to specify the character set of the target
 document. See <xref href="../dev_ref/extended-functionality.dita"></xref> for details
@@ -469,8 +419,6 @@ the rest of your content. The referenced items are ignored.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTX050W-extra" conaction="pushreplace">Eclipse requires
 that an ID be specified when creating an Eclipse Help project; the toolkit expects to locate
 that ID on the root element of your input map.</stentry></strow>
-<!--Commenting out 051 as it no longer exists in our code (likely removed several releases ago) -->
-<!--<strow><stentry conref="DITA-messages.xml#msgs/DOTX051W-extra" conaction="pushreplace"></stentry></strow>-->
 <strow><stentry conref="DITA-messages.xml#msgs/DOTX052W-extra" conaction="pushreplace">The toolkit
 is attempting to add generated text, such as the string "Related information" that appears
 above links. The requested string could not be found in any language. Your output may contain a meaningful string,
@@ -491,8 +439,7 @@ that used this template need to be updated.</stentry></strow>
 attempted to access the specified file in order to retrive a title or short description, but the
 file could not be found. If the file exists, it is possible that a DITAVAL file was used to remove
 the file's contents from the build. Another possibility is that the file is located outside of the scope of the main
-input directory, and was not available because the <xref href="dita-ot_ant_properties.dita">onlytopic.in.map</xref> or
-<xref href="dita-ot_java_properties.dita">/onlytopicinmap</xref> parameter was specified.
+input directory, and was not available because the <xref href="dita-ot_ant_properties.dita">onlytopic.in.map</xref> parameter was specified.
 Be aware that the path information above may not match the link in your topic.</stentry></strow>
 <strow><stentry conref="DITA-messages.xml#msgs/DOTX057W-extra" conaction="pushreplace">The link appears
 to use valid syntax to reference a DITA element, but that element cannot be found. Please verify that

@@ -206,113 +206,6 @@ navtitle="JavaHelp transformation"/>
 </relrow>
 </reltable>
 <reltable>
-<title>CTR: Command-line-tool topics</title>
-<relheader>
-<relcolspec type="concept"/>
-<relcolspec type="task"/>
-<relcolspec type="reference"/>
-</relheader>
-<relrow>
-<relcell>
-<topicref href="readme/dita2eclipsecontent.dita">
-<topicmeta>
-<linktext>Eclipse content transformation</linktext>
-</topicmeta>
-</topicref>
-</relcell>
-<relcell/>
-<relcell>
-<topicref href="readme/tool-parameters-eclipsecontent-transformation.dita"
-navtitle="Eclipse content"/>
-</relcell>
-</relrow>
-<relrow>
-<relcell>
-<topicref href="readme/dita2eclipsehelp.dita">
-<topicmeta>
-<linktext>Eclipse help transformation</linktext>
-</topicmeta>
-</topicref>
-</relcell>
-<relcell/>
-<relcell>
-<topicref href="readme/tool-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help"/>
-</relcell>
-</relrow>
-<relrow>
-<relcell>
-<topicref href="readme/dita2htmlhelp.dita" platform="windows">
-<topicmeta>
-<linktext>HTML help transformation</linktext>
-</topicmeta>
-</topicref>
-</relcell>
-<relcell/>
-<relcell>
-<topicref href="readme/tool-parameters-htmlhelp-transformation.dita" navtitle="HTML help"
-platform="windows"/>
-</relcell>
-</relrow>
-<relrow>
-<relcell>
-<topicref href="readme/dita2javahelp.dita">
-<topicmeta>
-<linktext>JavaHelp transformation</linktext>
-</topicmeta>
-</topicref>
-</relcell>
-<relcell/>
-<relcell>
-<topicref href="readme/tool-parameters-javahelp-transformation.dita"
-navtitle="JavaHelp transformation"/>
-</relcell>
-</relrow>
-<relrow>
-<relcell>
-<topicref href="readme/dita2odt.dita">
-<topicmeta>
-<linktext>ODT transformation</linktext>
-</topicmeta>
-</topicref>
-</relcell>
-<relcell/>
-<relcell>
-<topicref href="readme/tool-parameters-odt-transformation.dita" navtitle="ODT transformation"/>
-</relcell>
-</relrow>
-<relrow>
-<relcell>
-<topicref href="readme/dita2pdf.dita">
-<topicmeta>
-<linktext>PDF transformation</linktext>
-</topicmeta>
-</topicref>
-</relcell>
-<relcell/>
-<relcell>
-<topicref href="readme/tool-parameters-pdf-transformation.dita" navtitle="PDF tranformation"/>
-</relcell>
-</relrow>
-<relrow>
-<relcell>
-<topicref href="readme/dita2xhtml.dita">
-<topicmeta>
-<linktext>XHTML transformation</linktext>
-</topicmeta>
-</topicref>
-  <topicref href="readme/dita2html5.dita">
-    <topicmeta>
-      <linktext>HTML5 transformation</linktext>
-    </topicmeta>
-  </topicref>
-</relcell>
-<relcell/>
-<relcell>
-<topicref href="readme/tool-parameters-xhtml-transformation.dita" navtitle="XHTML tranformation"/>
-</relcell>
-</relrow>
-</reltable>
-<reltable>
 <title>Source and target: Transformations and all-transformations topics</title>
 <relheader>
 <relcolspec linking="sourceonly"/>
@@ -337,23 +230,6 @@ navtitle="JavaHelp transformation"/>
 navtitle="All transformation types"/>
 </relcell>
 </relrow>
-<relrow>
-<relcell>
-<topicref href="readme/tool-parameters-eclipsecontent-transformation.dita"
-navtitle="Eclipse content"/>
-<topicref href="readme/tool-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help"/>
-<topicref href="readme/tool-parameters-htmlhelp-transformation.dita" navtitle="HTML help"
-platform="windows"/>
-<topicref href="readme/tool-parameters-javahelp-transformation.dita"
-navtitle="JavaHelp transformation"/>
-<topicref href="readme/tool-parameters-odt-transformation.dita" navtitle="ODT transformation"/>
-<topicref href="readme/tool-parameters-pdf-transformation.dita" navtitle="PDF tranformation"/>
-<topicref href="readme/tool-parameters-xhtml-transformation.dita" navtitle="XHTML tranformation"/>
-</relcell>
-<relcell>
-<topicref href="readme/tool-parameters-all-transformation.dita" navtitle="All transformations"/>
-</relcell>
-</relrow>
 
 </reltable>
 <reltable>
@@ -375,22 +251,6 @@ navtitle="JavaHelp transformation"/>
 </relcell>
 <relcell>
 <topicref href="readme/ant-parameters-common-html-transtypes.dita"/>
-</relcell>
-</relrow>
-<relrow>
-<relcell>
-<topicref href="readme/tool-parameters-eclipsecontent-transformation.dita"
-navtitle="Eclipse content"/>
-<topicref href="readme/tool-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help"/>
-<topicref href="readme/tool-parameters-htmlhelp-transformation.dita" navtitle="HTML help"
-platform="windows"/>
-<topicref href="readme/tool-parameters-javahelp-transformation.dita"
-navtitle="JavaHelp transformation"/>
-<topicref href="readme/tool-parameters-xhtml-transformation.dita" navtitle="XHTML tranformation"/>
-</relcell>
-<relcell>
-<topicref href="readme/tool-parameters-common-html-transformation.dita"
-navtitle="HTML-based transformations"/>
 </relcell>
 </relrow>
 <relrow>

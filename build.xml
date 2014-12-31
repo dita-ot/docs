@@ -23,7 +23,10 @@ See the accompanying license.txt file for applicable licenses.
     <element name="properties" optional="yes"/>
 
     <sequential>
-      <antcall target="generate-msg-topic"/>
+      <antcall>
+        <target name="generate-msg-topic"/>
+        <target name="generate-params-topic"/>
+      </antcall>
 
       <ant antfile="${dita.home}/build.xml">
         <property name="args.input" location="@{input}"/>
@@ -67,6 +70,15 @@ See the accompanying license.txt file for applicable licenses.
 
     <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
     <xslt in="${message.input}" out="${message.outputtopic}" style="${message.xsl}"/>
+  </target>
+
+  <target name="generate-params-topic" depends="init" description="Regenerate parameters file">
+    <property name="params.xsl" location="${basedir}/params.xsl"/>
+    <property name="params.input" location="${resource.dir}/plugins.xml"/>
+    <property name="params.outputtopic" location="${basedir}/readme/ant-parameters.dita"/>
+    
+    <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
+    <xslt in="${params.input}" out="${params.outputtopic}" style="${params.xsl}"/>
   </target>
 
   <target name="generate-platform-filter" depends="init" description="Generate platform filter file">

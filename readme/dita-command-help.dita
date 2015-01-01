@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <task id="accessing-help-from-the-cl-tool">
-    <title>Accessing help from the command-line tool</title>
-    <shortdesc>You can access a list of supported parameters for the command-line tool by issuing
+    <title>Accessing help for the dita command</title>
+    <shortdesc>You can access a list of supported parameters for the <cmdname>dita</cmdname> command by issuing
         the <parmname>-help</parmname> parameter.</shortdesc>
     <taskbody>
         <steps>
@@ -12,7 +12,7 @@
             <step>
                 <cmd>From the command prompt, issue the following command:</cmd>
                 <info>
-                    <codeblock>    java -jar lib/dost.jar -help    </codeblock>
+                    <codeblock>dita -help</codeblock>
                 </info>
             </step>
         </steps>

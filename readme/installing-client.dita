@@ -3,7 +3,7 @@
 <task id="installing-client" xml:lang="en-us">
   <title>Installing the client package</title>
   <shortdesc id="what-is-client">For the simplest installation experience, install the client
-    package. This package can be installed on Linux, Mac OSX, and Windows. It contains everything
+    package. This package can be installed on Linux, Mac OS&#xA0;X, and Windows. It contains everything
     that you need to run the DITA-OT except for Java.</shortdesc>
   <taskbody>
     <prereq>
@@ -24,7 +24,7 @@
             <chdeschd>File name</chdeschd>
           </chhead>
           <chrow platform="linux osx">
-            <choption>Linux or Mac OSX</choption>
+            <choption>Linux or Mac OS&#xA0;X</choption>
             <chdesc><filepath>DITA-OT<keyword keyref="version"
                 />_client_bin.tar.gz</filepath></chdesc>
           </chrow>

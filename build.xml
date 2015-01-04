@@ -64,7 +64,7 @@ See the accompanying license.txt file for applicable licenses.
   </target>
 
   <target name="generate-msg-topic" depends="init" description="Regenerate message file">
-    <property name="message.xsl" location="${resource.dir}/messages.xsl"/>
+    <property name="message.xsl" location="${basedir}/messages.xsl"/>
     <property name="message.input" location="${resource.dir}/messages.xml"/>
     <property name="message.outputtopic" location="${basedir}/readme/DITA-messages.xml"/>
 

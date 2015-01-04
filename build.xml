@@ -8,8 +8,15 @@ See the accompanying license.txt file for applicable licenses.
 
   <property environment="env"/>
 
+  <condition property="dita.home" value="${basedir}/..">
+    <not><isset property="env.DITA_HOME"/></not>
+  </condition>
+
   <property name="dita.home" location="${env.DITA_HOME}"/>
-  <property name="doc.out.dir" location="${basedir}/out"/>
+  <available file="${dita.home}/lib/dost.jar" type="file" property="dita-ot.available"/>
+  <condition property="doc.out.dir" value="${dita.home}/doc" else="${basedir}/out">
+    <isset property="dita-ot.available"/>
+  </condition>
 
   <macrodef name="dita-ot">
     <attribute name="transtype"/>
@@ -31,20 +38,20 @@ See the accompanying license.txt file for applicable licenses.
   </macrodef>
 
   <target name="check-dita-home">
-    <available file="${dita.home}" property="dita-ot.available"/>
-
-    <fail unless="dita-ot.available">DITA-OT not found.
-
+    <fail unless="dita-ot.available">${dita.home}/lib/dost.jar not found.
+      
+    Does ${dita.home} contain a working DITA-OT installation?
+    
     Set the $DITA_HOME environment variable or the dita.home Ant property to
     point to a working DITA-OT installation:
-
+      
     Either:
-
+      
       $ export DITA_HOME=/path/to/dita-ot
       $ ant ...
-
+      
     Or:
-
+      
       $ ant -Ddita.home=/path/to/dita-ot
     </fail>
   </target>
@@ -59,7 +66,7 @@ See the accompanying license.txt file for applicable licenses.
     <property name="message.input" location="${resource.dir}/messages.xml"/>
     <property name="message.outputtopic" location="${basedir}/readme/DITA-messages.xml"/>
 
-    <ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/>
+    <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
     <xslt in="${message.input}" out="${message.outputtopic}" style="${message.xsl}"/>
   </target>
 

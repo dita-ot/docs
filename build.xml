@@ -13,9 +13,8 @@ See the accompanying license.txt file for applicable licenses.
   </condition>
 
   <property name="dita.home" location="${env.DITA_HOME}"/>
-  <available file="${dita.home}/lib/dost.jar" type="file" property="dita-ot.available"/>
   <condition property="doc.out.dir" value="${dita.home}/doc" else="${basedir}/out">
-    <isset property="dita-ot.available"/>
+    <available file="${basedir}/../lib/dost.jar" type="file"/>
   </condition>
 
   <macrodef name="dita-ot">
@@ -38,6 +37,8 @@ See the accompanying license.txt file for applicable licenses.
   </macrodef>
 
   <target name="check-dita-home">
+    <available file="${dita.home}/lib/dost.jar" type="file" property="dita-ot.available"/>
+    
     <fail unless="dita-ot.available">${dita.home}/lib/dost.jar not found.
       
     Does ${dita.home} contain a working DITA-OT installation?

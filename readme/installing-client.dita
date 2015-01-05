@@ -16,8 +16,7 @@
     </prereq>
     <steps>
       <step>
-        <cmd>Download the client package from <xref keyref="download.dita-ot.current-release"
-            >SourceForge</xref>.</cmd>
+        <cmd>Download the client package from the project website at <xref keyref="download.dita-ot.current-release">www.dita-ot.org</xref>.</cmd>
         <choicetable frame="topbot" relcolwidth="1.50* 4.0*">
           <chhead>
             <choptionhd>Operating system</choptionhd>
@@ -40,7 +39,7 @@
           DITA-OT.</cmd>
       </step>
       <step importance="optional">
-        <cmd>Add absolute path for <filepath>bin</filepath> directory to <varname>PATH</varname> system variable.</cmd>
+        <cmd>Add the absolute path for the <filepath>bin</filepath> directory to the <varname>PATH</varname> system variable.</cmd>
         <stepresult>This defines the necessary environment variable to run the <cmdname>dita</cmdname> command from the command-line.</stepresult>
       </step>
     </steps>

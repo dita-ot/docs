@@ -4,6 +4,11 @@
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
   <mapref href="keyrefs.ditamap" processing-role="resource-only"/>
   <topicref href="DITA-OTProjectHome.xml"/>
+  <topicref href="readme/changes/rel2.0.xml" locktitle="yes">
+    <topicmeta>
+      <navtitle>Release Notes</navtitle>
+    </topicmeta>
+  </topicref>
   <mapref href="client-quickstart.ditamap"/>
   <topicref href="readme/DITA-readme.xml">
     <mapref href="readme.ditamap"/>

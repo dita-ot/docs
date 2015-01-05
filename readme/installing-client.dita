@@ -3,7 +3,7 @@
 <task id="installing-client" xml:lang="en-us">
   <title>Installing the client package</title>
   <shortdesc id="what-is-client">For the simplest installation experience, install the client
-    package. This package can be installed on Linux, Mac OSX, and Windows. It contains everything
+    package. This package can be installed on Linux, Mac OS&#xA0;X, and Windows. It contains everything
     that you need to run the DITA-OT except for Java.</shortdesc>
   <taskbody>
     <prereq>
@@ -16,15 +16,14 @@
     </prereq>
     <steps>
       <step>
-        <cmd>Download the client package from <xref keyref="download.dita-ot.current-release"
-            >SourceForge</xref>.</cmd>
+        <cmd>Download the client package from the project website at <xref keyref="download.dita-ot.current-release">www.dita-ot.org</xref>.</cmd>
         <choicetable frame="topbot" relcolwidth="1.50* 4.0*">
           <chhead>
             <choptionhd>Operating system</choptionhd>
             <chdeschd>File name</chdeschd>
           </chhead>
           <chrow platform="linux osx">
-            <choption>Linux or Mac OSX</choption>
+            <choption>Linux or Mac OS&#xA0;X</choption>
             <chdesc><filepath>DITA-OT<keyword keyref="version"
                 />_client_bin.tar.gz</filepath></chdesc>
           </chrow>
@@ -40,7 +39,7 @@
           DITA-OT.</cmd>
       </step>
       <step importance="optional">
-        <cmd>Add absolute path for <filepath>bin</filepath> directory to <varname>PATH</varname> system variable.</cmd>
+        <cmd>Add the absolute path for the <filepath>bin</filepath> directory to the <varname>PATH</varname> system variable.</cmd>
         <stepresult>This defines the necessary environment variable to run the <cmdname>dita</cmdname> command from the command-line.</stepresult>
       </step>
     </steps>

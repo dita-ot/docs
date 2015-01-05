@@ -60,12 +60,7 @@
       <topicref href="plugin-newextensions.dita"/>
       <topicref href="plugin-sample.dita"/>
     </topicset>
-    <topichead navtitle="">
-      <topicmeta>
-        <navtitle>Migrating style sheets and XSLT overrides</navtitle>
-      </topicmeta>
-      <topicref rev="1.7" href="flagging-migration.dita"/>
-    </topichead>
+    <topicref rev="1.7" href="flagging-migration.dita" navtitle="Migrating style sheets and XSLT overrides" locktitle="yes"/>
     <topicref href="../readme/dita2pdf-customization.dita"/>
     <topicref href="ant-properties.dita"/>
     <topicref href="DITA1.2-implementation-dependent-features.dita"/>

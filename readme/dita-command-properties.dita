@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference
-  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <reference id="dita-command-properties" xml:lang="en">
   <title><cmdname>dita</cmdname> command arguments and options</title>
   <shortdesc>The <cmdname>dita</cmdname> command takes mandatory arguments to process DITA, manage plug-in, or print information about the command. Options can be used modify the command behaviour or

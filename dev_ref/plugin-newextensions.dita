@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <reference id="plugin-newextensions" xml:lang="en-us">
   <title>Creating a new plug-in extension point</title>
   <shortdesc>If your plug-in needs to define its own extension point in an XML file, add the string

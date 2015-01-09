@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
- "concept.dtd">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <concept id="preprocess-mappull" xml:lang="en-us">
 <title>Pull content into maps (mappull)</title>
 <shortdesc>The <codeph>mappull</codeph> step pulls content from referenced topics into maps, and

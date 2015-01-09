@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
-"reference.dtd">
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <reference id="errormessages" xml:lang="en-us">
  <title conref="DITA-messages.xml#msgs/title" conaction="pushreplace">DITA-OT error messages</title>
  <shortdesc conref="DITA-messages.xml#msgs/shortdesc" conaction="pushreplace">The error messages

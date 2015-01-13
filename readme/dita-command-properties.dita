@@ -4,8 +4,9 @@
 
 <reference id="dita-command-properties" xml:lang="en">
   <title><cmdname>dita</cmdname> command arguments and options</title>
-  <shortdesc>The <cmdname>dita</cmdname> command takes mandatory arguments to process DITA, manage plug-in, or print information about the command. Options can be used modify the command behaviour or
-    provide additional configuration.</shortdesc>
+  <shortdesc>The <cmdname>dita</cmdname> command takes mandatory arguments to process DITA, manage plug-in, or print
+    information about the command. Options can be used modify the command behaviour or provide additional
+    configuration.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -66,13 +67,17 @@
         <plentry>
           <pt><parmname>-f</parmname>, <parmname>-format</parmname>
             <varname>name</varname></pt>
-          <pd conref="ant-parameters-all-transformation-types.dita#ant-parameters-all-transformation-types/transtype.desc"/>
+          <pd
+            conref="ant-parameters-all-transformation-types.dita#ant-parameters-all-transformation-types/transtype.desc"
+          />
         </plentry>
         <plentry>
           <pt><parmname>-i</parmname>, <parmname>-input</parmname>
             <varname>file</varname></pt>
-          <pd id="args.input.desc">Specifies the master file for your documentation project. Typically this is a DITA map, however it also can be a DITA topic if you want to transform a single DITA
-            file. The path can be absolute, relative to <parmname>args.input.dir</parmname>, or relative to current directory if <parmname>args.input.dir</parmname> is not defined. </pd>
+          <pd id="args.input.desc">Specifies the master file for your documentation project. Typically this is a DITA
+            map, however it also can be a DITA topic if you want to transform a single DITA file. The path can be
+            absolute, relative to <parmname>args.input.dir</parmname>, or relative to current directory if
+              <parmname>args.input.dir</parmname> is not defined. </pd>
         </plentry>
         <plentry>
           <pt><parmname>-install</parmname>
@@ -102,18 +107,23 @@
         <plentry>
           <pt><parmname>-o</parmname>, <parmname>-output</parmname>
             <varname>dir</varname></pt>
-          <pd id="output.dir.desc">Specifies the path of output directory; the path can be absolute or relative to current directory. By default, the output is written to <filepath>out</filepath>
-            subdirectory of the current directory.</pd>
+          <pd id="output.dir.desc">Specifies the path of output directory; the path can be absolute or relative to
+            current directory. By default, the output is written to <filepath>out</filepath> subdirectory of the current
+            directory.</pd>
         </plentry>
         <plentry>
           <pt><parmname>-filter</parmname>
             <varname>file</varname></pt>
-          <pd conref="ant-parameters-all-transformation-types.dita#ant-parameters-all-transformation-types/args.filter.desc"/>
+          <pd
+            conref="ant-parameters-all-transformation-types.dita#ant-parameters-all-transformation-types/args.filter.desc"
+          />
         </plentry>
         <plentry>
           <pt><parmname>-temp</parmname>
             <varname>dir</varname></pt>
-          <pd conref="ant-parameters-all-transformation-types.dita#ant-parameters-all-transformation-types/dita.temp.dir.desc"/>
+          <pd
+            conref="ant-parameters-all-transformation-types.dita#ant-parameters-all-transformation-types/dita.temp.dir.desc"
+          />
         </plentry>
         <plentry>
           <pt><parmname>-v</parmname>, <parmname>-verbose</parmname></pt>
@@ -130,12 +140,14 @@
         </plentry>
         <plentry>
           <pt><parmname>-D</parmname><varname>property</varname>=<varname>value</varname></pt>
-          <pd>Specify a value for a parameter. Supported parameters are the same as Ant parameters and are transformation type specific.</pd>
+          <pd>Specify a value for a parameter. Supported parameters are the same as Ant parameters and are
+            transformation type specific.</pd>
         </plentry>
         <plentry>
           <pt><parmname>-propertyfile</parmname>
             <varname>file</varname></pt>
-          <pd>Load all properties from a file. Properties specified with <parmname>-D</parmname> option take precedence.</pd>
+          <pd>Load all properties from a file. Properties specified with <parmname>-D</parmname> option take
+            precedence.</pd>
         </plentry>
       </parml>
     </section>

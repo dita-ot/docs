@@ -10,10 +10,12 @@
       <step>
         <cmd>Run plug-in uninstallation process.</cmd>
         <choices>
-          <choice>Using the <cmdname>dita</cmdname> command line tool, run the uninstallation command: <codeblock>dita -uninstall <varname>plug-in-id</varname></codeblock></choice>
-          <choice>Using Ant, from the toolkit directory run the uninstallation target: <codeblock>ant -f integrator.xml uninstall -Dplugin.id=<varname>plug-in-id</varname></codeblock></choice>
+          <choice>Using the <cmdname>dita</cmdname> command line tool, run the uninstallation command:
+            <codeblock>dita -uninstall <varname>plug-in-id</varname></codeblock></choice>
+          <choice>Using Ant, from the toolkit directory run the uninstallation target:
+            <codeblock>ant -f integrator.xml uninstall -Dplugin.id=<varname>plug-in-id</varname></codeblock></choice>
         </choices>
       </step>
     </steps>
-  </taskbody>  
+  </taskbody>
 </task>

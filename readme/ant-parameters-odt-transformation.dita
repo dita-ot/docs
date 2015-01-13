@@ -18,12 +18,12 @@
   <refbody>
     <section>
       <fig>
-      <title>Ant parameters: ODT transformation</title>
+        <title>Ant parameters: ODT transformation</title>
         <parml>
           <plentry id="args.odt.img.embed">
             <pt><parmname>args.odt.img.embed</parmname></pt>
-            <pd id="args.odt.img.embed.desc">Determines whether images are
-              embedded as binary objects within the ODT file. </pd>
+            <pd id="args.odt.img.embed.desc">Determines whether images are embedded as binary objects within the ODT
+              file. </pd>
           </plentry>
         </parml>
       </fig>

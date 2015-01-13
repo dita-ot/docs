@@ -3,26 +3,24 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <map>
- <title>Reference</title>
- <topicref href="reference.dita" navtitle="reference">
-  <topicref href="dita-ot_ant_properties.dita" navtitle="Ant parameters">
-   <topicref href="ant-parameters-all-transformation-types.dita" navtitle="All transformation types"/>
-   <topicref href="ant-parameters-common-html-transtypes.dita" navtitle="HTML-based tranformations">
-    <topicref href="generate-copy-outer.dita" toc="no"/>
-   </topicref>
-   <topicref href="ant-parameters-eclipse-content-transformation.dita"
-    navtitle="Eclipse content transformation"/>
-   <topicref href="ant-parameters-eclipse-help-transformation.dita"
-    navtitle="Eclipse help transformation"/>
-   <topicref href="ant-parameters-html-help-transformation.dita" navtitle="HTML Help transformation"
-    platform="windows"/>
-   <topicref href="ant-parameters-javahelp-transformation.dita" navtitle="JavaHelp transformation"/>
-   <topicref href="ant-parameters-odt-transformation.dita" navtitle="ODT transformation"/>
-   <topicref href="ant-parameters-other.dita" navtitle="Other"/>
-   <topicref href="ant-parameters-pdf2-transformation.dita" navtitle="PDF2 transformation"/>
-   <topicref href="ant-parameters-xhtml-transformation.dita" navtitle="XHTML transformation"/>
+  <title>Reference</title>
+  <topicref href="reference.dita" navtitle="reference">
+    <topicref href="dita-ot_ant_properties.dita" navtitle="Ant parameters">
+      <topicref href="ant-parameters-all-transformation-types.dita" navtitle="All transformation types"/>
+      <topicref href="ant-parameters-common-html-transtypes.dita" navtitle="HTML-based tranformations">
+        <topicref href="generate-copy-outer.dita" toc="no"/>
+      </topicref>
+      <topicref href="ant-parameters-eclipse-content-transformation.dita" navtitle="Eclipse content transformation"/>
+      <topicref href="ant-parameters-eclipse-help-transformation.dita" navtitle="Eclipse help transformation"/>
+      <topicref href="ant-parameters-html-help-transformation.dita" navtitle="HTML Help transformation"
+        platform="windows"/>
+      <topicref href="ant-parameters-javahelp-transformation.dita" navtitle="JavaHelp transformation"/>
+      <topicref href="ant-parameters-odt-transformation.dita" navtitle="ODT transformation"/>
+      <topicref href="ant-parameters-other.dita" navtitle="Other"/>
+      <topicref href="ant-parameters-pdf2-transformation.dita" navtitle="PDF2 transformation"/>
+      <topicref href="ant-parameters-xhtml-transformation.dita" navtitle="XHTML transformation"/>
+    </topicref>
+    <topicref href="dita-command-properties.dita" navtitle="Dita command options and parameters" product="client"/>
+    <topicref href="configuration.dita" navtitle="lib/configuration.properties file"/>
   </topicref>
-  <topicref href="dita-command-properties.dita" navtitle="Dita command options and parameters" product="client"/>
-  <topicref href="configuration.dita" navtitle="lib/configuration.properties file"/>
- </topicref>
 </map>

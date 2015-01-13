@@ -22,24 +22,21 @@
         <parml>
           <plentry id="args.xhtml.contenttarget">
             <pt><parmname>args.xhtml.contenttarget</parmname></pt>
-            <pd id="args.xhtml.contenttarget.desc">Specifies the value of the @target attribute
-              on the &lt;base> element in the TOC file. The default value is
-                <option>contentwin</option>.</pd>
+            <pd id="args.xhtml.contenttarget.desc">Specifies the value of the @target attribute on the &lt;base> element
+              in the TOC file. The default value is <option>contentwin</option>.</pd>
           </plentry>
           <plentry id="args.xhtml.toc">
             <pt><parmname>args.xhtml.toc</parmname></pt>
-            <pd id="args.xhtml.toc.desc">Specifies the base name of the TOC file.
-              The default value is <option>index</option>.</pd>
+            <pd id="args.xhtml.toc.desc">Specifies the base name of the TOC file. The default value is
+                <option>index</option>.</pd>
           </plentry>
           <plentry id="args.xhtml.toc.class">
             <pt><parmname>args.xhtml.toc.class</parmname></pt>
-            <pd id="args.xhtml.toc.class.desc">Specifies the value of the @class attribute on the
-              &lt;body> element in the TOC file. <ph audience="xslt-customizer">Found in
-                  <filepath>map2htmltoc.xsl</filepath>.</ph></pd>
+            <pd id="args.xhtml.toc.class.desc">Specifies the value of the @class attribute on the &lt;body> element in
+              the TOC file. <ph audience="xslt-customizer">Found in <filepath>map2htmltoc.xsl</filepath>.</ph></pd>
           </plentry>
         </parml>
-      
-    </fig>
+      </fig>
     </section>
   </refbody>
 </reference>

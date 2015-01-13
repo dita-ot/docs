@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
- "../dtd/topic.dtd">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <topic id="testedplatformsandtools" xml:lang="en-us">
-<title>Tested platforms and tools</title>
-<shortdesc>The DITA Open Toolkit (DITA-OT) has been tested against certain versions of Ant, ICU4J,
-  JDK, operating systems, XML parsers, and XSLT processors.</shortdesc>
-<body>
+  <title>Tested platforms and tools</title>
+  <shortdesc>The DITA Open Toolkit (DITA-OT) has been tested against certain versions of Ant, ICU4J, JDK, operating
+    systems, XML parsers, and XSLT processors.</shortdesc>
+  <body>
     <simpletable>
       <sthead>
         <stentry>Application</stentry>
@@ -70,5 +71,5 @@
         </stentry>
       </strow>
     </simpletable>
-</body>
+  </body>
 </topic>

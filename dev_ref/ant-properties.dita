@@ -10,12 +10,12 @@
       <parml>
         <plentry>
           <pt><codeph>include.rellinks</codeph></pt>
-          <pd>Space separated list of link roles to be output; value token <codeph>#default</codeph>
-            denotes default role value. Property default value depends on transformation type.
-            Defined by <codeph>args.rellinks</codeph>, but may be overridden directly.</pd>
+          <pd>Space separated list of link roles to be output; value token <codeph>#default</codeph> denotes default
+            role value. Property default value depends on transformation type. Defined by
+            <codeph>args.rellinks</codeph>, but may be overridden directly.</pd>
         </plentry>
       </parml>
-<!--
+      <!--
 HTMLHelpCompiler
 _org.dita.pdf2.valfile
 _org.dita.pdf2.valfile.url

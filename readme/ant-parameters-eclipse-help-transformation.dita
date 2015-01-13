@@ -26,43 +26,45 @@
           </plentry>
           <plentry id="args.eclipse.country">
             <pt><parmname>args.eclipsehelp.country</parmname></pt>
-            <pd id="args.eclipse.country.desc">Specifies the region for the language that is specified by the <parmname>args.eclipsehelp.language</parmname> parameter. For example,
-              <option>us</option>, <option>ca</option>, and <option>gb</option> would clarify a value of <option>en</option> set for the <parmname>args.eclipsehelp.language</parmname> parameter. The
-              content will be moved into the appropriate directory structure for an Eclipse fragment.<draft-comment author="Kristen James Eberlein" time="11 August 2012">What does "The content will be
-                moved into the appropriate directory structure for an Eclipse fragment" mean?</draft-comment></pd>
+            <pd id="args.eclipse.country.desc">Specifies the region for the language that is specified by the
+                <parmname>args.eclipsehelp.language</parmname> parameter. For example, <option>us</option>,
+                <option>ca</option>, and <option>gb</option> would clarify a value of <option>en</option> set for the
+                <parmname>args.eclipsehelp.language</parmname> parameter. The content will be moved into the appropriate
+              directory structure for an Eclipse fragment.<draft-comment author="Kristen James Eberlein"
+                time="11 August 2012">What does "The content will be moved into the appropriate directory structure for
+                an Eclipse fragment" mean?</draft-comment></pd>
           </plentry>
           <plentry id="args.eclipse.language">
             <pt><parmname>args.eclipsehelp.language</parmname></pt>
-            <pd id="args.eclipse.language.desc">Specifies the base language for translated content, such as <option>en</option> for English. This parameter is a prerequisite for the
-                <parmname>args.eclipsehelp.country</parmname> parameter. The content will be moved into the appropriate directory structure for an Eclipse fragment.</pd>
+            <pd id="args.eclipse.language.desc">Specifies the base language for translated content, such as
+                <option>en</option> for English. This parameter is a prerequisite for the
+                <parmname>args.eclipsehelp.country</parmname> parameter. The content will be moved into the appropriate
+              directory structure for an Eclipse fragment.</pd>
           </plentry>
           <plentry id="args.eclipse.provider">
             <pt><parmname>args.eclipse.provider</parmname></pt>
-            <pd id="args.eclipse.provider.desc">Specifies the name of the person or organization
-              that provides the Eclipse help. The default value is <option>DITA</option>. <note
-                type="tip">The toolkit ignores the value of this parameter when it processes an
-                Eclipse map.</note>
+            <pd id="args.eclipse.provider.desc">Specifies the name of the person or organization that provides the
+              Eclipse help. The default value is <option>DITA</option>. <note type="tip">The toolkit ignores the value
+                of this parameter when it processes an Eclipse map.</note>
             </pd>
           </plentry>
           <plentry id="args.eclipse.version">
             <pt><parmname>args.eclipse.version</parmname></pt>
-            <pd id="args.eclipse.version.desc">Specifies the version number to include in the
-              output. The default value is <option>0.0.0</option>.<note type="tip">The toolkit
-                ignores the value of this parameter when it processes an Eclipse map.</note></pd>
+            <pd id="args.eclipse.version.desc">Specifies the version number to include in the output. The default value
+              is <option>0.0.0</option>.<note type="tip">The toolkit ignores the value of this parameter when it
+                processes an Eclipse map.</note></pd>
           </plentry>
           <plentry id="args.eclipse.symbolic.name">
             <pt><parmname>args.eclipse.symbolic.name</parmname></pt>
-            <pd id="args.eclipse.symbolic.name.desc"> Specifies the symbolic name (aka plugin ID)
-              in the output for an Eclipse Help project. The @id value from the DITA map or the
-              Eclipse map collection (Eclipse help specialization) is the symbolic name for the
-              plugin in Eclipse. The default value is <option>org.sample.help.doc</option>.<note
-                type="tip">The toolkit ignores the value of this parameter when it processes an
-                Eclipse map.</note><draft-comment author="Kristen James Eberlein"
+            <pd id="args.eclipse.symbolic.name.desc"> Specifies the symbolic name (aka plugin ID) in the output for an
+              Eclipse Help project. The @id value from the DITA map or the Eclipse map collection (Eclipse help
+              specialization) is the symbolic name for the plugin in Eclipse. The default value is
+                <option>org.sample.help.doc</option>.<note type="tip">The toolkit ignores the value of this parameter
+                when it processes an Eclipse map.</note><draft-comment author="Kristen James Eberlein"
                 time="11 August 2012">I'm not clear what this means. Is the default value for the
-                  <parmname>args.eclipse.symbolic.name</parmname> parameter the value of the @id
-                attribute on the &lt;map> or &lt;plugin> element, if provided, and the
-                  <option>org.sample.help.doc</option> if there is not a value for the @id attribute
-                or the <parmname>args.eclipse.symbolic.name</parmname> parameter?
+                  <parmname>args.eclipse.symbolic.name</parmname> parameter the value of the @id attribute on the
+                &lt;map> or &lt;plugin> element, if provided, and the <option>org.sample.help.doc</option> if there is
+                not a value for the @id attribute or the <parmname>args.eclipse.symbolic.name</parmname> parameter?
               </draft-comment></pd>
           </plentry>
         </parml>

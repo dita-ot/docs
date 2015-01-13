@@ -3,12 +3,11 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <task id="configuring-the-dita-ot">
-    <title>Configuring the DITA Open Toolkit</title>
+  <title>Configuring the DITA Open Toolkit</title>
   <titlealts>
     <navtitle>Configuring the DITA-OT</navtitle>
   </titlealts>
-    <shortdesc>The DITA OT uses <filepath>.properties</filepath> files that store configuration
-        settings for the DITA OT and its plug-ins. The configuration properties are available to
-        both Ant and Java processes, but unlike argument properties, they cannot be set at run
-        time.</shortdesc>
+  <shortdesc>The DITA OT uses <filepath>.properties</filepath> files that store configuration settings for the DITA OT
+    and its plug-ins. The configuration properties are available to both Ant and Java processes, but unlike argument
+    properties, they cannot be set at run time.</shortdesc>
 </task>

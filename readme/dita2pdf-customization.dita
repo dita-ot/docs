@@ -4,13 +4,11 @@
 
 <task id="dita2pdf-customization" xml:lang="en">
   <title>Customizing PDF output</title>
-  <shortdesc>You can build a DITA-OT plug-in that contains a customized PDF
-    transformation.</shortdesc>
+  <shortdesc>You can build a DITA-OT plug-in that contains a customized PDF transformation.</shortdesc>
   <prolog/>
   <taskbody>
-    <context>This topic demonstrates the process of building a plug-in (com.example.print-pdf) that
-      creates a new transformation type: <option>print-pdf</option>. The <option>print-pdf</option>
-      transformation has the following characteristics:<ul>
+    <context>This topic demonstrates the process of building a plug-in (com.example.print-pdf) that creates a new
+      transformation type: <option>print-pdf</option>. The <option>print-pdf</option> transformation has the following characteristics:<ul>
         <li>Uses A4 paper </li>
         <li>Renders figures with a title at the top and a description at the bottom</li>
         <li>Use em dashes as the symbols for unordered lists</li>
@@ -21,10 +19,10 @@
             <filepath>com.example.print-pdf</filepath>.</cmd>
       </step>
       <step>
-      <cmd>In the new <filepath>com.example.print-pdf</filepath> directory, create a plug-in
-          configuration file (<filepath>plugin.xml</filepath>) that declares the new
-            <option>print-pdf</option> transformation and its dependencies.</cmd>
-      <info>
+        <cmd>In the new <filepath>com.example.print-pdf</filepath> directory, create a plug-in configuration file
+            (<filepath>plugin.xml</filepath>) that declares the new <option>print-pdf</option> transformation and its
+          dependencies.</cmd>
+        <info>
           <fig>
             <title><filepath>plugin.xml</filepath> file</title>
             <codeblock>&lt;?xml version='1.0' encoding='UTF-8'?>
@@ -38,9 +36,8 @@
         </info>
       </step>
       <step>
-      <cmd>Add an Ant script (<filepath>integrator.xml</filepath>) to define the transformation
-          type.</cmd>
-      <info>
+        <cmd>Add an Ant script (<filepath>integrator.xml</filepath>) to define the transformation type.</cmd>
+        <info>
           <fig>
             <title><filepath>integrator.xml</filepath> file</title>
             <codeblock>&lt;?xml version='1.0' encoding='UTF-8'?>
@@ -53,9 +50,9 @@
           </fig></info>
       </step>
       <step>
-      <cmd>In the new plug-in directory, add a <filepath>cfg/catalog.xml</filepath> file that
-          specifies the custom XSLT style sheets.</cmd>
-      <stepxmp>
+        <cmd>In the new plug-in directory, add a <filepath>cfg/catalog.xml</filepath> file that specifies the custom
+          XSLT style sheets.</cmd>
+        <stepxmp>
           <fig>
             <title><filepath>cfg/catalog.xml</filepath> file</title>
             <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
@@ -67,8 +64,8 @@
         </stepxmp>
       </step>
       <step>
-      <cmd>Create the <filepath>cfg/fo/attrs/custom.xsl</filepath> file, and add attribute and
-          variable overrides to it.</cmd>
+        <cmd>Create the <filepath>cfg/fo/attrs/custom.xsl</filepath> file, and add attribute and variable overrides to
+          it.</cmd>
         <stepxmp>For example, add the content highlighted with bold to change the page size to A4.<fig>
             <title><filepath>cfg/fo/attrs/custom.xsl</filepath> file</title>
             <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
@@ -81,8 +78,7 @@
           </fig></stepxmp>
       </step>
       <step>
-        <cmd>Create the <filepath>cfg/fo/xsl/custom.xsl</filepath> file, and add XSLT overrides to
-          it.</cmd>
+        <cmd>Create the <filepath>cfg/fo/xsl/custom.xsl</filepath> file, and add XSLT overrides to it.</cmd>
         <stepxmp>For example, the following code changes the rendering of &lt;figure> elements.<fig>
             <title><filepath>cfg/fo/xsl/custom.xsl</filepath> file</title>
             <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
@@ -108,12 +104,10 @@
           </fig></stepxmp>
       </step>
       <step>
-        <cmd>Create an English-language variable-definition file
-            (<filepath>cfg/common/vars/en.xml</filepath>) and make any necessary modifications to
-          it.</cmd>
-        <stepxmp>For example, the following code  removes the period after the number for an
-          ordered-list item; it also specifies that the bullet for an unordered list item should be
-          an em dash.<fig>
+        <cmd>Create an English-language variable-definition file (<filepath>cfg/common/vars/en.xml</filepath>) and make
+          any necessary modifications to it.</cmd>
+        <stepxmp>For example, the following code removes the period after the number for an ordered-list item; it also
+          specifies that the bullet for an unordered list item should be an em dash.<fig>
             <title><filepath>cfg/common/vars/en.xml</filepath> file</title>
             <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;vars xmlns="http://www.idiominc.com/opentopic/vars">
@@ -142,8 +136,8 @@
   plugin.xml</codeblock>
     </result>
     <postreq id="postreq_mqj_zz3_tf">
-      <p>Run the integration process to install the plug-in and make the <option>print-pdf</option>
-        transformation available.</p>
+      <p>Run the integration process to install the plug-in and make the <option>print-pdf</option> transformation
+        available.</p>
     </postreq>
   </taskbody>
 </task>

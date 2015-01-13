@@ -3,15 +3,15 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <map>
- <title>Installing</title>
- <topicref href="DITA-installation.xml">
-  <topicref href="distribution_packages.dita"/>
-  <topicref href="prerequisite-software.dita" navtitle="Prerequisite software"/>
-   <topicref href="installing-client.dita" product="client"/>
-   <!--topicref href="installing-full-easy.dita" navtitle="Installing the full-easy package" product="full-easy"/-->
-  <topicref href="installing-minimal-package-on-linux.dita"
-   navtitle="Installing minimal package on Linux" product="minimal standard" platform="linux osx"/>
-  <topicref href="installing-minimal-package-windows.dita"
-   navtitle="Installing minimal package on Windows" platform="windows" product="minimal standard"/>
- </topicref>
+  <title>Installing</title>
+  <topicref href="DITA-installation.xml">
+    <topicref href="distribution_packages.dita"/>
+    <topicref href="prerequisite-software.dita" navtitle="Prerequisite software"/>
+    <topicref href="installing-client.dita" product="client"/>
+    <!--topicref href="installing-full-easy.dita" navtitle="Installing the full-easy package" product="full-easy"/-->
+    <topicref href="installing-minimal-package-on-linux.dita" navtitle="Installing minimal package on Linux"
+      platform="linux osx" product="minimal standard" />
+    <topicref href="installing-minimal-package-windows.dita" navtitle="Installing minimal package on Windows"
+      platform="windows" product="minimal standard"/>
+  </topicref>
 </map>

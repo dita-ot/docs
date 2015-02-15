@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<reference id="rel2.1" xml:lang="en">
+  <title>DITA Open Toolkit 2.1 Release Notes</title>
+
+  <!--
+  <reference id="releasehighlights">
+    <title>Release Highlights</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.1 includes the following significant enhancements: <ul>
+            <li></li>
+          </ul>
+        </p>
+        <p>For details on these and all other enhancements, see the sections below.</p>
+      </section>
+    </refbody>
+  </reference>
+  -->
+  <!--
+  <reference id="migration">
+    <title>Migration From Previous Releases</title>
+    <refbody>
+      <section>
+        <draft-comment author="jelovirt">TODO</draft-comment>
+      </section>
+    </refbody>
+  </reference>
+  -->
+  <reference id="requirements">
+    <title>Requirements</title>
+    <refbody>
+      <section>
+        <draft-comment author="infotexture">Add info on new minimum Java version or any other requirements that have
+          changed since previous release.</draft-comment>
+        <p>DITA Open Toolkit Release 2.1 requires the Java Runtime Environment (JRE) or Java Development Kit (JDK),
+          version 7 or later.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="rel2.1.issues">
+    <title>Resolved Issues</title>
+    <shortdesc>The following items are included in DITA Open Toolkit Release 2.1. Issue numbers correspond to the
+      tracking number in the <ph><xref keyref="dita-ot-issues" scope="external">GitHub issues
+      tracker</xref></ph>.</shortdesc>
+    <refbody>
+      <!--
+      <section>
+        <title>Extended Preview Support for DITA 1.3</title>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+      -->
+      <section>
+        <title>Feature Requests</title>
+        <p>Milestone 1 includes the following new features and changes:</p>
+        <ul>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1179" format="html" scope="external">1179</xref> Added
+            HTML generation extension for body content</li>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1687" format="html" scope="external">1687</xref> More
+            recognized default resource extensions in the plugins base</li>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1703" format="html" scope="external">1703</xref> Link
+            to missing DITAVAL file should show a relevant error code in the console</li>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1799" format="html" scope="external">1799</xref> Move
+            configuration options to runtime properties</li>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1800" format="html" scope="external">1800</xref>
+            Remove old Java command line tool</li>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1803" format="html" scope="external">1803</xref> Use
+            Commons IO</li>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1832" format="html" scope="external">1832</xref>
+            Remove support for args.odt.img.embed</li>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1847" format="html" scope="external">1847</xref>
+            Extension-point for custom DITA parsers</li>
+        </ul>
+      </section>
+      <section>
+        <title>Bugs</title>
+        <p>Milestone 1 provides fixes for the following bugs:</p>
+        <ul>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1840" format="html" scope="external">1840</xref>
+            Keyref processing doesn't use only first keyword or term</li>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1849" format="html" scope="external">1849</xref> Some
+            XSLT XPaths do not properly use the @class attribute to select elems</li>
+        </ul>
+      </section>
+    </refbody>
+  </reference>
+  <!--
+  <reference id="limitations">
+    <title>Limitations</title>
+    <refbody>
+      <section>
+        <draft-comment author="infotexture">Add info on any significant open issues, caveats or known limitations in DITA markup support.</draft-comment>
+      </section>
+    </refbody>
+  </reference>
+  -->
+</reference>

@@ -3,7 +3,7 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="rel2.0" xml:lang="en">
-  <title>DITA Open Toolkit Release 2.0</title>
+  <title>DITA Open Toolkit 2.0 Release Notes</title>
   <reference id="releasehighlights">
     <title>Release Highlights</title>
     <refbody>
@@ -538,37 +538,42 @@ $ dita -uninstall &lt;plugin-id></codeblock></p>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1732" format="html" scope="external">#1732</xref>
             xrefs to &lt;preface> topics fail in PDF2 output in 1.8.4 (milestone 4)</li>
+        </ul>
+      </section>
+      <section>
+        <title>Maintenance Release 2.0.1</title>
+        <ul>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1744" format="html" scope="external">#1744</xref>
             copy-to attribute not processed correctly (error DOTX008E) in XHTML transtype on a topicref included in a
-            child map (2.0.1)</li>
+            child map</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1790" format="html" scope="external">#1790</xref> FO:
-            Xref processing does not handle case of key with no remote resource or link text (2.0.1)</li>
+            Xref processing does not handle case of key with no remote resource or link text</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1806" format="html" scope="external">#1806</xref> IDs
-            are not preserved on &lt;bodydiv&gt; element (2.0.1)</li>
+            are not preserved on &lt;bodydiv&gt; element</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1808" format="html" scope="external">#1808</xref>
-            DITA-OT 2.0: PDF bookmarks (TOC, index) not in language indicated in source files (2.0.1)</li>
+            DITA-OT 2.0: PDF bookmarks (TOC, index) not in language indicated in source files</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1810" format="html" scope="external">#1810</xref>
-            DITA-OT 2.0: typo in PDF-plugin, xsl/fo/toc.xsl ("boookmap") (2.0.1)</li>
+            DITA-OT 2.0: typo in PDF-plugin, xsl/fo/toc.xsl ("boookmap")</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1811" format="html" scope="external">#1811</xref>
-            Filtering doesn't support @deliveryTarget (2.0.1)</li>
+            Filtering doesn't support @deliveryTarget</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1813" format="html" scope="external">#1813</xref>
-            Mappull step fails with nested concept (2.0.1)</li>
+            Mappull step fails with nested concept</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1814" format="html" scope="external">#1814</xref> Task
-            with links and nested task fails in XHTML (2.0.1)</li>
+            with links and nested task fails in XHTML</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1815" format="html" scope="external">#1815</xref>
-            Convert String to double Error message when we try to generate pdf (2.0.1)</li>
+            Convert String to double Error message when we try to generate pdf</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1826" format="html" scope="external">#1826</xref> OT
-            2.0: Map with subject scheme and non-below map fails (2.0.1)</li>
+            2.0: Map with subject scheme and non-below map fails</li>
         </ul>
       </section>
     </refbody>

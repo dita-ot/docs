@@ -81,6 +81,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/1832" format="html" scope="external">1832</xref>
             Remove support for args.odt.img.embed</li>
           <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1837" format="html" scope="external">1837</xref>
+            Remove keydef processing from XHTML rendering code</li>
+          <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1847" format="html" scope="external">1847</xref>
             Extension-point for custom DITA parsers</li>
         </ul>
@@ -89,6 +92,9 @@
         <title>Bugs</title>
         <p>Milestone 1 provides fixes for the following bugs:</p>
         <ul>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1415" format="html" scope="external">1415</xref> Filtering
+            doesn't support default for rev flagging</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1840" format="html" scope="external">1840</xref>
             Keyref processing doesn't use only first keyword or term</li>

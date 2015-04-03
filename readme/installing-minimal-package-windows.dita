@@ -61,8 +61,9 @@
         <stepxmp>
           <codeblock>set CLASSPATH=%DITA_HOME%\lib\dost.jar;%CLASSPATH%
 set CLASSPATH=%DITA_HOME%\lib;%CLASSPATH%
-set CLASSPATH=%DITA_HOME%\lib\resolver.jar;%CLASSPATH%
-set CLASSPATH=%DITA_HOME%\lib\commons-codec-<keyword keyref="tool.codec.version"/>.jar;%CLASSPATH%</codeblock>
+set CLASSPATH=%DITA_HOME%\lib\xml-resolver.jar;%CLASSPATH%
+set CLASSPATH=%DITA_HOME%\lib\commons-io.jar;%CLASSPATH%
+set CLASSPATH=%DITA_HOME%\lib\commons-codec.jar;%CLASSPATH%</codeblock>
         </stepxmp>
       </step>
       <step importance="optional">

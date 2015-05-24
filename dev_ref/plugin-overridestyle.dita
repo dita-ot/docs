@@ -56,6 +56,14 @@
           <dt><codeph>dita.xsl.maplink</codeph></dt>
           <dd>Overrides the preprocess step "maplink" (the step that generates map-based links).</dd>
         </dlentry>
+        <dlentry>
+          <dt><codeph>dita.xsl.troff-ast</codeph></dt>
+          <dd>Overrides the intermediate block-and-phrase format generated as input to troff processing.</dd>
+        </dlentry>
+        <dlentry>
+          <dt><codeph>dita.xsl.troff</codeph></dt>
+          <dd>Overrides the XSL that converts block-and-phrase intermediate markup into troff. </dd>
+        </dlentry>
       </dl>
     </section>
     <example>
@@ -76,6 +84,13 @@
               alt="Example Company Banner"/>&lt;/div>
   &lt;/xsl:template>
 &lt;/xsl:stylesheet></codeblock>
+    </example>
+    <example>
+      <title>Example – Overriding troff formatting</title>
+      <p>To apply custom formatting for your own domain to the intermediate markup generated as input to troff
+        processing, create a plugin that extends <codeph>dita.xsl.troff-ast</codeph> and specify the path to your custom
+        XSL as follows:</p>
+      <codeblock>&lt;feature extension="dita.xsl.troff-ast" file="xsl/your-domain.xsl"/></codeblock>
     </example>
   </refbody>
 </reference>

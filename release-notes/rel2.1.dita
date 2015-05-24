@@ -36,7 +36,7 @@
         <draft-comment author="infotexture">Add info on new minimum Java version or any other requirements that have
           changed since previous release.</draft-comment>
         <p>DITA Open Toolkit Release 2.1 requires the Java Runtime Environment (JRE) or Java Development Kit (JDK),
-          version 7 or later.</p>
+          version <keyword keyref="tool.java.version"/> or later.</p>
       </section>
     </refbody>
   </reference>

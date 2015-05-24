@@ -59,25 +59,23 @@
       </dl>
     </section>
     <example>
-      <title>Example</title>
-      <p>The following two files represent a complete, simple style plug-in. The <filepath>plugin.xml</filepath> file
-        declares an XSLT file that extends XHTML processing; the XSLT file overrides default header processing to
-        provide a (theoretical)
-      banner.</p><codeblock>plugin.xml:
-&lt;?xml version="1.0" encoding="UTF-8"?>
+      <title>Example – Overriding XHTML header processing</title>
+      <p>The following two files represent a complete, simple style plug-in.</p>
+      <p>The <filepath>plugin.xml</filepath> file declares an XSLT file that extends XHTML processing:</p>
+      <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;plugin id="com.example.brandheader">
   &lt;feature extension="dita.xsl.xhtml" file="xsl/header.xsl"/>
-&lt;/plugin>
-
-xsl/header.xsl:
-&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;/plugin></codeblock>
+      <p>The <filepath>xsl/header.xsl</filepath> XSLT file referenced above in <filepath>plugin.xml</filepath> overrides
+        the default header processing to provide a (theoretical) banner:</p>
+      <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;xsl:stylesheet version="1.0" 
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   &lt;xsl:template name="gen-user-header">
     &lt;div>&lt;img src="http://www.example.com/company_banner.jpg" 
               alt="Example Company Banner"/>&lt;/div>
   &lt;/xsl:template>
-&lt;/xsl:stylesheet></codeblock><?Pub Caret 410?></example>
+&lt;/xsl:stylesheet></codeblock>
+    </example>
   </refbody>
 </reference>
-<?Pub *0000003622?>

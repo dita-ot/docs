@@ -9,9 +9,6 @@
         <topicref href="DITA-OTProjectHome.xml"/>
       </relcell>
       <relcell linking="targetonly">
-        <topicref href="readme/distribution_packages.dita"/>
-      </relcell>
-      <relcell linking="targetonly">
         <topicref format="html" href="http://dita.xml.org/wiki/the-dita-open-toolkit" scope="external">
           <topicmeta>
             <linktext>Main DITA-OT page at dita.xml.org</linktext>
@@ -20,23 +17,6 @@
         <topicref format="html" href="http://sourceforge.net/news/?group_id=132728" scope="external">
           <topicmeta>
             <linktext>Project News for DITA Open Toolkit</linktext>
-          </topicmeta>
-        </topicref>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
-        <topicref href="readme/distribution_packages.dita"/>
-      </relcell>
-      <relcell>
-        <topicref format="html" href="http://www.dita-ot.org/download" scope="external">
-          <topicmeta>
-            <linktext>DITA Open Toolkit distibution package downloads</linktext>
-          </topicmeta>
-        </topicref>
-        <topicref format="html" href="https://github.com/dita-ot/dita-ot" scope="external">
-          <topicmeta>
-            <linktext>DITA Open Toolkit source</linktext>
           </topicmeta>
         </topicref>
       </relcell>

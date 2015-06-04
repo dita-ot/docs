@@ -57,7 +57,19 @@
       -->
       <section>
         <title>Feature Requests</title>
-        <p>Milestone 1 includes the following new features and changes:</p>
+        <p>Milestone 2 includes the following new features and changes:</p>
+        <ul>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1874" format="html" scope="external">1874</xref>
+            Codephrase used in topic title has very small font </li>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1883" format="html" scope="external">1883</xref>
+            Faster implementation for ImgUtils.getWidth/getHeight </li>
+          <li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1897" format="html" scope="external">1897</xref> DITA
+            OT 2.1.dev chm properties folder in org.dita.pdf2 </li>
+        </ul>
+        <p>Milestone 1 included the following new features and changes:</p>
         <ul>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1179" format="html" scope="external">1179</xref> Added
@@ -90,11 +102,43 @@
       </section>
       <section>
         <title>Bugs</title>
-        <p>Milestone 1 provides fixes for the following bugs:</p>
+        <p>Milestone 2 provides fixes for the following bugs:</p>
+        <ul>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1513" format="html" scope="external">1513</xref>
+            Suspected memory leak in OT bug preprocess</li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1694" format="html" scope="external">1694</xref>
+            Cannot convert string to double</li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1854" format="html" scope="external">1854</xref>
+            integrator.xml should also load the necessary "commons-io.jar" </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1870" format="html" scope="external">1870</xref>
+            PDF2 output plugin fails rendering tables </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1872" format="html" scope="external">1872</xref>
+            Link to index term repeats itself </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1877" format="html" scope="external">1877</xref>
+            Searchtitle Incorrectly Used for HTML Title </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1888" format="html" scope="external">1888</xref>
+            build.xml help target documentation is incorrect ant interface </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1889" format="html" scope="external">1889</xref>
+            @class missing from choicetable XHTML output </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1890" format="html" scope="external">1890</xref>
+            properties table XHTML output </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1894" format="html" scope="external">1894</xref> Fix
+            unitless length-to-pixels </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1921" format="html" scope="external">1921</xref>
+            Error reported during flagging </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1922" format="html" scope="external">1922</xref>
+            Index continued markers don't work if both primary and its secondary entries continue </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1927" format="html" scope="external">1927</xref> In
+            the key() function, the node supplied in the third argument (or the context node if absent) must be in a
+            tree whose root is a document node </li>
+          <li><xref href="https://github.com/dita-ot/dita-ot/issues/1932" format="html" scope="external">1932</xref>
+            when running ./dita, console shows "No such file or directory" when directory contains spaces</li>
+        </ul>
+        <p>Milestone 1 provided fixes for the following bugs:</p>
         <ul>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1415" format="html" scope="external">1415</xref> Filtering
-            doesn't support default for rev flagging</li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1415" format="html" scope="external">1415</xref>
+            Filtering doesn't support default for rev flagging</li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1840" format="html" scope="external">1840</xref>
             Keyref processing doesn't use only first keyword or term</li>

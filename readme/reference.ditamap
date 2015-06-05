@@ -19,5 +19,8 @@
     <topicref href="ant-parameters-xhtml-transformation.dita" navtitle="XHTML transformation"/>
   </topicref>
   <topicref href="dita-command-properties.dita" navtitle="Dita command options and parameters" product="client"/>
-  <topicref href="configuration.dita" navtitle="lib/configuration.properties file"/>
+  <topicref href="../dev_ref/configuring-the-dita-ot.dita">
+    <topicref href="../dev_ref/lib-org.dita.dost.platform-plugin.properties.dita"/>
+    <topicref href="configuration.dita" navtitle="lib/configuration.properties file"/>
+  </topicref>
 </map>

@@ -3,9 +3,9 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <task id="configuring-the-dita-ot">
-  <title>Configuring the DITA Open Toolkit</title>
+  <title>DITA-OT Configuration Properties</title>
   <titlealts>
-    <navtitle>Configuring the DITA-OT</navtitle>
+    <navtitle>Configuration Properties</navtitle>
   </titlealts>
   <shortdesc>The DITA OT uses <filepath>.properties</filepath> files that store configuration settings for the DITA OT
     and its plug-ins. The configuration properties are available to both Ant and Java processes, but unlike argument

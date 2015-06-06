@@ -82,7 +82,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="readme/ant-parameters-eclipse-content-transformation.dita"
+        <topicref href="readme/ant-parameters-eclipsecontent-transformation.dita"
           navtitle="Eclipse content transformation"/>
       </relcell>
     </relrow>
@@ -96,7 +96,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="readme/ant-parameters-eclipse-help-transformation.dita" navtitle="Eclipse help transformation"/>
+        <topicref href="readme/ant-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help transformation"/>
       </relcell>
     </relrow>
     <relrow>
@@ -109,7 +109,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="readme/ant-parameters-html-help-transformation.dita" navtitle="HTML Help transformation"/>
+        <topicref href="readme/ant-parameters-htmlhelp-transformation.dita" navtitle="HTML Help transformation"/>
       </relcell>
     </relrow>
     <relrow>
@@ -178,17 +178,17 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="readme/ant-parameters-eclipse-help-transformation.dita" navtitle="Eclipse help transformation"/>
-        <topicref href="readme/ant-parameters-eclipse-content-transformation.dita"
+        <topicref href="readme/ant-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help transformation"/>
+        <topicref href="readme/ant-parameters-eclipsecontent-transformation.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="readme/ant-parameters-html-help-transformation.dita" navtitle="HTML Help transformation"/>
+        <topicref href="readme/ant-parameters-htmlhelp-transformation.dita" navtitle="HTML Help transformation"/>
         <topicref href="readme/ant-parameters-javahelp-transformation.dita" navtitle="JavaHelp transformation"/>
         <topicref href="readme/ant-parameters-odt-transformation.dita" navtitle="ODT transformation"/>
         <topicref href="readme/ant-parameters-pdf2-transformation.dita" navtitle="PDF2 transformation"/>
         <topicref href="readme/ant-parameters-xhtml-transformation.dita" navtitle="XHTML transformation"/>
       </relcell>
       <relcell>
-        <topicref href="readme/ant-parameters-all-transformation-types.dita" navtitle="All transformation types"/>
+        <topicref href="readme/ant-parameters-base-transformation.dita" navtitle="All transformation types"/>
       </relcell>
     </relrow>
 
@@ -201,10 +201,10 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="readme/ant-parameters-eclipse-content-transformation.dita"
+        <topicref href="readme/ant-parameters-eclipsecontent-transformation.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="readme/ant-parameters-eclipse-help-transformation.dita" navtitle="Eclipse help transformation"/>
-        <topicref href="readme/ant-parameters-html-help-transformation.dita"/>
+        <topicref href="readme/ant-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help transformation"/>
+        <topicref href="readme/ant-parameters-htmlhelp-transformation.dita"/>
         <topicref href="readme/ant-parameters-javahelp-transformation.dita" navtitle="JavaHelp transformation"/>
         <topicref href="readme/ant-parameters-xhtml-transformation.dita" navtitle="XHTML transformation"/>
       </relcell>
@@ -217,10 +217,10 @@
         <topicref href="readme/ant-parameters-common-html-transtypes.dita" navtitle="HTML-based tranformations"/>
       </relcell>
       <relcell>
-        <topicref href="readme/ant-parameters-eclipse-content-transformation.dita"
+        <topicref href="readme/ant-parameters-eclipsecontent-transformation.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="readme/ant-parameters-eclipse-help-transformation.dita" navtitle="Eclipse help transformation"/>
-        <topicref href="readme/ant-parameters-html-help-transformation.dita"/>
+        <topicref href="readme/ant-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help transformation"/>
+        <topicref href="readme/ant-parameters-htmlhelp-transformation.dita"/>
         <topicref href="readme/ant-parameters-javahelp-transformation.dita" navtitle="JavaHelp transformation"/>
         <topicref href="readme/ant-parameters-xhtml-transformation.dita" navtitle="XHTML transformation"/>
       </relcell>

@@ -5,18 +5,19 @@
 <map>
   <title>Reference</title>
   <topicref href="dita-ot_ant_properties.dita" navtitle="Ant parameters">
-    <topicref href="ant-parameters-all-transformation-types.dita" navtitle="All transformation types"/>
-    <topicref href="ant-parameters-common-html-transtypes.dita" navtitle="HTML-based tranformations">
+    <topicref href="ant-parameters-base-transformation.dita" navtitle="All transformation types"/>
+    <topicref href="ant-parameters-base-html-transformation.dita" navtitle="HTML-based tranformations">
       <topicref href="generate-copy-outer.dita" toc="no"/>
     </topicref>
-    <topicref href="ant-parameters-eclipse-content-transformation.dita" navtitle="Eclipse content transformation"/>
-    <topicref href="ant-parameters-eclipse-help-transformation.dita" navtitle="Eclipse help transformation"/>
-    <topicref href="ant-parameters-html-help-transformation.dita" navtitle="HTML Help transformation" platform="windows"/>
+    <topicref href="ant-parameters-eclipsecontent-transformation.dita" navtitle="Eclipse content transformation"/>
+    <topicref href="ant-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help transformation"/>
+    <topicref href="ant-parameters-htmlhelp-transformation.dita" navtitle="HTML Help transformation" platform="windows"/>
     <topicref href="ant-parameters-javahelp-transformation.dita" navtitle="JavaHelp transformation"/>
     <topicref href="ant-parameters-odt-transformation.dita" navtitle="ODT transformation"/>
     <topicref href="ant-parameters-other.dita" navtitle="Other"/>
     <topicref href="ant-parameters-pdf2-transformation.dita" navtitle="PDF2 transformation"/>
     <topicref href="ant-parameters-xhtml-transformation.dita" navtitle="XHTML transformation"/>
+    <topicref href="ant-parameters-details.dita" processing-role="resource-only" toc="no"/>
   </topicref>
   <topicref href="dita-command-properties.dita" navtitle="Dita command options and parameters" product="client"/>
   <topicref href="../dev_ref/configuring-the-dita-ot.dita">

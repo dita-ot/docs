@@ -76,9 +76,13 @@
     <property name="params.xsl" location="${basedir}/params.xsl"/>
     <property name="params.input" location="${resource.dir}/plugins.xml"/>
     <property name="params.outputtopic" location="${basedir}/readme/ant-parameters.dita"/>
+    <dirname property="params.outputdir" file="${params.outputtopic}"/>
+    <makeurl property="params.outputdir.uri" file="${params.outputdir}" validate="false"/>
     
     <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
-    <xslt in="${params.input}" out="${params.outputtopic}" style="${params.xsl}"/>
+    <xslt in="${params.input}" out="${params.outputtopic}" style="${params.xsl}" force="yes">
+      <param name="output-dir.url" expression="${params.outputdir.uri}"/>
+    </xslt>
   </target>
 
   <target name="generate-platform-filter" depends="init" description="Generate platform filter file">

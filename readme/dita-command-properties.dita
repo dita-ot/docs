@@ -68,7 +68,7 @@
           <pt><parmname>-f</parmname>, <parmname>-format</parmname>
             <varname>name</varname></pt>
           <pd
-            conref="ant-parameters-all-transformation-types.dita#ant-parameters-all-transformation-types/transtype.desc"
+            conref="ant-parameters-base-transformation.dita#ant-parameters-base-transformation/transtype.desc"
           />
         </plentry>
         <plentry>
@@ -115,14 +115,14 @@
           <pt><parmname>-filter</parmname>
             <varname>file</varname></pt>
           <pd
-            conref="ant-parameters-all-transformation-types.dita#ant-parameters-all-transformation-types/args.filter.desc"
+            conref="ant-parameters-base-transformation.dita#ant-parameters-base-transformation/args.filter.desc"
           />
         </plentry>
         <plentry>
           <pt><parmname>-temp</parmname>
             <varname>dir</varname></pt>
           <pd
-            conref="ant-parameters-all-transformation-types.dita#ant-parameters-all-transformation-types/dita.temp.dir.desc"
+            conref="ant-parameters-base-transformation.dita#ant-parameters-base-transformation/dita.temp.dir.desc"
           />
         </plentry>
         <plentry>

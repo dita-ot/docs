@@ -20,9 +20,9 @@
     <topicref href="ant-parameters-details.dita" processing-role="resource-only" toc="no"/>
   </topicref>
   <topicref href="dita-command-properties.dita" navtitle="Dita command options and parameters" product="client"/>
-  <topicref href="../dev_ref/configuring-the-dita-ot.dita">
-    <topicref href="../dev_ref/lib-org.dita.dost.platform-plugin.properties.dita"/>
+  <topicref href="configuring-the-dita-ot.dita">
+    <topicref href="lib-org.dita.dost.platform-plugin.properties.dita"/>
     <topicref href="configuration.dita" navtitle="lib/configuration.properties file"/>
   </topicref>
-  <topicref href="../dev_ref/ant-properties.dita"/>
+  <topicref href="ant-properties.dita"/>
 </map>

@@ -24,8 +24,8 @@
   <part navtitle="User Guide" href="readme/DITA-readme.xml">
     <chapter href="readme.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Parameter Reference" href="readme/reference.dita">
-    <chapter navtitle="Parameter Reference" href="readme/reference.ditamap" format="ditamap"/>
+  <part navtitle="Parameter Reference" href="parameters/index.dita">
+    <chapter navtitle="Parameter Reference" href="parameters/reference.ditamap" format="ditamap"/>
   </part>
   <part navtitle="Developer Reference" href="dev_ref/developer-reference.dita">
     <chapter navtitle="Developer Reference" href="dev_ref/dev_ref.ditamap" format="ditamap"/>

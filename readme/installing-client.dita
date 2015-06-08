@@ -42,8 +42,12 @@
       <step importance="optional">
         <cmd>Add the absolute path for the <filepath>bin</filepath> directory to the <varname>PATH</varname> system
           variable.</cmd>
-        <stepresult>This defines the necessary environment variable to run the <cmdname>dita</cmdname> command from the
-          command line.</stepresult>
+        <stepresult>
+          <p>This defines the necessary environment variable to run the <cmdname>dita</cmdname> command from the command
+            line.</p>
+          <note type="tip">This step is recommended, as it allows the the <cmdname>dita</cmdname> command to be run from
+            any location on the file system and makes it easier to transform DITA content from any folder.</note>
+        </stepresult>
       </step>
     </steps>
   </taskbody>

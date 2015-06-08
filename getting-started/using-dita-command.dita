@@ -8,11 +8,12 @@
   <taskbody>
     <steps>
       <step>
-        <cmd>DITA-OT client is a command-line tool, there is no graphic user interface. Open a terminal window by typing the following in search bar:</cmd>
+        <cmd>The DITA-OT client is a command-line tool, there is no graphic user interface. Open a terminal window by
+          typing the following in the search bar:</cmd>
         <info>
           <ul>
-            <li>On OS X and Linux type <userinput>Terminal</userinput>.</li>
-            <li>On Windows type <userinput>Command Prompt</userinput></li>
+            <li>On OS X and Linux, type <userinput>Terminal</userinput>.</li>
+            <li>On Windows, type <userinput>Command Prompt</userinput></li>
           </ul>
         </info>
       </step>
@@ -28,12 +29,18 @@
             <li><varname>output-dir</varname> is the output directory path for generated output.</li>
           </ul>
         </info>
-        <stepresult id="running-ditaot-results">If processing is successful, nothing is printed on the terminal window.</stepresult>
+        <stepresult id="running-ditaot-results">If processing is successful, nothing is printed in the terminal
+          window.</stepresult>
       </step>
     </steps>
     <example>
-      <p>The following command generates HTML5 output for the <filepath>sequence.ditamap</filepath> file and specifies the output is written to the <filepath>test</filepath> directory</p>
+      <p>If you have added the absolute path for the <filepath><varname>install-dir</varname>/bin</filepath> directory
+        to the <varname>PATH</varname> system variable as recommended in the previous topic, the following command
+        generates HTML5 output for the <filepath>sequence.ditamap</filepath> file and writes the output to the
+          <filepath>test</filepath> directory:</p>
       <codeblock>dita -f html5 -i samples/sequence.ditamap -o test </codeblock>
+      <p>If the <cmdname>dita</cmdname> command is not on your <varname>PATH</varname>, use the following command:</p>
+      <codeblock><varname>install-dir</varname>/bin/dita -f html5 -i samples/sequence.ditamap -o test </codeblock>
     </example>
   </taskbody>
 </task>

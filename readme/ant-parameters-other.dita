@@ -16,38 +16,33 @@
           <li>When would someone want to use the various <parmname>dita.preprocess</parmname> parameters? (Other than if
             they need to reduce Java memory consumption.) The use cases are not clear from the current description.</li>
         </ul></draft-comment>
-      <fig>
-        <title>Ant parameters: Other</title>
-        <parml>
-          <plentry>
-            <pt id="dita.preprocess.reloadstylesheet"><parmname>dita.preprocess.reloadstylesheet</parmname></pt>
-            <pt id="dita.preprocess.reloadstylesheet.conref">
-              <parmname>dita.preprocess.reloadstylesheet.conref</parmname>
-            </pt>
-            <pt id="dita.preprocess.reloadstylesheet.mapref">
-              <parmname>dita.preprocess.reloadstylesheet.mapref</parmname>
-            </pt>
-            <pt id="dita.preprocess.reloadstylesheet.mappull">
-              <parmname>dita.preprocess.reloadstylesheet.mappull</parmname>
-            </pt>
-            <pt id="dita.preprocess.reloadstylesheet.maplink">
-              <parmname>dita.preprocess.reloadstylesheet.maplink</parmname>
-            </pt>
-            <pt id="dita.preprocess.reloadstylesheet.topicpull">
-              <parmname>dita.preprocess.reloadstylesheet.topicpull</parmname>
-            </pt>
-            <pd id="dita.preprocess.reloadstylesheet.desc">Specifies whether the DITA-OT reloads the XSL style sheets
-              that are used for the transformation. The allowed values are <option>true</option> and
-                <option>false</option>; the default value is <option>false</option>.<note type="tip">Set the parameter
-                to <option>true</option> if you want to use more than one set of style sheets to process a collection of
-                topics. The parameter also is useful for large projects that generate Java out-of-memory errors during
-                transformation. Alternatively, you can adjust the size of your Java memory heap if setting
-                  <codeph>dita.preprocess.reloadstylesheet</codeph> for this reason.</note></pd>
-          </plentry>
-
-        </parml>
-
-      </fig>
+      <parml>
+        <plentry>
+          <pt id="dita.preprocess.reloadstylesheet"><parmname>dita.preprocess.reloadstylesheet</parmname></pt>
+          <pt id="dita.preprocess.reloadstylesheet.conref">
+            <parmname>dita.preprocess.reloadstylesheet.conref</parmname>
+          </pt>
+          <pt id="dita.preprocess.reloadstylesheet.mapref">
+            <parmname>dita.preprocess.reloadstylesheet.mapref</parmname>
+          </pt>
+          <pt id="dita.preprocess.reloadstylesheet.mappull">
+            <parmname>dita.preprocess.reloadstylesheet.mappull</parmname>
+          </pt>
+          <pt id="dita.preprocess.reloadstylesheet.maplink">
+            <parmname>dita.preprocess.reloadstylesheet.maplink</parmname>
+          </pt>
+          <pt id="dita.preprocess.reloadstylesheet.topicpull">
+            <parmname>dita.preprocess.reloadstylesheet.topicpull</parmname>
+          </pt>
+          <pd id="dita.preprocess.reloadstylesheet.desc">Specifies whether the DITA-OT reloads the XSL style sheets
+            that are used for the transformation. The allowed values are <option>true</option> and
+              <option>false</option>; the default value is <option>false</option>.<note type="tip">Set the parameter
+              to <option>true</option> if you want to use more than one set of style sheets to process a collection of
+              topics. The parameter also is useful for large projects that generate Java out-of-memory errors during
+              transformation. Alternatively, you can adjust the size of your Java memory heap if setting
+                <codeph>dita.preprocess.reloadstylesheet</codeph> for this reason.</note></pd>
+        </plentry>
+      </parml>
     </section>
   </refbody>
 </reference>

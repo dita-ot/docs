@@ -66,7 +66,7 @@
     <section id="section_h3h_jsx_1h">
       <title>Link processing</title>
       <p>When the value of <codeph>href</codeph> attribute is not a valid URI reference, <msgnum>DOTJ054E</msgnum> error
-        is thrown. Depending on <xref href="../parameters/configuration.dita#configuration/processing-mode">error recover
+        is thrown. Depending on <xref href="../parameters/lib-configuration-properties.dita#configuration/processing-mode">error recover
           mode</xref>, error recover may be attempted.</p>
     </section>
     <section>

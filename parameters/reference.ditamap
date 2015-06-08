@@ -4,7 +4,7 @@
 
 <map>
   <title>Reference</title>
-  <topicref href="dita-ot_ant_properties.dita" navtitle="Ant parameters">
+  <topicref href="ant-parameters_intro.dita" navtitle="Ant parameters">
     <topicref href="ant-parameters-base-transformation.dita" navtitle="All transformation types"/>
     <topicref href="ant-parameters-base-html-transformation.dita" navtitle="HTML-based tranformations">
       <topicref href="generate-copy-outer.dita" toc="no"/>
@@ -19,10 +19,10 @@
     <topicref href="ant-parameters-html5-transformation.dita" navtitle="XHTML transformation"/>
     <topicref href="ant-parameters-details.dita" processing-role="resource-only" toc="no"/>
   </topicref>
-  <topicref href="dita-command-properties.dita" navtitle="Dita command options and parameters" product="client"/>
-  <topicref href="configuring-the-dita-ot.dita">
-    <topicref href="lib-org.dita.dost.platform-plugin.properties.dita"/>
-    <topicref href="configuration.dita" navtitle="lib/configuration.properties file"/>
+  <topicref href="dita-command-arguments.dita" navtitle="Dita command options and parameters" product="client"/>
+  <topicref href="configuration-properties.dita">
+    <topicref href="lib-plugin-properties.dita"/>
+    <topicref href="lib-configuration-properties.dita" navtitle="lib/configuration.properties file"/>
   </topicref>
-  <topicref href="ant-properties.dita"/>
+  <topicref href="internal-ant-properties.dita"/>
 </map>

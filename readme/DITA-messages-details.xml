@@ -67,7 +67,7 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA002F-extra" conaction="pushreplace">The input parameter was not
           specified, so there is no DITA or DITAMAP file to transform. Ensure the parameter is set properly; see <xref
-            href="../parameters/dita-ot_ant_properties.dita">DITA-OT Ant arguments</xref> if you are unsure how to specify the input
+            href="../parameters/ant-parameters_intro.dita">DITA-OT Ant arguments</xref> if you are unsure how to specify the input
           file.</stentry>
       </strow>
       <strow>
@@ -218,14 +218,14 @@
         <stentry conref="DITA-messages.xml#msgs/DOTJ035F-extra" conaction="pushreplace">This will appear when a topic is
           outside the scope of the map; for example, if the main input map references
             <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be created
-          outside of the output directory. See <xref href="../parameters/dita-ot_ant_properties.dita">DITA-OT Ant arguments
+          outside of the output directory. See <xref href="../parameters/ant-parameters_intro.dita">DITA-OT Ant arguments
             (outer.control and generate.copy.outer)</xref> for details.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ036W-extra" conaction="pushreplace">This will appear when a topic is
           outside the scope of the map; for example, if the main input map references
             <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be created
-          outside of the output directory. See <xref href="../parameters/dita-ot_ant_properties.dita">DITA-OT Ant arguments
+          outside of the output directory. See <xref href="../parameters/ant-parameters_intro.dita">DITA-OT Ant arguments
             (outer.control and generate.copy.outer)</xref> for details.</stentry>
       </strow>
       <strow>
@@ -312,7 +312,7 @@
             map directory are not supported by default, as this could allow a reference to access and display any
             restricted or hidden file on the system. If you are certain that the path is valid and the file should be
             loaded, the current workaround is to set a parameter to allow these references. See <xref
-              href="../parameters/dita-ot_ant_properties.dita">DITA-OT Ant arguments (outer.control and generate.copy.outer)</xref>
+              href="../parameters/ant-parameters_intro.dita">DITA-OT Ant arguments (outer.control and generate.copy.outer)</xref>
             for details.</p></stentry>
       </strow>
       <strow>
@@ -638,7 +638,7 @@
           the specified file in order to retrive a title or short description, but the file could not be found. If the
           file exists, it is possible that a DITAVAL file was used to remove the file's contents from the build. Another
           possibility is that the file is located outside of the scope of the main input directory, and was not
-          available because the <xref href="../parameters/dita-ot_ant_properties.dita">onlytopic.in.map</xref> parameter was
+          available because the <xref href="../parameters/ant-parameters_intro.dita">onlytopic.in.map</xref> parameter was
           specified. Be aware that the path information above may not match the link in your topic.</stentry>
       </strow>
       <strow>

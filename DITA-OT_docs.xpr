@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="16.1">
+<project version="17.0">
     <meta>
         <filters directoryPatterns="out, temp" filePatterns="Icon.png" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="16.1" xml:space="preserve">
+            <serialized version="17.0" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>editor.hard.line.wrap</String>
@@ -20,6 +20,10 @@
                     <entry>
                         <String>key.editor.format.option.pane.group</String>
                         <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>keys.context</String>
+                        <String>${pdu}/userguide.ditamap</String>
                     </entry>
                     <entry>
                         <String>scenario.associations</String>
@@ -117,9 +121,6 @@
                                             </field>
                                             <field name="type">
                                                 <Integer>4</Integer>
-                                            </field>
-                                            <field name="isPredefined">
-                                                <Boolean>true</Boolean>
                                             </field>
                                             <field name="possibleValues">
                                                 <String-array>

@@ -4,6 +4,9 @@
 
 <reference id="dita-command-properties" xml:lang="en">
   <title><cmdname>dita</cmdname> command arguments and options</title>
+  <titlealts>
+    <navtitle>DITA command arguments</navtitle>
+  </titlealts>
   <shortdesc>The <cmdname>dita</cmdname> command takes mandatory arguments to process DITA, manage plug-in, or print
     information about the command. Options can be used modify the command behaviour or provide additional
     configuration.</shortdesc>

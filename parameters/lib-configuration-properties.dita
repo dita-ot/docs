@@ -3,18 +3,29 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="configuration" xml:lang="en">
-  <title><filepath>lib/configuration.properties</filepath> file</title>
+  <title><filepath>configuration.properties</filepath> file</title>
   <shortdesc>The <filepath>lib/configuration.properties</filepath> file controls certain common properties, as well as
     some properties that control PDF processing.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>configuration
-            properties<indexterm>default.language</indexterm><indexterm>generate-debug-attributes</indexterm><indexterm>processing-mode</indexterm><indexterm>org.dita.pdf2.i18n.enabled</indexterm><indexterm>org.dita.pdf2.use-out-temp</indexterm></indexterm>
-        <indexterm>files<indexterm>lib/configuration.properties file</indexterm><indexterm>topic.fo
-          file</indexterm></indexterm>
-        <indexterm>topic.fo<indexterm>location of</indexterm></indexterm>
-        <indexterm>PDF processing<indexterm>configuration properties</indexterm></indexterm>
+        <indexterm>configuration properties 
+          <indexterm>default.language</indexterm>
+          <indexterm>generate-debug-attributes</indexterm>
+          <indexterm>processing-mode</indexterm>
+          <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
+          <indexterm>org.dita.pdf2.use-out-temp</indexterm>
+        </indexterm>
+        <indexterm>files
+          <indexterm>lib/configuration.properties file</indexterm>
+          <indexterm>topic.fo file</indexterm>
+        </indexterm>
+        <indexterm>topic.fo
+          <indexterm>location of</indexterm>
+        </indexterm>
+        <indexterm>PDF processing
+          <indexterm>configuration properties</indexterm>
+        </indexterm>
       </keywords>
     </metadata>
   </prolog>

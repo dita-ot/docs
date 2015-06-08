@@ -3,10 +3,12 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <task id="installing-client" xml:lang="en-us">
-  <title>Installing the client package</title>
-  <shortdesc id="what-is-client">For the simplest installation experience, install the client package. This package can
-    be installed on Linux, Mac OS&#xA0;X, and Windows. It contains everything that you need to run the DITA-OT except
-    for Java.</shortdesc>
+  <title>Installing the distribution package</title>
+  <titlealts>
+    <navtitle>Installing the toolkit</navtitle>
+  </titlealts>
+  <shortdesc id="what-is-client">The DITA-OT distribution package can be installed on Linux, Mac OS&#xA0;X, and Windows.
+    It contains everything that you need to run the toolkit except for Java.</shortdesc>
   <taskbody>
     <prereq>
       <ul>
@@ -17,20 +19,20 @@
     </prereq>
     <steps>
       <step>
-        <cmd>Download the client package from the project website at <xref keyref="download.dita-ot.current-release"
-            >www.dita-ot.org</xref>.</cmd>
-        <choicetable frame="topbot" relcolwidth="1.50* 4.0*">
+        <cmd>Download the distribution package from the project website at <xref
+            keyref="download.dita-ot.current-release">www.dita-ot.org</xref>.</cmd>
+        <choicetable frame="topbot">
           <chhead>
             <choptionhd>Operating system</choptionhd>
             <chdeschd>File name</chdeschd>
           </chhead>
           <chrow platform="linux osx">
             <choption>Linux or Mac OS&#xA0;X</choption>
-            <chdesc><filepath>DITA-OT<keyword keyref="version"/>_client_bin.tar.gz</filepath></chdesc>
+            <chdesc><filepath>DITA-OT<keyword keyref="version"/>.tar.gz</filepath></chdesc>
           </chrow>
           <chrow platform="windows">
             <choption>Windows</choption>
-            <chdesc><filepath>DITA-OT<keyword keyref="version"/>_client_bin.zip</filepath></chdesc>
+            <chdesc><filepath>DITA-OT<keyword keyref="version"/>.zip</filepath></chdesc>
           </chrow>
         </choicetable>
       </step>
@@ -41,7 +43,7 @@
         <cmd>Add the absolute path for the <filepath>bin</filepath> directory to the <varname>PATH</varname> system
           variable.</cmd>
         <stepresult>This defines the necessary environment variable to run the <cmdname>dita</cmdname> command from the
-          command-line.</stepresult>
+          command line.</stepresult>
       </step>
     </steps>
   </taskbody>

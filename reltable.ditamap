@@ -30,7 +30,7 @@
         </topicref>
       </relcell>
       <relcell>
-        <topicref href="readme/DITA-globalization-xhtml.dita">
+        <topicref href="user-guide/DITA-globalization-xhtml.dita">
           <topicmeta>
             <linktext>Languages supported by the core toolkit</linktext>
           </topicmeta>
@@ -47,12 +47,12 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="readme/ant.dita" navtitle="Ant overview"/>
+        <topicref href="user-guide/ant.dita" navtitle="Ant overview"/>
       </relcell>
       <relcell>
         <topicgroup collection-type="family">
-          <topicref href="readme/DITA-antuse.xml" navtitle="Building output using Ant"/>
-          <topicref href="readme/creating-an-ant-build-script.dita" navtitle="Creating an Ant build script"/>
+          <topicref href="user-guide/DITA-antuse.xml" navtitle="Building output using Ant"/>
+          <topicref href="user-guide/creating-an-ant-build-script.dita" navtitle="Creating an Ant build script"/>
         </topicgroup>
       </relcell>
       <relcell>
@@ -63,10 +63,10 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="readme/ant.dita" navtitle="Ant overview"/>
+        <topicref href="user-guide/ant.dita" navtitle="Ant overview"/>
       </relcell>
       <relcell>
-        <topicref href="readme/DITA-ant.xml"/>
+        <topicref href="user-guide/DITA-ant.xml"/>
       </relcell>
       <relcell>
         <topicref href="parameters/ant-parameters_intro.dita" navtitle="Ant parameters"/>
@@ -74,7 +74,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="readme/dita2eclipsecontent.dita">
+        <topicref href="user-guide/dita2eclipsecontent.dita">
           <topicmeta>
             <linktext>Eclipse content transformation</linktext>
           </topicmeta>
@@ -88,7 +88,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="readme/dita2eclipsehelp.dita">
+        <topicref href="user-guide/dita2eclipsehelp.dita">
           <topicmeta>
             <linktext>Eclipse help transformation</linktext>
           </topicmeta>
@@ -101,7 +101,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="readme/dita2htmlhelp.dita" platform="windows">
+        <topicref href="user-guide/dita2htmlhelp.dita" platform="windows">
           <topicmeta>
             <linktext>HTML help transformation</linktext>
           </topicmeta>
@@ -114,7 +114,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="readme/dita2javahelp.dita">
+        <topicref href="user-guide/dita2javahelp.dita">
           <topicmeta>
             <linktext>JavaHelp transformation</linktext>
           </topicmeta>
@@ -127,7 +127,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="readme/dita2odt.dita">
+        <topicref href="user-guide/dita2odt.dita">
           <topicmeta>
             <linktext>ODT transformation</linktext>
           </topicmeta>
@@ -140,7 +140,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="readme/dita2pdf.dita">
+        <topicref href="user-guide/dita2pdf.dita">
           <topicmeta>
             <linktext>PDF transformation</linktext>
           </topicmeta>
@@ -153,12 +153,12 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="readme/dita2xhtml.dita">
+        <topicref href="user-guide/dita2xhtml.dita">
           <topicmeta>
             <linktext>XHTML transformation</linktext>
           </topicmeta>
         </topicref>
-        <topicref href="readme/dita2html5.dita">
+        <topicref href="user-guide/dita2html5.dita">
           <topicmeta>
             <linktext>HTML5 transformation</linktext>
           </topicmeta>
@@ -230,7 +230,7 @@
     <title>External resources</title>
     <relrow>
       <relcell>
-        <topicref href="readme/overview-of-dita-ot.dita" navtitle="Overview of the DITA Open Toolkit"/>
+        <topicref href="user-guide/overview-of-dita-ot.dita" navtitle="Overview of the DITA Open Toolkit"/>
       </relcell>
       <relcell>
         <topicref href="http://www.apache.org/licenses/LICENSE-2.0" navtitle="Apache License, version 2.0" format="html"
@@ -239,7 +239,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="readme/dita2eclipsehelp.dita"/>
+        <topicref href="user-guide/dita2eclipsehelp.dita"/>
       </relcell>
       <relcell>
         <topicref href="http://eclipse.org" navtitle="Official Eclipse Web site" format="html" scope="external"/>
@@ -247,7 +247,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="readme/DITA-globalization.dita"/>
+        <topicref href="user-guide/DITA-globalization.dita"/>
       </relcell>
       <relcell>
         <topicref format="html" href="http://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/translation.html"

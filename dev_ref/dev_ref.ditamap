@@ -59,7 +59,7 @@
   </topicset>
   <topicref rev="1.7" href="flagging-migration.dita" navtitle="Migrating style sheets and XSLT overrides"
     locktitle="yes"/>
-  <topicref href="../readme/dita2pdf-customization.dita"/>
+  <topicref href="../user-guide/dita2pdf-customization.dita"/>
   <topicref href="DITA1.2-implementation-dependent-features.dita"/>
   <topicref href="extended-functionality.dita"/>
   <!-- XXX: is this obsolete? 2 April 2013: Commented out; high priority to write new topic about topic merge-->
@@ -83,8 +83,8 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../readme/plugins-installing.dita" linking="targetonly"/>
-        <topicref href="../readme/plugins-removing.dita" linking="targetonly"/>
+        <topicref href="../user-guide/plugins-installing.dita" linking="targetonly"/>
+        <topicref href="../user-guide/plugins-removing.dita" linking="targetonly"/>
       </relcell>
       <relcell>
         <topicref href="extending-the-ot.dita" linking="sourceonly"/>

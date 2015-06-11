@@ -5,6 +5,8 @@
 <reference id="rel2.1" xml:lang="en">
   <title>DITA Open Toolkit 2.1 Release Notes</title>
 
+  <shortdesc>DITA Open Toolkit 2.1 is a maintenance release which includes fixes for reported issues.</shortdesc>
+
   <!--
   <reference id="releasehighlights">
     <title>Release Highlights</title>
@@ -149,8 +151,8 @@
       </section>
       <section>
         <title>Maintenance Release 2.0.1</title>
-        <note>DITA Open Toolkit Release 2.1 Milestone 1 also includes the following bug fixes that were released
-          earlier this year with maintenance version 2.0.1.</note>
+        <note>DITA Open Toolkit Release 2.1 also includes the following bug fixes that were released earlier this year
+          with maintenance version 2.0.1.</note>
         <ul>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1744" format="html" scope="external">#1744</xref>

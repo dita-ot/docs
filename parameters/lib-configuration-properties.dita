@@ -41,7 +41,7 @@
               values are those that are defined in IETF BCP 47, <xref href="https://tools.ietf.org/html/bcp47"
                 format="html" scope="external">Tags for Identifying Languages</xref>.</pd>
           </plentry>
-          <plentry id="generate-debug-attributes">
+          <!--plentry id="generate-debug-attributes">
             <pt><parmname>generate-debug-attributes</parmname></pt>
             <pd id="generate-debug-attributes.desc">Specifies whether the @xtrf and @xtrc debugging attributes are
               generated in the temporary files. The following values are allowed: <ul>
@@ -61,7 +61,7 @@
                 <li><option>skip</option> — When an error is encountered, the DITA continues processing but does not
                   attempt error recovery.</li>
               </ul></pd>
-          </plentry>
+          </plentry-->
           <plentry id="org.dita.pdf2.i18n.enabled">
             <pt><parmname>org.dita.pdf2.i18n.enabled</parmname></pt>
             <pd id="org.dita.pdf2.i18n.enabled.desc">(PDF transformation only) Enables I18N font processing. The

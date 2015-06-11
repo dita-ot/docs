@@ -13,8 +13,7 @@
       <properties>
         <property name="args.gen.task.lbl" value="YES"/>
         <property name="args.input" value="site.ditamap"/>
-        <property name="args.rellinks" value="all"/>
-        <property name="args.hide.parent.link" value="yes"/>
+        <property name="args.rellinks" value="noparent"/>
       </properties>
     </dita-ot>
   </target>

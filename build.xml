@@ -64,7 +64,7 @@
   </target>
 
   <target name="generate-msg-topic" depends="init" description="Regenerate message file">
-    <property name="message.xsl" location="${basedir}/messages.xsl"/>
+    <property name="message.xsl" location="${basedir}/resources/messages.xsl"/>
     <property name="message.input" location="${resource.dir}/messages.xml"/>
     <property name="message.outputtopic" location="${basedir}/readme/DITA-messages.xml"/>
 
@@ -73,7 +73,7 @@
   </target>
 
   <target name="generate-params-topic" depends="init" description="Regenerate parameters file">
-    <property name="params.xsl" location="${basedir}/params.xsl"/>
+    <property name="params.xsl" location="${basedir}/resources/params.xsl"/>
     <property name="params.input" location="${resource.dir}/plugins.xml"/>
     <property name="params.outputtopic" location="${basedir}/parameters/ant-parameters.dita"/>
     <dirname property="params.outputdir" file="${params.outputtopic}"/>

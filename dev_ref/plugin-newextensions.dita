@@ -32,8 +32,8 @@
       <dl>
         <dlentry>
           <dt><codeph>org.dita.dost.platform.CheckTranstypeAction</codeph></dt>
-          <dd>Create Ant condition elements to check if <codeph>${transtype}</codeph> property value equals a supported
-            transtype value.</dd>
+          <dd>Create Ant condition elements to check if the <codeph>${transtype}</codeph> property value equals a supported
+            transformation type value.</dd>
         </dlentry>
         <dlentry>
           <dt><codeph>org.dita.dost.platform.ImportAntLibAction</codeph></dt>
@@ -78,7 +78,7 @@
         </dlentry>
         <dlentry>
           <dt><codeph>org.dita.dost.platform.ListTranstypeAction</codeph></dt>
-          <dd>Create a pipe delimited list of supported transtypes.</dd>
+          <dd>Create a pipe delimited list of supported transformation types.</dd>
         </dlentry>
       </dl>
     </section>

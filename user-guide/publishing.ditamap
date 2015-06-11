@@ -13,7 +13,7 @@
       <topicref href="dita2htmlhelp.dita" platform="windows"/>
       <topicref href="dita2odt.dita"/>
       <topicref href="dita2pdf.dita"/>
-      <topicref href="dita2word.xml"/>
+      <topicref href="dita2wordrtf.dita"/>
       <topicref href="dita2tocjs.dita"/>
       <topicref href="dita2troff.dita"/>
       <topicref href="dita2xhtml.dita"/>
@@ -21,9 +21,9 @@
     <topicref href="dita-command.dita" product="client">
       <topicref href="using-dita-command.dita"/>
     </topicref>
-    <topicref href="DITA-ant.xml" navtitle="Running DITA-OT from Ant">
+    <topicref href="publishing-with-ant.dita" navtitle="Running DITA-OT from Ant">
       <topicref href="ant.dita" navtitle="Ant overview"/>
-      <topicref href="DITA-antuse.xml" navtitle="Building output using Ant"/>
+      <topicref href="building-with-ant.dita" navtitle="Building output using Ant"/>
       <topicref href="creating-an-ant-build-script.dita" navtitle="Creating an Ant build script"/>
     </topicref>
   </topicref>

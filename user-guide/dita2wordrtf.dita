@@ -16,7 +16,7 @@
         <li>Flagging, filtering, and revision bars are not supported.</li>
         <li>Style attributes for tables are not supported.</li>
         <li>Tables within list items are not supported.</li>
-        <li>Output styles supported by other DITA-OT transformations, for example, X and Y, are not supported.</li>
+        <li>Certain output styles supported by other DITA-OT transformations<!--, for example, X and Y,--> are not supported.</li>
       </ul><draft-comment author="Kristen James Eberlein" time="11 August 2012">What can we replace X and Y with? The
         original text read "There may be no output style applied on contents of some tags in Word RTF output compared
         with other output." Also, what does "Style attributes for tables are not supported" mean? </draft-comment>

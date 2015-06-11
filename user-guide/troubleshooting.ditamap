@@ -8,8 +8,8 @@
     <topicref href="DITA-messages.xml">
       <topicref href="DITA-messages-details.xml" processing-role="resource-only"/>
     </topicref>
-    <topicref href="DITA-troubleshooting.xml"/>
-    <topicref href="DITA-log.xml"/>
+    <topicref href="other-errors.dita"/>
+    <topicref href="log-files.dita"/>
     <topicref href="dita-command-help.dita"/>
     <topicref href="determining-version-of-ditaot.dita" navtitle="Determining version of the DITA OT"/>
     <topicref href="enabling-debug-mode.dita"/>

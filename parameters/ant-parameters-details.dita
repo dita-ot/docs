@@ -104,7 +104,7 @@
           </plentry>
           <plentry id="generate-debug-attributes">
             <pt><parmname>generate-debug-attributes</parmname></pt>
-            <pd conaction="mark" conref="ant-parameters-base-transformation.dita#ant-parameters-base-transformation/generate-debug-attributes"/>
+            <pd conaction="mark" conref="ant-parameters-base-transformation.dita#ant-parameters-base-transformation/generate-debug-attributes.desc"/>
             <pd conaction="pushafter"><note>Disabling debugging attributes reduces the size of temporary files and thus reduces memory
               consumption. However, the log messages no longer have the source information available and thus the
               ability to debug problems might deteriorate.</note></pd>

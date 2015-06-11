@@ -100,7 +100,8 @@
     <example>
       <title>Example</title>
       <p>The following plug-in defines <filepath>myBuildFile_template.xml</filepath> as a new template for extensions,
-        and two new extension points.</p><?Pub Caret -1?><codeblock>&lt;plugin id="com.example.new-extensions">
+        and two new extension points.</p>
+      <codeblock>&lt;plugin id="com.example.new-extensions">
   &lt;extension-point id="com.example.new-extensions.pre"
                    name="Custom target preprocess"/>
   &lt;extension-point id="com.example.new-extensions.content"
@@ -122,4 +123,3 @@
     </example>
   </refbody>
 </reference>
-<?Pub *0000001608?>

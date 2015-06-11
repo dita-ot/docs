@@ -84,7 +84,6 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
             </strow>
             <strow>
               <stentry><codeph>importance</codeph></stentry>
-              <?Pub Caret 11?>
               <stentry>flag whether plug-in is required or optional</stentry>
               <stentry>no</stentry>
             </strow>
@@ -133,4 +132,4 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
     </section>
   </refbody>
 </reference>
-<?Pub *0000004256?>
+

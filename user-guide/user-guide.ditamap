@@ -2,15 +2,15 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<map id="mainDITAreadme" title="DITA-OT Readme map" xml:lang="en-us">
+<map xml:lang="en-us">
   <title>User Guide</title>
-  <mapref href="readme/overview.ditamap" format="ditamap"/>
-  <mapref href="readme/installing.ditamap" format="ditamap"/>
-  <mapref href="readme/publishing.ditamap" format="ditamap"/>
-  <topicref href="readme/extending-the-dita-ot.dita">
-    <topicref href="readme/plugins-installing.dita"/>
-    <topicref href="readme/plugins-removing.dita"/>
+  <mapref href="overview.ditamap" format="ditamap"/>
+  <mapref href="installing.ditamap" format="ditamap"/>
+  <mapref href="publishing.ditamap" format="ditamap"/>
+  <topicref href="extending-the-dita-ot.dita">
+    <topicref href="plugins-installing.dita"/>
+    <topicref href="plugins-removing.dita"/>
   </topicref>
-  <mapref href="readme/globalizing.ditamap" format="ditamap"/>
-  <mapref href="readme/troubleshooting.ditamap" format="ditamap"/>
+  <mapref href="globalizing.ditamap" format="ditamap"/>
+  <mapref href="troubleshooting.ditamap" format="ditamap"/>
 </map>

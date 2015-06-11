@@ -21,8 +21,8 @@
     </booklists>
   </frontmatter>
   <chapter format="ditamap" href="getting-started/getting-started.ditamap"/>
-  <part navtitle="User Guide" href="readme/DITA-readme.xml">
-    <chapter href="readme.ditamap" format="ditamap"/>
+  <part navtitle="User Guide" href="user-guide/DITA-readme.xml">
+    <chapter href="user-guide/user-guide.ditamap" format="ditamap"/>
   </part>
   <part navtitle="Parameter Reference" href="parameters/index.dita">
     <chapter navtitle="Parameter Reference" href="parameters/reference.ditamap" format="ditamap"/>

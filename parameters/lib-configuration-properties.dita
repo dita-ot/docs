@@ -104,7 +104,7 @@
                   additional level of complexity which should be turned off and support for multiple languages be
                   handled in XSLT code.</p></draft-comment></pd>
           </plentry>
-          <plentry id="org.dita.pdf2.use-out-temp">
+          <!--plentry id="org.dita.pdf2.use-out-temp">
             <pt><parmname>org.dita.pdf2.use-out-temp</parmname></pt>
             <pd id="org.dita.pdf2.use-out-temp.desc">(PDF transformation only) Specifies whether the XSL-FO processing
               writes the intermediate files (for example, the <filepath>topic.fo</filepath> file) to the output
@@ -112,7 +112,7 @@
                 <li><option>true</option> — Write intermediate files to the output directory</li>
                 <li><option>false</option> (default) — Write intermediate files to the temporary directory</li>
               </ul></pd>
-          </plentry>
+          </plentry-->
           <plentry id="plugindirs">
             <pt><parmname>plugindirs</parmname></pt>
             <pd id="plugindirs.desc">A semicolon-separated list of directory paths that the DITA-OT searches for

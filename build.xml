@@ -123,7 +123,7 @@
       <properties>
         <property name="args.copycss" value="yes"/>
         <property name="args.css" value="dita-ot-doc.css"/>
-        <property name="args.cssroot" value="resource"/>
+        <property name="args.cssroot" value="resources"/>
         <property name="args.gen.task.lbl" value="YES"/>
         <property name="outputFile.base" value="index"/>
       </properties>
@@ -138,7 +138,7 @@
       <properties>
         <property name="args.copycss" value="yes"/>
         <property name="args.css" value="dita-ot-doc.css"/>
-        <property name="args.cssroot" value="resource"/>
+        <property name="args.cssroot" value="resources"/>
         <property name="args.gen.task.lbl" value="YES"/>
       </properties>
     </dita-ot>

@@ -3,7 +3,7 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <concept id="processing-structure">
-  <title>DITA-OT processing structure</title>
+  <title>Processing structure</title>
   <shortdesc>The DITA-OT implements a multi-stage, map-driven architecture to process DITA content. Each stage in the
     process examines some or all of the content; some stages result in temporary files that are used by later steps,
     while others stages result in updated copies of the DITA content. Most of the processing takes place in a temporary

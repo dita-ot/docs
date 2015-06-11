@@ -3,7 +3,7 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <concept id="processing-order" xml:lang="en-us">
-  <title>DITA-OT processing order</title>
+  <title>Processing order</title>
   <shortdesc>The order of processing is often significant when evaluating DITA content. Although the DITA specification
     does not mandate a specific order for processing, the DITA-OT has determined that performing filtering before conref
     resolution best meets user expectations. Switching the order of processing, while legal, may give different results. </shortdesc>

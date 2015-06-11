@@ -3,7 +3,7 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <concept id="processing-pipeline-modules" xml:lang="en-us">
-  <title>DITA-OT processing modules</title>
+  <title>Processing modules</title>
   <shortdesc>The DITA-OT processing pipeline is implemented using Ant. Individual modules within the Ant script are
     implemented in either Java or XSLT, depending on such factors as performance or requirements for customization.
     Virtually all Ant and XSLT modules can be extended by adding a plug-in to the toolkit; new Ant targets may be

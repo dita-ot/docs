@@ -3,8 +3,8 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <map xml:lang="en-us">
-  <title>Developer's Reference</title>
-  <topicref href="DITA-OTArchitecture.dita" navtitle="Architecture of the DITA-OT">
+  <title>Developer Reference</title>
+  <topicref href="DITA-OTArchitecture.dita">
     <topicref href="processing-structure.dita"/>
     <topicref href="processing-pipeline-modules.dita"/>
     <topicref href="processing-order.dita"/>

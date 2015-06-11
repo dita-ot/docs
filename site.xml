@@ -8,12 +8,13 @@
   <target name="site">
     <local name="site.out.dir"/>
     <property name="site.out.dir" location="${doc.out.dir}/site"/>
-
-    <dita-ot transtype="net.sourceforge.dita-ot.html" input="site.ditamap" output="${site.out.dir}">
+    
+    <dita-ot transtype="org.dita-ot.html" input="site.ditamap" output="${site.out.dir}">
       <properties>
         <property name="args.gen.task.lbl" value="YES"/>
         <property name="args.input" value="site.ditamap"/>
         <property name="args.rellinks" value="all"/>
+        <property name="args.hide.parent.link" value="yes"/>
       </properties>
     </dita-ot>
   </target>

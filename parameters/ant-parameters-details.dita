@@ -130,7 +130,7 @@
           <plentry id="output.dir">
             <pt><parmname>output.dir</parmname></pt>
             <pd conaction="mark" conref="ant-parameters-base-transformation.dita#ant-parameters-base-transformation/output.dir.desc"/>
-            <pd conaction="pushafter">By default, the output is written to <filepath><varname>DITA-dir</varname>\out</filepath>.</pd>
+            <pd conaction="pushafter">By default, the output is written to <filepath><varname>DITA-dir</varname>/out</filepath>.</pd>
           </plentry>
           <!--plentry id="processing-mode">
             <pt><parmname>processing-mode</parmname></pt>

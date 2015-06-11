@@ -9,10 +9,10 @@
   <refbody>
     <section>
       <p>This <filepath>plugin.xml</filepath> file would go into a directory such as
-          <filepath>DITA-OT\plugins\music\</filepath> and referenced supporting files would also exist in that
+          <filepath>DITA-OT/plugins/music/</filepath> and referenced supporting files would also exist in that
         directory. A more extensive sample using these values is available in the actual music plug-in, available at the
           <xref format="html" href="http://sourceforge.net/projects/dita-ot/files/" scope="external">DITA-OT download
-          page</xref> at SourceForge </p><?Pub Caret -2?>
+          page</xref> at SourceForge </p>
     </section>
     <example><codeblock>&lt;plugin id="org.metadita.specialization.music">
   &lt;feature extension="dita.specialization.catalog.relative" file="catalog-dita.xml">
@@ -20,4 +20,4 @@
 &lt;/plugin></codeblock></example>
   </refbody>
 </reference>
-<?Pub *0000001339?>
+

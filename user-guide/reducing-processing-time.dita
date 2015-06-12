@@ -11,12 +11,12 @@
    <body>
       <section>
          <title>Disable debug attribute generation</title>
-         <p>The <codeph>lib/configuration.properties</codeph> file has a property
-               <codeph>generate-debug-attributes</codeph>. By changing the value to <codeph>false</codeph>, DITA-OT will
-            no longer generate the <codeph>xtrf</codeph> and <codeph>xtrc</codeph> debug attributes. This will make it
-            more difficult to track down at which source file location a given issue may have originated from, but it
-            will reduce the size of the temporary files. As a result, XML parsing will take less time and overall
-            processing time will be reduced.</p>
+         <p>The <parmname>generate-debug-attributes</parmname> parameter determines whether debugging attributes are
+            generated in the temporary files. By changing the value to <codeph>false</codeph>, DITA-OT will no longer
+            generate the <codeph>@xtrf</codeph> and <codeph>@xtrc</codeph> debug attributes. This will make it more
+            difficult to track down the source file location from which a given issue may have originated, but it will
+            reduce the size of the temporary files. As a result, XML parsing will take less time and overall processing
+            time will be reduced.</p>
       </section>
       <section>
          <title>Switch the order of conref and keyref processing</title>

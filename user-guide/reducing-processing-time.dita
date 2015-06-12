@@ -20,7 +20,7 @@
       <section>
          <title>Switch the order of conref and keyref processing</title>
          <p>If your DITA source uses a lot of conrefs that in turn contain a lot of keyrefs, it may speed up processing
-            if you reverse the order of the two in preprocessing. You simply need to have a copy the
+            if you reverse the order of the two in preprocessing. You simply need to have a copy of the
                <codeph>preprocess</codeph> Ant target in your plug-in and change the order there. The DITA specification
             is a good example of this, as the processing time is reduced to less than half of the original time.</p>
          <note type="other" othertype="Update">Since DITA-OT 2.0, this is the default processing order.</note>

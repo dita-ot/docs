@@ -98,7 +98,7 @@
         the chm and pdf targets each specify some optional parameters:<ul>
           <li>The <parmname>args.gen.task.lbl</parmname> property is set to YES, which ensures that headings are
             automatically generated for the sections of task topics.</li>
-          <li>The <parmname>output.dir</parmname> property specifies where the DITA OT writes the output of the
+          <li>The <parmname>output.dir</parmname> property specifies where the DITA-OT writes the output of the
             transformations.</li>
         </ul></p>
       <p>The pdf target also specifies that related links should be generated in the PDF, but only those links that are

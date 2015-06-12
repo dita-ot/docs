@@ -10,9 +10,22 @@
       <parml>
         <plentry>
           <pt><codeph>include.rellinks</codeph></pt>
-          <pd>Space separated list of link roles to be output; value token <codeph>#default</codeph> denotes default
-            role value. Property default value depends on transformation type. Defined by
-            <codeph>args.rellinks</codeph>, but may be overridden directly.</pd>
+          <pd>A space-separated list of link roles to be output; the <codeph>#default</codeph> value token represents
+            the default role value, which depends on transformation type. Defined by <codeph>args.rellinks</codeph>, but
+            may be overridden directly. Valid roles include: <ul>
+              <li>parent </li>
+              <li>child </li>
+              <li>sibling </li>
+              <li>friend </li>
+              <li>next </li>
+              <li>previous </li>
+              <li>cousin </li>
+              <li>ancestor </li>
+              <li>descendant </li>
+              <li>sample </li>
+              <li>external </li>
+              <li>other</li>
+            </ul></pd>
         </plentry>
       </parml>
       <!--

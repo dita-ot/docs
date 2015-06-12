@@ -5,7 +5,7 @@
 <reference id="rel2.1" xml:lang="en">
   <title>DITA Open Toolkit 2.1 Release Notes</title>
 
-  <shortdesc>DITA Open Toolkit 2.1 is a maintenance release which includes fixes for reported issues.</shortdesc>
+  <shortdesc>DITA Open Toolkit 2.1 is a maintenance release that includes fixes for reported issues.</shortdesc>
 
   <!--
   <reference id="releasehighlights">
@@ -62,20 +62,49 @@
         <p>DITA Open Toolkit Release 2.1 includes the following new features and changes:</p>
         <ul>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1874" format="html" scope="external">1874</xref>
-            Codephrase used in topic title has very small font </li>
+            <p>In PDF output, inline <codeph>&lt;codeph></codeph> elements in topic titles now inherit the font size
+              from the surrounding title text. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1874" format="html" scope="external">1874</xref>
+                  Codephrase used in topic title has very small font </li>
+              </ul>
+            </p>
+          </li>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1883" format="html" scope="external">1883</xref>
-            Faster implementation for ImgUtils.getWidth/getHeight </li>
+            <p>Image metadata processing has been refactored to improve the processing speed by determining width and
+              height without reading the entire image into memory. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1883" format="html" scope="external">1883</xref>
+                  Faster implementation for ImgUtils.getWidth/getHeight </li>
+              </ul>
+            </p>
+          </li>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1897" format="html" scope="external">1897</xref> DITA
-            OT 2.1.dev chm properties folder in org.dita.pdf2 </li>
+            <p> Obsolete CHM configuration files have been removed from the PDF2 plugin. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1897" format="html" scope="external">1897</xref>
+                  DITA OT 2.1.dev chm properties folder in org.dita.pdf2 </li>
+              </ul>
+            </p>
+          </li>
         </ul>
         <p>Milestone 1 included the following new features and changes:</p>
         <ul>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1179" format="html" scope="external">1179</xref> Added
-            HTML generation extension for body content</li>
+            <p>The <codeph>chapterBody</codeph> XSL template mode has been refactored to create additional HTML5 groups
+              in the generated HTML <codeph>&lt;body></codeph> element. </p>
+            <p>DITA topics are now mapped to the HTML5 <codeph>&lt;article></codeph> element, DITA
+                <codeph>&lt;section></codeph> to <codeph>&lt;section></codeph>, and DITA <codeph>&lt;fig></codeph> to
+                <codeph>&lt;figure></codeph>. </p>
+            <p>HTML5 <codeph>@aria-labelledby</codeph> accessibility attributes are also generated to associate each
+              article with its heading. This helps to improve the accessibility and interoperability of HTML output by
+              providing structural information to assistive technologies such as screen readers. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1179" format="html" scope="external">1179</xref>
+                  Added HTML generation extension for body content</li>
+              </ul>
+            </p>
+          </li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1687" format="html" scope="external">1687</xref> More
             recognized default resource extensions in the plugins base</li>

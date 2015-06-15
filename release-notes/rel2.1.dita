@@ -106,17 +106,50 @@
             </p>
           </li>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1687" format="html" scope="external">1687</xref> More
-            recognized default resource extensions in the plugins base</li>
+            <p>Additional file formats referenced from <codeph>&lt;image></codeph> elements are now copied to output.
+              Any references that are not DITA, DITA map, or image, are now treated as resources and also copied, so you
+              no longer need extra <codeph>&lt;copy></codeph> operations in your project build scripts to include such
+              assets in output. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1687" format="html" scope="external">1687</xref>
+                  More recognized default resource extensions in the plugins base</li>
+              </ul>
+            </p>
+          </li>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1703" format="html" scope="external">1703</xref> Link
-            to missing DITAVAL file should show a relevant error code in the console</li>
+            <p>DITA-OT now fails with a fatal error (DOTA013F) if a specified .ditaval filter file is not available.
+              This ensures that unexpected output is not generated if the filter file is missing or invalid. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1703" format="html" scope="external">1703</xref>
+                  Link to missing DITAVAL file should show a relevant error code in the console</li>
+              </ul>
+            </p>
+          </li>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1799" format="html" scope="external">1799</xref> Move
-            configuration options to runtime properties</li>
+            <p>The <parmname>generate-debug-attributes</parmname> and <parmname>processing-mode</parmname> configuration
+              options have been moved to runtime properties, so you can now pass these parameters at build time to
+              specify whether the <codeph>@xtrf</codeph> and <codeph>@xtrc</codeph> debugging attributes should be
+              generated, and how the DITA-OT handles errors and error recovery. For more information, see <xref
+                href="../parameters/ant-parameters-base-transformation.dita#ant-parameters-base-transformation">common
+                Ant paramters</xref>. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1799" format="html" scope="external">1799</xref>
+                  Move configuration options to runtime properties</li>
+              </ul></p>
+          </li>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1800" format="html" scope="external">1800</xref>
-            Remove old Java command line tool</li>
+            <p>The deprecated Java command line tool has been removed in favor of the <cmdname>dita</cmdname> command introduced
+              in DITA-OT 2.0. </p>
+            <p>If you previously generated output via a Java command sequence such as
+              <codeblock><cmdname>java</cmdname> -jar lib/dost.jar /i:<varname>input-file</varname> /transtype:<varname>transformation-type</varname> /<varname>parameter-name</varname>:<varname>value</varname></codeblock>
+              you should now use the following syntax instead: <codeblock><cmdname>dita</cmdname> -f <varname>transformation-type</varname> -i <varname>input-file</varname> -o <varname>output-dir</varname></codeblock>
+              <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1800" format="html" scope="external">1800</xref>
+                  Remove old Java command line tool </li>
+              </ul>
+            </p>
+          </li>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1803" format="html" scope="external">1803</xref> Use
             Commons IO</li>

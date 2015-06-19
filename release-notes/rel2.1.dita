@@ -44,7 +44,7 @@
   </reference>
 
   <reference id="rel2.1.issues">
-    <title>Resolved Issues</title>
+    <title>Resolved issues</title>
     <shortdesc>The following items are included in DITA Open Toolkit Release 2.1. Issue numbers correspond to the
       tracking number in the <ph><xref keyref="dita-ot-issues" scope="external">GitHub issues
       tracker</xref></ph>.</shortdesc>
@@ -58,9 +58,15 @@
       </section>
       -->
       <section>
-        <title>Feature Requests</title>
+        <title>Feature requests and changes</title>
         <p>DITA Open Toolkit Release 2.1 includes the following new features and changes:</p>
         <ul>
+          <li>
+            <note type="attention">The <codeph>startcmd</codeph> scripts and bundled Ant binaries have been removed from
+              the distribution package.</note>
+            <p>To generate output, use the <cmdname>dita</cmdname> command introduced in DITA-OT 2.0. If your workflow
+              requires Ant for other purposes, it must be installed separately.</p>
+          </li>
           <li>
             <p>In PDF output, inline <codeph>&lt;codeph></codeph> elements in topic titles now inherit the font size
               from the surrounding title text. <ul>

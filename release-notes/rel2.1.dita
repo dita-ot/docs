@@ -138,8 +138,8 @@
               </ul></p>
           </li>
           <li>
-            <p>The deprecated Java command line tool has been removed in favor of the <cmdname>dita</cmdname> command introduced
-              in DITA-OT 2.0. </p>
+            <p>The deprecated Java command line tool has been removed in favor of the <cmdname>dita</cmdname> command
+              introduced in DITA-OT 2.0. </p>
             <p>If you previously generated output via a Java command sequence such as
               <codeblock><cmdname>java</cmdname> -jar lib/dost.jar /i:<varname>input-file</varname> /transtype:<varname>transformation-type</varname> /<varname>parameter-name</varname>:<varname>value</varname></codeblock>
               you should now use the following syntax instead: <codeblock><cmdname>dita</cmdname> -f <varname>transformation-type</varname> -i <varname>input-file</varname> -o <varname>output-dir</varname></codeblock>
@@ -151,17 +151,52 @@
             </p>
           </li>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1803" format="html" scope="external">1803</xref> Use
-            Commons IO</li>
+            <p>The custom <codeph>FileUtils</codeph> code used to handle input and output in earlier versions of DITA-OT
+              has been replaced with the <xref href="http://commons.apache.org/proper/commons-io/" format="html"
+                scope="external">Apache Commons IO</xref> utilities library.<ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1803" format="html" scope="external">1803</xref>
+                  Use Commons IO</li>
+              </ul>
+            </p>
+          </li>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1832" format="html" scope="external">1832</xref>
-            Remove support for args.odt.img.embed</li>
+            <p>Support for the <parmname>args.odt.img.embed</parmname> parameter has been removed from OpenDocument
+              format transformations.</p>
+            <p>The previous default behavior was to embed images as Base64-encoded text, but editors do not use this as
+              a default. Instead, office packages such as LibreOffice will convert embedded images into linked images on
+              opening and saving an ODT file. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1832" format="html" scope="external">1832</xref>
+                  Remove support for args.odt.img.embed</li>
+              </ul>
+            </p>
+          </li>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1837" format="html" scope="external">1837</xref>
-            Remove keydef processing from XHTML rendering code</li>
+            <p>Keydef processing has been removed from the XHTML rendering code </p>
+            <p>Keys are now resolved in one preprocessing step, whereas in earlier versions of DITA-OT, the XHTML code
+              returned to the <filepath>keydef.xml</filepath> file to look up targets for phrase elements and pull in
+              text when needed. This change affects non-linking elements that can't take <codeph>@href</codeph>
+              attributes, such as <codeph>&lt;ph></codeph>, <codeph>&lt;keyword></codeph>, <codeph>&lt;cite></codeph>,
+                <codeph>&lt;dt></codeph>, <codeph>&lt;term></codeph>, and <codeph>&lt;indexterm></codeph> (when
+                <codeph>$INDEXSHOW</codeph> is active). <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1837" format="html" scope="external">1837</xref>
+                  Remove keydef processing from XHTML rendering code </li>
+              </ul>
+            </p>
+          </li>
           <li>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1847" format="html" scope="external">1847</xref>
-            Extension-point for custom DITA parsers</li>
+            <p>A new <codeph>dita.parser</codeph> extension point has been added to allow plug-ins to contribute a
+              custom parser for DITA files. </p>
+            <p>If a custom DITA parser is defined, the preprocessing routines will use it during the gen-list and
+              debug-filter stages to output DITA XML. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1847" format="html" scope="external">1847</xref>
+                  Extension-point for custom DITA parsers </li>
+              </ul>
+            </p>
+          </li>
         </ul>
       </section>
       <section>

@@ -5,7 +5,7 @@
 <task id="runant" xml:lang="en">
   <title>Building output using Ant</title>
   <shortdesc>You can build output by running the <cmdname>ant</cmdname> command and specifying the DITA-OT parameters at
-    the command prompt. You also can use an Ant build script to provide the DITA-OT parameters</shortdesc>
+    the command prompt. You also can use an Ant build script to provide the DITA-OT parameters.</shortdesc>
   <taskbody>
     <steps>
       <step conref="conref-task.dita#conref-task/run-startcmd">

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<reference id="ant-properties">
+  <title>Internal Ant properties</title>
+  <shortdesc>Reference list of Ant properties used by DITA-OT internally.</shortdesc>
+  <refbody>
+    <section>
+      <parml>
+        <plentry>
+          <pt><codeph>include.rellinks</codeph></pt>
+          <pd>A space-separated list of link roles to be output; the <codeph>#default</codeph> value token represents
+            links without an explicit role (those for which no <codeph>@role</codeph> attribute is defined). Defined by
+              <codeph>args.rellinks</codeph>, but may be overridden directly. Valid roles include: <ul>
+              <li>parent </li>
+              <li>child </li>
+              <li>sibling </li>
+              <li>friend </li>
+              <li>next </li>
+              <li>previous </li>
+              <li>cousin </li>
+              <li>ancestor </li>
+              <li>descendant </li>
+              <li>sample </li>
+              <li>external </li>
+              <li>other</li>
+            </ul></pd>
+        </plentry>
+      </parml>
+    </section>
+  </refbody>
+</reference>

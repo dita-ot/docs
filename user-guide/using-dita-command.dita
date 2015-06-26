@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<task id="using-command-line-tool">
+  <title>Building output using the <cmdname>dita</cmdname> command</title>
+  <shortdesc>You can invoke DITA-OT and build output using the <cmdname>dita</cmdname>
+    command.</shortdesc>
+  <taskbody>
+    <steps>
+      <step>
+        <cmd>From the command prompt, issue the following command:</cmd>
+        <info>
+          <codeblock><varname>install-dir</varname>/bin/dita -i <varname>input-file</varname> -f
+<varname>transformation-type</varname> -D<varname>parameter-name</varname>=<varname>value</varname> -o <varname>output-dir</varname></codeblock>
+          <p>where:</p>
+          <ul conref="conref-task.dita#conref-task/basic-variables">
+            <li/>
+          </ul>
+        </info>
+        <tutorialinfo>
+          <note type="tip">If you add the <filepath><varname>install-dir</varname>/bin</filepath> directory to the
+              <varname>PATH</varname> system variable, you can invoke the <cmdname>dita</cmdname> command without the
+            absolute path.</note>
+        </tutorialinfo>
+        <stepresult id="running-ditaot-results">
+          <p>If processing is successful, nothing is printed on the terminal window.</p>
+          <p>If you do not specify an output directory, the <cmdname>dita</cmdname> command writes output to the
+              <filepath>out</filepath> subdirectory of the current directory.</p></stepresult>
+      </step>
+    </steps>
+    <example>
+      <p>The following command generates HTML5 output for the <filepath>sequence.ditamap</filepath> file and specifies
+        that output is written to the <filepath>test</filepath> directory.</p>
+      <codeblock>dita -i samples/sequence.ditamap -f html5 -o test</codeblock>
+    </example>
+  </taskbody>
+</task>

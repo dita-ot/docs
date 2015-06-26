@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<reference id="configuring-the-dita-ot">
+  <title>Configuration properties</title>
+  <shortdesc>The DITA-OT uses <filepath>.properties</filepath> files that store configuration settings for the toolkit
+    and its plug-ins. The configuration properties are available to both Ant and Java processes, but unlike argument
+    properties, they cannot be set at run time.</shortdesc>
+</reference>

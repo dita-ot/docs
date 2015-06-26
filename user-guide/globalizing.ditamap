@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<map>
+  <title>Globalizing DITA content</title>
+  <topicref href="DITA-globalization.dita">
+    <topicref href="globalization-supported-in-dita-ot.dita"/>
+    <topicref href="DITA-globalization-xhtml.dita"/>
+    <topicref href="DITA-globalization-pdf.dita"/>
+  </topicref>
+</map>

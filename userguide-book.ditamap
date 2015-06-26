@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <bookmap xml:lang="en">
   <title>DITA Open Toolkit, version <keyword keyref="release"/></title>
   <bookmeta>
@@ -18,16 +20,19 @@
       <toc/>
     </booklists>
   </frontmatter>
-  <chapter format="ditamap" href="client-quickstart.ditamap"/>
-  <part navtitle="User Guide" href="readme/DITA-readme.xml">
-    <chapter href="readme.ditamap" format="ditamap"/>  
+  <chapter format="ditamap" href="getting-started/getting-started.ditamap"/>
+  <part navtitle="User Guide" href="user-guide/index.dita">
+    <chapter href="user-guide/user-guide.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Developer Reference" href="dev_ref/developer-reference.dita">
+  <part navtitle="Parameter Reference" href="parameters/index.dita">
+    <chapter navtitle="Parameter Reference" href="parameters/reference.ditamap" format="ditamap"/>
+  </part>
+  <part navtitle="Developer Reference" href="dev_ref/index.dita">
     <chapter navtitle="Developer Reference" href="dev_ref/dev_ref.ditamap" format="ditamap"/>
   </part>
   <appendix href="dita-resources.ditamap" format="ditamap"/>
   <backmatter>
-    <topicref href="readme/changes/rel2.0.xml" locktitle="yes">
+    <topicref href="release-notes/rel2.1.dita" locktitle="yes">
       <topicmeta>
         <navtitle>Release Notes</navtitle>
       </topicmeta>

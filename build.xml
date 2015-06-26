@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-This file is part of the DITA Open Toolkit project.
-See the accompanying license.txt file for applicable licenses.
--->
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <project name="docs" default="all" basedir=".">
   <description>Build DITA Open Toolkit Documentation</description>
 
@@ -25,7 +23,10 @@ See the accompanying license.txt file for applicable licenses.
     <element name="properties" optional="yes"/>
 
     <sequential>
-      <antcall target="generate-msg-topic"/>
+      <antcall>
+        <target name="generate-msg-topic"/>
+        <target name="generate-params-topic"/>
+      </antcall>
 
       <ant antfile="${dita.home}/build.xml">
         <property name="args.input" location="@{input}"/>
@@ -38,37 +39,50 @@ See the accompanying license.txt file for applicable licenses.
 
   <target name="check-dita-home">
     <available file="${dita.home}/lib/dost.jar" type="file" property="dita-ot.available"/>
-    
+
     <fail unless="dita-ot.available">${dita.home}/lib/dost.jar not found.
-      
+
     Does ${dita.home} contain a working DITA-OT installation?
-    
+
     Set the $DITA_HOME environment variable or the dita.home Ant property to
     point to a working DITA-OT installation:
-      
+
     Either:
-      
+
       $ export DITA_HOME=/path/to/dita-ot
       $ ant ...
-      
+
     Or:
-      
+
       $ ant -Ddita.home=/path/to/dita-ot
     </fail>
   </target>
 
   <target name="init" depends="check-dita-home">
-    <property name="resource.dir" location="${dita.home}/resource"/>
+    <property name="resource.dir" location="${dita.home}/resources"/>
     <property name="ditaval.file" location="${basedir}/platform.ditaval"/>
   </target>
 
   <target name="generate-msg-topic" depends="init" description="Regenerate message file">
-    <property name="message.xsl" location="${resource.dir}/messages.xsl"/>
+    <property name="message.xsl" location="${basedir}/resources/messages.xsl"/>
     <property name="message.input" location="${resource.dir}/messages.xml"/>
-    <property name="message.outputtopic" location="${basedir}/readme/DITA-messages.xml"/>
+    <property name="message.outputtopic" location="${basedir}/user-guide/DITA-messages.xml"/>
 
     <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
     <xslt in="${message.input}" out="${message.outputtopic}" style="${message.xsl}"/>
+  </target>
+
+  <target name="generate-params-topic" depends="init" description="Regenerate parameters file">
+    <property name="params.xsl" location="${basedir}/resources/params.xsl"/>
+    <property name="params.input" location="${resource.dir}/plugins.xml"/>
+    <property name="params.outputtopic" location="${basedir}/parameters/ant-parameters.dita"/>
+    <dirname property="params.outputdir" file="${params.outputtopic}"/>
+    <makeurl property="params.outputdir.uri" file="${params.outputdir}" validate="false"/>
+    
+    <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
+    <xslt in="${params.input}" out="${params.outputtopic}" style="${params.xsl}" force="yes">
+      <param name="output-dir.url" expression="${params.outputdir.uri}"/>
+    </xslt>
   </target>
 
   <target name="generate-platform-filter" depends="init" description="Generate platform filter file">
@@ -96,19 +110,6 @@ See the accompanying license.txt file for applicable licenses.
     <property name="args.filter" location="${ditaval.file}"/>
   </target>
 
-  <target name="site">
-    <local name="site.out.dir"/>
-    <property name="site.out.dir" location="${doc.out.dir}/site"/>
-
-    <dita-ot transtype="net.sourceforge.dita-ot.html" input="site.ditamap" output="${site.out.dir}">
-      <properties>
-        <property name="args.gen.task.lbl" value="YES"/>
-        <property name="args.input" value="site.ditamap"/>
-        <property name="args.rellinks" value="all"/>
-      </properties>
-    </dita-ot>
-  </target>
-
   <target name="pdf">
     <dita-ot transtype="pdf" input="userguide-book.ditamap" output="${doc.out.dir}">
       <properties>
@@ -122,7 +123,8 @@ See the accompanying license.txt file for applicable licenses.
       <properties>
         <property name="args.copycss" value="yes"/>
         <property name="args.css" value="dita-ot-doc.css"/>
-        <property name="args.cssroot" value="resource"/>
+        <property name="args.cssroot" value="resources"/>
+        <property name="args.csspath" value="css"/>
         <property name="args.gen.task.lbl" value="YES"/>
         <property name="outputFile.base" value="index"/>
       </properties>
@@ -137,7 +139,8 @@ See the accompanying license.txt file for applicable licenses.
       <properties>
         <property name="args.copycss" value="yes"/>
         <property name="args.css" value="dita-ot-doc.css"/>
-        <property name="args.cssroot" value="resource"/>
+        <property name="args.cssroot" value="resources"/>
+        <property name="args.csspath" value="css"/>
         <property name="args.gen.task.lbl" value="YES"/>
       </properties>
     </dita-ot>
@@ -154,6 +157,6 @@ See the accompanying license.txt file for applicable licenses.
     <delete dir="${ditaval.file}" failonerror="false"/>
   </target>
 
-  <target name="all" depends="pdf, html, htmlhelp, site"/>
+  <target name="all" depends="pdf, html, htmlhelp"/>
 
 </project>

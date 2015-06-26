@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<concept id="dita-13-spec-support" xml:lang="en-us">
+  <title>DITA 1.3 support</title>
+  <shortdesc>DITA Open Toolkit <keyword keyref="release"/> provides initial preview support for the DITA 1.3
+    specification.</shortdesc>
+
+  <conbody>
+    <section>
+      <title>Initial Preview Support for DITA 1.3 in DITA-OT 2.0</title>
+      <p>The following DITA 1.3 features were implemented in version 2.0 of the toolkit. Issue numbers correspond to the
+        tracking number in the <ph><xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
+      <ul>
+        <li>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1649" format="html" scope="external">#1649</xref>
+          Support DITA 1.3 link syntax (milestone 2)</li>
+        <li>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1636" format="html" scope="external">#1636</xref>
+          Support DITA 1.3 cascade attribute (milestone 2)</li>
+        <li>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1635" format="html" scope="external">#1635</xref>
+          Implement DITA 1.3 profiling (milestone 2)</li>
+        <li>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1651" format="html" scope="external">#1651</xref> Add
+          new DITA 1.3 highlighting elements (milestone 4)</li>
+        <li>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1652" format="html" scope="external">#1652</xref> Add
+          DITA 1.3 markup and xml domain support (milestone 4)</li>
+        <li>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1654" format="html" scope="external">#1654</xref> Add
+          DITA 1.3 div element (milestone 4)</li>
+      </ul>
+      <p>For the latest status information on DITA 1.3-related features in version <keyword keyref="release"/>, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=label%3A%22DITA+1.3%22+is%3Aclosed" scope="external"
+          format="html">DITA 1.3 label</xref> in the GitHub issues tracker.</p>
+    </section>
+  </conbody>
+
+
+  <!--<related-links>
+    <link format="html" href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html" scope="external">
+      <linktext>DITA 1.2 Specification (XHTML)</linktext>
+    </link>
+    <link format="pdf" href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.pdf" scope="external">
+      <linktext>DITA 1.2 Specification (PDF)</linktext>
+    </link>
+    <link format="zip" href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.zip" scope="external">
+      <linktext>DITA 1.2 Specification (zip of the DITA source)</linktext>
+    </link>
+    <link format="zip" href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec-chm.zip" scope="external">
+      <linktext>DITA 1.2 Specification (zip of the HTML Help)</linktext>
+    </link>
+    <link format="html" href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-adoption" scope="external">
+      <linktext>DITA Adoption Technical Committee</linktext>
+      <desc>Contains links to many white papers about using new DITA 1.2 features.</desc>
+    </link>
+    <link format="html" href="http://dita.xml.org/wiki/dita-12-specification-building-specification-subsets"
+      scope="external">
+      <linktext>Building subsets of the specification</linktext>
+      <desc>Information about how to build subsets of the specification using the DITA Open Toolkit.</desc>
+    </link>
+  </related-links>-->
+</concept>

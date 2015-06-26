@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<concept id="dita2tocjs" xml:lang="en-us">
+  <title>DITA to TocJS</title>
+  <shortdesc>The <option>tocjs</option> transformation generates HTML5 output, a frameset, and a JavaScript-based table
+    of contents with expandable and collapsible entries. The transformation was originally created by Shawn McKenzie as
+    a plug-in and was added to the default distribution in DITA-OT release 1.5.4.</shortdesc>
+  <conbody>
+    <p>The <option>tocjs</option> transformation was updated so that it produces HTML5 output and uses a default
+      frameset.</p>
+  </conbody>
+</concept>

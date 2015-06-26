@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
- "concept.dtd">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <concept id="ditaotarch" xml:lang="en-us">
-<title>Architecture of the DITA Open Toolkit</title>
+  <title>Architecture of the DITA Open Toolkit</title>
   <titlealts>
-    <navtitle>Architecture of the DITA-OT</navtitle>
+    <navtitle>DITA-OT Architecture</navtitle>
   </titlealts>
-<shortdesc>The DITA Open Toolkit (DITA-OT) is an open-source implementation of the OASIS
-    specification for the Darwin Information Typing Architecture (DITA). The toolkit uses Ant, XSLT,
-    and Java to transform DITA content (maps and topics) into different deliverable
-    formats.</shortdesc>
+  <shortdesc>The DITA Open Toolkit is an open-source implementation of the OASIS specification for the Darwin
+    Information Typing Architecture. The toolkit uses Ant, XSLT, and Java to transform DITA content (maps and
+    topics) into different deliverable formats.</shortdesc>
 </concept>

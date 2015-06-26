@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<concept id="dita2troff" xml:lang="en-us">
+  <title>DITA to troff</title>
+  <shortdesc>The <option>troff</option> transformation produces output for use with the troff viewer on Unix-style
+    platforms, particularly for programs such as the man page viewer.</shortdesc>
+  <conbody>
+    <p>Each DITA topic generally produces one troff output file. The <option>troff</option> transformation supports most
+      common DITA structures, but it does not support &lt;table&gt; or &lt;simpletable&gt; elements. Most testing of
+      troff output was performed using the Cygwin Linux emulator.</p>
+  </conbody>
+</concept>

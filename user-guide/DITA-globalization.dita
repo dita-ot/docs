@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<task id="dita-globalization" xml:lang="en-us">
+  <title>Globalizing DITA content</title>
+  <shortdesc>The DITA standard supports content that is written in or translated to any language. In general, the DITA
+    Open Toolkit (DITA-OT) passes content through to the output format unchanged. The DITA-OT uses the values for the
+    @xml:lang, @translate, and @dir attributes that are set in the source content to provide globalization
+    support.</shortdesc>
+</task>

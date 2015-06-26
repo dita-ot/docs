@@ -23,13 +23,13 @@
             that you specified. (You also can use other Ant loggers; see the Ant documentation for more
             information.)</dd>
         </dlentry>
-        <dlentry importance="deprecated">
+        <!--<dlentry importance="deprecated">
           <dt>Command-line tool</dt>
           <dd>Status information is written to the screen and the log file. The log file name contains the input file
             name and transformation type; by default, it is located in the output directory. If you issue the
               <parmname>/logdir</parmname> parameter, you can specify a different location for where the log file is
             written.</dd>
-        </dlentry>
+        </dlentry>-->
       </dl></p>
     <!--<section><title>Analyze messages on the screen</title><p>During the building process, some information or messages
         occur on the screen to tell you about the status, warnings, errors, or fatal errors. You need to analyze the

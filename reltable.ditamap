@@ -96,7 +96,8 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/ant-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help transformation"/>
+        <topicref href="parameters/ant-parameters-eclipsehelp-transformation.dita"
+          navtitle="Eclipse help transformation"/>
       </relcell>
     </relrow>
     <relrow>
@@ -178,7 +179,8 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="parameters/ant-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help transformation"/>
+        <topicref href="parameters/ant-parameters-eclipsehelp-transformation.dita"
+          navtitle="Eclipse help transformation"/>
         <topicref href="parameters/ant-parameters-eclipsecontent-transformation.dita"
           navtitle="Eclipse content transformation"/>
         <topicref href="parameters/ant-parameters-htmlhelp-transformation.dita" navtitle="HTML Help transformation"/>
@@ -203,7 +205,8 @@
       <relcell>
         <topicref href="parameters/ant-parameters-eclipsecontent-transformation.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="parameters/ant-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help transformation"/>
+        <topicref href="parameters/ant-parameters-eclipsehelp-transformation.dita"
+          navtitle="Eclipse help transformation"/>
         <topicref href="parameters/ant-parameters-htmlhelp-transformation.dita"/>
         <topicref href="parameters/ant-parameters-javahelp-transformation.dita" navtitle="JavaHelp transformation"/>
         <topicref href="parameters/ant-parameters-html5-transformation.dita" navtitle="XHTML transformation"/>
@@ -219,7 +222,8 @@
       <relcell>
         <topicref href="parameters/ant-parameters-eclipsecontent-transformation.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="parameters/ant-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse help transformation"/>
+        <topicref href="parameters/ant-parameters-eclipsehelp-transformation.dita"
+          navtitle="Eclipse help transformation"/>
         <topicref href="parameters/ant-parameters-htmlhelp-transformation.dita"/>
         <topicref href="parameters/ant-parameters-javahelp-transformation.dita" navtitle="JavaHelp transformation"/>
         <topicref href="parameters/ant-parameters-html5-transformation.dita" navtitle="XHTML transformation"/>
@@ -256,6 +260,7 @@
             <linktext>Localization overview in the OASIS DITA standard</linktext>
           </topicmeta>
         </topicref>
+        <topicref href="dev_ref/plugin-addgeneratedtext.dita"/>
       </relcell>
     </relrow>
   </reltable>

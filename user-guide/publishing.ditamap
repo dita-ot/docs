@@ -4,6 +4,23 @@
 
 <map>
   <title>Publishing</title>
+  <topicgroup>
+    <keydef keys="fo-spec"
+        scope="external"
+        format="html"
+        href="http://www.w3.org/TR/xsl/"
+    />
+    <keydef keys="fo-spec.change-bar-start"
+        scope="external"
+        format="html"
+        href="http://www.w3.org/TR/xsl/#fo_change-bar-begin"
+    />
+    <keydef keys="fo-spec.change-bar-style"
+        scope="external"
+        format="html"
+      href="http://www.w3.org/TR/xsl/#change-bar-style"
+    />
+  </topicgroup>
   <topicref href="tranforming-dita-content.dita" navtitle="Transforming DITA content">
     <topicref href="AvailableTransforms.dita">
       <topicref href="dita2docbook.dita"/>
@@ -12,7 +29,12 @@
       <topicref href="dita2html5.dita"/>
       <topicref href="dita2htmlhelp.dita" platform="windows"/>
       <topicref href="dita2odt.dita"/>
-      <topicref href="dita2pdf.dita"/>
+      <topicref
+        href="dita2pdf.dita">
+        <topicref
+          href="pdf2-creating-change-bars.dita"
+          keys="pdf2-creating-change-bars"/>
+      </topicref>
       <topicref href="dita2wordrtf.dita"/>
       <topicref href="dita2tocjs.dita"/>
       <topicref href="dita2troff.dita"/>

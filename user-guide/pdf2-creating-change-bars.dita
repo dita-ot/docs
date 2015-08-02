@@ -13,7 +13,7 @@
           <dd>When flag has been set, specify a changebar color, style, or character, according to the changebar support of the target output format. If flag has not been set, this attribute is ignored.</dd>
         </dlentry>
       </dl></lq></p>
-    <p>The PDF2 syntax for @changebar is a sequence of semicolon-delimited name/value pairs:<codeblock>&lt;revprop action="flag" val="rev01
+    <p>The PDF2 syntax for @changebar is a sequence of semicolon-delimited name/value pairs:<codeblock>&lt;revprop action="flag" val="rev01"
  <b>changebar="color:black;style:solid;width:0.5pt"</b>
 /&gt;</codeblock></p>
    <p>Each name/value corresponds to an attribute of the <xref keyref="fo-spec.change-bar-begin"/>. The available attributes and values are:<dl>

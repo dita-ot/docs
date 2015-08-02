@@ -159,12 +159,18 @@
     <keydef keys="fo-spec.change-bar-start"
       scope="external"
       format="html"
-      href="http://www.w3.org/TR/xsl/#fo_change-bar-begin"
-    />
+      href="http://www.w3.org/TR/xsl/#fo_change-bar-begin">
+      <topicmeta>
+        <linktext>XSL-FO fo:change-bar-start element</linktext>
+      </topicmeta>
+    </keydef>
     <keydef keys="fo-spec.change-bar-style"
       scope="external"
       format="html"
-      href="http://www.w3.org/TR/xsl/#change-bar-style"
-    />
+      href="http://www.w3.org/TR/xsl/#change-bar-style">
+      <topicmeta>
+        <linktext>@change-bar-style</linktext>
+      </topicmeta>
+    </keydef>
   </topicgroup>
 </map>

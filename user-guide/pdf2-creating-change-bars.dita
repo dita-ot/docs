@@ -38,7 +38,7 @@
         <dd>The width of the rule as a measurement value. Typical values are "1pt" and "0.5pt" (hairline rule).</dd>
       </dlentry>
       </dl></p>
-    <p>To get a rule at all you must specify a value for <parmname>style</parmname>, e.g. "style:solid" and should specify a value for <parmname>width</parmname> do you get an appropriately-sized rule, e.g., "width:0.5pt".</p>
+    <p>To get a rule at all you must specify a value for <parmname>style</parmname>, e.g. "style:solid" and should specify a value for <parmname>width</parmname> so you get an appropriately-sized rule, e.g., "width:0.5pt".</p>
     <draft-comment
       author="ekimber">The current handling of @changebar is a little Simon Says. It really needs to intepret any value that is not this specific syntax as "put a change bar out with reasonable defaults". Likewise, needs more appropriate defaults and a little value checking. I plan to add that but not reflecting those changes here until I actually make them.</draft-comment>
     <p>Note that XSL-FO 1.1 does not provide for revision "bars" that are not rules, so there is no standard way to get text revision indicators instead of rules, e.g. using a number in place of a rule. Antenna House Formatter does provide a proprietary extension to allow this but the PDF2 transform does not take advantage of it.</p>

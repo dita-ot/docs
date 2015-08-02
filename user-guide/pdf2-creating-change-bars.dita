@@ -7,7 +7,7 @@
     <note>
       <p>As of July 2015 the Antenna House Formatter and RenderX XEP FO engines support change bar generation but FOP 1.1 does not.</p>
     </note>
-    <p>You can request revision bars in your PDF output by using the @changebar attribute of the DITAVAL &lt;revflag> element. The DITA specification for @changebar simply says:<lq><dl>
+    <p>You can request revision bars in your PDF output by using the @changebar attribute of the DITAVAL &lt;revprop> element. The DITA specification for @changebar simply says:<lq><dl>
         <dlentry>
           <dt>@changebar</dt>
           <dd>When flag has been set, specify a changebar color, style, or character, according to the changebar support of the target output format. If flag has not been set, this attribute is ignored.</dd>

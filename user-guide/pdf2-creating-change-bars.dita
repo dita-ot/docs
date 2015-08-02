@@ -16,7 +16,7 @@
     <p>The PDF2 syntax for @changebar is a sequence of semicolon-delimited name/value pairs:<codeblock>&lt;revprop action="flag" val="rev01
  <b>changebar="color:black;style:solid;width:0.5pt"</b>
 /&gt;</codeblock></p>
-   <p>Each name/value corresponds to an attribute of the <xref keyref="fo-spec.change-bar-start"/>. The available attributes and values are:<dl>
+   <p>Each name/value corresponds to an attribute of the <xref keyref="fo-spec.change-bar-begin"/>. The available attributes and values are:<dl>
       <dlentry>
         <dt>style</dt>
         <dd>The style to use for the line, as for other XSL-FO rules (<xref keyref="fo-spec.change-bar-style"/>). The value "solid" produces a solid rule. The default is "none".</dd>

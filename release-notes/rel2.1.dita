@@ -59,6 +59,39 @@
       </section>
       -->
       <section>
+        <title>Maintenance Release <keyword keyref="version"/></title>
+        <p>DITA Open Toolkit Release <keyword keyref="version"/> includes the following bug fixes:</p>
+        <ul>
+          <li>
+            <p>Whitespace in <codeph>&lt;image></codeph> elements is now ignored in PDF output to prevent errors when
+              rendering XSL:FO. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1985" format="html" scope="external"
+                    >#1985</xref> XEP&#xA0;error: Element 'fo:external-graphic' must be empty</li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>Any proportional table column widths expressed in the CALS table model as "*" are now normalized to the
+              equivalent "1*" value to prevent errors while generating XHTML output. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1978" format="html" scope="external"
+                    >#1978</xref> colwidth="*" causes Fatal Error! Cannot convert string "" to a double </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>In DITA Open Toolkit 2.0.1, the line ending characters in shell files were inadvertently changed to
+              Windows (CRLF) line endings. The correct UNIX (LF) line endings have now been restored.<ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1954" format="html" scope="external"
+                    >#1954</xref> bin/ant throws errors when executed in Ubuntu shell </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
         <title>Feature requests and changes</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features and changes:</p>
         <ul>

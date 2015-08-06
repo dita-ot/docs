@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<concept id="concept_gsc_vcf_vs">
+  <title>Creating Change Bars</title>
+  <shortdesc>The PDF2 transform can generate change (revision) bars with XSL-FO engines that support the fo:change-bar
+    formatting object.</shortdesc>
+  <conbody>
+    <note>
+      <p>As of July 2015 the Antenna House Formatter and RenderX XEP FO engines support change bar generation but FOP
+        1.1 does not.</p>
+    </note>
+    <p>You can request revision bars in your PDF output by using the @changebar attribute of the DITAVAL &lt;revprop>
+      element. The DITA specification for @changebar simply says:<lq><dl>
+          <dlentry>
+            <dt>@changebar</dt>
+            <dd>When flag has been set, specify a changebar color, style, or character, according to the changebar
+              support of the target output format. If flag has not been set, this attribute is ignored.</dd>
+          </dlentry>
+        </dl></lq></p>
+    <p>The PDF2 syntax for @changebar is a sequence of semicolon-delimited name/value
+      pairs:<codeblock>&lt;revprop action="flag" val="rev01"
+ <b>changebar="color:black;style:solid;width:0.5pt"</b>
+/&gt;</codeblock></p>
+    <p>Each name/value corresponds to an attribute of the <xref keyref="fo-spec.change-bar-begin"/>. The available
+      attributes and values are:<dl>
+        <dlentry>
+          <dt>style</dt>
+          <dd>The style to use for the line, as for other XSL-FO rules (<xref keyref="fo-spec.change-bar-style"/>). The
+            value "solid" produces a solid rule. The default is "none".</dd>
+        </dlentry>
+        <dlentry>
+          <dt>color</dt>
+          <dd>Any color value recognized by XSL-FO, including the usual color names or a hex color value. The default is
+            "black".</dd>
+        </dlentry>
+        <dlentry>
+          <dt>offset</dt>
+          <dd>The space as a measurement value (e.g., points (pt) or millimeters (mm)) to offset the bar from the edge
+            of the text column. </dd>
+        </dlentry>
+        <dlentry>
+          <dt>placement</dt>
+          <dd>The side of the text column on which to place the change bar, one of "start" (left side for left-to-right
+            languages) or "end" (right side for left-to-right languages). The default is "start".</dd>
+        </dlentry>
+        <dlentry>
+          <dt>width</dt>
+          <dd>The width of the rule as a measurement value. Typical values are "1pt" and "0.5pt" (hairline rule).</dd>
+        </dlentry>
+      </dl></p>
+    <p>To get a rule at all you must specify a value for <parmname>style</parmname>, e.g. "style:solid" and should
+      specify a value for <parmname>width</parmname> so you get an appropriately-sized rule, e.g., "width:0.5pt".</p>
+    <draft-comment author="ekimber">The current handling of @changebar is a little Simon Says. It really needs to
+      intepret any value that is not this specific syntax as "put a change bar out with reasonable defaults". Likewise,
+      needs more appropriate defaults and a little value checking. I plan to add that but not reflecting those changes
+      here until I actually make them.</draft-comment>
+    <p>Note that XSL-FO 1.1 does not provide for revision "bars" that are not rules, so there is no standard way to get
+      text revision indicators instead of rules, e.g. using a number in place of a rule. Antenna House Formatter does
+      provide a proprietary extension to allow this but the PDF2 transform does not take advantage of it.</p>
+  </conbody>
+</concept>

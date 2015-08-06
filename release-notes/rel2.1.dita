@@ -3,9 +3,10 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="rel2.1" xml:lang="en">
-  <title>DITA Open Toolkit 2.1 Release Notes</title>
+  <title>DITA Open Toolkit <keyword keyref="version"/> Release Notes</title>
 
-  <shortdesc>DITA Open Toolkit 2.1 is a maintenance release that includes fixes for reported issues.</shortdesc>
+  <shortdesc>DITA Open Toolkit <keyword keyref="version"/> is a maintenance release that includes fixes for reported
+    issues.</shortdesc>
 
   <!--
   <reference id="releasehighlights">
@@ -37,17 +38,17 @@
       <section>
         <draft-comment author="infotexture">Add info on new minimum Java version or any other requirements that have
           changed since previous release.</draft-comment>
-        <p>DITA Open Toolkit Release 2.1 requires the Java Runtime Environment (JRE) or Java Development Kit (JDK),
-          version <keyword keyref="tool.java.version"/> or later.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) or Java
+          Development Kit (JDK), version <keyword keyref="tool.java.version"/> or later.</p>
       </section>
     </refbody>
   </reference>
 
   <reference id="rel2.1.issues">
     <title>Resolved issues</title>
-    <shortdesc>The following items are included in DITA Open Toolkit Release 2.1. Issue numbers correspond to the
-      tracking number in the <ph><xref keyref="dita-ot-issues" scope="external">GitHub issues
-      tracker</xref></ph>.</shortdesc>
+    <shortdesc>The following items are included in DITA Open Toolkit Release <keyword keyref="release"/>. Issue numbers
+      correspond to the tracking number in the <ph><xref keyref="dita-ot-issues" scope="external">GitHub issues
+          tracker</xref></ph>.</shortdesc>
     <refbody>
       <!--
       <section>
@@ -58,8 +59,41 @@
       </section>
       -->
       <section>
+        <title>Maintenance Release <keyword keyref="version"/></title>
+        <p>DITA Open Toolkit Release <keyword keyref="version"/> includes the following bug fixes:</p>
+        <ul>
+          <li>
+            <p>Whitespace in <codeph>&lt;image></codeph> elements is now ignored in PDF output to prevent errors when
+              rendering XSL:FO. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1985" format="html" scope="external"
+                    >#1985</xref> XEP&#xA0;error: Element 'fo:external-graphic' must be empty</li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>Any proportional table column widths expressed in the CALS table model as "*" are now normalized to the
+              equivalent "1*" value to prevent errors while generating XHTML output. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1978" format="html" scope="external"
+                    >#1978</xref> colwidth="*" causes Fatal Error! Cannot convert string "" to a double </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>In DITA Open Toolkit 2.0.1, the line ending characters in shell files were inadvertently changed to
+              Windows (CRLF) line endings. The correct UNIX (LF) line endings have now been restored.<ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1954" format="html" scope="external"
+                    >#1954</xref> bin/ant throws errors when executed in Ubuntu shell </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
         <title>Feature requests and changes</title>
-        <p>DITA Open Toolkit Release 2.1 includes the following new features and changes:</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features and changes:</p>
         <ul>
           <li>
             <p>In PDF output, inline <codeph>&lt;codeph></codeph> elements in topic titles now inherit the font size
@@ -201,7 +235,7 @@
       </section>
       <section>
         <title>Bugs</title>
-        <p>DITA Open Toolkit Release 2.1 provides fixes for the following bugs:</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <ul>
           <li><xref href="https://github.com/dita-ot/dita-ot/issues/1513" format="html" scope="external">1513</xref>
             Suspected memory leak in OT bug preprocess</li>
@@ -248,8 +282,8 @@
       </section>
       <section>
         <title>Maintenance Release 2.0.1</title>
-        <note>DITA Open Toolkit Release 2.1 also includes the following bug fixes that were released earlier this year
-          with maintenance version 2.0.1.</note>
+        <note>DITA Open Toolkit Release <keyword keyref="release"/> also included the following bug fixes that were
+          released earlier this year with maintenance version 2.0.1.</note>
         <ul>
           <li>
             <xref href="https://github.com/dita-ot/dita-ot/issues/1744" format="html" scope="external">#1744</xref>

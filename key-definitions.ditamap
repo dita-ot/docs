@@ -2,7 +2,7 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<map id="keyrefs" title="Key references">
+<map id="keydefs" title="Key definitions (variables)">
   <!--
  DOWNLOAD URLs -->
   <keydef format="html" keys="download.ant" scope="external" href="http://ant.apache.org/"/>
@@ -19,7 +19,7 @@
     <!-- DITA-OT: Latest maintenance version (3 digits) -->
     <topicmeta>
       <keywords>
-        <keyword>2.1.0</keyword>
+        <keyword>2.1.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -150,4 +150,27 @@
       <linktext>RFC 5147</linktext>
     </topicmeta>
   </keydef>
+  <topicgroup>
+    <keydef keys="fo-spec"
+      scope="external"
+      format="html"
+      href="http://www.w3.org/TR/xsl/"
+    />
+    <keydef keys="fo-spec.change-bar-begin"
+      scope="external"
+      format="html"
+      href="http://www.w3.org/TR/xsl/#fo_change-bar-begin">
+      <topicmeta>
+        <linktext>XSL-FO fo:change-bar-begin element</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef keys="fo-spec.change-bar-style"
+      scope="external"
+      format="html"
+      href="http://www.w3.org/TR/xsl/#change-bar-style">
+      <topicmeta>
+        <linktext>@change-bar-style</linktext>
+      </topicmeta>
+    </keydef>
+  </topicgroup>
 </map>

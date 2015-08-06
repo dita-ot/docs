@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
@@ -13,7 +13,7 @@
     </prodinfo>
   </bookmeta>
   <frontmatter>
-    <mapref href="keyrefs.ditamap" processing-role="resource-only"/>
+    <mapref href="key-definitions.ditamap" processing-role="resource-only"/>
     <mapref href="reltable.ditamap" processing-role="resource-only"/>
     <mapref href="subjectscheme.ditamap" type="subjectScheme" processing-role="resource-only"/>
     <booklists>

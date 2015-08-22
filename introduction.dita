@@ -11,22 +11,25 @@
       <title>What is the DITA Open Toolkit?</title>
       <p>The DITA Open Toolkit, or DITA-OT for short, is a set of Java-based, open source tools that provide processing
         for DITA maps and topic content. You can download the toolkit and install it for free to get started with
-        topic-based writing and publishing. The DITA-OT is licensed under the <xref format="html"
-          href="http://www.apache.org/licenses/LICENSE-2.0" scope="external">Apache 2.0</xref> open source license.</p>
-      <note>While the DITA Standard itself is owned and developed by OASIS, the DITA Open Toolkit is an independent,
-        open source implementation of the standard.</note>
+        topic-based writing and publishing.</p>
+      <p>The DITA-OT is licensed under the <xref format="html" href="http://www.apache.org/licenses/LICENSE-2.0"
+          scope="external">Apache 2.0</xref> open source license.</p>
+      <note>
+        <p>While the DITA Standard itself is owned and developed by OASIS, the DITA Open Toolkit is an independent, open
+          source implementation of the standard.</p>
+      </note>
       <p>Key output formats for the toolkit include:</p>
       <ul>
-        <li>XHTML</li>
-        <li>PDF (formerly known as PDF2)</li>
-        <li>ODT (Open Document Format)</li>
-        <li>Eclipse Help</li>
-        <li>TocJS (XHTML with a JavaScript frameset)</li>
-        <li>HTML Help</li>
-        <li>Java Help</li>
-        <li>Eclipse Content (normalized DITA plus Eclipse project files)</li>
+        <li>PDF</li>
+        <li>HTML – HTML5 and XHTML</li>
+        <li>TocJS – HTML5 with a JavaScript frameset navigation</li>
+        <li>HTML Help – Microsoft compiled help (.chm)</li>
+        <li>Eclipse Help – HTML with navigation and index for Eclipse information centers</li>
+        <li>Eclipse Content – normalized DITA plus Eclipse project files</li>
+        <li>Java Help – HTML topics, table of contents and index for the Java Help platform</li>
+        <li>ODT – OpenDocument Text</li>
         <li>Word RTF (with some limitations)</li>
-        <li>Docbook</li>
+        <li>DocBook</li>
         <li>troff</li>
       </ul>
     </section>

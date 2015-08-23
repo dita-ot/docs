@@ -104,7 +104,7 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA009E-extra" conaction="pushreplace">The running heading file, which
-          contains content to be added to the &lt;head&gt; section of each XHTML output topic, cannot be located or
+          contains content to be added to the &lt;head&gt; section of each HTML output topic, cannot be located or
           read. This is usually caused by a typo in the parameter value. You should also ensure that the value is not
           specified with "file:" as a prefix.</stentry>
       </strow>
@@ -535,12 +535,12 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX037W-extra" conaction="pushreplace">No title was found for the
-          current document, so the XHTML output file will set the &lt;title&gt; to "***". This value generally appears
+          current document, so the HTML output file will set the &lt;title&gt; to "***". This value generally appears
           in the title bar at the top of a browser.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX038I-extra" conaction="pushreplace">The &lt;object&gt; element in
-          XHTML does not support using longdescref for accessibility. To make the object accessible, you may need to add
+          HTML does not support using longdescref for accessibility. To make the object accessible, you may need to add
           text before or after the element. You may also be able to handle it with a &lt;param> element inside the
           object.</stentry>
       </strow>
@@ -553,7 +553,7 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX040I-extra" conaction="pushreplace">This message is generated when
           creating draft output in order to help you locate all topics that have draft comments. Each comment will
-          appear in your XHTML output; the comments will be hidden when the draft parameter is not active.</stentry>
+          appear in your HTML output; the comments will be hidden when the draft parameter is not active.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX041W-extra" conaction="pushreplace">Because of the way XML and DITA
@@ -586,7 +586,7 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX046W-extra" conaction="pushreplace">The specified value was passed
-          as-is through to the area element in the XHTML.</stentry>
+          as-is through to the &lt;area&gt; element in the HTML.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX047W-extra" conaction="pushreplace">The area element is intended to

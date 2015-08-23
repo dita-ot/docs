@@ -48,13 +48,11 @@
     <linklist>
       <title>Shortcuts to important information</title>
       <link format="html" href="http://www.dita-ot.org/download" scope="external">
-        <linktext>DITA-OT stable release</linktext>
+        <linktext>Latest DITA-OT release</linktext>
       </link>
-      <!--<link format="html"
-        href="http://sourceforge.net/projects/dita-ot/files/DITA-OT%20Latest%20Test%20Build/"
-        scope="external">
-        <linktext>DITA-OT latest development build</linktext>
-      </link>-->
+      <link format="html" href="https://github.com/dita-ot/dita-ot/releases" scope="external">
+        <linktext>DITA-OT source code and development builds (GitHub)</linktext>
+      </link>
     </linklist>
   </related-links>
 </topic>

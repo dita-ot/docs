@@ -67,8 +67,8 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA002F-extra" conaction="pushreplace">The input parameter was not
           specified, so there is no DITA or DITAMAP file to transform. Ensure the parameter is set properly; see <xref
-            href="../parameters/ant-parameters_intro.dita">DITA-OT Ant arguments</xref> if you are unsure how to specify the input
-          file.</stentry>
+            href="../parameters/ant-parameters-base-transformation.dita">DITA-OT common parameters (args.input)</xref>
+          if you are unsure how to specify the input file.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA069F-extra" conaction="pushreplace">Please ensure that the input
@@ -104,8 +104,8 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA009E-extra" conaction="pushreplace">The running heading file, which
-          contains content to be added to the &lt;head&gt; section of each HTML output topic, cannot be located or
-          read. This is usually caused by a typo in the parameter value. You should also ensure that the value is not
+          contains content to be added to the &lt;head&gt; section of each HTML output topic, cannot be located or read.
+          This is usually caused by a typo in the parameter value. You should also ensure that the value is not
           specified with "file:" as a prefix.</stentry>
       </strow>
       <strow>
@@ -218,8 +218,8 @@
         <stentry conref="DITA-messages.xml#msgs/DOTJ035F-extra" conaction="pushreplace">This will appear when a topic is
           outside the scope of the map; for example, if the main input map references
             <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be created
-          outside of the output directory. See <xref href="../parameters/ant-parameters_intro.dita">DITA-OT Ant arguments
-            (outer.control and generate.copy.outer)</xref> for details.</stentry>
+          outside of the output directory. See <xref href="../parameters/ant-parameters-base-transformation.dita"
+            >DITA-OT common parameters (outer.control and generate.copy.outer)</xref> for details.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ036W-extra" conaction="pushreplace">This will appear when a topic is
@@ -227,8 +227,8 @@
             <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be created
           outside of the output directory. If you do not want to see the warning message, please use the Ant parameter
           'outer.control', and set the value to "quiet". Otherwise, move the referenced file into the input dita/map
-          directory. See <xref href="../parameters/ant-parameters_intro.dita">DITA-OT Ant arguments (outer.control and
-            generate.copy.outer)</xref> for details.</stentry>
+          directory. See <xref href="../parameters/ant-parameters-base-transformation.dita">DITA-OT common parameters
+            (outer.control and generate.copy.outer)</xref> for details.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ037W-extra" conaction="pushreplace">DITA processing is based on
@@ -314,8 +314,8 @@
             map directory are not supported by default, as this could allow a reference to access and display any
             restricted or hidden file on the system. If you are certain that the path is valid and the file should be
             loaded, the current workaround is to set a parameter to allow these references. See <xref
-              href="../parameters/ant-parameters_intro.dita">DITA-OT Ant arguments (outer.control and generate.copy.outer)</xref>
-            for details.</p></stentry>
+              href="../parameters/ant-parameters-base-transformation.dita">DITA-OT common parameters (outer.control and
+              generate.copy.outer)</xref> for details.</p></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ052E-extra" conaction="pushreplace">The DITA-OT supports a special
@@ -537,8 +537,8 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX037W-extra" conaction="pushreplace">No title was found for the
-          current document, so the HTML output file will set the &lt;title&gt; to "***". This value generally appears
-          in the title bar at the top of a browser.</stentry>
+          current document, so the HTML output file will set the &lt;title&gt; to "***". This value generally appears in
+          the title bar at the top of a browser.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX038I-extra" conaction="pushreplace">The &lt;object&gt; element in
@@ -640,8 +640,9 @@
           the specified file in order to retrive a title or short description, but the file could not be found. If the
           file exists, it is possible that a DITAVAL file was used to remove the file's contents from the build. Another
           possibility is that the file is located outside of the scope of the main input directory, and was not
-          available because the <xref href="../parameters/ant-parameters_intro.dita">onlytopic.in.map</xref> parameter was
-          specified. Be aware that the path information above may not match the link in your topic.</stentry>
+          available because the <xref href="../parameters/ant-parameters-base-transformation.dita"
+            >onlytopic.in.map</xref> parameter was specified. Be aware that the path information above may not match the
+          link in your topic.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX057W-extra" conaction="pushreplace">The link appears to use valid

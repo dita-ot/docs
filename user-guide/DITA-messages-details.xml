@@ -225,8 +225,10 @@
         <stentry conref="DITA-messages.xml#msgs/DOTJ036W-extra" conaction="pushreplace">This will appear when a topic is
           outside the scope of the map; for example, if the main input map references
             <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be created
-          outside of the output directory. See <xref href="../parameters/ant-parameters_intro.dita">DITA-OT Ant arguments
-            (outer.control and generate.copy.outer)</xref> for details.</stentry>
+          outside of the output directory. If you do not want to see the warning message, please use the Ant parameter
+          'outer.control', and set the value to "quiet". Otherwise, move the referenced file into the input dita/map
+          directory. See <xref href="../parameters/ant-parameters_intro.dita">DITA-OT Ant arguments (outer.control and
+            generate.copy.outer)</xref> for details.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ037W-extra" conaction="pushreplace">DITA processing is based on

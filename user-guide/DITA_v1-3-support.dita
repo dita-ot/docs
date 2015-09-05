@@ -17,9 +17,9 @@
       supported with specific new processing. Documents created with the proposed OASIS DITA 1.3 DTDs are the only ones
       ever likely to have features that invoke the specific new 1.3-based processing support.</p>
 
-    <p>Because this support is based on a yet-to-be-approved version of the proposed OASIS DITA 1.3 specification, if
-      you choose to investigate any 1.3-based function, be aware that the 1.3 implementation in this version of the
-      toolkit is preliminary. Upon final approval of the DITA 1.3 standard, toolkit developers will review the
+    <p>Because this support is based on a yet-to-be-approved version of the proposed OASIS <xref keyref="dita-ot-spec"
+      />, if you choose to investigate any 1.3-based function, be aware that the 1.3 implementation in this version of
+      the toolkit is preliminary. Upon final approval of the DITA 1.3 standard, toolkit developers will review the
       implementation to make certain that it conforms to the final specification.</p>
 
     <section>

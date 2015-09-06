@@ -4,7 +4,7 @@
 
 <map>
   <title>DITA-OT transformations</title>
-  <topicref href="AvailableTransforms.dita">
+  <topicref href="AvailableTransforms.dita" navtitle="Output formats" locktitle="yes">
     <topicref href="dita2docbook.dita"/>
     <topicref href="dita2eclipsecontent.dita"/>
     <topicref href="dita2eclipsehelp.dita"/>

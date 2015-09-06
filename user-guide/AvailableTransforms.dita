@@ -3,7 +3,8 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <concept id="availabletransforms" xml:lang="en-us">
-  <title>DITA-OT transformations</title>
-  <shortdesc> The DITA Open Toolkit (DITA-OT) ships with several core transformations. Each core transformation
-    represents an implementation of all processing that is defined by OASIS in the DITA specification. </shortdesc>
+  <title>DITA-OT transformations (output formats)</title>
+  <shortdesc>The DITA Open Toolkit ships with several core transformations that generate different output formats from
+    DITA content. Each transformation represents an implementation of the processing that is defined by OASIS in the
+    DITA specification.</shortdesc>
 </concept>

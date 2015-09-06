@@ -7,6 +7,6 @@
 
   <shortdesc>Certain parameters apply to all DITA-OT transformations. Other parameters are common to the HTML-based
     transformations. Finally, some parameters apply only to specific transformation types. These parameters can be
-    passed as options to the <cmdname>dita</cmdname> command using the <option>-Dparam=value</option> syntax or included
-    in build scripts as Ant properties.</shortdesc>
+    passed as options to the <cmdname>dita</cmdname> command using the <option>-Dparameter-name=value</option> syntax or
+    included in build scripts as Ant properties.</shortdesc>
 </reference>

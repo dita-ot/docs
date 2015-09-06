@@ -4,14 +4,14 @@
 
 <map xml:lang="en-us">
   <title>User Guide</title>
-  <mapref href="overview.ditamap" format="ditamap"/>
-  <mapref href="installing.ditamap" format="ditamap"/>
-  <mapref href="publishing.ditamap" format="ditamap"/>
-  <mapref href="transformations.ditamap" format="ditamap"/>
+  <mapref href="overview.ditamap"/>
+  <mapref href="installing.ditamap"/>
+  <mapref href="publishing.ditamap"/>
+  <mapref href="transformations.ditamap"/>
   <topicref href="extending-the-dita-ot.dita">
     <topicref href="plugins-installing.dita"/>
     <topicref href="plugins-removing.dita"/>
   </topicref>
-  <mapref href="globalizing.ditamap" format="ditamap"/>
-  <mapref href="troubleshooting.ditamap" format="ditamap"/>
+  <mapref href="globalizing.ditamap"/>
+  <mapref href="troubleshooting.ditamap"/>
 </map>

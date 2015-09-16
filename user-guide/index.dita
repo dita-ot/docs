@@ -2,13 +2,14 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<concept id="DITA-readme" xml:lang="en-us">
+<concept id="ID" xml:lang="en-us">
   <title>DITA Open Toolkit User Guide</title>
   <titlealts>
     <navtitle>User Guide</navtitle>
   </titlealts>
-  <shortdesc>The <ph><cite>DITA Open Toolkit User Guide</cite></ph> is designed to provide basic information about the
-    DITA-OT. It is geared for an audience that needs information about installing, running, and troubleshooting the
-    toolkit. It contains information on the supported DITA versions and the versions of components that have been tested
-    for use with the toolkit.</shortdesc>
+  <shortdesc>
+    <ph id="ph_docs-ug-desc">The <ph><cite>User Guide</cite></ph> is designed to provide basic
+      information about the DITA-OT. It is geared for an audience that needs information about installing, running, and
+      troubleshooting the toolkit. It contains information on the supported DITA versions and the versions of components
+      that have been tested for use with the toolkit.</ph></shortdesc>
 </concept>

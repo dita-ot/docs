@@ -4,44 +4,27 @@
 
 <topic id="dita-otprojecthome" xml:lang="en-us">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
-  <shortdesc>This document describes the DITA Open Toolkit project—what the project is, and how to use the
-    site.</shortdesc>
+  <shortdesc>The <term>DITA Open Toolkit</term>, or <term>DITA-OT</term> for short, is a set of Java-based, open-source
+    tools that provide processing for DITA maps and topic content.</shortdesc>
   <body>
+    <!--
+    <p>You can download the toolkit and install it for free to get started with topic-based writing and publishing. The
+      DITA-OT is licensed under the <xref format="html" href="http://www.apache.org/licenses/LICENSE-2.0"
+        scope="external">Apache 2.0</xref> open-source license.</p>
+    <note>While the DITA Standard itself is owned and developed by OASIS, the DITA Open Toolkit is an independent,
+      open-source implementation of the standard.</note>
+    -->
     <section>
-      <title>What is the DITA Open Toolkit?</title>
-      <p>The <term>DITA Open Toolkit</term>, or <term>DITA-OT</term> for short, is a set of Java-based, open-source
-        tools that provide processing for DITA maps and topic content. You can download the toolkit and install it for
-        free to get started with topic-based writing and publishing.</p>
-      <p>The DITA-OT is licensed under the <xref format="html" href="http://www.apache.org/licenses/LICENSE-2.0"
-          scope="external">Apache 2.0</xref> open-source license.</p>
-      <note>
-        <p>While the DITA Standard itself is owned and developed by OASIS, the DITA Open Toolkit is an independent,
-          open-source implementation of the standard.</p>
-      </note>
-      <p>Key output formats for the toolkit include:</p>
-      <ul>
-        <li>PDF</li>
-        <li>HTML – HTML5 and XHTML</li>
-        <li>TocJS – HTML5 with a JavaScript frameset navigation</li>
-        <li>HTML Help – Microsoft compiled help (.chm)</li>
-        <li>Eclipse Help – HTML with navigation and index for Eclipse information centers</li>
-        <li>Eclipse Content – normalized DITA plus Eclipse project files</li>
-        <li>Java Help – HTML topics, table of contents and index for the Java Help platform</li>
-        <li>ODT – OpenDocument Text</li>
-        <li>Word RTF (with some limitations)</li>
-        <li>DocBook</li>
-        <li>troff</li>
-      </ul>
-    </section>
-    <section>
-      <title>Toolkit documentation</title>
-      <!--<p>There are two primary sources for documentation about the toolkit.</p>-->
+      <title>DITA-OT documentation</title>
       <p>The DITA Open Toolkit documentation provides information about installing, running, configuring and extending
         the toolkit. Each part is available in the navigation panel on the left.</p>
-      <!--<p>New information about the latest toolkit builds, plans for the next release, and other
-        changing information can be found on the DITA-OT landing page at the dita.xml.org site (link
-        below). That site also contains the release notes for all upcoming and previous
-        releases.</p>-->
+      <ul>
+        <li>See the <xref keyref="release-notes"/> for information on the changes in the current release.</li>
+        <li><ph conref="getting-started/index.dita#ID/ph_docs-gs-desc"/></li>
+        <li><ph conref="user-guide/index.dita#ID/ph_docs-ug-desc"/></li>
+        <li><ph conref="parameters/index.dita#ID/ph_docs-pr-desc"/></li>
+        <li><ph conref="dev_ref/index.dita#ID/ph_docs-dr-desc"/></li>
+      </ul>
     </section>
   </body>
   <related-links>

@@ -20,12 +20,12 @@
       <step>
         <cmd>From the terminal window, issue the following command:</cmd>
         <info>
-          <codeblock><varname>install-dir</varname>/bin/dita -f <varname>transformation-type</varname> -i <varname>input-file</varname> -o <varname>output-dir</varname></codeblock>
+          <codeblock><varname>install-dir</varname>/bin/dita -i <varname>input-file</varname> -f <varname>transformation-type</varname> -o <varname>output-dir</varname></codeblock>
           <p>where:</p>
           <ul id="basic-variables">
             <li><varname>install-dir</varname> is the DITA-OT installation directory path.</li>
-            <li><varname>transformation-type</varname> is the transformation type.</li>
             <li><varname>input-file</varname> is the DITA map or DITA file path that you want to process.</li>
+            <li><varname>transformation-type</varname> is the transformation type.</li>
             <li><varname>output-dir</varname> is the output directory path for generated output.</li>
           </ul>
         </info>
@@ -38,9 +38,9 @@
         to the <varname>PATH</varname> system variable as recommended in the previous topic, the following command
         generates HTML5 output for the <filepath>sequence.ditamap</filepath> file and writes the output to the
           <filepath>test</filepath> directory:</p>
-      <codeblock>dita -f html5 -i samples/sequence.ditamap -o test </codeblock>
+      <codeblock>dita -i samples/sequence.ditamap -f html5 -o test</codeblock>
       <p>If the <cmdname>dita</cmdname> command is not on your <varname>PATH</varname>, use the following command:</p>
-      <codeblock><varname>install-dir</varname>/bin/dita -f html5 -i samples/sequence.ditamap -o test </codeblock>
+      <codeblock><varname>install-dir</varname>/bin/dita i samples/sequence.ditamap -f html5 -o test</codeblock>
     </example>
   </taskbody>
 </task>

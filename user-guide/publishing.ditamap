@@ -5,9 +5,7 @@
 <map>
   <title>Publishing</title>
   <topicref href="transforming-dita-content.dita" navtitle="Transforming DITA content">
-    <topicref href="dita-command.dita" product="client">
-      <topicref href="using-dita-command.dita"/>
-    </topicref>
+    <topicref href="using-dita-command.dita"/>
     <topicref href="publishing-with-ant.dita" navtitle="Running DITA-OT from Ant">
       <topicref href="ant.dita" navtitle="Ant overview"/>
       <topicref href="building-with-ant.dita" navtitle="Building output using Ant"/>

@@ -253,4 +253,20 @@
       </relcell>
     </relrow>
   </reltable>
+  <reltable>
+    <title>DITA command usage &amp; arguments</title>
+    <relheader>
+      <relcolspec type="task"/>
+      <relcolspec type="reference"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="getting-started/using-dita-command.dita" linking="sourceonly"/>
+        <topicref href="user-guide/using-dita-command.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="parameters/dita-command-arguments.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

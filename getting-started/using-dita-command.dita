@@ -2,14 +2,15 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<task id="using-command-line-tool" xml:lang="en">
+<task id="using-command-line-tool">
   <title>Building output using the <cmdname>dita</cmdname> command</title>
-  <shortdesc>You can invoke DITA-OT and build output using the <cmdname>dita</cmdname> command. </shortdesc>
+  <shortdesc>DITA-OT includes a <cmdname>dita</cmdname> command-line tool. You can invoke the DITA-OT from the
+    command-line tool and generate output.</shortdesc>
   <taskbody>
+    <context>The DITA-OT client is a command-line tool, there is no graphic user interface.</context>
     <steps>
       <step>
-        <cmd>The DITA-OT client is a command-line tool, there is no graphic user interface. Open a terminal window by
-          typing the following in the search bar:</cmd>
+        <cmd>Open a terminal window by typing the following in the search bar:</cmd>
         <info>
           <ul>
             <li>On OS X and Linux, type <userinput>Terminal</userinput>.</li>
@@ -18,7 +19,7 @@
         </info>
       </step>
       <step>
-        <cmd>From the terminal window, issue the following command:</cmd>
+        <cmd>At the command-line prompt, enter the following command:</cmd>
         <info>
           <codeblock><varname>install-dir</varname>/bin/dita -i <varname>input-file</varname> -f <varname>format</varname> -o <varname>output-dir</varname></codeblock>
           <p>where:</p>
@@ -29,8 +30,10 @@
             <li><varname>output-dir</varname> is the output directory path for generated output.</li>
           </ul>
         </info>
-        <stepresult id="running-ditaot-results">If processing is successful, nothing is printed in the terminal
-          window.</stepresult>
+        <stepresult id="running-ditaot-results">
+          <p>If processing is successful, nothing is printed in the terminal window.</p>
+          <p>If you do not specify an output directory, the <cmdname>dita</cmdname> command writes output to the
+              <filepath>out</filepath> subdirectory of the current directory.</p></stepresult>
       </step>
     </steps>
     <example>

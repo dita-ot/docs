@@ -20,12 +20,12 @@
       <step>
         <cmd>From the terminal window, issue the following command:</cmd>
         <info>
-          <codeblock><varname>install-dir</varname>/bin/dita -i <varname>input-file</varname> -f <varname>transformation-type</varname> -o <varname>output-dir</varname></codeblock>
+          <codeblock><varname>install-dir</varname>/bin/dita -i <varname>input-file</varname> -f <varname>format</varname> -o <varname>output-dir</varname></codeblock>
           <p>where:</p>
           <ul id="basic-variables">
             <li><varname>install-dir</varname> is the DITA-OT installation directory path.</li>
             <li><varname>input-file</varname> is the DITA map or DITA file path that you want to process.</li>
-            <li><varname>transformation-type</varname> is the transformation type.</li>
+            <li><varname>format</varname> is the output format (transformation type).</li>
             <li><varname>output-dir</varname> is the output directory path for generated output.</li>
           </ul>
         </info>

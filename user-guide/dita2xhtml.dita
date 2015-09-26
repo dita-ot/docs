@@ -10,7 +10,7 @@
   <conbody>
     <p>The XHTML output is always associated with the default DITA-OT CSS file (<filepath>commonltr.css</filepath> or
         <filepath>commonrtl.css</filepath> for right-to-left languages). You can use toolkit parameters to add a custom
-      style sheets to override the default styles.</p>
+      style sheet to override the default styles.</p>
     <p>To run the XHTML transformation, set the <parmname>transtype</parmname> parameter to <option>xhtml</option>. If
       you are running the demo build, specify <option>web</option> rather than <option>xhtml</option>.</p>
   </conbody>

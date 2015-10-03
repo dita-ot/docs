@@ -63,6 +63,40 @@
         <p>DITA Open Toolkit Release <keyword keyref="version"/> includes the following bug fixes:</p>
         <ul>
           <li>
+            <p>Index terms starting with “Ñ” are no longer dropped from Spanish PDF indexes. They are now handled with
+              the correct Spanish sort order and placed in a group between “N” and “O”, under the “Ñ” heading. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/2068" format="html" scope="external"
+                    >#2068</xref> Add support for n-tilde in Spanish index </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>References to external code samples are now resolved properly when <codeph>@coderef</codeph> attributes
+              target non-XML resources and the output directory is shifted by setting the
+                <parmname>generate.copy.outer</parmname> parameter to <option>3</option>. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/2044" format="html" scope="external"
+                    >#2044</xref> Non-XML coderef fails on outer context </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>Warnings for deprecated templates are now displayed with the correct message prefix:
+                <codeph>DOTX</codeph>. <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/2043" format="html" scope="external"
+                    >#2043</xref> Warning for deprecated templates fails </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <title>Maintenance Release 2.1.1</title>
+        <p>DITA Open Toolkit Release 2.1.1 includes the following bug fixes:</p>
+        <ul>
+          <li>
             <p>Whitespace in <codeph>&lt;image></codeph> elements is now ignored in PDF output to prevent errors when
               rendering XSL:FO. <ul>
                 <li>

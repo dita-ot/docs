@@ -125,7 +125,7 @@
       <pd id="{@name}.desc">
         <xsl:value-of select="@desc"/>
         <xsl:choose>
-          <xsl:when test="@type = 'enum' and val/@desc">
+          <xsl:when test="@type = 'enum' and $params/val/@desc">
             <xsl:text> The following values are supported:</xsl:text>
             <ul>
               <xsl:for-each select="$params/val">
@@ -142,7 +142,7 @@
               </xsl:for-each>
             </ul>
           </xsl:when>
-          <xsl:when test="@type = 'enum' and val">
+          <xsl:when test="@type = 'enum' and $params/val">
             <xsl:text> The allowed values are </xsl:text>
             <xsl:choose>
               <xsl:when test="count($params/val) gt 2">

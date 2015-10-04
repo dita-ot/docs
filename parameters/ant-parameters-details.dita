@@ -171,7 +171,7 @@
     </refbody>
   </reference>
   <reference id="ant-parameters-base-html-transformation">
-    <title>Ant parameters: Common HTML-based transformations</title>
+    <title>Ant parameters: HTML-based output formats</title>
     <titlealts>
       <navtitle>All HTML-based transformations</navtitle>
     </titlealts>
@@ -533,7 +533,7 @@
       <navtitle>HTML5 and XHTML</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace" conref="ant-parameters-common-html-transformation.dita#ant-parameters-common-html-transformation/shortdesc">Certain parameters are specific to the HTML5 and XHTML
-      transformation.</shortdesc>
+      transformations.</shortdesc>
     <refbody>
       <section>
         <parml>

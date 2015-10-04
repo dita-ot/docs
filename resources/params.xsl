@@ -48,7 +48,7 @@
   
   <xsl:template name="separate">
     <!--xsl:for-each select="//transtype/param"-->
-    <xsl:for-each-group select="//transtype[not(@abstract = 'true')]" group-by="@name">
+    <xsl:for-each-group select="//transtype[not(@abstract = 'true') or @name = 'base']" group-by="@name">
       <xsl:variable name="id" select="current-grouping-key()"/>
       <xsl:message>Writing <xsl:value-of select="$output-dir.url"/>/ant-parameters-<xsl:value-of select="$id"/>-transformation.dita</xsl:message>
       <xsl:result-document href="{$output-dir.url}/ant-parameters-{$id}-transformation.dita"

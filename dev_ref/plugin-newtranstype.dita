@@ -23,6 +23,7 @@
           <dd>Declare the transformation type as a print type.</dd>
         </dlentry>
       </dl>
+      <p>The <codeph>&lt;transtype></codeph> element is used to define a new transformation type with the parameters that are supported.</p>
     </section>
     <example>
       <title>Example</title>
@@ -31,6 +32,7 @@
         related Ant extension from the third feature:</p>
       <codeblock>&lt;plugin id="com.example.newtext">
   <b>&lt;feature extension="dita.conductor.transtype.check" value="newtext"/></b>
+  <b>&lt;transtype name="newtext"></b>      
   &lt;feature extension="dita.transtype.print" value="newtext"/>
   &lt;feature extension="dita.conductor.target.relative" file="antWrapper.xml"/>
 &lt;/plugin></codeblock></example>

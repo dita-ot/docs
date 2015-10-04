@@ -125,6 +125,72 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
             </strow>
           </simpletable>
         </li>
+        <li>
+          <p><codeph>&lt;transtype></codeph> defines a transformation type. The following attributes are supported:</p>
+          <simpletable keycol="1">
+            <sthead>
+              <stentry>Attribute</stentry>
+              <stentry>Description</stentry>
+              <stentry>Required</stentry>
+            </sthead>
+            <strow>
+              <stentry><codeph>name</codeph></stentry>
+              <stentry>transformation name </stentry>
+              <stentry>yes</stentry>
+            </strow>
+            <strow>
+              <stentry><codeph>desc</codeph></stentry>
+              <stentry>description</stentry>
+              <stentry>no</stentry>
+            </strow>
+            <strow>
+              <stentry><codeph>abstract</codeph></stentry>
+              <stentry>defined an abstract transformation type that cannot be used directly</stentry>
+              <stentry>no</stentry>
+            </strow>
+            <strow>
+              <stentry><codeph>extends</codeph></stentry>
+              <stentry>name of transformation type being extended</stentry>
+              <stentry>no</stentry>
+            </strow>
+          </simpletable>
+          <p><codeph>&lt;transtype></codeph> element can have <codeph>&lt;param></codeph> child elements. The following attributes are supported:</p>
+          <simpletable keycol="1">
+            <sthead>
+              <stentry>Attribute</stentry>
+              <stentry>Description</stentry>
+              <stentry>Required</stentry>
+            </sthead>
+            <strow>
+              <stentry><codeph>name</codeph></stentry>
+              <stentry>parameter name </stentry>
+              <stentry>yes</stentry>
+            </strow>
+            <strow>
+              <stentry><codeph>desc</codeph></stentry>
+              <stentry>description</stentry>
+              <stentry>no</stentry>
+            </strow>
+            <strow>
+              <stentry><codeph>type</codeph></stentry>
+              <stentry>parameter type</stentry>
+              <stentry>yes</stentry>
+            </strow>
+          </simpletable>
+          <p>Enumeration type <codeph>&lt;param></codeph> element can have <codeph>&lt;val></codeph> child elements. The following attributes are supported:</p>
+          <simpletable keycol="1">
+            <sthead>
+              <stentry>Attribute</stentry>
+              <stentry>Description</stentry>
+              <stentry>Required</stentry>
+            </sthead>
+            <strow>
+              <stentry><codeph>default</codeph></stentry>
+              <stentry>defines enumeration value as the default value</stentry>
+              <stentry>yes</stentry>
+            </strow>
+          </simpletable>
+        </li>
       </ul>
       <p>Any extension that is not recognized by the DITA-OT is ignored; all elements other than
           <codeph>&lt;plugin></codeph> are optional. Since version 1.5.3 multiple extension definitions within a plug-in

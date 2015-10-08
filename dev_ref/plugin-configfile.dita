@@ -4,9 +4,9 @@
 
 <reference id="plugin-configfile" xml:lang="en-us">
   <title>Plug-in configuration file</title>
-  <shortdesc>The <filepath>plugin.xml</filepath> controls all aspects of a plug-in, making each extension visible to the
-    rest of the toolkit. The file uses pre-defined extension points to locate changes, and integrates those changes into
-    the core code.</shortdesc>
+  <shortdesc>The <filepath>plugin.xml</filepath> file controls all aspects of a plug-in, making each extension visible
+    to the rest of the toolkit. The file uses pre-defined extension points to locate changes, and integrates those
+    changes into the core code.</shortdesc>
   <refbody>
     <section>
       <p>The root element of the plugin.xml file is <codeph>&lt;plugin></codeph>, and must specify an
@@ -18,8 +18,8 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
       <p>The <codeph>&lt;plugin></codeph> element supports the following child elements: </p>
       <ul>
         <li>
-          <p><codeph>&lt;feature></codeph> defines an <i>extension</i> to contribute to a defined <i>extension
-            point</i>. The following attributes are supported:</p>
+          <p>The <codeph>&lt;feature></codeph> element defines an <i>extension</i> to contribute to a defined
+              <i>extension point</i>. The following attributes are supported:</p>
           <simpletable keycol="1">
             <sthead>
               <stentry>Attribute</stentry>
@@ -49,8 +49,8 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
           </simpletable>
         </li>
         <li>
-          <p><codeph>extension-point</codeph> defines new a <i>extension point</i> that can be used by other plug-ins.
-            The following attributes are supported:</p>
+          <p>The <codeph>&lt;extension-point></codeph> element defines new a <i>extension point</i> that can be used by
+            other plug-ins. The following attributes are supported:</p>
           <simpletable keycol="1">
             <sthead>
               <stentry>Attribute</stentry>
@@ -70,7 +70,8 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
           </simpletable>
         </li>
         <li>
-          <p><codeph>&lt;require></codeph> defines plug-in dependencies. The following attributes are supported:</p>
+          <p>The <codeph>&lt;require></codeph> element defines plug-in dependencies. The following attributes are
+            supported:</p>
           <simpletable keycol="1">
             <sthead>
               <stentry>Attribute</stentry>
@@ -90,8 +91,8 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
           </simpletable>
         </li>
         <li>
-          <p><codeph>&lt;template></codeph> defines files that should be treated as <i>templates</i>. The following
-            attributes are supported:</p>
+          <p>The <codeph>&lt;template></codeph> element defines files that should be treated as <i>templates</i>. The
+            following attributes are supported:</p>
           <simpletable keycol="1">
             <sthead>
               <stentry>Attribute</stentry>
@@ -106,7 +107,7 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
           </simpletable>
         </li>
         <li>
-          <p><codeph>&lt;meta></codeph> defines metadata. The following attributes are supported:</p>
+          <p>The <codeph>&lt;meta></codeph> element defines metadata. The following attributes are supported:</p>
           <simpletable keycol="1">
             <sthead>
               <stentry>Attribute</stentry>
@@ -126,7 +127,8 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
           </simpletable>
         </li>
         <li>
-          <p><codeph>&lt;transtype></codeph> defines a transformation type. The following attributes are supported:</p>
+          <p>The <codeph>&lt;transtype></codeph> element defines an output format (transformation type). The following
+            attributes are supported for transformations:</p>
           <simpletable keycol="1">
             <sthead>
               <stentry>Attribute</stentry>
@@ -145,16 +147,17 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
             </strow>
             <strow>
               <stentry><codeph>abstract</codeph></stentry>
-              <stentry>defined an abstract transformation type that cannot be used directly</stentry>
+              <stentry>defines an abstract transformation type that cannot be used directly</stentry>
               <stentry>no</stentry>
             </strow>
             <strow>
               <stentry><codeph>extends</codeph></stentry>
-              <stentry>name of transformation type being extended</stentry>
+              <stentry>specifies the name of the transformation type being extended</stentry>
               <stentry>no</stentry>
             </strow>
           </simpletable>
-          <p><codeph>&lt;transtype></codeph> element can have <codeph>&lt;param></codeph> child elements. The following attributes are supported:</p>
+          <p>The <codeph>&lt;transtype></codeph> element may define additional parameters for the transformation type
+            using <codeph>&lt;param></codeph> child elements. The following parameter attributes are supported:</p>
           <simpletable keycol="1">
             <sthead>
               <stentry>Attribute</stentry>
@@ -173,11 +176,13 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
             </strow>
             <strow>
               <stentry><codeph>type</codeph></stentry>
-              <stentry>parameter type</stentry>
+              <stentry>parameter type (enum, file, string)</stentry>
               <stentry>yes</stentry>
             </strow>
           </simpletable>
-          <p>Enumeration type <codeph>&lt;param></codeph> element can have <codeph>&lt;val></codeph> child elements. The following attributes are supported:</p>
+          <p>Enumeration parameters (<codeph>&lt;param></codeph> elements of type <option>enum</option>) define
+            enumeration values with <codeph>&lt;val></codeph> child elements. The following attributes are
+            supported:</p>
           <simpletable keycol="1">
             <sthead>
               <stentry>Attribute</stentry>
@@ -186,7 +191,7 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
             </sthead>
             <strow>
               <stentry><codeph>default</codeph></stentry>
-              <stentry>defines enumeration value as the default value</stentry>
+              <stentry>defines an enumeration value as the default value (default="true")</stentry>
               <stentry>yes</stentry>
             </strow>
           </simpletable>

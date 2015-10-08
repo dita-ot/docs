@@ -269,4 +269,20 @@
       </relcell>
     </relrow>
   </reltable>
+  <reltable>
+    <title>Plugins</title>
+    <relheader>
+      <relcolspec type="reference"/>
+      <relcolspec type="reference"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="dev_ref/plugin-configfile.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="dev_ref/plugin-newtranstype.dita"/>
+        <topicref href="dev_ref/plugin-sample.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

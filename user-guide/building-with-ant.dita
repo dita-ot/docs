@@ -8,17 +8,17 @@
     the command prompt. You also can use an Ant build script to provide the DITA-OT parameters.</shortdesc>
   <taskbody>
     <steps>
-      <step conref="conref-task.dita#conref-task/run-startcmd">
+      <step conref="../resources/conref-task.dita#ID/run-startcmd">
         <cmd/>
       </step>
       <step>
         <cmd>To provide the DITA-OT parameters from the command prompt, issue the following command:</cmd>
         <info>
           <codeblock>ant -Dargs.input=<varname>input-file</varname> -Dtranstype=<varname>transformation-type</varname> -D<varname>parameter-name</varname>=<varname>value</varname></codeblock>
-            where:<ul conref="conref-task.dita#conref-task/basic-variables">
+            where:<ul conref="../resources/conref-task.dita#ID/basic-variables">
             <li/>
           </ul></info>
-        <stepresult conref="conref-task.dita#conref-task/running-ditaot-results"/>
+        <stepresult conref="../resources/conref-task.dita#ID/running-ditaot-results"/>
       </step>
       <step>
         <cmd>If you use a build script, issue the following command:</cmd>

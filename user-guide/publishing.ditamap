@@ -5,7 +5,13 @@
 <map>
   <title>Publishing</title>
   <topicref href="transforming-dita-content.dita" navtitle="Transforming DITA content">
-    <topicref href="using-dita-command.dita"/>
+    <topicref href="using-dita-command.dita">
+      <ditavalref href="../resources/expert.ditaval">
+        <ditavalmeta>
+          <dvrResourcePrefix>build-</dvrResourcePrefix>
+        </ditavalmeta>
+      </ditavalref>
+    </topicref>
     <topicref href="publishing-with-ant.dita" navtitle="Running DITA-OT from Ant">
       <topicref href="ant.dita" navtitle="Ant overview"/>
       <topicref href="building-with-ant.dita" navtitle="Building output using Ant"/>

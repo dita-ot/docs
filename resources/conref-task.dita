@@ -24,8 +24,14 @@
             <li><varname>install-dir</varname> is the DITA-OT installation directory path.</li>
             <li><varname>input-file</varname> is the DITA map or DITA file that you want to process.</li>
             <li><varname>format</varname> is the output format (transformation type).</li>
-            <li><varname>parameter-name</varname> is the name of an optional parameter.</li>
-            <li><varname>value</varname> is an applicable value for the optional parameter.</li>
+            <li audience="expert"><varname>parameter-name</varname> is the name of an optional parameter.</li>
+            <li audience="expert"><varname>value</varname> is an applicable value for the optional parameter.</li>
+            <li><varname>output-dir</varname> is the output directory path for generated output.</li>
+          </ul>
+          <ul id="basic-variables-novice">
+            <li><varname>install-dir</varname> is the DITA-OT installation directory path.</li>
+            <li><varname>input-file</varname> is the DITA map or DITA file that you want to process.</li>
+            <li><varname>format</varname> is the output format (transformation type).</li>
             <li><varname>output-dir</varname> is the output directory path for generated output.</li>
           </ul>
         </info>

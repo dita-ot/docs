@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<reference id="ID">
+  <title>Migrating customizations</title>
+  <shortdesc>If you have XSL transformation overrides, plugins or other customizations written prior to DITA-OT <keyword
+      keyref="release"/>, you may need to make changes to ensure your overrides work properly with the latest toolkit
+    versions. </shortdesc>
+  <refbody>
+    <section>
+      <p>In some cases, you may be able to remove old code that is no longer needed. In other cases, you may need to
+        refactor your code to point to the modified extension points, templates or modes in recent toolkit versions.</p>
+    </section>
+  </refbody>
+</reference>

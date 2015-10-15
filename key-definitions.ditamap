@@ -3,8 +3,8 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <map id="keydefs" title="Key definitions (variables)">
-  <!--
- DOWNLOAD URLs -->
+
+  <!-- DOWNLOAD URLs -->
   <keydef format="html" keys="download.ant" scope="external" href="http://ant.apache.org/"/>
   <keydef format="html" keys="download.dita-ot.current-release" scope="external" href="http://www.dita-ot.org/download"/>
   <keydef format="html" keys="download.fop" scope="external" href="http://xmlgraphics.apache.org/fop/download.html"/>
@@ -14,105 +14,111 @@
   <keydef format="html" keys="download.oracle-jdk" scope="external"
     href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"/>
   <keydef format="html" keys="download.saxon" scope="external" href="http://saxon.sourceforge.net/"/>
-  <keydef keys="release-notes" href="release-notes/rel2.1.dita"/>
+
   <!--VERSION NUMBERS: DITA-OT-->
+  <keydef keys="release-notes" href="release-notes/rel2.1.dita"/>
+
+  <!-- DITA-OT: Latest maintenance version (3 digits) -->
   <keydef keys="version">
-    <!-- DITA-OT: Latest maintenance version (3 digits) -->
     <topicmeta>
       <keywords>
         <keyword>2.1.2</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+
+  <!-- DITA-OT: Major & minor release version (2 digits) -->
   <keydef keys="release">
-    <!-- DITA-OT: Major & minor release version (2 digits) -->
     <topicmeta>
       <keywords>
         <keyword>2.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+
   <!--VERSION NUMBERS: OTHER APPLICATIONS-->
+
+  <!-- Ant: Bundled version-->
   <keydef keys="tool.ant.version">
-    <!-- Ant: Bundled version-->
     <topicmeta>
       <keywords>
         <keyword>1.9.4</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- Ant: Minimum version -->
   <keydef keys="tool.ant.version.min">
-    <!-- Ant: Minimum version -->
     <topicmeta>
       <keywords>
         <keyword>1.7.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- Codec: Bundled version -->
   <keydef keys="tool.codec.version">
-    <!-- Codec: Bundled version -->
     <topicmeta>
       <keywords>
         <keyword>1.9</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- ICU for Java: Bundled version -->
   <keydef keys="tool.icu4j.version">
-    <!-- ICU for Java: Bundled version -->
     <topicmeta>
       <keywords>
         <keyword>54.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- Java-->
   <keydef keys="tool.java.version">
-    <!-- Java-->
     <topicmeta>
       <keywords>
         <keyword>7</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- Xerces: Bundled with Ant 1.7.1 -->
   <keydef keys="tool.xerces.version.min">
-    <!-- Xerces: Bundled with Ant 1.7.1 -->
     <topicmeta>
       <keywords>
         <keyword>2.9.0</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- Xerces: Bundled version-->
   <keydef keys="tool.xerces.version">
-    <!-- Xerces: Bundled version-->
     <topicmeta>
       <keywords>
         <keyword>2.11.0</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- FOP: Bundled version -->
   <keydef keys="tool.fop.version">
-    <!-- FOP: Bundled version -->
     <topicmeta>
       <keywords>
         <keyword>1.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- Resolver: Bundled version-->
   <keydef keys="tool.resolver.version">
-    <!-- Resolver: Bundled version-->
     <topicmeta>
       <keywords>
         <keyword>1.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- Saxon: Bundled version -->
   <keydef keys="tool.saxon.version">
-    <!-- Saxon: Bundled version -->
     <topicmeta>
       <keywords>
         <keyword>9.1.0.8</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+
   <!--URLs: Web pages-->
   <keydef keys="contributor-meeting-minutes" href="https://github.com/dita-ot/dita-ot/wiki/Meeting-minutes"
     scope="external" format="html">

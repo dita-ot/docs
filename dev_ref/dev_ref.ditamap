@@ -60,8 +60,9 @@
   <topicref href="../user-guide/dita2pdf-customization.dita"/>
   <topicref href="migration.dita">
     <topicref href="migrating-to-1.8.dita"/>
-    <topicref rev="1.7" href="flagging-migration.dita" navtitle="Migrating style sheets and XSLT overrides"
-      locktitle="yes"/>
+    <topicref href="migrating-to-1.7.dita">
+      <topicref rev="1.7" href="flagging-migration.dita" navtitle="Flagging updates" locktitle="yes"/>
+    </topicref>
   </topicref>
   <topicref href="DITA1.2-implementation-dependent-features.dita"/>
   <topicref href="extended-functionality.dita"/>

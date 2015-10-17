@@ -44,7 +44,7 @@
         </ul>
       </p></section>-->
     <!--<section><title>Analyze messages in the log file</title><p>A log file in plain text format is generated in the log
-        directory, which has a name combined with both input file name and transform type. You can open it and find more
+        directory, which has a name combined with both input file name and transformation type. You can open it and find more
         detailed information, which are helpful for solving problems. You can use the same way introduced above to
         analyze the messages and solve the problems.</p><p>The log directory can be specified by:</p><ul>
         <li>using Ant, with argument <codeph>-logfile=<userinput>log-file</userinput></codeph></li>

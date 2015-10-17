@@ -386,10 +386,10 @@
           <plentry id="args.javahelp.toc">
             <pt><parmname>args.javahelp.toc</parmname></pt>
             <pd conaction="mark" conref="ant-parameters-javahelp-transformation.dita#ant-parameters-javahelp-transformation/args.javahelp.toc.desc"/>
-            <pd conaction="pushafter">Default value is the name of the ditamap file for your project <draft-comment author="Kristen James Eberlein" time="11 August 2012">I assume that the first
+            <pd conaction="pushafter">Default value is the name of the ditamap file for your project. <draft-comment author="Kristen James Eberlein" time="11 August 2012">I assume that the first
                 sentence means "Specifies the name of the JavaHelp TOC file." But what does the second sentence mean? That the default value for the <parmname>args.javahelp.toc</parmname> parameter is
                 the name of the master DITA map? Or that the default value for the <parmname>args.javahelp.toc</parmname> parameter is the value of the <parmname>args.javahelp.map</parmname>
-                parameter?</draft-comment>.</pd>
+                parameter?</draft-comment></pd>
           </plentry>
         </parml>
       </section>

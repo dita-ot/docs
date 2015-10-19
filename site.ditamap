@@ -20,9 +20,9 @@
   <topicref href="dev_ref/index.dita">
     <mapref href="dev_ref/dev_ref.ditamap"/>
   </topicref>
-  <topicgroup>
-    <mapref href="key-definitions.ditamap" processing-role="resource-only"/>
-    <mapref href="subjectscheme.ditamap" type="subjectScheme" processing-role="resource-only"/>
-    <mapref href="reltable.ditamap" processing-role="resource-only"/>
+  <topicgroup processing-role="resource-only">
+    <mapref href="key-definitions.ditamap"/>
+    <mapref href="reltable.ditamap"/>
+    <mapref href="subjectscheme.ditamap" type="subjectScheme"/>
   </topicgroup>
 </map>

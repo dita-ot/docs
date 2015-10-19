@@ -4,7 +4,6 @@
 
 <map xml:lang="en-us">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
-  <mapref href="key-definitions.ditamap" processing-role="resource-only"/>
   <topicref href="introduction.dita"/>
   <topicref href="release-notes/rel2.1.dita" locktitle="yes">
     <topicmeta>
@@ -22,6 +21,9 @@
     <mapref href="dev_ref/dev_ref.ditamap"/>
   </topicref>
   <mapref href="dita-resources.ditamap"/>
-  <mapref href="subjectscheme.ditamap" type="subjectScheme" processing-role="resource-only"/>
-  <mapref href="reltable.ditamap" processing-role="resource-only"/>
+  <topicgroup processing-role="resource-only">
+    <mapref href="key-definitions.ditamap"/>
+    <mapref href="reltable.ditamap"/>
+    <mapref href="subjectscheme.ditamap" type="subjectScheme"/>
+  </topicgroup>
 </map>

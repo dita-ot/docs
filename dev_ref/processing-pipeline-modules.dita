@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<concept id="processing-pipeline-modules" xml:lang="en-us">
+<concept id="processing-pipeline-modules" xml:lang="en-US">
   <title>Processing modules</title>
   <shortdesc>The DITA-OT processing pipeline is implemented using Ant. Individual modules within the Ant script are
     implemented in either Java or XSLT, depending on such factors as performance or requirements for customization.

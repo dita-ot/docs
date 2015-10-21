@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="plugin-newtranstype" xml:lang="en-us">
+<reference id="plugin-newtranstype" xml:lang="en-US">
   <title>Integrating a new transformation type</title>
   <shortdesc>Plug-ins may integrate an entirely new transformation type. The new transformation type can be very simple,
     such as an XHTML build that creates an additional control file; it can also be very complex, adding any number of

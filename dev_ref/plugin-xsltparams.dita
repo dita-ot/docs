@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="plugin-xsltparams" xml:lang="en-us">
+<reference id="plugin-xsltparams" xml:lang="en-US">
   <title>Passing parameters to existing XSLT steps</title>
   <shortdesc>Plug-ins can define new parameters to be passed from the Ant build into existing XSLT pipeline stages,
     usually to have those parameters available as global <codeph>&lt;xsl:param></codeph> values within XSLT

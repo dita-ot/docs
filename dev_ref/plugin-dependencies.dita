@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="plugin-dependencies" xml:lang="en-us">
+<reference id="plugin-dependencies" xml:lang="en-US">
   <title>Managing plug-in dependencies</title>
   <shortdesc>The <codeph>&lt;require></codeph> element in a <filepath>plugin.xml</filepath> file is used to create a
     dependency on another plug-in. The <codeph>&lt;require></codeph> element requires the <codeph>plugin</codeph>

@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<concept id="preprocess-keyref" xml:lang="en-us">
+<concept id="preprocess-keyref" xml:lang="en-US">
   <title>Resolve keyref (keyref)</title>
   <shortdesc>The <codeph>keyref</codeph> step examines all the keys that are defined in the DITA source and resolved the
     key references. Links that make use of keys are updated so that any @href value is replaced by the appropriate

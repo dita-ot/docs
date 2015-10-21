@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="plugin-antpreprocess" xml:lang="en-us">
+<reference id="plugin-antpreprocess" xml:lang="en-US">
   <title>Adding Ant targets to the pre-process pipeline</title>
   <shortdesc>Every step in the pre-process pipeline defines an extension point before and after the step, to allow
     plug-ins to integrate additional processing. This allows a plug-in to insert a new step before any pre-processing

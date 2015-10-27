@@ -118,7 +118,7 @@
           <pd conref="ant-parameters-base-transformation.dita#ant-parameters-base-transformation/args.filter.desc"/>
         </plentry>
         <plentry>
-          <pt><parmname>-temp</parmname>
+          <pt><parmname>-t</parmname>, <parmname>-temp</parmname>
             <varname>dir</varname></pt>
           <pd conref="ant-parameters-base-transformation.dita#ant-parameters-base-transformation/dita.temp.dir.desc"/>
         </plentry>

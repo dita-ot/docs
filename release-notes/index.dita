@@ -13,7 +13,7 @@
     <refbody>
       <section>
         <title>DITA 1.3 support</title>
-        <ph conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/shortdesc-ph"/>
+        <p><ph conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/shortdesc-ph"/></p>
         <p conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/p"/>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> extends DITA 1.3 support with the following
           enhancements:
@@ -26,24 +26,17 @@
               <xref href="https://github.com/dita-ot/dita-ot/pull/1969" scope="external" format="html">#1969</xref>,
               <xref href="https://github.com/dita-ot/dita-ot/issues/1637" scope="external" format="html">#1637</xref>
             </li>
-            <li id="2094">Add DITA 1.3 schemas
-              <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html">#2094</xref>
-            </li>
-            <li id="2096">Extra warnings reported when project using key scopes and branch filtering is published
-              <xref href="https://github.com/dita-ot/dita-ot/issues/2096" scope="external" format="html">#2096</xref>
-            </li>
-            <li id="1968">Move same topic fragment processing before conref
-              <xref href="https://github.com/dita-ot/dita-ot/pull/1968" scope="external" format="html">#1968</xref>
-            </li>
-            <li id="2004">Support multiple scope names in a single keyscope attribute
-              <xref href="https://github.com/dita-ot/dita-ot/issues/2004" scope="external" format="html">#2004</xref>
-            </li>
+            <li id="2094" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/2094"/>
+            <li id="2096" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/2096"/>
+            <li id="1968" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/1968"/>
+            <li id="2004" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/2004"/>
           </ul>
         </p>
         <!--<p>For details on these and all other enhancements, see the sections below.</p>-->
       </section>
     </refbody>
     <related-links>
+      <link keyref="dita-ot-spec"/>
       <link href="../user-guide/DITA_v1-3-support.dita"/>
     </related-links>
   </reference>
@@ -60,7 +53,7 @@
     </refbody>
   </reference>
 
-  <reference id="resolved-issues">
+  <reference id="issues">
     <title>Resolved issues</title>
     <shortdesc>The following items are included in DITA Open Toolkit Release <keyword keyref="release"/>. Issue numbers
       correspond to the tracking number in the <ph>
@@ -314,8 +307,8 @@
           <!--<li id="1968">Move same topic fragment processing before conref
             <xref href="https://github.com/dita-ot/dita-ot/pull/1968" scope="external" format="html">#1968</xref>
           </li>-->
-          <li id="1967">Remove unwanted $PATH2PROJ remnant from $entry-file definition (glossary entry file resolution fails from
-            term and abbreviated-form DOTX058W)
+          <li id="1967">Remove unwanted $PATH2PROJ remnant from $entry-file definition (glossary entry file resolution
+            fails from term and abbreviated-form DOTX058W)
             <xref href="https://github.com/dita-ot/dita-ot/pull/1967" scope="external" format="html">#1967</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/1966" scope="external" format="html">#1966</xref>
           </li>

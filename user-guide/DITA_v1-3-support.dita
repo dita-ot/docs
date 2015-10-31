@@ -15,8 +15,6 @@
       DITA 1.2 doctypes to the 1.3 DTDs, for example. All processing ordinarily dependent on the 1.0, 1.1, or 1.2
       definitions continues to work as usual, and any documents that make use of the newer DITA 1.3 elements or
       attributes will be supported with specific new processing.</p>
-
-
     <p>Because this support is based on a yet-to-be-approved version of the proposed OASIS
       <xref keyref="dita-ot-spec"/>, if you choose to investigate any 1.3-based function, be aware that the 1.3
       implementation in this version of the toolkit is preliminary. Upon final approval of the DITA 1.3 standard,
@@ -28,24 +26,18 @@
         tracking number in the <ph>
           <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
       <ul>
-        <li>
-          <xref href="https://github.com/dita-ot/dita-ot/issues/1649" format="html" scope="external">#1649</xref>
-          Support DITA 1.3 link syntax (milestone 2)</li>
-        <li>
-          <xref href="https://github.com/dita-ot/dita-ot/issues/1636" format="html" scope="external">#1636</xref>
-          Support DITA 1.3 cascade attribute (milestone 2)</li>
-        <li>
-          <xref href="https://github.com/dita-ot/dita-ot/issues/1635" format="html" scope="external">#1635</xref>
-          Implement DITA 1.3 profiling (milestone 2)</li>
-        <li>
-          <xref href="https://github.com/dita-ot/dita-ot/issues/1651" format="html" scope="external">#1651</xref> Add
-          new DITA 1.3 highlighting elements (milestone 4)</li>
-        <li>
-          <xref href="https://github.com/dita-ot/dita-ot/issues/1652" format="html" scope="external">#1652</xref> Add
-          DITA 1.3 markup and xml domain support (milestone 4)</li>
-        <li>
-          <xref href="https://github.com/dita-ot/dita-ot/issues/1654" format="html" scope="external">#1654</xref> Add
-          DITA 1.3 div element (milestone 4)</li>
+        <li>Support DITA 1.3 link syntax (milestone 2)
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1649" format="html" scope="external">#1649</xref></li>
+        <li>Support DITA 1.3 cascade attribute (milestone 2)
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1636" format="html" scope="external">#1636</xref></li>
+        <li>Implement DITA 1.3 profiling (milestone 2)
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1635" format="html" scope="external">#1635</xref></li>
+        <li>Add new DITA 1.3 highlighting elements (milestone 4)
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1651" format="html" scope="external">#1651</xref></li>
+        <li> Add DITA 1.3 markup and xml domain support (milestone 4)
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1652" format="html" scope="external">#1652</xref></li>
+        <li> Add DITA 1.3 div element (milestone 4)
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1654" format="html" scope="external">#1654</xref></li>
       </ul>
     </section>
 
@@ -71,26 +63,31 @@
             </ul>
           </p>
         </li>
-        <li id="2094">Add DITA 1.3 schemas
+        <li id="2094">The proposed DITA 1.3 grammars are now used as the default DTDs for processing
           <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html">#2094</xref>
         </li>
-        <li id="2096">Extra warnings reported when project using key scopes and branch filtering is published
+        <li id="2096">The <codeph>DOTJ065</codeph> warning that appeared when branch filter–generated topics were
+          renamed has been changed to an “info” message to clarify that renaming is intentional. The new DITA 1.3
+          elements <xmlelement>dvrResourcePrefix</xmlelement> and <xmlelement>dvrResourceSuffix</xmlelement> can be used
+          to control renaming and avoid this message if necessary.
           <xref href="https://github.com/dita-ot/dita-ot/issues/2096" scope="external" format="html">#2096</xref>
         </li>
-        <li id="1968">Move same topic fragment processing before conref
+        <li id="1968">Processing order has been revised to process same topic fragments before the conref phase, to
+          enable content references to elements in the same topic using a reference such as <codeph>&lt;p
+            conref="#./ID"/></codeph> as reported in
+          <xref href="https://github.com/dita-ot/dita-ot/pull/1649" scope="external" format="html">#1649</xref>.
           <xref href="https://github.com/dita-ot/dita-ot/pull/1968" scope="external" format="html">#1968</xref>
         </li>
-        <li id="2004">Support multiple scope names in a single keyscope attribute
+        <li id="2004">Keyref processing has been extended to support multiple scope names in a single
+            <xmlatt>keyscope</xmlatt> attribute
           <xref href="https://github.com/dita-ot/dita-ot/issues/2004" scope="external" format="html">#2004</xref>
         </li>
       </ul>
-      <note>For the latest status information on DITA 1.3-related features in version <keyword keyref="release"/>, see
-        the
+      <note>For the latest status information on DITA 1.3-related features, see the
         <xref href="https://github.com/dita-ot/dita-ot/issues?q=label%3A%22DITA+1.3%22+is%3Aclosed" scope="external"
           format="html">DITA 1.3 label</xref> in the GitHub issues tracker.</note>
     </section>
   </conbody>
-
 
   <related-links>
     <link format="html" href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part3-all-inclusive.html"

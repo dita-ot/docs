@@ -8,6 +8,18 @@
   <shortdesc>DITA Open Toolkit <keyword keyref="version"/> is a maintenance release that includes fixes for reported
     issues and provides additional support for DITA 1.3 features.</shortdesc>
 
+  <reference id="requirements">
+    <title>Requirements</title>
+    <refbody>
+      <section>
+        <draft-comment author="infotexture">Add info on new minimum Java version or any other requirements that have
+          changed since previous release.</draft-comment>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) or Java
+          Development Kit (JDK), version <keyword keyref="tool.java.version"/> or later.</p>
+      </section>
+    </refbody>
+  </reference>
+
   <reference id="highlights">
     <title>Release Highlights</title>
     <refbody>
@@ -39,18 +51,6 @@
       <link keyref="dita-ot-spec"/>
       <link href="../user-guide/DITA_v1-3-support.dita"/>
     </related-links>
-  </reference>
-
-  <reference id="requirements">
-    <title>Requirements</title>
-    <refbody>
-      <section>
-        <draft-comment author="infotexture">Add info on new minimum Java version or any other requirements that have
-          changed since previous release.</draft-comment>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) or Java
-          Development Kit (JDK), version <keyword keyref="tool.java.version"/> or later.</p>
-      </section>
-    </refbody>
   </reference>
 
   <reference id="issues">

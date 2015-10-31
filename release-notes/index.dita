@@ -15,11 +15,8 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following significant enhancements: <ul>
             <li>Extended Preview Support for DITA 1.3</li>
-                      <li>Support DITA 1.3 scoped keys <xref href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external"
-              format="html">#1648</xref>
-          </li>
-          <li>Support DITA 1.3 branch profiling <xref href="https://github.com/dita-ot/dita-ot/issues/1637"
-              scope="external" format="html">#1637</xref>
+            <li>Support DITA 1.3 scoped keys</li>
+            <li>Support DITA 1.3 branch profiling</li>
           </ul>
         </p>
         <p>For details on these and all other enhancements, see the sections below.</p>
@@ -42,8 +39,8 @@
   <reference id="resolved-issues">
     <title>Resolved issues</title>
     <shortdesc>The following items are included in DITA Open Toolkit Release <keyword keyref="release"/>. Issue numbers
-      correspond to the tracking number in the <ph><xref keyref="dita-ot-issues" scope="external">GitHub issues
-          tracker</xref></ph>.</shortdesc>
+      correspond to the tracking number in the <ph>
+        <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</shortdesc>
     <refbody>
       <!--
       <section>
@@ -58,74 +55,76 @@
         <title>Features</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <ul>
-          <li id="2103">Add sidebar TOC option to HTML5 <xref href="https://github.com/dita-ot/dita-ot/pull/2103"
-              scope="external" format="html">#2103</xref></li>
-          <li id="2099">Move HTML5 to a separate plugin <xref href="https://github.com/dita-ot/dita-ot/pull/2099"
-              scope="external" format="html">#2099</xref></li>
-          <li>Add DITA 1.3 schemas <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external"
-              format="html">#2094</xref>
+          <li id="2103">Add sidebar TOC option to HTML5
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2103" scope="external" format="html">#2103</xref>
           </li>
-          <li>Support “artlbl” option in PDF <xref href="https://github.com/dita-ot/dita-ot/pull/2072" scope="external"
-              format="html">#2072</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/2062" scope="external"
-              format="html">#2062</xref>
+          <li id="2099">Move HTML5 to a separate plugin
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2099" scope="external" format="html">#2099</xref>
           </li>
-          <li>Avoid dropping unexpected index terms <xref href="https://github.com/dita-ot/dita-ot/pull/2073"
-              scope="external" format="html">#2073</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/2071"
-              scope="external" format="html">#2071</xref>
+          <li id="2094">Add DITA 1.3 schemas
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html">#2094</xref>
           </li>
-          <li>Purpose and improvement request for “resources/plugins.xml” <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2018" scope="external" format="html">#2018</xref>
+          <li id="2072">Support “artlbl” option in PDF
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2072" scope="external" format="html">#2072</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2062" scope="external" format="html">#2062</xref>
           </li>
-          <li>Support multiple scope names in a single keyscope attribute <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2004" scope="external" format="html">#2004</xref>
+          <li id="2071">Avoid dropping unexpected index terms
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2073" scope="external" format="html">#2073</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2071" scope="external" format="html">#2071</xref>
           </li>
-          <li>Merge move-meta-entries and mappull preprocessing targets <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1995" scope="external" format="html">#1995</xref>
+          <li id="2018">Purpose and improvement request for “resources/plugins.xml”
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2018" scope="external" format="html">#2018</xref>
           </li>
-          <li>PDF2: Make generation of page masters and page sequence masters easier to extend <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1984" scope="external" format="html">#1984</xref>
+          <li id="2004">Support multiple scope names in a single keyscope attribute
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2004" scope="external" format="html">#2004</xref>
           </li>
-          <li id="1979">Initial support for DITA 1.3 key scopes <xref
-              href="https://github.com/dita-ot/dita-ot/pull/1979" scope="external" format="html">#1979</xref>, <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external" format="html">#1648</xref>
+          <li id="1995">Merge move-meta-entries and mappull preprocessing targets
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1995" scope="external" format="html">#1995</xref>
           </li>
-          <li>Add extension points and corresponding template files for flagging <xref
-              href="https://github.com/dita-ot/dita-ot/pull/1976" scope="external" format="html">#1976</xref>
+          <li id="1984">PDF2: Make generation of page masters and page sequence masters easier to extend
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1984" scope="external" format="html">#1984</xref>
           </li>
-          <li>Add initial implementation DITA 1.3 branch filtering <xref
-              href="https://github.com/dita-ot/dita-ot/pull/1969" scope="external" format="html">#1969</xref>, <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1637" scope="external" format="html">#1637</xref>
+          <li id="1979">Initial support for DITA 1.3 key scopes
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1979" scope="external" format="html">#1979</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external" format="html">#1648</xref>
           </li>
-          <li>Lazy key definition reading <xref href="https://github.com/dita-ot/dita-ot/pull/1962" scope="external"
-              format="html">#1962</xref>
+          <li id="1976">Add extension points and corresponding template files for flagging
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1976" scope="external" format="html">#1976</xref>
           </li>
-          <li>Move mapref processing to beginning of preprocess <xref
-              href="https://github.com/dita-ot/dita-ot/pull/1961" scope="external" format="html">#1961</xref>
+          <li id="1969">Add initial implementation DITA 1.3 branch filtering
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1969" scope="external" format="html">#1969</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1637" scope="external" format="html">#1637</xref>
           </li>
-          <li>Add support for reloading plugins from dita command <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1957" scope="external" format="html">#1957</xref>
+          <li id="1962">Lazy key definition reading
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1962" scope="external" format="html">#1962</xref>
           </li>
-          <li>Set up XML catalog for XEP <xref href="https://github.com/dita-ot/dita-ot/pull/1955" scope="external"
-              format="html">#1955</xref>
+          <li id="1961">Move mapref processing to beginning of preprocess
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1961" scope="external" format="html">#1961</xref>
           </li>
-          <li>Convert File based processing to URI based to support external URIs <xref
-              href="https://github.com/dita-ot/dita-ot/pull/1953" scope="external" format="html">#1953</xref>
+          <li id="1957">Add support for reloading plugins from dita command
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1957" scope="external" format="html">#1957</xref>
           </li>
-          <li>Sort plugin folders before integration <xref href="https://github.com/dita-ot/dita-ot/issues/1905"
-              scope="external" format="html">#1905</xref>
+          <li id="1955">Set up XML catalog for XEP
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1955" scope="external" format="html">#1955</xref>
           </li>
-          <li>Proposed metadata changes in plugin.xml for org.dita.xhtml plugin <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1866" scope="external" format="html">#1866</xref>
+          <li id="1953">Convert File based processing to URI based to support external URIs
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1953" scope="external" format="html">#1953</xref>
           </li>
-          <li>Add -t as synonym for -temp <xref href="https://github.com/dita-ot/dita-ot/issues/1836" scope="external"
-              format="html">#1836</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/2039" scope="external"
-              format="html">#2039</xref>
+          <li id="1905">Sort plugin folders before integration
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1905" scope="external" format="html">#1905</xref>
           </li>
-          <li>Validation for @cols attribute too drastic <xref href="https://github.com/dita-ot/dita-ot/issues/1835"
-              scope="external" format="html">#1835</xref>
+          <li id="1866">Proposed metadata changes in plugin.xml for org.dita.xhtml plugin
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1866" scope="external" format="html">#1866</xref>
           </li>
-          <li>Provide way in plugin.xml to specify the list of public parameters added for each transtype <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1757" scope="external" format="html">#1757</xref>
+          <li id="1836">Add -t as synonym for -temp
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1836" scope="external" format="html">#1836</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2039" scope="external" format="html">#2039</xref>
+          </li>
+          <li id="1835">Validation for @cols attribute too drastic
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1835" scope="external" format="html">#1835</xref>
+          </li>
+          <li id="1757">Provide way in plugin.xml to specify the list of public parameters added for each transtype
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1757" scope="external" format="html">#1757</xref>
           </li>
         </ul>
       </section>
@@ -135,74 +134,78 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
           existing features:</p>
         <ul>
-          <li>PDF: Prevent table rows from breaking across pages <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2118" scope="external" format="html">#2118</xref></li>
-          <li>PDF: Ensure baseline alignment for list items with icons <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2117" scope="external" format="html">#2117</xref></li>
-          <li>PDF: Indent stepsections to <codeph>$side-col-width</codeph>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2116" scope="external" format="html">#2116</xref></li>
-          <li>Optimize FOP PDF index generation <xref href="https://github.com/dita-ot/dita-ot/issues/2098"
-              scope="external" format="html">#2098</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/2086"
-              scope="external" format="html">#2086</xref>
+          <li id="2118">PDF: Prevent table rows from breaking across pages
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2118" scope="external" format="html">#2118</xref>
           </li>
-          <li>Improve HTML5 and XHTML table border processing <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2097" scope="external" format="html">#2097</xref>
+          <li id="2117">PDF: Ensure baseline alignment for list items with icons
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2117" scope="external" format="html">#2117</xref>
           </li>
-          <li>Extra warnings reported when project using key scopes and branch filtering is published <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2096" scope="external" format="html">#2096</xref>
+          <li id="2116">PDF: Indent stepsections to <codeph>$side-col-width</codeph>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2116" scope="external" format="html">#2116</xref>
           </li>
-          <li>Synchronize task string use from PDF2 with common Fix PDF variable insertion issues <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2088" scope="external" format="html">#2088</xref>
+          <li id="2098">Optimize FOP PDF index generation
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2098" scope="external" format="html">#2098</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2086" scope="external" format="html">#2086</xref>
           </li>
-          <li>Add support for many new languages to PDF2 <xref href="https://github.com/dita-ot/dita-ot/pull/2085"
-              scope="external" format="html">#2085</xref>
+          <li id="2097">Improve HTML5 and XHTML table border processing
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2097" scope="external" format="html">#2097</xref>
           </li>
-          <li>PDF index headers should be consistent across languages <xref
-              href="https://github.com/dita-ot/dita-ot/pull/2080" scope="external" format="html">#2080</xref>, <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2074" scope="external" format="html">#2074</xref>
+          <li id="2096">Extra warnings reported when project using key scopes and branch filtering is published
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2096" scope="external" format="html">#2096</xref>
           </li>
-          <li>Remove default finger image for notes in PDF <xref href="https://github.com/dita-ot/dita-ot/pull/2076"
-              scope="external" format="html">#2076</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/1577"
-              scope="external" format="html">#1577</xref>
+          <li id="2088">Synchronize task string use from PDF2 with common Fix PDF variable insertion issues
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2088" scope="external" format="html">#2088</xref>
+          </li>
+          <li id="2085">Add support for many new languages to PDF2
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2085" scope="external" format="html">#2085</xref>
+          </li>
+          <li id="2080">PDF index headers should be consistent across languages
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2080" scope="external" format="html">#2080</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2074" scope="external" format="html">#2074</xref>
+          </li>
+          <li id="2076">Remove default finger image for notes in PDF
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2076" scope="external" format="html">#2076</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1577" scope="external" format="html">#1577</xref>
           </li>
           <!-- Already included in 2.1.2 RN -->
           <!--<li>Add support for n-tilde in Spanish index 
             <xref href="https://github.com/dita-ot/dita-ot/pull/2068" scope="external" format="html">#2068</xref>, 
             <xref href="https://github.com/dita-ot/dita-ot/pull/2069" scope="external" format="html">#2069</xref>
           </li>-->
-          <li>Correct <codeph>outer.control</codeph> description for <xref
-              href="https://github.com/dita-ot/dita-ot/pull/1707" scope="external" format="html">#1707</xref>
+          <li id="2066">Correct <codeph>outer.control</codeph> description for
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1707" scope="external" format="html">#1707</xref>
             <xref href="https://github.com/dita-ot/dita-ot/pull/2066" scope="external" format="html">#2066</xref>
           </li>
-          <li>Split formatters to separate plugins <xref href="https://github.com/dita-ot/dita-ot/pull/2058"
-              scope="external" format="html">#2058</xref>
+          <li id="2058">Split formatters to separate plugins
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2058" scope="external" format="html">#2058</xref>
           </li>
-          <li>Extend <codeph>transtype</codeph> parameter description <xref
-              href="https://github.com/dita-ot/dita-ot/pull/2055" scope="external" format="html">#2055</xref>
+          <li id="2055">Extend <codeph>transtype</codeph> parameter description
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2055" scope="external" format="html">#2055</xref>
           </li>
-          <li>Sync order of arguments in command descriptions <xref href="https://github.com/dita-ot/dita-ot/pull/2054"
-              scope="external" format="html">#2054</xref>
+          <li id="2054">Sync order of arguments in command descriptions
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2054" scope="external" format="html">#2054</xref>
           </li>
-          <li>Retain classpath order when generating env files <xref href="https://github.com/dita-ot/dita-ot/pull/2053"
-              scope="external" format="html">#2053</xref>
+          <li id="2053">Retain classpath order when generating env files
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2053" scope="external" format="html">#2053</xref>
           </li>
-          <li>Refactor PDF flagging to use common preprocessing <xref
-              href="https://github.com/dita-ot/dita-ot/pull/2049" scope="external" format="html">#2049</xref>, <xref
-              href="https://github.com/dita-ot/dita-ot/pull/2047" scope="external" format="html">#2047</xref>
+          <li id="2049">Refactor PDF flagging to use common preprocessing
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2049" scope="external" format="html">#2049</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2047" scope="external" format="html">#2047</xref>
           </li>
-          <li>Fix dita.bat <xref href="https://github.com/dita-ot/dita-ot/pull/2046" scope="external" format="html"
-              >#2046</xref>
+          <li id="2046">Fix dita.bat
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2046" scope="external" format="html">#2046</xref>
           </li>
-          <li>Add axf.opt Ant parameter <xref href="https://github.com/dita-ot/dita-ot/pull/2041" scope="external"
-              format="html">#2041</xref>
+          <li id="2041">Add axf.opt Ant parameter
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2041" scope="external" format="html">#2041</xref>
           </li>
-          <li>Make strict processing mode fail on error messages <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1986" scope="external" format="html">#1986</xref>
+          <li id="1986">Make strict processing mode fail on error messages
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1986" scope="external" format="html">#1986</xref>
           </li>
-          <li>colspec added by default to tables in OT2.1 causes non optimal presentation <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1970" scope="external" format="html">#1970</xref></li>
-          <li>Use URI and File instead of String <xref href="https://github.com/dita-ot/dita-ot/issues/1544"
-              scope="external" format="html">#1544</xref>
+          <li id="1970">colspec added by default to tables in OT2.1 causes non optimal presentation
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1970" scope="external" format="html">#1970</xref>
+          </li>
+          <li id="1544">Use URI and File instead of String
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1544" scope="external" format="html">#1544</xref>
           </li>
         </ul>
       </section>
@@ -211,89 +214,92 @@
         <title>Bugs</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <ul>
-          <li>Third relcolspec title on a reltable no longer taken into account for publishing <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2119" scope="external" format="html">#2119</xref></li>
-          <li>Topic in temp folder is not wellformed <xref href="https://github.com/dita-ot/dita-ot/issues/2109"
-              scope="external" format="html">#2109</xref>
+          <li id="2119">Third relcolspec title on a reltable no longer taken into account for publishing
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2119" scope="external" format="html">#2119</xref>
           </li>
-          <li>gradle build fails with ‘Could not load FFI Provider ..’ on Windows <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2108" scope="external" format="html">#2108</xref>
+          <li id="2109">Topic in temp folder is not wellformed
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2109" scope="external" format="html">#2109</xref>
           </li>
-          <li>Behavior of the force-unique flag <xref href="https://github.com/dita-ot/dita-ot/issues/2105"
-              scope="external" format="html">#2105</xref></li>
-          <li>Site builds fail after <codeph>html5</codeph> changes <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2101" scope="external" format="html">#2101</xref>
+          <li id="2108">gradle build fails with ‘Could not load FFI Provider ..’ on Windows
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2108" scope="external" format="html">#2108</xref>
           </li>
-          <li>Generated HTML table is invalid according to HTML5 specs <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2095" scope="external" format="html">#2095</xref>
+          <li id="2105">Behavior of the force-unique flag
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2105" scope="external" format="html">#2105</xref>
           </li>
-          <li>Fix table and figure list to include number, title <xref
-              href="https://github.com/dita-ot/dita-ot/pull/2093" scope="external" format="html">#2093</xref>
+          <li id="2101">Site builds fail after <codeph>html5</codeph> changes
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2101" scope="external" format="html">#2101</xref>
           </li>
-          <li>Remove obsolete info from codepage list <xref href="https://github.com/dita-ot/dita-ot/pull/2091"
-              scope="external" format="html">#2091</xref>
+          <li id="2095">Generated HTML table is invalid according to HTML5 specs
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2095" scope="external" format="html">#2095</xref>
           </li>
-          <li>Add axf.jar into log-processor taskdef classpath <xref href="https://github.com/dita-ot/dita-ot/pull/2090"
-              scope="external" format="html">#2090</xref>
+          <li id="2034">Fix table and figure list to include number, title
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2093" scope="external" format="html">#2093</xref>
           </li>
-          <li>Add PFD2 index groups for a-breve, a-circ in Romanian <xref
-              href="https://github.com/dita-ot/dita-ot/pull/2081" scope="external" format="html">#2081</xref>
+          <li id="2091">Remove obsolete info from codepage list
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2091" scope="external" format="html">#2091</xref>
+          </li>
+          <li id="2090">Add axf.jar into log-processor taskdef classpath
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2090" scope="external" format="html">#2090</xref>
+          </li>
+          <li id="2081">Add PFD2 index groups for a-breve, a-circ in Romanian
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2081" scope="external" format="html">#2081</xref>
           </li>
           <!-- #2068 already included in 2.1.2 RN -->
-          <li>Fix ODT title generation <xref href="https://github.com/dita-ot/dita-ot/pull/2059" scope="external"
-              format="html">#2059</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/2034" scope="external"
-              format="html">#2034</xref>
+          <li id="2059">Fix ODT title generation
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2059" scope="external" format="html">#2059</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2034" scope="external" format="html">#2034</xref>
           </li>
-          <li>Catch null FileInfo object being referenced in move-meta. <xref
-              href="https://github.com/dita-ot/dita-ot/pull/2051" scope="external" format="html">#2051</xref>
+          <li id="2048">Catch null FileInfo object being referenced in move-meta.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2051" scope="external" format="html">#2051</xref>
           </li>
-          <li>Flagging preprocess grabs too much with check for defaults <xref
-              href="https://github.com/dita-ot/dita-ot/pull/2050" scope="external" format="html">#2050</xref>, <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2048" scope="external" format="html">#2048</xref></li>
-          <!--<li>when transfer .ditamap file to odt format output,the title of the odt file is not correct <xref
+          <li id="2050">Flagging preprocess grabs too much with check for defaults
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2050" scope="external" format="html">#2050</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2048" scope="external" format="html">#2048</xref>
+          </li>
+          <!--<li id="2027">when transfer .ditamap file to odt format output,the title of the odt file is not correct <xref
               href="https://github.com/dita-ot/dita-ot/issues/2034" scope="external" format="html">#2034</xref>
           </li>-->
-          <li>Error message not properly formatted [DOT 2.x develop branch] <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2027" scope="external" format="html">#2027</xref>
+          <li id="2027">Error message not properly formatted [DOT 2.x develop branch]
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2027" scope="external" format="html">#2027</xref>
           </li>
-          <li>Can no longer publish to XHTML image with data protocol <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2012" scope="external" format="html">#2012</xref>
+          <li id="2012">Can no longer publish to XHTML image with data protocol
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2012" scope="external" format="html">#2012</xref>
           </li>
-          <li>Ensuring @chunk inside topicgroups functions as expected. <xref
-              href="https://github.com/dita-ot/dita-ot/pull/2009" scope="external" format="html">#2009</xref>, <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1991" scope="external" format="html">#1991</xref>
+          <li id="1991">Ensuring @chunk inside topicgroups functions as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2009" scope="external" format="html">#2009</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1991" scope="external" format="html">#1991</xref>
           </li>
-          <li>Copy-to usage with URI support does not properly work <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2006" scope="external" format="html">#2006</xref>
+          <li id="2006">Copy-to usage with URI support does not properly work
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2006" scope="external" format="html">#2006</xref>
           </li>
-          <li>Cannot publish remote HTTP DITA Map to XHTML <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2003" scope="external" format="html">#2003</xref>
+          <li id="2003">Cannot publish remote HTTP DITA Map to XHTML
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2003" scope="external" format="html">#2003</xref>
           </li>
-          <li>Branch filtering does not seem to work with entire DITA Maps <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1992" scope="external" format="html">#1992</xref>
+          <li id="1992">Branch filtering does not seem to work with entire DITA Maps
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1992" scope="external" format="html">#1992</xref>
           </li>
-          <!-- <li>Problem with chunking (DITA OT 2.x). <xref href="https://github.com/dita-ot/dita-ot/issues/1991"
+          <!-- <li id="1991">Problem with chunking (DITA OT 2.x). <xref href="https://github.com/dita-ot/dita-ot/issues/1991"
             scope="external" format="html">#1991</xref>
           </li>-->
-          <li>Add proper mappings for topicrefs with copy-to attributes in JavaHelp <xref
-              href="https://github.com/dita-ot/dita-ot/pull/1989" scope="external" format="html">#1989</xref>
+          <li id="1966">Add proper mappings for topicrefs with copy-to attributes in JavaHelp
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1989" scope="external" format="html">#1989</xref>
           </li>
-          <li>Use the fragment part of KeyDef @href attribute when building @conref <xref
-              href="https://github.com/dita-ot/dita-ot/pull/1974" scope="external" format="html">#1974</xref>
+          <li id="1974">Use the fragment part of KeyDef @href attribute when building @conref
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1974" scope="external" format="html">#1974</xref>
           </li>
-          <li>Move same topic fragment processing before conref <xref
-              href="https://github.com/dita-ot/dita-ot/pull/1968" scope="external" format="html">#1968</xref>
+          <li id="1968">Move same topic fragment processing before conref
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1968" scope="external" format="html">#1968</xref>
           </li>
-          <li>Remove unwanted $PATH2PROJ remnant from $entry-file definition (glossary entry file resolution fails from
-            term and abbreviated-form DOTX058W) <xref href="https://github.com/dita-ot/dita-ot/pull/1967"
-              scope="external" format="html">#1967</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/1966"
-              scope="external" format="html">#1966</xref>
+          <li id="1967">Remove unwanted $PATH2PROJ remnant from $entry-file definition (glossary entry file resolution fails from
+            term and abbreviated-form DOTX058W)
+            <xref href="https://github.com/dita-ot/dita-ot/pull/1967" scope="external" format="html">#1967</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1966" scope="external" format="html">#1966</xref>
           </li>
-          <li>DITA-OT 2.0 - Build Error (Windows) - Illegal character - keyref target <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1823" scope="external" format="html">#1823</xref>
+          <li id="1823">DITA-OT 2.0 - Build Error (Windows) - Illegal character - keyref target
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1823" scope="external" format="html">#1823</xref>
           </li>
-          <li>Two levels of map ref causes good key ref to fail <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1605" scope="external" format="html">#1605</xref>
+          <li id="1605">Two levels of map ref causes good key ref to fail
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1605" scope="external" format="html">#1605</xref>
           </li>
         </ul>
       </section>

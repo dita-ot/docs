@@ -6,24 +6,48 @@
   <title>DITA Open Toolkit <keyword keyref="version"/> Release Notes</title>
 
   <shortdesc>DITA Open Toolkit <keyword keyref="version"/> is a maintenance release that includes fixes for reported
-    issues.</shortdesc>
+    issues and provides additional support for DITA 1.3 features.</shortdesc>
 
-  <!--
-  <reference id="releasehighlights">
+  <reference id="highlights">
     <title>Release Highlights</title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following significant enhancements: <ul>
-            <li>Extended Preview Support for DITA 1.3</li>
-            <li>Support DITA 1.3 scoped keys</li>
-            <li>Support DITA 1.3 branch profiling</li>
+        <title>DITA 1.3 support</title>
+        <ph conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/shortdesc-ph"/>
+        <p conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/p"/>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> extends DITA 1.3 support with the following
+          enhancements:
+          <ul>
+            <li id="1979">Initial support for DITA 1.3 key scopes
+              <xref href="https://github.com/dita-ot/dita-ot/pull/1979" scope="external" format="html">#1979</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external" format="html">#1648</xref>
+            </li>
+            <li id="1969">Initial implementation of DITA 1.3 branch filtering
+              <xref href="https://github.com/dita-ot/dita-ot/pull/1969" scope="external" format="html">#1969</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/1637" scope="external" format="html">#1637</xref>
+            </li>
+            <li id="2094">Add DITA 1.3 schemas
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html">#2094</xref>
+            </li>
+            <li id="2096">Extra warnings reported when project using key scopes and branch filtering is published
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2096" scope="external" format="html">#2096</xref>
+            </li>
+            <li id="1968">Move same topic fragment processing before conref
+              <xref href="https://github.com/dita-ot/dita-ot/pull/1968" scope="external" format="html">#1968</xref>
+            </li>
+            <li id="2004">Support multiple scope names in a single keyscope attribute
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2004" scope="external" format="html">#2004</xref>
+            </li>
           </ul>
         </p>
-        <p>For details on these and all other enhancements, see the sections below.</p>
+        <!--<p>For details on these and all other enhancements, see the sections below.</p>-->
       </section>
     </refbody>
+    <related-links>
+      <link href="../user-guide/DITA_v1-3-support.dita"/>
+    </related-links>
   </reference>
-  -->
+
   <reference id="requirements">
     <title>Requirements</title>
     <refbody>
@@ -61,9 +85,9 @@
           <li id="2099">Move HTML5 to a separate plugin
             <xref href="https://github.com/dita-ot/dita-ot/pull/2099" scope="external" format="html">#2099</xref>
           </li>
-          <li id="2094">Add DITA 1.3 schemas
+          <!--<li id="2094">Add DITA 1.3 schemas
             <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html">#2094</xref>
-          </li>
+          </li>-->
           <li id="2072">Support “artlbl” option in PDF
             <xref href="https://github.com/dita-ot/dita-ot/pull/2072" scope="external" format="html">#2072</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2062" scope="external" format="html">#2062</xref>
@@ -75,26 +99,26 @@
           <li id="2018">Purpose and improvement request for “resources/plugins.xml”
             <xref href="https://github.com/dita-ot/dita-ot/issues/2018" scope="external" format="html">#2018</xref>
           </li>
-          <li id="2004">Support multiple scope names in a single keyscope attribute
+          <!--<li id="2004">Support multiple scope names in a single keyscope attribute
             <xref href="https://github.com/dita-ot/dita-ot/issues/2004" scope="external" format="html">#2004</xref>
-          </li>
+          </li>-->
           <li id="1995">Merge move-meta-entries and mappull preprocessing targets
             <xref href="https://github.com/dita-ot/dita-ot/issues/1995" scope="external" format="html">#1995</xref>
           </li>
           <li id="1984">PDF2: Make generation of page masters and page sequence masters easier to extend
             <xref href="https://github.com/dita-ot/dita-ot/issues/1984" scope="external" format="html">#1984</xref>
           </li>
-          <li id="1979">Initial support for DITA 1.3 key scopes
+          <!--<li id="1979">Initial support for DITA 1.3 key scopes
             <xref href="https://github.com/dita-ot/dita-ot/pull/1979" scope="external" format="html">#1979</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external" format="html">#1648</xref>
-          </li>
+          </li>-->
           <li id="1976">Add extension points and corresponding template files for flagging
             <xref href="https://github.com/dita-ot/dita-ot/pull/1976" scope="external" format="html">#1976</xref>
           </li>
-          <li id="1969">Add initial implementation DITA 1.3 branch filtering
+          <!--<li id="1969">Initial implementation of DITA 1.3 branch filtering
             <xref href="https://github.com/dita-ot/dita-ot/pull/1969" scope="external" format="html">#1969</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/1637" scope="external" format="html">#1637</xref>
-          </li>
+          </li>-->
           <li id="1962">Lazy key definition reading
             <xref href="https://github.com/dita-ot/dita-ot/pull/1962" scope="external" format="html">#1962</xref>
           </li>
@@ -150,9 +174,9 @@
           <li id="2097">Improve HTML5 and XHTML table border processing
             <xref href="https://github.com/dita-ot/dita-ot/issues/2097" scope="external" format="html">#2097</xref>
           </li>
-          <li id="2096">Extra warnings reported when project using key scopes and branch filtering is published
+          <!--<li id="2096">Extra warnings reported when project using key scopes and branch filtering is published
             <xref href="https://github.com/dita-ot/dita-ot/issues/2096" scope="external" format="html">#2096</xref>
-          </li>
+          </li>-->
           <li id="2088">Synchronize task string use from PDF2 with common Fix PDF variable insertion issues
             <xref href="https://github.com/dita-ot/dita-ot/issues/2088" scope="external" format="html">#2088</xref>
           </li>
@@ -287,9 +311,9 @@
           <li id="1974">Use the fragment part of KeyDef @href attribute when building @conref
             <xref href="https://github.com/dita-ot/dita-ot/pull/1974" scope="external" format="html">#1974</xref>
           </li>
-          <li id="1968">Move same topic fragment processing before conref
+          <!--<li id="1968">Move same topic fragment processing before conref
             <xref href="https://github.com/dita-ot/dita-ot/pull/1968" scope="external" format="html">#1968</xref>
-          </li>
+          </li>-->
           <li id="1967">Remove unwanted $PATH2PROJ remnant from $entry-file definition (glossary entry file resolution fails from
             term and abbreviated-form DOTX058W)
             <xref href="https://github.com/dita-ot/dita-ot/pull/1967" scope="external" format="html">#1967</xref>,

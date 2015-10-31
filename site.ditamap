@@ -5,11 +5,7 @@
 <map xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
   <topicref href="introduction.dita" copy-to="index.dita"/>
-  <topicref href="release-notes/rel2.1.dita" copy-to="release-notes/index.dita" locktitle="yes">
-    <topicmeta>
-      <navtitle>Release Notes</navtitle>
-    </topicmeta>
-  </topicref>
+  <topicref href="release-notes/index.dita" navtitle="Release Notes" locktitle="yes"/>
   <mapref href="getting-started/getting-started.ditamap"/>
   <topicref href="user-guide/index.dita">
     <mapref href="user-guide/user-guide.ditamap"/>

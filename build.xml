@@ -119,7 +119,7 @@
   </target>
 
   <target name="html">
-    <dita-ot transtype="tocjs" input="userguide.ditamap" output="${doc.out.dir}">
+    <dita-ot transtype="html5" input="userguide.ditamap" output="${doc.out.dir}">
       <properties>
         <property name="args.copycss" value="yes"/>
         <property name="args.css" value="dita-ot-doc.css"/>
@@ -127,11 +127,9 @@
         <property name="args.csspath" value="css"/>
         <property name="args.gen.task.lbl" value="YES"/>
         <property name="outputFile.base" value="index"/>
+        <property name="nav-toc" value="partial"/>
       </properties>
     </dita-ot>
-
-    <move file="${doc.out.dir}/userguide.html"
-      tofile="${doc.out.dir}/index.html"/>
   </target>
 
   <target name="htmlhelp">

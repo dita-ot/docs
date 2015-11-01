@@ -58,12 +58,15 @@ Basic identation, padding, and margins
 
 body {
     margin:           0;
-    padding-top:      0.2em;
-    padding-left:     0.6em;
-    padding-right:    0.2em;
-    padding-bottom:   0;
+    padding:      1em;
 }
-
+main {
+  margin-left: 300px;
+}
+nav[role=toc] {
+  width: 300px;
+  float: left;
+}
 h1, h2, h3, h4, h5, h6 {
     padding:        0;
     margin-top:     1em;
@@ -323,8 +326,10 @@ Task labels
 div.tasklabel { margin-top: 1em; margin-bottom: 1em; }
 h2.tasklabel, h3.tasklabel, h4.tasklabel, h5.tasklabel, h6.tasklabel { font-size: 100%; }
 
+/****************************************
+Navigation
+****************************************/
 
-
-
-
-
+nav[role=toc] li.active > a {
+  font-weight: bold;
+}

@@ -159,6 +159,19 @@
         <topicref href="parameters/ant-parameters-common-html-transformation.dita" navtitle="HTML transformation"/>
       </relcell>
     </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="user-guide/dita2html5.dita">
+          <topicmeta>
+            <linktext>HTML5 transformation</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+      <relcell/>
+      <relcell>
+        <topicref href="parameters/ant-parameters-html5-transformation.dita" navtitle="HTML5 transformation"/>
+      </relcell>
+    </relrow>
   </reltable>
   <reltable>
     <title>Source and target: Transformations and all-transformations topics</title>

@@ -118,12 +118,13 @@
               <entry colname="col3">imagelist</entry>
               <entry colname="col4">Images files that are referenced in the content</entry>
             </row>
-            <row>
+            <!-- Moved to keyref stage in OT v2.2 for #1962 -->
+            <!--<row>
               <entry colname="col1">keyreffile</entry>
               <entry colname="col2"><codeph>keyref.list</codeph></entry>
               <entry colname="col3">keyreflist</entry>
               <entry colname="col4">Topics and maps which have key references.</entry>
-            </row>
+            </row>-->
             <row>
               <entry colname="col1">outditafilesfile</entry>
               <entry colname="col2"><codeph>outditafiles.list</codeph></entry>

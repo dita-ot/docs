@@ -73,7 +73,7 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <ul>
           <li id="2103">The <option>HTML5</option> transformation has been extended with a new
-              <parmname>html5.nav-toc</parmname> parameter that can be used to generate a table of contents in the HTML5
+              <parmname>nav-toc</parmname> parameter that can be used to generate a table of contents in the HTML5
               <xmlelement>nav</xmlelement> element of each page. The navigation can then be rendered in a sidebar or
             menu via CSS. This parameter is disabled by default (<option>none</option>), but can be enabled by setting
             the value to <option>partial</option> (which includes the current topic and its parents in the ToC, or
@@ -117,14 +117,17 @@
             for mappull is retained for backwards compatibility.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1995" scope="external" format="html">#1995</xref>
           </li>
-          <li id="1984">PDF2: Make generation of page masters and page sequence masters easier to extend
+          <li id="1984">The generation of page masters and page sequence masters in the PDF plugin has been modularized
+            to make it easier to extend or override the default set of masters.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1984" scope="external" format="html">#1984</xref>
           </li>
           <!--<li id="1979">Initial support for DITA 1.3 key scopes
             <xref href="https://github.com/dita-ot/dita-ot/pull/1979" scope="external" format="html">#1979</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external" format="html">#1648</xref>
           </li>-->
-          <li id="1976">Add extension points and corresponding template files for flagging
+          <li id="1976">The PDF plugin has been extended with two new extension points for
+              <codeph>flagging-preprocess</codeph> and <codeph>i18n-postprocess</codeph> to alllow plugins to customize
+            these steps of the flagging process.
             <xref href="https://github.com/dita-ot/dita-ot/pull/1976" scope="external" format="html">#1976</xref>
           </li>
           <!--<li id="1969">Initial implementation of DITA 1.3 branch filtering
@@ -150,19 +153,28 @@
             <option>-install</option> to integrate them all at once.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1957" scope="external" format="html">#1957</xref>
           </li>
-          <li id="1955">Set up XML catalog for XEP
+          <li id="1955">The PDF transformation has been extended with XML catalog support for RenderX XEP. The main
+            DITA-OT catalog file is now used to ensure that doctypes such as SVG graphics pass validation when
+            generating PDF output using XEP.
             <xref href="https://github.com/dita-ot/dita-ot/pull/1955" scope="external" format="html">#1955</xref>
           </li>
-          <li id="1953">Convert File based processing to URI based to support external URIs
+          <li id="1953">File-based processing has been replaced with URI-based processing to support the use of external
+            URIs. This allows non-file resources to be processed with commands such as <cmdname>dita</cmdname>
+            <option>-i http://example.com/test.ditamap -f html5</option>.
             <xref href="https://github.com/dita-ot/dita-ot/pull/1953" scope="external" format="html">#1953</xref>
           </li>
-          <li id="1905">Sort plugin folders before integration
+          <li id="1905">Plugin folders are now sorted before the integration process runs to ensure predictable results
+            and consistent order each time plugins are reloaded.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1905" scope="external" format="html">#1905</xref>
           </li>
-          <li id="1866">Proposed metadata changes in plugin.xml for org.dita.xhtml plugin
+          <li id="1866">The metadata format in the <filepath>plugin.xml</filepath> file for the
+              <filepath>org.dita.xhtml</filepath> plugin has been refactored with abstract transtypes that group common
+            parameters used in multiple transformation types. This approach allows common parameters to be defined in
+            one place and re-used for multiple output formats as necessary.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1866" scope="external" format="html">#1866</xref>
           </li>
-          <li id="1836">Add -t as synonym for -temp
+          <li id="1836">The <cmdname>dita</cmdname> command options have been extended to add <option>-t</option> as a
+            synonym for the <option>-temp</option> option used to specify the location of the temporary directory.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1836" scope="external" format="html">#1836</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2039" scope="external" format="html">#2039</xref>
           </li>

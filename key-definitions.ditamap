@@ -36,6 +36,12 @@
     </topicmeta>
   </keydef>
 
+  <keydef keys="changelog" href="https://github.com/dita-ot/dita-ot/compare/2.1...HEAD" scope="external" format="html">
+    <topicmeta>
+      <linktext>full changelog</linktext>
+    </topicmeta>
+  </keydef>
+
   <!--VERSION NUMBERS: OTHER APPLICATIONS-->
 
   <!-- Ant: Bundled version-->
@@ -181,6 +187,12 @@
   <keydef keys="sass-lang" href="http://sass-lang.com" scope="external" format="html">
     <topicmeta>
       <linktext>Sass</linktext>
+    </topicmeta>
+  </keydef>
+  <keydef keys="contributions" href="https://github.com/dita-ot/dita-ot/graphs/contributors" scope="external"
+    format="html">
+    <topicmeta>
+      <linktext>contributions</linktext>
     </topicmeta>
   </keydef>
 </map>

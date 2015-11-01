@@ -112,7 +112,9 @@
           <!--<li id="2004">Support multiple scope names in a single keyscope attribute
             <xref href="https://github.com/dita-ot/dita-ot/issues/2004" scope="external" format="html">#2004</xref>
           </li>-->
-          <li id="1995">Merge move-meta-entries and mappull preprocessing targets
+          <li id="1995">The <codeph>move-meta-entries</codeph> and <codeph>mappull</codeph> steps have been merged. The
+              <codeph>mappull</codeph> step has been moved into <codeph>move-meta-entries</codeph> and an empty target
+            for mappull is retained for backwards compatibility.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1995" scope="external" format="html">#1995</xref>
           </li>
           <li id="1984">PDF2: Make generation of page masters and page sequence masters easier to extend

@@ -556,4 +556,22 @@
       </section>
     </refbody>
   </reference>
+  <reference id="ant-parameters-html5-transformation">
+    <title>HTML5 parameters</title>
+    <titlealts>
+      <navtitle>HTML5</navtitle>
+    </titlealts>
+    <shortdesc conaction="pushreplace" conref="ant-parameters-html5-transformation.dita#ant-parameters-html5-transformation/shortdesc">Certain parameters are specific to the HTML5 transformation.</shortdesc>
+    <refbody>
+      <!-- <section>
+        <parml>
+          <plentry id="args.html5.nav-toc">
+            <pt><parmname>args.html5.nav-toc</parmname></pt>
+            <pd conaction="mark" conref="ant-parameters-html5-transformation.dita#ant-parameters-html5-transformation/args.html5.nav-toc.desc"/>
+            <pd conaction="pushafter"></pd>
+          </plentry>
+        </parml>
+      </section> -->
+    </refbody>
+  </reference>
 </reference>

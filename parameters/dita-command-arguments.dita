@@ -37,7 +37,7 @@
           <groupseq>
             <kwd>dita</kwd>
             <kwd>-install</kwd>
-            <groupchoice>
+            <groupchoice importance="optional">
               <var>file</var>
               <var>url</var>
             </groupchoice>
@@ -86,6 +86,12 @@
           <pt><parmname>-install</parmname>
             <varname>url</varname></pt>
           <pd>Install a single plug-in from a local ZIP file or from a URL.</pd>
+        </plentry>
+        <plentry>
+          <pt><parmname>-install</parmname></pt>
+          <pd>If no <varname>file</varname> or <varname>url</varname> argument is provided, the integration process
+            reloads plug-ins from the <filepath>plugins</filepath> directory. This approach can be used to integrate
+            mutltiple plug-ins at once.</pd>
         </plentry>
         <plentry>
           <pt><parmname>-uninstall</parmname>

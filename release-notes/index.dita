@@ -142,7 +142,12 @@
             on a single map.
             <xref href="https://github.com/dita-ot/dita-ot/pull/1961" scope="external" format="html">#1961</xref>
           </li>
-          <li id="1957">Add support for reloading plugins from dita command
+          <li id="1957">The <cmdname>dita</cmdname>
+            <option>-install</option> option can now be used to integrate multiple plugins at once. If no
+              <varname>file</varname> or <varname>url</varname> argument is provided, the integration process reloads
+            plugins from the <filepath>plugins</filepath> directory, so you can unzip multiple plugins to the
+              <filepath>plugins</filepath> directory and run <cmdname>dita</cmdname>
+            <option>-install</option> to integrate them all at once.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1957" scope="external" format="html">#1957</xref>
           </li>
           <li id="1955">Set up XML catalog for XEP

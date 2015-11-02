@@ -361,6 +361,26 @@
           </li>
         </ul>
       </section>
+      <section id="contrib">
+        <title>Contributors</title>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+          <xref keyref="contributions"/> by the following people:</p>
+        <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 2.1..` -->
+        <ol>
+          <li>Jarno Elovirta</li>
+          <li>Robert D. Anderson</li>
+          <li>Roger Sheen</li>
+          <li>Eero Helenius</li>
+          <li>Radu Coravu</li>
+          <li>Tom Glastonbury</li>
+          <li>Kendall Shaw</li>
+          <li>Eliot Kimber</li>
+          <li>Chris Nitchie</li>
+          <li>Stefan Eike</li>
+        </ol>
+        <p>For the complete list of changes since the previous release, see the
+          <xref keyref="changelog"/> on GitHub.</p>
+      </section>
     </refbody>
   </reference>
   <!--

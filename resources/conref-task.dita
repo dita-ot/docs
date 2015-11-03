@@ -6,17 +6,6 @@
   <title>Conref file for tasks</title>
   <taskbody>
     <steps>
-      <step id="run-startcmd">
-        <cmd>Run the <filepath>startcmd</filepath> file that is applicable for your operating system.</cmd>
-        <info>The <filepath>startcmd.bat</filepath> and <filepath>startcmd.sh</filepath> files are in the directory
-          where you installed the DITA-OT.</info>
-      </step>
-      <step id="if-necessary-run-startcmd">
-        <cmd>If necessary, run the <filepath>startcmd</filepath> file that is applicable for your operating
-          system.</cmd>
-        <info>You do not need to run the <filepath>startcmd</filepath> file if you already have a command-prompt or
-          terminal window that was invoked by the <filepath>startcmd</filepath> file open.</info>
-      </step>
       <step>
         <cmd/>
         <info>

@@ -4,29 +4,35 @@
 
 <task id="runant" xml:lang="en">
   <title>Building output using Ant</title>
-  <shortdesc>You can build output by running the <cmdname>ant</cmdname> command and specifying the DITA-OT parameters at
-    the command prompt. You also can use an Ant build script to provide the DITA-OT parameters.</shortdesc>
+  <shortdesc>You can build output by using an Ant build script to provide the DITA-OT
+    parameters.</shortdesc>
   <taskbody>
     <steps>
-      <step conref="../resources/conref-task.dita#ID/run-startcmd">
-        <cmd/>
+      <step>
+        <cmd>Open a command prompt or terminal session, and then change to the directory where the
+          DITA Open Toolkit is installed.</cmd>
       </step>
       <step>
-        <cmd>To provide the DITA-OT parameters from the command prompt, issue the following command:</cmd>
-        <info>
-          <codeblock>ant -Dargs.input=<varname>input-file</varname> -Dtranstype=<varname>transformation-type</varname> -D<varname>parameter-name</varname>=<varname>value</varname></codeblock>
-            where:<ul conref="../resources/conref-task.dita#ID/basic-variables">
-            <li/>
-          </ul></info>
-        <stepresult conref="../resources/conref-task.dita#ID/running-ditaot-results"/>
-      </step>
-      <step>
-        <cmd>If you use a build script, issue the following command:</cmd>
-        <info><codeblock>ant -f <varname>build-script</varname> <varname>target</varname></codeblock>where:<ul>
+        <cmd>Issue the following command:</cmd>
+        <choicetable frame="topbot" relcolwidth="1.0* 3.0*">
+          <chrow>
+            <choption>Linux</choption>
+            <chdesc>
+              <codeblock>bin/ant -f <varname>build-script</varname> <varname>target</varname></codeblock>
+            </chdesc>
+          </chrow>
+          <chrow>
+            <choption>Windows</choption>
+            <chdesc>
+              <codeblock>bin\ant -f <varname>build-script</varname> <varname>target</varname></codeblock>
+            </chdesc>
+          </chrow>
+        </choicetable>
+        <info> where:<ul>
             <li><varname>build-script</varname> is name of the Ant build script.</li>
-            <li><varname>target</varname> is an optional switch that specifies the name of the Ant target that you want
-              to run. If you do not specify a target, the value of the @default attribute for the Ant project is used.
-            </li>
+            <li><varname>target</varname> is an optional switch that specifies the name of the Ant
+              target that you want to run. If you do not specify a target, the value of the @default
+              attribute for the Ant project is used. </li>
           </ul></info>
       </step>
     </steps>

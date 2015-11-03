@@ -8,13 +8,30 @@
       <parmname>-help</parmname> parameter.</shortdesc>
   <taskbody>
     <steps>
-      <step conref="../resources/conref-task.dita#ID/run-startcmd">
-        <cmd/>
+      <step>
+        <cmd>Open a command prompt or terminal session, and then change to the directory where the
+          DITA Open Toolkit is installed.</cmd>
       </step>
       <step>
-        <cmd>From the command prompt, issue the following command:</cmd>
+        <cmd>Issue the following command:</cmd>
+        <choicetable frame="topbot" relcolwidth="1.0* 3.0*">
+          <chrow>
+            <choption>Linux</choption>
+            <chdesc>
+              <codeblock>bin/dita -help</codeblock>
+            </chdesc>
+          </chrow>
+          <chrow>
+            <choption>Windows</choption>
+            <chdesc>
+              <codeblock>bin\dita -help</codeblock>
+            </chdesc>
+          </chrow>
+        </choicetable>
         <info>
-          <codeblock>dita -help</codeblock>
+          <note>If you have added the absolute path for the <varname>install-dir</varname>/bin
+            directory to the PATH system variable, you can run the dita command from any location on
+            the file system.</note>
         </info>
       </step>
     </steps>

@@ -8,8 +8,7 @@
   <taskbody>
     <steps>
       <step>
-        <cmd>Open a command prompt or terminal session, and then change to the directory where the
-          DITA Open Toolkit is installed.</cmd>
+        <cmd conref="../resources/conref-task.dita#ID/open-terminal"/>
       </step>
       <step>
         <cmd>Issue the following command:</cmd>
@@ -28,9 +27,7 @@
           </chrow>
         </choicetable>
         <info>
-          <note>If you have added the absolute path for the <varname>install-dir</varname>/bin
-            directory to the PATH system variable, you can run the <cmdname>dita</cmdname> command
-            from any location on the file system.</note>
+          <note conref="../resources/conref-task.dita#ID/dita-in-path"/>
         </info>
       </step>
     </steps>

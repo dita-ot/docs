@@ -4,13 +4,11 @@
 
 <task id="runant" xml:lang="en">
   <title>Building output using Ant</title>
-  <shortdesc>You can build output by using an Ant build script to provide the DITA-OT
-    parameters.</shortdesc>
+  <shortdesc>You can build output by using an Ant build script to provide the DITA-OT parameters.</shortdesc>
   <taskbody>
     <steps>
       <step>
-        <cmd>Open a command prompt or terminal session, and then change to the directory where the
-          DITA Open Toolkit is installed.</cmd>
+        <cmd conref="../resources/conref-task.dita#ID/open-terminal"/>
       </step>
       <step>
         <cmd>Issue the following command:</cmd>
@@ -28,11 +26,12 @@
             </chdesc>
           </chrow>
         </choicetable>
-        <info> where:<ul>
+        <info> where:
+          <ul>
             <li><varname>build-script</varname> is name of the Ant build script.</li>
-            <li><varname>target</varname> is an optional switch that specifies the name of the Ant
-              target that you want to run. If you do not specify a target, the value of the @default
-              attribute for the Ant project is used. </li>
+            <li><varname>target</varname> is an optional switch that specifies the name of the Ant target that you want
+              to run. If you do not specify a target, the value of the @default attribute for the Ant project is used.
+            </li>
           </ul></info>
       </step>
     </steps>

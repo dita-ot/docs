@@ -31,26 +31,20 @@
             <li/>
           </ul>
         </info>
-        <stepresult id="running-ditaot-results">
-          <p>If processing is successful, nothing is printed in the terminal window.</p>
-          <p>If you do not specify an output directory, the <cmdname>dita</cmdname> command writes output to the
-              <filepath>out</filepath> subdirectory of the current directory.</p>
-          <note type="tip">If you add the <filepath><varname>install-dir</varname>/bin</filepath> directory to the
-              <varname>PATH</varname> system variable, you can invoke the <cmdname>dita</cmdname> command without the
-            absolute path.</note>
-        </stepresult>
+        <stepresult conref="../resources/conref-task.dita#ID/running-ditaot-results"/>
       </step>
     </steps>
     <example>
       <p>The following command generates HTML5 output for the <filepath>sequence.ditamap</filepath> file and writes the
         output to the <filepath>test</filepath> directory:</p>
       <codeblock>dita -i samples/sequence.ditamap -f html5 -o test</codeblock>
-      <p audience="novice">If the <cmdname>dita</cmdname> command is not on your <varname>PATH</varname>, use the following command:
+      <p audience="novice">If the <cmdname>dita</cmdname> command is not on your <varname>PATH</varname>, use the
+        following command:
         <codeblock><varname>install-dir</varname>/bin/dita i samples/sequence.ditamap -f html5 -o test</codeblock>
       </p>
     </example>
   </taskbody>
   <related-links>
-    <link href="../parameters/dita-command-arguments.dita"></link>
+    <link href="../parameters/dita-command-arguments.dita"/>
   </related-links>
 </task>

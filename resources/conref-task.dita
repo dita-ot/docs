@@ -7,7 +7,8 @@
   <taskbody>
     <steps>
       <step>
-        <cmd/>
+        <cmd id="open-terminal">Open a command prompt or terminal session, and then change to the directory where the
+          DITA Open Toolkit is installed.</cmd>
         <info>
           <ul id="basic-variables">
             <li><varname>install-dir</varname> is the DITA-OT installation directory path.</li>
@@ -24,8 +25,15 @@
             <li><varname>output-dir</varname> is the output directory path for generated output.</li>
           </ul>
         </info>
-        <stepresult id="running-ditaot-results">If you do not specify an output directory, the DITA-OT writes the output
-          to the <filepath><varname>install-dir</varname>/out</filepath> directory.</stepresult>
+        <stepresult id="running-ditaot-results">
+          <p>If processing is successful, nothing is printed in the terminal window.</p>
+          <p>If you do not specify an output directory, the <cmdname>dita</cmdname> command writes output to the
+              <filepath>out</filepath> subdirectory of the current directory.</p>
+          <note id="dita-in-path" type="tip">If you add the absolute path for the DITA-OT
+                <filepath><varname>install-dir</varname>/bin</filepath> directory to the <varname>PATH</varname>
+            environment variable, you can run the <cmdname>dita</cmdname> command from any location on the file
+            system.</note>
+        </stepresult>
       </step>
     </steps>
   </taskbody>

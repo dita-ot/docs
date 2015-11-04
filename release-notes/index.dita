@@ -30,6 +30,7 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> extends DITA 1.3 support with the following
           enhancements:
           <ul>
+            <li id="2094" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/2094"/>
             <li id="1979">Initial support for DITA 1.3 key scopes
               <xref href="https://github.com/dita-ot/dita-ot/pull/1979" scope="external" format="html">#1979</xref>,
               <xref href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external" format="html">#1648</xref>
@@ -38,13 +39,32 @@
               <xref href="https://github.com/dita-ot/dita-ot/pull/1969" scope="external" format="html">#1969</xref>,
               <xref href="https://github.com/dita-ot/dita-ot/issues/1637" scope="external" format="html">#1637</xref>
             </li>
-            <li id="2094" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/2094"/>
             <li id="2096" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/2096"/>
             <li id="1968" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/1968"/>
             <li id="2004" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/2004"/>
           </ul>
         </p>
         <!--<p>For details on these and all other enhancements, see the sections below.</p>-->
+      </section>
+      <section>
+        <title>New HTML5 Output</title>
+        <ul>
+          <li id="2099">The <option>HTML5</option> transformation has been moved to a separate plugin to facilitate
+            customization of modern HTML5-based output. The default CSS has been refactored in
+            <xref keyref="sass-lang"/> as a foundation for further extensions with CSS frameworks, custom plugins and
+            future toolkit versions. (The original XHTML plugin remains available to support existing legacy HTML-based
+            output formats such as TocJS, HTML Help and JavaHelp.)
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2099" scope="external" format="html">#2099</xref>
+          </li>
+          <li id="2103">The <option>HTML5</option> transformation has been extended with a new
+              <parmname>nav-toc</parmname> parameter that can be used to generate a table of contents in the HTML5
+              <xmlelement>nav</xmlelement> element of each page. The navigation can then be rendered in a sidebar or
+            menu via CSS. This parameter is disabled by default (<option>none</option>), but can be enabled by setting
+            the value to <option>partial</option> (which includes the current topic and its parents in the ToC, or
+              <option>full</option> (which generates a ToC for the entire map).
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2103" scope="external" format="html">#2103</xref>
+          </li>
+        </ul>
       </section>
     </refbody>
     <related-links>
@@ -72,21 +92,6 @@
         <title>Features</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <ul>
-          <li id="2103">The <option>HTML5</option> transformation has been extended with a new
-              <parmname>nav-toc</parmname> parameter that can be used to generate a table of contents in the HTML5
-              <xmlelement>nav</xmlelement> element of each page. The navigation can then be rendered in a sidebar or
-            menu via CSS. This parameter is disabled by default (<option>none</option>), but can be enabled by setting
-            the value to <option>partial</option> (which includes the current topic and its parents in the ToC, or
-              <option>full</option> (which generates a ToC for the entire map).
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2103" scope="external" format="html">#2103</xref>
-          </li>
-          <li id="2099">The <option>HTML5</option> transformation has been moved to a separate plugin to facilitate
-            customization of modern HTML5-based output. The default CSS has been refactored in
-            <xref keyref="sass-lang"/> as a foundation for further extensions with CSS frameworks, custom plugins and
-            future toolkit versions. (The original XHTML plugin remains available to support existing legacy HTML-based
-            output formats such as TocJS, HTML Help and JavaHelp.)
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2099" scope="external" format="html">#2099</xref>
-          </li>
           <!--<li id="2094">Add DITA 1.3 schemas
             <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html">#2094</xref>
           </li>-->

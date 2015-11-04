@@ -45,6 +45,11 @@
       <title>Additional DITA 1.3 support in DITA-OT 2.2</title>
       <p>The following DITA 1.3 features were implemented in version 2.2 of the toolkit.</p>
       <ul>
+        <li id="2094">
+          <note type="important">The proposed DITA 1.3 grammars are now used as the default DTDs for processing
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html"
+            >#2094</xref></note>
+        </li>
         <li id="1979">Initial support for DITA 1.3 key scopes
           <xref href="https://github.com/dita-ot/dita-ot/pull/1979" scope="external" format="html">#1979</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external" format="html">#1648</xref>
@@ -62,9 +67,6 @@
               <li>Filters topics that were not branch-generated </li>
             </ul>
           </p>
-        </li>
-        <li id="2094">The proposed DITA 1.3 grammars are now used as the default DTDs for processing
-          <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html">#2094</xref>
         </li>
         <li id="2096">The <codeph>DOTJ065</codeph> warning that appeared when branch filter–generated topics were
           renamed has been changed to an “info” message to clarify that renaming is intentional. The new DITA 1.3

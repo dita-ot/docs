@@ -1,23 +1,25 @@
-/* Version 1, 22 March 2013 */
+/* DITA Open Toolkit documentation style */
 
 /****************************************
 Basic fonts and typography
 ****************************************/
 
-article { color: #000000; }
+article { color: #222; }
 
 body {
-    color: #000000;
+    color: #222;
     background-color: white;
 }
 
 body, caption, td, th {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 10pt;
 }
 
-code, pre {
-    font-family: "MS Courier New", Courier, monospace;
+code, pre, .cmdname, .option, .parmname  {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 90%;
+    color: #777;
 }
 
 h1, h2, h3 {
@@ -32,15 +34,15 @@ h4 {
     color:       #336699;
 }
 
-span.sectiontitle,
-span.exampletitle,
-span.prereqtitle,
-span.contexttitle,
-span.stepstitle,
-span.resulttitle,
-span.postreqtitle,
-span.propertiestitle,
-span.reltopictitle {
+.sectiontitle,
+.exampletitle,
+.prereqtitle,
+.contexttitle,
+.stepstitle,
+.resulttitle,
+.postreqtitle,
+.propertiestitle,
+.reltopictitle {
     font-weight:    bold;
     color:          #336699;
 }
@@ -50,7 +52,6 @@ span.reltopictitle {
 .boldItalic { font-weight: bold; font-style: italic; }
 .italic { font-style: italic; }
 .underlined { text-decoration: underline; }
-.option { font-weight: bold; }
 
 /****************************************
 Basic identation, padding, and margins
@@ -145,15 +146,17 @@ Block elements
 pre.screen { 
         padding: 5px 5px 5px 5px; 
         border: outset; 
-        background-color: #CCCCCC; 
+        background-color: #eee; 
         margin-top: 2px; 
         margin-bottom : 2px; 
         white-space: pre
 }
 
 pre.codeblock, pre.msgblock {
-        background-color:#e6ebf2;
-        /*margin-right:10%;*/
+    background-color:#eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
 }
 
 /****************************************
@@ -172,13 +175,13 @@ Figures
 Headings
 ****************************************/
 
-.topictitle1 { margin-top: 0pc; margin-bottom: .1em; font-size: 1.34em; }
+.topictitle1 { margin-top: .2em; margin-bottom: .1em; font-size: 1.34em; }
 .topictitle2 { margin-top: 1pc; margin-bottom: .45em; font-size: 1.17em; }
 .topictitle3 { margin-top: 1pc; margin-bottom: .17em; font-size: 1.17em; font-weight: bold; }
 .topictitle4 { margin-top: .83em; font-size: 1.17em; font-weight: bold; }
 .topictitle5 { font-size: 1.17em; font-weight: bold; }
 .topictitle6 { font-size: 1.17em; font-style: italic; }
-.sectiontitle { margin-top: 1em; margin-bottom: 0em; color: black; font-size: 1.17em; font-weight: bold;}
+.sectiontitle { margin-top: 1em; margin-bottom: 0em; color: #555; font-size: 1.17em; font-weight: bold;}
 .section { margin-top: 1em; margin-bottom: 1em }
 .example { margin-top: 1em; margin-bottom: 1em }
 
@@ -187,9 +190,11 @@ In-line elements
 ****************************************/
 
 .defkwd { font-weight: bold; text-decoration: underline; }
-.filepath { font-family:monospace }
-.kwd { font-weight: bold; }
-.parmname { font-weight: bold; }
+.filepath { 
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    color: #777;
+    }
+.cmdname, .kwd { font-weight: bold; }
 .shortcut { text-decoration: underline; }
 .uicontrol { font-weight: bold; }
 .var { font-style : italic;}
@@ -204,14 +209,14 @@ sectiontitle .filepath { font-weight: normal;
 }*/
 
 h1 .filepath {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:   12pt;
     font-weight: bold;
     color:       #336699;
 }
 
 h2 .filepath, h3 .filepath {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:   12pt;
     font-weight: bold;
 }
@@ -228,6 +233,22 @@ div.imagejustify { text-align: justify }
 Links
 ****************************************/
 
+a:link {
+   color: #337ab7;
+   text-decoration: none;
+   }
+
+a:visited {
+   color: #369;
+   }
+
+a:active,
+a:hover {
+   color: #369;
+   text-decoration: underline;
+   }
+
+.related-links { color: #555 }
 .ullinks { list-style-type: none }
 .ulchildlink { margin-top: 1em; margin-bottom: 1em }
 .olchildlink { margin-top: 1em; margin-bottom: 1em }
@@ -291,7 +312,7 @@ Tables
 ****************************************/
 
 table {
-    border-color:     #8cb1d1;
+    border-color:     Silver;
     border-width:     1px;
     border-style:     solid;
     padding:          1px;
@@ -301,15 +322,15 @@ table {
 }
 
 tr {
-    border-color:     #8cb1d1;
+    border-color:     Silver;
 }
 
 td {
-    border-color:     #8cb1d1;
+    border-color:     Silver;
 }
 
 th {
-    background-color: #c3ccd9;
+    background-color: #eee;
 }
 
 .firstcol { font-weight : bold;}

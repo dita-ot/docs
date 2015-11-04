@@ -183,10 +183,14 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/1836" scope="external" format="html">#1836</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2039" scope="external" format="html">#2039</xref>
           </li>
-          <li id="1835">Validation for @cols attribute too drastic
+          <li id="1835">The validation of the table group <xmlatt>cols</xmlatt> attribute has been relaxed to support
+            use cases in which tables containing auto-generated <xmlatt>cols</xmlatt> values are reused via content
+            references.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1835" scope="external" format="html">#1835</xref>
           </li>
-          <li id="1757">Provide way in plugin.xml to specify the list of public parameters added for each transtype
+          <li id="1757">The format of the <filepath>plugin.xml</filepath> file has been extended to allow plugins to
+            specify the list of public parameters added for each transformation type and announce extensions to a list
+            of arguments defined in another transtype.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1757" scope="external" format="html">#1757</xref>
           </li>
         </ul>

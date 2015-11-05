@@ -4,7 +4,7 @@
 
 <map>
   <title>Reference</title>
-  <topicref href="ant-parameters_intro.dita" navtitle="Ant parameters">
+  <topicref href="parameters_intro.dita" navtitle="Ant parameters">
     <topicref href="_parameters-base.dita" navtitle="Common"/>
     <topicref href="_parameters-base-html.dita" navtitle="HTML-based output formats">
       <topicref href="generate-copy-outer.dita" toc="no"/>
@@ -16,7 +16,7 @@
     <topicref href="_parameters-htmlhelp.dita" navtitle="HTMLHelp" platform="windows"/>
     <topicref href="_parameters-javahelp.dita" navtitle="JavaHelp"/>
     <topicref href="_parameters-odt.dita" navtitle="Open Document Format"/>
-    <topicref href="ant-parameters-other.dita" navtitle="Other"/>
+    <topicref href="parameters-other.dita" navtitle="Other"/>
     <topicref href="_parameters-pdf.dita" navtitle="PDF"/>
     <topicref href="ant-parameters-details.dita" processing-role="resource-only" toc="no"/>
   </topicref>

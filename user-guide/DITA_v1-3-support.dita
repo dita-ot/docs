@@ -12,10 +12,10 @@
   <conbody>
     <p id="p">Because DITA 1.3 is fully backwards compatible with previous DITA DTDs and schemas, DITA-OT 2.2 provides
       the proposed 1.3 materials as the default DTDs for processing. The XML Catalog resolution maps any references for
-      DITA 1.2 doctypes to the 1.3 DTDs, for example. All processing ordinarily dependent on the 1.0, 1.1, or 1.2
-      definitions continues to work as usual, and any documents that make use of the newer DITA 1.3 elements or
-      attributes will be supported with specific new processing.</p>
-    <p>Because this support is based on a yet-to-be-approved version of the proposed OASIS
+      unversioned DITA doctypes to the 1.3 DTDs. All processing ordinarily dependent on the 1.0, 1.1, or 1.2 definitions
+      continues to work as usual, and any documents that make use of the newer DITA 1.3 elements or attributes will be
+      supported with specific new processing.</p>
+    <p>Because this support is based on a yet-to-be-approved (Candidate OASIS Standard 01) version of the proposed
       <xref keyref="dita-ot-spec"/>, if you choose to investigate any 1.3-based function, be aware that the 1.3
       implementation in this version of the toolkit is preliminary. Upon final approval of the DITA 1.3 standard,
       toolkit developers will review the implementation to make certain that it conforms to the final specification.</p>
@@ -50,10 +50,6 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html"
             >#2094</xref></note>
         </li>
-        <li id="1979">Initial support for DITA 1.3 key scopes
-          <xref href="https://github.com/dita-ot/dita-ot/pull/1979" scope="external" format="html">#1979</xref>,
-          <xref href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external" format="html">#1648</xref>
-        </li>
         <li id="1969">Initial implementation of DITA 1.3 branch filtering
           <xref href="https://github.com/dita-ot/dita-ot/pull/1969" scope="external" format="html">#1969</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/1637" scope="external" format="html">#1637</xref>
@@ -68,21 +64,17 @@
             </ul>
           </p>
         </li>
-        <li id="2096">The <codeph>DOTJ065</codeph> warning that appeared when branch filter–generated topics were
-          renamed has been changed to an “info” message to clarify that renaming is intentional. The new DITA 1.3
-          elements <xmlelement>dvrResourcePrefix</xmlelement> and <xmlelement>dvrResourceSuffix</xmlelement> can be used
-          to control renaming and avoid this message if necessary.
-          <xref href="https://github.com/dita-ot/dita-ot/issues/2096" scope="external" format="html">#2096</xref>
+        <li id="1979">Initial support for DITA 1.3 key scopes, including multiple scope names in a single
+            <xmlatt>keyscope</xmlatt> attribute
+          <xref href="https://github.com/dita-ot/dita-ot/pull/1979" scope="external" format="html">#1979</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external" format="html">#1648</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/2004" scope="external" format="html">#2004</xref>
         </li>
-        <li id="1968">Processing order has been revised to process same topic fragments before the conref phase, to
-          enable content references to elements in the same topic using a reference such as <codeph>&lt;p
-            conref="#./ID"/></codeph> as reported in
+        <li id="1968">Processing order has been revised to process any same topic fragments used in conrefs before the
+          conref phase, to enable content references to elements in the same topic using a reference such as
+            <codeph>&lt;p conref="#./ID"/></codeph> as reported in
           <xref href="https://github.com/dita-ot/dita-ot/pull/1649" scope="external" format="html">#1649</xref>.
           <xref href="https://github.com/dita-ot/dita-ot/pull/1968" scope="external" format="html">#1968</xref>
-        </li>
-        <li id="2004">Keyref processing has been extended to support multiple scope names in a single
-            <xmlatt>keyscope</xmlatt> attribute
-          <xref href="https://github.com/dita-ot/dita-ot/issues/2004" scope="external" format="html">#2004</xref>
         </li>
       </ul>
       <note>For the latest status information on DITA 1.3-related features, see the

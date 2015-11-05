@@ -219,8 +219,7 @@
               options have been moved to runtime properties, so you can now pass these parameters at build time to
               specify whether the <codeph>@xtrf</codeph> and <codeph>@xtrc</codeph> debugging attributes should be
               generated, and how the DITA-OT handles errors and error recovery. For more information, see <xref
-                href="../parameters/ant-parameters-base-transformation.dita#ant-parameters-base-transformation">common
-                Ant paramters</xref>. <ul>
+                href="../parameters/_parameters-base.dita#base">common parameters</xref>.<ul>
                 <li>
                   <xref href="https://github.com/dita-ot/dita-ot/issues/1799" format="html" scope="external">1799</xref>
                   Move configuration options to runtime properties</li>

@@ -9,6 +9,9 @@ article { color: #222; }
 body {
     color: #222;
     background-color: white;
+    background-image: -webkit-linear-gradient(left, #eee 0%, #fff 300px); /* Chrome10+,Safari5.1+ */
+    background-image:    -moz-linear-gradient(left, #eee 0%, #fff 300px); /* FF3.6+ */
+    background-image:         linear-gradient(left, #eee 0%, #fff 300px); /* W3C */ 
 }
 
 body, caption, td, th {

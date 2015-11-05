@@ -3,7 +3,7 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 <reference id="ant-parameters-details">
   <title>Ant parameter details</title>
-  <reference id="ant-parameters-all-transformation-types">
+  <reference id="base">
     <title>Ant parameters: All transformations</title>
     <titlealts>
       <navtitle>All transformations</navtitle>
@@ -170,7 +170,7 @@
       </section>
     </refbody>
   </reference>
-  <reference id="ant-parameters-base-html-transformation">
+  <reference id="base-html">
     <title>Ant parameters: HTML-based output formats</title>
     <titlealts>
       <navtitle>All HTML-based transformations</navtitle>
@@ -277,7 +277,7 @@
       </section>
     </refbody>
   </reference>
-  <reference id="ant-parameters-eclipse-content-transformation">
+  <reference id="eclipsecontent">
     <title>Ant parameters: Eclipse content transformation</title>
     <titlealts>
       <navtitle>Eclipse content</navtitle>
@@ -296,7 +296,7 @@
       </section>
     </refbody>
   </reference>
-  <reference id="ant-parameters-eclipse-help-transformation.dita">
+  <reference id="eclipsehelp">
     <title>Ant parameters: Eclipse help transformation</title>
     <titlealts>
       <navtitle>Eclipse help</navtitle>
@@ -348,7 +348,7 @@
       </section>
     </refbody>
   </reference>
-  <reference id="ant-parameters-html-help-transformation">
+  <reference id="htmlhelp">
     <title>Ant parameters: HTML Help transformation</title>
     <titlealts>
       <navtitle>HTML Help</navtitle>
@@ -367,7 +367,7 @@
       </section>
     </refbody>
   </reference>
-  <reference id="ant-parameters-javahelp-transformation">
+  <reference id="javahelp">
     <title>Ant parameters: JavaHelp transformation</title>
     <titlealts>
       <navtitle>JavaHelp</navtitle>
@@ -395,7 +395,7 @@
       </section>
     </refbody>
   </reference>
-  <reference id="ant-parameters-odt-transformation">
+  <reference id="odt">
     <title>Ant parameters: ODT transformation</title>
     <titlealts>
       <navtitle>ODT</navtitle>
@@ -454,7 +454,7 @@
       </section>
     </refbody>
   </reference>
-  <reference id="ant-parameters-pdf-transformation">
+  <reference id="pdf">
     <title>Ant parameters: PDF transformation</title>
     <titlealts>
       <navtitle>PDF</navtitle>
@@ -527,7 +527,7 @@
       </section>
     </refbody>
   </reference>
-  <reference id="ant-parameters-common-html-transformation">
+  <reference id="common-html">
     <title>Ant parameters: HTML5 and XHTML transformation</title>
     <titlealts>
       <navtitle>HTML5 and XHTML</navtitle>
@@ -556,7 +556,7 @@
       </section>
     </refbody>
   </reference>
-  <reference id="ant-parameters-html5-transformation">
+  <reference id="html5">
     <title>HTML5 parameters</title>
     <titlealts>
       <navtitle>HTML5</navtitle>

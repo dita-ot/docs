@@ -61,6 +61,30 @@
           </li>
         </ul>
       </section>
+      <section>
+        <title>PDF supports new languages</title>
+        <p>The <option>PDF</option> transformation has been extended to support additional languages with localized
+          strings files and index collation.
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2085" scope="external" format="html">#2085</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2089" scope="external" format="html">#2089</xref>
+          <ul>
+            <li>Arabic</li>
+            <li>Catalan</li>
+            <li>Croatian</li>
+            <li>Czech</li>
+            <li>Danish</li>
+            <li>Hungarian</li>
+            <li>Icelandic</li>
+            <li>Latvian</li>
+            <li>Norwegian</li>
+            <li>Polish</li>
+            <li>Portuguese</li>
+            <li>Portuguese (Brazil)</li>
+            <li>Slovak</li>
+            <li>Turkish</li>
+          </ul>
+        </p>
+      </section>
     </refbody>
     <related-links>
       <link keyref="dita-ot-spec"/>
@@ -215,12 +239,15 @@
           <!--<li id="2096">Extra warnings reported when project using key scopes and branch filtering is published
             <xref href="https://github.com/dita-ot/dita-ot/issues/2096" scope="external" format="html">#2096</xref>
           </li>-->
+          <!--<li id="2089">Add additional languages to PDF2
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2089" scope="external" format="html">#2089</xref>
+          </li>-->
           <li id="2088">Synchronize task string use from PDF2 with common Fix PDF variable insertion issues
             <xref href="https://github.com/dita-ot/dita-ot/issues/2088" scope="external" format="html">#2088</xref>
           </li>
-          <li id="2085">Add support for many new languages to PDF2
+          <!--<li id="2085">Add support for many new languages to PDF2
             <xref href="https://github.com/dita-ot/dita-ot/pull/2085" scope="external" format="html">#2085</xref>
-          </li>
+          </li>-->
           <li id="2080">PDF index headers should be consistent across languages
             <xref href="https://github.com/dita-ot/dita-ot/pull/2080" scope="external" format="html">#2080</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2074" scope="external" format="html">#2074</xref>

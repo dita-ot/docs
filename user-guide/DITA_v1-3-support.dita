@@ -72,7 +72,7 @@
         </li>
         <li id="1968">Processing order has been revised to process any same topic fragments used in conrefs before the
           conref phase, to enable content references to elements in the same topic using a reference such as
-            <codeph>&lt;p conref="#./ID"/></codeph> as reported in
+            <codeph>&lt;p&#xA0;conref="#./ID"/></codeph> as reported in
           <xref href="https://github.com/dita-ot/dita-ot/pull/1649" scope="external" format="html">#1649</xref>.
           <xref href="https://github.com/dita-ot/dita-ot/pull/1968" scope="external" format="html">#1968</xref>
         </li>

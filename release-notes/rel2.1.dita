@@ -3,9 +3,9 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="rel2.1" xml:lang="en">
-  <title>DITA Open Toolkit <keyword keyref="version"/> Release Notes</title>
+  <title>DITA Open Toolkit 2.1.2 Release Notes</title>
 
-  <shortdesc>DITA Open Toolkit <keyword keyref="version"/> is a maintenance release that includes fixes for reported
+  <shortdesc>DITA Open Toolkit 2.1.2 is a maintenance release that includes fixes for reported
     issues.</shortdesc>
 
   <!--
@@ -38,7 +38,7 @@
       <section>
         <draft-comment author="infotexture">Add info on new minimum Java version or any other requirements that have
           changed since previous release.</draft-comment>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) or Java
+        <p>DITA Open Toolkit Release 2.1 requires the Java Runtime Environment (JRE) or Java
           Development Kit (JDK), version <keyword keyref="tool.java.version"/> or later.</p>
       </section>
     </refbody>
@@ -46,7 +46,7 @@
 
   <reference id="rel2.1.issues">
     <title>Resolved issues</title>
-    <shortdesc>The following items are included in DITA Open Toolkit Release <keyword keyref="release"/>. Issue numbers
+    <shortdesc>The following items are included in DITA Open Toolkit Release 2.1. Issue numbers
       correspond to the tracking number in the <ph><xref keyref="dita-ot-issues" scope="external">GitHub issues
           tracker</xref></ph>.</shortdesc>
     <refbody>
@@ -59,8 +59,8 @@
       </section>
       -->
       <section>
-        <title>Maintenance Release <keyword keyref="version"/></title>
-        <p>DITA Open Toolkit Release <keyword keyref="version"/> includes the following bug fixes:</p>
+        <title>Maintenance Release 2.1.2</title>
+        <p>DITA Open Toolkit Release 2.1.2 includes the following bug fixes:</p>
         <ul>
           <li>
             <p>Index terms starting with “Ñ” are no longer dropped from Spanish PDF indexes. They are now handled with
@@ -127,7 +127,7 @@
       </section>
       <section>
         <title>Feature requests and changes</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features and changes:</p>
+        <p>DITA Open Toolkit Release 2.1 includes the following new features and changes:</p>
         <ul>
           <li>
             <p>In PDF output, inline <codeph>&lt;codeph></codeph> elements in topic titles now inherit the font size
@@ -152,6 +152,27 @@
                 <li>
                   <xref href="https://github.com/dita-ot/dita-ot/issues/1897" format="html" scope="external">1897</xref>
                   DITA OT 2.1.dev chm properties folder in org.dita.pdf2 </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>The code for the <option>troff</option> transformation has been refactored into two separate steps to
+              enable re-use in other plain-text—based transformation types. The first step generates an abstract syntax
+              tree with div/span syntax, and the second takes that intermediate format and creates troff output. Two new
+              extension points are available to override the processing performed in each step: <dl>
+                <dlentry>
+                  <dt><codeph>dita.xsl.troff-ast</codeph></dt>
+                  <dd>Overrides the intermediate block-and-phrase format generated as input to troff processing.</dd>
+                </dlentry>
+                <dlentry>
+                  <dt><codeph>dita.xsl.troff</codeph></dt>
+                  <dd>Overrides the XSL that converts block-and-phrase intermediate markup into troff. </dd>
+                </dlentry>
+              </dl>
+              <ul>
+                <li>
+                  <xref href="https://github.com/dita-ot/dita-ot/issues/1910" format="html" scope="external">1910</xref>
+                  Refactor troff code to be usable for other text-like transform types </li>
               </ul>
             </p>
           </li>
@@ -269,7 +290,7 @@
       </section>
       <section>
         <title>Bugs</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
+        <p>DITA Open Toolkit Release 2.1 provides fixes for the following bugs:</p>
         <ul>
           <li><xref href="https://github.com/dita-ot/dita-ot/issues/1513" format="html" scope="external">1513</xref>
             Suspected memory leak in OT bug preprocess</li>
@@ -316,7 +337,7 @@
       </section>
       <section>
         <title>Maintenance Release 2.0.1</title>
-        <note>DITA Open Toolkit Release <keyword keyref="release"/> also included the following bug fixes that were
+        <note>DITA Open Toolkit Release 2.1 also included the following bug fixes that were
           released earlier this year with maintenance version 2.0.1.</note>
         <ul>
           <li>

@@ -17,11 +17,11 @@
   </xsl:template>
   
   <xsl:template name="all">
-    <xsl:comment>Generated from plugin source, do not edit</xsl:comment>
+    <xsl:comment> Generated from plugin source, do not edit! </xsl:comment>
     <reference id="parameters">
-      <title>Ant parameters</title>
+      <title>DITA-OT parameters</title>
       <reference id="all">
-        <title>All Ant parameters</title>
+        <title>All DITA-OT parameters</title>
         <refbody>
           <section>
             <parml>
@@ -50,15 +50,15 @@
     <!--xsl:for-each select="//transtype/param"-->
     <xsl:for-each-group select="//transtype" group-by="@name">
       <xsl:variable name="id" select="current-grouping-key()"/>
-      <xsl:message>Writing <xsl:value-of select="$output-dir.url"/>/ant-parameters-<xsl:value-of select="$id"/>-transformation.dita</xsl:message>
-      <xsl:result-document href="{$output-dir.url}/ant-parameters-{$id}-transformation.dita"
+      <xsl:message>Writing <xsl:value-of select="$output-dir.url"/>parameters-<xsl:value-of select="$id"/>.dita</xsl:message>
+      <xsl:result-document href="{$output-dir.url}/parameters-{$id}.dita"
                            doctype-public="-//OASIS//DTD DITA Reference//EN"
                            doctype-system="reference.dtd">
-        <xsl:comment>Generated from plugin source, do not edit</xsl:comment>
-        <reference id="ant-parameters-{$id}-transformation">
+        <xsl:comment> Generated from plugin source, do not edit! </xsl:comment>
+        <reference id="{$id}">
           <title>
-            <xsl:text>Ant parameters: </xsl:text>
             <xsl:value-of select="current-group()[1]/@desc"/>
+            <xsl:text> parameters</xsl:text>
           </title>
           <titlealts>
             <navtitle>

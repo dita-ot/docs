@@ -4,20 +4,20 @@
 
 <map>
   <title>Reference</title>
-  <topicref href="ant-parameters_intro.dita" navtitle="Ant parameters">
-    <topicref href="ant-parameters-base-transformation.dita" navtitle="Common"/>
-    <topicref href="ant-parameters-base-html-transformation.dita" navtitle="HTML-based output formats">
+  <topicref href="parameters_intro.dita">
+    <topicref href="parameters-base.dita" navtitle="Common"/>
+    <topicref href="parameters-base-html.dita" navtitle="HTML-based output formats">
       <topicref href="generate-copy-outer.dita" toc="no"/>
     </topicref>
-    <topicref href="ant-parameters-common-html-transformation.dita" navtitle="HTML5 and XHTML"/>
-    <topicref href="ant-parameters-html5-transformation.dita"/>
-    <topicref href="ant-parameters-eclipsecontent-transformation.dita" navtitle="Eclipse content"/>
-    <topicref href="ant-parameters-eclipsehelp-transformation.dita" navtitle="Eclipse Help"/>
-    <topicref href="ant-parameters-htmlhelp-transformation.dita" navtitle="HTMLHelp" platform="windows"/>
-    <topicref href="ant-parameters-javahelp-transformation.dita" navtitle="JavaHelp"/>
-    <topicref href="ant-parameters-odt-transformation.dita" navtitle="Open Document Format"/>
-    <topicref href="ant-parameters-other.dita" navtitle="Other"/>
-    <topicref href="ant-parameters-pdf-transformation.dita" navtitle="PDF"/>
+    <topicref href="parameters-common-html.dita" navtitle="HTML5 and XHTML"/>
+    <topicref href="parameters-html5.dita"/>
+    <topicref href="parameters-eclipsecontent.dita" navtitle="Eclipse content"/>
+    <topicref href="parameters-eclipsehelp.dita" navtitle="Eclipse Help"/>
+    <topicref href="parameters-htmlhelp.dita" navtitle="HTMLHelp" platform="windows"/>
+    <topicref href="parameters-javahelp.dita" navtitle="JavaHelp"/>
+    <topicref href="parameters-odt.dita" navtitle="Open Document Format"/>
+    <topicref href="parameters-other.dita" navtitle="Other"/>
+    <topicref href="parameters-pdf.dita" navtitle="PDF"/>
     <topicref href="ant-parameters-details.dita" processing-role="resource-only" toc="no"/>
   </topicref>
   <topicref href="dita-command-arguments.dita"/>

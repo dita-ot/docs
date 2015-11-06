@@ -50,8 +50,8 @@
     <!--xsl:for-each select="//transtype/param"-->
     <xsl:for-each-group select="//transtype" group-by="@name">
       <xsl:variable name="id" select="current-grouping-key()"/>
-      <xsl:message>Writing <xsl:value-of select="$output-dir.url"/>_parameters-<xsl:value-of select="$id"/>.dita</xsl:message>
-      <xsl:result-document href="{$output-dir.url}/_parameters-{$id}.dita"
+      <xsl:message>Writing <xsl:value-of select="$output-dir.url"/>parameters-<xsl:value-of select="$id"/>.dita</xsl:message>
+      <xsl:result-document href="{$output-dir.url}/parameters-{$id}.dita"
                            doctype-public="-//OASIS//DTD DITA Reference//EN"
                            doctype-system="reference.dtd">
         <xsl:comment> Generated from plugin source, do not edit! </xsl:comment>

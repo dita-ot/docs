@@ -4,20 +4,20 @@
 
 <map>
   <title>Reference</title>
-  <topicref href="parameters_intro.dita" navtitle="Ant parameters">
-    <topicref href="_parameters-base.dita" navtitle="Common"/>
-    <topicref href="_parameters-base-html.dita" navtitle="HTML-based output formats">
+  <topicref href="parameters_intro.dita">
+    <topicref href="parameters-base.dita" navtitle="Common"/>
+    <topicref href="parameters-base-html.dita" navtitle="HTML-based output formats">
       <topicref href="generate-copy-outer.dita" toc="no"/>
     </topicref>
-    <topicref href="_parameters-common-html.dita" navtitle="HTML5 and XHTML"/>
-    <topicref href="_parameters-html5.dita"/>
-    <topicref href="_parameters-eclipsecontent.dita" navtitle="Eclipse content"/>
-    <topicref href="_parameters-eclipsehelp.dita" navtitle="Eclipse Help"/>
-    <topicref href="_parameters-htmlhelp.dita" navtitle="HTMLHelp" platform="windows"/>
-    <topicref href="_parameters-javahelp.dita" navtitle="JavaHelp"/>
-    <topicref href="_parameters-odt.dita" navtitle="Open Document Format"/>
+    <topicref href="parameters-common-html.dita" navtitle="HTML5 and XHTML"/>
+    <topicref href="parameters-html5.dita"/>
+    <topicref href="parameters-eclipsecontent.dita" navtitle="Eclipse content"/>
+    <topicref href="parameters-eclipsehelp.dita" navtitle="Eclipse Help"/>
+    <topicref href="parameters-htmlhelp.dita" navtitle="HTMLHelp" platform="windows"/>
+    <topicref href="parameters-javahelp.dita" navtitle="JavaHelp"/>
+    <topicref href="parameters-odt.dita" navtitle="Open Document Format"/>
     <topicref href="parameters-other.dita" navtitle="Other"/>
-    <topicref href="_parameters-pdf.dita" navtitle="PDF"/>
+    <topicref href="parameters-pdf.dita" navtitle="PDF"/>
     <topicref href="ant-parameters-details.dita" processing-role="resource-only" toc="no"/>
   </topicref>
   <topicref href="dita-command-arguments.dita"/>

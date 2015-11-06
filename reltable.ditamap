@@ -71,7 +71,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/_parameters-eclipsecontent.dita"
+        <topicref href="parameters/parameters-eclipsecontent.dita"
           navtitle="Eclipse content transformation"/>
       </relcell>
     </relrow>
@@ -85,7 +85,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/_parameters-eclipsehelp.dita"
+        <topicref href="parameters/parameters-eclipsehelp.dita"
           navtitle="Eclipse help transformation"/>
       </relcell>
     </relrow>
@@ -99,7 +99,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/_parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
+        <topicref href="parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
       </relcell>
     </relrow>
     <relrow>
@@ -112,7 +112,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/_parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
+        <topicref href="parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
       </relcell>
     </relrow>
     <relrow>
@@ -125,7 +125,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/_parameters-odt.dita" navtitle="ODT transformation"/>
+        <topicref href="parameters/parameters-odt.dita" navtitle="ODT transformation"/>
       </relcell>
     </relrow>
     <relrow>
@@ -138,7 +138,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/_parameters-pdf.dita" navtitle="PDF transformation"/>
+        <topicref href="parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
       </relcell>
     </relrow>
     <relrow>
@@ -156,7 +156,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/_parameters-common-html.dita" navtitle="HTML transformation"/>
+        <topicref href="parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
       </relcell>
     </relrow>
     <relrow>
@@ -169,7 +169,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/_parameters-html5.dita" navtitle="HTML5 transformation"/>
+        <topicref href="parameters/parameters-html5.dita" navtitle="HTML5 transformation"/>
       </relcell>
     </relrow>
   </reltable>
@@ -181,18 +181,18 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="parameters/_parameters-eclipsehelp.dita"
+        <topicref href="parameters/parameters-eclipsehelp.dita"
           navtitle="Eclipse help transformation"/>
-        <topicref href="parameters/_parameters-eclipsecontent.dita"
+        <topicref href="parameters/parameters-eclipsecontent.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="parameters/_parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
-        <topicref href="parameters/_parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
-        <topicref href="parameters/_parameters-odt.dita" navtitle="ODT transformation"/>
-        <topicref href="parameters/_parameters-pdf.dita" navtitle="PDF transformation"/>
-        <topicref href="parameters/_parameters-common-html.dita" navtitle="HTML transformation"/>
+        <topicref href="parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
+        <topicref href="parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
+        <topicref href="parameters/parameters-odt.dita" navtitle="ODT transformation"/>
+        <topicref href="parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
+        <topicref href="parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
       </relcell>
       <relcell>
-        <topicref href="parameters/_parameters-base.dita" navtitle="All transformation types"/>
+        <topicref href="parameters/parameters-base.dita" navtitle="All transformation types"/>
       </relcell>
     </relrow>
 
@@ -205,30 +205,30 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="parameters/_parameters-eclipsecontent.dita"
+        <topicref href="parameters/parameters-eclipsecontent.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="parameters/_parameters-eclipsehelp.dita"
+        <topicref href="parameters/parameters-eclipsehelp.dita"
           navtitle="Eclipse help transformation"/>
-        <topicref href="parameters/_parameters-htmlhelp.dita"/>
-        <topicref href="parameters/_parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
-        <topicref href="parameters/_parameters-common-html.dita" navtitle="HTML transformation"/>
+        <topicref href="parameters/parameters-htmlhelp.dita"/>
+        <topicref href="parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
+        <topicref href="parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
       </relcell>
       <relcell>
-        <topicref href="parameters/_parameters-base-html.dita"/>
+        <topicref href="parameters/parameters-base-html.dita"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="parameters/_parameters-base-html.dita" navtitle="HTML-based tranformations"/>
+        <topicref href="parameters/parameters-base-html.dita" navtitle="HTML-based tranformations"/>
       </relcell>
       <relcell>
-        <topicref href="parameters/_parameters-eclipsecontent.dita"
+        <topicref href="parameters/parameters-eclipsecontent.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="parameters/_parameters-eclipsehelp.dita"
+        <topicref href="parameters/parameters-eclipsehelp.dita"
           navtitle="Eclipse help transformation"/>
-        <topicref href="parameters/_parameters-htmlhelp.dita"/>
-        <topicref href="parameters/_parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
-        <topicref href="parameters/_parameters-common-html.dita" navtitle="HTML transformation"/>
+        <topicref href="parameters/parameters-htmlhelp.dita"/>
+        <topicref href="parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
+        <topicref href="parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
       </relcell>
     </relrow>
   </reltable>

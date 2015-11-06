@@ -78,7 +78,7 @@
         <plentry>
           <pt><parmname>-f</parmname>, <parmname>-format</parmname>
             <varname>name</varname></pt>
-          <pd conref="_parameters-base.dita#base/transtype.desc"/>
+          <pd conref="parameters-base.dita#base/transtype.desc"/>
         </plentry>
         <plentry>
           <pt><parmname>-install</parmname>
@@ -121,12 +121,12 @@
         <plentry>
           <pt><parmname>-filter</parmname>
             <varname>file</varname></pt>
-          <pd conref="_parameters-base.dita#base/args.filter.desc"/>
+          <pd conref="parameters-base.dita#base/args.filter.desc"/>
         </plentry>
         <plentry>
           <pt><parmname>-t</parmname>, <parmname>-temp</parmname>
             <varname>dir</varname></pt>
-          <pd conref="_parameters-base.dita#base/dita.temp.dir.desc"/>
+          <pd conref="parameters-base.dita#base/dita.temp.dir.desc"/>
         </plentry>
         <plentry>
           <pt><parmname>-v</parmname>, <parmname>-verbose</parmname></pt>

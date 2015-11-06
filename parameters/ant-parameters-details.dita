@@ -4,7 +4,7 @@
 <reference id="ant-parameters-details">
   <title>Ant parameter details</title>
   <reference id="base">
-    <title>Ant parameters: All transformations</title>
+    <title>All transformations</title>
     <titlealts>
       <navtitle>All transformations</navtitle>
     </titlealts>
@@ -171,7 +171,7 @@
     </refbody>
   </reference>
   <reference id="base-html">
-    <title>Ant parameters: HTML-based output formats</title>
+    <title>HTML-based output formats</title>
     <titlealts>
       <navtitle>All HTML-based transformations</navtitle>
     </titlealts>
@@ -278,7 +278,7 @@
     </refbody>
   </reference>
   <reference id="eclipsecontent">
-    <title>Ant parameters: Eclipse content transformation</title>
+    <title>Eclipse content</title>
     <titlealts>
       <navtitle>Eclipse content</navtitle>
     </titlealts>
@@ -297,7 +297,7 @@
     </refbody>
   </reference>
   <reference id="eclipsehelp">
-    <title>Ant parameters: Eclipse help transformation</title>
+    <title>Eclipse help</title>
     <titlealts>
       <navtitle>Eclipse help</navtitle>
     </titlealts>
@@ -349,7 +349,7 @@
     </refbody>
   </reference>
   <reference id="htmlhelp">
-    <title>Ant parameters: HTML Help transformation</title>
+    <title>HTML Help</title>
     <titlealts>
       <navtitle>HTML Help</navtitle>
     </titlealts>
@@ -368,7 +368,7 @@
     </refbody>
   </reference>
   <reference id="javahelp">
-    <title>Ant parameters: JavaHelp transformation</title>
+    <title>JavaHelp</title>
     <titlealts>
       <navtitle>JavaHelp</navtitle>
     </titlealts>
@@ -396,7 +396,7 @@
     </refbody>
   </reference>
   <reference id="odt">
-    <title>Ant parameters: ODT transformation</title>
+    <title>ODT</title>
     <titlealts>
       <navtitle>ODT</navtitle>
     </titlealts>
@@ -415,11 +415,11 @@
     </refbody>
   </reference>
   <reference id="ant-parameters-other">
-    <title>Ant parameters: Other</title>
+    <title>Other parameters</title>
     <titlealts>
       <navtitle>Other</navtitle>
     </titlealts>
-    <shortdesc>These Ant parameters enable you to reload style sheets that the DITA-OT uses for specific pre-processing stages.</shortdesc>
+    <shortdesc>These parameters enable you to reload style sheets that the DITA-OT uses for specific pre-processing stages.</shortdesc>
     <refbody>
       <section>
         <draft-comment author="Kristen James Eberlein" time="11 August 2012">I've made no attempt to work with the content in the topic. Here's what I'd like to know:<ul>
@@ -455,7 +455,7 @@
     </refbody>
   </reference>
   <reference id="pdf">
-    <title>Ant parameters: PDF transformation</title>
+    <title>PDF</title>
     <titlealts>
       <navtitle>PDF</navtitle>
     </titlealts>
@@ -528,7 +528,7 @@
     </refbody>
   </reference>
   <reference id="common-html">
-    <title>Ant parameters: HTML5 and XHTML transformation</title>
+    <title>HTML5 and XHTML</title>
     <titlealts>
       <navtitle>HTML5 and XHTML</navtitle>
     </titlealts>

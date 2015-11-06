@@ -19,9 +19,9 @@
   <xsl:template name="all">
     <xsl:comment> Generated from plugin source, do not edit! </xsl:comment>
     <reference id="parameters">
-      <title>Ant parameters</title>
+      <title>DITA-OT parameters</title>
       <reference id="all">
-        <title>All Ant parameters</title>
+        <title>All DITA-OT parameters</title>
         <refbody>
           <section>
             <parml>

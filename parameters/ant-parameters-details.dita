@@ -219,8 +219,9 @@
           <plentry id="args.ftr">
             <pt><parmname>args.ftr</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.ftr.desc"/>
-            <pd conaction="pushafter"><ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>FTR</parmname>.</ph><note>The XML file must contain valid XML. A common practice is to
-                place all content into a &lt;div> element.</note></pd>
+            <pd conaction="pushafter"><ph audience="xslt-customizer">Corresponds to the XSLT parameter
+                  <parmname>FTR</parmname>.</ph><note>The footer file should be specified using an absolute path and
+                must contain valid XML. A common practice is to place all content into a &lt;div> element.</note></pd>
           </plentry>
           <plentry id="args.gen.default.meta">
             <pt><parmname>args.gen.default.meta</parmname></pt>
@@ -239,8 +240,9 @@
           <plentry id="args.hdr">
             <pt><parmname>args.hdr</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.hdr.desc"/>
-            <pd conaction="pushafter"><ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>HDR</parmname>.</ph><note>The XML file must contain valid XML. A common practice is to
-                place all content into a &lt;div> element.</note></pd>
+            <pd conaction="pushafter"><ph audience="xslt-customizer">Corresponds to the XSLT parameter
+                  <parmname>HDR</parmname>.</ph><note>The header file should be specified using an absolute path and
+                must contain valid XML. A common practice is to place all content into a &lt;div> element.</note></pd>
           </plentry>
           <plentry id="args.hide.parent.link" importance="deprecated">
             <pt><parmname>args.hide.parent.link</parmname></pt>

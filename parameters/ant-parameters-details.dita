@@ -22,7 +22,7 @@
           <plentry id="args.draft">
             <pt><parmname>args.draft</parmname></pt>
             <pd conaction="mark" conref="parameters-base.dita#base/args.draft.desc"/>
-            <pd conaction="pushafter" audience="xslt-customizer">Corresponds to XSLT parameter <parmname>DRAFT</parmname> in most XSLT modules.<note type="tip">For PDF output, setting the
+            <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>DRAFT</parmname> in most XSLT modules.<note type="tip">For PDF output, setting the
                   <parmname>args.draft</parmname> parameter to <option>yes</option> causes the contents of the &lt;titlealts> element to be rendered below the title.</note>
             </pd>
           </plentry>
@@ -204,7 +204,7 @@
           <plentry id="args.csspath">
             <pt><parmname>args.csspath</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.csspath.desc"/>
-            <pd conaction="pushafter" audience="xslt-customizer">Corresponds to XSLT parameter <parmname>CSSPATH</parmname>.</pd>
+            <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>CSSPATH</parmname>. DITA-OT will copy the file to this location.</pd>
           </plentry>
           <plentry id="args.cssroot">
             <pt><parmname>args.cssroot</parmname></pt>
@@ -219,7 +219,7 @@
           <plentry id="args.ftr">
             <pt><parmname>args.ftr</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.ftr.desc"/>
-            <pd conaction="pushafter"><ph audience="xslt-customizer">Corresponds to XSLT parameter <parmname>FTR</parmname>.</ph><note>The XML file must contain valid XML. A common practice is to
+            <pd conaction="pushafter"><ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>FTR</parmname>.</ph><note>The XML file must contain valid XML. A common practice is to
                 place all content into a &lt;div> element.</note></pd>
           </plentry>
           <plentry id="args.gen.default.meta">
@@ -257,7 +257,7 @@
           <plentry id="args.outext">
             <pt><parmname>args.outext</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.outext.desc"/>
-            <pd conaction="pushafter"><ph audience="xslt-customizer">Corresponds to XSLT parameter <parmname>OUTEXT</parmname>.</ph>
+            <pd conaction="pushafter"><ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>OUTEXT</parmname>.</ph>
             </pd>
           </plentry>
           <plentry id="args.xhtml.classattr">
@@ -515,7 +515,7 @@
           <plentry id="publish.required.cleanup" importance="deprecated">
             <pt><parmname>publish.required.cleanup</parmname></pt>
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/publish.required.cleanup.desc"/>
-            <pd conaction="pushafter">The default value is the value of the <parmname>args.draft</parmname> parameter. <ph audience="xslt-customizer">Corresponds to XSLT parameter
+            <pd conaction="pushafter">The default value is the value of the <parmname>args.draft</parmname> parameter. <ph audience="xslt-customizer">Corresponds to the XSLT parameter
                   <parmname>publishRequiredCleanup</parmname>.</ph><note type="notice">This parameter is deprecated in favor of the <parmname>args.draft</parmname> parameter.</note></pd>
           </plentry>
           <plentry id="retain.topic.fo" audience="xslt-customizer" importance="deprecated">

@@ -14,6 +14,25 @@ body {
     background-image:         linear-gradient(left, #eee 0%, #fff 300px); /* W3C */ 
 }
 
+div.header {
+    font-size: 18pt;
+    margin: 0;
+    padding: 0 12px;
+}
+
+div.header p {
+    color: #777;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.3;
+    margin: 0;
+}
+
+div.header hr {
+    border: 0;
+    height: 0;
+    border-bottom: 1px solid #eee;
+}
+
 body, caption, td, th {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 10pt;
@@ -178,7 +197,7 @@ Figures
 Headings
 ****************************************/
 
-.topictitle1 { margin-top: .2em; margin-bottom: .1em; font-size: 1.34em; }
+.topictitle1 { margin-top: 1em; margin-bottom: .1em; font-size: 1.34em; }
 .topictitle2 { margin-top: 1pc; margin-bottom: .45em; font-size: 1.17em; }
 .topictitle3 { margin-top: 1pc; margin-bottom: .17em; font-size: 1.17em; font-weight: bold; }
 .topictitle4 { margin-top: .83em; font-size: 1.17em; font-weight: bold; }

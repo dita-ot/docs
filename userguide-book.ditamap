@@ -27,7 +27,9 @@
   <part navtitle="Developer Reference" href="dev_ref/index.dita">
     <chapter navtitle="Developer Reference" href="dev_ref/dev_ref.ditamap" format="ditamap"/>
   </part>
-  <appendix href="dita-resources.ditamap" format="ditamap"/>
+  <appendix href="user-guide/dita-and-dita-ot-resources.dita">
+    <topicref href="user-guide/web-based-resources.dita" print="yes"/>
+  </appendix>
   <backmatter>
     <topicref href="release-notes/index.dita" navtitle="Release Notes" locktitle="yes"/>
     <topicgroup processing-role="resource-only">

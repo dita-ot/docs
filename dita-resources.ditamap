@@ -4,7 +4,7 @@
 
 <map>
   <title>DITA and DITA-OT resources</title>
-  <topicref href="user-guide/dita-and-dita-ot-resources.dita" navtitle="DITA and DITA-OT resources">
+  <topicref href="user-guide/dita-and-dita-ot-resources.dita" navtitle="DITA Resources" locktitle="yes">
     <topicref format="html" href="http://dita.xml.org/wiki/the-dita-open-toolkit"
       navtitle="Project page at dita.xml.org" scope="external">
       <topicmeta>
@@ -36,6 +36,5 @@
         <shortdesc>The OASIS DITA Technical Committee develops the DITA standard.</shortdesc>
       </topicmeta>
     </topicref>
-    <topicref href="user-guide/web-based-resources.dita" print="yes"/>
   </topicref>
 </map>

@@ -5,13 +5,19 @@
 <map>
   <title>DITA and DITA-OT resources</title>
   <topicref href="user-guide/dita-and-dita-ot-resources.dita" navtitle="DITA Resources" locktitle="yes">
+    <topicref format="html" href="http://www.dita-ot.org/" navtitle="Project website at dita-ot.org" scope="external">
+      <topicmeta>
+        <linktext>DITA-OT project website at dita-ot.org</linktext>
+        <shortdesc>The DITA-OT project website at dita-ot.org provides information about the latest toolkit releases,
+          including download links, release notes, and documentation for recent DITA-OT versions.</shortdesc>
+      </topicmeta>
+    </topicref>
     <topicref format="html" href="http://dita.xml.org/wiki/the-dita-open-toolkit"
       navtitle="Project page at dita.xml.org" scope="external">
       <topicmeta>
-        <linktext>DITA-OT project page at dita.xml.org</linktext>
-        <shortdesc>The DITA-OT project page at dita.xml.org provides news about the latest toolkit builds, plans for the
-          next milestone release, and other rapidly-changing information. It also contains release notes for all past
-          and upcoming releases.</shortdesc>
+        <linktext>DITA-OT project archive at dita.xml.org</linktext>
+        <shortdesc>The DITA-OT project archive at dita.xml.org provides news about earlier toolkit releases, and release
+          notes for all past releases.</shortdesc>
       </topicmeta>
     </topicref>
     <!--<topicref format="html" href="http://sourceforge.net/news/?group_id=132728" scope="external">
@@ -24,9 +30,26 @@
       scope="external">
       <topicmeta>
         <linktext>Yahoo! dita-users group</linktext>
-        <shortdesc>This list-serv is a vital resource for the DITA community. People post regularly, both asking for and
+        <shortdesc>The original DITA list-serv is a vital resource for the DITA community. People post regularly, both asking for and
           offering help. While the archived messages can be difficult to search, this is a treasure trove of
           information.</shortdesc>
+      </topicmeta>
+    </topicref>
+    <topicref format="html" href="https://groups.google.com/d/forum/dita-ot-users" scope="external"
+      navtitle="DITA-OT Users Google Group">
+      <topicmeta>
+        <linktext>DITA-OT Users Google Group</linktext>
+        <shortdesc>General interest DITA-OT product forum, for questions on any aspect of the toolkit - from
+          installation and getting started to questions about specific overrides, plug-ins, and
+          customizations.</shortdesc>
+      </topicmeta>
+    </topicref>
+    <topicref format="html" href="https://groups.google.com/d/forum/dita-ot-dev" scope="external"
+      navtitle="DITA-OT Development Google Group">
+      <topicmeta>
+        <linktext>DITA-OT Development Google Group</linktext>
+        <shortdesc>Forum for discussion related to DITA-OT development and design. Topics in this forum are more
+          technical in nature, covering upcoming design or code changes. </shortdesc>
       </topicmeta>
     </topicref>
     <topicref format="html" href="http://www.oasis-open.org/committees/dita/" navtitle="OASIS DITA Technical Committee "

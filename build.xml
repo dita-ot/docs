@@ -128,7 +128,7 @@
         <property name="args.csspath" value="css"/>
         <property name="args.gen.task.lbl" value="YES"/>
         <property name="args.hdr" value="${basedir}/resources/header.xml"/>
-        <property name="outputFile.base" value="index"/>
+        <property name="args.xhtml.toc" value="toc"/>
         <property name="nav-toc" value="partial"/>
         <property name="processing-mode" value="strict"/>
       </properties>

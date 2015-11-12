@@ -12,29 +12,27 @@
         <cmd>Create an XML file that contains the following content:</cmd>
         <info>
           <codeblock>&lt;?xml version="1.0" encoding="UTF-8" ?>
-&lt;project name="@project-name@" default="@default-target@" basedir=".">
+&lt;project name="%project-name%" default="%default-target%" basedir=".">
 
-  &lt;property name="dita.dir" location="@path-to-DITA-OT@"/>
+  &lt;property name="dita.dir" location="%path-to-DITA-OT%"/>
  
-  &lt;target name="@target-name@">
+  &lt;target name="%target-name%">
     &lt;ant antfile="${dita.dir}/build.xml">
-      &lt;property name="args.input" value="@DITA-input@"/>
+      &lt;property name="args.input" value="%DITA-input%"/>
       &lt;property name="transtype" value="html5"/>
     &lt;/ant>
   &lt;/target>
 
 &lt;/project></codeblock>
         </info>
-        <info>You will replace the placeholder content (indicated by the @ signs) with content applicable to your
+        <info>You will replace the placeholder content (indicated by the % signs) with content applicable to your
           environment.</info>
       </step>
       <step>
         <cmd>Specify project information:</cmd>
         <substeps>
-          <substep>
-            <cmd>Set the value of the @name attribute to X.<draft-comment author="Kristen James Eberlein"
-                time="11 August 2012">What does X need to be? Does it really matter? I tend to set this attribute to the
-                string that I use for the name of the Ant script.</draft-comment></cmd>
+          <substep importance="optional">
+            <cmd>Set the value of the @name attribute to the name of your project.</cmd>
           </substep>
           <substep>
             <cmd>Set the value of the @default attribute to the name of a target in the build script.</cmd>
@@ -95,7 +93,8 @@
     
 &lt;/project></codeblock></p>
       <p>In addition to the mandatory parameters (<parmname>args.input</parmname> and <parmname>transtype</parmname>),
-        the chm and pdf targets each specify some optional parameters:<ul>
+        the chm and pdf targets each specify some optional parameters:
+        <ul>
           <li>The <parmname>args.gen.task.lbl</parmname> property is set to YES, which ensures that headings are
             automatically generated for the sections of task topics.</li>
           <li>The <parmname>output.dir</parmname> property specifies where the DITA-OT writes the output of the

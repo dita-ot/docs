@@ -2,11 +2,11 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<map id="reltable" xml:lang="en-US">
+<map id="reltable" title="Relationship tables" xml:lang="en-US">
   <reltable>
     <relrow>
       <relcell linking="sourceonly">
-        <topicref href="introduction.dita"/>
+        <topicref href="../introduction.dita"/>
       </relcell>
       <relcell linking="targetonly">
         <topicref format="html" href="http://dita.xml.org/wiki/the-dita-open-toolkit" scope="external">
@@ -23,14 +23,14 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="dev_ref/plugin-addgeneratedtext.dita">
+        <topicref href="../dev_ref/plugin-addgeneratedtext.dita">
           <topicmeta>
             <linktext>How to add support for new languages in HTML</linktext>
           </topicmeta>
         </topicref>
       </relcell>
       <relcell>
-        <topicref href="user-guide/DITA-globalization-xhtml.dita">
+        <topicref href="../user-guide/DITA-globalization-xhtml.dita">
           <topicmeta>
             <linktext>Languages supported by the core toolkit</linktext>
           </topicmeta>
@@ -47,23 +47,23 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="user-guide/ant.dita" navtitle="Ant overview"/>
+        <topicref href="../user-guide/ant.dita" navtitle="Ant overview"/>
       </relcell>
       <relcell>
         <topicgroup collection-type="family">
-          <topicref href="user-guide/building-with-ant.dita" navtitle="Building output using Ant"/>
-          <topicref href="user-guide/creating-an-ant-build-script.dita" navtitle="Creating an Ant build script"/>
+          <topicref href="../user-guide/building-with-ant.dita" navtitle="Building output using Ant"/>
+          <topicref href="../user-guide/creating-an-ant-build-script.dita" navtitle="Creating an Ant build script"/>
         </topicgroup>
       </relcell>
       <relcell>
-        <topicref href="parameters/parameters_intro.dita" linking="targetonly"/>
+        <topicref href="../parameters/parameters_intro.dita" linking="targetonly"/>
         <topicref href="http://ant.apache.org/manual/index.html" navtitle="Apache Ant documentation" format="html"
           scope="external"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="user-guide/dita2eclipsecontent.dita">
+        <topicref href="../user-guide/dita2eclipsecontent.dita">
           <topicmeta>
             <linktext>Eclipse content transformation</linktext>
           </topicmeta>
@@ -71,13 +71,13 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/parameters-eclipsecontent.dita"
+        <topicref href="../parameters/parameters-eclipsecontent.dita"
           navtitle="Eclipse content transformation"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="user-guide/dita2eclipsehelp.dita">
+        <topicref href="../user-guide/dita2eclipsehelp.dita">
           <topicmeta>
             <linktext>Eclipse help transformation</linktext>
           </topicmeta>
@@ -85,13 +85,13 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/parameters-eclipsehelp.dita"
+        <topicref href="../parameters/parameters-eclipsehelp.dita"
           navtitle="Eclipse help transformation"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="user-guide/dita2htmlhelp.dita" platform="windows">
+        <topicref href="../user-guide/dita2htmlhelp.dita" platform="windows">
           <topicmeta>
             <linktext>HTML help transformation</linktext>
           </topicmeta>
@@ -99,12 +99,12 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
+        <topicref href="../parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="user-guide/dita2javahelp.dita">
+        <topicref href="../user-guide/dita2javahelp.dita">
           <topicmeta>
             <linktext>JavaHelp transformation</linktext>
           </topicmeta>
@@ -112,12 +112,12 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
+        <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="user-guide/dita2odt.dita">
+        <topicref href="../user-guide/dita2odt.dita">
           <topicmeta>
             <linktext>ODT transformation</linktext>
           </topicmeta>
@@ -125,12 +125,12 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/parameters-odt.dita" navtitle="ODT transformation"/>
+        <topicref href="../parameters/parameters-odt.dita" navtitle="ODT transformation"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="user-guide/dita2pdf.dita">
+        <topicref href="../user-guide/dita2pdf.dita">
           <topicmeta>
             <linktext>PDF transformation</linktext>
           </topicmeta>
@@ -138,17 +138,17 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
+        <topicref href="../parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="user-guide/dita2xhtml.dita">
+        <topicref href="../user-guide/dita2xhtml.dita">
           <topicmeta>
             <linktext>XHTML transformation</linktext>
           </topicmeta>
         </topicref>
-        <topicref href="user-guide/dita2html5.dita">
+        <topicref href="../user-guide/dita2html5.dita">
           <topicmeta>
             <linktext>HTML5 transformation</linktext>
           </topicmeta>
@@ -156,12 +156,12 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
+        <topicref href="../parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="user-guide/dita2html5.dita">
+        <topicref href="../user-guide/dita2html5.dita">
           <topicmeta>
             <linktext>HTML5 transformation</linktext>
           </topicmeta>
@@ -169,7 +169,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="parameters/parameters-html5.dita" navtitle="HTML5 transformation"/>
+        <topicref href="../parameters/parameters-html5.dita" navtitle="HTML5 transformation"/>
       </relcell>
     </relrow>
   </reltable>
@@ -181,18 +181,18 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="parameters/parameters-eclipsehelp.dita"
+        <topicref href="../parameters/parameters-eclipsehelp.dita"
           navtitle="Eclipse help transformation"/>
-        <topicref href="parameters/parameters-eclipsecontent.dita"
+        <topicref href="../parameters/parameters-eclipsecontent.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
-        <topicref href="parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
-        <topicref href="parameters/parameters-odt.dita" navtitle="ODT transformation"/>
-        <topicref href="parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
-        <topicref href="parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
+        <topicref href="../parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
+        <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
+        <topicref href="../parameters/parameters-odt.dita" navtitle="ODT transformation"/>
+        <topicref href="../parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
+        <topicref href="../parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
       </relcell>
       <relcell>
-        <topicref href="parameters/parameters-base.dita" navtitle="All transformation types"/>
+        <topicref href="../parameters/parameters-base.dita" navtitle="All transformation types"/>
       </relcell>
     </relrow>
 
@@ -205,30 +205,30 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="parameters/parameters-eclipsecontent.dita"
+        <topicref href="../parameters/parameters-eclipsecontent.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="parameters/parameters-eclipsehelp.dita"
+        <topicref href="../parameters/parameters-eclipsehelp.dita"
           navtitle="Eclipse help transformation"/>
-        <topicref href="parameters/parameters-htmlhelp.dita"/>
-        <topicref href="parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
-        <topicref href="parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
+        <topicref href="../parameters/parameters-htmlhelp.dita"/>
+        <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
+        <topicref href="../parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
       </relcell>
       <relcell>
-        <topicref href="parameters/parameters-base-html.dita"/>
+        <topicref href="../parameters/parameters-base-html.dita"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="parameters/parameters-base-html.dita" navtitle="HTML-based tranformations"/>
+        <topicref href="../parameters/parameters-base-html.dita" navtitle="HTML-based tranformations"/>
       </relcell>
       <relcell>
-        <topicref href="parameters/parameters-eclipsecontent.dita"
+        <topicref href="../parameters/parameters-eclipsecontent.dita"
           navtitle="Eclipse content transformation"/>
-        <topicref href="parameters/parameters-eclipsehelp.dita"
+        <topicref href="../parameters/parameters-eclipsehelp.dita"
           navtitle="Eclipse help transformation"/>
-        <topicref href="parameters/parameters-htmlhelp.dita"/>
-        <topicref href="parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
-        <topicref href="parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
+        <topicref href="../parameters/parameters-htmlhelp.dita"/>
+        <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
+        <topicref href="../parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
       </relcell>
     </relrow>
   </reltable>
@@ -236,7 +236,7 @@
     <title>External resources</title>
     <relrow>
       <relcell>
-        <topicref href="user-guide/overview-of-dita-ot.dita" navtitle="Overview of the DITA Open Toolkit"/>
+        <topicref href="../user-guide/overview-of-dita-ot.dita" navtitle="Overview of the DITA Open Toolkit"/>
       </relcell>
       <relcell>
         <topicref href="http://www.apache.org/licenses/LICENSE-2.0" navtitle="Apache License, version 2.0" format="html"
@@ -245,7 +245,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="user-guide/dita2eclipsehelp.dita"/>
+        <topicref href="../user-guide/dita2eclipsehelp.dita"/>
       </relcell>
       <relcell>
         <topicref href="http://eclipse.org" navtitle="Official Eclipse Web site" format="html" scope="external"/>
@@ -253,7 +253,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="user-guide/DITA-globalization.dita"/>
+        <topicref href="../user-guide/DITA-globalization.dita"/>
       </relcell>
       <relcell>
         <topicref format="html" href="http://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/translation.html"
@@ -262,7 +262,7 @@
             <linktext>Localization overview in the OASIS DITA standard</linktext>
           </topicmeta>
         </topicref>
-        <topicref href="dev_ref/plugin-addgeneratedtext.dita"/>
+        <topicref href="../dev_ref/plugin-addgeneratedtext.dita"/>
       </relcell>
     </relrow>
   </reltable>
@@ -274,11 +274,11 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="dev_ref/plugin-configfile.dita"/>
+        <topicref href="../dev_ref/plugin-configfile.dita"/>
       </relcell>
       <relcell>
-        <topicref href="dev_ref/plugin-newtranstype.dita"/>
-        <topicref href="dev_ref/plugin-sample.dita"/>
+        <topicref href="../dev_ref/plugin-newtranstype.dita"/>
+        <topicref href="../dev_ref/plugin-sample.dita"/>
       </relcell>
     </relrow>
   </reltable>

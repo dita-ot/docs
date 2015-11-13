@@ -19,15 +19,15 @@
     </prereq>
     <steps>
       <step>
-        <cmd>Download the distribution package for your operating system from the project website at <xref
-            keyref="download.dita-ot.current-release">www.dita-ot.org</xref>.</cmd>
+        <cmd>Download the package for your operating system from the project website at
+          <xref keyref="download.dita-ot.current-release">www.dita-ot.org</xref>.</cmd>
         <choicetable frame="topbot">
           <chhead>
             <choptionhd>Operating system</choptionhd>
             <chdeschd>File name</chdeschd>
           </chhead>
           <chrow platform="linux osx">
-            <choption>Linux or Mac OS&#xA0;X</choption>
+            <choption>Linux or Mac OS&#xA0;X&#xA0;</choption>
             <chdesc><filepath>dita-ot-<keyword keyref="version"/>.tar.gz</filepath></chdesc>
           </chrow>
           <chrow platform="windows">

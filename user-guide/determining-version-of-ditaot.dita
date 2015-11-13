@@ -13,16 +13,18 @@
       <step>
         <cmd>Issue the following command:</cmd>
         <choicetable frame="topbot" relcolwidth="1.0* 3.0*">
-          <chrow>
-            <choption>Linux or Mac OS&#xA0;X</choption>
+          <chrow platform="linux osx">
+            <choption>Linux or Mac OS&#xA0;X&#xA0;</choption>
             <chdesc>
-              <codeblock>bin/dita -version</codeblock>
+              <cmdname>bin/dita</cmdname>
+              <option>-version</option>
             </chdesc>
           </chrow>
-          <chrow>
+          <chrow platform="windows">
             <choption>Windows</choption>
             <chdesc>
-              <codeblock>bin\dita -version</codeblock>
+              <cmdname>bin\dita</cmdname>
+              <option>-version</option>
             </chdesc>
           </chrow>
         </choicetable>

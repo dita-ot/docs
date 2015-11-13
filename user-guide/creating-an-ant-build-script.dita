@@ -68,28 +68,28 @@
         file.<codeblock>&lt;?xml version="1.0" encoding="UTF-8" ?>
 &lt;project name="Toolkit-documentation" default="all" basedir=".">
     
-    &lt;property name="dita.dir" location="C:\dita-ot"/>
-    
-    &lt;target name="all" description="build CHM and PDF" depends="chm,pdf"/>
-    
-    &lt;target name="chm" description="build CHM">
-        &lt;ant antfile="${dita.dir}\build.xml">
-            &lt;property name="args.input" value="C:\dita-ot\src\main\doc\userguide.ditamap"/>
-            &lt;property name="args.gen.task.lbl" value="YES"/>   
-            &lt;property name="output.dir" value="C:\temp\out"/>
-            &lt;property name="transtype" value="htmlhelp"/>
-        &lt;/ant>
-    &lt;/target>
-    
-    &lt;target name="pdf" description="build PDF">
-        &lt;ant antfile="${dita.dir}\build.xml">
-            &lt;property name="args.input" value="C:\dita-ot\src\main\doc\userguide.ditamap"/>
-            &lt;property name="args.gen.task.lbl" value="YES"/>   
-            &lt;property name="args.rellinks" value="nofamily"/>   
-            &lt;property name="output.dir" value="C:\temp\out"/>
-            &lt;property name="transtype" value="pdf"/>
-        &lt;/ant>
-    &lt;/target>
+  &lt;property name="dita.dir" location="C:\dita-ot"/>
+  
+  &lt;target name="all" description="build CHM and PDF" depends="chm,pdf"/>
+  
+  &lt;target name="chm" description="build CHM">
+    &lt;ant antfile="${dita.dir}\build.xml">
+      &lt;property name="args.input" value="C:\dita-ot\src\main\doc\userguide.ditamap"/>
+      &lt;property name="args.gen.task.lbl" value="YES"/>   
+      &lt;property name="output.dir" value="C:\temp\out"/>
+      &lt;property name="transtype" value="htmlhelp"/>
+    &lt;/ant>
+  &lt;/target>
+  
+  &lt;target name="pdf" description="build PDF">
+    &lt;ant antfile="${dita.dir}\build.xml">
+      &lt;property name="args.input" value="C:\dita-ot\src\main\doc\userguide.ditamap"/>
+      &lt;property name="args.gen.task.lbl" value="YES"/>   
+      &lt;property name="args.rellinks" value="nofamily"/>   
+      &lt;property name="output.dir" value="C:\temp\out"/>
+      &lt;property name="transtype" value="pdf"/>
+    &lt;/ant>
+  &lt;/target>
     
 &lt;/project></codeblock></p>
       <p>In addition to the mandatory parameters (<parmname>args.input</parmname> and <parmname>transtype</parmname>),

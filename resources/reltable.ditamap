@@ -5,23 +5,6 @@
 <map id="reltable" title="Relationship tables" xml:lang="en-US">
   <reltable>
     <relrow>
-      <relcell linking="sourceonly">
-        <topicref href="../index.dita"/>
-      </relcell>
-      <relcell linking="targetonly">
-        <topicref format="html" href="http://dita.xml.org/wiki/the-dita-open-toolkit" scope="external">
-          <topicmeta>
-            <linktext>Main DITA-OT page at dita.xml.org</linktext>
-          </topicmeta>
-        </topicref>
-        <topicref format="html" href="http://sourceforge.net/news/?group_id=132728" scope="external">
-          <topicmeta>
-            <linktext>Project News for DITA Open Toolkit</linktext>
-          </topicmeta>
-        </topicref>
-      </relcell>
-    </relrow>
-    <relrow>
       <relcell>
         <topicref href="../dev_ref/plugin-addgeneratedtext.dita">
           <topicmeta>
@@ -71,8 +54,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="../parameters/parameters-eclipsecontent.dita"
-          navtitle="Eclipse content transformation"/>
+        <topicref href="../parameters/parameters-eclipsecontent.dita" navtitle="Eclipse content transformation"/>
       </relcell>
     </relrow>
     <relrow>
@@ -85,8 +67,7 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="../parameters/parameters-eclipsehelp.dita"
-          navtitle="Eclipse help transformation"/>
+        <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
       </relcell>
     </relrow>
     <relrow>
@@ -181,10 +162,8 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="../parameters/parameters-eclipsehelp.dita"
-          navtitle="Eclipse help transformation"/>
-        <topicref href="../parameters/parameters-eclipsecontent.dita"
-          navtitle="Eclipse content transformation"/>
+        <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
+        <topicref href="../parameters/parameters-eclipsecontent.dita" navtitle="Eclipse content transformation"/>
         <topicref href="../parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
         <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
         <topicref href="../parameters/parameters-odt.dita" navtitle="ODT transformation"/>
@@ -205,10 +184,8 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="../parameters/parameters-eclipsecontent.dita"
-          navtitle="Eclipse content transformation"/>
-        <topicref href="../parameters/parameters-eclipsehelp.dita"
-          navtitle="Eclipse help transformation"/>
+        <topicref href="../parameters/parameters-eclipsecontent.dita" navtitle="Eclipse content transformation"/>
+        <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
         <topicref href="../parameters/parameters-htmlhelp.dita"/>
         <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
         <topicref href="../parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
@@ -222,10 +199,8 @@
         <topicref href="../parameters/parameters-base-html.dita" navtitle="HTML-based tranformations"/>
       </relcell>
       <relcell>
-        <topicref href="../parameters/parameters-eclipsecontent.dita"
-          navtitle="Eclipse content transformation"/>
-        <topicref href="../parameters/parameters-eclipsehelp.dita"
-          navtitle="Eclipse help transformation"/>
+        <topicref href="../parameters/parameters-eclipsecontent.dita" navtitle="Eclipse content transformation"/>
+        <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
         <topicref href="../parameters/parameters-htmlhelp.dita"/>
         <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
         <topicref href="../parameters/parameters-common-html.dita" navtitle="HTML transformation"/>

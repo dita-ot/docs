@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<concept id="loghandling" xml:lang="en-us">
+<concept id="loghandling" xml:lang="en-US">
   <title>Log files</title>
   <shortdesc>When you run the DITA-OT, key information is logged on the screen. This information can also be written to
     a log file. If you encounter a problem, you can analyze this information to determine the source of the problem and
@@ -44,7 +44,7 @@
         </ul>
       </p></section>-->
     <!--<section><title>Analyze messages in the log file</title><p>A log file in plain text format is generated in the log
-        directory, which has a name combined with both input file name and transform type. You can open it and find more
+        directory, which has a name combined with both input file name and transformation type. You can open it and find more
         detailed information, which are helpful for solving problems. You can use the same way introduced above to
         analyze the messages and solve the problems.</p><p>The log directory can be specified by:</p><ul>
         <li>using Ant, with argument <codeph>-logfile=<userinput>log-file</userinput></codeph></li>

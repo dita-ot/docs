@@ -2,7 +2,7 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<map xml:lang="en-us">
+<map xml:lang="en-US">
   <title>Developer Reference</title>
   <topicref href="DITA-OTArchitecture.dita">
     <topicref href="processing-structure.dita"/>
@@ -11,14 +11,13 @@
     <topicref collection-type="sequence" href="DITA-OTPreprocess.dita" id="preprocess" navtitle="Pre-processing modules">
       <topicref href="preprocess-genlist.dita"/>
       <topicref href="preprocess-debugfilter.dita"/>
+      <topicref href="preprocess-mapref.dita"/>
       <topicref href="preprocess-copyfiles.dita"/>
       <topicref href="preprocess-keyref.dita"/>
       <topicref href="preprocess-conrefpush.dita"/>
       <topicref href="preprocess-conref.dita"/>
-      <topicref href="preprocess-metadata.dita"/>
       <topicref href="preprocess-coderef.dita"/>
-      <topicref href="preprocess-mapref.dita"/>
-      <topicref href="preprocess-mappull.dita"/>
+      <topicref href="preprocess-metadata.dita"/>
       <topicref href="preprocess-chunk.dita"/>
       <topicref href="preprocess-maplink.dita"/>
       <topicref href="preprocess-topicpull.dita"/>
@@ -57,9 +56,15 @@
     <topicref href="plugin-newextensions.dita"/>
     <topicref href="plugin-sample.dita"/>
   </topicset>
-  <topicref rev="1.7" href="flagging-migration.dita" navtitle="Migrating style sheets and XSLT overrides"
-    locktitle="yes"/>
   <topicref href="../user-guide/dita2pdf-customization.dita"/>
+  <topicref href="migration.dita">
+    <topicref href="migrating-to-1.8.dita"/>
+    <topicref href="migrating-to-1.7.dita">
+      <topicref rev="1.7" href="flagging-migration.dita" navtitle="Flagging updates" locktitle="yes"/>
+    </topicref>
+    <topicref href="migrating-to-1.6.dita"/>
+    <topicref href="migrating-to-1.5.4.dita"/>
+  </topicref>
   <topicref href="DITA1.2-implementation-dependent-features.dita"/>
   <topicref href="extended-functionality.dita"/>
   <!-- XXX: is this obsolete? 2 April 2013: Commented out; high priority to write new topic about topic merge-->

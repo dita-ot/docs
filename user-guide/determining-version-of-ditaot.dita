@@ -3,17 +3,33 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <task id="determining-version-of-dita-ot">
-  <title>Determining the version of the DITA Open Toolkit</title>
-  <shortdesc>You can use the command-line tool to determine the version of the DITA-OT.</shortdesc>
+  <title>Checking the DITA-OT version</title>
+  <shortdesc>You can determine the version of the DITA Open Toolkit from a command prompt.</shortdesc>
   <taskbody>
     <steps>
-      <step conref="conref-task.dita#conref-task/run-startcmd">
-        <cmd/>
+      <step>
+        <cmd conref="../resources/conref-task.dita#ID/open-terminal"/>
       </step>
       <step>
-        <cmd>From the command prompt, issue the following command:</cmd>
+        <cmd>Issue the following command:</cmd>
+        <choicetable frame="topbot" relcolwidth="1.0* 3.0*">
+          <chrow platform="linux osx">
+            <choption>Linux or Mac OS&#xA0;X&#xA0;</choption>
+            <chdesc>
+              <cmdname>bin/dita</cmdname>
+              <option>-version</option>
+            </chdesc>
+          </chrow>
+          <chrow platform="windows">
+            <choption>Windows</choption>
+            <chdesc>
+              <cmdname>bin\dita</cmdname>
+              <option>-version</option>
+            </chdesc>
+          </chrow>
+        </choicetable>
         <info>
-          <codeblock>java -jar lib/dost.jar -version</codeblock>
+          <note conref="../resources/conref-task.dita#ID/dita-in-path"/>
         </info>
       </step>
     </steps>

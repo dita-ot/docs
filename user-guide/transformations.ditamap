@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<map>
+  <title>DITA-OT transformations</title>
+  <topicref href="AvailableTransforms.dita" navtitle="Output formats" locktitle="yes">
+    <topicref href="dita2docbook.dita"/>
+    <topicref href="dita2eclipsecontent.dita"/>
+    <topicref href="dita2eclipsehelp.dita"/>
+    <topicref href="dita2html5.dita"/>
+    <topicref href="dita2htmlhelp.dita" platform="windows"/>
+    <topicref href="dita2javahelp.dita"/>
+    <topicref href="dita2odt.dita"/>
+    <topicref href="dita2pdf.dita">
+      <topicref href="pdf2-creating-change-bars.dita" keys="pdf2-creating-change-bars"/>
+    </topicref>
+    <topicref href="dita2wordrtf.dita"/>
+    <topicref href="dita2tocjs.dita"/>
+    <topicref href="dita2troff.dita"/>
+    <topicref href="dita2xhtml.dita"/>
+  </topicref>
+</map>

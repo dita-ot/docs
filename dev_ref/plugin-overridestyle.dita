@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="plugin-overridestyle" xml:lang="en-us">
+<reference id="plugin-overridestyle" xml:lang="en-US">
   <title>Override styles with XSLT</title>
   <shortdesc>The XSLT import extension points are used to override various steps of XSLT processing. For this, the
     extension attribute indicates the step that the override applies to; the <codeph>file</codeph> attribute is a

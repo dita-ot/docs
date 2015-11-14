@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<concept id="xhtmljavahelp" xml:lang="en-us">
+<concept id="xhtmljavahelp" xml:lang="en-US">
   <title>JavaHelp processing</title>
   <shortdesc>The <option>javahelp</option> transformation runs several additional Ant targets after the XHTML processing
     is completed in order to create control files for the JavaHelp output.</shortdesc>

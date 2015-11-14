@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="preprocess-genlist" xml:lang="en-us">
+<reference id="preprocess-genlist" xml:lang="en-US">
   <title>Generate lists (gen-list)</title>
   <shortdesc>The <codeph>gen-list</codeph> step examines the input files and creates lists of topics, images, document
     properties, or other content. These lists are used by later steps in the pipeline. For example, one list includes
@@ -118,12 +118,13 @@
               <entry colname="col3">imagelist</entry>
               <entry colname="col4">Images files that are referenced in the content</entry>
             </row>
-            <row>
+            <!-- Moved to keyref stage in OT v2.2 for #1962 -->
+            <!--<row>
               <entry colname="col1">keyreffile</entry>
               <entry colname="col2"><codeph>keyref.list</codeph></entry>
               <entry colname="col3">keyreflist</entry>
               <entry colname="col4">Topics and maps which have key references.</entry>
-            </row>
+            </row>-->
             <row>
               <entry colname="col1">outditafilesfile</entry>
               <entry colname="col2"><codeph>outditafiles.list</codeph></entry>

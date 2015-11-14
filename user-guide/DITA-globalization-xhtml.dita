@@ -2,10 +2,10 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="dita-globalization-xhtml" xml:lang="en-us">
+<reference id="dita-globalization-xhtml" xml:lang="en-US">
   <title>Supported languages: HTML-based transformations</title>
-  <shortdesc>The DITA Open Toolkit (DITA-OT) supports over 50 languages and language variants for the HTML-based
-    transformations, for example, Eclipse Help, HTML Help, and TocJS.</shortdesc>
+  <shortdesc>The DITA Open Toolkit supports over 50 languages and language variants for the HTML-based transformations
+    such as HTML5, XHTML, Eclipse Help, HTML Help, and TocJS.</shortdesc>
   <refbody>
     <table frame="all" rowsep="1" colsep="1">
       <title>Supported languages: HTML-based transformations</title>
@@ -21,195 +21,195 @@
         <tbody>
           <row>
             <entry>Arabic</entry>
-            <entry>ar or ar-eg</entry>
+            <entry>ar or ar-EG</entry>
           </row>
           <row>
             <entry>Belarusian</entry>
-            <entry>be or be-by</entry>
+            <entry>be or be-BY</entry>
           </row>
           <row>
             <entry>Brazilian Portuguese </entry>
-            <entry>pt-br</entry>
+            <entry>pt-BR</entry>
           </row>
           <row>
             <entry>Bulgarian</entry>
-            <entry>bg or bg-bg</entry>
+            <entry>bg or bg-BG</entry>
           </row>
           <row>
             <entry>Catalan</entry>
-            <entry>ca-es</entry>
+            <entry>ca-ES</entry>
           </row>
           <row>
             <entry>Chinese (simplified)</entry>
-            <entry>zh-cn or zh-hans</entry>
+            <entry>zh-CN or zh-Hans</entry>
           </row>
           <row>
             <entry>Chinese (traditional)</entry>
-            <entry>zh-tw or zh-hant</entry>
+            <entry>zh-TW or zh-Hant</entry>
           </row>
           <row>
             <entry>Croatian</entry>
-            <entry>hr or hr-hr</entry>
+            <entry>hr or hr-HR</entry>
           </row>
           <row>
             <entry>Czech</entry>
-            <entry>cs or cs-cz</entry>
+            <entry>cs or cs-CZ</entry>
           </row>
           <row>
             <entry>Danish</entry>
-            <entry>da or da-dk</entry>
+            <entry>da or da-DK</entry>
           </row>
           <row>
             <entry>Dutch</entry>
-            <entry>nl or nl-nl</entry>
+            <entry>nl or nl-NL</entry>
           </row>
           <row>
             <entry>Dutch (Belgian)</entry>
-            <entry>nl-be</entry>
+            <entry>nl-BE</entry>
           </row>
           <row>
             <entry>English (US)</entry>
-            <entry>en or en-us</entry>
+            <entry>en or en-US</entry>
           </row>
           <row>
             <entry>English (British)</entry>
-            <entry>en-gb</entry>
+            <entry>en-GB</entry>
           </row>
           <row>
             <entry>English (Canadian)</entry>
-            <entry>en-ca</entry>
+            <entry>en-CA</entry>
           </row>
           <row>
             <entry>Estonian</entry>
-            <entry>et or et-ee</entry>
+            <entry>et or et-EE</entry>
           </row>
           <row>
             <entry>Finnish</entry>
-            <entry>fi or fi-fi</entry>
+            <entry>fi or fi-FI</entry>
           </row>
           <row>
             <entry>French</entry>
-            <entry>fr or fr-fr</entry>
+            <entry>fr or fr-FR</entry>
           </row>
           <row>
             <entry>French (Belgian)</entry>
-            <entry>fr-be</entry>
+            <entry>fr-BE</entry>
           </row>
           <row>
             <entry>French (Canadian)</entry>
-            <entry>fr-ca</entry>
+            <entry>fr-CA</entry>
           </row>
           <row>
             <entry>French (Swiss)</entry>
-            <entry>fr-ch</entry>
+            <entry>fr-CH</entry>
           </row>
           <row>
             <entry>German</entry>
-            <entry>de or de-de</entry>
+            <entry>de or de-DE</entry>
           </row>
           <row>
             <entry>German (Swiss)</entry>
-            <entry>de-ch</entry>
+            <entry>de-CH</entry>
           </row>
           <row>
             <entry>Greek</entry>
-            <entry>el or el-gr</entry>
+            <entry>el or el-GR</entry>
           </row>
           <row>
             <entry>Hebrew</entry>
-            <entry>he or he-il</entry>
+            <entry>he or he-IL</entry>
           </row>
           <row>
             <entry>Hindi</entry>
-            <entry>hi or hi-hi</entry>
+            <entry>hi or hi-HI</entry>
           </row>
           <row>
             <entry>Hungarian</entry>
-            <entry>hu or hu-hu</entry>
+            <entry>hu or hu-HU</entry>
           </row>
           <row>
             <entry>Icelandic</entry>
-            <entry>is or is-is</entry>
+            <entry>is or is-IS</entry>
           </row>
           <row>
             <entry>Indonesian</entry>
-            <entry>id or id-id</entry>
+            <entry>id or id-ID</entry>
           </row>
           <row>
             <entry>Italian</entry>
-            <entry>it or it-it</entry>
+            <entry>it or it-IT</entry>
           </row>
           <row>
-            <entry>Italian(Swiss)</entry>
-            <entry>it-ch</entry>
+            <entry>Italian (Swiss)</entry>
+            <entry>it-CH</entry>
           </row>
           <row>
             <entry>Japanese</entry>
-            <entry>ja or ja-jp</entry>
+            <entry>ja or ja-JP</entry>
           </row>
           <row>
             <entry>Kazakh</entry>
-            <entry>kk or kk-kz</entry>
+            <entry>kk or kk-KZ</entry>
           </row>
           <row>
             <entry>Korean</entry>
-            <entry>ko or ko-kr</entry>
+            <entry>ko or ko-KR</entry>
           </row>
           <row>
             <entry>Latvian</entry>
-            <entry>lv or lv-lv</entry>
+            <entry>lv or lv-LV</entry>
           </row>
           <row>
             <entry>Lithuanian</entry>
-            <entry>lt or lt-lt</entry>
+            <entry>lt or lt-LT</entry>
           </row>
           <row>
             <entry>Macedonian</entry>
-            <entry>mk or mk-mk</entry>
+            <entry>mk or mk-MK</entry>
           </row>
           <row>
             <entry>Malay</entry>
-            <entry>ms or ms-my</entry>
+            <entry>ms or ms-MY</entry>
           </row>
           <row>
             <entry>Norwegian</entry>
-            <entry>no or no-no</entry>
+            <entry>no or no-NO</entry>
           </row>
           <row>
             <entry>Polish</entry>
-            <entry>pl or pl-pl</entry>
+            <entry>pl or pl-PL</entry>
           </row>
           <row>
             <entry>Portuguese</entry>
-            <entry>pt or pt-pt</entry>
+            <entry>pt or pt-PT</entry>
           </row>
           <row>
             <entry>Romanian</entry>
-            <entry>ro or ro-ro</entry>
+            <entry>ro or ro-RO</entry>
           </row>
           <row>
             <entry>Russian</entry>
-            <entry>ru or ru-ru</entry>
+            <entry>ru or ru-RU</entry>
           </row>
           <row>
             <entry>Serbian (Cyrillic script)</entry>
-            <entry>sr, sr-rs, or sr-sp</entry>
+            <entry>sr, sr-RS, or sr-SP</entry>
           </row>
           <row>
             <entry>Serbian (Latin script)</entry>
-            <entry> sr-latn-rs</entry>
+            <entry>sr-latn-RS</entry>
           </row>
           <row>
             <entry>Slovak</entry>
-            <entry>sk or sk-sk</entry>
+            <entry>sk or sk-SK</entry>
           </row>
           <row>
             <entry>Slovenian</entry>
-            <entry>sl or sl-si</entry>
+            <entry>sl or sl-SI</entry>
           </row>
           <row>
             <entry>Spanish</entry>
-            <entry>es or es-es</entry>
+            <entry>es or es-ES</entry>
           </row>
           <row>
             <entry>Spanish (Latin American)</entry>
@@ -217,28 +217,26 @@
           </row>
           <row>
             <entry>Swedish</entry>
-            <entry>sv or sv-se</entry>
+            <entry>sv or sv-SE</entry>
           </row>
           <row>
             <entry>Thai</entry>
-            <entry>th or th-th</entry>
+            <entry>th or th-TH</entry>
           </row>
           <row>
             <entry>Turkish</entry>
-            <entry>tr or tr-tr</entry>
+            <entry>tr or tr-TR</entry>
           </row>
           <row>
             <entry>Ukrainian</entry>
-            <entry>uk or uk-ua</entry>
+            <entry>uk or uk-UA</entry>
           </row>
           <row>
             <entry>Urdu</entry>
-            <entry>ur or ur-pk</entry>
+            <entry>ur or ur-PK</entry>
           </row>
         </tbody>
       </tgroup>
     </table>
   </refbody>
 </reference>
-
-

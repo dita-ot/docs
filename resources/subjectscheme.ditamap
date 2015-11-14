@@ -4,9 +4,8 @@
 
 <subjectScheme>
   <subjectdef keys="audience">
-    <subjectdef keys="end-user"/>
-    <subjectdef keys="build-scripter"/>
-    <subjectdef keys="help-developer"/>
+    <subjectdef keys="novice"/>
+    <subjectdef keys="expert"/>
     <subjectdef keys="xslt-customizer"/>
   </subjectdef>
   <subjectdef keys="os">
@@ -16,11 +15,6 @@
       <subjectdef keys="linux"/>
     </subjectdef>
   </subjectdef>
-  <subjectdef keys="package">
-    <subjectdef keys="standard"/>
-    <subjectdef keys="minimal"/>
-    <subjectdef keys="client"/>
-  </subjectdef>
   <enumerationdef>
     <attributedef name="audience"/>
     <subjectdef keyref="audience"/>
@@ -28,9 +22,5 @@
   <enumerationdef>
     <attributedef name="platform"/>
     <subjectdef keyref="os"/>
-  </enumerationdef>
-  <enumerationdef>
-    <attributedef name="product"/>
-    <subjectdef keyref="package"/>
   </enumerationdef>
 </subjectScheme>

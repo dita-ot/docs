@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<concept id="preprocess-coderef" xml:lang="en-us">
+<concept id="preprocess-coderef" xml:lang="en-US">
   <title>Resolve code references (coderef)</title>
   <shortdesc>The <codeph>coderef</codeph> step resolves references made with the &lt;coderef> element. This step is
     implemented in Java.</shortdesc>

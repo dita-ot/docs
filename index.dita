@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<topic id="dita-otprojecthome" xml:lang="en-US">
+  <title>DITA Open Toolkit <keyword keyref="release"/></title>
+  <shortdesc>The <term>DITA Open Toolkit</term>, or <term>DITA-OT</term> for short, is a set of Java-based, open-source
+    tools that provide processing for DITA maps and topic content.</shortdesc>
+  <body>
+    <!--
+    <p>You can download the toolkit and install it for free to get started with topic-based writing and publishing. The
+      DITA-OT is licensed under the <xref format="html" href="http://www.apache.org/licenses/LICENSE-2.0"
+        scope="external">Apache 2.0</xref> open-source license.</p>
+    <note>While the DITA Standard itself is owned and developed by OASIS, the DITA Open Toolkit is an independent,
+      open-source implementation of the standard.</note>
+    -->
+    <section>
+      <title>DITA-OT documentation</title>
+      <p>The DITA Open Toolkit documentation provides information about installing, running, configuring and extending
+        the toolkit. Each part is available in the navigation panel on the left.</p>
+      <ul>
+        <li>See the <xref keyref="release-notes"/> for information on the changes in the current release.</li>
+        <li><ph conref="getting-started/index.dita#ID/ph_docs-gs-desc"/></li>
+        <li><ph conref="user-guide/index.dita#ID/ph_docs-ug-desc"/></li>
+        <li><ph conref="parameters/index.dita#ID/ph_docs-pr-desc"/></li>
+        <li><ph conref="dev_ref/index.dita#ID/ph_docs-dr-desc"/></li>
+      </ul>
+    </section>
+  </body>
+  <related-links>
+    <linklist>
+      <title>Shortcuts to important information</title>
+      <link format="html" href="http://www.dita-ot.org/download" scope="external">
+        <linktext>Latest DITA-OT release</linktext>
+      </link>
+      <link format="html" href="https://github.com/dita-ot/dita-ot/releases" scope="external">
+        <linktext>DITA-OT source code and development builds (GitHub)</linktext>
+      </link>
+    </linklist>
+  </related-links>
+</topic>

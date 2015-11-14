@@ -75,7 +75,7 @@
   <target name="generate-params-topic" depends="init" description="Regenerate parameters file">
     <property name="params.xsl" location="${basedir}/resources/params.xsl"/>
     <property name="params.input" location="${resource.dir}/plugins.xml"/>
-    <property name="params.outputtopic" location="${basedir}/parameters/ant-parameters.dita"/>
+    <property name="params.outputtopic" location="${basedir}/parameters/_all-parameters.dita"/>
     <dirname property="params.outputdir" file="${params.outputtopic}"/>
     <makeurl property="params.outputdir.uri" file="${params.outputdir}" validate="false"/>
     
@@ -114,24 +114,25 @@
     <dita-ot transtype="pdf" input="userguide-book.ditamap" output="${doc.out.dir}">
       <properties>
         <property name="outputFile.base" value="userguide"/>
+        <property name="processing-mode" value="strict"/>
       </properties>
     </dita-ot>
   </target>
 
   <target name="html">
-    <dita-ot transtype="tocjs" input="userguide.ditamap" output="${doc.out.dir}">
+    <dita-ot transtype="html5" input="userguide.ditamap" output="${doc.out.dir}">
       <properties>
         <property name="args.copycss" value="yes"/>
         <property name="args.css" value="dita-ot-doc.css"/>
         <property name="args.cssroot" value="resources"/>
         <property name="args.csspath" value="css"/>
         <property name="args.gen.task.lbl" value="YES"/>
-        <property name="outputFile.base" value="index"/>
+        <property name="args.hdr" value="${basedir}/resources/header.xml"/>
+        <property name="args.xhtml.toc" value="toc"/>
+        <property name="nav-toc" value="partial"/>
+        <property name="processing-mode" value="strict"/>
       </properties>
     </dita-ot>
-
-    <move file="${doc.out.dir}/userguide.html"
-      tofile="${doc.out.dir}/index.html"/>
   </target>
 
   <target name="htmlhelp">
@@ -142,6 +143,7 @@
         <property name="args.cssroot" value="resources"/>
         <property name="args.csspath" value="css"/>
         <property name="args.gen.task.lbl" value="YES"/>
+        <property name="processing-mode" value="strict"/>
       </properties>
     </dita-ot>
 

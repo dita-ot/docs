@@ -4,35 +4,47 @@
 
 <task id="using-command-line-tool">
   <title>Building output using the <cmdname>dita</cmdname> command</title>
-  <shortdesc>You can invoke DITA-OT and build output using the <cmdname>dita</cmdname>
-    command.</shortdesc>
+  <shortdesc>DITA-OT includes a <cmdname>dita</cmdname> command-line tool. You can invoke the DITA-OT from the
+    command-line tool and generate output.</shortdesc>
   <taskbody>
+    <context audience="novice">The DITA-OT client is a command-line tool, there is no graphic user interface.</context>
     <steps>
-      <step>
-        <cmd>From the command prompt, issue the following command:</cmd>
+      <step audience="novice">
+        <cmd>Open a terminal window by typing the following in the search bar:</cmd>
         <info>
-          <codeblock><varname>install-dir</varname>/bin/dita -i <varname>input-file</varname> -f
-<varname>transformation-type</varname> -D<varname>parameter-name</varname>=<varname>value</varname> -o <varname>output-dir</varname></codeblock>
+          <ul>
+            <li>On OS X and Linux, type <userinput>Terminal</userinput>.</li>
+            <li>On Windows, type <userinput>Command Prompt</userinput>.</li>
+          </ul>
+        </info>
+      </step>
+      <step>
+        <cmd>At the command-line prompt, enter the following command:</cmd>
+        <info>
+          <codeblock audience="novice"><varname>install-dir</varname>/bin/dita -i <varname>input-file</varname> -f <varname>format</varname> -o <varname>output-dir</varname></codeblock>
+          <codeblock audience="expert"><varname>install-dir</varname>/bin/dita -i <varname>input-file</varname> -f <varname>format</varname> -D<varname>parameter-name</varname>=<varname>value</varname> -o <varname>output-dir</varname></codeblock>
           <p>where:</p>
-          <ul conref="conref-task.dita#conref-task/basic-variables">
+          <ul conref="../resources/conref-task.dita#ID/basic-variables-novice" audience="novice">
+            <li/>
+          </ul>
+          <ul conref="../resources/conref-task.dita#ID/basic-variables" audience="expert">
             <li/>
           </ul>
         </info>
-        <tutorialinfo>
-          <note type="tip">If you add the <filepath><varname>install-dir</varname>/bin</filepath> directory to the
-              <varname>PATH</varname> system variable, you can invoke the <cmdname>dita</cmdname> command without the
-            absolute path.</note>
-        </tutorialinfo>
-        <stepresult id="running-ditaot-results">
-          <p>If processing is successful, nothing is printed on the terminal window.</p>
-          <p>If you do not specify an output directory, the <cmdname>dita</cmdname> command writes output to the
-              <filepath>out</filepath> subdirectory of the current directory.</p></stepresult>
+        <stepresult conref="../resources/conref-task.dita#ID/running-ditaot-results"/>
       </step>
     </steps>
     <example>
-      <p>The following command generates HTML5 output for the <filepath>sequence.ditamap</filepath> file and specifies
-        that output is written to the <filepath>test</filepath> directory.</p>
+      <p>The following command generates HTML5 output for the <filepath>sequence.ditamap</filepath> file and writes the
+        output to the <filepath>test</filepath> directory:</p>
       <codeblock>dita -i samples/sequence.ditamap -f html5 -o test</codeblock>
+      <p audience="novice">If the <cmdname>dita</cmdname> command is not on your <varname>PATH</varname>, use the
+        following command:
+        <codeblock><varname>install-dir</varname>/bin/dita i samples/sequence.ditamap -f html5 -o test</codeblock>
+      </p>
     </example>
   </taskbody>
+  <related-links>
+    <link href="../parameters/dita-command-arguments.dita"/>
+  </related-links>
 </task>

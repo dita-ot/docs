@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<task id="ID">
+  <title>Conref file for tasks</title>
+  <taskbody>
+    <steps>
+      <step>
+        <cmd id="open-terminal">Open a command prompt or terminal session, and then change to the directory where the
+          DITA Open Toolkit is installed.</cmd>
+        <info>
+          <ul id="basic-variables">
+            <li><varname>install-dir</varname> is the DITA-OT installation directory path.</li>
+            <li><varname>input-file</varname> is the DITA map or DITA file that you want to process.</li>
+            <li><varname>format</varname> is the output format (transformation type).</li>
+            <li audience="expert"><varname>parameter-name</varname> is the name of an optional parameter.</li>
+            <li audience="expert"><varname>value</varname> is an applicable value for the optional parameter.</li>
+            <li><varname>output-dir</varname> is the output directory path for generated output.</li>
+          </ul>
+          <ul id="basic-variables-novice">
+            <li><varname>install-dir</varname> is the DITA-OT installation directory path.</li>
+            <li><varname>input-file</varname> is the DITA map or DITA file that you want to process.</li>
+            <li><varname>format</varname> is the output format (transformation type).</li>
+            <li><varname>output-dir</varname> is the output directory path for generated output.</li>
+          </ul>
+        </info>
+        <stepresult id="running-ditaot-results">
+          <p>If processing is successful, nothing is printed in the terminal window.</p>
+          <p>If you do not specify an output directory, the <cmdname>dita</cmdname> command writes output to the
+              <filepath>out</filepath> subdirectory of the current directory.</p>
+          <note id="dita-in-path" type="tip">If you add the absolute path for the DITA-OT
+                <filepath><varname>install-dir</varname>/bin</filepath> directory to the <varname>PATH</varname>
+            environment variable, you can run the <cmdname>dita</cmdname> command from any location on the file
+            system.</note>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

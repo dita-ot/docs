@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<concept id="processing-order" xml:lang="en-us">
+<concept id="processing-order" xml:lang="en-US">
   <title>Processing order</title>
   <shortdesc>The order of processing is often significant when evaluating DITA content. Although the DITA specification
     does not mandate a specific order for processing, the DITA-OT has determined that performing filtering before conref
@@ -26,8 +26,9 @@
             translation, preventing accidental translation and increased costs.</li>
         </ul></p>
       <p>If the order of these two steps is reversed, so that conref is evaluated first, it is possible that results
-        will differ. For example, in the code sample above, the @product attribute will override the product setting on
-        the referencing note. Assume that the &lt;note> elements in documentA is defined as follows:
+        will differ. For example, in the code sample above, the @product attribute on the reference target will override
+        the product setting on the referencing note. Assume that the referenced &lt;note> element in documentA is
+        defined as follows:
         <codeblock>&lt;note id="note" product="SomeOtherProduct">This is an important note!&lt;/note></codeblock></p>
       <p>A process that filters out product="SomeOtherProduct" will remove the target of the original conref before that
         conref is ever evaluated, which will result in a broken reference. Evaluating conref first would resolve the

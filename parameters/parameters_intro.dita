@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<reference id="dita-ot-ant-properties" xml:lang="en-US">
+  <title>DITA-OT parameters</title>
+
+  <shortdesc>Certain parameters apply to all DITA-OT transformations. Other parameters are common to the HTML-based
+    transformations. Finally, some parameters apply only to specific transformation types. These parameters can be
+    passed as options to the <cmdname>dita</cmdname> command using the <option>-Dparameter-name=value</option> syntax or
+    included in build scripts as Ant properties.</shortdesc>
+</reference>

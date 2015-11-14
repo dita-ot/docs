@@ -14,6 +14,7 @@
         <property name="args.gen.task.lbl" value="YES"/>
         <property name="args.input" value="site.ditamap"/>
         <property name="args.rellinks" value="noparent"/>
+        <property name="processing-mode" value="strict"/>
       </properties>
     </dita-ot>
   </target>

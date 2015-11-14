@@ -1,0 +1,51 @@
+# Handle line endings per <http://help.github.com/line-endings/>
+
+# Set the default behavior, in case `core.autocrlf` isn't set
+# (auto-detect text files and perform LF normalization):
+*       text=auto
+
+# Normalize text files & convert to native line endings on checkout:
+*.css   text
+*.dita* text
+*.dtd   text
+*.ent   text
+*.htm   text diff=html
+*.html  text diff=html
+*.js    text
+*.less  text
+*.md    text
+*.mod   text
+*.sass  text
+*.scss  text
+*.txt   text
+*.xml   text
+*.xsd   text
+*.xsl   text
+
+# Files that should always have Windows CRLF line endings on checkout:
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# Files that should always have UNIX LF line endings on checkout:
+*.sh    text eol=lf
+
+# These files are binary and should be left untouched:
+*.ico   binary
+*.jpeg  binary
+*.jpg   binary
+*.png   binary
+# Fonts
+*.eot   binary
+*.otf   binary
+*.ttf   binary
+*.woff  binary
+
+# Diff text content of Word files & similar formats as plain text:
+*.doc   diff=astextplain
+*.DOC   diff=astextplain
+*.docx  diff=astextplain
+*.DOCX  diff=astextplain
+*.dot   diff=astextplain
+*.DOT   diff=astextplain
+*.rtf   diff=astextplain
+*.RTF   diff=astextplain

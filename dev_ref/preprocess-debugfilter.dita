@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<concept id="preprocess-debugfilter" xml:lang="en-us">
+<concept id="preprocess-debugfilter" xml:lang="en-US">
   <title>Debug and filter (debug-filter)</title>
   <shortdesc>The <codeph>debug-filter</codeph> step processes all referenced DITA content and creates copies in a
     temporary directory. As the DITA content is copied, filtering is performed, debugging information is inserted, and

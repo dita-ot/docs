@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<concept id="preprocess-conref" xml:lang="en-us">
+<concept id="preprocess-conref" xml:lang="en-US">
   <title>Conref (conref)</title>
   <shortdesc>The <codeph>conref</codeph> step resolves conref attributes, processing only the DITA maps or topics that
     use the @conref attribute. This step is implemented in XSLT.</shortdesc>

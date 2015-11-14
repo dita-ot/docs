@@ -8,18 +8,34 @@
       <parmname>-help</parmname> parameter.</shortdesc>
   <taskbody>
     <steps>
-      <step conref="conref-task.dita#conref-task/run-startcmd">
-        <cmd/>
+      <step>
+        <cmd conref="../resources/conref-task.dita#ID/open-terminal"/>
       </step>
       <step>
-        <cmd>From the command prompt, issue the following command:</cmd>
+        <cmd>Issue the following command:</cmd>
+        <choicetable frame="topbot" relcolwidth="1.0* 3.0*">
+          <chrow platform="linux osx">
+            <choption>Linux or Mac OS&#xA0;X&#xA0;</choption>
+            <chdesc>
+              <cmdname>bin/dita</cmdname>
+              <option>-help</option>
+            </chdesc>
+          </chrow>
+          <chrow platform="windows">
+            <choption>Windows</choption>
+            <chdesc>
+              <cmdname>bin\dita</cmdname>
+              <option>-help</option>
+            </chdesc>
+          </chrow>
+        </choicetable>
         <info>
-          <codeblock>dita -help</codeblock>
+          <note conref="../resources/conref-task.dita#ID/dita-in-path"/>
         </info>
       </step>
     </steps>
     <result>
-      <p>You can see the brief description of the supported parameters in the command-line window.</p>
+      <p>A brief description of the supported parameters appears in the command-line window.</p>
     </result>
   </taskbody>
 </task>

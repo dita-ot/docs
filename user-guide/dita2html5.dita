@@ -9,7 +9,8 @@
   <conbody>
     <p>The HTML5 output is always associated with the default DITA-OT CSS file (<filepath>commonltr.css</filepath> or
         <filepath>commonrtl.css</filepath> for right-to-left languages). You can use toolkit parameters to add a custom
-      style sheet to override the default styles.</p>
+      style sheet that overrides the default styles, or generate a <xmlelement>nav</xmlelement> element with a
+      navigation TOC in topic pages.</p>
     <p>To run the HTML5 transformation, set the <parmname>transtype</parmname> parameter to <option>html5</option>.</p>
   </conbody>
 </concept>

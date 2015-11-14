@@ -2,11 +2,11 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="flagging" rev="1.7" xml:lang="en-us">
+<reference id="flagging" rev="1.7" xml:lang="en-US">
   <title>Flagging in the toolkit</title>
   <shortdesc>Beginning with DITA-OT 1.7, flagging support is implemented as a common preprocess module. The module
-    evaluates the DITAVAL against all flagging attributes, and adds DITA-OT specific hints in to the topic when flags
-    are active. Any extended transform type may use these hints to support flagging without adding logic to interpret
+    evaluates the DITAVAL against all flagging attributes, and adds DITA-OT–specific hints to the topic when flags are
+    active. Any extended transformation type may use these hints to support flagging without adding logic to interpret
     the DITAVAL.</shortdesc>
   <refbody>
     <section>
@@ -50,12 +50,13 @@
       </dl>
     </section>
     <section>
-      <title>Supporting flags in overrides or custom transform types</title><p>For most transform types, the
-          <codeph>&lt;foreign></codeph> element should be ignored by default, because arbitrary non-DITA content may not
-        mix well unless coded for ahead of time. If the <codeph>&lt;foreign></codeph> element is ignored by default, or
-        if a rule is added to specifically ignore <codeph>&lt;ditaval-startprop></codeph> and
-          <codeph>&lt;ditaval-endprop></codeph>, then the added elements will have no impact on a transform. If desired,
-        flagging support may be integrated at any time in the future.</p>
+      <title>Supporting flags in overrides or custom transformation types</title>
+      <p>For most transformation types, the <codeph>&lt;foreign></codeph> element should be ignored by default, because
+        arbitrary non-DITA content may not mix well unless coded for ahead of time. If the <codeph>&lt;foreign></codeph>
+        element is ignored by default, or if a rule is added to specifically ignore
+          <codeph>&lt;ditaval-startprop></codeph> and <codeph>&lt;ditaval-endprop></codeph>, then the added elements
+        will have no impact on a transform. If desired, flagging support may be integrated at any time in the
+        future.</p>
       <p>The processing described above runs as part of the common preprocess, so any transform that uses the default
         preprocess will get the topic updates. To support generating flags as images, XSLT based transforms can use
         default fallthrough processing in most cases. For example, if a paragraph is flagged, the first child of

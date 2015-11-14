@@ -2,15 +2,10 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<map xml:lang="en-us">
+<map xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
-  <mapref href="key-definitions.ditamap" processing-role="resource-only"/>
-  <topicref href="DITA-OTProjectHome.xml"/>
-  <topicref href="release-notes/rel2.1.dita" locktitle="yes">
-    <topicmeta>
-      <navtitle>Release Notes</navtitle>
-    </topicmeta>
-  </topicref>
+  <topicref href="index.dita"/>
+  <topicref href="release-notes/index.dita" navtitle="Release Notes" locktitle="yes"/>
   <mapref href="getting-started/getting-started.ditamap"/>
   <topicref href="user-guide/index.dita">
     <mapref href="user-guide/user-guide.ditamap"/>
@@ -19,9 +14,13 @@
     <mapref href="parameters/reference.ditamap"/>
   </topicref>
   <topicref href="dev_ref/index.dita">
-    <mapref href="dev_ref/dev_ref.ditamap" format="ditamap"/>
+    <mapref href="dev_ref/dev_ref.ditamap"/>
   </topicref>
-  <mapref href="dita-resources.ditamap" format="ditamap"/>
-  <mapref href="subjectscheme.ditamap" type="subjectScheme" processing-role="resource-only"/>
-  <mapref href="reltable.ditamap" processing-role="resource-only"/>
+  <mapref href="user-guide/dita-resources.ditamap"/>
+  <topicgroup processing-role="resource-only">
+    <topicref href="resources/conref-task.dita"/>
+    <mapref href="resources/key-definitions.ditamap"/>
+    <mapref href="resources/reltable.ditamap"/>
+    <mapref href="resources/subjectscheme.ditamap" type="subjectScheme"/>
+  </topicgroup>
 </map>

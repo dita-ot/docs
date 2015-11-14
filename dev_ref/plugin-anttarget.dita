@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="plugin-anttarget" xml:lang="en-us">
+<reference id="plugin-anttarget" xml:lang="en-US">
   <title>Adding new targets to the Ant build process</title>
   <shortdesc>The Ant conductor extension point is used to make new targets available to the Ant processing pipeline.
     This may be done as part of creating a new transform, extending pre-processing, or simply to provide Ant targets for

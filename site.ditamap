@@ -4,12 +4,8 @@
 
 <map xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
-  <topicref href="DITA-OTProjectHome.xml" copy-to="index.dita"/>
-  <topicref href="release-notes/rel2.1.dita" copy-to="release-notes/index.dita" locktitle="yes">
-    <topicmeta>
-      <navtitle>Release Notes</navtitle>
-    </topicmeta>
-  </topicref>
+  <topicref href="index.dita"/>
+  <topicref href="release-notes/index.dita" navtitle="Release Notes" locktitle="yes"/>
   <mapref href="getting-started/getting-started.ditamap"/>
   <topicref href="user-guide/index.dita">
     <mapref href="user-guide/user-guide.ditamap"/>
@@ -18,11 +14,12 @@
     <mapref href="parameters/reference.ditamap"/>
   </topicref>
   <topicref href="dev_ref/index.dita">
-    <mapref href="dev_ref/dev_ref.ditamap" format="ditamap"/>
+    <mapref href="dev_ref/dev_ref.ditamap"/>
   </topicref>
-  <topicgroup>
-    <mapref href="key-definitions.ditamap" processing-role="resource-only"/>
-    <mapref href="subjectscheme.ditamap" type="subjectScheme" processing-role="resource-only"/>
-    <mapref href="reltable.ditamap" processing-role="resource-only"/>
+  <topicgroup processing-role="resource-only">
+    <topicref href="resources/conref-task.dita"/>
+    <mapref href="resources/key-definitions.ditamap"/>
+    <mapref href="resources/reltable.ditamap"/>
+    <mapref href="resources/subjectscheme.ditamap" type="subjectScheme"/>
   </topicgroup>
 </map>

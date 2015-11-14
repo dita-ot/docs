@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="plugin-javalib" xml:lang="en-us">
+<reference id="plugin-javalib" xml:lang="en-US">
   <title>Adding Java libraries to the classpath</title>
   <shortdesc>If your Ant or XSLT extensions require additional Java libraries in the classpath, you can add them to the
     global DITA-OT classpath with the following feature.</shortdesc>

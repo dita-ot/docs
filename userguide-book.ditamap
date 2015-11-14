@@ -27,14 +27,16 @@
   <part navtitle="Developer Reference" href="dev_ref/index.dita">
     <chapter navtitle="Developer Reference" href="dev_ref/dev_ref.ditamap" format="ditamap"/>
   </part>
-  <appendix href="dita-resources.ditamap" format="ditamap"/>
+  <appendix href="user-guide/dita-and-dita-ot-resources.dita">
+    <topicref href="user-guide/web-based-resources.dita" print="yes"/>
+  </appendix>
   <backmatter>
     <topicref href="release-notes/index.dita" navtitle="Release Notes" locktitle="yes"/>
     <topicgroup processing-role="resource-only">
       <topicref href="resources/conref-task.dita"/>
-      <mapref href="key-definitions.ditamap"/>
-      <mapref href="reltable.ditamap"/>
-      <mapref href="subjectscheme.ditamap" type="subjectScheme"/>
+      <mapref href="resources/key-definitions.ditamap"/>
+      <mapref href="resources/reltable.ditamap"/>
+      <mapref href="resources/subjectscheme.ditamap" type="subjectScheme"/>
     </topicgroup>
   </backmatter>
 </bookmap>

@@ -70,6 +70,9 @@
           <xref href="https://github.com/dita-ot/dita-ot/issues/1648" scope="external" format="html">#1648</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/2004" scope="external" format="html">#2004</xref>
         </li>
+        <li id="1783">The <xmlatt>keyref</xmlatt> attribute is now supported on <xmlelement>object</xmlelement> elements
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1783" scope="external" format="html">#1783</xref>
+        </li>
         <li id="1968">Processing order has been revised to process any same topic fragments used in conrefs before the
           conref phase, to enable content references to elements in the same topic using a reference such as
             <codeph>&lt;p&#xA0;conref="#./ID"/></codeph> as reported in

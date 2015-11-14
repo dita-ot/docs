@@ -13,16 +13,22 @@
       <step>
         <cmd>Issue the following command:</cmd>
         <choicetable frame="topbot" relcolwidth="1.0* 3.0*">
-          <chrow>
-            <choption>Linux</choption>
+          <chrow platform="linux osx">
+            <choption>Linux or Mac OS&#xA0;X&#xA0;</choption>
             <chdesc>
-              <codeblock>bin/ant -f <varname>build-script</varname> <varname>target</varname></codeblock>
+              <cmdname>bin/ant</cmdname>
+              <option>-f</option>
+              <codeph><varname>build-script</varname>
+                <varname>target</varname></codeph>
             </chdesc>
           </chrow>
-          <chrow>
+          <chrow platform="windows">
             <choption>Windows</choption>
             <chdesc>
-              <codeblock>bin\ant -f <varname>build-script</varname> <varname>target</varname></codeblock>
+              <cmdname>bin\ant</cmdname>
+              <option>-f</option>
+              <codeph><varname>build-script</varname>
+                <varname>target</varname></codeph>
             </chdesc>
           </chrow>
         </choicetable>
@@ -30,7 +36,8 @@
           <ul>
             <li><varname>build-script</varname> is name of the Ant build script.</li>
             <li><varname>target</varname> is an optional switch that specifies the name of the Ant target that you want
-              to run. If you do not specify a target, the value of the @default attribute for the Ant project is used.
+              to run.
+              <p>If you do not specify a target, the value of the @default attribute for the Ant project is used.</p>
             </li>
           </ul></info>
       </step>

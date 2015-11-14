@@ -36,6 +36,7 @@
               <xref href="https://github.com/dita-ot/dita-ot/issues/1637" scope="external" format="html">#1637</xref>
             </li>
             <li id="1979" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/1979"/>
+            <li id="1783" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/1783"/>
             <li id="1968" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/1968"/>
           </ul>
         </p>
@@ -336,6 +337,12 @@
         <title>Bugs</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <ul>
+          <li id="2128">Inconsistency in naming of flow name, region definition
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2128" scope="external" format="html">#2128</xref>
+          </li>
+          <!--<li id="2125">Missing `.tar.gz` distribution package
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2125" scope="external" format="html">#2125</xref>
+          </li>-->
           <li id="2119">Third relcolspec title on a reltable no longer taken into account for publishing
             <xref href="https://github.com/dita-ot/dita-ot/issues/2119" scope="external" format="html">#2119</xref>
           </li>
@@ -354,7 +361,7 @@
           <li id="2095">Generated HTML table is invalid according to HTML5 specs
             <xref href="https://github.com/dita-ot/dita-ot/issues/2095" scope="external" format="html">#2095</xref>
           </li>
-          <li id="2034">Fix table and figure list to include number, title
+          <li id="2093">Fix table and figure list to include number, title
             <xref href="https://github.com/dita-ot/dita-ot/pull/2093" scope="external" format="html">#2093</xref>
           </li>
           <li id="2091">Remove obsolete info from codepage list
@@ -366,12 +373,21 @@
           <li id="2081">Add PFD2 index groups for a-breve, a-circ in Romanian
             <xref href="https://github.com/dita-ot/dita-ot/pull/2081" scope="external" format="html">#2081</xref>
           </li>
+          <li id="2078">Ambiguous message for example with two titles
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2078" scope="external" format="html">#2078</xref>
+          </li>
           <!-- #2068 already included in 2.1.2 RN -->
+          <li id="2061">Table not localized in French translation org.dita.pdf2 - fr.xml
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2061" scope="external" format="html">#2061</xref>
+          </li>
+          <li id="2060">French translation of Table of contents is incorrect
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2060" scope="external" format="html">#2060</xref>
+          </li>
           <li id="2059">Fix ODT title generation
             <xref href="https://github.com/dita-ot/dita-ot/pull/2059" scope="external" format="html">#2059</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2034" scope="external" format="html">#2034</xref>
           </li>
-          <li id="2048">Catch null FileInfo object being referenced in move-meta.
+          <li id="2051">Catch null FileInfo object being referenced in move-meta.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2051" scope="external" format="html">#2051</xref>
           </li>
           <li id="2050">Flagging preprocess grabs too much with check for defaults
@@ -387,7 +403,7 @@
           <li id="2012">Can no longer publish to XHTML image with data protocol
             <xref href="https://github.com/dita-ot/dita-ot/issues/2012" scope="external" format="html">#2012</xref>
           </li>
-          <li id="1991">Ensuring @chunk inside topicgroups functions as expected.
+          <li id="2009">Ensuring @chunk inside topicgroups functions as expected.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2009" scope="external" format="html">#2009</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/1991" scope="external" format="html">#1991</xref>
           </li>
@@ -403,7 +419,7 @@
           <!-- <li id="1991">Problem with chunking (DITA OT 2.x). <xref href="https://github.com/dita-ot/dita-ot/issues/1991"
             scope="external" format="html">#1991</xref>
           </li>-->
-          <li id="1966">Add proper mappings for topicrefs with copy-to attributes in JavaHelp
+          <li id="1989">Add proper mappings for topicrefs with copy-to attributes in JavaHelp
             <xref href="https://github.com/dita-ot/dita-ot/pull/1989" scope="external" format="html">#1989</xref>
           </li>
           <li id="1974">Use the fragment part of KeyDef @href attribute when building @conref
@@ -419,6 +435,9 @@
           </li>
           <li id="1823">DITA-OT 2.0 - Build Error (Windows) - Illegal character - keyref target
             <xref href="https://github.com/dita-ot/dita-ot/issues/1823" scope="external" format="html">#1823</xref>
+          </li>
+          <li id="1816">abbreviated-form and term keyref links are not resolved when chunk="to-content"
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1816" scope="external" format="html">#1816</xref>
           </li>
           <li id="1605">Two levels of map ref causes good key ref to fail
             <xref href="https://github.com/dita-ot/dita-ot/issues/1605" scope="external" format="html">#1605</xref>
@@ -443,7 +462,8 @@
           <li>Stefan Eike</li>
         </ol>
         <p>For the complete list of changes since the previous release, see the
-          <xref keyref="changelog"/> on GitHub.</p>
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.1...release/2.2" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>

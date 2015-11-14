@@ -16,13 +16,13 @@
             <choptionhd>Platform</choptionhd>
             <chdeschd>Command</chdeschd>
           </chhead>
+          <chrow platform="unix">
+            <choption>Linux or Mac OS&#xA0;X&#xA0;</choption>
+            <chdesc><codeph>export ANT_OPTS=$ANT_OPTS -Xmx<varname>1024</varname>M</codeph></chdesc>
+          </chrow>
           <chrow platform="windows">
             <choption>Windows</choption>
             <chdesc><codeph>set ANT_OPTS=%ANT_OPTS% -Xmx<varname>1024</varname>M</codeph></chdesc>
-          </chrow>
-          <chrow platform="unix">
-            <choption>Linux/OS X</choption>
-            <chdesc><codeph>export ANT_OPTS=$ANT_OPTS -Xmx<varname>1024</varname>M</codeph></chdesc>
           </chrow>
         </choicetable>
         <info>

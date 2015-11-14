@@ -4,7 +4,7 @@
 
 <map xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
-  <topicref href="introduction.dita" copy-to="index.dita"/>
+  <topicref href="index.dita"/>
   <topicref href="release-notes/index.dita" navtitle="Release Notes" locktitle="yes"/>
   <mapref href="getting-started/getting-started.ditamap"/>
   <topicref href="user-guide/index.dita">
@@ -18,8 +18,8 @@
   </topicref>
   <topicgroup processing-role="resource-only">
     <topicref href="resources/conref-task.dita"/>
-    <mapref href="key-definitions.ditamap"/>
-    <mapref href="reltable.ditamap"/>
-    <mapref href="subjectscheme.ditamap" type="subjectScheme"/>
+    <mapref href="resources/key-definitions.ditamap"/>
+    <mapref href="resources/reltable.ditamap"/>
+    <mapref href="resources/subjectscheme.ditamap" type="subjectScheme"/>
   </topicgroup>
 </map>

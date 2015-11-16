@@ -26,6 +26,7 @@
       <antcall>
         <target name="generate-msg-topic"/>
         <target name="generate-params-topic"/>
+        <target name="generate-extension-points-topic"/>
       </antcall>
 
       <ant antfile="${dita.home}/build.xml">

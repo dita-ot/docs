@@ -85,6 +85,19 @@
     </xslt>
   </target>
 
+  <target name="generate-extension-points-topic" depends="init" description="Regenerate extension points file">
+    <property name="extension-points.xsl" location="${basedir}/resources/extension-points.xsl"/>
+    <property name="extension-points.input" location="${resource.dir}/plugins.xml"/>
+    <property name="extension-points.outputtopic" location="${basedir}/extension-points/_all-extension-points.dita"/>
+    <dirname property="extension-points.outputdir" file="${extension-points.outputtopic}"/>
+    <makeurl property="extension-points.outputdir.uri" file="${extension-points.outputdir}" validate="false"/>
+    
+    <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
+    <xslt in="${extension-points.input}" out="${extension-points.outputtopic}" style="${extension-points.xsl}" force="yes">
+      <param name="output-dir.url" expression="${extension-points.outputdir.uri}"/>
+    </xslt>
+  </target>
+
   <target name="generate-platform-filter" depends="init" description="Generate platform filter file">
     <condition property="platform" value="windows">
       <os family="windows"/>

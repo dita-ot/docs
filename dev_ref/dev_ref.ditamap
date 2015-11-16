@@ -40,6 +40,7 @@
     <topicref href="plugins-removing.dita"/>
     <topicref href="rebuilding-the-dita-ot-documentation.dita"/>
   </topicref>
+  <topicref href="../extension-points/_all-extension-points.dita" copy-to="all-extension-points.dita"/>
   <topicset href="plugins-overview.dita" id="plugins">
     <topicref href="plugin-configfile.dita"/>
     <topicref href="plugin-xmlcatalog.dita"/>

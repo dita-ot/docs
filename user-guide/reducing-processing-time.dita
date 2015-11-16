@@ -3,7 +3,6 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <topic id="reducing-processing-time" xml:lang="en-US">
-   <!-- SOURCE: http://jelovirt.github.io/2013/11/25/reducing-processing-time.html -->
    <title>Reducing processing time</title>
    <shortdesc>Several configuration changes can significantly reduce DITA-OT processing time.</shortdesc>
 
@@ -18,21 +17,14 @@
             time will be reduced.</p>
       </section>
       <section>
-         <title>Switch the order of conref and keyref processing</title>
-         <p>If your DITA source uses a lot of conrefs that in turn contain a lot of keyrefs, it may speed up processing
-            if you reverse the order of the two in preprocessing. You simply need to have a copy of the
-               <codeph>preprocess</codeph> Ant target in your plug-in and change the order there. The DITA specification
-            is a good example of this, as the processing time is reduced to less than half of the original time.</p>
-         <note type="other" othertype="Update">Since DITA-OT 2.0, this is the default processing order.</note>
-      </section>
-      <section>
          <title>Use a fast disk for the temporary directory</title>
          <p>DITA-OT keeps topic and map files as separate files and processes each file multiple times during
             preprocessing. Thus reading from disk, parsing XML, serializing XML, and writing to disk makes processing
-            quite IO intensive. Use either an <xref href="http://en.wikipedia.org/wiki/Solid-state_drive"
-               scope="external" format="html">SSD</xref> or a <xref href="http://en.wikipedia.org/wiki/RAM_drive"
-               scope="external" format="html">RAM disk</xref> for temporary files, and never use a temporary directory
-            that is not located on the same machine as where the processing takes place.</p>
+            quite IO intensive. Use either an
+            <xref href="http://en.wikipedia.org/wiki/Solid-state_drive" scope="external" format="html">SSD</xref> or a
+            <xref href="http://en.wikipedia.org/wiki/RAM_drive" scope="external" format="html">RAM disk</xref> for
+            temporary files, and never use a temporary directory that is not located on the same machine as where the
+            processing takes place.</p>
       </section>
       <section>
          <title>Reuse the JVM instance</title>

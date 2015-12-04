@@ -1,0 +1,63 @@
+plugins {
+    id 'com.github.eerohele.dita-ot-gradle' version '0.2.0'
+}
+
+apply plugin: 'com.github.eerohele.dita-ot-gradle'
+
+defaultTasks 'dita'
+
+// Use the DITA-OT dir defined by the dita.home system property. If undefined,
+// assume we're in dita-ot/docsrc and use the parent directory.
+def ditaHome = System.getProperty('dita.home', '../')
+
+// Point DITA-OT Gradle Plugin to the DITA-OT directory.
+ditaOt.dir ditaHome
+
+task messages {
+  inputs.file "${ditaHome}/resources/messages.xml"
+  outputs.file "${projectDir}/user-guide/DITA-messages.xml"
+
+  doLast {
+    ant.ant(antfile: 'build.xml') {
+      target name: 'generate-msg-topic'
+    }
+  }
+}
+
+task params {
+  inputs.file "${ditaHome}/resources/plugins.xml"
+  outputs.dir "${projectDir}/parameters"
+
+  doLast {
+    ant.ant(antfile: 'build.xml') {
+      target name: 'generate-params-topic'
+    }
+  }
+}
+
+task extensionPoints {
+  inputs.file "${ditaHome}/resources/plugins.xml"
+  outputs.dir "${projectDir}/extension-points"
+
+  doLast {
+    ant.ant(antfile: 'build.xml') {
+      target name: 'generate-extension-points-topic'
+    }
+  }
+}
+
+task generateTopics(dependsOn: ['messages', 'params', 'extensionPoints'])
+
+dita {
+    dependsOn 'generateTopics'
+
+    input file('site.ditamap')
+    output System.getProperty('output.dir', new File(project.buildDir, 'site').getPath())
+
+    transtype 'org.dita-ot.html'
+
+    properties {
+        property name: 'args.gen.task.lbl', value: 'YES'
+        property name: 'args.rellinks', value: 'noparent'
+    }
+}

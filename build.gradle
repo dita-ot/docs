@@ -1,0 +1,25 @@
+plugins {
+    id 'com.github.eerohele.dita-ot-gradle' version '0.2.0'
+}
+
+ditaOt.dir System.getProperty('dita.home', '../')
+
+task pdf << {
+    ant.ant(antfile: 'build.xml', target: 'pdf')
+}
+
+task html << {
+    ant.ant(antfile: 'build.xml', target: 'html')
+}
+
+task htmlhelp << {
+    ant.ant(antfile: 'build.xml', target: 'htmlhelp')
+}
+
+task clean << {
+    ant.ant(antfile: 'build.xml', target: 'clean')
+}
+
+task all(dependsOn: ['pdf', 'html', 'htmlhelp'])
+
+defaultTasks 'all'

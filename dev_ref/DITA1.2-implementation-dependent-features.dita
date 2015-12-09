@@ -18,7 +18,7 @@
         <li>to-navigation.</li>
       </ul>
       <p>When no chunk attribute values are given, no chunking is performed.</p>
-      <note>In effect, for HTML based transformation types this is equivalent to select-document and by-document
+      <note>For HTML-based transformation types, this is effectively equivalent to select-document and by-document
         defaults.</note>
       <p>Error recovery:</p>
       <ul>
@@ -34,7 +34,7 @@
         <li>When there are multiple <codeph>revprop</codeph> elements with the same val attribute, no error or warning
           is thrown</li>
         <li>When multiple prop elements define a duplicate attribute and value combination, attribute default, or
-          fall-back behaviour, <msgnum>DOTJ007E</msgnum> error is thrown.</li>
+          fall-back behavior, the <msgnum>DOTJ007E</msgnum> error is thrown.</li>
       </ul>
     </section>
     <section id="section_kjq_egs_qc">
@@ -54,20 +54,21 @@
     </section>
     <section id="section_dco_qgs_qc">
       <title>Image scaling</title>
-      <p>If both height and width attributes are given, image is scaled non-uniformly.</p>
-      <p>If scale attribute is not an unsigned integer, no error or warning is thrown during preprocessing.</p>
+      <p>If both height and width attributes are given, the image is scaled non-uniformly.</p>
+      <p>If the scale attribute is not an unsigned integer, no error or warning is thrown during preprocessing.</p>
     </section>
     <section>
       <title>Map processing</title>
       <p>When a <codeph>topicref</codeph> element that references a map contains child <codeph>topicref</codeph>
-        elements, <msgnum>DOTX068W</msgnum> error is thrown and the child <codeph>topicref</codeph> elements are
+        elements, the <msgnum>DOTX068W</msgnum> error is thrown and the child <codeph>topicref</codeph> elements are
         ignored. </p>
     </section>
     <section id="section_h3h_jsx_1h">
       <title>Link processing</title>
-      <p>When the value of <codeph>href</codeph> attribute is not a valid URI reference, <msgnum>DOTJ054E</msgnum> error
-        is thrown. Depending on <xref href="../parameters/parameters-base.dita#base/processing-mode">error recover
-          mode</xref>, error recover may be attempted.</p>
+      <p>When the value of <codeph>href</codeph> attribute is not a valid URI reference, the <msgnum>DOTJ054E</msgnum>
+        error is thrown. Depending on the
+        <xref href="../parameters/parameters-base.dita#base/processing-mode">processing-mode</xref> setting, error
+        recovery may be attempted.</p>
     </section>
     <section>
       <title>Copy-to processing</title>

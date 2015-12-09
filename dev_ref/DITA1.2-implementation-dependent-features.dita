@@ -74,5 +74,12 @@
       <p>When the <codeph>copy-to</codeph> attribute is specified on a <codeph>topicref</codeph>, the content of the
           <codeph>shortdesc</codeph> element is not used to override the short description of the topic.</p>
     </section>
+    <section>
+      <title>Coderef processing</title>
+      <p>When <codeph>coderef</codeph> elements are used within codeblocks to reference external files with literal code
+        samples, the system default character set is used as the target file encoding unless a different character set
+        is explicitly defined via the mechanisms described under
+        <xref href="extended-functionality.dita#code-reference/coderef-charset"/>.</p>
+    </section>
   </refbody>
 </reference>

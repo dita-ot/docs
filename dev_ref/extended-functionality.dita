@@ -7,8 +7,8 @@
   <reference id="code-reference">
     <title>Code reference processing</title>
     <refbody>
-      <section>
-        <title>Charset definition</title>
+      <section id="coderef-charset">
+        <title>Character set definition</title>
         <p>DITA-OT supports defining the code reference target file encoding using the <codeph>format</codeph>
           attribute. The supported format is:</p>
         <codeblock>format (";" space* "charset=" charset)?</codeblock>

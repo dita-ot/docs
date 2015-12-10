@@ -212,7 +212,7 @@ In-line elements
 ****************************************/
 
 .defkwd { font-weight: bold; text-decoration: underline; }
-.cmdname, .kwd, .msgnum, { font-weight: bold; }
+.cmdname, .kwd, .msgnum { font-weight: bold; }
 .shortcut { text-decoration: underline; }
 .uicontrol { font-weight: bold; }
 .var { font-style : italic;}

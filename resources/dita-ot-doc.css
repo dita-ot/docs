@@ -38,7 +38,7 @@ body, caption, td, th {
     font-size: 10pt;
 }
 
-code, pre, .cmdname, .option, .parmname  {
+code, pre, .cmdname, .filepath, .msgnum, .option, .parmname  {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 90%;
     color: #777;
@@ -212,11 +212,7 @@ In-line elements
 ****************************************/
 
 .defkwd { font-weight: bold; text-decoration: underline; }
-.filepath { 
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: #777;
-    }
-.cmdname, .kwd { font-weight: bold; }
+.cmdname, .kwd, .msgnum, { font-weight: bold; }
 .shortcut { text-decoration: underline; }
 .uicontrol { font-weight: bold; }
 .var { font-style : italic;}
@@ -230,18 +226,16 @@ In-line elements
 sectiontitle .filepath { font-weight: normal; 
 }*/
 
-h1 .filepath {
+h1 .filepath, h2 .filepath, h3 .filepath {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:   12pt;
     font-weight: bold;
+}
+
+h1 .filepath {
     color:       #336699;
 }
 
-h2 .filepath, h3 .filepath {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size:   12pt;
-    font-weight: bold;
-}
 /****************************************
 Images
 ****************************************/

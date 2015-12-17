@@ -3,10 +3,40 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="ID" rev="2.2">
-  <title>DITA Open Toolkit <keyword keyref="release"/> Release Notes</title>
+  <title>DITA Open Toolkit <keyword keyref="maintenance-version"/> Release Notes</title>
 
-  <shortdesc>DITA Open Toolkit <keyword keyref="release"/> includes new features and enhancements, resolves issues
-    reported in earlier releases and provides additional support for the upcoming DITA 1.3 specification.</shortdesc>
+  <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes fixes for
+    issues reported in DITA-OT <keyword keyref="release"/>, which includes new features and enhancements and provides
+    additional support for the upcoming DITA 1.3 specification.</shortdesc>
+
+  <reference id="v221">
+    <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <p>Issue numbers correspond to the tracking number in the <ph>
+            <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
+        <ul>
+          <li id="2170">PDF: Several templates in the <filepath>pr-domain.xsl</filepath> file used
+              <codeph>value-of</codeph> rather than <codeph>apply-templates</codeph> to output the element contents.
+            This prevented flagging from working as intended in PDF output. This has been corrected to ensure that
+            elements in the programming domain are properly flagged.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2170" scope="external" format="html">#2170</xref>
+          </li>
+          <li id="2163">The name of the JAR file for the Apache Commons library that provides reusable Java components
+            has been corrected in the integrator Ant script to fix the <codeph>NoClassDefFoundError</codeph> error that
+            appeared when the integrator ran in DITA-OT 2.2.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2163" scope="external" format="html">#2163</xref>
+          </li>
+          <li id="2154">PDF title metadata is now generated correctly for DITA maps that set the
+              <xmlatt>xml:lang</xmlatt> attribute. In certain cases, previous versions of DITA-OT displayed the
+              <codeph>XMP structure: 1</codeph> label in the Document Properties dialog instead of the map title.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2154" scope="external" format="html">#2154</xref>
+          </li>
+        </ul>
+      </section>
+    </refbody>
+  </reference>
 
   <reference id="requirements">
     <title>Requirements</title>
@@ -99,15 +129,6 @@
       includes the following changes. Issue numbers correspond to the tracking number in the <ph>
         <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</shortdesc>
     <refbody>
-      <!--
-      <section>
-        <title>Maintenance Release <keyword keyref="version"/></title>
-        <p>DITA Open Toolkit Release <keyword keyref="version"/> includes the following bug fixes:</p>
-        <ul>
-          <li></li>
-        </ul>
-      </section>
-      -->
       <section id="features">
         <title>Features</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>

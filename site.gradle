@@ -14,7 +14,11 @@ def ditaHome = System.getProperty('dita.home', '../')
 ditaOt.dir ditaHome
 
 task messages {
-  inputs.file "${ditaHome}/resources/messages.xml"
+  inputs.files(
+    "${ditaHome}/resources/messages.xml",
+    'resources/messages.xsl'
+  )
+
   outputs.file "${projectDir}/user-guide/DITA-messages.xml"
 
   doLast {
@@ -25,7 +29,11 @@ task messages {
 }
 
 task params {
-  inputs.file "${ditaHome}/resources/plugins.xml"
+  inputs.files (
+    "${ditaHome}/resources/plugins.xml",
+    'resources/params.xsl'
+  )
+
   outputs.dir "${projectDir}/parameters"
 
   doLast {
@@ -36,7 +44,11 @@ task params {
 }
 
 task extensionPoints {
-  inputs.file "${ditaHome}/resources/plugins.xml"
+  inputs.files (
+    "${ditaHome}/resources/plugins.xml",
+    'resources/extension-points.xsl'
+  )
+
   outputs.dir "${projectDir}/extension-points"
 
   doLast {

@@ -4,10 +4,10 @@
 
 <concept id="dita-13-spec-support" xml:lang="en-US">
   <title>DITA 1.3 support</title>
-  <shortdesc><ph id="shortdesc-ph">DITA Open Toolkit <keyword keyref="release"/> provides processing support
-      for the OASIS DITA 1.3 specification. Initial preview support for this specification was added in version
-      2.0 of the toolkit; version 2.2 extends this foundation to support key scopes and branch filtering along with
-      additional DITA 1.3 features.</ph></shortdesc>
+  <shortdesc><ph id="shortdesc-ph">DITA Open Toolkit <keyword keyref="release"/> provides processing support for the
+      OASIS DITA 1.3 specification. Initial preview support for this specification was added in version 2.0 of the
+      toolkit; version 2.2 extends this foundation to support key scopes and branch filtering along with additional DITA
+      1.3 features.</ph></shortdesc>
 
   <conbody>
     <p id="p">Because DITA 1.3 is fully backwards compatible with previous DITA DTDs and schemas, DITA-OT 2.2 provides
@@ -45,12 +45,9 @@
     <section>
       <title>Additional DITA 1.3 support in DITA-OT 2.2</title>
       <p>The following DITA 1.3 features were implemented in version 2.2 of the toolkit.</p>
+      <note type="important" id="2094">The proposed DITA 1.3 grammars are now used as the default DTDs for processing
+        <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html">#2094</xref></note>
       <ul>
-        <li id="2094">
-          <note type="important">The proposed DITA 1.3 grammars are now used as the default DTDs for processing
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html"
-            >#2094</xref></note>
-        </li>
         <li id="1969">Initial implementation of DITA 1.3 branch filtering
           <xref href="https://github.com/dita-ot/dita-ot/pull/1969" scope="external" format="html">#1969</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/1637" scope="external" format="html">#1637</xref>
@@ -88,19 +85,17 @@
   </conbody>
 
   <related-links>
-    <link format="html" 
+    <link format="html"
       href="http://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/dita-v1.3-os-part3-all-inclusive.html"
       scope="external">
       <linktext>DITA Version 1.3 Part 3: All-Inclusive Edition (HTML)</linktext>
     </link>
-    <link format="pdf" 
+    <link format="pdf"
       href="http://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/dita-v1.3-os-part3-all-inclusive.pdf"
       scope="external">
       <linktext>DITA Version 1.3 Part 3: All-Inclusive Edition (PDF)</linktext>
     </link>
-    <link format="zip"
-      href="http://docs.oasis-open.org/dita/dita/v1.3/os/dita-v1.3-os.zip"
-      scope="external">
+    <link format="zip" href="http://docs.oasis-open.org/dita/dita/v1.3/os/dita-v1.3-os.zip" scope="external">
       <linktext>DITA Version 1.3 (Distribution ZIP of the DITA source)</linktext>
     </link>
     <link format="html" href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-adoption"

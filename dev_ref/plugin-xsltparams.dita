@@ -9,9 +9,9 @@
     overrides.</shortdesc>
   <refbody>
     <section>
-      <p>To create new parameters, create a file <filepath>insertParameters.xml</filepath> which contains one or more
-        Ant <codeph>&lt;param></codeph> elements. It also needs a &lt;dummy> wrapper element around the parameters. For
-        example, the following parameter will be passed in to the XSLT file with a value of
+      <p>To create new parameters, create a file named <filepath>insertParameters.xml</filepath>, which contains one or
+        more Ant <codeph>&lt;param></codeph> elements. It also needs a <codeph>&lt;dummy></codeph> wrapper element
+        around the parameters. For example, the following parameter will be passed in to the XSLT file with a value of
           <codeph>${antProperty}</codeph>, but only if that parameter is
         defined:<codeblock>&lt;dummy>
   &lt;!-- Any Ant code allowed in xslt task is possible. Common example: -->
@@ -61,10 +61,11 @@
       </dl>
     </section>
     <example>
-      <title>Example</title><p>The following plug-in will pass the parameters defined inside of
-          <filepath>insertParameter.xml</filepath> as input to the XHTML process. Generally, an additional XSLT override
-        will make use of the parameter to do something new with the generated
-      content.</p><codeblock>&lt;plugin id="com.example.newparam">
+      <title>Example</title>
+      <p>The following plug-in will pass the parameters defined in the <filepath>insertParameters.xml</filepath> file as
+        input to the XHTML process. Generally, an additional XSLT override will make use of the parameter to do
+        something new with the generated content.</p>
+      <codeblock>&lt;plugin id="com.example.newparam">
   &lt;feature extension="dita.conductor.xhtml.param" file="insertParameters.xml"/>
 &lt;/plugin></codeblock>
     </example>

@@ -40,7 +40,7 @@
   <keydef keys="maintenance-version">
     <topicmeta>
       <keywords>
-        <keyword>2.2.1</keyword>
+        <keyword>2.2.2</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -146,7 +146,8 @@
       <linktext>DITA-OT bug and feature tracker</linktext>
     </topicmeta>
   </keydef>
-  <keydef keys="dita-ot-spec" href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part3-all-inclusive.html"
+  <keydef keys="dita-ot-spec" 
+    href="http://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/dita-v1.3-os-part3-all-inclusive.html"
     scope="external" format="html">
     <topicmeta>
       <linktext>DITA 1.3 specification</linktext>

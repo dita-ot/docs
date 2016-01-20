@@ -5,17 +5,62 @@
 <reference id="ID" rev="2.2">
   <title>DITA Open Toolkit <keyword keyref="maintenance-version"/> Release Notes</title>
 
-  <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes fixes for
-    issues reported in DITA-OT <keyword keyref="release"/>, which includes new features and enhancements and provides
-    additional support for the upcoming DITA 1.3 specification.</shortdesc>
+  <abstract>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes fixes
+      for issues reported in DITA-OT <keyword keyref="release"/>, which includes new features and enhancements and
+      provides additional support for the OASIS DITA 1.3 specification.</shortdesc>
+    <p>Issue numbers correspond to the tracking number in the <ph>
+        <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
+  </abstract>
 
-  <reference id="v221">
+  <reference id="v222">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
-        <p>Issue numbers correspond to the tracking number in the <ph>
-            <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
+        <ul>
+          <li id="2023">PDF: In earlier DITA-OT 2.x releases, short description content was not rendered when publishing
+            from a bookmap with the <parmname>args.chapter.layout</parmname> parameter set to <option>BASIC</option>.
+            Short descriptions are now rendered properly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2023" scope="external" format="html">#2023</xref>
+          </li>
+          <li id="2172"><i>Windows:</i> The name of the JAR file for Apache Ant has been corrected to fix the
+              <codeph>ANT_HOME is set incorrectly or ant could not be located</codeph> error that appeared when running
+            the bundled Ant version on Windows in DITA-OT 2.2.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2172" scope="external" format="html">#2172</xref>
+          </li>
+          <li id="2180">The order in which plugins are integrated has been revised to ensure that the base DITA-OT
+            plugins always come first. This allows custom plugins to override base targets as necessary.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2180" scope="external" format="html">#2180</xref>
+          </li>
+          <!--
+          <li id="2181">Two unimplemented extension point declarations were removed from the html5 plugin pending
+            implementation in a future DITA-OT version (
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2181" scope="external" format="html">#2181</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2184" scope="external" format="html">#2184</xref>):
+            <ul>
+              <li><codeph>dita.conductor.html5.param</codeph></li>
+              <li><codeph>dita.conductor.html5.toc.param</codeph></li>
+            </ul>
+          </li>
+          -->
+          <li id="2192">Content references with relative paths were not properly resolved to the target document in some
+            cases. The conref base URI resolution mechanism was fixed to ensure that relative references are now
+            resolved correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2192" scope="external" format="html">#2192</xref>
+          </li>
+          <li>The documentation has been updated with links to the final
+            <xref keyref="dita-ot-spec"/>.</li>
+        </ul>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v221">
+    <title>Maintenance Release 2.2.1</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.2.1 included the following bug fixes.</p>
         <ul>
           <li id="2170">PDF: Several templates in the <filepath>pr-domain.xsl</filepath> file used
               <codeph>value-of</codeph> rather than <codeph>apply-templates</codeph> to output the element contents.
@@ -58,9 +103,8 @@
         <p><ph conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/shortdesc-ph"/></p>
         <p conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/p"/>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> extends DITA 1.3 support with the following
-          enhancements:
+          enhancements: <note id="2094" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/2094"/>
           <ul>
-            <li id="2094" conref="../user-guide/DITA_v1-3-support.dita#dita-13-spec-support/2094"/>
             <li id="1969">Initial implementation of DITA 1.3 branch filtering
               <xref href="https://github.com/dita-ot/dita-ot/pull/1969" scope="external" format="html">#1969</xref>,
               <xref href="https://github.com/dita-ot/dita-ot/issues/1637" scope="external" format="html">#1637</xref>
@@ -126,8 +170,7 @@
   <reference id="issues">
     <title>Resolved issues</title>
     <shortdesc>In addition to the highlights mentioned above, DITA Open Toolkit Release <keyword keyref="release"/>
-      includes the following changes. Issue numbers correspond to the tracking number in the <ph>
-        <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</shortdesc>
+      includes the following changes.</shortdesc>
     <refbody>
       <section id="features">
         <title>Features</title>

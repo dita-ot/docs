@@ -64,7 +64,7 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>
             </strow>
             <strow>
               <stentry><codeph>name</codeph></stentry>
-              <stentry>extension point name</stentry>
+              <stentry>extension point description</stentry>
               <stentry>no</stentry>
             </strow>
           </simpletable>

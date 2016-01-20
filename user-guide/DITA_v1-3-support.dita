@@ -11,7 +11,7 @@
 
   <conbody>
     <p id="p">Because DITA 1.3 is fully backwards compatible with previous DITA DTDs and schemas, DITA-OT 2.2 provides
-      the proposed 1.3 materials as the default DTDs for processing. The XML Catalog resolution maps any references for
+      the 1.3 materials as the default DTDs for processing. The XML Catalog resolution maps any references for
       unversioned DITA doctypes to the 1.3 DTDs. All processing ordinarily dependent on the 1.0, 1.1, or 1.2 definitions
       continues to work as usual, and any documents that make use of the newer DITA 1.3 elements or attributes will be
       supported with specific new processing.</p>
@@ -45,7 +45,7 @@
     <section>
       <title>Additional DITA 1.3 support in DITA-OT 2.2</title>
       <p>The following DITA 1.3 features were implemented in version 2.2 of the toolkit.</p>
-      <note type="important" id="2094">The proposed DITA 1.3 grammars are now used as the default DTDs for processing
+      <note type="important" id="2094">The DITA 1.3 grammars are now used as the default DTDs for processing
         <xref href="https://github.com/dita-ot/dita-ot/issues/2094" scope="external" format="html">#2094</xref></note>
       <ul>
         <li id="1969">Initial implementation of DITA 1.3 branch filtering

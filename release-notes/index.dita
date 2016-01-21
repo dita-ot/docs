@@ -29,8 +29,8 @@
             the bundled Ant version on Windows in DITA-OT 2.2.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2172" scope="external" format="html">#2172</xref>
           </li>
-          <li id="2180">The order in which plugins are integrated has been revised to ensure that the base DITA-OT
-            plugins always come first. This allows custom plugins to override base targets as necessary.
+          <li id="2180">The order in which plugins are integrated has been revised to guarantee that the base DITA-OT
+            plugins always come first. This ensures that base target code cannot be overridden.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2180" scope="external" format="html">#2180</xref>
           </li>
           <!--

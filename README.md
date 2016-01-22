@@ -7,8 +7,13 @@ This repository tracks the source files for the [DITA Open Toolkit documentation
 
 We welcome contributions to the DITA-OT documentation. Please review the [guidelines for contributing][2] to this repository before creating issues or opening pull requests.
 
+To increase the chances of your changes being approved, please be sure to follow the [coding guidelines][3] and [best practices][4] outlined in the docs project wiki:
 
-## Building Output
+* [Commit related changes][5]
+* [Commit often][6]
+* [Write good commit messages][7]
+
+## Building output
 
 To generate additional topics and build the documentation output, run the Ant build script from the root level of the `docs` repository and specify the target output format.
 
@@ -31,3 +36,8 @@ or:
 
 [1]:	http://www.dita-ot.org/dev/
 [2]:	CONTRIBUTING.md
+[3]:	https://github.com/dita-ot/docs/wiki/Coding-guidelines
+[4]:	https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
+[5]:	https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
+[6]:	https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
+[7]:	https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages

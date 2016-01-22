@@ -336,10 +336,11 @@
             is still available for backwards compatibility with any customization that references it, and the "Note
             Image Path" variables are still present to permit the use of custom image files, but they are now empty by
             default. Text-only note labels appear instead, and the default indentation is reduced by the width of the
-            empty note image column. <note>The <filepath>warning.gif</filepath> file is still used for Attention,
-              Caution, Danger and Warning admonitions.</note>
+            empty note image column.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2076" scope="external" format="html">#2076</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/1577" scope="external" format="html">#1577</xref>
+            <note>The <filepath>warning.gif</filepath> file is still used for Attention, Caution, Danger and Warning
+              admonitions.</note>
           </li>
           <!-- Already included in 2.1.2 RN -->
           <!--<li>Add support for n-tilde in Spanish index 

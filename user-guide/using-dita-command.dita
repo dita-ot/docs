@@ -37,10 +37,10 @@
     <example>
       <p>The following command generates HTML5 output for the <filepath>sequence.ditamap</filepath> file and writes the
         output to the <filepath>test</filepath> directory:</p>
-      <codeblock>dita -i samples/sequence.ditamap -f html5 -o test</codeblock>
+      <codeblock>dita -i docsrc/samples/sequence.ditamap -f html5 -o test</codeblock>
       <p audience="novice">If the <cmdname>dita</cmdname> command is not on your <varname>PATH</varname>, use the
         following command:
-        <codeblock><varname>install-dir</varname>/bin/dita i samples/sequence.ditamap -f html5 -o test</codeblock>
+        <codeblock><varname>install-dir</varname>/bin/dita i docsrc/samples/sequence.ditamap -f html5 -o test</codeblock>
       </p>
     </example>
   </taskbody>

@@ -27,6 +27,7 @@
         <target name="generate-msg-topic"/>
         <target name="generate-params-topic"/>
         <target name="generate-extension-points-topic"/>
+        <target name="generate-properties-file"/>
       </antcall>
 
       <ant antfile="${dita.home}/build.xml">
@@ -84,6 +85,13 @@
     <xslt in="${params.input}" out="${params.outputtopic}" style="${params.xsl}" force="yes">
       <param name="output-dir.url" expression="${params.outputdir.uri}"/>
     </xslt>
+  </target>
+  
+  <target name="generate-properties-file" depends="init" description="Regenerate annotated .properties file">
+    <property name="propfile.xsl" location="${basedir}/resources/properties-file.xsl"/>
+    <property name="propfile.input" location="${resource.dir}/plugins.xml"/>
+    <property name="propfile.output" location="${doc.out.dir}/samples/template.properties"/>
+    <xslt in="${propfile.input}" out="${propfile.output}" style="${propfile.xsl}" force="yes"/>
   </target>
 
   <target name="generate-extension-points-topic" depends="init" description="Regenerate extension points file">

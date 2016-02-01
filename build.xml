@@ -11,8 +11,14 @@
   </condition>
 
   <property name="dita.home" location="${env.DITA_HOME}"/>
-  <condition property="doc.out.dir" value="${dita.home}/doc" else="${basedir}/out">
+  <condition property="toolkit.build" value="true" else="false">
     <available file="${basedir}/../lib/dost.jar" type="file"/>
+  </condition>
+  <condition property="doc.out.dir" value="${dita.home}/doc" else="${basedir}/out">
+    <istrue value="${toolkit.build}"/>
+  </condition>
+  <condition property="doc.samples.dir" value="${dita.home}/docsrc/samples" else="${basedir}/samples">
+    <istrue value="${toolkit.build}"/>
   </condition>
 
   <macrodef name="dita-ot">
@@ -90,7 +96,7 @@
   <target name="generate-properties-file" depends="init" description="Regenerate annotated .properties file">
     <property name="propfile.xsl" location="${basedir}/resources/properties-file.xsl"/>
     <property name="propfile.input" location="${resource.dir}/plugins.xml"/>
-    <property name="propfile.output" location="${doc.out.dir}/samples/template.properties"/>
+    <property name="propfile.output" location="${doc.samples.dir}/properties/template.properties"/>
     <xslt in="${propfile.input}" out="${propfile.output}" style="${propfile.xsl}" force="yes"/>
   </target>
 

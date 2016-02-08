@@ -4,7 +4,7 @@
 
 <map>
   <title>Reference</title>
-  <topicref href="parameters_intro.dita">
+  <topicref href="parameters_intro.dita" keys="dita-ot-params">
     <topicref href="parameters-base.dita" navtitle="Common"/>
     <topicref href="parameters-base-html.dita" navtitle="HTML-based output formats">
       <topicref href="generate-copy-outer.dita" toc="no"/>
@@ -20,10 +20,10 @@
     <topicref href="parameters-pdf.dita" navtitle="PDF"/>
     <topicref href="ant-parameters-details.dita" processing-role="resource-only" toc="no"/>
   </topicref>
-  <topicref href="dita-command-arguments.dita"/>
+  <topicref href="dita-command-arguments.dita" keys="dita-command-arguments"/>
   <topicref href="configuration-properties.dita">
     <topicref href="lib-plugin-properties.dita"/>
     <topicref href="lib-configuration-properties.dita" navtitle="lib/configuration.properties file"/>
   </topicref>
-  <topicref href="internal-ant-properties.dita"/>
+  <topicref href="internal-ant-properties.dita" keys="internal-ant-properties"/>
 </map>

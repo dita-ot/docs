@@ -4,12 +4,10 @@
 
 <task id="using-command-line-tool">
   <title>Building output using the <cmdname>dita</cmdname> command</title>
-  <shortdesc>You can generate output using the DITA Open Toolkit <cmdname>dita</cmdname>
-    command-line tool. Build parameters can be specified on the command line or with
-      <filepath>.properties</filepath> files.</shortdesc>
+  <shortdesc>You can generate output using the DITA Open Toolkit <cmdname>dita</cmdname> command-line tool. Build
+    parameters can be specified on the command line or with <filepath>.properties</filepath> files.</shortdesc>
   <taskbody>
-    <context audience="novice">The DITA-OT client is a command-line tool with no graphical user
-      interface.</context>
+    <context audience="novice">The DITA-OT client is a command-line tool with no graphical user interface.</context>
     <steps>
       <step audience="novice">
         <cmd>Open a terminal window by typing the following in the search bar:</cmd>
@@ -33,23 +31,20 @@
       </step>
     </steps>
     <example audience="novice">
-      <p>Run from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>, the following
-        command generates HTML5 output for the <filepath>sequence.ditamap</filepath> file:</p>
+      <p>Run from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>, the following command generates
+        HTML5 output for the <filepath>sequence.ditamap</filepath> file:</p>
       <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> -input sequence.ditamap -format html5</codeblock>
     </example>
     <example audience="expert">
-      <p>For example, from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>,
-        run:</p>
+      <p>For example, from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>, run:</p>
       <codeblock>dita -input sequence.ditamap -format html5 -output output/sequence &#x2938;
 -Dargs.input.dir=<filepath conref="../resources/conref-task.dita#ID/samples-dir"/> -propertyfile properties/sequence-html5.properties</codeblock>
-      <p>This builds <filepath>sequence.ditamap</filepath> to HTML5 output in
-          <filepath>output/sequence</filepath> using the additional parameters specified in the
-          <filepath>properties/sequence-html5.properties</filepath> file:</p>
+      <p>This builds <filepath>sequence.ditamap</filepath> to HTML5 output in <filepath>output/sequence</filepath> using
+        the additional parameters specified in the <filepath>properties/sequence-html5.properties</filepath> file:</p>
       <codeblock><coderef href="../samples/properties/sequence-html5.properties"/></codeblock>
     </example>
     <postreq>
-      <p audience="novice">Most builds require you to specify more options than are described in
-        this topic.</p>
+      <p audience="novice">Most builds require you to specify more options than are described in this topic.</p>
       <p audience="expert">Usually, you will want to specify a set of reusable build parameters in a
           <filepath>.properties</filepath> file.</p>
     </postreq>

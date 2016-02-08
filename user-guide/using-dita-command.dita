@@ -44,7 +44,7 @@
 -Dargs.input.dir=<filepath conref="../resources/conref-task.dita#ID/samples-dir"/> -propertyfile properties/sequence-html5.properties</codeblock>
       <p>This builds <filepath>sequence.ditamap</filepath> to HTML5 output in
           <filepath>output/sequence</filepath> using the additional parameters specified in the
-          <filepath>properties/sequencebuild.properties</filepath> file:</p>
+          <filepath>properties/sequence-html5.properties</filepath> file:</p>
       <codeblock><coderef href="../samples/properties/sequence-html5.properties"/></codeblock>
     </example>
     <postreq>

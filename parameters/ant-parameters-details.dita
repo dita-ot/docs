@@ -520,11 +520,6 @@
             <pd conaction="pushafter">The default value is the value of the <parmname>args.draft</parmname> parameter. <ph audience="xslt-customizer">Corresponds to the XSLT parameter
                   <parmname>publishRequiredCleanup</parmname>.</ph><note type="notice">This parameter is deprecated in favor of the <parmname>args.draft</parmname> parameter.</note></pd>
           </plentry>
-          <plentry id="retain.topic.fo" audience="xslt-customizer" importance="deprecated">
-            <pt><parmname>retain.topic.fo</parmname></pt>
-            <pd conaction="mark" conref="parameters-pdf.dita#pdf/retain.topic.fo.desc"/>
-            <pd conaction="pushafter"></pd>
-          </plentry>
         </parml>
       </section>
     </refbody>

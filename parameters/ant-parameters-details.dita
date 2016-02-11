@@ -523,7 +523,7 @@
           <plentry id="retain.topic.fo" audience="xslt-customizer" importance="deprecated">
             <pt><parmname>retain.topic.fo</parmname></pt>
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/retain.topic.fo.desc"/>
-            <pd conaction="pushafter">If the configuration property <parmname>org.dita.pdf2.use-out-temp</parmname> is set to <option>false</option>, this parameter is ignored.</pd>
+            <pd conaction="pushafter"></pd>
           </plentry>
         </parml>
       </section>

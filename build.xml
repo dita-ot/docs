@@ -113,6 +113,7 @@
   <target name="pdf">
     <dita-ot transtype="pdf" input="userguide-book.ditamap" output="${doc.out.dir}">
       <properties>
+        <property name="args.gen.task.lbl" value="YES"/>
         <property name="outputFile.base" value="userguide"/>
         <property name="processing-mode" value="strict"/>
       </properties>

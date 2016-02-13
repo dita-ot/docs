@@ -74,8 +74,7 @@
           <plentry id="cleantemp">
             <pt><parmname>clean.temp</parmname></pt>
             <pd conaction="mark" conref="parameters-base.dita#base/clean.temp.desc"/>
-            <pd conaction="pushafter">Specifies whether the DITA-OT deletes the files in the temporary directory after it finishes a build. The allowed values are <option>yes</option> and
-                <option>no</option>; the default value is <option>yes</option>.</pd>
+            <pd conaction="pushafter"></pd>
           </plentry>
           <!--plentry id="dita.dir">
             <pt><parmname>dita.dir</parmname></pt>

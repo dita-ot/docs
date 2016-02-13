@@ -328,6 +328,17 @@
           your topics use one of these extensions, or configure the toolkit to allow additional extensions.</stentry>
       </strow>
       <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ068E-extra" conaction="pushreplace">
+          <p>A circular reference was found in key definitions: a series of key references where the last key references
+            the first.</p>
+          <p>This may occur if a <xmlelement>topicref</xmlelement> element contains both a key name in the
+              <xmlatt>keys</xmlatt> attribute and a reference to the same key in the <xmlatt>keyref</xmlatt> attribute,
+            or if a <xmlatt>keyref</xmlatt> attribute points to a key that refers back to the referencing element.</p>
+          <p>To resolve this issue, change the target of the <xmlatt>keyref</xmlatt> so the key is defined by pointing
+            to a resource other than itself.</p>
+        </stentry>
+      </strow>
+      <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX001W-extra" conaction="pushreplace">This build uses generated text,
           such as the phrase "Related information" (which is generated above many link groups). The toolkit was unable
           to locate the string <varname>%1</varname> for your specified language, so the string will appear in the

@@ -3,7 +3,7 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="plugin-xmlcatalog" xml:lang="en-US">
-  <title>Extending the XML Catalog</title>
+  <title>Extending the XML catalog</title>
   <shortdesc>The XML Catalogs extension point is used to update the XML Catalogs used to resolve DTD or Schema document
     types, or to add URI mappings. This is required in order to support DITA specializations or new DITA document type
     shells.</shortdesc>

@@ -1,67 +1,86 @@
-# Contribution Guidelines
+# Contributing to the DITA-OT docs
 
-_Thanks for your interest_ — we welcome your contributions to the DITA-OT documentation. 
+We welcome your contributions to the DITA-OT documentation.
 
-Please take a moment to review the guidelines below to make sure your contribution meets our expectations and increase the chances that your changes will be approved.
+Thanks for your interest — here's how you can help us _“write the docs.”_
 
-## Create an Issue
+## Creating an issue
 
-If you find a bug — _and you don’t know how to fix it_, [create an issue][1] to request changes.
+If you find a bug or would like to suggest a new topic for the DITA-OT docs, create an issue:
 
-Before you do that, [review the open issues][2] to make sure it hasn't already been reported.
+1. Search [dita-ot/docs/issues][1] to ensure your issue hasn't already been reported.
+2. [Create an issue][2]. If it's a bug, provide steps to recreate the issue.
+3. [Send a pull request][3]. If you know how to fix the issue yourself,  submit a pull request with the proposed changes.
 
+_Read on for details…_
 
-_or — even better:_
+## Submitting pull requests
 
-## Create a Pull Request
+Good pull requests—corrections, improvements, new topics—are a great help. They should remain focused in scope and shouldn't contain unrelated commits.
 
-If you know how to fix the issue yourself, that's great! Here's what to do:
+Follow this process to ensure your contribution meets our expectations and increase the chances that your changes will be included:
 
-1. [Fork the repository][3],
-2. [Create a new branch][4], 
-3. Make your changes on the new branch, and 
-4. [Send a pull request][5]. 
+1. [Fork][4] the docs repository, clone your fork, and configure the remotes:
 
-### Always create a branch for your changes
+    ```bash
+    # Clone your docs fork into the current directory
+    git clone https://github.com/<your-username>/docs
 
-The DITA-OT project uses the [Git Flow][6] branching strategy. 
+    # Navigate to the newly cloned directory
+    cd docs
 
-In this model, change requests are tracked in feature branches that are created by branching off of the main development baseline in the `develop` branch. This makes it easier to keep track of related changes and merge them back into the development stream later. To find out more about how this works, see the [Gitflow Workflow][7] tutorial.
+    # Assign the original repo to a remote called "upstream"
+    git remote add upstream https://github.com/dita-ot/docs
+    ```
 
-To send a pull request, create a feature branch in your fork with a name like `feature/my-changes`, make your changes on that branch in your fork and issue the pull request from there. 
+2. If you cloned a while ago, get the latest changes from upstream:
 
-For more information, see [Contributing to Open Source on GitHub][8].
+    ```bash
+    git checkout develop
+    git pull upstream develop
+    ```
 
-### Follow best practices
+3. Create a new feature branch _(off the upstream project's `develop` branch)_  for your new feature, change, or fix:
 
-To increase the chances of your changes being approved, please be sure to follow the [coding guidelines][9] and [best practices][10] outlined in the docs project wiki:
+    ```bash
+    git checkout -b your-new-branch
+    ```
 
-* [Commit related changes][11]
-* [Commit often][12]
-* [Write good commit messages][13]:
+4. Commit your changes in logical chunks.
 
-> 1. Separate subject from body with a blank line
-> 2. Limit the subject line to 50 characters
-> 3. Capitalize the subject line
-> 4. Do not end the subject line with a period
-> 5. Use the imperative mood in the subject line
-> 6. Wrap the body at 72 characters
-> 7. Use the body to explain what and why vs. how
+	Please be sure to follow the [coding guidelines][5] and [best practices][6] outlined in the docs project wiki:
 
-For details on the rationale behind these conventions, see “[How to Write a Git Commit Message][14].”
+	* [Commit related changes][7]
+	* [Commit often][8]
+	* [Write good commit messages][9]
 
+	Use Git's [interactive rebase][10] feature to tidy up your commits, if necessary, before making them public.
 
-[1]:	https://github.com/dita-ot/docs/issues/new
-[2]:	https://github.com/dita-ot/docs/issues
-[3]:	https://help.github.com/articles/fork-a-repo/
-[4]:	https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
-[5]:	https://help.github.com/articles/using-pull-requests/
-[6]:	http://nvie.com/posts/a-successful-git-branching-model/
-[7]:	https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
-[8]:	https://guides.github.com/activities/contributing-to-open-source/
-[9]:	https://github.com/dita-ot/docs/wiki/Coding-guidelines
-[10]:	https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
-[11]:	https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
-[12]:	https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
-[13]:	https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
-[14]:	http://chris.beams.io/posts/git-commit/
+5. Locally merge _(or rebase)_ the upstream `develop` branch into your feature branch:
+
+    ```bash
+    git pull [--rebase] upstream develop
+    ```
+
+6. Push your feature branch up to your fork:
+
+    ```bash
+    git push origin your-new-branch
+    ```
+
+7. [Open a pull request][11] with a clear title and description.
+
+    **Pro tip:** If there's no corresponding issue for the changes you're proposing, there's no need to create one first.
+    You can describe the problem and provide the solution all in one step. _(Under the hood, pull requests are just a special type of issue.)_
+
+[1]:	https://github.com/dita-ot/docs/issues
+[2]:	https://github.com/dita-ot/docs/issues/new
+[3]:	https://help.github.com/articles/using-pull-requests/
+[4]:	https://help.github.com/articles/fork-a-repo/
+[5]:	https://github.com/dita-ot/docs/wiki/Coding-guidelines
+[6]:	https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
+[7]:	https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
+[8]:	https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
+[9]:	https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
+[10]:	https://help.github.com/articles/interactive-rebase
+[11]:	https://help.github.com/articles/using-pull-requests/

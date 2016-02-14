@@ -37,8 +37,8 @@
           <xref href="https://github.com/dita-ot/dita-ot/issues/1651" format="html" scope="external">#1651</xref></li>
         <li> Add DITA 1.3 markup and xml domain support (milestone 4)
           <xref href="https://github.com/dita-ot/dita-ot/issues/1652" format="html" scope="external">#1652</xref></li>
-        <li> Add DITA 1.3 div element (milestone 4)
-          <xref href="https://github.com/dita-ot/dita-ot/issues/1654" format="html" scope="external">#1654</xref></li>
+        <li> Add DITA 1.3 <xmlelement>div</xmlelement> element (milestone 4) <xref
+            href="https://github.com/dita-ot/dita-ot/issues/1654" format="html" scope="external">#1654</xref></li>
       </ul>
     </section>
 
@@ -54,7 +54,9 @@
           <p>The implementation is a separate module that is run before keyref processing. The process
             <ul>
               <li>Splits branches so that each branch contains a single ditavalref </li>
-              <li>Generates <codeph>@copy-to</codeph> attributes for each branch-generated &lt;topicref> </li>
+              <li>Generates <xmlatt>copy-to</xmlatt> attributes for each branch-generated
+                  <xmlelement>topicref</xmlelement>
+              </li>
               <li>Filters the map based on branch filters </li>
               <li>Rewrites duplicate generated copy-to targets with a numbered <tt>-#</tt> suffix </li>
               <li>Copies and filters generated copy-to targets </li>

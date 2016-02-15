@@ -14,61 +14,62 @@
       <p>Flagging is implemented as a reusable module during the preprocess stage. If a DITAVAL file is not used with a
         build, this step is skipped with no change to the file.</p>
       <p>When a flag is active, relevant sections of the DITAVAL itself are copied into the topic as a sub-element of
-        the current topic. The active flags are enclosed in a pseudo-specialization of the <codeph>&lt;foreign></codeph>
-        element (referred to as a pseudo-specialization because it is used only under the covers, with all topic types;
-        it is not integrated into any shipped document types).</p>
+        the current topic. The active flags are enclosed in a pseudo-specialization of the
+          <xmlelement>foreign</xmlelement> element (referred to as a pseudo-specialization because it is used only under
+        the covers, with all topic types; it is not integrated into any shipped document types).</p>
       <dl>
         <dlentry>
-          <dt><codeph>&lt;ditaval-startprop></codeph></dt>
-          <dd>When any flag is active on an element, a <codeph>&lt;ditaval-startprop></codeph> element will be created
-            as the first child of the flagged
+          <dt><xmlelement>ditaval-startprop</xmlelement></dt>
+          <dd>When any flag is active on an element, a <xmlelement>ditaval-startprop</xmlelement> element will be
+            created as the first child of the flagged
               element:<codeblock>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop "></codeblock><p>The
-                <codeph>&lt;ditaval-startprop></codeph> element will contain the following:<ul>
+                <xmlelement>ditaval-startprop</xmlelement> element will contain the following:<ul>
                 <li>If the active flags should create a new style, that style is included using standard CSS markup on
-                  the @outputclass attribute. Output types that make use of CSS, such as XHTML, can use this value
-                  as-is.</li>
-                <li>If styles conflict, and a <codeph>&lt;style-conflict></codeph> element exists in the DITAVAL, it
-                  will be copied as a child of <codeph>&lt;ditaval-startprop></codeph>.</li>
-                <li>Any <codeph>&lt;prop></codeph> or <codeph>&lt;revprop></codeph> elements that define active flags
-                  will be copied in as children of the <codeph>&lt;ditaval-startprop></codeph> element. Any
-                    <codeph>&lt;startflag></codeph> children of the properties will be included, but
-                    <codeph>&lt;endflag></codeph> children will not.</li>
+                  the <xmlatt>outputclass</xmlatt> attribute. Output types that make use of CSS, such as XHTML, can use
+                  this value as-is.</li>
+                <li>If styles conflict, and a <xmlelement>style-conflict</xmlelement> element exists in the DITAVAL, it
+                  will be copied as a child of <xmlelement>ditaval-startprop</xmlelement>.</li>
+                <li>Any <xmlelement>prop</xmlelement> or <xmlelement>revprop</xmlelement> elements that define active
+                  flags will be copied in as children of the <xmlelement>ditaval-startprop</xmlelement> element. Any
+                    <xmlelement>startflag</xmlelement> children of the properties will be included, but
+                    <xmlelement>endflag</xmlelement> children will not.</li>
               </ul>
             </p>
           </dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>&lt;ditaval-endprop></codeph></dt>
-          <dd>When any flag is active on an element, a <codeph>&lt;ditaval-endprop></codeph> element will be created as
-            the last child of the flagged
+          <dt><xmlelement>ditaval-endprop</xmlelement></dt>
+          <dd>When any flag is active on an element, a <xmlelement>ditaval-endprop</xmlelement> element will be created
+            as the last child of the flagged
               element:<codeblock>&lt;ditaval-endprop class="+ topic/foreign ditaot-d/ditaval-endprop "></codeblock><p>CSS
-              values and <codeph>&lt;styleconflict></codeph> elements are not included on this element.</p>
-            <p>Any <codeph>&lt;prop></codeph> or <codeph>&lt;revprop></codeph> elements that define active flags will be
-              copied in as children of <codeph>&lt;ditaval-prop></codeph>. Any <codeph>&lt;endflag></codeph> children of
-              the properties will be included, but <codeph>&lt;startflag></codeph> children will not.</p></dd>
+              values and <xmlelement>style-conflict</xmlelement> elements are not included on this element.</p>
+            <p>Any <xmlelement>prop</xmlelement> or <xmlelement>revprop</xmlelement> elements that define active flags
+              will be copied in as children of <xmlelement>ditaval-prop</xmlelement>. Any
+                <xmlelement>startflag</xmlelement> children of the properties will be included, but
+                <xmlelement>endflag</xmlelement> children will not.</p></dd>
         </dlentry>
       </dl>
     </section>
     <section>
       <title>Supporting flags in overrides or custom transformation types</title>
-      <p>For most transformation types, the <codeph>&lt;foreign></codeph> element should be ignored by default, because
-        arbitrary non-DITA content may not mix well unless coded for ahead of time. If the <codeph>&lt;foreign></codeph>
-        element is ignored by default, or if a rule is added to specifically ignore
-          <codeph>&lt;ditaval-startprop></codeph> and <codeph>&lt;ditaval-endprop></codeph>, then the added elements
-        will have no impact on a transform. If desired, flagging support may be integrated at any time in the
+      <p>For most transformation types, the <xmlelement>foreign</xmlelement> element should be ignored by default,
+        because arbitrary non-DITA content may not mix well unless coded for ahead of time. If the
+          <xmlelement>foreign</xmlelement> element is ignored by default, or if a rule is added to specifically ignore
+          <xmlelement>ditaval-startprop</xmlelement> and <xmlelement>ditaval-endprop</xmlelement>, then the added
+        elements will have no impact on a transform. If desired, flagging support may be integrated at any time in the
         future.</p>
       <p>The processing described above runs as part of the common preprocess, so any transform that uses the default
         preprocess will get the topic updates. To support generating flags as images, XSLT based transforms can use
         default fallthrough processing in most cases. For example, if a paragraph is flagged, the first child of
-          <codeph>&lt;p></codeph> will contain the start flag information; adding a rule to handle images in
-          <codeph>&lt;ditaval-startprop></codeph> will cause the image to appear at the start of the paragraph
+          <xmlelement>p</xmlelement> will contain the start flag information; adding a rule to handle images in
+          <xmlelement>ditaval-startprop</xmlelement> will cause the image to appear at the start of the paragraph
         content.</p>
       <p>In some cases fallthrough processing will not result in valid output; for those cases, the flags must be
-        explicitly processed. This is done in the XHTML transform for elements like <codeph>&lt;ol></codeph>, because
-        fallthrough processing would place images in between <codeph>&lt;ol></codeph> and <codeph>&lt;li></codeph>. To
-        handle this, the code processes <codeph>&lt;ditaval-startprop></codeph> before starting the element, and
-          <codeph>&lt;ditaval-endprop></codeph> at the end. Fallthrough processing is then disabled for those elements
-        as children of <codeph>&lt;ol></codeph>.</p></section>
+        explicitly processed. This is done in the XHTML transform for elements like <xmlelement>ol</xmlelement>, because
+        fallthrough processing would place images in between <xmlelement>ol</xmlelement> and
+        <xmlelement>li</xmlelement>. To handle this, the code processes <xmlelement>ditaval-startprop</xmlelement>
+        before starting the element, and <xmlelement>ditaval-endprop</xmlelement> at the end. Fallthrough processing is
+        then disabled for those elements as children of <xmlelement>ol</xmlelement>.</p></section>
     <example>
       <title>Example DITAVAL</title>
       <p>Assume the following DITAVAL file is in use during a build. This DITAVAL will be used for each of the following
@@ -98,16 +99,17 @@
     <example>
       <title>Content example 1: adding style</title>
       <p>Now assume the following paragraph exists in a topic. Class attributes are included, as they would normally be
-        in the middle of the preprocess routine; @xtrf and @xtrc are left off for clarity.</p>
+        in the middle of the preprocess routine; <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are left off for
+        clarity.</p>
       <codeblock>&lt;p audience="user">Simple user; includes style but no images&lt;/p>
 </codeblock>
       <p>Based on the DITAVAL above, audience="user" results in a style with underlining and with a green background.
-        The interpreted CSS value is added to @outputclass on <codeph>&lt;ditaval-startprop></codeph>, and the actual
-        property definition is included at the start and end of the element. The output from the flagging step looks
-        like this (with newlines added for clarity, and class attributes added as they would appear in the temporary
-        file):</p>
-      <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while @xtrf and
-        @xtrc are removed:</p>
+        The interpreted CSS value is added to <xmlatt>outputclass</xmlatt> on
+        <xmlelement>ditaval-startprop</xmlelement>, and the actual property definition is included at the start and end
+        of the element. The output from the flagging step looks like this (with newlines added for clarity, and class
+        attributes added as they would appear in the temporary file):</p>
+      <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
+          <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
       <codeblock>&lt;p audience="user" class="- topic/p ">
   <b>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop " 
            outputclass="background-color:green;text-decoration:underline;">
@@ -123,14 +125,14 @@
       <title>Content example 2: conflicting styles</title>
       <p>This example includes a paragraph with conflicting styles. When the audience and platform attributes are both
         evaluated, the DITAVAL indicates that the background color is both green and blue. In this situation, the
-          <codeph>&lt;style-conflict></codeph> element is evaluated to determine how to style the content.</p>
+          <xmlelement>style-conflict</xmlelement> element is evaluated to determine how to style the content.</p>
       <codeblock>&lt;p audience="user" platform="win">Conflicting styles (still no images)&lt;/p></codeblock>
-      <p>The <codeph>&lt;style-conflict></codeph> element results in a background color of red, so this value is added
-        to @outputclass on <codeph>&lt;ditaval-startprop></codeph>. As above, active properties are copied into the
-        generated elements; the <codeph>&lt;style-conflict></codeph> element itself is also copied into the generated
-          <codeph>&lt;ditaval-startprop></codeph> element.</p>
-      <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while @xtrf and
-        @xtrc are removed:</p>
+      <p>The <xmlelement>style-conflict</xmlelement> element results in a background color of red, so this value is
+        added to <xmlatt>outputclass</xmlatt> on <xmlelement>ditaval-startprop</xmlelement>. As above, active properties
+        are copied into the generated elements; the <xmlelement>style-conflict</xmlelement> element itself is also
+        copied into the generated <xmlelement>ditaval-startprop</xmlelement> element.</p>
+      <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
+          <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
       <codeblock>&lt;p audience="user" platform="win" class="- topic/p ">
   <b>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop " 
            outputclass="background-color:red;">
@@ -147,19 +149,19 @@
     </example>
     <example>
       <title>Content example 3: adding image flags</title>
-      <p>This example includes image flags for both @platform and @rev, which are defined in DITAVAL
-          <codeph>&lt;prop></codeph> and <codeph>&lt;revprop></codeph> elements.</p>
+      <p>This example includes image flags for both <xmlatt>platform</xmlatt> and <xmlatt>rev</xmlatt>, which are
+        defined in DITAVAL <xmlelement>prop</xmlelement> and <xmlelement>revprop</xmlelement> elements.</p>
       <codeblock>&lt;ol platform="linux" rev="rev2">
   &lt;li>Generate images for platform="linux" and rev="2"&lt;/li>
 &lt;/ol></codeblock>
-      <p>As above, the <codeph>&lt;ditaval-startprop></codeph> and <codeph>&lt;ditaval-endprop></codeph> nest the active
-        property definitions, with the calculated CSS value on @outputclass. The <codeph>&lt;ditaval-startprop></codeph>
-        drops the ending image, and <codeph>&lt;ditaval-endprop></codeph> drops the starting image. To make
-        document-order processing more consistent, property flags are always included before revisions in
-          <codeph>&lt;ditaval-startprop></codeph>, and the order is reversed for
-        <codeph>&lt;ditaval-endprop></codeph>.</p>
-      <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while @xtrf and
-        @xtrc are removed:</p>
+      <p>As above, the <xmlelement>ditaval-startprop</xmlelement> and <xmlelement>ditaval-endprop</xmlelement> nest the
+        active property definitions, with the calculated CSS value on <xmlatt>outputclass</xmlatt>. The
+          <xmlelement>ditaval-startprop</xmlelement> drops the ending image, and
+          <xmlelement>ditaval-endprop</xmlelement> drops the starting image. To make document-order processing more
+        consistent, property flags are always included before revisions in <xmlelement>ditaval-startprop</xmlelement>,
+        and the order is reversed for <xmlelement>ditaval-endprop</xmlelement>.</p>
+      <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
+          <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
       <codeblock>&lt;ol platform="linux" rev="rev2" class="- topic/ol ">
   <b>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop " 
            outputclass="background-color:blue;text-decoration:underline;text-decoration:overline;">

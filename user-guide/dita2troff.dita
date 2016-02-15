@@ -8,8 +8,7 @@
     platforms, particularly for programs such as the man page viewer.</shortdesc>
   <conbody>
     <p>Each DITA topic generally produces one troff output file. The <option>troff</option> transformation supports most
-      common DITA structures, but it does not support <xmlelement>table</xmlelement> or
-        <xmlelement>simpletable</xmlelement> elements. Most testing of troff output was performed using the Cygwin Linux
-      emulator.</p>
+      common DITA structures, but it does not support &lt;table&gt; or &lt;simpletable&gt; elements. Most testing of
+      troff output was performed using the Cygwin Linux emulator.</p>
   </conbody>
 </concept>

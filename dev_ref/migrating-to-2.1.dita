@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<reference id="migrating-to-2.1">
+  <title>Migrating to Release 2.1</title>
+  <shortdesc>In DITA-OT 2.1, the <codeph>insertVariable</codeph> template was deprecated for PDF
+      transformations.<draft-comment author="staylor">There are likely other changes that should be
+      noted here. See <xref href="../release-notes/rel2.1.dita"/>
+    </draft-comment></shortdesc>
+  <refbody>
+    <section>
+      <title>PDF</title>
+      <p>The following template has been deprecated:</p>
+      <ul>
+        <li><codeph>insertVariable</codeph></li>
+      </ul>
+      <p>Calls to that template will result in warnings in the build log. To update your plugin,
+        make the following changes:</p>
+      <codeblock>&lt;xsl:call-template name="<line-through>insertVariable</line-through><b>getVariable</b>">
+  &lt;xsl:with-param name="<line-through>theVariableID</line-through><b>id</b>" select="<varname>var-id</varname>"/>
+  &lt;xsl:with-param name="<line-through>theParameters</line-through><b>params</b>">
+    <varname>params</varname>
+  &lt;/xsl:with-param>
+&lt;/xsl:call-template></codeblock>
+    </section>
+  </refbody>
+</reference>

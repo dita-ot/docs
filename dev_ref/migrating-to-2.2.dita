@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<reference id="migrating-to-2.2">
+  <title>Migrating to Release 2.2</title>
+  <shortdesc>In DITA-OT 2.2, the <option>HTML5</option> transformation was refactored as its own
+    plugin and separate plugins were created for each of the rendering engine-specific PDF
+      transformations.<draft-comment author="staylor">There are likely other changes that should be
+      noted here. </draft-comment></shortdesc>
+  <refbody>
+    <section>
+      <title>HTML5</title>
+      <p>The <option>HTML5</option> transformation introduced in release 2.0 as part of the
+          <option>XHTML</option> plugin has been moved to a separate <option>HTML5</option> plugin.
+        Customizations that extended the previous HTML5 output under the <option>XHTML</option>
+        plugin will probably need to be refactored on the new HTML5 plugin.</p>
+    </section>
+    <section>
+      <title>PDF</title>
+      <p>Processing specific to Apache FOP, Antenna House Formatter, and RenderX XEP has been
+        separated into separate plugins for each of those rendering engines. Customizations that
+        extended this processing might need to extend the new <keyword>org.dita.pdf2.fop</keyword>,
+          <keyword>org.dita.pdf2.axf</keyword>, or <keyword>org.dita.pdf2.xep</keyword> plugins.</p>
+      <p>PDF customizations that are not specific to a rendering engine can continue to extend the
+          <keyword>org.dita.pdf2</keyword> plugin as before.</p>
+    </section>
+  <section>
+      <draft-comment author="staylor">Consider whether some of the folloing might be useful:<ul>
+          <li>some elements are mapped differently ;see <xref
+              href="http://www.dita-ot.org/2.1/release-notes/index.html" format="html"
+              scope="external">http://www.dita-ot.org/2.1/release-notes/index.html</xref></li>
+          <li/>
+          <li>The custom<systemoutput>FileUtils</systemoutput> code used to handle input and output
+            in earlier versions of DITA-OT has been replaced with the <xref
+              href="http://commons.apache.org/proper/commons-io/" format="html" scope="external"
+              >Apache Commons IO</xref> utilities library.<ul>
+              <li><xref href="https://github.com/dita-ot/dita-ot/issues/1803" format="html"
+                  scope="external">1803</xref> Use Commons IO</li>
+            </ul></li>
+          <li><p>Support for theargs.odt.img.embed parameter has been removed from OpenDocument
+              format transformations.</p>The previous default behavior was to embed images as
+            Base64-encoded text, but editors do not use this as a default. Instead, office packages
+            such as LibreOffice will convert embedded images into linked images on opening and
+            saving an ODT file.<ul>
+              <li><xref href="https://github.com/dita-ot/dita-ot/issues/1832" format="html"
+                  scope="external">1832</xref> Remove support for args.odt.img.embed</li>
+            </ul></li>
+          <li><p>Keydef processing has been removed from the XHTML rendering code</p>Keys are now
+            resolved in one preprocessing step, whereas in earlier versions of DITA-OT, the XHTML
+            code returned to thekeydef.xml file to look up targets for phrase elements and pull in
+            text when needed. This change affects non-linking elements that can't take
+              <systemoutput>@href</systemoutput> attributes, such as
+              <systemoutput>&lt;ph></systemoutput>, <systemoutput>&lt;keyword></systemoutput>,
+              <systemoutput>&lt;cite></systemoutput>, <systemoutput>&lt;dt></systemoutput>,
+              <systemoutput>&lt;term></systemoutput>, and
+              <systemoutput>&lt;indexterm></systemoutput> (when
+              <systemoutput>$INDEXSHOW</systemoutput> is active).<ul>
+              <li><xref href="https://github.com/dita-ot/dita-ot/issues/1837" format="html"
+                  scope="external">1837</xref> Remove keydef processing from XHTML rendering
+                code</li>
+            </ul></li>
+          <li><p>A new<systemoutput>dita.parser</systemoutput> extension point has been added to
+              allow plug-ins to contribute a custom parser for DITA files.</p>If a custom DITA
+            parser is defined, the preprocessing routines will use it during the gen-list and
+            debug-filter stages to output DITA XML.<ul>
+              <li><xref href="https://github.com/dita-ot/dita-ot/issues/1847" format="html"
+                  scope="external">1847</xref> Extension-point for custom DITA parsers</li>
+            </ul></li>
+        </ul></draft-comment>
+    </section>
+  </refbody>
+</reference>

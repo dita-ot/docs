@@ -58,13 +58,16 @@
     <topicref href="plugin-sample.dita"/>
   </topicset>
   <topicref href="../user-guide/dita2pdf-customization.dita"/>
-  <topicref href="migration.dita">
-    <topicref href="migrating-to-1.8.dita"/>
-    <topicref href="migrating-to-1.7.dita">
+  <topicref href="migration.dita" locktitle="yes">
+    <topicref href="migrating-to-2.2.dita"><topicmeta><navtitle>To 2.2</navtitle></topicmeta></topicref>
+    <topicref href="migrating-to-2.1.dita"><topicmeta><navtitle>To 2.1</navtitle></topicmeta></topicref>
+    <topicref href="migrating-to-2.0.dita"><topicmeta><navtitle>To 2.0</navtitle></topicmeta></topicref>
+    <topicref href="migrating-to-1.8.dita"><topicmeta><navtitle>To 1.8</navtitle></topicmeta></topicref>
+    <topicref href="migrating-to-1.7.dita"><topicmeta><navtitle>To 1.7</navtitle></topicmeta>
       <topicref rev="1.7" href="flagging-migration.dita" navtitle="Flagging updates" locktitle="yes"/>
     </topicref>
-    <topicref href="migrating-to-1.6.dita"/>
-    <topicref href="migrating-to-1.5.4.dita"/>
+    <topicref href="migrating-to-1.6.dita"><topicmeta><navtitle>To 1.6</navtitle></topicmeta></topicref>
+    <topicref href="migrating-to-1.5.4.dita"><topicmeta><navtitle>To 1.5.4</navtitle></topicmeta></topicref>
   </topicref>
   <topicref href="DITA1.2-implementation-dependent-features.dita"/>
   <topicref href="extended-functionality.dita"/>

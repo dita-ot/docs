@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <reference id="migrating-to-2.1">
-  <title>Migrating to Release 2.1</title>
+
+  <title>Migrating to release 2.1</title>
+
   <shortdesc>In DITA-OT 2.1, the <codeph>insertVariable</codeph> template was deprecated for PDF
       transformations.<draft-comment author="staylor">There are likely other changes that should be
       noted here. See <xref href="../release-notes/rel2.1.dita"/>
-    </draft-comment></shortdesc>
+    </draft-comment>
+  </shortdesc>
+
   <refbody>
     <section>
       <title>PDF</title>

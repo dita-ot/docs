@@ -15,6 +15,17 @@
           <dd><filepath id="samples-dir"
             ><varname>dita-ot-dir</varname>/docsrc/samples</filepath></dd>
         </dlentry>
+        <dlentry>
+          <dt>Plug-In Info</dt>
+          <dd>
+            <ul>
+              <li id="plug-in-id"><varname>plug-in-id</varname> is the unique ID of the plug-in, as
+                defined in the plug-in's configuration file (<filepath>plugin.xml</filepath>).</li>
+              <li id="plug-in-zip"><filepath><varname>plug-in-zip</varname></filepath> is the
+                filename or URL of the plug-in's distribution ZIP file.</li>
+            </ul>
+          </dd>
+        </dlentry>
       </dl>
     </context>
     <steps>

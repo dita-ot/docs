@@ -38,8 +38,8 @@
             <kwd>dita</kwd>
             <kwd>-install</kwd>
             <groupchoice importance="optional">
-              <var>file</var>
-              <var>url</var>
+              <var>filename</var>
+              <var>URL</var>
             </groupchoice>
           </groupseq>
         </fragment>
@@ -82,16 +82,14 @@
         </plentry>
         <plentry>
           <pt><parmname>-install</parmname>
-            <varname>file</varname></pt>
+            <varname>filename</varname></pt>
           <pt><parmname>-install</parmname>
-            <varname>url</varname></pt>
+            <varname>URL</varname></pt>
           <pd>Install a single plug-in from a local ZIP file or from a URL.</pd>
         </plentry>
         <plentry>
           <pt><parmname>-install</parmname></pt>
-          <pd>If no <varname>file</varname> or <varname>url</varname> argument is provided, the integration process
-            reloads plug-ins from the <filepath>plugins</filepath> directory. This approach can be used to integrate
-            mutltiple plug-ins at once.</pd>
+          <pd><ph conref="../resources/conref-task.dita#ID/plugin-integrate-all"/></pd>
         </plentry>
         <plentry>
           <pt><parmname>-uninstall</parmname>

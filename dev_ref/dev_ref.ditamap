@@ -89,11 +89,11 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/plugins-installing.dita" linking="targetonly"/>
-        <topicref href="../user-guide/plugins-removing.dita" linking="targetonly"/>
+        <topicref href="plugins-installing.dita"/>
+        <topicref href="plugins-removing.dita"/>
       </relcell>
       <relcell>
-        <topicref href="extending-the-ot.dita" linking="sourceonly"/>
+        <topicref keyref="dita-command-arguments" linking="targetonly"/>
       </relcell>
     </relrow>
   </reltable>

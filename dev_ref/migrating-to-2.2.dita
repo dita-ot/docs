@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
-<reference id="migrating-to-2.2.0">
-  <title>Migrating to Release 2.2.0</title>
-  <shortdesc>In DITA-OT 2.2.0, the <option>HTML5</option> transformation was refactored as its own
+<reference id="migrating-to-2.2">
+  <title>Migrating to Release 2.2</title>
+  <shortdesc>In DITA-OT 2.2, the <option>HTML5</option> transformation was refactored as its own
     plugin and separate plugins were created for each of the rendering engine-specific PDF
       transformations.<draft-comment author="staylor">There are likely other changes that should be
       noted here. </draft-comment></shortdesc>

@@ -40,9 +40,9 @@
         previously modified the XHTML output to generate valid HTML5 should still work, but basing
         your customization on the new transformation type might simplify the customization and
         reduce the work required to maintain compatibility with future versions of the toolkit.</p>
-      <note>The <option>HTML5</option> transformation was refactored with release 2.2.0. Before
+      <note>The <option>HTML5</option> transformation was refactored with release 2.2. Before
         basing your customization on the changes in release 2.0, consider whether you might want to
-        move to release 2.2.0 instead. See  <xref href="migrating-to-2.2.0.dita"/>.</note>
+        move to release 2.2 instead. See  <xref href="migrating-to-2.2.dita"/>.</note>
     </section>
     <section>
       <title>Plugin Installation and Distribution</title>

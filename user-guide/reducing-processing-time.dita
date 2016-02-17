@@ -11,7 +11,7 @@
          <title>Disable debug attribute generation</title>
          <p>The <parmname>generate-debug-attributes</parmname> parameter determines whether debugging attributes are
             generated in the temporary files. By changing the value to <codeph>false</codeph>, DITA-OT will no longer
-            generate the <codeph>@xtrf</codeph> and <codeph>@xtrc</codeph> debug attributes. This will make it more
+            generate the <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> debug attributes. This will make it more
             difficult to track down the source file location from which a given issue may have originated, but it will
             reduce the size of the temporary files. As a result, XML parsing will take less time and overall processing
             time will be reduced.</p>

@@ -14,7 +14,7 @@
 &lt;mapref href="other.ditamap"/></codeblock></p>
       <p>As a result of the mapref step, the element that references another map is replaced by the topic references
         from the other map. Relationship tables are pulled into the referencing map as a child of the root element
-        (&lt;map> or a specialization of &lt;map>). </p>
+          (<xmlelement>map</xmlelement> or a specialization of <xmlelement>map</xmlelement>). </p>
     </section>
   </conbody>
 </concept>

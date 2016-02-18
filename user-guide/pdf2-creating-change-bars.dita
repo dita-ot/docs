@@ -4,8 +4,8 @@
 
 <concept id="concept_gsc_vcf_vs">
   <title>Generating revision bars</title>
-  <shortdesc>If you use Antenna House or XEP, you can generate revision bars in your PDF output by using the
-      <xmlatt>changebar</xmlatt> attribute of the DITAVAL <xmlelement>revprop</xmlelement> element. </shortdesc>
+  <shortdesc>If you use Antenna House Formatter or RenderX XEP, you can generate revision bars in your PDF output by
+    using the <xmlatt>changebar</xmlatt> attribute of the DITAVAL <xmlelement>revprop</xmlelement> element. </shortdesc>
   <conbody>
     <note>FOP 1.1 does not support the XSL <codeph>fo:change-bar</codeph> formatting object.</note>
     <p>The DITA specification for <xmlatt>changebar</xmlatt> simply says:<lq>
@@ -23,19 +23,19 @@
  <b>changebar="color:black;style:solid;width:0.5pt"</b>
 /&gt;</codeblock>
     <p>To produce a revision bar, you must specify a value for <parmname>style</parmname> and should specify a value for
-        <parmname>width</parmname> so you get an visible rule.</p>
+        <parmname>width</parmname> so you get a visible rule.</p>
     <p>Each name and value pair corresponds to an attribute of the <xref keyref="fo-spec.change-bar-begin"/>. The
       following attributes and values are available:</p>
     <parml>
       <plentry>
         <pt>style</pt>
         <pd>The style to use for the line, as for other XSL-FO rules (<xref keyref="fo-spec.change-bar-style"/>). The
-          value <option>solid</option> produces a solid rule; the default value is<option> none</option>.</pd>
+          value <option>solid</option> produces a solid rule; the default value is <option>none</option>.</pd>
       </plentry>
       <plentry>
         <pt>color</pt>
         <pd>Any color value recognized by XSL-FO, including the usual color names or a hex color value. The default
-          value is<option> black</option>.</pd>
+          value is <option>black</option>.</pd>
       </plentry>
       <plentry>
         <pt>offset</pt>

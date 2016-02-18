@@ -33,14 +33,14 @@
     <example audience="novice">
       <p>Run from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>, the following command generates
         HTML5 output for the <filepath>sequence.ditamap</filepath> file:</p>
-      <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> -input sequence.ditamap -format html5</codeblock>
+      <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <option>-input</option> sequence.ditamap <option>-format</option> html5</codeblock>
     </example>
     <example audience="expert">
       <p>For example, from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>, run:</p>
-      <codeblock>dita -input sequence.ditamap -format html5 \
-     -output output/sequence \
-     -Dargs.input.dir=<filepath conref="../resources/conref-task.dita#ID/samples-dir"/> \
-     -propertyfile properties/sequence-html5.properties</codeblock>
+      <codeblock>dita <option>-input</option> sequence.ditamap <option>-format</option> html5 \
+     <option>-output</option> output/sequence \
+     <option>-D</option>args.input.dir=<filepath conref="../resources/conref-task.dita#ID/samples-dir"/> \
+     <option>-propertyfile</option> properties/sequence-html5.properties</codeblock>
       <p>This builds <filepath>sequence.ditamap</filepath> to HTML5 output in <filepath>output/sequence</filepath> using
         the additional parameters specified in the <filepath>properties/sequence-html5.properties</filepath> file:</p>
       <codeblock><coderef href="../samples/properties/sequence-html5.properties"/></codeblock>

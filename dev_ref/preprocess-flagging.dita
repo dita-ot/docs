@@ -17,13 +17,14 @@
         the current topic. The active flags are enclosed in a pseudo-specialization of the
           <xmlelement>foreign</xmlelement> element (referred to as a pseudo-specialization because it is used only under
         the covers, with all topic types; it is not integrated into any shipped document types).</p>
-      <dl>
-        <dlentry>
-          <dt><xmlelement>ditaval-startprop</xmlelement></dt>
-          <dd>When any flag is active on an element, a <xmlelement>ditaval-startprop</xmlelement> element will be
-            created as the first child of the flagged
-              element:<codeblock>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop "></codeblock><p>The
-                <xmlelement>ditaval-startprop</xmlelement> element will contain the following:<ul>
+      <parml>
+        <plentry>
+          <pt><xmlelement>ditaval-startprop</xmlelement></pt>
+          <pd>
+            <p>When any flag is active on an element, a <xmlelement>ditaval-startprop</xmlelement> element will be
+              created as the first child of the flagged element:</p>
+            <codeblock>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop "></codeblock>
+            <p>The <xmlelement>ditaval-startprop</xmlelement> element will contain the following:<ul>
                 <li>If the active flags should create a new style, that style is included using standard CSS markup on
                   the <xmlatt>outputclass</xmlatt> attribute. Output types that make use of CSS, such as XHTML, can use
                   this value as-is.</li>
@@ -35,20 +36,22 @@
                     <xmlelement>endflag</xmlelement> children will not.</li>
               </ul>
             </p>
-          </dd>
-        </dlentry>
-        <dlentry>
-          <dt><xmlelement>ditaval-endprop</xmlelement></dt>
-          <dd>When any flag is active on an element, a <xmlelement>ditaval-endprop</xmlelement> element will be created
-            as the last child of the flagged
-              element:<codeblock>&lt;ditaval-endprop class="+ topic/foreign ditaot-d/ditaval-endprop "></codeblock><p>CSS
-              values and <xmlelement>style-conflict</xmlelement> elements are not included on this element.</p>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt><xmlelement>ditaval-endprop</xmlelement></pt>
+          <pd>
+            <p>When any flag is active on an element, a <xmlelement>ditaval-endprop</xmlelement> element will be created
+              as the last child of the flagged element:</p>
+            <codeblock>&lt;ditaval-endprop class="+ topic/foreign ditaot-d/ditaval-endprop "></codeblock>
+            <p>CSS values and <xmlelement>style-conflict</xmlelement> elements are not included on this element.</p>
             <p>Any <xmlelement>prop</xmlelement> or <xmlelement>revprop</xmlelement> elements that define active flags
               will be copied in as children of <xmlelement>ditaval-prop</xmlelement>. Any
                 <xmlelement>startflag</xmlelement> children of the properties will be included, but
-                <xmlelement>endflag</xmlelement> children will not.</p></dd>
-        </dlentry>
-      </dl>
+                <xmlelement>endflag</xmlelement> children will not.</p>
+          </pd>
+        </plentry>
+      </parml>
     </section>
     <section>
       <title>Supporting flags in overrides or custom transformation types</title>

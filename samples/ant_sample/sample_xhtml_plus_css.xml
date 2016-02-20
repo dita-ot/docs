@@ -19,14 +19,10 @@
       <property name="args.copycss" value="yes"/>
       <property name="args.cssroot" location="${css.source.dir}"/>
     </ant>
-    <copy todir="${sample.output.dir}/css">
-        <fileset dir="${css.source.dir}" includes="*.jpg"/>
-    </copy>
   </target>
-  
+
   <target name="clean.samples.xhtml_plus_css" description="remove the sample web output">
     <delete dir="${sample.output.dir}"/>
   </target>
-  
-  
+
 </project>

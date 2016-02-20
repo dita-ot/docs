@@ -24,14 +24,21 @@
 	top: auto;
 }
 
-.topictitle1 { font-size: 2.5em; 
-	background: url(img03.jpg) repeat-x left bottom;
+.topictitle1 {
+	font-size: 2.5em;
 }
-.topictitle2 { font-size: 2em; }
+
+.topictitle2 {
+	font-size: 2em;
+}
 
 body {
-	margin: 120px 0;
- 	background: #FFFFFF url(img01.jpg) repeat-x left top;
+	margin: 30px 0;
+	background-color: white;
+	background-image: -webkit-linear-gradient(top, #eee 0%, #fff); /* Chrome10+,Safari5.1+ */
+	background-image:    -moz-linear-gradient(top, #eee 0%, #fff); /* FF3.6+ */
+	background-image:         linear-gradient(top, #eee 0%, #fff); /* W3C */
+	background-repeat: no-repeat;
 	text-align: left;
 	font-family: 'Trebuchet MS', "Times New Roman", Times, serif;
 	font-size: .9em;

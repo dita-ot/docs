@@ -1,116 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="plugin-antpreprocess" xml:lang="en-US">
-  <title>Adding Ant targets to the pre-process pipeline</title>
-  <shortdesc>Every step in the pre-process pipeline defines an extension point before and after the step, to allow
-    plug-ins to integrate additional processing. This allows a plug-in to insert a new step before any pre-processing
-    step, as well as before or after the entire preprocess pipeline.</shortdesc>
-  <refbody>
-    <section>
-      <p>The group of preprocessing steps defines extension points before and after the full preprocessing chain.</p>
-      <dl>
-        <dlentry>
-          <dt><codeph>depend.preprocess.pre</codeph></dt>
-          <dd>Preprocessing pre-target; extending this target runs your Ant target before the full preprocess routine
-            begins.</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.post</codeph></dt>
-          <dd>Preprocessing post-target; extending this target runs your Ant target after the full preprocess routine
-            completes.</dd>
-        </dlentry>
-      </dl>
-      <p>In addition, there are extension points to execute an Ant target before individual preprocessing steps.</p>
-      <dl>
-        <dlentry>
-          <dt><codeph>depend.preprocess.clean-temp.pre</codeph></dt>
-          <dd>Clean temp pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.gen-list.pre</codeph></dt>
-          <dd>Generate list pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.debug-filter.pre</codeph></dt>
-          <dd>Debug and filter pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.conrefpush.pre</codeph></dt>
-          <dd>Content reference push pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.move-meta-entries.pre</codeph></dt>
-          <dd>Move meta entries pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.conref.pre</codeph></dt>
-          <dd>Content reference pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.coderef.pre</codeph></dt>
-          <dd>Code reference pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.mapref.pre</codeph></dt>
-          <dd>Map reference pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.keyref.pre</codeph></dt>
-          <dd>Resolve key reference pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.mappull.pre</codeph></dt>
-          <dd>Map pull pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.chunk.pre</codeph></dt>
-          <dd>Chunking pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.maplink.pre</codeph></dt>
-          <dd>Map link pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.topicpull.pre</codeph></dt>
-          <dd>Topic pull pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.copy-files.pre</codeph></dt>
-          <dd>Copy files pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.copy-image.pre</codeph></dt>
-          <dd>Copy images pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.copy-html.pre</codeph></dt>
-          <dd>Copy HTML pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.copy-flag.pre</codeph></dt>
-          <dd>Copy flag pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.copy-subsidiary.pre</codeph></dt>
-          <dd>Copy subsidiary pre-target</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>depend.preprocess.copy-generated-files.pre</codeph></dt>
-          <dd>Copy generated files pre-target</dd>
-        </dlentry>
-      </dl>
-    </section>
+<task id="plugin-antpreprocess" xml:lang="en-US">
+  <title>Adding an Ant target to the pre-processing pipeline</title>
+  <shortdesc>You can add an Ant target to the pre-processing pipeline. This enables you to insert additional processing
+    before or after the pre-processing chain or a specific step in the pre-processing operation.</shortdesc>
+  <taskbody>
+    <!--<context><p>The group of preprocessing steps defines extension points before and after the full preprocessing chain.</p><dl><dlentry><dt><codeph>depend.preprocess.pre</codeph></dt><dd>Preprocessing pre-target; extending this target runs your Ant target before the full preprocess routine begins.</dd></dlentry><dlentry><dt><codeph>depend.preprocess.post</codeph></dt><dd>Preprocessing post-target; extending this target runs your Ant target after the full preprocess routine completes.</dd></dlentry></dl><p>In addition, there are extension points to execute an Ant target before individual preprocessing steps.</p><dl><dlentry><dt><codeph>depend.preprocess.clean-temp.pre</codeph></dt><dd>Clean temp pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.gen-list.pre</codeph></dt><dd>Generate list pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.debug-filter.pre</codeph></dt><dd>Debug and filter pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.conrefpush.pre</codeph></dt><dd>Content reference push pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.move-meta-entries.pre</codeph></dt><dd>Move meta entries pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.conref.pre</codeph></dt><dd>Content reference pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.coderef.pre</codeph></dt><dd>Code reference pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.mapref.pre</codeph></dt><dd>Map reference pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.keyref.pre</codeph></dt><dd>Resolve key reference pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.mappull.pre</codeph></dt><dd>Map pull pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.chunk.pre</codeph></dt><dd>Chunking pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.maplink.pre</codeph></dt><dd>Map link pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.topicpull.pre</codeph></dt><dd>Topic pull pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-files.pre</codeph></dt><dd>Copy files pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-image.pre</codeph></dt><dd>Copy images pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-html.pre</codeph></dt><dd>Copy HTML pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-flag.pre</codeph></dt><dd>Copy flag pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-subsidiary.pre</codeph></dt><dd>Copy subsidiary pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-generated-files.pre</codeph></dt><dd>Copy generated files pre-target</dd></dlentry></dl></context>-->
+    <steps>
+      <step>
+        <cmd>Define and integrate the new Ant target.</cmd>
+      </step>
+      <step>
+        <cmd>Create the following <filepath>plugin</filepath>.xml file:</cmd>
+        <info><codeblock>&lt;plugin id="<varname>plugin-id</varname>">
+  &lt;feature extension="<varname>extension-point</varname>" value="<varname>Ant-target</varname>"/>
+&lt;/plugin></codeblock>where <ul>
+            <li><varname>plugin-id</varname> is the plug-in identifier.</li>
+            <li><varname>extension-point</varname> is a pre-processing extension point. See  <xref
+                href="../extension-points/all-extension-points.dita"/> for more information.</li>
+            <li><varname>Ant-target</varname> is the name of the Ant target.</li>
+          </ul></info>
+      </step>
+      <step>
+        <cmd>Integrate the plug-in.</cmd>
+      </step>
+    </steps>
+    <result>The new target is added to the Ant dependency list. The new target now is always run in conjunction with the
+      specified step in the pre-processing pipeline </result>
     <example>
       <title>Example</title>
-      <p>The following feature adds "myAntTargetBeforeChunk" Ant target to be executed before the chunk step in
-        preprocessing. It assumes that an Ant file defining that target has already been integrated.</p>
+      <p>The following plugin.xml file specifies that the <parmname>myAntTargetBeforeChunk</parmname> target is always
+        run before the <codeph>chunk</codeph> step in the pre-processing stage.</p>
       <codeblock>&lt;plugin id="com.example.extendchunk">
   &lt;feature extension="depend.preprocess.chunk.pre" value="myAntTargetBeforeChunk"/>
 &lt;/plugin></codeblock>
-      <p>When integrated, the Ant target "myAntTargetBeforeChunk" will be added to the Ant dependency list so that it
-        always runs immediately before the Chunk step.</p>
+      <p>It assumes that the <parmname>myAntTargetBeforeChunk</parmname> target has already been defined and
+        integrated.</p>
     </example>
-  </refbody>
-</reference>
+  </taskbody>
+</task>

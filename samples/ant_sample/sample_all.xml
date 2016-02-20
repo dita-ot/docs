@@ -6,7 +6,8 @@
 
   <property name="args.logdir" value="log"/>
 
-  <import file="sample_xhtml.xml"/>
+  <import file="sample_html5.xml"/>
+  <!-- <import file="sample_xhtml.xml"/> -->
   <import file="sample_tocjs.xml"/>
   <import file="sample_eclipsehelp.xml"/>
   <import file="sample_javahelp.xml"/>

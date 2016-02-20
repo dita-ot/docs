@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="plugin-anttarget" xml:lang="en-US">
-  <title>Adding new targets to the Ant build process</title>
-  <shortdesc>The Ant conductor extension point is used to make new targets available to the Ant processing pipeline.
-    This may be done as part of creating a new transform, extending pre-processing, or simply to provide Ant targets for
-    the use of other plug-ins.</shortdesc>
-  <refbody>
-    <section>
-      <dl>
-        <dlentry>
-          <dt><codeph>dita.conductor.target.relative</codeph></dt>
-          <dt importance="deprecated"><codeph>dita.conductor.target</codeph></dt>
-          <dd>
-            <p>Add Ant import to main Ant build file.</p>
-            <note type="remember">The <codeph>dita.conductor.target</codeph> extension is deprecated. Use
-                <codeph>dita.conductor.target.relative</codeph> instead.</note>
-          </dd>
-        </dlentry>
-      </dl>
-    </section>
-    <example>
-      <title>Example</title>
-      <p>To extend Ant processing, first place your extensions in an Ant project file within your plug-in, such as
-          <filepath>myAntStuff.xml</filepath>. Next, create a small wrapper file
-          <filepath>myAntStuffWrapper.xml</filepath> in the same directory:
-        </p><codeblock>&lt;dummy> &lt;import file="myAntStuff.xml"/> &lt;/dummy></codeblock><p>Then create the following
-        feature:
-        </p><codeblock>&lt;plugin id="com.example.ant">
-  &lt;feature extension="dita.conductor.target.relative" file="myAntStuffWrapper.xml"/>
-&lt;/plugin></codeblock><p>When
-        the plug-in is integrated, the imports from <filepath>myAntStuffWrapper.xml</filepath> will be copied into
-          <filepath>build.xml</filepath> (using the correct path). This makes targets in
-          <filepath>myAntStuff.xml</filepath> available to any other processing.</p></example>
-  </refbody>
-</reference>
+<task id="plugin-anttarget" xml:lang="en-US">
+  <title>Adding a new target to the Ant build process</title>
+  <shortdesc>Use the Ant conductor extension point (<codeph>dita.conductor.target.relative</codeph>) to make new targets
+    available to the Ant processing pipeline. This can be done as part of creating a new transformation, extending
+    pre-processing, or simply to make new Ant targets available to other plug-ins.</shortdesc>
+  <taskbody>
+    <!--<context><note type="remember">The <codeph>dita.conductor.target</codeph> extension is deprecated. Use <codeph>dita.conductor.target.relative</codeph> instead.</note></context>-->
+    <steps>
+      <step>
+        <cmd>Create an Ant project file that contains the new target.</cmd>
+      </step>
+      <step>
+        <cmd>In the same directory as the Ant project file, create a wrapper file that imports the Ant project file: </cmd>
+        <info><codeblock>&lt;dummy>
+    &lt;import file="<varname>Ant-file</varname>"/>
+&lt;/dummy></codeblock>where
+            <varname>Ant-file</varname> is the project file that contains the new target.</info>
+      </step>
+      <step>
+        <cmd>Create the <filepath>plugin.xml</filepath> file:</cmd>
+        <stepxmp><codeblock>&lt;plugin id="<varname>plugin-id</varname>">
+  &lt;feature extension="dita.conductor.target.relative" file="<varname>wrapper-file</varname>"/>
+&lt;/plugin></codeblock>where:<ul>
+            <li><varname>plugin-id</varname> is the plug-in identifier, for example,
+              <codeph>com.example.ant</codeph>.</li>
+            <li><varname>wrapper-file</varname> is the wrapper file that imports the Ant project file.</li>
+          </ul></stepxmp>
+      </step>
+      <step>
+        <cmd>Integrate the plug-in.</cmd>
+      </step>
+    </steps>
+    <result>
+      <p>The imports from wrapper file are copied into the <filepath>build.xml</filepath> file, using the correct path.
+        This makes the new Ant targets available to other processes.</p>
+    </result>
+  </taskbody>
+</task>

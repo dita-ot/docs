@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-     Sourceforge.net. See the accompanying license.txt file for 
-     applicable licenses.-->
-<!-- (c) Copyright IBM Corp. 2004, 2006 All Rights Reserved. -->
+
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <project name="sample_htmlhelp" default="samples.htmlhelp" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
-    
+  <property name="dita.dir" location="${basedir}/../../.."/>
+
   <target name="samples.htmlhelp" description="build the samples for HTMLHelp" depends="clean.samples.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
       <property name="args.input" location="${dita.dir}/samples/hierarchy.ditamap"/>
@@ -15,9 +13,9 @@
       <property name="transtype" value="htmlhelp"/>
     </ant>
   </target>
-  
+
   <target name="clean.samples.htmlhelp" description="remove the sample HTMLHelp output">
     <delete dir="${dita.dir}/out/samples/htmlhelp"/>
   </target>
-  
+
 </project>

@@ -4,7 +4,7 @@
 
 <project name="sample_tocjs" default="samples.tocjs" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.dir" location="${basedir}/../../.."/>
 
   <target name="samples.tocjs" description="build the samples for the TocJS" depends="clean.samples.tocjs">
     <ant antfile="${dita.dir}/build.xml">

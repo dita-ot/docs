@@ -4,7 +4,7 @@
 
 <project name="sample_javahelp" default="samples.javahelp" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.dir" location="${basedir}/../../.."/>
 
   <target name="samples.javahelp" description="build the samples for JavaHelp" depends="clean.samples.javahelp">
     <ant antfile="${dita.dir}/build.xml">

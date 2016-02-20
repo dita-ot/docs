@@ -4,7 +4,7 @@
 
 <project name="sample_pdf" default="samples.pdf" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.dir" location="${basedir}/../../.."/>
 
   <target name="samples.pdf" description="build the samples as PDF" depends="clean.samples.pdf">
     <ant antfile="${dita.dir}/build.xml">

@@ -4,7 +4,7 @@
 
 <project name="sample_odt" default="samples.odt" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.dir" location="${basedir}/../../.."/>
 
   <target name="samples.odt" description="transform the samples to ODT" depends="clean.samples.odt">
     <ant antfile="${dita.dir}/build.xml">

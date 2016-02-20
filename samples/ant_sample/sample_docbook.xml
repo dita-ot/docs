@@ -4,7 +4,7 @@
 
 <project name="sample_docbook" default="samples.docbook" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.dir" location="${basedir}/../../.."/>
 
   <target name="samples.docbook" description="transform the samples to DocBook" depends="clean.samples.docbook">
     <ant antfile="${dita.dir}/build.xml">

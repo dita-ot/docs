@@ -4,7 +4,7 @@
 
 <project name="sample_eclipsehelp" default="samples.eclipse" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.dir" location="${basedir}/../../.."/>
 
   <target name="samples.eclipse" description="build the samples for Eclipse" depends="clean.samples.eclipse">
     <ant antfile="${dita.dir}/build.xml">

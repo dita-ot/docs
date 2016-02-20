@@ -4,7 +4,7 @@
 
 <project name="sample_wordrtf" default="samples.wordrtf" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.dir" location="${basedir}/../../.."/>
 
   <target name="samples.wordrtf" description="transform the samples to RTF" depends="clean.samples.wordrtf">
     <ant antfile="${dita.dir}/build.xml">

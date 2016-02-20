@@ -4,7 +4,7 @@
 
 <project name="sample_htmlhelp" default="samples.htmlhelp" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.dir" location="${basedir}/../../.."/>
 
   <target name="samples.htmlhelp" description="build the samples for HTMLHelp" depends="clean.samples.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">

@@ -4,7 +4,7 @@
 
 <project name="sample_xhtml_plus_css" default="samples.xhtml_plus_css" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.dir" location="${basedir}/../../.."/>
 
   <property name="sample.output.dir" value="${dita.dir}/out/xhtml_plus_css"/>
   <property name="css.source.dir" location="${dita.dir}/samples/css"/>

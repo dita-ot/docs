@@ -4,7 +4,7 @@
 
 <project name="sample_troff" default="samples.troff" basedir=".">
 
-  <property name="dita.dir" location="${basedir}/../.."/>
+  <property name="dita.dir" location="${basedir}/../../.."/>
 
   <target name="samples.troff" description="test dita to troff" depends="clean.samples.troff">
     <ant antfile="${dita.dir}/build.xml">

@@ -22,4 +22,22 @@
     <topicref href="plugin-newextensions.dita"/>
     <topicref href="plugin-sample.dita"/>
   </topicref>
+  <topichead navtitle="Reference">
+    <topicref href="plugin-extension-points.dita">
+      <topicref href="plugin-extension-points-general.dita"/>
+      <topicref href="plugin-extension-points-pre-processing.dita"/>
+      <topicref href="plugin-extension-points-xslt-import.dita"/>
+      <topicref href="plugin-extension-points-xslt-parameters.dita"/>
+    </topicref>
+  </topichead>
+  <reltable title="Source and target links">
+    <relheader>
+      <relcolspec linking="sourceonly"/>
+      <relcolspec linking="targetonly"/>
+    </relheader>
+    <relrow>
+      <relcell/>
+      <relcell/>
+    </relrow>
+  </reltable>
 </map>

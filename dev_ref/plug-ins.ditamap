@@ -7,6 +7,7 @@
     <topicref href="plugins-overview.dita">
       <topicref href="plugin-benefits.dita"/>
       <topicref href="plugin-configfile.dita"/>
+      <topicref href="plugin-dependencies.dita"/>
     </topicref>
     <topicref href="plugin-xmlcatalog.dita"/>
     <topicref href="plugin-anttarget.dita"/>
@@ -17,7 +18,6 @@
     <topicref href="plugin-xsltparams.dita"/>
     <topicref href="plugin-javalib.dita"/>
     <topicref href="plugin-messages.dita"/>
-    <topicref href="plugin-dependencies.dita"/>
     <topicref href="plugin-newextensions.dita"/>
     <topicref href="plugin-sample.dita"/>
   </topicref>
@@ -74,6 +74,12 @@
       <relcell>
         <topicref href="plugin-extension-points-xslt-import.dita"/>
       </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="plugin-addgeneratedtext.dita"/>
+      </relcell>
+      <relcell/>
     </relrow>
     <relrow>
       <relcell>

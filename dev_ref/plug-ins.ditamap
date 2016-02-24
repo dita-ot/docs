@@ -36,8 +36,12 @@
       <relcolspec linking="targetonly"/>
     </relheader>
     <relrow>
-      <relcell/>
-      <relcell/>
+      <relcell>
+        <topicref href="plugin-xmlcatalog.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="plugin-extension-points-general.dita"/>
+      </relcell>
     </relrow>
   </reltable>
 </map>

@@ -7,7 +7,11 @@
   <shortdesc>You can add an Ant target to the pre-processing pipeline. This enables you to insert additional processing
     before or after the pre-processing chain or a specific step in the pre-processing operation.</shortdesc>
   <taskbody>
-    <!--<context><p>The group of preprocessing steps defines extension points before and after the full preprocessing chain.</p><dl><dlentry><dt><codeph>depend.preprocess.pre</codeph></dt><dd>Preprocessing pre-target; extending this target runs your Ant target before the full preprocess routine begins.</dd></dlentry><dlentry><dt><codeph>depend.preprocess.post</codeph></dt><dd>Preprocessing post-target; extending this target runs your Ant target after the full preprocess routine completes.</dd></dlentry></dl><p>In addition, there are extension points to execute an Ant target before individual preprocessing steps.</p><dl><dlentry><dt><codeph>depend.preprocess.clean-temp.pre</codeph></dt><dd>Clean temp pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.gen-list.pre</codeph></dt><dd>Generate list pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.debug-filter.pre</codeph></dt><dd>Debug and filter pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.conrefpush.pre</codeph></dt><dd>Content reference push pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.move-meta-entries.pre</codeph></dt><dd>Move meta entries pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.conref.pre</codeph></dt><dd>Content reference pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.coderef.pre</codeph></dt><dd>Code reference pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.mapref.pre</codeph></dt><dd>Map reference pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.keyref.pre</codeph></dt><dd>Resolve key reference pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.mappull.pre</codeph></dt><dd>Map pull pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.chunk.pre</codeph></dt><dd>Chunking pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.maplink.pre</codeph></dt><dd>Map link pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.topicpull.pre</codeph></dt><dd>Topic pull pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-files.pre</codeph></dt><dd>Copy files pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-image.pre</codeph></dt><dd>Copy images pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-html.pre</codeph></dt><dd>Copy HTML pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-flag.pre</codeph></dt><dd>Copy flag pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-subsidiary.pre</codeph></dt><dd>Copy subsidiary pre-target</dd></dlentry><dlentry><dt><codeph>depend.preprocess.copy-generated-files.pre</codeph></dt><dd>Copy generated files pre-target</dd></dlentry></dl></context>-->
+    <context>
+      <p>You can use the <codeph>depend.preprocess.pre</codeph> and <codeph>depend.preprocess.post</codeph> extension
+        points to run a target before or after the entire pre-processing operation. In addition, there are extension
+        points that enable you ro run an Ant target before specific pre-processing steps.</p>
+    </context>
     <steps>
       <step>
         <cmd>Define and integrate the new Ant target.</cmd>
@@ -18,8 +22,7 @@
   &lt;feature extension="<varname>extension-point</varname>" value="<varname>Ant-target</varname>"/>
 &lt;/plugin></codeblock>where <ul>
             <li><varname>plugin-id</varname> is the plug-in identifier.</li>
-            <li><varname>extension-point</varname> is a pre-processing extension point. See  <xref
-                href="../extension-points/all-extension-points.dita"/> for more information.</li>
+            <li><varname>extension-point</varname> is a pre-processing extension point.</li>
             <li><varname>Ant-target</varname> is the name of the Ant target.</li>
           </ul></info>
       </step>

@@ -8,7 +8,6 @@
     available to the Ant processing pipeline. This can be done as part of creating a new transformation, extending
     pre-processing, or simply to make new Ant targets available to other plug-ins.</shortdesc>
   <taskbody>
-    <!--<context><note type="remember">The <codeph>dita.conductor.target</codeph> extension is deprecated. Use <codeph>dita.conductor.target.relative</codeph> instead.</note></context>-->
     <steps>
       <step>
         <cmd>Create an Ant project file that contains the new target.</cmd>

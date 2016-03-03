@@ -53,6 +53,6 @@
     <!--<example><title>Example – Overriding troff formatting</title><p>To apply custom formatting for your own domain to the intermediate markup generated as input to troff processing, create a plugin that extends <codeph>dita.xsl.troff-ast</codeph> and specify the path to your custom XSL as follows:</p><codeblock>&lt;feature extension="dita.xsl.troff-ast" file="xsl/your-domain.xsl"/></codeblock></example>-->
   </taskbody>
   <related-links>
-    <link href="../plugins/plugin-extension-points-xslt-import.dita#plugin-extension-points-xslt-import"/>
+    <link href="plugin-extension-points-xslt-import.dita#plugin-extension-points-xslt-import"/>
   </related-links>
 </task>

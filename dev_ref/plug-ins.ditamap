@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <map xml:lang="en-US">
   <title>Creating DITA-OT plug-ins</title>
   <topicref href="plugin-creating.dita">
@@ -21,15 +22,15 @@
     <topicref href="plugin-newextensions.dita"/>
     <topicref href="plugin-sample.dita"/>
   </topicref>
-  <topichead navtitle="Reference">
-    <topicref href="plugin-extension-points.dita">
-      <topicref href="plugin-extension-points-general.dita"/>
-      <topicref href="plugin-extension-points-pre-processing.dita"/>
-      <topicref href="plugin-extension-points-xslt-import.dita"/>
-      <topicref href="plugin-extension-points-xslt-parameters.dita"/>
-    </topicref>
-    <topicref href="plugin-support.dita"/>
-  </topichead>
+
+  <topicref href="plugin-extension-points.dita">
+    <topicref href="plugin-extension-points-general.dita"/>
+    <topicref href="plugin-extension-points-pre-processing.dita"/>
+    <topicref href="plugin-extension-points-xslt-import.dita"/>
+    <topicref href="plugin-extension-points-xslt-parameters.dita"/>
+  </topicref>
+  <topicref href="plugin-support.dita"/>
+
   <reltable title="Source and target links">
     <relheader>
       <relcolspec linking="sourceonly"/>

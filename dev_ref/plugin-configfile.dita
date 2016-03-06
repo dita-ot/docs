@@ -32,8 +32,9 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
       <dl>
         <dlentry>
           <dt><xmlelement>feature</xmlelement></dt>
-          <dd>An optional element that defines the extension to the DITA-OT. The following attributes are
-              supported:<simpletable keycol="1">
+          <dd>
+            <p>An optional element that defines the extension to the DITA-OT.</p>
+            <p>The following attributes are supported:</p><simpletable keycol="1">
               <sthead>
                 <stentry>Attribute</stentry>
                 <stentry>Description</stentry>
@@ -65,8 +66,9 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
         </dlentry>
         <dlentry>
           <dt><xmlelement>extension-point</xmlelement></dt>
-          <dd>An optional element that defines a new extension point that can be used by other DITA-OT plug-ins. The
-            following attributes are supported:<simpletable keycol="1">
+          <dd>
+            <p>An optional element that defines a new extension point that can be used by other DITA-OT plug-ins.</p>
+            <p>The following attributes are supported:</p><simpletable keycol="1">
               <sthead>
                 <stentry>Attribute</stentry>
                 <stentry>Description</stentry>
@@ -87,8 +89,9 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
         </dlentry>
         <dlentry>
           <dt><xmlelement>require</xmlelement></dt>
-          <dd>An optional element that defines plug-in dependencies. The following attributes are supported:<simpletable
-              keycol="1">
+          <dd>
+            <p>An optional element that defines plug-in dependencies.</p>
+            <p>The following attributes are supported:</p><simpletable keycol="1">
               <sthead>
                 <stentry>Attribute</stentry>
                 <stentry>Description</stentry>
@@ -108,8 +111,9 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
         </dlentry>
         <dlentry>
           <dt><xmlelement>template</xmlelement></dt>
-          <dd>An optional element that defines files that should be treated as templates. The following attributes are
-            supported: <simpletable keycol="1">
+          <dd>
+            <p>An optional element that defines files that should be treated as templates.</p>
+            <p>The following attributes are supported: </p><simpletable keycol="1">
               <sthead>
                 <stentry>Attribute</stentry>
                 <stentry>Description</stentry>
@@ -126,7 +130,9 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
         </dlentry>
         <dlentry>
           <dt><xmlelement>meta</xmlelement></dt>
-          <dd>An optional element that defines metadata. The following attributes are supported:<simpletable keycol="1">
+          <dd>
+            <p>An optional element that defines metadata.</p>
+            <p>The following attributes are supported:</p><simpletable keycol="1">
               <sthead>
                 <stentry>Attribute</stentry>
                 <stentry>Description</stentry>

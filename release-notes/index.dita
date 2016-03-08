@@ -13,11 +13,46 @@
         <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v222">
+  <reference id="v223">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="2246">Specifying the source of a long quote with a <xmlatt>keyref</xmlatt> attribute on a
+              <xmlelement>longquoteref</xmlelement> element caused a Null Pointer Exception. The keyref parser has been
+            modified to ensure that key references on long quote references are correctly resolved.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2246" scope="external" format="html">#2246</xref>
+          </li>
+          <li id="2240">The keyscope cascading mechanisms for branch filtering have been modified to comply with the
+            <xref keyref="dita-ot-spec"/>. In cases where no <xmlatt>keyscope</xmlatt> attribute is specified on a
+            filtered branch, the prefix and/or suffix values specified in <xmlelement>dvrKeyscopePrefix</xmlelement>/
+              <xmlelement>dvrKeyscopeSuffix</xmlelement> are now used as the effective key scope names. Key scope
+            prefixes and suffixes are no longer propagated to descendant key scopes, but only applied to the branch
+            parent.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2240" scope="external" format="html">#2240</xref>
+          </li>
+          <li id="2214">Index term processing has been revised to ensure that indexes in PDF output generated with
+            Apache FOP correctly include page ranges when <xmlatt>start</xmlatt> and <xmlatt>end</xmlatt> attributes are
+            defined on <xmlelement>indexterm</xmlelement> elements and the terms of the index range appear on different
+            pages. A single page reference is generated in cases where both occurrences of the index term appear on the
+            same page.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2214" scope="external" format="html">#2214</xref>
+          </li>
+          <li id="2211">ODT: The OpenDocument Text transformation has been revised to support SVG images for which image
+            dimensions are not specified via <xmlatt>height</xmlatt> and <xmlatt>width</xmlatt> attributes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2211" scope="external" format="html">#2211</xref>
+          </li>
+        </ul>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v222">
+    <title>Maintenance Release 2.2.2</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.2.2 included the following bug fixes.</p>
         <ul>
           <li id="2023">PDF: In earlier DITA-OT 2.x releases, short description content was not rendered when publishing
             from a bookmap with the <parmname>args.chapter.layout</parmname> parameter set to <option>BASIC</option>.

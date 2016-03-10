@@ -63,7 +63,7 @@ def commit = new ByteArrayOutputStream()
 task gitMetadata {
   doLast {
     exec {
-        workingDir = "${ditaHome}/docsrc"
+        workingDir = "${projectDir}"
         commandLine 'git'
         args = ['rev-parse', 'HEAD']
         standardOutput = commit

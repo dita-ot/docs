@@ -58,7 +58,20 @@ task extensionPoints {
   }
 }
 
-task generateTopics(dependsOn: ['messages', 'params', 'extensionPoints'])
+def commit = new ByteArrayOutputStream()
+
+task gitMetadata {
+  doLast {
+    exec {
+        workingDir = "${ditaHome}/docsrc"
+        commandLine 'git'
+        args = ['rev-parse', 'HEAD']
+        standardOutput = commit
+    }
+  }
+}
+
+task generateTopics(dependsOn: ['messages', 'params', 'extensionPoints', 'gitMetadata'])
 
 dita {
     dependsOn 'generateTopics'
@@ -71,5 +84,6 @@ dita {
     properties {
         property name: 'args.gen.task.lbl', value: 'YES'
         property name: 'args.rellinks', value: 'noparent'
+        property name: 'commit', value: "${commit}"
     }
 }

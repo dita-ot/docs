@@ -26,13 +26,20 @@
           </li>
           <li id="2240">The keyscope cascading mechanisms for branch filtering have been modified to comply with the
             <xref keyref="dita-ot-spec"/>. In cases where no <xmlatt>keyscope</xmlatt> attribute is specified on a
-            filtered branch, the prefix and/or suffix values specified in <xmlelement>dvrKeyscopePrefix</xmlelement>/
+            filtered branch, the prefix and/or suffix values specified in <xmlelement>dvrKeyscopePrefix</xmlelement> /
               <xmlelement>dvrKeyscopeSuffix</xmlelement> are now used as the effective key scope names. Key scope
             prefixes and suffixes are no longer propagated to descendant key scopes, but only applied to the branch
             parent.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2240" scope="external" format="html">#2240</xref>
           </li>
-          <li id="2214">Index term processing has been revised to ensure that indexes in PDF output generated with
+          <li id="2236">PDF: In DITA-OT 2.2.2, if a <xmlelement>link</xmlelement> element contained both
+              <xmlelement>linktext</xmlelement> and a description in the <xmlelement>desc</xmlelement> element, the
+            hyperlink was rendered with the contents of the <xmlelement>desc</xmlelement> element appended to the
+            contents of the <xmlelement>linktext</xmlelement> element. Link processing has been modified to ensure that
+              <xmlelement>link</xmlelement> elements with descriptions are rendered correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2236" scope="external" format="html">#2236</xref>
+          </li>
+          <li id="2214">PDF: Index term processing has been revised to ensure that indexes in PDF output generated with
             Apache FOP correctly include page ranges when <xmlatt>start</xmlatt> and <xmlatt>end</xmlatt> attributes are
             defined on <xmlelement>indexterm</xmlelement> elements and the terms of the index range appear on different
             pages. A single page reference is generated in cases where both occurrences of the index term appear on the

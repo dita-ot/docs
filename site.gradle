@@ -1,5 +1,17 @@
+buildscript {
+    dependencies {
+        classpath 'net.sourceforge.saxon:saxon:9.1.0.8'
+    }
+}
+
 plugins {
-    id 'com.github.eerohele.dita-ot-gradle' version '0.2.0'
+    id 'com.github.eerohele.dita-ot-gradle' version '0.3.0'
+}
+
+import org.apache.tools.ant.Project as AntProject
+
+buildscript.configurations.classpath.each {
+    AntProject.class.getClassLoader().addURL(it.toURL())
 }
 
 apply plugin: 'com.github.eerohele.dita-ot-gradle'

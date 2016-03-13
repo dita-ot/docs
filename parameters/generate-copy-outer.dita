@@ -3,8 +3,8 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <concept id="concept_rcv_xbp_xg">
-  <title><parmname>generate.outer.copy</parmname> parameter</title>
-  <shortdesc>Elaboration on how the <parmname>generate.outer.copy</parmname> parameter functions.</shortdesc>
+  <title><parmname>generate.copy.outer</parmname> parameter</title>
+  <shortdesc>Elaboration on how the <parmname>generate.copy.outer</parmname> parameter functions.</shortdesc>
   <conbody>
     <section>
       <title>Background</title>
@@ -19,9 +19,9 @@ images</pre>The DITA map is in the <filepath>maps</filepath> directory, the topi
         are in the<filepath> topics</filepath> directory, and the images are in the <filepath>images</filepath>
         directory.</p></section>
     <section>
-      <title>Setting the <parmname>generate.outer.copy</parmname> parameter to <option>1</option></title>
+      <title>Setting the <parmname>generate.copy.outer</parmname> parameter to <option>1</option></title>
       <p>Let's assume that you run the HTML5 transformation and specify an output directory of
-          <filepath>C:\A-test</filepath>. By default, The DITA-OT uses the <parmname>generate.outer.copy</parmname>
+          <filepath>C:\A-test</filepath>. By default, The DITA-OT uses the <parmname>generate.copy.outer</parmname>
         parameter with a value of <option>1</option>. Output is not built for the topics. You receive only the following
         output: <pre>C:\A-test
 --- index.html
@@ -30,10 +30,10 @@ images</pre>The DITA map is in the <filepath>maps</filepath> directory, the topi
           <filepath>index.html</filepath> file contains the navigation structure, but all the links are broken, since no
         HTML5 files were built for the topics.</p>
       <p>How do you fix this? By specifying a value of <option>3</option> for the
-          <parmname>generate.outer.copy</parmname> parameter. </p>
+          <parmname>generate.copy.outer</parmname> parameter. </p>
     </section>
     <section>
-      <title>Setting the <parmname>generate.outer.copy</parmname> parameter to <option>3</option></title>
+      <title>Setting the <parmname>generate.copy.outer</parmname> parameter to <option>3</option></title>
       <p>Now your output directory structure looks like this: <pre>C:\A-test
 --- images\
 --- maps\

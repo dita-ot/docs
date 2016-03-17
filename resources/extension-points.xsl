@@ -18,12 +18,13 @@
   
   <xsl:template name="all">
     <xsl:comment> Generated from plugin source, do not edit! </xsl:comment>
-    <reference id="extension-points">
-      <title id="title">Extension points</title>
+    <reference id="all-extension-points">
+      <title id="title">All DITA-OT extension points</title>
+      <titlealts>
+        <navtitle>All extension points</navtitle>
+      </titlealts>
       <shortdesc id="shortdesc">The pre-defined extension points can be used to extend the functionality of the
         DITA-OT.</shortdesc>
-      <reference id="all">
-        <title>All DITA-OT extension points</title>
         <refbody>
           <section>
             <parml>
@@ -33,7 +34,6 @@
             </parml>
           </section>
         </refbody>
-      </reference>
     </reference>
   </xsl:template>
   

@@ -10,19 +10,21 @@
   <taskbody>
     <steps>
       <step>
-        <cmd>Create an XML file that contain the messages that you want to add. Be sure to use the following format for
+        <cmd>Create an XML file that contains the messages that you want to add. Be sure to use the following format for
           the XML file:</cmd>
         <info><codeblock>&lt;dummy>
-  &lt;!-- See resource/messages.xml for the details. -->
+  &lt;!-- See resources/messages.xml for the details. -->
   &lt;message id="DOTX<varname>number</varname><varname>letter</varname>" type="<varname>error-severity</varname>">
     &lt;reason>Message text&lt;/reason>
     &lt;response>How to resolve&lt;/response>
   &lt;/message>
-&lt;/dummy></codeblock>where:<ul>
+&lt;/dummy></codeblock>where:
+          <ul>
             <li><varname>number</varname> is a three-digit integer.</li>
             <li><varname>letter</varname> is one of the following upper-case letters: I, W, E, F. It should match the
               value that is specified for the <xmlatt>type</xmlatt> attribute.</li>
-            <li><varname>error-severity</varname> specifies the severity of the error. It must be one of the following values:<ul>
+            <li><varname>error-severity</varname> specifies the severity of the error. It must be one of the following values:
+              <ul>
                 <li>INFO</li>
                 <li>WARN</li>
                 <li>ERROR</li>

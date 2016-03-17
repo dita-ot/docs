@@ -3,25 +3,38 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="plugin-support" xml:lang="en-US">
-  <title>Version and support information</title>
-  <shortdesc>The following extension points are used by convention to define version and support info within a
-    plug-in.</shortdesc>
+  <title>Version and support extension points</title>
+  <shortdesc>You can use these extension points to define version and support information for a plug-in. Currently, the
+    DITA-OT does not do anything with this information, but it might do so in the future.</shortdesc>
   <refbody>
     <section>
-      <ul id="ul_jxr_hlv_mc">
-        <li><codeph>package.support.name</codeph></li>
-        <li><codeph>package.support.email</codeph></li>
-        <li><codeph>package.version</codeph></li>
-      </ul>
-      <note>The toolkit does not currently do anything with these values, but may do so in the future.</note>
-      <p>The <codeph>package.version</codeph> value should follow the syntax rules:</p>
-      <codeblock>version   ::= major ( '.' minor ( '.' micro ( '.' qualifier )? )? )?
-
-major     ::= number
-minor     ::= number
-micro     ::= number
-qualifier ::= ( [0..9] | [a..zA..Z] | ’_’ | '-' )+</codeblock>
-      <p>The default value is <codeph>0.0.0</codeph>.</p>
+      <dl>
+        <dlentry>
+          <dt>package.support.name</dt>
+          <dd>Specifies the person who provides support for the DITA-OT plug-in</dd>
+        </dlentry>
+        <dlentry>
+          <dt>package.support.email</dt>
+          <dd>Specifies the e-mail address for the person who provides support for the DITA-OT plug-in</dd>
+        </dlentry>
+        <dlentry>
+          <dt>package.version</dt>
+          <dd>
+            <p>Specifies the version of the DITA-OT plug-in. The <codeph>package.version</codeph> value uses the
+              following syntax:</p>
+            <codeblock><varname>major</varname>.<varname>minor</varname>.<varname>micro</varname>.<varname>qualifier</varname></codeblock>
+            <p>where:</p>
+            <ul>
+              <li><varname>major</varname> is a number and is required.</li>
+              <li><varname>minor</varname> is a number and is optional.</li>
+              <li><varname>micro</varname> is a number and is optional.</li>
+              <li><varname>qualifier</varname> is optional and can be composed of numerals, uppercase or lower case
+                letters, underscores, and hyphens.</li>
+            </ul>
+            <p>By default, the <codeph>package.version</codeph> value is set to <codeph>0.0.0</codeph>.</p>
+          </dd>
+        </dlentry>
+      </dl>
     </section>
     <example>
       <title>Example</title>

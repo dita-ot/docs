@@ -41,22 +41,7 @@
     <topicref href="plugins-removing.dita"/>
     <topicref href="rebuilding-the-dita-ot-documentation.dita"/>
   </topicref>
-  <topicset href="plugins-overview.dita" id="plugins">
-    <topicref href="plugin-configfile.dita"/>
-    <topicref href="plugin-xmlcatalog.dita"/>
-    <topicref href="plugin-anttarget.dita"/>
-    <topicref href="plugin-antpreprocess.dita"/>
-    <topicref href="plugin-newtranstype.dita"/>
-    <topicref href="plugin-overridestyle.dita"/>
-    <topicref href="plugin-addgeneratedtext.dita"/>
-    <topicref href="plugin-xsltparams.dita"/>
-    <topicref href="plugin-javalib.dita"/>
-    <topicref href="plugin-messages.dita"/>
-    <topicref href="plugin-dependencies.dita"/>
-    <topicref href="plugin-support.dita"/>
-    <topicref href="plugin-newextensions.dita"/>
-    <topicref href="plugin-sample.dita"/>
-  </topicset>
+  <mapref href="plug-ins.ditamap"/>
   <topicref href="../user-guide/dita2pdf-customization.dita"/>
   <topicref href="migration.dita" locktitle="yes">
     <topicref href="migrating-to-2.2.dita" navtitle="To 2.2"/>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="plugin-general-extension-points">
+  <title>General extension points</title>
+  <shortdesc>These extension points enable you to extend the DITA-OT. You can add Ant targets or
+    imports; add a Java library to the <parmname>classpath</parmname> parameter; add a new
+    transformation type; extend a catalog file; add new diagnostic messages, and more.</shortdesc>
+  <refbody>
+    <section>
+      <dl>
+        <dlentry>
+          <dt>dita.conductor.lib.import</dt>
+          <dd>Adds a Java library to the DITA-OT classpath.</dd>
+        </dlentry>
+        <dlentry>
+          <dt importance="deprecated">dita.conductor.target</dt>
+          <dd>Adds an Ant import to the main Ant build file. This extension point is deprecated; use
+              <codeph>dita.conductor.target.relative</codeph> instead.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>dita.conductor.target.relative</dt>
+          <dd>Adds an Ant import to the main Ant build file.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>dita.conductor.transtype.check</dt>
+          <dd>Adds a new value to the list of valid transformation types.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>dita.specialization.catalog</dt>
+          <dd>Adds the content of a catalog file to the main DITA-OT catalog file. This extension
+            point is deprecated; use <codeph>dita.specialization.catalog.relative</codeph>
+            instead.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>dita.specialization.catalog.relative</dt>
+          <dd>Adds the content of a catalog file to the main DITA-OT catalog file.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>dita.transtype.print</dt>
+          <dd>Defines a transformation as a print type.<draft-comment author="Kristen Eberlein" time="31 March 2013"
+              >What does this actually do? Does this interact with using the deprecated <xmlatt>print</xmlatt>
+              attribute?</draft-comment></dd>
+        </dlentry>
+        <dlentry>
+          <dt>dita.xsl.messages</dt>
+          <dd>Adds new diagnostic messages to the DITA-OT.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>org.dita.pdf2.catalog.relative</dt>
+          <dd>Adds the content of a catalog file to the main catalog file for the PDF plug-in.</dd>
+        </dlentry>
+      </dl>
+    </section>
+  </refbody>
+</reference>

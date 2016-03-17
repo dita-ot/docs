@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <reference id="plugin-extension-points-pre-processing">
   <title>Pre-processing extension points</title>
   <shortdesc>You can use these extension points to run an Ant target before or after the pre-processing operation; you
@@ -8,103 +10,103 @@
     <section>
       <dl>
         <dlentry>
-          <dt>depend.preprocess.chunk.pre</dt>
+          <dt><parmname>depend.preprocess.chunk.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>chunk</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.coderef.pre</dt>
+          <dt><parmname>depend.preprocess.coderef.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>coderef</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.conref.pre</dt>
+          <dt><parmname>depend.preprocess.conref.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>conref</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.conrefpush.pre</dt>
+          <dt><parmname>depend.preprocess.conrefpush.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>conrefpush</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>depend.preprocess.clean-temp.pre</codeph></dt>
+          <dt><parmname>depend.preprocess.clean-temp.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>X</codeph> step in the pre-processing stage.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>depend.preprocess.copy-files.pre</codeph></dt>
+          <dt><parmname>depend.preprocess.copy-files.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>X</codeph> step in the pre-processing stage.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>depend.preprocess.copy-flag.pre</codeph></dt>
+          <dt><parmname>depend.preprocess.copy-flag.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>X</codeph> step in the pre-processing stage.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>depend.preprocess.copy-generated-files.pre</codeph></dt>
+          <dt><parmname>depend.preprocess.copy-generated-files.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>X</codeph> step in the pre-processing stage.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>depend.preprocess.copy-html.pre</codeph></dt>
+          <dt><parmname>depend.preprocess.copy-html.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>X</codeph> step in the pre-processing stage.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>depend.preprocess.copy-image.pre</codeph></dt>
+          <dt><parmname>depend.preprocess.copy-image.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>X</codeph> step in the pre-processing stage.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>depend.preprocess.copy-subsidiary.pre</codeph></dt>
+          <dt><parmname>depend.preprocess.copy-subsidiary.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>X</codeph> step in the pre-processing stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.debug-filter.pre</dt>
+          <dt><parmname>depend.preprocess.debug-filter.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>debug-filter</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.gen-list.pre</dt>
+          <dt><parmname>depend.preprocess.gen-list.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>gen-list</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.keyref.pre</dt>
+          <dt><parmname>depend.preprocess.keyref.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>keyref</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.maplink.pre</dt>
+          <dt><parmname>depend.preprocess.maplink.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>maplink</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.mappull.pre</dt>
+          <dt><parmname>depend.preprocess.mappull.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>mappull</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.mapref.pre</dt>
+          <dt><parmname>depend.preprocess.mapref.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>mapref</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.move-links.pre</dt>
+          <dt><parmname>depend.preprocess.move-links.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>move-links</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.move-meta-entries.pre</dt>
+          <dt><parmname>depend.preprocess.move-meta-entries.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>move-meta-entries</codeph> step in the
             pre-processing stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.pre</dt>
+          <dt><parmname>depend.preprocess.pre</parmname></dt>
           <dd>Runs an Ant target before the pre-processing stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.post</dt>
+          <dt><parmname>depend.preprocess.post</parmname></dt>
           <dd>Runs an Ant target after the pre-processing stage.</dd>
         </dlentry>
         <dlentry>
-          <dt>depend.preprocess.topicpull.pre</dt>
+          <dt><parmname>depend.preprocess.topicpull.pre</parmname></dt>
           <dd>Runs an Ant target before the <codeph>topicpull</codeph> step in the pre-processing
             stage.</dd>
         </dlentry>

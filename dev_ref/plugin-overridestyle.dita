@@ -16,7 +16,8 @@
         <info><codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="<varname>extension-point</varname>" file="<varname>relative-path</varname>"/>
-&lt;/plugin></codeblock>where:<ul>
+&lt;/plugin></codeblock>where:
+          <ul>
             <li><varname>plugin-id</varname> is the plug-in identifier, for example, com.example.brandheader.</li>
             <li><varname>extension-point</varname> is the DITA-OT extension point, for example,<codeph>
                 dita.xsl.xhtml</codeph>. This indicates the DITA-OT processing step that the XSL override applies
@@ -29,7 +30,7 @@
         <cmd>Integrate the plug-in.</cmd>
       </step>
     </steps>
-    <result>The plug-in installer adds a XSL import statement to the default DITA-OT code, so that the XSL override
+    <result>The plug-in installer adds an XSL import statement to the default DITA-OT code, so that the XSL override
       becomes part of the normal build.</result>
     <example>
       <title>Example: Overriding XHTML header processing</title>
@@ -52,7 +53,4 @@
     </example>
     <!--<example><title>Example – Overriding troff formatting</title><p>To apply custom formatting for your own domain to the intermediate markup generated as input to troff processing, create a plugin that extends <codeph>dita.xsl.troff-ast</codeph> and specify the path to your custom XSL as follows:</p><codeblock>&lt;feature extension="dita.xsl.troff-ast" file="xsl/your-domain.xsl"/></codeblock></example>-->
   </taskbody>
-  <related-links>
-    <link href="../plugins/plugin-extension-points-xslt-import.dita#plugin-extension-points-xslt-import"/>
-  </related-links>
 </task>

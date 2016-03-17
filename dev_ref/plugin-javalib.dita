@@ -12,7 +12,7 @@
         <cmd>If necessary, compile the Java code into a JAR file.</cmd>
       </step>
       <step>
-        <cmd>Create a <filepath>plug-in.xml</filepath> file that contains the following code:</cmd>
+        <cmd>Create a <filepath>plugin.xml</filepath> file that contains the following code:</cmd>
         <info><codeblock>&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="dita.conductor.lib.import" file="<varname>file</varname>"/>
 &lt;/plugin></codeblock>where:<ul>

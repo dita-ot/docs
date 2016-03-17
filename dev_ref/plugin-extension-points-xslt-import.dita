@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <reference id="plugin-extension-points-xslt-import">
   <title>XSLT-import extension points</title>
   <shortdesc>You can use these extension points to override XSLT processing steps in pre-processing and certain
@@ -14,26 +16,26 @@
         pipeline:</p>
       <dl>
         <dlentry>
-          <dt><codeph>dita.xsl.conref</codeph></dt>
+          <dt><parmname>dita.xsl.conref</parmname></dt>
           <dd>Overrides the pre-processing step that resolves conref.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.xsl.maplink</codeph></dt>
+          <dt><parmname>dita.xsl.maplink</parmname></dt>
           <dd>Overrides the <codeph>maplink</codeph> step in the pre-processing pipeline. This is the step that
             generates map-based links.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.xsl.mappull</codeph></dt>
+          <dt><parmname>dita.xsl.mappull</parmname></dt>
           <dd>Overrides the <codeph>mappull</codeph> step in the pre-processing pipeline. This is the step that updates
             navigation titles in maps and causes attributes to cascade.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.xsl.mapref</codeph></dt>
+          <dt><parmname>dita.xsl.mapref</parmname></dt>
           <dd>Overrides the <codeph>mapref</codeph> step in the pre-processing pipeline. This is the step that resolves
             references to other maps.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.xsl.topicpull</codeph></dt>
+          <dt><parmname>dita.xsl.topicpull</parmname></dt>
           <dd>Overrides the <codeph>topicpull</codeph> step in the pre-processing pipeline. This is the step that pulls
             text into <xmlelement>xref</xmlelement> elements, as well as performing other tasks.</dd>
         </dlentry>
@@ -44,32 +46,32 @@
       <p>You can use the following extension points to add XSLT processing to modules in DITA-OT transformations:</p>
       <dl>
         <dlentry>
-          <dt><codeph>dita.xsl.docbook</codeph></dt>
+          <dt><parmname>dita.xsl.docbook</parmname></dt>
           <dd>Overrides the default DocBook transformation.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.xsl.eclipse.plugin</codeph></dt>
+          <dt><parmname>dita.xsl.eclipse.plugin</parmname></dt>
           <dd>Overrides the step that generates the <filepath>plugin.xml</filepath> file for Eclipse Help.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.xsl.rtf</codeph></dt>
+          <dt><parmname>dita.xsl.rtf</parmname></dt>
           <dd>Overrides the default rich-text format (RTF) transformation.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.xsl.troff-ast</codeph></dt>
+          <dt><parmname>dita.xsl.troff-ast</parmname></dt>
           <dd>Overrides the intermediate block-and-phrase format that is generated as input to troff processing.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.xsl.troff</codeph></dt>
+          <dt><parmname>dita.xsl.troff</parmname></dt>
           <dd>Overrides the XSL that converts block-and-phrase intermediate markup into troff. </dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.xsl.xhtml</codeph></dt>
+          <dt><parmname>dita.xsl.xhtml</parmname></dt>
           <dd>Overrides the default HTML or XHTML transformation, including HTML Help and Eclipse Help. The referenced
             file is integrated directly into the XSLT step that generates XHTML.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.xsl.xslfo</codeph></dt>
+          <dt><parmname>dita.xsl.xslfo</parmname></dt>
           <dd>Overrides the default PDF transformation (formerly known as PDF2). The referenced XSL file is integrated
             directly into the XSLT step that generates the XSL-FO.</dd>
         </dlentry>

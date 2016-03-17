@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <reference id="plugin-extension-points-pre-processing">
   <title>Pre-processing extension points</title>
   <shortdesc>You can use these extension points to run an Ant target before or after the pre-processing operation; you

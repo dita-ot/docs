@@ -100,7 +100,7 @@
 &lt;/val></codeblock>
     </example>
     <example>
-      <title>Content example 1: adding style</title>
+      <title>Content example 1: Adding style</title>
       <p>Now assume the following paragraph exists in a topic. Class attributes are included, as they would normally be
         in the middle of the preprocess routine; <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are left off for
         clarity.</p>
@@ -125,7 +125,7 @@
 &lt;/p></codeblock>
     </example>
     <example>
-      <title>Content example 2: conflicting styles</title>
+      <title>Content example 2: Conflicting styles</title>
       <p>This example includes a paragraph with conflicting styles. When the audience and platform attributes are both
         evaluated, the DITAVAL indicates that the background color is both green and blue. In this situation, the
           <xmlelement>style-conflict</xmlelement> element is evaluated to determine how to style the content.</p>
@@ -151,7 +151,7 @@
 &lt;/p></codeblock>
     </example>
     <example>
-      <title>Content example 3: adding image flags</title>
+      <title>Content example 3: Adding image flags</title>
       <p>This example includes image flags for both <xmlatt>platform</xmlatt> and <xmlatt>rev</xmlatt>, which are
         defined in DITAVAL <xmlelement>prop</xmlelement> and <xmlelement>revprop</xmlelement> elements.</p>
       <codeblock>&lt;ol platform="linux" rev="rev2">

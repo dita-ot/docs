@@ -190,4 +190,6 @@
 
   <target name="all" depends="pdf, html, htmlhelp"/>
 
+  <target name="dist" depends="pdf, html"/>
+
 </project>

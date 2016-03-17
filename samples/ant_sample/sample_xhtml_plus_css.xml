@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- This file is part of the DITA Open Toolkit project hosted on 
-     Sourceforge.net. See the accompanying license.txt file for 
-     applicable licenses.-->
-<!-- (c) Copyright IBM Corp. 2004, 2009 All Rights Reserved. -->
+
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <project name="sample_xhtml_plus_css" default="samples.xhtml_plus_css" basedir=".">
-  
-  <property name="dita.dir" location="${basedir}/../.."/>
-  
+
+  <property name="dita.dir" location="${basedir}/../../.."/>
+
   <property name="sample.output.dir" value="${dita.dir}/out/xhtml_plus_css"/>
   <property name="css.source.dir" location="${dita.dir}/samples/css"/>
 
@@ -20,14 +19,10 @@
       <property name="args.copycss" value="yes"/>
       <property name="args.cssroot" location="${css.source.dir}"/>
     </ant>
-    <copy todir="${sample.output.dir}/css">
-        <fileset dir="${css.source.dir}" includes="*.jpg"/>
-    </copy>
   </target>
-  
+
   <target name="clean.samples.xhtml_plus_css" description="remove the sample web output">
     <delete dir="${sample.output.dir}"/>
   </target>
-  
-  
+
 </project>

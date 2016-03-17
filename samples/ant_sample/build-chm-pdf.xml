@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+
 <project name="build-chm-pdf" default="all" basedir=".">
 
   <property name="dita.dir" location="${basedir}/../../.."/>
@@ -20,8 +21,8 @@
       <property name="args.input" location="../taskbook.ditamap"/>
       <property name="transtype" value="pdf"/>
       <property name="output.dir" location="../out/pdf"/>
-      <property name="args.gen.task.lbl" value="YES"/>   
-      <property name="args.rellinks" value="nofamily"/>   
+      <property name="args.gen.task.lbl" value="YES"/>
+      <property name="args.rellinks" value="nofamily"/>
     </ant>
   </target>
 

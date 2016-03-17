@@ -11,11 +11,8 @@
       <property name="args.input" location="${dita.dir}/samples/hierarchy.ditamap"/>
       <property name="output.dir" location="${dita.dir}/out/samples/web"/>
       <property name="args.xhtml.toc" value="toc"/>
-      <property name="transtype" value="xhtml"/>
+      <property name="transtype" value="html5"/>
     </ant>
-    <copy todir="${dita.dir}/out/samples/web">
-      <fileset dir="${dita.dir}/resource" includes="index.html"/>
-    </copy>
   </target>
 
   <target name="clean.samples.web" description="remove the sample web output">

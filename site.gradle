@@ -1,5 +1,17 @@
+buildscript {
+    dependencies {
+        classpath 'net.sourceforge.saxon:saxon:9.1.0.8'
+    }
+}
+
 plugins {
-    id 'com.github.eerohele.dita-ot-gradle' version '0.2.0'
+    id 'com.github.eerohele.dita-ot-gradle' version '0.3.0'
+}
+
+import org.apache.tools.ant.Project as AntProject
+
+buildscript.configurations.classpath.each {
+    AntProject.class.getClassLoader().addURL(it.toURL())
 }
 
 apply plugin: 'com.github.eerohele.dita-ot-gradle'
@@ -58,7 +70,20 @@ task extensionPoints {
   }
 }
 
-task generateTopics(dependsOn: ['messages', 'params', 'extensionPoints'])
+def commit = new ByteArrayOutputStream()
+
+task gitMetadata {
+  doLast {
+    exec {
+        workingDir = "${projectDir}"
+        commandLine 'git'
+        args = ['rev-parse', 'HEAD']
+        standardOutput = commit
+    }
+  }
+}
+
+task generateTopics(dependsOn: ['messages', 'params', 'extensionPoints', 'gitMetadata'])
 
 dita {
     dependsOn 'generateTopics'
@@ -71,5 +96,6 @@ dita {
     properties {
         property name: 'args.gen.task.lbl', value: 'YES'
         property name: 'args.rellinks', value: 'noparent'
+        property name: 'commit', value: "${commit}"
     }
 }

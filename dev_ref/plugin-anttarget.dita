@@ -15,7 +15,7 @@
       <step>
         <cmd>In the same directory as the Ant project file, create a wrapper file that imports the Ant project file: </cmd>
         <info><codeblock>&lt;dummy>
-    &lt;import file="<varname>Ant-file</varname>"/>
+  &lt;import file="<varname>Ant-file</varname>"/>
 &lt;/dummy></codeblock>where
             <varname>Ant-file</varname> is the project file that contains the new target.</info>
       </step>

@@ -10,18 +10,17 @@
     <section>
       <dl>
         <dlentry>
-          <dt>package.support.name</dt>
+          <dt><parmname>package.support.name</parmname></dt>
           <dd>Specifies the person who provides support for the DITA-OT plug-in</dd>
         </dlentry>
         <dlentry>
-          <dt>package.support.email</dt>
+          <dt><parmname>package.support.email</parmname></dt>
           <dd>Specifies the e-mail address for the person who provides support for the DITA-OT plug-in</dd>
         </dlentry>
         <dlentry>
-          <dt>package.version</dt>
+          <dt><parmname>package.version</parmname></dt>
           <dd>
-            <p>Specifies the version of the DITA-OT plug-in. The <codeph>package.version</codeph> value uses the
-              following syntax:</p>
+            <p>Specifies the version of the DITA-OT plug-in. The value uses the following syntax:</p>
             <codeblock><varname>major</varname>.<varname>minor</varname>.<varname>micro</varname>.<varname>qualifier</varname></codeblock>
             <p>where:</p>
             <ul>
@@ -31,7 +30,7 @@
               <li><varname>qualifier</varname> is optional and can be composed of numerals, uppercase or lower case
                 letters, underscores, and hyphens.</li>
             </ul>
-            <p>By default, the <codeph>package.version</codeph> value is set to <codeph>0.0.0</codeph>.</p>
+            <p>By default, the <parmname>package.version</parmname> value is set to <codeph>0.0.0</codeph>.</p>
           </dd>
         </dlentry>
       </dl>

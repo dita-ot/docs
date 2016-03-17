@@ -11,23 +11,23 @@
       <p>You can use the following extension points to pass parameters to modules in the pre-processing pipeline:</p>
       <dl>
         <dlentry>
-          <dt><codeph>dita.preprocess.conref.param</codeph></dt>
+          <dt><parmname>dita.preprocess.conref.param</parmname></dt>
           <dd>Pass parameters to the <codeph>conref</codeph> module in the pre-processing pipeline</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.preprocess.maplink.param</codeph></dt>
+          <dt><parmname>dita.preprocess.maplink.param</parmname></dt>
           <dd>Pass parameters to the <codeph>maplink</codeph> module in the pre-processing pipeline</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.preprocess.mappull.param</codeph></dt>
+          <dt><parmname>dita.preprocess.mappull.param</parmname></dt>
           <dd>Pass parameters to the <codeph>mappull</codeph> module in the pre-processing pipeline</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.preprocess.mapref.param</codeph></dt>
+          <dt><parmname>dita.preprocess.mapref.param</parmname></dt>
           <dd>Pass parameters to the <codeph>mapref</codeph> module in the pre-processing pipeline</dd>
         </dlentry>
         <dlentry>
-          <dt>dita.preprocess.topicpull.param</dt>
+          <dt><parmname>dita.preprocess.topicpull.param</parmname></dt>
           <dd>Pass parameters to the <codeph>topicpull</codeph> module in the pre-processing pipeline</dd>
         </dlentry>
       </dl>
@@ -37,23 +37,23 @@
       <p>You can use the following extension points to pass parameters to modules in DITA-OT transformations:</p>
       <dl>
         <dlentry>
-          <dt><codeph>dita.conductor.eclipse.toc.param</codeph></dt>
+          <dt><parmname>dita.conductor.eclipse.toc.param</parmname></dt>
           <dd>Pass parameters to the XSLT step that generates the Eclipse Help table of contents (TOC).</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.conductor.html.param</codeph></dt>
+          <dt><parmname>dita.conductor.html.param</parmname></dt>
           <dd>Pass parameters to the HTML and HTML Help transformations.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.conductor.pdf2.param</codeph></dt>
+          <dt><parmname>dita.conductor.pdf2.param</parmname></dt>
           <dd>Pass parameters to the PDF (formerly PDF2) transformation.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.conductor.xhtml.param</codeph></dt>
+          <dt><parmname>dita.conductor.xhtml.param</parmname></dt>
           <dd>Pass parameters to the XHTML and Eclipse Help transformations.</dd>
         </dlentry>
         <dlentry>
-          <dt><codeph>dita.conductor.xhtml.toc.param</codeph></dt>
+          <dt><parmname>dita.conductor.xhtml.toc.param</parmname></dt>
           <dd>Pass parameters to to the XSLT step that generates the XHTML table of contents (TOC).</dd>
         </dlentry>
       </dl>

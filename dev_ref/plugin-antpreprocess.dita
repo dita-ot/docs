@@ -17,10 +17,11 @@
         <cmd>Define and integrate the new Ant target.</cmd>
       </step>
       <step>
-        <cmd>Create the following <filepath>plugin</filepath>.xml file:</cmd>
+        <cmd>Create the following <filepath>plugin.xml</filepath> file:</cmd>
         <info><codeblock>&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="<varname>extension-point</varname>" value="<varname>Ant-target</varname>"/>
-&lt;/plugin></codeblock>where <ul>
+&lt;/plugin></codeblock>where
+          <ul>
             <li><varname>plugin-id</varname> is the plug-in identifier.</li>
             <li><varname>extension-point</varname> is a pre-processing extension point.</li>
             <li><varname>Ant-target</varname> is the name of the Ant target.</li>
@@ -31,11 +32,12 @@
       </step>
     </steps>
     <result>The new target is added to the Ant dependency list. The new target now is always run in conjunction with the
-      specified step in the pre-processing pipeline </result>
+      specified step in the pre-processing pipeline.</result>
     <example>
       <title>Example</title>
-      <p>The following plugin.xml file specifies that the <parmname>myAntTargetBeforeChunk</parmname> target is always
-        run before the <codeph>chunk</codeph> step in the pre-processing stage.</p>
+      <p>The following <filepath>plugin.xml</filepath> file specifies that the
+          <parmname>myAntTargetBeforeChunk</parmname> target is always run before the <codeph>chunk</codeph> step in the
+        pre-processing stage.</p>
       <codeblock>&lt;plugin id="com.example.extendchunk">
   &lt;feature extension="depend.preprocess.chunk.pre" value="myAntTargetBeforeChunk"/>
 &lt;/plugin></codeblock>

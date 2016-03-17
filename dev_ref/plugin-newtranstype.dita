@@ -59,13 +59,13 @@
           <option>html5</option> transformation type and define a new <parmname>nav-toc</parmname> parameter with three
         possible values:</p>
       <codeblock><b>&lt;transtype name="html5" extends="common-html" desc="HTML5"></b>
-        &lt;param name="nav-toc" type="enum" 
-        desc="Specifies whether to generate a navigation TOC in topic pages.">
-        &lt;val default="true" desc="No TOC">none&lt;/val>
-        &lt;val desc="Partial TOC that shows the current topic">partial&lt;/val>
-        &lt;val desc="Full TOC">full&lt;/val>
-        &lt;/param>
-        &lt;/transtype></codeblock>
+  &lt;param name="nav-toc" type="enum" 
+         desc="Specifies whether to generate a navigation TOC in topic pages.">
+    &lt;val default="true" desc="No TOC">none&lt;/val>
+    &lt;val desc="Partial TOC that shows the current topic">partial&lt;/val>
+    &lt;val desc="Full TOC">full&lt;/val>
+  &lt;/param>
+&lt;/transtype></codeblock>
       <draft-comment author="Kristen Eberlein" time="20 February 2016">
         <p>I think the above example belongs elsewhere. It does not illustrate using an extension point.</p>
       </draft-comment>

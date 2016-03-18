@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<project name="docs" default="all" basedir=".">
+<project name="docs" default="dist" basedir=".">
   <description>Build DITA Open Toolkit Documentation</description>
 
   <property environment="env"/>

@@ -6,11 +6,11 @@ env:
   global:
   - "DITA_OT_VERSION=2.2.2"
 before_script:
-- "_bin/install.sh"
+- ".travis/install.sh"
 script:
-- "_bin/publish.sh"
+- ".travis/publish.sh"
 after_success:
-- "_bin/deploy.sh"
+- ".travis/deploy.sh"
 branches:
   only:
   - develop

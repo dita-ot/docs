@@ -11,4 +11,6 @@ git config user.email "ditaotbot@gmail.com"
 git config user.name "DITA-OT Bot"
 git commit -a -m "Deploy dita-ot/docs@$TRAVIS_COMMIT to dev"
 # push
+ssh-add -l
+ssh -vT git@github.com
 git push -v origin develop

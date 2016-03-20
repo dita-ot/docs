@@ -2,6 +2,11 @@
 
 # CI install script
 
+# install SSH key
+eval "$(ssh-agent -s)"
+chmod 600 .travis/ditaotbot_rsa
+ssh-add .travis/ditaotbot_rsa
+
 # download stable dita-pt
 curl -L https://github.com/dita-ot/dita-ot/releases/download/$DITA_OT_VERSION/dita-ot-$DITA_OT_VERSION.zip -o dita-ot-$DITA_OT_VERSION.zip
 unzip dita-ot-$DITA_OT_VERSION.zip

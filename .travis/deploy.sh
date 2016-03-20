@@ -12,6 +12,6 @@ git config user.name "DITA-OT Bot"
 git commit -a -m "Deploy dita-ot/docs@$TRAVIS_COMMIT to dev"
 # push
 eval "$(ssh-agent -s)"
-chmod 600 $SSH_DIR/ditaotbot_rsa.pub
-ssh-add $SSH_DIR/ditaotbot_rsa.pub
+chmod 600 $SSH_DIR/ditaotbot_rsa
+ssh-add $SSH_DIR/ditaotbot_rsa
 git push origin develop

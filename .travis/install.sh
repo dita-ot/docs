@@ -17,4 +17,4 @@ curl -L https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -o org.di
 $DITA_HOME/bin/dita -install org.dita-ot.html.zip -v
 
 # clone site
-git clone -b develop git@github.com:dita-ot/docs.git
+git clone -b develop git@github.com:dita-ot/dita-ot.github.io.git

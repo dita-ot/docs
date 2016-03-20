@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
-# CI deployment script
+# CI install script
 
 # download stable dita-pt
 curl -L https://github.com/dita-ot/dita-ot/releases/download/$DITA_OT_VERSION/dita-ot-$DITA_OT_VERSION.zip -o dita-ot-$DITA_OT_VERSION.zip

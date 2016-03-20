@@ -16,5 +16,4 @@ after_success:
 - ".travis/deploy.sh"
 branches:
   only:
-  - master
   - develop

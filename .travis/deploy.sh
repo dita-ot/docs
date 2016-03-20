@@ -14,4 +14,4 @@ git commit -a -m "Deploy dita-ot/docs@$TRAVIS_COMMIT to dev"
 eval "$(ssh-agent -s)"
 chmod 600 $SSH_DIR/ditaotbot_rsa
 ssh-add $SSH_DIR/ditaotbot_rsa
-git push origin develop
+git push -v origin develop

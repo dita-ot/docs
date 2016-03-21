@@ -5,17 +5,17 @@
 export SSH_DIR=$PWD/.travis
 export SITE_DIR=$PWD/dita-ot.github.io
 
-cd $SITE_DIR
-
+# install SSH key
 eval "$(ssh-agent -s)"
-chmod 600 $SSH_DIR/ditaotbot_rsa
-ssh-add SSH_DIR/ditaotbot_rsa
+chmod 600 $PWD/.travis/ditaotbot_rsa
+ssh-add $PWD/.travis/ditaotbot_rsa
+
+cd $SITE_DIR
 
 # commit site
 git config user.email "ditaotbot@gmail.com"
 git config user.name "DITA-OT Bot"
 git commit -a -m "Deploy dita-ot/docs@$TRAVIS_COMMIT to dev"
 # push
-ssh-add -l
-ssh -vT git@github.com
+git remote set-url origin git@github.com:dita-ot/dita-ot.github.io.git
 git push -v origin develop

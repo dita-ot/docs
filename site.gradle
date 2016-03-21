@@ -25,9 +25,11 @@ def ditaHome = System.getProperty('dita.home', '../')
 // Point DITA-OT Gradle Plugin to the DITA-OT directory.
 ditaOt.dir ditaHome
 
+def ditaHomeSrc = project.hasProperty("ditaHomeSrc") ? file("${ditaHomeSrc}") : file("${ditaHome}")
+
 task messages {
   inputs.files(
-    "${ditaHome}/resources/messages.xml",
+    "${ditaHomeSrc}/resources/messages.xml",
     'resources/messages.xsl'
   )
 
@@ -36,13 +38,14 @@ task messages {
   doLast {
     ant.ant(antfile: 'build.xml') {
       target name: 'generate-msg-topic'
+      property name: 'resource.dir', location: "${ditaHomeSrc}/resources"
     }
   }
 }
 
 task params {
   inputs.files (
-    "${ditaHome}/resources/plugins.xml",
+    "${ditaHomeSrc}/resources/plugins.xml",
     'resources/params.xsl'
   )
 
@@ -51,13 +54,14 @@ task params {
   doLast {
     ant.ant(antfile: 'build.xml') {
       target name: 'generate-params-topic'
+      property name: 'resource.dir', location: "${ditaHomeSrc}/resources" 
     }
   }
 }
 
 task extensionPoints {
   inputs.files (
-    "${ditaHome}/resources/plugins.xml",
+    "${ditaHomeSrc}/resources/plugins.xml",
     'resources/extension-points.xsl'
   )
 
@@ -66,6 +70,7 @@ task extensionPoints {
   doLast {
     ant.ant(antfile: 'build.xml') {
       target name: 'generate-extension-points-topic'
+      property name: 'resource.dir', location: "${ditaHomeSrc}/resources"
     }
   }
 }

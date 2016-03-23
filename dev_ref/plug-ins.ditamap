@@ -79,12 +79,6 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="plugin-addgeneratedtext.dita"/>
-      </relcell>
-      <relcell/>
-    </relrow>
-    <relrow>
-      <relcell>
         <topicref href="plugin-xsltparams.dita"/>
       </relcell>
       <relcell>
@@ -105,6 +99,14 @@
       </relcell>
       <relcell>
         <topicref href="plugin-extension-points-general.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="plugin-configfile.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="plugin-newextensions.dita"/>
       </relcell>
     </relrow>
   </reltable>

@@ -15,7 +15,8 @@
         available. The value of the <xmlatt>id</xmlatt> attribute must take the following form:</p>
       <ul>
         <li>One or more tokens, separated by periods</li>
-        <li>A token can be composed of the following characters:<ul>
+        <li>A token can be composed of the following characters:
+          <ul>
             <li>Numerals (0-9)</li>
             <li>Lower-case letters (a-z)</li>
             <li>Upper-case letters (A-Z)</li>
@@ -113,6 +114,10 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
           <dt><xmlelement>template</xmlelement></dt>
           <dd>
             <p>An optional element that defines files that should be treated as templates.</p>
+            <p>Template files can be used to integrate DITA-OT extensions. Templates typically extend the default
+              transformation-type-specific build files via <xmlelement>dita:extension</xmlelement> elements. When the
+              plug-in integration process runs, template files are used to recreate build files, and the integration
+              points specified in the extensions are replaced with references to the appropriate plug-ins.</p>
             <p>The following attributes are supported: </p><simpletable keycol="1">
               <sthead>
                 <stentry>Attribute</stentry>
@@ -232,4 +237,3 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
     </section>
   </refbody>
 </reference>
-

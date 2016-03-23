@@ -411,7 +411,7 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX013E-extra" conaction="pushreplace">This may appear if (for example)
-          you have a <codeph>&lt;ph&gt;</codeph> element that references another phrase, but that phrase itself contains
+          you have a <xmlelement>ph</xmlelement> element that references another phrase, but that phrase itself contains
           a reference to the original. This will result in an infinite loop. The toolkit will stop following the conref
           trail when this is detected; you will need to correct the reference in your source files. <ph
             conref="DITA-messages-details.xml#errormessages/changeExtension"/></stentry>

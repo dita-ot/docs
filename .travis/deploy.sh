@@ -2,7 +2,7 @@
 
 # CI deployment script
 
-if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop"]; then
+if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
   export SSH_DIR=$PWD/.travis
   export SITE_DIR=$PWD/dita-ot.github.io
 

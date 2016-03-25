@@ -13,6 +13,8 @@ if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
 
   cd $SITE_DIR
 
+  # clean
+  ruby ../.travis/clean.rb
   # commit site
   git config user.email "ditaotbot@gmail.com"
   git config user.name "DITA-OT Bot"

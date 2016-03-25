@@ -13,11 +13,27 @@
         <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v223">
+  <reference id="v224">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="2264">DITA-OT 2.2 introduced a regression in which topics referenced via keys in submaps were not
+            included in the table of contents. The keyref resolution mechanism has been corrected to ensure that key
+            references in submaps are correctly resolved.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2264" scope="external" format="html">#2264</xref>
+          </li>
+        </ul>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v223">
+    <title>Maintenance Release 2.2.3</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.2.3 included the following bug fixes.</p>
         <ul>
           <li id="2246">Specifying the source of a long quote with a <xmlatt>keyref</xmlatt> attribute on a
               <xmlelement>longquoteref</xmlelement> element caused a Null Pointer Exception. The keyref parser has been

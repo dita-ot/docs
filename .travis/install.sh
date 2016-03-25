@@ -2,13 +2,13 @@
 
 # CI install script
 echo "TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST"
-echi "TRAVIS_BRANCH=$TRAVIS_BRANCH"
+echo "TRAVIS_BRANCH=$TRAVIS_BRANCH"
 
 if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
   openssl aes-256-cbc -K $encrypted_324699cc92df_key -iv $encrypted_324699cc92df_iv -in .travis/ditaotbot_rsa.enc -out .travis/ditaotbot_rsa -d
 fi
 
-# download stable dita-pt
+# download stable dita-ot
 curl -L https://github.com/dita-ot/dita-ot/releases/download/$DITA_OT_VERSION/dita-ot-$DITA_OT_VERSION.zip -o dita-ot-$DITA_OT_VERSION.zip
 unzip dita-ot-$DITA_OT_VERSION.zip
 export DITA_HOME=$PWD/dita-ot-$DITA_OT_VERSION

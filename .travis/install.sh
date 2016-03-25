@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
 # CI install script
+echo "TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST"
+echi "TRAVIS_BRANCH=$TRAVIS_BRANCH"
 
 if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
   openssl aes-256-cbc -K $encrypted_324699cc92df_key -iv $encrypted_324699cc92df_iv -in .travis/ditaotbot_rsa.enc -out .travis/ditaotbot_rsa -d

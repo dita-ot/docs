@@ -24,6 +24,11 @@
             references in submaps are correctly resolved.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2264" scope="external" format="html">#2264</xref>
           </li>
+          <li id="2203">A typo was fixed in the common string logic for the PDF plug-in to retrieve the proper localized
+            string for the task “Results” label that appears when <parmname>args.gen.task.lbl</parmname> is set to
+              <option>YES</option>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2203" scope="external" format="html">#2203</xref>
+          </li>
         </ul>
       </section>
     </refbody>

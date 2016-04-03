@@ -8,12 +8,29 @@
 
   <shortdesc>In DITA-OT 2.1, the <codeph>insertVariable</codeph> template was deprecated for PDF transformations and
     should be replaced with the <codeph>getVariable</codeph> template. Various <codeph>dita.<b>out.</b>map.*</codeph>
-    targets have been deprecated in favor of updated <codeph>dita.map.*</codeph> equivalents. <draft-comment
-      author="staylor">There are likely other changes that should be noted here. See
-      <xref keyref="2.1-release-notes"/>. </draft-comment>
-  </shortdesc>
+    targets have been deprecated in favor of updated <codeph>dita.map.*</codeph> equivalents.</shortdesc>
 
   <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 2.1 that may require modifications to custom stylesheets
+        or plug-ins. For more information on the changes in this release, see the <xref keyref="2.1-release-notes"
+        />.</note>
+    </section>
+
+    <section>
+      <p>The custom<systemoutput>FileUtils</systemoutput> code used to handle input and output in earlier versions of
+        DITA-OT has been replaced with the <xref href="http://commons.apache.org/proper/commons-io/" format="html"
+          scope="external">Apache Commons IO</xref> utilities library. </p>
+    </section>
+
+    <section>
+      <title>OpenDocument Text</title>
+      <p>Support for the <parmname>args.odt.img.embed</parmname> parameter has been removed from OpenDocument Text
+        transformations. The previous default behavior was to embed images as Base64-encoded text, but editors do not
+        use this as a default. Instead, office packages such as LibreOffice will convert embedded images into linked
+        images on opening and saving an ODT file.</p>
+    </section>
+
     <section>
       <title>PDF</title>
       <p>The following template has been deprecated and will be removed in an upcoming release:</p>
@@ -51,6 +68,9 @@
         <li>The <parmname>depend.preprocess.copy-subsidiary.pre</parmname> extension point used to insert an Ant target
           before the <codeph>copy-subsidiary</codeph> step in the pre-processing stage.</li>
       </ul>
+      <p>A new<systemoutput>dita.parser</systemoutput> extension point has been added to allow plug-ins to contribute a
+        custom parser for DITA files. If a custom DITA parser is defined, the preprocessing routines will use it during
+        the gen-list and debug-filter stages to output DITA XML.</p>
     </section>
 
     <section>
@@ -80,6 +100,13 @@
       <title>XHTML</title>
       <p>The <codeph>dita.<b>out.</b>map.xhtml.toc</codeph> target has been deprecated and should be replaced with the
         updated <codeph>dita.map.xhtml.toc</codeph> equivalent.</p>
+      <p>Keydef processing has been removed from the XHTML rendering code. Keys are now resolved in one preprocessing
+        step, whereas in earlier versions of DITA-OT, the XHTML code returned to the <filepath>keydef.xml</filepath>
+        file to look up targets for phrase elements and pull in text when needed. This change affects non-linking
+        elements that can't take <xmlatt>href</xmlatt> attributes, such as <xmlelement>ph</xmlelement>,
+          <xmlelement>keyword</xmlelement>, <xmlelement>cite</xmlelement>, <xmlelement>dt</xmlelement>,
+          <xmlelement>term</xmlelement>, and <xmlelement>indexterm</xmlelement> (when <codeph>$INDEXSHOW</codeph> is
+        active).</p>
     </section>
 
     <section>

@@ -73,5 +73,18 @@
             </ul></li>
         </ul></draft-comment>
     </section>
+
+    <section>
+      <title>Deprecated properties</title>
+      <p>The following Ant properties have been deprecated:
+        <ul>
+          <li><parmname>user.input.file</parmname>, use <parmname>user.input.file.uri</parmname> instead to specify the
+            input file system path</li>
+          <li><parmname>user.input.dir</parmname>, use <parmname>user.input.dir.uri</parmname> instead to specify the
+            input directory system path</li>
+          <li><parmname>InputMapDir</parmname>, use <parmname>InputMapDir.uri</parmname> instead to specify the input
+            map directory system path</li>
+        </ul></p>
+    </section>
   </refbody>
 </reference>

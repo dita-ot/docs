@@ -21,9 +21,9 @@
     </section>
     <refbodydiv>
       <section>
-        <title>All Transformations — Variable Typing</title>
+        <title>All transformations — variable typing</title>
         <p>XSLT stylesheets were converted to XSLT 2.0. With that change, variable types were also
-          implemented. Plugins that change template variable values will need to make the following
+          implemented. Plug-ins that change template variable values will need to make the following
           changes:</p>
         <ul>
           <li>Declare the same types defined in the default templates with <xmlatt>as</xmlatt>.</li>
@@ -36,7 +36,7 @@
 &lt;xsl:variable name="urltest" <b>as="xs:boolean"</b>></codeblock>
       </example>
       <section>
-        <title>All Transformations — Refactoring</title>
+        <title>All transformations — refactoring</title>
         <p>Much of the toolkit code was refactored for release 2.0. Customization changes that were
           based on a specific template in a previous version of the toolkit might not work because
           the modified template is no longer used. If this is the case, the changes will need to be
@@ -54,9 +54,9 @@
         move to release 2.2 instead. See  <xref href="migrating-to-2.2.dita"/>.</note>
     </section>
     <section>
-      <title>Plugin Installation and Distribution</title>
-      <p>Plugins can now be installed or uninstalled from a ZIP archive using the new
-          <cmdname>dita</cmdname> command. Plugins can also be installed from a referenced URL. See
+      <title>Plug-in installation and distribution</title>
+      <p>Plug-ins can now be installed or uninstalled from a ZIP archive using the new
+          <cmdname>dita</cmdname> command. Plug-ins can also be installed from a referenced URL. See
           <xref keyref="dita-command-arguments"/>.</p>
     </section>
   </refbody>

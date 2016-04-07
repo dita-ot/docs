@@ -93,14 +93,13 @@
       <fig>
         <title>Contents of the <filepath>xsl/header.xsl</filepath> file</title>
         <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;xsl:stylesheet version="1.0" 
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   &lt;xsl:template name="gen-user-header">
-    &lt;div>&lt;img src="http://www.example.com/company_banner.jpg" 
-              alt="Example Company Banner"/>&lt;/div>
+    &lt;div>
+      &lt;img src="http://www.example.com/company_banner.jpg" alt="Example Company Banner"/>
+    &lt;/div>
   &lt;/xsl:template>
-&lt;/xsl:stylesheet>
-&lt;/xml></codeblock>
+&lt;/xsl:stylesheet></codeblock>
       </fig>
     </example>
   </refbody>

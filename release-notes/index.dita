@@ -19,6 +19,12 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
+          <li id="2274">Hyperlink reference processing has been modified to guard against error conditions caused by
+            Windows-style path separators in <xmlatt>href</xmlatt> attribute values. Any backslashes are converted to
+            forward slash (“/”) characters to ensure that the attribute values are valid URI references according to
+            <xref keyref="rfc3986"/>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2274" scope="external" format="html">#2274</xref>
+          </li>
           <li id="2270">A typo was fixed in the common string logic for the PDF plug-in to retrieve the proper localized
             string for the task “Results” label that appears when <parmname>args.gen.task.lbl</parmname> is set to
               <option>YES</option>.

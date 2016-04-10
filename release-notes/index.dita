@@ -19,6 +19,12 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
+          <li id="2278">
+            The default value for the <parmname>args.copycss</parmname> parameter has been explicitly set to
+            <option>no</option>. Previous toolkit versions never initialized a default value, and only copied the
+            custom .css file if the parameter was set to <option>yes</option>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2278" scope="external" format="html">#2278</xref>
+          </li>
           <li id="2274">Hyperlink reference processing has been modified to guard against error conditions caused by
             Windows-style path separators in <xmlatt>href</xmlatt> attribute values. Any backslashes are converted to
             forward slash (“/”) characters to ensure that the attribute values are valid URI references according to

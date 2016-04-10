@@ -29,6 +29,11 @@
               <option>YES</option>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2203" scope="external" format="html">#2203</xref>
           </li>
+          <li id="1293">A new <msgnum>DOTJ068E</msgnum> error message was added to report cases when a conref "mark"
+            action is used to mark a target element without a corresponding content reference target (for example, when
+            the order of the "mark" element and the pushed element is reversed).
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1293" scope="external" format="html">#1293</xref>
+          </li>
         </ul>
       </section>
     </refbody>

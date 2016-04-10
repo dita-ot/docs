@@ -328,6 +328,11 @@
           your topics use one of these extensions, or configure the toolkit to allow additional extensions.</stentry>
       </strow>
       <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ068E-extra" conaction="pushreplace">A conref "mark" action has been
+          used to mark a target element without a corresponding content reference target. This may occur when the order
+          of the "mark" element and the pushed element is reversed.</stentry>
+      </strow>
+      <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX001W-extra" conaction="pushreplace">This build uses generated text,
           such as the phrase "Related information" (which is generated above many link groups). The toolkit was unable
           to locate the string <varname>%1</varname> for your specified language, so the string will appear in the

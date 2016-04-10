@@ -19,15 +19,17 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
+          <li id="2270">A typo was fixed in the common string logic for the PDF plug-in to retrieve the proper localized
+            string for the task “Results” label that appears when <parmname>args.gen.task.lbl</parmname> is set to
+              <option>YES</option>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2270" scope="external" format="html">#2270</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2216" scope="external" format="html">#2216</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2203" scope="external" format="html">#2203</xref>
+          </li>
           <li id="2264">DITA-OT 2.2 introduced a regression in which topics referenced via keys in submaps were not
             included in the table of contents. The keyref resolution mechanism has been corrected to ensure that key
             references in submaps are correctly resolved.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2264" scope="external" format="html">#2264</xref>
-          </li>
-          <li id="2203">A typo was fixed in the common string logic for the PDF plug-in to retrieve the proper localized
-            string for the task “Results” label that appears when <parmname>args.gen.task.lbl</parmname> is set to
-              <option>YES</option>.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2203" scope="external" format="html">#2203</xref>
           </li>
           <li id="1293">A new <msgnum>DOTJ068E</msgnum> error message was added to report cases when a conref "mark"
             action is used to mark a target element without a corresponding content reference target (for example, when

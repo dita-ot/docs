@@ -71,10 +71,6 @@
           if you are unsure how to specify the input file.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTA069F-extra" conaction="pushreplace">Please ensure that the input
-          file path and file name were entered correctly.</stentry>
-      </strow>
-      <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA003F-extra" conaction="pushreplace">An alternate stylesheet was
           specified to run in place of the default XSLT output process, but that stylesheet could not be loaded. Please
           correct the parameter to specify a valid stylesheet.</stentry>
@@ -120,6 +116,10 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA068W-extra" conaction="pushreplace">This condition is ignored, as
           instructed in the OASIS DITA Standard.</stentry>
+      </strow>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTA069F-extra" conaction="pushreplace">Please ensure that the input
+          file path and file name were entered correctly.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ005F-extra" conaction="pushreplace"/>
@@ -328,6 +328,11 @@
           your topics use one of these extensions, or configure the toolkit to allow additional extensions.</stentry>
       </strow>
       <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ068E-extra" conaction="pushreplace">A conref "mark" action has been
+          used to mark a target element without a corresponding content reference target. This may occur when the order
+          of the "mark" element and the pushed element is reversed.</stentry>
+      </strow>
+      <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ069E-extra" conaction="pushreplace">
           <p>A circular reference was found in key definitions: a series of key references where the last key references
             the first.</p>
@@ -337,11 +342,6 @@
           <p>To resolve this issue, change the target of the <xmlatt>keyref</xmlatt> so the key is defined by pointing
             to a resource other than itself.</p>
         </stentry>
-      </strow>
-      <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTJ068E-extra" conaction="pushreplace">A conref "mark" action has been
-          used to mark a target element without a corresponding content reference target. This may occur when the order
-          of the "mark" element and the pushed element is reversed.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX001W-extra" conaction="pushreplace">This build uses generated text,
@@ -382,13 +382,13 @@
           included.</stentry>
       </strow>
       <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTX008E-extra" conaction="pushreplace">Ensure that the file exists and
+          can be read. <ph conref="DITA-messages-details.xml#errormessages/changeExtension"/></stentry>
+      </strow>
+      <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX008W-extra" conaction="pushreplace">To fix the table of contents,
           specify a navigation title in your map or ensure that the referenced file is local and can be accessed. <ph
             conref="DITA-messages-details.xml#errormessages/changeExtension"/></stentry>
-      </strow>
-      <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX008E-extra" conaction="pushreplace">Ensure that the file exists and
-          can be read. <ph conref="DITA-messages-details.xml#errormessages/changeExtension"/></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX009W-extra" conaction="pushreplace">No title was found in the

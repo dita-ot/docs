@@ -50,8 +50,9 @@
           message into the generated message topic.</stentry>
       </sthead>
       <strow>
-        <stentry>To add additional explanation to any message, add the explanation to this table in a single sell, and
-          set the the following attributes on the &lt;stentry&gt; tag:<ul>
+        <stentry>To add additional explanation to any message, add the explanation to this table in a single cell, and
+          set the the following attributes on the <xmlelement>stentry</xmlelement> tag:
+          <ul>
             <li><codeph>conref="DITA-messages.xml#msgs/MESSAGEID-extra"</codeph> -- for example, use the following to
               add additional info to message DOTX001F:
               <codeph>conref="DITA-messages.xml#msgs/DOTX001F-extra"</codeph></li>
@@ -67,8 +68,8 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA002F-extra" conaction="pushreplace">The input parameter was not
           specified, so there is no DITA or DITAMAP file to transform. Ensure the parameter is set properly; see <xref
-            href="../parameters/parameters-base.dita">DITA-OT common parameters (args.input)</xref>
-          if you are unsure how to specify the input file.</stentry>
+            href="../parameters/parameters-base.dita">DITA-OT common parameters (args.input)</xref> if you are unsure
+          how to specify the input file.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA003F-extra" conaction="pushreplace">An alternate stylesheet was
@@ -100,9 +101,9 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA009E-extra" conaction="pushreplace">The running heading file, which
-          contains content to be added to the &lt;head&gt; section of each HTML output topic, cannot be located or read.
-          This is usually caused by a typo in the parameter value. You should also ensure that the value is not
-          specified with "file:" as a prefix.</stentry>
+          contains content to be added to the <xmlelement>head</xmlelement> section of each HTML output topic, cannot be
+          located or read. This is usually caused by a typo in the parameter value. You should also ensure that the
+          value is not specified with "file:" as a prefix.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA066F-extra" conaction="pushreplace">An alternate stylesheet was
@@ -145,8 +146,9 @@
           help diagnose the cause.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTJ014W-extra" conaction="pushreplace">An empty &lt;indexterm> element
-          was found, and will appear in the index as ***. This index term should be removed from the source.</stentry>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ014W-extra" conaction="pushreplace">An empty
+            <xmlelement>indexterm</xmlelement> element was found, and will appear in the index as ***. This index term
+          should be removed from the source.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ020W-extra" conaction="pushreplace">This will appear when one
@@ -169,7 +171,8 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ025E-extra" conaction="pushreplace">This message should only appear
-          in the following cases: <ul>
+          in the following cases:
+          <ul>
             <li>Errors earlier in the transform prevented this step of the transform from running; correct any errors
               and try the build again.</li>
             <li>An Ant build or plug-in is directly calling the toolkit's topic merge module, and is doing so
@@ -218,8 +221,8 @@
         <stentry conref="DITA-messages.xml#msgs/DOTJ035F-extra" conaction="pushreplace">This will appear when a topic is
           outside the scope of the map; for example, if the main input map references
             <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be created
-          outside of the output directory. See <xref href="../parameters/parameters-base.dita"
-            >DITA-OT common parameters (outer.control and generate.copy.outer)</xref> for details.</stentry>
+          outside of the output directory. See <xref href="../parameters/parameters-base.dita">DITA-OT common parameters
+            (outer.control and generate.copy.outer)</xref> for details.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ036W-extra" conaction="pushreplace">This will appear when a topic is
@@ -227,8 +230,8 @@
             <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be created
           outside of the output directory. If you do not want to see the warning message, please use the Ant parameter
           'outer.control', and set the value to "quiet". Otherwise, move the referenced file into the input dita/map
-          directory. See <xref href="../parameters/parameters-base.dita">DITA-OT common parameters
-            (outer.control and generate.copy.outer)</xref> for details.</stentry>
+          directory. See <xref href="../parameters/parameters-base.dita">DITA-OT common parameters (outer.control and
+            generate.copy.outer)</xref> for details.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ037W-extra" conaction="pushreplace">DITA processing is based on
@@ -310,10 +313,11 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ051E-extra" conaction="pushreplace">The target for a coderef
           element, which specifies an external text-based file, could not be located or loaded. Please verify that the
-          reference is correct.<p>Note that for security reasons, references to code samples outside of the scope of the
-            map directory are not supported by default, as this could allow a reference to access and display any
-            restricted or hidden file on the system. If you are certain that the path is valid and the file should be
-            loaded, the current workaround is to set a parameter to allow these references. See <xref
+          reference is correct.
+          <p>Note that for security reasons, references to code samples outside of the scope of the map directory are
+            not supported by default, as this could allow a reference to access and display any restricted or hidden
+            file on the system. If you are certain that the path is valid and the file should be loaded, the current
+            workaround is to set a parameter to allow these references. See <xref
               href="../parameters/parameters-base.dita">DITA-OT common parameters (outer.control and
               generate.copy.outer)</xref> for details.</p></stentry>
       </strow>
@@ -363,8 +367,9 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX004I-extra" conaction="pushreplace">Eclipse builds use DITA's
-          &lt;navref&gt; element to pull in other Eclipse TOC files. The build found a &lt;navref&gt; element that does
-          not reference any other file; the element will be ignored.</stentry>
+            <xmlelement>navref</xmlelement> element to pull in other Eclipse TOC files. The build found a
+            <xmlelement>navref</xmlelement> element that does not reference any other file; the element will be
+          ignored.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX005E-extra" conaction="pushreplace">To remove this message, provide
@@ -401,9 +406,9 @@
             scope="external">URI-based addressing</xref> in the DITA specification for details on the expected syntax.
             <ph id="changeExtension">Note that the name of the file in this message may have be changed to use a
             standard dita topic file extension ('.dita' or '.xml'), instead of the original extension used by the file;
-            it may also include a path to the temporary directory rather than to the original.</ph><p>If the target
-            element exists in your source file, check to make sure it is not filtered out of the build with a DITAVAL
-            file (which will remove the target before conref processing runs).</p></stentry>
+            it may also include a path to the temporary directory rather than to the original.</ph>
+          <p>If the target element exists in your source file, check to make sure it is not filtered out of the build
+            with a DITAVAL file (which will remove the target before conref processing runs).</p></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX011W-extra" conaction="pushreplace">When pulling content with a
@@ -471,7 +476,7 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX022W-extra" conaction="pushreplace">The build was unable to get a
           title from the referenced topic; instead, a navigation title will be created based on the specified
-          &lt;linktext&gt; element inside of &lt;topicmeta&gt;.</stentry>
+            <xmlelement>linktext</xmlelement> element inside of <xmlelement>topicmeta</xmlelement>.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX023W-extra" conaction="pushreplace">If the target is a local DITA
@@ -529,10 +534,10 @@
           reference.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX033E-extra" conaction="pushreplace">An &lt;xref&gt; element
-          specifies type="li", which indicates a link to a list item, but the item number could not be determined to use
-          as link text. Please specify link text inside the reference, or ensure that you are referencing an available
-          list item.</stentry>
+        <stentry conref="DITA-messages.xml#msgs/DOTX033E-extra" conaction="pushreplace">An <xmlelement>xref</xmlelement>
+          element specifies type="li", which indicates a link to a list item, but the item number could not be
+          determined to use as link text. Please specify link text inside the reference, or ensure that you are
+          referencing an available list item.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX034E-extra" conaction="pushreplace">The cross reference goes to a
@@ -540,27 +545,27 @@
           is not numbered. Please provide link text within the cross reference.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX035E-extra" conaction="pushreplace">An &lt;xref&gt; element
-          specifies type="fn", which indicates a link to a footnote, but the footnote number could not be determined to
-          use as link text. Please specify link text inside the reference, or ensure that you are referencing an
-          available footnote.</stentry>
+        <stentry conref="DITA-messages.xml#msgs/DOTX035E-extra" conaction="pushreplace">An <xmlelement>xref</xmlelement>
+          element specifies type="fn", which indicates a link to a footnote, but the footnote number could not be
+          determined to use as link text. Please specify link text inside the reference, or ensure that you are
+          referencing an available footnote.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX036E-extra" conaction="pushreplace">An &lt;xref&gt; element
-          specifies type="dlentry", which indicates a link to a definition list entry, but the term could not be located
-          to use as link text. Please specify link text inside the reference, or ensure that you are referencing an
-          available definition list entry</stentry>
+        <stentry conref="DITA-messages.xml#msgs/DOTX036E-extra" conaction="pushreplace">An <xmlelement>xref</xmlelement>
+          element specifies type="dlentry", which indicates a link to a definition list entry, but the term could not be
+          located to use as link text. Please specify link text inside the reference, or ensure that you are referencing
+          an available definition list entry</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX037W-extra" conaction="pushreplace">No title was found for the
-          current document, so the HTML output file will set the &lt;title&gt; to "***". This value generally appears in
-          the title bar at the top of a browser.</stentry>
+          current document, so the HTML output file will set the <xmlelement>title</xmlelement> to "***". This value
+          generally appears in the title bar at the top of a browser.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX038I-extra" conaction="pushreplace">The &lt;object&gt; element in
-          HTML does not support using longdescref for accessibility. To make the object accessible, you may need to add
-          text before or after the element. You may also be able to handle it with a &lt;param> element inside the
-          object.</stentry>
+        <stentry conref="DITA-messages.xml#msgs/DOTX038I-extra" conaction="pushreplace">The
+            <xmlelement>object</xmlelement> element in HTML does not support using longdescref for accessibility. To
+          make the object accessible, you may need to add text before or after the element. You may also be able to
+          handle it with a <xmlelement>param</xmlelement> element inside the object.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX039W-extra" conaction="pushreplace">This message is generated when
@@ -589,22 +594,24 @@
           duplicate links in most cases. However, if two links to the same resource use different attributes or link
           text, it is possible for them to appear together. For example, if the same link shows up with role="next" and
           again with no specified role, it may show up as both the "Next topic" link and as a related link. Note that
-          links generated from a &lt;reltable&gt; in a DITA Map will have the role attribute set to "friend".</stentry>
+          links generated from a <xmlelement>reltable</xmlelement> in a DITA Map will have the role attribute set to
+          "friend".</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX044E-extra" conaction="pushreplace">The &lt;area&gt; element in an
-          image map must provide a link target for the specified area. Please add an &lt;xref&gt; element as a child of
-          &lt;area&gt; and ensure that it specifies a link target.</stentry>
+        <stentry conref="DITA-messages.xml#msgs/DOTX044E-extra" conaction="pushreplace">The
+            <xmlelement>area</xmlelement> element in an image map must provide a link target for the specified area.
+          Please add an <xmlelement>xref</xmlelement> element as a child of <xmlelement>area</xmlelement> and ensure
+          that it specifies a link target.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX045W-extra" conaction="pushreplace">Cross reference text inside the
-          &lt;area&gt; element is used to provide accessibility for screen readers that can identify different areas of
-          an image map. If text cannot be retrieved automatically by referencing a DITA element, it should be specified
-          directly in the cross reference.</stentry>
+            <xmlelement>area</xmlelement> element is used to provide accessibility for screen readers that can identify
+          different areas of an image map. If text cannot be retrieved automatically by referencing a DITA element, it
+          should be specified directly in the cross reference.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX046W-extra" conaction="pushreplace">The specified value was passed
-          as-is through to the &lt;area&gt; element in the HTML.</stentry>
+          as-is through to the <xmlelement>area</xmlelement> element in the HTML.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX047W-extra" conaction="pushreplace">The area element is intended to
@@ -656,9 +663,8 @@
           the specified file in order to retrive a title or short description, but the file could not be found. If the
           file exists, it is possible that a DITAVAL file was used to remove the file's contents from the build. Another
           possibility is that the file is located outside of the scope of the main input directory, and was not
-          available because the <xref href="../parameters/parameters-base.dita"
-            >onlytopic.in.map</xref> parameter was specified. Be aware that the path information above may not match the
-          link in your topic.</stentry>
+          available because the <xref href="../parameters/parameters-base.dita">onlytopic.in.map</xref> parameter was
+          specified. Be aware that the path information above may not match the link in your topic.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX057W-extra" conaction="pushreplace">The link appears to use valid
@@ -681,10 +687,11 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX061W-extra" conaction="pushreplace">According to the DITA
           Specification, references from maps should either go to DITA Maps, DITA Topics, or any non-DITA resource.
-          References below the topic level should only be made from cross references (using &lt;xref&gt; or similar)
-          inside of a topic. For details, see the href attribute description in the OASIS standard's definition of the
-            <xref href="http://docs.oasis-open.org/dita/v1.2/os/spec/langref/topicref.html" format="html"
-            scope="external">topicref element</xref>.</stentry>
+          References below the topic level should only be made from cross references (using
+            <xmlelement>xref</xmlelement> or similar) inside of a topic. For details, see the href attribute description
+          in the OASIS standard's definition of the <xref
+            href="http://docs.oasis-open.org/dita/v1.2/os/spec/langref/topicref.html" format="html" scope="external"
+            >topicref element</xref>.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX063W-extra" conaction="pushreplace">This will appear when generating

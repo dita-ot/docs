@@ -141,8 +141,7 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
         <dlentry>
           <dt><xmlelement>require</xmlelement></dt>
           <dd>
-            <p>An optional element that defines <term keyref="plug-in-dependencies">plug-in
-                dependencies</term>.</p>
+            <p>An optional element that defines plug-in dependencies.</p>
             <p>The following attributes are supported:</p>
             <simpletable keycol="1">
               <sthead>
@@ -161,7 +160,7 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
                 <stentry>importance</stentry>
                 <stentry>Identifies whether the plug-in is
                     <codeph>required</codeph> (default) or <codeph>optional</codeph>. The DITA-OT
-                  provides a warning is if a required plug-in is not available.</stentry>
+                  provides a warning if a required plug-in is not available.</stentry>
                 <stentry>No</stentry>
               </strow>
             </simpletable>

@@ -3,13 +3,19 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="extended-functionality">
+
   <title>Extended functionality</title>
+
+  <shortdesc>DITA-OT provides additional code reference processing support beyond that which is mandated by the DITA
+    specification. These extensions can be used to define character encodings or line ranges for use in code
+    blocks.</shortdesc>
+
   <reference id="code-reference">
     <title>Code reference processing</title>
     <refbody>
       <section id="coderef-charset">
         <title>Character set definition</title>
-        <p>DITA-OT supports defining the code reference target file encoding using the <codeph>format</codeph>
+        <p>DITA-OT supports defining the code reference target file encoding using the <xmlatt>format</xmlatt>
           attribute. The supported format is:</p>
         <codeblock>format (";" space* "charset=" charset)?</codeblock>
         <p>If a character set is not defined, the system default character set will be used. If the character set is not

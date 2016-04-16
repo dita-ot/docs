@@ -3,11 +3,20 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="implementation-dependent-features">
+
   <title>Implementation dependent features</title>
+
+  <shortdesc>For certain features, the DITA specification allows conforming processors to choose between different
+    implementation alternatives. In these cases, there may be differences in behavior when DITA content is handled by
+    different processors. DITA-OT supports implementation specific features by applying one or more of the permissible
+    processing approaches.</shortdesc>
+
   <refbody>
     <section id="section_jla_oqn_qc">
       <title>Chunking</title>
-      <p>Supported chunking methods:</p>
+      <p>DITA content can be divided or merged into new output documents in different ways, depending on the value of
+        the <xmlatt>chunk</xmlatt> attribute.</p>
+      <p>DITA-OT supports the following chunking methods:</p>
       <ul>
         <li>select-topic</li>
         <li>select-document</li>
@@ -31,24 +40,24 @@
       <title>Filtering</title>
       <p>Error recovery:</p>
       <ul>
-        <li>When there are multiple <xmlelement>revprop</xmlelement> elements with the same val attribute, no error or warning
-          is thrown</li>
+        <li>When there are multiple <xmlelement>revprop</xmlelement> elements with the same <xmlatt>val</xmlatt>
+          attribute, no error or warning is thrown</li>
         <li>When multiple prop elements define a duplicate attribute and value combination, attribute default, or
           fall-back behavior, the <msgnum>DOTJ007E</msgnum> error is thrown.</li>
       </ul>
     </section>
     <section id="section_kjq_egs_qc">
-      <title>Debug attributes</title>
+      <title>Debugging attributes</title>
       <p>The debug attributes are populated as follows:</p>
       <dl>
         <dlentry>
           <dt>xtrf</dt>
-          <dd>absolute system path of the source document</dd>
+          <dd>The XML trace filename is used to store the absolute system path of the original source document.</dd>
         </dlentry>
         <dlentry>
           <dt>xtrc</dt>
-          <dd>element counter that uses the
-            format<codeblock>element-name ":" integer-counter ";" line-number ":" column-number</codeblock></dd>
+          <dd>The XML trace counter stores an element counter with the following format:
+            <codeblock>element-name ":" integer-counter ";" line-number ":" column-number</codeblock></dd>
         </dlentry>
       </dl>
     </section>
@@ -59,28 +68,28 @@
     </section>
     <section>
       <title>Map processing</title>
-      <p>When a <xmlelement>topicref</xmlelement> element that references a map contains child <codeph>topicref</codeph>
-        elements, the <msgnum>DOTX068W</msgnum> error is thrown and the child <xmlelement>topicref</xmlelement> elements are
-        ignored. </p>
+      <p>When a <xmlelement>topicref</xmlelement> element that references a map contains child
+          <xmlelement>topicref</xmlelement> elements, the <msgnum>DOTX068W</msgnum> error is thrown and the child
+          <xmlelement>topicref</xmlelement> elements are ignored. </p>
     </section>
     <section id="section_h3h_jsx_1h">
       <title>Link processing</title>
-      <p>When the value of <xmlatt>href</xmlatt> attribute is not a valid URI reference, the <msgnum>DOTJ054E</msgnum>
-        error is thrown. Depending on the
-        <xref href="../parameters/parameters-base.dita#base/processing-mode">processing-mode</xref> setting, error
-        recovery may be attempted.</p>
+      <p>When the value of a hyperlink reference in the <xmlatt>href</xmlatt> attribute is not a valid URI reference,
+        the <msgnum>DOTJ054E</msgnum> error is thrown. Depending on the <xref
+          href="../parameters/parameters-base.dita#base/processing-mode">processing-mode</xref> setting, error recovery
+        may be attempted.</p>
     </section>
     <section>
       <title>Copy-to processing</title>
-      <p>When the <xmlatt>copy-to</xmlatt> attribute is specified on a <codeph>topicref</codeph>, the content of the
-          <xmlelement>shortdesc</xmlelement> element is not used to override the short description of the topic.</p>
+      <p>When the <xmlatt>copy-to</xmlatt> attribute is specified on a <xmlelement>topicref</xmlelement>, the content of
+        the <xmlelement>shortdesc</xmlelement> element is not used to override the short description of the topic.</p>
     </section>
     <section>
       <title>Coderef processing</title>
-      <p>When <xmlelement>coderef</xmlelement> elements are used within codeblocks to reference external files with literal code
-        samples, the system default character set is used as the target file encoding unless a different character set
-        is explicitly defined via the mechanisms described under
-        <xref href="extended-functionality.dita#code-reference/coderef-charset"/>.</p>
+      <p>When <xmlelement>coderef</xmlelement> elements are used within code blocks to reference external files with
+        literal code samples, the system default character set is used as the target file encoding unless a different
+        character set is explicitly defined via the mechanisms described under <xref
+          href="extended-functionality.dita#code-reference/coderef-charset"/>.</p>
     </section>
   </refbody>
 </reference>

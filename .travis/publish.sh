@@ -7,7 +7,9 @@ export DITA_OT_DEV=$(find $PWD -name 'dita-ot-*+*' -type d | head -1)
 export SITE_DIR=$PWD/dita-ot.github.io
 
 #if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
-  # run site generation into
+  # Clean target output directory before generating new output
+  rm -rf "$SITE_DIR/dev/*"
+  # Generate site output in /dev folder
   ./gradlew -b site.gradle -Ddita.home=$DITA_HOME -Doutput.dir=$SITE_DIR/dev -PditaHomeSrc=$DITA_OT_DEV --info --stacktrace --no-daemon
 #else
 #  ./gradlew -Ddita.home=$DITA_HOME html --info --stacktrace --no-daemon

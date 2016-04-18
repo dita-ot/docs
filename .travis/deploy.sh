@@ -19,7 +19,7 @@ if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
   git config user.email "ditaotbot@gmail.com"
   git config user.name "DITA-OT Bot"
   # Add (stage) all untracked & modified files and remove all missing files
-  git add --all $SITE_DIR/dev
+  git add --all
   # Commit generated site output
   git commit -a -m "Deploy dita-ot/docs@${TRAVIS_COMMIT:0:7} to 'dev' docs"
   # push

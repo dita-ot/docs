@@ -246,44 +246,45 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ039E-extra" conaction="pushreplace">Please see the topic on <xref
-            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute" format="html"
-            scope="external">Conref Push</xref> in the DITA specification for details on expected syntax for this
-          function.</stentry>
+            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute"
+            format="html" scope="external">Conref Push</xref> in the DITA specification for details on expected syntax
+          for this function.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ040E-extra" conaction="pushreplace">Please see the topic on <xref
-            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute" format="html"
-            scope="external">Conref Push</xref> in the DITA specification for details on expected syntax for this
-          function.</stentry>
+            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute"
+            format="html" scope="external">Conref Push</xref> in the DITA specification for details on expected syntax
+          for this function.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ041E-extra" conaction="pushreplace">The conref attribute must be a
           URI reference to a DITA element. Please see the topic on <xref
-            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing" format="html"
-            scope="external">URI-based addressing</xref> in the DITA specification for details on the expected
-          syntax.</stentry>
+            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing"
+            format="html" scope="external">URI-based addressing</xref> in the DITA specification for details on the
+          expected syntax.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ042E-extra" conaction="pushreplace">The conref push function was
           used to replace a single element with two or more alternatives. Only one element may directly replace another
           using conref push. See <xref
-            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute" format="html"
-            scope="external">Conref Push</xref> in the DITA specification for more information about the conref push
-          "replace" function.</stentry>
+            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute"
+            format="html" scope="external">Conref Push</xref> in the DITA specification for more information about the
+          conref push "replace" function.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ043W-extra" conaction="pushreplace">The target for a conref push
           action does not exist; please make sure that the syntax is correct and that the target exists. See the topic
-          on <xref href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing" format="html"
-            scope="external">URI-based addressing</xref> in the DITA specification for details on the expected syntax.
-          If the syntax is correct, it is possible that the target was filtered out of your build using a DITAVAL
-          file.</stentry>
+          on <xref
+            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing"
+            format="html" scope="external">URI-based addressing</xref> in the DITA specification for details on the
+          expected syntax. If the syntax is correct, it is possible that the target was filtered out of your build using
+          a DITAVAL file.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ044W-extra" conaction="pushreplace">Please see the topic on <xref
-            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute" format="html"
-            scope="external">Conref Push</xref> in the DITA specification for details on expected syntax for this
-          function.</stentry>
+            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute"
+            format="html" scope="external">Conref Push</xref> in the DITA specification for details on expected syntax
+          for this function.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ045I-extra" conaction="pushreplace">No response is needed if the
@@ -291,8 +292,9 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ046E-extra" conaction="pushreplace">See <xref
-            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconkeyrefattribute.html#theconkeyrefattribute" format="html"
-            scope="external">the conkeyref definition</xref> for details on expected syntax and usage.</stentry>
+            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconkeyrefattribute.html#theconkeyrefattribute"
+            format="html" scope="external">the conkeyref definition</xref> for details on expected syntax and
+          usage.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ047I-extra" conaction="pushreplace">This message is intended to help
@@ -402,11 +404,11 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX010E-extra" conaction="pushreplace">The conref attribute must be a
           URI reference to an existing DITA element. Please see the topic on <xref
-            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing" format="html"
-            scope="external">URI-based addressing</xref> in the DITA specification for details on the expected syntax.
-            <ph id="changeExtension">Note that the name of the file in this message may have be changed to use a
-            standard dita topic file extension ('.dita' or '.xml'), instead of the original extension used by the file;
-            it may also include a path to the temporary directory rather than to the original.</ph>
+            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing"
+            format="html" scope="external">URI-based addressing</xref> in the DITA specification for details on the
+          expected syntax. <ph id="changeExtension">Note that the name of the file in this message may have be changed
+            to use a standard dita topic file extension ('.dita' or '.xml'), instead of the original extension used by
+            the file; it may also include a path to the temporary directory rather than to the original.</ph>
           <p>If the target element exists in your source file, check to make sure it is not filtered out of the build
             with a DITAVAL file (which will remove the target before conref processing runs).</p></stentry>
       </strow>
@@ -429,16 +431,16 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX014E-extra" conaction="pushreplace">The conref attribute must be a
           URI reference to a DITA element. Please see the topic on <xref
-            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing" format="html"
-            scope="external">URI-based addressing</xref> in the DITA specification for details on the expected
-          syntax.</stentry>
+            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing"
+            format="html" scope="external">URI-based addressing</xref> in the DITA specification for details on the
+          expected syntax.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX015E-extra" conaction="pushreplace">The conref attribute must be a
           URI reference to a DITA element. Please see the topic on <xref
-            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing" format="html"
-            scope="external">URI-based addressing</xref> in the DITA specification for details on the expected syntax.
-            <ph conref="DITA-messages-details.xml#errormessages/changeExtension"/></stentry>
+            href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing"
+            format="html" scope="external">URI-based addressing</xref> in the DITA specification for details on the
+          expected syntax. <ph conref="DITA-messages-details.xml#errormessages/changeExtension"/></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX016W-extra" conaction="pushreplace">This warning is intended to

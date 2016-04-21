@@ -5,7 +5,7 @@
 <map xml:lang="en">
   <title>Getting started</title>
   <topicref href="index.dita" collection-type="sequence">
-    <topicref href="../user-guide/installing-client.dita" copy-to="installing-client.dita"/>
+    <topicref href="installing-client.dita"/>
     <topicref href="../user-guide/using-dita-command.dita" copy-to="using-dita-command.dita"
       keys="first-build-using-dita-command">
       <topicmeta>

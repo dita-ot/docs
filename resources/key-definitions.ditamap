@@ -9,10 +9,18 @@
   <keydef format="html" keys="download.dita-ot.current-release" scope="external" href="http://www.dita-ot.org/download"/>
   <keydef format="html" keys="download.fop" scope="external" href="http://xmlgraphics.apache.org/fop/download.html"/>
   <keydef format="html" keys="download.html-help-workshop" scope="external"
-    href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms669985%28v=vs.85%29.aspx"/>
+    href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms669985%28v=vs.85%29.aspx">
+    <topicmeta>
+      <linktext>msdn.microsoft.com</linktext>
+    </topicmeta>
+  </keydef>
   <keydef format="html" keys="download.icu4j" scope="external" href="http://www.icu-project.org/download/"/>
   <keydef format="html" keys="download.oracle-jdk" scope="external"
-    href="http://www.oracle.com/technetwork/java/javase/downloads/"/>
+    href="http://www.oracle.com/technetwork/java/javase/downloads/">
+    <topicmeta>
+      <linktext>oracle.com/technetwork/java</linktext>
+    </topicmeta>
+  </keydef>
   <keydef format="html" keys="download.saxon" scope="external" href="http://saxon.sourceforge.net/"/>
 
   <!--VERSION NUMBERS: DITA-OT-->
@@ -204,7 +212,8 @@
     </topicmeta>
   </keydef>
   <topicgroup>
-    <keydef keys="2.0-release-notes" href="http://www.dita-ot.org/2.0/readme/changes/rel2.0.html" scope="external" format="html">
+    <keydef keys="2.0-release-notes" href="http://www.dita-ot.org/2.0/readme/changes/rel2.0.html" scope="external"
+      format="html">
       <topicmeta>
         <linktext>DITA-OT 2.0 Release Notes</linktext>
       </topicmeta>

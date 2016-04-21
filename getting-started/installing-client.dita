@@ -12,9 +12,11 @@
   <taskbody>
     <prereq>
       <ul>
-        <li>Ensure that you have Java JRE or JDK, version <keyword keyref="tool.java.version"/> or later installed.</li>
-        <li importance="optional" platform="windows">Ensure that you have HTML Help Workshop installed, if you want to
-          generate HTML Help.</li>
+        <li>Ensure that you have Java JRE or JDK, version <keyword keyref="tool.java.version"/> or later installed.
+          <p>You can download the Oracle JRE or JDK from <xref keyref="download.oracle-jdk"/>.</p></li>
+        <li importance="optional" platform="windows">If you want to generate HTML Help, ensure that you have HTML Help
+          Workshop installed.
+          <p>You can download the Help Workshop from <xref keyref="download.html-help-workshop"/>.</p></li>
       </ul>
     </prereq>
     <steps>

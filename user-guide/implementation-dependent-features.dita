@@ -4,11 +4,11 @@
 
 <reference id="implementation-dependent-features">
 
-  <title>Implementation dependent features</title>
+  <title>Implementation-dependent features</title>
 
   <shortdesc>For certain features, the DITA specification allows conforming processors to choose between different
     implementation alternatives. In these cases, there may be differences in behavior when DITA content is handled by
-    different processors. DITA-OT supports implementation specific features by applying one or more of the permissible
+    different processors. DITA-OT supports implementation-specific features by applying one or more of the permissible
     processing approaches.</shortdesc>
 
   <refbody>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="best-practices-pdf-customization-plugins">
+ <title>Best practices for PDF customization plug-ins</title>
+ <shortdesc>Adhering to certain development practices will properly isolate your code from that of the DITA Open Toolkit
+  (DIT-OT). This will make it easier to you to upgrade to new versions of the DITA-OT when they are
+  released.</shortdesc>
+ <conbody>
+  <ul>
+   <li>Use a properly-constructed DITA-OT plug-in.</li>
+   <li>Never modify any of the DITA-OT code.<note type="tip">Set the permissions on the
+      <filepath>org.dita.pdf2</filepath> directory to read-only, to ensure that you do not accidentally modify the files
+     within as you develop your customized plug-in.</note></li>
+   <li>Never copy entire DITA-OT files into your customization plug-in. Instead, copy only the attribute sets and
+    templates that you need to override.</li>
+   <li>Maintain a change log and comment your changes.</li>
+   <li>Upgrade your customization plug-in to new versions of the DITA-OT regularly. Do not wait through several major
+    releases before upgrading.</li>
+  </ul>
+ </conbody>
+</concept>

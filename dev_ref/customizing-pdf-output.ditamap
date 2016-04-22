@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Customizing PDF output</title>
+ <topicref href="customizing-pdf-output.dita">
+  <topicref href="overview-pdf-customization-plugins.dita">
+   <topicref href="types-pdf-customization-plugins.dita"/>
+   <topicref href="history-pdf-transformation.dita"/>
+   <topicref href="best-practices-pdf-customization-plugins.dita"/>
+  </topicref>
+  <topicref href="creating-pdf-customization-plugin.dita"/>
+  <topicref href="dita2pdf-customization.dita"/>
+  <topicref href="resources-for-pdf-customization-plug-ins.dita"/>
+ </topicref>
+</map>

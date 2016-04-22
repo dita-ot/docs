@@ -3,16 +3,18 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <task id="dita2pdf-customization" xml:lang="en">
-  <title>Customizing PDF output</title>
-  <shortdesc>You can build a DITA-OT plug-in that contains a customized PDF transformation.</shortdesc>
-  <prolog/>
+  <title>Example: Creating a simple PDF plug-in</title>
+  <shortdesc>This scenario walks through the process of creating a very simple plug-in
+      (<codeph>com.example.print-pdf</codeph>) that creates a new transformation type: <option>print-pdf</option>. </shortdesc>
   <taskbody>
-    <context>This topic demonstrates the process of building a plug-in (com.example.print-pdf) that creates a new
-      transformation type: <option>print-pdf</option>. The <option>print-pdf</option> transformation has the following characteristics:<ul>
+    <context>
+      <p>The <option>print-pdf</option> transformation has the following characteristics:</p>
+      <ul>
         <li>Uses A4 paper </li>
         <li>Renders figures with a title at the top and a description at the bottom</li>
         <li>Use em dashes as the symbols for unordered lists</li>
-      </ul></context>
+      </ul>
+    </context>
     <steps>
       <step>
         <cmd>In the <filepath>plugins</filepath> directory, create a directory named
@@ -79,7 +81,7 @@
       </step>
       <step>
         <cmd>Create the <filepath>cfg/fo/xsl/custom.xsl</filepath> file, and add XSLT overrides to it.</cmd>
-        <stepxmp>For example, the following code changes the rendering of &lt;figure> elements.<fig>
+        <stepxmp>For example, the following code changes the rendering of <xmlelement>figure</xmlelement> elements.<fig>
             <title><filepath>cfg/fo/xsl/custom.xsl</filepath> file</title>
             <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"

@@ -22,10 +22,12 @@
               <li id="plug-in-id"><varname>plug-in-id</varname> is the unique ID of the plug-in, as
                 defined in the plug-in's configuration file (<filepath>plugin.xml</filepath>).</li>
               <li id="plug-in-zip"><filepath><varname>plug-in-zip</varname></filepath> is the
-                <varname>filename</varname> or <varname>URL</varname> of the plug-in's distribution ZIP file.</li>
+                  <varname>filename</varname> or <varname>URL</varname> of the plug-in's distribution ZIP file
+                (optional).</li>
               <li><ph id="plugin-integrate-all">If no <varname>filename</varname> or <varname>URL</varname> argument is
                   provided, the integration process reloads plug-ins from the <filepath>plugins</filepath> directory.
-                  This approach can be used to integrate multiple plug-ins at once.</ph></li>
+                  This approach can be used to integrate multiple plug-ins at once, or install any individual plug-ins
+                  you have already copied to the <filepath>plugins</filepath> directory.</ph></li>
             </ul>
           </dd>
         </dlentry>

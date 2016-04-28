@@ -114,12 +114,15 @@
           Please correct the parameter to specify a valid stylesheet.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTA067W-extra" conaction="pushreplace">This condition is ignored, as
-          instructed in the OASIS DITA Standard.</stentry>
+        <!-- This condition and the next belong to the org.dita.pdf2 plugin. Not sure if they should be moved below. -->
+        <stentry conref="DITA-messages.xml#msgs/DOTA067W-extra" conaction="pushreplace">According to the OASIS DITA 
+          Specification, the <codeph>index-see</codeph> element should be ignored if the parent <codeph>indexterm</codeph>
+          contains other <codeph>indexterm</codeph> children.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTA068W-extra" conaction="pushreplace">This condition is ignored, as
-          instructed in the OASIS DITA Standard.</stentry>
+        <stentry conref="DITA-messages.xml#msgs/DOTA068W-extra" conaction="pushreplace">According to the OASIS DITA 
+          Specification, the <codeph>index-see-also</codeph> element should be ignored if the parent <codeph>indexterm</codeph>
+          contains other <codeph>indexterm</codeph> children.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ005F-extra" conaction="pushreplace"/>
@@ -705,5 +708,36 @@
           language, or that your language setting is incorrect.</stentry>
       </strow>
     </simpletable>
+<section>
+<title>Additional explanation for messages in the <filepath>org.dita.pdf2</filepath> plugin</title>
+<simpletable>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/PDFJ002E-extra" conaction="pushreplace">The PDF index process relies on
+          pre-defined letter headings when sorting terms. The specified term does not begin with a character that can
+          be mapped to an existing heading. Typically this term would be placed in a "Special characters" group, but
+          the current language did not specify such a group when setting up the index sort process.</stentry>
+      </strow>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/PDFJ003I-extra" conaction="pushreplace">The PDF index process relies on
+          pre-defined letter headings when sorting terms. The specified term does not begin with a character that can
+          be mapped to an existing heading, so it has placed under a heading for terms that begin with special characters
+          such as punctuation. If this term should be sorted under a new or existing letter heading, please open an issue
+          with DITA-OT to correct the sort.</stentry>
+      </strow>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/PDFJ003I-extra" conaction="pushreplace">The PDF index process relies on
+          pre-defined letter headings when sorting terms. The specified term does not begin with a character that can
+          be mapped to an existing heading, so it has placed under a heading for terms that begin with special characters
+          such as punctuation. If this term should be sorted under a new or existing letter heading, please open an issue
+          with DITA-OT to correct the sort.</stentry>
+      </strow>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/PDFX011E-extra" conaction="pushreplace">Found an <codeph>index-see</codeph>
+          element as a child of a term that also exists as a standalone index term, or as a term that also uses <codeph>index-see-also</codeph>. 
+          When using <codeph>index-see</codeph> with an index term, that term should not be used to create page references and
+          should not reference additional terms. Treating the <codeph>index-see</codeph> as <codeph>index-see-also</codeph>.</stentry>
+      </strow>
+</simpletable>
+</section>
   </refbody>
 </reference>

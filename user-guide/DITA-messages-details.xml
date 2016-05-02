@@ -720,7 +720,7 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/PDFJ003I-extra" conaction="pushreplace">The PDF index process relies on
           pre-defined letter headings when sorting terms. The specified term does not begin with a character that can
-          be mapped to an existing heading, so it has placed under a heading for terms that begin with special characters
+          be mapped to an existing heading, so it has been placed under a heading for terms that begin with special characters
           such as punctuation. If this term should be sorted under a new or existing letter heading, please open an issue
           with DITA-OT to correct the sort.</stentry>
       </strow>

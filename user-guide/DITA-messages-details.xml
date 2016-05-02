@@ -725,13 +725,6 @@
           with DITA-OT to correct the sort.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/PDFJ003I-extra" conaction="pushreplace">The PDF index process relies on
-          pre-defined letter headings when sorting terms. The specified term does not begin with a character that can
-          be mapped to an existing heading, so it has placed under a heading for terms that begin with special characters
-          such as punctuation. If this term should be sorted under a new or existing letter heading, please open an issue
-          with DITA-OT to correct the sort.</stentry>
-      </strow>
-      <strow>
         <stentry conref="DITA-messages.xml#msgs/PDFX011E-extra" conaction="pushreplace">Found an <codeph>index-see</codeph>
           element as a child of a term that also exists as a standalone index term, or as a term that also uses <codeph>index-see-also</codeph>. 
           When using <codeph>index-see</codeph> with an index term, that term should not be used to create page references and

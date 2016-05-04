@@ -4,7 +4,7 @@
 
 <concept id="history-pdf-transformation">
   <title>History of the PDF transformation</title>
-  <shortdesc>The DITA Open Toolkit (DITA-OT) PDF transformation has an interesting history.</shortdesc>
+  <shortdesc>The DITA Open Toolkit PDF transformation has an interesting history.</shortdesc>
   <conbody>
     <p>When IBM developed the code that later became the DITA-OT, a PDF transformation was not part of it. IBM had their
       own processing chain for producing PDFs from SGML, which they had developed over several decades.</p>
@@ -12,7 +12,7 @@
       proof-of-concept transformation was not robust, companies began to develop their own PDF transformations. One
       company, Idiom Technologies, made their transformation (known as the PDF2 transformation) available as open source
       on 23 February 2006.</p>
-    <p>The Idiom plug-in initially was available as a separately-downloadable plug-in that could be integrated into the
+    <p>The Idiom plug-in was initially available as a separately-downloadable plug-in that could be integrated into the
       DITA-OT. Later the DITA-OT project formally incorporated the Idiom plug-in; beginning with DITA-OT version 1.5,
       released 18 December 2009, the PDF2 code became the basis of the PDF transformation. (The original PDF
       transformation was deprecated and renamed "legacypdf".)</p>

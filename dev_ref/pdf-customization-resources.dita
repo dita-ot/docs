@@ -3,9 +3,9 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="resources-for-pdf-customization-plug-ins">
-  <title>Resources for PDF customization plug-ins</title>
-  <shortdesc>There are several resources external to the DITA Open Toolkit (DITA-OT) that can help you generate and
-    refine PDF customization plug-ins.</shortdesc>
+  <title>Resources for custom PDF plug-ins</title>
+  <shortdesc>There are several external resources that can help you generate and refine custom PDF plug-ins for
+    the DITA Open Toolkit.</shortdesc>
   <refbody>
     <section>
       <dl>
@@ -14,7 +14,9 @@
           <dd>
             <p>This online tool, developed and maintained by Jarno Elovirta, enables you to generate a PDF customization
               plug-in automatically.</p>
-            <p>You can:</p>
+            <p>The application at <xref href="http://dita-generator.elovirta.com/" format="html" scope="external"
+                >dita-generator.elovirta.com</xref> walks you through the process of creating a custom PDF plug-in and
+              allows you to adjust a variety of settings for your PDF output. For example, you can:</p>
             <ul>
               <li>Define the target environment, selecting from the most current and two previous versions of the
                 DITA-OT</li>
@@ -52,7 +54,7 @@
           <dd>
             <p>Authored by Leigh W. White, DITA Specialist at IXIASOFT, and published by XML Press, walks readers
               through developing a PDF customization from scratch. Here is an excerpt from the back cover:</p>
-            <lq><cite>DITA for Print</cite> is for everyone who want to learn how to create PDFs using the DITA Open
+            <lq><cite>DITA for Print</cite> is for anyone who wants to learn how to create PDFs using the DITA Open
               Toolkit without learning everything that there is to know about XSL-FO, XSLT, or XPath, or even about the
               DITA Open Toolkit itself. <cite>DITA for Print</cite> is written for non-programmers, by a non-programmer,
               and although it is written for people who have a good understanding of the DITA standard, you don't need a

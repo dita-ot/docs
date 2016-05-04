@@ -3,14 +3,14 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
  <title>Customizing PDF output</title>
- <topicref href="customizing-pdf-output.dita">
-  <topicref href="overview-pdf-customization-plugins.dita">
-   <topicref href="types-pdf-customization-plugins.dita"/>
-   <topicref href="history-pdf-transformation.dita"/>
-   <topicref href="best-practices-pdf-customization-plugins.dita"/>
+ <topicref href="pdf-customization.dita">
+  <topicref href="pdf-customization-overview.dita">
+   <topicref href="pdf-customization-plugin-types.dita"/>
+   <topicref href="pdf-transformation-history.dita"/>
+   <topicref href="pdf-customization-best-practices.dita"/>
   </topicref>
-  <topicref href="creating-pdf-customization-plugin.dita"/>
-  <topicref href="dita2pdf-customization.dita"/>
-  <topicref href="resources-for-pdf-customization-plug-ins.dita"/>
+  <topicref href="pdf-customization-creating-plugin.dita"/>
+  <topicref href="pdf-customization-example.dita"/>
+  <topicref href="pdf-customization-resources.dita"/>
  </topicref>
 </map>

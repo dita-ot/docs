@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <reference id="resources-for-pdf-customization-plug-ins">
   <title>Resources for PDF customization plug-ins</title>
   <shortdesc>There are several resources external to the DITA Open Toolkit (DITA-OT) that can help you generate and
@@ -20,7 +22,8 @@
               <li>Specify page size, columns, and margins</li>
               <li>Select from (limited) options for headers and footers</li>
               <li>Specify layout options for chapters</li>
-              <li>Select formatting for the following publication components:<ul>
+              <li>Select formatting for the following publication components:
+                <ul>
                   <li>Normal text</li>
                   <li>Headings (levels one through four)</li>
                   <li>Titles for sections and examples</li>
@@ -33,7 +36,8 @@
                   <p>Given the technical level of our audience here, should we list DITA elements rather than the
                     generic categories?</p>
                 </draft-comment>
-                <p>For each component, you can specify: </p><ul>
+                <p>For each component, you can specify: </p>
+                <ul>
                   <li>Font family, size, weight, and style</li>
                   <li>Color and background color</li>
                   <li>Alignment, indentation, spacing, and padding</li>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
 <task id="customizing-pdf-output">
-    <title>Customizing PDF output</title>
-    <shortdesc>You can create custom DITA-OT plug-ins that build on the <codeph>org.dita.pdf2</codeph> plug-in that
-        contains the code for the DITA to PDF transformation. Such plug-ins can produce custom covers and page layouts,
-        modify formatting, override logic of the org.dita.pdf plug-in, and much more.</shortdesc>
+  <title>Customizing PDF output</title>
+  <shortdesc>You can create custom DITA-OT plug-ins that build on the <codeph>org.dita.pdf2</codeph> plug-in that
+    contains the code for the DITA to PDF transformation. Such plug-ins can produce custom covers and page layouts,
+    modify formatting, override logic of the org.dita.pdf plug-in, and much more.</shortdesc>
 </task>

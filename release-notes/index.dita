@@ -13,11 +13,26 @@
         <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v224">
+  <reference id="v225">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li/>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.2.4...hotfix/2.2.5" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v224">
+    <title>Maintenance Release 2.2.4</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.2.4 included the following bug fixes.</p>
         <ul>
           <li id="2283">The <xmlelement>title</xmlelement> is now used as link text when links are specified using a
               <xmlelement>title</xmlelement> element (or specialized variant) as link target. This approach allows the
@@ -29,9 +44,8 @@
             <xref keyref="dita-ot-spec"/>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2283" scope="external" format="html">#2283</xref>
           </li>
-          <li id="2278">
-            The default value for the <parmname>args.copycss</parmname> parameter has been explicitly set to
-            <option>no</option>. Previous toolkit versions never initialized a default value, and only copied the
+          <li id="2278">The default value for the <parmname>args.copycss</parmname> parameter has been explicitly set to
+              <option>no</option>. Previous toolkit versions never initialized a default value, and only copied the
             custom .css file if the parameter was set to <option>yes</option>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2278" scope="external" format="html">#2278</xref>
           </li>
@@ -59,6 +73,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/1293" scope="external" format="html">#1293</xref>
           </li>
         </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.2.3...2.2.4" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>
@@ -101,6 +118,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2211" scope="external" format="html">#2211</xref>
           </li>
         </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.2.2...2.2.3" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>
@@ -144,6 +164,9 @@
           <li>The documentation has been updated with links to the final
             <xref keyref="dita-ot-spec"/>.</li>
         </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.2.1...2.2.2" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>
@@ -171,6 +194,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2154" scope="external" format="html">#2154</xref>
           </li>
         </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.2...2.2.1" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>

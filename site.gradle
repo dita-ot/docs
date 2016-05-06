@@ -1,20 +1,9 @@
-buildscript {
-    dependencies {
-        classpath 'net.sourceforge.saxon:saxon:9.1.0.8'
-    }
-}
-
 plugins {
     id 'com.github.eerohele.dita-ot-gradle' version '0.3.0'
+    id 'com.github.eerohele.saxon-gradle' version '0.1.3'
 }
 
-import org.apache.tools.ant.Project as AntProject
-
-buildscript.configurations.classpath.each {
-    AntProject.class.getClassLoader().addURL(it.toURL())
-}
-
-apply plugin: 'com.github.eerohele.dita-ot-gradle'
+import com.github.eerohele.SaxonXsltTask
 
 defaultTasks 'dita'
 
@@ -26,53 +15,36 @@ def ditaHome = System.getProperty('dita.home', '../')
 ditaOt.dir ditaHome
 
 def ditaHomeSrc = project.hasProperty("ditaHomeSrc") ? file("${ditaHomeSrc}") : file("${ditaHome}")
+def resourceDir = "$ditaHomeSrc/resources"
 
-task messages {
-  inputs.files(
-    "${ditaHomeSrc}/resources/messages.xml",
-    'resources/messages.xsl'
-  )
-
-  outputs.file "${projectDir}/user-guide/DITA-messages.xml"
-
-  doLast {
-    ant.ant(antfile: 'build.xml') {
-      target name: 'generate-msg-topic'
-      property name: 'resource.dir', location: "${ditaHomeSrc}/resources"
-    }
-  }
+def toURI(String directory) {
+  new URI(new File(directory).getAbsolutePath()).toString()
 }
 
-task params {
-  inputs.files (
-    "${ditaHomeSrc}/resources/plugins.xml",
-    'resources/params.xsl'
-  )
+task messages(type: SaxonXsltTask) {
+  input "$resourceDir/messages.xml"
+  output "user-guide/DITA-messages.xml"
+  stylesheet "resources/messages.xsl"
+}
+
+task params(type: SaxonXsltTask) {
+  input "$resourceDir/plugins.xml"
+  output "parameters/all-parameters.dita"
+  stylesheet "resources/params.xsl"
+
+  parameters("output-dir.url": toURI("parameters"))
 
   outputs.dir "${projectDir}/parameters"
-
-  doLast {
-    ant.ant(antfile: 'build.xml') {
-      target name: 'generate-params-topic'
-      property name: 'resource.dir', location: "${ditaHomeSrc}/resources" 
-    }
-  }
 }
 
-task extensionPoints {
-  inputs.files (
-    "${ditaHomeSrc}/resources/plugins.xml",
-    'resources/extension-points.xsl'
-  )
+task extensionPoints(type: SaxonXsltTask) {
+  input "$resourceDir/plugins.xml"
+  output "extension-points/all-extension-points.dita"
+  stylesheet "resources/extension-points.xsl"
+
+  parameters("output-dir.url": toURI("extension-points"))
 
   outputs.dir "${projectDir}/extension-points"
-
-  doLast {
-    ant.ant(antfile: 'build.xml') {
-      target name: 'generate-extension-points-topic'
-      property name: 'resource.dir', location: "${ditaHomeSrc}/resources"
-    }
-  }
 }
 
 def commit = new ByteArrayOutputStream()

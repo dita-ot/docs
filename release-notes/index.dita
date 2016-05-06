@@ -6,9 +6,9 @@
   <title>DITA Open Toolkit <keyword keyref="maintenance-version"/> Release Notes</title>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes fixes
-      for issues reported in DITA-OT <keyword keyref="release"/>, which includes new features and enhancements and
-      provides additional support for the OASIS DITA 1.3 specification.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes new features and enhancements and additional
+      support for the OASIS DITA 1.3 specification.</shortdesc>
     <p>Issue numbers correspond to the tracking number in the <ph>
         <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
   </abstract>
@@ -19,7 +19,50 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li/>
+          <li id="1190">Tables in RTF output are damaged, RTF output cannot be opened
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1190" scope="external" format="html">#1190</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2333" scope="external" format="html">#2333</xref>
+          </li>
+          <li id="1549">Empty map causes odd mapref error
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1549" scope="external" format="html">#1549</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2336" scope="external" format="html">#2336</xref>
+          </li>
+          <li id="1709">Re-check and rephrase messages.xml
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1709" scope="external" format="html">#1709</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2327" scope="external" format="html">#2327</xref>
+          </li>
+          <li id="1876">Plugin Can't Override Templates in dita2html5Impl.xsl
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1876" scope="external" format="html">#1876</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2313" scope="external" format="html">#2313</xref>
+          </li>
+          <li id="2198">Any link to a dlentry element is broken in PDF
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2198" scope="external" format="html">#2198</xref>
+          </li>
+          <li id="2266">DITA 1.3 catalog.xml points to non existing resources
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2266" scope="external" format="html">#2266</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2320" scope="external" format="html">#2320</xref>
+          </li>
+          <li id="2307">Huge performance drop down when using huge database topics
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2307" scope="external" format="html">#2307</xref>, 
+        <!--<xref href="https://github.com/dita-ot/dita-ot/issues/2308" scope="external" format="html">#2308</xref>, -->
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2309" scope="external" format="html">#2309</xref>
+          </li>
+          <li id="2311">Avoid double dependency on copy-css task
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2311" scope="external" format="html">#2311</xref>
+          </li>
+          <li id="2312">Remove unimplemented parameter extension points from HTML5 plug-in
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2312" scope="external" format="html">#2312</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2314" scope="external" format="html">#2314</xref>
+          </li>
+          <li id="2321">Topicset @type attribute warning in move-meta-entries
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2321" scope="external" format="html">#2321</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2338" scope="external" format="html">#2338</xref>
+          </li>
+          <li id="2329">Made include of htmlflag.xsl into an import and moved before extension point
+        <!--<xref href="https://github.com/dita-ot/dita-ot/issues/2325" scope="external" format="html">#2325</xref>, -->
+        <!--<xref href="https://github.com/dita-ot/dita-ot/issues/2328" scope="external" format="html">#2328</xref>, -->
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2329" scope="external" format="html">#2329</xref>
+          </li>
         </ul>
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/2.2.4...hotfix/2.2.5" scope="external" format="html">

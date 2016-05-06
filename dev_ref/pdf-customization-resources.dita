@@ -4,8 +4,8 @@
 
 <reference id="resources-for-pdf-customization-plug-ins">
   <title>Resources for custom PDF plug-ins</title>
-  <shortdesc>There are several external resources that can help you generate and refine custom PDF plug-ins for
-    the DITA Open Toolkit.</shortdesc>
+  <shortdesc>There are several external resources that can help you generate and refine custom PDF plug-ins for the DITA
+    Open Toolkit.</shortdesc>
   <refbody>
     <section>
       <dl>
@@ -45,8 +45,8 @@
                   <li>Alignment, indentation, spacing, and padding</li>
                 </ul></li>
             </ul>
-            <p>The PDF Plugin Generator should be your first stop as you start developing a brand-new PDF customization
-              plug-in.</p>
+            <note type="tip">The PDF Plugin Generator should be your first stop as you start developing a brand-new PDF
+              customization plug-in.</note>
           </dd>
         </dlentry>
         <dlentry>
@@ -60,14 +60,12 @@
               and although it is written for people who have a good understanding of the DITA standard, you don't need a
               technical background to get custom PDFs up and running quickly.</lq>
             <p>This is an excellent, long-needed resource that was developed for DITA-OT 1.8.</p>
-            <note>
-              <p>The DITA-OT team wants to issue one note of warning.</p>
-              <p>Leigh W. White recommends copying entire files from the PDF2 plug-in to your customization directories.
-                We do not recommend this practice. Instead, be sure to override only the specific templates that you
-                want to modify. Following this practice will more cleanly isolate your customizations from the DITA-OT
-                code, which will make it easier for you to update your plug-ins to work with future versions of the
-                DITA-OT.</p>
-            </note>
+            <note type="important">
+              <cite>DITA for Print</cite> recommends copying entire files from the PDF2 plug-in to your customization
+              directories. The DITA-OT project does not recommend this practice. Instead, be sure to override only the
+              specific templates that you want to modify. Following this practice will more cleanly isolate your
+              customizations from the DITA-OT code, which will make it easier for you to update your plug-ins to work
+              with future versions of the DITA-OT.</note>
           </dd>
         </dlentry>
         <dlentry>

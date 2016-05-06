@@ -34,4 +34,4 @@ afterEvaluate {
   task dist(dependsOn: ['pdf', 'html'])
 }
 
-defaultTasks 'all'
+defaultTasks 'dist'

@@ -61,7 +61,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2266" scope="external" format="html">#2266</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2320" scope="external" format="html">#2320</xref>
           </li>
-          <li id="2307">Huge performance drop down when using huge database topics
+          <li id="2307">Performance of previous toolkit versions suffered substantially if a single warehouse topic was
+            used to store a large number of blocks for reference instead of multiple smaller warehouse topics with the
+            same total number of blocks. An expensive XPath expression in the content reference processing phase was
+            replaced with an optimized expression that dramatically reduces publication time in cases with thousands of
+            following siblings.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2307" scope="external" format="html">#2307</xref>, 
         <!--<xref href="https://github.com/dita-ot/dita-ot/issues/2308" scope="external" format="html">#2308</xref>, -->
             <xref href="https://github.com/dita-ot/dita-ot/issues/2309" scope="external" format="html">#2309</xref>

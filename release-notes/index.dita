@@ -37,7 +37,14 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/1709" scope="external" format="html">#1709</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2327" scope="external" format="html">#2327</xref>
           </li>
-          <li id="1876">Plugin Can't Override Templates in dita2html5Impl.xsl
+          <li id="1876">The DITA-OT 2.0 HTML5 transformation declared several XSL extension points that were not fully
+            implemented:
+            <ul>
+              <li><codeph>dita.xsl.html5</codeph></li>
+              <li><codeph>dita.xsl.html5.toc</codeph></li>
+              <li><codeph>dita.xsl.html5.cover</codeph></li>
+            </ul> Three new templates now provide the necessary <xmlelement>dita:extension</xmlelement> elements to add
+            custom XSLT processing to the HTML5 transformation.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1876" scope="external" format="html">#1876</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2313" scope="external" format="html">#2313</xref>
           </li>

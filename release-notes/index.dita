@@ -19,8 +19,11 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="1190">Tables in RTF output are damaged, RTF output cannot be opened
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1190" scope="external" format="html">#1190</xref>, 
+          <li id="1190">In earlier toolkit versions, the Word RTF transformation produced invalid RTF output when source
+            files contained tables with absolute column widths. Processing has been modified to treat all widths as
+            proportional, including units given in inches, centimeters, millimeters, or points. Absolute units are not
+            respected, but the toolkit now generates valid RTF output rather than crashing.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1190" scope="external" format="html">#1190</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2333" scope="external" format="html">#2333</xref>
           </li>
           <li id="1549">Empty map causes odd mapref error

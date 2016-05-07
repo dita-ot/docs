@@ -70,7 +70,11 @@
         <!--<xref href="https://github.com/dita-ot/dita-ot/issues/2308" scope="external" format="html">#2308</xref>, -->
             <xref href="https://github.com/dita-ot/dita-ot/issues/2309" scope="external" format="html">#2309</xref>
           </li>
-          <li id="2311">Avoid double dependency on copy-css task
+          <li id="2311">In JavaHelp output, the copy-css task was called too early, before the
+              <parmname>user.csspath</parmname> parameter was evaluated, so CSS files were copied to a folder named
+              <codeph>${user.csspath}</codeph> rather than to the intended location. JavaHelp processing has been
+            corrected to avoid the duplicate dependency on the copy-css task and ensure that CSS files are handled
+            correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2311" scope="external" format="html">#2311</xref>
           </li>
           <li id="2312">Remove unimplemented parameter extension points from HTML5 plug-in

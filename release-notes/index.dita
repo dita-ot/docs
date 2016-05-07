@@ -37,6 +37,13 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/1709" scope="external" format="html">#1709</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2327" scope="external" format="html">#2327</xref>
           </li>
+          <li id="1764">Links to <xmlelement>dlentry</xmlelement> elements were broken in PDFs generated via Apache FOP,
+            as FOP does not support the <xmlatt>id</xmlatt> attribute on table rows. To work around this issue, DITA-OT
+            now moves the ID from the <xmlelement>dlentry</xmlelement> to an <xmlelement>fo:inline</xmlelement> element
+            in the first term when rendering PDF output via FOP.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1764" scope="external" format="html">#1764</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2198" scope="external" format="html">#2198</xref>
+          </li>
           <li id="1876">The DITA-OT 2.0 HTML5 transformation declared several XSL extension points that were not fully
             implemented:
             <ul>
@@ -47,9 +54,6 @@
             custom XSLT processing to the HTML5 transformation.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1876" scope="external" format="html">#1876</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2313" scope="external" format="html">#2313</xref>
-          </li>
-          <li id="2198">Any link to a dlentry element is broken in PDF
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2198" scope="external" format="html">#2198</xref>
           </li>
           <li id="2266">DITA 1.3 catalog.xml points to non existing resources
             <xref href="https://github.com/dita-ot/dita-ot/issues/2266" scope="external" format="html">#2266</xref>,

@@ -91,7 +91,12 @@
             target actually exists.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2315" scope="external" format="html">#2315</xref>
           </li>
-          <li id="2321">Topicset @type attribute warning in move-meta-entries
+          <li id="2321">When a <xmlelement>topicsetref</xmlelement> element is used to refer to a set of topics defined
+            via <xmlelement>topicset</xmlelement>, previous toolkit versions treated the target element name as topicset
+            rather than the actual type of the referenced topics and threw a <msgnum>DOTX019W</msgnum> error. Map
+            reference processing has been modified to drop the <xmlatt>type</xmlatt> attribute as part of the
+            resolution. This prevents such unintended side effects by ensuring that the type no longer cascades further
+            down the resolved branch.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2321" scope="external" format="html">#2321</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2338" scope="external" format="html">#2338</xref>
           </li>

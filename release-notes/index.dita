@@ -55,7 +55,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/1876" scope="external" format="html">#1876</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2313" scope="external" format="html">#2313</xref>
           </li>
-          <li id="2266">DITA 1.3 catalog.xml points to non existing resources
+          <li id="2266">The OASIS catalogs for DITA 1.3 pointed to a series of non-existent resources. The catalog files
+            have been updated to remove spurious file references and errata have been submitted to OASIS for inclusion
+            in the original source catalogs.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2266" scope="external" format="html">#2266</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2320" scope="external" format="html">#2320</xref>
           </li>

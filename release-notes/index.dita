@@ -86,7 +86,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2312" scope="external" format="html">#2312</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2314" scope="external" format="html">#2314</xref>
           </li>
-          <li id="2315">Use before and after expressions rather than following-sibling in for-each expression
+          <li id="2315">Content reference range processing has been modified to use before <codeph>&lt;&lt;</codeph> and
+            after <codeph>&gt;&gt;</codeph> expressions rather than following-sibling and check that the conref end
+            target actually exists.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2315" scope="external" format="html">#2315</xref>
           </li>
           <li id="2321">Topicset @type attribute warning in move-meta-entries

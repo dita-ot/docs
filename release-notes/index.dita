@@ -100,9 +100,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2321" scope="external" format="html">#2321</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2338" scope="external" format="html">#2338</xref>
           </li>
-          <li id="2329">Made include of htmlflag.xsl into an import and moved before extension point
+          <li id="2329">Support for flagging in HTML output has been imported (rather than included) and moved before
+            the extension point to allow custom plug-ins to override flagging behavior.
         <!--<xref href="https://github.com/dita-ot/dita-ot/issues/2325" scope="external" format="html">#2325</xref>, -->
-            <!--<xref href="https://github.com/dita-ot/dita-ot/issues/2328" scope="external" format="html">#2328</xref>, -->
+        <!--<xref href="https://github.com/dita-ot/dita-ot/issues/2328" scope="external" format="html">#2328</xref>, -->
             <xref href="https://github.com/dita-ot/dita-ot/issues/2329" scope="external" format="html">#2329</xref>
           </li>
         </ul>

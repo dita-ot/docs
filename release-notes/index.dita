@@ -77,7 +77,12 @@
             correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2311" scope="external" format="html">#2311</xref>
           </li>
-          <li id="2312">Remove unimplemented parameter extension points from HTML5 plug-in
+          <li id="2312">Two unimplemented parameter extension points were removed from the HTML5 plug-in:
+            <ul>
+              <li><codeph>dita.conductor.html5.param</codeph></li>
+              <li><codeph>dita.conductor.html5.toc.param</codeph></li>
+            </ul> Implementers who want to add parameters to the HTML5 transformation can instead require the base HTML
+            plug-in as well as the HTML5 plug-in and extend the base HTML plug-in's parameter extension points
             <xref href="https://github.com/dita-ot/dita-ot/issues/2312" scope="external" format="html">#2312</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2314" scope="external" format="html">#2314</xref>
           </li>

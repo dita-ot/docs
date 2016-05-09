@@ -5,15 +5,13 @@
 <topic id="dita-otprojecthome" xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
   <shortdesc>The <term>DITA Open Toolkit</term>, or <term>DITA-OT</term> for short, is a set of Java-based, open-source
-    tools that provide processing for DITA maps and topic content.</shortdesc>
+    tools that provide processing for XML content authored in the <term>Darwin Information Typing
+    Architecture</term>.</shortdesc>
   <body>
-    <!--
-    <p>You can download the toolkit and install it for free to get started with topic-based writing and publishing. The
-      DITA-OT is licensed under the <xref format="html" href="http://www.apache.org/licenses/LICENSE-2.0"
-        scope="external">Apache 2.0</xref> open-source license.</p>
-    <note>While the DITA Standard itself is owned and developed by OASIS, the DITA Open Toolkit is an independent,
-      open-source implementation of the standard.</note>
-    -->
+
+    <note>While the DITA standard is owned and developed by OASIS, the DITA Open Toolkit project is governed separately.
+      DITA-OT is an independent, open-source implementation of the DITA standard.</note>
+
     <section>
       <title>DITA-OT documentation</title>
       <p>The DITA Open Toolkit documentation provides information about installing, running, configuring and extending
@@ -27,15 +25,4 @@
       </ul>
     </section>
   </body>
-  <related-links>
-    <linklist>
-      <title>Shortcuts to important information</title>
-      <link format="html" href="http://www.dita-ot.org/download" scope="external">
-        <linktext>Latest DITA-OT release</linktext>
-      </link>
-      <link format="html" href="https://github.com/dita-ot/dita-ot/releases" scope="external">
-        <linktext>DITA-OT source code and development builds (GitHub)</linktext>
-      </link>
-    </linklist>
-  </related-links>
 </topic>

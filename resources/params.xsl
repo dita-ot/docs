@@ -19,7 +19,7 @@
   <xsl:template name="all">
     <xsl:comment> Generated from plugin source, do not edit! </xsl:comment>
     <reference id="parameters">
-      <title>DITA-OT parameters</title>
+      <title outputclass="generated">DITA-OT parameters</title>
       <reference id="all">
         <title>All DITA-OT parameters</title>
         <refbody>
@@ -56,7 +56,7 @@
                            doctype-system="reference.dtd">
         <xsl:comment> Generated from plugin source, do not edit! </xsl:comment>
         <reference id="{$id}">
-          <title>
+          <title outputclass="generated">
             <xsl:value-of select="current-group()[1]/@desc"/>
             <xsl:text> parameters</xsl:text>
           </title>

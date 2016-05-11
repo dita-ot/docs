@@ -19,7 +19,7 @@
   <xsl:template name="all">
     <xsl:comment> Generated from plugin source, do not edit! </xsl:comment>
     <reference id="all-extension-points">
-      <title id="title">All DITA-OT extension points</title>
+      <title id="title" outputclass="generated">All DITA-OT extension points</title>
       <titlealts>
         <navtitle>All extension points</navtitle>
       </titlealts>
@@ -47,7 +47,7 @@
         doctype-system="reference.dtd">
         <xsl:comment> Generated from plugin source, do not edit! </xsl:comment>
         <reference id="{$id}-extension-points">
-          <title>
+          <title outputclass="generated">
             <xsl:value-of select="@id"/>
             <xsl:text> extension points</xsl:text>
           </title>

@@ -4,19 +4,19 @@
 
 <reference id="dita-globalization-pdf" xml:lang="en-US">
   <title>Supported languages: PDF transformations</title>
-  <shortdesc>The DITA Open Toolkit supports a smaller set of languages for the PDF (pdf2) transformation. This
+  <shortdesc>The DITA Open Toolkit supports a slightly smaller set of languages for the PDF (pdf2) transformation. This
     transformation was donated to the DITA-OT project after the project inception, and it uses a different and larger
     set of generated text than the HTML-based transformations.</shortdesc>
   <refbody>
     <table frame="all" colsep="1" rowsep="1">
       <title>Supported languages: PDF transformation</title>
       <tgroup cols="2">
-        <colspec colname="col1" colnum="1" colwidth="1.0*"/>
-        <colspec colname="col2" colnum="2" colwidth="1.0*"/>
+        <colspec colnum="1" colwidth="1.0*"/>
+        <colspec colnum="2" colwidth="1.0*"/>
         <thead>
           <row>
-            <entry colname="col1">Language</entry>
-            <entry colname="col2">Language code</entry>
+            <entry>Language</entry>
+            <entry>Language code</entry>
           </row>
         </thead>
         <tbody>
@@ -43,6 +43,10 @@
           <row>
             <entry>Chinese (simplified)</entry>
             <entry>zh-CN or zh-Hans</entry>
+          </row>
+          <row>
+            <entry>Chinese (traditional)</entry>
+            <entry>zh-TW or zh-Hant</entry>
           </row>
           <row>
             <entry>Croatian</entry>
@@ -111,6 +115,14 @@
           <row>
             <entry>Japanese</entry>
             <entry>ja or ja-JP</entry>
+          </row>
+          <row>
+            <entry>Kazakh</entry>
+            <entry>kk or kk-KZ</entry>
+          </row>
+          <row>
+            <entry>Korean</entry>
+            <entry>ko or ko-KR</entry>
           </row>
           <row>
             <entry>Latvian</entry>
@@ -191,6 +203,10 @@
           <row>
             <entry>Ukrainian</entry>
             <entry>uk or uk-UA</entry>
+          </row>
+          <row>
+            <entry>Urdu</entry>
+            <entry>ur or ur-PK</entry>
           </row>
         </tbody>
       </tgroup>

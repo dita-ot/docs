@@ -29,7 +29,7 @@
             <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter
                 <parmname>DRAFT</parmname> in most XSLT modules.<note type="tip">For PDF output, setting the
                   <parmname>args.draft</parmname> parameter to <option>yes</option> causes the contents of the
-                &lt;titlealts> element to be rendered below the title.</note>
+                  <xmlelement>titlealts</xmlelement> element to be rendered below the title.</note>
             </pd>
           </plentry>
           <plentry id="args.figurelink.style">
@@ -181,8 +181,8 @@
             <pd conaction="pushafter">
               <note type="warning" platform="windows">Microsoft HTML Help Compiler cannot produce HTML Help for
                 documentation projects that use outer content. The content files must reside in or below the directory
-                containing the master DITA map file, and the map file cannot specify ".." at the start of the @href
-                attributes for &lt;topicref> elements.</note>
+                containing the master DITA map file, and the map file cannot specify ".." at the start of the
+                  <xmlatt>href</xmlatt> attributes for <xmlelement>topicref</xmlelement> elements.</note>
             </pd>
           </plentry>
           <plentry id="output.dir">
@@ -303,7 +303,7 @@
             <pd conaction="pushafter">
               <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>FTR</parmname>.</ph>
               <note>The footer file should be specified using an absolute path and must contain valid XML. A common
-                practice is to place all content into a &lt;div> element.</note>
+                practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
             </pd>
           </plentry>
           <plentry id="args.gen.default.meta">
@@ -332,7 +332,7 @@
             <pd conaction="pushafter">
               <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>HDR</parmname>.</ph>
               <note>The header file should be specified using an absolute path and must contain valid XML. A common
-                practice is to place all content into a &lt;div> element.</note>
+                practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
             </pd>
           </plentry>
           <plentry id="args.hide.parent.link" importance="deprecated">
@@ -349,9 +349,9 @@
           <!--<plentry id="args.indexshow">
             <pt><parmname>args.indexshow</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.indexshow.desc"/>
-            <pd conaction="pushafter">Specifies whether the content of &lt;indexterm> elements are rendered in the
-              output. The allowed values are <option>yes</option> and <option>no</option>; the default value is
-                <option>no</option>.</pd>
+            <pd conaction="pushafter">Specifies whether the content of <xmlelement>indexterm</xmlelement> elements are
+              rendered in the output. The allowed values are <option>yes</option> and <option>no</option>; the default
+              value is <option>no</option>.</pd>
           </plentry>-->
           <plentry id="args.outext">
             <pt>
@@ -367,12 +367,13 @@
               <parmname>args.xhtml.classattr</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.xhtml.classattr.desc"/>
-            <pd conaction="pushafter">For example, the &lt;prereq> element (which is specialized from section) would
-              generate <codeph>class="section prereq</codeph>. The allowed values are <option>yes</option> and
-                <option>no</option>; the default value is <option>yes</option>. <ph audience="xslt-customizer"
-                >Corresponds to the XSLT parameter <parmname>PRESERVE-DITA-CLASS</parmname>.</ph><note>Beginning with
-                DITA OT release 1.5.2, the default value is <option>yes</option>. For release 1.5 and 1.5.1, the default
-                value was <option>no</option>. </note></pd>
+            <pd conaction="pushafter">For example, the <xmlelement>prereq</xmlelement> element (which is specialized
+              from <xmlelement>section</xmlelement>) would generate <codeph>class="section prereq</codeph>. The allowed
+              values are <option>yes</option> and <option>no</option>; the default value is <option>yes</option>. <ph
+                audience="xslt-customizer">Corresponds to the XSLT parameter
+                <parmname>PRESERVE-DITA-CLASS</parmname>.</ph><note>Beginning with DITA OT release 1.5.2, the default
+                value is <option>yes</option>. For release 1.5 and 1.5.1, the default value was <option>no</option>.
+              </note></pd>
           </plentry>
           <plentry id="args.xsl">
             <pt>
@@ -469,16 +470,17 @@
               <parmname>args.eclipse.symbolic.name</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-eclipsehelp.dita#eclipsehelp/args.eclipse.symbolic.name.desc"/>
-            <pd conaction="pushafter"
-              ><!-- Specifies the symbolic name (aka plugin ID) in the output for an Eclipse Help project. -->The @id
-              value from the DITA map or the Eclipse map collection (Eclipse help specialization) is the symbolic name
-              for the plugin in Eclipse. The default value is <option>org.sample.help.doc</option>.<note type="tip">The
-                toolkit ignores the value of this parameter when it processes an Eclipse map.</note><draft-comment
-                author="Kristen James Eberlein" time="11 August 2012">I'm not clear what this means. Is the default
-                value for the <parmname>args.eclipse.symbolic.name</parmname> parameter the value of the @id attribute
-                on the &lt;map> or &lt;plugin> element, if provided, and the <option>org.sample.help.doc</option> if
-                there is not a value for the @id attribute or the <parmname>args.eclipse.symbolic.name</parmname>
-                parameter? </draft-comment></pd>
+            <pd conaction="pushafter">
+              <!-- Specifies the symbolic name (aka plugin ID) in the output for an Eclipse Help project. -->The
+                <xmlatt>id</xmlatt> value from the DITA map or the Eclipse map collection (Eclipse help specialization)
+              is the symbolic name for the plugin in Eclipse. The default value is
+                <option>org.sample.help.doc</option>.<note type="tip">The toolkit ignores the value of this parameter
+                when it processes an Eclipse map.</note><draft-comment author="Kristen James Eberlein"
+                time="11 August 2012">I'm not clear what this means. Is the default value for the
+                  <parmname>args.eclipse.symbolic.name</parmname> parameter the value of the <xmlatt>id</xmlatt>
+                attribute on the <xmlelement>map</xmlelement> or <xmlelement>plugin</xmlelement> element, if provided,
+                and the <option>org.sample.help.doc</option> if there is not a value for the <xmlatt>id</xmlatt>
+                attribute or the <parmname>args.eclipse.symbolic.name</parmname> parameter?</draft-comment></pd>
           </plentry>
         </parml>
       </section>

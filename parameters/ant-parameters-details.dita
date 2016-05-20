@@ -318,12 +318,17 @@
             <pt/>
             <pd/>
           </plentry>
-          <!--<plentry id="args.hdf">
+          <plentry id="args.hdf">
             <pt><parmname>args.hdf</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.hdf.desc"/>
-            <pd conaction="pushafter">Specifies an XML file that contains content to be placed in the document
-              head.</pd>
-          </plentry>-->
+            <pd conaction="pushafter">
+              <p>The contents of the header file will be inserted in the <xmlelement>head</xmlelement> element of the
+                generated HTML files.</p>
+              <note type="tip">The header file should be specified using an absolute path and must contain valid XML. If
+                you need to insert more than one element into the HTML page head, wrap the content in a
+                  <xmlelement>div</xmlelement> element. The division wrapper in the header file will be discarded when
+                generating HTML files, and the contents will be inserted into each page head.</note></pd>
+          </plentry>
           <plentry id="args.hdr">
             <pt>
               <parmname>args.hdr</parmname>

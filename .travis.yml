@@ -4,7 +4,7 @@ jdk:
 - oraclejdk7
 env:
   global:
-  - DITA_OT_VERSION=2.2.4
+  - DITA_OT_VERSION=2.2.5
 install:
 - ".travis/install.sh"
 script:

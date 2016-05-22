@@ -5,10 +5,9 @@
 <reference id="plugin-extension-points-xslt-import">
   <title>XSLT-import extension points</title>
   <shortdesc>You can use these extension points to override XSLT processing steps in pre-processing and certain
-    transformation types. The value of the <xmlelement>file</xmlelement> attribute in the
-      <xmlelement>feature</xmlelement> element specifies a relative path to an XSL file in the current plug-in. The
-    plug-in installer adds a XSL import statement to the default DITA-OT code, so that the XSL override becomes part of
-    the normal build.</shortdesc>
+    transformation types. The value of the <xmlatt>file</xmlatt> attribute in the <xmlelement>feature</xmlelement>
+    element specifies a relative path to an XSL file in the current plug-in. The plug-in installer adds a XSL import
+    statement to the default DITA-OT code, so that the XSL override becomes part of the normal build.</shortdesc>
   <refbody>
     <section>
       <title>Pre-processing</title>

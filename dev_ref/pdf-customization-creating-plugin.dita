@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<task id="creating-pdf-customization-plugin">
+  <title>Creating a custom PDF plug-in</title>
+  <shortdesc>This topic provides an outline of the primary tasks that are involved in creating a PDF customization
+    plug-in.</shortdesc>
+  <taskbody>
+    <steps>
+      <step>
+        <cmd>Create a basic DITA-OT plug-in.</cmd>
+        <info>
+          <p>This requires the following files:</p>
+          <ul>
+            <li><filepath>plugin.xml</filepath></li>
+            <li>Ant build script (some people name this <filepath>build.xml</filepath>; others name this<filepath>
+                integrator.xml</filepath>.)<draft-comment author="Kristen Eberlein" time="15 February 2016">
+                <p>I always create a template file. What should we be telling people to do?</p>
+              </draft-comment></li>
+          </ul>
+        </info>
+      </step>
+    </steps>
+    <example/>
+  </taskbody>
+</task>

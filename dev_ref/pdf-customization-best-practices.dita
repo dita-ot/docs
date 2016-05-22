@@ -10,11 +10,16 @@
   <conbody>
     <ul>
       <li>Use a properly-constructed DITA-OT plug-in.</li>
-      <li>Never modify any of the core DITA-OT code.<note type="tip">Set the permissions on the
-            <filepath>org.dita.pdf2</filepath> directory to read-only, to ensure that you do not accidentally modify the
-          files within as you develop your customized plug-in.</note></li>
+      <li>Never modify any of the core DITA-OT code.<note type="tip">You may want to set the permissions on the
+            <filepath>org.dita.pdf2</filepath> directory to “read-only” to ensure that you do not accidentally modify
+          the files within as you develop your customized plug-in.</note></li>
       <li>Never copy entire DITA-OT files into your customization plug-in. Instead, copy only the attribute sets and
         templates that you need to override.</li>
+      <li>If you only need to change a few attribute sets and templates, you may prefer to store your overrides in
+          <filepath>custom.xsl</filepath> files, or a simple folder hierarchy within your custom plug-in.</li>
+      <li>In cases that require substantial customizations, you may prefer to organize the files in a folder structure
+        that mimics the hierarchy of the default PDF plug-in. This method facilitates comparisons with the default
+        settings in the base PDF plug-in and makes it easier to migrate customizations to new toolkit versions.</li>
       <li>Maintain a change log and comment your changes.</li>
       <li>Upgrade your customization plug-in to new versions of the DITA-OT regularly. Do not wait through several major
         releases before upgrading.</li>

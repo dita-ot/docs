@@ -64,13 +64,13 @@
         Portuguese). If necessary, locale-specific customizations can be provided by adding a region designator to the
         file name (for example, <filepath>pt_BR.xml</filepath> for Brazilian Portuguese).</p>
       <p>The index files consist of <xmlelement>index.group</xmlelement> elements which contain sorting information on
-        one or more characters. Index groups are listed in sort order (“specials“ before numbers, numbers before the
+        one or more characters. Index groups are listed in sort order (“specials” before numbers, numbers before the
         letter ‘A‘, etc), and the <xmlelement>char.set</xmlelement> entries they contain are also listed in sort order
         (uppercase before lowercase).</p>
       <p>The best way to start editing a custom index file is by making a copy of the original from
           <filepath>org.dita.pdf2/cfg/common/index</filepath> and making changes as desired.</p>
       <p>In order to apply a custom index definition to your publishing outputs, edit <filepath>catalog.xml</filepath>
-        and uncomment the appropriate entry in the “Index configuration override entries“ section.</p>
+        and uncomment the appropriate entry in the “Index configuration override entries” section.</p>
     </section>
 
     <section id="variable_overrides_the_common_vars_folder">
@@ -118,7 +118,7 @@
       <p>The best way to start editing a custom configuration is by making a copy of the original from
           <filepath>org.dita.pdf2/cfg/fo/i18n</filepath> and making changes as desired.</p>
       <p>In order to apply a custom configuration to your publishing outputs, edit <filepath>catalog.xml</filepath> and
-        uncomment the appropriate entry in the “I18N configuration override entries“ section.</p>
+        uncomment the appropriate entry in the “I18N configuration override entries” section.</p>
     </section>
 
     <section id="custom_stylesheets_the_fo_xsl_folder">

@@ -15,7 +15,7 @@
       <p>When first experimenting with PDF customization, novice users are often tempted to simply edit the default
           <filepath>org.dita.pdf2</filepath> files in place to see what happens.</p>
       <p>As practical as this approach may seem, the DITA-OT project does not recommend changing any of the files in the
-          <codeph>plugins</codeph> folder.</p>
+          default plug-ins.</p>
       <p>While this method yields quick results and can help users to determine which files and templates control
         various aspects of PDF output, it quickly leads to problems, as any errors may prevent the toolkit from
         generating PDF output.</p>

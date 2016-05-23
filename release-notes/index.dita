@@ -93,7 +93,7 @@ platform. An HTMLHelp version of the user guide can still be built using the dow
 package. <xref href="https://github.com/dita-ot/dita-ot/issues/2130" scope="external" format="html"
 >#2130</xref>
 </li>
-          <li id="2144">Add support for configuring SAX pipes in Ant &lt;pipeline> tasks. This
+          <li id="2144">Add support for configuring SAX pipes in Ant <xmlelement>pipeline</xmlelement> tasks. This
 allows new tasks to take advantage of in-memory processing without the need to write out to disk.
 <xref href="https://github.com/dita-ot/dita-ot/issues/2144" scope="external" format="html"
 >#2144</xref>
@@ -110,9 +110,9 @@ new extension points <codeph>dita.conductor.html5.param</codeph> and
 HTML5 processing. <xref href="https://github.com/dita-ot/dita-ot/issues/2185" scope="external"
 format="html">#2185</xref>
 </li>
-          <li id="2210">Processing for @copy-to has been moved out of the <codeph>gen-list</codeph>
-preprocessing module and into a separate step. This improves processing for &lt;topicref> elements
-that use @copy-to and @keyref. <xref href="https://github.com/dita-ot/dita-ot/issues/2210"
+          <li id="2210">Processing for <xmlatt>copy-to</xmlatt> has been moved out of the <codeph>gen-list</codeph>
+preprocessing module and into a separate step. This improves processing for <xmlelement>topicref</xmlelement> elements
+that use <xmlatt>copy-to</xmlatt> and <xmlatt>keyref</xmlatt>. <xref href="https://github.com/dita-ot/dita-ot/issues/2210"
 scope="external" format="html">#2210</xref>
 </li>
           <li id="2230">The DITA-OT preprocessing step that reads images for information about
@@ -120,9 +120,9 @@ height and width now supports reading dimension metadata from SVG images.<xref
 href="https://github.com/dita-ot/dita-ot/issues/2230" scope="external" format="html">#2230</xref>
 </li>
           <li id="2317">The <option>PDF</option> transformation type has been updated to support the
-@expanse value "page" for elements that use the attribute. In addition, the &lt;msgblock> element
-has been updated to support @frame and @scale, which generally appear on the same elements that use
-@expanse. <xref href="https://github.com/dita-ot/dita-ot/issues/2317" scope="external" format="html"
+<xmlatt>expanse</xmlatt> value "page" for elements that use the attribute. In addition, the <xmlelement>msgblock</xmlelement> element
+has been updated to support <xmlatt>frame</xmlatt> and <xmlatt>scale</xmlatt>, which generally appear on the same elements that use
+<xmlatt>expanse</xmlatt>. <xref href="https://github.com/dita-ot/dita-ot/issues/2317" scope="external" format="html"
 >#2317</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/2352" scope="external"
 format="html">#2352</xref>
 </li>
@@ -141,7 +141,7 @@ plugin. Now that all useful information is available in the documentation, the
 href="https://github.com/dita-ot/dita-ot/issues/1860" scope="external" format="html">#1860</xref>
 </li>
           <li id="1924">PDF: In earlier versions of DITA-OT, filtering out all rows from a
-&lt;simpletable> element resulted in invalid XSL-FO. When all rows are filtered out, the XSL-FO file
+<xmlelement>simpletable</xmlelement> element resulted in invalid XSL-FO. When all rows are filtered out, the XSL-FO file
 will now contain an empty (but valid) table so that processing can continue. <xref
 href="https://github.com/dita-ot/dita-ot/issues/1924" scope="external" format="html">#1924</xref>,
 <xref href="https://github.com/dita-ot/dita-ot/issues/1950" scope="external" format="html"
@@ -162,7 +162,7 @@ headless mode. This improves use of system resources during a build.<xref
 href="https://github.com/dita-ot/dita-ot/issues/2140" scope="external" format="html">#2140</xref>
 </li>
           <li id="2160">HTML: Static text for XHTML tables and figures (such as "Table 5") is now
-surrounded with a &lt;span> element, making it easier to style or hide the static text using CSS. In
+surrounded with a <xmlelement>span</xmlelement> element, making it easier to style or hide the static text using CSS. In
 addition, HTML5 output is updated to use semantic elements for figure and table captions. <xref
 href="https://github.com/dita-ot/dita-ot/issues/2160" scope="external" format="html">#2160</xref>
 </li>
@@ -192,16 +192,16 @@ have been switched so that <codeph>chunk</codeph> comes first. This ensures that
 properly pulled or pushed into the chunked version of DITA topics.  <xref
 href="https://github.com/dita-ot/dita-ot/issues/2207" scope="external" format="html">#2207</xref>
 </li>
-          <li id="2217">HTML: The process for handling @othertype on a &lt;note> element in HTML has
+          <li id="2217">HTML: The process for handling <xmlatt>othertype</xmlatt> on a <xmlelement>note</xmlelement> element in HTML has
 been updated to use XSLT 2.0 best practices.  <xref
 href="https://github.com/dita-ot/dita-ot/issues/2217" scope="external" format="html">#2217</xref>
 </li>
           <li id="2218">HTML5: Refactor Sass &amp; lint partials
             <xref href="https://github.com/dita-ot/dita-ot/issues/2218" scope="external" format="html">#2218</xref>
           </li>
-          <li id="2229">PDF: Earlier versions used an &lt;fo:inline> element as a link target within
+          <li id="2229">PDF: Earlier versions used an <xmlelement>fo:inline</xmlelement> element as a link target within
 topic titles, which can result in extra white space for certain common customizations. The process
-now places an ID on &lt;fo:wrapper>, which removes the extra element and extra white space. <xref
+now places an ID on <xmlelement>fo:wrapper</xmlelement>, which removes the extra element and extra white space. <xref
 href="https://github.com/dita-ot/dita-ot/issues/2229" scope="external" format="html">#2229</xref>
 </li>
           <li id="2231">XSLT processing now uses a single parameter for message IDs rather than
@@ -296,10 +296,10 @@ letter from "A" to "Z". <!-- Supersedes unmerged PR 2149 -->
           <li id="2357">Use DITA-OT configuration value <codeph>default.language</codeph> as the
 default language in all output formats. The value ships as <codeph>en</codeph>, but can be changed
 in <filepath>configuration.properties</filepath> or specified as a parameter to the build. For HTML
-output, the default is now the closest specified language; if a document does not specify @xml:lang,
+output, the default is now the closest specified language; if a document does not specify <xmlatt>xml:lang</xmlatt>,
 <codeph>default.language</codeph> is used. For PDF output, the default is the closest specified
-language; if a document does not specify @xml:lang, the root map is used; if the root map does not
-specify @xml:lang, <codeph>default.language</codeph> is used. <xref
+language; if a document does not specify <xmlatt>xml:lang</xmlatt>, the root map is used; if the root map does not
+specify <xmlatt>xml:lang</xmlatt>, <codeph>default.language</codeph> is used. <xref
 href="https://github.com/dita-ot/dita-ot/issues/2357" scope="external" format="html">#2357</xref>
 </li>
         </ul>
@@ -310,23 +310,23 @@ href="https://github.com/dita-ot/dita-ot/issues/2357" scope="external" format="h
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <ul>
           <li id="1931">PDF: The message "No topicTitleNumber mode template" has been removed. This
-removes extraneous messages that appeared when processing bookmap with &lt;notices>or
-&lt;bookabstract>, or which refers to a Subject Scheme Map.<xref
+removes extraneous messages that appeared when processing bookmap with <xmlelement>notices</xmlelement>or
+<xmlelement>bookabstract</xmlelement>, or which refers to a Subject Scheme Map.<xref
 href="https://github.com/dita-ot/dita-ot/issues/1931" scope="external" format="html">#1931</xref>
 </li>
-          <li id="2065">HTML: trademark symbols previously only appeared for &lt;tm> elements in
+          <li id="2065">HTML: trademark symbols previously only appeared for <xmlelement>tm</xmlelement> elements in
 English and a select few languages. This was a legacy of processing carried over from beta
 processing before DITA-OT 1.0; HTML processing will now work the same regardless of document
 language. <xref href="https://github.com/dita-ot/dita-ot/issues/2065" scope="external" format="html"
 >#2065</xref>
 </li>
-          <li id="2141">Processing for &lt;coderef> elements could be broken when the &lt;coderef>
-was part of a larger section reused by conref. This is fixed by resolving &lt;coderef> when during
+          <li id="2141">Processing for <xmlelement>coderef</xmlelement> elements could be broken when the <xmlelement>coderef</xmlelement>
+was part of a larger section reused by conref. This is fixed by resolving <xmlelement>coderef</xmlelement> when during
 the <codeph>topic-fragment</codeph> step of preprocessing. <xref
 href="https://github.com/dita-ot/dita-ot/issues/2141" scope="external" format="html">#2141</xref>
 </li>
-          <li id="2161">The AXF document-info attribute @title is deprecated; XSL-FO output for
-Antenna House output should use the @document-title attribute instead. <xref
+          <li id="2161">The AXF document-info attribute <xmlatt>title</xmlatt> is deprecated; XSL-FO output for
+Antenna House output should use the <xmlatt>document-title</xmlatt> attribute instead. <xref
 href="https://github.com/dita-ot/dita-ot/issues/2161" scope="external" format="html">#2161</xref>,
 <xref href="https://github.com/dita-ot/dita-ot/pull/2162" scope="external" format="html"
 >#2162</xref>
@@ -346,7 +346,7 @@ scope="external" format="html">#2223</xref>
           <!--<li id="2203">Common string logic for org.dita.pdf2 fails to retrieve a string for "Task Result"
             <xref href="https://github.com/dita-ot/dita-ot/issues/2203" scope="external" format="html">#2203</xref>
           </li>-->
-          <li id="2227">Circular key definitions, when an element used @keyref to refer to a key on
+          <li id="2227">Circular key definitions, when an element used <xmlatt>keyref</xmlatt> to refer to a key on
 the same element, resulted in a stack overflow in KeydefReader. This construct will now result in
 message <msgnum>DOTJ069E</msgnum>. <xref href="https://github.com/dita-ot/dita-ot/issues/2227"
 scope="external" format="html">#2227</xref>
@@ -368,7 +368,7 @@ determining whether to rename output files. <xref
 href="https://github.com/dita-ot/dita-ot/issues/2304" scope="external" format="html">#2304</xref>
 </li>
           <!-- Listed above under Features per 2352 label -->
-          <!--<li id="2317">PDF: Values set for @expanse attribute are not used  
+          <!--<li id="2317">PDF: Values set for <xmlatt>expanse</xmlatt> attribute are not used  
             <xref href="https://github.com/dita-ot/dita-ot/issues/2317" scope="external" format="html">#2317</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2352" scope="external" format="html">#2352</xref>
           </li>-->

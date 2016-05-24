@@ -42,17 +42,7 @@
   </topicref>
   <mapref href="plug-ins.ditamap"/>
   <mapref href="pdf-customization.ditamap"/>
-  <topicref href="migration.dita" locktitle="yes">
-    <topicref href="migrating-to-2.2.dita" navtitle="To 2.2"/>
-    <topicref href="migrating-to-2.1.dita" navtitle="To 2.1"/>
-    <topicref href="migrating-to-2.0.dita" navtitle="To 2.0"/>
-    <topicref href="migrating-to-1.8.dita" navtitle="To 1.8"/>
-    <topicref href="migrating-to-1.7.dita" navtitle="To 1.7">
-      <topicref rev="1.7" href="flagging-migration.dita" navtitle="Flagging updates"/>
-    </topicref>
-    <topicref href="migrating-to-1.6.dita" navtitle="To 1.6"/>
-    <topicref href="migrating-to-1.5.4.dita" navtitle="To 1.5.4"/>
-  </topicref>
+  <mapref href="migration.ditamap"/>
 
   <!-- XXX: is this obsolete? 2 April 2013: Commented out; high priority to write new topic about topic merge-->
   <!--<topicref href="topicmerge.dita" navtitle="Topic merge"/>-->

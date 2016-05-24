@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<reference id="migrating-to-2.3">
+
+  <title>Migrating to release 2.3</title>
+
+  <shortdesc>In DITA-OT 2.3, <option>HTML5</option> table processing has been refactored to use HTML5 best practices and
+    improved CSS properties. In PDF output, table heads and key columns no longer include shading, and unused
+    localization variables have been deprecated. The template for generated error messages has been updated to use a
+    single <codeph>id</codeph> variable that contains the entire message ID.</shortdesc>
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 2.3 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="2.3-release-notes"/>.</note>
+    </section>
+    <section>
+      <title>HTML5</title>
+      <p>The <option>HTML5</option> table processing has been refactored to use valid HTML5 markup, HTML5 best
+        practices, and better CSS properties for styling.
+        <xref href="https://en.bem.info/methodology/" format="html" scope="external">BEM</xref>-style CSS classes are
+        now generated with the name of the containing element, the name of the attribute, and the value of the
+        attribute. </p>
+      <p>The common CSS files are now generated using additional
+        <xref keyref="sass-lang"/> partials to better support extensions with CSS frameworks, custom plug-ins and future
+        toolkit versions.</p>
+    </section>
+    <section>
+      <title>HTML-based formats</title>
+      <p>The XSLT <codeph>tm-area</codeph> named template used to toggle rendering of trademark symbols in US English
+        and Asian languages (Japanese, Korean, and both Chinese) but ignore them in all other languages has been
+        deprecated. Trademark symbols are now rendered uniformly for all languages and the templat will be removed in an
+        upcoming release. </p>
+    </section>
+    <section>
+      <title>PDF</title>
+      <p>The <codeph>antiquewhite</codeph> background color has been removed from table heads and key column contents in
+          <xmlelement>simpletable</xmlelement> and <xmlelement>properties</xmlelement> tables to synchronize
+        presentation with <xmlelement>choicetable</xmlelement> and provide a more uniform customization baseline between
+        PDF output and HTML-based formats.</p>
+      <p>Localization variables that are no longer used in PDF processing have been deprecated and will be removed in an
+        upcoming release. PDF customization plug-ins that make use of these variables should plan to refactor
+        accordingly:
+        <ul>
+          <li><codeph>&lt;variable id="Back button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Contents button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Forward button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Index button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Index multiple entries separator">, &lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Main page button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Next page button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Online help prefix">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Online Help Search Method And">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Online Help Search Method Field">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Online Help Search Method Or">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Previous page button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search Case Sensitive Switch">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search Excluded Stop Words Message">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search Highlight Switch">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search index button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search index field title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search index next button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search Search Give No Results Message">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search Search in Progress Message">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search Stopped Message">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search text button title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search text field title">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search title">Search title&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Search Whole Words Switch">&lt;/variable></codeph></li>
+          <li><codeph>&lt;variable id="Untitled section">Untitled section.&lt;/variable></codeph></li>
+        </ul>
+      </p>
+      <note>Not all of these variables were previously supported (or localized) in each language.</note>
+    </section>
+    <section>
+      <title>Deprecated properties and targets</title>
+      <p>The following Ant properties have been deprecated:
+        <ul>
+          <li><parmname>conreffile</parmname></li>
+        </ul>
+      </p>
+      <p>The following preprocessing targets have been deprecated:
+        <ul>
+          <li><parmname>conref-check</parmname></li>
+          <li><parmname>coderef</parmname></li>
+        </ul>
+      </p>
+    </section>
+    <section>
+      <title>Generating error messages</title>
+      <p>Previously, the XSLT <codeph>output-message</codeph> named template for generating error messages combined a
+        global variable and two parameters to determine the actual message ID. This function has been updated to use a
+        single <codeph>id</codeph> variable that contains the entire message ID.</p>
+      <p>Plug-ins that make use of the <codeph>output-message</codeph> function should be updated to use the single
+          <codeph>id</codeph> variable, as
+        in:<codeblock>&lt;xsl:call-template name="output-message">
+  &lt;xsl:with-param name="id" select="'FULLMESSAGENUMBER'"/>
+  &lt;xsl:with-param name="msgparams">optional-message-parameters&lt;/xsl:with-param>
+&lt;/xsl:call-template></codeblock>
+      </p>
+    </section>
+  </refbody>
+</reference>

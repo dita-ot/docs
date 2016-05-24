@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<concept id="best-practices-pdf-customization-plugins">
+  <title>Best practices for custom PDF plug-ins</title>
+  <shortdesc>Adhering to certain development practices will properly isolate your code from that of the DITA Open
+    Toolkit. This will make it easier to you to upgrade to new versions of the DITA-OT when they are
+    released.</shortdesc>
+  <conbody>
+    <ul>
+      <li>Use a properly-constructed DITA-OT plug-in.</li>
+      <li>Use a version control system to store your code.</li>
+      <li>Never modify any of the core DITA-OT code.<note type="tip">You may want to set the permissions on the
+            <filepath>org.dita.pdf2</filepath> directory to “read-only” to ensure that you do not accidentally modify
+          the files within as you develop your customized plug-in.</note></li>
+      <li>Avoid copying entire DITA-OT files into your customization plug-in. When you only copy the attribute sets and
+        templates that you need to override, there is less risk of impact from new features or fixes in the base code,
+        making your code more stable and easier to upgrade between releases.</li>
+      <li>If you only need to change a few attribute sets and templates, you may prefer to store your overrides in
+          <filepath>custom.xsl</filepath> files, or a simple folder hierarchy within your custom plug-in.</li>
+      <li>In cases that require substantial customizations, you may prefer to organize the files in a folder structure
+        that mimics the hierarchy of the default PDF plug-in. This method facilitates comparisons with the default
+        settings in the base PDF plug-in and makes it easier to migrate customizations to new toolkit versions.</li>
+      <li>Upgrade your customization plug-in to new versions of the DITA-OT regularly. Do not wait through several major
+        releases before upgrading.</li>
+    </ul>
+  </conbody>
+</concept>

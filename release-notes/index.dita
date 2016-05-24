@@ -205,7 +205,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2233" scope="external" format="html">#2233</xref>
           </li>
           <li id="2239">HTML5: table processing has been refactored to use valid HTML5 markup, HTML5 best practices, and
-            better use of CSS properties for styling.
+            better CSS properties for styling.
+            <xref href="https://en.bem.info/methodology/" format="html" scope="external">BEM</xref>-style CSS classes
+            are now generated with the name of the containing element, the name of the attribute, and the value of the
+            attribute.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2239" scope="external" format="html">#2239</xref>
           </li>
           <li id="2241">Run dist integration and docs build in forked JVM

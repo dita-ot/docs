@@ -59,9 +59,10 @@
       <p>This is an excellent, long-needed resource that was developed for DITA-OT 1.8.</p>
       <note type="important">
         <cite>DITA for Print</cite> recommends copying entire files from the PDF2 plug-in to your custom plug-in. The
-        DITA-OT project does not recommend this practice. Instead, be sure to copy only the specific templates that you
-        want to override. Following this practice will more cleanly isolate your customizations from the DITA-OT code,
-        which will make it easier for you to update your plug-ins to work with future versions of the DITA-OT.</note>
+        DITA-OT project does not recommend this practice. Instead, we suggest you copy only the specific attribute sets
+        and templates that you want to override. Following this practice will more cleanly isolate your customizations
+        from the DITA-OT code, which will make it easier for you to update your plug-ins to work with future versions of
+        the DITA-OT.</note>
     </section>
 
     <section>

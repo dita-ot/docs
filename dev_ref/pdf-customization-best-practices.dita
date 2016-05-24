@@ -14,8 +14,9 @@
       <li>Never modify any of the core DITA-OT code.<note type="tip">You may want to set the permissions on the
             <filepath>org.dita.pdf2</filepath> directory to “read-only” to ensure that you do not accidentally modify
           the files within as you develop your customized plug-in.</note></li>
-      <li>Never copy entire DITA-OT files into your customization plug-in. Instead, copy only the attribute sets and
-        templates that you need to override.</li>
+      <li>Avoid copying entire DITA-OT files into your customization plug-in. When you only copy the attribute sets and
+        templates that you need to override, there is less risk of impact from new features or fixes in the base code,
+        making your code more stable and easier to upgrade between releases.</li>
       <li>If you only need to change a few attribute sets and templates, you may prefer to store your overrides in
           <filepath>custom.xsl</filepath> files, or a simple folder hierarchy within your custom plug-in.</li>
       <li>In cases that require substantial customizations, you may prefer to organize the files in a folder structure

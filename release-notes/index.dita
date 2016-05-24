@@ -28,21 +28,38 @@
     <title>Release Highlights</title>
     <refbody>
       <section>
-        <title/>
-        <draft-comment author="Roger" time="2016-05-20">Move issue hightlights from the sections below.</draft-comment>
-        <p/>
-        <!--<p>For details on these and all other enhancements, see the sections below.</p>-->
+        <title>Single .zip distribution package</title>
+        <p id="2269">DITA Open Toolkit now ships as a single distribution package in a <filepath>.zip</filepath>
+          archive, as modern versions of Linux and OS X no longer have the file permission issues that originally
+          required the additional <filepath>.tar.gz</filepath> distribution package.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/2269" scope="external" format="html">#2269</xref>
+        </p>
+      </section>
+      <section>
+        <title>Enhanced HTML5 output</title>
+        <p id="2239">The <option>HTML5</option> table processing has been refactored to use valid HTML5 markup, HTML5
+          best practices, and better CSS properties for styling.
+          <xref href="https://en.bem.info/methodology/" format="html" scope="external">BEM</xref>-style CSS classes are
+          now generated with the name of the containing element, the name of the attribute, and the value of the
+          attribute.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/2239" scope="external" format="html">#2239</xref>
+        </p>
+        <p id="2195-2196">The common CSS files are now generated using additional
+          <xref keyref="sass-lang"/> partials for DITA domains to better support extensions with CSS frameworks, custom
+          plug-ins and future toolkit versions.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/2195" scope="external" format="html">#2195</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/2196" scope="external" format="html">#2196</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/2218" scope="external" format="html">#2218</xref>
+        </p>
       </section>
       <section>
         <title>New language support</title>
         <p id="2137">The <option>PDF</option> transformation has been extended to support additional languages with
           localized strings files and index collation.
           <xref href="https://github.com/dita-ot/dita-ot/issues/2137" scope="external" format="html">#2137</xref>,
-          <xref href="https://github.com/dita-ot/dita-ot/issues/2150" scope="external" format="html">#2150</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/2344" scope="external" format="html">#2344</xref>
           <ul>
             <li>Belarusian</li>
-            <li>Bosnian</li>
             <li>Bulgarian</li>
             <li>Chinese (traditional), with limited support for index sorting</li>
             <li>Estonian</li>
@@ -54,18 +71,43 @@
             <li>Lithuanian</li>
             <li>Macedonian</li>
             <li>Malay</li>
-            <li>Montenegrin</li>
             <li>Serbian (Cyrillic script)</li>
             <li>Serbian (Latin script)</li>
             <li>Thai</li>
             <li>Ukrainian</li>
             <li>Urdu</li>
-            <li>Vietnamese (also new HTML support)</li>
           </ul>
         </p>
         <p><option>PDF</option>, <option>HTML</option>, and <option>XHTML</option> transformation types have been
-          updated to support Vietnamese, including localized string files and (for <option>PDF</option>) index
-          collation.</p>
+          updated to support Bosnian, Montenegrin, and Vietnamese, including localized string files and (for
+            <option>PDF</option>) index collation.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/2150" scope="external" format="html">#2150</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2360" scope="external" format="html">#2360</xref>
+        </p>
+      </section>
+      <section>
+        <title>Internationalization improvements</title>
+        <p>Along with the new languages supported by the <option>PDF</option> and <option>HTML</option> transformations,
+          DITA Open Toolkit Release <keyword keyref="release"/> provides additional internationalization improvements,
+          including:
+          <ul>
+            <li id="2343">PDF: The Dutch variable file now includes translations for Glossary, List of tables, and List
+              of figures. In addition, German, Italian, French, and Spanish have been updated to define a missing
+              variable that previously resulted in a build error ("Table of Contents Notices").
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2343" scope="external" format="html">#2343</xref>
+            </li>
+            <li id="2357">Use DITA-OT configuration value <codeph>default.language</codeph> as the default language in
+              all output formats. The value ships as <codeph>en</codeph>, but can be changed in
+                <filepath>configuration.properties</filepath> or specified as a parameter to the build. For HTML output,
+              the default is now the closest specified language; if a document does not specify
+                <xmlatt>xml:lang</xmlatt>, <codeph>default.language</codeph> is used. For PDF output, the default is the
+              closest specified language; if a document does not specify <xmlatt>xml:lang</xmlatt>, the root map is
+              used; if the root map does not specify <xmlatt>xml:lang</xmlatt>, <codeph>default.language</codeph> is
+              used.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2357" scope="external" format="html">#2357</xref>
+            </li>
+          </ul>
+        </p>
       </section>
     </refbody>
   </reference>
@@ -171,12 +213,14 @@
             implement this extension.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2181" scope="external" format="html">#2181</xref>
           </li>
+          <!--
           <li id="2195">Add Sass partial for XML mention domain
             <xref href="https://github.com/dita-ot/dita-ot/issues/2195" scope="external" format="html">#2195</xref>
           </li>
           <li id="2196">Add SASS shell files for DITA domains
             <xref href="https://github.com/dita-ot/dita-ot/issues/2196" scope="external" format="html">#2196</xref>
           </li>
+          -->
           <li id="2207">The order of <codeph>chunk</codeph> and <codeph>move-meta-entries</codeph> have been switched so
             that <codeph>chunk</codeph> comes first. This ensures that metadata is properly pulled or pushed into the
             chunked version of DITA topics.
@@ -186,9 +230,11 @@
             element in HTML has been updated to use XSLT 2.0 best practices.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2217" scope="external" format="html">#2217</xref>
           </li>
+          <!--
           <li id="2218">HTML5: Refactor Sass &amp; lint partials
             <xref href="https://github.com/dita-ot/dita-ot/issues/2218" scope="external" format="html">#2218</xref>
           </li>
+          -->
           <li id="2229">PDF: Earlier versions used an <xmlelement>fo:inline</xmlelement> element as a link target within
             topic titles, which can result in extra white space for certain common customizations. The process now
             places an ID on <xmlelement>fo:wrapper</xmlelement>, which removes the extra element and extra white space.
@@ -203,13 +249,6 @@
           <li id="2233">Common XSLT utility templates have been rewritten as functions. In addition, XSpec tests have
             been created so that the functions are now covered by automated DITA-OT testing.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2233" scope="external" format="html">#2233</xref>
-          </li>
-          <li id="2239">HTML5: table processing has been refactored to use valid HTML5 markup, HTML5 best practices, and
-            better CSS properties for styling.
-            <xref href="https://en.bem.info/methodology/" format="html" scope="external">BEM</xref>-style CSS classes
-            are now generated with the name of the containing element, the name of the attribute, and the value of the
-            attribute.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2239" scope="external" format="html">#2239</xref>
           </li>
           <li id="2241">Run dist integration and docs build in forked JVM
             <xref href="https://github.com/dita-ot/dita-ot/issues/2241" scope="external" format="html">#2241</xref>
@@ -229,11 +268,13 @@
             fully automated process.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2268" scope="external" format="html">#2268</xref>
           </li>
+          <!--
           <li id="2269">Remove <filepath>.tar.gz</filepath> distribution package; the package is identical to the
               <filepath>.zip</filepath> version, and modern versions of Linux/OS X do not have the file permission
             issues that originally resulted in the extra package.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2269" scope="external" format="html">#2269</xref>
           </li>
+          -->
           <li id="2276">HTML: Use stable ID generation in HTML5, instead of relying on the
               <codeph>generate-id()</codeph> function. By removing reliance on a dynamic value, this change enables
             automated testing of @id and @headers (generated for table accessibility). This also speeds up regression
@@ -267,24 +308,11 @@
             any new or required Java libraries.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2341" scope="external" format="html">#2341</xref>
           </li>
-          <li id="2343">PDF: The Dutch variable file now includes translations for Glossary, List of tables, and List of
-            figures. In addition, German, Italian, French, and Spanish have been updated to define a missing variable
-            that previously resulted in a build error ("Table of Contents Notices").
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2343" scope="external" format="html">#2343</xref>
-          </li>
-          <li id="2350">PDF: Index group headings now appear in the PDF bookmarks. The new bookmarks will always appear
-            in collapsed form under the Index heading. For example, a large index that covers every heading in English
-            will now have bookmarks for "Special characters", "Numerics", and every letter from "A" to "Z". <!-- Supersedes unmerged PR 2149 -->
+          <li id="2350">PDF: Index group headings now appear in the PDF bookmarks. The new bookmarks will always
+            appear in collapsed form under the Index heading. For example, a large index that covers every heading in
+            English will now have bookmarks for "Special characters", "Numerics", and every letter from "A" to "Z". 
+            <!-- Supersedes unmerged PR 2149 -->
             <xref href="https://github.com/dita-ot/dita-ot/issues/2350" scope="external" format="html">#2350</xref>
-          </li>
-          <li id="2357">Use DITA-OT configuration value <codeph>default.language</codeph> as the default language in all
-            output formats. The value ships as <codeph>en</codeph>, but can be changed in
-              <filepath>configuration.properties</filepath> or specified as a parameter to the build. For HTML output,
-            the default is now the closest specified language; if a document does not specify <xmlatt>xml:lang</xmlatt>,
-              <codeph>default.language</codeph> is used. For PDF output, the default is the closest specified language;
-            if a document does not specify <xmlatt>xml:lang</xmlatt>, the root map is used; if the root map does not
-            specify <xmlatt>xml:lang</xmlatt>, <codeph>default.language</codeph> is used.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2357" scope="external" format="html">#2357</xref>
           </li>
         </ul>
       </section>

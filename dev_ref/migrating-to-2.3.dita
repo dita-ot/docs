@@ -31,8 +31,8 @@
       <title>HTML-based formats</title>
       <p>The XSLT <codeph>tm-area</codeph> named template used to toggle rendering of trademark symbols in US English
         and Asian languages (Japanese, Korean, and both Chinese) but ignore them in all other languages has been
-        deprecated. Trademark symbols are now rendered uniformly for all languages and the templat will be removed in an
-        upcoming release. </p>
+        deprecated. Trademark symbols are now rendered uniformly for all languages and the template will be removed in
+        an upcoming release.</p>
     </section>
     <section>
       <title>PDF</title>
@@ -88,6 +88,12 @@
           <li><parmname>coderef</parmname></li>
         </ul>
       </p>
+    </section>
+    <section>
+      <title>Pre-processing</title>
+      <p id="2207">The order of the <codeph>chunk</codeph> and <codeph>move-meta-entries</codeph> pre-processing stages
+        has been switched so that <codeph>chunk</codeph> comes first. This ensures that metadata is properly pulled or
+        pushed into the chunked version of DITA topics. </p>
     </section>
     <section>
       <title>Generating error messages</title>

@@ -23,7 +23,7 @@
         <xref href="https://en.bem.info/methodology/" format="html" scope="external">BEM</xref>-style CSS classes are
         now generated with the name of the containing element, the name of the attribute, and the value of the
         attribute. </p>
-      <p>The common CSS files are now generated using additional
+      <p>Common CSS files are now generated using separate modules for each DITA domain, implemented as
         <xref keyref="sass-lang"/> partials to better support extensions with CSS frameworks, custom plug-ins and future
         toolkit versions.</p>
     </section>
@@ -33,6 +33,12 @@
         and Asian languages (Japanese, Korean, and both Chinese) but ignore them in all other languages has been
         deprecated. Trademark symbols are now rendered uniformly for all languages and the template will be removed in
         an upcoming release.</p>
+      <p id="2191">In previous releases, short descriptions in <xmlelement>abstract</xmlelement> elements were rendered
+        as division elements (<xmlelement>div</xmlelement>), rather than paragraphs (<xmlelement>p</xmlelement>).
+        Processing has been revised to ensure that short descriptions are consistently rendered as paragraphs,
+        regardless of whether they appear in <xmlelement>abstract</xmlelement> elements. Users who have previously
+        implemented custom CSS rules to style <codeph>div.shortdesc</codeph> like paragraphs should be able to remove
+        these rules.</p>
     </section>
     <section>
       <title>PDF</title>

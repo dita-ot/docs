@@ -106,7 +106,13 @@
               <xref href="https://github.com/dita-ot/dita-ot/issues/2280" scope="external" format="html">#2280</xref>,
               <xref href="https://github.com/dita-ot/dita-ot/issues/2296" scope="external" format="html">#2296</xref>
             </li>
-            <li id="2302">XHTML transtype problem (and solution): Content from RTL tables is aligned to the left
+            <li id="2302">HTML: Earlier releases of DITA-OT 2.x generated a <xmlatt>style</xmlatt> attribute with
+                <codeph>text-align:left</codeph> on table cells, regardless of whether the <xmlatt>align</xmlatt>
+              attribute was set in the source. This caused problems with right-to-left languages. The default entry
+              alignment has been removed, so the values of the <xmlatt>xml:lang</xmlatt> and <xmlatt>dir</xmlatt>
+              attributes on the root of the topic will be respected. (This allows the browser to infer the values for
+              the <codeph>text-align</codeph> and <codeph>vertical-align</codeph> properties from the parent
+              elements/styles.)
               <xref href="https://github.com/dita-ot/dita-ot/issues/2302" scope="external" format="html">#2302</xref>,
               <xref href="https://github.com/dita-ot/dita-ot/pull/2368" scope="external" format="html">#2368</xref>
             </li>
@@ -124,8 +130,10 @@
               closest specified language; if a document does not specify <xmlatt>xml:lang</xmlatt>, the root map is
               used; if the root map does not specify <xmlatt>xml:lang</xmlatt>, <codeph>default.language</codeph> is
               used.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/1476" scope="external" format="html">#1476</xref>, 
               <xref href="https://github.com/dita-ot/dita-ot/issues/2201" scope="external" format="html">#2201</xref>, 
-              <xref href="https://github.com/dita-ot/dita-ot/issues/2357" scope="external" format="html">#2357</xref>
+              <xref href="https://github.com/dita-ot/dita-ot/pull/2356" scope="external" format="html">#2356</xref>, 
+              <xref href="https://github.com/dita-ot/dita-ot/pull/2357" scope="external" format="html">#2357</xref>
             </li>
           </ul>
         </p>
@@ -147,7 +155,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/1116" scope="external" format="html">#1116</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2354" scope="external" format="html">#2354</xref>
           </li>
-          <li id="1777">DITA 1.3: Support @orient attribute on table
+          <li id="1777">DITA 1.3: Initial support has been added for the <xmlatt>orient</xmlatt> attribute on
+              <xmlelement>table</xmlelement> elements. These changes allow Antenna House Formatter to render tables in
+            landscape mode when the <xmlatt>orient</xmlatt> attribute is set to <option>land</option>. A future release
+            will provide extended support for multi-page landscape tables with additional rendering engines.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1777" scope="external" format="html">#1777</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2387" scope="external" format="html">#2387</xref>
           </li>
@@ -244,8 +255,11 @@
             implemented.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2181" scope="external" format="html">#2181</xref>
           </li>
-          <li id="2191">HTML: Short description in <xmlelement>abstract</xmlelement> rendered as 
-            <xmlelement>div</xmlelement> rather than <xmlelement>p</xmlelement>
+          <li id="2191">HTML: In previous releases, short descriptions in <xmlelement>abstract</xmlelement> elements
+            were rendered as division elements (<xmlelement>div</xmlelement>), rather than paragraphs
+              (<xmlelement>p</xmlelement>). Processing has been revised to ensure that short descriptions are
+            consistently rendered as paragraphs, regardless of whether they appear in <xmlelement>abstract</xmlelement>
+            elements.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2191" scope="external" format="html">#2191</xref>
           </li>
           <li id="2207">The order of the <codeph>chunk</codeph> and <codeph>move-meta-entries</codeph> pre-processing
@@ -327,7 +341,8 @@
             <xref href="https://github.com/dita-ot/dita-ot/pull/2382" scope="external" format="html">#2382</xref>, 
             <xref href="https://github.com/dita-ot/dita-ot/pull/2386" scope="external" format="html">#2386</xref>
           </li>
-          <li id="2383">Mark deprecated variables, tweak conref variable
+          <li id="2383">Localization variables that are no longer used in PDF processing have been deprecated and will
+            be removed in an upcoming release.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2383" scope="external" format="html">#2383</xref>
           </li>
         </ul>
@@ -337,9 +352,6 @@
         <title>Bugs</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <ul>
-          <li id="1476">TopicMerge sets unexpected @xml:lang attribute to topic
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1476" scope="external" format="html">#1476</xref>
-          </li>
           <li id="1931">PDF: The message "No topicTitleNumber mode template" has been removed. This removes extraneous
             messages that appeared when processing a bookmap with <xmlelement>notices</xmlelement> or
               <xmlelement>bookabstract</xmlelement>, or which refers to a subject scheme map.
@@ -395,20 +407,13 @@
             rename output files.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2304" scope="external" format="html">#2304</xref>
           </li>
-          <!-- Listed above under Features per 2352 label -->
-          <!--<li id="2317">PDF: Values set for <xmlatt>expanse</xmlatt> attribute are not used  
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2317" scope="external" format="html">#2317</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2352" scope="external" format="html">#2352</xref>
-          </li>-->
           <li id="2326">PDF code was cleaned up to remove a broken message that could not be triggered
             <xref href="https://github.com/dita-ot/dita-ot/issues/2326" format="html" scope="external">#2326</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2351" scope="external" format="html">#2351</xref>
           </li>
-          <!-- Listed above under Features per 1116 label -->
-          <!--<li id="2354">Remove obsolete parameter args.eclipsehelp.toc 
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2354" scope="external" format="html">#2354</xref>
-          </li>-->
-          <li id="2339"><xmlatt>keyscope</xmlatt> on the root <xmlelement>map</xmlelement> element causes builds to fail
+          <li id="2339">In previous releases, specifying a <xmlatt>keyscope</xmlatt> attribute on the root
+              <xmlelement>map</xmlelement> element would cause builds to fail. Processing has been modified to handle
+            this situation correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2339" scope="external" format="html">#2339</xref>
           </li>
         </ul>
@@ -435,25 +440,4 @@
       </section>
     </refbody>
   </reference>
-  <!--
-  <reference id="limitations">
-    <title>Limitations</title>
-    <refbody>
-      <section>
-        <draft-comment author="infotexture">Add info on any significant open issues, caveats or known limitations in
-          DITA markup support.</draft-comment>
-      </section>
-    </refbody>
-  </reference>
-  -->
-  <!--
-  <reference id="migration">
-    <title>Migration From Previous Releases</title>
-    <refbody>
-      <section>
-        <draft-comment author="jelovirt">TODO</draft-comment>
-      </section>
-    </refbody>
-  </reference>
-  -->
 </reference>

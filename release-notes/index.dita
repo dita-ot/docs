@@ -44,12 +44,13 @@
           attribute.
           <xref href="https://github.com/dita-ot/dita-ot/issues/2239" scope="external" format="html">#2239</xref>
         </p>
-        <p id="2195-2196">The common CSS files are now generated using additional
-          <xref keyref="sass-lang"/> partials for DITA domains to better support extensions with CSS frameworks, custom
-          plug-ins and future toolkit versions.
-          <xref href="https://github.com/dita-ot/dita-ot/issues/2195" scope="external" format="html">#2195</xref>,
-          <xref href="https://github.com/dita-ot/dita-ot/issues/2196" scope="external" format="html">#2196</xref>,
-          <xref href="https://github.com/dita-ot/dita-ot/issues/2218" scope="external" format="html">#2218</xref>
+        <p id="2195-2196">Common CSS files are now generated using separate modules for each DITA domain, implemented as
+          <xref keyref="sass-lang"/> partials to better support extensions with CSS frameworks, custom plug-ins and
+          future toolkit versions.
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2195" scope="external" format="html">#2195</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2196" scope="external" format="html">#2196</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2218" scope="external" format="html">#2218</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2369" scope="external" format="html">#2369</xref>
         </p>
       </section>
       <section>
@@ -95,6 +96,7 @@
               No additional support is added (for example, generated strings for new languages will appear using the
               DITA-OT default language), but otherwise content will use the proper direction by default. Arabic, Urdu,
               and Hebrew are already recognized by default; this change recognizes an additional 14 languages.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/1710" scope="external" format="html">#1710</xref>, 
               <xref href="https://github.com/dita-ot/dita-ot/issues/2267" scope="external" format="html">#2267</xref>
             </li>
             <li id="2279">PDF: Additional fallback fonts have been specified in the
@@ -104,9 +106,14 @@
               <xref href="https://github.com/dita-ot/dita-ot/issues/2280" scope="external" format="html">#2280</xref>,
               <xref href="https://github.com/dita-ot/dita-ot/issues/2296" scope="external" format="html">#2296</xref>
             </li>
+            <li id="2302">XHTML transtype problem (and solution): Content from RTL tables is aligned to the left
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2302" scope="external" format="html">#2302</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/pull/2368" scope="external" format="html">#2368</xref>
+            </li>
             <li id="2343">PDF: The Dutch variable file now includes translations for Glossary, List of tables, and List
-              of figures. In addition, German, Italian, French, and Spanish have been updated to define a missing
-              variable that previously resulted in a build error ("Table of Contents Notices").
+              of figures. In addition, German, Italian, French, and Spanish have been updated to define missing
+              variables, including one that previously resulted in a build error ("Table of Contents Notices").
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2131" scope="external" format="html">#2131</xref>, 
               <xref href="https://github.com/dita-ot/dita-ot/issues/2343" scope="external" format="html">#2343</xref>
             </li>
             <li id="2357">The DITA-OT configuration value <codeph>default.language</codeph> is now used as the default
@@ -117,6 +124,7 @@
               closest specified language; if a document does not specify <xmlatt>xml:lang</xmlatt>, the root map is
               used; if the root map does not specify <xmlatt>xml:lang</xmlatt>, <codeph>default.language</codeph> is
               used.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2201" scope="external" format="html">#2201</xref>, 
               <xref href="https://github.com/dita-ot/dita-ot/issues/2357" scope="external" format="html">#2357</xref>
             </li>
           </ul>
@@ -138,6 +146,10 @@
             properly for several releases after it was made obsolete in DITA-OT 1.3, has been removed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1116" scope="external" format="html">#1116</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2354" scope="external" format="html">#2354</xref>
+          </li>
+          <li id="1777">DITA 1.3: Support @orient attribute on table
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1777" scope="external" format="html">#1777</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2387" scope="external" format="html">#2387</xref>
           </li>
           <li id="2130">To permit automated building and testing on any platform, the HTMLHelp version of the
             documentation is no longer included in the distribution package. An HTMLHelp version of the documentation
@@ -178,7 +190,6 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2359" scope="external" format="html">#2359</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2364" scope="external" format="html">#2364</xref>
           </li>
-
         </ul>
       </section>
 
@@ -233,14 +244,10 @@
             implemented.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2181" scope="external" format="html">#2181</xref>
           </li>
-          <!--
-          <li id="2195">Add Sass partial for XML mention domain
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2195" scope="external" format="html">#2195</xref>
+          <li id="2191">HTML: Short description in <xmlelement>abstract</xmlelement> rendered as 
+            <xmlelement>div</xmlelement> rather than <xmlelement>p</xmlelement>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2191" scope="external" format="html">#2191</xref>
           </li>
-          <li id="2196">Add SASS shell files for DITA domains
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2196" scope="external" format="html">#2196</xref>
-          </li>
-          -->
           <li id="2207">The order of the <codeph>chunk</codeph> and <codeph>move-meta-entries</codeph> pre-processing
             stages has been switched so that <codeph>chunk</codeph> comes first. This ensures that metadata is properly
             pulled or pushed into the chunked version of DITA topics.
@@ -250,11 +257,6 @@
             element in HTML has been updated to use XSLT 2.0 best practices.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2217" scope="external" format="html">#2217</xref>
           </li>
-          <!--
-            <li id="2218">HTML5: Refactor Sass &amp; lint partials
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2218" scope="external" format="html">#2218</xref>
-          </li>
-          -->
           <li id="2229">PDF: Earlier versions used an <xmlelement>fo:inline</xmlelement> element as a link target within
             topic titles, which can result in extra white space for certain common customizations. The process now
             places an ID on <xmlelement>fo:wrapper</xmlelement>, which removes the extra element and extra white space.
@@ -281,13 +283,6 @@
           <li id="2268">The distribution package is now built via a fully automated Continuous Integration process.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2268" scope="external" format="html">#2268</xref>
           </li>
-          <!--
-          <li id="2269">Remove <filepath>.tar.gz</filepath> distribution package; the package is identical to the
-              <filepath>.zip</filepath> version, and modern versions of Linux/OS X do not have the file permission
-            issues that originally resulted in the extra package.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2269" scope="external" format="html">#2269</xref>
-          </li>
-          -->
           <li id="2276">HTML5: A new stable ID generation process has been implemented, instead of relying on the
               <codeph>generate-id()</codeph> function. By removing reliance on a dynamic value, this change enables
             automated testing of @id and @headers (generated for table accessibility). This also speeds up regression
@@ -325,6 +320,16 @@
             will now have bookmarks for "Special characters", "Numerics", and every letter from "A" to "Z". <!-- Supersedes unmerged PR 2149 -->
             <xref href="https://github.com/dita-ot/dita-ot/issues/2350" scope="external" format="html">#2350</xref>
           </li>
+          <li id="2382">PDF: The <codeph>antiquewhite</codeph> background color has been removed from table heads and key
+            column contents in <xmlelement>simpletable</xmlelement> and <xmlelement>properties</xmlelement> tables to
+            synchronize presentation with <xmlelement>choicetable</xmlelement> and provide a more uniform customization
+            baseline between PDF output and HTML-based formats.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2382" scope="external" format="html">#2382</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2386" scope="external" format="html">#2386</xref>
+          </li>
+          <li id="2383">Mark deprecated variables, tweak conref variable
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2383" scope="external" format="html">#2383</xref>
+          </li>
         </ul>
       </section>
 
@@ -332,6 +337,9 @@
         <title>Bugs</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <ul>
+          <li id="1476">TopicMerge sets unexpected @xml:lang attribute to topic
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1476" scope="external" format="html">#1476</xref>
+          </li>
           <li id="1931">PDF: The message "No topicTitleNumber mode template" has been removed. This removes extraneous
             messages that appeared when processing a bookmap with <xmlelement>notices</xmlelement> or
               <xmlelement>bookabstract</xmlelement>, or which refers to a subject scheme map.
@@ -364,23 +372,19 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2197" scope="external" format="html">#2197</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2199" scope="external" format="html">#2199</xref>
           </li>
-          <!-- Cherry-picked fixes released with 2.2.4 (see #2216 & #2270). Remove 2.3 milestone in GitHub tracker -->
-          <!--<li id="2203">Common string logic for org.dita.pdf2 fails to retrieve a string for "Task Result"
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2203" scope="external" format="html">#2203</xref>
-          </li>-->
           <li id="2227">Circular key definitions, when an element used <xmlatt>keyref</xmlatt> to refer to a key on the
             same element, resulted in a stack overflow in KeydefReader. This construct is now reported as an error with
             message <msgnum>DOTJ069E</msgnum>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2227" scope="external" format="html">#2227</xref>
           </li>
-          <!-- Cherry-picked fixes released with 2.2.4 (see #2274). Remove 2.3 milestone in GitHub tracker -->
-          <!--
-          <li id="2243">Publishing fails when using term with keyref and chunking, after chunking module introduces file
+          <!-- Cherry-picked fixes released as workaround with 2.2.4 (see #2274). -->
+          <li id="2243">Publishing failed when using term with keyref and chunking, as the chunking module created file
             references with backslashes. Processing has been updated to convert any backslashes to slashes before using
-            the <codeph>resolve-uri</codeph> function in XSLT.
+            the <codeph>resolve-uri</codeph> function in XSLT. This ensures that the attribute values are valid URI
+            references according to
+            <xref keyref="rfc3986"/>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2243" scope="external" format="html">#2243</xref>
           </li>
-          -->
           <li id="2294">PDF: In the simplified Chinese variables file (zh-CN), additional translations have been
             provided for some static strings that previously appeared in English.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2294" scope="external" format="html">#2294</xref>,
@@ -404,8 +408,12 @@
           <!--<li id="2354">Remove obsolete parameter args.eclipsehelp.toc 
             <xref href="https://github.com/dita-ot/dita-ot/pull/2354" scope="external" format="html">#2354</xref>
           </li>-->
+          <li id="2339"><xmlatt>keyscope</xmlatt> on the root <xmlelement>map</xmlelement> element causes builds to fail
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2339" scope="external" format="html">#2339</xref>
+          </li>
         </ul>
       </section>
+
       <section id="contrib">
         <title>Contributors</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes

@@ -44,33 +44,33 @@
         upcoming release. PDF customization plug-ins that make use of these variables should plan to refactor
         accordingly:
         <ul>
-          <li><codeph>&lt;variable id="Back button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Contents button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Forward button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Index button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Index multiple entries separator">, &lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Main page button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Next page button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Online help prefix">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Online Help Search Method And">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Online Help Search Method Field">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Online Help Search Method Or">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Previous page button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search Case Sensitive Switch">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search Excluded Stop Words Message">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search Highlight Switch">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search index button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search index field title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search index next button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search Search Give No Results Message">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search Search in Progress Message">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search Stopped Message">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search text button title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search text field title">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search title">Search title&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Search Whole Words Switch">&lt;/variable></codeph></li>
-          <li><codeph>&lt;variable id="Untitled section">Untitled section.&lt;/variable></codeph></li>
+          <li>Back button title</li>
+          <li>Contents button title</li>
+          <li>Forward button title</li>
+          <li>Index button title</li>
+          <li>Index multiple entries separator</li>
+          <li>Main page button title</li>
+          <li>Next page button title</li>
+          <li>Online help prefix</li>
+          <li>Online Help Search Method And</li>
+          <li>Online Help Search Method Field</li>
+          <li>Online Help Search Method Or</li>
+          <li>Previous page button title</li>
+          <li>Search button title</li>
+          <li>Search Case Sensitive Switch</li>
+          <li>Search Excluded Stop Words Message</li>
+          <li>Search Highlight Switch</li>
+          <li>Search index button title</li>
+          <li>Search index field title</li>
+          <li>Search index next button title</li>
+          <li>Search Search Give No Results Message</li>
+          <li>Search Search in Progress Message</li>
+          <li>Search Stopped Message</li>
+          <li>Search text button title</li>
+          <li>Search text field title</li>
+          <li>Search title</li>
+          <li>Search Whole Words Switch</li>
+          <li>Untitled section</li>
         </ul>
       </p>
       <note>Not all of these variables were previously supported (or localized) in each language.</note>

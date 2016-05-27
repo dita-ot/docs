@@ -29,8 +29,8 @@
     </section>
     <section>
       <title>HTML-based formats</title>
-      <p>The XSLT <codeph>tm-area</codeph> named template used to toggle rendering of trademark symbols in US English
-        and Asian languages (Japanese, Korean, and both Chinese) but ignore them in all other languages has been
+      <p>The XSLT <codeph>tm-area</codeph> named template, which used to toggle rendering of trademark symbols in US English
+        and Asian languages (Japanese, Korean, and both Chinese) but ignore them in all other languages, has been
         deprecated. Trademark symbols are now rendered uniformly for all languages and the template will be removed in
         an upcoming release.</p>
       <p id="2191">In previous releases, short descriptions in <xmlelement>abstract</xmlelement> elements were rendered
@@ -46,6 +46,10 @@
           <xmlelement>simpletable</xmlelement> and <xmlelement>properties</xmlelement> tables to synchronize
         presentation with <xmlelement>choicetable</xmlelement> and provide a more uniform customization baseline between
         PDF output and HTML-based formats.</p>
+      <p id="2179">PDF: The I18N Java and XSLT processing code has been merged into single task. This eliminated the
+        need for a <filepath>stage3.fo</filepath> file in the temporary directory; instead,
+          <filepath>topic.fo</filepath> is generated directly from <filepath>stage2.fo</filepath>. If custom plug-ins
+        were implemented to handle <filepath>stage3.fo</filepath>, they would need to be updated. </p>
       <p>Localization variables that are no longer used in PDF processing have been deprecated and will be removed in an
         upcoming release. PDF customization plug-ins that make use of these variables should plan to refactor
         accordingly:
@@ -79,7 +83,8 @@
           <li>Untitled section</li>
         </ul>
       </p>
-      <note>Not all of these variables were previously supported (or localized) in each language.</note>
+      <note>Most of these variables were never used by the PDF process, and most were not supported (or localized) for
+        any language other than English.</note>
     </section>
     <section>
       <title>Deprecated properties and targets</title>

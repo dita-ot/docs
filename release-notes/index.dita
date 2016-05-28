@@ -438,6 +438,65 @@
           <xref href="https://github.com/dita-ot/dita-ot/compare/2.2...2.3" scope="external" format="html">
             changelog</xref> on GitHub.</p>
       </section>
+
+      <section id="docs">
+        <title>Documentation updates</title>
+        <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> includes corrections and
+          improvements to existing topics, along with several notable enhancements, including:</p>
+        <ul>
+          <li>The DITA Open Toolkit <cite>User Guide</cite> includes new topics on additional methods of publishing via
+            the <cmdname>dita</cmdname> command:
+            <ul>
+              <li>
+                <xref href="../user-guide/using-dita-properties-file.dita"/>
+              </li>
+              <li>
+                <xref href="../user-guide/migrating-ant-to-dita.dita"/>
+              </li>
+            </ul>
+          </li>
+          <li>The DITA Open Toolkit <cite>Developer Reference</cite> includes several new sections dedicated to
+            customization:
+            <ul>
+              <li>
+                <xref href="../dev_ref/pdf-customization.dita"/> provides an overview of approaches commonly used to
+                customize the default PDF output and includes recommendations on best practices and additional
+                resources. </li>
+              <li>
+                <xref href="../dev_ref/migration.dita"/> highlights customization-related changes in recent releases to
+                assist plug-in developers in updating overrides to work with the latest toolkit versions.</li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              <xref href="https://travis-ci.org/" format="html" scope="external">Travis</xref> continuous integration is
+              used to automatically publish the latest development version of the documentation on the project website
+              at
+              <xref href="http://www.dita-ot.org/dev/" format="html" scope="external">dita-ot.org/dev</xref> whenever
+              changes are pushed to the <codeph>develop</codeph> branch of the
+              <xref href="https://github.com/dita-ot/docs" format="html" scope="external">dita-ot/docs</xref> repository
+              on GitHub.</p></li>
+          <li>
+            <p>In the latest
+              <xref href="http://www.dita-ot.org/dev/" format="html" scope="external">development version</xref> of the
+              documentation, page footers include links to edit the DITA source file in
+              <xref href="https://www.oxygenxml.com/webauthor/" format="html" scope="external">oXygen XML Web
+                Author</xref>.</p>
+            <p>The web-based authoring workflow prompts users to log in to GitHub and fork the
+              <xref href="https://github.com/dita-ot/docs" format="html" scope="external">dita-ot/docs</xref> repository
+              if necessary. Changes saved in the authoring environment are committed to a new branch, and a pull request
+              is created to submit changes for review by the DITA-OT documentation team.</p>
+          </li>
+        </ul>
+        <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
+            keyref="release"/>, see the
+          <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A2.3+is%3Aclosed" format="html"
+            scope="external">
+            <keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
+        <p>For the complete list of documentation changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/docs/compare/2.2...2.3" scope="external" format="html">
+            changelog</xref>.</p>
+      </section>
     </refbody>
   </reference>
 </reference>

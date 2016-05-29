@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<concept id="pdf-plugin-structure">
+  <title>PDF plug-in structure</title>
+  <shortdesc>In cases that require substantial customizations, it is often useful to organize the files in a folder
+    structure that mimics the hierarchy of the default PDF plug-in. This method facilitates comparisons with the default
+    settings in the base PDF plug-in and makes it easier to migrate customizations to new toolkit versions.</shortdesc>
+
+  <conbody>
+    <note>For simpler customizations, you may want to structure your plug-in differently, but the information in this
+      topic may help you to locate the files you need to customize.</note>
+    <p>The original Idiom plug-in used its own extension mechanism to provide overrides to the PDF transformation. With
+      this approach, a dedicated folder within the plug-in was used to store customized files. While this method is no
+      longer recommended, the same organization principles can be used in custom PDF plug-ins.</p>
+    <p>To begin creating a new custom plug-in, you can copy the <filepath>plugins/org.dita.pdf2/Customization</filepath>
+      folder to a new folder, such as <filepath>plugins/com.company.pdf</filepath>.</p>
+    <p>DITA-OT provides template files that you can start with throughout the <filepath>Customization</filepath>
+      directory structure. These files end in the suffix <codeph>.orig</codeph> (for example,
+        <filepath>catalog.xml.orig</filepath>). To enable these files, copy them to your custom plug-in and remove the
+        <codeph>.orig</codeph> suffix. For example, copy <filepath>catalog.xml.orig</filepath> to
+        <filepath>catalog.xml</filepath>. You can then make modifications to the copy in your custom plug-in folder.</p>
+    <p>Things you can currently override include:</p>
+    <ul>
+      <li>Custom XSL via <filepath>xsl/custom.xsl</filepath> and <filepath>attrs/custom.xsl</filepath></li>
+      <li>Layout overrides via <filepath>layout-masters.xsl</filepath></li>
+      <li>Font overrides via <filepath>font-mappings.xml</filepath></li>
+      <li>Per-locale variable overrides via <filepath>common/vars/[language].xml</filepath></li>
+      <li>I18N configuration via <filepath>i18n/[language].xml</filepath></li>
+      <li>Index configuration via <filepath>index/[language].xml</filepath></li>
+    </ul>
+    <p>When customizing any of these areas, modify the relevant file(s) in your custom plug-in folder. Then, to enable
+      the changes in the publishing process, you find the corresponding entry for each file you modified in the
+        <filepath>catalog.xml</filepath> file.</p>
+    <p>It should look like this:</p>
+    <codeblock>&lt;!--uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/--&gt;</codeblock>
+    <p>Remove the comment markers <codeph>!--</codeph> and <codeph>--</codeph> to enable the change:</p>
+    <codeblock>&lt;uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/&gt;</codeblock>
+    <p>Your customization should now be enabled as part of the publishing process.</p>
+    <p>When your custom plug-in is installed, the files in its subfolders will override the out-of-the-box settings from
+      their counterparts in <filepath>org.dita.pdf2/cfg/fo/attrs</filepath> and
+        <filepath>org.dita.pdf2/xsl/fo</filepath>.</p>
+
+    <section id="custom_artwork_the_common_artwork_folder">
+      <title>Custom artwork: the <filepath>common/artwork</filepath> folder</title>
+      <p>This folder houses custom artwork files that override the standard ones in
+          <filepath>org.dita.pdf2/cfg/common/artwork</filepath>. These files are used to graphically identify different
+        types of DITA <xmlelement>note</xmlelement> element.</p>
+      <p>The mapping between <xmlelement>note</xmlelement> type and graphic is contained in a subset of the
+        locale-dependent variable files, such as</p>
+      <codeblock>cfg/common/vars</codeblock>
+      <p>The variables that control <xmlelement>note</xmlelement> graphics all follow the form</p>
+      <codeblock>  &lt;variable id="{type} Note Image Path"&gt; {Path to image file} &lt;/variable&gt;</codeblock>
+      <p>where {type} contains a possible value for the <xmlelement>note</xmlelement>
+        <xmlatt>type</xmlatt> attribute.</p>
+    </section>
+
+    <section id="index_configuration_the_common_index_folder">
+      <title>Index configuration: the <filepath>common/index</filepath> folder</title>
+      <p>This folder houses custom index definition files that override the standard ones in
+          <filepath>org.dita.pdf2/cfg/common/index</filepath>. Each file contains data for a single language, and should
+        take that language’s ISO 639-1 language designator as its name (for example, <filepath>pt.xml</filepath> for
+        Portuguese). If necessary, locale-specific customizations can be provided by adding a region designator to the
+        file name (for example, <filepath>pt_BR.xml</filepath> for Brazilian Portuguese).</p>
+      <p>The index files consist of <xmlelement>index.group</xmlelement> elements which contain sorting information on
+        one or more characters. Index groups are listed in sort order (“specials” before numbers, numbers before the
+        letter ‘A‘, etc), and the <xmlelement>char.set</xmlelement> entries they contain are also listed in sort order
+        (uppercase before lowercase).</p>
+      <p>The best way to start editing a custom index file is by making a copy of the original from
+          <filepath>org.dita.pdf2/cfg/common/index</filepath> and making changes as desired.</p>
+      <p>In order to apply a custom index definition to your publishing outputs, edit <filepath>catalog.xml</filepath>
+        and uncomment the appropriate entry in the “Index configuration override entries” section.</p>
+    </section>
+
+    <section id="variable_overrides_the_common_vars_folder">
+      <title>Variable overrides: the <filepath>common/vars</filepath> folder</title>
+      <p>This folder houses custom variable definitions that override the standard ones in
+          <filepath>org.dita.pdf2/cfg/common/vars</filepath>. As with index configuration, Each file contains data for a
+        single language, and should take that language’s ISO 639-1 language designator as its name.</p>
+      <p>Variable files contain a set of <xmlelement>variable</xmlelement> elements, identified by their
+          <xmlatt>id</xmlatt> attribute. The variable definitions are used to store static text that is used as part of
+        the published outputs. For example, page headers, hyperlinks, etc. The id attribute for each variable should
+        make it clear how the variable text is being used.</p>
+      <p>Some variables contain <xmlelement>param</xmlelement> elements which indicate parameter values that are
+        substituted at publish time by the XSL. For example, a page number that is being generated as part of the
+        publishing process might be identified by &lt;param ref-name="number"/&gt; When editing or translating a
+        variable file, these should be included in the translation, though they can be moved and rearranged within the
+          <xmlelement>variable</xmlelement> content as needed.</p>
+      <p>The best way to start editing a custom variables file is by making a copy of the original from
+          <filepath>org.dita.pdf2/cfg/common/vars</filepath> and making changes as desired. When adding a new language,
+        start from an existing language’s list of variables and translate each entry as needed.</p>
+      <p>Note that unchanged <xmlelement>variable</xmlelement> elements can be omitted: the custom variables file need
+        only include those <xmlelement>variable</xmlelement> elements which you have modified. Variables not found in
+        the custom file will are taken from the standard variable files.</p>
+      <p>Applying a custom variable does not require modifying the <filepath>catalog.xml</filepath> file. The publishing
+        process will automatically use any custom variables definitions in place of the original ones.</p>
+    </section>
+
+    <section id="custom_attributes_the_fo_attrs_folder">
+      <title>Custom attributes: the <filepath>fo/attrs</filepath> folder</title>
+      <p>This folder houses custom attribute configuration files that override the standard ones in
+          <filepath>org.dita.pdf2/cfg/fo/attrs</filepath>. These files define the appearance of different elements in
+        XML assets when they are rendered to PDF output. The different DITA elements are organized into files by element
+        type – index-related definitions in <filepath>index-attr.xsl</filepath>, table-related definitions in
+          <filepath>tables-attr.xsl</filepath>, etc.</p>
+      <p>The XSL attribute sets defined in these files can be used to override the presentation of DITA elements,
+        including font size, color, spacing, etc.</p>
+    </section>
+
+    <section id="internationalization_configuration_the_fo_i18n_folder">
+      <title>Internationalization configuration: the <filepath>fo/i18n</filepath> folder</title>
+      <p>This folder houses custom configuration files that override the standard ones in
+          <filepath>org.dita.pdf2/cfg/fo/i18n</filepath>. As with index configuration and variable overrides, each file
+        contains data for a single language, and should take that language’s ISO 639-1 language designator as its name. </p>
+      <p>Each configuration file contains mappings of certain symbols to the Unicode codepoint which should be used to
+        represent them in the given locale.</p>
+      <p>The best way to start editing a custom configuration is by making a copy of the original from
+          <filepath>org.dita.pdf2/cfg/fo/i18n</filepath> and making changes as desired.</p>
+      <p>In order to apply a custom configuration to your publishing outputs, edit <filepath>catalog.xml</filepath> and
+        uncomment the appropriate entry in the “I18N configuration override entries” section.</p>
+    </section>
+
+    <section id="custom_stylesheets_the_fo_xsl_folder">
+      <title>Custom stylesheets: the <filepath>fo/xsl</filepath> folder</title>
+      <p>This folder houses custom stylesheet files that override the default stylesheets in
+          <filepath>org.dita.pdf2/xsl/fo</filepath>. </p>
+      <p>You can use custom stylesheets to implement additional processing routines or adjust the output generated by
+        the default toolkit processing.</p>
+    </section>
+  </conbody>
+</concept>

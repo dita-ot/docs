@@ -15,12 +15,6 @@
       unversioned DITA doctypes to the 1.3 DTDs. All processing ordinarily dependent on the 1.0, 1.1, or 1.2 definitions
       continues to work as usual, and any documents that make use of the newer DITA 1.3 elements or attributes will be
       supported with specific new processing.</p>
-    <!--
-    <p>Because this support is based on a yet-to-be-approved (Candidate OASIS Standard 01) version of the proposed
-      <xref keyref="dita-ot-spec"/>, if you choose to investigate any 1.3-based function, be aware that the 1.3
-      implementation in this version of the toolkit is preliminary. Upon final approval of the DITA 1.3 standard,
-      toolkit developers will review the implementation to make certain that it conforms to the final specification.</p>
-    -->
     <section>
       <title>Initial Preview Support for DITA 1.3 in DITA-OT 2.0</title>
       <p>The following DITA 1.3 features were implemented in version 2.0 of the toolkit. Issue numbers correspond to the
@@ -37,8 +31,8 @@
           <xref href="https://github.com/dita-ot/dita-ot/issues/1651" format="html" scope="external">#1651</xref></li>
         <li> Add DITA 1.3 markup and xml domain support (milestone 4)
           <xref href="https://github.com/dita-ot/dita-ot/issues/1652" format="html" scope="external">#1652</xref></li>
-        <li> Add DITA 1.3 div element (milestone 4)
-          <xref href="https://github.com/dita-ot/dita-ot/issues/1654" format="html" scope="external">#1654</xref></li>
+        <li> Add DITA 1.3 <xmlelement>div</xmlelement> element (milestone 4) <xref
+            href="https://github.com/dita-ot/dita-ot/issues/1654" format="html" scope="external">#1654</xref></li>
       </ul>
     </section>
 
@@ -54,7 +48,9 @@
           <p>The implementation is a separate module that is run before keyref processing. The process
             <ul>
               <li>Splits branches so that each branch contains a single ditavalref </li>
-              <li>Generates <codeph>@copy-to</codeph> attributes for each branch-generated &lt;topicref> </li>
+              <li>Generates <xmlatt>copy-to</xmlatt> attributes for each branch-generated
+                  <xmlelement>topicref</xmlelement>
+              </li>
               <li>Filters the map based on branch filters </li>
               <li>Rewrites duplicate generated copy-to targets with a numbered <tt>-#</tt> suffix </li>
               <li>Copies and filters generated copy-to targets </li>

@@ -100,9 +100,9 @@
 &lt;/langlist></codeblock></p>
       <p>Next, copy the file <filepath>xsl/common/strings-en-us.xml</filepath> to your plug-in, and rename it to match
         the language you wish to add. For example, to support Vietnamese strings you may want to pick a name like
-          <filepath>strings-vi.xml</filepath>. In that file, change the <codeph>xml:lang</codeph> attribute on the root
+          <filepath>strings-vi.xml</filepath>. In that file, change the <xmlatt>xml:lang</xmlatt> attribute on the root
         element to match your new language.</p><p>Once the file is ready, translate the contents of each
-          <codeph>&lt;str></codeph> element (be sure to leave the name attribute unchanged). Repeat this process for
+          <xmlelement>str</xmlelement> element (be sure to leave the name attribute unchanged). Repeat this process for
         each new language you wish to add.</p><p>To integrate the new languages, use the same method as above to add
         these strings to your <filepath>plugin.xml</filepath> file. Once this plug-in is integrated, non-PDF builds will
         include support for Vietnamese; instead of generating the English word "Caution", the element <codeph>&lt;note

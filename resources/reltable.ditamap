@@ -40,8 +40,8 @@
       </relcell>
       <relcell>
         <topicref href="../parameters/parameters_intro.dita" linking="targetonly"/>
-        <topicref href="http://ant.apache.org/manual/index.html" navtitle="Apache Ant documentation" format="html"
-          scope="external"/>
+        <topicref href="http://ant.apache.org/manual" navtitle="Apache Ant documentation" format="html" scope="external"
+        />
       </relcell>
     </relrow>
     <relrow>
@@ -211,19 +211,10 @@
     <title>External resources</title>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/overview-of-dita-ot.dita" navtitle="Overview of the DITA Open Toolkit"/>
-      </relcell>
-      <relcell>
-        <topicref href="http://www.apache.org/licenses/LICENSE-2.0" navtitle="Apache License, version 2.0" format="html"
-          scope="external"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
         <topicref href="../user-guide/dita2eclipsehelp.dita"/>
       </relcell>
       <relcell>
-        <topicref href="http://eclipse.org" navtitle="Official Eclipse Web site" format="html" scope="external"/>
+        <topicref href="http://www.eclipse.org" navtitle="Official Eclipse Web site" format="html" scope="external"/>
       </relcell>
     </relrow>
     <relrow>
@@ -252,7 +243,18 @@
         <topicref href="../dev_ref/plugin-configfile.dita"/>
       </relcell>
       <relcell>
-        <topicref href="../dev_ref/plugin-newtranstype.dita"/>
+        <topicref href="../dev_ref/plugin-newtranstype.dita" type="task"/>
+        <topicref href="../extension-points/all-extension-points.dita"/>
+        <topicref href="../dev_ref/plugin-sample.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="../extension-points/all-extension-points.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="../dev_ref/plugin-newtranstype.dita" type="task"/>
+        <topicref href="../dev_ref/plugin-configfile.dita"/>
         <topicref href="../dev_ref/plugin-sample.dita"/>
       </relcell>
     </relrow>

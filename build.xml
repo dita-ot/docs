@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<project name="docs" default="all" basedir=".">
+<project name="docs" default="dist" basedir=".">
   <description>Build DITA Open Toolkit Documentation</description>
 
   <property environment="env"/>
@@ -11,8 +11,14 @@
   </condition>
 
   <property name="dita.home" location="${env.DITA_HOME}"/>
-  <condition property="doc.out.dir" value="${dita.home}/doc" else="${basedir}/out">
+  <condition property="toolkit.build" value="true" else="false">
     <available file="${basedir}/../lib/dost.jar" type="file"/>
+  </condition>
+  <condition property="doc.out.dir" value="${dita.home}/doc" else="${basedir}/out">
+    <istrue value="${toolkit.build}"/>
+  </condition>
+  <condition property="doc.samples.dir" value="${dita.home}/docsrc/samples" else="${basedir}/samples">
+    <istrue value="${toolkit.build}"/>
   </condition>
 
   <macrodef name="dita-ot">
@@ -26,6 +32,8 @@
       <antcall>
         <target name="generate-msg-topic"/>
         <target name="generate-params-topic"/>
+        <target name="generate-extension-points-topic"/>
+        <target name="generate-properties-file"/>
       </antcall>
 
       <ant antfile="${dita.home}/build.xml">
@@ -75,13 +83,33 @@
   <target name="generate-params-topic" depends="init" description="Regenerate parameters file">
     <property name="params.xsl" location="${basedir}/resources/params.xsl"/>
     <property name="params.input" location="${resource.dir}/plugins.xml"/>
-    <property name="params.outputtopic" location="${basedir}/parameters/_all-parameters.dita"/>
+    <property name="params.outputtopic" location="${basedir}/parameters/all-parameters.dita"/>
     <dirname property="params.outputdir" file="${params.outputtopic}"/>
     <makeurl property="params.outputdir.uri" file="${params.outputdir}" validate="false"/>
-    
+
     <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
     <xslt in="${params.input}" out="${params.outputtopic}" style="${params.xsl}" force="yes">
       <param name="output-dir.url" expression="${params.outputdir.uri}"/>
+    </xslt>
+  </target>
+
+  <target name="generate-properties-file" depends="init" description="Regenerate annotated .properties file">
+    <property name="propfile.xsl" location="${basedir}/resources/properties-file.xsl"/>
+    <property name="propfile.input" location="${resource.dir}/plugins.xml"/>
+    <property name="propfile.output" location="${doc.samples.dir}/properties/template.properties"/>
+    <xslt in="${propfile.input}" out="${propfile.output}" style="${propfile.xsl}" force="yes"/>
+  </target>
+
+  <target name="generate-extension-points-topic" depends="init" description="Regenerate extension points file">
+    <property name="extension-points.xsl" location="${basedir}/resources/extension-points.xsl"/>
+    <property name="extension-points.input" location="${resource.dir}/plugins.xml"/>
+    <property name="extension-points.outputtopic" location="${basedir}/extension-points/all-extension-points.dita"/>
+    <dirname property="extension-points.outputdir" file="${extension-points.outputtopic}"/>
+    <makeurl property="extension-points.outputdir.uri" file="${extension-points.outputdir}" validate="false"/>
+
+    <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
+    <xslt in="${extension-points.input}" out="${extension-points.outputtopic}" style="${extension-points.xsl}" force="yes">
+      <param name="output-dir.url" expression="${extension-points.outputdir.uri}"/>
     </xslt>
   </target>
 
@@ -161,5 +189,7 @@
   </target>
 
   <target name="all" depends="pdf, html, htmlhelp"/>
+
+  <target name="dist" depends="pdf, html"/>
 
 </project>

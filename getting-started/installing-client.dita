@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<task id="installing-client" xml:lang="en-US">
+  <title>Installing the distribution package</title>
+  <titlealts>
+    <navtitle>Installing the toolkit</navtitle>
+  </titlealts>
+  <shortdesc id="what-is-client">The DITA-OT distribution package can be installed on Linux, Mac OS&#xA0;X, and Windows.
+    It contains everything that you need to run the toolkit except for Java.</shortdesc>
+  <taskbody>
+    <prereq>
+      <ul>
+        <li>Ensure that you have Java JRE or JDK, version <keyword keyref="tool.java.version"/> or later installed.
+          <p>You can download the Oracle JRE or JDK from <xref keyref="download.oracle-jdk"/>.</p></li>
+        <li importance="optional" platform="windows">If you want to generate HTML Help, ensure that you have HTML Help
+          Workshop installed.
+          <p>You can download the Help Workshop from <xref keyref="download.html-help-workshop"/>.</p></li>
+      </ul>
+    </prereq>
+    <steps>
+      <step>
+        <cmd>Download the <filepath>dita-ot-<keyword keyref="maintenance-version"/>.zip</filepath> package from the
+          project website at <xref keyref="download.dita-ot.current-release">www.dita-ot.org</xref>.</cmd>
+      </step>
+      <step>
+        <cmd>Extract the contents of the package to the directory where you want to install the DITA-OT.</cmd>
+      </step>
+      <step importance="optional">
+        <cmd>Add the absolute path for the <filepath>bin</filepath> directory to the <varname>PATH</varname> system
+          variable.</cmd>
+        <stepresult>
+          <p>This defines the necessary environment variable to run the <cmdname>dita</cmdname> command from the command
+            line.</p>
+          <note type="tip">This step is recommended, as it allows the the <cmdname>dita</cmdname> command to be run from
+            any location on the file system and makes it easier to transform DITA content from any folder.</note>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<reference id="migrating-to-2.2">
+
+  <title>Migrating to release 2.2</title>
+
+  <shortdesc>In DITA-OT 2.2, the <option>HTML5</option> transformation was refactored as its own
+    plugin and separate plugins were created for each of the rendering engine-specific PDF
+      transformations.<draft-comment author="staylor">There are likely other changes that should be
+      noted here. </draft-comment>
+  </shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 2.2 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the <xref keyref="2.2-release-notes"/>.</note>
+    </section>
+    <section>
+      <title>HTML5</title>
+      <p>The <option>HTML5</option> transformation introduced in release 2.0 as part of the
+          <option>XHTML</option> plugin has been moved to a separate <option>HTML5</option> plugin.
+        Customizations that extended the previous HTML5 output under the <option>XHTML</option>
+        plugin will probably need to be refactored on the new HTML5 plugin.</p>
+      <p>Note title processing has been revised to use a common <codeph>note__title</codeph> class for note elements of
+        all types. The legacy <codeph><varname>{$type}</varname>title</codeph> classes (such as
+          <codeph>.notetitle</codeph>, <codeph>.cautiontitle</codeph>, <codeph>.tiptitle</codeph>, etc.) are included
+        for backwards compatibility, but are deprecated and will be removed in an upcoming release. Stylesheets that
+        apply formatting overrides to note titles should be revised to replace the deprecated class selectors with the
+        equivalent descendant selectors, for example <codeph>.note_note .note__title</codeph>, <codeph>.note_caution
+          .note__title</codeph>, <codeph>.note_tip .note__title</codeph>, etc.</p>
+    </section>
+    <section>
+      <title>PDF</title>
+      <p>Processing specific to Apache FOP, Antenna House Formatter, and RenderX XEP has been
+        separated into separate plugins for each of those rendering engines. Customizations that
+        extended this processing might need to extend the new <keyword>org.dita.pdf2.fop</keyword>,
+          <keyword>org.dita.pdf2.axf</keyword>, or <keyword>org.dita.pdf2.xep</keyword> plugins.</p>
+      <p>PDF customizations that are not specific to a rendering engine can continue to extend the
+          <keyword>org.dita.pdf2</keyword> plugin as before.</p>
+    </section>
+    <section>
+      <title>Deprecated properties</title>
+      <p>The following Ant properties have been deprecated:
+        <ul>
+          <li><parmname>user.input.file</parmname>, use <parmname>user.input.file.uri</parmname> instead to specify the
+            input file system path</li>
+          <li><parmname>user.input.dir</parmname>, use <parmname>user.input.dir.uri</parmname> instead to specify the
+            input directory system path</li>
+          <li><parmname>InputMapDir</parmname>, use <parmname>InputMapDir.uri</parmname> instead to specify the input
+            map directory system path</li>
+        </ul></p>
+    </section>
+  </refbody>
+</reference>

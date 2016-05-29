@@ -72,10 +72,6 @@
           how to specify the input file.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTA069F-extra" conaction="pushreplace">Please ensure that the input
-          file path and file name were entered correctly.</stentry>
-      </strow>
-      <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA003F-extra" conaction="pushreplace">An alternate stylesheet was
           specified to run in place of the default XSLT output process, but that stylesheet could not be loaded. Please
           correct the parameter to specify a valid stylesheet.</stentry>
@@ -124,6 +120,10 @@
         <stentry conref="DITA-messages.xml#msgs/DOTA068W-extra" conaction="pushreplace">According to the OASIS DITA
           Specification, the <xmlelement>index-see-also</xmlelement> element should be ignored if the parent
             <xmlelement>indexterm</xmlelement> contains other <xmlelement>indexterm</xmlelement> children.</stentry>
+      </strow>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTA069F-extra" conaction="pushreplace">Please ensure that the input
+          file path and file name were entered correctly.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ005F-extra" conaction="pushreplace"/>
@@ -329,7 +329,7 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ052E-extra" conaction="pushreplace">The DITA-OT supports a special
           syntax on coderef elements to specify the character set of the target document. See <xref
-            href="../dev_ref/extended-functionality.dita"/> for details on the expected syntax.</stentry>
+            href="extended-functionality.dita"/> for details on the expected syntax.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ053W-extra" conaction="pushreplace">By default, the DITA-OT supports
@@ -340,6 +340,17 @@
         <stentry conref="DITA-messages.xml#msgs/DOTJ068E-extra" conaction="pushreplace">A conref "mark" action has been
           used to mark a target element without a corresponding content reference target. This may occur when the order
           of the "mark" element and the pushed element is reversed.</stentry>
+      </strow>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ069E-extra" conaction="pushreplace">
+          <p>A circular reference was found in key definitions: a series of key references where the last key references
+            the first.</p>
+          <p>This may occur if a <xmlelement>topicref</xmlelement> element contains both a key name in the
+              <xmlatt>keys</xmlatt> attribute and a reference to the same key in the <xmlatt>keyref</xmlatt> attribute,
+            or if a <xmlatt>keyref</xmlatt> attribute points to a key that refers back to the referencing element.</p>
+          <p>To resolve this issue, change the target of the <xmlatt>keyref</xmlatt> so the key is defined by pointing
+            to a resource other than itself.</p>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX001W-extra" conaction="pushreplace">This build uses generated text,
@@ -381,13 +392,13 @@
           included.</stentry>
       </strow>
       <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTX008E-extra" conaction="pushreplace">Ensure that the file exists and
+          can be read. <ph conref="DITA-messages-details.xml#errormessages/changeExtension"/></stentry>
+      </strow>
+      <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX008W-extra" conaction="pushreplace">To fix the table of contents,
           specify a navigation title in your map or ensure that the referenced file is local and can be accessed. <ph
             conref="DITA-messages-details.xml#errormessages/changeExtension"/></stentry>
-      </strow>
-      <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX008E-extra" conaction="pushreplace">Ensure that the file exists and
-          can be read. <ph conref="DITA-messages-details.xml#errormessages/changeExtension"/></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX009W-extra" conaction="pushreplace">No title was found in the

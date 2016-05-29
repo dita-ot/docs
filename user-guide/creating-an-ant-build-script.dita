@@ -32,11 +32,14 @@
         <cmd>Specify project information:</cmd>
         <substeps>
           <substep importance="optional">
-            <cmd>Set the value of the @name attribute to the name of your project.</cmd>
+            <cmd>Set the value of the <xmlatt>name</xmlatt> attribute to the name of your
+              project.</cmd>
           </substep>
           <substep>
-            <cmd>Set the value of the @default attribute to the name of a target in the build script.</cmd>
-            <info>If the build script is invoked without specifying a target, this target will be run.</info>
+            <cmd>Set the value of the <xmlatt>default</xmlatt> attribute to the name of a target in
+              the build script.</cmd>
+            <info>If the build script is invoked without specifying a target, this target will be
+              run.</info>
           </substep>
         </substeps>
       </step>
@@ -49,7 +52,7 @@
         <cmd>Create the Ant target:</cmd>
         <substeps>
           <substep>
-            <cmd>Set the value of the @name attribute.</cmd>
+            <cmd>Set the value of the <xmlatt>name</xmlatt> attribute.</cmd>
           </substep>
           <substep>
             <cmd>Specify the value for the <parmname>args.input</parmname> property.</cmd>
@@ -64,34 +67,8 @@
       </step>
     </steps>
     <example>
-      <p>The following Ant build script generates CHM and PDF output for the <filepath>userguide.ditamap</filepath>
-        file.<codeblock>&lt;?xml version="1.0" encoding="UTF-8" ?>
-&lt;project name="Toolkit-documentation" default="all" basedir=".">
-    
-  &lt;property name="dita.dir" location="C:\dita-ot"/>
-  
-  &lt;target name="all" description="build CHM and PDF" depends="chm,pdf"/>
-  
-  &lt;target name="chm" description="build CHM">
-    &lt;ant antfile="${dita.dir}\build.xml">
-      &lt;property name="args.input" value="C:\dita-ot\src\main\doc\userguide.ditamap"/>
-      &lt;property name="args.gen.task.lbl" value="YES"/>   
-      &lt;property name="output.dir" value="C:\temp\out"/>
-      &lt;property name="transtype" value="htmlhelp"/>
-    &lt;/ant>
-  &lt;/target>
-  
-  &lt;target name="pdf" description="build PDF">
-    &lt;ant antfile="${dita.dir}\build.xml">
-      &lt;property name="args.input" value="C:\dita-ot\src\main\doc\userguide.ditamap"/>
-      &lt;property name="args.gen.task.lbl" value="YES"/>   
-      &lt;property name="args.rellinks" value="nofamily"/>   
-      &lt;property name="output.dir" value="C:\temp\out"/>
-      &lt;property name="transtype" value="pdf"/>
-    &lt;/ant>
-  &lt;/target>
-    
-&lt;/project></codeblock></p>
+      <p>The following Ant build script generates CHM and PDF output for the sample DITA
+        maps.<codeblock><coderef href="../samples/ant_sample/build-chm-pdf.xml"/></codeblock></p>
       <p>In addition to the mandatory parameters (<parmname>args.input</parmname> and <parmname>transtype</parmname>),
         the chm and pdf targets each specify some optional parameters:
         <ul>
@@ -100,12 +77,14 @@
           <li>The <parmname>output.dir</parmname> property specifies where the DITA-OT writes the output of the
             transformations.</li>
         </ul></p>
-      <p>The pdf target also specifies that related links should be generated in the PDF, but only those links that are
-        created by relationship tables and &lt;link> elements.</p>
+      <p>The pdf target also specifies that related links should be generated in the PDF, but only
+        those links that are created by relationship tables and <xmlelement>link</xmlelement>
+        elements.</p>
       <p>Finally, the all target simply specifies that both the chm and pdf target should be run.</p>
     </example>
-    <postreq>Another resource for learning about Ant scripts are the files in the
-        <filepath>samples/ant_samples</filepath> directory. This directory contains the Ant build files used by the demo
-      build, as well as templates that you can use to create Ant scripts.</postreq>
+    <postreq>Another resource for learning about Ant scripts are the files in the <filepath
+        conref="../resources/conref-task.dita#ID/samples-dir"/><filepath>/ant_samples</filepath>
+      directory. This directory contains the Ant build files used by the demo build, as well as
+      templates that you can use to create Ant scripts.</postreq>
   </taskbody>
 </task>

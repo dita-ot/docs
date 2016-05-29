@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<map>
+  <title>DITA specification support</title>
+  <topicref href="DITA_spec-support.dita">
+    <topicref href="DITA_v1-2-support.dita"/>
+    <topicref href="DITA_v1-3-support.dita"/>
+    <topicref href="implementation-dependent-features.dita" navtitle="Feature implementation" locktitle="yes"/>
+    <topicref href="extended-functionality.dita"/>
+  </topicref>
+</map>

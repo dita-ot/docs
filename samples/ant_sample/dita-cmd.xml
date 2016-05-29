@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<project basedir="." name="dita-cmd">
+
+  <description>Defines a dita-cmd macro you can use in your Ant builds.
+  See build-chm-pdf-hybrid.xml for usage.</description>
+
+  <property name="dita.dir" location="${basedir}/../../.."/>
+
+  <macrodef name="dita-cmd">
+    <attribute name="input"/>
+    <attribute name="format"/>
+    <attribute name="propertyfile"/>
+    <sequential>
+      <exec executable="${dita.dir}/bin/dita">
+        <arg line="-i @{input} -f @{format} -propertyfile @{propertyfile}"/>
+      </exec>
+    </sequential>
+  </macrodef>
+
+</project>

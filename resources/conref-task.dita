@@ -5,36 +5,70 @@
 <task id="ID">
   <title>Conref file for tasks</title>
   <taskbody>
+    <context>
+      <dl>
+        <dlentry>
+          <dt>Standard Path / Directory Names</dt>
+          <dd><filepath id="ot-dir"><varname>dita-ot-dir</varname></filepath></dd>
+          <dd><filepath id="dita-cmd"><varname>dita-ot-dir</varname>/bin/<cmdname>dita</cmdname></filepath></dd>
+          <dd><filepath id="samples-dir"><varname>dita-ot-dir</varname>/docsrc/samples</filepath></dd>
+        </dlentry>
+        <dlentry>
+          <dt>Plug-In Info</dt>
+          <dd>
+            <ul>
+              <li id="plug-in-id"><varname>plug-in-id</varname> is the unique ID of the plug-in, as defined in the
+                plug-in's configuration file (<filepath>plugin.xml</filepath>).</li>
+              <li id="plug-in-zip"><filepath><varname>plug-in-zip</varname></filepath> is the
+                  <varname>filename</varname> or <varname>URL</varname> of the plug-in's distribution ZIP file
+                (optional).</li>
+              <li><ph id="plugin-integrate-all">If no <varname>filename</varname> or <varname>URL</varname> argument is
+                  provided, the integration process reloads plug-ins from the <filepath>plugins</filepath> directory.
+                  This approach can be used to integrate multiple plug-ins at once, or install any individual plug-ins
+                  you have already copied to the <filepath>plugins</filepath> directory.</ph></li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl>
+    </context>
     <steps>
       <step>
         <cmd id="open-terminal">Open a command prompt or terminal session, and then change to the directory where the
           DITA Open Toolkit is installed.</cmd>
         <info>
           <ul id="basic-variables">
-            <li><varname>install-dir</varname> is the DITA-OT installation directory path.</li>
+            <li id="novice-variables-1"><filepath conref="#ID/ot-dir"/> is the DITA-OT installation directory.</li>
             <li><varname>input-file</varname> is the DITA map or DITA file that you want to process.</li>
-            <li><varname>format</varname> is the output format (transformation type).</li>
-            <li audience="expert"><varname>parameter-name</varname> is the name of an optional parameter.</li>
-            <li audience="expert"><varname>value</varname> is an applicable value for the optional parameter.</li>
-            <li><varname>output-dir</varname> is the output directory path for generated output.</li>
-          </ul>
-          <ul id="basic-variables-novice">
-            <li><varname>install-dir</varname> is the DITA-OT installation directory path.</li>
-            <li><varname>input-file</varname> is the DITA map or DITA file that you want to process.</li>
-            <li><varname>format</varname> is the output format (transformation type).</li>
-            <li><varname>output-dir</varname> is the output directory path for generated output.</li>
+            <li id="novice-variables-last"><varname>format</varname> is the output format (transformation type). Use the
+              same values available for the <parmname>transtype</parmname> build parameter, for example,
+                <codeph>html5</codeph> or <codeph>pdf</codeph>.</li>
+            <li id="options"><varname>options</varname> include the following optional build parameters:<parml
+                conref="../parameters/dita-command-arguments.dita#dita-command-properties/dita_build_options">
+                <plentry>
+                  <pt/>
+                  <pd/>
+                </plentry>
+              </parml></li>
           </ul>
         </info>
         <stepresult id="running-ditaot-results">
-          <p>If processing is successful, nothing is printed in the terminal window.</p>
-          <p>If you do not specify an output directory, the <cmdname>dita</cmdname> command writes output to the
-              <filepath>out</filepath> subdirectory of the current directory.</p>
-          <note id="dita-in-path" type="tip">If you add the absolute path for the DITA-OT
-                <filepath><varname>install-dir</varname>/bin</filepath> directory to the <varname>PATH</varname>
-            environment variable, you can run the <cmdname>dita</cmdname> command from any location on the file
-            system.</note>
+          <p>If processing is successful, nothing is printed in the terminal window. The built output is written to the
+            specified output directory (by default, in the <filepath>out</filepath> subdirectory of the current
+            directory).</p>
+          <note id="dita-in-path" type="tip">Add the absolute path for <filepath conref="#ID/ot-dir"
+              /><filepath>/bin</filepath> to the <varname>PATH</varname> environment variable to run the
+              <cmdname>dita</cmdname> command from any location on the file system without typing the path.</note>
         </stepresult>
       </step>
     </steps>
+    <postreq>
+      <note type="tip" id="template-properties">Copy <filepath conref="#ID/samples-dir"
+          /><filepath>/properties/template.properties</filepath>; this template describes each of the properties you can
+        set.</note>
+      <note type="tip" id="pass-input-dir">If you are building in different environments where the location of the input
+        files is not consistent, set <option>args.input.dir</option> with the <cmdname>dita</cmdname> command and
+        reference its value with <codeph>${args.input.dir}</codeph> in your <filepath>.properties</filepath>
+        file.</note>
+    </postreq>
   </taskbody>
 </task>

@@ -11,7 +11,7 @@ body {
     background-color: white;
     background-image: -webkit-linear-gradient(left, #eee 0%, #fff 300px); /* Chrome10+,Safari5.1+ */
     background-image:    -moz-linear-gradient(left, #eee 0%, #fff 300px); /* FF3.6+ */
-    background-image:         linear-gradient(left, #eee 0%, #fff 300px); /* W3C */ 
+    background-image:         linear-gradient(left, #eee 0%, #fff 300px); /* W3C */
 }
 
 div.header {
@@ -38,7 +38,7 @@ body, caption, td, th {
     font-size: 10pt;
 }
 
-code, pre, .cmdname, .option, .parmname  {
+code, pre, .cmdname, .filepath, .msgnum, .option, .parmname  {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 90%;
     color: #777;
@@ -83,13 +83,16 @@ body {
     margin:           0;
     padding:      1em;
 }
+
 main {
   margin-left: 300px;
 }
+
 nav[role=toc] {
   width: 300px;
   float: left;
 }
+
 h1, h2, h3, h4, h5, h6 {
     padding:        0;
     margin-top:     1em;
@@ -150,10 +153,8 @@ div.context, div.example, div.postreq, div.prereq, div.properties, div.related-l
     margin-right:   0;
 }
 
-div.note, div.important, div.attention {
+.note {
     padding:        0;
-    margin-top:     0.75em;
-    margin-bottom:  0.75em;
     margin-left:    2em;
     margin-right:   0;
     line-height:    125%;
@@ -165,12 +166,12 @@ Block elements
 
 .p {margin-top: 1em}
 
-pre.screen { 
-        padding: 5px 5px 5px 5px; 
-        border: outset; 
-        background-color: #eee; 
-        margin-top: 2px; 
-        margin-bottom : 2px; 
+pre.screen {
+        padding: 5px 5px 5px 5px;
+        border: outset;
+        background-color: #eee;
+        margin-top: 2px;
+        margin-bottom : 2px;
         white-space: pre
 }
 
@@ -212,36 +213,30 @@ In-line elements
 ****************************************/
 
 .defkwd { font-weight: bold; text-decoration: underline; }
-.filepath { 
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: #777;
-    }
-.cmdname, .kwd { font-weight: bold; }
+.cmdname, .kwd, .msgnum { font-weight: bold; }
 .shortcut { text-decoration: underline; }
 .uicontrol { font-weight: bold; }
 .var { font-style : italic;}
 
-/*.topictitle1 .filepath 
+/*.topictitle1 .filepath
 .topictitle2 .filepath,
 .topictitle3 .filepath,
 .topictitle4 .filepath,
 .topictitle5 .filepath,
 .topictitle6 .filepath,
-sectiontitle .filepath { font-weight: normal; 
+sectiontitle .filepath { font-weight: normal;
 }*/
 
-h1 .filepath {
+h1 .filepath, h2 .filepath, h3 .filepath {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:   12pt;
     font-weight: bold;
+}
+
+h1 .filepath {
     color:       #336699;
 }
 
-h2 .filepath, h3 .filepath {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size:   12pt;
-    font-weight: bold;
-}
 /****************************************
 Images
 ****************************************/
@@ -295,7 +290,7 @@ ul.simple { list-style-type: none }
 /* Use CSS to expand lists with @compact="no" */
 .dltermexpand { font-weight: bold; margin-top: 1em; }
 *[compact="yes"]>li { margin-top: 0em;}
-*[compact="no"]>li { margin-top: .53em;}	
+*[compact="no"]>li { margin-top: .53em;}
 .liexpand { margin-top: 1em; margin-bottom: 1em }
 .sliexpand { margin-top: 1em; margin-bottom: 1em }
 .dlexpand { margin-top: 1em; margin-bottom: 1em }
@@ -307,27 +302,11 @@ ul.simple { list-style-type: none }
 Notes
 ****************************************/
 
-.attention { margin-top: 1em; margin-bottom : 1em;}
-.attentiontitle { font-weight: bold }
-.cautiontitle { font-weight: bold }
-.caution { font-weight: bold; margin-bottom : 1em; }
-.danger { margin-top: 1em; margin-bottom : 1em;}
-.dangertitle { font-weight: bold }
-.fastpath { margin-top: 1em; margin-bottom : 1em;}
-.fastpathtitle { font-weight: bold }
-.important { margin-top: 1em; margin-bottom : 1em;}
-.importanttitle { font-weight: bold }
-.note { margin-top: 1em; margin-bottom : 1em;}
-.notetitle { font-weight: bold }
-.notelisttitle { font-weight: bold }
-.remember { margin-top: 1em; margin-bottom : 1em;}
-.remembertitle { font-weight: bold }
-.restriction { margin-top: 1em; margin-bottom : 1em;}
-.restrictiontitle { font-weight: bold }
-.tip { margin-top: 1em; margin-bottom : 1em;}
-.tiptitle { font-weight: bold }
-.warning { margin-top: 1em; margin-bottom : 1em;}
-.warningtitle { font-weight: bold }
+.caution,
+.notelisttitle,
+.note__title {
+    font-weight: bold
+}
 
 /****************************************
 Tables
@@ -339,7 +318,7 @@ table {
     border-style:     solid;
     padding:          1px;
     border-collapse:  collapse;
-    margin-top:       1em; 
+    margin-top:       1em;
     margin-bottom:    1em
 }
 

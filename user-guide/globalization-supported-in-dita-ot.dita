@@ -29,10 +29,10 @@
             (RTL) languages.<draft-comment author="Kristen James Eberlein" time="11 August 2012">What support is offered
               by the legacypdf and pdf2 transformations?</draft-comment></dd>
         </dlentry>
-      </dl>When the DITA-OT generates output, it takes the first value for the @xml:lang attribute that it encounters,
-      and then it uses that value to create generated text, perform index sorting, and determine which default CSS file
-      is used. If no value for the @xml:lang attribute is found, the toolkit defaults to US English.<draft-comment
-        author="Kristen James Eberlein" time="11 August 2012">Does the DITA-OT also use the values for the @dir
-        attribute?</draft-comment></p>
+      </dl>When the DITA-OT generates output, it takes the first value for the <xmlatt>xml:lang</xmlatt> attribute that
+      it encounters, and then it uses that value to create generated text, perform index sorting, and determine which
+      default CSS file is used. If no value for the <xmlatt>xml:lang</xmlatt> attribute is found, the toolkit defaults
+      to US English.<draft-comment author="Kristen James Eberlein" time="11 August 2012">Does the DITA-OT also use the
+        values for the <xmlatt>dir</xmlatt> attribute?</draft-comment></p>
   </conbody>
 </concept>

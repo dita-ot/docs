@@ -4,7 +4,7 @@
 
 <reference id="configuring-the-dita-ot">
   <title>Configuration properties</title>
-  <shortdesc>The DITA-OT uses <filepath>.properties</filepath> files that store configuration settings for the toolkit
-    and its plug-ins. The configuration properties are available to both Ant and Java processes, but unlike argument
-    properties, they cannot be set at run time.</shortdesc>
+  <shortdesc>The DITA-OT uses <filepath>.properties</filepath> files and internal properties that store configuration
+    settings for the toolkit and its plug-ins. Configuration properties are available to both Ant and Java processes,
+    but unlike argument properties, they cannot be set at run time.</shortdesc>
 </reference>

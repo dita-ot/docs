@@ -3,17 +3,20 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <task id="plugins-removing" xml:lang="en">
-  <title>Manually removing plug-ins</title>
-  <shortdesc>Plug-ins can be installed by removing the plug-in and running integration process.</shortdesc>
+  <title>Removing plug-ins</title>
+  <shortdesc>Use the <cmdname>dita</cmdname> command to uninstall a plug-in.</shortdesc>
   <taskbody>
     <steps>
       <step>
-        <cmd>Remove plug-in installation directory.</cmd>
-      </step>
-      <step>
-        <cmd>Run integration process.</cmd>
+        <cmd>At the command-line prompt, enter the following command:</cmd>
         <info>
-          <codeblock>ant -f integrator.xml</codeblock>
+          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> -uninstall <varname>plug-in-id</varname></codeblock>
+          <p>where:</p>
+          <ul>
+            <li conref="../resources/conref-task.dita#ID/novice-variables-1"/>
+            <li conref="../resources/conref-task.dita#ID/plug-in-id"/>
+          </ul>
+          <note conref="../resources/conref-task.dita#ID/dita-in-path"/>
         </info>
       </step>
     </steps>

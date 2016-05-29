@@ -5,8 +5,8 @@
 <concept id="preprocess-maplink" xml:lang="en-US">
   <title>Map based linking (maplink)</title>
   <shortdesc>This step collects links based on a map and moves those links into the referenced topics. The links are
-    created based on hierarchy in the DITA map, the @collection-type attribute, and relationship tables. This step is
-    implemented in XSLT and Java.</shortdesc>
+    created based on hierarchy in the DITA map, the <xmlatt>collection-type</xmlatt> attribute, and relationship tables.
+    This step is implemented in XSLT and Java.</shortdesc>
   <conbody>
     <section>
       <p>The <codeph>maplink</codeph> module runs an XSLT stylesheet that evaluates the map; it places all the generated

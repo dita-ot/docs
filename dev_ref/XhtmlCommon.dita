@@ -13,12 +13,13 @@
           the output directory.</li>
         <li>If a DITAVAL file is used, the <codeph>copy-revflag</codeph> target copies the default start- and
           end-revision flags into the output directory.</li>
-        <li>The DITA topics are converted to HTML files. Unless the @chunk attribute was specified, each DITA topic in
-          the temporary directory now corresponds to one HTML file. The <codeph>dita.inner.topics.xhtml</codeph> target
-          is used to process documents that are in the map directory (or subdirectories of the map directory). The
-            <codeph>dita.outer.topics.xhtml</codeph> target is used to process documents that are outside of the scope
-          of the map, and thus might end up outside of the designated output directory. Various DITA-OT parameters
-          control how documents processed by the <codeph>dita.outer.topics.xhtml</codeph> target are handled.</li>
+        <li>The DITA topics are converted to HTML files. Unless the <xmlatt>chunk</xmlatt> attribute was specified, each
+          DITA topic in the temporary directory now corresponds to one HTML file. The
+            <codeph>dita.inner.topics.xhtml</codeph> target is used to process documents that are in the map directory
+          (or subdirectories of the map directory). The <codeph>dita.outer.topics.xhtml</codeph> target is used to
+          process documents that are outside of the scope of the map, and thus might end up outside of the designated
+          output directory. Various DITA-OT parameters control how documents processed by the
+            <codeph>dita.outer.topics.xhtml</codeph> target are handled.</li>
       </ul>
     </p>
   </conbody>

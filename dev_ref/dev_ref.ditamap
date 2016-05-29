@@ -17,8 +17,8 @@
       <topicref href="preprocess-conrefpush.dita"/>
       <topicref href="preprocess-conref.dita"/>
       <topicref href="preprocess-coderef.dita"/>
-      <topicref href="preprocess-metadata.dita"/>
       <topicref href="preprocess-chunk.dita"/>
+      <topicref href="preprocess-metadata.dita"/>
       <topicref href="preprocess-maplink.dita"/>
       <topicref href="preprocess-topicpull.dita"/>
       <topicref href="preprocess-flagging.dita"/>
@@ -40,33 +40,10 @@
     <topicref href="plugins-removing.dita"/>
     <topicref href="rebuilding-the-dita-ot-documentation.dita"/>
   </topicref>
-  <topicset href="plugins-overview.dita" id="plugins">
-    <topicref href="plugin-configfile.dita"/>
-    <topicref href="plugin-xmlcatalog.dita"/>
-    <topicref href="plugin-anttarget.dita"/>
-    <topicref href="plugin-antpreprocess.dita"/>
-    <topicref href="plugin-newtranstype.dita"/>
-    <topicref href="plugin-overridestyle.dita"/>
-    <topicref href="plugin-addgeneratedtext.dita"/>
-    <topicref href="plugin-xsltparams.dita"/>
-    <topicref href="plugin-javalib.dita"/>
-    <topicref href="plugin-messages.dita"/>
-    <topicref href="plugin-dependencies.dita"/>
-    <topicref href="plugin-support.dita"/>
-    <topicref href="plugin-newextensions.dita"/>
-    <topicref href="plugin-sample.dita"/>
-  </topicset>
-  <topicref href="../user-guide/dita2pdf-customization.dita"/>
-  <topicref href="migration.dita">
-    <topicref href="migrating-to-1.8.dita"/>
-    <topicref href="migrating-to-1.7.dita">
-      <topicref rev="1.7" href="flagging-migration.dita" navtitle="Flagging updates" locktitle="yes"/>
-    </topicref>
-    <topicref href="migrating-to-1.6.dita"/>
-    <topicref href="migrating-to-1.5.4.dita"/>
-  </topicref>
-  <topicref href="DITA1.2-implementation-dependent-features.dita"/>
-  <topicref href="extended-functionality.dita"/>
+  <mapref href="plug-ins.ditamap"/>
+  <mapref href="pdf-customization.ditamap"/>
+  <mapref href="migration.ditamap"/>
+
   <!-- XXX: is this obsolete? 2 April 2013: Commented out; high priority to write new topic about topic merge-->
   <!--<topicref href="topicmerge.dita" navtitle="Topic merge"/>-->
   <!--The following topic needs o be updated. robert to work with Eric. 2 April 2013: Commented out; low priority to write new topic about this-->
@@ -88,11 +65,11 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/plugins-installing.dita" linking="targetonly"/>
-        <topicref href="../user-guide/plugins-removing.dita" linking="targetonly"/>
+        <topicref href="plugins-installing.dita"/>
+        <topicref href="plugins-removing.dita"/>
       </relcell>
       <relcell>
-        <topicref href="extending-the-ot.dita" linking="sourceonly"/>
+        <topicref keyref="dita-command-arguments" linking="targetonly"/>
       </relcell>
     </relrow>
   </reltable>

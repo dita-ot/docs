@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<task id="migrating-ant-to-dita">
+  <title>Migrating Ant builds to use the <cmdname>dita</cmdname> command</title>
+  <shortdesc>Although Ant builds are still supported in the DITA Open Toolkit, you might want to switch to use the new
+      <cmdname>dita</cmdname> command.</shortdesc>
+  <taskbody>
+    <context>
+      <p>Building output with the <cmdname>dita</cmdname> command is often easier than using Ant. In particular, you can
+        use <filepath>.properties</filepath> files to specify sets of DITA-OT parameters for each build.</p>
+      <p>You can include the <cmdname>dita</cmdname> command in shell scripts to perform multiple builds.</p>
+      <note conref="../resources/conref-task.dita#ID/dita-in-path"/>
+    </context>
+    <steps>
+      <step>
+        <cmd>In your Ant build file, identify the properties set in each build target.</cmd>
+        <info>
+          <note>Some build parameters might be specified as properties of the project as a whole. You can refer to a
+            build log to see a list of all properties that were set for the build.</note>
+        </info>
+      </step>
+      <step>
+        <cmd>Create a <filepath>.properties</filepath> file for each build and specify the needed build parameters, one
+          per line, in the format <codeph>name = value</codeph>.</cmd>
+      </step>
+      <step>
+        <cmd>Use the <cmdname>dita</cmdname> command to perform each build, referencing your
+            <filepath>.properties</filepath> file with the <parmname>-propertyfile</parmname> option.</cmd>
+      </step>
+    </steps>
+    <example><title>Example: Ant build</title>
+      <p>Sample build file: <filepath id="samples-dir"
+          ><varname>dita-ot-dir</varname>/docsrc/samples</filepath><filepath>/ant_sample/build-chm-pdf.xml</filepath>
+        <codeblock><coderef href="../samples/ant_sample/build-chm-pdf.xml"/></codeblock></p></example>
+    <example>
+      <title>Example: <filepath>.properties</filepath> files with <cmdname>dita</cmdname> command</title>
+      <p>The following <filepath>.properties</filepath> files and <cmdname>dita</cmdname> commands are equivalent to the
+        example Ant build.</p>
+      <p>Sample <filepath>.properties</filepath> file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
+          /><filepath>/properties/chm.properties</filepath><codeblock><coderef href="../samples/properties/chm.properties"/></codeblock></p>
+      <p>Sample <filepath>.properties</filepath> file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
+          /><filepath>/properties/pdf.properties</filepath><codeblock><coderef href="../samples/properties/pdf.properties"/></codeblock></p>
+      <p>Run from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>:</p>
+      <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> -input sequence.ditamap -format htmlhelp -propertyfile properties/chm.properties
+<filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> -input taskbook.ditamap -format pdf -propertyfile properties/pdf.properties</codeblock>
+    </example>
+    <example>
+      <title>Example: Call the <cmdname>dita</cmdname> command from an Ant build</title>
+      <p>In some cases, you might still want to use an Ant build to implement some pre- or post-processing steps, but
+        also want the convenience of using the <cmdname>dita</cmdname> command with <filepath>.properties</filepath>
+        files to define the parameters for each build. This can be accomplished with Ant's <xmlelement>exec</xmlelement>
+        task.</p>
+      <p>This example uses a <xmlelement>dita-cmd</xmlelement> Ant macro defined in the <filepath
+          conref="../resources/conref-task.dita#ID/samples-dir"/><filepath>/ant_sample/dita-cmd.xml</filepath> file.</p>
+      <p>Sample build file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
+          /><filepath>/ant_sample/build-chm-pdf-hybrid.xml</filepath>
+        <codeblock><coderef href="../samples/ant_sample/build-chm-pdf-hybrid.xml"/></codeblock>
+      </p>
+    </example>
+  </taskbody>
+</task>

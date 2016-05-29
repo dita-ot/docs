@@ -108,7 +108,7 @@
 
 Create ending flag and revision images:
 &lt;xsl:apply-templates select="*[contains(@class,' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/></codeblock></p>
-      <p>For example, the following lines are used in DITA-OT 1.7 to process the <codeph>&lt;ul></codeph> element
+      <p>For example, the following lines are used in DITA-OT 1.7 to process the <xmlelement>ul</xmlelement> element
         (replacing the 29 lines used in DITA-OT
         1.6):<codeblock>&lt;xsl:template match="*[contains(@class,' topic/ul ')]">
   <b>&lt;xsl:apply-templates select="*[contains(@class,' ditaot-d/ditaval-startprop ')]" mode="out-of-line"/></b>

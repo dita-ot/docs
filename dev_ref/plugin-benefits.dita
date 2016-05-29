@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="plugin-benefits">
+ <title>Benefits of plug-ins</title>
+ <shortdesc>Plug-ins permit users to extend the toolkit in a way that is consistent, easy-to-share,
+  and possible to preserve through toolkit upgrades.</shortdesc>
+ <conbody>
+  <p>The DITA-OT plug-in mechanism provides the following benefits:</p>
+    <ul>
+      <li>Plug-ins can easily be shared with other users, teams, or companies. Typically, all users need to do is to
+        unzip and run a single integration step. With many builds, even that integration step is automatic.</li>
+      <li>Plug-ins permit overrides or customizations to grow from simple to complex over time, with no increased
+        complexity to the extension mechanism.</li>
+      <li>Plug-ins can be moved from version to version of the DITA-OT simply by reinstalling or copying the directory
+        from one installation to another. There is no need to re-integrate code based on updates to the core processing
+        of the DITA-OT.</li>
+      <li>Plug-ins can build upon each other. If you like a plug-in, simply install that plug-in, and then create your
+        own plug-in that builds on top of it. The two plug-ins can then be distributed to your team as a unit, or you
+        can share your own extensions with the original provider.</li>
+    </ul>
+ </conbody>
+</concept>

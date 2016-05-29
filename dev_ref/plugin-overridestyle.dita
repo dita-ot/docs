@@ -1,81 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
-<reference id="plugin-overridestyle" xml:lang="en-US">
-  <title>Override styles with XSLT</title>
-  <shortdesc>The XSLT import extension points are used to override various steps of XSLT processing. For this, the
-    extension attribute indicates the step that the override applies to; the <codeph>file</codeph> attribute is a
-    relative path to the override within the current plugin. The plugin installer will add an XSL import statement to
-    the default code so that your override becomes a part of the normal build.</shortdesc>
-  <refbody>
-    <section>
-      <p>The following XSLT steps are available to override in the core toolkit: </p>
-      <dl>
-        <dlentry>
-          <dt><codeph>dita.xsl.xhtml</codeph></dt>
-          <dd>Overrides default (X)HTML output (including HTML Help and Eclipse Help). The referenced file is integrated
-            directly into the XSLT step that generates XHTML.</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.xslfo</codeph></dt>
-          <dd>Overrides default PDF output (formerly known as PDF2). The referenced file is integrated directly into the
-            XSLT step that generates XSL-FO for PDF.</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.docbook</codeph></dt>
-          <dd>Overrides default DocBook output.</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.rtf</codeph></dt>
-          <dd>Overrides default RTF output.</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.eclipse.plugin</codeph></dt>
-          <dd>Overrides the step that generates plugin.xml for Eclipse.</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.conref</codeph></dt>
-          <dd>Overrides the preprocess step that resolves conref.</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.topicpull</codeph></dt>
-          <dd>Overrides the preprocess step "topicpull" (the step that pulls text into &lt;xref> elements, among other
-            things).</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.mapref</codeph></dt>
-          <dd>Overrides the preprocess step "mapref" (the step that resolves references to other maps).</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.mappull</codeph></dt>
-          <dd>Overrides the preprocess step "mappull" (the step that updates navtitles in maps and causes attributes to
-            cascade).</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.maplink</codeph></dt>
-          <dd>Overrides the preprocess step "maplink" (the step that generates map-based links).</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.troff-ast</codeph></dt>
-          <dd>Overrides the intermediate block-and-phrase format generated as input to troff processing.</dd>
-        </dlentry>
-        <dlentry>
-          <dt><codeph>dita.xsl.troff</codeph></dt>
-          <dd>Overrides the XSL that converts block-and-phrase intermediate markup into troff. </dd>
-        </dlentry>
-      </dl>
-    </section>
+<task id="plugin-overridestyle" xml:lang="en-US">
+  <title>Overriding an XSLT-processing step</title>
+  <shortdesc>You can override specific XSLT-processing steps in both the pre-processing pipeline and certain DITA-OT
+    transformations.</shortdesc>
+  <taskbody>
+    <steps>
+      <step>
+        <cmd>Develop an XSL file that contains the XSL override.</cmd>
+      </step>
+      <step>
+        <cmd>Construct a <filepath>plugin.xml</filepath> file that contains the following content:</cmd>
+        <info><codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;plugin id="<varname>plugin-id</varname>">
+  &lt;feature extension="<varname>extension-point</varname>" file="<varname>relative-path</varname>"/>
+&lt;/plugin></codeblock>where:
+          <ul>
+            <li><varname>plugin-id</varname> is the plug-in identifier, for example, com.example.brandheader.</li>
+            <li><varname>extension-point</varname> is the DITA-OT extension point, for example,<codeph>
+                dita.xsl.xhtml</codeph>. This indicates the DITA-OT processing step that the XSL override applies
+              to.</li>
+            <li><varname>relative-path</varname> is the relative path and name of the XSLT file, for example,
+                <filepath>xsl/header.xsl</filepath>. </li>
+          </ul></info>
+      </step>
+      <step>
+        <cmd>Integrate the plug-in.</cmd>
+      </step>
+    </steps>
+    <result>The plug-in installer adds an XSL import statement to the default DITA-OT code, so that the XSL override
+      becomes part of the normal build.</result>
     <example>
-      <title>Example – Overriding XHTML header processing</title>
+      <title>Example: Overriding XHTML header processing</title>
       <p>The following two files represent a complete, simple style plug-in.</p>
       <p>The <filepath>plugin.xml</filepath> file declares an XSLT file that extends XHTML processing:</p>
       <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;plugin id="com.example.brandheader">
   &lt;feature extension="dita.xsl.xhtml" file="xsl/header.xsl"/>
 &lt;/plugin></codeblock>
-      <p>The <filepath>xsl/header.xsl</filepath> XSLT file referenced above in <filepath>plugin.xml</filepath> overrides
-        the default header processing to provide a (theoretical) banner:</p>
+      <p>The <filepath>xsl/header.xsl</filepath> XSLT file referenced in <filepath>plugin.xml</filepath> overrides the
+        default header processing to add a banner:</p>
       <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;xsl:stylesheet version="1.0" 
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -85,12 +51,6 @@
   &lt;/xsl:template>
 &lt;/xsl:stylesheet></codeblock>
     </example>
-    <example>
-      <title>Example – Overriding troff formatting</title>
-      <p>To apply custom formatting for your own domain to the intermediate markup generated as input to troff
-        processing, create a plugin that extends <codeph>dita.xsl.troff-ast</codeph> and specify the path to your custom
-        XSL as follows:</p>
-      <codeblock>&lt;feature extension="dita.xsl.troff-ast" file="xsl/your-domain.xsl"/></codeblock>
-    </example>
-  </refbody>
-</reference>
+    <!--<example><title>Example – Overriding troff formatting</title><p>To apply custom formatting for your own domain to the intermediate markup generated as input to troff processing, create a plugin that extends <codeph>dita.xsl.troff-ast</codeph> and specify the path to your custom XSL as follows:</p><codeblock>&lt;feature extension="dita.xsl.troff-ast" file="xsl/your-domain.xsl"/></codeblock></example>-->
+  </taskbody>
+</task>

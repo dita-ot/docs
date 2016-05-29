@@ -1,0 +1,13 @@
+sudo: false
+language: java
+jdk:
+- oraclejdk7
+env:
+  global:
+  - DITA_OT_VERSION=2.2.5
+install:
+- ".travis/install.sh"
+script:
+- ".travis/publish.sh"
+after_success:
+- ".travis/deploy.sh"

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+
+<reference id="plugin-extension-points-xslt-parameters">
+  <title>XSLT-parameter extension points</title>
+  <shortdesc>You can use theses extension points to pass parameters into existing XSLT steps in both the pre-processing
+    pipeline and DITA-OT transformation. The parameters generally will be available as global
+      <xmlelement>xsl:param</xmlelement> values with XSLT overrides.</shortdesc>
+  <refbody>
+    <section>
+      <title>Pre-processing</title>
+      <p>You can use the following extension points to pass parameters to modules in the pre-processing pipeline:</p>
+      <dl>
+        <dlentry>
+          <dt><parmname>dita.preprocess.conref.param</parmname></dt>
+          <dd>Pass parameters to the <codeph>conref</codeph> module in the pre-processing pipeline</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.preprocess.maplink.param</parmname></dt>
+          <dd>Pass parameters to the <codeph>maplink</codeph> module in the pre-processing pipeline</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.preprocess.mappull.param</parmname></dt>
+          <dd>Pass parameters to the <codeph>mappull</codeph> module in the pre-processing pipeline</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.preprocess.mapref.param</parmname></dt>
+          <dd>Pass parameters to the <codeph>mapref</codeph> module in the pre-processing pipeline</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.preprocess.topicpull.param</parmname></dt>
+          <dd>Pass parameters to the <codeph>topicpull</codeph> module in the pre-processing pipeline</dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section>
+      <title>Transformations</title>
+      <p>You can use the following extension points to pass parameters to modules in DITA-OT transformations:</p>
+      <dl>
+        <dlentry>
+          <dt><parmname>dita.conductor.eclipse.toc.param</parmname></dt>
+          <dd>Pass parameters to the XSLT step that generates the Eclipse Help table of contents (TOC).</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.conductor.html.param</parmname></dt>
+          <dd>Pass parameters to the HTML and HTML Help transformations.</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.conductor.pdf2.param</parmname></dt>
+          <dd>Pass parameters to the PDF (formerly PDF2) transformation.</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.conductor.xhtml.param</parmname></dt>
+          <dd>Pass parameters to the XHTML and Eclipse Help transformations.</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.conductor.xhtml.toc.param</parmname></dt>
+          <dd>Pass parameters to to the XSLT step that generates the XHTML table of contents (TOC).</dd>
+        </dlentry>
+      </dl>
+    </section>
+    <example>
+      <title>Example</title>
+      <p>The following two files represent a complete (albeit simple) plug-in that passes the
+        parameters defined in the <filepath>insertParameters.xml</filepath> file to the XHTML
+        transformation process.</p>
+      <fig>
+        <title>Contents of the <filepath>plugin.xml</filepath> file</title>
+        <codeblock>&lt;plugin id="com.example.newparam">
+  &lt;feature extension="dita.conductor.xhtml.param" file="insertParameters.xml"/>
+&lt;/plugin></codeblock>
+      </fig>
+      <fig>
+        <title>Contents of the <filepath>insertParameters.xml</filepath></title>
+        <codeblock>&lt;dummy>
+  &lt;!-- Any Ant code allowed in xslt task is possible. Common example: -->
+  &lt;param name="paramNameinXSLT" expression="${antProperty}" if="antProperty"/>
+&lt;/dummy></codeblock>
+      </fig>
+    </example>
+  </refbody>
+</reference>

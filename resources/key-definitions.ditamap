@@ -39,16 +39,16 @@
   <keydef keys="release">
     <topicmeta>
       <keywords>
-        <keyword>2.2</keyword>
+        <keyword>2.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>
 
-  <!-- DITA-OT: Latest maintenance version (3 digits) -->
+  <!-- DITA-OT: Latest maintenance version (normally 3 digits, 2 for initial minor release) -->
   <keydef keys="maintenance-version">
     <topicmeta>
       <keywords>
-        <keyword>2.2.5</keyword>
+        <keyword>2.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -226,6 +226,11 @@
     <keydef keys="2.2-release-notes" href="http://www.dita-ot.org/2.2/release-notes/" scope="external" format="html">
       <topicmeta>
         <linktext>DITA-OT 2.2 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef keys="2.3-release-notes" href="http://www.dita-ot.org/2.3/release-notes/" scope="external" format="html">
+      <topicmeta>
+        <linktext>DITA-OT 2.3 Release Notes</linktext>
       </topicmeta>
     </keydef>
   </topicgroup>

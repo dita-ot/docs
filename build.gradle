@@ -4,34 +4,35 @@ plugins {
 
 ditaOt.dir System.getProperty('dita.home', '../')
 
-afterEvaluate {
-  task pdf << {
-      dita.antBuilder.execute {
+import com.github.eerohele.AntBuilderAssistant
+def antBuilder = AntBuilderAssistant.getAntBuilder(project)
+
+task pdf << {
+    antBuilder.execute {
         ant(antfile: 'build.xml', target: 'pdf')
-      }
-  }
-
-  task html << {
-      dita.antBuilder.execute {
-        ant(antfile: 'build.xml', target: 'html')
-      }
-  }
-
-  task htmlhelp << {
-      dita.antBuilder.execute {
-        ant(antfile: 'build.xml', target: 'htmlhelp')
-      }
-  }
-
-  task clean << {
-      dita.antBuilder.execute {
-        ant(antfile: 'build.xml', target: 'clean')
-      }
-  }
-
-  task all(dependsOn: ['pdf', 'html', 'htmlhelp'])
-
-  task dist(dependsOn: ['pdf', 'html'])
+    }
 }
+
+task html << {
+    antBuilder.execute {
+        ant(antfile: 'build.xml', target: 'html')
+    }
+}
+
+task htmlhelp << {
+    antBuilder.execute {
+        ant(antfile: 'build.xml', target: 'htmlhelp')
+    }
+}
+
+task clean << {
+    antBuilder.execute {
+        ant(antfile: 'build.xml', target: 'clean')
+    }
+}
+
+task all(dependsOn: [pdf, html, htmlhelp])
+
+task dist(dependsOn: [pdf, html])
 
 defaultTasks 'dist'

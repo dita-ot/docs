@@ -46,19 +46,6 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/dita2eclipsecontent.dita">
-          <topicmeta>
-            <linktext>Eclipse content transformation</linktext>
-          </topicmeta>
-        </topicref>
-      </relcell>
-      <relcell/>
-      <relcell>
-        <topicref href="../parameters/parameters-eclipsecontent.dita" navtitle="Eclipse content transformation"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
         <topicref href="../user-guide/dita2eclipsehelp.dita">
           <topicmeta>
             <linktext>Eclipse help transformation</linktext>
@@ -163,7 +150,6 @@
     <relrow>
       <relcell>
         <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
-        <topicref href="../parameters/parameters-eclipsecontent.dita" navtitle="Eclipse content transformation"/>
         <topicref href="../parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
         <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
         <topicref href="../parameters/parameters-odt.dita" navtitle="ODT transformation"/>
@@ -184,7 +170,6 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="../parameters/parameters-eclipsecontent.dita" navtitle="Eclipse content transformation"/>
         <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
         <topicref href="../parameters/parameters-htmlhelp.dita"/>
         <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
@@ -199,7 +184,6 @@
         <topicref href="../parameters/parameters-base-html.dita" navtitle="HTML-based tranformations"/>
       </relcell>
       <relcell>
-        <topicref href="../parameters/parameters-eclipsecontent.dita" navtitle="Eclipse content transformation"/>
         <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
         <topicref href="../parameters/parameters-htmlhelp.dita"/>
         <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>

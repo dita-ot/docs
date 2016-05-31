@@ -396,11 +396,11 @@
     <titlealts>
       <navtitle>Eclipse content</navtitle>
     </titlealts>
-    <shortdesc conaction="pushreplace" conref="parameters-eclipsecontent.dita#eclipsecontent/shortdesc">Certain
-      parameters are specific to the Eclipse content transformation.</shortdesc>
+    <!--shortdesc conaction="pushreplace" conref="parameters-eclipsecontent.dita#eclipsecontent/shortdesc">Certain
+      parameters are specific to the Eclipse content transformation.</shortdesc-->
     <refbody>
       <section>
-        <parml>
+        <!--parml>
           <plentry id="args.eclipsecontent.toc">
             <pt>
               <parmname>args.eclipsecontent.toc</parmname>
@@ -411,7 +411,7 @@
                 eclipse.dtd.</note>
             </pd>
           </plentry>
-        </parml>
+        </parml-->
       </section>
     </refbody>
   </reference>

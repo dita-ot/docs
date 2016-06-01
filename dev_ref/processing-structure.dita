@@ -15,8 +15,8 @@
       processing is still common to multiple output formats; for example, Eclipse Help and HTML Help both use the same
       routines to generate XHTML topics, after which the two pipelines branch to create different sets of navigation
       files.</p>
-    <p>The following image illustrates how the pipeline works for some common output types: DocBook, PDF, Eclipse Help,
-      XHTML, JavaHelp, and HTML Help.</p>
+    <p>The following image illustrates how the pipeline works for some common output types: PDF, Eclipse Help, XHTML,
+      JavaHelp, and HTML Help.</p>
     <image href="images/mainarch.gif" placement="break" width="6.5in">
       <alt>Diagram of some possible paths through the transform pipeline.</alt>
     </image>

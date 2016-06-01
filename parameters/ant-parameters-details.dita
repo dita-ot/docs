@@ -213,7 +213,6 @@
               <ul>
                 <li>docbook</li>
                 <li>eclipsehelp</li>
-                <li>eclipsecontent</li>
                 <li>html5</li>
                 <li platform="windows">htmlhelp</li>
                 <li>javahelp</li>
@@ -387,31 +386,6 @@
             <pd conaction="pushafter">The parameter must specify a fully qualified file name.</pd>
           </plentry>
         </parml>
-      </section>
-    </refbody>
-  </reference>
-
-  <reference id="eclipsecontent">
-    <title>Eclipse content</title>
-    <titlealts>
-      <navtitle>Eclipse content</navtitle>
-    </titlealts>
-    <!--shortdesc conaction="pushreplace" conref="parameters-eclipsecontent.dita#eclipsecontent/shortdesc">Certain
-      parameters are specific to the Eclipse content transformation.</shortdesc-->
-    <refbody>
-      <section>
-        <!--parml>
-          <plentry id="args.eclipsecontent.toc">
-            <pt>
-              <parmname>args.eclipsecontent.toc</parmname>
-            </pt>
-            <pd conaction="mark" conref="parameters-eclipsecontent.dita#eclipsecontent/args.eclipse.version.desc"/>
-            <pd conaction="pushafter">
-              <note type="tip">The toolkit ignores the value of this property when processing an Eclipse Collection Map,
-                eclipse.dtd.</note>
-            </pd>
-          </plentry>
-        </parml-->
       </section>
     </refbody>
   </reference>

@@ -523,27 +523,6 @@
     </refbody>
   </reference>
 
-  <reference id="odt">
-    <title>ODT</title>
-    <titlealts>
-      <navtitle>ODT</navtitle>
-    </titlealts>
-    <shortdesc conaction="pushreplace" conref="parameters-odt.dita#odt/shortdesc">Certain parameters are specific to the
-      ODT transformation.</shortdesc>
-    <refbody>
-      <section>
-        <!--<parml>
-          <plentry>
-            <pt><parmname>args.odt.img.embed</parmname></pt>
-            <pd conaction="mark" conref="parameters-odt.dita#odt/args.odt.img.embed.desc"/>
-            <pd conaction="pushafter">Determines whether images are embedded as binary objects within the ODT file.
-            </pd>
-          </plentry>
-        </parml>-->
-      </section>
-    </refbody>
-  </reference>
-
   <reference id="ant-parameters-other">
     <title>Other parameters</title>
     <titlealts>

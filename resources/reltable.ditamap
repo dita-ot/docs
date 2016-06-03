@@ -85,19 +85,6 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/dita2odt.dita">
-          <topicmeta>
-            <linktext>ODT transformation</linktext>
-          </topicmeta>
-        </topicref>
-      </relcell>
-      <relcell/>
-      <relcell>
-        <topicref href="../parameters/parameters-odt.dita" navtitle="ODT transformation"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
         <topicref href="../user-guide/dita2pdf.dita">
           <topicmeta>
             <linktext>PDF transformation</linktext>
@@ -152,7 +139,6 @@
         <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
         <topicref href="../parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
         <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
-        <topicref href="../parameters/parameters-odt.dita" navtitle="ODT transformation"/>
         <topicref href="../parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
         <topicref href="../parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
       </relcell>

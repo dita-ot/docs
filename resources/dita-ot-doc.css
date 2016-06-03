@@ -47,13 +47,13 @@ code, pre, .cmdname, .filepath, .msgnum, .option, .parmname  {
 h1, h2, h3 {
     font-size:   12pt;
     font-weight: bold;
-    color:       #336699;
+    color:       #1d365d;
 }
 
 h4 {
     font-size:   10pt;
     font-weight: bold;
-    color:       #336699;
+    color:       #1d365d;
 }
 
 .sectiontitle,
@@ -66,7 +66,7 @@ h4 {
 .propertiestitle,
 .reltopictitle {
     font-weight:    bold;
-    color:          #336699;
+    color:          #1d365d;
 }
 
 
@@ -234,7 +234,7 @@ h1 .filepath, h2 .filepath, h3 .filepath {
 }
 
 h1 .filepath {
-    color:       #336699;
+    color:       #1d365d;
 }
 
 /****************************************
@@ -251,17 +251,17 @@ Links
 ****************************************/
 
 a:link {
-   color: #337ab7;
+   color: #3563ab;
    text-decoration: none;
    }
 
 a:visited {
-   color: #369;
+   color: #1d365d;
    }
 
 a:active,
 a:hover {
-   color: #369;
+   color: #1d365d;
    text-decoration: underline;
    }
 

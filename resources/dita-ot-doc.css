@@ -63,37 +63,9 @@ h3 {
   color: #1d365d;
 }
 
-h4 {
-  font-size: 10pt;
+.sectiontitle {
   font-weight: bold;
   color: #1d365d;
-}
-
-.sectiontitle,
-.exampletitle,
-.prereqtitle,
-.contexttitle,
-.stepstitle,
-.resulttitle,
-.postreqtitle,
-.propertiestitle,
-.reltopictitle {
-  font-weight: bold;
-  color: #1d365d;
-}
-
-.bold {
-  font-weight: bold;
-}
-.boldItalic {
-  font-weight: bold;
-  font-style: italic;
-}
-.italic {
-  font-style: italic;
-}
-.underlined {
-  text-decoration: underline;
 }
 
 /****************************************
@@ -116,10 +88,7 @@ nav[role=toc] {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   padding: 0;
   margin-top: 1em;
   margin-bottom: 0.75em;
@@ -127,7 +96,6 @@ h6 {
   margin-right: 0;
 }
 
-address,
 blockquote,
 li,
 p {
@@ -154,10 +122,6 @@ dl {
   line-height: 125%;
 }
 
-td dl {
-  margin-left: 2em;
-}
-
 ol,
 ul {
   padding: 0;
@@ -175,22 +139,6 @@ pre {
   /*margin-right:   0;*/
 }
 
-div.context,
-div.example,
-div.postreq,
-div.prereq,
-div.properties,
-div.related-links,
-div.result,
-div.section,
-div.steps {
-  padding: 0;
-  margin-top: 1em;
-  margin-bottom: 0.75em;
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .note {
   padding: 0;
   margin-left: 2em;
@@ -202,21 +150,8 @@ div.steps {
 Block elements
 ****************************************/
 
-.p {
-  margin-top: 1em;
-}
-
-pre.screen {
-  padding: 5px 5px 5px 5px;
-  border: outset;
-  background-color: #eee;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  white-space: pre;
-}
-
 pre.codeblock,
-pre.msgblock {
+pre.screen {
   background-color: #eee;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -231,127 +166,21 @@ Figures
   font-style: italic;
 }
 
-.figdesc {
-  font-style: normal;
-}
-
-.figborder {
-  border-style: solid;
-  padding-left: 3px;
-  border-width: 2px;
-  padding-right: 3px;
-  margin-top: 1em;
-  border-color: Silver;
-}
-
-.figsides {
-  border-left: 2px solid;
-  padding-left: 3px;
-  border-right: 2px solid;
-  padding-right: 3px;
-  margin-top: 1em;
-  border-color: Silver;
-}
-
-.figtop {
-  border-top: 2px solid;
-  margin-top: 1em;
-  border-color: Silver;
-}
-
-.figbottom {
-  border-bottom: 2px solid;
-  border-color: Silver;
-}
-
-.figtopbot {
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  margin-top: 1em;
-  border-color: Silver;
-}
-
 /****************************************
 Headings
 ****************************************/
 
 .topictitle1 {
   margin-top: 1em;
-  margin-bottom: 0.1em;
-  font-size: 1.34em;
-}
-
-.topictitle2 {
-  margin-top: 1pc;
-  margin-bottom: 0.45em;
-  font-size: 1.17em;
-}
-
-.topictitle3 {
-  margin-top: 1pc;
-  margin-bottom: 0.17em;
-  font-size: 1.17em;
-  font-weight: bold;
-}
-
-.topictitle4 {
-  margin-top: 0.83em;
-  font-size: 1.17em;
-  font-weight: bold;
-}
-
-.topictitle5 {
-  font-size: 1.17em;
-  font-weight: bold;
-}
-
-.topictitle6 {
-  font-size: 1.17em;
-  font-style: italic;
-}
-
-.sectiontitle {
-  margin-top: 1em;
-  margin-bottom: 0;
-  font-size: 1.17em;
-  font-weight: bold;
-}
-
-.section {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.example {
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 /****************************************
 In-line elements
 ****************************************/
 
-.defkwd {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
 .cmdname,
-.kwd,
 .msgnum {
   font-weight: bold;
-}
-
-.shortcut {
-  text-decoration: underline;
-}
-
-.uicontrol {
-  font-weight: bold;
-}
-
-.var {
-  font-style: italic;
 }
 
 h1 .filepath,
@@ -364,26 +193,6 @@ h3 .filepath {
 
 h1 .filepath {
   color: #1d365d;
-}
-
-/****************************************
-Images
-****************************************/
-
-div.imageleft {
-  text-align: left;
-}
-
-div.imagecenter {
-  text-align: center;
-}
-
-div.imageright {
-  text-align: right;
-}
-
-div.imagejustify {
-  text-align: justify;
 }
 
 /****************************************
@@ -409,121 +218,8 @@ a:hover {
   color: #555;
 }
 
-.ullinks {
-  list-style-type: none;
-}
-
-.ulchildlink {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.olchildlink {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
 .linklist {
   margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.linklistwithchild {
-  margin-left: 1.5em;
-  margin-bottom: 1em;
-}
-
-.sublinklist {
-  margin-left: 1.5em;
-  margin-bottom: 1em;
-}
-
-.relconcepts {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.reltasks {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.relref {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.relinfo {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.breadcrumb {
-  font-size: smaller;
-  margin-bottom: 1em;
-}
-
-dt.prereq {
-  margin-left: 20px;
-}
-
-/****************************************
-Lists
-****************************************/
-ul {
-  list-style-type: disc;
-}
-
-ul.simple {
-  list-style-type: none;
-}
-
-.dlterm {
-  font-weight: bold;
-}
-
-/* Use CSS to expand lists with @compact="no" */
-.dltermexpand {
-  font-weight: bold;
-  margin-top: 1em;
-}
-
-*[compact='yes'] > li {
-  margin-top: 0;
-}
-
-*[compact='no'] > li {
-  margin-top: 0.53em;
-}
-
-.liexpand {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.sliexpand {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.dlexpand {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.ddexpand {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.stepexpand {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.substepexpand {
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 /****************************************
@@ -545,7 +241,6 @@ table {
   border-width: 1px;
   border-style: solid;
   padding: 1px;
-  border-collapse: collapse;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -560,56 +255,6 @@ td {
 
 th {
   background-color: #eee;
-}
-
-.firstcol {
-  font-weight: bold;
-}
-
-.cellrowborder {
-  border-left: none;
-  border-top: none;
-  border-right: solid 1px;
-  border-bottom: solid 1px;
-}
-
-.row-nocellborder {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-right: hidden;
-  border-bottom: solid 1px;
-}
-
-.cell-norowborder {
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
-  border-bottom: hidden;
-  border-right: solid 1px;
-}
-
-.nocellnorowborder {
-  border: none;
-  border-right: hidden;
-  border-bottom: hidden;
-}
-
-/****************************************
-Task labels
-****************************************/
-
-div.tasklabel {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-h2.tasklabel,
-h3.tasklabel,
-h4.tasklabel,
-h5.tasklabel,
-h6.tasklabel {
-  font-size: 100%;
 }
 
 /****************************************

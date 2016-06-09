@@ -17,8 +17,10 @@
       files.</p>
     <p>The following image illustrates how the pipeline works for some common output types: PDF, Eclipse Help, XHTML,
       JavaHelp, and HTML Help.</p>
-    <image href="images/mainarch.gif" placement="break" width="6.5in">
-      <alt>Diagram of some possible paths through the transform pipeline.</alt>
-    </image>
+
+    <fig>
+      <title>Diagram of some possible paths through the transformation pipeline</title>
+      <image href="images/mainarch.gif" placement="break" width="6.5in"/>
+    </fig>
   </conbody>
 </concept>

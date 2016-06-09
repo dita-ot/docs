@@ -9,11 +9,13 @@ article {
 }
 
 body {
-  color: #333;
   background-color: white;
   background-image: -webkit-linear-gradient(left, #eee 0%, #fff 300px); /* Chrome10+,Safari5.1+ */
   background-image:    -moz-linear-gradient(left, #eee 0%, #fff 300px); /* FF3.6+ */
   background-image:         linear-gradient(left, #eee 0%, #fff 300px); /* W3C */
+  color: #333;
+  margin: 0;
+  padding: 1em;
 }
 
 div.header {
@@ -31,8 +33,8 @@ div.header p {
 
 div.header hr {
   border: 0;
-  height: 0;
   border-bottom: 1px solid #eee;
+  height: 0;
 }
 
 body,
@@ -50,137 +52,26 @@ pre,
 .msgnum,
 .option,
 .parmname {
+  color: #777;
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-size: 90%;
-  color: #777;
-}
-
-h1,
-h2,
-h3 {
-  font-size: 12pt;
-  font-weight: bold;
-  color: #1d365d;
-}
-
-.sectiontitle {
-  font-weight: bold;
-  color: #1d365d;
-}
-
-/****************************************
-Basic identation, padding, and margins
-****************************************/
-
-body {
-  margin: 0;
-  padding: 1em;
-}
-
-main {
-  margin-left: 300px;
-}
-
-nav[role=toc] {
-  width: 300px;
-  float: left;
-}
-
-h1,
-h2,
-h3 {
-  padding: 0;
-  margin-top: 1em;
-  margin-bottom: 0.75em;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-blockquote,
-li,
-p {
-  padding: 0;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-  margin-left: 0;
-  margin-right: 0;
-  line-height: 125%;
-}
-
-dd {
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-  line-height: 125%;
-}
-
-dl {
-  padding: 0;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-  margin-left: 2em;
-  margin-right: 0;
-  line-height: 125%;
-}
-
-ol,
-ul {
-  padding: 0;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-  margin-left: 2em;
-  margin-right: 0;
-}
-
-pre {
-  padding: 0;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-  margin-left: 2em;
-  /*margin-right:   0;*/
-}
-
-.note {
-  padding: 0;
-  margin-left: 2em;
-  margin-right: 0;
-  line-height: 125%;
-}
-
-/****************************************
-Block elements
-****************************************/
-
-pre.codeblock,
-pre.screen {
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 6px;
-}
-
-/****************************************
-Figures
-****************************************/
-
-.figcap {
-  font-style: italic;
 }
 
 /****************************************
 Headings
 ****************************************/
 
-.topictitle1 {
-  margin-top: 1em;
-}
-
-/****************************************
-In-line elements
-****************************************/
-
-.cmdname,
-.msgnum {
+h1,
+h2,
+h3 {
+  color: #1d365d;
+  font-size: 12pt;
   font-weight: bold;
+  margin-bottom: 0.75em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  padding: 0;
 }
 
 h1 .filepath,
@@ -193,6 +84,94 @@ h3 .filepath {
 
 h1 .filepath {
   color: #1d365d;
+}
+
+.sectiontitle {
+  color: #1d365d;
+  font-weight: bold;
+}
+
+.topictitle1 {
+  margin-top: 1em;
+}
+
+/****************************************
+Basic identation, padding, and margins
+****************************************/
+
+main {
+  margin-left: 300px;
+}
+
+blockquote,
+li,
+p {
+  line-height: 125%;
+  margin-bottom: 0.75em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.75em;
+  padding: 0;
+}
+
+dd {
+  line-height: 125%;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+}
+
+dl {
+  line-height: 125%;
+  margin-bottom: 0.75em;
+  margin-left: 2em;
+  margin-right: 0;
+  margin-top: 0.75em;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin-bottom: 0.75em;
+  margin-left: 2em;
+  margin-right: 0;
+  margin-top: 0.75em;
+  padding: 0;
+}
+
+pre {
+  margin-bottom: 0.75em;
+  margin-left: 2em;
+  margin-top: 0.75em;
+  padding: 0;
+}
+
+/****************************************
+Block elements
+****************************************/
+
+.codeblock,
+.screen {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+/****************************************
+Figures
+****************************************/
+
+figcaption {
+  font-style: italic;
+}
+
+/****************************************
+In-line elements
+****************************************/
+
+.cmdname,
+.msgnum {
+  font-weight: bold;
 }
 
 /****************************************
@@ -226,6 +205,13 @@ a:hover {
 Notes
 ****************************************/
 
+.note {
+  line-height: 125%;
+  margin-left: 2em;
+  margin-right: 0;
+  padding: 0;
+}
+
 .caution,
 .notelisttitle,
 .note__title {
@@ -238,11 +224,11 @@ Tables
 
 table {
   border-color: Silver;
-  border-width: 1px;
   border-style: solid;
-  padding: 1px;
-  margin-top: 1em;
+  border-width: 1px;
   margin-bottom: 1em;
+  margin-top: 1em;
+  padding: 1px;
 }
 
 tr {
@@ -260,6 +246,11 @@ th {
 /****************************************
 Navigation
 ****************************************/
+
+nav[role=toc] {
+  float: left;
+  width: 300px;
+}
 
 nav[role=toc] li.active > a {
   font-weight: bold;

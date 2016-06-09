@@ -38,8 +38,8 @@
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportAntLibAction</codeph></pt>
           <pd>Create Ant <xmlelement>pathelement</xmlelement> elements for
-            <xref href="plugin-javalib.dita" format="dita">library imported extension point</xref>. The
-              <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+            <xref keyref="plugin-javalib">library imported extension point</xref>. The <xmlatt>id</xmlatt> attribute is
+            used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportPluginCatalogAction</codeph></pt>
@@ -52,32 +52,32 @@
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportStringsAction</codeph></pt>
           <pd>Include plug-in string file content base on
-            <xref href="plugin-addgeneratedtext.dita" format="dita">generated text extension point</xref>. The
-              <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+            <xref keyref="plugin-addgeneratedtext">generated text extension point</xref>. The <xmlatt>id</xmlatt>
+            attribute is used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportXSLAction</codeph></pt>
           <pd>Create <xmlelement>xsl:import</xmlelement> elements based on
-            <xref href="plugin-overridestyle.dita">XSLT import extension point</xref>. The <xmlatt>id</xmlatt> attribute
+            <xref keyref="plugin-overridestyle">XSLT import extension point</xref>. The <xmlatt>id</xmlatt> attribute
             is used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.InsertAction</codeph></pt>
           <pd>Include plug-in conductor content based on
-            <xref href="plugin-anttarget.dita" format="dita">Ant import extension point</xref>. The <codeph>id</codeph>
-            attribute is used to define the extension point ID.</pd>
+            <xref keyref="plugin-anttarget">Ant import extension point</xref>. The <codeph>id</codeph> attribute is used
+            to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.InsertAntActionRelative</codeph></pt>
           <pd>Include plug-in conductor content based on
-            <xref href="plugin-anttarget.dita" format="dita">relative Ant import extension point</xref>. The
-              <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+            <xref keyref="plugin-anttarget">relative Ant import extension point</xref>. The <xmlatt>id</xmlatt>
+            attribute is used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.InsertCatalogActionRelative</codeph></pt>
           <pd>Include plug-in catalog content based on
-            <xref href="plugin-xmlcatalog.dita" format="dita">catalog import extension point</xref>. The
-              <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+            <xref keyref="plugin-xmlcatalog">catalog import extension point</xref>. The <xmlatt>id</xmlatt> attribute is
+            used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ListTranstypeAction</codeph></pt>

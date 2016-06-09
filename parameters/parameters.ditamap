@@ -6,9 +6,9 @@
   <title>Reference</title>
   <topicref href="dita-command-arguments.dita" keys="dita-command-arguments"/>
   <topicref href="parameters_intro.dita" keys="dita-ot-params">
-    <topicref href="parameters-base.dita" navtitle="Common"/>
+    <topicref href="parameters-base.dita" keys="parameters-base" navtitle="Common"/>
     <topicref href="parameters-base-html.dita" navtitle="HTML-based output formats">
-      <topicref href="generate-copy-outer.dita" toc="no"/>
+      <topicref href="generate-copy-outer.dita" keys="generate-copy-outer" toc="no"/>
     </topicref>
     <topicref href="parameters-common-html.dita" navtitle="HTML5 and XHTML"/>
     <topicref href="parameters-html5.dita"/>

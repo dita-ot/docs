@@ -10,15 +10,15 @@
       <topicref href="plugin-configfile.dita"/>
       <topicref href="plugin-dependencies.dita"/>
     </topicref>
-    <topicref href="plugin-xmlcatalog.dita"/>
-    <topicref href="plugin-anttarget.dita"/>
+    <topicref href="plugin-xmlcatalog.dita" keys="plugin-xmlcatalog"/>
+    <topicref href="plugin-anttarget.dita" keys="plugin-anttarget"/>
     <topicref href="plugin-antpreprocess.dita"/>
     <topicref href="plugin-newtranstype.dita"/>
-    <topicref href="plugin-overridestyle.dita"/>
+    <topicref href="plugin-overridestyle.dita" keys="plugin-overridestyle"/>
     <topicref href="using-plugin-URI-extension.dita"/>
-    <topicref href="plugin-addgeneratedtext.dita"/>
+    <topicref href="plugin-addgeneratedtext.dita" keys="plugin-addgeneratedtext"/>
     <topicref href="plugin-xsltparams.dita"/>
-    <topicref href="plugin-javalib.dita"/>
+    <topicref href="plugin-javalib.dita" keys="plugin-javalib"/>
     <topicref href="plugin-messages.dita"/>
     <topicref href="plugin-newextensions.dita"/>
     <topicref href="plugin-sample.dita"/>

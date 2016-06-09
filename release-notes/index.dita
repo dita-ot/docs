@@ -460,12 +460,11 @@
             customization:
             <ul>
               <li>
-                <xref href="../dev_ref/pdf-customization.dita"/> provides an overview of approaches commonly used to
-                customize the default PDF output and includes recommendations on best practices and additional
-                resources. </li>
+                <xref keyref="pdf-customization"/> provides an overview of approaches commonly used to customize the
+                default PDF output and includes recommendations on best practices and additional resources.</li>
               <li>
-                <xref href="../dev_ref/migration.dita"/> highlights customization-related changes in recent releases to
-                assist plug-in developers in updating overrides to work with the latest toolkit versions.</li>
+                <xref keyref="migration"/> highlights customization-related changes in recent releases to assist plug-in
+                developers in updating overrides to work with the latest toolkit versions.</li>
             </ul>
           </li>
           <li>

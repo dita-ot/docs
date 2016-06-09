@@ -28,7 +28,7 @@
       <p>In some cases, you might receive a message stating the build has failed due to an <msgph>Out of Memory</msgph>
         error. Try the following approaches to resolve the problem:</p>
       <ol id="ol_rfb_c2p_qg">
-        <li>Increase the memory available to Java; see <xref href="increasing-the-jvm.dita"/>.</li>
+        <li>Increase the memory available to Java; see <xref keyref="increasing-the-jvm"/>.</li>
         <li>Reduce memory consumption by setting the <option>generate-debug-attributes</option> option to
             <codeph>false</codeph>. This option is set in the <filepath>lib/configuration.properties</filepath> file.
           This will disable debug attribute generation (used to trace DITA-OT error messages back to source files) and
@@ -54,7 +54,7 @@
         DITA files.</p></section>-->
     <section>
       <title>Stack Overflow error</title><p>If you receive an error about a stack memory overflow, increase the JVM and
-        run the transformation again. See <xref href="increasing-the-jvm.dita"/>.</p>
+        run the transformation again. See <xref keyref="increasing-the-jvm"/>.</p>
     </section>
   </refbody>
 </reference>

@@ -19,7 +19,10 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2395">Fix CI build for release builds
+          <li id="2395">The distribution package for the 2.3 release included several unnecessary subfolders and
+            appended the Git commit ID to the version number in the <filepath>lib/configuration.properties</filepath>
+            file. The extra directories have been removed and the <codeph>otversion</codeph> in the properties file has
+            been corrected.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2395" scope="external" format="html">#2395</xref>
           </li>
           <li id="2398">Temporary files folder no longer interpreted as relative to base dir

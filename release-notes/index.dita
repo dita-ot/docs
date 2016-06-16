@@ -25,7 +25,10 @@
             been corrected.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2395" scope="external" format="html">#2395</xref>
           </li>
-          <li id="2398">Temporary files folder no longer interpreted as relative to base dir
+          <li id="2398">In DITA-OT 2.3, temporary file folders specified via the <parmname>dita.temp.dir</parmname>
+            parameter were interpreted as relative to the folder where the Java process started. This regression has
+            been fixed to ensure that temporary folders are once again interpreted as relative to the base directory of
+            the Ant process as in previous toolkit versions.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2398" scope="external" format="html">#2398</xref>
           </li>
           <li id="2400">Cannot run "dita" command when DITA OT 2.3 is installed in folders with spaces [Windows]

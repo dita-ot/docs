@@ -7,8 +7,7 @@
 
   <abstract>
     <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
-      reported in DITA-OT <keyword keyref="release"/>, which includes enhanced HTML5 output, new language support and
-      additional internationalization improvements.</shortdesc>
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#highlights/summary"/>.</shortdesc>
     <p>Issue numbers correspond to the tracking number in the <ph>
         <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
   </abstract>
@@ -74,6 +73,8 @@
 
   <reference id="highlights">
     <title>Release Highlights</title>
+    <shortdesc>DITA-OT <keyword keyref="release"/> includes <ph id="summary">enhanced HTML5 output, new language support
+        and additional internationalization improvements</ph>.</shortdesc>
     <refbody>
       <section>
         <title>Single .zip distribution package</title>

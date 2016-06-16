@@ -42,7 +42,9 @@
             the DITA 1.3 Errata from OASIS.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2401" scope="external" format="html">#2401</xref>
           </li>
-          <li id="2408">Fix numbering for unknown front matter topics
+          <li id="2408">Fixed an issue where some front-matter sections, such as <xmlelement>draftintro</xmlelement> and
+              <xmlelement>bookabstract</xmlelement>, caused page numbering to switch back and forth between Roman
+            numerals and body-style Arabic numerals.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2408" scope="external" format="html">#2408</xref>
           </li>
           <!--

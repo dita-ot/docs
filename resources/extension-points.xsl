@@ -27,11 +27,11 @@
         DITA-OT.</shortdesc>
         <refbody>
           <section>
-            <parml>
+            <dl>
               <xsl:apply-templates select="//extension-point">
                 <xsl:sort select="@name"/>
               </xsl:apply-templates>
-            </parml>
+            </dl>
           </section>
         </refbody>
     </reference>
@@ -59,11 +59,11 @@
           <shortdesc id="shortdesc"/>
           <refbody>
             <section>
-              <parml>
+              <dl>
                 <xsl:apply-templates select="extension-point">
                   <xsl:sort select="@id"/>
                 </xsl:apply-templates>                  
-              </parml>
+              </dl>
             </section>
           </refbody>
         </reference>
@@ -88,22 +88,22 @@
   </xsl:template-->
   
   <xsl:template match="extension-point">
-    <plentry id="{@id}">
+    <dlentry id="{@id}">
       <xsl:if test="@deprecated = 'true'">
         <xsl:attribute name="importance">deprecated</xsl:attribute>
       </xsl:if>
       <xsl:if test="@required = 'true'">
         <xsl:attribute name="importance">required</xsl:attribute>
       </xsl:if>
-      <pt>
+      <dt>
         <parmname>
           <xsl:value-of select="@id"/>
         </parmname>
-      </pt>
-      <pd id="{@id}.desc">
+      </dt>
+      <dd id="{@id}.desc">
         <xsl:value-of select="@name"/>
-      </pd>
-    </plentry>
+      </dd>
+    </dlentry>
   </xsl:template>
   
 </xsl:stylesheet>

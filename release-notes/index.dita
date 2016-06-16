@@ -3,15 +3,50 @@
 <!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
 
 <reference id="ID" rev="2.3">
-  <title>DITA Open Toolkit <keyword keyref="release"/> Release Notes</title>
+  <title>DITA Open Toolkit <keyword keyref="maintenance-version"/> Release Notes</title>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> is a feature release that includes enhanced HTML5 output,
-      new language support and additional internationalization improvements.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes enhanced HTML5 output, new language support and
+      additional internationalization improvements.</shortdesc>
     <p>Issue numbers correspond to the tracking number in the <ph>
         <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
+  <reference id="v231">
+    <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="2395">Fix CI build for release builds
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2395" scope="external" format="html">#2395</xref>
+          </li>
+          <li id="2398">Temporary files folder no longer interpreted as relative to base dir
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2398" scope="external" format="html">#2398</xref>
+          </li>
+          <li id="2400">Cannot run "dita" command when DITA OT 2.3 is installed in folders with spaces [Windows]
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2400" scope="external" format="html">#2400</xref>
+          </li>
+          <li id="2401">DITA 1.3 grammar files not shipping the final version
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2401" scope="external" format="html">#2401</xref>
+          </li>
+          <li id="2408">Fix numbering for unknown front matter topics
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2408" scope="external" format="html">#2408</xref>
+          </li>
+          <!--
+          <li id="2413">HTML5 transtype fails on topics with tables when args.xhtml.classattr=no
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2413" scope="external" format="html">#2413</xref>
+          </li>
+          -->
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.3...2.3.1" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+  
   <reference id="requirements">
     <title>Requirements</title>
     <refbody>
@@ -469,9 +504,9 @@
           </li>
           <li>
             <p>
-              <xref href="https://travis-ci.org/" format="html" scope="external">Travis</xref> continuous integration is
-              used to automatically publish the latest development version of the documentation on the project website
-              at
+              <xref href="https://travis-ci.org/" format="html" scope="external">Travis CI</xref> continuous integration
+              is used to automatically publish the latest development version of the documentation on the project
+              website at
               <xref href="http://www.dita-ot.org/dev/" format="html" scope="external">dita-ot.org/dev</xref> whenever
               changes are pushed to the <codeph>develop</codeph> branch of the
               <xref href="https://github.com/dita-ot/docs" format="html" scope="external">dita-ot/docs</xref> repository

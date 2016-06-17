@@ -9,23 +9,24 @@
     processed like the built-in DITA-OT templates.</shortdesc>
   <refbody>
     <section>
-      <p>Template files are used to integrate most DITA-OT extensions. For example, the file
-          <filepath>dita2xhtml_template.xsl</filepath> contains all of the default rules for converting DITA topics to
-        XHTML, along with an integration point for plug-in extensions. When the integrator runs, the file dita2xhtml.xsl
-        is recreated, and the integration point is replaced with references to all appropriate plug-ins.</p>
+      <p>Template files are used to integrate most DITA-OT extensions. For example, the
+          <filepath>dita2xhtml_template.xsl</filepath> file contains all of the default rules for converting DITA topics
+        to XHTML, along with an integration point for plug-in extensions. When the integrator runs, the
+          <filepath>dita2xhtml.xsl</filepath> is recreated, and the integration point is replaced with references to all
+        appropriate plug-ins.</p>
       <p>To mark a new file as a template file, use the <xmlelement>template</xmlelement> element.</p>
       <p>The template extension namespace has the URI <codeph>http://dita-ot.sourceforge.net</codeph>. It is used to
-        identify elements and attributes that have a special meaning in template processing. This documentation uses a
-        prefix of <codeph>dita:</codeph> for referring to elements in the template extension namespace. However,
-        template files are free to use any prefix, provided that there is a namespace declaration that binds the prefix
-        to the URI of the template extension namespace. </p>
+        identify elements and attributes that have a special meaning in template processing. This documentation uses the
+          <codeph>dita:</codeph> prefix to refer to elements in the template extension namespace. However, template
+        files are free to use any prefix, provided that there is a namespace declaration that binds the prefix to the
+        URI of the template extension namespace. </p>
     </section>
     <section>
       <title><xmlelement>dita:extension</xmlelement> element</title>
       <p>The <xmlelement>dita:extension</xmlelement> elements are used to insert generated content during the
         integration process. There are two required attributes:</p>
       <ul>
-        <li>The <xmlatt>id</xmlatt> attribute defines the extension point ID which provides the argument data.</li>
+        <li>The <xmlatt>id</xmlatt> attribute defines the extension point ID that provides the argument data.</li>
         <li>The <xmlatt>behavior</xmlatt> attribute defines which processing action is used.</li>
       </ul>
       <p>Supported values for the <xmlatt>behavior</xmlatt> attribute:</p>
@@ -37,9 +38,9 @@
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportAntLibAction</codeph></pt>
-          <pd>Create Ant <xmlelement>pathelement</xmlelement> elements for
-            <xref href="plugin-javalib.dita" format="dita">library imported extension point</xref>. The
-              <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+          <pd>Create Ant <xmlelement>pathelement</xmlelement> elements for the <xref keyref="plugin-javalib">library
+              import extension point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point
+            ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportPluginCatalogAction</codeph></pt>
@@ -51,52 +52,48 @@
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportStringsAction</codeph></pt>
-          <pd>Include plug-in string file content base on
-            <xref href="plugin-addgeneratedtext.dita" format="dita">generated text extension point</xref>. The
-              <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+          <pd>Include plug-in string file content based on the <xref keyref="plugin-addgeneratedtext">generated text
+              extension point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportXSLAction</codeph></pt>
-          <pd>Create <xmlelement>xsl:import</xmlelement> elements based on
-            <xref href="plugin-overridestyle.dita">XSLT import extension point</xref>. The <xmlatt>id</xmlatt> attribute
-            is used to define the extension point ID.</pd>
+          <pd>Create <xmlelement>xsl:import</xmlelement> elements based on the <xref keyref="plugin-overridestyle">XSLT
+              import extension point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point
+            ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.InsertAction</codeph></pt>
-          <pd>Include plug-in conductor content based on
-            <xref href="plugin-anttarget.dita" format="dita">Ant import extension point</xref>. The <codeph>id</codeph>
-            attribute is used to define the extension point ID.</pd>
+          <pd>Include plug-in conductor content based on the <xref keyref="plugin-anttarget">Ant import extension
+              point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.InsertAntActionRelative</codeph></pt>
-          <pd>Include plug-in conductor content based on
-            <xref href="plugin-anttarget.dita" format="dita">relative Ant import extension point</xref>. The
-              <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+          <pd>Include plug-in conductor content based on the <xref keyref="plugin-anttarget">relative Ant import
+              extension point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.InsertCatalogActionRelative</codeph></pt>
-          <pd>Include plug-in catalog content based on
-            <xref href="plugin-xmlcatalog.dita" format="dita">catalog import extension point</xref>. The
-              <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+          <pd>Include plug-in catalog content based on the <xref keyref="plugin-xmlcatalog">catalog import extension
+              point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ListTranstypeAction</codeph></pt>
-          <pd>Create a pipe delimited list of supported transformation types.</pd>
+          <pd>Create a pipe-delimited list of supported transformation types.</pd>
         </plentry>
       </parml>
     </section>
     <section id="section_vfc_gvw_mg">
       <title><xmlatt>dita:extension</xmlatt> attribute</title>
-      <p>The <xmlatt>dita:extension</xmlatt> attribute is used to process attributes in elements which are not in
-        template extension namespace. The value of the attribute is a space delimited tuple, where the first item is the
+      <p>The <xmlatt>dita:extension</xmlatt> attribute is used to process attributes in elements which are not in the
+        template extension namespace. The value of the attribute is a space-delimited tuple, where the first item is the
         name of the attribute to process and the second item is the action ID.</p>
       <p>Supported values:</p>
       <parml>
         <plentry>
           <pt><codeph>depends org.dita.dost.platform.InsertDependsAction</codeph></pt>
-          <pd>Ant target dependency list is processed to replace all target names which start with an open curly bracket
-            and end with a close curly bracket. The value of the extension point is the ID between the curly
-            brackets.</pd>
+          <pd>The Ant target dependency list is processed to replace all target names that start with an opening brace
+              <codeph>{</codeph> character and end with a closing brace <codeph>}</codeph>. The value of the extension
+            point is the ID between the braces.</pd>
         </plentry>
       </parml>
     </section>

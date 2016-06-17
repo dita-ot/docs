@@ -9,5 +9,7 @@
     <p>This transformation was originally created as a plug-in and maintained outside of the main toolkit code. It was
       created as a more robust alternative to the demo PDF transformation in the original toolkit, and thus was known as
       PDF2. The plug-in was bundled into the default toolkit distribution with release 1.4.3.</p>
+    <p>To run the PDF transformation, set the <parmname>transtype</parmname> parameter to <option>pdf</option>, or
+      pass the <option>-format pdf</option> option to the <cmdname>dita</cmdname> command line.</p>
   </conbody>
 </concept>

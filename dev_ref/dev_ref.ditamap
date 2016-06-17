@@ -21,7 +21,7 @@
       <topicref href="preprocess-metadata.dita"/>
       <topicref href="preprocess-maplink.dita"/>
       <topicref href="preprocess-topicpull.dita"/>
-      <topicref href="preprocess-flagging.dita"/>
+      <topicref href="preprocess-flagging.dita" keys="preprocess-flagging"/>
     </topicref>
     <topicref href="XhtmlWithNavigation.dita">
       <topicref href="XhtmlCommon.dita"/>
@@ -38,7 +38,7 @@
   <topicref href="extending-the-ot.dita">
     <topicref href="plugins-installing.dita"/>
     <topicref href="plugins-removing.dita"/>
-    <topicref href="rebuilding-the-dita-ot-documentation.dita"/>
+    <topicref href="rebuilding-the-dita-ot-documentation.dita" keys="rebuild-docs"/>
   </topicref>
   <mapref href="plug-ins.ditamap"/>
   <mapref href="pdf-customization.ditamap"/>
@@ -70,6 +70,16 @@
       </relcell>
       <relcell>
         <topicref keyref="dita-command-arguments" linking="targetonly"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="all-extension-points"/>
+        <topicref keyref="messages"/>
+        <topicref keyref="dita-ot-params"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="rebuild-docs" linking="targetonly"/>
       </relcell>
     </relrow>
   </reltable>

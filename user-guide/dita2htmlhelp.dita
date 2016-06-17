@@ -32,5 +32,8 @@
         </strow>
       </simpletable>
     </p>
+    <p>To run the HTML Help transformation, set the <parmname>transtype</parmname> parameter to
+        <option>htmlhelp</option>, or pass the <option>-format htmlhelp</option> option to the <cmdname>dita</cmdname>
+      command line.</p>
   </conbody>
 </concept>

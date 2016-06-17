@@ -4,7 +4,7 @@
 
 <concept id="dita2eclipsehelp" xml:lang="en-US">
   <title>DITA to Eclipse help</title>
-  <shortdesc>The<option> eclipsehelp</option> transformation generates XHTML output, CSS files, and the control files
+  <shortdesc>The <option>eclipsehelp</option> transformation generates XHTML output, CSS files, and the control files
     that are needed for Eclipse help.</shortdesc>
   <conbody>
     <p>In addition to the XHTML output and CSS files, this transformation returns the following files, where
@@ -35,10 +35,13 @@
         </strow>
       </simpletable></p>
     <draft-comment>RDA> The following paragraph correctly describes the Eclipse Help specialization, but I'm keeping it
-      out until we have more complete documentation. I'd like to get more complete docs on this into an upcoming
-        milestone.<p>For more complex plug-ins, the <filepath>plugins</filepath> directory in the DITA-OT contains an
-        "Eclipse Map" specialization that gives more control over the generated <filepath>plugin.xml</filepath> file.
-        The specialization provides additional control over metadata, as well as the ability to reference multiple TOC
+      out until we have more complete documentation. I'd like to get more complete docs on this into an upcoming milestone.
+      <p>For more complex plug-ins, the <filepath>plugins</filepath> directory in the DITA-OT contains an "Eclipse Map"
+        specialization that gives more control over the generated <filepath>plugin.xml</filepath> file. The
+        specialization provides additional control over metadata, as well as the ability to reference multiple TOC
         files, index files, and other Eclipse extensions.</p></draft-comment>
+    <p>To run the Eclipse help transformation, set the <parmname>transtype</parmname> parameter to
+        <option>eclipsehelp</option>, or pass the <option>-format eclipsehelp</option> option to the
+        <cmdname>dita</cmdname> command line.</p>
   </conbody>
 </concept>

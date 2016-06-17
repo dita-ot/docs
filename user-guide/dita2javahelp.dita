@@ -14,5 +14,7 @@
         <li>Other Java Help project files (<filepath>map.jhm and mapname_helpset.hs</filepath>)</li>
         <li>If the Java Help compiler is located on the system, a compiled Java Help project will be returned.</li>
       </ul></p>
+    <p>To run the Java Help transformation, set the <parmname>transtype</parmname> parameter to <option>javahelp</option>, or
+      pass the <option>-format javahelp</option> option to the <cmdname>dita</cmdname> command line.</p>
   </conbody>
 </concept>

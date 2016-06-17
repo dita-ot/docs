@@ -11,6 +11,7 @@
         <filepath>commonrtl.css</filepath> for right-to-left languages). You can use toolkit parameters to add a custom
       style sheet that overrides the default styles, or generate a <xmlelement>nav</xmlelement> element with a
       navigation TOC in topic pages.</p>
-    <p>To run the HTML5 transformation, set the <parmname>transtype</parmname> parameter to <option>html5</option>.</p>
+    <p>To run the HTML5 transformation, set the <parmname>transtype</parmname> parameter to <option>html5</option>, or
+      pass the <option>-format html5</option> option to the <cmdname>dita</cmdname> command line.</p>
   </conbody>
 </concept>

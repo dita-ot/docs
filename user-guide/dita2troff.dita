@@ -11,5 +11,7 @@
       common DITA structures, but it does not support <xmlelement>table</xmlelement> or
         <xmlelement>simpletable</xmlelement> elements. Most testing of troff output was performed using the Cygwin Linux
       emulator.</p>
+    <p>To run the troff transformation, set the <parmname>transtype</parmname> parameter to <option>troff</option>, or
+      pass the <option>-format troff</option> option to the <cmdname>dita</cmdname> command line.</p>
   </conbody>
 </concept>

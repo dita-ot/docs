@@ -12,7 +12,7 @@
       <title>Plug-in identifiers</title>
       <p>Every DITA-OT plug-in must have a unique identifier composed of one or more dot-delimited tokens, for example,
           <codeph>com.example.rss</codeph>. This identifier is used to identify the plug-in to the DITA-OT for
-        integration, processing, and when determining plug-in dependencies.</p>
+        installation, processing, and when determining plug-in dependencies.</p>
       <note>The default DITA-OT plug-ins use a reverse domain naming convention, as in <codeph>org.dita.html5</codeph>;
         this is strongly recommended to avoid plug-in naming conflicts.</note>
       <p id="tokendef">Each token can include only the following characters:
@@ -167,8 +167,8 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
             <p>An optional element that defines files that should be treated as templates.</p>
             <p>Template files can be used to integrate DITA-OT extensions. Templates typically extend the default
               transformation-type-specific build files via <xmlelement>dita:extension</xmlelement> elements. When the
-              plug-in integration process runs, template files are used to recreate build files, and the integration
-              points specified in the extensions are replaced with references to the appropriate plug-ins.</p>
+              plug-in installation process runs, template files are used to recreate build files, and the specified
+              extension points are replaced with references to the appropriate plug-ins.</p>
             <p>The following attributes are supported: </p>
             <simpletable keycol="1">
               <sthead>

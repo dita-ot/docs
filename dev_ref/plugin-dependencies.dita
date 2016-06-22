@@ -4,7 +4,7 @@
 
 <concept id="plugin-dependencies" xml:lang="en-US">
   <title>Plug-in dependencies</title>
-  <shortdesc>A DITA-OT plug-in can be dependent on other plug-ins. Prerequisite plug-ins are integrated first, which
+  <shortdesc>A DITA-OT plug-in can be dependent on other plug-ins. Prerequisite plug-ins are installed first, which
     ensures that the DITA-OT handles XSLT overrides correctly.</shortdesc>
   <conbody>
     <draft-comment author="Kristen Eberlein" time="24 February 2016">
@@ -20,8 +20,8 @@
       <p>The <xmlelement>require</xmlelement> element in the <filepath>plugin.xml</filepath> file specifies whether the
         plug-in has dependencies. Use <xmlelement>require</xmlelement> elements to specify prerequisite plug-ins, in
         order from most general to most specific.</p>
-      <p>If a prerequisite plug-in is missing, the DITA-OT prints a warning during integration. To suppress the warning
-        but keep the integration order if both plug-ins are present, add <codeph>importance="optional"</codeph> to the
+      <p>If a prerequisite plug-in is missing, the DITA-OT prints a warning during installation. To suppress the warning
+        but keep the installation order if both plug-ins are present, add <codeph>importance="optional"</codeph> to the
           <xmlelement>require</xmlelement> element. </p>
       <!--<p>If the current plug-in requires a plug-in with <codeph>id="plugin-id"</codeph> before it can be installed, it would include the following: </p><codeblock>&lt;require plugin="<i>plugin-id</i>"></codeblock>-->
       <p>If a plug-in can depend on any one of several optional plug-ins, separate the plug-in IDs with a vertical bar.
@@ -30,7 +30,7 @@
     <example>
       <title>Example: Plug-in with a prerequisite plug-in</title>
       <p>The following plug-in will only be installed if the plug-in with the ID <codeph>com.example.primary</codeph> is
-        available. If that plug-in is not available, a warning is generated and the integration operation fails.</p>
+        available. If that plug-in is not available, a warning is generated and the installation operation fails.</p>
       <codeblock>&lt;plugin id="com.example.builds-on-primary">
   &lt;!-- ... Extensions here -->
   &lt;require plugin="com.example.primary"/>
@@ -40,7 +40,7 @@
       <title>Example: Plug-in that has optional plug-ins</title>
       <p>The following plug-in will only be installed if either the plug-in with the ID <codeph>pluginA</codeph> or the
         plug-in with the ID <codeph>pluginB</codeph> is available. If neither of those plug-ins are installed, a warning
-        is generated but the integration operation is completed.</p>
+        is generated but the installation operation is completed.</p>
       <codeblock>&lt;plugin id="pluginC">
   &lt;!-- ...extensions here -->
   &lt;require plugin="pluginA|pluginB" importance="optional"/>

@@ -4,7 +4,7 @@
 
 <task id="plugin-newtranstype" xml:lang="en-US">
   <title>Adding a new transformation type</title>
-  <shortdesc>Plug-ins can integrate an entirely new transformation type. The new transformation type can be very simple,
+  <shortdesc>Plug-ins can add an entirely new transformation type. The new transformation type can be very simple,
     such as an XHTML build that creates an additional control file; it also can be very complex, adding any number of
     new processing steps.</shortdesc>
   <taskbody>
@@ -40,7 +40,7 @@
         </info>
       </step>
       <step>
-        <cmd>Integrate the plug-in.</cmd>
+        <cmd>Install the plug-in.</cmd>
       </step>
     </steps>
     <result>You now can use the new transformation.</result>

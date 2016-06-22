@@ -121,7 +121,7 @@
           </fig></stepxmp>
       </step>
     </steps>
-    <result id="result_23y_yv3_tf">
+    <result>
       <p>The new plug-in directory has the following layout and files:</p>
       <codeblock>com.example.print-pdf/
   cfg/
@@ -137,8 +137,8 @@
   integrator.xml
   plugin.xml</codeblock>
     </result>
-    <postreq id="postreq_mqj_zz3_tf">
-      <p>Run the integration process to install the plug-in and make the <option>print-pdf</option> transformation
+    <postreq>
+      <p>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <option>-install</option> to install the plug-in and make the <option>print-pdf</option> transformation
         available.</p>
     </postreq>
   </taskbody>

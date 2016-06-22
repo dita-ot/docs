@@ -10,7 +10,7 @@
     <context>
       <p>You can use the <codeph>depend.preprocess.pre</codeph> and <codeph>depend.preprocess.post</codeph> extension
         points to run a target before or after the entire pre-processing operation. In addition, there are extension
-        points that enable you ro run an Ant target before specific pre-processing steps.</p>
+        points that enable you to run an Ant target before specific pre-processing steps.</p>
     </context>
     <steps>
       <step>
@@ -28,10 +28,10 @@
           </ul></info>
       </step>
       <step>
-        <cmd>Integrate the plug-in.</cmd>
+        <cmd>Install the plug-in.</cmd>
       </step>
     </steps>
-    <result>The new target is added to the Ant dependency list. The new target now is always run in conjunction with the
+    <result>The new target is added to the Ant dependency list. The new target is now always run in conjunction with the
       specified step in the pre-processing pipeline.</result>
     <example>
       <title>Example</title>

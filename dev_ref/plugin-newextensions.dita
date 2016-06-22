@@ -5,14 +5,14 @@
 <reference id="plugin-newextensions" xml:lang="en-US">
   <title>Creating a new plug-in extension point</title>
   <shortdesc>If your plug-in needs to define its own extension point in an XML file, add the string
-      "<codeph>_template</codeph>" to the filename before the file suffix. During integration, this file will be
-    processed like the built-in DITA-OT templates.</shortdesc>
+      "<codeph>_template</codeph>" to the filename before the file suffix. When the plug-in is installed, this file will
+    be processed like the built-in DITA-OT templates.</shortdesc>
   <refbody>
     <section>
       <p>Template files are used to integrate most DITA-OT extensions. For example, the
           <filepath>dita2xhtml_template.xsl</filepath> file contains all of the default rules for converting DITA topics
-        to XHTML, along with an integration point for plug-in extensions. When the integrator runs, the
-          <filepath>dita2xhtml.xsl</filepath> is recreated, and the integration point is replaced with references to all
+        to XHTML, along with an extension point for plug-in extensions. When the plug-in is installed, the
+          <filepath>dita2xhtml.xsl</filepath> is recreated, and the extension point is replaced with references to all
         appropriate plug-ins.</p>
       <p>To mark a new file as a template file, use the <xmlelement>template</xmlelement> element.</p>
       <p>The template extension namespace has the URI <codeph>http://dita-ot.sourceforge.net</codeph>. It is used to
@@ -24,7 +24,7 @@
     <section>
       <title><xmlelement>dita:extension</xmlelement> element</title>
       <p>The <xmlelement>dita:extension</xmlelement> elements are used to insert generated content during the
-        integration process. There are two required attributes:</p>
+        plug-in installation process. There are two required attributes:</p>
       <ul>
         <li>The <xmlatt>id</xmlatt> attribute defines the extension point ID that provides the argument data.</li>
         <li>The <xmlatt>behavior</xmlatt> attribute defines which processing action is used.</li>
@@ -108,7 +108,7 @@
                    name="Custom target content"/>
   &lt;template file="myBuildFile_template.xml"/>
 &lt;/plugin></codeblock>
-      <p>When the integrator runs, this will be used to recreate <filepath>myBuildFile.xml</filepath>, replacing Ant
+      <p>When the plug-in is installed, this will be used to recreate <filepath>myBuildFile.xml</filepath>, replacing Ant
         file content based on extension point use.</p>
       <codeblock>&lt;project xmlns:dita="http://dita-ot.sourceforge.net">
   &lt;target name="dita2custom"

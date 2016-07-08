@@ -16,6 +16,18 @@
   <topicref href="dev_ref/index.dita">
     <mapref href="dev_ref/dev_ref.ditamap"/>
   </topicref>
+  <!-- https://github.com/dita-ot/dita-ot/issues/1439 -->
+  <!--<topicref keyref="participate"/>-->
+  <topicref keys="participate" href="http://www.dita-ot.org/participate" scope="external" format="html" locktitle="yes">
+    <topicmeta>
+      <navtitle>How to participate</navtitle>
+    </topicmeta>
+  </topicref>
+  <topicref keys="who_we_are" href="http://www.dita-ot.org/who_we_are" scope="external" format="html" locktitle="yes">
+    <topicmeta>
+      <navtitle>Who we are</navtitle>
+    </topicmeta>
+  </topicref>
   <topicgroup processing-role="resource-only">
     <topicref href="resources/conref-task.dita"/>
     <mapref href="resources/key-definitions.ditamap"/>

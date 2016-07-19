@@ -23,12 +23,12 @@
         <li>Check that classpath contains <filepath>$DITA_HOME/lib/dost.jar</filepath>.</li>
       </ol>
     </section>-->
-    <section id="section_stj_4gj_wd">
+    <section id="out-of-memory-error">
       <title>Out of Memory error</title>
       <p>In some cases, you might receive a message stating the build has failed due to an <msgph>Out of Memory</msgph>
         error. Try the following approaches to resolve the problem:</p>
-      <ol id="ol_rfb_c2p_qg">
-        <li>Increase the memory available to Java; see <xref keyref="increasing-the-jvm"/>.</li>
+      <ol>
+        <li>Increase the memory available to Java.</li>
         <li>Reduce memory consumption by setting the <option>generate-debug-attributes</option> option to
             <codeph>false</codeph>. This option is set in the <filepath>lib/configuration.properties</filepath> file.
           This will disable debug attribute generation (used to trace DITA-OT error messages back to source files) and
@@ -53,8 +53,9 @@
         Ant uses commas as a delimiter when processing batch files in a list. Please avoid using commas in the name of
         DITA files.</p></section>-->
     <section>
-      <title>Stack Overflow error</title><p>If you receive an error about a stack memory overflow, increase the JVM and
-        run the transformation again. See <xref keyref="increasing-the-jvm"/>.</p>
+      <title>Stack Overflow error</title>
+      <p>If you receive an error about a stack memory overflow, increase the memory available to Java and run the
+        transformation again.</p>
     </section>
   </refbody>
 </reference>

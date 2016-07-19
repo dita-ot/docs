@@ -153,6 +153,16 @@
         <topicref href="../parameters/parameters-html5.dita" navtitle="HTML5 transformation"/>
       </relcell>
     </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="increasing-the-jvm" linking="targetonly"/>
+      </relcell>
+      <relcell>
+        <topicref href="../parameters/parameters-other.dita"/>
+        <topicref href="../user-guide/other-errors.dita"/>
+      </relcell>
+    </relrow>
   </reltable>
   <reltable>
     <title>Source and target: Transformations and all-transformations topics</title>
@@ -204,6 +214,14 @@
         <topicref href="../parameters/parameters-htmlhelp.dita"/>
         <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
         <topicref href="../parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="../user-guide/other-errors.dita" navtitle="Out of Memory errors" locktitle="yes"/>
+      </relcell>
+      <relcell>
+        <topicref href="../parameters/parameters-other.dita" navtitle="Reload style sheets parameters" locktitle="yes"/>
       </relcell>
     </relrow>
   </reltable>

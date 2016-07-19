@@ -11,11 +11,6 @@
     stages.</shortdesc>
   <refbody>
     <section>
-      <draft-comment author="Kristen James Eberlein" time="11 August 2012">I've made no attempt to work with the content
-        in the topic. Here's what I'd like to know:<ul>
-          <li>When would someone want to use the various <parmname>dita.preprocess</parmname> parameters? (Other than if
-            they need to reduce Java memory consumption.) The use cases are not clear from the current description.</li>
-        </ul></draft-comment>
       <parml>
         <plentry>
           <pt id="dita.preprocess.reloadstylesheet"><parmname>dita.preprocess.reloadstylesheet</parmname></pt>

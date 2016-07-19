@@ -6,7 +6,7 @@
   <title>Increasing Java memory allocation</title>
   <shortdesc>If you are working with large documents with extensive metadata or key references, you will need to
     increase the memory allocation for the Java process. You can do this from the command-line prompt for a specific
-    session, or you can increase the value of the ANT_OPTS environment variable.</shortdesc>
+    session, or you can increase the value of the <codeph>ANT_OPTS</codeph> environment variable.</shortdesc>
   <taskbody>
     <steps-unordered>
       <step>
@@ -30,8 +30,8 @@
             limited by available system memory and the operating system.</p></info>
       </step>
       <step>
-        <cmd>To persistently change the value, change the value allocated to the ANT_OPTS environment variable on your
-          system.</cmd>
+        <cmd>To persistently change the value, change the value allocated to the <codeph>ANT_OPTS</codeph> environment
+          variable on your system.</cmd>
       </step>
     </steps-unordered>
   </taskbody>

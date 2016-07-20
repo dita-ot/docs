@@ -79,6 +79,9 @@
           <pt><parmname>-f</parmname>, <parmname>-format</parmname>
             <varname>name</varname></pt>
           <pd conref="parameters-base.dita#base/transtype.desc"/>
+          <pd>
+            <p conref="../resources/conref-task.dita#ID/transtypes"/>
+          </pd>
         </plentry>
         <plentry>
           <pt><parmname>-install</parmname>

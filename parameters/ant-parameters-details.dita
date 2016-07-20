@@ -208,20 +208,8 @@
               <parmname>transtype</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/transtype.desc"/>
-            <pd conaction="pushafter">You can create plug-ins to add new values for this parameter; by default, the
-              following values are available:
-              <ul>
-                <li>eclipsehelp</li>
-                <li>html5</li>
-                <li platform="windows">htmlhelp</li>
-                <li>javahelp</li>
-                <li>odt</li>
-                <li>pdf</li>
-                <li>wordrtf</li>
-                <li>tocjs</li>
-                <li>troff</li>
-                <li>xhtml</li>
-              </ul>
+            <pd conaction="pushafter">
+              <p conref="../resources/conref-task.dita#ID/transtypes"/>
             </pd>
           </plentry>
           <!--<plentry id="validate">

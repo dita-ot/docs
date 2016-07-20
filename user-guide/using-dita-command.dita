@@ -24,7 +24,10 @@
           <p>where:</p>
           <ul>
             <li conref="../resources/conref-task.dita#ID/novice-variables-1"
-              conrefend="../resources/conref-task.dita#ID/novice-variables-last"/>
+              conrefend="../resources/conref-task.dita#ID/novice-variables-last" audience="novice"/>
+            <li conref="../resources/conref-task.dita#ID/novice-variables-1"
+              conrefend="../resources/conref-task.dita#ID/novice-variables-2" audience="expert"/>
+            <li conref="../resources/conref-task.dita#ID/expert-variables-last" audience="expert"/>
             <li conref="../resources/conref-task.dita#ID/options" audience="expert"/>
           </ul></info>
         <stepresult conref="../resources/conref-task.dita#ID/running-ditaot-results"/>

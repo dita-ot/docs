@@ -247,4 +247,27 @@
       </relcell>
     </relrow>
   </reltable>
+  <reltable>
+    <title>Plugins</title>
+    <relheader>
+      <relcolspec type="task"/>
+      <relcolspec linking="targetonly" type="task"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="../dev_ref/pdf-customization-example.dita"/>
+        <topicref href="../dev_ref/plugin-antpreprocess.dita"/>
+        <topicref href="../dev_ref/plugin-anttarget.dita"/>
+        <topicref href="../dev_ref/plugin-javalib.dita"/>
+        <topicref href="../dev_ref/plugin-messages.dita"/>
+        <topicref href="../dev_ref/plugin-newtranstype.dita"/>
+        <topicref href="../dev_ref/plugin-overridestyle.dita"/>
+        <topicref href="../dev_ref/plugin-xmlcatalog.dita"/>
+        <topicref href="../dev_ref/plugin-xsltparams.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="../dev_ref/plugins-installing.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

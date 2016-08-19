@@ -153,6 +153,16 @@
         <topicref href="../parameters/parameters-html5.dita" navtitle="HTML5 transformation"/>
       </relcell>
     </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="increasing-the-jvm" linking="targetonly"/>
+      </relcell>
+      <relcell>
+        <topicref href="../parameters/parameters-other.dita"/>
+        <topicref href="../user-guide/other-errors.dita"/>
+      </relcell>
+    </relrow>
   </reltable>
   <reltable>
     <title>Source and target: Transformations and all-transformations topics</title>
@@ -206,6 +216,14 @@
         <topicref href="../parameters/parameters-common-html.dita" navtitle="HTML transformation"/>
       </relcell>
     </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="../user-guide/other-errors.dita" navtitle="Out of Memory errors" locktitle="yes"/>
+      </relcell>
+      <relcell>
+        <topicref href="../parameters/parameters-other.dita" navtitle="Reload style sheets parameters" locktitle="yes"/>
+      </relcell>
+    </relrow>
   </reltable>
   <reltable>
     <title>External resources</title>
@@ -256,6 +274,29 @@
         <topicref href="../dev_ref/plugin-newtranstype.dita" type="task"/>
         <topicref href="../dev_ref/plugin-configfile.dita"/>
         <topicref href="../dev_ref/plugin-sample.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
+  <reltable>
+    <title>Plugins</title>
+    <relheader>
+      <relcolspec type="task"/>
+      <relcolspec linking="targetonly" type="task"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="../dev_ref/pdf-customization-example.dita"/>
+        <topicref href="../dev_ref/plugin-antpreprocess.dita"/>
+        <topicref href="../dev_ref/plugin-anttarget.dita"/>
+        <topicref href="../dev_ref/plugin-javalib.dita"/>
+        <topicref href="../dev_ref/plugin-messages.dita"/>
+        <topicref href="../dev_ref/plugin-newtranstype.dita"/>
+        <topicref href="../dev_ref/plugin-overridestyle.dita"/>
+        <topicref href="../dev_ref/plugin-xmlcatalog.dita"/>
+        <topicref href="../dev_ref/plugin-xsltparams.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="../dev_ref/plugins-installing.dita"/>
       </relcell>
     </relrow>
   </reltable>

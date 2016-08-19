@@ -12,11 +12,47 @@
         <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v231">
+  <reference id="v232">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="1599">In earlier versions of DITA-OT, relative paths to cross-references from short descriptions were
+            sometimes interpreted incorrectly if the source and target topics were located in different directories. New
+            XSL functions now ensure that these references are correctly resolved.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1599" scope="external" format="html">#1599</xref>
+          </li>
+          <li id="2413">In DITA-OT 2.3, the HTML5 transtype failed on topics with tables when the
+              <parmname>args.xhtml.classattr</parmname> parameter was set to <option>no</option>. Processing has been
+            updated to handle these cases and correctly exclude the DITA class ancestry information when publishing
+            HTML5 output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2413" scope="external" format="html">#2413</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2424" scope="external" format="html">#2424</xref>
+          </li>
+          <li id="2439">In DITA-OT 2.3, the PDF2 build target dependency list contained redundant entries. The
+            integration process has been corrected to remove the duplicates.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2439" scope="external" format="html">#2439</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2451" scope="external" format="html">#2451</xref>
+          </li>
+          <li id="2441">The script that checks for Antenna House installations has been updated to include installation
+            paths with spaces as used by recent versions of Antenna House for Windows –
+              <filepath>C:\Program&#xA0;Files\Antenna&#xA0;House</filepath> and the (x86) equivalent.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2441" scope="external" format="html">#2441</xref>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.3.1...2.3.2" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v231">
+    <title>Maintenance Release 2.3.1</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.3.1 included the following bug fixes.</p>
         <ul>
           <li id="2395">The distribution package for the 2.3 release included several unnecessary subfolders and
             appended the Git commit ID to the version number in the <filepath>lib/configuration.properties</filepath>
@@ -58,7 +94,7 @@
       </section>
     </refbody>
   </reference>
-  
+
   <reference id="requirements">
     <title>Requirements</title>
     <refbody>

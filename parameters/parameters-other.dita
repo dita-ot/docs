@@ -11,11 +11,6 @@
     stages.</shortdesc>
   <refbody>
     <section>
-      <draft-comment author="Kristen James Eberlein" time="11 August 2012">I've made no attempt to work with the content
-        in the topic. Here's what I'd like to know:<ul>
-          <li>When would someone want to use the various <parmname>dita.preprocess</parmname> parameters? (Other than if
-            they need to reduce Java memory consumption.) The use cases are not clear from the current description.</li>
-        </ul></draft-comment>
       <parml>
         <plentry>
           <pt id="dita.preprocess.reloadstylesheet"><parmname>dita.preprocess.reloadstylesheet</parmname></pt>
@@ -34,13 +29,22 @@
           <pt id="dita.preprocess.reloadstylesheet.topicpull">
             <parmname>dita.preprocess.reloadstylesheet.topicpull</parmname>
           </pt>
-          <pd id="dita.preprocess.reloadstylesheet.desc">Specifies whether the DITA-OT reloads the XSL style sheets
-            that are used for the transformation. The allowed values are <option>true</option> and
-              <option>false</option>; the default value is <option>false</option>.<note type="tip">Set the parameter
-              to <option>true</option> if you want to use more than one set of style sheets to process a collection of
-              topics. The parameter also is useful for large projects that generate Java out-of-memory errors during
-              transformation. Alternatively, you can adjust the size of your Java memory heap if setting
-                <codeph>dita.preprocess.reloadstylesheet</codeph> for this reason.</note></pd>
+          <pd id="dita.preprocess.reloadstylesheet.desc">
+            <p>Specifies whether the DITA-OT reloads the XSL style sheets that are used for the transformation. The
+              allowed values are <option>true</option> and <option>false</option>; the default value is
+                <option>false</option>.</p>
+            <p>During the pre-processing stage, DITA-OT processes one DITA topic at a time, using the same XSLT
+              stylesheet for the entire process. These parameters control whether Ant will use the same
+                <codeph>Transformer</codeph> object in Java, the object that handles the XSLT processing, for all
+              topics, or create a separate <codeph>Transformer</codeph> for each topic.</p>
+            <p>The default (<option>false</option>) option uses the same <codeph>Transformer</codeph>, which is a little
+              faster, because it will not need to parse/compile the XSLT stylesheets and only needs to read the source
+              trees with <codeph>document()</codeph> once. The downside is that it will not release the source trees
+              from memory, so you can run out of memory.</p>
+            <note type="tip">For large projects that generate Java out-of-memory errors during transformation, set the
+              parameter to <option>true</option> to allow the XSLT processor to release memory. You may also need to
+              increase the memory available to Java.</note>
+          </pd>
         </plentry>
       </parml>
     </section>

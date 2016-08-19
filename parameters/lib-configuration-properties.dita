@@ -124,13 +124,13 @@
           <plentry id="plugindirs">
             <pt><parmname>plugindirs</parmname></pt>
             <pd id="plugindirs.desc">A semicolon-separated list of directory paths that the DITA-OT searches for
-              plug-ins to integrate; any relative paths are resolved against the DITA-OT base directory. Any immediate
-              subdirectory that contains a <filepath>plugin.xml</filepath> file is integrated.</pd>
+              plug-ins to install; any relative paths are resolved against the DITA-OT base directory. Any immediate
+              subdirectory that contains a <filepath>plugin.xml</filepath> file is installed.</pd>
           </plentry>
           <plentry id="plugin.ignores">
             <pt><parmname>plugin.ignores</parmname></pt>
             <pd id="plugin.ignores.desc">A semicolon-separated list of directory names to be ignored during plug-in
-              integration; any relative paths are resolved against the DITA-OT base directory.</pd>
+              installation; any relative paths are resolved against the DITA-OT base directory.</pd>
           </plentry>
         </parml>
       </fig>

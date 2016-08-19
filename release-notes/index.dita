@@ -30,11 +30,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2413" scope="external" format="html">#2413</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2424" scope="external" format="html">#2424</xref>
           </li>
-          <!--
-          <li id="2439">PDF2 build target dependency […] expanded twice
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2439" scope="external" format="html">#2439</xref>
+          <li id="2439">In DITA-OT 2.3, the PDF2 build target dependency list contained redundant entries. The
+            integration process has been corrected to remove the duplicates.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2439" scope="external" format="html">#2439</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2451" scope="external" format="html">#2451</xref>
           </li>
-          -->
           <li id="2441">The script that checks for Antenna House installations has been updated to include installation
             paths with spaces as used by recent versions of Antenna House for Windows –
               <filepath>C:\Program&#xA0;Files\Antenna&#xA0;House</filepath> and the (x86) equivalent.

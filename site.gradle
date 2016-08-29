@@ -32,7 +32,7 @@ task params(type: SaxonXsltTask) {
   output "parameters/all-parameters.dita"
   stylesheet "resources/params.xsl"
 
-  parameters("output-dir.url": toURI("parameters"))
+  parameters("output-dir.url": project.toURI("parameters"))
 
   outputs.dir "${projectDir}/parameters"
 }
@@ -42,7 +42,7 @@ task extensionPoints(type: SaxonXsltTask) {
   output "extension-points/all-extension-points.dita"
   stylesheet "resources/extension-points.xsl"
 
-  parameters("output-dir.url": toURI("extension-points"))
+  parameters("output-dir.url": project.toURI("extension-points"))
 
   outputs.dir "${projectDir}/extension-points"
 }

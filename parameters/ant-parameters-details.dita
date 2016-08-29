@@ -618,6 +618,13 @@
             <pt><parmname>customization.dir</parmname></pt>
             <pd>Specifies the customization directory.</pd>
           </plentry>-->
+          <plentry id="outputFile.base">
+            <pt>
+              <parmname>outputFile.base</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-pdf.dita#pdf/outputFile.base.desc"/>
+            <pd conaction="pushafter">By default, the PDF file uses the base filename of the input <filepath>.ditamap</filepath> file.</pd>
+          </plentry>          
           <plentry id="pdf.formatter">
             <pt>
               <parmname>pdf.formatter</parmname>

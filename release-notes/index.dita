@@ -12,11 +12,35 @@
         <xref keyref="dita-ot-issues" scope="external">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v232">
+  <reference id="v233">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="2017">In certain cases, earlier versions of DITA-OT resolved relative paths to related links from the
+            temporary directory rather than from the input DITA map file. Processing has been modified to ensure that
+            links are generated correctly regardless of the target file location.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2017" scope="external" format="html">#2017</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2444" scope="external" format="html">#2444</xref>
+          </li>
+          <li id="2464">Related link processing has been adjusted to handle cases that generate empty related links
+            groups.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2464" scope="external" format="html">#2464</xref>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.3.2...2.3.3" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v232">
+    <title>Maintenance Release 2.3.2</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.3.2 included the following bug fixes.</p>
         <ul>
           <li id="1599">In earlier versions of DITA-OT, relative paths to cross-references from short descriptions were
             sometimes interpreted incorrectly if the source and target topics were located in different directories. New

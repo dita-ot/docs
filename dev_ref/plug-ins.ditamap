@@ -24,15 +24,6 @@
     <topicref href="plugin-sample.dita"/>
   </topicref>
 
-  <topicref href="plugin-extension-points.dita">
-    <topicref href="plugin-extension-points-general.dita"/>
-    <topicref href="plugin-extension-points-pre-processing.dita"/>
-    <topicref href="plugin-extension-points-xslt-import.dita"/>
-    <topicref href="plugin-extension-points-xslt-parameters.dita"/>
-    <topicref href="plugin-extension-points-support.dita"/>
-    <topicref href="../extension-points/all-extension-points.dita" keys="all-extension-points"/>
-  </topicref>
-
   <reltable title="Source and target links">
     <relheader>
       <relcolspec linking="sourceonly"/>

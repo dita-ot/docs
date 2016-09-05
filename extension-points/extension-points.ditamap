@@ -10,6 +10,26 @@
     <topicref href="plugin-extension-points-xslt-import.dita"/>
     <topicref href="plugin-extension-points-xslt-parameters.dita"/>
     <topicref href="plugin-extension-points-support.dita"/>
+    <topicref href="extension-points-by-plugin.dita">
+      <!--<topicref href="extension-point-com.sophos.tocjs.dita"/>-->
+      <!--<topicref href="extension-point-org.dita-ot.html.dita"/>-->
+      <topicref href="extension-point-org.dita.base.dita"/>
+      <topicref href="extension-point-org.dita.eclipsehelp.dita"/>
+      <topicref href="extension-point-org.dita.html5.dita"/>
+      <topicref href="extension-point-org.dita.htmlhelp.dita"/>
+      <!--<topicref href="extension-point-org.dita.javahelp.dita"/>-->
+      <!--<topicref href="extension-point-org.dita.pdf2.axf.dita"/>-->
+      <topicref href="extension-point-org.dita.pdf2.dita"/>
+      <!--
+      <topicref href="extension-point-org.dita.pdf2.fop.dita"/>
+      <topicref href="extension-point-org.dita.pdf2.xep.dita"/>
+      <topicref href="extension-point-org.dita.specialization.dita11.dita"/>
+      -->
+      <topicref href="extension-point-org.dita.troff.dita"/>
+      <topicref href="extension-point-org.dita.xhtml.dita"/>
+      <!--<topicref href="extension-point-org.oasis-open.dita.v1_2.dita"/>-->
+      <!--<topicref href="extension-point-org.oasis-open.dita.v1_3.dita"/>-->
+    </topicref>
     <topicref href="all-extension-points.dita" keys="all-extension-points"/>
   </topicref>
 </map>

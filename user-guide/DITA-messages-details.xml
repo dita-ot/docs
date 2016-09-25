@@ -349,7 +349,7 @@
         <stentry conref="DITA-messages.xml#msgs/DOTX001W-extra" conaction="pushreplace">This build uses generated text,
           such as the phrase "Related information" (which is generated above many link groups). The toolkit was unable
           to locate the string <varname>%1</varname> for your specified language, so the string will appear in the
-          default language. This generally indicates that the toolkit's strings needs to be updated to support your
+          default language. This generally indicates that the toolkit's strings need to be updated to support your
           language, or that your language setting is incorrect.</stentry>
       </strow>
       <strow>
@@ -717,7 +717,7 @@
         <stentry conref="DITA-messages.xml#msgs/DOTX067E-extra" conaction="pushreplace">This PDF build uses generated
           text, such as the phrase "Related information" (which is generated above many link groups). The toolkit was
           unable to locate the string <varname>%1</varname> for your specified language, so the string will appear in
-          the default language. This generally indicates that the toolkit's strings needs to be updated to support your
+          the default language. This generally indicates that the toolkit's strings need to be updated to support your
           language, or that your language setting is incorrect.</stentry>
       </strow>
     </simpletable>

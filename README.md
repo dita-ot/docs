@@ -1,6 +1,6 @@
-# DITA Open Toolkit Documentation
+# DITA Open Toolkit Documentation [![Build Status](https://travis-ci.org/dita-ot/docs.svg?branch=develop)](http://travis-ci.org/dita-ot/docs)
 
-This repository tracks the source files for the [DITA Open Toolkit documentation][1]. 
+This repository tracks the source files for the [DITA Open Toolkit documentation][1].
 
 
 ## Contribution Guidelines

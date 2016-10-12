@@ -14,7 +14,7 @@
             <dt>JRE or JDK, version <keyword keyref="tool.java.version"/> or later</dt>
             <dd>Provides the basic environment for the DITA-OT. You can download the Oracle JRE or JDK from <xref
                 keyref="download.oracle-jdk"/>. <note>This is the <i>only</i> prerequisite software that you need to
-                install. The remaining required software is included in the distribution packages.</note></dd>
+                install. The remaining required software is included in the distribution package.</note></dd>
           </dlentry>
           <dlentry id="antbuild">
             <dt>Ant, version <keyword keyref="tool.ant.version.min"/> or later</dt>
@@ -49,8 +49,8 @@
           <dlentry>
             <dt>XSL-FO processor</dt>
             <dd>Required for generating PDF output. <tm tmtype="tm">Apache</tm> FOP (Formatting Objects Processor) is
-              included in the distribution packages. You can download FOP from <xref keyref="download.fop"/>. You also
-              can use commercial FO processors such as Antenna House Formatter or RenderX XEP.</dd>
+              included in the distribution package. You can download other versions from <xref keyref="download.fop"/>.
+              You can also use commercial FO processors such as Antenna House Formatter or RenderX XEP.</dd>
           </dlentry>
         </dl></p>
     </section>

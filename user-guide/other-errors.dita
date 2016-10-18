@@ -29,5 +29,11 @@
       <p>This problem occurs when HTML files unrelated to the current transformation are found in the output directory.
         Delete the content of the output directory and run the transformation again.</p>
     </section>
+    <section id="unsupported-class-version-error">
+      <title>UnsupportedClassVersionError</title>
+      <p>If you receive a <codeph>java.lang.UnsupportedClassVersionError</codeph> error message with an
+          <codeph>Unsupported major.minor version</codeph> and a list of Java classes, make sure your system meets the
+        minimum Java requirements as listed in the <cite>Release Notes</cite> and installation instructions.</p>
+    </section>
   </refbody>
 </reference>

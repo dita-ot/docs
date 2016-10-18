@@ -156,7 +156,6 @@
         <topicref href="../parameters/parameters-base.dita" navtitle="All transformation types"/>
       </relcell>
     </relrow>
-
   </reltable>
   <reltable>
     <title>Reference to reference: Transformations and common-HTML-transformations topic</title>
@@ -267,6 +266,22 @@
       </relcell>
       <relcell>
         <topicref href="../dev_ref/plugins-installing.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
+  <reltable>
+    <title>Source and target: Troubleshooting topics</title>
+    <relheader>
+      <relcolspec linking="sourceonly"/>
+      <relcolspec linking="targetonly"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="../user-guide/other-errors.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="../release-notes/index.dita"/>
+        <topicref href="../getting-started/installing-client.dita"/>
       </relcell>
     </relrow>
   </reltable>

@@ -29,10 +29,5 @@
       <p>This problem occurs when HTML files unrelated to the current transformation are found in the output directory.
         Delete the content of the output directory and run the transformation again.</p>
     </section>
-    <section>
-      <title>Stack Overflow error</title>
-      <p>If you receive an error about a stack memory overflow, increase the memory available to Java and run the
-        transformation again.</p>
-    </section>
   </refbody>
 </reference>

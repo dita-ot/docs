@@ -22,7 +22,7 @@ For example, to build HTML output, enter the following on the command line:
 
 Output will be generated in the `/out` folder of the `docs` repository. This folder is created automatically if it doesn't exist. _(Git ignores the contents of this folder so you don't inadvertently commit these transient files.)_
 
-**NOTE:** The build script assumes that the `$DITA_HOME` environment variable or the `dita.home` Ant property is set to point to a working DITA-OT installation:
+**NOTE:** The build script assumes that the `$DITA_HOME` environment variable or the `dita.home` Ant property points to a working DITA-OT installation. If neither is set or you need to override the value, you can also set it on the command line.
 
 either:
 

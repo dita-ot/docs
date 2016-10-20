@@ -50,13 +50,14 @@ Follow this process to ensure your contribution meets our expectations and incre
 
     Please be sure to follow the [coding guidelines][5] and [best practices][6] outlined in the docs project wiki:
 
-    * [Commit related changes][7]
-    * [Commit often][8]
-    * [Write good commit messages][9]
+    * [Test before committing][7]
+    * [Commit related changes][8]
+    * [Commit often][9]
+    * [Write good commit messages][10]
 
-    Use Git's [interactive rebase][10] feature to tidy up your commits, if necessary, before making them public.
+    Use Git's [interactive rebase][11] feature to tidy up your commits, if necessary, before making them public.
 
-5. Indicate that you agree to the terms of the Apache License Version 2.0 by "[signing off][11]" your contribution with `git commit -s`.
+5. Indicate that you agree to the terms of the Apache License Version 2.0 by "[signing off][12]" your contribution with `git commit -s`.
 
     This adds a line with your name and e-mail address to your Git commit message:
 
@@ -79,16 +80,18 @@ Follow this process to ensure your contribution meets our expectations and incre
 8. [Open a pull request][3] with a clear title and description.
 
     **Pro tip:** If there's no corresponding issue for the changes you're proposing, there's no need to create one first.
-    You can describe the problem and provide the solution all in one step. _(Under the hood, pull requests are just a special type of issue.)_
+    You can describe the problem and provide the solution all in one step.
+    _(Under the hood, pull requests are just a special type of issue.)_
 
-[1]:  https://github.com/dita-ot/docs/issues
-[2]:  https://github.com/dita-ot/docs/issues/new
-[3]:  https://help.github.com/articles/using-pull-requests/
-[4]:  https://help.github.com/articles/fork-a-repo/
-[5]:  https://github.com/dita-ot/docs/wiki/Coding-guidelines
-[6]:  https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
-[7]:  https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
-[8]:  https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
-[9]:  https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
-[10]: https://help.github.com/articles/interactive-rebase
-[11]: http://www.dita-ot.org/DCO
+[1]: https://github.com/dita-ot/docs/issues
+[2]: https://github.com/dita-ot/docs/issues/new
+[3]: https://help.github.com/articles/using-pull-requests/
+[4]: https://help.github.com/articles/fork-a-repo/
+[5]: https://github.com/dita-ot/docs/wiki/Coding-guidelines
+[6]: https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
+[7]: https://github.com/dita-ot/docs/wiki/Git-workflow#test-before-committing
+[8]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
+[9]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-often
+[10]: https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
+[11]: https://help.github.com/articles/interactive-rebase
+[12]: http://www.dita-ot.org/DCO

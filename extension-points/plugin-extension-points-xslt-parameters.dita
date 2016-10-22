@@ -46,6 +46,18 @@
           <dt><parmname>dita.conductor.html.param</parmname></dt>
           <dd>Pass parameters to the HTML and HTML Help transformations.</dd>
         </dlentry>
+        <dlentry id="dita.conductor.html5.param">
+          <dt><parmname>dita.conductor.html5.param</parmname></dt>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.html5.dita#org.dita.html5-extension-points/dita.conductor.html5.param.desc"
+            >Pass parameters to the HTML5 transformation.</dd>
+        </dlentry>
+        <dlentry id="dita.conductor.html5.toc.param">
+          <dt><parmname>dita.conductor.html5.toc.param</parmname></dt>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.html5.dita#org.dita.html5-extension-points/dita.conductor.html5.toc.param.desc"
+            >Pass parameters to the XSLT step that generates the HTML5 table of contents (TOC).</dd>
+        </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.pdf2.param</parmname></dt>
           <dd>Pass parameters to the PDF (formerly PDF2) transformation.</dd>
@@ -62,9 +74,8 @@
     </section>
     <example>
       <title>Example</title>
-      <p>The following two files represent a complete (albeit simple) plug-in that passes the
-        parameters defined in the <filepath>insertParameters.xml</filepath> file to the XHTML
-        transformation process.</p>
+      <p>The following two files represent a complete (albeit simple) plug-in that passes the parameters defined in the
+          <filepath>insertParameters.xml</filepath> file to the XHTML transformation process.</p>
       <fig>
         <title>Contents of the <filepath>plugin.xml</filepath> file</title>
         <codeblock>&lt;plugin id="com.example.newparam">

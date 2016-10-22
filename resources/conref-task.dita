@@ -50,14 +50,12 @@
               <p id="transtypes">You can create plug-ins to add new output formats; by default, the following values are
                 available:
                 <ul>
-                  <li>docbook</li>
                   <li>eclipsehelp</li>
                   <li>html5</li>
                   <li platform="windows">htmlhelp</li>
                   <li>javahelp</li>
-                  <li>odt</li>
                   <li>pdf</li>
-                  <li>wordrtf</li>
+                  <li>tocjs</li>
                   <li>troff</li>
                   <li>xhtml</li>
                 </ul>

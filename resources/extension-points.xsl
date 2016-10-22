@@ -53,12 +53,12 @@
             <codeph><xsl:value-of select="@id"/></codeph>
           </title>
           <titlealts>
-            <navtitle>
-              <xsl:value-of select="@id"/> <xsl:value-of select="@transtype/desc"/>
+            <navtitle id="navtitle">
+              <xsl:value-of select="(transtype/@desc)[1]"/>
             </navtitle>
           </titlealts>
-          <shortdesc id="shortdesc">The extension points provided by the <codeph><xsl:value-of select="@id"/></codeph>
-          plug-in can be used to modify various aspects of <xsl:value-of select="(transtype/@desc)[1]"/> processing.</shortdesc>
+          <shortdesc id="shortdesc">The <codeph><xsl:value-of select="@id"/></codeph> plug-in provides extension points
+            to modify <xsl:value-of select="(transtype/@desc)[1]"/> processing.</shortdesc>
           <refbody>
             <section>
               <dl>

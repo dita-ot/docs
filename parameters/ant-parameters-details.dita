@@ -224,12 +224,12 @@
   </reference>
 
   <reference id="base-html">
-    <title>HTML-based output formats</title>
+    <title>HTML-based output parameters</title>
     <titlealts>
-      <navtitle>All HTML-based transformations</navtitle>
+      <navtitle>HTML-based output</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace" conref="parameters-base-html.dita#base-html/shortdesc">Certain parameters apply
-      to all the HTML-based transformation types: Eclipse help, HTML Help, JavaHelp, TocJS, HTML5, and XHTML. </shortdesc>
+      to all the HTML-based transformation types: Eclipse help, HTML5, HTML Help, JavaHelp, TocJS, and XHTML.</shortdesc>
     <refbody>
       <section>
         <parml>

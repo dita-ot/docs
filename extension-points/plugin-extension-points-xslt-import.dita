@@ -95,8 +95,17 @@
             >Overrides the default XSLT step that generates the HTML5 table of contents (TOC).</dd>
         </dlentry>
         <dlentry>
-          <dt><parmname>dita.xsl.rtf</parmname></dt>
-          <dd>Overrides the default rich-text format (RTF) transformation.</dd>
+          <dt><parmname>dita.xsl.htmlhelp.map2hhc</parmname></dt>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.htmlhelp.dita#org.dita.htmlhelp-extension-points/dita.xsl.htmlhelp.map2hhc.desc"
+            >Overrides the default XSLT step that generates the HTML Help contents (<filepath>.hhc</filepath>)
+            file.</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.xsl.htmlhelp.map2hhp</parmname></dt>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.htmlhelp.dita#org.dita.htmlhelp-extension-points/dita.xsl.htmlhelp.map2hhp.desc"
+            >Overrides the default XSLT step that generates the HTML Help project (<filepath>.hhp</filepath>) file.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.troff-ast</parmname></dt>

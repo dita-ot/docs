@@ -95,7 +95,8 @@
   <reference id="htmlhelp">
     <title>HTML Help</title>
     <titlealts>
-      <navtitle>HTMLHelp (<codeph>org.dita.htmlhelp</codeph>) </navtitle>
+      <navtitle conaction="pushreplace"
+        conref="extension-point-org.dita.htmlhelp.dita#org.dita.htmlhelp-extension-points/navtitle">HTML Help</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace"
       conref="extension-point-org.dita.htmlhelp.dita#org.dita.htmlhelp-extension-points/shortdesc">Certain extension

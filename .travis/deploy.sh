@@ -13,8 +13,8 @@ if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
 
   cd $SITE_DIR
 
-  # Reset files where only commit metadata has changed
-  ruby ../.travis/clean.rb
+  # Reset files where only commit metadata has changed (disable until commit metadata is generated)
+  # ruby ../.travis/clean.rb
   # commit site
   git config user.email "ditaotbot@gmail.com"
   git config user.name "DITA-OT Bot"

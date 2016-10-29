@@ -51,13 +51,13 @@
             >Pass parameters to the <?oxy_comment_start author="Roger"comment="Verify"?>HTML and<?oxy_comment_end?> HTML
             Help transformations.</dd>
         </dlentry>
-        <dlentry id="dita.conductor.html5.param">
+        <dlentry>
           <dt><parmname>dita.conductor.html5.param</parmname></dt>
           <dd conaction="pushreplace"
             conref="extension-point-org.dita.html5.dita#org.dita.html5-extension-points/dita.conductor.html5.param.desc"
             >Pass parameters to the HTML5 transformation.</dd>
         </dlentry>
-        <dlentry id="dita.conductor.html5.toc.param">
+        <dlentry>
           <dt><parmname>dita.conductor.html5.toc.param</parmname></dt>
           <dd conaction="pushreplace"
             conref="extension-point-org.dita.html5.dita#org.dita.html5-extension-points/dita.conductor.html5.toc.param.desc"

@@ -74,13 +74,13 @@
   </reference>
 
   <reference id="eclipsehelp">
-    <title>Eclipse help</title>
+    <title>Eclipse Help</title>
     <titlealts>
       <navtitle>Eclipse Help (<codeph>org.dita.eclipsehelp</codeph>) </navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace"
       conref="extension-point-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-extension-points/shortdesc">Certain
-      extension points are specific to the Eclipse help transformation.</shortdesc>
+      extension points are specific to the Eclipse Help transformation.</shortdesc>
     <refbody>
       <section>
         <dl>

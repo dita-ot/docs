@@ -45,8 +45,23 @@
       <p>You can use the following extension points to add XSLT processing to modules in DITA-OT transformations:</p>
       <dl>
         <dlentry>
+          <dt><parmname>dita.map.eclipse.index.pre</parmname></dt>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-extension-points/dita.map.eclipse.index.pre.desc"
+            >Runs an Ant target before the Eclipse index extraction process.</dd>
+        </dlentry>
+        <dlentry>
           <dt><parmname>dita.xsl.eclipse.plugin</parmname></dt>
-          <dd>Overrides the step that generates the <filepath>plugin.xml</filepath> file for Eclipse Help.</dd>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-extension-points/dita.xsl.eclipse.plugin.desc"
+            >Overrides the default XSLT step that generates the <filepath>plugin.xml</filepath> file for Eclipse
+            Help.</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.xsl.eclipse.toc</parmname></dt>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-extension-points/dita.xsl.eclipse.toc.desc"
+            >Overrides the default XSLT step that generates the Eclipse Help table of contents (TOC).</dd>
         </dlentry>
         <dlentry id="dita.xsl.html.cover">
           <dt><parmname>dita.xsl.html.cover</parmname></dt>

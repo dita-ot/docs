@@ -40,7 +40,9 @@
       <dl>
         <dlentry>
           <dt><parmname>dita.conductor.eclipse.toc.param</parmname></dt>
-          <dd>Pass parameters to the XSLT step that generates the Eclipse Help table of contents (TOC).</dd>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-extension-points/dita.conductor.eclipse.toc.param.desc"
+            >Pass parameters to the XSLT step that generates the Eclipse Help table of contents (TOC).</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.html.param</parmname></dt>

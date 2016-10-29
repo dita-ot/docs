@@ -18,16 +18,7 @@
       conref="extension-point-org.dita.base.dita#org.dita.base-extension-points/shortdesc">The
         <codeph>org.dita.base</codeph> plug-in provides common extension points that are available to extend processing
       in all transformations that are supported by the DITA Open Toolkit.</shortdesc>
-    <refbody>
-      <section>
-        <dl>
-          <dlentry>
-            <dt/>
-            <dd/>
-          </dlentry>
-        </dl>
-      </section>
-    </refbody>
+    <refbody/>
   </reference>
 
   <reference id="xhtml">
@@ -39,16 +30,7 @@
       conref="extension-point-org.dita.xhtml.dita#org.dita.xhtml-extension-points/shortdesc">The
         <codeph>org.dita.xhtml</codeph> plug-in provides shared extension points that can be used to modify processing
       in HTML-based transformation types such as Eclipse help, HTML Help, JavaHelp, TocJS, and XHTML.</shortdesc>
-    <refbody>
-      <section>
-        <dl>
-          <dlentry>
-            <dt/>
-            <dd/>
-          </dlentry>
-        </dl>
-      </section>
-    </refbody>
+    <refbody/>
   </reference>
 
   <reference id="html5">
@@ -61,16 +43,7 @@
       extension points provided by common processing and those shared by with other HTML-based transformations, the
         <codeph>org.dita.html5</codeph> plug-in provides extension points that are specific to the HTML5
       transformation.</shortdesc>
-    <refbody>
-      <section>
-        <dl>
-          <dlentry>
-            <dt/>
-            <dd/>
-          </dlentry>
-        </dl>
-      </section>
-    </refbody>
+    <refbody/>
   </reference>
 
   <reference id="eclipsehelp">
@@ -81,15 +54,7 @@
     <shortdesc conaction="pushreplace"
       conref="extension-point-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-extension-points/shortdesc">Certain
       extension points are specific to the Eclipse Help transformation.</shortdesc>
-    <refbody>
-      <section>
-        <dl>
-          <dlentry>
-            <dt/>
-            <dd/>
-          </dlentry>
-        </dl></section>
-    </refbody>
+    <refbody/>
   </reference>
 
   <reference id="htmlhelp">
@@ -101,15 +66,7 @@
     <shortdesc conaction="pushreplace"
       conref="extension-point-org.dita.htmlhelp.dita#org.dita.htmlhelp-extension-points/shortdesc">Certain extension
       points are specific to the HTML Help transformation.</shortdesc>
-    <refbody>
-      <section>
-        <dl>
-          <dlentry>
-            <dt/>
-            <dd/>
-          </dlentry>
-        </dl></section>
-    </refbody>
+    <refbody/>
   </reference>
 
   <reference id="pdf">
@@ -120,15 +77,7 @@
     <shortdesc conaction="pushreplace"
       conref="extension-point-org.dita.pdf2.dita#org.dita.pdf2-extension-points/shortdesc">Certain extension points are
       specific to the PDF transformation.</shortdesc>
-    <refbody>
-      <section>
-        <dl>
-          <dlentry>
-            <dt/>
-            <dd/>
-          </dlentry>
-        </dl></section>
-    </refbody>
+    <refbody/>
   </reference>
 
   <reference id="troff">
@@ -141,16 +90,7 @@
       conref="extension-point-org.dita.troff.dita#org.dita.troff-extension-points/shortdesc">Certain extension points
       are specific to the troff transformation, which produces output for use with the troff viewer on Unix-style
       platforms, particularly for programs such as the man page viewer.</shortdesc>
-    <refbody>
-      <section>
-        <dl>
-          <dlentry>
-            <dt/>
-            <dd/>
-          </dlentry>
-        </dl>
-      </section>
-    </refbody>
+    <refbody/>
   </reference>
 
 </reference>

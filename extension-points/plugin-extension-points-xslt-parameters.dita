@@ -44,7 +44,10 @@
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.html.param</parmname></dt>
-          <dd>Pass parameters to the HTML and HTML Help transformations.</dd>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.xhtml.dita#org.dita.xhtml-extension-points/dita.conductor.html.param.desc"
+            >Pass parameters to the <?oxy_comment_start author="Roger"comment="Verify"?>HTML and<?oxy_comment_end?> HTML
+            Help transformations.</dd>
         </dlentry>
         <dlentry id="dita.conductor.html5.param">
           <dt><parmname>dita.conductor.html5.param</parmname></dt>
@@ -64,11 +67,15 @@
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.xhtml.param</parmname></dt>
-          <dd>Pass parameters to the XHTML and Eclipse Help transformations.</dd>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.xhtml.dita#org.dita.xhtml-extension-points/dita.conductor.xhtml.param.desc"
+            >Pass parameters to the XHTML and Eclipse Help transformations.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.xhtml.toc.param</parmname></dt>
-          <dd>Pass parameters to to the XSLT step that generates the XHTML table of contents (TOC).</dd>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.xhtml.dita#org.dita.xhtml-extension-points/dita.conductor.xhtml.toc.param.desc"
+            >Pass parameters to the XSLT step that generates the XHTML table of contents (TOC).</dd>
         </dlentry>
       </dl>
     </section>

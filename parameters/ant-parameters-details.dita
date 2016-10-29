@@ -658,7 +658,8 @@
               <parmname>args.xhtml.contenttarget</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-xhtml.dita#xhtml/args.xhtml.contenttarget.desc"/>
-            <pd conaction="pushafter">The default value is <option>contentwin</option>.</pd>
+            <pd conaction="pushafter">The default value is <option>contentwin</option>. Change this value to use a
+              different target name for the table of contents.</pd>
           </plentry>
         </parml>
       </section>
@@ -674,6 +675,7 @@
       common parameters with other HTML-based transformations and provides additional parameters that are specific to
       HTML5 output.</shortdesc>
     <refbody>
+      <!-- args.html5.contenttarget is listed in generated topic, but does not appear in default HTML5 output files. -->
       <!--<section>
         <parml>
           <plentry id="args.html5.nav-toc">

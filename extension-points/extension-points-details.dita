@@ -139,7 +139,8 @@
     </titlealts>
     <shortdesc conaction="pushreplace"
       conref="extension-point-org.dita.troff.dita#org.dita.troff-extension-points/shortdesc">Certain extension points
-      are specific to the troff transformation.</shortdesc>
+      are specific to the troff transformation, which produces output for use with the troff viewer on Unix-style
+      platforms, particularly for programs such as the man page viewer.</shortdesc>
     <refbody>
       <section>
         <dl>

@@ -12,13 +12,13 @@
     <topicref href="plugin-extension-points-support.dita"/>
     <topicref href="extension-points-by-plugin.dita" navtitle="Plug-in extension points" locktitle="yes">
       <!-- Include only topics for plug-ins which provide extension points -->
-      <topicref href="extension-point-org.dita.base.dita"/>
-      <topicref href="extension-point-org.dita.xhtml.dita"/>
-      <topicref href="extension-point-org.dita.html5.dita"/>
-      <topicref href="extension-point-org.dita.eclipsehelp.dita"/>
-      <topicref href="extension-point-org.dita.htmlhelp.dita"/>
-      <topicref href="extension-point-org.dita.pdf2.dita"/>
-      <topicref href="extension-point-org.dita.troff.dita"/>
+      <topicref href="extension-points-in-org.dita.base.dita"/>
+      <topicref href="extension-points-in-org.dita.xhtml.dita"/>
+      <topicref href="extension-points-in-org.dita.html5.dita"/>
+      <topicref href="extension-points-in-org.dita.eclipsehelp.dita"/>
+      <topicref href="extension-points-in-org.dita.htmlhelp.dita"/>
+      <topicref href="extension-points-in-org.dita.pdf2.dita"/>
+      <topicref href="extension-points-in-org.dita.troff.dita"/>
       <!-- Other plug-ins provide no additional extension points (beyond common/base) -->
     </topicref>
     <topicref href="all-extension-points.dita" keys="all-extension-points"/>

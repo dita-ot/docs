@@ -42,14 +42,14 @@
     <!--xsl:for-each select="//transtype/param"-->
     <xsl:for-each select="//plugin">
       <xsl:variable name="id" select="@id"/>
-      <xsl:message>Writing <xsl:value-of select="$output-dir.url"/>extension-point-<xsl:value-of select="$id"/>.dita</xsl:message>
-      <xsl:result-document href="{$output-dir.url}/extension-point-{$id}.dita"
+      <xsl:message>Writing <xsl:value-of select="$output-dir.url"/>/extension-points-in-<xsl:value-of select="$id"/>.dita</xsl:message>
+      <xsl:result-document href="{$output-dir.url}/extension-points-in-{$id}.dita"
         doctype-public="-//OASIS//DTD DITA Reference//EN"
         doctype-system="reference.dtd">
         <xsl:comment> Generated from plugin source, do not edit! </xsl:comment>
-        <reference id="{$id}-extension-points">
+        <reference id="{$id}-ext">
           <title outputclass="generated">
-            <xsl:text>Extensions in </xsl:text>
+            <xsl:text>Extension points in </xsl:text>
             <codeph><xsl:value-of select="@id"/></codeph>
           </title>
           <titlealts>

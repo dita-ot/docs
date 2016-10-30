@@ -4,9 +4,9 @@
 
 <reference id="plugin-general-extension-points">
   <title>General extension points</title>
-  <shortdesc>These extension points enable you to extend the DITA-OT. You can add Ant targets or
-    imports; add a Java library to the <parmname>classpath</parmname> parameter; add a new
-    transformation type; extend a catalog file; add new diagnostic messages, and more.</shortdesc>
+  <shortdesc>These extension points enable you to extend the DITA-OT. You can add Ant targets or imports; add a Java
+    library to the <parmname>classpath</parmname> parameter; add a new transformation type; extend a catalog file; add
+    new diagnostic messages, and more.</shortdesc>
   <refbody>
     <section>
       <dl>
@@ -29,9 +29,8 @@
         </dlentry>
         <dlentry>
           <dt><parmname>dita.specialization.catalog</parmname></dt>
-          <dd>Adds the content of a catalog file to the main DITA-OT catalog file. This extension
-            point is deprecated; use <codeph>dita.specialization.catalog.relative</codeph>
-            instead.</dd>
+          <dd>Adds the content of a catalog file to the main DITA-OT catalog file. This extension point is deprecated;
+            use <codeph>dita.specialization.catalog.relative</codeph> instead.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.specialization.catalog.relative</parmname></dt>
@@ -49,7 +48,9 @@
         </dlentry>
         <dlentry>
           <dt><parmname>org.dita.pdf2.catalog.relative</parmname></dt>
-          <dd>Adds the content of a catalog file to the main catalog file for the PDF plug-in.</dd>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.pdf2.dita#org.dita.pdf2-extension-points/org.dita.pdf2.catalog.relative.desc"
+            >Adds the content of a catalog file to the main catalog file for the PDF plug-in.</dd>
         </dlentry>
       </dl>
     </section>

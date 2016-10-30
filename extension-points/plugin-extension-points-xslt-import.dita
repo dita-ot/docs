@@ -128,8 +128,10 @@
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.xslfo</parmname></dt>
-          <dd>Overrides the default PDF transformation (formerly known as PDF2). The referenced XSL file is integrated
-            directly into the XSLT step that generates the XSL-FO.</dd>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.pdf2.dita#org.dita.pdf2-extension-points/dita.xsl.xslfo.desc">Overrides the
+            default PDF transformation. The referenced XSL file is integrated directly into the XSLT step that generates
+            the XSL-FO.</dd>
         </dlentry>
       </dl>
     </section>

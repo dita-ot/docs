@@ -65,7 +65,9 @@
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.pdf2.param</parmname></dt>
-          <dd>Pass parameters to the PDF (formerly PDF2) transformation.</dd>
+          <dd conaction="pushreplace"
+            conref="extension-point-org.dita.pdf2.dita#org.dita.pdf2-extension-points/dita.conductor.pdf2.param.desc"
+            >Pass parameters to the PDF transformation.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.xhtml.param</parmname></dt>

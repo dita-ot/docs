@@ -41,7 +41,7 @@
     </example>
     <section>
       <title>RFC 5147</title>
-      <p>DITA-OT implements line position and range from
+      <p>DITA-OT also supports the line position and range syntax from
         <xref keyref="rfc5147"/>. The format for line range is:</p>
       <codeblock>uri ("#line=" start? "," end? )?</codeblock>
       <p>Start and end line numbers start from 0 and are inclusive and exclusive, respectively. If the start range is
@@ -54,5 +54,29 @@
       <codeblock>&lt;coderef href="Parser.scala#line=4,10" format="scala"/></codeblock>
       <p>Only lines from 5 to 10 will be included in the output.</p>
     </example>
+    <section>
+      <title>Line range by content</title>
+      <p>Instead of specifying line numbers, you can also select lines to include in the code reference by specifying
+        keywords (or “<term>tokens</term>”) that appear in the referenced file.</p>
+      <p>DITA-OT supports the <codeph>token</codeph> pointer in the URI fragment to extract a line range based on the
+        file content. The format for referencing a range of lines by content is:</p>
+      <codeblock>uri ("#token=" start? ("," end)? )?</codeblock>
+      <p>Lines identified using start and end tokens are exclusive: the lines that contain the start token and end token
+        will be not be included. If the start token is omitted, the range starts from the first line in the file; if the
+        end token is omitted, the range ends on the last line of the file. </p>
+    </section>
+    <example>
+      <p>Given a Haskell source file named <filepath>fact.hs</filepath> with the following content,</p>
+      <codeblock><coderef href="../resources/fact.hs"/></codeblock>
+      <p>a range of lines can be referenced as:</p>
+      <codeblock>&lt;coderef href="fact.hs#token=START-FACT,END-FACT"/></codeblock>
+      <p>to include the range of lines that follows the <codeph>START-FACT</codeph> token, up to (but not including) the
+        line that contains the <codeph>END-FACT</codeph> token. The resulting <xmlelement>codeblock</xmlelement> would
+        contain the following lines:</p>
+      <codeblock><coderef href="../resources/fact.hs#token=START-FACT,END-FACT"/></codeblock>
+      <note type="tip">This approach can be used to reference code samples that are frequently edited. In these cases,
+        referencing line ranges by line number can be error-prone, as the target line range for the reference may shift
+        if preceding lines are added or removed. Specifying ranges by line content makes references more robust, as long
+        as the <codeph>token</codeph> keywords are preserved when the referenced resource is modified.</note></example>
   </refbody>
 </reference>

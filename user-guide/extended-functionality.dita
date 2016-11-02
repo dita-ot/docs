@@ -73,7 +73,11 @@
       <p>to include the range of lines that follows the <codeph>START-FACT</codeph> token, up to (but not including) the
         line that contains the <codeph>END-FACT</codeph> token. The resulting <xmlelement>codeblock</xmlelement> would
         contain the following lines:</p>
-      <codeblock><coderef href="../resources/fact.hs#token=START-FACT,END-FACT"/></codeblock>
+      <!--<codeblock><coderef href="../resources/fact.hs#token=START-FACT,END-FACT"/></codeblock>-->
+      <!-- Use static result pending 2.4 release -->
+      <codeblock>fact :: Int -> Int
+fact 0 = 1
+fact n = n * fact (n-1)</codeblock>
       <note type="tip">This approach can be used to reference code samples that are frequently edited. In these cases,
         referencing line ranges by line number can be error-prone, as the target line range for the reference may shift
         if preceding lines are added or removed. Specifying ranges by line content makes references more robust, as long

@@ -190,9 +190,9 @@
             <parmname>-D</parmname><varname>parameter</varname>=<varname>value</varname>
           </pt>
           <pd>Specify a value for a DITA-OT or Ant build parameter.
-            <p>The long-form <parmname>--parameter=value</parmname> option is only available for parameters that are
-              configured in the plug-in configuration file; the <parmname>-D</parmname> form allows you to specify
-              additional non-configured parameters.</p>
+            <p>The GNU-style <parmname>--parameter=value</parmname> form is only available for parameters that are
+              configured in the plug-in configuration file; the Java-style <parmname>-D</parmname> form can also be used
+              to specify additional non-configured parameters or set system properties.</p>
             <p>Parameters not implemented by the specified transformation type or referenced in a
                 <filepath>.properties</filepath> file are ignored.</p><note
               conref="../resources/conref-task.dita#ID/pass-input-dir"/></pd>

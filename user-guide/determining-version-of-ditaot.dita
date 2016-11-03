@@ -17,14 +17,14 @@
             <choption>Linux or macOS&#xA0;</choption>
             <chdesc>
               <cmdname>bin/dita</cmdname>
-              <option>-version</option>
+              <option>--version</option>
             </chdesc>
           </chrow>
           <chrow platform="windows">
             <choption>Windows</choption>
             <chdesc>
               <cmdname>bin\dita</cmdname>
-              <option>-version</option>
+              <option>--version</option>
             </chdesc>
           </chrow>
         </choicetable>

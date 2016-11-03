@@ -42,7 +42,7 @@
         <cmd>Reference your <filepath>.properties</filepath> file with the <cmdname>dita</cmdname> command when building
           your output.</cmd>
         <stepxmp>
-          <codeblock>dita -i <varname>my.ditamap</varname> -f html5 -propertyfile <varname>my.properties</varname></codeblock>
+          <codeblock><cmdname>dita</cmdname> <option>--input</option>=<varname>my.ditamap</varname> <option>--format</option>=html5 <option>--propertyfile</option>=<varname>my.properties</varname></codeblock>
         </stepxmp>
         <info/>
       </step>
@@ -52,7 +52,7 @@
         <stepxmp>
           <p>For example, to build output once with <xmlelement>draft</xmlelement> and
               <xmlelement>required-cleanup</xmlelement> content:</p>
-          <codeblock>dita -i <varname>my.ditamap</varname> -f html5 -propertyfile <varname>my.properties</varname> -Dargs.draft=yes</codeblock>
+          <codeblock><cmdname>dita</cmdname> <option>--input</option>=<varname>my.ditamap</varname> <option>--format</option>=html5 <option>--propertyfile</option>=<varname>my.properties</varname> <option>--args.draft</option>=yes</codeblock>
         </stepxmp>
         <info>
           <note conref="../resources/conref-task.dita#ID/pass-input-dir"/>

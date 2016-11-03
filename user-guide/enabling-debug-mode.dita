@@ -18,7 +18,9 @@
           </chhead>
           <chrow>
             <choption><cmdname>dita</cmdname> command</choption>
-            <chdesc><parmname>-d</parmname> or <parmname>-debug</parmname></chdesc>
+            <chdesc><parmname>--debug</parmname>,
+              <parmname>-debug</parmname>, or
+              <parmname>-d</parmname></chdesc>
           </chrow>
           <chrow>
             <choption>Ant</choption>

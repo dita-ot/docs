@@ -10,7 +10,7 @@
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
         <info>
-          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> -install <varname>plug-in-zip</varname></codeblock>
+          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <option>--install</option>=<varname>plug-in-zip</varname></codeblock>
           <p>where:</p>
           <ul>
             <li conref="../resources/conref-task.dita#ID/novice-variables-1"/>

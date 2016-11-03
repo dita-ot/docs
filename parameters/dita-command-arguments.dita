@@ -63,18 +63,20 @@
           </groupseq>
         </fragment>
       </syntaxdiagram>
-      <note>Many arguments and options for the <cmdname>dita</cmdname> command support several syntax alternatives.
-        DITA-OT provides long-form options (beginning with a double hyphen) per common UNIX conventions and also
-        supports single-hyphen and single-letter variants for backwards compatibility.</note>
+      <note>Most <cmdname>dita</cmdname> command options support several syntax alternatives. All options can be
+        specified with a GNU-style option keyword preceded by two hyphens. In many cases, Unix-style single-letter
+        options (preceded by a single hyphen) are also available for backwards compatibility.</note>
     </section>
     <section>
       <title>Arguments</title>
       <parml>
         <plentry>
           <pt>
-            <parmname>--input</parmname>=<varname>file</varname>,
-            <parmname>-input</parmname> <varname>file</varname>,
-            <parmname>-i</parmname> <varname>file</varname></pt>
+            <parmname>--input</parmname>=<varname>file</varname></pt>
+          <pt>
+            <parmname>-i</parmname>
+            <varname>file</varname>
+          </pt>
           <pd id="args.input.desc">Specifies the master file for your documentation project. Typically this is a DITA
             map, however it also can be a DITA topic if you want to transform a single DITA file. The path can be
             absolute, relative to <parmname>args.input.dir</parmname>, or relative to the current directory if
@@ -82,9 +84,11 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--format</parmname>=<varname>name</varname>,
-            <parmname>-format</parmname> <varname>name</varname>,
-            <parmname>-f</parmname> <varname>name</varname></pt>
+            <parmname>--format</parmname>=<varname>name</varname></pt>
+          <pt>
+            <parmname>-f</parmname>
+            <varname>name</varname>
+          </pt>
           <pd conref="parameters-base.dita#base/transtype.desc"/>
           <pd>
             <p conref="../resources/conref-task.dita#ID/transtypes"/>
@@ -92,36 +96,35 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--install</parmname>=<varname>filename</varname>,
-            <parmname>-install</parmname> <varname>filename</varname></pt>
+            <parmname>--install</parmname>=<varname>filename</varname></pt>
           <pt>
-            <parmname>--install</parmname>=<varname>URL</varname>,
-            <parmname>-install</parmname> <varname>URL</varname></pt>
+            <parmname>--install</parmname>=<varname>URL</varname></pt>
           <pd>Install a single plug-in from a local ZIP file or from a URL.</pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--install</parmname>,
-            <parmname>-install</parmname></pt>
+            <parmname>--install</parmname>
+          </pt>
           <pd><ph conref="../resources/conref-task.dita#ID/plugin-integrate-all"/></pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--uninstall</parmname>=<varname>id</varname>,
-            <parmname>-uninstall</parmname> <varname>id</varname></pt>
+            <parmname>--uninstall</parmname>=<varname>id</varname>
+          </pt>
           <pd>Uninstall a plug-in with the specified ID.</pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--help</parmname>,
-            <parmname>-help</parmname>,
-            <parmname>-h</parmname></pt>
+            <parmname>--help</parmname></pt>
+          <pt>
+            <parmname>-h</parmname>
+          </pt>
           <pd>Print command usage help.</pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--version</parmname>,
-            <parmname>-version</parmname></pt>
+            <parmname>--version</parmname>
+          </pt>
           <pd>Print version information and exit.</pd>
         </plentry>
       </parml>
@@ -131,51 +134,61 @@
       <parml id="dita_build_options">
         <plentry>
           <pt>
-            <parmname>--output</parmname>=<varname>dir</varname>,
-            <parmname>-output</parmname> <varname>dir</varname>,
-            <parmname>-o</parmname> <varname>dir</varname></pt>
+            <parmname>--output</parmname>=<varname>dir</varname></pt>
+          <pt>
+            <parmname>-o</parmname>
+            <varname>dir</varname>
+          </pt>
           <pd id="output.dir.desc">Specifies the path of the output directory; the path can be absolute or relative to
             the current directory. By default, the output is written to the <filepath>out</filepath> subdirectory of the
             current directory.</pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--filter</parmname>=<varname>file</varname>,
-            <parmname>-filter</parmname> <varname>file</varname></pt>
+            <parmname>--filter</parmname>=<varname>file</varname>
+          </pt>
           <pd conref="parameters-base.dita#base/args.filter.desc"/>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--temp</parmname>=<varname>dir</varname>,
-            <parmname>-temp</parmname> <varname>dir</varname>,
-            <parmname>-t</parmname> <varname>dir</varname></pt>
+            <parmname>--temp</parmname>=<varname>dir</varname></pt>
+          <pt>
+            <parmname>-t</parmname>
+            <varname>dir</varname>
+          </pt>
           <pd conref="parameters-base.dita#base/dita.temp.dir.desc"/>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--verbose</parmname>,
-            <parmname>-verbose</parmname>,
-            <parmname>-v</parmname></pt>
+            <parmname>--verbose</parmname></pt>
+          <pt>
+            <parmname>-v</parmname>
+          </pt>
           <pd>Verbose logging.</pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--debug</parmname>,
-            <parmname>-debug</parmname>,
-            <parmname>-d</parmname></pt>
+            <parmname>--debug</parmname></pt>
+          <pt>
+            <parmname>-d</parmname>
+          </pt>
           <pd>Debug logging.</pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--logfile</parmname>=<varname>file</varname>,
-            <parmname>-logfile</parmname> <varname>file</varname>
-            <parmname>-l</parmname> <varname>file</varname></pt>
+            <parmname>--logfile</parmname>=<varname>file</varname></pt>
+          <pt>
+            <parmname>-l</parmname>
+            <varname>file</varname>
+          </pt>
           <pd>Write logging messages to a file.</pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--parameter=value</parmname>,
-            <parmname>-D</parmname><varname>parameter</varname>=<varname>value</varname></pt>
+            <parmname>--parameter=value</parmname></pt>
+          <pt>
+            <parmname>-D</parmname><varname>parameter</varname>=<varname>value</varname>
+          </pt>
           <pd>Specify a value for a DITA-OT or Ant build parameter.
             <p>The long-form <parmname>--parameter=value</parmname> option is only available for parameters that are
               configured in the plug-in configuration file; the <parmname>-D</parmname> form allows you to specify
@@ -186,8 +199,8 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--propertyfile</parmname>=<varname>file</varname>,
-            <parmname>-propertyfile</parmname> <varname>file</varname></pt>
+            <parmname>--propertyfile</parmname>=<varname>file</varname>
+          </pt>
           <pd>Use build parameters defined in the referenced <filepath>.properties</filepath> file.
             <p>Build parameters specified on the command line override those set in the <filepath>.properties</filepath>
               file.</p></pd>

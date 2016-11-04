@@ -52,7 +52,8 @@
         <stepxmp>
           <p>For example, to build output once with <xmlelement>draft</xmlelement> and
               <xmlelement>required-cleanup</xmlelement> content:</p>
-          <codeblock><cmdname>dita</cmdname> <option>--input</option>=<varname>my.ditamap</varname> <option>--format</option>=html5 <option>--propertyfile</option>=<varname>my.properties</varname> <option>--args.draft</option>=yes</codeblock>
+          <codeblock><cmdname>dita</cmdname> <option>--input</option>=<varname>my.ditamap</varname> <option>--format</option>=html5 <option>--propertyfile</option>=<varname>my.properties</varname> \
+     <option>--args.draft</option>=yes</codeblock>
         </stepxmp>
         <info>
           <note conref="../resources/conref-task.dita#ID/pass-input-dir"/>

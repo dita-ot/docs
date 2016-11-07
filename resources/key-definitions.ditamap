@@ -150,6 +150,13 @@
       <linktext>Apache FOP 2.1 Release Notes</linktext>
     </topicmeta>
   </keydef>
+  <!-- FOP docs -->
+  <keydef keys="fop-accessibility" href="https://xmlgraphics.apache.org/fop/trunk/accessibility.html" scope="external"
+    format="html">
+    <topicmeta>
+      <linktext>Apache FOP Accessibility</linktext>
+    </topicmeta>
+  </keydef>
 
   <!--URLs: Web pages-->
   <keydef keys="contributor-meeting-minutes" href="https://github.com/dita-ot/dita-ot/wiki/Meeting-minutes"

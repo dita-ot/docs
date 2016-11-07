@@ -115,7 +115,7 @@
   <keydef keys="tool.fop.version">
     <topicmeta>
       <keywords>
-        <keyword>1.1</keyword>
+        <keyword>2.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -133,6 +133,21 @@
       <keywords>
         <keyword>9.1.0.8</keyword>
       </keywords>
+    </topicmeta>
+  </keydef>
+
+  <!--RELEASE NOTES: OTHER APPLICATIONS-->
+
+  <keydef keys="fop-20-rn" href="https://xmlgraphics.apache.org/fop/2.0/releaseNotes_2.0.html" scope="external"
+    format="html">
+    <topicmeta>
+      <linktext>Apache FOP 2.0 Release Notes</linktext>
+    </topicmeta>
+  </keydef>
+  <keydef keys="fop-21-rn" href="https://xmlgraphics.apache.org/fop/2.1/releaseNotes_2.1.html" scope="external"
+    format="html">
+    <topicmeta>
+      <linktext>Apache FOP 2.1 Release Notes</linktext>
     </topicmeta>
   </keydef>
 

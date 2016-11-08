@@ -193,9 +193,13 @@
       <section id="docs">
         <title>Documentation updates</title>
         <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> includes corrections and
-          improvements to existing topics, along with several notable enhancements, including:</p>
+          improvements to existing topics, along with new content.</p>
         <ul>
-          <li/>
+          <li>Like the generated
+            <xref keyref="dita-ot-params"/> and
+            <xref keyref="messages"/> topics, a new
+            <xref keyref="extension-points-by-plugin"/> section is now generated from the installed DITA-OT plug-ins to
+            provide an overview of the extension points supported by each plug-in.</li>
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"/>, see the

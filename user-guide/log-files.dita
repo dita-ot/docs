@@ -8,8 +8,8 @@
     a log file. If you encounter a problem, you can analyze this information to determine the source of the problem and
     then take action to resolve it.</shortdesc>
   <conbody>
-    <p>The logging behavior varies depending on whether you use the <cmdname>dita</cmdname> command, DITA-OT
-      command-line tool, or Ant to invoke a toolkit build.<dl>
+    <p>The logging behavior varies depending on whether you use the <cmdname>dita</cmdname> command or Ant to invoke a 
+      toolkit build.<dl>
         <dlentry>
           <dt><cmdname>dita</cmdname> command</dt>
           <dd>By default, only warning and error messages are written to the screen. If you use the
@@ -23,13 +23,6 @@
             that you specified. (You also can use other Ant loggers; see the Ant documentation for more
             information.)</dd>
         </dlentry>
-        <!--<dlentry importance="deprecated">
-          <dt>Command-line tool</dt>
-          <dd>Status information is written to the screen and the log file. The log file name contains the input file
-            name and transformation type; by default, it is located in the output directory. If you issue the
-              <parmname>/logdir</parmname> parameter, you can specify a different location for where the log file is
-            written.</dd>
-        </dlentry>-->
       </dl></p>
     <!--<section><title>Analyze messages on the screen</title><p>During the building process, some information or messages
         occur on the screen to tell you about the status, warnings, errors, or fatal errors. You need to analyze the

@@ -56,7 +56,7 @@
           <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>userguide.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
         </p>
         <p>DITA-OT parameters can now be passed to the <cmdname>dita</cmdname> command with this same syntax:
-            <parmname>--parameter=value</parmname>.</p>
+            <parmname>--parameter</parmname>=<varname>value</varname>.</p>
         <p>When set with this method, properties are validated against the toolkit’s plug-in configuration. An error
           message appears if a property is not recognized or if an enumerated property value is invalid.
           <xref href="https://github.com/dita-ot/dita-ot/issues/2422" scope="external" format="html">#2422</xref>,

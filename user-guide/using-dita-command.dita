@@ -20,7 +20,7 @@
       </step>
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
-        <info><codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <option>--input</option>=<varname>input-file</varname> <option>--format</option>=<varname>format</varname> <varname audience="expert">options</varname></codeblock>
+        <info><codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname>format</varname> <varname audience="expert">options</varname></codeblock>
           <p>where:</p>
           <ul>
             <li conref="../resources/conref-task.dita#ID/novice-variables-1"
@@ -36,14 +36,14 @@
     <example audience="novice">
       <p>Run from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>, the following command generates
         HTML5 output for the <filepath>sequence.ditamap</filepath> file:</p>
-      <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <option>--input</option>=sequence.ditamap <option>--format</option>=html5</codeblock>
+      <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
     </example>
     <example audience="expert">
       <p>For example, from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>, run:</p>
-      <codeblock><cmdname>dita</cmdname> <option>--input</option>=<filepath>sequence.ditamap</filepath> <option>--format</option>=html5 \
-     <option>--output</option>=<filepath>output/sequence</filepath> \
-     <option>--args.input.dir</option>=<filepath conref="../resources/conref-task.dita#ID/samples-dir"/> \
-     <option>--propertyfile</option>=<filepath>properties/sequence-html5.properties</filepath></codeblock>
+      <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option> \
+     <parmname>--output</parmname>=<filepath>output/sequence</filepath> \
+     <parmname>--args.input.dir</parmname>=<filepath conref="../resources/conref-task.dita#ID/samples-dir"/> \
+     <parmname>--propertyfile</parmname>=<filepath>properties/sequence-html5.properties</filepath></codeblock>
       <p>This builds <filepath>sequence.ditamap</filepath> to HTML5 output in <filepath>output/sequence</filepath> using
         the following additional parameters specified in the <filepath>properties/sequence-html5.properties</filepath>
         file:</p>

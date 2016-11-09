@@ -7,7 +7,7 @@
 
   <shortdesc>Certain parameters apply to all DITA-OT transformations. Other parameters are common to the HTML-based
     transformations. Some parameters apply only to specific transformation types. These parameters can be passed as
-    options to the <cmdname>dita</cmdname> command using the <parmname>--parameter=value</parmname> syntax or included
+    options to the <cmdname>dita</cmdname> command using the <parmname>--parameter</parmname>=<varname>value</varname> syntax or included
     in build scripts as Ant properties.</shortdesc>
 
   <refbody>

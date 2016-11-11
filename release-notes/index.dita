@@ -77,6 +77,20 @@
         <div conref="../user-guide/extended-functionality.dita#code-reference/coderef-by-content"/>
         <note conref="../user-guide/extended-functionality.dita#code-reference/coderef-by-content-tip"/>
       </section>
+      <section id="2405">
+        <title>Standalone <option>HTML5</option> plug-in</title>
+        <div conref="../dev_ref/migrating-to-2.4.dita#migrating-to-2.4/24-html5-split"/>
+        <p>
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2405" scope="external" format="html">#2405</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/2511" scope="external" format="html">#2511</xref>
+        </p>
+      </section>
+
+      <section id="1542" conref="../dev_ref/migrating-to-2.4.dita#migrating-to-2.4/24-legacy-plugin-removal"/>
+      <section>
+        <p>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1542" scope="external" format="html">#1542</xref></p>
+      </section>
     </refbody>
   </reference>
 
@@ -85,32 +99,29 @@
     <shortdesc>In addition to the highlights mentioned above, DITA Open Toolkit Release <keyword keyref="release"/>
       includes the following changes.</shortdesc>
     <refbody>
+
+      <!--
       <section id="features">
         <title>Features</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <ul>
-          <li id="2405">Remove dependency to XHTML from HTML5
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2405" scope="external" format="html">#2405</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2511" scope="external" format="html">#2511</xref>
-          </li>
+          <li/>
+        </ul>
+      </section>
+      -->
+
+      <section id="enhancements">
+        <title>Enhancements and changes</title>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
+          existing features:</p>
+        <ul>
           <li id="2026">Move to Java 8
             <xref href="https://github.com/dita-ot/dita-ot/issues/2026" scope="external" format="html">#2026</xref>
-          </li>
-          <li id="1542">Remove completely from the DITA OT distribution the plugin for generating Eclipse Content
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1542" scope="external" format="html">#1542</xref>
           </li>
           <li id="1245">TM output
             <xref href="https://github.com/dita-ot/dita-ot/issues/1245" scope="external" format="html">#1245</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2404" scope="external" format="html">#2404</xref>
           </li>
-        </ul>
-      </section>
-
-      <section id="enhancements">
-        <title>Enhancements</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
-          existing features:</p>
-        <ul>
           <li id="2512">Bug in "dita-utilities.xsl" getVariable when called from string context
             <xref href="https://github.com/dita-ot/dita-ot/issues/2512" scope="external" format="html">#2512</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2513" scope="external" format="html">#2513</xref>
@@ -118,7 +129,7 @@
           <li id="2503">HTML5 generates duplicate class attributes
             <xref href="https://github.com/dita-ot/dita-ot/issues/2503" scope="external" format="html">#2503</xref>
           </li>
-          <li id="2502">Use Sass `// comment` syntax for partials copyrights #
+          <li id="2502">Use Sass <codeph>// comment</codeph> syntax for partials copyrights
             <xref href="https://github.com/dita-ot/dita-ot/issues/2502" scope="external" format="html">#2502</xref>
           </li>
           <li id="2499">Change HTML5 to use libsass instead of Compass

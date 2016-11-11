@@ -177,6 +177,7 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
           <xref keyref="contributions"/> by the following people:</p>
         <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 2.3..` -->
+        <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
         <ol>
           <li>Jarno Elovirta</li>
           <li>Robert D. Anderson</li>
@@ -211,6 +212,14 @@
           <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A2.4+is%3Aclosed" format="html"
             scope="external">
             <keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+          <xref keyref="docs-contributions"/> by the following people:</p>
+        <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>
+        <ol>
+          <li>Roger Sheen</li>
+          <li>Jarno Elovirta</li>
+          <li>Mark Giffin</li>
+        </ol>
         <p>For the complete list of documentation changes since the previous release, see the
           <xref href="https://github.com/dita-ot/docs/compare/2.3...2.4" scope="external" format="html">
             changelog</xref>.</p>

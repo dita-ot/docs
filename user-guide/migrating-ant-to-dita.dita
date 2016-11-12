@@ -43,10 +43,10 @@
       <p>Sample <filepath>.properties</filepath> file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
           /><filepath>/properties/pdf.properties</filepath><codeblock><coderef href="../samples/properties/pdf.properties"/></codeblock></p>
       <p>Run from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>:</p>
-      <codeblock><cmdname>dita</cmdname> <option>--input</option>=<filepath>sequence.ditamap</filepath> <option>--format</option>=htmlhelp \
-     <option>--propertyfile</option>=<filepath>properties/chm.properties</filepath>
-<cmdname>dita</cmdname> <option>--input</option>=<filepath>taskbook.ditamap</filepath> <option>--format</option>=pdf \
-     <option>--propertyfile</option>=<filepath>properties/pdf.properties</filepath></codeblock>
+      <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>htmlhelp</option> \
+     <parmname>--propertyfile</parmname>=<filepath>properties/chm.properties</filepath>
+<cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>taskbook.ditamap</filepath> <parmname>--format</parmname>=<option>pdf</option> \
+     <parmname>--propertyfile</parmname>=<filepath>properties/pdf.properties</filepath></codeblock>
     </example>
     <example>
       <title>Example: Call the <cmdname>dita</cmdname> command from an Ant build</title>

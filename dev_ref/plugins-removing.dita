@@ -10,7 +10,7 @@
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
         <info>
-          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <option>--uninstall</option>=<varname>plug-in-id</varname></codeblock>
+          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--uninstall</parmname>=<varname>plug-in-id</varname></codeblock>
           <p>where:</p>
           <ul>
             <li conref="../resources/conref-task.dita#ID/novice-variables-1"/>

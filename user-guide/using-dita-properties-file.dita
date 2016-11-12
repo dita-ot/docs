@@ -42,7 +42,7 @@
         <cmd>Reference your <filepath>.properties</filepath> file with the <cmdname>dita</cmdname> command when building
           your output.</cmd>
         <stepxmp>
-          <codeblock><cmdname>dita</cmdname> <option>--input</option>=<varname>my.ditamap</varname> <option>--format</option>=html5 <option>--propertyfile</option>=<varname>my.properties</varname></codeblock>
+          <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5</option> <parmname>--propertyfile</parmname>=<varname>my.properties</varname></codeblock>
         </stepxmp>
         <info/>
       </step>
@@ -52,8 +52,8 @@
         <stepxmp>
           <p>For example, to build output once with <xmlelement>draft</xmlelement> and
               <xmlelement>required-cleanup</xmlelement> content:</p>
-          <codeblock><cmdname>dita</cmdname> <option>--input</option>=<varname>my.ditamap</varname> <option>--format</option>=html5 <option>--propertyfile</option>=<varname>my.properties</varname> \
-     <option>--args.draft</option>=yes</codeblock>
+          <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5</option> <parmname>--propertyfile</parmname>=<varname>my.properties</varname> \
+     <parmname>--args.draft</parmname>=<option>yes</option></codeblock>
         </stepxmp>
         <info>
           <note conref="../resources/conref-task.dita#ID/pass-input-dir"/>

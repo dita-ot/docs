@@ -39,7 +39,7 @@
   <keydef keys="release">
     <topicmeta>
       <keywords>
-        <keyword>2.3</keyword>
+        <keyword>2.4</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -48,7 +48,7 @@
   <keydef keys="maintenance-version">
     <topicmeta>
       <keywords>
-        <keyword>2.3.3</keyword>
+        <keyword>2.4</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -115,7 +115,7 @@
   <keydef keys="tool.fop.version">
     <topicmeta>
       <keywords>
-        <keyword>1.1</keyword>
+        <keyword>2.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -133,6 +133,28 @@
       <keywords>
         <keyword>9.1.0.8</keyword>
       </keywords>
+    </topicmeta>
+  </keydef>
+
+  <!--RELEASE NOTES: OTHER APPLICATIONS-->
+
+  <keydef keys="fop-20-rn" href="https://xmlgraphics.apache.org/fop/2.0/releaseNotes_2.0.html" scope="external"
+    format="html">
+    <topicmeta>
+      <linktext>Apache FOP 2.0 Release Notes</linktext>
+    </topicmeta>
+  </keydef>
+  <keydef keys="fop-21-rn" href="https://xmlgraphics.apache.org/fop/2.1/releaseNotes_2.1.html" scope="external"
+    format="html">
+    <topicmeta>
+      <linktext>Apache FOP 2.1 Release Notes</linktext>
+    </topicmeta>
+  </keydef>
+  <!-- FOP docs -->
+  <keydef keys="fop-accessibility" href="https://xmlgraphics.apache.org/fop/trunk/accessibility.html" scope="external"
+    format="html">
+    <topicmeta>
+      <linktext>Apache FOP Accessibility</linktext>
     </topicmeta>
   </keydef>
 
@@ -208,7 +230,13 @@
   <keydef keys="contributions" href="https://github.com/dita-ot/dita-ot/graphs/contributors" scope="external"
     format="html">
     <topicmeta>
-      <linktext>contributions</linktext>
+      <linktext>code contributions</linktext>
+    </topicmeta>
+  </keydef>
+  <keydef keys="docs-contributions" href="https://github.com/dita-ot/docs/graphs/contributors" scope="external"
+    format="html">
+    <topicmeta>
+      <linktext>documentation contributions</linktext>
     </topicmeta>
   </keydef>
   <topicgroup>
@@ -231,6 +259,11 @@
     <keydef keys="2.3-release-notes" href="http://www.dita-ot.org/2.3/release-notes/" scope="external" format="html">
       <topicmeta>
         <linktext>DITA-OT 2.3 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef keys="2.4-release-notes" href="http://www.dita-ot.org/2.4/release-notes/" scope="external" format="html">
+      <topicmeta>
+        <linktext>DITA-OT 2.4 Release Notes</linktext>
       </topicmeta>
     </keydef>
   </topicgroup>

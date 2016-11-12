@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="rebuilding-the-dita-ot-documentation">
   <title>Rebuilding the DITA-OT documentation</title>
@@ -21,10 +21,11 @@
           <p>The <varname>target</varname> parameter is optional and specifies a transformation type. It takes the
             following values:
             <ul>
-              <li>html</li>
-              <li>htmlhelp</li>
-              <li>pdf</li>
-            </ul></p>
+              <li><option>html</option></li>
+              <li><option>htmlhelp</option></li>
+              <li><option>pdf</option></li>
+            </ul>
+          </p>
           <p>If you do not specify an Ant target, HTML5 and PDF output is generated.</p>
         </info>
       </step>

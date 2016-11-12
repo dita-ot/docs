@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <map xml:lang="en-US">
   <title>Developer Reference</title>
@@ -33,7 +33,6 @@
       <topicref href="XhtmlJavahelp.dita"/>
     </topicref>
     <topicref href="PdfDefault.dita"/>
-    <topicref href="OdtDefault.dita"/>
   </topicref>
   <topicref href="extending-the-ot.dita">
     <topicref href="plugins-installing.dita"/>
@@ -41,6 +40,7 @@
     <topicref href="rebuilding-the-dita-ot-documentation.dita" keys="rebuild-docs"/>
   </topicref>
   <mapref href="plug-ins.ditamap"/>
+  <mapref href="../extension-points/extension-points.ditamap"/>
   <mapref href="pdf-customization.ditamap"/>
   <mapref href="migration.ditamap"/>
 
@@ -74,7 +74,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref keyref="all-extension-points"/>
+        <topicref keyref="extension-points-by-plugin"/>
         <topicref keyref="messages"/>
         <topicref keyref="dita-ot-params"/>
       </relcell>

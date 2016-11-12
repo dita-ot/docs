@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <project name="sample_all" default="all" basedir=".">
 
@@ -13,14 +13,13 @@
   <import file="sample_javahelp.xml"/>
   <import file="sample_htmlhelp.xml"/>
   <import file="sample_pdf.xml"/>
-  <import file="sample_docbook.xml"/>
   <import file="sample_odt.xml"/>
   <import file="sample_troff.xml"/>
 
   <target name="all" depends="samples"/>
 
   <target name="samples" description="build the sample output"
-          depends="samples.web, samples.tocjs, samples.eclipse, samples.javahelp, samples.htmlhelp, samples.pdf, samples.docbook, samples.odt, samples.troff"/>
+          depends="samples.web, samples.tocjs, samples.eclipse, samples.javahelp, samples.htmlhelp, samples.pdf, samples.odt, samples.troff"/>
 
   <target name="clean.samples" description="remove the sample output"
           depends="clean.samples.web, clean.samples.eclipse, clean.samples.tocjs, clean.samples.javahelp, clean.samples.htmlhelp, clean.samples.pdf">

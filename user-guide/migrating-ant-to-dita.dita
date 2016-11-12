@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="migrating-ant-to-dita">
   <title>Migrating Ant builds to use the <cmdname>dita</cmdname> command</title>
@@ -43,8 +43,10 @@
       <p>Sample <filepath>.properties</filepath> file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
           /><filepath>/properties/pdf.properties</filepath><codeblock><coderef href="../samples/properties/pdf.properties"/></codeblock></p>
       <p>Run from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>:</p>
-      <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> -input sequence.ditamap -format htmlhelp -propertyfile properties/chm.properties
-<filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> -input taskbook.ditamap -format pdf -propertyfile properties/pdf.properties</codeblock>
+      <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>htmlhelp</option> \
+     <parmname>--propertyfile</parmname>=<filepath>properties/chm.properties</filepath>
+<cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>taskbook.ditamap</filepath> <parmname>--format</parmname>=<option>pdf</option> \
+     <parmname>--propertyfile</parmname>=<filepath>properties/pdf.properties</filepath></codeblock>
     </example>
     <example>
       <title>Example: Call the <cmdname>dita</cmdname> command from an Ant build</title>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <concept id="processing-structure">
   <title>Processing structure</title>
@@ -11,14 +11,16 @@
   <conbody>
     <p>The DITA-OT is designed as a pipeline. Most of the pipeline is common to all output formats; it is known as the
         <term>pre-processing stage</term>. In general, any DITA process begins with this common set of pre-processing
-      routines. Once the pre-processing is completed, the pipeline diverges based on the requested output format. Some
-      processing is still common to multiple output formats; for example, Eclipse Help and HTML Help both use the same
-      routines to generate XHTML topics, after which the two pipelines branch to create different sets of navigation
-      files.</p>
-    <p>The following image illustrates how the pipeline works for some common output types: DocBook, PDF, Eclipse Help,
-      XHTML, JavaHelp, and HTML Help.</p>
-    <image href="images/mainarch.gif" placement="break" width="6.5in">
-      <alt>Diagram of some possible paths through the transform pipeline.</alt>
-    </image>
+      routines.</p>
+    <p>Once the pre-processing is completed, the pipeline diverges based on the requested output format. Some processing
+      is still common to multiple output formats; for example, Eclipse Help and HTML Help both use the same routines to
+      generate XHTML topics, after which the two pipelines branch to create different sets of navigation files.</p>
+    <p>The following image illustrates how the pipeline works for several common output formats: PDF, Eclipse Help, HTML
+      Help, JavaHelp, XHTML, and HTML5.</p>
+    <note>Other output formats may implement additional processing steps.</note>
+    <fig>
+      <title>Diagram of some possible paths through the transformation pipeline</title>
+      <image href="images/processing-flow.png" placement="break" width="6.5in"/>
+    </fig>
   </conbody>
 </concept>

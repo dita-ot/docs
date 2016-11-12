@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="dita2pdf-customization" xml:lang="en">
   <title>Example: Creating a simple PDF plug-in</title>
@@ -138,7 +138,7 @@
   plugin.xml</codeblock>
     </result>
     <postreq>
-      <p>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <option>-install</option> to install the plug-in and make the <option>print-pdf</option> transformation
+      <p>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--install</parmname> to install the plug-in and make the <option>print-pdf</option> transformation
         available.</p>
     </postreq>
   </taskbody>

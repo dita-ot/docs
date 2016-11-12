@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <reference id="errormessages" xml:lang="en-US">
   <title conref="DITA-messages.xml#msgs/title" conaction="pushreplace">DITA-OT error messages</title>
@@ -54,9 +54,9 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA001F-extra" conaction="pushreplace">Default transformation types
-          that ship with the toolkit include xhtml, eclipsehelp, pdf (or pdf2), tocjs, htmlhelp, javahelp, odt,
-          eclipsecontent, troff, docbook, and wordrtf. Additional transformation types may be available if toolkit
-          plug-ins are installed.</stentry>
+          that ship with the toolkit include eclipsehelp, html5, htmlhelp, javahelp, odt, pdf (or pdf2), wordrtf, tocjs,
+          troff, and xhtml. Additional transformation types may be available if toolkit plug-ins are
+          installed.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA002F-extra" conaction="pushreplace">The input parameter was not

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="ID">
   <title>Conref file for tasks</title>
@@ -24,8 +24,8 @@
                 (optional).</li>
               <li><ph id="plugin-integrate-all">If no <varname>filename</varname> or <varname>URL</varname> argument is
                   provided, the installation process reloads plug-ins from the <filepath>plugins</filepath> directory.
-                  This approach can be used to install multiple plug-ins at once, or install any individual plug-ins
-                  you have already copied to the <filepath>plugins</filepath> directory.</ph></li>
+                  This approach can be used to install multiple plug-ins at once, or install any individual plug-ins you
+                  have already copied to the <filepath>plugins</filepath> directory.</ph></li>
             </ul>
           </dd>
         </dlentry>
@@ -38,12 +38,31 @@
         <info>
           <ul id="basic-variables">
             <li id="novice-variables-1"><filepath conref="#ID/ot-dir"/> is the DITA-OT installation directory.</li>
-            <li><varname>input-file</varname> is the DITA map or DITA file that you want to process.</li>
-            <li id="novice-variables-last"><varname>format</varname> is the output format (transformation type). Use the
-              same values available for the <parmname>transtype</parmname> build parameter, for example,
-                <codeph>html5</codeph> or <codeph>pdf</codeph>.</li>
-            <li id="options"><varname>options</varname> include the following optional build parameters:<parml
-                conref="../parameters/dita-command-arguments.dita#dita-command-properties/dita_build_options">
+            <li id="novice-variables-2"><varname>input-file</varname> is the DITA map or DITA file that you want to
+              process.</li>
+            <li id="novice-variables-last" audience="novice">
+              <p id="common-format-info"><varname>format</varname> is the output format (transformation type). Use the
+                same values available for the <parmname>transtype</parmname> build parameter, for example,
+                  <option>html5</option> or <option>pdf</option>.</p>
+            </li>
+            <li id="expert-variables-last" audience="expert">
+              <p conref="#ID/common-format-info"/>
+              <p id="transtypes">You can create plug-ins to add new output formats; by default, the following values are
+                available:
+                <ul>
+                  <li><option>eclipsehelp</option></li>
+                  <li><option>html5</option></li>
+                  <li platform="windows"><option>htmlhelp</option></li>
+                  <li><option>javahelp</option></li>
+                  <li><option>pdf</option></li>
+                  <li><option>tocjs</option></li>
+                  <li><option>troff</option></li>
+                  <li><option>xhtml</option></li>
+                </ul>
+              </p>
+            </li>
+            <li id="options"><varname>options</varname> include the following optional build parameters:
+              <parml conref="../parameters/dita-command-arguments.dita#dita-command-properties/dita_build_options">
                 <plentry>
                   <pt/>
                   <pd/>
@@ -59,6 +78,18 @@
               /><filepath>/bin</filepath> to the <varname>PATH</varname> environment variable to run the
               <cmdname>dita</cmdname> command from any location on the file system without typing the path.</note>
         </stepresult>
+      </step>
+      <step>
+        <cmd>Extending pre-processing</cmd>
+        <info>
+          <note id="tip-extend-before-after-preprocessing" type="tip">For maximum compatibility with future versions of
+            DITA-OT, most plug-ins should use the extension points that run <b>before</b> or <b>after</b>
+            pre-processing.</note>
+          <note id="caution-extend-within-preprocessing" type="caution">The internal order of preprocessing steps is
+            subject to change between versions of DITA-OT. New versions may remove, reorder, combine, or add steps to
+            the process, so the extension points <b>within</b> the preprocessing stage should only be used if absolutely
+            necessary.</note>
+        </info>
       </step>
     </steps>
     <postreq>

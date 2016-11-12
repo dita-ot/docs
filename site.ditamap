@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <map xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
@@ -15,6 +15,17 @@
   </topicref>
   <topicref href="dev_ref/index.dita">
     <mapref href="dev_ref/dev_ref.ditamap"/>
+  </topicref>
+
+  <topicref keys="contributing" href="http://www.dita-ot.org/contributing" scope="external" format="html" locktitle="yes">
+    <topicmeta>
+      <navtitle>Contributing</navtitle>
+    </topicmeta>
+  </topicref>
+  <topicref keys="who_we_are" href="http://www.dita-ot.org/who_we_are" scope="external" format="html" locktitle="yes">
+    <topicmeta>
+      <navtitle>Who we are</navtitle>
+    </topicmeta>
   </topicref>
   <topicgroup processing-role="resource-only">
     <topicref href="resources/conref-task.dita"/>

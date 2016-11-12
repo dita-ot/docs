@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <map>
   <title>Parameter Reference</title>
   <topicref href="dita-command-arguments.dita" keys="dita-command-arguments"/>
   <topicref href="parameters_intro.dita" keys="dita-ot-params">
     <topicref href="parameters-base.dita" keys="parameters-base" navtitle="Common"/>
-    <topicref href="parameters-base-html.dita" navtitle="HTML-based output formats">
+    <topicref href="parameters-base-html.dita" keys="parameters-base-html">
       <topicref href="generate-copy-outer.dita" keys="generate-copy-outer" toc="no"/>
     </topicref>
-    <topicref href="parameters-common-html.dita" navtitle="HTML5 and XHTML"/>
     <topicref href="parameters-html5.dita"/>
-    <topicref href="parameters-eclipsecontent.dita" navtitle="Eclipse content"/>
+    <topicref href="parameters-xhtml.dita"/>
     <topicref href="parameters-eclipsehelp.dita" navtitle="Eclipse Help"/>
     <topicref href="parameters-htmlhelp.dita" navtitle="HTMLHelp" platform="windows"/>
     <topicref href="parameters-javahelp.dita" navtitle="JavaHelp"/>
-    <topicref href="parameters-odt.dita" navtitle="Open Document Format"/>
     <topicref href="parameters-other.dita" navtitle="Other"/>
     <topicref href="parameters-pdf.dita" navtitle="PDF"/>
     <topicref href="ant-parameters-details.dita" processing-role="resource-only" toc="no"/>

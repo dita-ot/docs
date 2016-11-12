@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <reference id="ant-parameters-details">
   <title>Ant parameter details</title>
@@ -208,21 +208,8 @@
               <parmname>transtype</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/transtype.desc"/>
-            <pd conaction="pushafter">You can create plug-ins to add new values for this parameter; by default, the
-              following values are available:
-              <ul>
-                <li>docbook</li>
-                <li>eclipsehelp</li>
-                <li>eclipsecontent</li>
-                <li>html5</li>
-                <li platform="windows">htmlhelp</li>
-                <li>javahelp</li>
-                <li>odt</li>
-                <li>pdf</li>
-                <li>wordrtf</li>
-                <li>troff</li>
-                <li>xhtml</li>
-              </ul>
+            <pd conaction="pushafter">
+              <p conref="../resources/conref-task.dita#ID/transtypes"/>
             </pd>
           </plentry>
           <!--<plentry id="validate">
@@ -237,12 +224,12 @@
   </reference>
 
   <reference id="base-html">
-    <title>HTML-based output formats</title>
+    <title>HTML-based output parameters</title>
     <titlealts>
-      <navtitle>All HTML-based transformations</navtitle>
+      <navtitle>HTML-based output</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace" conref="parameters-base-html.dita#base-html/shortdesc">Certain parameters apply
-      to all the HTML-based transformation types: Eclipse help, HTML Help, JavaHelp, TocJS, HTML5, and XHTML. </shortdesc>
+      to all the HTML-based transformation types: Eclipse help, HTML5, HTML Help, JavaHelp, TocJS, and XHTML.</shortdesc>
     <refbody>
       <section>
         <parml>
@@ -391,31 +378,6 @@
     </refbody>
   </reference>
 
-  <reference id="eclipsecontent">
-    <title>Eclipse content</title>
-    <titlealts>
-      <navtitle>Eclipse content</navtitle>
-    </titlealts>
-    <shortdesc conaction="pushreplace" conref="parameters-eclipsecontent.dita#eclipsecontent/shortdesc">Certain
-      parameters are specific to the Eclipse content transformation.</shortdesc>
-    <refbody>
-      <section>
-        <parml>
-          <plentry id="args.eclipsecontent.toc">
-            <pt>
-              <parmname>args.eclipsecontent.toc</parmname>
-            </pt>
-            <pd conaction="mark" conref="parameters-eclipsecontent.dita#eclipsecontent/args.eclipse.version.desc"/>
-            <pd conaction="pushafter">
-              <note type="tip">The toolkit ignores the value of this property when processing an Eclipse Collection Map,
-                eclipse.dtd.</note>
-            </pd>
-          </plentry>
-        </parml>
-      </section>
-    </refbody>
-  </reference>
-
   <reference id="eclipsehelp">
     <title>Eclipse help</title>
     <titlealts>
@@ -549,27 +511,6 @@
     </refbody>
   </reference>
 
-  <reference id="odt">
-    <title>ODT</title>
-    <titlealts>
-      <navtitle>ODT</navtitle>
-    </titlealts>
-    <shortdesc conaction="pushreplace" conref="parameters-odt.dita#odt/shortdesc">Certain parameters are specific to the
-      ODT transformation.</shortdesc>
-    <refbody>
-      <section>
-        <!--<parml>
-          <plentry>
-            <pt><parmname>args.odt.img.embed</parmname></pt>
-            <pd conaction="mark" conref="parameters-odt.dita#odt/args.odt.img.embed.desc"/>
-            <pd conaction="pushafter">Determines whether images are embedded as binary objects within the ODT file.
-            </pd>
-          </plentry>
-        </parml>-->
-      </section>
-    </refbody>
-  </reference>
-
   <reference id="ant-parameters-other">
     <title>Other parameters</title>
     <titlealts>
@@ -677,6 +618,13 @@
             <pt><parmname>customization.dir</parmname></pt>
             <pd>Specifies the customization directory.</pd>
           </plentry>-->
+          <plentry id="outputFile.base">
+            <pt>
+              <parmname>outputFile.base</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-pdf.dita#pdf/outputFile.base.desc"/>
+            <pd conaction="pushafter">By default, the PDF file uses the base filename of the input <filepath>.ditamap</filepath> file.</pd>
+          </plentry>          
           <plentry id="pdf.formatter">
             <pt>
               <parmname>pdf.formatter</parmname>
@@ -698,13 +646,10 @@
     </refbody>
   </reference>
 
-  <reference id="common-html">
-    <title>HTML5 and XHTML</title>
-    <titlealts>
-      <navtitle>HTML5 and XHTML</navtitle>
-    </titlealts>
-    <shortdesc conaction="pushreplace" conref="parameters-common-html.dita#common-html/shortdesc">Certain parameters are
-      specific to the HTML5 and XHTML transformations.</shortdesc>
+  <reference id="xhtml">
+    <title>XHTML</title>
+    <shortdesc conaction="pushreplace" conref="parameters-xhtml.dita#xhtml/shortdesc">Certain parameters are
+      specific to the XHTML transformation.</shortdesc>
     <refbody>
       <section>
         <parml>
@@ -712,23 +657,9 @@
             <pt>
               <parmname>args.xhtml.contenttarget</parmname>
             </pt>
-            <pd conaction="mark" conref="parameters-common-html.dita#common-html/args.xhtml.contenttarget.desc"/>
-            <pd conaction="pushafter">The default value is <option>contentwin</option>.</pd>
-          </plentry>
-          <!--<plentry id="args.xhtml.toc">
-            <pt><parmname>args.xhtml.toc</parmname></pt>
-            <pd conaction="mark" conref="parameters-common-html.dita#common-html/args.xhtml.toc.desc"/>
-            <pd conaction="pushafter">Specifies the base name of the TOC file. The default value is
-                <option>index</option>.</pd>
-          </plentry>-->
-          <plentry id="args.xhtml.toc.class">
-            <pt>
-              <parmname>args.xhtml.toc.class</parmname>
-            </pt>
-            <pd conaction="mark" conref="parameters-common-html.dita#common-html/args.xhtml.toc.class.desc"/>
-            <pd conaction="pushafter">
-              <ph audience="xslt-customizer">Found in <filepath>map2htmltoc.xsl</filepath>.</ph>
-            </pd>
+            <pd conaction="mark" conref="parameters-xhtml.dita#xhtml/args.xhtml.contenttarget.desc"/>
+            <pd conaction="pushafter">The default value is <option>contentwin</option>. Change this value to use a
+              different target name for the table of contents.</pd>
           </plentry>
         </parml>
       </section>
@@ -740,9 +671,11 @@
     <titlealts>
       <navtitle>HTML5</navtitle>
     </titlealts>
-    <shortdesc conaction="pushreplace" conref="parameters-html5.dita#html5/shortdesc">Certain parameters are specific to
-      the HTML5 transformation.</shortdesc>
+    <shortdesc conaction="pushreplace" conref="parameters-html5.dita#html5/shortdesc">The HTML5 transformation shares 
+      common parameters with other HTML-based transformations and provides additional parameters that are specific to
+      HTML5 output.</shortdesc>
     <refbody>
+      <!-- args.html5.contenttarget is listed in generated topic, but does not appear in default HTML5 output files. -->
       <!--<section>
         <parml>
           <plentry id="args.html5.nav-toc">

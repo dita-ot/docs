@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <map xml:lang="en-US">
   <title>Creating DITA-OT plug-ins</title>
@@ -24,15 +24,6 @@
     <topicref href="plugin-sample.dita"/>
   </topicref>
 
-  <topicref href="plugin-extension-points.dita">
-    <topicref href="plugin-extension-points-general.dita"/>
-    <topicref href="plugin-extension-points-pre-processing.dita"/>
-    <topicref href="plugin-extension-points-xslt-import.dita"/>
-    <topicref href="plugin-extension-points-xslt-parameters.dita"/>
-    <topicref href="plugin-extension-points-support.dita"/>
-    <topicref href="../extension-points/all-extension-points.dita" keys="all-extension-points"/>
-  </topicref>
-
   <reltable title="Source and target links">
     <relheader>
       <relcolspec linking="sourceonly"/>
@@ -43,7 +34,7 @@
         <topicref href="plugin-xmlcatalog.dita"/>
       </relcell>
       <relcell>
-        <topicref href="plugin-extension-points-general.dita"/>
+        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -51,7 +42,7 @@
         <topicref href="plugin-anttarget.dita"/>
       </relcell>
       <relcell>
-        <topicref href="plugin-extension-points-general.dita"/>
+        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -59,7 +50,7 @@
         <topicref href="plugin-antpreprocess.dita"/>
       </relcell>
       <relcell>
-        <topicref href="plugin-extension-points-pre-processing.dita"/>
+        <topicref href="../extension-points/plugin-extension-points-pre-processing.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -67,7 +58,7 @@
         <topicref href="plugin-newtranstype.dita"/>
       </relcell>
       <relcell>
-        <topicref href="plugin-extension-points-general.dita"/>
+        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -75,7 +66,7 @@
         <topicref href="plugin-overridestyle.dita"/>
       </relcell>
       <relcell>
-        <topicref href="plugin-extension-points-xslt-import.dita"/>
+        <topicref href="../extension-points/plugin-extension-points-xslt-import.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -83,7 +74,7 @@
         <topicref href="plugin-xsltparams.dita"/>
       </relcell>
       <relcell>
-        <topicref href="plugin-extension-points-xslt-parameters.dita"/>
+        <topicref href="../extension-points/plugin-extension-points-xslt-parameters.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -91,7 +82,7 @@
         <topicref href="plugin-javalib.dita"/>
       </relcell>
       <relcell>
-        <topicref href="plugin-extension-points-general.dita"/>
+        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -99,7 +90,7 @@
         <topicref href="plugin-messages.dita"/>
       </relcell>
       <relcell>
-        <topicref href="plugin-extension-points-general.dita"/>
+        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
       </relcell>
     </relrow>
     <relrow>

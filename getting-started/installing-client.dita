@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="installing-client" xml:lang="en-US">
   <title>Installing the distribution package</title>
   <titlealts>
     <navtitle>Installing the toolkit</navtitle>
   </titlealts>
-  <shortdesc id="what-is-client">The DITA-OT distribution package can be installed on Linux, Mac OS&#xA0;X, and Windows.
+  <shortdesc id="what-is-client">The DITA-OT distribution package can be installed on Linux, macOS, and Windows.
     It contains everything that you need to run the toolkit except for Java.</shortdesc>
   <taskbody>
     <prereq>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="17.1">
+<project version="18.1">
     <meta>
         <filters directoryPatterns=".gradle, build, out, temp" filePatterns="Icon.png" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="17.1" xml:space="preserve">
+            <serialized version="18.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>editor.hard.line.wrap</String>
@@ -79,7 +79,7 @@
                                             <null/>
                                         </field>
                                         <field name="ditavalFilePath">
-                                            <String></String>
+                                            <null/>
                                         </field>
                                         <field name="simpleFiltersList">
                                             <list/>
@@ -90,9 +90,12 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="skinCssFile">
-                                    <String>/Applications/oxygen/frameworks/dita/DITA-OT/plugins/com.oxygenxml.webhelp/predefined-skins/dita/oxygen/skin.css</String>
+                                    <String>${configured.ditaot.dir}/plugins/com.oxygenxml.webhelp/predefined-skins/dita/oxygen/skin.css</String>
                                 </field>
                                 <field name="lastCustomSkinCssPath">
+                                    <null/>
+                                </field>
+                                <field name="webhelpResponsiveTemplate">
                                     <null/>
                                 </field>
                                 <field name="additionalAntArgs">
@@ -124,9 +127,15 @@
                                             </field>
                                             <field name="possibleValues">
                                                 <String-array>
-                                                    <null/>
                                                     <String>yes</String>
                                                     <String>no</String>
+                                                    <null/>
+                                                </String-array>
+                                            </field>
+                                            <field name="possibleValuesDescriptions">
+                                                <String-array>
+                                                    <String></String>
+                                                    <String></String>
                                                 </String-array>
                                             </field>
                                         </ditaParameter>

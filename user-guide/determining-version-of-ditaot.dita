@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="determining-version-of-dita-ot">
   <title>Checking the DITA-OT version</title>
@@ -14,17 +14,17 @@
         <cmd>Issue the following command:</cmd>
         <choicetable frame="topbot" relcolwidth="1.0* 3.0*">
           <chrow platform="linux osx">
-            <choption>Linux or Mac OS&#xA0;X&#xA0;</choption>
+            <choption>Linux or macOS&#xA0;</choption>
             <chdesc>
               <cmdname>bin/dita</cmdname>
-              <option>-version</option>
+              <parmname>--version</parmname>
             </chdesc>
           </chrow>
           <chrow platform="windows">
             <choption>Windows</choption>
             <chdesc>
               <cmdname>bin\dita</cmdname>
-              <option>-version</option>
+              <parmname>--version</parmname>
             </chdesc>
           </chrow>
         </choicetable>

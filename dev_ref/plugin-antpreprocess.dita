@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="plugin-antpreprocess" xml:lang="en-US">
   <title>Adding an Ant target to the pre-processing pipeline</title>
@@ -11,6 +11,7 @@
       <p>You can use the <codeph>depend.preprocess.pre</codeph> and <codeph>depend.preprocess.post</codeph> extension
         points to run a target before or after the entire pre-processing operation. In addition, there are extension
         points that enable you to run an Ant target before specific pre-processing steps.</p>
+      <note conref="../resources/conref-task.dita#ID/tip-extend-before-after-preprocessing"/>
     </context>
     <steps>
       <step>
@@ -43,6 +44,7 @@
 &lt;/plugin></codeblock>
       <p>It assumes that the <parmname>myAntTargetBeforeChunk</parmname> target has already been defined and
         integrated.</p>
+      <note conref="../resources/conref-task.dita#ID/caution-extend-within-preprocessing"/>
     </example>
   </taskbody>
 </task>

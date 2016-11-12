@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <reference id="ant-parameters-other">
   <title>Other parameters</title>
@@ -13,9 +13,20 @@
     <section>
       <parml>
         <plentry>
-          <pt id="dita.preprocess.reloadstylesheet"><parmname>dita.preprocess.reloadstylesheet</parmname></pt>
+          <pt id="dita.html5.reloadstylesheet">
+            <parmname>dita.html5.reloadstylesheet</parmname>
+          </pt>
+          <pt id="dita.preprocess.reloadstylesheet">
+            <parmname>dita.preprocess.reloadstylesheet</parmname>
+          </pt>
+          <pt id="dita.preprocess.reloadstylesheet.clean-map">
+            <parmname>dita.preprocess.reloadstylesheet.clean-map</parmname>
+          </pt>
           <pt id="dita.preprocess.reloadstylesheet.conref">
             <parmname>dita.preprocess.reloadstylesheet.conref</parmname>
+          </pt>
+          <pt id="dita.preprocess.reloadstylesheet.flag-module">
+            <parmname>dita.preprocess.reloadstylesheet.lag-module</parmname>
           </pt>
           <pt id="dita.preprocess.reloadstylesheet.mapref">
             <parmname>dita.preprocess.reloadstylesheet.mapref</parmname>
@@ -28,6 +39,9 @@
           </pt>
           <pt id="dita.preprocess.reloadstylesheet.topicpull">
             <parmname>dita.preprocess.reloadstylesheet.topicpull</parmname>
+          </pt>
+          <pt id="dita.xhtml.reloadstylesheet">
+            <parmname>dita.xhtml.reloadstylesheet</parmname>
           </pt>
           <pd id="dita.preprocess.reloadstylesheet.desc">
             <p>Specifies whether the DITA-OT reloads the XSL style sheets that are used for the transformation. The

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd" >
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <topic id="reducing-processing-time" xml:lang="en-US">
    <title>Reducing processing time</title>
@@ -20,7 +20,7 @@
          <title>Use a fast disk for the temporary directory</title>
          <p>DITA-OT keeps topic and map files as separate files and processes each file multiple times during
             preprocessing. Thus reading from disk, parsing XML, serializing XML, and writing to disk makes processing
-            quite IO intensive. Use either an
+            quite I/O intensive. Use either an
             <xref href="http://en.wikipedia.org/wiki/Solid-state_drive" scope="external" format="html">SSD</xref> or a
             <xref href="http://en.wikipedia.org/wiki/RAM_drive" scope="external" format="html">RAM disk</xref> for
             temporary files, and never use a temporary directory that is not located on the same machine as where the

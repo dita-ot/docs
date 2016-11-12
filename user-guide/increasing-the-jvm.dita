@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="t-increasing-the-JVM">
   <title>Increasing Java memory allocation</title>
@@ -10,14 +10,14 @@
   <taskbody>
     <steps-unordered>
       <step>
-        <cmd>To change the value for an specific session, from the command prompt, issue the following command:</cmd>
+        <cmd>To change the value for a specific session, from the command prompt, issue the following command:</cmd>
         <choicetable>
           <chhead>
             <choptionhd>Platform</choptionhd>
             <chdeschd>Command</chdeschd>
           </chhead>
           <chrow platform="unix">
-            <choption>Linux or Mac OS&#xA0;X&#xA0;</choption>
+            <choption>Linux or macOS&#xA0;</choption>
             <chdesc><codeph>export ANT_OPTS=$ANT_OPTS -Xmx<varname>1024</varname>M</codeph></chdesc>
           </chrow>
           <chrow platform="windows">

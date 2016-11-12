@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="using-dita-properties-file">
   <title>Setting build parameters with <filepath>.properties</filepath> files</title>
@@ -42,7 +42,7 @@
         <cmd>Reference your <filepath>.properties</filepath> file with the <cmdname>dita</cmdname> command when building
           your output.</cmd>
         <stepxmp>
-          <codeblock>dita -i <varname>my.ditamap</varname> -f html5 -propertyfile <varname>my.properties</varname></codeblock>
+          <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5</option> <parmname>--propertyfile</parmname>=<varname>my.properties</varname></codeblock>
         </stepxmp>
         <info/>
       </step>
@@ -52,7 +52,8 @@
         <stepxmp>
           <p>For example, to build output once with <xmlelement>draft</xmlelement> and
               <xmlelement>required-cleanup</xmlelement> content:</p>
-          <codeblock>dita -i <varname>my.ditamap</varname> -f html5 -propertyfile <varname>my.properties</varname> -Dargs.draft=yes</codeblock>
+          <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5</option> <parmname>--propertyfile</parmname>=<varname>my.properties</varname> \
+     <parmname>--args.draft</parmname>=<option>yes</option></codeblock>
         </stepxmp>
         <info>
           <note conref="../resources/conref-task.dita#ID/pass-input-dir"/>

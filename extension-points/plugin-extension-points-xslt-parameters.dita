@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <reference id="plugin-extension-points-xslt-parameters">
   <title>XSLT-parameter extension points</title>
@@ -40,31 +40,53 @@
       <dl>
         <dlentry>
           <dt><parmname>dita.conductor.eclipse.toc.param</parmname></dt>
-          <dd>Pass parameters to the XSLT step that generates the Eclipse Help table of contents (TOC).</dd>
+          <dd conaction="pushreplace"
+            conref="extension-points-in-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-ext/dita.conductor.eclipse.toc.param.desc"
+            >Pass parameters to the XSLT step that generates the Eclipse Help table of contents (TOC).</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.html.param</parmname></dt>
-          <dd>Pass parameters to the HTML and HTML Help transformations.</dd>
+          <dd conaction="pushreplace"
+            conref="extension-points-in-org.dita.xhtml.dita#org.dita.xhtml-ext/dita.conductor.html.param.desc"
+            >Pass parameters to the <?oxy_comment_start author="Roger"comment="Verify"?>HTML and<?oxy_comment_end?> HTML
+            Help transformations.</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.conductor.html5.param</parmname></dt>
+          <dd conaction="pushreplace"
+            conref="extension-points-in-org.dita.html5.dita#org.dita.html5-ext/dita.conductor.html5.param.desc"
+            >Pass parameters to the HTML5 transformation.</dd>
+        </dlentry>
+        <dlentry>
+          <dt><parmname>dita.conductor.html5.toc.param</parmname></dt>
+          <dd conaction="pushreplace"
+            conref="extension-points-in-org.dita.html5.dita#org.dita.html5-ext/dita.conductor.html5.toc.param.desc"
+            >Pass parameters to the XSLT step that generates the HTML5 table of contents (TOC).</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.pdf2.param</parmname></dt>
-          <dd>Pass parameters to the PDF (formerly PDF2) transformation.</dd>
+          <dd conaction="pushreplace"
+            conref="extension-points-in-org.dita.pdf2.dita#org.dita.pdf2-ext/dita.conductor.pdf2.param.desc"
+            >Pass parameters to the PDF transformation.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.xhtml.param</parmname></dt>
-          <dd>Pass parameters to the XHTML and Eclipse Help transformations.</dd>
+          <dd conaction="pushreplace"
+            conref="extension-points-in-org.dita.xhtml.dita#org.dita.xhtml-ext/dita.conductor.xhtml.param.desc"
+            >Pass parameters to the XHTML and Eclipse Help transformations.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.xhtml.toc.param</parmname></dt>
-          <dd>Pass parameters to to the XSLT step that generates the XHTML table of contents (TOC).</dd>
+          <dd conaction="pushreplace"
+            conref="extension-points-in-org.dita.xhtml.dita#org.dita.xhtml-ext/dita.conductor.xhtml.toc.param.desc"
+            >Pass parameters to the XSLT step that generates the XHTML table of contents (TOC).</dd>
         </dlentry>
       </dl>
     </section>
     <example>
       <title>Example</title>
-      <p>The following two files represent a complete (albeit simple) plug-in that passes the
-        parameters defined in the <filepath>insertParameters.xml</filepath> file to the XHTML
-        transformation process.</p>
+      <p>The following two files represent a complete (albeit simple) plug-in that passes the parameters defined in the
+          <filepath>insertParameters.xml</filepath> file to the XHTML transformation process.</p>
       <fig>
         <title>Contents of the <filepath>plugin.xml</filepath> file</title>
         <codeblock>&lt;plugin id="com.example.newparam">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.-->
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <project name="docs" default="dist" basedir=".">
   <description>Build DITA Open Toolkit Documentation</description>
@@ -157,7 +157,7 @@
         <property name="args.csspath" value="css"/>
         <property name="args.gen.task.lbl" value="YES"/>
         <property name="args.hdr" value="${basedir}/resources/header.xml"/>
-        <property name="args.xhtml.toc" value="toc"/>
+        <property name="args.html5.toc" value="toc"/>
         <property name="nav-toc" value="partial"/>
         <property name="processing-mode" value="strict"/>
       </properties>

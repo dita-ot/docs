@@ -3,11 +3,11 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <reference id="flagging" rev="1.7" xml:lang="en-US">
-  <title>Flagging in the toolkit</title>
-  <shortdesc>Beginning with DITA-OT 1.7, flagging support is implemented as a common preprocess module. The module
-    evaluates the DITAVAL against all flagging attributes, and adds DITA-OT–specific hints to the topic when flags are
-    active. Any extended transformation type may use these hints to support flagging without adding logic to interpret
-    the DITAVAL.</shortdesc>
+  <title>Flagging (flag-module)</title>
+  <shortdesc>Beginning with DITA-OT 1.7, flagging support is implemented as a common <codeph>flag-module</codeph>
+    preprocessing step. The module evaluates the DITAVAL against all flagging attributes, and adds DITA-OT–specific
+    hints to the topic when flags are active. Any extended transformation type may use these hints to support flagging
+    without adding logic to interpret the DITAVAL.</shortdesc>
   <refbody>
     <section>
       <title>Evaluating the DITAVAL flags</title>
@@ -24,7 +24,8 @@
             <p>When any flag is active on an element, a <xmlelement>ditaval-startprop</xmlelement> element will be
               created as the first child of the flagged element:</p>
             <codeblock>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop "></codeblock>
-            <p>The <xmlelement>ditaval-startprop</xmlelement> element will contain the following:<ul>
+            <p>The <xmlelement>ditaval-startprop</xmlelement> element will contain the following:
+              <ul>
                 <li>If the active flags should create a new style, that style is included using standard CSS markup on
                   the <xmlatt>outputclass</xmlatt> attribute. Output types that make use of CSS, such as XHTML, can use
                   this value as-is.</li>

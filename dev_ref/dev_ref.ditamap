@@ -12,16 +12,20 @@
       <topicref href="preprocess-genlist.dita"/>
       <topicref href="preprocess-debugfilter.dita"/>
       <topicref href="preprocess-mapref.dita"/>
+      <topicref href="preprocess-branch-filter.dita"/>
       <topicref href="preprocess-copyfiles.dita"/>
       <topicref href="preprocess-keyref.dita"/>
+      <topicref href="preprocess-copy-to.dita"/>
       <topicref href="preprocess-conrefpush.dita"/>
       <topicref href="preprocess-conref.dita"/>
-      <topicref href="preprocess-coderef.dita"/>
+      <topicref href="preprocess-profile.dita"/>
+      <topicref href="preprocess-topic-fragment.dita"/>
       <topicref href="preprocess-chunk.dita"/>
       <topicref href="preprocess-metadata.dita"/>
       <topicref href="preprocess-maplink.dita"/>
       <topicref href="preprocess-topicpull.dita"/>
       <topicref href="preprocess-flagging.dita" keys="preprocess-flagging"/>
+      <topicref href="preprocess-clean-map.dita"/>
     </topicref>
     <topicref href="XhtmlWithNavigation.dita">
       <topicref href="XhtmlCommon.dita"/>
@@ -61,6 +65,14 @@
             <navtitle>Chunking definition in the DITA 1.2 specification</navtitle>
           </topicmeta>
         </topicref>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref href="preprocess-topic-fragment.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="../user-guide/extended-functionality.dita"/>
       </relcell>
     </relrow>
     <relrow>

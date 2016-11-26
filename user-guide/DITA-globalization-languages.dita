@@ -14,13 +14,13 @@
     <table frame="all" colsep="1" rowsep="1">
       <title>Supported languages</title>
       <tgroup cols="3">
-        <colspec colnum="1" colwidth="1.0*"/>
-        <colspec colnum="2" colwidth="1.0*"/>
-        <colspec colnum="3" colwidth="1*"/>
+        <colspec colnum="1" colwidth="3.0*" colname="language"/>
+        <colspec colnum="2" colwidth="2.0*" colname="code"/>
+        <colspec colnum="3" colwidth="5.0*" colname="notes"/>
         <thead>
           <row>
             <entry>Language</entry>
-            <entry>Language code</entry>
+            <entry>Language&#xA0;code</entry>
             <entry>Notes</entry>
           </row>
         </thead>

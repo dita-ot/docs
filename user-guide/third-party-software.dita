@@ -25,57 +25,57 @@
           <tbody>
             <row>
               <entry>Ant</entry>
-              <entry>1.9.7</entry>
+              <entry><keyword keyref="tool.ant.version"/></entry>
               <entry>
                 <xref keyref="license-apache-2"/>
               </entry>
             </row>
             <row>
               <entry>Apache Commons Codec</entry>
-              <entry>1.10</entry>
+              <entry><keyword keyref="tool.codec.version"/></entry>
               <entry>
                 <xref keyref="license-apache-2"/></entry>
             </row>
             <row>
               <entry>Apache Commons IO</entry>
-              <entry>2.5</entry>
+              <entry><keyword keyref="tool.io.version"/></entry>
               <entry>
                 <xref keyref="license-apache-2"/></entry>
             </row>
             <row>
               <entry>Guava</entry>
-              <entry>19.0</entry>
+              <entry><keyword keyref="tool.guava.version"/></entry>
               <entry>
                 <xref keyref="license-apache-2"/></entry>
             </row>
             <row>
               <entry>ICU4J</entry>
-              <entry>57.1</entry>
+              <entry><keyword keyref="tool.icu4j.version"/></entry>
               <entry>
                 <xref keyref="license-ICU"/></entry>
             </row>
             <row>
               <entry>Saxon</entry>
-              <entry>9.1.0.8</entry>
+              <entry><keyword keyref="tool.saxon.version"/></entry>
               <entry>
                 <xref keyref="license-MPL"/></entry>
             </row>
             <row>
               <entry>Xerces</entry>
-              <entry>2.11.0</entry>
+              <entry><keyword keyref="tool.xerces.version"/></entry>
               <entry>
                 <xref keyref="license-apache-2"/></entry>
             </row>
             <row>
               <entry>XML APIs</entry>
-              <entry>1.4.01</entry>
+              <entry><keyword keyref="tool.xmlapis.version"/></entry>
               <entry>
                 <xref keyref="license-apache-2"/>,
                 <xref keyref="license-W3C"/></entry>
             </row>
             <row>
               <entry>XML Resolver</entry>
-              <entry>1.2</entry>
+              <entry><keyword keyref="tool.resolver.version"/></entry>
               <entry>
                 <xref keyref="license-apache-2"/></entry>
             </row>
@@ -127,7 +127,7 @@
             </row>
             <row>
               <entry>FOP</entry>
-              <entry>2.1</entry>
+              <entry><keyword keyref="tool.fop.version"/></entry>
               <entry>
                 <xref keyref="license-apache-2"/></entry>
             </row>

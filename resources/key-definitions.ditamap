@@ -43,7 +43,7 @@
   <keydef keys="tool.ant.version">
     <topicmeta>
       <keywords>
-        <keyword>1.9.4</keyword>
+        <keyword>1.9.7</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -55,11 +55,27 @@
       </keywords>
     </topicmeta>
   </keydef>
-  <!-- Codec: Bundled version -->
+  <!-- Apache Commons Codec: Bundled version -->
   <keydef keys="tool.codec.version">
     <topicmeta>
       <keywords>
-        <keyword>1.9</keyword>
+        <keyword>1.10</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Apache Commons IO: Bundled version -->
+  <keydef keys="tool.io.version">
+    <topicmeta>
+      <keywords>
+        <keyword>2.5</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Guava: Bundled version -->
+  <keydef keys="tool.guava.version">
+    <topicmeta>
+      <keywords>
+        <keyword>19.0</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -67,7 +83,7 @@
   <keydef keys="tool.icu4j.version">
     <topicmeta>
       <keywords>
-        <keyword>54.1</keyword>
+        <keyword>57.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -103,11 +119,19 @@
       </keywords>
     </topicmeta>
   </keydef>
-  <!-- Resolver: Bundled version-->
+  <!-- XML APIs: Bundled version-->
+  <keydef keys="tool.xmlapis.version">
+    <topicmeta>
+      <keywords>
+        <keyword>1.4.01</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- XML Resolver: Bundled version-->
   <keydef keys="tool.resolver.version">
     <topicmeta>
       <keywords>
-        <keyword>1.1</keyword>
+        <keyword>1.2</keyword>
       </keywords>
     </topicmeta>
   </keydef>

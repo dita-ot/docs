@@ -192,11 +192,6 @@
       <linktext>DITA-OT project on GitHub</linktext>
     </topicmeta>
   </keydef>
-  <keydef keys="license-Apache2.0" href="http://www.apache.org/licenses/LICENSE-2.0" scope="external" format="html">
-    <topicmeta>
-      <linktext>Apache License 2.0</linktext>
-    </topicmeta>
-  </keydef>
   <keydef keys="rfc3986" href="https://tools.ietf.org/html/rfc3986" scope="external" format="html">
     <topicmeta>
       <linktext>RFC 3986</linktext>
@@ -267,4 +262,29 @@
       </topicmeta>
     </keydef>
   </topicgroup>
+  <topicset id="licenses" navtitle="Third-party licenses">
+    <keydef keys="license-apache-2" href="https://www.apache.org/licenses/LICENSE-2.0" scope="external" format="html">
+      <topicmeta>
+        <linktext>Apache License 2.0</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef keys="license-ICU" href="http://source.icu-project.org/repos/icu/icu/tags/release-57-1/LICENSE"
+      scope="external" format="html">
+      <topicmeta>
+        <linktext>ICU License</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef keys="license-MPL" href="https://www.mozilla.org/media/MPL/1.1/index.0c5913925d40.txt" scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Mozilla Public License 1.0</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef keys="license-W3C" href="https://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231"
+      scope="external" format="html">
+      <topicmeta>
+        <linktext>W3C Document License</linktext>
+      </topicmeta>
+    </keydef>
+  </topicset>
 </map>

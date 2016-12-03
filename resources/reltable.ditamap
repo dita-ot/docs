@@ -103,15 +103,12 @@
             <linktext>XHTML transformation</linktext>
           </topicmeta>
         </topicref>
-        <topicref href="../user-guide/dita2html5.dita">
-          <topicmeta>
-            <linktext>HTML5 transformation</linktext>
-          </topicmeta>
-        </topicref>
       </relcell>
-      <relcell/>
       <relcell>
-        <topicref href="../parameters/parameters-xhtml.dita" navtitle="XHTML transformation"/>
+        <topicref keyref="html-customization-parameters"/>
+      </relcell>
+      <relcell>
+        <topicref href="../parameters/parameters-xhtml.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -122,9 +119,11 @@
           </topicmeta>
         </topicref>
       </relcell>
-      <relcell/>
       <relcell>
-        <topicref href="../parameters/parameters-html5.dita" navtitle="HTML5 transformation"/>
+        <topicref keyref="html-customization-parameters"/>
+      </relcell>
+      <relcell>
+        <topicref href="../parameters/parameters-html5.dita"/>
       </relcell>
     </relrow>
     <relrow>

@@ -11,6 +11,7 @@
     <p>The <option>tocjs</option> transformation was updated so that it produces XHTML output and uses a default
       frameset.</p>
     <p>To run the TocJS transformation, set the <parmname>transtype</parmname> parameter to <option>tocjs</option>, or
-      pass the <option>-format tocjs</option> option to the <cmdname>dita</cmdname> command line.</p>
+      pass the <parmname>--format</parmname>=<option>tocjs</option> option to the <cmdname>dita</cmdname> command
+      line.</p>
   </conbody>
 </concept>

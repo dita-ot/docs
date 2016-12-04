@@ -12,6 +12,7 @@
         <xmlelement>simpletable</xmlelement> elements. Most testing of troff output was performed using the Cygwin Linux
       emulator.</p>
     <p>To run the troff transformation, set the <parmname>transtype</parmname> parameter to <option>troff</option>, or
-      pass the <option>-format troff</option> option to the <cmdname>dita</cmdname> command line.</p>
+      pass the <parmname>--format</parmname>=<option>troff</option> option to the <cmdname>dita</cmdname> command
+      line.</p>
   </conbody>
 </concept>

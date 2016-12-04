@@ -4,8 +4,9 @@
 
 <map>
   <title>Customizing HTML output</title>
-  <topicref href="html-customization.dita" keys="html-customization">
+  <topicref href="html-customization.dita" keys="html-customization" collection-type="family">
     <topicref href="html-customization-parameters.dita" keys="html-customization-parameters"/>
+    <topicref href="html-customization-properties-file.dita" keys="html-customization-properties-file"/>
     <topicref href="html-customization-plugins.dita" keys="html-customization-plugins"/>
   </topicref>
 </map>

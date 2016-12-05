@@ -18,10 +18,19 @@
       <p>The <option>html5-custom-css</option> transformation includes a custom CSS file and sets three parameters to
         integrate the custom stylesheet in the generated HTML5 output:</p>
       <ul>
-        <li>Specify the custom .css file with <parmname>args.css</parmname></li>
-        <li>Copy the custom .css file to the output directory with <parmname>args.copycss</parmname></li>
-        <li>Set the path for .css files in the output folder with <parmname>args.csspath</parmname></li>
+        <li>Specify the custom .css file with <parmname>args.css</parmname><ul id="ul_mkh_rw2_2y">
+            <li>Specify only the name of the .css file, as the path is set by
+                <parmname>args.csspath</parmname>.</li>
+          </ul></li>
+        <li>Trigger the copy of the custom .css file to the output directory by setting
+            <parmname>args.copycss</parmname> to <userinput>yes</userinput></li>
+        <li>Set the path for .css files in the output folder with
+            <parmname>args.csspath</parmname>.<ul id="ul_m4s_cx2_2y">
+            <li>Exclude the .css file name from the path as it is set by
+                <parmname>args.css</parmname>.</li>
+          </ul></li>
       </ul>
+      <p>All these parameters are set in the Ant script (<filepath>build.xml</filepath>).</p>
     </context>
     <steps>
       <step>

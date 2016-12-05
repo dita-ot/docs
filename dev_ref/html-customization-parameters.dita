@@ -32,8 +32,8 @@
       <step>
         <cmd>Set the <parmname>args.css</parmname> parameter to the name of your custom CSS file.</cmd>
         <info>
-          <p>The value of this parameter should be only the file name. Path information is specified with a separate
-            parameter.</p></info>
+          <p>The value of this parameter should be only the file name. The relative path to the file can be specified
+            with <parmname>args.cssroot</parmname>.</p></info>
       </step>
       <step>
         <cmd>Set the <parmname>args.copycss</parmname> parameter to <option>yes</option>.</cmd>

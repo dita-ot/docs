@@ -48,8 +48,8 @@
 <i>&lt;!-- This plug-in extends DITA-OT HTML5 processing with a custom CSS file. --&gt;</i>
 &lt;plugin id="com.example.html5.custom.css"&gt;
   <b>&lt;require plugin="org.dita.html5"/&gt;</b>
-  <b>&lt;feature extension="dita.conductor.transtype.check" value="html5-custom-css" type="txt"/&gt;</b>
-  &lt;feature extension="dita.conductor.target.relative" value="build.xml" type="file"/&gt;
+  <b>&lt;feature extension="dita.conductor.transtype.check" value="html5-custom-css"/&gt;</b>
+  &lt;feature extension="dita.conductor.target.relative" value="build.xml"/&gt;
 &lt;/plugin&gt;</codeblock>
           </fig>
           <note>This plug-in will extend the default HTML5 transformation, so the <xmlelement>require</xmlelement>

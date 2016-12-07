@@ -205,6 +205,21 @@
     </relrow>
   </reltable>
   <reltable>
+    <title>Task to task: Bi-directional links</title>
+    <relheader>
+      <relcolspec type="task"/>
+      <relcolspec type="task"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref keyref="html-customization-css"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="html-customization-plugin-bundle-css"/>
+      </relcell>
+    </relrow>
+  </reltable>
+  <reltable>
     <title>External resources</title>
     <relrow>
       <relcell>

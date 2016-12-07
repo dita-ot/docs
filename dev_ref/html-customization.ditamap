@@ -5,7 +5,11 @@
 <map>
   <title>Customizing HTML output</title>
   <topicref href="html-customization.dita" keys="html-customization" collection-type="family">
-    <topicref href="html-customization-parameters.dita" keys="html-customization-parameters"/>
+    <topicref href="html-customization-parameters.dita" keys="html-customization-parameters">
+      <topicref href="html-customization-css.dita" keys="html-customization-css"/>
+      <topicref href="html-customization-header.dita" keys="html-customization-header"/>
+      <topicref href="html-customization-navigation.dita" keys="html-customization-navigation"/>
+    </topicref>
     <topicref href="html-customization-properties-file.dita" keys="html-customization-properties-file"/>
     <topicref href="html-customization-plugins.dita" keys="html-customization-plugins">
       <topicref href="html-customization-plugin-bundle-css.dita" keys="html-customization-plugin-bundle-css"/>

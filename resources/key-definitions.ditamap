@@ -4,24 +4,8 @@
 
 <map id="keydefs" title="Key definitions (variables)">
 
-  <!-- DOWNLOAD URLs -->
-  <keydef format="html" keys="download.ant" scope="external" href="http://ant.apache.org/"/>
-  <keydef format="html" keys="download.dita-ot.current-release" scope="external" href="http://www.dita-ot.org/download"/>
-  <keydef format="html" keys="download.fop" scope="external" href="http://xmlgraphics.apache.org/fop/download.html"/>
-  <keydef format="html" keys="download.html-help-workshop" scope="external"
-    href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms669985%28v=vs.85%29.aspx">
-    <topicmeta>
-      <linktext>msdn.microsoft.com</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef format="html" keys="download.icu4j" scope="external" href="http://site.icu-project.org/download/"/>
-  <keydef format="html" keys="download.oracle-jdk" scope="external"
-    href="http://www.oracle.com/technetwork/java/javase/downloads/">
-    <topicmeta>
-      <linktext>oracle.com/technetwork/java</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef format="html" keys="download.saxon" scope="external" href="http://saxon.sourceforge.net/"/>
+  <!-- Submap with key definitions for external web resources -->
+  <mapref href="external-links.ditamap"/>
 
   <!--VERSION NUMBERS: DITA-OT-->
   <keydef keys="release-notes" href="../release-notes/index.dita"/>
@@ -59,7 +43,7 @@
   <keydef keys="tool.ant.version">
     <topicmeta>
       <keywords>
-        <keyword>1.9.4</keyword>
+        <keyword>1.9.7</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -71,11 +55,27 @@
       </keywords>
     </topicmeta>
   </keydef>
-  <!-- Codec: Bundled version -->
+  <!-- Apache Commons Codec: Bundled version -->
   <keydef keys="tool.codec.version">
     <topicmeta>
       <keywords>
-        <keyword>1.9</keyword>
+        <keyword>1.10</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Apache Commons IO: Bundled version -->
+  <keydef keys="tool.io.version">
+    <topicmeta>
+      <keywords>
+        <keyword>2.5</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Guava: Bundled version -->
+  <keydef keys="tool.guava.version">
+    <topicmeta>
+      <keywords>
+        <keyword>19.0</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -83,7 +83,7 @@
   <keydef keys="tool.icu4j.version">
     <topicmeta>
       <keywords>
-        <keyword>54.1</keyword>
+        <keyword>57.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -119,11 +119,19 @@
       </keywords>
     </topicmeta>
   </keydef>
-  <!-- Resolver: Bundled version-->
+  <!-- XML APIs: Bundled version-->
+  <keydef keys="tool.xmlapis.version">
+    <topicmeta>
+      <keywords>
+        <keyword>1.4.01</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- XML Resolver: Bundled version-->
   <keydef keys="tool.resolver.version">
     <topicmeta>
       <keywords>
-        <keyword>1.1</keyword>
+        <keyword>1.2</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -136,135 +144,4 @@
     </topicmeta>
   </keydef>
 
-  <!--RELEASE NOTES: OTHER APPLICATIONS-->
-
-  <keydef keys="fop-20-rn" href="https://xmlgraphics.apache.org/fop/2.0/releaseNotes_2.0.html" scope="external"
-    format="html">
-    <topicmeta>
-      <linktext>Apache FOP 2.0 Release Notes</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="fop-21-rn" href="https://xmlgraphics.apache.org/fop/2.1/releaseNotes_2.1.html" scope="external"
-    format="html">
-    <topicmeta>
-      <linktext>Apache FOP 2.1 Release Notes</linktext>
-    </topicmeta>
-  </keydef>
-  <!-- FOP docs -->
-  <keydef keys="fop-accessibility" href="https://xmlgraphics.apache.org/fop/trunk/accessibility.html" scope="external"
-    format="html">
-    <topicmeta>
-      <linktext>Apache FOP Accessibility</linktext>
-    </topicmeta>
-  </keydef>
-
-  <!--URLs: Web pages-->
-  <keydef keys="contributor-meeting-minutes" href="https://github.com/dita-ot/dita-ot/wiki/Meeting-minutes"
-    scope="external" format="html">
-    <topicmeta>
-      <linktext>DITA-OT Contributor Meeting Minutes</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="dita-ot-developer" href="https://lists.sourceforge.net/lists/listinfo/dita-ot-developer"
-    scope="external" format="html">
-    <topicmeta>
-      <linktext>Sign-up for DITA-OT Developer Mailing List</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="dita-ot-issues" href="https://github.com/dita-ot/dita-ot/issues" scope="external" format="html">
-    <topicmeta>
-      <linktext>DITA-OT bug and feature tracker</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="dita-ot-spec" href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part0-overview.html"
-    scope="external" format="html">
-    <topicmeta>
-      <linktext>DITA 1.3 specification</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="github-help" href="https://help.github.com/articles/set-up-git" scope="external" format="html">
-    <topicmeta>
-      <linktext>Setting up Git to work with the project</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="github-project" href="https://github.com/dita-ot/dita-ot" scope="external" format="html">
-    <topicmeta>
-      <linktext>DITA-OT project on GitHub</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="license-Apache2.0" href="http://www.apache.org/licenses/LICENSE-2.0" scope="external" format="html">
-    <topicmeta>
-      <linktext>Apache License 2.0</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="rfc3986" href="https://tools.ietf.org/html/rfc3986" scope="external" format="html">
-    <topicmeta>
-      <linktext>RFC 3986</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="rfc5147" href="http://tools.ietf.org/html/rfc5147" scope="external" format="html">
-    <topicmeta>
-      <linktext>RFC 5147</linktext>
-    </topicmeta>
-  </keydef>
-  <topicgroup>
-    <keydef keys="fo-spec" scope="external" format="html" href="http://www.w3.org/TR/xsl/"/>
-    <keydef keys="fo-spec.change-bar-begin" scope="external" format="html"
-      href="http://www.w3.org/TR/xsl/#fo_change-bar-begin">
-      <topicmeta>
-        <linktext>XSL-FO fo:change-bar-begin element</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef keys="fo-spec.change-bar-style" scope="external" format="html"
-      href="http://www.w3.org/TR/xsl/#change-bar-style">
-      <topicmeta>
-        <linktext>@change-bar-style</linktext>
-      </topicmeta>
-    </keydef>
-  </topicgroup>
-  <keydef keys="sass-lang" href="http://sass-lang.com" scope="external" format="html">
-    <topicmeta>
-      <linktext>Sass</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="contributions" href="https://github.com/dita-ot/dita-ot/graphs/contributors" scope="external"
-    format="html">
-    <topicmeta>
-      <linktext>code contributions</linktext>
-    </topicmeta>
-  </keydef>
-  <keydef keys="docs-contributions" href="https://github.com/dita-ot/docs/graphs/contributors" scope="external"
-    format="html">
-    <topicmeta>
-      <linktext>documentation contributions</linktext>
-    </topicmeta>
-  </keydef>
-  <topicgroup>
-    <keydef keys="2.0-release-notes" href="http://www.dita-ot.org/2.0/readme/changes/rel2.0.html" scope="external"
-      format="html">
-      <topicmeta>
-        <linktext>DITA-OT 2.0 Release Notes</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef keys="2.1-release-notes" href="http://www.dita-ot.org/2.1/release-notes/" scope="external" format="html">
-      <topicmeta>
-        <linktext>DITA-OT 2.1 Release Notes</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef keys="2.2-release-notes" href="http://www.dita-ot.org/2.2/release-notes/" scope="external" format="html">
-      <topicmeta>
-        <linktext>DITA-OT 2.2 Release Notes</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef keys="2.3-release-notes" href="http://www.dita-ot.org/2.3/release-notes/" scope="external" format="html">
-      <topicmeta>
-        <linktext>DITA-OT 2.3 Release Notes</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef keys="2.4-release-notes" href="http://www.dita-ot.org/2.4/release-notes/" scope="external" format="html">
-      <topicmeta>
-        <linktext>DITA-OT 2.4 Release Notes</linktext>
-      </topicmeta>
-    </keydef>
-  </topicgroup>
 </map>

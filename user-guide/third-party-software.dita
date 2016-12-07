@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<concept id="third-party-software">
+  <title>Third-party software</title>
+  <shortdesc>DITA Open Toolkit uses third-party software components to provide certain features in the core toolkit and
+    bundled plug-ins.</shortdesc>
+  <conbody>
+    <section>
+      <title>DITA-OT <keyword keyref="release"/></title>
+      <p>DITA-OT core processing uses the following third-party software:</p>
+      <table>
+        <tgroup cols="3">
+          <colspec colname="project" colwidth="1*"/>
+          <colspec colname="version" colwidth="1*"/>
+          <colspec colname="license" colwidth="2*"/>
+          <thead>
+            <row>
+              <entry>Software</entry>
+              <entry>Version</entry>
+              <entry>License</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Ant</entry>
+              <entry><keyword keyref="tool.ant.version"/></entry>
+              <entry>
+                <xref keyref="license-apache-2"/>
+              </entry>
+            </row>
+            <row>
+              <entry>Apache Commons Codec</entry>
+              <entry><keyword keyref="tool.codec.version"/></entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+            <row>
+              <entry>Apache Commons IO</entry>
+              <entry><keyword keyref="tool.io.version"/></entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+            <row>
+              <entry>Guava</entry>
+              <entry><keyword keyref="tool.guava.version"/></entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+            <row>
+              <entry>ICU4J</entry>
+              <entry><keyword keyref="tool.icu4j.version"/></entry>
+              <entry>
+                <xref keyref="license-ICU"/></entry>
+            </row>
+            <row>
+              <entry>Saxon</entry>
+              <entry><keyword keyref="tool.saxon.version"/></entry>
+              <entry>
+                <xref keyref="license-MPL"/></entry>
+            </row>
+            <row>
+              <entry>Xerces</entry>
+              <entry><keyword keyref="tool.xerces.version"/></entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+            <row>
+              <entry>XML APIs</entry>
+              <entry><keyword keyref="tool.xmlapis.version"/></entry>
+              <entry>
+                <xref keyref="license-apache-2"/>,
+                <xref keyref="license-W3C"/></entry>
+            </row>
+            <row>
+              <entry>XML Resolver</entry>
+              <entry><keyword keyref="tool.resolver.version"/></entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <note>The XML APIs library contains source code for SAX and DOM APIs, which each have their own licenses.</note>
+    </section>
+    <section>
+      <title>PDF plug-in</title>
+      <p>The <codeph>org.dita.pdf2</codeph> plug-in relies on additional third-party software to generate PDF
+        output:</p>
+      <table>
+        <tgroup cols="3">
+          <colspec colname="project" colwidth="1*"/>
+          <colspec colname="version" colwidth="1*"/>
+          <colspec colname="license" colwidth="1*"/>
+          <thead>
+            <row>
+              <entry>Software</entry>
+              <entry>Version</entry>
+              <entry>License</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Apache Commons Logging</entry>
+              <entry>1.0.4</entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+            <row>
+              <entry>Avalon Framework</entry>
+              <entry>4.3.1</entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+            <row>
+              <entry>Apache XML Graphics</entry>
+              <entry>2.1</entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+            <row>
+              <entry>Batik</entry>
+              <entry>1.8</entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+            <row>
+              <entry>FOP</entry>
+              <entry><keyword keyref="tool.fop.version"/></entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

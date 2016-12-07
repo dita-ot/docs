@@ -6,11 +6,41 @@
   <title>DITA Open Toolkit <keyword keyref="maintenance-version"/> Release Notes</title>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> is a feature release that provides new features and
-      enhancements, including <ph conref="#highlights/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#highlights/summary"/>.</shortdesc>
     <p>Issue numbers correspond to the tracking number in the <ph>
         <xref keyref="dita-ot-issues">GitHub issues tracker</xref></ph>.</p>
   </abstract>
+
+  <reference id="v241">
+    <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="2520">force-unique=true does not work
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2520" scope="external" format="html">#2520</xref>
+          </li>
+          <li id="2524">HTML5: Element content appears in CSS classes
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2524" scope="external" format="html">#2524</xref>
+          </li>
+          <li id="2526">The context item for axis step ./@class is absent in "output-message.xsl"
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2526" scope="external" format="html">#2526</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2535" scope="external" format="html">#2535</xref>
+          </li>
+          <li id="2529">Override @scope and @format with keyref
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2529" scope="external" format="html">#2529</xref>
+          </li>
+          <li id="2537">Move the dita.xsl.html5.cover extension point to the template file
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2537" scope="external" format="html">#2537</xref>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.4...2.4.1" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
 
   <reference id="requirements">
     <title>Requirements</title>

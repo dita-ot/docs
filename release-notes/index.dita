@@ -39,6 +39,29 @@
           <xref href="https://github.com/dita-ot/dita-ot/compare/2.4...2.4.1" scope="external" format="html">
             changelog</xref> on GitHub.</p>
       </section>
+      <section>
+        <title>Documentation updates</title>
+        <p>The DITA-OT <keyword keyref="maintenance-version"/> documentation includes corrections and improvements to
+          existing topics, along with new content.</p>
+        <ul>
+          <li>
+            <xref keyref="html-customization"/> provides examples that illustrate various approaches for customizing
+            HTML-based output, including:
+            <ul>
+              <li>
+                <xref keyref="html-customization-navigation"/></li>
+              <li>
+                <xref keyref="html-customization-plugin-bundle-css"/></li>
+            </ul>
+          </li>
+          <li>
+            <xref keyref="languages"/> provides a common overview of languages supported for PDF and HTML-based output
+            formats.</li>
+          <li>
+            <xref keyref="third-party-software"/> lists bundled software components with version and license information
+            for each library.</li>
+        </ul>
+      </section>
     </refbody>
   </reference>
 

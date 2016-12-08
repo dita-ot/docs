@@ -24,7 +24,9 @@
             references to a single topic.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2520" scope="external" format="html">#2520</xref>
           </li>
-          <li id="2524">HTML5: Element content appears in CSS classes
+          <li id="2524">HTML5: In DITA-OT 2.4, the text content of table cells was partially propagated to the CSS
+              <xmlatt>class</xmlatt> attribute. Table processing has been updated to remove the legacy XHTML CSS class
+            mode and ensure that <xmlatt>class</xmlatt> attribute values are generated correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2524" scope="external" format="html">#2524</xref>
           </li>
           <li id="2526">The context item for axis step ./@class is absent in "output-message.xsl"

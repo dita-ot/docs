@@ -36,7 +36,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2526" scope="external" format="html">#2526</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2535" scope="external" format="html">#2535</xref>
           </li>
-          <li id="2529">Override @scope and @format with keyref
+          <li id="2529">Earlier versions of DITA-OT did not correctly override the default <xmlatt>scope</xmlatt> and
+              <xmlatt>format</xmlatt> attribute values for topic references with values from the key definition. Keyref
+            processing has been updated to properly handle scope and format definition for non-local non-DITA targets.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2529" scope="external" format="html">#2529</xref>
           </li>
           <li id="2537">Move the dita.xsl.html5.cover extension point to the template file

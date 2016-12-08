@@ -29,7 +29,10 @@
             mode and ensure that <xmlatt>class</xmlatt> attribute values are generated correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2524" scope="external" format="html">#2524</xref>
           </li>
-          <li id="2526">The context item for axis step ./@class is absent in "output-message.xsl"
+          <li id="2526">Saxon 9.7.0.11 reported an error when producing output from DITA content: <msgph>The context
+              item for axis step ./@class is absent</msgph>. This was resolved by modifying the
+              <codeph>$localclass</codeph> variable in the <codeph>output-message</codeph> template to use the
+              <codeph>$ctx</codeph> context variable as a parent.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2526" scope="external" format="html">#2526</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2535" scope="external" format="html">#2535</xref>
           </li>

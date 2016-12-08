@@ -18,7 +18,10 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2520">force-unique=true does not work
+          <li id="2520">In DITA-OT 2.3 and 2.4, setting the <parmname>force-unique</parmname> parameter to
+              <option>true</option> had no effect. Processing has been corrected to properly generate the copy-to
+            attributes that ensure unique file names for each instance of a resource when a map contains multiple
+            references to a single topic.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2520" scope="external" format="html">#2520</xref>
           </li>
           <li id="2524">HTML5: Element content appears in CSS classes

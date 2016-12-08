@@ -41,7 +41,9 @@
             processing has been updated to properly handle scope and format definition for non-local non-DITA targets.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2529" scope="external" format="html">#2529</xref>
           </li>
-          <li id="2537">Move the dita.xsl.html5.cover extension point to the template file
+          <li id="2537">In earlier versions of DITA-OT, the <codeph>dita.xsl.html5.cover</codeph> extension point did
+            not respond to overrides declared in custom plug-ins. The extension point has now been moved to the template
+            file to ensure that it can be overridden as intended.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2537" scope="external" format="html">#2537</xref>
           </li>
         </ul>

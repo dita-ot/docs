@@ -46,6 +46,12 @@
             file to ensure that it can be overridden as intended.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2537" scope="external" format="html">#2537</xref>
           </li>
+          <li id="2539">In cases where a single topic is used in multiple key scopes (and copies of the topic are
+            created), earlier versions of DITA-OT used the same target for key references to both key scopes. Key
+            targets are now rewritten to point to the new resource to ensure that duplicate link targets in key scopes
+            are correctly resolved.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2539" scope="external" format="html">#2539</xref>
+          </li>
         </ul>
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/2.4...2.4.1" scope="external" format="html">

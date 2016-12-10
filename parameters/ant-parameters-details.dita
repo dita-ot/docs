@@ -142,8 +142,8 @@
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/force-unique.desc"/>
             <pd conaction="pushafter">
-              <draft-comment author="jelovirt">This needs a better and longer description.</draft-comment>
-            </pd>
+              <p>Setting this to <option>true</option> ensures that unique output files are created for each instance of
+                a resource when a map contains multiple references to a single topic.</p></pd>
           </plentry>
           <plentry id="generate-debug-attributes">
             <pt>
@@ -248,30 +248,48 @@
             <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter
                 <parmname>BREADCRUMBS</parmname>.</pd>
           </plentry>
-          <!--<plentry id="args.copycss">
+          <plentry id="args.copycss">
             <pt><parmname>args.copycss</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.copycss.desc"/>
-            <pd conaction="pushafter">Specifies whether to copy the custom .css file to the output directory.</pd>
-          </plentry>-->
-          <!--<plentry id="args.css">
+            <pd conaction="pushafter">If an external process will copy your custom .css file to the output directory,
+              leave this parameter unset (or set it to <option>no</option>). If DITA-OT should copy the file when
+              generating output, set it to <option>yes</option>. </pd>
+          </plentry>
+          <plentry id="args.css">
             <pt><parmname>args.css</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.css.desc"/>
-            <pd conaction="pushafter">Specifies the name of a custom .css file.</pd>
-          </plentry>-->
+            <pd conaction="pushafter">The value of this parameter should be only the file name (or an absolute path to
+              the file). A relative path can be specified with <parmname>args.cssroot</parmname>.</pd>
+          </plentry>
           <plentry id="args.csspath">
             <pt>
               <parmname>args.csspath</parmname>
             </pt>
+            <pd conaction="pushreplace" conref="parameters-base-html.dita#base-html/args.csspath.desc">Specifies the
+                <b>destination</b> directory to which .css files are copied (relative to the output directory).</pd>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.csspath.desc"/>
-            <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter
-                <parmname>CSSPATH</parmname>. DITA-OT will copy the file to this location.</pd>
+            <pd conaction="pushafter">
+              <p audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>CSSPATH</parmname>.</p>
+              <p>DITA-OT will copy the file <b>to</b> this location.</p>
+              <note type="tip">If <parmname>args.csspath</parmname> is not set, the custom CSS file (and the default CSS
+                files) will be copied to the root level of the output folder. To copy CSS files to an output subfolder
+                named <filepath>css</filepath>, set <parmname>args.csspath</parmname> to <option>css</option>.</note>
+            </pd>
           </plentry>
           <plentry id="args.cssroot">
             <pt>
               <parmname>args.cssroot</parmname>
             </pt>
+            <pd conaction="pushreplace" conref="parameters-base-html.dita#base-html/args.cssroot.desc">Specifies the
+                <b>source</b> directory that contains the custom .css file.</pd>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.cssroot.desc"/>
-            <pd conaction="pushafter">DITA-OT will copy the file from this location.</pd>
+            <pd conaction="pushafter">
+              <p>DITA-OT will copy the file <b>from</b> this location.</p>
+              <note type="tip">The value you enter here will be interpreted relative to the location of the input map
+                file. If your map is stored at the root level of your project folder and the CSS file is stored in a
+                subfolder named <filepath>resources</filepath>, set <parmname>args.cssroot</parmname> to
+                  <option>resources</option>.</note>
+            </pd>
           </plentry>
           <plentry id="args.dita.locale">
             <pt>

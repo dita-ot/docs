@@ -13,7 +13,7 @@
         </topicref>
       </relcell>
       <relcell>
-        <topicref href="../user-guide/DITA-globalization-xhtml.dita">
+        <topicref href="../user-guide/DITA-globalization-languages.dita">
           <topicmeta>
             <linktext>Languages supported by the core toolkit</linktext>
           </topicmeta>
@@ -103,15 +103,13 @@
             <linktext>XHTML transformation</linktext>
           </topicmeta>
         </topicref>
-        <topicref href="../user-guide/dita2html5.dita">
-          <topicmeta>
-            <linktext>HTML5 transformation</linktext>
-          </topicmeta>
-        </topicref>
       </relcell>
-      <relcell/>
       <relcell>
-        <topicref href="../parameters/parameters-xhtml.dita" navtitle="XHTML transformation"/>
+        <topicref keyref="html-customization-parameters"/>
+      </relcell>
+      <relcell>
+        <topicref href="../parameters/parameters-base-html.dita"/>
+        <topicref href="../parameters/parameters-xhtml.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -122,9 +120,21 @@
           </topicmeta>
         </topicref>
       </relcell>
+      <relcell>
+        <topicref keyref="html-customization-parameters"/>
+      </relcell>
+      <relcell>
+        <topicref href="../parameters/parameters-base-html.dita"/>
+        <topicref href="../parameters/parameters-html5.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
       <relcell/>
       <relcell>
-        <topicref href="../parameters/parameters-html5.dita" navtitle="HTML5 transformation"/>
+        <topicref keyref="html-customization-plugin-bundle-css"/>
+      </relcell>
+      <relcell>
+        <topicref href="../parameters/parameters-base-html.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -191,6 +201,21 @@
         <topicref href="../extension-points/plugin-extension-points-pre-processing.dita"/>
         <topicref href="../extension-points/plugin-extension-points-support.dita"/>
         <topicref href="../extension-points/plugin-extension-points-general.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
+  <reltable>
+    <title>Task to task: Bi-directional links</title>
+    <relheader>
+      <relcolspec type="task"/>
+      <relcolspec type="task"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref keyref="html-customization-css"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="html-customization-plugin-bundle-css"/>
       </relcell>
     </relrow>
   </reltable>

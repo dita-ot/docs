@@ -4,8 +4,9 @@
 
 <concept id="xhtmlchm" xml:lang="en-US">
   <title>HTML Help processing</title>
-  <shortdesc>The <option>htmlhelp</option> transformation created HTML Help control files. If the build runs on a system
-    that has the HTML Help compiler installed, the control files are compiled into a CHM file.</shortdesc>
+  <shortdesc>The <option>htmlhelp</option> transformation creates HTML Help control files. If the
+    build runs on a system that has the HTML Help compiler installed, the control files are compiled
+    into a CHM file.</shortdesc>
   <conbody>
     <section>
       <p>Once the pre-processing and XHTML processes are completed, most of the HTML Help processing is handled

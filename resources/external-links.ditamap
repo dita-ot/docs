@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<map>
+  <title>External links</title>
+  <!-- Key definitions for external web resources -->
+
+  <topicset
+    id="dita-ot-github"
+    navtitle="DITA-OT GitHub Project">
+    <keydef
+      keys="github-help"
+      href="https://help.github.com/articles/set-up-git"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Setting up Git</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="github-project"
+      href="https://github.com/dita-ot/dita-ot"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT project on GitHub</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="dita-ot-issues"
+      href="https://github.com/dita-ot/dita-ot/issues"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT bug and feature tracker</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="contributor-meeting-minutes"
+      href="https://github.com/dita-ot/dita-ot/wiki/Meeting-minutes"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT Contributor Meeting Minutes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="contributions"
+      href="https://github.com/dita-ot/dita-ot/graphs/contributors"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>code contributions</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="docs-contributions"
+      href="https://github.com/dita-ot/docs/graphs/contributors"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>documentation contributions</linktext>
+      </topicmeta>
+    </keydef>
+  </topicset>
+
+  <topicset
+    id="dita-ot-rn"
+    navtitle="DITA-OT Release Notes">
+    <keydef
+      keys="2.0-release-notes"
+      href="http://www.dita-ot.org/2.0/readme/changes/rel2.0.html"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 2.0 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="2.1-release-notes"
+      href="http://www.dita-ot.org/2.1/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 2.1 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="2.2-release-notes"
+      href="http://www.dita-ot.org/2.2/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 2.2 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="2.3-release-notes"
+      href="http://www.dita-ot.org/2.3/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 2.3 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="2.4-release-notes"
+      href="http://www.dita-ot.org/2.4/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 2.4 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+  </topicset>
+
+  <topicset
+    id="downloads"
+    navtitle="Download links">
+    <keydef
+      keys="download.ant"
+      href="http://ant.apache.org/"
+      scope="external"
+      format="html"/>
+    <keydef
+      keys="download.dita-ot.current-release"
+      href="http://www.dita-ot.org/download"
+      scope="external"
+      format="html"/>
+    <keydef
+      keys="download.fop"
+      href="http://xmlgraphics.apache.org/fop/download.html"
+      scope="external"
+      format="html"/>
+    <keydef
+      keys="download.html-help-workshop"
+      href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms669985%28v=vs.85%29.aspx"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>msdn.microsoft.com</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="download.icu4j"
+      href="http://site.icu-project.org/download/"
+      scope="external"
+      format="html"/>
+    <keydef
+      keys="download.oracle-jdk"
+      href="http://www.oracle.com/technetwork/java/javase/downloads/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>oracle.com/technetwork/java</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="download.saxon"
+      href="http://saxon.sourceforge.net/"
+      scope="external"
+      format="html"/>
+  </topicset>
+
+  <topicset
+    id="fop"
+    navtitle="FOP links">
+    <keydef
+      keys="fop-20-rn"
+      href="https://xmlgraphics.apache.org/fop/2.0/releaseNotes_2.0.html"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Apache FOP 2.0 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="fop-21-rn"
+      href="https://xmlgraphics.apache.org/fop/2.1/releaseNotes_2.1.html"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Apache FOP 2.1 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="fop-accessibility"
+      href="https://xmlgraphics.apache.org/fop/trunk/accessibility.html"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Apache FOP Accessibility</linktext>
+      </topicmeta>
+    </keydef>
+  </topicset>
+
+  <topicset
+    id="specs"
+    navtitle="Specs and RFC links">
+    <keydef
+      keys="dita-ot-spec"
+      href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part0-overview.html"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA 1.3 specification</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="fo-spec"
+      scope="external"
+      format="html"
+      href="http://www.w3.org/TR/xsl/"/>
+    <keydef
+      keys="fo-spec.change-bar-begin"
+      scope="external"
+      format="html"
+      href="http://www.w3.org/TR/xsl/#fo_change-bar-begin">
+      <topicmeta>
+        <linktext>XSL-FO fo:change-bar-begin element</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="fo-spec.change-bar-style"
+      scope="external"
+      format="html"
+      href="http://www.w3.org/TR/xsl/#change-bar-style">
+      <topicmeta>
+        <linktext>@change-bar-style</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="rfc3986"
+      href="https://tools.ietf.org/html/rfc3986"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>RFC 3986</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="rfc5147"
+      href="http://tools.ietf.org/html/rfc5147"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>RFC 5147</linktext>
+      </topicmeta>
+    </keydef>
+  </topicset>
+
+  <topicset
+    id="licenses"
+    navtitle="Third-party licenses">
+    <keydef
+      keys="license-apache-2"
+      href="https://www.apache.org/licenses/LICENSE-2.0"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Apache License 2.0</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="license-ICU"
+      href="http://source.icu-project.org/repos/icu/icu/tags/release-57-1/LICENSE"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>ICU License</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="license-MPL"
+      href="https://www.mozilla.org/media/MPL/1.1/index.0c5913925d40.txt"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Mozilla Public License 1.0</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="license-W3C"
+      href="https://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>W3C Document License</linktext>
+      </topicmeta>
+    </keydef>
+  </topicset>
+
+  <topicset
+    id="websites"
+    navtitle="Other Websites">
+    <keydef
+      keys="sass-lang"
+      href="http://sass-lang.com"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Sass</linktext>
+      </topicmeta>
+    </keydef>
+  </topicset>
+</map>

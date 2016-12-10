@@ -73,6 +73,11 @@
                 <xref href="https://github.com/dita-ot/org.dita.eclipsecontent" format="html" scope="external"/></entry>
             </row>
             <row>
+              <entry>OpenDocument Text</entry>
+              <entry>
+                <xref href="https://github.com/dita-ot/org.dita.odt" format="odt" scope="external"/></entry>
+            </row>
+            <row>
               <entry>Word RTF</entry>
               <entry>
                 <xref href="https://github.com/dita-ot/org.dita.wordrtf" format="html" scope="external"/></entry>
@@ -80,9 +85,9 @@
           </tbody>
         </tgroup>
       </table>
-      <note>If necessary, they may be re-installed from earlier DITA-OT distributions, but they are no longer actively
-        maintained or supported by the core toolkit committers. The source code is available on GitHub for anyone
-        interested in maintaining the plug-ins for use with future toolkit versions.</note>
+      <note>If necessary, legacy plug-ins may be re-installed from earlier DITA-OT distributions, but they are no longer
+        actively maintained or supported by the core toolkit committers. The source code is available on GitHub for
+        anyone interested in maintaining the plug-ins for use with future toolkit versions.</note>
     </section>
 
   </refbody>

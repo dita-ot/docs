@@ -41,7 +41,7 @@
         specialization provides additional control over metadata, as well as the ability to reference multiple TOC
         files, index files, and other Eclipse extensions.</p></draft-comment>
     <p>To run the Eclipse help transformation, set the <parmname>transtype</parmname> parameter to
-        <option>eclipsehelp</option>, or pass the <option>-format eclipsehelp</option> option to the
-        <cmdname>dita</cmdname> command line.</p>
+        <option>eclipsehelp</option>, or pass the <parmname>--format</parmname>=<option>eclipsehelp</option> option to
+      the <cmdname>dita</cmdname> command line.</p>
   </conbody>
 </concept>

@@ -141,9 +141,7 @@
   <target name="pdf">
     <dita-ot transtype="pdf" input="userguide-book.ditamap" output="${doc.out.dir}">
       <properties>
-        <property name="args.gen.task.lbl" value="YES"/>
-        <property name="outputFile.base" value="userguide"/>
-        <property name="processing-mode" value="strict"/>
+        <property file="samples/properties/docs-build-pdf.properties"/>
       </properties>
     </dita-ot>
   </target>
@@ -151,15 +149,7 @@
   <target name="html">
     <dita-ot transtype="html5" input="userguide.ditamap" output="${doc.out.dir}">
       <properties>
-        <property name="args.copycss" value="yes"/>
-        <property name="args.css" value="dita-ot-doc.css"/>
-        <property name="args.cssroot" value="resources"/>
-        <property name="args.csspath" value="css"/>
-        <property name="args.gen.task.lbl" value="YES"/>
-        <property name="args.hdr" value="${basedir}/resources/header.xml"/>
-        <property name="args.html5.toc" value="toc"/>
-        <property name="nav-toc" value="partial"/>
-        <property name="processing-mode" value="strict"/>
+        <property file="samples/properties/docs-build-html5.properties"/>
       </properties>
     </dita-ot>
   </target>
@@ -167,12 +157,7 @@
   <target name="htmlhelp">
     <dita-ot transtype="htmlhelp" input="userguide.ditamap" output="${doc.out.dir}/htmlhelp">
       <properties>
-        <property name="args.copycss" value="yes"/>
-        <property name="args.css" value="dita-ot-doc.css"/>
-        <property name="args.cssroot" value="resources"/>
-        <property name="args.csspath" value="css"/>
-        <property name="args.gen.task.lbl" value="YES"/>
-        <property name="processing-mode" value="strict"/>
+        <property file="samples/properties/docs-build-htmlhelp.properties"/>
       </properties>
     </dita-ot>
 

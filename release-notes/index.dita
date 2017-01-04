@@ -24,7 +24,10 @@
             other elements without <xmlatt>class</xmlatt> attributes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1885" scope="external" format="html">#1885</xref>
           </li>
-          <li id="2542">Exclude additional namespace prefixes
+          <li id="2542">HTML5 output generated with DITA-OT 2.4.1 included spurious namespace attributes for
+              <xmlelement>taskbody</xmlelement> and <xmlelement>simpletable</xmlelement> elements. The extra result
+            prefixes (<xmlnsname>ditamsg</xmlnsname>, <xmlnsname>dita2html</xmlnsname> and
+              <xmlnsname>related-links</xmlnsname>) have been excluded to ensure they no longer appear in output files.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2542" scope="external" format="html">#2542</xref>
           </li>
           <li id="2551">Rewrite duplicate copy-to attributes with force-unique

@@ -35,4 +35,4 @@ task all(dependsOn: [pdf, html, htmlhelp])
 
 task dist(dependsOn: [pdf, html])
 
-defaultTasks 'dist'
+defaultTasks 'html'

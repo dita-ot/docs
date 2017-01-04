@@ -30,7 +30,10 @@
               <xmlnsname>related-links</xmlnsname>) have been excluded to ensure they no longer appear in output files.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2542" scope="external" format="html">#2542</xref>
           </li>
-          <li id="2551">Rewrite duplicate copy-to attributes with force-unique
+          <li id="2551">If an input map contained topic references with duplicate <xmlatt>copy-to</xmlatt> attribute
+            values, earlier versions of DITA-OT failed to generate additional output topics. Processing now applies the
+              <parmname>force-unique</parmname> parameter to ensure that unique output files are created for each
+            instance of a resource when a map contains multiple references to a single topic.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2551" scope="external" format="html">#2551</xref>
           </li>
           <li id="2547">Empty props specialization not ignored by profiling

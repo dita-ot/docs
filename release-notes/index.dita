@@ -12,11 +12,37 @@
         <xref keyref="dita-ot-issues">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v241">
+  <reference id="v242">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="1885">NPE when generating Eclipse Help [DOT 2.0]
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1885" scope="external" format="html">#1885</xref>
+          </li>
+          <li id="2542">Exclude additional namespace prefixes
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2542" scope="external" format="html">#2542</xref>
+          </li>
+          <li id="2551">Rewrite duplicate copy-to attributes with force-unique
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2551" scope="external" format="html">#2551</xref>
+          </li>
+          <li id="2547">Empty props specialization not ignored by profiling
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2547" scope="external" format="html">#2547</xref>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.4.1...2.4.2" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v241">
+    <title>Maintenance Release 2.4.1</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.4.1 included the following bug fixes.</p>
         <ul>
           <li id="2520">In DITA-OT 2.3 and 2.4, setting the <parmname>force-unique</parmname> parameter to
               <option>true</option> had no effect. Processing has been corrected to properly generate the copy-to

@@ -18,7 +18,10 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="1885">NPE when generating Eclipse Help [DOT 2.0]
+          <li id="1885">DITA-OT 2.0 threw a null pointer exception when producing Eclipse Help output from a bookmap
+            with a <xmlelement>glossarylist</xmlelement> that referenced a composite <xmlelement>dita</xmlelement>
+            topic. Processing has been updated to properly handle root <xmlelement>dita</xmlelement> elements or any
+            other elements without <xmlatt>class</xmlatt> attributes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1885" scope="external" format="html">#1885</xref>
           </li>
           <li id="2542">Exclude additional namespace prefixes

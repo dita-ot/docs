@@ -36,6 +36,10 @@
               <xmlatt>audience</xmlatt><codeph>=""</codeph>, which are ignored.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2547" scope="external" format="html">#2547</xref>
           </li>
+          <li id="2548">The <codeph>xml-apis-ext</codeph> library that FOP depends on to render SVG images was missing
+            in DITA-OT 2.4. The distribution package has been updated to provide support for SVG images in PDF output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2548" scope="external" format="html">#2548</xref>
+          </li>
           <li id="2551">If an input map contained topic references with duplicate <xmlatt>copy-to</xmlatt> attribute
             values, earlier versions of DITA-OT failed to generate additional output topics. Processing now applies the
               <parmname>force-unique</parmname> parameter to ensure that unique output files are created for each

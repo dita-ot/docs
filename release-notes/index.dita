@@ -12,11 +12,59 @@
         <xref keyref="dita-ot-issues">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v241">
+  <reference id="v242">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="1885">DITA-OT 2.0 threw a null pointer exception when producing Eclipse Help output from a bookmap
+            with a <xmlelement>glossarylist</xmlelement> that referenced a composite <xmlelement>dita</xmlelement>
+            topic. Processing has been updated to properly handle root <xmlelement>dita</xmlelement> elements or any
+            other elements without <xmlatt>class</xmlatt> attributes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1885" scope="external" format="html">#1885</xref>
+          </li>
+          <li id="2542">HTML5 output generated with DITA-OT 2.4.1 included spurious namespace attributes for
+              <xmlelement>taskbody</xmlelement> and <xmlelement>simpletable</xmlelement> elements. The extra result
+            prefixes (<xmlnsname>ditamsg</xmlnsname>, <xmlnsname>dita2html</xmlnsname> and
+              <xmlnsname>related-links</xmlnsname>) have been excluded to ensure they no longer appear in output files.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2542" scope="external" format="html">#2542</xref>
+          </li>
+          <li id="2547">Earlier versions of DITA-OT failed to ignore empty props specialization attributes during the
+            filtering process. Processing has been updated to treat any empty attributes specialized from
+              <xmlatt>props</xmlatt> like empty default profiling attributes such as
+              <xmlatt>audience</xmlatt><codeph>=""</codeph>, which are ignored.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2547" scope="external" format="html">#2547</xref>
+          </li>
+          <li id="2548">The <codeph>xml-apis-ext</codeph> library that FOP depends on to render SVG images was missing
+            in DITA-OT 2.4. The distribution package has been updated to provide support for SVG images in PDF output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2548" scope="external" format="html">#2548</xref>
+          </li>
+          <li id="2551">If an input map contained topic references with duplicate <xmlatt>copy-to</xmlatt> attribute
+            values, earlier versions of DITA-OT failed to generate additional output topics. Processing now applies the
+              <parmname>force-unique</parmname> parameter to ensure that unique output files are created for each
+            instance of a resource when a map contains multiple references to a single topic.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2551" scope="external" format="html">#2551</xref>
+          </li>
+          <li id="2554">Support for the <parmname>args.breadcrumbs</parmname> parameter provided in earlier versions of
+            DITA-OT was never fully implemented and has been removed. HTML customizations that rely on the XSLT
+              <parmname>BREADCRUMBS</parmname> parameter will need to re-implement this functionality in custom plug-in
+            code.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2554" scope="external" format="html">#2554</xref>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.4.1...2.4.2" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v241">
+    <title>Maintenance Release 2.4.1</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.4.1 included the following bug fixes.</p>
         <ul>
           <li id="2520">In DITA-OT 2.3 and 2.4, setting the <parmname>force-unique</parmname> parameter to
               <option>true</option> had no effect. Processing has been corrected to properly generate the copy-to

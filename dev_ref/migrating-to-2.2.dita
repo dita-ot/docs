@@ -39,6 +39,12 @@
           <keyword>org.dita.pdf2.axf</keyword>, or <keyword>org.dita.pdf2.xep</keyword> plugins.</p>
       <p>PDF customizations that are not specific to a rendering engine can continue to extend the
           <keyword>org.dita.pdf2</keyword> plugin as before.</p>
+      <p>The default format for page numbers in the table of contents (<xmlelement>toc</xmlelement>) was switched to
+        roman to align with <xmlelement>preface</xmlelement> and ensure consistent numbering styles for all
+          <xmlelement>frontmatter</xmlelement> components in <xmlelement>bookmap</xmlelement>. This prevents numbering
+        from switching back and forth between styles in bookmaps where the Preface follows the table of contents.
+        Earlier versions of DITA-OT produced numbering sequences like <codeph>1,2,3,4,v,vi,7,8</codeph> in this use
+        case.</p>
     </section>
     <section>
       <title>Deprecated properties</title>

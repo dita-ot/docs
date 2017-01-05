@@ -35,25 +35,7 @@
         <cmd>Add custom CSS rules to style headers and/or footers.</cmd>
         <info>
           <p>For example, the DITA-OT documentation stylesheet includes the following header rules:
-            <codeblock>div.header {
-  font-size: 18pt;
-  margin: 0;
-  padding: 0 12px;
-}
-
-div.header p {
-  color: #777;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.3;
-  margin: 0;
-}
-
-div.header hr {
-  border: 0;
-  border-bottom: 1px solid #eee;
-  height: 0;
-}
-</codeblock><!-- Use static excerpt pending 2.4 CI builds -->
+            <codeblock><coderef href="../resources/dita-ot-doc.css#token=header-coderef,end-header-ref"/></codeblock>
           </p>
         </info>
       </step>

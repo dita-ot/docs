@@ -240,14 +240,6 @@
               image file name. The allowed values are <option>yes</option> and <option>no</option>; the default value is
                 <option>no</option>.</pd>
           </plentry>-->
-          <plentry id="args.breadcrumbs">
-            <pt>
-              <parmname>args.breadcrumbs</parmname>
-            </pt>
-            <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.breadcrumbs.desc"/>
-            <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter
-                <parmname>BREADCRUMBS</parmname>.</pd>
-          </plentry>
           <plentry id="args.copycss">
             <pt><parmname>args.copycss</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.copycss.desc"/>

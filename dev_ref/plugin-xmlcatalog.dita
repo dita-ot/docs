@@ -8,10 +8,10 @@
     enables the DITA-OT to support new specializations and document-type shells.</shortdesc>
   <taskbody>
     <context>
-      <p>You can use the <codeph>dita.specialization.catalog.relative</codeph> and
-          <codeph>org.dita.pdf2.catalog.relative</codeph> extension points to update the DITA-OT catalog files.</p>
-      <note type="remember">The <codeph>dita.specialization.catalog</codeph> extension is deprecated. Use
-          <codeph>dita.specialization.catalog.relative</codeph> instead.</note>
+      <p>You can use the <parmname>dita.specialization.catalog.relative</parmname> and
+          <parmname>org.dita.pdf2.catalog.relative</parmname> extension points to update the DITA-OT catalog files.</p>
+      <note type="remember">The <parmname>dita.specialization.catalog</parmname> extension is deprecated. Use
+          <parmname>dita.specialization.catalog.relative</parmname> instead.</note>
     </context>
     <steps>
       <step>
@@ -26,8 +26,8 @@
           <ul>
             <li><varname>plugin-id</varname> is the plug-in identifier, for example,
                 <codeph>com.example.catalog</codeph>.</li>
-            <li><varname>extension-point</varname> is either <codeph>dita.specialization.catalog.relative</codeph> or
-                <codeph>org.dita.pdf2.catalog.relative</codeph>.</li>
+            <li><varname>extension-point</varname> is either <parmname>dita.specialization.catalog.relative</parmname>
+              or <parmname>org.dita.pdf2.catalog.relative</parmname>.</li>
             <li><varname>file</varname> is the name of the new catalog file, for example,
                 <filepath>catalog-dita.xml</filepath>. </li>
           </ul></info>

@@ -3,82 +3,116 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <reference id="configuration" xml:lang="en">
-  <title><filepath>configuration.properties</filepath> file</title>
+  <title>The <filepath>configuration.properties</filepath> file</title>
+  <titlealts>
+    <navtitle><filepath>configuration.properties</filepath></navtitle>
+  </titlealts>
   <shortdesc>The <filepath>lib/configuration.properties</filepath> file controls certain common properties, as well as
     some properties that control PDF processing.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>configuration properties 
-          <indexterm>default.language</indexterm>
-          <indexterm>generate-debug-attributes</indexterm>
-          <indexterm>processing-mode</indexterm>
+        <indexterm>configuration properties <indexterm>default.language</indexterm>
           <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
           <indexterm>org.dita.pdf2.use-out-temp</indexterm>
         </indexterm>
-        <indexterm>files
-          <indexterm>lib/configuration.properties file</indexterm>
+        <indexterm>files <indexterm>lib/configuration.properties file</indexterm>
           <indexterm>topic.fo file</indexterm>
         </indexterm>
-        <indexterm>topic.fo
-          <indexterm>location of</indexterm>
+        <indexterm>topic.fo <indexterm>location of</indexterm>
         </indexterm>
-        <indexterm>PDF processing
-          <indexterm>configuration properties</indexterm>
+        <indexterm>PDF processing <indexterm>configuration properties</indexterm>
         </indexterm>
       </keywords>
     </metadata>
   </prolog>
   <refbody>
     <section>
-      <fig>
-        <title>Properties set in the <filepath>lib/configuration.properties</filepath> file</title>
-        <parml>
-          <plentry id="default.language">
-            <pt><parmname>default.language</parmname></pt>
-            <pd id="default.language.desc">Specifies the language that is used if the input file does not have the
-                <xmlatt>xml:lang</xmlatt> attribute set on the root element. By default, this is set to
-                <option>en</option>. The allowed values are those that are defined in IETF BCP 47,
-              <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external">Tags for Identifying
-                Languages</xref>.</pd>
-          </plentry>
-          <!--<plentry id="generate-debug-attributes">
-            <pt><parmname>generate-debug-attributes</parmname></pt>
-            <pd id="generate-debug-attributes.desc">Specifies whether the @xtrf and @xtrc debugging attributes are
-              generated in the temporary files. The following values are allowed: <ul>
-                <li><option>true</option> (default) — Enables generation of debugging attributes</li>
-                <li><option>false</option> —Disables generation of debugging attributes</li>
-              </ul><note>Disabling debugging attributes reduces the size of temporary files and thus reduces memory
-                consumption. However, the log messages no longer have the source information available and thus the
-                ability to debug problems might deteriorate.</note></pd>
-          </plentry>
-          <plentry id="processing-mode">
-            <pt><parmname>processing-mode</parmname></pt>
-            <pd id="processing-mode.desc">Specifies how the DITA-OT handles errors and error recovery. The following
-              values are allowed:
-              <ul>
-                <li><option>strict</option> — When an error is encountered, the DITA-OT stops processing.</li>
-                <li><option>lax</option> (default) — When an error is encountered, the DITA-OT attempts to recover from
-                  it.</li>
-                <li><option>skip</option> — When an error is encountered, the DITA continues processing but does not
-                  attempt error recovery.</li>
-              </ul></pd>
-          </plentry>-->
-          <plentry id="org.dita.pdf2.i18n.enabled">
-            <pt><parmname>org.dita.pdf2.i18n.enabled</parmname></pt>
-            <pd id="org.dita.pdf2.i18n.enabled.desc">(PDF transformation only) Enables I18N font processing. The
-              following values are allowed:
-              <ul>
-                <li><option>true</option> (default) — Enables I18N processing</li>
-                <li><option>false</option> — Disables I18N processing</li>
-              </ul>
-              <draft-comment author="Kristen James Eberlein" time="16 August 2012">This needs beefing up. Here is info
-                provided by Jarno Elovirta:
-                <p>(IIRC, pre 1.0 versions of FOP didn't correctly implement font selection in XSL FO files, that's the
-                  reason for this feature existing). The PDF2 I18N allows you to say define which characters are output
-                  with which pseudo-font, and the font mapping files define the actual font. E.g. the configuration for
-                  English at src/main/plugins/org.dita.pdf2/cfg/fo/i18n/en.xml
-                  is:<codeblock>
+      <p>The contents of the <filepath>configuration.properties</filepath> file are added to the DITA-OT configuration
+        in the <codeph>dost-configuration.jar</codeph> file when the plug-in integration process runs. The following
+        properties are typically set in this file:</p>
+      <parml>
+        <plentry id="otrelease-otversion">
+          <pt><parmname>otrelease</parmname></pt>
+          <pt><parmname>otversion</parmname></pt>
+          <pd>The DITA-OT release number and maintenance version stored here are read when version information is
+            requested on the commmand line via <cmdname>dita</cmdname>
+            <option>--version</option>.</pd>
+        </plentry>
+        <!--
+        <plentry id="default.language">
+          <pt><parmname>default.language</parmname></pt>
+          <pd id="default.language.desc">Specifies the language that is used if the input file does not have the
+              <xmlatt>xml:lang</xmlatt> attribute set on the root element. By default, this is set to
+              <option>en</option>. The allowed values are those that are defined in IETF BCP 47,
+            <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external">Tags for Identifying
+              Languages</xref>.</pd>
+        </plentry>
+        -->
+        <plentry id="default-cascade">
+          <pt><parmname>default.cascade</parmname></pt>
+          <pd>
+            <p>Specifies the processing default value for the DITA 1.3 <xmlatt>cascade</xmlatt> attribute, which
+              determines how map-level metadata attributes are applied to the children of elements where the attributes
+              are specified. DITA-OT uses the <option>merge</option> value by default for backwards compatibility with
+              DITA 1.2 and earlier.</p>
+            <note type="warning" id="protected-config-props">This property can only be set in
+                <filepath>configuration.properties</filepath> and should not be modified.</note></pd>
+        </plentry>
+        <plentry id="temp-file-name-scheme">
+          <pt><parmname>temp-file-name-scheme</parmname></pt>
+          <!-- org.dita.dost.module.GenMapAndTopicListModule$DefaultTempFileScheme -->
+          <pd>
+            <p>This setting specifies the name of the Java class that defines how the source URL of a topic is mapped to
+              the URL of the temporary file name. The current default method uses a 1:1 mapping, though future
+              implementations may use alternative approaches such as hashes or full absolute paths as file names.</p>
+            <note conref="#configuration/protected-config-props"/>
+          </pd>
+        </plentry>
+        <!-- DITA-OT 2.5: https://github.com/dita-ot/dita-ot/pull/2552-->
+        <!--
+        <plentry id="cli-color">
+          <pt><parmname>cli.color</parmname></pt>
+          <pd>
+            <p>Specifies whether the <cmdname>dita</cmdname> command prints colored output on the command line
+              console.</p>
+            <note conref="#configuration/protected-config-props"/>
+          </pd>
+        </plentry>
+        -->
+        <plentry id="plugindirs">
+          <pt><parmname>plugindirs</parmname></pt>
+          <pd id="plugindirs.desc">A semicolon-separated list of directory paths that the DITA-OT searches for plug-ins
+            to install; any relative paths are resolved against the DITA-OT base directory. Any immediate subdirectory
+            that contains a <filepath>plugin.xml</filepath> file is installed.</pd>
+        </plentry>
+        <plentry id="plugin.ignores">
+          <pt><parmname>plugin.ignores</parmname></pt>
+          <pd id="plugin.ignores.desc">A semicolon-separated list of directory names to be ignored during plug-in
+            installation; any relative paths are resolved against the DITA-OT base directory.</pd>
+        </plentry>
+        <plentry id="plugin-order">
+          <pt><parmname>plugin.order</parmname></pt>
+          <pd>Defines the order in which plug-ins are processed. In XML catalog files, the order of imports is
+            significant. If multiple plug-ins define the same thing (differently), the first catalog entry “wins”.
+            DITA-OT uses this property to define the order in which catalog entries are written. This mechanism is
+            currently used to ensure that DITA 1.3 grammar files take precedence over their DITA 1.2 equivalents.</pd>
+        </plentry>
+        <plentry id="org.dita.pdf2.i18n.enabled">
+          <pt><parmname>org.dita.pdf2.i18n.enabled</parmname></pt>
+          <pd id="org.dita.pdf2.i18n.enabled.desc">(PDF transformation only) Enables I18N font processing. The following
+            values are allowed:
+            <ul>
+              <li><option>true</option> (default) — Enables I18N processing</li>
+              <li><option>false</option> — Disables I18N processing</li>
+            </ul>
+            <draft-comment author="Kristen James Eberlein" time="16 August 2012">This needs beefing up. Here is info
+              provided by Jarno Elovirta:
+              <p>(IIRC, pre 1.0 versions of FOP didn't correctly implement font selection in XSL FO files, that's the
+                reason for this feature existing). The PDF2 I18N allows you to say define which characters are output
+                with which pseudo-font, and the font mapping files define the actual font. E.g. the configuration for
+                English at src/main/plugins/org.dita.pdf2/cfg/fo/i18n/en.xml
+                is:<codeblock>
         &lt;alphabet char-set="SymbolsSuperscript">
             &lt;character-set>
                 &lt;!-- Copyright -->
@@ -97,21 +131,21 @@
             &lt;/character-set>
         &lt;/alphabet>
 </codeblock></p>
-                <p>That is, those specific characters are marked as "SymbolsSuperscript" or "SubmenuSymbol" charset. The
-                  font mappings at src/main/plugins/org.dita.pdf2/cfg/fo/font-mappings.xml then define which font to use
-                  for them,
-                  e.g.:<codeblock>&lt;physical-font char-set="SymbolsSuperscript">
+              <p>That is, those specific characters are marked as "SymbolsSuperscript" or "SubmenuSymbol" charset. The
+                font mappings at src/main/plugins/org.dita.pdf2/cfg/fo/font-mappings.xml then define which font to use
+                for them,
+                e.g.:<codeblock>&lt;physical-font char-set="SymbolsSuperscript">
       &lt;font-face>Helvetica, Arial Unicode MS&lt;/font-face>
       &lt;baseline-shift>20%&lt;/baseline-shift>
       &lt;override-size>smaller&lt;/override-size>
     &lt;/physical-font></codeblock></p>
-                <p>The I18N processing is on by default (because it's been on before), but for most users it's just an
-                  additional level of complexity which should be turned off and support for multiple languages be
-                  handled in XSLT code.</p>
-              </draft-comment>
-            </pd>
-          </plentry>
-          <!--<plentry id="org.dita.pdf2.use-out-temp">
+              <p>The I18N processing is on by default (because it's been on before), but for most users it's just an
+                additional level of complexity which should be turned off and support for multiple languages be handled
+                in XSLT code.</p>
+            </draft-comment>
+          </pd>
+        </plentry>
+        <!--<plentry id="org.dita.pdf2.use-out-temp">
             <pt><parmname>org.dita.pdf2.use-out-temp</parmname></pt>
             <pd id="org.dita.pdf2.use-out-temp.desc">(PDF transformation only) Specifies whether the XSL-FO processing
               writes the intermediate files (for example, the <filepath>topic.fo</filepath> file) to the output
@@ -121,19 +155,7 @@
                 <li><option>false</option> (default) — Write intermediate files to the temporary directory</li>
               </ul></pd>
           </plentry>-->
-          <plentry id="plugindirs">
-            <pt><parmname>plugindirs</parmname></pt>
-            <pd id="plugindirs.desc">A semicolon-separated list of directory paths that the DITA-OT searches for
-              plug-ins to install; any relative paths are resolved against the DITA-OT base directory. Any immediate
-              subdirectory that contains a <filepath>plugin.xml</filepath> file is installed.</pd>
-          </plentry>
-          <plentry id="plugin.ignores">
-            <pt><parmname>plugin.ignores</parmname></pt>
-            <pd id="plugin.ignores.desc">A semicolon-separated list of directory names to be ignored during plug-in
-              installation; any relative paths are resolved against the DITA-OT base directory.</pd>
-          </plentry>
-        </parml>
-      </fig>
+      </parml>
     </section>
   </refbody>
 </reference>

@@ -12,11 +12,51 @@
         <xref keyref="dita-ot-issues">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v242">
+  <reference id="v243">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="1525">Index page in PDF output (using XEP) does not properly follow indexterm hierarchy in DITA
+            content
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1525" scope="external" format="html">#1525</xref>
+          </li>
+          <li id="2038">Relative "dita.temp.dir" makes PDF processing fail a
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2038" scope="external" format="html">#2038</xref>
+          </li>
+          <li id="2522">Unresolved internal destination: 'null' (problem added in DITA OT 2.4)
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2522" scope="external" format="html">#2522</xref>
+          </li>
+          <li id="2555">Move property default values out from configuration.properties
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2555" scope="external" format="html">#2555</xref>
+          </li>
+          <!--
+          <li id="2559">Error thrown when using args.filter for HTML5 output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2559" scope="external" format="html">#2559</xref>
+          </li>
+          -->
+          <li id="2563">Colgroup element missing from HTML5 simpletable output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2563" scope="external" format="html">#2563</xref>
+          </li>
+          <!--
+          <li id="2567">HTML5 plugin defines args.html5.classattr but still references args.xhtml.classattr
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2567" scope="external" format="html">#2567</xref>
+          </li>
+          -->
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.4.2...2.4.3" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v242">
+    <title>Maintenance Release 2.4.2</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.4.2 included the following bug fixes.</p>
         <ul>
           <li id="1885">DITA-OT 2.0 threw a null pointer exception when producing Eclipse Help output from a bookmap
             with a <xmlelement>glossarylist</xmlelement> that referenced a composite <xmlelement>dita</xmlelement>
@@ -107,8 +147,8 @@
       </section>
       <section>
         <title>Documentation updates</title>
-        <p>The DITA-OT 2.4.1 documentation includes corrections and improvements to
-          existing topics, along with new content.</p>
+        <p>The DITA-OT 2.4.1 documentation includes corrections and improvements to existing topics, along with new
+          content.</p>
         <ul>
           <li>
             <xref keyref="html-customization"/> provides examples that illustrate various approaches for customizing

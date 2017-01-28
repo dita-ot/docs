@@ -104,6 +104,16 @@
             <pd conaction="mark" conref="parameters-base.dita#base/clean.temp.desc"/>
             <pd conaction="pushafter"/>
           </plentry>
+          <plentry id="default.language">
+            <pt>
+              <parmname>default.language</parmname>
+            </pt>
+            <pd conaction="pushreplace" conref="parameters-base.dita#base/default.language.desc">Specifies the language
+              that is used if the input file does not have the <xmlatt>xml:lang</xmlatt> attribute set on the root
+              element. By default, this is set to <option>en</option>. The allowed values are those that are defined in
+              IETF BCP 47, <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external">Tags for
+                Identifying Languages</xref>.</pd>
+          </plentry>
           <!--<plentry id="dita.dir">
             <pt><parmname>dita.dir</parmname></pt>
             <pd conaction="mark" conref="parameters-base.dita#base/dita.dir.desc"/>

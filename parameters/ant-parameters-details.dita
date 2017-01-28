@@ -638,6 +638,26 @@
             <pt><parmname>customization.dir</parmname></pt>
             <pd>Specifies the customization directory.</pd>
           </plentry>-->
+          <plentry id="org.dita.pdf2.i18n.enabled">
+            <pt><parmname>org.dita.pdf2.i18n.enabled</parmname></pt>
+            <pd conaction="pushreplace" conref="parameters-pdf.dita#pdf/org.dita.pdf2.i18n.enabled.desc">
+              <p>Enables internationalization (I18N) font processing to provide per-character font selection for FO
+                renderers that do not support the <codeph>font-selection-strategy</codeph> property (such as Apache
+                FOP).</p>
+              <p>When this feature is enabled, DITA-OT uses a font mapping process that takes the content language into
+                consideration. The mapping process uses configuration files for each language to define characters that
+                should be rendered with certain logical fonts, and font mappings that associate each logical font to
+                physical font files.</p>
+              <p>The following values are allowed:</p>
+              <ul>
+                <li><option>true</option> (default) — Enables font mapping</li>
+                <li><option>false</option> — Disables font mapping</li>
+              </ul>
+              <note type="tip">If you don’t use custom character mappings, turning off font mapping makes it easier to
+                define custom fonts simply by changing font names in the XSL attributes files of your custom PDF
+                plug-in. For details, see <xref keyref="jelovirt-on-pdf2-i18n"/>.</note>
+            </pd>
+          </plentry>
           <plentry id="outputFile.base">
             <pt>
               <parmname>outputFile.base</parmname>

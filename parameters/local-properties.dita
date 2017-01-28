@@ -28,6 +28,14 @@ pdf.formatter = xep
 # Specify the user configuration file for RenderX
 custom.xep.config = /path/to/custom.config
 </codeblock>
+      <p>Backslash “\” characters in .properties files must be escaped with a second backslash as “\\”. If you use
+        Antenna House Formatter on a Windows system, for example, you would set the path to the command using a
+        properties file entry like this:</p>
+      <codeblock># Use Antenna House Formatter for PDF output
+pdf.formatter = ah
+
+# Specify the path to the Antenna House Formatter command
+axf.cmd=C:\\Program Files\\Antenna House\\AHFormatterV62</codeblock>
     </example>
     <section>
       <note>This file can only be used to set Ant property values that can be passed as argument parameters to the

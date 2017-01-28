@@ -12,14 +12,17 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>configuration properties <indexterm>default.language</indexterm>
+        <indexterm>configuration properties
+          <indexterm>default.cascade</indexterm>
           <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
-          <indexterm>org.dita.pdf2.use-out-temp</indexterm>
+          <indexterm>otrelease</indexterm>
+          <indexterm>otversion</indexterm>
+          <indexterm>plugin.ignores</indexterm>
+          <indexterm>plugin.order</indexterm>
+          <indexterm>plugindirs</indexterm>
+          <indexterm>temp-file-name-scheme</indexterm>
         </indexterm>
         <indexterm>files <indexterm>lib/configuration.properties file</indexterm>
-          <indexterm>topic.fo file</indexterm>
-        </indexterm>
-        <indexterm>topic.fo <indexterm>location of</indexterm>
         </indexterm>
         <indexterm>PDF processing <indexterm>configuration properties</indexterm>
         </indexterm>

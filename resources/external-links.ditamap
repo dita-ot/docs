@@ -208,6 +208,24 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="dita-ot-spec-metadata-cascade"
+      href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/cascading-in-a-ditamap.html#cascading-in-a-ditamap"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA 1.3 specification: Cascading of metadata attributes in a DITA map</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="dita-ot-spec-metadata-cascade-example"
+      href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/example-how-cascade-att-functions.html"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Example: How the @cascade attribute functions</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="fo-spec"
       scope="external"
       format="html"
@@ -301,6 +319,15 @@
       format="html">
       <topicmeta>
         <linktext>Sass</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="jelovirt-on-pdf2-i18n"
+      href="http://www.elovirta.com/2016/02/18/font-configuration-in-pdf2.html"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Font configuration in PDF2</linktext>
       </topicmeta>
     </keydef>
   </topicset>

@@ -39,16 +39,6 @@
             requested on the commmand line via <cmdname>dita</cmdname>
             <option>--version</option>.</pd>
         </plentry>
-        <!--
-        <plentry id="default.language">
-          <pt><parmname>default.language</parmname></pt>
-          <pd id="default.language.desc">Specifies the language that is used if the input file does not have the
-              <xmlatt>xml:lang</xmlatt> attribute set on the root element. By default, this is set to
-              <option>en</option>. The allowed values are those that are defined in IETF BCP 47,
-            <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external">Tags for Identifying
-              Languages</xref>.</pd>
-        </plentry>
-        -->
         <plentry id="default-cascade">
           <pt><parmname>default.cascade</parmname></pt>
           <pd>
@@ -100,62 +90,30 @@
         </plentry>
         <plentry id="org.dita.pdf2.i18n.enabled">
           <pt><parmname>org.dita.pdf2.i18n.enabled</parmname></pt>
-          <pd id="org.dita.pdf2.i18n.enabled.desc">(PDF transformation only) Enables I18N font processing. The following
-            values are allowed:
+          <pd id="org.dita.pdf2.i18n.enabled.desc">
+            <p>(PDF transformation only) Enables internationalization (I18N) font processing to provide per-character
+              font selection for FO renderers that do not support the <codeph>font-selection-strategy</codeph> property
+              (such as Apache FOP).</p>
+            <p>When this feature is enabled, DITA-OT uses a font mapping process that takes the content language into
+              consideration. The mapping process uses configuration files for each language to define characters that
+              should be rendered with certain logical fonts, and font mappings that associate each logical font to
+              physical font files.</p>
+            <p>The following values are allowed:</p>
             <ul>
-              <li><option>true</option> (default) — Enables I18N processing</li>
-              <li><option>false</option> — Disables I18N processing</li>
+              <li><option>true</option> (default) — Enables font mapping</li>
+              <li><option>false</option> — Disables font mapping</li>
             </ul>
-            <draft-comment author="Kristen James Eberlein" time="16 August 2012">This needs beefing up. Here is info
-              provided by Jarno Elovirta:
-              <p>(IIRC, pre 1.0 versions of FOP didn't correctly implement font selection in XSL FO files, that's the
-                reason for this feature existing). The PDF2 I18N allows you to say define which characters are output
-                with which pseudo-font, and the font mapping files define the actual font. E.g. the configuration for
-                English at src/main/plugins/org.dita.pdf2/cfg/fo/i18n/en.xml
-                is:<codeblock>
-        &lt;alphabet char-set="SymbolsSuperscript">
-            &lt;character-set>
-                &lt;!-- Copyright -->
-                &lt;character>&amp;#169;&lt;/character>
-                &lt;!-- Registered Trademark -->
-                &lt;character>&amp;#174;&lt;/character>
-                &lt;!-- Trademark -->
-                &lt;character>&amp;#8482;&lt;/character>
-                &lt;!-- Service mark -->
-                &lt;character>&amp;#2120;&lt;/character>
-            &lt;/character-set>
-        &lt;/alphabet>
-        &lt;alphabet char-set="SubmenuSymbol">
-            &lt;character-set>
-                &lt;character>&amp;#x27A4;&lt;/character>
-            &lt;/character-set>
-        &lt;/alphabet>
-</codeblock></p>
-              <p>That is, those specific characters are marked as "SymbolsSuperscript" or "SubmenuSymbol" charset. The
-                font mappings at src/main/plugins/org.dita.pdf2/cfg/fo/font-mappings.xml then define which font to use
-                for them,
-                e.g.:<codeblock>&lt;physical-font char-set="SymbolsSuperscript">
-      &lt;font-face>Helvetica, Arial Unicode MS&lt;/font-face>
-      &lt;baseline-shift>20%&lt;/baseline-shift>
-      &lt;override-size>smaller&lt;/override-size>
-    &lt;/physical-font></codeblock></p>
-              <p>The I18N processing is on by default (because it's been on before), but for most users it's just an
-                additional level of complexity which should be turned off and support for multiple languages be handled
-                in XSLT code.</p>
-            </draft-comment>
+            <note type="tip">If you don’t use custom character mappings, turning off font mapping makes it easier to
+              define custom fonts simply by changing font names in the XSL attributes files of your custom PDF plug-in.
+              For details, see <xref keyref="jelovirt-on-pdf2-i18n"/>.</note>
           </pd>
         </plentry>
-        <!--<plentry id="org.dita.pdf2.use-out-temp">
-            <pt><parmname>org.dita.pdf2.use-out-temp</parmname></pt>
-            <pd id="org.dita.pdf2.use-out-temp.desc">(PDF transformation only) Specifies whether the XSL-FO processing
-              writes the intermediate files (for example, the <filepath>topic.fo</filepath> file) to the output
-              directory. The following values are allowed:
-              <ul>
-                <li><option>true</option> — Write intermediate files to the output directory</li>
-                <li><option>false</option> (default) — Write intermediate files to the temporary directory</li>
-              </ul></pd>
-          </plentry>-->
       </parml>
     </section>
   </refbody>
+  <related-links>
+    <link keyref="dita-ot-spec-metadata-cascade"/>
+    <link keyref="dita-ot-spec-metadata-cascade-example"/>
+    <link keyref="jelovirt-on-pdf2-i18n"/>
+  </related-links>
 </reference>

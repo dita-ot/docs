@@ -18,8 +18,10 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="1525">Index page in PDF output (using XEP) does not properly follow indexterm hierarchy in DITA
-            content
+          <li id="1525">In PDF output generated with earlier versions of DITA-OT and RenderX XEP, the
+              <xmlelement>indexterm</xmlelement> hierarchy for multilevel entries in the PDF index was limited to two
+            levels. Index term indentation has been corrected to properly reflect the entry hierarchy as authored in
+            DITA source files when generating PDF output with XEP.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1525" scope="external" format="html">#1525</xref>
           </li>
           <li id="2038">In earlier versions of DITA-OT, specifying a relative path for the temporary directory on the

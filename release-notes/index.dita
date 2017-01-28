@@ -36,7 +36,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2559" scope="external" format="html">#2559</xref>
           </li>
           -->
-          <li id="2563">Colgroup element missing from HTML5 simpletable output
+          <li id="2563">In previous versions of DITA-OT, the HTML5 transformation generated
+              <xmlelement>simpletable</xmlelement> output with column widths specified in <xmlelement>col</xmlelement>
+            elements as direct children of the <xmlelement>table</xmlelement> element. A
+              <xmlelement>colgroup</xmlelement> wrapper element has been added for compatibility with the HTML5
+            standard.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2563" scope="external" format="html">#2563</xref>
           </li>
           <!--

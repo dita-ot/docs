@@ -22,7 +22,10 @@
             content
             <xref href="https://github.com/dita-ot/dita-ot/issues/1525" scope="external" format="html">#1525</xref>
           </li>
-          <li id="2038">Relative "dita.temp.dir" makes PDF processing fail a
+          <li id="2038">In earlier versions of DITA-OT, specifying a relative path for the temporary directory on the
+            command line would cause PDF processing to fail. DITA-OT now checks whether the
+              <parmname>dita.temp.dir</parmname> property is set to an absolute path and responds with an error message
+            otherwise.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2038" scope="external" format="html">#2038</xref>
           </li>
           <li id="2522">PDF: In certain cases, DITA-OT 2.4 generated broken links for related topics and reported

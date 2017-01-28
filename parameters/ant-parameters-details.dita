@@ -239,7 +239,8 @@
       <navtitle>HTML-based output</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace" conref="parameters-base-html.dita#base-html/shortdesc">Certain parameters apply
-      to all the HTML-based transformation types: Eclipse help, HTML5, HTML Help, JavaHelp, TocJS, and XHTML.</shortdesc>
+      to all the HTML-based transformation types: Eclipse help, HTML5, HTML Help, JavaHelp, TocJS, and
+      XHTML.</shortdesc>
     <refbody>
       <section>
         <parml>
@@ -663,8 +664,9 @@
               <parmname>outputFile.base</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/outputFile.base.desc"/>
-            <pd conaction="pushafter">By default, the PDF file uses the base filename of the input <filepath>.ditamap</filepath> file.</pd>
-          </plentry>          
+            <pd conaction="pushafter">By default, the PDF file uses the base filename of the input
+                <filepath>.ditamap</filepath> file.</pd>
+          </plentry>
           <plentry id="pdf.formatter">
             <pt>
               <parmname>pdf.formatter</parmname>
@@ -688,8 +690,8 @@
 
   <reference id="xhtml">
     <title>XHTML</title>
-    <shortdesc conaction="pushreplace" conref="parameters-xhtml.dita#xhtml/shortdesc">Certain parameters are
-      specific to the XHTML transformation.</shortdesc>
+    <shortdesc conaction="pushreplace" conref="parameters-xhtml.dita#xhtml/shortdesc">Certain parameters are specific to
+      the XHTML transformation.</shortdesc>
     <refbody>
       <section>
         <parml>
@@ -711,7 +713,7 @@
     <titlealts>
       <navtitle>HTML5</navtitle>
     </titlealts>
-    <shortdesc conaction="pushreplace" conref="parameters-html5.dita#html5/shortdesc">The HTML5 transformation shares 
+    <shortdesc conaction="pushreplace" conref="parameters-html5.dita#html5/shortdesc">The HTML5 transformation shares
       common parameters with other HTML-based transformations and provides additional parameters that are specific to
       HTML5 output.</shortdesc>
     <refbody>

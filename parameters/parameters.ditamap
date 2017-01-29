@@ -19,7 +19,7 @@
     <topicref href="parameters-pdf.dita" navtitle="PDF"/>
     <topicref href="ant-parameters-details.dita" processing-role="resource-only" toc="no"/>
   </topicref>
-  <topicref href="configuration-properties.dita">
+  <topicref href="configuration-properties.dita" keys="configuration-properties">
     <topicref href="local-properties.dita"/>
     <topicref href="lib-plugin-properties.dita"/>
     <topicref href="lib-configuration-properties.dita" navtitle="lib/configuration.properties file"/>

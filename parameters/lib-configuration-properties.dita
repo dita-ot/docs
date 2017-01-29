@@ -12,14 +12,16 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>configuration properties <indexterm>default.language</indexterm>
+        <indexterm>configuration properties <indexterm>default.cascade</indexterm>
           <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
-          <indexterm>org.dita.pdf2.use-out-temp</indexterm>
+          <indexterm>otrelease</indexterm>
+          <indexterm>otversion</indexterm>
+          <indexterm>plugin.ignores</indexterm>
+          <indexterm>plugin.order</indexterm>
+          <indexterm>plugindirs</indexterm>
+          <indexterm>temp-file-name-scheme</indexterm>
         </indexterm>
         <indexterm>files <indexterm>lib/configuration.properties file</indexterm>
-          <indexterm>topic.fo file</indexterm>
-        </indexterm>
-        <indexterm>topic.fo <indexterm>location of</indexterm>
         </indexterm>
         <indexterm>PDF processing <indexterm>configuration properties</indexterm>
         </indexterm>
@@ -88,25 +90,9 @@
             DITA-OT uses this property to define the order in which catalog entries are written. This mechanism is
             currently used to ensure that DITA 1.3 grammar files take precedence over their DITA 1.2 equivalents.</pd>
         </plentry>
-        <plentry id="org.dita.pdf2.i18n.enabled">
-          <pt><parmname>org.dita.pdf2.i18n.enabled</parmname></pt>
-          <pd id="org.dita.pdf2.i18n.enabled.desc">
-            <p>(PDF transformation only) Enables internationalization (I18N) font processing to provide per-character
-              font selection for FO renderers that do not support the <codeph>font-selection-strategy</codeph> property
-              (such as Apache FOP).</p>
-            <p>When this feature is enabled, DITA-OT uses a font mapping process that takes the content language into
-              consideration. The mapping process uses configuration files for each language to define characters that
-              should be rendered with certain logical fonts, and font mappings that associate each logical font to
-              physical font files.</p>
-            <p>The following values are allowed:</p>
-            <ul>
-              <li><option>true</option> (default) — Enables font mapping</li>
-              <li><option>false</option> — Disables font mapping</li>
-            </ul>
-            <note type="tip">If you don’t use custom character mappings, turning off font mapping makes it easier to
-              define custom fonts simply by changing font names in the XSL attributes files of your custom PDF plug-in.
-              For details, see <xref keyref="jelovirt-on-pdf2-i18n"/>.</note>
-          </pd>
+        <plentry conref="ant-parameters-details.dita#pdf/org.dita.pdf2.i18n.enabled">
+          <pt/>
+          <pd/>
         </plentry>
       </parml>
     </section>

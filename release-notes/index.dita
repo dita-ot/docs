@@ -19,9 +19,9 @@
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
           <li id="1525">In PDF output generated with earlier versions of DITA-OT and RenderX XEP, the
-              <xmlelement>indexterm</xmlelement> hierarchy for multilevel entries in the PDF index was limited to two
-            levels. Index term indentation has been corrected to properly reflect the entry hierarchy as authored in
-            DITA source files when generating PDF output with XEP.
+              <xmlelement>indexterm</xmlelement> hierarchy for multilevel entries in the PDF index was not properly
+            indented. Index term indentation has been corrected to properly reflect the entry hierarchy as authored in
+            DITA source files.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1525" scope="external" format="html">#1525</xref>
           </li>
           <li id="2038">In earlier versions of DITA-OT, specifying a relative path for the temporary directory on the
@@ -30,8 +30,8 @@
             otherwise.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2038" scope="external" format="html">#2038</xref>
           </li>
-          <li id="2522">PDF: In certain cases, DITA-OT 2.4 generated broken links for related topics and reported
-            “unresolved internal destination” warnings in the console when processing topic references with the
+          <li id="2522">In certain cases, DITA-OT 2.4 generated broken links in PDF output for related topics and
+            reported “unresolved internal destination” warnings in the console when processing topic references with the
               <xmlatt>collection-type</xmlatt> attribute set to <option>family</option>. Link rewrite processing has
             been corrected to ensure that links are generated properly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2522" scope="external" format="html">#2522</xref>

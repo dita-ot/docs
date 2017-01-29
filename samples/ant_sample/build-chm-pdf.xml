@@ -12,7 +12,6 @@
       <property name="transtype" value="htmlhelp"/>
       <property name="output.dir" location="../out/chm"/>
       <property name="args.gen.task.lbl" value="YES"/>
-      <property name="args.breadcrumbs" value="yes"/>
     </ant>
   </target>
 

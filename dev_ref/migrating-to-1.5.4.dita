@@ -34,22 +34,22 @@
           <stentry>Default values</stentry>
         </sthead>
         <strow>
-          <stentry><codeph>dita.topic.extension</codeph></stentry>
+          <stentry><parmname>dita.topic.extension</parmname></stentry>
           <stentry>DITA topic</stentry>
           <stentry><filepath>.dita</filepath>, <filepath>.xml</filepath></stentry>
         </strow>
         <strow>
-          <stentry><codeph>dita.map.extensions</codeph></stentry>
+          <stentry><parmname>dita.map.extensions</parmname></stentry>
           <stentry>DITA map</stentry>
           <stentry><filepath>.ditamap</filepath></stentry>
         </strow>
         <strow>
-          <stentry><codeph>dita.html.extensions</codeph></stentry>
+          <stentry><parmname>dita.html.extensions</parmname></stentry>
           <stentry>HTML file</stentry>
           <stentry><filepath>.html</filepath>, <filepath>.htm</filepath></stentry>
         </strow>
         <strow>
-          <stentry><codeph>dita.resource.extensions</codeph></stentry>
+          <stentry><parmname>dita.resource.extensions</parmname></stentry>
           <stentry>Resource file</stentry>
           <stentry><filepath>.pdf</filepath>, <filepath>.swf</filepath></stentry>
         </strow>
@@ -62,12 +62,12 @@
           <stentry>Description</stentry>
         </sthead>
         <strow>
-          <stentry><codeph>dita.transtype.print</codeph></stentry>
+          <stentry><parmname>dita.transtype.print</parmname></stentry>
           <stentry>Declare transformation type as a print type.</stentry>
         </strow>
       </simpletable>
       <p>The <codeph>print_transtypes</codeph> property in <filepath>integrator.properties</filepath> has been
-        deprecated in favor of <codeph>dita.transtype.print</codeph>.</p>
+        deprecated in favor of <parmname>dita.transtype.print</parmname>.</p>
     </section>
     <section>
       <title>Plugin URI scheme</title>
@@ -97,7 +97,7 @@
         <li><codeph>page-margin-outside</codeph></li>
         <li><codeph>page-margin-inside</codeph></li>
       </ul>
-      <p>The <codeph>args.bookmap-order</codeph> property has been added to control how front and back matter are
+      <p>The <parmname>args.bookmap-order</parmname> property has been added to control how front and back matter are
         processed in bookmaps. The default is to reorder the frontmatter content as in previous releases.</p>
       <p>A new extension point has been added to add mappings to the PDF configuration catalog file.</p>
       <simpletable id="simpletable_jkf_bxq_rt">
@@ -106,7 +106,7 @@
           <stentry>Description</stentry>
         </sthead>
         <strow>
-          <stentry><codeph>org.dita.pdf2.catalog.relative</codeph></stentry>
+          <stentry><parmname>org.dita.pdf2.catalog.relative</parmname></stentry>
           <stentry>Configuration catalog includes.</stentry>
         </strow>
       </simpletable>
@@ -120,15 +120,17 @@
       </ul>
       <p>PDF processing no longer copies images or generates XSL FO to output directory. Instead, the temporary
         directory is used for all temporary files and source images are read directly from source directory. The legacy
-        processing model can be enabled by setting <codeph>org.dita.pdf2.use-out-temp</codeph> to <codeph>true</codeph>
-        in configuration properties; support for the legacy processing model may be removed in future releases.</p>
+        processing model can be enabled by setting <parmname>org.dita.pdf2.use-out-temp</parmname> to
+          <option>true</option> in configuration properties; support for the legacy processing model may be removed in
+        future releases.</p>
       <p>Support for FrameMaker index syntax has been disabled by default. To enable FrameMaker index syntax, set
-          <codeph>org.dita.pdf2.index.frame-markup</codeph> to <codeph>true</codeph> in configuration properties.</p>
+          <parmname>org.dita.pdf2.index.frame-markup</parmname> to <option>true</option> in configuration
+        properties.</p>
       <p>A configuration option has been added to disable internationalization (I18N) font processing and use
-        stylesheet-defined fonts. To disable I18N font processing, set <codeph>org.dita.pdf2.i18n.enabled</codeph> to
-          <codeph>false</codeph> in configuration properties.</p>
-      <p>The XSLT parameters <codeph>customizationDir</codeph> and <codeph>fileProfilePrefix</codeph> have been removed
-        in favor of the <codeph>customizationDir.url</codeph> parameter.</p>
+        stylesheet-defined fonts. To disable I18N font processing, set <parmname>org.dita.pdf2.i18n.enabled</parmname>
+        to <codeph>false</codeph> in configuration properties.</p>
+      <p>The XSLT parameters <parmname>customizationDir</parmname> and <parmname>fileProfilePrefix</parmname> have been
+        removed in favor of the <parmname>customizationDir.url</parmname> parameter.</p>
       <p>A new shell stylesheet has been added for FOP and other shell stylesheets have also been revised. Plug-ins
         which have their own shell stylesheets for PDF processing should make sure all required stylesheets are
         imported.</p>

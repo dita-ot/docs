@@ -104,6 +104,16 @@
             <pd conaction="mark" conref="parameters-base.dita#base/clean.temp.desc"/>
             <pd conaction="pushafter"/>
           </plentry>
+          <plentry id="default.language">
+            <pt>
+              <parmname>default.language</parmname>
+            </pt>
+            <pd conaction="pushreplace" conref="parameters-base.dita#base/default.language.desc">Specifies the language
+              that is used if the input file does not have the <xmlatt>xml:lang</xmlatt> attribute set on the root
+              element. By default, this is set to <option>en</option>. The allowed values are those that are defined in
+              IETF BCP 47, <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external">Tags for
+                Identifying Languages</xref>.</pd>
+          </plentry>
           <!--<plentry id="dita.dir">
             <pt><parmname>dita.dir</parmname></pt>
             <pd conaction="mark" conref="parameters-base.dita#base/dita.dir.desc"/>
@@ -229,7 +239,8 @@
       <navtitle>HTML-based output</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace" conref="parameters-base-html.dita#base-html/shortdesc">Certain parameters apply
-      to all the HTML-based transformation types: Eclipse help, HTML5, HTML Help, JavaHelp, TocJS, and XHTML.</shortdesc>
+      to all the HTML-based transformation types: Eclipse help, HTML5, HTML Help, JavaHelp, TocJS, and
+      XHTML.</shortdesc>
     <refbody>
       <section>
         <parml>
@@ -240,14 +251,6 @@
               image file name. The allowed values are <option>yes</option> and <option>no</option>; the default value is
                 <option>no</option>.</pd>
           </plentry>-->
-          <plentry id="args.breadcrumbs">
-            <pt>
-              <parmname>args.breadcrumbs</parmname>
-            </pt>
-            <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.breadcrumbs.desc"/>
-            <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter
-                <parmname>BREADCRUMBS</parmname>.</pd>
-          </plentry>
           <plentry id="args.copycss">
             <pt><parmname>args.copycss</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.copycss.desc"/>
@@ -636,13 +639,34 @@
             <pt><parmname>customization.dir</parmname></pt>
             <pd>Specifies the customization directory.</pd>
           </plentry>-->
+          <plentry id="org.dita.pdf2.i18n.enabled">
+            <pt><parmname>org.dita.pdf2.i18n.enabled</parmname></pt>
+            <pd conaction="pushreplace" conref="parameters-pdf.dita#pdf/org.dita.pdf2.i18n.enabled.desc">
+              <p>Enables internationalization (I18N) font processing to provide per-character font selection for FO
+                renderers that do not support the <codeph>font-selection-strategy</codeph> property (such as Apache
+                FOP).</p>
+              <p>When this feature is enabled, DITA-OT uses a font mapping process that takes the content language into
+                consideration. The mapping process uses configuration files for each language to define characters that
+                should be rendered with certain logical fonts, and font mappings that associate each logical font to
+                physical font files.</p>
+              <p>The following values are allowed:</p>
+              <ul>
+                <li><option>true</option> (default) — Enables font mapping</li>
+                <li><option>false</option> — Disables font mapping</li>
+              </ul>
+              <note type="tip">If you don’t use custom character mappings, turning off font mapping makes it easier to
+                define custom fonts simply by changing font names in the XSL attributes files of your custom PDF
+                plug-in. For details, see <xref keyref="jelovirt-on-pdf2-i18n"/>.</note>
+            </pd>
+          </plentry>
           <plentry id="outputFile.base">
             <pt>
               <parmname>outputFile.base</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/outputFile.base.desc"/>
-            <pd conaction="pushafter">By default, the PDF file uses the base filename of the input <filepath>.ditamap</filepath> file.</pd>
-          </plentry>          
+            <pd conaction="pushafter">By default, the PDF file uses the base filename of the input
+                <filepath>.ditamap</filepath> file.</pd>
+          </plentry>
           <plentry id="pdf.formatter">
             <pt>
               <parmname>pdf.formatter</parmname>
@@ -666,8 +690,8 @@
 
   <reference id="xhtml">
     <title>XHTML</title>
-    <shortdesc conaction="pushreplace" conref="parameters-xhtml.dita#xhtml/shortdesc">Certain parameters are
-      specific to the XHTML transformation.</shortdesc>
+    <shortdesc conaction="pushreplace" conref="parameters-xhtml.dita#xhtml/shortdesc">Certain parameters are specific to
+      the XHTML transformation.</shortdesc>
     <refbody>
       <section>
         <parml>
@@ -689,7 +713,7 @@
     <titlealts>
       <navtitle>HTML5</navtitle>
     </titlealts>
-    <shortdesc conaction="pushreplace" conref="parameters-html5.dita#html5/shortdesc">The HTML5 transformation shares 
+    <shortdesc conaction="pushreplace" conref="parameters-html5.dita#html5/shortdesc">The HTML5 transformation shares
       common parameters with other HTML-based transformations and provides additional parameters that are specific to
       HTML5 output.</shortdesc>
     <refbody>

@@ -6,10 +6,9 @@
 
   <title>Migrating to release 2.2</title>
 
-  <shortdesc>In DITA-OT 2.2, the <option>HTML5</option> transformation was refactored as its own
-    plugin and separate plugins were created for each of the rendering engine-specific PDF
-      transformations.<draft-comment author="staylor">There are likely other changes that should be
-      noted here. </draft-comment>
+  <shortdesc>In DITA-OT 2.2, the <option>HTML5</option> transformation was refactored as its own plug-in and separate
+    plug-ins were created for each of the rendering engine-specific PDF transformations.<draft-comment author="staylor">
+      There are likely other changes that should be noted here. </draft-comment>
   </shortdesc>
 
   <refbody>
@@ -19,10 +18,10 @@
     </section>
     <section>
       <title>HTML5</title>
-      <p>The <option>HTML5</option> transformation introduced in release 2.0 as part of the
-          <option>XHTML</option> plugin has been moved to a separate <option>HTML5</option> plugin.
-        Customizations that extended the previous HTML5 output under the <option>XHTML</option>
-        plugin will probably need to be refactored on the new HTML5 plugin.</p>
+      <p>The <option>HTML5</option> transformation introduced in release 2.0 as part of the <option>XHTML</option>
+        plug-in has been moved to a separate <option>HTML5</option> plug-in. Customizations that extended the previous
+        HTML5 output under the <option>XHTML</option> plug-in will probably need to be refactored on the new HTML5
+        plug-in.</p>
       <p>Note title processing has been revised to use a common <codeph>note__title</codeph> class for note elements of
         all types. The legacy <codeph><varname>{$type}</varname>title</codeph> classes (such as
           <codeph>.notetitle</codeph>, <codeph>.cautiontitle</codeph>, <codeph>.tiptitle</codeph>, etc.) are included
@@ -33,12 +32,12 @@
     </section>
     <section>
       <title>PDF</title>
-      <p>Processing specific to Apache FOP, Antenna House Formatter, and RenderX XEP has been
-        separated into separate plugins for each of those rendering engines. Customizations that
-        extended this processing might need to extend the new <keyword>org.dita.pdf2.fop</keyword>,
-          <keyword>org.dita.pdf2.axf</keyword>, or <keyword>org.dita.pdf2.xep</keyword> plugins.</p>
+      <p>Processing specific to Apache FOP, Antenna House Formatter, and RenderX XEP has been separated into separate
+        plug-ins for each of those rendering engines. Customizations that extended this processing might need to extend
+        the new <codeph>org.dita.pdf2.fop</codeph>, <codeph>org.dita.pdf2.axf</codeph>, or
+          <codeph>org.dita.pdf2.xep</codeph> plug-ins.</p>
       <p>PDF customizations that are not specific to a rendering engine can continue to extend the
-          <keyword>org.dita.pdf2</keyword> plugin as before.</p>
+          <codeph>org.dita.pdf2</codeph> plug-in as before.</p>
       <p>The default format for page numbers in the table of contents (<xmlelement>toc</xmlelement>) was switched to
         roman to align with <xmlelement>preface</xmlelement> and ensure consistent numbering styles for all
           <xmlelement>frontmatter</xmlelement> components in <xmlelement>bookmap</xmlelement>. This prevents numbering

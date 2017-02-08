@@ -81,12 +81,12 @@
             <pt><parmname>args.logdir</parmname></pt>
             <pd conaction="mark" conref="parameters-base.dita#base/args.logdir.desc"/>
             <pd conaction="pushafter">
-              <note type="attention">The <parmname>args.logdir</parmname> is obsolete and will be removed in an upcoming
-                version of DITA-OT. To write the log to a file, use the <cmdname>dita</cmdname>
+              <note type="attention">The <parmname>args.logdir</parmname> parameter is obsolete and will be removed in
+                an upcoming version of DITA-OT. To write the log to a file, use <cmdname>dita</cmdname>
                 <parmname>--logfile</parmname>=<varname>file</varname> or <cmdname>ant</cmdname>
                 <parmname>-l</parmname>
-                <varname>file</varname> options to set the path to the log <varname>file</varname>. If only a filename
-                is specified, it will be treated as a relative path based at the current directory.</note></pd>
+                <varname>file</varname> to set the path to the log. Unless an absolute path is specified, the value will
+                be interpreted relative to the current directory.</note></pd>
           </plentry>
           <!--<plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.rellinks">
             <pt/>

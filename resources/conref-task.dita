@@ -23,9 +23,10 @@
                   <varname>filename</varname> or <varname>URL</varname> of the plug-in's distribution ZIP file
                 (optional).</li>
               <li><ph id="plugin-integrate-all">If no <varname>filename</varname> or <varname>URL</varname> argument is
-                  provided, the installation process reloads plug-ins from the <filepath>plugins</filepath> directory.
-                  This approach can be used to install multiple plug-ins at once, or install any individual plug-ins you
-                  have already copied to the <filepath>plugins</filepath> directory.</ph></li>
+                  provided, the installation process reloads the current set of plug-ins from the
+                    <filepath>plugins</filepath> directory. This approach can be used to add or remove multiple plug-ins
+                  at once, or any individual plug-ins you have already copied to (or removed from) the
+                    <filepath>plugins</filepath> directory.</ph></li>
             </ul>
           </dd>
         </dlentry>

@@ -111,7 +111,9 @@
           <pt>
             <parmname>--uninstall</parmname> <varname>id</varname>
           </pt>
-          <pd>Uninstall a plug-in with the specified ID.</pd>
+          <pd>Uninstall a plug-in with the specified ID. <note type="attention">The <parmname>--uninstall</parmname>
+              option also removes the corresponding subdirectory from the <filepath>plugins</filepath>
+            folder.</note></pd>
         </plentry>
         <plentry>
           <pt>

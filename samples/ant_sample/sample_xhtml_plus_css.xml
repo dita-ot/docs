@@ -6,7 +6,7 @@
 
   <property name="dita.dir" location="${basedir}/../../.."/>
 
-  <property name="sample.output.dir" value="${dita.dir}/out/xhtml_plus_css"/>
+  <property name="sample.output.dir" value="${dita.dir}/out/samples/xhtml_plus_css"/>
   <property name="css.source.dir" location="${dita.dir}/docsrc/samples/css"/>
 
   <target name="samples.xhtml_plus_css" depends="clean.samples.xhtml_plus_css">

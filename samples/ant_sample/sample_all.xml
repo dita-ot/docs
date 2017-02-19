@@ -18,10 +18,10 @@
   <target name="all" depends="samples"/>
 
   <target name="samples" description="build the sample output"
-          depends="samples.html5, samples.tocjs, samples.eclipse, samples.javahelp, samples.htmlhelp, samples.pdf, samples.troff"/>
+          depends="samples.html5, samples.xhtml_plus_css, samples.tocjs, samples.eclipse, samples.javahelp, samples.htmlhelp, samples.pdf, samples.troff"/>
 
   <target name="clean.samples" description="remove the sample output"
-          depends="clean.samples.html5, clean.samples.eclipse, clean.samples.tocjs, clean.samples.javahelp, clean.samples.htmlhelp, clean.samples.pdf">
+          depends="clean.samples.html5, clean.samples.xhtml_plus_css, clean.samples.eclipse, clean.samples.tocjs, clean.samples.javahelp, clean.samples.htmlhelp, clean.samples.pdf">
     <delete dir="${dita.dir}/out/samples"/>
   </target>
 

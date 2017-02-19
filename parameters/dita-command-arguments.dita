@@ -111,9 +111,10 @@
           <pt>
             <parmname>--uninstall</parmname> <varname>id</varname>
           </pt>
-          <pd>Uninstall a plug-in with the specified ID. <note type="attention">The <parmname>--uninstall</parmname>
-              option also removes the corresponding subdirectory from the <filepath>plugins</filepath>
-            folder.</note></pd>
+          <pd>
+            <p>Uninstall a plug-in with the specified ID.</p>
+            <note conref="../resources/conref-task.dita#ID/plugin-remove-subdir"/>
+          </pd>
         </plentry>
         <plentry>
           <pt>

@@ -8,7 +8,7 @@
 
   <target name="samples.htmlhelp" description="build the samples for HTMLHelp" depends="clean.samples.htmlhelp">
     <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/samples/hierarchy.ditamap"/>
+      <property name="args.input" location="${dita.dir}/docsrc/samples/hierarchy.ditamap"/>
       <property name="output.dir" location="${dita.dir}/out/samples/htmlhelp"/>
       <property name="transtype" value="htmlhelp"/>
     </ant>

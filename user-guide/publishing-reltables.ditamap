@@ -2,17 +2,18 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
   <title>Relationship Tables</title>
-  
+
   <reltable>
     <relheader>
-      <relcolspec><!--Topics in the referencing ditamap,
-e.g., in publishing.ditamap. --></relcolspec>
-      <relcolspec><!--Two-way links
-with the first-column topics. --></relcolspec>
-      <relcolspec linking="targetonly"
-        ><!--Target-only links,
-e.g., external content or topics that do not
-need to refer back to the source of the link.--></relcolspec>
+      <relcolspec>
+        <!--Topics in the referencing ditamap, e.g., in publishing.ditamap. -->
+      </relcolspec>
+      <relcolspec>
+        <!--Two-way links with the first-column topics. -->
+      </relcolspec>
+      <relcolspec linking="targetonly">
+        <!--Target-only links, e.g., external content or topics that do not need to refer back to the source of the link.-->
+      </relcolspec>
     </relheader>
     <relrow>
       <relcell>
@@ -61,26 +62,5 @@ need to refer back to the source of the link.--></relcolspec>
         <topicref keyref="migrating-ant-to-dita"/>
       </relcell>
     </relrow>
-    <relrow>
-      <relcell/>
-      <relcell/>
-      <relcell/>
-    </relrow>
-    <relrow>
-      <relcell/>
-      <relcell/>
-      <relcell/>
-    </relrow>
-    <relrow>
-      <relcell/>
-      <relcell/>
-      <relcell/>
-    </relrow>
-    <relrow>
-      <relcell/>
-      <relcell/>
-      <relcell/>
-    </relrow>
   </reltable>
-
 </map>

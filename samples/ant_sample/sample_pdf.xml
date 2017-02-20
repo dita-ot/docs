@@ -8,7 +8,7 @@
 
   <target name="samples.pdf" description="build the samples as PDF" depends="clean.samples.pdf">
     <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/samples/sequence.ditamap"/>
+      <property name="args.input" location="${dita.dir}/docsrc/samples/sequence.ditamap"/>
       <property name="output.dir" location="${dita.dir}/out/samples/pdf"/>
       <property name="transtype" value="pdf"/>
     </ant>

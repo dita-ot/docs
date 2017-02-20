@@ -8,7 +8,7 @@
 
   <target name="samples.tocjs" description="build the samples for the TocJS" depends="clean.samples.tocjs">
     <ant antfile="${dita.dir}/build.xml">
-      <property name="args.input" location="${dita.dir}/samples/hierarchy.ditamap"/>
+      <property name="args.input" location="${dita.dir}/docsrc/samples/hierarchy.ditamap"/>
       <property name="output.dir" location="${dita.dir}/out/samples/tocjs"/>
       <property name="transtype" value="tocjs"/>
     </ant>

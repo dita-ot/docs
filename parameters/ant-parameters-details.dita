@@ -77,11 +77,17 @@
             <pd conaction="pushafter">The default value is the parent directory of the file specified by
                 <parmname>args.input</parmname>.</pd>
           </plentry>
-          <!--<plentry id="args.logdir">
+          <plentry id="args.logdir">
             <pt><parmname>args.logdir</parmname></pt>
             <pd conaction="mark" conref="parameters-base.dita#base/args.logdir.desc"/>
-            <pd conaction="pushafter">Specifies the location where the DITA-OT places log files for your project.</pd>
-          </plentry>-->
+            <pd conaction="pushafter">
+              <note type="attention">The <parmname>args.logdir</parmname> parameter is obsolete and will be removed in
+                an upcoming version of DITA-OT. To write the log to a file, use <cmdname>dita</cmdname>
+                <parmname>--logfile</parmname>=<varname>file</varname> or <cmdname>ant</cmdname>
+                <parmname>-l</parmname>
+                <varname>file</varname> to set the path to the log. Unless an absolute path is specified, the value will
+                be interpreted relative to the current directory.</note></pd>
+          </plentry>
           <!--<plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.rellinks">
             <pt/>
             <pd/>

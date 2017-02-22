@@ -12,11 +12,71 @@
         <xref keyref="dita-ot-issues">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v243">
+  <reference id="v244">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <!--
+          <li id="2559">Error thrown when using args.filter for HTML5 output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2559" scope="external" format="html">#2559</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2611" scope="external" format="html">#2611</xref>
+          </li>
+          -->
+          <li id="2564">"uri and file may not be null" when having a reference to a Markdown file in DITA Map + preprocessing plugin installed
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2564" scope="external" format="html">#2564</xref>
+          </li>
+          <!--
+          <li id="2567">HTML5 plugin defines args.html5.classattr but still references args.xhtml.classattr
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2567" scope="external" format="html">#2567</xref>
+          </li>
+          -->
+          <!--
+          <li id="2570">HTML5 transtype fails on topics with tables when args.xhtml.classattr=no
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2570" scope="external" format="html">#2570</xref>
+          </li>
+          -->
+          <!--
+          <li id="2573">Error if topic includes copyright metadata
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2573" scope="external" format="html">#2573</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2574" scope="external" format="html">#2574</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2610" scope="external" format="html">#2610</xref>
+          </li>
+          -->
+          <li id="2577">empty nav toc in topic with @chunk="to-content"
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2577" scope="external" format="html">#2577</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2578" scope="external" format="html">#2578</xref>
+          </li>
+          <li id="2584">Index term is rendered twice in the PDF output when it is declared in the DITA map
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2584" scope="external" format="html">#2584</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2589" scope="external" format="html">#2589</xref>
+          </li>
+          <li id="2586">Local properties is ready from basedir
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2586" scope="external" format="html">#2586</xref>
+          </li>
+          <li id="2602">Feature/remove keep with next from list label
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2602" scope="external" format="html">#2602</xref>
+          </li>
+          <li id="2603">Parameter processing in variable resolution broken
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2603" scope="external" format="html">#2603</xref>
+          </li>
+          <li id="2605">Fix dita --install syntax help
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2605" scope="external" format="html">#2605</xref>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.4.3...2.4.4" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+  
+  <reference id="v243">
+    <title>Maintenance Release 2.4.3</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.4.3 includes the following bug fixes.</p>
         <ul>
           <li id="1525">In PDF output generated with earlier versions of DITA-OT and RenderX XEP, the
               <xmlelement>indexterm</xmlelement> hierarchy for multilevel entries in the PDF index was not properly
@@ -47,11 +107,6 @@
                 <li><parmname>processing-mode</parmname></li>
               </ul></p>
           </li>
-          <!--
-          <li id="2559">Error thrown when using args.filter for HTML5 output
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2559" scope="external" format="html">#2559</xref>
-          </li>
-          -->
           <li id="2563">In previous versions of DITA-OT, the HTML5 transformation generated
               <xmlelement>simpletable</xmlelement> output with column widths specified in <xmlelement>col</xmlelement>
             elements as direct children of the <xmlelement>table</xmlelement> element. A
@@ -59,11 +114,6 @@
             standard.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2563" scope="external" format="html">#2563</xref>
           </li>
-          <!--
-          <li id="2567">HTML5 plugin defines args.html5.classattr but still references args.xhtml.classattr
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2567" scope="external" format="html">#2567</xref>
-          </li>
-          -->
         </ul>
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/2.4.2...2.4.3" scope="external" format="html">
@@ -71,7 +121,7 @@
       </section>
       <section>
         <title>Documentation updates</title>
-        <p>The DITA-OT <keyword keyref="maintenance-version"/> documentation includes corrections and improvements to
+        <p>The DITA-OT 2.4.3 documentation includes corrections and improvements to
           existing topics, along with new content on
           <xref keyref="configuration-properties"/>.</p>
       </section>
@@ -82,7 +132,7 @@
     <title>Maintenance Release 2.4.2</title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release 2.4.2 included the following bug fixes.</p>
+        <p>DITA Open Toolkit Release 2.4.2 includes the following bug fixes.</p>
         <ul>
           <li id="1885">DITA-OT 2.0 threw a null pointer exception when producing Eclipse Help output from a bookmap
             with a <xmlelement>glossarylist</xmlelement> that referenced a composite <xmlelement>dita</xmlelement>
@@ -130,7 +180,7 @@
     <title>Maintenance Release 2.4.1</title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release 2.4.1 included the following bug fixes.</p>
+        <p>DITA Open Toolkit Release 2.4.1 includes the following bug fixes.</p>
         <ul>
           <li id="2520">In DITA-OT 2.3 and 2.4, setting the <parmname>force-unique</parmname> parameter to
               <option>true</option> had no effect. Processing has been corrected to properly generate the copy-to

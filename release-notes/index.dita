@@ -61,7 +61,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2584" scope="external" format="html">#2584</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2589" scope="external" format="html">#2589</xref>
           </li>
-          <li id="2586">Local properties is ready from basedir
+          <li id="2586">When reading the <filepath>local.properties</filepath> file, the Ant <codeph>basedir</codeph>
+            property is set to the root directory of the DITA-OT installation. This change ensures that the
+              <filepath>local.properties</filepath> file in the installation directory can be read consistently, even in
+            cases when custom build scripts override the <codeph>basedir</codeph> property beforehand.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2586" scope="external" format="html">#2586</xref>
           </li>
           <li id="2602">When generating PDF output, earlier versions of DITA-OT applied the

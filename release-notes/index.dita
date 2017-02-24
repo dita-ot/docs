@@ -24,7 +24,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/pull/2611" scope="external" format="html">#2611</xref>
           </li>
           -->
-          <li id="2564">"uri and file may not be null" when having a reference to a Markdown file in DITA Map + preprocessing plugin installed
+          <li id="2564">DITA-OT 2.4 threw errors if non-XML DITA topics (such as Markdown files) were referenced in DITA
+            maps. The source format information is now retained to ensure these topics are processed correctly when the
+            <xref href="https://github.com/jelovirt/dita-ot-markdown" format="html" scope="external">DITA-OT Markdown
+              plug-in</xref> is installed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2564" scope="external" format="html">#2564</xref>
           </li>
           <!--

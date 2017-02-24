@@ -55,7 +55,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2577" scope="external" format="html">#2577</xref>
             <xref href="https://github.com/dita-ot/dita-ot/pull/2578" scope="external" format="html">#2578</xref>
           </li>
-          <li id="2584">Index term is rendered twice in the PDF output when it is declared in the DITA map
+          <li id="2584">If an index term was defined in a map, a redundant empty citation was created in the index when
+            generating PDF output with Apache FOP. Index processing has been revised to ensure that links to index terms
+            defined in maps work properly for FOP.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2584" scope="external" format="html">#2584</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2589" scope="external" format="html">#2589</xref>
           </li>

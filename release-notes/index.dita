@@ -47,7 +47,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/pull/2574" scope="external" format="html">#2574</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2610" scope="external" format="html">#2610</xref>
           </li>
-          <li id="2577">empty nav toc in topic with @chunk="to-content"
+          <li id="2577">In earlier versions of DITA-OT, the HTML5 transformation generated an empty
+              <xmlelement>nav</xmlelement> element for table-of-contents navigation when the
+              <parmname>nav-toc</parmname> parameter was set to <option>partial</option> and the <xmlatt>chunk</xmlatt>
+            attribute for a topic reference was set <option>to-content</option>. Processing has been updated to produce
+            valid navigation links with to-content chunks.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2577" scope="external" format="html">#2577</xref>
             <xref href="https://github.com/dita-ot/dita-ot/pull/2578" scope="external" format="html">#2578</xref>
           </li>

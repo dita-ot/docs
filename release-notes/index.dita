@@ -291,11 +291,14 @@
         <p>For details on recent changes in FOP, see the <cite>Release Notes</cite> for versions
           <xref keyref="fop-20-rn">2.0</xref> and
           <xref keyref="fop-20-rn">2.1</xref>.</p>
-        <note>To conserve memory, accessible PDF output is disabled by default in FOP 2.1. To generate accessible PDFs
-          from DITA-OT, set the <parmname>args.fo.userconfig</parmname> parameter and include the
-            <option>&lt;accessibility>true&lt;/accessibility></option> option in your custom FOP configuration file.
+        <note>
+          <p>To conserve memory, accessible PDF output is disabled by default in FOP 2.1. To generate accessible PDFs
+            from DITA-OT, set the <parmname>args.fo.userconfig</parmname> parameter and include the
+              <option>&lt;accessibility>true&lt;/accessibility></option> option in your custom FOP configuration
+            file.</p>
           <p>For more information, see
-            <xref keyref="fop-accessibility"/>.</p></note>
+            <xref keyref="fop-accessibility"/>.</p>
+        </note>
       </section>
       <section id="2422">
         <title>New long-form syntax for <cmdname>dita</cmdname> command options</title>

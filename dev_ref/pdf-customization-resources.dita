@@ -2,13 +2,13 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<reference id="resources-for-pdf-customization-plug-ins">
+<reference id="ID">
   <title>Resources for custom PDF plug-ins</title>
   <shortdesc>There are several external resources that can help you generate and refine custom PDF plug-ins for the DITA
     Open Toolkit.</shortdesc>
 
   <refbody>
-    <section>
+    <section id="pdf-plugin-generator">
       <title>PDF Plugin Generator</title>
       <p>This online tool, developed and maintained by Jarno Elovirta, enables you to generate a PDF customization
         plug-in automatically.</p>
@@ -47,7 +47,7 @@
         customization plug-in.</note>
     </section>
 
-    <section>
+    <section id="dita-for-print">
       <title><cite>DITA for Print: A DITA Open Toolkit Workbook</cite> (Second Edition, 2017)</title>
       <p>Authored by Leigh W. White, DITA Specialist at IXIASOFT, and published by XML Press, <cite>DITA for
           Print</cite> walks readers through developing a PDF customization from scratch. </p>
@@ -69,7 +69,7 @@
           for you to update your plug-ins to work with future versions of the DITA-OT.</p></note>
     </section>
 
-    <section>
+    <section id="dita-for-practitioners">
       <title><cite>DITA for Practitioners: Volume 1, Architecture and Technology</cite> (2012)</title>
       <p>Authored by Eliot Kimber and published by XML Press, this seminal resource contains a chapter dedicated to the
         DITA Open Toolkit: “Running, Configuring, and Customizing the Open Toolkit”. In addition to a robust overview of

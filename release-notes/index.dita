@@ -62,7 +62,10 @@
           <li id="2586">Local properties is ready from basedir
             <xref href="https://github.com/dita-ot/dita-ot/issues/2586" scope="external" format="html">#2586</xref>
           </li>
-          <li id="2602">Feature/remove keep with next from list label
+          <li id="2602">When generating PDF output, earlier versions of DITA-OT applied the
+              <xmlatt>keep-with-next.within-line</xmlatt> attribute to list item labels, which is not valid on
+              <xmlelement>fo:list-item-label</xmlelement> formatting objects. The list label attribute sets have been
+            revised to generate valid XSL:FO output.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2602" scope="external" format="html">#2602</xref>
           </li>
           <li id="2603">Parameter processing in variable resolution broken

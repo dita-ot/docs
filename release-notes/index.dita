@@ -78,7 +78,11 @@
             node.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2603" scope="external" format="html">#2603</xref>
           </li>
-          <li id="2605">Fix dita --install syntax help
+          <li id="2605">The command-line help and documentation for the <cmdname>dita</cmdname> command mistakenly
+            included the equals sign in the descriptions of the <option>--install</option> and
+              <option>--uninstall</option> options. The correct syntax separates these options from their values with a
+            space instead. To install a single plug-in from a local ZIP file, for example, use
+              <cmdname>dita</cmdname> <parmname>--install</parmname> <varname>filename</varname>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2605" scope="external" format="html">#2605</xref>
           </li>
           <li>

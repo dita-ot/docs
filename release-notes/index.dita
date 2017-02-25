@@ -73,7 +73,9 @@
             revised to generate valid XSL:FO output.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2602" scope="external" format="html">#2602</xref>
           </li>
-          <li id="2603">Parameter processing in variable resolution broken
+          <li id="2603">Parameter processing in variable resolution has been adjusted to ensure that nested
+              <xmlelement>param</xmlelement> elements are taken into account when parameters are passed as a document
+            node.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2603" scope="external" format="html">#2603</xref>
           </li>
           <li id="2605">Fix dita --install syntax help

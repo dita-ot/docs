@@ -40,7 +40,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2570" scope="external" format="html">#2570</xref>
           </li>
           -->
-          <li id="2573">In HTML5 transformations, DITA-OT 2.4 threw XSLT errors if a topic included copyright metadata
+          <li id="2573">In HTML5 transformations, DITA-OT 2.4 threw XSLT warnings if a topic included copyright metadata
             in the prolog. The redundant templates have been removed to ensure that copyright metadata is correctly
             processed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2573" scope="external" format="html">#2573</xref>,

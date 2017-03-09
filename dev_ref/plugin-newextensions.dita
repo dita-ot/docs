@@ -112,7 +112,7 @@
         file content based on extension point use.</p>
       <codeblock>&lt;project xmlns:dita="http://dita-ot.sourceforge.net">
   &lt;target name="dita2custom"
-          depends="dita2custom.init,
+          dita:depends="dita2custom.init,
                    {com.example.new-extensions.pre},
                    dita2xhtml"
           dita:extension="depends org.dita.dost.platform.InsertDependsAction">

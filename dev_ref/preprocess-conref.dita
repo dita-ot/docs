@@ -19,7 +19,7 @@
   &lt;title>...&lt;/title>
   &lt;body>
     &lt;section id="sect">&lt;title>Sample section&lt;/title>
-      &lt;p>Figure &lt;xref href="#referenced_topic/fig"/> contains an code sample that demonstrates ... .&lt;/p>
+      &lt;p>Figure &lt;xref href="#referenced_topic/fig"/> contains a code sample that demonstrates ... .&lt;/p>
       &lt;fig id="fig">&lt;title>Code sample&lt;/title>
         &lt;codeblock>....&lt;/codeblock>
       &lt;/fig>
@@ -36,7 +36,7 @@
         <fig>
           <title>Resolved conrefed <xmlelement>section</xmlelement> element after the conref step</title>
           <codeblock>&lt;section id="sect">&lt;title>Sample section&lt;/title>
-    &lt;p>Figure &lt;xref href="#new_topic/d1e25"/> contains an code sample that demonstrates ... .&lt;/p>
+    &lt;p>Figure &lt;xref href="#new_topic/d1e25"/> contains a code sample that demonstrates ... .&lt;/p>
     &lt;fig id="d1e25">&lt;title>Code sample&lt;/title>
         &lt;codeblock>....&lt;/codeblock>
     &lt;/fig>

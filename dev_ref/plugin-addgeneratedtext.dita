@@ -5,7 +5,7 @@
 <reference id="plugin-addgeneratedtext" xml:lang="en-US">
   <title>Modifying or adding generated text</title>
   <shortdesc>Generated text is the term for strings that are automatically added by the build, such as "Note" before the
-    contents of a &lt;note> element.</shortdesc>
+    contents of a <xmlelement>note</xmlelement> element.</shortdesc>
   <refbody>
     <section>
       <p>The generated text extension point is used to add new strings to the default set of generated text. There are

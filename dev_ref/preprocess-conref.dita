@@ -32,8 +32,9 @@
         the new context. At the same time, the  <xmlelement>xref</xmlelement> element is also modified so that it
         remains valid as a local reference. For example, if the referencing topic has an <xmlatt>id </xmlatt> set to
         "new_topic", then the conrefed  element may look like this in the intermediate
-          document.<xmlelement>section</xmlelement><fig>
-          <title>Resolved conrefed &lt;section> element after the conref step</title>
+          document <xmlelement>section</xmlelement>.
+        <fig>
+          <title>Resolved conrefed <xmlelement>section</xmlelement> element after the conref step</title>
           <codeblock>&lt;section id="sect">&lt;title>Sample section&lt;/title>
     &lt;p>Figure &lt;xref href="#new_topic/d1e25"/> contains an code sample that demonstrates ... .&lt;/p>
     &lt;fig id="d1e25">&lt;title>Code sample&lt;/title>

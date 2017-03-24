@@ -12,7 +12,7 @@
         <xref keyref="dita-ot-issues">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v244">
+  <reference id="v245">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
@@ -24,12 +24,6 @@
             <xref href="https://github.com/dita-ot/dita-ot/pull/2611" scope="external" format="html">#2611</xref>
           </li>
           -->
-          <li id="2564">DITA-OT 2.4 threw errors if non-XML DITA topics (such as Markdown files) were referenced in DITA
-            maps. The source format information is now retained to ensure these topics are processed correctly when the
-            <xref href="https://github.com/jelovirt/dita-ot-markdown" format="html" scope="external">DITA-OT Markdown
-              plug-in</xref> is installed.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2564" scope="external" format="html">#2564</xref>
-          </li>
           <!--
           <li id="2567">HTML5 plugin defines args.html5.classattr but still references args.xhtml.classattr
             <xref href="https://github.com/dita-ot/dita-ot/issues/2567" scope="external" format="html">#2567</xref>
@@ -40,6 +34,52 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2570" scope="external" format="html">#2570</xref>
           </li>
           -->
+          <li id="2622">The 'ol/@class' attribute is missing in the generated HTML when 'steps' contains a 'stepsection'
+            element
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2622" scope="external" format="html">#2622</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2631" scope="external" format="html">#2631</xref>
+          </li>
+          <li id="2623">Navref and anchor elements lost when resolving submap
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2623" scope="external" format="html">#2623</xref>
+          </li>
+          <li id="2628">Fix: args.outext not working for HTML5
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2628" scope="external" format="html">#2628</xref>
+          </li>
+          <li id="2629">Incorrect Finnish translation for note warning
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2629" scope="external" format="html">#2629</xref>
+          </li>
+
+          <li id="2636">Table Cell which spans over 2 columns no longer produces proper table structure (PDF and XHTML)
+            [DOT 2.4.4]
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2636" scope="external" format="html">#2636</xref>
+          </li>
+          <li>
+            <p>The documentation includes minor
+              <xref href="https://github.com/dita-ot/docs/compare/2.4.4...2.4.5" scope="external" format="html">
+                changes</xref> with
+              <xref href="https://github.com/dita-ot/docs/milestone/23?closed=1" scope="external" format="html"
+                >corrections and improvements</xref> to existing topics.</p>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.4.4...2.4.5" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v244">
+    <title>Maintenance Release 2.4.4</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.4.4 includes the following bug fixes.</p>
+        <ul>
+          <li id="2564">DITA-OT 2.4 threw errors if non-XML DITA topics (such as Markdown files) were referenced in DITA
+            maps. The source format information is now retained to ensure these topics are processed correctly when the
+            <xref href="https://github.com/jelovirt/dita-ot-markdown" format="html" scope="external">DITA-OT Markdown
+              plug-in</xref> is installed.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2564" scope="external" format="html">#2564</xref>
+          </li>
           <li id="2573">In HTML5 transformations, DITA-OT 2.4 threw XSLT warnings if a topic included copyright metadata
             in the prolog. The redundant templates have been removed to ensure that copyright metadata is correctly
             processed.

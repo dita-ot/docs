@@ -42,7 +42,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2622" scope="external" format="html">#2622</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2631" scope="external" format="html">#2631</xref>
           </li>
-          <li id="2623">Navref and anchor elements lost when resolving submap
+          <li id="2623">Earlier versions of DITA-OT ignored any <xmlelement>navref</xmlelement> and
+              <xmlelement>anchor</xmlelement> elements that were declared as direct children of referenced submaps. The
+            map reference implementation has been updated to preserve these elements as-is when resolving nested maps.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2623" scope="external" format="html">#2623</xref>
           </li>
           <li id="2628">Fix: args.outext not working for HTML5

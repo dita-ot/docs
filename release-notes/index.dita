@@ -50,7 +50,8 @@
           <li id="2628">HTML5 processing has been corrected to respect the <parmname>args.outext</parmname> setting.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2628" scope="external" format="html">#2628</xref>
           </li>
-          <li id="2629">Incorrect Finnish translation for note warning
+          <li id="2629">The Finnish translations for attention and warning notes have been corrected to “Huomio” and
+            “Varoitus”, respectively.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2629" scope="external" format="html">#2629</xref>
           </li>
           <li id="2636">Table Cell which spans over 2 columns no longer produces proper table structure (PDF and XHTML)

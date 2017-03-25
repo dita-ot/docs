@@ -37,8 +37,8 @@
             updated to ensure that tables are handled correctly when the DITA class ancestry is not passed to output.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2570" scope="external" format="html">#2570</xref>
           </li>
-          <li id="2622">The 'ol/@class' attribute is missing in the generated HTML when 'steps' contains a 'stepsection'
-            element
+          <li id="2622">The HTML5 transformation has been updated to preserve the <xmlatt>class</xmlatt> attribute on
+            ordered lists when <xmlelement>steps</xmlelement> contain a <xmlelement>stepsection</xmlelement> element.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2622" scope="external" format="html">#2622</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2631" scope="external" format="html">#2631</xref>
           </li>

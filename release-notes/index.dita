@@ -28,8 +28,8 @@
             <xref href="https://github.com/dita-ot/dita-ot/pull/2611" scope="external" format="html">#2611</xref>-->
             <xref href="https://github.com/dita-ot/dita-ot/issues/2627" scope="external" format="html">#2627</xref>
           </li>
-          <li id="2567">HTML5 plugin defines args.html5.classattr but still references args.xhtml.classattr
-            (Fix reference to XHTML properties in HTML5)
+          <li id="2567">Remaining XHTML property references in the HTML5 transformation have been corrected to point to
+            their HTML5 equivalents.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2567" scope="external" format="html">#2567</xref>
           </li>
           <li id="2570">HTML5 transtype fails on topics with tables when args.xhtml.classattr=no

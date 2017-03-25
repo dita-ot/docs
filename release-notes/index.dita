@@ -47,7 +47,7 @@
             map reference implementation has been updated to preserve these elements as-is when resolving nested maps.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2623" scope="external" format="html">#2623</xref>
           </li>
-          <li id="2628">Fix: args.outext not working for HTML5
+          <li id="2628">HTML5 processing has been corrected to respect the <parmname>args.outext</parmname> setting.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2628" scope="external" format="html">#2628</xref>
           </li>
           <li id="2629">Incorrect Finnish translation for note warning

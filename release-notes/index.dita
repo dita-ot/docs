@@ -54,8 +54,8 @@
             “Varoitus”, respectively.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2629" scope="external" format="html">#2629</xref>
           </li>
-          <li id="2636">Table Cell which spans over 2 columns no longer produces proper table structure (PDF and XHTML)
-            [DOT 2.4.4]
+          <li id="2636">DITA-OT 2.4.4 introduced a regression that prevented table cells from spanning multiple columns.
+            Table processing has been corrected to produce the proper table structure.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2636" scope="external" format="html">#2636</xref>
           </li>
           <li>

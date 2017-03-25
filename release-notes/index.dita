@@ -18,22 +18,19 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <!--
           <li id="2559">Error thrown when using args.filter for HTML5 output
             <xref href="https://github.com/dita-ot/dita-ot/issues/2559" scope="external" format="html">#2559</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2611" scope="external" format="html">#2611</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2598" scope="external" format="html">#2598</xref>, <!--
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2611" scope="external" format="html">#2611</xref>-->
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2627" scope="external" format="html">#2627</xref>
           </li>
-          -->
-          <!--
           <li id="2567">HTML5 plugin defines args.html5.classattr but still references args.xhtml.classattr
+            (Fix reference to XHTML properties in HTML5)
             <xref href="https://github.com/dita-ot/dita-ot/issues/2567" scope="external" format="html">#2567</xref>
           </li>
-          -->
-          <!--
           <li id="2570">HTML5 transtype fails on topics with tables when args.xhtml.classattr=no
             <xref href="https://github.com/dita-ot/dita-ot/issues/2570" scope="external" format="html">#2570</xref>
           </li>
-          -->
           <li id="2622">The 'ol/@class' attribute is missing in the generated HTML when 'steps' contains a 'stepsection'
             element
             <xref href="https://github.com/dita-ot/dita-ot/issues/2622" scope="external" format="html">#2622</xref>,
@@ -48,7 +45,6 @@
           <li id="2629">Incorrect Finnish translation for note warning
             <xref href="https://github.com/dita-ot/dita-ot/issues/2629" scope="external" format="html">#2629</xref>
           </li>
-
           <li id="2636">Table Cell which spans over 2 columns no longer produces proper table structure (PDF and XHTML)
             [DOT 2.4.4]
             <xref href="https://github.com/dita-ot/dita-ot/issues/2636" scope="external" format="html">#2636</xref>

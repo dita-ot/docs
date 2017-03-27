@@ -193,11 +193,11 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ029I-extra" conaction="pushreplace">The domains attribute is used in
           specialized DITA documents to help determine which domain elements are legal. This message will only appear if
-          DITA specialization was not defined properly.</stentry>
+          a DITA specialization was not defined properly.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ030I-extra" conaction="pushreplace">All specialized DITA elements
-          must define a class attribute to provide ancestry information. This message will only appear a specialized
+          must define a class attribute to provide ancestry information. This message will only appear if a specialized
           DITA element did not define a class attribute.</stentry>
       </strow>
       <strow>

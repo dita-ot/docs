@@ -42,7 +42,7 @@
     <!--xsl:for-each select="//transtype/param"-->
     <xsl:for-each select="//plugin">
       <xsl:variable name="id" select="@id"/>
-      <xsl:message>Writing <xsl:value-of select="$output-dir.url"/>/extension-points-in-<xsl:value-of select="$id"/>.dita</xsl:message>
+      <xsl:message>Writing <xsl:value-of select="$output-dir.url"/>extension-points-in-<xsl:value-of select="$id"/>.dita</xsl:message>
       <xsl:result-document href="{$output-dir.url}/extension-points-in-{$id}.dita"
         doctype-public="-//OASIS//DTD DITA Reference//EN"
         doctype-system="reference.dtd">

@@ -18,11 +18,10 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2559">DITA-OT 2.4 reported errors when filtering HTML5 output with a <filepath>.ditaval</filepath>
-            file and failed to preserve attributes that were set to <option>passthrough</option> via the
-              <xmlatt>action</xmlatt> attribute. The order in which properties are initialized has been corrected and
-            profiling conditions are now propagated to corresponding <xmlatt>data-</xmlatt> attributes in HTML5 output
-            to support filtering.
+          <li id="2559">DITA-OT 2.4 reported errors when filtering HTML5 output with a DITAVAL file and failed to
+            preserve attributes that were set to <option>passthrough</option> via the <xmlatt>action</xmlatt> attribute.
+            The order in which properties are initialized has been corrected and profiling conditions are now propagated
+            to corresponding <xmlatt>data-</xmlatt> attributes in HTML5 output to support filtering.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2559" scope="external" format="html">#2559</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2598" scope="external" format="html">#2598</xref>, <!--
             <xref href="https://github.com/dita-ot/dita-ot/pull/2611" scope="external" format="html">#2611</xref>-->

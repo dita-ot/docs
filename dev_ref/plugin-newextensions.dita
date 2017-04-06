@@ -118,7 +118,7 @@
           dita:extension="depends org.dita.dost.platform.InsertDependsAction">
     &lt;dita:extension id="com.example.new-extensions.content"
                     behavior="org.dita.dost.platform.InsertAction"/>
-  &lt;target>
+  &lt;/target>
 &lt;/project></codeblock>
     </example>
   </refbody>

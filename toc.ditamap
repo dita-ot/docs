@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<map xml:lang="en-US">
+  <title>DITA Open Toolkit <keyword keyref="release"/></title>
+  <!-- 
+  about
+    set expectations, including cmd line
+    dita spec support
+  release notes
+  installing
+    migrating from previous versions
+  adding plugins
+    about; source of plugins
+    installing
+    uninstalling
+  building output
+    properties or params
+    dita or ant
+    recommend using log files
+    ref verifying section
+  customizing HTML output
+  customizing PDF output
+  customizing other output types
+  customizing generated text
+    i18n
+    best practice: text in one plugin and others require it (for what good requiring does)
+  verifying output
+    viewing output
+    viewing logs, log files
+  troubleshooting
+    subtopics for, e.g., HTML included here and in associated sections for building, customizing
+  reference
+    including architecture
+  resources
+  
+  -->
+  <topicref keyref="index">
+    <topicref keyref="first-build-using-dita-command"/>
+    <topicref keyref="DITA_spec-support">
+      <topicref keyref="DITA_v1-2-support"/>
+      <topicref keyref="DITA_v1-3-support"/>
+      <topicref keyref="implementation-dependent-features"/>
+      <topicref keyref="extended-functionality"/>
+      <topicref keyref="DITA-features-in-docs"/>
+    </topicref>
+    <topicref keyref="license">
+      <topicref keyref="third-party-software"/>
+    </topicref>
+  </topicref>
+  <topicref keyref="release-notes">
+    <topicmeta><navtitle>Release Notes</navtitle></topicmeta>
+    <!--<topicref keyref="rel2.5"/>-->
+    <topicref keyref="rel2.4"><topicmeta><navtitle>2.4.x</navtitle></topicmeta></topicref>
+    <topicref keyref="rel2.3"><topicmeta><navtitle>2.3.x</navtitle></topicmeta></topicref>
+    <topicref keyref="rel2.2"><topicmeta><navtitle>2.2.x</navtitle></topicmeta></topicref>
+    <topicref keyref="rel2.1"><topicmeta><navtitle>2.1.x</navtitle></topicmeta></topicref>
+    <topicref keyref="rel2.0"><topicmeta><navtitle>2.0.x</navtitle></topicmeta></topicref>
+  </topicref>
+  <topicref keyref="installing-client" locktitle="yes">
+    <topicmeta>
+      <navtitle>Installing</navtitle>
+    </topicmeta>
+    <topicref keyref="prerequisite-software"/>
+    <topicref keyref="determining-version-of-ditaot"/>
+  </topicref>
+  <topicref keyref="plugins-installing">
+    <topicref keyref="plugins-removing"/>
+    <topicref keyref="rebuilding-the-dita-ot-documentation"/>
+  </topicref>
+  <topicref keyref="transforming-dita-content">
+    <topicref keyref="build-using-dita-command">
+      <topicref keyref="dita-command-arguments"/>
+      <topicref keyref="dita-command-help"/>
+      <topicref keyref="using-dita-properties-file"/>
+      <topicref keyref="migrating-ant-to-dita"/>
+    </topicref>
+    <topicref keyref="publishing-with-ant" locktitle="yes">
+      <topicmeta>
+        <navtitle>Using Ant</navtitle>
+      </topicmeta>
+      <topicref keyref="ant"/>
+      <topicref keyref="building-with-ant"/>
+      <topicref keyref="creating-an-ant-build-script"/>
+    </topicref>
+    <topicref keyref="AvailableTransforms"/>
+    <topicref keyref="parameters_intro">
+      <topicref keyref="parameters-base"/>
+      <topicref keyref="parameters-other"/>
+    </topicref>
+    <topicref keyref="dita2eclipsehelp">
+      <topicref keyref="parameters-base"/>
+      <topicref keyref="parameters-base-html"/>
+      <topicref keyref="parameters-eclipsehelp"/>
+      <topicref keyref="generate-copy-outer"/>
+    </topicref>
+    <topicref keyref="dita2html5">
+      <topicref keyref="parameters-base"/>
+      <topicref keyref="parameters-base-html"/>
+      <topicref keyref="parameters-html5"/>
+      <topicref keyref="generate-copy-outer"/>
+    </topicref>
+    <topicref keyref="dita2htmlhelp">
+      <topicref keyref="parameters-base"/>
+      <topicref keyref="parameters-base-html"/>
+      <topicref keyref="parameters-htmlhelp"/>
+      <topicref keyref="generate-copy-outer"/>
+    </topicref>
+    <topicref keyref="dita2xhtml">
+      <topicref keyref="parameters-base"/>
+      <topicref keyref="parameters-base-html"/>
+      <topicref keyref="parameters-xhtml"/>
+      <topicref keyref="generate-copy-outer"/>
+    </topicref>
+    <topicref keyref="dita2pdf">
+      <topicref keyref="parameters-base"/>
+      <topicref keyref="parameters-pdf"/>
+    </topicref>
+    <topicref keyref="dita2tocjs">
+      <topicref keyref="parameters-base"/>
+    </topicref>
+    <topicref keyref="dita2troff">
+      <topicref keyref="parameters-base"/>
+    </topicref>
+  </topicref>
+  <topicref keyref="html-customization" locktitle="yes">
+    <topicmeta>
+      <navtitle>Customizing HTML</navtitle>
+    </topicmeta>
+    <topicref keyref="html-customization-css">
+      <topicref keyref="html-customization-plugin-bundle-css"/>
+    </topicref>
+    <topicref keyref="html-customization-header"/>
+    <topicref keyref="html-customization-navigation"/>
+    <topicref keyref="html-customization-properties-file"/>
+    <topicref keyref="generate-copy-outer"/>
+  </topicref>
+  <topicref keyref="pdf-customization" locktitle="yes">
+    <topicmeta>
+      <navtitle>Customizing PDF</navtitle>
+    </topicmeta>
+    <topicref keyref="pdf-customization-approaches"/>
+    <topicref keyref="pdf-customization-plugin-types"/>
+    <topicref keyref="pdf-plugin-structure"/>
+    <topicref keyref="pdf-customization-best-practices"/>
+    <topicref keyref="pdf-customization-example"/>
+    <topicref keyref="pdf-customization-resources"/>
+    <topicref keyref="pdf2-creating-change-bars"/>
+    <topicref keyref="pdf-transformation-history"/>
+  </topicref>
+  <topicref keyref="plugin-addgeneratedtext"/>
+  <topicref keyref="plugin-creating" locktitle="yes">
+    <topicmeta>
+      <navtitle>Other customizations</navtitle>
+    </topicmeta>
+    <topicref keyref="plugin-benefits"/>
+    <topicref keyref="plugin-configfile"/>
+    <topicref keyref="plugin-dependencies"/>
+    <topicref keyref="extending-the-ot"/>
+    <topicref keyref="plugins-overview"/>
+    <topicref keyref="plugin-xmlcatalog"/>
+    <topicref keyref="plugin-anttarget"/>
+    <topicref keyref="plugin-antpreprocess"/>
+    <topicref keyref="plugin-newtranstype"/>
+    <topicref keyref="plugin-overridestyle"/>
+    <topicref keyref="using-plugin-URI-extension"/>
+    <topicref keyref="plugin-xsltparams"/>
+    <topicref keyref="plugin-javalib"/>
+    <topicref keyref="plugin-messages"/>
+    <topicref keyref="plugin-newextensions"/>
+    <topicref keyref="plugin-sample"/>
+    <topicref keyref="migration">
+      <topicref keyref="migrating-to-1.5.4"/>
+      <topicref keyref="migrating-to-1.6"/>
+      <topicref keyref="migrating-to-1.7">
+        <topicref keyref="flagging-migration"/>
+      </topicref>
+      <topicref keyref="migrating-to-1.8"/>
+      <topicref keyref="migrating-to-2.0"/>
+      <topicref keyref="migrating-to-2.1"/>
+      <topicref keyref="migrating-to-2.2"/>
+      <topicref keyref="migrating-to-2.3"/>
+      <topicref keyref="migrating-to-2.4"/>
+      <topicref keyref="migrating-to-2-5"/>
+      <topicref keyref="migrating-to-3.0"/>
+    </topicref>
+  </topicref>
+  <topicref keyref="DITA-globalization">
+    <topicref keyref="globalization-supported-in-dita-ot"/>
+    <topicref keyref="DITA-globalization-languages"/>
+  </topicref>
+  <topicref keyref="verifying-output">
+    <topicref keyref="log-files"/>
+  </topicref>
+  <topicref keyref="troubleshooting-overview">
+    <topicref keyref="log-files"/>
+    <topicref keyref="DITA-messages"/>
+    <topicref keyref="other-errors"/>
+    <topicref keyref="enabling-debug-mode"/>
+    <topicref keyref="increasing-the-jvm"/>
+    <topicref keyref="reducing-processing-time"/>
+  </topicref>
+  <topicref keyref="reference">
+    <topicref keyref="dita-command-arguments"/>
+    <topicref keyref="parameters_intro"/>
+    <topicref keyref="configuration-properties">
+      <topicref keyref="local-properties"/>
+      <topicref keyref="lib-configuration-properties"/>
+      <topicref keyref="lib-plugin-properties"/>
+      <topicref keyref="internal-ant-properties"/>
+    </topicref>
+    <topicref keyref="DITA-OTArchitecture">
+      <topicref keyref="processing-structure"/>
+      <topicref keyref="map-first-preproc"/>
+      <topicref keyref="processing-pipeline-modules"/>
+      <topicref keyref="processing-order"/>
+      <topicref collection-type="sequence" keyref="DITA-OTPreprocess">
+        <topicref keyref="preprocess-genlist"/>
+        <topicref keyref="preprocess-debugfilter"/>
+        <topicref keyref="preprocess-mapref"/>
+        <topicref keyref="preprocess-branch-filter"/>
+        <topicref keyref="preprocess-copyfiles"/>
+        <topicref keyref="preprocess-keyref"/>
+        <topicref keyref="preprocess-copy-to"/>
+        <topicref keyref="preprocess-conrefpush"/>
+        <topicref keyref="preprocess-conref"/>
+        <topicref keyref="preprocess-profile"/>
+        <topicref keyref="preprocess-topic-fragment"/>
+        <topicref keyref="preprocess-chunk"/>
+        <topicref keyref="preprocess-metadata"/>
+        <topicref keyref="preprocess-maplink"/>
+        <topicref keyref="preprocess-topicpull"/>
+        <topicref keyref="preprocess-flagging"/>
+        <topicref keyref="preprocess-clean-map"/>
+      </topicref>
+      <topicref keyref="XhtmlWithNavigation">
+        <topicref keyref="XhtmlCommon"/>
+        <topicref keyref="XhtmlDefault"/>
+        <topicref keyref="html5"/>
+        <topicref keyref="XhtmlEclipse"/>
+        <topicref keyref="XhtmlTocjs"/>
+        <topicref keyref="XhtmlCHM"/>
+      </topicref>
+      <topicref keyref="PdfDefault"/>
+    </topicref>
+    <topicref keyref="java-api"/>
+    <topicref keyref="plugin-extension-points">
+      <topicref keyref="all-extension-points"/>
+      <topicref keyref="plugin-extension-points-general"/>
+      <topicref keyref="plugin-extension-points-pre-processing"/>
+      <topicref keyref="plugin-extension-points-xslt-import"/>
+      <topicref keyref="plugin-extension-points-xslt-parameters"/>
+      <topicref keyref="plugin-extension-points-support"/>
+      <topicref keyref="extension-points-by-plugin">
+        <topicref keyref="extension-points-in-org.dita.base"/>
+        <topicref keyref="extension-points-in-org.dita.eclipsehelp"/>
+        <topicref keyref="extension-points-in-org.dita.html5"/>
+        <topicref keyref="extension-points-in-org.dita.htmlhelp"/>
+        <topicref keyref="extension-points-in-org.dita.pdf2"/>
+        <topicref keyref="extension-points-in-org.dita.troff"/>
+        <topicref keyref="extension-points-in-org.dita.xhtml"/>
+      </topicref>
+    </topicref>
+  </topicref>
+  <topicref keyref="dita-and-dita-ot-resources">
+    <topicmeta><navtitle>Resources</navtitle></topicmeta>
+  </topicref>
+  <topichead toc="no">
+    <topicmeta>
+      <navtitle>DEPRECATED TOPICS TO REMOVE OR EXPAND</navtitle>
+    </topicmeta>
+    <topicref keyref="html-customization-plugins"/><!-- Expand this? -->
+    <topicref keyref="html-customization-parameters"/>
+    <topicref keyref="AvailableTransforms"/>
+    <topicref keyref="dev_ref"/>
+    <topicref keyref="getting-started"/>
+    <topicref keyref="user-guide"/>
+    <topicref keyref="web-based-resources"/>
+  </topichead>
+  <!-- 
+  <topicref href="index.dita"/>
+  <topicref href="release-notes/index.dita" navtitle="Release Notes"
+    locktitle="yes"/>
+  <topicref href="parameters/index.dita">
+    <mapref href="parameters/parameters.ditamap"/>
+  </topicref>
+  <topicref href="user-guide/index.dita">
+    <mapref href="user-guide/user-guide.ditamap"/>
+  </topicref>
+  -->
+  <!--<mapref href="user-guide/dita-resources.ditamap"/>-->
+  <topicgroup processing-role="resource-only">
+    <topicref href="resources/conref-task.dita"/>
+    <mapref href="resources/key-definitions.ditamap"/>
+    <mapref href="resources/reltable.ditamap"/>
+    <mapref href="resources/subjectscheme.ditamap" type="subjectScheme"/>
+    <mapref href="resources/common-resources.ditamap"/>
+  </topicgroup>
+</map>

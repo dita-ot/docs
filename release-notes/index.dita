@@ -18,7 +18,10 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2212">An empty sequence is not allowed" XSLT error [DITA OT 2.2.2 and older]
+          <li id="2212">Earlier versions of DITA-OT would fail with XSLT errors when processing invalid table markup.
+            The toolkit is now more lenient when tables contain incorrect <xmlelement>colspec</xmlelement> entries or
+              <xmlatt>cols</xmlatt> attributes and will continue processing, though output may not be generated entirely
+            as expected.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2212" scope="external" format="html">#2212</xref>
           </li>
           <li id="2549">Error: java.lang.IllegalStateException: Duplicate key topic-id-1.dita

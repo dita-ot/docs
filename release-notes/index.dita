@@ -28,7 +28,9 @@
             key references. Processing has been revised to properly handle duplicate topics within key scopes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2549" scope="external" format="html">#2549</xref>
           </li>
-          <li id="2650">Fix incorrect extension-element-prefixes use
+          <li id="2650">Several XSL stylesheets used incorrect <xmlatt>extension-element-prefixes</xmlatt> attributes,
+            which have been replaced with <xmlatt>exclude-result-prefixes</xmlatt> to ensure no unnecessary namespace
+            nodes are copied to the result tree.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2650" scope="external" format="html">#2650</xref>
           </li>
           <li id="2651">Fix build failures from bad simpletable markup

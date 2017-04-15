@@ -24,7 +24,8 @@
             as expected.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2212" scope="external" format="html">#2212</xref>
           </li>
-          <li id="2549">Error: java.lang.IllegalStateException: Duplicate key topic-id-1.dita
+          <li id="2549">DITA-OT 2.4 failed to process maps with multiple references to a single topic file that contains
+            key references. Processing has been revised to properly handle duplicate topics within key scopes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2549" scope="external" format="html">#2549</xref>
           </li>
           <li id="2650">Fix incorrect extension-element-prefixes use

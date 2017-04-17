@@ -18,11 +18,22 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2212">Earlier versions of DITA-OT would fail with XSLT errors when processing invalid table markup.
-            The toolkit is now more lenient when tables contain incorrect <xmlelement>colspec</xmlelement> entries or
-              <xmlatt>cols</xmlatt> attributes and will continue processing, though output may not be generated entirely
-            as expected.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2212" scope="external" format="html">#2212</xref>
+          <li id="2212">
+            <p>Earlier versions of DITA-OT would fail with XSLT errors when processing invalid table markup.</p>
+            <p>The toolkit is now more lenient when handling column settings that do not match the table contents,
+              including:
+              <ul>
+                <li><xmlelement>table</xmlelement> elements that contain incorrect <xmlelement>colspec</xmlelement>
+                  entries</li>
+                <li><xmlelement>tgroup</xmlelement> elements with incorrect <xmlatt>cols</xmlatt> attribute values</li>
+                <li><xmlelement>simpletable</xmlelement> elements with invalid <xmlatt>relcolwidth</xmlatt>
+                  attributes</li>
+                <li><xmlelement>sthead</xmlelement> header rows with the wrong number of cells</li>
+              </ul></p>
+            <p>Processing will now continue in these cases, though output may not be generated entirely as expected.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2212" scope="external" format="html">#2212</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/pull/2651" scope="external" format="html">#2651</xref>
+            </p>
           </li>
           <li id="2549">DITA-OT 2.4 failed to process maps with multiple references to a single topic file that contains
             key references. Processing has been revised to properly handle duplicate topics within key scopes.
@@ -32,9 +43,6 @@
             which have been replaced with <xmlatt>exclude-result-prefixes</xmlatt> to ensure no unnecessary namespace
             nodes are copied to the result tree.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2650" scope="external" format="html">#2650</xref>
-          </li>
-          <li id="2651">Fix build failures from bad simpletable markup
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2651" scope="external" format="html">#2651</xref>
           </li>
           <li>
             <p>The documentation includes minor

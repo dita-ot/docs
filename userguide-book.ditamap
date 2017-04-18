@@ -33,11 +33,6 @@
   <appendix href="license/license.ditamap" format="ditamap"/>
   <backmatter>
     <topicref href="release-notes/index.dita" navtitle="Release Notes" locktitle="yes"/>
-    <topicgroup processing-role="resource-only">
-      <topicref href="resources/conref-task.dita"/>
-      <mapref href="resources/key-definitions.ditamap"/>
-      <mapref href="resources/reltable.ditamap"/>
-      <mapref href="resources/subjectscheme.ditamap" type="subjectScheme"/>
-    </topicgroup>
+    <mapref href="resources/common-resources.ditamap" processing-role="resource-only"/>
   </backmatter>
 </bookmap>

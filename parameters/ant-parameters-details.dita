@@ -97,10 +97,6 @@
                 <varname>file</varname> to set the path to the log. Unless an absolute path is specified, the value will
                 be interpreted relative to the current directory.</note></pd>
           </plentry>
-          <!--<plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.rellinks">
-            <pt/>
-            <pd/>
-          </plentry>-->
           <plentry id="args.tablelink.style">
             <pt>
               <parmname>args.tablelink.style</parmname>
@@ -336,10 +332,6 @@
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.gen.default.meta.desc"/>
             <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter
                 <parmname>genDefMeta</parmname>.</pd>
-          </plentry>
-          <plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.gen.task.lbl">
-            <pt/>
-            <pd/>
           </plentry>
           <plentry id="args.hdf">
             <pt><parmname>args.hdf</parmname></pt>
@@ -626,18 +618,6 @@
             <pd conaction="pushafter">Specifies whether chapter level TOCs are generated. The allowed values are
                 <option>MINITOC</option> and <option>BASIC</option>; the default value is <option>MINITOC</option>.</pd>
           </plentry>-->
-          <plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.fo.userconfig">
-            <pt/>
-            <pd/>
-          </plentry>
-          <plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.gen.task.lbl">
-            <pt/>
-            <pd/>
-          </plentry>
-          <plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.rellinks">
-            <pt/>
-            <pd/>
-          </plentry>
           <plentry id="args.xsl.pdf">
             <pt>
               <parmname>args.xsl.pdf</parmname>

@@ -48,6 +48,15 @@
               <pd conaction="mark" conref="parameters-base.dita#base/args.filter.desc"/>
               <pd conaction="pushafter">Specifies a filter file to be used to include, exclude, or flag content.</pd>
             </plentry>-->
+          <plentry id="args.gen.task.lbl">
+            <pt>
+              <parmname>args.gen.task.lbl</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/args.gen.task.lbl.desc"/>
+            <pd conaction="pushafter">
+              <ph audience="xslt-customizer">Corresponds to the XSLT parameter
+                <parmname>GENERATE-TASK-LABELS</parmname>.</ph></pd>
+          </plentry>
           <plentry id="args.grammar.cache">
             <pt>
               <parmname>args.grammar.cache</parmname>

@@ -12,11 +12,58 @@
         <xref keyref="dita-ot-issues">GitHub issues tracker</xref></ph>.</p>
   </abstract>
 
-  <reference id="v245">
+  <reference id="v246">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="2212">
+            <p>Earlier versions of DITA-OT would fail with XSLT errors when processing invalid table markup.</p>
+            <p>The toolkit is now more lenient when handling column settings that do not match the table contents,
+              including:
+              <ul>
+                <li><xmlelement>table</xmlelement> elements that contain incorrect <xmlelement>colspec</xmlelement>
+                  entries</li>
+                <li><xmlelement>tgroup</xmlelement> elements with incorrect <xmlatt>cols</xmlatt> attribute values</li>
+                <li><xmlelement>simpletable</xmlelement> elements with invalid <xmlatt>relcolwidth</xmlatt>
+                  attributes</li>
+                <li><xmlelement>sthead</xmlelement> header rows with the wrong number of cells</li>
+              </ul></p>
+            <p>Processing will now continue in these cases, though output may not be generated entirely as expected.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2212" scope="external" format="html">#2212</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/pull/2651" scope="external" format="html">#2651</xref>
+            </p>
+          </li>
+          <li id="2549">DITA-OT 2.4 failed to process maps with multiple references to a single topic file that contains
+            key references. Processing has been revised to properly handle duplicate topics within key scopes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2549" scope="external" format="html">#2549</xref>
+          </li>
+          <li id="2650">Several XSL stylesheets used incorrect <xmlatt>extension-element-prefixes</xmlatt> attributes,
+            which have been replaced with <xmlatt>exclude-result-prefixes</xmlatt> to ensure no unnecessary namespace
+            nodes are copied to the result tree.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2650" scope="external" format="html">#2650</xref>
+          </li>
+          <li>
+            <p>The documentation includes minor
+              <xref href="https://github.com/dita-ot/docs/compare/2.4.5...2.4.6" scope="external" format="html">
+                changes</xref> with
+              <xref href="https://github.com/dita-ot/docs/milestone/24?closed=1" scope="external" format="html"
+                >corrections and improvements</xref> to existing topics.</p>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.4.5...2.4.6" scope="external" format="html">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v245">
+    <title>Maintenance Release 2.4.5</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.4.5 includes the following bug fixes.</p>
         <ul>
           <li id="2559">DITA-OT 2.4 reported errors when filtering HTML5 output with a DITAVAL file and failed to
             preserve attributes that were set to <option>passthrough</option> via the <xmlatt>action</xmlatt> attribute.

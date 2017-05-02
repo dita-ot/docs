@@ -198,7 +198,7 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ030I-extra" conaction="pushreplace">All specialized DITA elements
           must define a class attribute to provide ancestry information. This message will only appear if a specialized
-          DITA element did not define a class attribute.</stentry>
+          DITA element did not define a class attribute, or if non-DITA elements are included in a DITA context..</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ031I-extra" conaction="pushreplace">This informational message is
@@ -343,6 +343,23 @@
             or if a <xmlatt>keyref</xmlatt> attribute points to a key that refers back to the referencing element.</p>
           <p>To resolve this issue, change the target of the <xmlatt>keyref</xmlatt> so the key is defined by pointing
             to a resource other than itself.</p>
+        </stentry>
+      </strow>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ070I-extra" conaction="pushreplace">
+          <p>When a <xmlatt>class</xmlatt> attribute does not use the expected syntax, this usually
+            indicates that <xmlatt>class</xmlatt> has been explicitly set on a DITA element. The
+            attribute should be removed from the document so that the expected default value can
+            be automatically used.</p>
+          <p>If this is a non-DITA element, it needs to be placed inside a <xmlelement>foreign</xmlelement>
+            element so that is not validated against DITA rules.</p>
+        </stentry>
+      </strow>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ071E-extra" conaction="pushreplace">
+          <p>Ensure that the DITAVAL file exists. If more than one DITAVAL file is specified, ensure that
+            the paths are separated using the separator character appropriate for your operating system
+            (semicolon <codeph>;</codeph> on Windows, or colon <codeph>:</codeph> on Mac or Linux).</p>
         </stentry>
       </strow>
       <strow>

@@ -198,7 +198,7 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ030I-extra" conaction="pushreplace">All specialized DITA elements
           must define a class attribute to provide ancestry information. This message will only appear if a specialized
-          DITA element did not define a class attribute, or if non-DITA elements are included in a DITA context..</stentry>
+          DITA element did not define a class attribute, or if non-DITA elements are included in a DITA context.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ031I-extra" conaction="pushreplace">This informational message is

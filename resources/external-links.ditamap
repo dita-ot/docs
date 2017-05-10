@@ -281,12 +281,39 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="license-EPL"
+      href="http://www.eclipse.org/legal/epl-v10.html"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Eclipse Public License 1.0</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="license-LGPL"
+      href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>GNU Lesser General Public License 2.1</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="license-ICU"
       href="http://source.icu-project.org/repos/icu/icu/tags/release-57-1/LICENSE"
       scope="external"
       format="html">
       <topicmeta>
         <linktext>ICU License</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="license-MIT"
+      href="https://opensource.org/licenses/mit-license.php"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>MIT License</linktext>
       </topicmeta>
     </keydef>
     <keydef

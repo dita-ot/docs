@@ -95,6 +95,22 @@
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- Logback Classic Module used by OT Java API -->
+  <keydef keys="tool.logback.version">
+    <topicmeta>
+      <keywords>
+        <keyword>1.2.1</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Simple Logging Facade for Java (SLF4J) used by OT Java API -->
+  <keydef keys="tool.SLF4J.version">
+    <topicmeta>
+      <keywords>
+        <keyword>1.7.23</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
   <!-- Xerces: Bundled version-->
   <keydef keys="tool.xerces.version">
     <topicmeta>

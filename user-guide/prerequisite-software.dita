@@ -20,14 +20,14 @@
           </dlentry>
           <dlentry id="antbuild">
             <dt>Apache Ant</dt>
-            <dd>Provides the standard setup and sequencing of processing steps. You can download Ant from <xref
-                keyref="download.ant"/>.</dd>
+            <dd>Provides the standard setup and sequencing of processing steps. DITA-OT includes Ant version <keyword
+                keyref="tool.ant.version"/>. You can download Ant from <xref keyref="download.ant"/>.</dd>
           </dlentry>
           <dlentry>
             <dt>XSLT processor</dt>
-            <dd>Provides the main transformation services. It must be compliant with XSLT 2.0. The DITA-OT is tested
-              with Saxon. You can download Saxon, version <keyword keyref="tool.saxon.version"/> from <xref
-                keyref="download.saxon"/>.</dd>
+            <dd>Provides the main transformation services. It must be compliant with XSLT 2.0. DITA-OT includes Saxon
+              version <keyword keyref="tool.saxon.version"/>. You can download Saxon from <xref keyref="download.saxon"
+              />.</dd>
           </dlentry>
         </dl></p>
     </section>

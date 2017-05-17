@@ -35,5 +35,13 @@
           <codeph>Unsupported major.minor version</codeph> and a list of Java classes, make sure your system meets the
         minimum Java requirements as listed in the <cite>Release Notes</cite> and installation instructions.</p>
     </section>
+    <section id="tools-jar-error">
+      <title>Unable to locate tools.jar</title>
+      <p>If a Java Runtime Environment (JRE) is used when building output via Ant, the <msgph>Unable to locate
+          tools.jar</msgph> error may appear. This message is safe to ignore, since DITA-OT does not rely on any of the
+        functions in this library. If a Java Development Kit (JDK) is also installed, setting the
+          <varname>JAVA_HOME</varname> environment variable to the location of the JDK will prevent this message from
+        appearing.</p>
+    </section>
   </refbody>
 </reference>

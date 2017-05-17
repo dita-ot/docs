@@ -9,9 +9,11 @@
   <conbody>
     <section>
       <title>Software required for core DITA-OT processing</title>
-      <p>The DITA-OT requires the following software applications:<dl>
+      <p>The DITA-OT requires the following software applications:
+        <dl>
           <dlentry>
-            <dt>JRE or JDK, version <keyword keyref="tool.java.version"/> or later</dt>
+            <dt>Java Runtime Environment (JRE) or Java Development Kit (JDK), version <keyword
+                keyref="tool.java.version"/> or later</dt>
             <dd>Provides the basic environment for the DITA-OT. You can download the Oracle JRE or JDK from <xref
                 keyref="download.oracle-jdk"/>. <note>This is the <i>only</i> prerequisite software that you need to
                 install. The remaining required software is included in the distribution package.</note></dd>
@@ -31,7 +33,8 @@
     </section>
     <section>
       <title>Software required for specific transformations</title>
-      <p>Depending on the type of output that you want to generate, you might need the following applications:<dl>
+      <p>Depending on the type of output that you want to generate, you might need the following applications:
+        <dl>
           <dlentry>
             <dt>ICU for Java</dt>
             <dd><draft-comment author="Kristen James Eberlein" time="11 August 2012">Does the DITA-OT only use ICU for

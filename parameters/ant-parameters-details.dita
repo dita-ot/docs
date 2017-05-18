@@ -265,45 +265,52 @@
           <plentry id="args.copycss">
             <pt><parmname>args.copycss</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.copycss.desc"/>
-            <pd conaction="pushafter">If an external process will copy your custom .css file to the output directory,
-              leave this parameter unset (or set it to <option>no</option>). If DITA-OT should copy the file when
-              generating output, set it to <option>yes</option>. </pd>
+            <pd conaction="pushafter">
+              <div id="args.copycss.details">If an external process will copy your custom .css file to the output
+                directory, leave this parameter unset (or set it to <option>no</option>). If DITA-OT should copy the
+                file when generating output, set it to <option>yes</option>.</div></pd>
           </plentry>
           <plentry id="args.css">
             <pt><parmname>args.css</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.css.desc"/>
-            <pd conaction="pushafter">The value of this parameter should be only the file name (or an absolute path to
-              the file). A relative path can be specified with <parmname>args.cssroot</parmname>.</pd>
+            <pd conaction="pushafter">
+              <div id="args.css.details">The value of this parameter should be only the file name (or an absolute path
+                to the file). A relative path can be specified with <parmname>args.cssroot</parmname>.</div></pd>
           </plentry>
           <plentry id="args.csspath">
             <pt>
               <parmname>args.csspath</parmname>
             </pt>
-            <pd conaction="pushreplace" conref="parameters-base-html.dita#base-html/args.csspath.desc">Specifies the
-                <b>destination</b> directory to which .css files are copied (relative to the output directory).</pd>
+            <pd conaction="pushreplace" conref="parameters-base-html.dita#base-html/args.csspath.desc">
+              <div id="args.csspath.desc">Specifies the <b>destination</b> directory to which .css files are copied
+                (relative to the output directory).</div></pd>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.csspath.desc"/>
             <pd conaction="pushafter">
-              <p audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>CSSPATH</parmname>.</p>
-              <p>DITA-OT will copy the file <b>to</b> this location.</p>
-              <note type="tip">If <parmname>args.csspath</parmname> is not set, the custom CSS file (and the default CSS
-                files) will be copied to the root level of the output folder. To copy CSS files to an output subfolder
-                named <filepath>css</filepath>, set <parmname>args.csspath</parmname> to <option>css</option>.</note>
+              <div id="args.csspath.details">
+                <p audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>CSSPATH</parmname>.</p>
+                <p>DITA-OT will copy the file <b>to</b> this location.</p>
+                <note type="tip">If <parmname>args.csspath</parmname> is not set, the custom CSS file (and the default
+                  CSS files) will be copied to the root level of the output folder. To copy CSS files to an output
+                  subfolder named <filepath>css</filepath>, set <parmname>args.csspath</parmname> to
+                    <option>css</option>.</note></div>
             </pd>
           </plentry>
           <plentry id="args.cssroot">
             <pt>
               <parmname>args.cssroot</parmname>
             </pt>
-            <pd conaction="pushreplace" conref="parameters-base-html.dita#base-html/args.cssroot.desc">Specifies the
-                <b>source</b> directory that contains the custom .css file.</pd>
+            <pd conaction="pushreplace" conref="parameters-base-html.dita#base-html/args.cssroot.desc">
+              <div id="args.cssroot.desc">Specifies the <b>source</b> directory that contains the custom .css
+                file.</div></pd>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.cssroot.desc"/>
             <pd conaction="pushafter">
-              <p>DITA-OT will copy the file <b>from</b> this location.</p>
-              <note type="tip">The value you enter here will be interpreted relative to the location of the input map
-                file. If your map is stored at the root level of your project folder and the CSS file is stored in a
-                subfolder named <filepath>resources</filepath>, set <parmname>args.cssroot</parmname> to
-                  <option>resources</option>.</note>
-            </pd>
+              <div id="args.cssroot.details">
+                <p>DITA-OT will copy the file <b>from</b> this location.</p>
+                <note type="tip">The value you enter here will be interpreted relative to the location of the input map
+                  file. If your map is stored at the root level of your project folder and the CSS file is stored in a
+                  subfolder named <filepath>resources</filepath>, set <parmname>args.cssroot</parmname> to
+                    <option>resources</option>.</note>
+              </div></pd>
           </plentry>
           <plentry id="args.dita.locale">
             <pt>
@@ -320,29 +327,33 @@
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.ftr.desc"/>
             <pd conaction="pushafter">
-              <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>FTR</parmname>.</ph>
-              <note>The footer file should be specified using an absolute path and must contain valid XML. A common
-                practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
-            </pd>
+              <div id="args.ftr.details">
+                <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>FTR</parmname>.</ph>
+                <note>The footer file should be specified using an absolute path and must contain valid XML. A common
+                  practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
+              </div></pd>
           </plentry>
           <plentry id="args.gen.default.meta">
             <pt>
               <parmname>args.gen.default.meta</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.gen.default.meta.desc"/>
-            <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter
-                <parmname>genDefMeta</parmname>.</pd>
+            <pd conaction="pushafter" audience="xslt-customizer">
+              <div id="args.gen.default.meta.details">Corresponds to the XSLT parameter <parmname>genDefMeta</parmname>.
+              </div>
+            </pd>
           </plentry>
           <plentry id="args.hdf">
             <pt><parmname>args.hdf</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.hdf.desc"/>
             <pd conaction="pushafter">
-              <p>The contents of the header file will be inserted in the <xmlelement>head</xmlelement> element of the
-                generated HTML files.</p>
-              <note type="tip">The header file should be specified using an absolute path and must contain valid XML. If
-                you need to insert more than one element into the HTML page head, wrap the content in a
-                  <xmlelement>div</xmlelement> element. The division wrapper in the header file will be discarded when
-                generating HTML files, and the contents will be inserted into each page head.</note></pd>
+              <div id="args.hdf.details">
+                <p>The contents of the header file will be inserted in the <xmlelement>head</xmlelement> element of the
+                  generated HTML files.</p>
+                <note type="tip">The header file should be specified using an absolute path and must contain valid XML.
+                  If you need to insert more than one element into the HTML page head, wrap the content in a
+                    <xmlelement>div</xmlelement> element. The division wrapper in the header file will be discarded when
+                  generating HTML files, and the contents will be inserted into each page head.</note></div></pd>
           </plentry>
           <plentry id="args.hdr">
             <pt>
@@ -350,10 +361,11 @@
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.hdr.desc"/>
             <pd conaction="pushafter">
-              <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>HDR</parmname>.</ph>
-              <note>The header file should be specified using an absolute path and must contain valid XML. A common
-                practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
-            </pd>
+              <div id="args.hdr.details">
+                <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>HDR</parmname>.</ph>
+                <note>The header file should be specified using an absolute path and must contain valid XML. A common
+                  practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
+              </div></pd>
           </plentry>
           <plentry id="args.hide.parent.link" importance="deprecated">
             <pt>
@@ -361,10 +373,11 @@
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.hide.parent.link.desc"/>
             <pd conaction="pushafter">
-              <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>NOPARENTLINK</parmname>.</ph>
-              <note type="notice">This parameter is deprecated in favor of the <parmname>args.rellinks</parmname>
-                parameter.</note>
-            </pd>
+              <div id="args.hide.parent.link.details">
+                <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>NOPARENTLINK</parmname>.</ph>
+                <note type="notice">This parameter is deprecated in favor of the <parmname>args.rellinks</parmname>
+                  parameter.</note>
+              </div></pd>
           </plentry>
           <!--<plentry id="args.indexshow">
             <pt><parmname>args.indexshow</parmname></pt>
@@ -379,8 +392,9 @@
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.outext.desc"/>
             <pd conaction="pushafter">
-              <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>OUTEXT</parmname>.</ph>
-            </pd>
+              <div id="args.outext.details">
+                <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>OUTEXT</parmname>.</ph>
+              </div></pd>
           </plentry>
           <plentry id="args.xhtml.classattr">
             <pt>
@@ -390,7 +404,7 @@
             <pd conaction="pushafter">For example, the <xmlelement>prereq</xmlelement> element (which is specialized
               from <xmlelement>section</xmlelement>) would generate <codeph>class="section prereq"</codeph>. <ph
                 audience="xslt-customizer">Corresponds to the XSLT parameter
-                <parmname>PRESERVE-DITA-CLASS</parmname>.</ph><note>Beginning with DITA OT release 1.5.2, the default
+                <parmname>PRESERVE-DITA-CLASS</parmname>.</ph><note>Beginning with DITA-OT release 1.5.2, the default
                 value is <option>yes</option>. For release 1.5 and 1.5.1, the default value was <option>no</option>.
               </note></pd>
           </plentry>
@@ -399,7 +413,8 @@
               <parmname>args.xsl</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.xsl.desc"/>
-            <pd conaction="pushafter">The parameter must specify a fully qualified file name.</pd>
+            <pd conaction="pushafter">
+              <div id="args.xsl.details">The parameter must specify a fully qualified file name.</div></pd>
           </plentry>
         </parml>
       </section>
@@ -714,7 +729,97 @@
     <refbody>
       <!-- args.html5.contenttarget is listed in generated topic, but does not appear in default HTML5 output files. -->
       <section>
+        <!-- Re-use extended base-html parameter descriptions for #132 -->
         <parml>
+          <plentry id="args.copycss">
+            <pt><parmname>args.copycss</parmname></pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.copycss.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.copycss.details"/></pd>
+          </plentry>
+          <plentry id="args.css">
+            <pt><parmname>args.css</parmname></pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.css.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.css.details"/></pd>
+          </plentry>
+          <plentry id="args.csspath">
+            <pt>
+              <parmname>args.csspath</parmname>
+            </pt>
+            <pd conaction="pushreplace" conref="parameters-html5.dita#html5/args.csspath.desc">
+              <div conref="./ant-parameters-details.dita#base-html/args.csspath.desc"/></pd>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.csspath.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.csspath.details"/>
+            </pd>
+          </plentry>
+          <plentry id="args.cssroot">
+            <pt>
+              <parmname>args.cssroot</parmname>
+            </pt>
+            <pd conaction="pushreplace" conref="parameters-html5.dita#html5/args.cssroot.desc">
+              <div conref="./ant-parameters-details.dita#base-html/args.cssroot.desc"/></pd>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.cssroot.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.cssroot.details"/></pd>
+          </plentry>
+          <plentry id="args.ftr">
+            <pt>
+              <parmname>args.ftr</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.ftr.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.ftr.details"/></pd>
+          </plentry>
+          <plentry id="args.gen.default.meta">
+            <pt>
+              <parmname>args.gen.default.meta</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.gen.default.meta.desc"/>
+            <pd conaction="pushafter" audience="xslt-customizer">
+              <div conref="./ant-parameters-details.dita#base-html/args.gen.default.meta.details"/>
+            </pd>
+          </plentry>
+          <plentry id="args.hdf">
+            <pt><parmname>args.hdf</parmname></pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.hdf.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.hdf.details"/></pd>
+          </plentry>
+          <plentry id="args.hdr">
+            <pt>
+              <parmname>args.hdr</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.hdr.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.hdr.details"/></pd>
+          </plentry>
+          <plentry id="args.hide.parent.link" importance="deprecated">
+            <pt>
+              <parmname>args.hide.parent.link</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.hide.parent.link.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.hide.parent.link.details"/></pd>
+          </plentry>
+          <plentry id="args.outext">
+            <pt>
+              <parmname>args.outext</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.outext.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.outext.details"/></pd>
+          </plentry>
+          <plentry id="args.xsl">
+            <pt>
+              <parmname>args.xsl</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.xsl.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.xsl.details"/></pd>
+          </plentry>
+          <!-- End shared base-html parameter descriptions -->
           <plentry id="nav-toc">
             <pt><parmname>nav-toc</parmname></pt>
             <pd conaction="pushreplace" conref="parameters-html5.dita#html5/nav-toc.desc">

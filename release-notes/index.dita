@@ -143,6 +143,11 @@
           <li id="1210">Loosing chunk attribute when map references a map
             <xref href="https://github.com/dita-ot/dita-ot/issues/1210" scope="external" format="html">#1210</xref>
           </li>
+          <li id="1734">Too many files generated in XHTML output folder when using conref situation
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1734" scope="external" format="html">#1734</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2077" scope="external" format="html">#2077</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2694" scope="external" format="html">#2694</xref>
+          </li>
           <li id="1848">PDF: fo:flow empty because only topigroup as first child of opentopic:map
             <xref href="https://github.com/dita-ot/dita-ot/issues/1848" scope="external" format="html">#1848</xref>
           </li>
@@ -216,17 +221,12 @@
           <li id="2691">Unresolved keyrefs to nested topics and elements
             <xref href="https://github.com/dita-ot/dita-ot/issues/2691" scope="external" format="html">#2691</xref>
           </li>
-          <li id="2694">Stop generating extra linked or conref'ed files #2077
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2694" scope="external" format="html">#2694</xref>
-          </li>
           <li id="2695">PDF ToC adds “Chapter :” prefix to "appendices" navtitle
             <xref href="https://github.com/dita-ot/dita-ot/issues/2695" scope="external" format="html">#2695</xref>
           </li>
           <li id="2698">Preserve atts from <xmlelement>dita</xmlelement> when merging topics #1298
             <xref href="https://github.com/dita-ot/dita-ot/pull/2698" scope="external" format="html">#2698</xref>
           </li>
-          
-
         </ul>
       </section>
 
@@ -234,15 +234,19 @@
         <title>Contributors</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
           <xref keyref="contributions"/> by the following people:</p>
-        <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 2.3..` -->
+        <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 2.4..` -->
         <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
         <ol>
           <li>Jarno Elovirta</li>
           <li>Robert D. Anderson</li>
-          <li>Eliot Kimber</li>
-          <li>Eero Helenius</li>
+          <li>Alexey Mironov</li>
           <li>Roger Sheen</li>
-          <li>Radu Coravu</li>
+          <li>Shane Taylor</li>
+          <li>Bob Thomas</li>
+          <li>Vitaliy Danylyuk</li>
+          <li>Lionel Moizeau </li>
+          <li>Eliot Kimber</li>
+          <li>Holger Voormann</li>
         </ol>
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/2.4...2.5" scope="external" format="html">
@@ -267,7 +271,14 @@
         <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>
         <ol>
           <li>Roger Sheen</li>
+          <li>Robert D. Anderson</li>
           <li>Jarno Elovirta</li>
+          <li>Shane Taylor</li>
+          <li>Ed Porter</li>
+          <li>Eero Helenius</li>
+          <li>Lionel Moizeau</li>
+          <li>George Bina</li>
+          <li>Rene Mjartan</li>
         </ol>
         <p>For the complete list of documentation changes since the previous release, see the
           <xref href="https://github.com/dita-ot/docs/compare/2.4...2.5" scope="external" format="html">

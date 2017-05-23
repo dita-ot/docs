@@ -28,8 +28,8 @@
         including the following:</p>
       <p>
         <ul>
-          <li>Task topics with a single step are now rendered as simple blocks (rather than as lists without
-            labels).</li>
+          <li>In task topics with only a single step, the step is now rendered as a simple block (rather than as a list
+            item without a label).</li>
           <li>Table containers now inherit the initial indentation (<codeph>start-indent</codeph>) from the parent
             elements.</li>
           <li>Indentation has been removed from <xmlelement>example</xmlelement> elements.</li>

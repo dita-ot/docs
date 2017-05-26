@@ -32,15 +32,16 @@
             item without a label).</li>
           <li>Table containers now inherit the initial indentation (<codeph>start-indent</codeph>) from the parent
             elements.</li>
-          <li>Indentation has been removed from <xmlelement>example</xmlelement> elements.</li>
+          <li>Borders and indentation have been removed from <xmlelement>example</xmlelement> elements.</li>
           <li>Links are no longer italicized.</li>
-          <li>Titles for related link lists have been standardized to use bold font weight.</li>
+          <li>Titles for related link lists have been standardized to use the <codeph>common.title</codeph> attribute
+            set (which applies the <codeph>sans-serif</codeph> font-family) and bold font weight.</li>
           <li>Several remaining occurrences of left/right borders, margins, padding, and text alignment now use the
             corresponding start/end equivalents to better support right-to-left languages.</li>
         </ul>
       </p>
-      <p>Users that rely on these settings for their own customizations may install the
-          <codeph>org.dita.pdf2.legacy</codeph> plug-in to restore the pre–2.5 styles if necessary.</p>
+      <p>If your customizations rely on these settings, you can install the <codeph>org.dita.pdf2.legacy</codeph>
+        plug-in to restore the pre–2.5 styles.</p>
       <table frame="none" rowsep="1" colsep="0">
         <tgroup cols="2">
           <colspec colname="c1" colnum="1" colwidth="1.0*"/>
@@ -62,8 +63,11 @@
       </table>
       <note type="tip">Run <cmdname>dita</cmdname>
         <parmname>--install</parmname>
-        <filepath>https://github.com/dita-ot/org.dita.pdf2.legacy/archive/develop.zip</filepath> to install the plug-in
-        and restore the pre–2.5 styles.</note>
+        <filepath>https://github.com/dita-ot/org.dita.pdf2.legacy/archive/2.5.zip</filepath> to install the plug-in and
+        restore the pre–2.5 styles.</note>
+      <note type="attention">You should only install the legacy PDF plug-in if you have a custom PDF plug-in that
+        explicitly depends on the previous default settings for the aforementioned styles. If your plug-in was designed
+        for DITA-OT 2.4 and does not override these settings, there is no need to install the legacy PDF plug-in.</note>
     </section>
 
   </refbody>

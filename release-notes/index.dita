@@ -81,11 +81,13 @@
         </p>
       </section>
 
-      <section id="2519" conref="../dev_ref/migrating-to-2.5.dita#migrating-to-2.5/25-legacy-pdf-plugin"/>
+      <section id="2519" conref="../dev_ref/migrating-to-2.5.dita#migrating-to-2.5/25-pdf-changes"/>
       <section>
-        <p>
-          <xref href="https://github.com/dita-ot/dita-ot/pull/2519" scope="external" format="html">#2519</xref></p>
+        <p>A separate <codeph>org.dita.pdf2.legacy</codeph> plug-in can be used to restore the original settings. See
+          <xref keyref="migrating-to-2-5"/>,
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2519" scope="external" format="html">#2519</xref>.</p>
       </section>
+
     </refbody>
   </reference>
 

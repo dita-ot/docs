@@ -37,9 +37,13 @@
       </section>
 
       <section id="2604">
-        <title>Java API</title>
-        <p>
+        <title>Java Application Programming Interface</title>
+        <p>DITA-OT 2.5 includes a new
+          <xref keyref="java-api"/> to allow developers to embed DITA-OT more easily into other Java programs.
           <xref href="https://github.com/dita-ot/dita-ot/issues/2604" scope="external" format="html">#2604</xref></p>
+        <note type="tip">See the <cite>DITA-OT Java API documentation</cite> in the <filepath>doc/api/</filepath> folder
+          of the DITA-OT distribution package for information on the packages, classes, interfaces and methods provided
+          by the Java API.</note>
       </section>
 
       <section id="2637">
@@ -319,11 +323,13 @@ href="https://github.com/dita-ot/dita-ot/issues/1298" format="html" scope="exter
 
       <section id="docs">
         <title>Documentation updates</title>
-        <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> includes corrections and
-          improvements to existing topics, along with new content.</p>
+        <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
+          improvements to existing topics, along with new information:</p>
         <ul>
-          <li>A new topic provides information on
-            <xref keyref="migrating-to-2-5">Migrating to release 2.5</xref>.</li>
+          <li>
+            <xref keyref="java-api">New Java API</xref></li>
+          <li>
+            <xref keyref="migrating-to-2-5">Migrating to release 2.5</xref></li>
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"/>, see the

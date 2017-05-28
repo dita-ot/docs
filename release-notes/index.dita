@@ -27,8 +27,8 @@
   <reference id="highlights">
     <title>Release Highlights</title>
     <shortdesc>DITA-OT <keyword keyref="release"/> includes <ph id="summary">a basic Java API, an experimental map-first
-        preprocessing option, support for multiple DITAVAL files, and more consistent styling for default PDF
-        output</ph>.</shortdesc>
+        preprocessing option, better support for DITA composite documents, publishing with multiple DITAVAL files, and
+        more consistent styling for default PDF output</ph>.</shortdesc>
     <refbody>
 
       <section id="2604">
@@ -47,6 +47,22 @@
           <xref href="https://github.com/dita-ot/dita-ot/pull/2497" scope="external" format="html">#2497</xref></p>
       </section>
 
+      <section id="1077">
+        <title>Improved PDF support for DITA composite documents</title>
+        <p>When publishing PDF output from a DITA composite document (a DITA document with a root
+            <xmlelement>dita</xmlelement> element), earlier versions of DITA-OT included only the first topic, and links
+          to topics within <xmlelement>dita</xmlelement> elements were broken. The PDF output now includes the full
+          content of the referenced document, and links to any element within the document are correct.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1077" scope="external" format="html">#1077</xref>
+        </p>
+        <p id="2698">Attributes from the <xmlelement>dita</xmlelement> element are now preserved when merging topics. In
+          previous releases, attributes like <xmlatt>xml:lang</xmlatt> set on the <xmlelement>dita</xmlelement> element
+          were lost during the PDF "topic merge" process.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1298" format="html" scope="external">#1298</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2698" scope="external" format="html">#2698</xref>
+        </p>
+      </section>
+
       <section id="2637">
         <title>Publishing with multiple DITAVAL filter files</title>
         <p>The <codeph>args.filter</codeph> parameter, which previously allowed you to specify a single DITAVAL file for
@@ -58,6 +74,11 @@
         <p>This feature allows you to manage your conditions independently or combine conditions from multiple sources.
           For example, you can now manage your filter conditions (that might change rarely) separately from revisions,
           or easily combine flagging conditions from different products when those products are published together.</p>
+        <p id="2681"> DITAVAL properties are now more flexible so that plug-ins can provide a common set of DITAVAL
+          conditions and override the <parmname>args.filter</parmname> parameter. Initialization code has been cleaned
+          up so that it does not set unnecessary properties.
+          <xref href="https://github.com/dita-ot/dita-ot/pull/2681" format="html" scope="external">#2681</xref>
+        </p>
       </section>
 
       <section id="2519" conref="../dev_ref/migrating-to-2.5.dita#migrating-to-2.5/25-legacy-pdf-plugin"/>
@@ -86,20 +107,20 @@
           <li id="1431">reltable: non-working related links generated to topics not in output
             <xref href="https://github.com/dita-ot/dita-ot/issues/1431" scope="external" format="html">#1431</xref>
           </li>
-          <li id="1964">Update the Ant <codeph>copy-html</codeph> target to work like <codeph>copy-image</codeph>, with
-            parameter for destination directory. This allows more flexibility for extended transform types that use
-            these targets.
+          <li id="1964">The <codeph>copy-html</codeph> step in the pre-processing stage has been updated to work like
+              <codeph>copy-image</codeph>, with a parameter for the destination directory. This allows more flexibility
+            for extended transformation types that use these targets.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1964" scope="external" format="html">#1964</xref>
           </li>
-          <li id="2569">Support is added for processing DITA elements nested within <xmlelement>foreign</xmlelement> and
+          <li id="2569">DITA-OT now processes DITA elements nested within <xmlelement>foreign</xmlelement> and
               <xmlelement>unknown</xmlelement> elements. Previously these elements were ignored and treated as part of
             the <xmlelement>foreign</xmlelement> or <xmlelement>unknown</xmlelement> content, so that (for example)
               <xmlatt>conref</xmlatt> targets were not retrieved and links were not properly handled.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2569" scope="external" format="html">#2569</xref>
           </li>
-          <li id="2684">Support creating Eclipse Help output as JAR file. When the property
-              <codeph>args.eclipsehelp.jar.name</codeph> is specified for an Eclipse build, the generated content will
-            all be zipped in a JAR file with the name taken from that property.
+          <li id="2684">Eclipse Help output can now be created as a JAR file. When the
+              <codeph>args.eclipsehelp.jar.name</codeph> property is specified for an Eclipse build, the generated
+            content will all be zipped in a JAR file with the name taken from that property.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2684" scope="external" format="html">#2684</xref>
           </li>
           <li id="2707">Add a processing instruction to topics in the temporary directory that includes a relative path
@@ -116,19 +137,27 @@
           <li id="1238">Doesn't work with SAXON 9 HE (9.4.0.3)
             <xref href="https://github.com/dita-ot/dita-ot/issues/1238" scope="external" format="html">#1238</xref>
           </li>
-          <li id="2293">Enable product name overrides in PDF customizations
+          <li id="2293">Product name processing has been revised to better support overrides in PDF customizations. The
+            existing <codeph>text-only</codeph> mode is now used to enable customizations to support elements that add
+            text (such as trademark symbols).
             <xref href="https://github.com/dita-ot/dita-ot/issues/2293" format="html" scope="external">#2293</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2693" format="html" scope="external">#2693</xref></li>
-          <li id="2419">Earlier versions of PDF2 generated empty and unnecessary <xmlelement>fo:inline</xmlelement>
-            elements for some elements; those empty elements have been removed.
+          <li id="2419">Earlier versions of DITA-OT created empty and unnecessary <xmlelement>fo:inline</xmlelement>
+            elements for some elements when generating PDF output; those empty elements have been removed.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2419" scope="external" format="html">#2419</xref>
           </li>
-          <li id="2446">Add wrapper to <xmlelement>menucascade</xmlelement> for improved HTML5 and XHTML accessibility;
-            adds accessible text to the <codeph>></codeph> character that appears between menu items
+          <li id="2446">An <xmlelement>abbr</xmlelement> abbreviation wrapper has been added to
+              <xmlelement>menucascade</xmlelement> output for improved HTML5 and XHTML accessibility. This allows screen
+            readers to detect and read the right angle bracket <codeph>></codeph> submenu separator that appears between
+            menu items as accessible text. In English, for example, this will be read as “and then”.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2446" format="html" scope="external">#2446</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2516" format="html" scope="external">#2516</xref></li>
-          <li id="2519">Clean PDF2 styling and move legacy styling plugin
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2519" scope="external" format="html">#2519</xref>
+          <li id="2459">PDF output did not properly evaluate DITAVAL flagging conditions for
+              <xmlelement>step</xmlelement> and <xmlelement>choice</xmlelement> elements within tasks, or for root topic
+            elements. In addition, topics in sub-directories did not render image flags properly for any elements. These
+            issues are all resolved.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2459" format="html" scope="external">#2459</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2674" scope="external" format="html">#2674</xref>
           </li>
           <li id="2552">Output error messages in red colour in Terminal
             <xref href="https://github.com/dita-ot/dita-ot/pull/2552" scope="external" format="html">#2552</xref>
@@ -154,20 +183,11 @@
           <li id="2672">Let's keep the map valid after the branch filtering
             <xref href="https://github.com/dita-ot/dita-ot/pull/2672" scope="external" format="html">#2672</xref>
           </li>
-          <li id="2674">PDF output did not properly evaluate DITAVAL flagging conditions for
-              <xmlelement>step</xmlelement> and <xmlelement>choice</xmlelement> elements within tasks, or for root topic
-            elements. In addition, topics in sub-directories did not render image flags properly for any elements. These
-            issues are all resolved.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2459" format="html" scope="external">#2459</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2674" scope="external" format="html">#2674</xref>
-          </li>
           <li id="2677">Update Ant to 1.10
             <xref href="https://github.com/dita-ot/dita-ot/issues/2677" scope="external" format="html">#2677</xref></li>
-          <li id="2681">Make DITAVAL properties more flexible so that plugins can provide a common set of DITAVAL
-            conditions. This also cleans up initialization code so that it does not set unnecessary properties.
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2681" format="html" scope="external">#2681</xref></li>
-          <li id="2703">Combine string variables for quotation marks; previous versions had one set of variables for PDF
-            and another for other transform types
+          <li id="2703">A common set of string variables is now used for the localized quotation marks that are used to
+            wrap quotations in <xmlelement>q</xmlelement> elements; previous versions had one set of variables for PDF
+            and another for other transformation types.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2703" format="html" scope="external">#2703</xref>
           </li>
         </ul>
@@ -177,36 +197,48 @@
         <title>Bugs</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <ul>
-          <li id="1077">Earlier versions of DITA-OT PDF output would not include most content from a DITA composite
-            document (a DITA document with a root <xmlelement>dita</xmlelement> element), and links to topics within
-              <xmlelement>dita</xmlelement> were broken. The PDF output now includes the full content of the referenced
-            document, and links to any element within the document are correct.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1077" scope="external" format="html">#1077</xref>
-          </li>
           <li id="1210">In previous releases, when a child map specified the <xmlatt>chunk</xmlatt> attribute on the
               <xmlelement>map</xmlelement> element, the resulting generated map in the temp directory no longer had the
               <xmlatt>chunk</xmlatt> attribute. The attribute is now preserved.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1210" scope="external" format="html">#1210</xref>
           </li>
-          <li id="1734">Extra files generated in output file for resource-only topics. In earlier releases,
-            resource-only topics would generate HTML5 and XHTML topics when they were used as the target of a content
-            reference; topics referenced from resource-only topics also generated output even when the parameter
-              <codeph>onlytopic.in.map</codeph> was set to override this behavior.
+          <li id="1734">In earlier releases, resource-only topics would generate HTML5 and XHTML topics when they were
+            used as the target of a content reference; topics referenced from resource-only topics also generated output
+            even when the parameter <parmname>onlytopic.in.map</parmname> was set to override this behavior. Processing
+            has been modified to ensure these extra files are no longer generated.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1734" scope="external" format="html">#1734</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2077" scope="external" format="html">#2077</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2694" scope="external" format="html">#2694</xref>
           </li>
-          <li id="1848">PDF: fo:flow empty because only topigroup as first child of opentopic:map
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1848" scope="external" format="html">#1848</xref>
+          <li id="1848">In previous releases, root level containers in a bookmap were dropped from PDF if they did not
+            have a title or reference a topic. This occurred with <xmlelement>preface</xmlelement>,
+              <xmlelement>chapter</xmlelement>, <xmlelement>appendices</xmlelement>, <xmlelement>appendix</xmlelement>,
+            and any grouping element in the front or back matter. In addition, PDF builds would fail if a grouping
+            element without title or <xmlatt>href</xmlatt> was the only child of a map. These are all fixed by letting
+            processing fall through to topics within the group.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1848" format="html" scope="external">#1848</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2092" format="html" scope="external">#2092</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2614" format="html" scope="external">#2614</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2648" format="html" scope="external">#2648</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2683" scope="external" format="html">#2683</xref>
           </li>
-          <li id="2459">PDF flagging problems
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2459" scope="external" format="html">#2459</xref>
-          </li>
+          <li id="2443">Links directly to nested topics in HTML5 were broken; HTML5 output now generates the correct
+            links.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2443" format="html" scope="external">#2443</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2685" format="html" scope="external">#2685</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2686" scope="external" format="html">#2686</xref></li>
           <li id="2491">copy-to fails to update CSS paths
             <xref href="https://github.com/dita-ot/dita-ot/issues/2491" scope="external" format="html">#2491</xref>
           </li>
           <li id="2541">Support duplicate key scopes
             <xref href="https://github.com/dita-ot/dita-ot/issues/2541" scope="external" format="html">#2541</xref>
+          </li>
+          <li id="2550">In earlier releases, when maps referenced content outside of the map directory and
+              <parmname>generate.copy.outer</parmname>=<option>1</option> was used, HTML5 or XHTML output would copy
+            images to the wrong location outside of the output directory. The images are now copied to the proper
+            location.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2550" scope="external" format="html">#2550</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2682" scope="external" format="html">#2682</xref>
           </li>
           <li id="2568">XHTML: Image path become invalid
             <xref href="https://github.com/dita-ot/dita-ot/issues/2568" scope="external" format="html">#2568</xref>
@@ -233,33 +265,8 @@
           <li id="2678">Fix chunking a document loses @xml:lang from root topic #2022
             <xref href="https://github.com/dita-ot/dita-ot/pull/2678" scope="external" format="html">#2678</xref>
           </li>
-          <li id="2682">In earlier releases, when maps reference content outside of the map directory and
-              <codeph>generate.copy.outer=1</codeph> is used, HTML5 or XHTML output would copy images to the wrong
-            location outside of the output directory. The images are now copied to the proper location.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2550" scope="external" format="html">#2550</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2682" scope="external" format="html">#2682</xref>
-          </li>
-          <li id="2683">In previous releases, root level containers in a bookmap were dropped from PDF if they did not
-            have a title or reference a topic. This occurred when <xmlelement>preface</xmlelement>,
-              <xmlelement>chapter</xmlelement>, <xmlelement>appendices</xmlelement>, <xmlelement>appendix</xmlelement>,
-            and any grouping elmeent in the front or back matter. In addition, PDF builds fail if a grouping element
-            without title or <xmlatt>href</xmlatt> is the only child of a map. These are all fixed by letting processing
-            fall through to topics within the group.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1848" format="html" scope="external">#1814</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2092" format="html" scope="external">#2092</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2648" format="html" scope="external">#2648</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2614" format="html" scope="external">#2614</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2683" scope="external" format="html">#2683</xref>
-          </li>
-          <li id="2686">Links directly to nested topics in HTML5 were broken; HTML5 output now generates the correct
-            links.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2443" format="html" scope="external">#2443</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2685" format="html" scope="external">#2685</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2686" scope="external" format="html">#2686</xref></li>
           <li id="2688">HTML5 tables: missing table classes when args.html5.classattr=no
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2688" scope="external" format="html">#2688</xref>
-          </li>
-          <li id="2689">HTML5 tables: missing table classes when args.html5.classattr=no #2688
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2688" scope="external" format="html">#2688</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2689" scope="external" format="html">#2689</xref>
           </li>
           <li id="2690">When a DITA topic that is used in the map is referenced using <xmlelement>coderef</xmlelement>,
@@ -270,15 +277,9 @@
           <li id="2691">Unresolved keyrefs to nested topics and elements
             <xref href="https://github.com/dita-ot/dita-ot/issues/2691" scope="external" format="html">#2691</xref>
           </li>
-          <li id="2695">In PDF, the table of contents included a generated “Chapter :” prefix in front of the navigation
-            title for the <xmlelement>appendices</xmlelement> element
+          <li id="2695">In PDF output from previous releases, the table of contents included a generated “Chapter :”
+            prefix in front of the navigation title for the <xmlelement>appendices</xmlelement> element.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2695" scope="external" format="html">#2695</xref>
-          </li>
-          <li id="2698">Preserve attributes from <xmlelement>dita</xmlelement> when merging topics. In previous
-            releases, attributes like <xmlatt>xml:lang</xmlatt> set on the <xmlelement>dita</xmlelement> element were
-            lost during the PDF "topic merge" process.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1298" format="html" scope="external">#1298</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2698" scope="external" format="html">#2698</xref>
           </li>
         </ul>
       </section>

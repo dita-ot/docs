@@ -133,10 +133,14 @@
       scope="external"
       format="html"/>
     <keydef
-      keys="download.dita-ot.current-release"
+      keys="download.dita-ot"
       href="http://www.dita-ot.org/download"
       scope="external"
-      format="html"/>
+      format="html">
+      <topicmeta>
+        <linktext>dita-ot.org/download</linktext>
+      </topicmeta>
+    </keydef>
     <keydef
       keys="download.fop"
       href="http://xmlgraphics.apache.org/fop/download.html"

@@ -22,8 +22,7 @@
     </prereq>
     <steps>
       <step>
-        <cmd>Download the <filepath>dita-ot-<keyword keyref="maintenance-version"/>.zip</filepath> package from the
-          project website at <xref keyref="download.dita-ot.current-release">www.dita-ot.org</xref>.</cmd>
+        <cmd><ph conref="../resources/conref-task.dita#ID/download-ot"/></cmd>
       </step>
       <step>
         <cmd>Extract the contents of the package to the directory where you want to install the DITA-OT.</cmd>

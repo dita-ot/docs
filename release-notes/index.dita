@@ -43,7 +43,11 @@
 
       <section id="2497">
         <title>Map-first preprocessing</title>
-        <p>
+        <p><ph conref="../dev_ref/map-first-preprocessing.dita#ID/map-first-preproc-desc"/></p>
+        <p conref="../dev_ref/map-first-preprocessing.dita#ID/map-first-preproc-gain"/>
+        <note conref="../dev_ref/map-first-preprocessing.dita#ID/map-first-preproc-note"/>
+        <p>See
+          <xref keyref="map-first-preproc"/>,
           <xref href="https://github.com/dita-ot/dita-ot/pull/2497" scope="external" format="html">#2497</xref></p>
       </section>
 
@@ -84,7 +88,7 @@
       <section id="2519" conref="../dev_ref/migrating-to-2.5.dita#migrating-to-2.5/25-pdf-changes"/>
       <section>
         <p>A separate <codeph>org.dita.pdf2.legacy</codeph> plug-in can be used to restore the original settings. See
-          <xref keyref="migrating-to-2-5"/>,
+          <xref keyref="migrating-to-2-5">Migrating to release 2.5</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/pull/2519" scope="external" format="html">#2519</xref>.</p>
       </section>
 
@@ -316,6 +320,8 @@
         <ul>
           <li>
             <xref keyref="java-api">New Java API</xref></li>
+          <li>
+            <xref keyref="map-first-preproc"/></li>
           <li>
             <xref keyref="migrating-to-2-5">Migrating to release 2.5</xref></li>
         </ul>

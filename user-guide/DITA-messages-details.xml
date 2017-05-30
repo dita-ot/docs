@@ -181,8 +181,8 @@
         <stentry conref="DITA-messages.xml#msgs/DOTJ026E-extra" conaction="pushreplace">This message should only appear
           if an Ant build or plug-in is directly calling the toolkit's topic merge module, or if earlier errors resulted
           in problems with some of the content. If the topic merge module is called correctly, then this indicates a
-          program error that should be reported to the DITA-OT development team, at <xref keyref="dita-ot-issues"
-          />.</stentry>
+          program error that should be reported to the DITA-OT development team via the <xref keyref="dita-ot-issues"/>.
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ028E-extra" conaction="pushreplace">When referencing a non-DITA

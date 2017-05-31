@@ -17,7 +17,8 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2705">Incorrect DITAArchVersion in Topic RNG modules
+          <li id="2705">One DITA 1.3 RNG module from the OASIS DITA Standard contained a typo in a default attribute
+            value. The typo will be corrected in the next DITA 1.3 errata, and is now fixed in the DITA-OT copy.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2705" format="html" scope="external">#2705</xref>
           </li>
           <li>

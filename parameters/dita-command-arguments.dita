@@ -150,7 +150,7 @@
           <pt>
             <parmname>--filter</parmname>=<varname>file</varname>
           </pt>
-          <pd>Specifies a filter file to be used to include, exclude, or flag content.</pd>
+          <pd>Specifies filter file(s) used to include, exclude, or flag content.</pd>
           <pd>Relative paths are resolved against the current directory and internally converted to absolute paths.</pd>
         </plentry>
         <plentry>

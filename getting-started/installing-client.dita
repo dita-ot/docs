@@ -7,12 +7,13 @@
   <titlealts>
     <navtitle>Installing the toolkit</navtitle>
   </titlealts>
-  <shortdesc id="what-is-client">The DITA-OT distribution package can be installed on Linux, macOS, and Windows.
-    It contains everything that you need to run the toolkit except for Java.</shortdesc>
+  <shortdesc id="what-is-client">The DITA-OT distribution package can be installed on Linux, macOS, and Windows. It
+    contains everything that you need to run the toolkit except for Java.</shortdesc>
   <taskbody>
     <prereq>
       <ul>
-        <li>Ensure that you have Java JRE or JDK, version <keyword keyref="tool.java.version"/> or later installed.
+        <li>Ensure that you have a Java Runtime Environment (JRE) or Java Development Kit (JDK), version <keyword
+            keyref="tool.java.version"/> or later installed.
           <p>You can download the Oracle JRE or JDK from <xref keyref="download.oracle-jdk"/>.</p></li>
         <li importance="optional" platform="windows">If you want to generate HTML Help, ensure that you have HTML Help
           Workshop installed.
@@ -21,8 +22,7 @@
     </prereq>
     <steps>
       <step>
-        <cmd>Download the <filepath>dita-ot-<keyword keyref="maintenance-version"/>.zip</filepath> package from the
-          project website at <xref keyref="download.dita-ot.current-release">www.dita-ot.org</xref>.</cmd>
+        <cmd><ph conref="../resources/conref-task.dita#ID/download-ot"/></cmd>
       </step>
       <step>
         <cmd>Extract the contents of the package to the directory where you want to install the DITA-OT.</cmd>

@@ -23,7 +23,7 @@
   <keydef keys="release">
     <topicmeta>
       <keywords>
-        <keyword>2.4</keyword>
+        <keyword>2.5</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -32,7 +32,7 @@
   <keydef keys="maintenance-version">
     <topicmeta>
       <keywords>
-        <keyword>2.4.6</keyword>
+        <keyword>2.5</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -43,15 +43,7 @@
   <keydef keys="tool.ant.version">
     <topicmeta>
       <keywords>
-        <keyword>1.9.7</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- Ant: Minimum version -->
-  <keydef keys="tool.ant.version.min">
-    <topicmeta>
-      <keywords>
-        <keyword>1.7.1</keyword>
+        <keyword>1.10.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -95,11 +87,19 @@
       </keywords>
     </topicmeta>
   </keydef>
-  <!-- Xerces: Bundled with Ant 1.7.1 -->
-  <keydef keys="tool.xerces.version.min">
+  <!-- Logback Classic Module used by OT Java API -->
+  <keydef keys="tool.logback.version">
     <topicmeta>
       <keywords>
-        <keyword>2.9.0</keyword>
+        <keyword>1.2.1</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Simple Logging Facade for Java (SLF4J) used by OT Java API -->
+  <keydef keys="tool.SLF4J.version">
+    <topicmeta>
+      <keywords>
+        <keyword>1.7.23</keyword>
       </keywords>
     </topicmeta>
   </keydef>

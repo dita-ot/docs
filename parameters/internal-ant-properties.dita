@@ -27,6 +27,16 @@
               <li>other</li>
             </ul></pd>
         </plentry>
+        <plentry>
+          <pt><codeph>temp.output.dir.name</codeph></pt>
+          <pd>An internal property for use with custom transform types; this property can be used to place all output
+          in an internal directory, so that a final step in the transform type can do some form of post-processing
+          before the files are placed in the specified output directory.
+            <p>For example, if a custom HTML5 transform sets the property to <codeph>zip_dir</codeph>, all output
+              files (including HTML, images, and CSS) will be placed within the directory <filepath>zip_dir</filepath>
+              in the temporary processing directory. A final step can then be used to add more files, zip the directory,
+              and return that zip to the designated output directory.</p></pd>
+        </plentry>
       </parml>
     </section>
   </refbody>

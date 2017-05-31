@@ -15,12 +15,6 @@
     <refbody>
       <section>
         <parml>
-          <!--<plentry id="args.debug">
-            <pt><parmname>args.debug</parmname></pt>
-            <pd conaction="mark" conref="parameters-base.dita#base/args.debug.desc"/>
-            <pd conaction="pushafter">Specifies whether debugging information is included in the log. The allowed values
-              are <option>yes</option> and <option>no</option>; the default value is <option>no</option>.</pd>
-          </plentry>-->
           <plentry id="args.draft">
             <pt>
               <parmname>args.draft</parmname>
@@ -43,11 +37,18 @@
                 DITA-OT 2.0. By default PDF uses the value <option>NUMTITLE</option>, which is not supported for other
                 transformation types; this results in "Figure 5. Title".</note></pd>
           </plentry>
-          <!--<plentry id="args.filter" rev="1.6">
-              <pt><parmname>args.filter</parmname></pt>
-              <pd conaction="mark" conref="parameters-base.dita#base/args.filter.desc"/>
-              <pd conaction="pushafter">Specifies a filter file to be used to include, exclude, or flag content.</pd>
-            </plentry>-->
+          <plentry id="args.filter">
+            <pt>
+              <parmname>args.filter</parmname>
+            </pt>
+            <pd conaction="pushreplace" conref="parameters-base.dita#base/args.filter.desc">
+              <p>Specifies filter file(s) used to include, exclude, or flag content. Relative paths are resolved against
+                the DITA-OT base directory (for backwards compatibility) and internally converted to absolute paths.</p>
+              <note>The system separator character is used to separate the values. DITAVAL files are evaluated in the
+                order specified, so conditions specified in the first file take precedence over matching conditions
+                specified in later files, just as conditions at the start of a DITAVAL document take precedence over
+                matching conditions later in the same document.</note></pd>
+          </plentry>
           <plentry id="args.gen.task.lbl">
             <pt>
               <parmname>args.gen.task.lbl</parmname>
@@ -97,10 +98,6 @@
                 <varname>file</varname> to set the path to the log. Unless an absolute path is specified, the value will
                 be interpreted relative to the current directory.</note></pd>
           </plentry>
-          <!--<plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.rellinks">
-            <pt/>
-            <pd/>
-          </plentry>-->
           <plentry id="args.tablelink.style">
             <pt>
               <parmname>args.tablelink.style</parmname>
@@ -129,11 +126,6 @@
               IETF BCP 47, <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external">Tags for
                 Identifying Languages</xref>.</pd>
           </plentry>
-          <!--<plentry id="dita.dir">
-            <pt><parmname>dita.dir</parmname></pt>
-            <pd conaction="mark" conref="parameters-base.dita#base/dita.dir.desc"/>
-            <pd conaction="pushafter">Specifies where the DITA-OT is installed.</pd>
-          </plentry>-->
           <plentry id="dita.temp.dir">
             <pt>
               <parmname>dita.temp.dir</parmname>
@@ -218,16 +210,6 @@
             <pd conaction="pushafter">By default, the output is written to
                 <filepath><varname>DITA-dir</varname>/out</filepath>.</pd>
           </plentry>
-          <!--<plentry id="processing-mode">
-            <pt><parmname>processing-mode</parmname></pt>
-            <pd conaction="mark" conref="parameters-base.dita#base/processing-mode"/>
-            <pd conaction="pushafter"/>
-          </plentry>-->
-          <!--<plentry id="root-chunk-override">
-            <pt><parmname>root-chunk-override</parmname></pt>
-            <pd conaction="mark" conref="parameters-base.dita#base/root-chunk-override.desc"/>
-            <pd conaction="pushafter">Override for map chunk attribute value.</pd>
-          </plentry>-->
           <plentry id="transtype">
             <pt>
               <parmname>transtype</parmname>
@@ -237,12 +219,6 @@
               <p conref="../resources/conref-task.dita#ID/transtypes"/>
             </pd>
           </plentry>
-          <!--<plentry id="validate">
-            <pt><parmname>validate</parmname></pt>
-            <pd conaction="mark" conref="parameters-base.dita#base/validate.desc"/>
-            <pd conaction="pushafter">Specifies whether the DITA-OT validates the content. The allowed values are
-                <option>true</option> and <option>false</option>; the default value is <option>true</option>.</pd>
-          </plentry>-->
         </parml>
       </section>
     </refbody>
@@ -259,55 +235,55 @@
     <refbody>
       <section>
         <parml>
-          <!--<plentry id="args.artlbl">
-            <pt><parmname>args.artlbl</parmname></pt>
-            <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.artlbl.desc"/>
-            <pd conaction="pushafter">Specifies whether to generate a label for each image; the label will contain the
-              image file name. The allowed values are <option>yes</option> and <option>no</option>; the default value is
-                <option>no</option>.</pd>
-          </plentry>-->
           <plentry id="args.copycss">
             <pt><parmname>args.copycss</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.copycss.desc"/>
-            <pd conaction="pushafter">If an external process will copy your custom .css file to the output directory,
-              leave this parameter unset (or set it to <option>no</option>). If DITA-OT should copy the file when
-              generating output, set it to <option>yes</option>. </pd>
+            <pd conaction="pushafter">
+              <div id="args.copycss.details">If an external process will copy your custom .css file to the output
+                directory, leave this parameter unset (or set it to <option>no</option>). If DITA-OT should copy the
+                file when generating output, set it to <option>yes</option>.</div></pd>
           </plentry>
           <plentry id="args.css">
             <pt><parmname>args.css</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.css.desc"/>
-            <pd conaction="pushafter">The value of this parameter should be only the file name (or an absolute path to
-              the file). A relative path can be specified with <parmname>args.cssroot</parmname>.</pd>
+            <pd conaction="pushafter">
+              <div id="args.css.details">The value of this parameter should be only the file name (or an absolute path
+                to the file). A relative path can be specified with <parmname>args.cssroot</parmname>.</div></pd>
           </plentry>
           <plentry id="args.csspath">
             <pt>
               <parmname>args.csspath</parmname>
             </pt>
-            <pd conaction="pushreplace" conref="parameters-base-html.dita#base-html/args.csspath.desc">Specifies the
-                <b>destination</b> directory to which .css files are copied (relative to the output directory).</pd>
+            <pd conaction="pushreplace" conref="parameters-base-html.dita#base-html/args.csspath.desc">
+              <div id="args.csspath.desc">Specifies the <b>destination</b> directory to which .css files are copied
+                (relative to the output directory).</div></pd>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.csspath.desc"/>
             <pd conaction="pushafter">
-              <p audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>CSSPATH</parmname>.</p>
-              <p>DITA-OT will copy the file <b>to</b> this location.</p>
-              <note type="tip">If <parmname>args.csspath</parmname> is not set, the custom CSS file (and the default CSS
-                files) will be copied to the root level of the output folder. To copy CSS files to an output subfolder
-                named <filepath>css</filepath>, set <parmname>args.csspath</parmname> to <option>css</option>.</note>
+              <div id="args.csspath.details">
+                <p audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>CSSPATH</parmname>.</p>
+                <p>DITA-OT will copy the file <b>to</b> this location.</p>
+                <note type="tip">If <parmname>args.csspath</parmname> is not set, the custom CSS file (and the default
+                  CSS files) will be copied to the root level of the output folder. To copy CSS files to an output
+                  subfolder named <filepath>css</filepath>, set <parmname>args.csspath</parmname> to
+                    <option>css</option>.</note></div>
             </pd>
           </plentry>
           <plentry id="args.cssroot">
             <pt>
               <parmname>args.cssroot</parmname>
             </pt>
-            <pd conaction="pushreplace" conref="parameters-base-html.dita#base-html/args.cssroot.desc">Specifies the
-                <b>source</b> directory that contains the custom .css file.</pd>
+            <pd conaction="pushreplace" conref="parameters-base-html.dita#base-html/args.cssroot.desc">
+              <div id="args.cssroot.desc">Specifies the <b>source</b> directory that contains the custom .css
+                file.</div></pd>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.cssroot.desc"/>
             <pd conaction="pushafter">
-              <p>DITA-OT will copy the file <b>from</b> this location.</p>
-              <note type="tip">The value you enter here will be interpreted relative to the location of the input map
-                file. If your map is stored at the root level of your project folder and the CSS file is stored in a
-                subfolder named <filepath>resources</filepath>, set <parmname>args.cssroot</parmname> to
-                  <option>resources</option>.</note>
-            </pd>
+              <div id="args.cssroot.details">
+                <p>DITA-OT will copy the file <b>from</b> this location.</p>
+                <note type="tip">The value you enter here will be interpreted relative to the location of the input map
+                  file. If your map is stored at the root level of your project folder and the CSS file is stored in a
+                  subfolder named <filepath>resources</filepath>, set <parmname>args.cssroot</parmname> to
+                    <option>resources</option>.</note>
+              </div></pd>
           </plentry>
           <plentry id="args.dita.locale">
             <pt>
@@ -324,33 +300,33 @@
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.ftr.desc"/>
             <pd conaction="pushafter">
-              <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>FTR</parmname>.</ph>
-              <note>The footer file should be specified using an absolute path and must contain valid XML. A common
-                practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
-            </pd>
+              <div id="args.ftr.details">
+                <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>FTR</parmname>.</ph>
+                <note>The footer file should be specified using an absolute path and must contain valid XML. A common
+                  practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
+              </div></pd>
           </plentry>
           <plentry id="args.gen.default.meta">
             <pt>
               <parmname>args.gen.default.meta</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.gen.default.meta.desc"/>
-            <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter
-                <parmname>genDefMeta</parmname>.</pd>
-          </plentry>
-          <plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.gen.task.lbl">
-            <pt/>
-            <pd/>
+            <pd conaction="pushafter" audience="xslt-customizer">
+              <div id="args.gen.default.meta.details">Corresponds to the XSLT parameter <parmname>genDefMeta</parmname>.
+              </div>
+            </pd>
           </plentry>
           <plentry id="args.hdf">
             <pt><parmname>args.hdf</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.hdf.desc"/>
             <pd conaction="pushafter">
-              <p>The contents of the header file will be inserted in the <xmlelement>head</xmlelement> element of the
-                generated HTML files.</p>
-              <note type="tip">The header file should be specified using an absolute path and must contain valid XML. If
-                you need to insert more than one element into the HTML page head, wrap the content in a
-                  <xmlelement>div</xmlelement> element. The division wrapper in the header file will be discarded when
-                generating HTML files, and the contents will be inserted into each page head.</note></pd>
+              <div id="args.hdf.details">
+                <p>The contents of the header file will be inserted in the <xmlelement>head</xmlelement> element of the
+                  generated HTML files.</p>
+                <note type="tip">The header file should be specified using an absolute path and must contain valid XML.
+                  If you need to insert more than one element into the HTML page head, wrap the content in a
+                    <xmlelement>div</xmlelement> element. The division wrapper in the header file will be discarded when
+                  generating HTML files, and the contents will be inserted into each page head.</note></div></pd>
           </plentry>
           <plentry id="args.hdr">
             <pt>
@@ -358,10 +334,11 @@
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.hdr.desc"/>
             <pd conaction="pushafter">
-              <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>HDR</parmname>.</ph>
-              <note>The header file should be specified using an absolute path and must contain valid XML. A common
-                practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
-            </pd>
+              <div id="args.hdr.details">
+                <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>HDR</parmname>.</ph>
+                <note>The header file should be specified using an absolute path and must contain valid XML. A common
+                  practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
+              </div></pd>
           </plentry>
           <plentry id="args.hide.parent.link" importance="deprecated">
             <pt>
@@ -369,26 +346,21 @@
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.hide.parent.link.desc"/>
             <pd conaction="pushafter">
-              <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>NOPARENTLINK</parmname>.</ph>
-              <note type="notice">This parameter is deprecated in favor of the <parmname>args.rellinks</parmname>
-                parameter.</note>
-            </pd>
+              <div id="args.hide.parent.link.details">
+                <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>NOPARENTLINK</parmname>.</ph>
+                <note type="notice">This parameter is deprecated in favor of the <parmname>args.rellinks</parmname>
+                  parameter.</note>
+              </div></pd>
           </plentry>
-          <!--<plentry id="args.indexshow">
-            <pt><parmname>args.indexshow</parmname></pt>
-            <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.indexshow.desc"/>
-            <pd conaction="pushafter">Specifies whether the content of <xmlelement>indexterm</xmlelement> elements are
-              rendered in the output. The allowed values are <option>yes</option> and <option>no</option>; the default
-              value is <option>no</option>.</pd>
-          </plentry>-->
           <plentry id="args.outext">
             <pt>
               <parmname>args.outext</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.outext.desc"/>
             <pd conaction="pushafter">
-              <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>OUTEXT</parmname>.</ph>
-            </pd>
+              <div id="args.outext.details">
+                <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>OUTEXT</parmname>.</ph>
+              </div></pd>
           </plentry>
           <plentry id="args.xhtml.classattr">
             <pt>
@@ -398,7 +370,7 @@
             <pd conaction="pushafter">For example, the <xmlelement>prereq</xmlelement> element (which is specialized
               from <xmlelement>section</xmlelement>) would generate <codeph>class="section prereq"</codeph>. <ph
                 audience="xslt-customizer">Corresponds to the XSLT parameter
-                <parmname>PRESERVE-DITA-CLASS</parmname>.</ph><note>Beginning with DITA OT release 1.5.2, the default
+                <parmname>PRESERVE-DITA-CLASS</parmname>.</ph><note>Beginning with DITA-OT release 1.5.2, the default
                 value is <option>yes</option>. For release 1.5 and 1.5.1, the default value was <option>no</option>.
               </note></pd>
           </plentry>
@@ -407,7 +379,8 @@
               <parmname>args.xsl</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.xsl.desc"/>
-            <pd conaction="pushafter">The parameter must specify a fully qualified file name.</pd>
+            <pd conaction="pushafter">
+              <div id="args.xsl.details">The parameter must specify a fully qualified file name.</div></pd>
           </plentry>
         </parml>
       </section>
@@ -424,11 +397,6 @@
     <refbody>
       <section>
         <parml>
-          <!--<plentry id="args.eclipsehelp.toc">
-            <pt><parmname>args.eclipsehelp.toc</parmname></pt>
-            <pd conaction="mark" conref="parameters-eclipsehelp.dita#eclipsehelp/args.eclipsehelp.toc.desc"/>
-            <pd conaction="pushafter">Specifies the name of the TOC file.</pd>
-          </plentry>-->
           <plentry id="args.eclipsehelp.country">
             <pt>
               <parmname>args.eclipsehelp.country</parmname>
@@ -489,26 +457,6 @@
     </refbody>
   </reference>
 
-  <reference id="htmlhelp">
-    <title>HTML Help</title>
-    <titlealts>
-      <navtitle>HTML Help</navtitle>
-    </titlealts>
-    <shortdesc conaction="pushreplace" conref="parameters-htmlhelp.dita#htmlhelp/shortdesc">Certain parameters are
-      specific to the HTML Help transformation.</shortdesc>
-    <refbody>
-      <section>
-        <!--<parml>
-          <plentry id="args.htmlhelp.includefile">
-            <pt><parmname>args.htmlhelp.includefile</parmname></pt>
-            <pd conaction="mark" conref="parameters-htmlhelp.dita#htmlhelp/args.htmlhelp.includefile.desc"/>
-            <pd conaction="pushafter">Specifies the name of a file that you want included in the HTML Help.</pd>
-          </plentry>
-        </parml>-->
-      </section>
-    </refbody>
-  </reference>
-
   <reference id="javahelp">
     <title>JavaHelp</title>
     <titlealts>
@@ -547,55 +495,6 @@
     </refbody>
   </reference>
 
-  <reference id="ant-parameters-other">
-    <title>Other parameters</title>
-    <titlealts>
-      <navtitle>Other</navtitle>
-    </titlealts>
-    <shortdesc>These parameters enable you to reload style sheets that the DITA-OT uses for specific pre-processing
-      stages.</shortdesc>
-    <refbody>
-      <section>
-        <draft-comment author="Kristen James Eberlein" time="11 August 2012">I've made no attempt to work with the
-          content in the topic. Here's what I'd like to know:
-          <ul>
-            <li>When would someone want to use the various <parmname>dita.preprocess</parmname> parameters? (Other than
-              if they need to reduce Java memory consumption.) The use cases are not clear from the current
-              description.</li>
-          </ul>
-        </draft-comment>
-        <!--<parml>
-          <plentry>
-            <pt id="dita.preprocess.reloadstylesheet"><parmname>dita.preprocess.reloadstylesheet</parmname></pt>
-            <pt id="dita.preprocess.reloadstylesheet.conref">
-              <parmname>dita.preprocess.reloadstylesheet.conref</parmname>
-            </pt>
-            <pt id="dita.preprocess.reloadstylesheet.mapref">
-              <parmname>dita.preprocess.reloadstylesheet.mapref</parmname>
-            </pt>
-            <pt id="dita.preprocess.reloadstylesheet.mappull">
-              <parmname>dita.preprocess.reloadstylesheet.mappull</parmname>
-            </pt>
-            <pt id="dita.preprocess.reloadstylesheet.maplink">
-              <parmname>dita.preprocess.reloadstylesheet.maplink</parmname>
-            </pt>
-            <pt id="dita.preprocess.reloadstylesheet.topicpull">
-              <parmname>dita.preprocess.reloadstylesheet.topicpull</parmname>
-            </pt>
-            <pd conaction="mark" conref="parameters-other.dita#other/dita.preprocess.reloadstylesheet.desc"/>
-            <pd conaction="pushafter">Specifies whether the DITA-OT reloads the XSL style sheets that are used for the
-              transformation. The allowed values are <option>true</option> and <option>false</option>; the default value
-              is <option>false</option>.<note type="tip">Set the parameter to <option>true</option> if you want to use
-                more than one set of style sheets to process a collection of topics. The parameter also is useful for
-                large projects that generate Java out-of-memory errors during transformation. Alternatively, you can
-                adjust the size of your Java memory heap if setting <codeph>dita.preprocess.reloadstylesheet</codeph>
-                for this reason.</note></pd>
-          </plentry>
-        </parml>-->
-      </section>
-    </refbody>
-  </reference>
-
   <reference id="pdf">
     <title>PDF</title>
     <titlealts>
@@ -606,38 +505,6 @@
     <refbody>
       <section>
         <parml>
-          <!--<plentry id="args.bookmap-order" rev="1.5.4">
-            <pt><parmname>args.bookmap-order</parmname></pt>
-            <pd conaction="mark" conref="parameters-pdf.dita#pdf/args.bookmap-order.desc"/>
-            <pd conaction="pushafter">Specifies if the frontmatter and backmatter content order is retained in bookmap.
-              The allowed values are <option>retain</option> and <option>discard</option>; the default value is
-                <option>discard</option>.</pd>
-          </plentry>-->
-          <!--<plentry id="args.bookmark.style">
-            <pt><parmname>args.bookmark.style</parmname></pt>
-            <pd conaction="mark" conref="parameters-pdf.dita#pdf/args.bookmark.style.desc"/>
-            <pd conaction="pushafter">Specifies whether PDF bookmarks are by default expanded or collapsed. The allowed
-              values are <option>COLLAPSED</option> and <option>EXPANDED</option>, the default value is
-                <option>COLLAPSE</option>.</pd>
-          </plentry>-->
-          <!--<plentry id="args.chapter.layout">
-            <pt><parmname>args.chapter.layout</parmname></pt>
-            <pd conaction="mark" conref="parameters-pdf.dita#pdf/args.chapter.layout.desc"/>
-            <pd conaction="pushafter">Specifies whether chapter level TOCs are generated. The allowed values are
-                <option>MINITOC</option> and <option>BASIC</option>; the default value is <option>MINITOC</option>.</pd>
-          </plentry>-->
-          <plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.fo.userconfig">
-            <pt/>
-            <pd/>
-          </plentry>
-          <plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.gen.task.lbl">
-            <pt/>
-            <pd/>
-          </plentry>
-          <plentry conref="conref-dita-ot-parameters.dita#conref-dita-ot-parameters/args.rellinks">
-            <pt/>
-            <pd/>
-          </plentry>
           <plentry id="args.xsl.pdf">
             <pt>
               <parmname>args.xsl.pdf</parmname>
@@ -645,15 +512,6 @@
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/args.xsl.pdf.desc"/>
             <pd conaction="pushafter">You must specify the fully qualified file name.</pd>
           </plentry>
-          <!--<plentry id="custom.xep.config">
-            <pt><parmname>custom.xep.config</parmname></pt>
-            <pd conaction="mark" conref="parameters-pdf.dita#pdf/custom.xep.config.desc"/>
-            <pd conaction="pushafter">Specifies the user configuration file for RenderX.</pd>
-          </plentry>-->
-          <!--<plentry id="customization.dir" audience="xslt-customizer">
-            <pt><parmname>customization.dir</parmname></pt>
-            <pd>Specifies the customization directory.</pd>
-          </plentry>-->
           <plentry id="org.dita.pdf2.i18n.enabled">
             <pt><parmname>org.dita.pdf2.i18n.enabled</parmname></pt>
             <pd conaction="pushreplace" conref="parameters-pdf.dita#pdf/org.dita.pdf2.i18n.enabled.desc">
@@ -734,7 +592,97 @@
     <refbody>
       <!-- args.html5.contenttarget is listed in generated topic, but does not appear in default HTML5 output files. -->
       <section>
+        <!-- Re-use extended base-html parameter descriptions for #132 -->
         <parml>
+          <plentry id="args.copycss">
+            <pt><parmname>args.copycss</parmname></pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.copycss.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.copycss.details"/></pd>
+          </plentry>
+          <plentry id="args.css">
+            <pt><parmname>args.css</parmname></pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.css.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.css.details"/></pd>
+          </plentry>
+          <plentry id="args.csspath">
+            <pt>
+              <parmname>args.csspath</parmname>
+            </pt>
+            <pd conaction="pushreplace" conref="parameters-html5.dita#html5/args.csspath.desc">
+              <div conref="./ant-parameters-details.dita#base-html/args.csspath.desc"/></pd>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.csspath.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.csspath.details"/>
+            </pd>
+          </plentry>
+          <plentry id="args.cssroot">
+            <pt>
+              <parmname>args.cssroot</parmname>
+            </pt>
+            <pd conaction="pushreplace" conref="parameters-html5.dita#html5/args.cssroot.desc">
+              <div conref="./ant-parameters-details.dita#base-html/args.cssroot.desc"/></pd>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.cssroot.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.cssroot.details"/></pd>
+          </plentry>
+          <plentry id="args.ftr">
+            <pt>
+              <parmname>args.ftr</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.ftr.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.ftr.details"/></pd>
+          </plentry>
+          <plentry id="args.gen.default.meta">
+            <pt>
+              <parmname>args.gen.default.meta</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.gen.default.meta.desc"/>
+            <pd conaction="pushafter" audience="xslt-customizer">
+              <div conref="./ant-parameters-details.dita#base-html/args.gen.default.meta.details"/>
+            </pd>
+          </plentry>
+          <plentry id="args.hdf">
+            <pt><parmname>args.hdf</parmname></pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.hdf.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.hdf.details"/></pd>
+          </plentry>
+          <plentry id="args.hdr">
+            <pt>
+              <parmname>args.hdr</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.hdr.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.hdr.details"/></pd>
+          </plentry>
+          <plentry id="args.hide.parent.link" importance="deprecated">
+            <pt>
+              <parmname>args.hide.parent.link</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.hide.parent.link.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.hide.parent.link.details"/></pd>
+          </plentry>
+          <plentry id="args.outext">
+            <pt>
+              <parmname>args.outext</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.outext.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.outext.details"/></pd>
+          </plentry>
+          <plentry id="args.xsl">
+            <pt>
+              <parmname>args.xsl</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-html5.dita#html5/args.xsl.desc"/>
+            <pd conaction="pushafter">
+              <div conref="./ant-parameters-details.dita#base-html/args.xsl.details"/></pd>
+          </plentry>
+          <!-- End shared base-html parameter descriptions -->
           <plentry id="nav-toc">
             <pt><parmname>nav-toc</parmname></pt>
             <pd conaction="pushreplace" conref="parameters-html5.dita#html5/nav-toc.desc">

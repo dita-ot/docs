@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<concept id="API">
+  <title>Java API</title>
+  <shortdesc>DITA-OT 2.5 includes a new Java Application Programming Interface to allow developers to embed DITA-OT more
+    easily into other Java programs.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Java API</indexterm>
+        <indexterm>API:Java</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>When using the API, programmers don't need to know or care that DITA-OT uses Ant, they can just use Java. </p>
+    <note>When running DITA-OT via the <cmdname>dita</cmdname> command, an <codeph>ant</codeph> shell script handles the
+      classpath setup, but when using the API the classpath should be set up as part of the normal classpath
+      configuration for the Java application.</note>
+    <example>
+      <title>Example usage</title>
+      <codeblock outputclass="language-java">// Create a reusable processor factory with DITA-OT base directory and temporary directory
+ProcessorFactory pf = ProcessorFactory.newInstance(ditaDir);
+pf.setBaseTempDir(tempDir);
+
+// Create a processor using the factory and configure the processor
+Processor p = pf.newProcessor("html5")
+.setInput(mapFile)
+.setOutputDir(outDir)
+.setProperty("nav-toc", "partial");
+
+// Run conversion
+p.run();</codeblock>
+    </example>
+    <section>
+      <p>By default, running DITA-OT via the API will write a debug log to the temporary directory. A custom SLF4J
+        logger can also be used to access the log via the Simple Logging Facade for Java.</p>
+      <p>The processor cleans the temporary directory by default, but this can be disabled to simplify debugging in
+        cases where the processor failed.</p>
+      <note type="tip">See the <cite>DITA-OT Java API documentation</cite> in the <filepath>doc/api/</filepath> folder
+        of the DITA-OT distribution package for information on the packages, classes, interfaces and methods provided by
+        the Java API.</note>
+    </section>
+  </conbody>
+</concept>

@@ -181,8 +181,8 @@
         <stentry conref="DITA-messages.xml#msgs/DOTJ026E-extra" conaction="pushreplace">This message should only appear
           if an Ant build or plug-in is directly calling the toolkit's topic merge module, or if earlier errors resulted
           in problems with some of the content. If the topic merge module is called correctly, then this indicates a
-          program error that should be reported to the DITA-OT development team, at <xref keyref="dita-ot-issues"
-          />.</stentry>
+          program error that should be reported to the DITA-OT development team via the <xref keyref="dita-ot-issues"/>.
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ028E-extra" conaction="pushreplace">When referencing a non-DITA
@@ -198,7 +198,8 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ030I-extra" conaction="pushreplace">All specialized DITA elements
           must define a class attribute to provide ancestry information. This message will only appear if a specialized
-          DITA element did not define a class attribute.</stentry>
+          DITA element did not define a class attribute, or if non-DITA elements are included in a DITA
+          context.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ031I-extra" conaction="pushreplace">This informational message is
@@ -217,8 +218,8 @@
         <stentry conref="DITA-messages.xml#msgs/DOTJ035F-extra" conaction="pushreplace">This will appear when a topic is
           outside the scope of the map; for example, if the main input map references
             <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be created
-          outside of the output directory. See <xref keyref="parameters-base">DITA-OT common parameters
-            (outer.control and generate.copy.outer)</xref> for details.</stentry>
+          outside of the output directory. See <xref keyref="parameters-base">DITA-OT common parameters (outer.control
+            and generate.copy.outer)</xref> for details.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ036W-extra" conaction="pushreplace">This will appear when a topic is
@@ -343,6 +344,22 @@
             or if a <xmlatt>keyref</xmlatt> attribute points to a key that refers back to the referencing element.</p>
           <p>To resolve this issue, change the target of the <xmlatt>keyref</xmlatt> so the key is defined by pointing
             to a resource other than itself.</p>
+        </stentry>
+      </strow>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ070I-extra" conaction="pushreplace">
+          <p>When a <xmlatt>class</xmlatt> attribute does not use the expected syntax, this usually indicates that
+              <xmlatt>class</xmlatt> has been explicitly set on a DITA element. The attribute should be removed from the
+            document so that the expected default value can be automatically used.</p>
+          <p>If this is a non-DITA element, it needs to be placed inside a <xmlelement>foreign</xmlelement> element so
+            that is not validated against DITA rules.</p>
+        </stentry>
+      </strow>
+      <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ071E-extra" conaction="pushreplace">
+          <p>Ensure that the DITAVAL file exists. If more than one DITAVAL file is specified, ensure that the paths are
+            separated using the separator character appropriate for your operating system (semicolon <codeph>;</codeph>
+            on Windows, or colon <codeph>:</codeph> on Linux or macOS).</p>
         </stentry>
       </strow>
       <strow>
@@ -661,8 +678,8 @@
           the specified file in order to retrive a title or short description, but the file could not be found. If the
           file exists, it is possible that a DITAVAL file was used to remove the file's contents from the build. Another
           possibility is that the file is located outside of the scope of the main input directory, and was not
-          available because the <xref keyref="parameters-base">onlytopic.in.map</xref> parameter was
-          specified. Be aware that the path information above may not match the link in your topic.</stentry>
+          available because the <xref keyref="parameters-base">onlytopic.in.map</xref> parameter was specified. Be aware
+          that the path information above may not match the link in your topic.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX057W-extra" conaction="pushreplace">The link appears to use valid

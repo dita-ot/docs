@@ -9,29 +9,32 @@
   <conbody>
     <section>
       <title>Software required for core DITA-OT processing</title>
-      <p>The DITA-OT requires the following software applications:<dl>
+      <p>The DITA-OT requires the following software applications:
+        <dl>
           <dlentry>
-            <dt>JRE or JDK, version <keyword keyref="tool.java.version"/> or later</dt>
+            <dt>Java Runtime Environment (JRE) or Java Development Kit (JDK), version <keyword
+                keyref="tool.java.version"/> or later</dt>
             <dd>Provides the basic environment for the DITA-OT. You can download the Oracle JRE or JDK from <xref
                 keyref="download.oracle-jdk"/>. <note>This is the <i>only</i> prerequisite software that you need to
                 install. The remaining required software is included in the distribution package.</note></dd>
           </dlentry>
           <dlentry id="antbuild">
-            <dt>Ant, version <keyword keyref="tool.ant.version.min"/> or later</dt>
-            <dd>Provides the standard setup and sequencing of processing steps. You can download Ant from <xref
-                keyref="download.ant"/>.</dd>
+            <dt>Apache Ant</dt>
+            <dd>Provides the standard setup and sequencing of processing steps. DITA-OT includes Ant version <keyword
+                keyref="tool.ant.version"/>. You can download Ant from <xref keyref="download.ant"/>.</dd>
           </dlentry>
           <dlentry>
             <dt>XSLT processor</dt>
-            <dd>Provides the main transformation services. It must be compliant with XSLT 2.0. The DITA-OT is tested
-              with Saxon. You can download Saxon, version <keyword keyref="tool.saxon.version"/> from <xref
-                keyref="download.saxon"/>.</dd>
+            <dd>Provides the main transformation services. It must be compliant with XSLT 2.0. DITA-OT includes Saxon
+              version <keyword keyref="tool.saxon.version"/>. You can download Saxon from <xref keyref="download.saxon"
+              />.</dd>
           </dlentry>
         </dl></p>
     </section>
     <section>
       <title>Software required for specific transformations</title>
-      <p>Depending on the type of output that you want to generate, you might need the following applications:<dl>
+      <p>Depending on the type of output that you want to generate, you might need the following applications:
+        <dl>
           <dlentry>
             <dt>ICU for Java</dt>
             <dd><draft-comment author="Kristen James Eberlein" time="11 August 2012">Does the DITA-OT only use ICU for

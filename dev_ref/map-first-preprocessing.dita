@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<concept id="ID" rev="2.5">
+  <title>Experimental map-first preprocessing</title>
+  <titlealts>
+    <navtitle>Map-first preprocessing</navtitle>
+  </titlealts>
+  <shortdesc><ph id="map-first-preproc-desc">DITA-OT 2.5 introduces an experimental map-first preprocessing option as an
+      alternative to the default <codeph>preprocess</codeph> operation. The new method provides the same functionality,
+      but takes a different approach.</ph></shortdesc>
+  <conbody>
+    <p id="map-first-preproc-gain">Whereas the default preprocessing routine handles both maps and topics at the same
+      time, the map-first approach begins by processing maps as far as possible, and only then starts processing topics.
+      This simplifies the processing logic and creates cleaner module responsibilities, which makes it easier to process
+      only those topics that are actually referenced after filtering, for example, or to only process the map to
+      validate the map structure.</p>
+    <p>The current preprocessing architecture was established during the DITA 1.0 era when there were fewer DITA
+      features that operated on the map level. Initially, the difference between processing modes was not that great,
+      but as more map-level features such as keys and key scopes have been added to DITA, processing maps first to build
+      the context makes sense. The original preprocessing operation already does this to a degree, but the new map-first
+      preprocessing option will be even more formal about it.</p>
+    <note id="map-first-preproc-note">The map-first preprocessing option is not enabled by default in DITA-OT 2.5, but
+      is offered as an experimental preview feature to allow users and vendors who extend preprocessing to provide
+      feedback on possible issues with the design. The new option will most likely become the default in DITA-OT
+      3.0.</note>
+    <p>To use map-first preprocessing, call the <codeph>preprocess2</codeph> Ant target in your customizations instead
+      of the default <codeph>preprocess</codeph> target.</p>
+    <note type="attention">The <codeph>preprocess2</codeph> target name and implementation details are subject to
+      change. Subject schemes and delayed key resolution have not yet been implemented, but support for at least subject
+      schemes will likely be added in an upcoming release.</note>
+  </conbody>
+</concept>

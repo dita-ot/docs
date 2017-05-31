@@ -18,10 +18,22 @@
   </topicref>
   <mapref href="user-guide/dita-resources.ditamap"/>
   <mapref href="license/license.ditamap"/>
-  <topicgroup processing-role="resource-only">
-    <topicref href="resources/conref-task.dita"/>
-    <mapref href="resources/key-definitions.ditamap"/>
-    <mapref href="resources/reltable.ditamap"/>
-    <mapref href="resources/subjectscheme.ditamap" type="subjectScheme"/>
-  </topicgroup>
+  <mapref href="resources/common-resources.ditamap" processing-role="resource-only"/>
+
+  <reltable>
+    <title>Source and target: Links that apply only to HTML version of distribution documentation</title>
+    <!-- Links common to all output formats are defined in nested submaps   -->
+    <relheader>
+      <relcolspec linking="sourceonly"/>
+      <relcolspec linking="targetonly"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="dev_ref/java-api.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="api/index.html" format="html" navtitle="DITA-OT Java API documentation" scope="peer"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

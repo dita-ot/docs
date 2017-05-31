@@ -103,15 +103,21 @@
         <title>Features</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <ul>
-          <li id="1134">Latin alphabet used in list numbers for non-Western locales
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1134" scope="external" format="html">#1134</xref>
-          </li>
-          <li id="1230">Dubious uses of attribute-set "base-font"
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1230" scope="external" format="html">#1230</xref>
-          </li>
-          <li id="1431">reltable: non-working related links generated to topics not in output
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1431" scope="external" format="html">#1431</xref>
-          </li>
+          <li id="1134">PDF code now uses variables to control ordered list numbering an unordered
+list bullets. This allows list styles to be more easily configured in overrides or by locale.  <xref
+href="https://github.com/dita-ot/dita-ot/issues/1134" scope="external" format="html">#1134</xref>
+</li>
+          <li id="1230">In PDF, overuse of the attribute-set "<codeph>base-font</codeph>" causes
+monospaced elements to reset font sizes unnecessarily. Removing these extra calls to
+"<codeph>base-font</codeph>" allows monospace elements to retain the current font size. <xref
+href="https://github.com/dita-ot/dita-ot/issues/1230" scope="external" format="html">#1230</xref>
+</li>
+          <li id="1431">A new property named <codeph>remove-broken-links</codeph> is available to
+automatically remove broken links. Setting the parameter to <codeph>true</codeph> will remove
+map-based links that do not resolve, as well as links coded within
+<xmlelement>related-links</xmlelement>. The default value is <codeph>false</codeph>. <xref
+href="https://github.com/dita-ot/dita-ot/issues/1431" scope="external" format="html">#1431</xref>
+</li>
           <li id="1964">The <codeph>copy-html</codeph> step in the pre-processing stage has been updated to work like
               <codeph>copy-image</codeph>, with a parameter for the destination directory. This allows more flexibility
             for extended transformation types that use these targets.
@@ -128,9 +134,9 @@
             content will all be zipped in a JAR file with the name taken from that property.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2684" scope="external" format="html">#2684</xref>
           </li>
-          <li id="2707">Add a processing instruction to topics in the temporary directory that includes a relative path
-            to the root map
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2707" format="html" scope="external">#2707</xref></li>
+          <li id="2707">Add a processing instruction to topics in the temporary directory that
+includes a relative path to the root map.  <xref href="https://github.com/dita-ot/dita-ot/pull/2707"
+format="html" scope="external">#2707</xref></li>
         </ul>
       </section>
 
@@ -139,9 +145,11 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
           existing features:</p>
         <ul>
-          <li id="1238">Doesn't work with SAXON 9 HE (9.4.0.3)
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1238" scope="external" format="html">#1238</xref>
-          </li>
+          <li id="1238">DITA-OT now works with Saxon 9 HE (9.4.0.3). Some XSLT modules in earlier
+versions relied on Java extensions that are not available in Saxon 9 HE; those dependencies have all
+been removed. <xref href="https://github.com/dita-ot/dita-ot/issues/1238" scope="external"
+format="html">#1238</xref>
+</li>
           <li id="2293">Product name processing has been revised to better support overrides in PDF customizations. The
             existing <codeph>text-only</codeph> mode is now used to enable customizations to support elements that add
             text (such as trademark symbols).
@@ -164,32 +172,45 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2459" format="html" scope="external">#2459</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2674" scope="external" format="html">#2674</xref>
           </li>
-          <li id="2552">Output error messages in red colour in Terminal
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2552" scope="external" format="html">#2552</xref>
-          </li>
-          <li id="2579">args.logdir has no effect
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2579" scope="external" format="html">#2579</xref>
-          </li>
-          <li id="2594">Add support to define XML reader features in plugin configuration
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2594" scope="external" format="html">#2594</xref>
-          </li>
-          <li id="2601">Allow all modules use file info filter from Ant
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2601" scope="external" format="html">#2601</xref>
-          </li>
-          <li id="2657">NPE in ForceUniqueFilter
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2657" scope="external" format="html">#2657</xref>
-          </li>
-          <li id="2664">Log XSLT messages to logger instead of standard out
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2664" scope="external" format="html">#2664</xref>
-          </li>
-          <li id="2668">Remove obsolete and redundant files
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2668" scope="external" format="html">#2668</xref>
-          </li>
-          <li id="2672">Let's keep the map valid after the branch filtering
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2672" scope="external" format="html">#2672</xref>
-          </li>
-          <li id="2677">Update Ant to 1.10
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2677" scope="external" format="html">#2677</xref></li>
+          <li id="2552">Error messages now appear red by default on non-Windows terminals. The new
+property <codeph>cli.color</codeph> can be set to <codeph>false</codeph> to disable the color. <xref
+href="https://github.com/dita-ot/dita-ot/pull/2552" scope="external" format="html">#2552</xref>
+</li>
+          <li id="2579">The <codeph>args.logdir</codeph> and <codeph>args.debug</codeph> properties
+are deprecated.  <xref href="https://github.com/dita-ot/dita-ot/issues/2579" scope="external"
+format="html">#2579</xref>
+</li>
+          <li id="2594">Plugin configuration has been extended so that parser features can be
+configured. For example, this will allow toggling XInclude processing or changing error recovery
+options. <xref href="https://github.com/dita-ot/dita-ot/pull/2594" scope="external" format="html"
+>#2594</xref>
+</li>
+          <li id="2601">Generalize file info filter configuration to allow all modules to be
+configured via Ant. <xref href="https://github.com/dita-ot/dita-ot/issues/2601" scope="external"
+format="html">#2601</xref>
+</li>
+          <li id="2657">Invalid IDs in a topic could break a build with a Null Pointer Error when
+the topic was used twice in a map. Processing for topics that appear more than once has been
+improved to avoid this condition. <xref href="https://github.com/dita-ot/dita-ot/issues/2657"
+scope="external" format="html">#2657</xref>
+</li>
+          <li id="2664">Make use of Saxon functionality to log XSLT messages to logger instead of
+standard out. This allows DITA-OT to have a consistent approach to logging messages across all
+modules. <xref href="https://github.com/dita-ot/dita-ot/pull/2664" scope="external" format="html"
+>#2664</xref>
+</li>
+          <li id="2668">Remove obsolete and redundant files that are no longer used by DITA-OT.
+<xref href="https://github.com/dita-ot/dita-ot/issues/2668" scope="external" format="html"
+>#2668</xref>
+</li>
+          <li id="2672">Keep the map valid after the branch filtering process. Earlier processing
+for branch filtering could place <xmlelement>ditavalref</xmlelement> elements ahead of
+<xmlelement>topicmeta</xmlelement>, which would not be valid in a source map. <xref
+href="https://github.com/dita-ot/dita-ot/pull/2672" scope="external" format="html">#2672</xref>
+</li>
+          <li id="2677">Update the bundled Ant version to 1.10.1. <xref
+href="https://github.com/dita-ot/dita-ot/issues/2677" scope="external" format="html"
+>#2677</xref></li>
           <li id="2703">A common set of string variables is now used for the localized quotation marks that are used to
             wrap quotations in <xmlelement>q</xmlelement> elements; previous versions had one set of variables for PDF
             and another for other transformation types.
@@ -234,12 +255,15 @@
             <xref href="https://github.com/dita-ot/dita-ot/pull/2686" scope="external" format="html">#2686</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2702" scope="external" format="html">#2702</xref>
           </li>
-          <li id="2491">copy-to fails to update CSS paths
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2491" scope="external" format="html">#2491</xref>
-          </li>
-          <li id="2541">Support duplicate key scopes
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2541" scope="external" format="html">#2541</xref>
-          </li>
+          <li id="2491">When <xmlatt>copy-to</xmlatt> is used to copy a topic to a new directory,
+earlier versions generated CSS paths based on the original location. CSS paths are now generated
+based on the new location.  <xref href="https://github.com/dita-ot/dita-ot/issues/2491"
+scope="external" format="html">#2491</xref>
+</li>
+          <li id="2541">Using the same name in two different key scopes is now supported as defined
+in the DITA 1.3 specification. <xref href="https://github.com/dita-ot/dita-ot/issues/2541"
+scope="external" format="html">#2541</xref>
+</li>
           <li id="2550">In earlier releases, when maps referenced content outside of the map directory and
               <parmname>generate.copy.outer</parmname>=<option>1</option> was used, HTML5 or XHTML output would copy
             images to the wrong location outside of the output directory. The images are now copied to the proper
@@ -247,43 +271,58 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2550" scope="external" format="html">#2550</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2682" scope="external" format="html">#2682</xref>
           </li>
-          <li id="2568">XHTML: Image path become invalid
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2568" scope="external" format="html">#2568</xref>
-          </li>
-          <li id="2646">Trim DOTX010E
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2646" scope="external" format="html">#2646</xref>
-          </li>
-          <li id="2653">Problem with determining format="image" for keydefs in the .job.xml
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2653" scope="external" format="html">#2653</xref>
-          </li>
-          <li id="2665">topicpullImpl.xsl: XPTY0004: A sequence of more than one item is not allowed as the first
-            argument of normalize-space()
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2665" scope="external" format="html">#2665</xref>
-          </li>
-          <li id="2667">Keydef containing uplevels
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2667" scope="external" format="html">#2667</xref>
-          </li>
-          <li id="2669">Suppress branch filtering attempt of non-dita files
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2669" scope="external" format="html">#2669</xref>
-          </li>
-          <li id="2676">HTML5 colspec processing fails with multi-tgroup table
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2676" scope="external" format="html">#2676</xref>
-          </li>
-          <li id="2678">Fix chunking a document loses @xml:lang from root topic #2022
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2678" scope="external" format="html">#2678</xref>
-          </li>
-          <li id="2688">HTML5 tables: missing table classes when args.html5.classattr=no
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2688" scope="external" format="html">#2688</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2689" scope="external" format="html">#2689</xref>
-          </li>
+          <li id="2646">The DOTX010E appeared with extra spacing around the <xmlatt>conref</xmlatt>
+attribute value. The extra spaces have been removed. <xref
+href="https://github.com/dita-ot/dita-ot/issues/2646" scope="external" format="html">#2646</xref>
+</li>
+          <li id="2653">In earlier releases, key definitions for some images could be marked as
+<codeph>format="html"</codeph> in the <filepath>.job.xml</filepath>, limiting their use with later
+image processing. These now use <codeph>format="image"</codeph>. <xref
+href="https://github.com/dita-ot/dita-ot/issues/2653" scope="external" format="html">#2653</xref>
+</li>
+          <li id="2665">When setting link text, some link targets could cause
+<filepath>topicpullImpl.xsl</filepath> to generate the following message <msgph>XPTY0004: A sequence
+of more than one item is not allowed as the first argument of normalize-space()</msgph>. <xref
+href="https://github.com/dita-ot/dita-ot/issues/2665" scope="external" format="html">#2665</xref>
+</li>
+          <li id="2667">When key definitions reference files outside the scope of the map, key
+references to images could be resolved with the wrong path. The key definitions are now processed
+correctly. <xref href="https://github.com/dita-ot/dita-ot/issues/2568" scope="external"
+format="html">#2568</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/2667"
+scope="external" format="html">#2667</xref>
+</li>
+          <li id="2669">Branch filtering should not attempt to duplicate and rename non-DITA files.
+<xref href="https://github.com/dita-ot/dita-ot/pull/2669" scope="external" format="html"
+>#2669</xref>
+</li>
+          <li id="2676">In previous releases, HTML5 failed when processing a
+<xmlelement>table</xmlelement> element that contained multiple <xmlelement>tgroup</xmlelement>
+elements. This is resolved by retrieving column definitions from the <xmlelement>tgroup</xmlelement>
+element.  <xref href="https://github.com/dita-ot/dita-ot/issues/2676" scope="external" format="html"
+>#2676</xref>
+</li>
+          <li id="2678">When chunking a document, earlier releases dropped the
+<xmlatt>xml:lang</xmlatt> attribute from the root topic. The correct <xmlatt>xml:lang</xmlatt>
+attribute is now preserved on any chunked topics. <xref
+href="https://github.com/dita-ot/dita-ot/issues/2022" format="html" scope="external">#2022</xref>,
+<xref href="https://github.com/dita-ot/dita-ot/pull/2678" scope="external" format="html"
+>#2678</xref>
+</li>
+          <li id="2688">In HTML5 tables, some required table classes were missing when
+<codeph>args.html5.classattr=no</codeph> was specified for the build. <xref
+href="https://github.com/dita-ot/dita-ot/issues/2688" scope="external" format="html">#2688</xref>,
+<xref href="https://github.com/dita-ot/dita-ot/pull/2689" scope="external" format="html"
+>#2689</xref>
+</li>
           <li id="2690">When a DITA topic that is used in the map is referenced using <xmlelement>coderef</xmlelement>,
             code references would embed the normalized file from the temporary directory. The original copy is now read
             from the source URI so that the original source appears in the code block.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2690" scope="external" format="html">#2690</xref>
           </li>
-          <li id="2691">Unresolved keyrefs to nested topics and elements
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2691" scope="external" format="html">#2691</xref>
-          </li>
+          <li id="2691">In earlier releases, keys that referred to nested topics were not properly
+resolved. Key references to nested topics now resolve as a reference to the nested topic. <xref
+href="https://github.com/dita-ot/dita-ot/issues/2691" scope="external" format="html">#2691</xref>
+</li>
           <li id="2695">In PDF output from previous releases, the table of contents included a generated “Chapter :”
             prefix in front of the navigation title for the <xmlelement>appendices</xmlelement> element.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2695" scope="external" format="html">#2695</xref>

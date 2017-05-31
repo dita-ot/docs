@@ -37,6 +37,18 @@
                 DITA-OT 2.0. By default PDF uses the value <option>NUMTITLE</option>, which is not supported for other
                 transformation types; this results in "Figure 5. Title".</note></pd>
           </plentry>
+          <plentry id="args.filter">
+            <pt>
+              <parmname>args.filter</parmname>
+            </pt>
+            <pd conaction="pushreplace" conref="parameters-base.dita#base/args.filter.desc">
+              <p>Specifies filter file(s) used to include, exclude, or flag content. Relative paths are resolved against
+                the DITA-OT base directory (for backwards compatibility) and internally converted to absolute paths.</p>
+              <note>The system separator character is used to separate the values. DITAVAL files are evaluated in the
+                order specified, so conditions specified in the first file take precedence over matching conditions
+                specified in later files, just as conditions at the start of a DITAVAL document take precedence over
+                matching conditions later in the same document.</note></pd>
+          </plentry>
           <plentry id="args.gen.task.lbl">
             <pt>
               <parmname>args.gen.task.lbl</parmname>

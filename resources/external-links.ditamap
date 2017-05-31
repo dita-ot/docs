@@ -33,7 +33,7 @@
       scope="external"
       format="html">
       <topicmeta>
-        <linktext>DITA-OT bug and feature tracker</linktext>
+        <linktext>GitHub issues tracker</linktext>
       </topicmeta>
     </keydef>
     <keydef
@@ -113,6 +113,15 @@
         <linktext>DITA-OT 2.4 Release Notes</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="2.5-release-notes"
+      href="http://www.dita-ot.org/2.5/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 2.5 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
   <topicset
@@ -124,10 +133,14 @@
       scope="external"
       format="html"/>
     <keydef
-      keys="download.dita-ot.current-release"
+      keys="download.dita-ot"
       href="http://www.dita-ot.org/download"
       scope="external"
-      format="html"/>
+      format="html">
+      <topicmeta>
+        <linktext>dita-ot.org/download</linktext>
+      </topicmeta>
+    </keydef>
     <keydef
       keys="download.fop"
       href="http://xmlgraphics.apache.org/fop/download.html"

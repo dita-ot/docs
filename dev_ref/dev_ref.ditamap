@@ -37,6 +37,7 @@
       <topicref href="XhtmlJavahelp.dita"/>
     </topicref>
     <topicref href="PdfDefault.dita"/>
+    <topicref href="map-first-preprocessing.dita" keys="map-first-preproc"/>
   </topicref>
   <topicref href="extending-the-ot.dita">
     <topicref href="plugins-installing.dita"/>
@@ -48,6 +49,7 @@
   <mapref href="html-customization.ditamap"/>
   <mapref href="pdf-customization.ditamap"/>
   <mapref href="migration.ditamap"/>
+  <topicref href="java-api.dita" keys="java-api"/>
 
   <!-- XXX: is this obsolete? 2 April 2013: Commented out; high priority to write new topic about topic merge-->
   <!--<topicref href="topicmerge.dita" navtitle="Topic merge"/>-->

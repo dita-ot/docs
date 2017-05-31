@@ -36,6 +36,13 @@
     </context>
     <steps>
       <step>
+        <cmd>
+          <!-- Used in installation topic & Release Notes -->
+          <ph id="download-ot">Download the <filepath>dita-ot-<keyword keyref="maintenance-version"/>.zip</filepath>
+            package from the project website at <xref keyref="download.dita-ot"/>.</ph>
+        </cmd>
+      </step>
+      <step>
         <cmd id="open-terminal">Open a command prompt or terminal session, and then change to the directory where the
           DITA Open Toolkit is installed.</cmd>
         <info>

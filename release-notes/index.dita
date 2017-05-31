@@ -291,9 +291,8 @@ correctly. <xref href="https://github.com/dita-ot/dita-ot/issues/2568" scope="ex
 format="html">#2568</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/2667"
 scope="external" format="html">#2667</xref>
 </li>
-          <li id="2669">Branch filtering should not attempt to duplicate and rename non-DITA files.
-<xref href="https://github.com/dita-ot/dita-ot/pull/2669" scope="external" format="html"
->#2669</xref>
+          <li id="2669">Branch filtering process should not attempt to filter non-DITA files. <xref
+href="https://github.com/dita-ot/dita-ot/pull/2669" scope="external" format="html">#2669</xref>
 </li>
           <li id="2676">In previous releases, HTML5 failed when processing a
 <xmlelement>table</xmlelement> element that contained multiple <xmlelement>tgroup</xmlelement>

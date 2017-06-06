@@ -21,6 +21,12 @@
             value. The typo will be corrected in the next DITA 1.3 errata, and is now fixed in the DITA-OT copy.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2705" format="html" scope="external">#2705</xref>
           </li>
+          <li id="2714">HTML5 output restores support for the <xmlatt>spectitle</xmlatt> attribute on
+            <xmlelement>simpletable</xmlelement> elements and for the <xmlatt>specentry</xmlatt> attribute
+            on <xmlelement>stentry</xmlelement> elements. Support for those attributes was missing after the
+            HTML5 and XHTML code bases split in release 2.4.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2714" format="html" scope="external">#2714</xref>
+          </li>
           <li>
             <p>The documentation includes minor
               <xref href="https://github.com/dita-ot/docs/compare/2.5...2.5.1" format="html" scope="external">

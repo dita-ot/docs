@@ -163,6 +163,11 @@
               <xmlatt>conref</xmlatt> targets were not retrieved and links were not properly handled.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2569" format="html" scope="external">#2569</xref>
           </li>
+          <li id="2670">A new internal parameter named <codeph>temp.output.dir.name</codeph> allows plugin developers
+            to direct output to a location within the existing temporary directory, which allows for additional
+            post-processing before files are placed in the output directory.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2670" format="html" scope="external">#2670</xref>
+          </li>
           <li id="2684">Eclipse Help output can now be created as a JAR file. When the
               <codeph>args.eclipsehelp.jar.name</codeph> property is specified for an Eclipse build, the generated
             content will all be zipped in a JAR file with the name taken from that property.

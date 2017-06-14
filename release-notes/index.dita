@@ -27,6 +27,11 @@
             HTML5 and XHTML code bases split in release 2.4.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2714" format="html" scope="external">#2714</xref>
           </li>
+          <li id="2716">In the original 2.5 release, a <xmlelement>topicref</xmlelement> that included a reference 
+            to a local topic ID (such as <codeph>href="file.dita#root"</codeph>) could cause build failures
+            when another element in the document used the same ID. The reference is now handled properly.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2716" format="html" scope="external">#2716</xref>
+          </li>
           <li>
             <p>The documentation includes minor
               <xref href="https://github.com/dita-ot/docs/compare/2.5...2.5.1" format="html" scope="external">

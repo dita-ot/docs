@@ -21,6 +21,12 @@
             value. The typo will be corrected in the next DITA 1.3 errata, and is now fixed in the DITA-OT copy.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2705" format="html" scope="external">#2705</xref>
           </li>
+          <li id="2706">On Windows only, chunking a DITA document using the "by-topic" method would lose the root
+            chunk and result in processing errors. The chunking process has been updated to handle Windows file
+            paths correctly; the chunking process now produces the same results on all systems.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2706" format="html" scope="external">#2706</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2728" format="html" scope="external">#2728</xref>
+          </li>
           <li id="2714">HTML5 output restores support for the <xmlatt>spectitle</xmlatt> attribute on
             <xmlelement>simpletable</xmlelement> elements and for the <xmlatt>specentry</xmlatt> attribute
             on <xmlelement>stentry</xmlelement> elements. Support for those attributes was missing after the

@@ -12,7 +12,7 @@
       <ul>
         <li>Table of Contents (<filepath>toc.xml</filepath>)</li>
         <li>Sorted index (<filepath>mapname_index.xml</filepath>)</li>
-        <li>Other Java Help project files (<filepath>map.jhm and mapname_helpset.hs</filepath>)</li>
+        <li>Other Java Help project files (<filepath>map.jhm</filepath> and <filepath>mapname_helpset.hs</filepath>)</li>
         <li>If the Java Help compiler is located on the system, a compiled Java Help project will be returned.</li>
       </ul></p>
     <p>To run the Java Help transformation, set the <parmname>transtype</parmname> parameter to

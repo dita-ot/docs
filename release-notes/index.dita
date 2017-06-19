@@ -17,6 +17,14 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
+          <li id="2701">In some cases, invalid DITA content resulted in build crashes from PDF, XHTML, or HTML5
+            processing modules that expect required elements to be present. For example, this could happen when an element
+            such as <xmlelement>ol</xmlelement> (which requires at least one list element) used a 
+            <xmlatt>conref</xmlatt> that could not be resolved. The code has been updated to more gracefully
+            elements that are missing required children.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2701" format="html" scope="external">#2701</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2712" format="html" scope="external">#2721</xref>
+          </li>
           <li id="2705">One DITA 1.3 RNG module from the OASIS DITA Standard contained a typo in a default attribute
             value. The typo will be corrected in the next DITA 1.3 errata, and is now fixed in the DITA-OT copy.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2705" format="html" scope="external">#2705</xref>

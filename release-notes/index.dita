@@ -17,7 +17,7 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <!--<li id="2014">In DITA-OT 2.5 and earlier, key resolution did not comply with the DITA specification's
+          <li id="2014">In DITA-OT 2.5 and earlier, key resolution did not comply with the DITA specification's
             requirement to use <xmlelement>linktext</xmlelement> from a key definition as valid replacement text
             for all uses of that key. In addition, several less common cases are fixed:
             <ul>
@@ -35,7 +35,7 @@
             <p><xref href="https://github.com/dita-ot/dita-ot/issues/1590" format="html" scope="external">#1590</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2014" format="html" scope="external">#2014</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2719" format="html" scope="external">#2719</xref></p>
-          </li>-->
+          </li>
           <li id="2701">In some cases, invalid DITA content resulted in build crashes from PDF, XHTML, or HTML5
             processing modules that expect required elements to be present. For example, this could happen when an element
             such as <xmlelement>ol</xmlelement> (which requires at least one list item) used DITAVAL filtering

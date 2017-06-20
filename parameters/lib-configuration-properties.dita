@@ -61,12 +61,15 @@
             <note conref="#configuration/protected-config-props"/>
           </pd>
         </plentry>
-        <!-- DITA-OT 2.5: https://github.com/dita-ot/dita-ot/pull/2552-->
-        <plentry id="cli-color">
+        <plentry id="cli-color" rev="2.5">
           <pt><parmname>cli.color</parmname></pt>
           <pd>
-            <p>Specifies whether the <cmdname>dita</cmdname> command prints colored output on the command line
-              console.</p>
+            <p>Specifies whether the <cmdname>dita</cmdname> command prints colored output on the command line console.
+              When set to <option>true</option>, error messages in <cmdname>dita</cmdname> command output will appear in
+              red on terminals that support <xref href="https://en.wikipedia.org/wiki/ANSI_escape_code" format="html"
+                scope="external">ANSI escape codes</xref>, such as on Linux or macOS. Set to <option>false</option> to
+              disable the color. (Colored output is not supported on Windows consoles such as <cmdname>cmd.exe</cmdname>
+              or PowerShell).</p>
             <note conref="#configuration/protected-config-props"/>
           </pd>
         </plentry>

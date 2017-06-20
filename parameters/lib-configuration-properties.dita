@@ -70,7 +70,6 @@
                 scope="external">ANSI escape codes</xref>, such as on Linux or macOS. Set to <option>false</option> to
               disable the color. (Colored output is not supported on Windows consoles such as <cmdname>cmd.exe</cmdname>
               or PowerShell).</p>
-            <note conref="#configuration/protected-config-props"/>
           </pd>
         </plentry>
         <plentry id="plugindirs">

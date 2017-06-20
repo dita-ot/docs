@@ -62,7 +62,6 @@
           </pd>
         </plentry>
         <!-- DITA-OT 2.5: https://github.com/dita-ot/dita-ot/pull/2552-->
-        <!--
         <plentry id="cli-color">
           <pt><parmname>cli.color</parmname></pt>
           <pd>
@@ -71,7 +70,6 @@
             <note conref="#configuration/protected-config-props"/>
           </pd>
         </plentry>
-        -->
         <plentry id="plugindirs">
           <pt><parmname>plugindirs</parmname></pt>
           <pd id="plugindirs.desc">A semicolon-separated list of directory paths that the DITA-OT searches for plug-ins

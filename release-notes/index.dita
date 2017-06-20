@@ -17,10 +17,29 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
+          <!--<li id="2014">In DITA-OT 2.5 and earlier, key resolution did not comply with the DITA specification's
+            requirement to use <xmlelement>linktext</xmlelement> from a key definition as valid replacement text
+            for all uses of that key. In addition, several less common cases are fixed:
+            <ul>
+              <li>Previously, a <xmlelement>keyword</xmlelement> anywhere within the key definition was used as
+                the first choice for link text, even if that keyword was located within <xmlelement>linktext</xmlelement>.
+                As defined by the DITA specification, the replacment keyword is taken only from within
+                <xmlelement>keywords</xmlelement>.</li>
+              <li>Previously, the <xmlatt>navtitle</xmlatt> attribute was used as fallback text in some cases, while 
+                <xmlelement>navtitle</xmlelement> was ignored. The <xmlelement>navtitle</xmlelement> element is
+                now used before checking the deprecated <xmlatt>navtitle</xmlatt> value for all cases.</li>
+              <li>Previously, <xmlatt>navtitle</xmlatt> was used as link text even for local DITA topics where
+                that value was ignored in favor of a navigation title in the topic. Now <xmlatt>navtitle</xmlatt>
+                and <xmlelement>navtitle</xmlelement> are only used when locked or when the topic is not local DITA.</li>
+            </ul>
+            <p><xref href="https://github.com/dita-ot/dita-ot/issues/1590" format="html" scope="external">#1590</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2014" format="html" scope="external">#2014</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2719" format="html" scope="external">#2719</xref></p>
+          </li>-->
           <li id="2701">In some cases, invalid DITA content resulted in build crashes from PDF, XHTML, or HTML5
             processing modules that expect required elements to be present. For example, this could happen when an element
-            such as <xmlelement>ol</xmlelement> (which requires at least one list element) used a 
-            <xmlatt>conref</xmlatt> that could not be resolved. The code has been updated to more gracefully
+            such as <xmlelement>ol</xmlelement> (which requires at least one list item) used DITAVAL filtering
+            to exclude all items from the list. The code has been updated to more gracefully handle
             elements that are missing required children.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2701" format="html" scope="external">#2701</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2712" format="html" scope="external">#2721</xref>

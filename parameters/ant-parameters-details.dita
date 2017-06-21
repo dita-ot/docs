@@ -210,6 +210,15 @@
             <pd conaction="pushafter">By default, the output is written to
                 <filepath><varname>DITA-dir</varname>/out</filepath>.</pd>
           </plentry>
+          <plentry id="root-chunk-override">
+            <pt>
+              <parmname>root-chunk-override</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/root-chunk-override.desc"/>
+            <pd conaction="pushafter">Acceptable values include any value normally allowed on the <xmlatt>chunk</xmlatt>
+              attribute. If the map does not have a <xmlatt>chunk</xmlatt> attribute, this value will be used; if the
+              map already has a <xmlatt>chunk</xmlatt> attribute specified, this value will be used instead.</pd>
+          </plentry>
           <plentry id="transtype">
             <pt>
               <parmname>transtype</parmname>

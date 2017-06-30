@@ -130,6 +130,7 @@
           to topics within <xmlelement>dita</xmlelement> elements were broken. The PDF output now includes the full
           content of the referenced document, and links to any element within the document are correct.
           <xref href="https://github.com/dita-ot/dita-ot/issues/1077" format="html" scope="external">#1077</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1904" format="html" scope="external">#1904</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/pull/2679" format="html" scope="external">#2679</xref></p>
         <p id="2698">Attributes from the <xmlelement>dita</xmlelement> element are now preserved when merging topics. In
           previous releases, attributes like <xmlatt>xml:lang</xmlatt> set on the <xmlelement>dita</xmlelement> element

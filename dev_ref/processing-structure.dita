@@ -16,7 +16,7 @@
       is still common to multiple output formats; for example, Eclipse Help and HTML Help both use the same routines to
       generate XHTML topics, after which the two pipelines branch to create different sets of navigation files.</p>
     <p>The following image illustrates how the pipeline works for several common output formats: PDF, Eclipse Help, HTML
-      Help, JavaHelp, XHTML, and HTML5.</p>
+      Help, XHTML, and HTML5.</p>
     <note>Other output formats may implement additional processing steps.</note>
     <fig>
       <title>Diagram of some possible paths through the transformation pipeline</title>

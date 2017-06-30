@@ -72,19 +72,6 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/dita2javahelp.dita">
-          <topicmeta>
-            <linktext>JavaHelp transformation</linktext>
-          </topicmeta>
-        </topicref>
-      </relcell>
-      <relcell/>
-      <relcell>
-        <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
         <topicref href="../user-guide/dita2pdf.dita">
           <topicmeta>
             <linktext>PDF transformation</linktext>
@@ -158,7 +145,6 @@
       <relcell>
         <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
         <topicref href="../parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
-        <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
         <topicref href="../parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
         <topicref href="../parameters/parameters-xhtml.dita" navtitle="XHTML transformation"/>
       </relcell>
@@ -181,7 +167,6 @@
         <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
         <topicref href="../parameters/parameters-html5.dita"/>
         <topicref href="../parameters/parameters-htmlhelp.dita"/>
-        <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
         <topicref href="../parameters/parameters-xhtml.dita" navtitle="XHTML transformation"/>
       </relcell>
     </relrow>

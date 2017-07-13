@@ -11,11 +11,38 @@
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
 
-  <reference id="v251">
+  <reference id="v252">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <!--
+          <li id="2743">Fix mappull failure when target doc missing
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2743" format="html" scope="external">#2743</xref>
+          </li>
+          -->
+          <li id="2749">Fix for broken revprop processing
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2749" format="html" scope="external">#2749</xref>
+          </li>
+          <li>
+            <p>The documentation includes minor
+              <xref href="https://github.com/dita-ot/docs/compare/2.5.1...2.5.2" format="html" scope="external">
+                changes</xref> with corrections and improvements to existing topics.</p>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.5.1...2.5.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v251">
+    <title>Maintenance Release 2.5.1</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.5.1 includes the following bug fixes.</p>
         <ul>
           <li id="2014">
             <p>In DITA-OT 2.5 and earlier, key resolution did not comply with the DITA specification's requirement to

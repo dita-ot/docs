@@ -17,13 +17,14 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <!--
-          <li id="2743">Fix mappull failure when target doc missing
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2743" format="html" scope="external">#2743</xref>
+          <li id="2743">In DITA-OT 2.5.1, the mappull step could fail when a map referenced a DITA document where
+            the root element of that DITA document was filtered out. The filtered document is now processed correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2743" format="html" scope="external">#2743</xref>
           </li>
-          -->
-          <li id="2749">Fix for broken revprop processing
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2749" format="html" scope="external">#2749</xref>
+          <li id="2749">In the original 2.5 release, setting a revision property to "flag" in the DITAVAL
+            resulted in build errors if the DITAVAL did not also specify a start and end image for that flag.
+            The build errors no longer appear.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2749" format="html" scope="external">#2749</xref>
           </li>
           <li>
             <p>The documentation includes minor

@@ -11,14 +11,42 @@
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
 
-  <reference id="v251">
+  <reference id="v252">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
+          <li id="2743">In DITA-OT 2.5.1, the mappull step could fail when a map referenced a DITA document where the
+            root element was filtered out. The filtered document is now processed correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2743" format="html" scope="external">#2743</xref>
+          </li>
+          <li id="2749">In the original 2.5 release, setting a revision property to "flag" in the DITAVAL resulted in
+            build errors if the DITAVAL did not also specify a start and end image for that flag. The build errors no
+            longer appear.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2749" format="html" scope="external">#2749</xref>
+          </li>
+          <li>
+            <p>The documentation includes minor
+              <xref href="https://github.com/dita-ot/docs/compare/2.5.1...2.5.2" format="html" scope="external">
+                changes</xref> with corrections and improvements to existing topics.</p>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.5.1...2.5.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v251">
+    <title>Maintenance Release 2.5.1</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.5.1 includes the following bug fixes.</p>
+        <ul>
           <li id="2014">
-            <p>In DITA-OT 2.5 and earlier, key resolution did not comply with the DITA specification's requirement to
+            <p>In DITA-OT 2.5 and earlier, key resolution did not comply with the DITA specification’s requirement to
               use <xmlelement>linktext</xmlelement> from a key definition as valid replacement text for all uses of that
               key.
               <xref href="https://github.com/dita-ot/dita-ot/issues/1590" format="html" scope="external">#1590</xref>,
@@ -46,10 +74,11 @@
             to exclude all items from the list. The code has been updated to more gracefully handle elements that are
             missing required children.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2701" format="html" scope="external">#2701</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2712" format="html" scope="external">#2721</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2712" format="html" scope="external">#2712</xref>
           </li>
-          <li id="2705">One DITA 1.3 RNG module from the OASIS DITA Standard contained a typo in a default attribute
-            value. The typo will be corrected in the next DITA 1.3 errata, and is now fixed in the DITA-OT copy.
+          <li id="2705">One DITA 1.3 RNG module in the grammar files for the
+            <xref keyref="dita-ot-spec"/> contained a typo in a default attribute value. The typo will be corrected in
+            the next DITA 1.3 errata, and is now fixed in the DITA-OT copy.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2705" format="html" scope="external">#2705</xref>
           </li>
           <li id="2706">On Windows only, chunking a DITA document using the "by-topic" method would lose the root chunk
@@ -130,6 +159,7 @@
           to topics within <xmlelement>dita</xmlelement> elements were broken. The PDF output now includes the full
           content of the referenced document, and links to any element within the document are correct.
           <xref href="https://github.com/dita-ot/dita-ot/issues/1077" format="html" scope="external">#1077</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/1904" format="html" scope="external">#1904</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/pull/2679" format="html" scope="external">#2679</xref></p>
         <p id="2698">Attributes from the <xmlelement>dita</xmlelement> element are now preserved when merging topics. In
           previous releases, attributes like <xmlatt>xml:lang</xmlatt> set on the <xmlelement>dita</xmlelement> element

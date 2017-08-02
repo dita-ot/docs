@@ -11,11 +11,37 @@
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
 
-  <reference id="v252">
+  <reference id="v253">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <!--
+          <li id="2759">Using "onlytopic.in.map" gives errors, reads directory
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2759" format="html" scope="external">#2759</xref>
+          </li>
+          -->
+          <li>
+            <p>The documentation includes minor
+              <xref href="https://github.com/dita-ot/docs/compare/2.5.2...2.5.3" format="html" scope="external">
+                changes</xref> with
+              <xref href="https://github.com/dita-ot/docs/milestone/28?closed=1" format="html" scope="external"
+                >corrections and improvements</xref> to existing topics.</p>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.5.2...2.5.3" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v252">
+    <title>Maintenance Release 2.5.2</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.5.2 includes the following bug fixes.</p>
         <ul>
           <li id="2743">In DITA-OT 2.5.1, the mappull step could fail when a map referenced a DITA document where the
             root element was filtered out. The filtered document is now processed correctly.

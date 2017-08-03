@@ -188,7 +188,7 @@
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/onlytopic.in.map.desc"/>
             <pd conaction="pushafter">If set to <option>true</option>, only files that are referenced directly from the
-              map will generate output; the default value is <option>false</option>.</pd>
+              map will generate output.</pd>
           </plentry>
           <plentry id="outer.control">
             <pt>

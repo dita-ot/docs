@@ -24,7 +24,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2759" format="html" scope="external">#2759</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2761" format="html" scope="external">#2761</xref>
           </li>
-          <li id="2768">"Copy files" task fails build when target directory doesn't exist
+          <li id="2768">In previous versions of DITA-OT, the <codeph>copy-files</codeph> pre-processing step would stop
+            the build with an error if the destination directory for copied files did not (yet) exist. The copy process
+            has been adjusted to create the destination directory if necessary and allow the build to continue.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2768" format="html" scope="external">#2768</xref>
           </li>
           <li id="2769">Avoid crash caused by empty ditavalref

@@ -17,12 +17,16 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <!--
           <li id="2759">Using "onlytopic.in.map" gives errors, reads directory
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2759" format="html" scope="external">#2759</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2759" format="html" scope="external">#2759</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2761" format="html" scope="external">#2761</xref>
           </li>
-          -->
+          <li id="2768">"Copy files" task fails build when target directory doesn't exist
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2768" format="html" scope="external">#2768</xref>
+          </li>
+          <li id="2769">Avoid crash caused by empty ditavalref
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2769" format="html" scope="external">#2769</xref>
+          </li>
           <li>
             <p>The documentation includes minor
               <xref href="https://github.com/dita-ot/docs/compare/2.5.2...2.5.3" format="html" scope="external">

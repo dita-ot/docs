@@ -17,7 +17,10 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2759">Using "onlytopic.in.map" gives errors, reads directory
+          <li id="2759">In DITA-OT 2.5, the <codeph>gen-list</codeph> pre-processing step included non-topic references
+            marked with <xmlatt>scope</xmlatt>=<codeph>"peer"</codeph>, which caused later processing steps to try
+            reading them (even when they are not DITA). Pre-processing has been updated to skip these files and prevent
+            erroneous errors from appearing when using the <parmname>onlytopic.in.map</parmname> parameter.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2759" format="html" scope="external">#2759</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2761" format="html" scope="external">#2761</xref>
           </li>

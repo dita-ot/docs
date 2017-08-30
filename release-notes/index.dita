@@ -29,7 +29,10 @@
             has been adjusted to create the destination directory if necessary and allow the build to continue.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2768" format="html" scope="external">#2768</xref>
           </li>
-          <li id="2769">Avoid crash caused by empty ditavalref
+          <li id="2769">DITA-OT 2.5 would crash when publishing maps that contained empty
+              <xmlelement>ditavalref</xmlelement> elements. Pre-processing has been updated to be more tolerant in these
+            cases. The <codeph>branch-filter</codeph> step will now proceed as if the
+              <xmlelement>ditavalref</xmlelement> were not specified, which allows the build to finish.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2769" format="html" scope="external">#2769</xref>
           </li>
           <li>

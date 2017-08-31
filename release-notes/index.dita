@@ -11,11 +11,51 @@
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
 
-  <reference id="v252">
+  <reference id="v253">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="2759">In DITA-OT 2.5, the <codeph>gen-list</codeph> pre-processing step listed resource-only
+            references with <xmlatt>scope</xmlatt>=<codeph>"peer"</codeph> as local files when the
+              <parmname>onlytopic.in.map</parmname> parameter was set to <option>true</option>. This caused later
+            processing steps to generate errors as they tried to read the peer files (even when they were not DITA).
+            Pre-processing has been updated to avoid reading these files, which also removes the build errors.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2759" format="html" scope="external">#2759</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2761" format="html" scope="external">#2761</xref>
+          </li>
+          <li id="2768">In previous versions of DITA-OT, the <codeph>copy-files</codeph> pre-processing step would stop
+            the build with an error if the destination directory for copied files did not (yet) exist. The copy process
+            has been adjusted to create the destination directory if necessary and allow the build to continue.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2768" format="html" scope="external">#2768</xref>
+          </li>
+          <li id="2769">DITA-OT 2.5 would crash when publishing maps that contained <xmlelement>ditavalref</xmlelement>
+            elements without valid hyperlink references in the <xmlatt>href</xmlatt> attribute. Pre-processing has been
+            updated to be more tolerant in these cases. The <codeph>branch-filter</codeph> step will now proceed as if
+            the <xmlelement>ditavalref</xmlelement> were not specified, which allows the build to finish.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2769" format="html" scope="external">#2769</xref>
+          </li>
+          <li>
+            <p>The documentation includes minor
+              <xref href="https://github.com/dita-ot/docs/compare/2.5.2...2.5.3" format="html" scope="external">
+                changes</xref> with
+              <xref href="https://github.com/dita-ot/docs/milestone/28?closed=1" format="html" scope="external"
+                >corrections and improvements</xref> to existing topics.</p>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.5.2...2.5.3" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v252">
+    <title>Maintenance Release 2.5.2</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.5.2 includes the following bug fixes.</p>
         <ul>
           <li id="2743">In DITA-OT 2.5.1, the mappull step could fail when a map referenced a DITA document where the
             root element was filtered out. The filtered document is now processed correctly.
@@ -29,7 +69,9 @@
           <li>
             <p>The documentation includes minor
               <xref href="https://github.com/dita-ot/docs/compare/2.5.1...2.5.2" format="html" scope="external">
-                changes</xref> with corrections and improvements to existing topics.</p>
+                changes</xref> with
+              <xref href="https://github.com/dita-ot/docs/milestone/27?closed=1" format="html" scope="external"
+                >corrections and improvements</xref> to existing topics.</p>
           </li>
         </ul>
         <p>For the complete list of changes since the previous release, see the

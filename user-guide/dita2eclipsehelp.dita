@@ -33,13 +33,8 @@
           <stentry><filepath>META-INF/MANIFEST.MF</filepath></stentry>
           <stentry/>
         </strow>
-      </simpletable></p>
-    <draft-comment>RDA> The following paragraph correctly describes the Eclipse Help specialization, but I'm keeping it
-      out until we have more complete documentation. I'd like to get more complete docs on this into an upcoming milestone.
-      <p>For more complex plug-ins, the <filepath>plugins</filepath> directory in the DITA-OT contains an "Eclipse Map"
-        specialization that gives more control over the generated <filepath>plugin.xml</filepath> file. The
-        specialization provides additional control over metadata, as well as the ability to reference multiple TOC
-        files, index files, and other Eclipse extensions.</p></draft-comment>
+      </simpletable>
+    </p>
     <p>To run the Eclipse help transformation, set the <parmname>transtype</parmname> parameter to
         <option>eclipsehelp</option>, or pass the <parmname>--format</parmname>=<option>eclipsehelp</option> option to
       the <cmdname>dita</cmdname> command line.</p>

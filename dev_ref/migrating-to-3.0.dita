@@ -44,6 +44,8 @@
       <note>If necessary, legacy plug-ins may be re-installed from earlier DITA-OT distributions, but they are no longer
         actively maintained or supported by the core toolkit committers. The source code is available on GitHub for
         anyone interested in maintaining the plug-ins for use with future toolkit versions.</note>
+      <p>To re-install the JavaHelp plug-in, run the following command:</p>
+      <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname> <filepath>https://github.com/dita-ot/org.dita.javahelp/archive/2.5.zip</filepath></codeblock>
     </section>
 
   </refbody>

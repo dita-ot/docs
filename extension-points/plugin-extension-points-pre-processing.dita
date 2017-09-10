@@ -95,12 +95,6 @@
             >Runs an Ant target before the <codeph>debug-filter</codeph> step in the pre-processing stage <i>(not recommended)</i>.</dd>
         </dlentry>
         <dlentry>
-          <dt><parmname>depend.preprocess.flag-module.pre</parmname></dt>
-          <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/depend.preprocess.flag-module.pre.desc"
-            >Runs an Ant target before the <codeph>flag-module</codeph> step in the pre-processing stage <i>(not recommended)</i>.</dd>
-        </dlentry>
-        <dlentry>
           <dt><parmname>depend.preprocess.gen-list.pre</parmname></dt>
           <dd conaction="pushreplace"
             conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/depend.preprocess.gen-list.pre.desc"

@@ -465,6 +465,16 @@
     </refbody>
   </reference>
 
+  <reference id="htmlhelp">
+    <title>HTML Help</title>
+    <titlealts>
+      <navtitle>HTML Help</navtitle>
+    </titlealts>
+    <shortdesc conaction="pushreplace" conref="parameters-htmlhelp.dita#htmlhelp/shortdesc">Certain parameters are
+      specific to the HTML Help transformation.</shortdesc>
+    <refbody/>
+  </reference>
+
   <reference id="pdf">
     <title>PDF</title>
     <titlealts>

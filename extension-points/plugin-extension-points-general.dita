@@ -10,6 +10,11 @@
   <refbody>
     <section>
       <dl>
+        <dlentry id="ant.import">
+          <dt><parmname>ant.import</parmname></dt>
+          <dd conaction="pushreplace" conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/ant.import.desc"
+            >Adds an Ant import to the main Ant build file.</dd>
+        </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.lib.import</parmname></dt>
           <dd conaction="pushreplace"
@@ -19,16 +24,24 @@
         <dlentry>
           <dt importance="deprecated"><parmname>dita.conductor.target</parmname></dt>
           <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/dita.conductor.target.desc">Adds
-            an Ant import to the main Ant build file.
-            <note type="attention">This extension point is deprecated; use <codeph>dita.conductor.target.relative</codeph>
-              instead.</note></dd>
+            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/dita.conductor.target.desc">Adds an Ant
+            import to the main Ant build file.
+            <p>
+              <note type="attention">This extension point is deprecated; use
+                  <codeph>dita.conductor.target.relative</codeph> or <codeph>ant.import</codeph> instead.</note>
+            </p>
+          </dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.target.relative</parmname></dt>
           <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/dita.conductor.target.relative.desc"
-            >Adds an Ant import to the main Ant build file.</dd>
+            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/dita.conductor.target.relative.desc">Adds
+            an Ant import to the main Ant build file.
+            <p>
+              <note type="tip">As of DITA-OT 3.0, the <codeph>ant.import</codeph> extension point can be used
+                instead.</note>
+            </p>
+          </dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.conductor.transtype.check</parmname></dt>

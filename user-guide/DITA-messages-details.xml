@@ -10,14 +10,14 @@
     add to this list by rebuilding the DITA-OT documentation.</shortdesc>
   <refbody>
     <section id="overview" conref="DITA-messages.xml#msgs/overview" conaction="pushreplace">
-      <p>Each message ID is composed of a message prefix, a message number, and a letter that indicates the severity (I,
-        W, E, or F). </p>
+      <p>Each message ID is composed of a message prefix, a message number, and a letter that indicates the severity
+        level (I, W, E, or F). </p>
       <p>The toolkit uses the following severity scale:</p>
       <dl>
         <dlentry>
-          <dt>Informational (I)</dt>
-          <dd>The toolkit encountered a condition of which you should be aware. For example, draft comments are enabled
-            and will be rendered in the output.</dd>
+          <dt>Info (I)</dt>
+          <dd>Informational messages highlight the progress of transformation and call attention to conditions of which
+            you should be aware. For example, draft comments are enabled and will be rendered in the output.</dd>
         </dlentry>
         <dlentry>
           <dt>Warning (W)</dt>

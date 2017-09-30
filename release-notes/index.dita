@@ -22,6 +22,12 @@
             result in build failures due to an improperly set XSLT variable.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2772" format="html" scope="external">#2772</xref>
           </li>
+          <!--<li id="2795">External links inside of <xmlelement>related-links</xmlelement> are dropped from PDF
+            output in DITA-OT 2.4 and 2.5. These links now appear using the <xmlatt>href</xmlatt> attribute
+            value as link text, as in earlier releases.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2795" format="html" scope="external">#2795</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2802" format="html" scope="external">#2802</xref>
+          </li>-->
           <li id="2800">Cross references within the same document, such as
             <codeph>&lt;xref href="#topicid/sampleFigure"/&gt;</codeph>, cause build errors
             when the build parameter <parmname>onlytopic.in.map</parmname> is set to true.

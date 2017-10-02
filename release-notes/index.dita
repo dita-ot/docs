@@ -247,14 +247,20 @@
       <section id="2637">
         <title>Publishing with multiple DITAVAL filter files</title>
         <p>The <codeph>args.filter</codeph> parameter, which previously allowed you to specify a single DITAVAL file for
-          filtering or flagging, now accepts a list of URIs. The system separator character is used to separate the
-          values. DITAVAL files are evaluated in the order specified, so conditions specified in the first file take
-          precedence over matching conditions specified in later files, just as conditions at the start of a DITAVAL
-          document take precedence over matching conditions later in the same document.
+          filtering or flagging, now accepts a list of URIs. The system path separator character is used to delimit
+          individual file paths in the list of values (semicolon ‘<codeph>;</codeph>’ on Windows, and colon
+            ‘<codeph>:</codeph>’ on macOS and Linux). DITAVAL files are evaluated in the order specified, so conditions
+          specified in the first file take precedence over matching conditions specified in later files, just as
+          conditions at the start of a DITAVAL document take precedence over matching conditions later in the same
+          document.
           <xref href="https://github.com/dita-ot/dita-ot/issues/2637" format="html" scope="external">#2637</xref></p>
         <p>This feature allows you to manage your conditions independently or combine conditions from multiple sources.
           For example, you can now manage your filter conditions (that might change rarely) separately from revisions,
           or easily combine flagging conditions from different products when those products are published together.</p>
+        <p>You can then pass the filenames to the <cmdname>dita</cmdname> command as follows:</p>
+        <p>
+          <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>userguide.ditamap</filepath> <parmname>--format</parmname>=<option>pdf</option> <parmname>--filter</parmname>=<filepath>filters.ditaval:flags.ditaval</filepath></codeblock>
+        </p>
         <p id="2681"> DITAVAL properties are now more flexible so that plug-ins can provide a common set of DITAVAL
           conditions and override the <parmname>args.filter</parmname> parameter. Initialization code has been cleaned
           up so that it does not set unnecessary properties.

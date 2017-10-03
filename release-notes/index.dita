@@ -45,6 +45,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2790" format="html" scope="external">#2790</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2803" format="html" scope="external">#2803</xref>
           </li>-->
+          <!--<li id="2805">In earlier releases, when <codeph>chunk="by-topic"</codeph> was specified on a 
+            <xmlelement>topicref</xmlelement> element that did not specify the <xmlatt>href</xmlatt> attribute, 
+            the build would end in a null pointer error. This error has been removed and the build will continue.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2805" format="html" scope="external">#2805</xref>
+          </li>-->
         </ul>
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/2.5.3...2.5.4" format="html" scope="external">

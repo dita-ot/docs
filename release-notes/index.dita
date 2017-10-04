@@ -17,6 +17,14 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
+          <li id="2226">In earlier releases, plugins that contributed variables (or strings) did not work
+            when the variables were contributed with mixed case (such as <codeph>pt-BR</codeph> instead of
+            <codeph>pt-pt</codeph>. This has been fixed, so that the case of <xmlatt>xml:lang</xmlatt> is
+            ignored when contributing variables.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2226" format="html" scope="external">#2226</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2790" format="html" scope="external">#2790</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2803" format="html" scope="external">#2803</xref>
+          </li>
           <li id="2772">In DITA-OT 2.5, external cross references to DITA topics, such as
             <codeph>&lt;xref href="http://example.com/onlineTopic.dita" scope="external"&gt;</codeph>,
             result in build failures due to an improperly set XSLT variable.
@@ -36,14 +44,6 @@
           <li id="2801">In DITA-OT 2.4 and 2.5, the <xmlelement>property</xmlelement> in reference topics resulted in an
             "Ambiguous rule match" message from Saxon when building HTML5. This message has been removed.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2801" format="html" scope="external">#2801</xref>
-          </li>
-          <li id="2226">In earlier releases, plugins that contributed variables (or strings) did not work
-            when the variables were contributed with mixed case (such as <codeph>pt-BR</codeph> instead of
-            <codeph>pt-pt</codeph>. This has been fixed, so that the case of <xmlatt>xml:lang</xmlatt> is
-            ignored when contributing variables.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2226" format="html" scope="external">#2226</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2790" format="html" scope="external">#2790</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2803" format="html" scope="external">#2803</xref>
           </li>
           <li id="2805">In earlier releases, when <codeph>chunk="by-topic"</codeph> was specified on a 
             <xmlelement>topicref</xmlelement> element that did not specify the <xmlatt>href</xmlatt> attribute, 

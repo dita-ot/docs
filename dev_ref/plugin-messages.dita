@@ -9,30 +9,31 @@
     override.</shortdesc>
   <taskbody>
     <steps>
-      <step>
-        <cmd>Create an XML file that contains the messages that you want to add. Be sure to use the following format for
-          the XML file:</cmd>
+      <step id="step_osv_44x_kbb">
+        <cmd>Create an XML file that contains the messages that you want to add. Be sure to use the
+          following format for the XML file:</cmd>
         <info><codeblock>&lt;dummy>
   &lt;!-- See resources/messages.xml for the details. -->
-  &lt;message id="DOTX<varname>number</varname><varname>letter</varname>" type="<varname>error-severity</varname>">
+  &lt;message id="<varname>prefix</varname><varname>number</varname><varname>letter</varname>" type="<varname>error-severity</varname>">
     &lt;reason>Message text&lt;/reason>
     &lt;response>How to resolve&lt;/response>
   &lt;/message>
 &lt;/dummy></codeblock>where:
-          <ul>
+            <ul id="ul_etv_44x_kbb">
+            <li><varname>prefix</varname> is a sequence of three letters followed by an X.</li>
             <li><varname>number</varname> is a three-digit integer.</li>
-            <li><varname>letter</varname> is one of the following upper-case letters: I, W, E, F. It should match the
-              value that is specified for the <xmlatt>type</xmlatt> attribute.</li>
-            <li><varname>error-severity</varname> specifies the severity of the error. It must be one of the following values:
-              <ul>
+            <li><varname>letter</varname> is one of the following upper-case letters: I, W, E, F. It
+              should match the value that is specified for the <xmlatt>type</xmlatt> attribute.</li>
+            <li><varname>error-severity</varname> specifies the severity of the error. It must be
+              one of the following values: <ul id="ul_ftv_44x_kbb">
                 <li>INFO</li>
                 <li>WARN</li>
                 <li>ERROR</li>
                 <li>FATAL</li>
               </ul></li>
-          </ul><draft-comment author="Kristen Eberlein" time="31 March 2013">What advice should we give users to prevent
-            them from using a message number and letter combination that is already used by the DITA-OT? If that
-            happens, what is the result?</draft-comment></info>
+          </ul><draft-comment author="Kristen Eberlein" time="31 March 2013">What advice should we
+            give users to prevent them from using a message number and letter combination that is
+            already used by the DITA-OT? If that happens, what is the result?</draft-comment></info>
       </step>
       <step>
         <cmd>Create a <filepath>plug-in.xml</filepath> file that contains the following content:</cmd>
@@ -44,7 +45,8 @@
           <ul>
             <li><varname>plugin-id</varname> is the plug-in identifier, for example,
               <codeph>com.example.newmsg</codeph>.</li>
-            <li><varname>file</varname> is the name of the new messages file, for example,
+            <li><varname>file</varname> is the name of the new XML file containing the messages
+              created in step <xref keyref="plugin-messages/step_osv_44x_kbb"/> , for example,
                 <filepath>myMessages.xml</filepath>. </li>
           </ul>
         </info>
@@ -53,13 +55,33 @@
         <cmd>Install the plug-in.</cmd>
       </step>
     </steps>
-    <postreq>
-      <p>You now can use the following call in XSLT modules to generate a message when a specific condition occurs:</p>
-      <codeblock>&lt;xsl:call-template name="output-message">
-  &lt;xsl:with-param name="msgnum"><varname>number</varname><varname>letter</varname>&lt;/xsl:with-param>
-  &lt;xsl:with-param name="msgsev"><varname>letter</varname>&lt;/xsl:with-param>
+  </taskbody>
+  <task id="task_kqx_dny_kbb">
+    <title/>
+    <taskbody>
+      <steps id="steps_djk_fny_kbb">
+        <step>
+          <cmd>Import <filepath>dita-utilities.xsl</filepath> and
+              <filepath>output-message.xsl</filepath> from the org.dita.base plugin into the
+            stylesheet context.</cmd>
+          <info>
+            <codeblock>&lt;xsl:import href="plugin:org.dita.base:xsl/common/dita-utilities.xsl"/>
+&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock>
+          </info>
+        </step>
+        <step>
+          <cmd>Add the following call in XSLT modules to generate a message when a specific
+            condition occurs:</cmd>
+          <info>
+            <codeblock>
+&lt;xsl:call-template name="output-message">
+  &lt;xsl:with-param name="id"><varname>prefix</varname><varname>number</varname><varname>letter</varname>&lt;/xsl:with-param>
+  &lt;xsl:with-param name="msg">Message text and parameters.&lt;/xsl:with-param>
 &lt;/xsl:call-template>
 </codeblock>
-    </postreq>
-  </taskbody>
+          </info>
+        </step>
+      </steps>
+    </taskbody>
+  </task>
 </task>

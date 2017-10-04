@@ -17,44 +17,46 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2226">In earlier releases, plugins that contributed variables (or strings) did not work
-            when the variables were contributed with mixed case (such as <codeph>pt-BR</codeph> instead of
-            <codeph>pt-pt</codeph>. This has been fixed, so that the case of <xmlatt>xml:lang</xmlatt> is
-            ignored when contributing variables.
+          <li id="2226">In earlier releases, plugins that contributed variables (or strings) did not work when the
+            variables were contributed with mixed case (such as <codeph>pt-BR</codeph> instead of
+            <codeph>pt-pt</codeph>). This has been fixed, so that the case of <xmlatt>xml:lang</xmlatt> is ignored when
+            contributing variables.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2226" format="html" scope="external">#2226</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2790" format="html" scope="external">#2790</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2803" format="html" scope="external">#2803</xref>
           </li>
-          <li id="2772">In DITA-OT 2.5, external cross references to DITA topics, such as
-            <codeph>&lt;xref href="http://example.com/onlineTopic.dita" scope="external"&gt;</codeph>,
-            result in build failures due to an improperly set XSLT variable.
+          <li id="2772">In DITA-OT 2.5, external cross references to DITA topics, such as <codeph>&lt;xref
+              href="http://example.com/onlineTopic.dita" scope="external"&gt;</codeph>, resulted in build failures due
+            to an improperly set XSLT variable. This setting has been corrected to ensure external references are
+            resolved as expected.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2772" format="html" scope="external">#2772</xref>
           </li>
-          <li id="2795">External links inside of <xmlelement>related-links</xmlelement> are dropped from PDF
-            output in DITA-OT 2.4 and 2.5. These links now appear using the <xmlatt>href</xmlatt> attribute
-            value as link text, as in earlier releases.
+          <li id="2795">External links in <xmlelement>related-links</xmlelement> collections were dropped from PDF
+            output in DITA-OT 2.4 and 2.5. These links now appear using the <xmlatt>href</xmlatt> attribute value as
+            link text, as in earlier releases.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2795" format="html" scope="external">#2795</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2802" format="html" scope="external">#2802</xref>
           </li>
-          <li id="2800">In DITA-OT 2.5, cross references within the same document, such as
-            <codeph>&lt;xref href="#topicid/sampleFigure"/&gt;</codeph>, cause build errors
-            when the build parameter <parmname>onlytopic.in.map</parmname> is set to true.
+          <li id="2800">In DITA-OT 2.5, cross references to targets within the same document, such as <codeph>&lt;xref
+              href="#topicid/sampleFigure"/&gt;</codeph>, caused build errors when the
+              <parmname>onlytopic.in.map</parmname> parameter was set to <option>true</option>. Processing has been
+            corrected to ensure these links are generated correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2800" format="html" scope="external">#2800</xref>
           </li>
-          <li id="2801">In DITA-OT 2.4 and 2.5, the <xmlelement>property</xmlelement> in reference topics resulted in an
-            "Ambiguous rule match" message from Saxon when building HTML5. This message has been removed.
+          <li id="2801">In DITA-OT 2.4 and 2.5, the <xmlelement>property</xmlelement> element in reference topics
+            resulted in an "Ambiguous rule match" message from Saxon when building HTML5. This message has been removed.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2801" format="html" scope="external">#2801</xref>
           </li>
-          <li id="2805">In earlier releases, when <codeph>chunk="by-topic"</codeph> was specified on a 
-            <xmlelement>topicref</xmlelement> element that did not specify the <xmlatt>href</xmlatt> attribute, 
-            the build would end in a null pointer error. This error has been removed and the build will continue.
+          <li id="2805">In earlier releases, when <codeph>chunk="by-topic"</codeph> was specified on a
+              <xmlelement>topicref</xmlelement> element that did not specify the <xmlatt>href</xmlatt> attribute, the
+            build would end in a null pointer exception. This error has been removed and the build will continue.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2805" format="html" scope="external">#2805</xref>
           </li>
-          <li id="2806">In earlier releases, when a map reference (such as <xmlelement>mapref</xmlelement>) 
-            referenced a map in a subdirectory, and that referenced map included elements with <xmlatt>conref</xmlatt>
-            attributes, the step that resolved map references did not properly adjust paths in
-            <xmlatt>conref</xmlatt>, resulting in unresolvable content references. This has been fixed, and
-            <xmlatt>conref</xmlatt> attributes in nested maps in subdirectories resolve properly.
+          <li id="2806">In earlier releases, when a map reference (such as <xmlelement>mapref</xmlelement>) referred to
+            a map in a subdirectory, and that referenced map included elements with <xmlatt>conref</xmlatt> attributes,
+            the step that resolved map references did not properly adjust paths in <xmlatt>conref</xmlatt>, resulting in
+            unresolvable content references. This has been fixed, and <xmlatt>conref</xmlatt> attributes in nested maps
+            in subdirectories now resolve properly.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2806" format="html" scope="external">#2806</xref>
           </li>
         </ul>

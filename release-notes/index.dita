@@ -37,7 +37,7 @@
             "Ambiguous rule match" message from Saxon when building HTML5. This message has been removed.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2801" format="html" scope="external">#2801</xref>
           </li>
-          <li id="2803">In earlier releases, plugins that contributed variables (or strings) did not work
+          <li id="2226">In earlier releases, plugins that contributed variables (or strings) did not work
             when the variables were contributed with mixed case (such as <codeph>pt-BR</codeph> instead of
             <codeph>pt-pt</codeph>. This has been fixed, so that the case of <xmlatt>xml:lang</xmlatt> is
             ignored when contributing variables.

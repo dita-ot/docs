@@ -1,5 +1,4 @@
-# DITA Open Toolkit Docs [![Build Status][1]](http://travis-ci.org/dita-ot/docs)
-[![Slack][2]](http://slack.dita-ot.org/)
+# DITA Open Toolkit Docs [![Build Status][1]](http://travis-ci.org/dita-ot/docs) [![Slack][2]](http://slack.dita-ot.org/)
 
 This repository tracks the source files for the [DITA Open Toolkit documentation][3].
 

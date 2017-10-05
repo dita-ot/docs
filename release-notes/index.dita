@@ -11,11 +11,74 @@
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
 
-  <reference id="v253">
+  <reference id="v254">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="2226">In earlier releases, plugins that contributed variables (or strings) did not work when the
+            variables were contributed with mixed case (such as <codeph>pt-BR</codeph> instead of
+            <codeph>pt-pt</codeph>). This has been fixed, so that the case of <xmlatt>xml:lang</xmlatt> is ignored when
+            contributing variables.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2226" format="html" scope="external">#2226</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2790" format="html" scope="external">#2790</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2803" format="html" scope="external">#2803</xref>
+          </li>
+          <li id="2772">In DITA-OT 2.5, external cross references to DITA topics, such as <codeph>&lt;xref
+              href="http://example.com/onlineTopic.dita" scope="external"&gt;</codeph>, resulted in build failures due
+            to an improperly set XSLT variable. This setting has been corrected to ensure external references are
+            resolved as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2772" format="html" scope="external">#2772</xref>
+          </li>
+          <li id="2795">External links in <xmlelement>related-links</xmlelement> collections were dropped from PDF
+            output in DITA-OT 2.4 and 2.5. These links now appear using the <xmlatt>href</xmlatt> attribute value as
+            link text, as in earlier releases.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2795" format="html" scope="external">#2795</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2802" format="html" scope="external">#2802</xref>
+          </li>
+          <li id="2800">In DITA-OT 2.5, cross references to targets within the same document, such as <codeph>&lt;xref
+              href="#topicid/sampleFigure"/&gt;</codeph>, caused build errors when the
+              <parmname>onlytopic.in.map</parmname> parameter was set to <option>true</option>. Processing has been
+            corrected to ensure these links are generated correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2800" format="html" scope="external">#2800</xref>
+          </li>
+          <li id="2801">In DITA-OT 2.4 and 2.5, the <xmlelement>property</xmlelement> element in reference topics
+            resulted in an "Ambiguous rule match" message from Saxon when building HTML5. This message has been removed.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2801" format="html" scope="external">#2801</xref>
+          </li>
+          <li id="2805">In earlier releases, when <codeph>chunk="by-topic"</codeph> was specified on a
+              <xmlelement>topicref</xmlelement> element that did not specify the <xmlatt>href</xmlatt> attribute, the
+            build would end in a null pointer exception. This error has been removed and the build will continue.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2805" format="html" scope="external">#2805</xref>
+          </li>
+          <li id="2806">In earlier releases, when a map reference (such as <xmlelement>mapref</xmlelement>) referred to
+            a map in a subdirectory, and that referenced map included elements with <xmlatt>conref</xmlatt> attributes,
+            the step that resolved map references did not properly adjust paths in <xmlatt>conref</xmlatt>, resulting in
+            unresolvable content references. This has been fixed, and <xmlatt>conref</xmlatt> attributes in nested maps
+            in subdirectories now resolve properly.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2806" format="html" scope="external">#2806</xref>
+          </li>
+          <li>
+            <p>The documentation includes minor
+              <xref href="https://github.com/dita-ot/docs/compare/2.5.3...2.5.4" format="html" scope="external">
+                changes</xref> with
+              <xref href="https://github.com/dita-ot/docs/milestone/29?closed=1" format="html" scope="external"
+                >corrections and improvements</xref> to existing topics.</p>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/2.5.3...2.5.4" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v253">
+    <title>Maintenance Release 2.5.3</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 2.5.3 includes the following bug fixes.</p>
         <ul>
           <li id="2759">In DITA-OT 2.5, the <codeph>gen-list</codeph> pre-processing step listed resource-only
             references with <xmlatt>scope</xmlatt>=<codeph>"peer"</codeph> as local files when the
@@ -213,14 +276,20 @@
       <section id="2637">
         <title>Publishing with multiple DITAVAL filter files</title>
         <p>The <codeph>args.filter</codeph> parameter, which previously allowed you to specify a single DITAVAL file for
-          filtering or flagging, now accepts a list of URIs. The system separator character is used to separate the
-          values. DITAVAL files are evaluated in the order specified, so conditions specified in the first file take
-          precedence over matching conditions specified in later files, just as conditions at the start of a DITAVAL
-          document take precedence over matching conditions later in the same document.
+          filtering or flagging, now accepts a list of URIs. The system path separator character is used to delimit
+          individual file paths in the list of values (semicolon ‘<codeph>;</codeph>’ on Windows, and colon
+            ‘<codeph>:</codeph>’ on macOS and Linux). DITAVAL files are evaluated in the order specified, so conditions
+          specified in the first file take precedence over matching conditions specified in later files, just as
+          conditions at the start of a DITAVAL document take precedence over matching conditions later in the same
+          document.
           <xref href="https://github.com/dita-ot/dita-ot/issues/2637" format="html" scope="external">#2637</xref></p>
         <p>This feature allows you to manage your conditions independently or combine conditions from multiple sources.
           For example, you can now manage your filter conditions (that might change rarely) separately from revisions,
           or easily combine flagging conditions from different products when those products are published together.</p>
+        <p>You can then pass the filenames to the <cmdname>dita</cmdname> command as follows:</p>
+        <p>
+          <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>userguide.ditamap</filepath> <parmname>--format</parmname>=<option>pdf</option> <parmname>--filter</parmname>=<filepath>filters.ditaval:flags.ditaval</filepath></codeblock>
+        </p>
         <p id="2681"> DITAVAL properties are now more flexible so that plug-ins can provide a common set of DITAVAL
           conditions and override the <parmname>args.filter</parmname> parameter. Initialization code has been cleaned
           up so that it does not set unnecessary properties.

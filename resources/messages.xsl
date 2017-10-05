@@ -56,7 +56,7 @@
               <stentry><msgnum><xsl:value-of select="@id"/></msgnum></stentry>
               <stentry>
                 <xsl:choose>
-                  <xsl:when test="@type='INFO'">Informational</xsl:when>
+                  <xsl:when test="@type='INFO'">Info</xsl:when>
                   <xsl:when test="@type='WARN'">Warning</xsl:when>
                   <xsl:when test="@type='ERROR'">Error</xsl:when>
                   <xsl:when test="@type='FATAL'">Fatal</xsl:when>

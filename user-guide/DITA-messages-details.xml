@@ -283,8 +283,9 @@
           for this function.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTJ045I-extra" conaction="pushreplace">No response is needed if the
-          keys are defined as expected; this is informational only, to help catch incorrectly defined keys.</stentry>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ045I-extra" conaction="pushreplace">This informational message is
+          intended to help you catch catch duplicate key definitions; if the keys are defined as expected, no action is
+          needed.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ046E-extra" conaction="pushreplace">See <xref

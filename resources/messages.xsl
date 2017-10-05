@@ -43,9 +43,9 @@
         <section id="overview"><p>Plug-ins may be used to add additional error messages into the toolkit;
           for more information, see the DITA-OT <cite>Developer Reference</cite>.</p></section>
         <simpletable>
-          <xsl:attribute name="relcolwidth">1.5* 1.8* 4* 4*</xsl:attribute>
+          <xsl:attribute name="relcolwidth">1.5* 1.5* 3* 4*</xsl:attribute>
           <sthead>
-              <stentry>Message ID</stentry>
+              <stentry>Message&#xA0;ID</stentry>
               <stentry>Severity</stentry>
               <stentry>Message text</stentry>
               <stentry>Additional details</stentry>

@@ -357,8 +357,8 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ071E-extra" conaction="pushreplace">
           <p>Ensure that the DITAVAL file exists. If more than one DITAVAL file is specified, ensure that the paths are
-            separated using the separator character appropriate for your operating system (semicolon <codeph>;</codeph>
-            on Windows, or colon <codeph>:</codeph> on Linux or macOS).</p>
+            delimited using the file path separator character appropriate for your operating system (semicolon
+              ‘<codeph>;</codeph>’ on Windows, or colon ‘<codeph>:</codeph>’ on macOS or Linux).</p>
         </stentry>
       </strow>
       <strow>

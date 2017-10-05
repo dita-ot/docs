@@ -3,9 +3,9 @@
 
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:output method="xml" 
-              indent="no" 
-              doctype-public="-//OASIS//DTD DITA Reference//EN" 
+  <xsl:output method="xml"
+              indent="no"
+              doctype-public="-//OASIS//DTD DITA Reference//EN"
               doctype-system="reference.dtd"/>
 
   <xsl:template match="/">
@@ -79,7 +79,7 @@
       </refbody>
     </reference>
   </xsl:template>
-  
+
   <xsl:template name="format-message">
     <xsl:param name="text"/>
     <xsl:choose>

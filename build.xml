@@ -142,6 +142,7 @@
     <dita-ot transtype="pdf" input="userguide-book.ditamap" output="${doc.out.dir}">
       <properties>
         <property file="samples/properties/docs-build-pdf.properties"/>
+        <property name="conserve-memory" value="true"/>
       </properties>
     </dita-ot>
   </target>
@@ -150,6 +151,7 @@
     <dita-ot transtype="html5" input="userguide.ditamap" output="${doc.out.dir}">
       <properties>
         <property file="samples/properties/docs-build-html5.properties"/>
+        <property name="conserve-memory" value="true"/>
       </properties>
     </dita-ot>
   </target>
@@ -158,6 +160,7 @@
     <dita-ot transtype="htmlhelp" input="userguide.ditamap" output="${doc.out.dir}/htmlhelp">
       <properties>
         <property file="samples/properties/docs-build-htmlhelp.properties"/>
+        <property name="conserve-memory" value="true"/>
       </properties>
     </dita-ot>
 

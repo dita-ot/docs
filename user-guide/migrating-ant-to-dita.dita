@@ -66,6 +66,9 @@
       <p>This approach allows you to use Ant builds to perform additional tasks at build time while allowing the
           <cmdname>dita</cmdname> command to set the classpath and ensure that all necessary JAR libraries are
         available.</p>
+      <note>The attributes defined in the Ant macro are required and must be supplied each time the task is run. To set
+        optional parameters in one build (but not another), use different <filepath>.properties</filepath> files for
+        each build.</note>
       <p>Sample build file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
           /><filepath>/ant_sample/build-chm-pdf-hybrid.xml</filepath>
         <codeblock><coderef href="../samples/ant_sample/build-chm-pdf-hybrid.xml"/></codeblock>

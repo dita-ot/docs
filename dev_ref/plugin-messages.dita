@@ -20,17 +20,19 @@
   &lt;/message>
 &lt;/dummy></codeblock>where:
             <ul id="ul_etv_44x_kbb">
-            <li><varname>prefix</varname> is a sequence of three letters followed by an X.</li>
+            <li><varname>prefix</varname> is a sequence of for capital letters.<note>By convention, the toolkit messages
+                use <codeph>DOTX</codeph> but any sequence can be used by plugin developers.</note></li>
             <li><varname>number</varname> is a three-digit integer.</li>
             <li><varname>letter</varname> is one of the following upper-case letters: I, W, E, F. It
               should match the value that is specified for the <xmlatt>type</xmlatt> attribute.</li>
-            <li><varname>error-severity</varname> specifies the severity of the error. It must be
-              one of the following values: <ul id="ul_ftv_44x_kbb">
-                <li>INFO</li>
-                <li>WARN</li>
-                <li>ERROR</li>
-                <li>FATAL</li>
-              </ul></li>
+            <li><varname>error-severity</varname> specifies the severity of the error. It must be one of the following
+              values: <dl conkeyref="messages-push/warning_severity">
+                <dlentry>
+                  <dt/>
+                  <dd/>
+                </dlentry>
+              </dl><note>the <codeph>FATAL</codeph> value throws a fatal error message in XSLT and an exception in
+                Java.</note></li>
           </ul><draft-comment author="Kristen Eberlein" time="31 March 2013">What advice should we
             give users to prevent them from using a message number and letter combination that is
             already used by the DITA-OT? If that happens, what is the result?</draft-comment></info>

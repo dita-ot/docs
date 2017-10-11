@@ -7,7 +7,7 @@
   <topicref href="troubleshooting-overview.dita">
     <topicref href="prerequisite-software.dita"/>
     <topicref href="DITA-messages.xml" keys="messages">
-      <topicref href="DITA-messages-details.xml" processing-role="resource-only"/>
+      <topicref href="DITA-messages-details.xml" processing-role="resource-only" keys="messages-push"/>
     </topicref>
     <topicref href="other-errors.dita"/>
     <topicref href="log-files.dita"/>

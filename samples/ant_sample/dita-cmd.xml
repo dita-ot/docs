@@ -15,7 +15,7 @@
     <attribute name="propertyfile"/>
     <sequential>
       <exec executable="${dita.dir}/bin/dita">
-        <arg line="--input @{input} --format @{format} --propertyfile=@{propertyfile}"/>
+        <arg line="--input=@{input} --format=@{format} --propertyfile=@{propertyfile}"/>
       </exec>
     </sequential>
   </macrodef>

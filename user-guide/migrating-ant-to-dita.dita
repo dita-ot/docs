@@ -27,7 +27,8 @@
       </step>
       <step>
         <cmd>Use the <cmdname>dita</cmdname> command to perform each build, referencing your
-            <filepath>.properties</filepath> file with the <parmname>-propertyfile</parmname> option.</cmd>
+            <filepath>.properties</filepath> with the <parmname>--propertyfile</parmname>=<varname>file</varname>
+          option.</cmd>
       </step>
     </steps>
     <example><title>Example: Ant build</title>

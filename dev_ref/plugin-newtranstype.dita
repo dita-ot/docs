@@ -54,7 +54,8 @@
   &lt;feature extension="dita.transtype.print" value="newtext"/>
   &lt;feature extension="dita.conductor.target.relative" file="build-newtext.xml"/>
 &lt;/plugin></codeblock>
-      <p>The following example shows how the <filepath>org.dita.html5</filepath> plugin uses the
+      <p>While the <filepath>org.dita.html5</filepath> plug-in was separated from <codeph>common-html</codeph> in version 2.4,
+          the following example shows how earlier versions of that plug-in used the
           <xmlelement>transtype</xmlelement> element to extend the common HTML transformation with a new
           <option>html5</option> transformation type and define a new <parmname>nav-toc</parmname> parameter with three
         possible values:</p>

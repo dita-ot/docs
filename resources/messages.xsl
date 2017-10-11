@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:output method="xml" 
-              indent="no" 
-              doctype-public="-//OASIS//DTD DITA Reference//EN" 
+  <xsl:output method="xml"
+              indent="no"
+              doctype-public="-//OASIS//DTD DITA Reference//EN"
               doctype-system="reference.dtd"/>
 
   <xsl:template match="/">
@@ -43,9 +43,9 @@
         <section id="overview"><p>Plug-ins may be used to add additional error messages into the toolkit;
           for more information, see the DITA-OT <cite>Developer Reference</cite>.</p></section>
         <simpletable>
-          <xsl:attribute name="relcolwidth">1.5* 1.8* 4* 4*</xsl:attribute>
+          <xsl:attribute name="relcolwidth">1.5* 1.5* 3* 4*</xsl:attribute>
           <sthead>
-              <stentry>Message ID</stentry>
+              <stentry>Message&#xA0;ID</stentry>
               <stentry>Severity</stentry>
               <stentry>Message text</stentry>
               <stentry>Additional details</stentry>
@@ -56,7 +56,7 @@
               <stentry><msgnum><xsl:value-of select="@id"/></msgnum></stentry>
               <stentry>
                 <xsl:choose>
-                  <xsl:when test="@type='INFO'">Informational</xsl:when>
+                  <xsl:when test="@type='INFO'">Info</xsl:when>
                   <xsl:when test="@type='WARN'">Warning</xsl:when>
                   <xsl:when test="@type='ERROR'">Error</xsl:when>
                   <xsl:when test="@type='FATAL'">Fatal</xsl:when>
@@ -79,7 +79,7 @@
       </refbody>
     </reference>
   </xsl:template>
-  
+
   <xsl:template name="format-message">
     <xsl:param name="text"/>
     <xsl:choose>

@@ -2,7 +2,7 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<map xml:lang="en-US">
+<map>
   <title>Developer Reference</title>
   <topicref href="DITA-OTArchitecture.dita">
     <topicref href="processing-structure.dita"/>
@@ -34,9 +34,9 @@
       <topicref href="XhtmlEclipse.dita"/>
       <topicref href="XhtmlTocjs.dita"/>
       <topicref href="XhtmlCHM.dita"/>
-      <topicref href="XhtmlJavahelp.dita"/>
     </topicref>
     <topicref href="PdfDefault.dita"/>
+    <topicref href="map-first-preprocessing.dita" keys="map-first-preproc"/>
   </topicref>
   <topicref href="extending-the-ot.dita">
     <topicref href="plugins-installing.dita"/>
@@ -48,6 +48,7 @@
   <mapref href="html-customization.ditamap"/>
   <mapref href="pdf-customization.ditamap"/>
   <mapref href="migration.ditamap"/>
+  <topicref href="java-api.dita" keys="java-api"/>
 
   <!-- XXX: is this obsolete? 2 April 2013: Commented out; high priority to write new topic about topic merge-->
   <!--<topicref href="topicmerge.dita" navtitle="Topic merge"/>-->

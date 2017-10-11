@@ -2,7 +2,7 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<map id="reltable" title="Relationship tables" xml:lang="en-US">
+<map id="reltable" title="Relationship tables">
   <reltable>
     <relrow>
       <relcell>
@@ -72,19 +72,6 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/dita2javahelp.dita">
-          <topicmeta>
-            <linktext>JavaHelp transformation</linktext>
-          </topicmeta>
-        </topicref>
-      </relcell>
-      <relcell/>
-      <relcell>
-        <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
         <topicref href="../user-guide/dita2pdf.dita">
           <topicmeta>
             <linktext>PDF transformation</linktext>
@@ -108,6 +95,7 @@
         <topicref keyref="html-customization-parameters"/>
       </relcell>
       <relcell>
+        <topicref href="../parameters/parameters-base-html.dita"/>
         <topicref href="../parameters/parameters-xhtml.dita"/>
       </relcell>
     </relrow>
@@ -123,7 +111,17 @@
         <topicref keyref="html-customization-parameters"/>
       </relcell>
       <relcell>
+        <topicref href="../parameters/parameters-base-html.dita"/>
         <topicref href="../parameters/parameters-html5.dita"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="html-customization-plugin-bundle-css"/>
+      </relcell>
+      <relcell>
+        <topicref href="../parameters/parameters-base-html.dita"/>
       </relcell>
     </relrow>
     <relrow>
@@ -147,7 +145,6 @@
       <relcell>
         <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
         <topicref href="../parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
-        <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
         <topicref href="../parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
         <topicref href="../parameters/parameters-xhtml.dita" navtitle="XHTML transformation"/>
       </relcell>
@@ -170,7 +167,6 @@
         <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
         <topicref href="../parameters/parameters-html5.dita"/>
         <topicref href="../parameters/parameters-htmlhelp.dita"/>
-        <topicref href="../parameters/parameters-javahelp.dita" navtitle="JavaHelp transformation"/>
         <topicref href="../parameters/parameters-xhtml.dita" navtitle="XHTML transformation"/>
       </relcell>
     </relrow>
@@ -190,6 +186,21 @@
         <topicref href="../extension-points/plugin-extension-points-pre-processing.dita"/>
         <topicref href="../extension-points/plugin-extension-points-support.dita"/>
         <topicref href="../extension-points/plugin-extension-points-general.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
+  <reltable>
+    <title>Task to task: Bi-directional links</title>
+    <relheader>
+      <relcolspec type="task"/>
+      <relcolspec type="task"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref keyref="html-customization-css"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="html-customization-plugin-bundle-css"/>
       </relcell>
     </relrow>
   </reltable>
@@ -230,17 +241,6 @@
       </relcell>
       <relcell>
         <topicref href="../dev_ref/plugin-newtranstype.dita" type="task"/>
-        <topicref href="../extension-points/all-extension-points.dita"/>
-        <topicref href="../dev_ref/plugin-sample.dita"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
-        <topicref href="../extension-points/all-extension-points.dita"/>
-      </relcell>
-      <relcell>
-        <topicref href="../dev_ref/plugin-newtranstype.dita" type="task"/>
-        <topicref href="../dev_ref/plugin-configfile.dita"/>
         <topicref href="../dev_ref/plugin-sample.dita"/>
       </relcell>
     </relrow>

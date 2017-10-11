@@ -7,7 +7,7 @@
   <titlealts>
     <navtitle>Bundling custom CSS</navtitle>
   </titlealts>
-  <shortdesc>You can create a DITA-OT plug-in that provides a custom stylesheet with the font settings and colors that
+  <shortdesc>You can create a DITA-OT plug-in that provides a custom stylesheet with the typography and colors that
     define your corporate identity. Coworkers can install this plug-in to ensure consistent HTML output across projects
     without having to copy the stylesheet to each project.</shortdesc>
   <taskbody>
@@ -16,12 +16,21 @@
           (<codeph>com.example.html5.custom.css</codeph>) that creates a new transformation type:
           <option>html5-custom-css</option>. </p>
       <p>The <option>html5-custom-css</option> transformation includes a custom CSS file and sets three parameters to
-        integrate the custom stylesheet in the generated HTML5 output:</p>
+        integrate the custom stylesheet in the generated HTML5 output. These parameter settings make the following
+        changes:</p>
       <ul>
-        <li>Specify the custom .css file with <parmname>args.css</parmname></li>
-        <li>Copy the custom .css file to the output directory with <parmname>args.copycss</parmname></li>
-        <li>Set the path for .css files in the output folder with <parmname>args.csspath</parmname></li>
+        <li>
+          <p>Specify the name of the custom .css file with <parmname>args.css</parmname>.</p>
+          <p>The value of this parameter tells DITA-OT to use the custom .css file provided by the plug-in.</p></li>
+        <li>
+          <p>Ensure that the custom .css file is copied to the output directory by setting
+              <parmname>args.copycss</parmname> to <option>yes</option>.</p></li>
+        <li>
+          <p>Set the relative path for .css files in the output folder with <parmname>args.csspath</parmname>.</p>
+          <p>CSS files are copied to the root level of the output folder by default. Setting this parameter places CSS
+            files in a dedicated subfolder.</p></li>
       </ul>
+      <p>All three parameters are set in the Ant script (<filepath>build.xml</filepath>).</p>
     </context>
     <steps>
       <step>
@@ -39,8 +48,8 @@
 <i>&lt;!-- This plug-in extends DITA-OT HTML5 processing with a custom CSS file. --&gt;</i>
 &lt;plugin id="com.example.html5.custom.css"&gt;
   <b>&lt;require plugin="org.dita.html5"/&gt;</b>
-  <b>&lt;feature extension="dita.conductor.transtype.check" value="html5-custom-css" type="txt"/&gt;</b>
-  &lt;feature extension="dita.conductor.target.relative" value="build.xml" type="file"/&gt;
+  <b>&lt;feature extension="dita.conductor.transtype.check" value="html5-custom-css"/&gt;</b>
+  &lt;feature extension="dita.conductor.target.relative" value="build.xml"/&gt;
 &lt;/plugin&gt;</codeblock>
           </fig>
           <note>This plug-in will extend the default HTML5 transformation, so the <xmlelement>require</xmlelement>
@@ -66,8 +75,8 @@ body {
           </fig>
           <note type="tip">When you first create the plug-in, you may want to include a rule in your custom stylesheet
             that makes it readily apparent when the custom styles are applied (the example above will change body text
-            to “red”). Once you have verified that the plug-in works as intended, replace the placeholder rule with
-            your own custom styles.</note>
+            to “red”). Once you have verified that the plug-in works as intended, replace the placeholder rule with your
+            own custom styles.</note>
         </stepxmp>
       </step>
       <step>

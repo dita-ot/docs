@@ -3,9 +3,9 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <concept id="dita2htmlhelp" xml:lang="en-US">
-  <title>DITA to HTML Help (CHM)</title>
+  <title>HTML Help</title>
   <shortdesc>The <option>htmlhelp</option> transformation generates HTML output, CSS files, and the control files that
-    are needed to produce a Microsoft HTML Help file.</shortdesc>
+    are needed to produce a Microsoft Compiled HTML Help (.chm) file.</shortdesc>
   <conbody>
     <p>In addition to the HTML output and CSS files, this transformation returns the following files, where
         <varname>mapname</varname> is the name of the master DITA map. <simpletable frame="all" relcolwidth="2.0* 3.0*">
@@ -27,8 +27,10 @@
         </strow>
         <strow>
           <stentry><filepath><varname>mapname</varname>.chm</filepath></stentry>
-          <stentry>Compiled HTML Help<note>This file is generated only if the HTML Help Workshop is installed on the
-              build system.</note></stentry>
+          <stentry>
+            <p>Compiled HTML Help file</p>
+            <note>The compiled file is only generated if the HTML Help Workshop is installed on the build system.</note>
+          </stentry>
         </strow>
       </simpletable>
     </p>

@@ -3,8 +3,8 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <concept id="dita2pdf" xml:lang="en-US">
-  <title>DITA to PDF (PDF2)</title>
-  <shortdesc>The <option>pdf</option> (or <option>pdf2</option>) transformation generates PDF output.</shortdesc>
+  <title>PDF</title>
+  <shortdesc>The <option>pdf</option> transformation generates output in Portable Document Format.</shortdesc>
   <conbody>
     <p>This transformation was originally created as a plug-in and maintained outside of the main toolkit code. It was
       created as a more robust alternative to the demo PDF transformation in the original toolkit, and thus was known as

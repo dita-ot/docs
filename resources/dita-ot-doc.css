@@ -18,6 +18,7 @@ body {
   padding: 1em;
 }
 
+/* ↓ header-coderef ↓ */
 div.header {
   font-size: 18pt;
   margin: 0;
@@ -36,6 +37,7 @@ div.header hr {
   border-bottom: 1px solid #eee;
   height: 0;
 }
+/* ↑ end-header-ref ↑ */
 
 body,
 caption,
@@ -247,6 +249,7 @@ th {
 Navigation
 ****************************************/
 
+/* ↓ nav-coderef ↓ */
 nav[role=toc] {
   float: left;
   width: 300px;
@@ -255,3 +258,4 @@ nav[role=toc] {
 nav[role=toc] li.active > a {
   font-weight: bold;
 }
+/* ↑ end-nav-ref ↑ */

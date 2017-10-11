@@ -17,21 +17,31 @@
           <dt>Plug-In Info</dt>
           <dd>
             <ul>
-              <li id="plug-in-id"><varname>plug-in-id</varname> is the unique ID of the plug-in, as defined in the
-                plug-in's configuration file (<filepath>plugin.xml</filepath>).</li>
+              <li id="plug-in-id"><filepath><varname>plug-in-id</varname></filepath> is the unique ID of the plug-in, as
+                defined in the plug-in's configuration file (<filepath>plugin.xml</filepath>).</li>
               <li id="plug-in-zip"><filepath><varname>plug-in-zip</varname></filepath> is the
                   <varname>filename</varname> or <varname>URL</varname> of the plug-in's distribution ZIP file
                 (optional).</li>
               <li><ph id="plugin-integrate-all">If no <varname>filename</varname> or <varname>URL</varname> argument is
-                  provided, the installation process reloads plug-ins from the <filepath>plugins</filepath> directory.
-                  This approach can be used to install multiple plug-ins at once, or install any individual plug-ins you
-                  have already copied to the <filepath>plugins</filepath> directory.</ph></li>
+                  provided, the installation process reloads the current set of plug-ins from the
+                    <filepath>plugins</filepath> directory. This approach can be used to add or remove multiple plug-ins
+                  at once, or any individual plug-ins you have already copied to (or removed from) the
+                    <filepath>plugins</filepath> directory.</ph></li>
+              <li><note id="plugin-remove-subdir" type="attention">The <parmname>--uninstall</parmname> option also
+                  removes the corresponding subdirectory from the <filepath>plugins</filepath> folder.</note></li>
             </ul>
           </dd>
         </dlentry>
       </dl>
     </context>
     <steps>
+      <step>
+        <cmd>
+          <!-- Used in installation topic & Release Notes -->
+          <ph id="download-ot">Download the <filepath>dita-ot-<keyword keyref="maintenance-version"/>.zip</filepath>
+            package from the project website at <xref keyref="download.dita-ot"/>.</ph>
+        </cmd>
+      </step>
       <step>
         <cmd id="open-terminal">Open a command prompt or terminal session, and then change to the directory where the
           DITA Open Toolkit is installed.</cmd>
@@ -53,7 +63,6 @@
                   <li><option>eclipsehelp</option></li>
                   <li><option>html5</option></li>
                   <li platform="windows"><option>htmlhelp</option></li>
-                  <li><option>javahelp</option></li>
                   <li><option>pdf</option></li>
                   <li><option>tocjs</option></li>
                   <li><option>troff</option></li>

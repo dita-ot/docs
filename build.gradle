@@ -1,5 +1,5 @@
 plugins {
-    id 'com.github.eerohele.dita-ot-gradle' version '0.4.0'
+    id 'com.github.eerohele.dita-ot-gradle' version '0.4.1'
 }
 
 ditaOt.dir System.getProperty('dita.home', '../')
@@ -7,28 +7,36 @@ ditaOt.dir System.getProperty('dita.home', '../')
 import com.github.eerohele.AntBuilderAssistant
 def antBuilder = AntBuilderAssistant.getAntBuilder(project)
 
-task pdf << {
+task pdf {
+  doLast {
     antBuilder.execute {
-        ant(antfile: 'build.xml', target: 'pdf')
+      ant(antfile: 'build.xml', target: 'pdf')
     }
+  }
 }
 
-task html << {
+task html {
+  doLast {
     antBuilder.execute {
-        ant(antfile: 'build.xml', target: 'html')
+      ant(antfile: 'build.xml', target: 'html')
     }
+  }
 }
 
-task htmlhelp << {
+task htmlhelp {
+  doLast {
     antBuilder.execute {
-        ant(antfile: 'build.xml', target: 'htmlhelp')
+      ant(antfile: 'build.xml', target: 'htmlhelp')
     }
+  }
 }
 
-task cleanUp << {
+task cleanUp {
+  doLast {
     antBuilder.execute {
-        ant(antfile: 'build.xml', target: 'clean')
+      ant(antfile: 'build.xml', target: 'clean')
     }
+  }
 }
 
 task all(dependsOn: [pdf, html, htmlhelp])

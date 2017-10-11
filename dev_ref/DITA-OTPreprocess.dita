@@ -5,6 +5,6 @@
 <concept id="preprocessarch" xml:lang="en-US">
   <title>Pre-processing modules</title>
   <shortdesc>The pre-processing operation is a set of steps that typically runs at the beginning of every DITA-OT
-    transformation. Each step or stage corresponds to an Ant target in the build pipeline; the preprocess target calls
-    the entire set of steps.</shortdesc>
+    transformation. Each step or stage corresponds to an Ant target in the build pipeline; the
+      <codeph>preprocess</codeph> target calls the entire set of steps.</shortdesc>
 </concept>

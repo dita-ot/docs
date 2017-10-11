@@ -16,6 +16,7 @@
   <topicref href="dev_ref/index.dita">
     <mapref href="dev_ref/dev_ref.ditamap"/>
   </topicref>
+  <mapref href="license/license.ditamap"/>
 
   <topicref keys="contributing" href="http://www.dita-ot.org/contributing" scope="external" format="html" locktitle="yes">
     <topicmeta>
@@ -27,10 +28,5 @@
       <navtitle>Who we are</navtitle>
     </topicmeta>
   </topicref>
-  <topicgroup processing-role="resource-only">
-    <topicref href="resources/conref-task.dita"/>
-    <mapref href="resources/key-definitions.ditamap"/>
-    <mapref href="resources/reltable.ditamap"/>
-    <mapref href="resources/subjectscheme.ditamap" type="subjectScheme"/>
-  </topicgroup>
+  <mapref href="resources/common-resources.ditamap" processing-role="resource-only"/>
 </map>

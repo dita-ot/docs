@@ -67,13 +67,13 @@
   </target>
 
   <target name="init" depends="check-dita-home">
-    <property name="resource.dir" location="${dita.home}/resources"/>
+    <property name="config.dir" location="${dita.home}/config"/>
     <property name="ditaval.file" location="${basedir}/platform.ditaval"/>
   </target>
 
   <target name="generate-msg-topic" depends="init" description="Regenerate message file">
     <property name="message.xsl" location="${basedir}/resources/messages.xsl"/>
-    <property name="message.input" location="${resource.dir}/messages.xml"/>
+    <property name="message.input" location="${config.dir}/messages.xml"/>
     <property name="message.outputtopic" location="${basedir}/user-guide/DITA-messages.xml"/>
 
     <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
@@ -82,7 +82,7 @@
 
   <target name="generate-params-topic" depends="init" description="Regenerate parameters file">
     <property name="params.xsl" location="${basedir}/resources/params.xsl"/>
-    <property name="params.input" location="${resource.dir}/plugins.xml"/>
+    <property name="params.input" location="${config.dir}/plugins.xml"/>
     <property name="params.outputtopic" location="${basedir}/parameters/all-parameters.dita"/>
     <dirname property="params.outputdir" file="${params.outputtopic}"/>
     <makeurl property="params.outputdir.uri" file="${params.outputdir}" validate="false"/>
@@ -95,14 +95,14 @@
 
   <target name="generate-properties-file" depends="init" description="Regenerate annotated .properties file">
     <property name="propfile.xsl" location="${basedir}/resources/properties-file.xsl"/>
-    <property name="propfile.input" location="${resource.dir}/plugins.xml"/>
+    <property name="propfile.input" location="${config.dir}/plugins.xml"/>
     <property name="propfile.output" location="${doc.samples.dir}/properties/template.properties"/>
     <xslt in="${propfile.input}" out="${propfile.output}" style="${propfile.xsl}" force="yes"/>
   </target>
 
   <target name="generate-extension-points-topic" depends="init" description="Regenerate extension points file">
     <property name="extension-points.xsl" location="${basedir}/resources/extension-points.xsl"/>
-    <property name="extension-points.input" location="${resource.dir}/plugins.xml"/>
+    <property name="extension-points.input" location="${config.dir}/plugins.xml"/>
     <property name="extension-points.outputtopic" location="${basedir}/extension-points/all-extension-points.dita"/>
     <dirname property="extension-points.outputdir" file="${extension-points.outputtopic}"/>
     <makeurl property="extension-points.outputdir.uri" file="${extension-points.outputdir}" validate="false"/>
@@ -142,6 +142,7 @@
     <dita-ot transtype="pdf" input="userguide-book.ditamap" output="${doc.out.dir}">
       <properties>
         <property file="samples/properties/docs-build-pdf.properties"/>
+        <property name="conserve-memory" value="true"/>
       </properties>
     </dita-ot>
   </target>
@@ -150,6 +151,7 @@
     <dita-ot transtype="html5" input="userguide.ditamap" output="${doc.out.dir}">
       <properties>
         <property file="samples/properties/docs-build-html5.properties"/>
+        <property name="conserve-memory" value="true"/>
       </properties>
     </dita-ot>
   </target>
@@ -158,6 +160,7 @@
     <dita-ot transtype="htmlhelp" input="userguide.ditamap" output="${doc.out.dir}/htmlhelp">
       <properties>
         <property file="samples/properties/docs-build-htmlhelp.properties"/>
+        <property name="conserve-memory" value="true"/>
       </properties>
     </dita-ot>
 

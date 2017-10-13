@@ -77,10 +77,9 @@
             <parmname>-i</parmname>
             <varname>file</varname>
           </pt>
-          <pd id="args.input.desc">Specifies the master file for your documentation project. This
-            argument corresponds to the common parameter <parmname>args.input</parmname>. Typically
-            this is a DITA map, however it also can be a DITA topic if you want to transform a
-            single DITA file. The path can be absolute, relative to
+          <pd id="args.input.desc">Specifies the master file for your documentation project. This argument corresponds
+            to the common parameter <parmname>args.input</parmname>. Typically this is a DITA map, however it also can
+            be a DITA topic if you want to transform a single DITA file. The path can be absolute, relative to
               <parmname>args.input.dir</parmname>, or relative to the current directory if
               <parmname>args.input.dir</parmname> is not defined.</pd>
         </plentry>
@@ -145,19 +144,17 @@
             <parmname>-o</parmname>
             <varname>dir</varname>
           </pt>
-          <pd id="output.dir.desc">Specifies the path of the output directory; the path can be
-            absolute or relative to the current directory. This argument corresponds to the common
-            parameter <parmname>output.dir</parmname>. By default, the output is written to the
-              <filepath>out</filepath> subdirectory of the current directory.</pd>
+          <pd id="output.dir.desc">Specifies the path of the output directory; the path can be absolute or relative to
+            the current directory. This argument corresponds to the common parameter <parmname>output.dir</parmname>. By
+            default, the output is written to the <filepath>out</filepath> subdirectory of the current directory.</pd>
         </plentry>
         <plentry>
           <pt>
             <parmname>--filter</parmname>=<varname>file</varname>
           </pt>
           <pd>Specifies filter file(s) used to include, exclude, or flag content. </pd>
-          <pd>This argument corresponds to the common parameter <parmname>args.filter</parmname>.
-            Relative paths are resolved against the current directory and internally converted to
-            absolute paths.</pd>
+          <pd>This argument corresponds to the common parameter <parmname>args.filter</parmname>. Relative paths are
+            resolved against the current directory and internally converted to absolute paths.</pd>
         </plentry>
         <plentry>
           <pt>
@@ -167,8 +164,7 @@
             <varname>dir</varname>
           </pt>
           <pd conref="parameters-base.dita#base/dita.temp.dir.desc"/>
-          <pd>This argument corresponds to the common parameter
-            <parmname>dita.temp.dir</parmname>.</pd>
+          <pd>This argument corresponds to the common parameter <parmname>dita.temp.dir</parmname>.</pd>
         </plentry>
         <plentry>
           <pt>
@@ -201,11 +197,10 @@
           <pt>
             <parmname>-D</parmname><varname>parameter</varname>=<varname>value</varname>
           </pt>
-          <pd>Specify a value for a DITA-OT or Ant build parameter. <p>The GNU-style
-                <parmname>--parameter</parmname>=<varname>value</varname> form is only available for
-              parameters that are configured in the plug-in configuration file; the Java-style
-                <parmname>-D</parmname> form can also be used to specify additional non-configured
-              parameters or set system properties.</p>
+          <pd>Specify a value for a DITA-OT or Ant build parameter.
+            <p>The GNU-style <parmname>--parameter</parmname>=<varname>value</varname> form is only available for
+              parameters that are configured in the plug-in configuration file; the Java-style <parmname>-D</parmname>
+              form can also be used to specify additional non-configured parameters or set system properties.</p>
             <p>Parameters not implemented by the specified transformation type or referenced in a
                 <filepath>.properties</filepath> file are ignored.</p><note
               conref="../resources/conref-task.dita#ID/pass-input-dir"/></pd>

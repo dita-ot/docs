@@ -57,33 +57,15 @@
         <cmd>Install the plug-in.</cmd>
       </step>
     </steps>
-  </taskbody>
-  <task id="task_kqx_dny_kbb">
-    <title/>
-    <taskbody>
-      <steps id="steps_djk_fny_kbb">
-        <step>
-          <cmd>Import <filepath>dita-utilities.xsl</filepath> and
-              <filepath>output-message.xsl</filepath> from the org.dita.base plugin into the
-            stylesheet context.</cmd>
-          <info>
-            <codeblock>&lt;xsl:import href="plugin:org.dita.base:xsl/common/dita-utilities.xsl"/>
-&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock>
-          </info>
-        </step>
-        <step>
-          <cmd>Add the following call in XSLT modules to generate a message when a specific
-            condition occurs:</cmd>
-          <info>
-            <codeblock>
+    <postreq id="postreq_xsc_ly4_4bb">
+      <p>Add the following call in XSLT modules to generate a message when a specific condition occurs:</p>
+      <codeblock>
 &lt;xsl:call-template name="output-message">
   &lt;xsl:with-param name="id"><varname>prefix</varname><varname>number</varname><varname>letter</varname>&lt;/xsl:with-param>
   &lt;xsl:with-param name="msg">Message text and parameters.&lt;/xsl:with-param>
 &lt;/xsl:call-template>
 </codeblock>
-          </info>
-        </step>
-      </steps>
-    </taskbody>
-  </task>
+      <p>Use the <codeph>ctx</codeph> parameter if calling from a function.</p>
+    </postreq>
+  </taskbody>
 </task>

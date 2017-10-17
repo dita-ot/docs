@@ -47,7 +47,7 @@
       -->
 
       <exec executable="${dita.home}/bin/dita">
-        <arg line="--input=@{input} --format=@{transtype} --output=@{output} --propertyfile=@{propertyfile}"/>
+        <arg line="--input=@{input} --format=@{transtype} --output=@{output} --propertyfile=@{propertyfile} -Dargs.input.dir=${basedir}"/>
       </exec>
 
     </sequential>

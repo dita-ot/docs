@@ -100,16 +100,8 @@ preprocessing:</p>
 </section>
 <section>
 <title>Known limitations</title>
-<ol>
-<li>The <codeph>preprocess2</codeph> implementation details are subject to change; dependencies
-within <codeph>preprocess2</codeph> may be renamed or removed based on feedback.</li>
-<li>Subject schemes and delayed key resolution have not yet been implemented, but support for at
-least subject schemes will likely be added in an upcoming release.</li>
-<li>The <codeph>preprocess2</codeph> implementation does not currently support maps that use the
-<xmlatt>conref</xmlatt> attribute to refer to a topic, or topics that use <xmlatt>conref</xmlatt> to
-refer to a map. With 2.6, maps can only use <xmlatt>conref</xmlatt> to refer to maps, and topics can
-only use <xmlatt>conref</xmlatt> to refer to topics.</li>
-</ol>
+<p>The <codeph>preprocess2</codeph> implementation details are subject to change; dependencies
+within <codeph>preprocess2</codeph> may be renamed or removed based on feedback.</p>
 </section>
 </conbody>
 </concept>

@@ -14,8 +14,10 @@
           <xref format="html" href="https://sourceforge.net/projects/dita-ot/files/" scope="external">DITA-OT download
           page</xref> at SourceForge.</p>
     </section>
-    <example><codeblock>&lt;plugin id="org.metadita.specialization.music">
-  &lt;feature extension="dita.specialization.catalog.relative" file="catalog-dita.xml">
+    <example><codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+&lt;plugin id="org.metadita.specialization.music">
+  &lt;feature extension="dita.specialization.catalog.relative" file="catalog-dita.xml"/>
   &lt;feature extension="dita.xsl.xhtml" file="xsl/music2xhtml.xsl"/>
 &lt;/plugin></codeblock></example>
   </refbody>

@@ -61,8 +61,7 @@
     </steps>
     <postreq id="postreq_xsc_ly4_4bb">
       <p>Add the following call in XSLT modules to generate a message when a specific condition occurs:</p>
-      <codeblock>
-&lt;xsl:call-template name="output-message">
+      <codeblock>&lt;xsl:call-template name="output-message">
   &lt;xsl:with-param name="id"><varname>prefix</varname><varname>number</varname><varname>letter</varname>&lt;/xsl:with-param>
   &lt;xsl:with-param name="msg">Message text and parameters.&lt;/xsl:with-param>
 &lt;/xsl:call-template>

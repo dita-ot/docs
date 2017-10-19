@@ -7,8 +7,8 @@
 <titlealts>
 <navtitle>Map-first preprocessing</navtitle>
 </titlealts>
-<shortdesc><ph id="map-first-preproc-desc">DITA-OT 2.6 provides a beta map-first preprocessing
-option as an alternative to the default <codeph>preprocess</codeph> operation. The method, which was
+<shortdesc><ph id="map-first-preproc-desc">DITA-OT 3.0 provides a map-first preprocessing option as
+an alternative to the default <codeph>preprocess</codeph> operation. The method, which was
 introduced in DITA-OT 2.5 as an experimental feature, has been improved and is ready for use in many
 production scenarios. Map-first-preprocessing provides the same functionality as the default
 <codeph>preprocess</codeph>, but takes a different approach.</ph></shortdesc>
@@ -23,18 +23,24 @@ only process the map to validate the map structure.</p>
 fewer DITA features that operated on the map level. Initially, the difference between processing
 modes was not that great. DITA 1.2 and 1.3 introduced many more map-level features such as keys and
 key scopes that make it difficult to reliably work with topics before all map features have been
-resolved. The original preprocessing operation already handles many map operations first, but this
-was not the original design and requires regular refactoring to handle edge cases. The new map-first
+resolved. </p>
+<p>The original preprocessing operation already handles many map operations first, but this was not
+the original design and requires regular refactoring to handle edge cases. The new map-first
 preprocessing is designed with this model in mind, improving the overall processing flow and making
-it more formal about the map-first model.</p>
-<note id="map-first-preproc-note">The map-first preprocessing option is not enabled by default in
-DITA-OT 2.6, but is offered as a beta to allow users and vendors who extend preprocessing to provide
-feedback on possible issues with the design. The new option will most likely become the default in
-DITA-OT 3.0. Because the DITA-OT development team cannot have access to all varieties of DITA, all
-edge cases, or even all the ways DITA-OT itself is extended, the switch to default map-first
-preprocessing will be smoother for everybody if more people can test and provide feedback.</note>
+it more formal about the map-first model. The new model also takes advantage of hashed topic file
+names in the temporary directory, which simplifies many processing steps, and is better able to
+handle topics referenced outside of the map directory (that case has resulted in a variety of issues
+with the original model).</p>
+<note id="map-first-preproc-note">The map-first preprocessing option is enabled by default in
+DITA-OT 3.0 for PDF, HTML Help, and Java Help. These three formats were chosen because they all
+result in a compiled result file, so temporarily hashed file names should all be invisible to the
+build. After further testing and feedback, the new option will most likely become the default for
+other transform types in future versions. Because the DITA-OT development team cannot have access to
+all varieties of DITA, all edge cases, or even all the ways DITA-OT itself is extended, the switch
+to default map-first preprocessing for other transform types will be smoother for everybody if more
+people can test and provide feedback.</note>
 <section>
-<title>How to use preprocess</title>
+<title>How to use map-first preprocessing</title>
 <p>To use (or test) map-first preprocessing, call the <codeph>preprocess2</codeph> Ant target in
 your custom transformation types instead of using the default <codeph>preprocess</codeph>
 target.</p>
@@ -57,6 +63,8 @@ for <codeph>preprocess2</codeph>;</p>
                    html5.map,
                    html5.css"/>
 </codeblock>
+<note>If you use this simple method for customized PDF, HTML Help, or JavaHelp builds, you will
+automatically be using <codeph>preprocess2</codeph>.</note>
 <p>Some custom transformation types already require you to repeat the default dependencies, in which
 case you should already call <codeph>preprocess</codeph> directly, as in the following:</p>
 <codeblock>&lt;!-- More complex variant: add processing steps to default HTML5 -->

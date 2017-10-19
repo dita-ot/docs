@@ -5,9 +5,9 @@
 <concept id="dita1.2specification" xml:lang="en-US">
   <title>DITA 1.2 support</title>
   <shortdesc>DITA Open Toolkit <keyword keyref="release"/> supports the DITA 1.2 specification.
-Although 1.2 is no longer the latest version of DITA, grammar files (DTD and XML Schema), the
-grammar files are still included with DITA-OT so that content explicitly created for 1.2 continues
-to work.</shortdesc>
+While 1.2 is no longer the latest version of DITA, grammar files (DTD and XML Schema), the grammar
+files are still included with DITA-OT and content explicitly created for 1.2 continues to work as
+intended.</shortdesc>
   <conbody>
     <p>Highlights of DITA 1.2 support in the toolkit include:<ul>
         <li>Processing support for all new elements and attributes</li>
@@ -34,21 +34,9 @@ specification is geared more towards tool implementors, though both may be usefu
 audience. The DITA Adoption papers can be found from that committee's main web page.</p>
   </conbody>
   <related-links>
-    <link format="html" href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html" scope="external">
-      <linktext>DITA 1.2 Specification (XHTML)</linktext>
-    </link>
-    <link format="pdf" href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.pdf" scope="external">
-      <linktext>DITA 1.2 Specification (PDF)</linktext>
-    </link>
-    <link format="zip" href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.zip" scope="external">
-      <linktext>DITA 1.2 Specification (zip of the DITA source)</linktext>
-    </link>
-    <link format="zip" href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec-chm.zip" scope="external">
-      <linktext>DITA 1.2 Specification (zip of the HTML Help)</linktext>
-    </link>
-    <link format="html" href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-adoption" scope="external">
-      <linktext>DITA Adoption Technical Committee</linktext>
-      <desc>Contains links to many white papers about using new DITA 1.2 features.</desc>
-    </link>
+<link keyref="dita12-xhtml"/>
+<link keyref="dita12-pdf"/>
+<link keyref="dita12-source"/>
+<link keyref="dita-adoption-tc"/>
   </related-links>
 </concept>

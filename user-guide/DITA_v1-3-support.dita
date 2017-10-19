@@ -20,14 +20,10 @@ specific new processing.</p>
       <title>Major features of DITA 1.3</title>
 <p>The following DITA 1.3 features are supported in DITA Open Toolkit.</p>
       <ul>
-<li><xref
-href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/keyScopes.html"
-format="html" scope="external">Scoped keys</xref> supported using DITA 1.3 <xmlatt>keyscope</xmlatt>
-attribute</li>
-<li><xref
-href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/branch-filtering.html"
-format="html" scope="external">Branch filtering</xref> using <xmlelement>ditavalref</xmlelement>
-elements in a map</li>
+<li><xref keyref="dita13-spec-keyscope">Scoped keys</xref> supported using DITA 1.3
+<xmlatt>keyscope</xmlatt> attribute</li>
+<li><xref keyref="dita13-spec-branch-filter">Branch filtering</xref> using
+<xmlelement>ditavalref</xmlelement> elements in a map</li>
 <li>Support formatting based on new XML Mention elements, such as adding angle brackets around
 elements tagged with <xmlelement>xmlelement</xmlelement> and adding <codeph>@</codeph> before
 attributes tagged with <xmlelement>xmlatt</xmlelement></li>
@@ -35,9 +31,8 @@ attributes tagged with <xmlelement>xmlatt</xmlelement></li>
 <xmlelement>overline</xmlelement></li>
 <li>Support for profiling based on <xmlatt>deliveryTarget</xmlatt> attribute</li>
 <li>Support for the new <xmlatt>orient</xmlatt> attribute for rotating tables</li>
-<li>Profile (filter or flag) based on  <xref
-href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/usage-of-conditional-processing-attributes.html#usage-of-conditional-processing-attributes"
-format="html" scope="external">groups within profiling attributes</xref></li>
+<li>Profile (filter or flag) based on  <xref keyref="dita13-spec-profile-groups">groups within
+profiling attributes</xref></li>
 <li><xmlatt>keyref</xmlatt> and related key referencing attributes supported on
 <xmlelement>object</xmlelement></li>
         <li>New in-topic link syntax using <codeph>.</codeph> in place of the topic ID:
@@ -49,30 +44,14 @@ grouping</li>
 cascade operation</xref> described by the DITA Specification)</li>
       </ul>
 <note>For the latest status information on DITA 1.3-related features and fixes, see the <xref
-href="https://github.com/dita-ot/dita-ot/issues?q=label%3A%22DITA+1.3%22" scope="external"
-format="html">DITA 1.3 label</xref> in the GitHub issues tracker.</note>
+keyref="dita13-issues">DITA 1.3 label</xref> in the GitHub issues tracker.</note>
     </section>
   </conbody>
 
   <related-links>
-    <link format="html"
-href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part3-all-inclusive.html "
-scope="external">
-<linktext>DITA Version 1.3 Part 3 (latest errata version): All-Inclusive Edition (HTML)</linktext>
-</link>
-    <link format="pdf"
-href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part3-all-inclusive.pdf" scope="external">
-<linktext>DITA Version 1.3 Part 3 (latest errata version): All-Inclusive Edition (PDF)</linktext>
-</link>
-    <link format="zip"
-href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part3-all-inclusive/dita-v1.3-errata01-os-part3-all-inclusive-complete-dita.zip"
-scope="external">
-<linktext>DITA Version 1.3 Errata 01 (Distribution ZIP of the DITA source)</linktext>
-</link>
-    <link format="html" href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-adoption"
-      scope="external">
-      <linktext>DITA Adoption Technical Committee</linktext>
-      <desc>Contains links to many white papers about using new DITA 1.3 features.</desc>
-    </link>
+<link keyref="dita13-spec-all-inclusive"/>
+<link keyref="dita13-spec-all-inclusive-pdf"/>
+<link keyref="dita13-spec-source"/>
+<link keyref="dita-adoption-tc"/>
   </related-links>
 </concept>

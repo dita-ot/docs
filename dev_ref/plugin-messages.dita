@@ -25,7 +25,7 @@
             <li><varname>Number</varname> is a three-digit integer.</li>
             <li><varname>Letter</varname> is one of the following upper-case letters: I, W, E, F. It should match the
               value that is specified for the <xmlatt>type</xmlatt> attribute.</li>
-          </ul><note>As the @id attribute is used as a whole and not decomposed by recent versions of the toolkit, you
+          </ul><note>As the <xmlatt>id</xmlatt> attribute is used as a whole and not decomposed by recent versions of the toolkit, you
             could use any sequence as the message identifier. Nevertheless, to facilitate reuse  of the plug-in and make
             it more readable by other users, we recommend following these guidelines.</note><ul id="ul_c3c_fkb_pbb">
             <li><varname>error-severity</varname> specifies the severity of the error. It must be one of the following

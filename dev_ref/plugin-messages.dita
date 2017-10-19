@@ -9,7 +9,7 @@
     override.</shortdesc>
   <taskbody>
     <steps>
-      <step id="step_osv_44x_kbb">
+      <step id="step_create-message-xml">
         <cmd>Create an XML file that contains the messages that you want to add. Be sure to use the
           following format for the XML file:</cmd>
         <info><codeblock>&lt;dummy>
@@ -51,7 +51,7 @@
             <li><varname>plugin-id</varname> is the plug-in identifier, for example,
               <codeph>com.example.newmsg</codeph>.</li>
             <li><varname>file</varname> is the name of the new XML file containing the messages created in step <xref
-                keyref="plugin-messages/step_osv_44x_kbb"/> , for example, <filepath>myMessages.xml</filepath>. </li>
+                keyref="plugin-messages/step_create-message-xml"/>, for example, <filepath>myMessages.xml</filepath>. </li>
           </ul>
         </info>
       </step>

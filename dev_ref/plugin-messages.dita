@@ -14,17 +14,20 @@
           following format for the XML file:</cmd>
         <info><codeblock>&lt;dummy>
   &lt;!-- See resources/messages.xml for the details. -->
-  &lt;message id="<varname>prefix</varname><varname>number</varname><varname>letter</varname>" type="<varname>error-severity</varname>">
+  &lt;message id="<varname>Prefix</varname><varname>Number</varname><varname>Letter</varname>" type="<varname>error-severity</varname>">
     &lt;reason>Message text&lt;/reason>
     &lt;response>How to resolve&lt;/response>
   &lt;/message>
 &lt;/dummy></codeblock>where:
             <ul id="ul_etv_44x_kbb">
-            <li><varname>prefix</varname> is a sequence of for capital letters.<note>By convention, the toolkit messages
-                use <codeph>DOTX</codeph> but any sequence can be used by plugin developers.</note></li>
-            <li><varname>number</varname> is a three-digit integer.</li>
-            <li><varname>letter</varname> is one of the following upper-case letters: I, W, E, F. It
-              should match the value that is specified for the <xmlatt>type</xmlatt> attribute.</li>
+            <li><varname>Prefix</varname> is a sequence of for capital letters.<note>By convention, the toolkit messages
+                use <codeph>DOTX</codeph> but any sequence can be used by plug-in developers.</note></li>
+            <li><varname>Number</varname> is a three-digit integer.</li>
+            <li><varname>Letter</varname> is one of the following upper-case letters: I, W, E, F. It should match the
+              value that is specified for the <xmlatt>type</xmlatt> attribute.</li>
+          </ul><note>As the @id attribute is used as a whole and not decomposed by recent versions of the toolkit, you
+            could use any sequence as the message identifier. Nevertheless, to facilitate reuse  of the plug-in and make
+            it more readable by other users, we recommend following these guidelines.</note><ul id="ul_c3c_fkb_pbb">
             <li><varname>error-severity</varname> specifies the severity of the error. It must be one of the following
               values: <dl conkeyref="messages-push/warning_severity">
                 <dlentry>
@@ -33,12 +36,12 @@
                 </dlentry>
               </dl><note>the <codeph>FATAL</codeph> value throws a fatal error message in XSLT and an exception in
                 Java.</note></li>
-          </ul><draft-comment author="Kristen Eberlein" time="31 March 2013">What advice should we
-            give users to prevent them from using a message number and letter combination that is
-            already used by the DITA-OT? If that happens, what is the result?</draft-comment></info>
+          </ul><draft-comment author="Kristen Eberlein" time="31 March 2013">What advice should we give users to prevent
+            them from using a message number and letter combination that is already used by the DITA-OT? If that
+            happens, what is the result?</draft-comment></info>
       </step>
       <step>
-        <cmd>Create a <filepath>plug-in.xml</filepath> file that contains the following content:</cmd>
+        <cmd>Create a <filepath>plugin.xml</filepath> file that contains the following content:</cmd>
         <info>
           <codeblock>&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="dita.xsl.messages" file="<varname>file</varname>"/>
@@ -47,9 +50,8 @@
           <ul>
             <li><varname>plugin-id</varname> is the plug-in identifier, for example,
               <codeph>com.example.newmsg</codeph>.</li>
-            <li><varname>file</varname> is the name of the new XML file containing the messages
-              created in step <xref keyref="plugin-messages/step_osv_44x_kbb"/> , for example,
-                <filepath>myMessages.xml</filepath>. </li>
+            <li><varname>file</varname> is the name of the new XML file containing the messages created in step <xref
+                keyref="plugin-messages/step_osv_44x_kbb"/> , for example, <filepath>myMessages.xml</filepath>. </li>
           </ul>
         </info>
       </step>

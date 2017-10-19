@@ -22,7 +22,7 @@ Normalized output may be useful in situations where post-processing of DITA cont
 
 Run the **`dita`** command and set the value of the output `-format` option to `dita`:
 
-    dita-ot-dir/bin/dita -input input-file -format dita
+    dita-ot-dir/bin/dita --input=input-file --format=dita
 
 where:
 

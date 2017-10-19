@@ -26,7 +26,7 @@ Run the **`dita`** command and set the value of the output `-format` option to `
 
 where:
 
-_`dita-ot-dir`_ is the DITA-OT installation directory.
-_`input-file`_ is the DITA map or DITA file that you want to process.
+* _`dita-ot-dir`_ is the DITA-OT installation directory
+* _`input-file`_ is the DITA map or DITA file that you want to process
 
 [1]: https://github.com/dita-ot/dita-ot

@@ -1,8 +1,6 @@
-# DITA to DITA plugin
+# Normalized DITA
 
-The `org.dita.normalize` plugin extends the [DITA Open Toolkit][1] with a `dita` transformation type that generates normalized topics and maps from DITA input.
-
-The normalized output includes the results of the DITA Open Toolkit pre-processing operations, which resolve map references, keys, content references, code references and push metadata back and forth between maps and topics. 
+The `dita` transformation generates normalized topics and maps from DITA input. The normalized output includes the results of the DITA Open Toolkit pre-processing operations, which resolve map references, keys, content references, code references and push metadata back and forth between maps and topics.
 
 In comparison to the source DITA files, the normalized DITA files are modified in the following ways:
 
@@ -28,5 +26,3 @@ where:
 
 * _`dita-ot-dir`_ is the DITA-OT installation directory
 * _`input-file`_ is the DITA map or DITA file that you want to process
-
-[1]: https://github.com/dita-ot/dita-ot

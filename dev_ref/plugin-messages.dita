@@ -20,7 +20,7 @@
   &lt;/message>
 &lt;/dummy></codeblock>where:
             <ul>
-            <li><varname>Prefix</varname> is a sequence of for capital letters.<note>By convention, the toolkit messages
+            <li><varname>Prefix</varname> is a sequence of four capital letters.<note>By convention, the toolkit messages
                 use <codeph>DOTX</codeph> but any sequence can be used by plug-in developers.</note></li>
             <li><varname>Number</varname> is a three-digit integer.</li>
             <li><varname>Letter</varname> is one of the following upper-case letters: I, W, E, F. It should match the

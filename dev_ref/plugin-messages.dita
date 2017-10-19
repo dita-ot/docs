@@ -19,7 +19,7 @@
     &lt;response>How to resolve&lt;/response>
   &lt;/message>
 &lt;/dummy></codeblock>where:
-            <ul id="ul_etv_44x_kbb">
+            <ul>
             <li><varname>Prefix</varname> is a sequence of for capital letters.<note>By convention, the toolkit messages
                 use <codeph>DOTX</codeph> but any sequence can be used by plug-in developers.</note></li>
             <li><varname>Number</varname> is a three-digit integer.</li>
@@ -27,7 +27,7 @@
               value that is specified for the <xmlatt>type</xmlatt> attribute.</li>
           </ul><note>As the <xmlatt>id</xmlatt> attribute is used as a whole and not decomposed by recent versions of the toolkit, you
             could use any sequence as the message identifier. Nevertheless, to facilitate reuse  of the plug-in and make
-            it more readable by other users, we recommend following these guidelines.</note><ul id="ul_c3c_fkb_pbb">
+            it more readable by other users, we recommend following these guidelines.</note><ul>
             <li><varname>error-severity</varname> specifies the severity of the error. It must be one of the following
               values: <dl conkeyref="messages-push/severity-levels">
                 <dlentry>
@@ -59,7 +59,7 @@
         <cmd>Install the plug-in.</cmd>
       </step>
     </steps>
-    <postreq id="postreq_xsc_ly4_4bb">
+    <postreq>
       <p>Add the following call in XSLT modules to generate a message when a specific condition occurs:</p>
       <codeblock>&lt;xsl:call-template name="output-message">
   &lt;xsl:with-param name="id"><varname>prefix</varname><varname>number</varname><varname>letter</varname>&lt;/xsl:with-param>

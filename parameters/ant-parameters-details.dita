@@ -99,6 +99,13 @@
                 <varname>file</varname> to set the path to the log. Unless an absolute path is specified, the value will
                 be interpreted relative to the current directory.</note></pd>
           </plentry>
+          <plentry id="args.rellinks">
+            <pt><parmname>args.rellinks</parmname></pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/args.rellinks.desc"/>
+            <pd conaction="pushafter">
+              <p>For PDF output, the default value is <option>nofamily</option>. For all other formats, the default
+                value is <option>all</option>.</p></pd>
+          </plentry>
           <plentry id="args.tablelink.style">
             <pt>
               <parmname>args.tablelink.style</parmname>

@@ -72,7 +72,7 @@ case you should already call <codeph>preprocess</codeph> directly, as in the fol
 <codeph>preprocess</codeph> target.</p>
 </section>
 <section>
-<title>How to let customers test in a production environment</title>
+<title>How to test in a production environment</title>
 <p>In some cases, you may be responsible for maintaining transformation types that are actually run
 by many people on your team or around a company. In this case, you likely need to maintain your
 existing transformation types based on the backwards-compatible <codeph>preprocess</codeph> modules,

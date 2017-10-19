@@ -18,12 +18,6 @@ In comparison to the source DITA files, the normalized DITA files are modified i
 
 Normalized output may be useful in situations where post-processing of DITA content is required, but the downstream systems are limited in their ability to resolve DITA references.
 
-## Installation
-
-Run the plug-in installation command:
-
-    dita -install https://github.com/dita-ot/org.dita.normalize/archive/1.0.zip
-
 ## Generating normalized DITA output
 
 Run the **`dita`** command and set the value of the output `-format` option to `dita`:

@@ -13,7 +13,7 @@
       <p>Each message ID is composed of a message prefix, a message number, and a letter that indicates the severity
         level (I, W, E, or F). </p>
       <p>The toolkit uses the following severity scale:</p>
-      <dl id="warning_severity">
+      <dl id="severity-levels">
         <dlentry>
           <dt>Info (I)</dt>
           <dd>Informational messages highlight the progress of transformation and call attention to conditions of which

@@ -29,7 +29,7 @@
             could use any sequence as the message identifier. Nevertheless, to facilitate reuse  of the plug-in and make
             it more readable by other users, we recommend following these guidelines.</note><ul id="ul_c3c_fkb_pbb">
             <li><varname>error-severity</varname> specifies the severity of the error. It must be one of the following
-              values: <dl conkeyref="messages-push/warning_severity">
+              values: <dl conkeyref="messages-push/severity-levels">
                 <dlentry>
                   <dt/>
                   <dd/>

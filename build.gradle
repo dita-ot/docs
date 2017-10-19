@@ -1,5 +1,5 @@
 plugins {
-    id 'com.github.eerohele.dita-ot-gradle' version '0.4.1'
+    id 'com.github.eerohele.dita-ot-gradle' version '0.4.2'
 }
 
 ditaOt.dir System.getProperty('dita.home', '../')

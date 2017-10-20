@@ -55,8 +55,26 @@
       <section id="features">
         <title>Features</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=is%3Aissue+milestone%3A3.0+is%3Aclosed+label%3Afeature -->
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.0+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
+          <li id="1200">Parameter for customizing the name of output file
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1200" format="html" scope="external">#1200</xref>
+          </li>
+          <li id="1471">Move from custom logging to SLF4J and Logback
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1471" format="html" scope="external">#1471</xref>
+          </li>
+          <li id="1551">Generate HTML Help in temporary directory
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1551" format="html" scope="external">#1551</xref>
+          </li>
+          <li id="2626">Add support for subject schemes in map-first preprocess
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2626" format="html" scope="external">#2626</xref>
+          </li>
+          <li id="2766">Extension point for Ant import task
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2766" format="html" scope="external">#2766</xref>
+          </li>
+          <li id="2774">Add Markdown plugin to distribution package
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2774" format="html" scope="external">#2774</xref>
+          </li>
           <li id="2775">Add normalization plugin to distribution package
             <xref href="https://github.com/dita-ot/dita-ot/issues/2775" format="html" scope="external">#2775</xref>
           </li>
@@ -67,10 +85,67 @@
         <title>Enhancements and changes</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
           existing features:</p>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=is%3Aissue+milestone%3A3.0+is%3Aclosed+label%3Aenhancement       -->
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.0+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
           <li id="2121">Separate all transtype plugins into own Git repos
             <xref href="https://github.com/dita-ot/dita-ot/issues/2121" format="html" scope="external">#2121</xref>
+          </li>
+          <li id="2232">Use XMLUnit 2
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2232" format="html" scope="external">#2232</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2723" format="html" scope="external">#2723</xref>
+          </li>
+          <li id="2447">Relationship table accessibility
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2447" format="html" scope="external">#2447</xref>
+          </li>
+          <li id="2713">Update Gradle to 3.5
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2713" format="html" scope="external">#2713</xref>
+          </li>
+          <li id="2718">When producing a PDF file with a XML extension, the extension shows up in the output filename
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2718" format="html" scope="external">#2718</xref>
+          </li>
+          <li id="2721">Update to Saxon-HE 9.8
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2721" format="html" scope="external">#2721</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2727" format="html" scope="external">#2727</xref>
+          </li>
+          <li id="2736">Upgrade to FOP 2.2
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2736" format="html" scope="external">#2736</xref>
+          </li>
+          <li id="2739">Preserve submap elements when merging
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2739" format="html" scope="external">#2739</xref>
+          </li>
+          <li id="2748">Add flagging information during filtering
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2748" format="html" scope="external">#2748</xref>
+          </li>
+          <li id="2755">Allow for plugin param type 'url'
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2755" format="html" scope="external">#2755</xref>
+          </li>
+          <li id="2763">Use map-first preprocessing in transtypes
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2763" format="html" scope="external">#2763</xref>
+          </li>
+          <li id="2765">Move or rename Java classes
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2765" format="html" scope="external">#2765</xref>
+          </li>
+          <li id="2770">Make it easier to convert @outputclass attribute value to another attribute in PDF output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2770" format="html" scope="external">#2770</xref>
+          </li>
+          <li id="2780">Topics exploded by chunk should be written to the topic folder
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2780" format="html" scope="external">#2780</xref>
+          </li>
+          <li id="2781">Separate configuration to own directory
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2781" format="html" scope="external">#2781</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2783" format="html" scope="external">#2783</xref>
+          </li>
+          <li id="2784">Allow any attribute to be used for profiling
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2784" format="html" scope="external">#2784</xref>
+          </li>
+          <li id="2789">Support language-independent variable files
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2789" format="html" scope="external">#2789</xref>
+          </li>
+          <li id="2808">Use doubled dashes in messages
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2808" format="html" scope="external">#2808</xref>
+          </li>
+          <li id="2811">Refactor HTML5 simpletable accessibility for modern approach
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2811" format="html" scope="external">#2811</xref>
           </li>
         </ul>
       </section>
@@ -78,12 +153,34 @@
       <section id="bugs">
         <title>Bugs</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=is%3Aissue+milestone%3A3.0+is%3Aclosed+label%3Abug       -->
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.0+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <li id="1364">Images referenced in conref source copied to output
             <xref href="https://github.com/dita-ot/dita-ot/issues/1364" format="html" scope="external">#1364</xref>
           </li>
-
+          <li id="2654">NullPointerException when processing invalid email link bug P1 preprocess
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2654" format="html" scope="external">#2654</xref>
+          </li>
+          <li id="2742">Wrong language code is set when processing xml:lang="zh-Hans"
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2742" format="html" scope="external">#2742</xref>
+          </li>
+          <li id="2752">Extract image alternate text from keydef linktext
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2752" format="html" scope="external">#2752</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2814" format="html" scope="external">#2814</xref>
+          </li>
+          <li id="2782">Warn about broken tables, and avoid FOP crash
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2782" format="html" scope="external">#2782</xref>
+          </li>
+          <li id="2797">Fix failing relative path test on Windows
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2797" format="html" scope="external">#2797</xref>
+          </li>
+          <li id="2807">Replace wrapping <xmlelement>p</xmlelement> with wrapping <xmlelement>div</xmlelement> for
+              <xmlelement>stepsection</xmlelement> elements in HTML5
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2807" format="html" scope="external">#2807</xref>
+          </li>
+          <li id="2810">Update grammar files for coming DITA 1.3 errata
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2810" format="html" scope="external">#2810</xref>
+          </li>
         </ul>
       </section>
 

@@ -17,6 +17,12 @@
         this is strongly recommended to avoid plug-in naming conflicts.</note>
       <p id="tokendef">Each token can include only the following characters:
         <ul>
+    <example>
+      <codeblock outputclass="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+&lt;plugin id="com.example.rss">
+&lt;/plugin></codeblock>
+    </example>
           <li>Lower-case letters (a-z)</li>
           <li>Upper-case letters (A-Z)</li>
           <li>Numerals (0-9)</li>

@@ -1,18 +1,18 @@
 # DITA Open Toolkit Docs [![Build Status][1]](http://travis-ci.org/dita-ot/docs) [![Slack][2]](http://slack.dita-ot.org/)
 
-This repository tracks the source files for the [DITA Open Toolkit documentation][3].
+This repository tracks the [documentation][3] source files for the [DITA Open Toolkit project][4].
 
 ## Contribution Guidelines
 
-We welcome contributions to the DITA-OT documentation. Please review the [guidelines for contributing][4] to this repository before creating issues or opening pull requests.
+We welcome contributions to the DITA-OT documentation. Please review the [guidelines for contributing][5] to this repository before creating issues or opening pull requests.
 
-For best results, follow the [coding guidelines][5] and [best practices][6] outlined in the docs project wiki:
+For best results, follow the [coding guidelines][6] and [best practices][7] outlined in the docs project wiki:
 
-* [Test before committing][7]
-* [Commit related changes][8]
-* [Commit often][9]
-* [Write good commit messages][10]
-* [Sign your work][11]
+* [Test before committing][8]
+* [Commit related changes][9]
+* [Commit often][10]
+* [Write good commit messages][11]
+* [Sign your work][12]
 
 ## Building the documentation output
 
@@ -35,15 +35,25 @@ or:
 
     ant -Ddita.home=/path/to/dita-ot
 
+## Building with development versions of DITA Open Toolkit
+
+The `develop` branch of the documentation repository may depend on features from recent development versions of the DITA Open Toolkit.
+
+To use these features when building the documentation, you may either download the [latest development version][13] of the distribution package, or clone the [DITA-OT repository][14] and install the [bundled plug-ins][15] via `dita --install`.
+
 
 [1]: https://travis-ci.org/dita-ot/docs.svg?branch=develop
 [2]: http://slack.dita-ot.org/badge.svg
 [3]: http://www.dita-ot.org/dev/
-[4]: CONTRIBUTING.md
-[5]: https://github.com/dita-ot/docs/wiki/Coding-guidelines
-[6]: https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
-[7]: https://github.com/dita-ot/docs/wiki/Git-workflow#test-before-committing
-[8]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
-[9]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-often
-[10]: https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
-[11]: http://www.dita-ot.org/DCO
+[4]: http://www.dita-ot.org
+[5]: CONTRIBUTING.md
+[6]: https://github.com/dita-ot/docs/wiki/Coding-guidelines
+[7]: https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
+[8]: https://github.com/dita-ot/docs/wiki/Git-workflow#test-before-committing
+[9]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
+[10]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-often
+[11]: https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
+[12]: http://www.dita-ot.org/DCO
+[13]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
+[14]: https://github.com/dita-ot/dita-ot
+[15]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L123-L128

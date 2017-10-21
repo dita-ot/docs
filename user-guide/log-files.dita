@@ -18,12 +18,48 @@
         </dlentry>
         <dlentry>
           <dt>Ant</dt>
-          <dd>By default, status information is written to the screen. If you issue the <parmname>-l</parmname>
-            parameter, the build runs silently and the information is written to a log file with the name and location
-            that you specified. (You also can use other Ant loggers; see the Ant documentation for more
-            information.)</dd>
+          <dd>By default, status information is written to the screen. If you issue the
+              <parmname>-l</parmname> parameter, the build runs silently and the information is
+            written to a log file with the name and location that you specified.</dd>
         </dlentry>
       </dl></p>
+    <section id="section_iqf_d5l_pbb">
+      <title>Using other Ant loggers</title>
+      <p>You also can use other Ant loggers; see <xref
+          href="https://ant.apache.org/manual/listeners.html" format="html" scope="external"
+          >Listeners &amp; Loggers</xref> in the Ant documentation for more information.</p>
+      <p>For example, you can use the <b>AnsiColorLogger</b> to colorize the messages written on the
+        screen.</p>
+      <dl>
+        <dlentry>
+          <dt><cmdname>dita</cmdname> command</dt>
+          <dd>
+            <p>To use a custom Ant logger together with the <cmdname>dita</cmdname> command, you
+              need to add the logger to the <codeph>ANT_ARGS</codeph> environment variable. To do
+              that, simply call the following command before calling the <cmdname>dita</cmdname>
+              command.</p>
+            <codeblock>export ANT_ARGS="-logger org.apache.tools.ant.listener.AnsiColorLogger"</codeblock>
+            <p>Now you will get colorized messages when calling the <cmdname>dita</cmdname>
+              command.</p>
+            <note type="tip">Environment variables can also be set permanently; see <xref
+                href="https://www.java.com/en/download/help/path.xml" format="html" scope="external"
+                >How do I set or change the PATH system variable?</xref> for information how to set
+              the <codeph>PATH</codeph> environment variable for several operating systems. You can
+              set the <codeph>ANT_ARGS</codeph> environment variable likewise.</note>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Ant</dt>
+          <dd>
+            <p>If you prefer to launch the DITA-OT directly from Ant, you can also add the logger to
+              the <codeph>ANT_ARGS</codeph> environment variable, as explained above. It is also
+              possible to set the logger with the <codeph>-logger</codeph> parameter when calling
+              Ant.</p>
+            <codeblock>ant -logger org.apache.tools.ant.listener.AnsiColorLogger</codeblock>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
     <!--<section><title>Analyze messages on the screen</title><p>During the building process, some information or messages
         occur on the screen to tell you about the status, warnings, errors, or fatal errors. You need to analyze the
         messages to solve the problems. <ul>

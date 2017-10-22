@@ -98,8 +98,9 @@
             map.</li>
           <li>XML comments are removed.</li>
         </ul>
-        <p>Normalized output may be useful in situations where post-processing of DITA content is required, but the
-          downstream systems are limited in their ability to resolve DITA references.</p>
+        <p>Normalized output can be used during plug-in development to troubleshoot the results of preprocessing
+          routines, or in situations where post-processing of DITA content is required, but the downstream systems are
+          limited in their ability to resolve DITA references.</p>
         <note type="tip">The <codeph>dita</codeph> transformation can also be used to convert Markdown topics or the
           alternative input formats supported by the <codeph>org.lwdita</codeph> plug-in to standard DITA XML.</note>
       </section>

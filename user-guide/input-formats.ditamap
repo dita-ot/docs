@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<map>
+  <title>Input formats</title>
+  <topicref href="alternative-input-formats.md" format="mdita" collection-type="family">
+    <topicref href="markdown-input.dita" format="dita"/>
+    <topicref href="markdown-dita-syntax-reference.md" format="mdita" navtitle="Markdown DITA syntax" locktitle="yes"/>
+  </topicref>
+</map>

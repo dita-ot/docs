@@ -23,7 +23,7 @@
         <li>
           <p>To publish GitHub Flavored Markdown and generate a <filepath>SUMMARY.md</filepath> table of contents file for
             publication via
-            <xref format="com" href="https://www.gitbook.com" scope="external">GitBook</xref>, use the
+            <xref format="html" href="https://www.gitbook.com" scope="external">GitBook</xref>, use the
               <option>markdown_gitbook</option> transtype.</p></li>
       </ul>
       <p>Run the <cmdname>dita</cmdname> command and set the value of the output <parmname>--format</parmname> option

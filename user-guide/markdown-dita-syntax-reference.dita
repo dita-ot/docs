@@ -10,7 +10,8 @@
 
   <body>
     <p>Markdown DITA files must be UTF-8 encoded.</p>
-    <section id="titles-and-document-structure"><title>Titles and document structure</title>
+    <section id="titles-and-document-structure">
+      <title>Titles and document structure</title>
       <p>Each header level will generate a topic and associated title:</p>
       <codeblock outputclass="markdown" xml:space="preserve"># Topic title
 
@@ -43,10 +44,12 @@
     &lt;title&gt;Second title&lt;/title&gt;
   &lt;/topic&gt;
 &lt;/topic&gt;</codeblock></section>
-    <section id="topic-content"><title>Topic content</title>
+    <section id="topic-content">
+      <title>Topic content</title>
       <p>In LwDITA compatible documents (MDITA) the first paragraph is treated as a <codeph>shortdesc</codeph> element.
         In generic Markdown documents all paragraphs appear inside the <codeph>body</codeph> element.</p></section>
-    <section id="specialization-types"><title>Specialization types</title>
+    <section id="specialization-types">
+      <title>Specialization types</title>
       <p>The following class values in
         <xref format="html#extension-header_attributes" href="http://pandoc.org/MANUAL.html#extension-header_attributes"
           scope="external">header_attributes</xref> have a special meaning on level 1 headers:</p>
@@ -81,7 +84,8 @@ Context
     &lt;/steps&gt;
   &lt;/taskbody&gt;
 &lt;/task&gt;</codeblock></section>
-    <section id="sections"><title>Sections</title>
+    <section id="sections">
+      <title>Sections</title>
       <p>The following class values in
         <xref format="html#extension-header_attributes" href="http://pandoc.org/MANUAL.html#extension-header_attributes"
           scope="external">header_attributes</xref> have a special meaning on header levels other than 1:</p>
@@ -111,7 +115,8 @@ Context
     &lt;/example&gt;
   &lt;/body&gt;
 &lt;/topic&gt;</codeblock></section>
-    <section id="links"><title>Links</title>
+    <section id="links">
+      <title>Links</title>
       <p>The format of local link targets is detected based on file extension. The following extensions are treated as
         DITA files:</p><table>
         <tgroup cols="2">
@@ -152,7 +157,8 @@ Context
 &lt;xref href="test.dita"&gt;DITA&lt;/xref&gt;
 &lt;xref href="test.html" format="html"&gt;HTML&lt;/xref&gt;
 &lt;xref href="http://www.example.com/test.html" format="html" scope="external"&gt;External&lt;/xref&gt;</codeblock></section>
-    <section id="images"><title>Images</title>
+    <section id="images">
+      <title>Images</title>
       <p>Images used in inline content will result in inline placement. If a block level image contains a title, it will
         be treated as an image wrapped in
       figure:</p><codeblock outputclass="markdown" xml:space="preserve">An inline ![Alt](test.jpg).
@@ -169,14 +175,16 @@ Context
     &lt;alt&gt;Alt&lt;/alt&gt;
   &lt;/image&gt;
 &lt;/fig&gt;</codeblock></section>
-    <section id="key-references"><title>Key references</title>
+    <section id="key-references">
+      <title>Key references</title>
       <p>Key reference can be used with
         <xref format="html" href="http://spec.commonmark.org/0.18/#shortcut-reference-link" scope="external">shortcut
           reference
       links</xref>:</p><codeblock outputclass="markdown" xml:space="preserve">[key]
 ![image-key]</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;xref keyref="key"/&gt;
 &lt;image keyref="image-key"/&gt;</codeblock></section>
-    <section id="inline"><title>Inline</title>
+    <section id="inline">
+      <title>Inline</title>
       <p>The following inline elements are
       supported:</p><codeblock outputclass="markdown" xml:space="preserve">**bold**
 *italic*
@@ -185,7 +193,8 @@ Context
 &lt;i&gt;italic&lt;/i&gt;
 &lt;codeph&gt;code&lt;/codeph&gt;
 &lt;ph status="deleted"&gt;strikethrough&lt;/ph&gt;</codeblock></section>
-    <section id="lists"><title>Lists</title>
+    <section id="lists">
+      <title>Lists</title>
       <p>Unordered can be marked up with either hyphen or ampersand:</p><codeblock outputclass="markdown" xml:space="preserve">*   one
 *   two
     -   three
@@ -220,7 +229,8 @@ Context
   &lt;/delentry&gt;
 &lt;/dl&gt;</codeblock>
       <p>Each definition entry must have only one term and contain only inline content.</p></section>
-    <section id="tables"><title>Tables</title>
+    <section id="tables">
+      <title>Tables</title>
       <p>Tables use
         <xref format="html" href="http://fletcherpenney.net/multimarkdown/" scope="external">MultiMarkdown</xref> table
         extension format:</p><codeblock outputclass="markdown" xml:space="preserve">| First Header | Second Header | Third Header |
@@ -253,7 +263,8 @@ Context
 &lt;/table&gt;</codeblock>
       <p>Table cells may only contain inline content and column spans; block content and row spans are not supported by
         Markdown DITA.</p></section>
-    <section id="metadata"><title>Metadata</title>
+    <section id="metadata">
+      <title>Metadata</title>
       <p>
         <xref format="html" href="http://www.yaml.org/" scope="external">YAML</xref> metadata block as defined in Pandoc
         <xref format="html#extension-yaml_metadata_block"

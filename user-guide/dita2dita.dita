@@ -29,19 +29,21 @@
       <li>
         <p>XML comments are removed.</p></li>
     </ul>
-    <section id="applications"><title>Applications</title>
+    <section id="applications">
+      <title>Applications</title>
       <p>Normalized output may be useful in situations where post-processing of DITA content is required, but the
         downstream systems are limited in their ability to resolve DITA references.</p></section>
-    <section id="generating-normalized-dita-output"><title>Generating normalized DITA output</title>
-      <p>Run the <b><codeph>dita</codeph></b> command and set the value of the output <codeph>--format</codeph> option
-        to <codeph>dita</codeph>:</p><codeblock xml:space="preserve">dita-ot-dir/bin/dita --input=input-file --format=dita</codeblock>
+    <section id="generating-normalized-dita-output">
+      <title>Generating normalized DITA output</title>
+      <p>Run the <cmdname>dita</cmdname> command and set the value of the output <parmname>--format</parmname> option to
+          <option>dita</option>:</p><codeblock xml:space="preserve"><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>dita</option></codeblock>
       <p>where:</p>
       <ul>
         <li>
-          <p><i><codeph>dita-ot-dir</codeph></i> is the DITA-OT installation directory</p></li>
+          <p><varname>dita-ot-dir</varname> is the DITA-OT installation directory</p></li>
         <li>
-          <p><i><codeph>input-file</codeph></i> is the DITA map or DITA file that you want to process</p></li>
-      </ul></section>
+          <p><varname>input-file</varname> is the DITA map or DITA file that you want to process</p></li>
+      </ul>
+    </section>
   </body>
-
 </topic>

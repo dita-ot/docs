@@ -30,10 +30,8 @@
         to the desired format:</p><codeblock xml:space="preserve"><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>markdown</option></codeblock>
       <p>where:</p>
       <ul>
-        <li>
-          <p><varname>dita-ot-dir</varname> is the DITA-OT installation directory</p></li>
-        <li>
-          <p><varname>input-file</varname> is the DITA map or DITA file that you want to process</p></li>
+        <li><varname>dita-ot-dir</varname> is the DITA-OT installation directory</li>
+        <li><varname>input-file</varname> is the DITA map or DITA file that you want to process</li>
       </ul></section>
   </body>
 </topic>

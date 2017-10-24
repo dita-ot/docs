@@ -5,8 +5,7 @@
 <topic id="markdown-dita-syntax-reference">
   <title>Markdown DITA syntax reference</title>
   <shortdesc>Markdown DITA uses
-    <xref format="html" href="http://commonmark.org/" scope="external">CommonMark</xref> as the underlying markup
-    language.</shortdesc>
+    <xref keyref="commonmark"/> as the underlying markup language.</shortdesc>
 
   <body>
     <p>Markdown DITA files must be UTF-8 encoded.</p>

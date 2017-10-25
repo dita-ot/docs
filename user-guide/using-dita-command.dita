@@ -7,7 +7,9 @@
   <shortdesc>You can generate output using the DITA Open Toolkit <cmdname>dita</cmdname> command-line tool. Build
     parameters can be specified on the command line or with <filepath>.properties</filepath> files.</shortdesc>
   <taskbody>
-    <context audience="novice">The DITA-OT client is a command-line tool with no graphical user interface.</context>
+    <context audience="novice">The DITA-OT client is a command-line tool with no graphical user interface. To verify
+      that your installation works correctly, you can build output using the sample files included in the distribution
+      package.</context>
     <steps>
       <step audience="novice">
         <cmd>Open a terminal window by typing the following in the search bar:</cmd>

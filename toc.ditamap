@@ -8,14 +8,11 @@
   <topicref keyref="index">
   </topicref>
   <topicref keyref="release-notes">
-    <topicmeta><navtitle>Release Notes</navtitle></topicmeta>
-    <!--<topicref keyref="rel2.5"/>-->
-    <topicref keyref="rel2.4"><topicmeta><navtitle>2.4.x</navtitle></topicmeta></topicref>
-    <topicref keyref="rel2.3"><topicmeta><navtitle>2.3.x</navtitle></topicmeta></topicref>
-    <topicref keyref="rel2.2"><topicmeta><navtitle>2.2.x</navtitle></topicmeta></topicref>
-    <topicref keyref="rel2.1"><topicmeta><navtitle>2.1.x</navtitle></topicmeta></topicref>
-    <topicref keyref="rel2.0"><topicmeta><navtitle>2.0.x</navtitle></topicmeta></topicref>
+    <topicmeta>
+      <navtitle>Release Notes</navtitle>
+    </topicmeta>
   </topicref>
+  
   <topicref keyref="installing-client" locktitle="yes">
     <topicmeta>
       <navtitle>Installing</navtitle>

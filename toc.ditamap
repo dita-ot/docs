@@ -18,7 +18,11 @@
       <navtitle>Installing DITA-OT</navtitle>
     </topicmeta>
     <topicref keyref="prerequisite-software"/>
-    <topicref keyref="determining-version-of-ditaot"/>
+    <topicref keyref="determining-version-of-ditaot">
+      <topicmeta>
+        <navtitle>Checking the version number</navtitle>
+      </topicmeta>
+    </topicref>
     <topicref keyref="first-build-using-dita-command"/>
   </topicref>
   <topicref keyref="plugins-installing">

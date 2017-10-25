@@ -33,5 +33,9 @@
         </info>
       </step>
     </steps>
+    <result>
+      <p>The DITA-OT version number appears on the console:</p>
+      <codeblock><systemoutput>DITA-OT version <keyword keyref="maintenance-version"/></systemoutput></codeblock>
+    </result>
   </taskbody>
 </task>

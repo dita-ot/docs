@@ -10,7 +10,7 @@ export SITE_DIR=$PWD/dita-ot.github.io
   # Remove target output directory before generating new output
   rm -rf "$SITE_DIR/dev"
   # Re-create /dev folder & generate site output there
-  ./gradlew -b site.gradle -Ddita.home=$DITA_HOME -Doutput.dir=$SITE_DIR/dev -PditaHomeSrc=$DITA_OT_DEV --info --stacktrace --no-daemon
+  ./gradlew site -PditaHome=$DITA_HOME -PoutputDir=$SITE_DIR/dev -PditaHomeSrc=$DITA_OT_DEV --info --stacktrace --no-daemon
 #else
-#  ./gradlew -Ddita.home=$DITA_HOME html --info --stacktrace --no-daemon
+#  ./gradlew -PditaHome=$DITA_HOME html --info --stacktrace --no-daemon
 #fi

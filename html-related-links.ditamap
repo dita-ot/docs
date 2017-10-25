@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>HTML Related Links</title>
+  <reltable>
+    <title>Source and target: Links that apply only to HTML version of
+      distribution documentation</title>
+    <!-- Links common to all output formats are defined in nested submaps   -->
+    <relheader>
+      <relcolspec linking="sourceonly"/>
+      <relcolspec linking="targetonly"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref keyref="java-api"/>
+      </relcell>
+      <relcell>
+        <topicref href="api/index.html" format="html"
+          navtitle="DITA-OT Java API documentation" scope="peer"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-installing"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugins-overview"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell/>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell/>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell/>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell/>
+    </relrow>
+  </reltable>
+</map>

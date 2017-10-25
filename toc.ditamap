@@ -109,7 +109,6 @@
     <topicref keyref="pdf2-creating-change-bars"/>
     <topicref keyref="pdf-transformation-history"/>
   </topicref>
-  <topicref keyref="plugin-addgeneratedtext"/>
   <topicref keyref="plugin-creating" locktitle="yes">
     <topicmeta>
       <navtitle>Other customizations</navtitle>
@@ -148,6 +147,7 @@
   </topicref>
   <topicref keyref="DITA-globalization">
     <topicref keyref="globalization-supported-in-dita-ot"/>
+    <topicref keyref="plugin-addgeneratedtext"/>
     <topicref keyref="DITA-globalization-languages"/>
   </topicref>
   <topicref keyref="verifying-output">

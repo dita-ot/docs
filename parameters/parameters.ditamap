@@ -4,24 +4,22 @@
 
 <map>
   <title>Parameter Reference</title>
-  <topicref href="dita-command-arguments.dita" keys="dita-command-arguments"/>
-  <topicref href="parameters_intro.dita" keys="dita-ot-params">
-    <topicref href="parameters-base.dita" keys="parameters-base" navtitle="Common"/>
-    <topicref href="parameters-pdf.dita"/>
-    <topicref href="parameters-base-html.dita" keys="parameters-base-html">
-      <topicref href="generate-copy-outer.dita" keys="generate-copy-outer" toc="no"/>
-    </topicref>
-    <topicref href="parameters-html5.dita"/>
-    <topicref href="parameters-xhtml.dita"/>
-    <topicref href="parameters-htmlhelp.dita" locktitle="yes" navtitle="HTML Help" platform="windows"/>
-    <topicref href="parameters-eclipsehelp.dita" navtitle="Eclipse Help"/>
-    <topicref href="parameters-other.dita" navtitle="Other"/>
-    <topicref href="ant-parameters-details.dita" processing-role="resource-only" toc="no"/>
+  <topicref keyref="dita-command-arguments"/>
+  <topicref keyref="parameters_intro" keys="dita-ot-params">
+    <topicref keyref="parameters-base" navtitle="Common"/>
+    <topicref keyref="parameters-pdf"/>
+    <topicref keyref="parameters-base-html"/>
+    <topicref keyref="parameters-html5"/>
+    <topicref keyref="parameters-xhtml"/>
+    <topicref keyref="parameters-htmlhelp" locktitle="yes" navtitle="HTML Help" platform="windows"/>
+    <topicref keyref="parameters-eclipsehelp" navtitle="Eclipse Help"/>
+    <topicref keyref="parameters-other" navtitle="Other"/>
+    <topicref keyref="ant-parameters-details" keys="parameters-push" processing-role="resource-only" toc="no"/>
   </topicref>
-  <topicref href="configuration-properties.dita" keys="configuration-properties">
-    <topicref href="local-properties.dita"/>
-    <topicref href="lib-plugin-properties.dita"/>
-    <topicref href="lib-configuration-properties.dita" navtitle="lib/configuration.properties file"/>
-    <topicref href="internal-ant-properties.dita" keys="internal-ant-properties"/>
+  <topicref keyref="configuration-properties">
+    <topicref keyref="local-properties"/>
+    <topicref keyref="lib-plugin-properties"/>
+    <topicref keyref="lib-configuration-properties"/>
+    <topicref keyref="internal-ant-properties"/>
   </topicref>
 </map>

@@ -45,10 +45,6 @@
       <topicref keyref="creating-an-ant-build-script"/>
     </topicref>
     <topicref keyref="AvailableTransforms"/>
-    <topicref keyref="parameters_intro">
-      <topicref keyref="parameters-base"/>
-      <topicref keyref="parameters-other"/>
-    </topicref>
     <topicref keyref="dita2eclipsehelp">
       <topicref keyref="parameters-base"/>
       <topicref keyref="parameters-base-html"/>
@@ -83,6 +79,9 @@
     <topicref keyref="dita2troff">
       <topicref keyref="parameters-base"/>
     </topicref>
+  </topicref>
+  <topicref keyref="parameters">
+    <mapref href="parameters/parameters.ditamap"/>
   </topicref>
   <topicref keyref="html-customization" locktitle="yes">
     <topicmeta>
@@ -162,14 +161,6 @@
     <topicref keyref="reducing-processing-time"/>
   </topicref>
   <topicref keyref="reference">
-    <topicref keyref="dita-command-arguments"/>
-    <topicref keyref="parameters_intro"/>
-    <topicref keyref="configuration-properties">
-      <topicref keyref="local-properties"/>
-      <topicref keyref="lib-configuration-properties"/>
-      <topicref keyref="lib-plugin-properties"/>
-      <topicref keyref="internal-ant-properties"/>
-    </topicref>
     <topicref keyref="DITA-OTArchitecture">
       <topicref keyref="processing-structure"/>
       <topicref keyref="map-first-preproc"/>
@@ -252,9 +243,6 @@
   <topicref href="index.dita"/>
   <topicref href="release-notes/index.dita" navtitle="Release Notes"
     locktitle="yes"/>
-  <topicref href="parameters/index.dita">
-    <mapref href="parameters/parameters.ditamap"/>
-  </topicref>
   <topicref href="user-guide/index.dita">
     <mapref href="user-guide/user-guide.ditamap"/>
   </topicref>

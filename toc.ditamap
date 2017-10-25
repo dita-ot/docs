@@ -89,18 +89,23 @@
   <topicref keyref="parameters">
     <mapref href="parameters/parameters.ditamap"/>
   </topicref>
+
   <topicref keyref="html-customization" locktitle="yes">
     <topicmeta>
       <navtitle>Customizing HTML</navtitle>
     </topicmeta>
-    <topicref keyref="html-customization-css">
+    <topicref keyref="html-customization-parameters">
+      <topicref keyref="html-customization-navigation"/>
+      <topicref keyref="html-customization-css"/>
+      <topicref keyref="html-customization-header"/>
+      <topicref keyref="generate-copy-outer"/>
+    </topicref>
+    <topicref keyref="html-customization-properties-file"/>
+    <topicref keyref="html-customization-plugins">
       <topicref keyref="html-customization-plugin-bundle-css"/>
     </topicref>
-    <topicref keyref="html-customization-header"/>
-    <topicref keyref="html-customization-navigation"/>
-    <topicref keyref="html-customization-properties-file"/>
-    <topicref keyref="generate-copy-outer"/>
   </topicref>
+
   <topicref keyref="pdf-customization" locktitle="yes">
     <topicmeta>
       <navtitle>Customizing PDF</navtitle>
@@ -237,8 +242,6 @@
     <topicmeta>
       <navtitle>DEPRECATED TOPICS TO REMOVE OR EXPAND</navtitle>
     </topicmeta>
-    <topicref keyref="html-customization-plugins"/><!-- Expand this? -->
-    <topicref keyref="html-customization-parameters"/>
     <topicref keyref="AvailableTransforms"/>
     <topicref keyref="dev_ref"/>
     <topicref keyref="getting-started"/>

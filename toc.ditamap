@@ -4,38 +4,7 @@
 
 <map xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
-  <!-- 
-  about
-    set expectations, including cmd line
-    dita spec support
-  release notes
-  installing
-    migrating from previous versions
-  adding plugins
-    about; source of plugins
-    installing
-    uninstalling
-  building output
-    properties or params
-    dita or ant
-    recommend using log files
-    ref verifying section
-  customizing HTML output
-  customizing PDF output
-  customizing other output types
-  customizing generated text
-    i18n
-    best practice: text in one plugin and others require it (for what good requiring does)
-  verifying output
-    viewing output
-    viewing logs, log files
-  troubleshooting
-    subtopics for, e.g., HTML included here and in associated sections for building, customizing
-  reference
-    including architecture
-  resources
-  
-  -->
+
   <topicref keyref="index">
     <topicref keyref="first-build-using-dita-command"/>
     <topicref keyref="DITA_spec-support">

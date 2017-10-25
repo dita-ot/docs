@@ -6,17 +6,6 @@
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
 
   <topicref keyref="index">
-    <topicref keyref="first-build-using-dita-command"/>
-    <topicref keyref="DITA_spec-support">
-      <topicref keyref="DITA_v1-2-support"/>
-      <topicref keyref="DITA_v1-3-support"/>
-      <topicref keyref="implementation-dependent-features"/>
-      <topicref keyref="extended-functionality"/>
-      <topicref keyref="DITA-features-in-docs"/>
-    </topicref>
-    <topicref keyref="license">
-      <topicref keyref="third-party-software"/>
-    </topicref>
   </topicref>
   <topicref keyref="release-notes">
     <topicmeta><navtitle>Release Notes</navtitle></topicmeta>
@@ -33,6 +22,7 @@
     </topicmeta>
     <topicref keyref="prerequisite-software"/>
     <topicref keyref="determining-version-of-ditaot"/>
+    <topicref keyref="first-build-using-dita-command"/>
   </topicref>
   <topicref keyref="plugins-installing">
     <topicref keyref="plugins-removing"/>
@@ -230,6 +220,16 @@
         <topicref keyref="extension-points-in-org.dita.troff"/>
         <topicref keyref="extension-points-in-org.dita.xhtml"/>
       </topicref>
+    </topicref>
+    <topicref keyref="DITA_spec-support">
+      <topicref keyref="DITA_v1-2-support"/>
+      <topicref keyref="DITA_v1-3-support"/>
+      <topicref keyref="implementation-dependent-features"/>
+      <topicref keyref="extended-functionality"/>
+      <topicref keyref="DITA-features-in-docs"/>
+    </topicref>
+    <topicref keyref="license">
+      <topicref keyref="third-party-software"/>
     </topicref>
   </topicref>
   <topicref keyref="dita-and-dita-ot-resources">

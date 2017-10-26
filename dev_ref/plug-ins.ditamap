@@ -10,16 +10,18 @@
     <topicref keyref="rebuilding-the-dita-ot-documentation" keys="rebuild-docs"/>
     <topicref keyref="plugin-configfile"/>
     <topicref keyref="plugin-dependencies"/>
-    <topicref keyref="plugin-xmlcatalog"/>
-    <topicref keyref="plugin-anttarget"/>
-    <topicref keyref="plugin-antpreprocess"/>
-    <topicref keyref="plugin-newtranstype"/>
-    <topicref keyref="plugin-overridestyle"/>
-    <topicref keyref="using-plugin-URI-extension"/>
-    <topicref keyref="plugin-xsltparams"/>
-    <topicref keyref="plugin-javalib"/>
-    <topicref keyref="plugin-messages"/>
-    <topicref keyref="plugin-newextensions"/>
+    <topicref keyref="plugin-applications">
+      <topicref keyref="plugin-xmlcatalog"/>
+      <topicref keyref="plugin-anttarget"/>
+      <topicref keyref="plugin-antpreprocess"/>
+      <topicref keyref="plugin-newtranstype"/>
+      <topicref keyref="plugin-overridestyle"/>
+      <topicref keyref="using-plugin-URI-extension"/>
+      <topicref keyref="plugin-xsltparams"/>
+      <topicref keyref="plugin-javalib"/>
+      <topicref keyref="plugin-messages"/>
+      <topicref keyref="plugin-newextensions"/>
+    </topicref>
     <topicref keyref="plugin-sample"/>
   </topicref>
 

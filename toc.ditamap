@@ -25,10 +25,7 @@
     </topicref>
     <topicref keyref="first-build-using-dita-command"/>
   </topicref>
-  <topicref keyref="plugins-installing">
-    <topicref keyref="plugins-removing"/>
-    <topicref keyref="rebuilding-the-dita-ot-documentation"/>
-  </topicref>
+
   <topicref keyref="transforming-dita-content">
     <topicref keyref="build-using-dita-command">
       <topicref keyref="dita-command-arguments"/>
@@ -86,40 +83,15 @@
       </topicref>
     </topicref>
   </topicref>
+
   <topicref keyref="parameters">
     <mapref href="parameters/parameters.ditamap"/>
   </topicref>
 
-  <mapref href="dev_ref/html-customization.ditamap"/>
-  <mapref href="dev_ref/pdf-customization.ditamap"/>
+  <topicref keyref="extending-the-ot">
+    <mapref href="dev_ref/customization.ditamap"/>
+  </topicref>
 
-  <topicref keyref="plugin-creating" locktitle="yes">
-    <topicmeta>
-      <navtitle>Other customizations</navtitle>
-    </topicmeta>
-    <topicref keyref="plugin-benefits"/>
-    <topicref keyref="plugin-configfile"/>
-    <topicref keyref="plugin-dependencies"/>
-    <topicref keyref="extending-the-ot"/>
-    <topicref keyref="plugins-overview"/>
-    <topicref keyref="plugin-xmlcatalog"/>
-    <topicref keyref="plugin-anttarget"/>
-    <topicref keyref="plugin-antpreprocess"/>
-    <topicref keyref="plugin-newtranstype"/>
-    <topicref keyref="plugin-overridestyle"/>
-    <topicref keyref="using-plugin-URI-extension"/>
-    <topicref keyref="plugin-xsltparams"/>
-    <topicref keyref="plugin-javalib"/>
-    <topicref keyref="plugin-messages"/>
-    <topicref keyref="plugin-newextensions"/>
-    <topicref keyref="plugin-sample"/>
-    <mapref href="dev_ref/migration.ditamap"/>
-  </topicref>
-  <topicref keyref="DITA-globalization">
-    <topicref keyref="globalization-supported-in-dita-ot"/>
-    <topicref keyref="plugin-addgeneratedtext"/>
-    <topicref keyref="DITA-globalization-languages"/>
-  </topicref>
   <topicref keyref="verifying-output">
     <topicref keyref="log-files"/>
   </topicref>
@@ -169,7 +141,6 @@
       </topicref>
     </topicref>
     <topicref keyref="java-api"/>
-    <mapref href="extension-points/extension-points.ditamap"/>
     <topicref keyref="DITA_spec-support">
       <topicref keyref="DITA_v1-2-support"/>
       <topicref keyref="DITA_v1-3-support"/>

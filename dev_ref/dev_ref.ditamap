@@ -38,16 +38,7 @@
     <topicref href="PdfDefault.dita"/>
     <topicref href="map-first-preprocessing.dita" keys="map-first-preproc"/>
   </topicref>
-  <topicref href="extending-the-ot.dita">
-    <topicref href="plugins-installing.dita"/>
-    <topicref href="plugins-removing.dita"/>
-    <topicref href="rebuilding-the-dita-ot-documentation.dita" keys="rebuild-docs"/>
-  </topicref>
-  <mapref href="plug-ins.ditamap"/>
-  <mapref href="../extension-points/extension-points.ditamap"/>
-  <mapref href="html-customization.ditamap"/>
-  <mapref href="pdf-customization.ditamap"/>
-  <mapref href="migration.ditamap"/>
+  
   <topicref href="java-api.dita" keys="java-api"/>
 
   <!-- XXX: is this obsolete? 2 April 2013: Commented out; high priority to write new topic about topic merge-->

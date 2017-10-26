@@ -22,5 +22,29 @@
     <mapref href="license/license.ditamap"/>
     <mapref href="resources/common-resources.ditamap" processing-role="resource-only"/>
   </topicgroup>
-  <mapref href="html-related-links.ditamap"/>
+
+  <reltable>
+    <title>Source and target: Links that apply only to HTML version of distribution documentation</title>
+    <!-- Links common to all output formats are defined in nested submaps   -->
+    <relheader>
+      <relcolspec linking="sourceonly"/>
+      <relcolspec linking="targetonly"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref keyref="java-api"/>
+      </relcell>
+      <relcell>
+        <topicref href="api/index.html" format="html" navtitle="DITA-OT Java API documentation" scope="peer"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-installing"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="custom-plugins"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

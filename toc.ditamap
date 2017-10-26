@@ -92,9 +92,6 @@
     <mapref href="dev_ref/customization.ditamap"/>
   </topicref>
 
-  <topicref keyref="verifying-output">
-    <topicref keyref="log-files"/>
-  </topicref>
   <topicref keyref="troubleshooting-overview">
     <topicref keyref="log-files"/>
     <topicref keyref="DITA-messages"/>
@@ -152,30 +149,13 @@
       <topicref keyref="third-party-software"/>
     </topicref>
   </topicref>
+
   <topicref keyref="dita-and-dita-ot-resources">
     <topicmeta>
       <navtitle>Resources</navtitle>
     </topicmeta>
   </topicref>
-  <topichead toc="no">
-    <topicmeta>
-      <navtitle>DEPRECATED TOPICS TO REMOVE OR EXPAND</navtitle>
-    </topicmeta>
-    <topicref keyref="AvailableTransforms"/>
-    <topicref keyref="dev_ref"/>
-    <topicref keyref="getting-started"/>
-    <topicref keyref="user-guide"/>
-    <topicref keyref="web-based-resources"/>
-  </topichead>
-  <!-- 
-  <topicref href="index.dita"/>
-  <topicref href="release-notes/index.dita" navtitle="Release Notes"
-    locktitle="yes"/>
-  <topicref href="user-guide/index.dita">
-    <mapref href="user-guide/user-guide.ditamap"/>
-  </topicref>
-  -->
-  <!--<mapref href="user-guide/dita-resources.ditamap"/>-->
+  
   <topicgroup processing-role="resource-only">
     <topicref href="resources/conref-task.dita"/>
     <mapref href="resources/key-definitions.ditamap"/>

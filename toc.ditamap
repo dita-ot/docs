@@ -90,35 +90,9 @@
     <mapref href="parameters/parameters.ditamap"/>
   </topicref>
 
-  <topicref keyref="html-customization" locktitle="yes">
-    <topicmeta>
-      <navtitle>Customizing HTML</navtitle>
-    </topicmeta>
-    <topicref keyref="html-customization-parameters">
-      <topicref keyref="html-customization-navigation"/>
-      <topicref keyref="html-customization-css"/>
-      <topicref keyref="html-customization-header"/>
-      <topicref keyref="generate-copy-outer"/>
-    </topicref>
-    <topicref keyref="html-customization-properties-file"/>
-    <topicref keyref="html-customization-plugins">
-      <topicref keyref="html-customization-plugin-bundle-css"/>
-    </topicref>
-  </topicref>
+  <mapref href="dev_ref/html-customization.ditamap"/>
+  <mapref href="dev_ref/pdf-customization.ditamap"/>
 
-  <topicref keyref="pdf-customization" locktitle="yes">
-    <topicmeta>
-      <navtitle>Customizing PDF</navtitle>
-    </topicmeta>
-    <topicref keyref="pdf-customization-approaches"/>
-    <topicref keyref="pdf-customization-plugin-types"/>
-    <topicref keyref="pdf-plugin-structure"/>
-    <topicref keyref="pdf-customization-best-practices"/>
-    <topicref keyref="pdf-customization-example"/>
-    <topicref keyref="pdf-customization-resources"/>
-    <topicref keyref="pdf2-creating-change-bars"/>
-    <topicref keyref="pdf-transformation-history"/>
-  </topicref>
   <topicref keyref="plugin-creating" locktitle="yes">
     <topicmeta>
       <navtitle>Other customizations</navtitle>
@@ -139,21 +113,7 @@
     <topicref keyref="plugin-messages"/>
     <topicref keyref="plugin-newextensions"/>
     <topicref keyref="plugin-sample"/>
-    <topicref keyref="migration">
-      <topicref keyref="migrating-to-1.5.4"/>
-      <topicref keyref="migrating-to-1.6"/>
-      <topicref keyref="migrating-to-1.7">
-        <topicref keyref="flagging-migration"/>
-      </topicref>
-      <topicref keyref="migrating-to-1.8"/>
-      <topicref keyref="migrating-to-2.0"/>
-      <topicref keyref="migrating-to-2.1"/>
-      <topicref keyref="migrating-to-2.2"/>
-      <topicref keyref="migrating-to-2.3"/>
-      <topicref keyref="migrating-to-2.4"/>
-      <topicref keyref="migrating-to-2-5"/>
-      <topicref keyref="migrating-to-3.0"/>
-    </topicref>
+    <mapref href="dev_ref/migration.ditamap"/>
   </topicref>
   <topicref keyref="DITA-globalization">
     <topicref keyref="globalization-supported-in-dita-ot"/>
@@ -204,26 +164,12 @@
         <topicref keyref="XhtmlTocjs"/>
         <topicref keyref="XhtmlCHM"/>
       </topicref>
-      <topicref keyref="PdfDefault"/>
-    </topicref>
-    <topicref keyref="java-api"/>
-    <topicref keyref="plugin-extension-points">
-      <topicref keyref="all-extension-points"/>
-      <topicref keyref="plugin-extension-points-general"/>
-      <topicref keyref="plugin-extension-points-pre-processing"/>
-      <topicref keyref="plugin-extension-points-xslt-import"/>
-      <topicref keyref="plugin-extension-points-xslt-parameters"/>
-      <topicref keyref="plugin-extension-points-support"/>
-      <topicref keyref="extension-points-by-plugin">
-        <topicref keyref="extension-points-in-org.dita.base"/>
-        <topicref keyref="extension-points-in-org.dita.eclipsehelp"/>
-        <topicref keyref="extension-points-in-org.dita.html5"/>
-        <topicref keyref="extension-points-in-org.dita.htmlhelp"/>
-        <topicref keyref="extension-points-in-org.dita.pdf2"/>
-        <topicref keyref="extension-points-in-org.dita.troff"/>
-        <topicref keyref="extension-points-in-org.dita.xhtml"/>
+      <topicref keyref="PdfDefault">
+        <topicref keyref="pdf-transformation-history"/>
       </topicref>
     </topicref>
+    <topicref keyref="java-api"/>
+    <mapref href="extension-points/extension-points.ditamap"/>
     <topicref keyref="DITA_spec-support">
       <topicref keyref="DITA_v1-2-support"/>
       <topicref keyref="DITA_v1-3-support"/>
@@ -236,7 +182,9 @@
     </topicref>
   </topicref>
   <topicref keyref="dita-and-dita-ot-resources">
-    <topicmeta><navtitle>Resources</navtitle></topicmeta>
+    <topicmeta>
+      <navtitle>Resources</navtitle>
+    </topicmeta>
   </topicref>
   <topichead toc="no">
     <topicmeta>

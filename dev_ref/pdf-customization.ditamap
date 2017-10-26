@@ -4,13 +4,28 @@
 
 <map>
   <title>Customizing PDF output</title>
-  <topicref href="pdf-customization.dita" keys="pdf-customization">
-    <topicref href="pdf-transformation-history.dita"/>
-    <topicref href="pdf-customization-approaches.dita"/>
-    <topicref href="pdf-customization-plugin-types.dita"/>
-    <topicref href="pdf-plugin-structure.dita"/>
-    <topicref href="pdf-customization-example.dita" navtitle="Simple PDF plug-in example" locktitle="yes"/>
-    <topicref href="pdf-customization-best-practices.dita" navtitle="Customization best practices" locktitle="yes"/>
-    <topicref href="pdf-customization-resources.dita" navtitle="Custom PDF plug-in resources" locktitle="yes"/>
+  <topicref keyref="pdf-customization" locktitle="yes">
+    <topicmeta>
+      <navtitle>Customizing PDF</navtitle>
+    </topicmeta>
+    <topicref keyref="pdf-customization-approaches"/>
+    <topicref keyref="pdf-customization-plugin-types"/>
+    <topicref keyref="pdf-plugin-structure"/>
+    <topicref keyref="pdf-customization-best-practices" locktitle="yes">
+      <topicmeta>
+        <navtitle>Customization best practices</navtitle>
+      </topicmeta>
+    </topicref>
+    <topicref keyref="pdf-customization-example" locktitle="yes">
+      <topicmeta>
+        <navtitle>Simple PDF plug-in example</navtitle>
+      </topicmeta>
+    </topicref>
+    <topicref keyref="pdf-customization-resources" locktitle="yes">
+      <topicmeta>
+        <navtitle>Custom PDF plug-in resources</navtitle>
+      </topicmeta>
+    </topicref>
+    <topicref keyref="pdf2-creating-change-bars"/>
   </topicref>
 </map>

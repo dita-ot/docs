@@ -4,22 +4,23 @@
 
 <map>
   <title>DITA-OT extension points</title>
-  <topicref href="plugin-extension-points.dita">
-    <topicref href="plugin-extension-points-general.dita"/>
-    <topicref href="plugin-extension-points-pre-processing.dita"/>
-    <topicref href="plugin-extension-points-xslt-import.dita"/>
-    <topicref href="plugin-extension-points-xslt-parameters.dita"/>
-    <topicref href="plugin-extension-points-support.dita"/>
-    <topicref href="extension-points-by-plugin.dita" keys="extension-points-by-plugin">
+  <topicref keyref="plugin-extension-points">
+    <topicref keyref="all-extension-points"/>
+    <topicref keyref="plugin-extension-points-general"/>
+    <topicref keyref="plugin-extension-points-pre-processing"/>
+    <topicref keyref="plugin-extension-points-xslt-import"/>
+    <topicref keyref="plugin-extension-points-xslt-parameters"/>
+    <topicref keyref="plugin-extension-points-support"/>
+    <topicref keyref="extension-points-by-plugin">
       <!-- Include only topics for plug-ins that actually provide extension points. -->
-      <topicref href="extension-points-in-org.dita.base.dita"/>
-      <topicref href="extension-points-in-org.dita.xhtml.dita"/>
-      <topicref href="extension-points-in-org.dita.html5.dita"/>
-      <topicref href="extension-points-in-org.dita.eclipsehelp.dita"/>
-      <topicref href="extension-points-in-org.dita.htmlhelp.dita"/>
-      <topicref href="extension-points-in-org.dita.pdf2.dita"/>
-      <topicref href="extension-points-in-org.dita.troff.dita"/>
+      <topicref keyref="extension-points-in-org.dita.base"/>
+      <topicref keyref="extension-points-in-org.dita.eclipsehelp"/>
+      <topicref keyref="extension-points-in-org.dita.html5"/>
+      <topicref keyref="extension-points-in-org.dita.htmlhelp"/>
+      <topicref keyref="extension-points-in-org.dita.pdf2"/>
+      <topicref keyref="extension-points-in-org.dita.troff"/>
+      <topicref keyref="extension-points-in-org.dita.xhtml"/>
     </topicref>
-    <topicref href="extension-points-details.dita" processing-role="resource-only" toc="no"/>
+    <topicref keyref="extension-points-details" processing-role="resource-only" toc="no"/>
   </topicref>
 </map>

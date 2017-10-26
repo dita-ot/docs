@@ -26,6 +26,8 @@
     <topicref keyref="first-build-using-dita-command"/>
   </topicref>
 
+  <mapref href="user-guide/input-formats.ditamap"/>
+
   <topicref keyref="transforming-dita-content">
     <topicref keyref="build-using-dita-command">
       <topicref keyref="dita-command-arguments"/>
@@ -41,47 +43,7 @@
       <topicref keyref="building-with-ant"/>
       <topicref keyref="creating-an-ant-build-script"/>
     </topicref>
-    <topicref keyref="AvailableTransforms" locktitle="yes">
-      <topicmeta>
-        <navtitle>Output formats</navtitle>
-      </topicmeta>
-      <topicref keyref="dita2pdf">
-        <topicref keyref="parameters-base"/>
-        <topicref keyref="parameters-pdf"/>
-      </topicref>
-      <topicref keyref="dita2html5">
-        <topicref keyref="parameters-base"/>
-        <topicref keyref="parameters-base-html"/>
-        <topicref keyref="parameters-html5"/>
-        <topicref keyref="generate-copy-outer"/>
-      </topicref>
-      <topicref keyref="dita2eclipsehelp">
-        <topicref keyref="parameters-base"/>
-        <topicref keyref="parameters-base-html"/>
-        <topicref keyref="parameters-eclipsehelp"/>
-        <topicref keyref="generate-copy-outer"/>
-      </topicref>
-      <topicref keyref="dita2htmlhelp">
-        <topicref keyref="parameters-base"/>
-        <topicref keyref="parameters-base-html"/>
-        <topicref keyref="parameters-htmlhelp"/>
-        <topicref keyref="generate-copy-outer"/>
-      </topicref>
-      <!-- Markdown -->
-      <!-- NormDITA -->
-      <topicref keyref="dita2tocjs">
-        <topicref keyref="parameters-base"/>
-      </topicref>
-      <topicref keyref="dita2troff">
-        <topicref keyref="parameters-base"/>
-      </topicref>
-      <topicref keyref="dita2xhtml">
-        <topicref keyref="parameters-base"/>
-        <topicref keyref="parameters-base-html"/>
-        <topicref keyref="parameters-xhtml"/>
-        <topicref keyref="generate-copy-outer"/>
-      </topicref>
-    </topicref>
+    <mapref href="user-guide/transformations.ditamap"/>
   </topicref>
 
   <topicref keyref="parameters">
@@ -155,7 +117,7 @@
       <navtitle>Resources</navtitle>
     </topicmeta>
   </topicref>
-  
+
   <topicgroup processing-role="resource-only">
     <topicref href="resources/conref-task.dita"/>
     <mapref href="resources/key-definitions.ditamap"/>

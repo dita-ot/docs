@@ -69,7 +69,9 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref keyref="parameters-htmlhelp" navtitle="HTML Help transformation"/>
+        <topicref keyref="parameters-base"/>
+        <topicref keyref="parameters-base-html"/>
+        <topicref keyref="parameters-htmlhelp"/>
       </relcell>
     </relrow>
     <relrow>
@@ -121,6 +123,58 @@
       </relcell>
     </relrow>
     <relrow>
+      <relcell>
+        <topicref keyref="dita2markdown">
+          <topicmeta>
+            <linktext>Markdown transformations</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+      <relcell/>
+      <relcell>
+        <topicref keyref="parameters-base"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2dita">
+          <topicmeta>
+            <linktext>Normalized DITA transformations</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+      <relcell/>
+      <relcell>
+        <topicref keyref="parameters-base"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2tocjs">
+          <topicmeta>
+            <linktext>TocJS transformation</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+      <relcell/>
+      <relcell>
+        <topicref keyref="parameters-base"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2troff">
+          <topicmeta>
+            <linktext>troff transformation</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+      <relcell/>
+      <relcell>
+        <topicref keyref="parameters-base"/>
+      </relcell>
+    </relrow>
+    <relrow>
       <relcell/>
       <relcell>
         <topicref keyref="html-customization-plugin-bundle-css"/>
@@ -141,7 +195,7 @@
     </relrow>
   </reltable>
   <reltable>
-    <title>Source and target: Transformations and all-transformations topics</title>
+    <title>Source and target</title>
     <relheader>
       <relcolspec linking="sourceonly"/>
       <relcolspec linking="targetonly"/>
@@ -155,6 +209,25 @@
       </relcell>
       <relcell>
         <topicref keyref="parameters-base" navtitle="All transformation types"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2eclipsehelp"/>
+        <topicref keyref="dita2html5"/>
+        <topicref keyref="dita2htmlhelp"/>
+        <topicref keyref="dita2xhtml"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="generate-copy-outer"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2pdf"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="pdf2-creating-change-bars"/>
       </relcell>
     </relrow>
   </reltable>

@@ -28,23 +28,7 @@
 
   <mapref href="user-guide/input-formats.ditamap"/>
 
-  <topicref keyref="transforming-dita-content">
-    <topicref keyref="build-using-dita-command">
-      <topicref keyref="dita-command-arguments"/>
-      <topicref keyref="dita-command-help"/>
-      <topicref keyref="using-dita-properties-file"/>
-      <topicref keyref="migrating-ant-to-dita"/>
-    </topicref>
-    <topicref keyref="publishing-with-ant" locktitle="yes">
-      <topicmeta>
-        <navtitle>Using Ant</navtitle>
-      </topicmeta>
-      <topicref keyref="ant"/>
-      <topicref keyref="building-with-ant"/>
-      <topicref keyref="creating-an-ant-build-script"/>
-    </topicref>
-    <mapref href="user-guide/transformations.ditamap"/>
-  </topicref>
+  <mapref href="user-guide/publishing.ditamap"></mapref>
 
   <topicref keyref="parameters">
     <mapref href="parameters/parameters.ditamap"/>

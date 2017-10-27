@@ -7,11 +7,7 @@
 
   <mapref href="html-customization.ditamap"/>
   <mapref href="pdf-customization.ditamap"/>
-  <topicref keyref="DITA-globalization">
-    <topicref keyref="globalization-supported-in-dita-ot"/>
-    <topicref keyref="plugin-addgeneratedtext"/>
-    <topicref keyref="DITA-globalization-languages"/>
-  </topicref>
+  <mapref href="../user-guide/globalizing.ditamap"/>
   <mapref href="plug-ins.ditamap"/>
   <mapref href="../extension-points/extension-points.ditamap"/>
   <mapref href="migration.ditamap"/>

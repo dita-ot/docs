@@ -20,22 +20,22 @@
     <topicref keyref="first-build-using-dita-command"/>
   </topicref>
   <topicref keyref="alternative-input-formats" collection-type="family">
-    <mapref href="user-guide/input-formats.ditamap"/>
+    <mapref href="../user-guide/input-formats.ditamap"/>
   </topicref>
   <topicref keyref="transforming-dita-content">
-    <mapref href="user-guide/publishing.ditamap"/>
+    <mapref href="../user-guide/publishing.ditamap"/>
   </topicref>
   <topicref keyref="parameters">
-    <mapref href="parameters/parameters.ditamap"/>
+    <mapref href="../parameters/parameters.ditamap"/>
   </topicref>
   <topicref keyref="extending-the-ot">
-    <mapref href="dev_ref/customization.ditamap"/>
+    <mapref href="../dev_ref/customization.ditamap"/>
   </topicref>
   <topicref keyref="troubleshooting-overview">
-    <mapref href="user-guide/troubleshooting.ditamap"/>
+    <mapref href="../user-guide/troubleshooting.ditamap"/>
   </topicref>
   <topicref keyref="reference">
-    <mapref href="dev_ref/reference.ditamap"/>
+    <mapref href="../dev_ref/reference.ditamap"/>
   </topicref>
 
   <topicref keyref="dita-and-dita-ot-resources">
@@ -45,6 +45,6 @@
   </topicref>
 
   <topicgroup processing-role="resource-only">
-    <mapref href="resources/common-resources.ditamap"/>
+    <mapref href="common-resources.ditamap"/>
   </topicgroup>
 </map>

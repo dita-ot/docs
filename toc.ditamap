@@ -7,11 +7,7 @@
 
   <topicref keyref="landing-page"/>
 
-  <topicref keyref="release-notes">
-    <topicmeta>
-      <navtitle>Release Notes</navtitle>
-    </topicmeta>
-  </topicref>
+  <topicref keyref="release-notes"/>
 
   <topicref keyref="installing-client" locktitle="yes">
     <topicmeta>
@@ -26,9 +22,13 @@
     <topicref keyref="first-build-using-dita-command"/>
   </topicref>
 
-  <mapref href="user-guide/input-formats.ditamap"/>
+  <topicref keyref="alternative-input-formats" collection-type="family">
+    <mapref href="user-guide/input-formats.ditamap"/>
+  </topicref>
 
-  <mapref href="user-guide/publishing.ditamap"></mapref>
+  <topicref keyref="transforming-dita-content">
+    <mapref href="user-guide/publishing.ditamap"/>
+  </topicref>
 
   <topicref keyref="parameters">
     <mapref href="parameters/parameters.ditamap"/>
@@ -39,61 +39,11 @@
   </topicref>
 
   <topicref keyref="troubleshooting-overview">
-    <topicref keyref="log-files"/>
-    <topicref keyref="DITA-messages"/>
-    <topicref keyref="other-errors"/>
-    <topicref keyref="enabling-debug-mode"/>
-    <topicref keyref="increasing-the-jvm"/>
-    <topicref keyref="reducing-processing-time"/>
+    <mapref href="user-guide/troubleshooting.ditamap"/>
   </topicref>
+
   <topicref keyref="reference">
-    <topicref keyref="DITA-OTArchitecture">
-      <topicref keyref="processing-structure"/>
-      <topicref keyref="map-first-preproc"/>
-      <topicref keyref="processing-pipeline-modules"/>
-      <topicref keyref="processing-order"/>
-      <topicref collection-type="sequence" keyref="DITA-OTPreprocess">
-        <topicref keyref="preprocess-genlist"/>
-        <topicref keyref="preprocess-debugfilter"/>
-        <topicref keyref="preprocess-mapref"/>
-        <topicref keyref="preprocess-branch-filter"/>
-        <topicref keyref="preprocess-copyfiles"/>
-        <topicref keyref="preprocess-keyref"/>
-        <topicref keyref="preprocess-copy-to"/>
-        <topicref keyref="preprocess-conrefpush"/>
-        <topicref keyref="preprocess-conref"/>
-        <topicref keyref="preprocess-profile"/>
-        <topicref keyref="preprocess-topic-fragment"/>
-        <topicref keyref="preprocess-chunk"/>
-        <topicref keyref="preprocess-metadata"/>
-        <topicref keyref="preprocess-maplink"/>
-        <topicref keyref="preprocess-topicpull"/>
-        <topicref keyref="preprocess-flagging"/>
-        <topicref keyref="preprocess-clean-map"/>
-      </topicref>
-      <topicref keyref="XhtmlWithNavigation">
-        <topicref keyref="XhtmlCommon"/>
-        <topicref keyref="XhtmlDefault"/>
-        <topicref keyref="html5"/>
-        <topicref keyref="XhtmlEclipse"/>
-        <topicref keyref="XhtmlTocjs"/>
-        <topicref keyref="XhtmlCHM"/>
-      </topicref>
-      <topicref keyref="PdfDefault">
-        <topicref keyref="pdf-transformation-history"/>
-      </topicref>
-    </topicref>
-    <topicref keyref="DITA_spec-support">
-      <topicref keyref="DITA_v1-2-support"/>
-      <topicref keyref="DITA_v1-3-support"/>
-      <topicref keyref="implementation-dependent-features"/>
-      <topicref keyref="extended-functionality"/>
-      <topicref keyref="DITA-features-in-docs"/>
-    </topicref>
-    <topicref keyref="java-api"/>
-    <topicref keyref="license">
-      <topicref keyref="third-party-software"/>
-    </topicref>
+    <mapref href="dev_ref/reference.ditamap"/>
   </topicref>
 
   <topicref keyref="dita-and-dita-ot-resources">
@@ -103,10 +53,6 @@
   </topicref>
 
   <topicgroup processing-role="resource-only">
-    <topicref href="resources/conref-task.dita"/>
-    <mapref href="resources/key-definitions.ditamap"/>
-    <mapref href="resources/reltable.ditamap"/>
-    <mapref href="resources/subjectscheme.ditamap" type="subjectScheme"/>
     <mapref href="resources/common-resources.ditamap"/>
   </topicgroup>
 </map>

@@ -4,8 +4,9 @@
 
 <map processing-role="resource-only">
   <title>Common Resources</title>
-    <topicref keyref="conref-task"/>
-    <mapref href="key-definitions.ditamap"/>
-    <mapref href="reltable.ditamap"/>
-    <mapref href="subjectscheme.ditamap" type="subjectScheme"/>
+  <topicref keyref="conref-task"/>
+  <mapref href="key-definitions.ditamap"/>
+  <mapref href="reltable.ditamap"/>
+  <mapref href="subjectscheme.ditamap" type="subjectScheme"/>
+  <topicref keyref="DITA-messages-details" keys="messages-push"/>
 </map>

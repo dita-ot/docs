@@ -124,7 +124,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref keyref="dita2markdown">
+        <topicref keyref="dita2markdown" type="topic">
           <topicmeta>
             <linktext>Markdown transformations</linktext>
           </topicmeta>
@@ -137,7 +137,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref keyref="dita2dita">
+        <topicref keyref="dita2dita" type="topic">
           <topicmeta>
             <linktext>Normalized DITA transformations</linktext>
           </topicmeta>

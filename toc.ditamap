@@ -6,9 +6,7 @@
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
 
   <topicref keyref="landing-page"/>
-
   <topicref keyref="release-notes"/>
-
   <topicref keyref="installing-client" locktitle="yes">
     <topicmeta>
       <navtitle>Installing DITA-OT</navtitle>
@@ -21,27 +19,21 @@
     </topicref>
     <topicref keyref="first-build-using-dita-command"/>
   </topicref>
-
   <topicref keyref="alternative-input-formats" collection-type="family">
     <mapref href="user-guide/input-formats.ditamap"/>
   </topicref>
-
   <topicref keyref="transforming-dita-content">
     <mapref href="user-guide/publishing.ditamap"/>
   </topicref>
-
   <topicref keyref="parameters">
     <mapref href="parameters/parameters.ditamap"/>
   </topicref>
-
   <topicref keyref="extending-the-ot">
     <mapref href="dev_ref/customization.ditamap"/>
   </topicref>
-
   <topicref keyref="troubleshooting-overview">
     <mapref href="user-guide/troubleshooting.ditamap"/>
   </topicref>
-
   <topicref keyref="reference">
     <mapref href="dev_ref/reference.ditamap"/>
   </topicref>

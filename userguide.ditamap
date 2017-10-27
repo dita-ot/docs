@@ -4,24 +4,8 @@
 
 <map xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
+
   <mapref href="resources/common-toc.ditamap"/>
-  <topicgroup toc="no">
-    <topicref href="index.dita"/>
-    <topicref href="release-notes/index.dita" navtitle="Release Notes" locktitle="yes"/>
-    <mapref href="getting-started/getting-started.ditamap"/>
-    <topicref href="user-guide/index.dita">
-      <mapref href="user-guide/user-guide.ditamap"/>
-    </topicref>
-    <topicref href="parameters/index.dita">
-      <mapref href="parameters/parameters.ditamap"/>
-    </topicref>
-    <topicref href="dev_ref/index.dita">
-      <mapref href="dev_ref/dev_ref.ditamap"/>
-    </topicref>
-    <mapref href="user-guide/dita-resources.ditamap"/>
-    <mapref href="license/license.ditamap"/>
-    <mapref href="resources/common-resources.ditamap" processing-role="resource-only"/>
-  </topicgroup>
 
   <reltable>
     <title>Source and target: Links that apply only to HTML version of distribution documentation</title>

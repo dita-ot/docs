@@ -127,19 +127,18 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.0+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
-          <li id="1200">A new property named <parmname>args.output.base</parmname> can be used
-control the name of the output file for transform types that produce a single output file. The value
-of the property is the base file name of the output file, without file extension. The file extension
-is defined by the transform type. <xref href="https://github.com/dita-ot/dita-ot/issues/1200"
-format="html" scope="external">#1200</xref>
-</li>
+          <li id="1200">A new property named <parmname>args.output.base</parmname> can be used control the name of the
+            output file for transform types that produce a single output file. The value of the property is the base
+            file name of the output file, without file extension. The file extension is defined by the transform type.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1200" format="html" scope="external">#1200</xref>
+          </li>
           <li id="1471">Move from custom logging to SLF4J and Logback
             <xref href="https://github.com/dita-ot/dita-ot/issues/1471" format="html" scope="external">#1471</xref>
           </li>
-          <li id="1551">HTML Help project files are now generated in a temporary directory, so that
-only the compiled CHM file is returned. <xref href="https://github.com/dita-ot/dita-ot/issues/1551"
-format="html" scope="external">#1551</xref>
-</li>
+          <li id="1551">HTML Help project files are now generated in a temporary directory, so that only the compiled
+            CHM file is returned.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1551" format="html" scope="external">#1551</xref>
+          </li>
           <li id="2626">Add support for subject schemes in map-first preprocess
             <xref href="https://github.com/dita-ot/dita-ot/issues/2626" format="html" scope="external">#2626</xref>
           </li>
@@ -161,27 +160,27 @@ format="html" scope="external">#1551</xref>
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.0+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="2121">Obsolete or unmaintained plugins have been moved to their own repositories.
-The following plugins have been moved: Docbook, Eclipse Content, Eclipse map specialization, RTF,
-ODT, and support for pre-OASIS DITA document types. <xref
-href="https://github.com/dita-ot/dita-ot/issues/2121" format="html" scope="external">#2121</xref>
-</li>
+          <li id="2121">Obsolete or unmaintained plugins have been moved to their own repositories. The following
+            plugins have been moved: Docbook, Eclipse Content, Eclipse map specialization, RTF, ODT, and support for
+            pre-OASIS DITA document types.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2121" format="html" scope="external">#2121</xref>
+          </li>
           <li id="2232">Use XMLUnit 2
             <xref href="https://github.com/dita-ot/dita-ot/issues/2232" format="html" scope="external">#2232</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2723" format="html" scope="external">#2723</xref>
           </li>
           <li id="2447">Generated link groups in XHTML and HTML5 now use list markup rather than
-<xmlelement>div</xmlelement>, as required to comply with WCAG 2.0 accessibility guidelines. <xref
-href="https://github.com/dita-ot/dita-ot/issues/2447" format="html" scope="external">#2447</xref>
-</li>
+              <xmlelement>div</xmlelement>, as required to comply with WCAG 2.0 accessibility guidelines.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2447" format="html" scope="external">#2447</xref>
+          </li>
           <li id="2713">Upgrade Gradle to 3.5
             <xref href="https://github.com/dita-ot/dita-ot/pull/2713" format="html" scope="external">#2713</xref>
           </li>
           <li id="2718">When building PDF from files that do not use <filepath>.dita</filepath> or
-<filepath>.ditamap</filepath> extensions, the input file extension (such as
-<filepath>.xml</filepath>) is no longer included in the generated PDF file name. <xref
-href="https://github.com/dita-ot/dita-ot/issues/2718" format="html" scope="external">#2718</xref>
-</li>
+              <filepath>.ditamap</filepath> extensions, the input file extension (such as <filepath>.xml</filepath>) is
+            no longer included in the generated PDF file name.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2718" format="html" scope="external">#2718</xref>
+          </li>
           <li id="2721">Upgrade to Saxon-HE 9.8
             <xref href="https://github.com/dita-ot/dita-ot/issues/2721" format="html" scope="external">#2721</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2727" format="html" scope="external">#2727</xref>
@@ -189,57 +188,51 @@ href="https://github.com/dita-ot/dita-ot/issues/2718" format="html" scope="exter
           <li id="2736">Upgrade to FOP 2.2
             <xref href="https://github.com/dita-ot/dita-ot/issues/2736" format="html" scope="external">#2736</xref>
           </li>
-          <li id="2739">When merging submaps for processing, preserve titles and metadata from the
-referenced submap so that they may be used in later processing stages. <xref
-href="https://github.com/dita-ot/dita-ot/pull/2739" format="html" scope="external">#2739</xref>
-</li>
-          <li id="2748">Add flagging information from DITAVAL during the same step that handles
-DITAVAL filtering. <xref href="https://github.com/dita-ot/dita-ot/pull/2748" format="html"
-scope="external">#2748</xref>
-</li>
+          <li id="2739">When merging submaps for processing, preserve titles and metadata from the referenced submap so
+            that they may be used in later processing stages.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2739" format="html" scope="external">#2739</xref>
+          </li>
+          <li id="2748">Add flagging information from DITAVAL during the same step that handles DITAVAL filtering.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2748" format="html" scope="external">#2748</xref>
+          </li>
           <li id="2755">Allow for plugin param type 'url'
             <xref href="https://github.com/dita-ot/dita-ot/issues/2755" format="html" scope="external">#2755</xref>
           </li>
-          <li id="2763">Use map-first preprocessing in PDF and HTML Help transformation types <xref
-href="https://github.com/dita-ot/dita-ot/pull/2763" format="html" scope="external">#2763</xref>
-</li>
+          <li id="2763">Use map-first preprocessing in PDF and HTML Help transformation types
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2763" format="html" scope="external">#2763</xref>
+          </li>
           <li id="2765">Move or rename Java classes
             <xref href="https://github.com/dita-ot/dita-ot/issues/2765" format="html" scope="external">#2765</xref>
           </li>
-          <li id="2770">Make it easier for PDF plugins or overrides to customize how processing
-handles the DITA <xmlatt>outputclass</xmlatt> attribute, such as by mapping it to corresponding
-XSL:FO attributes. <xref href="https://github.com/dita-ot/dita-ot/issues/2770" format="html"
-scope="external">#2770</xref>
-</li>
+          <li id="2770">Make it easier for PDF plugins or overrides to customize how processing handles the DITA
+              <xmlatt>outputclass</xmlatt> attribute, such as by mapping it to corresponding XSL:FO attributes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2770" format="html" scope="external">#2770</xref>
+          </li>
           <li id="2780">Topics exploded by chunk should be written to the topic folder
             <xref href="https://github.com/dita-ot/dita-ot/pull/2780" format="html" scope="external">#2780</xref>
           </li>
-          <li id="2781">Move configuration files to a dedicated <filepath>config/</filepath>
-directory, which ensures that configuration files and generated files like
-<filepath>messages.xml</filepath> will not be bundled into the compiled
-<filepath>dost.jar</filepath>
-<xref href="https://github.com/dita-ot/dita-ot/issues/2781" format="html" scope="external"
->#2781</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/2783" format="html"
-scope="external">#2783</xref>
-</li>
+          <li id="2781">Move configuration files to a dedicated <filepath>config/</filepath> directory, which ensures
+            that configuration files and generated files like <filepath>messages.xml</filepath> will not be bundled into
+            the compiled <filepath>dost.jar</filepath>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2781" format="html" scope="external">#2781</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2783" format="html" scope="external">#2783</xref>
+          </li>
           <li id="2784">Allow any attribute to be used for profiling
             <xref href="https://github.com/dita-ot/dita-ot/pull/2784" format="html" scope="external">#2784</xref>
           </li>
-          <li id="2789">Support language-independent variable files. For variables common to all (or
-nearly all) languages, this means we no longer need to maintain an individual copy of the variable
-for every language. Plugins may also now define variables that are used by all languages. <xref
-href="https://github.com/dita-ot/dita-ot/pull/2789" format="html" scope="external">#2789</xref>
-</li>
+          <li id="2789">Support language-independent variable files. For variables common to all (or nearly all)
+            languages, this means we no longer need to maintain an individual copy of the variable for every language.
+            Plugins may also now define variables that are used by all languages.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2789" format="html" scope="external">#2789</xref>
+          </li>
           <li id="2808">Use doubled dashes in messages
             <xref href="https://github.com/dita-ot/dita-ot/issues/2808" format="html" scope="external">#2808</xref>
           </li>
-          <li id="2811">Refactor HTML5 <xmlelement>simpletable</xmlelement> accessibility to use
-more modern attributes to associate table entries with header cells. <xref
-href="https://github.com/dita-ot/dita-ot/pull/2811" format="html" scope="external">#2811</xref>,
-            <xref
-              href="https://github.com/dita-ot/dita-ot/issues/2448" format="html" scope="external">#2448</xref>
-            
-</li>
+          <li id="2811">Refactor HTML5 <xmlelement>simpletable</xmlelement> accessibility to use more modern attributes
+            to associate table entries with header cells.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2811" format="html" scope="external">#2811</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2448" format="html" scope="external">#2448</xref>
+          </li>
         </ul>
       </section>
 
@@ -251,45 +244,42 @@ href="https://github.com/dita-ot/dita-ot/pull/2811" format="html" scope="externa
           <li id="1364">Images referenced in conref source copied to output
             <xref href="https://github.com/dita-ot/dita-ot/issues/1364" format="html" scope="external">#1364</xref>
           </li>
-          <li id="2654">Email links without a scope or format previously generated a Null Pointer
-Exception. The <codeph>mailto:</codeph> syntax is now recognized as an email link and will not be
-read as a file reference.  <xref href="https://github.com/dita-ot/dita-ot/issues/2654" format="html"
-scope="external">#2654</xref>
-</li>
-          <li id="2742">The wrong language code was previously set when documents set
-<xmlatt>xml:lang</xmlatt> to the value <codeph>zh-Hans</codeph>
-<xref href="https://github.com/dita-ot/dita-ot/issues/2742" format="html" scope="external"
->#2742</xref>
-</li>
-          <li id="2752">According to the DITA 1.3 specification, when key definitions refer to
-images, text that would otherwise become link text should be placed in the images
-<xmlatt>alt</xmlatt> element as alternative text. Previously the text was placed directly into the
-<xmlelement>image</xmlelement>, which was not valid and ignored by later processing. <xref
-href="https://github.com/dita-ot/dita-ot/issues/2752" format="html" scope="external">#2752</xref>,
-<xref href="https://github.com/dita-ot/dita-ot/pull/2814" format="html" scope="external"
->#2814</xref>
-</li>
-          <li id="2782">In earlier releases, when a <xmlelement>table</xmlelement> element included
-too many entries in a row, FOP would crash during PDF processing. The extra entries are now ignored
-with an error message. <xref href="https://github.com/dita-ot/dita-ot/pull/2782" format="html"
-scope="external">#2782</xref>
-</li>
-          <li id="2797">A Java method for generating relative paths failed on Windows when comparing
-two paths from different drives. The method has been fixed so that it does not try to construct a
-relative path between drives. <xref href="https://github.com/dita-ot/dita-ot/pull/2797"
-format="html" scope="external">#2797</xref>
-</li>
-          <li id="2807">In HTML5, a DITA <xmlelement>stepsction</xmlelement> that contained
-paragraphs resulted in HTML5 <xmlelement>p</xmlelement> elements that contained
-<xmlelement>p</xmlelement>. The <xmlelement>stepsection</xmlelement> now generates a
-<xmlelement>div</xmlelement> to ensure valid HTML5 output regardless of what it contains. <xref
-href="https://github.com/dita-ot/dita-ot/issues/2807" format="html" scope="external">#2807</xref>
-</li>
-          <li id="2810">An updated errata has been approved for DITA 1.3 that removes default values
-for <xmlatt>rowheader</xmlatt> on <xmlelement>colspec</xmlelement>. The relevant grammar file
-modules from OASIS have been updated to include this errata. <xref
-href="https://github.com/dita-ot/dita-ot/pull/2810" format="html" scope="external">#2810</xref>
-</li>
+          <li id="2654">Email links without a scope or format previously generated a Null Pointer Exception. The
+              <codeph>mailto:</codeph> syntax is now recognized as an email link and will not be read as a file
+            reference.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2654" format="html" scope="external">#2654</xref>
+          </li>
+          <li id="2742">The wrong language code was previously set when documents set <xmlatt>xml:lang</xmlatt> to the
+            value <codeph>zh-Hans</codeph>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2742" format="html" scope="external">#2742</xref>
+          </li>
+          <li id="2752">According to the DITA 1.3 specification, when key definitions refer to images, text that would
+            otherwise become link text should be placed in the images <xmlatt>alt</xmlatt> element as alternative text.
+            Previously the text was placed directly into the <xmlelement>image</xmlelement>, which was not valid and
+            ignored by later processing.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2752" format="html" scope="external">#2752</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2814" format="html" scope="external">#2814</xref>
+          </li>
+          <li id="2782">In earlier releases, when a <xmlelement>table</xmlelement> element included too many entries in
+            a row, FOP would crash during PDF processing. The extra entries are now ignored with an error message.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2782" format="html" scope="external">#2782</xref>
+          </li>
+          <li id="2797">A Java method for generating relative paths failed on Windows when comparing two paths from
+            different drives. The method has been fixed so that it does not try to construct a relative path between
+            drives.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2797" format="html" scope="external">#2797</xref>
+          </li>
+          <li id="2807">In HTML5, a DITA <xmlelement>stepsction</xmlelement> that contained paragraphs resulted in HTML5
+              <xmlelement>p</xmlelement> elements that contained <xmlelement>p</xmlelement>. The
+              <xmlelement>stepsection</xmlelement> now generates a <xmlelement>div</xmlelement> to ensure valid HTML5
+            output regardless of what it contains.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2807" format="html" scope="external">#2807</xref>
+          </li>
+          <li id="2810">An updated errata has been approved for DITA 1.3 that removes default values for
+              <xmlatt>rowheader</xmlatt> on <xmlelement>colspec</xmlelement>. The relevant grammar file modules from
+            OASIS have been updated to include this errata.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2810" format="html" scope="external">#2810</xref>
+          </li>
         </ul>
       </section>
 

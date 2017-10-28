@@ -305,7 +305,18 @@
         <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
           improvements to existing topics, along with new information:</p>
         <ul>
-          <li/>
+          <li>Revised top-level documentation structure
+            <xref href="https://github.com/dita-ot/docs/issues/121" format="html" scope="external">#121</xref>
+          </li>
+          <li>New topics on Markdown plug-in
+            <xref href="https://github.com/dita-ot/docs/issues/150" format="html" scope="external">#150</xref>
+          </li>
+          <li>New topic on Lightweight DITA
+            <xref href="https://github.com/dita-ot/docs/issues/151" format="html" scope="external">#151</xref>
+          </li>
+          <li>New topic on normalization plug-in
+            <xref href="https://github.com/dita-ot/docs/issues/152" format="html" scope="external">#152</xref>
+          </li>
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"/>, see the

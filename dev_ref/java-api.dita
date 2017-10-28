@@ -4,8 +4,8 @@
 
 <concept id="API">
   <title>Java API</title>
-  <shortdesc>DITA-OT 2.5 includes a new Java Application Programming Interface to allow developers to embed DITA-OT more
-    easily into other Java programs.</shortdesc>
+  <shortdesc>DITA-OT includes a Java Application Programming Interface to allow developers to embed DITA-OT more easily
+    into other Java programs.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -42,6 +42,18 @@ p.run();</codeblock>
       <note type="tip">See the <cite>DITA-OT Java API documentation</cite> in the <filepath>doc/api/</filepath> folder
         of the DITA-OT distribution package for information on the packages, classes, interfaces and methods provided by
         the Java API.</note>
+    </section>
+    <section>
+      <title>Downloading DITA-OT from Maven Central</title>
+      <p>As of version 2.5, the DITA Open Toolkit base library (<filepath>dost.jar</filepath>) is available via the
+        Maven 2 Central Repository. You can use this mechanism to download the main JAR file and include it in the build
+        for other Java projects.</p>
+      <p>To locate the latest version, <xref href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.dita-ot%22"
+          format="html" scope="external">search for the <codeph>org.dita-ot</codeph> group ID</xref>.</p>
+      <note type="important">The <filepath>dost.jar</filepath> file provides only the DITA Open Toolkit base library. It
+        does <b>not</b> contain the full DITA-OT distribution and cannot be used to run DITA-OT by itself. You will need
+        to ensure that your build installs the other files and directories required for the toolkit along with the
+        dependencies for your project.</note>
     </section>
   </conbody>
 </concept>

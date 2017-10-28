@@ -1,6 +1,6 @@
 plugins {
-    id 'com.github.eerohele.dita-ot-gradle' version '0.4.0'
-    id 'com.github.eerohele.saxon-gradle' version '0.2.1'
+    id 'com.github.eerohele.dita-ot-gradle' version '0.4.2'
+    id 'com.github.eerohele.saxon-gradle' version '0.3.0'
 }
 
 import com.github.eerohele.SaxonXsltTask
@@ -15,20 +15,20 @@ def ditaHome = System.getProperty('dita.home', '../')
 ditaOt.dir ditaHome
 
 def ditaHomeSrc = project.hasProperty("ditaHomeSrc") ? file("${ditaHomeSrc}") : file("${ditaHome}")
-def resourceDir = "$ditaHomeSrc/resources"
+def configDir = "$ditaHomeSrc/config"
 
 def toURI(String directory) {
   new File(directory).toURI().toString()
 }
 
 task messages(type: SaxonXsltTask) {
-  input "$resourceDir/messages.xml"
+  input "$configDir/messages.xml"
   output "user-guide/DITA-messages.xml"
   stylesheet "resources/messages.xsl"
 }
 
 task params(type: SaxonXsltTask) {
-  input "$resourceDir/plugins.xml"
+  input "$configDir/plugins.xml"
   output "parameters/all-parameters.dita"
   stylesheet "resources/params.xsl"
 
@@ -38,7 +38,7 @@ task params(type: SaxonXsltTask) {
 }
 
 task extensionPoints(type: SaxonXsltTask) {
-  input "$resourceDir/plugins.xml"
+  input "$configDir/plugins.xml"
   output "extension-points/all-extension-points.dita"
   stylesheet "resources/extension-points.xsl"
 

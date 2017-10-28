@@ -22,13 +22,6 @@
         <li>Run the transformation again.</li>
       </ol>
     </section>
-    <section id="java-io-exception">
-      <title>java.io.IOException: Can't store Document</title>
-      <p>After running a JavaHelp transformation, you may receive a <msgph>java.io.IOException: Can't store
-          Document</msgph> message. </p>
-      <p>This problem occurs when HTML files unrelated to the current transformation are found in the output directory.
-        Delete the content of the output directory and run the transformation again.</p>
-    </section>
     <section id="unsupported-class-version-error">
       <title>UnsupportedClassVersionError</title>
       <p>If you receive a <codeph>java.lang.UnsupportedClassVersionError</codeph> error message with an

@@ -4,24 +4,25 @@
 
 <map>
   <title>Creating DITA-OT plug-ins</title>
-  <topicref href="plugin-creating.dita">
-    <topicref href="plugins-overview.dita">
-      <topicref href="plugin-benefits.dita"/>
-      <topicref href="plugin-configfile.dita"/>
-      <topicref href="plugin-dependencies.dita"/>
+  <topicref keyref="custom-plugins">
+    <topicref keyref="plugins-installing"/>
+    <topicref keyref="plugins-removing"/>
+    <topicref keyref="rebuilding-the-dita-ot-documentation" keys="rebuild-docs"/>
+    <topicref keyref="plugin-configfile"/>
+    <topicref keyref="plugin-dependencies"/>
+    <topicref keyref="plugin-applications">
+      <topicref keyref="plugin-xmlcatalog"/>
+      <topicref keyref="plugin-anttarget"/>
+      <topicref keyref="plugin-antpreprocess"/>
+      <topicref keyref="plugin-newtranstype"/>
+      <topicref keyref="plugin-overridestyle"/>
+      <topicref keyref="using-plugin-URI-extension"/>
+      <topicref keyref="plugin-xsltparams"/>
+      <topicref keyref="plugin-javalib"/>
+      <topicref keyref="plugin-messages"/>
+      <topicref keyref="plugin-newextensions"/>
     </topicref>
-    <topicref href="plugin-xmlcatalog.dita" keys="plugin-xmlcatalog"/>
-    <topicref href="plugin-anttarget.dita" keys="plugin-anttarget"/>
-    <topicref href="plugin-antpreprocess.dita"/>
-    <topicref href="plugin-newtranstype.dita"/>
-    <topicref href="plugin-overridestyle.dita" keys="plugin-overridestyle"/>
-    <topicref href="using-plugin-URI-extension.dita"/>
-    <topicref href="plugin-addgeneratedtext.dita" keys="plugin-addgeneratedtext"/>
-    <topicref href="plugin-xsltparams.dita"/>
-    <topicref href="plugin-javalib.dita" keys="plugin-javalib"/>
-    <topicref href="plugin-messages.dita"/>
-    <topicref href="plugin-newextensions.dita"/>
-    <topicref href="plugin-sample.dita"/>
+    <topicref keyref="plugin-sample"/>
   </topicref>
 
   <reltable title="Source and target links">
@@ -31,74 +32,74 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="plugin-xmlcatalog.dita"/>
+        <topicref keyref="plugin-xmlcatalog"/>
       </relcell>
       <relcell>
-        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
-        <topicref href="plugin-anttarget.dita"/>
-      </relcell>
-      <relcell>
-        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
+        <topicref keyref="plugin-extension-points-general"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="plugin-antpreprocess.dita"/>
+        <topicref keyref="plugin-anttarget"/>
       </relcell>
       <relcell>
-        <topicref href="../extension-points/plugin-extension-points-pre-processing.dita"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
-        <topicref href="plugin-newtranstype.dita"/>
-      </relcell>
-      <relcell>
-        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
+        <topicref keyref="plugin-extension-points-general"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="plugin-overridestyle.dita"/>
+        <topicref keyref="plugin-antpreprocess"/>
       </relcell>
       <relcell>
-        <topicref href="../extension-points/plugin-extension-points-xslt-import.dita"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
-        <topicref href="plugin-xsltparams.dita"/>
-      </relcell>
-      <relcell>
-        <topicref href="../extension-points/plugin-extension-points-xslt-parameters.dita"/>
+        <topicref keyref="plugin-extension-points-pre-processing"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="plugin-javalib.dita"/>
+        <topicref keyref="plugin-newtranstype"/>
       </relcell>
       <relcell>
-        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
-        <topicref href="plugin-messages.dita"/>
-      </relcell>
-      <relcell>
-        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
+        <topicref keyref="plugin-extension-points-general"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="plugin-configfile.dita"/>
+        <topicref keyref="plugin-overridestyle"/>
       </relcell>
       <relcell>
-        <topicref href="plugin-newextensions.dita"/>
+        <topicref keyref="plugin-extension-points-xslt-import"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-xsltparams"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-xslt-parameters"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-javalib"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-general"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-messages"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-general"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-configfile"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-newextensions"/>
       </relcell>
     </relrow>
   </reltable>

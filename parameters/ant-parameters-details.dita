@@ -99,6 +99,13 @@
                 <varname>file</varname> to set the path to the log. Unless an absolute path is specified, the value will
                 be interpreted relative to the current directory.</note></pd>
           </plentry>
+          <plentry id="args.rellinks">
+            <pt><parmname>args.rellinks</parmname></pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/args.rellinks.desc"/>
+            <pd conaction="pushafter">
+              <p>For PDF output, the default value is <option>nofamily</option>. For all other formats, the default
+                value is <option>all</option>.</p></pd>
+          </plentry>
           <plentry id="args.tablelink.style">
             <pt>
               <parmname>args.tablelink.style</parmname>
@@ -240,8 +247,7 @@
       <navtitle>HTML-based output</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace" conref="parameters-base-html.dita#base-html/shortdesc">Certain parameters apply
-      to all the HTML-based transformation types: Eclipse help, HTML5, HTML Help, JavaHelp, TocJS, and
-      XHTML.</shortdesc>
+      to all HTML-based transformation types: HTML5, XHTML, HTML&#xA0;Help, Eclipse help, and TocJS.</shortdesc>
     <refbody>
       <section>
         <parml>
@@ -467,42 +473,14 @@
     </refbody>
   </reference>
 
-  <reference id="javahelp">
-    <title>JavaHelp</title>
+  <reference id="htmlhelp">
+    <title>HTML Help</title>
     <titlealts>
-      <navtitle>JavaHelp</navtitle>
+      <navtitle>HTML Help</navtitle>
     </titlealts>
-    <shortdesc conaction="pushreplace" conref="parameters-javahelp.dita#javahelp/shortdesc">Certain parameters are
-      specific to the JavaHelp transformation.</shortdesc>
-    <refbody>
-      <section>
-        <parml>
-          <plentry id="args.javahelp.map">
-            <pt>
-              <parmname>args.javahelp.map</parmname>
-            </pt>
-            <pd conaction="mark" conref="parameters-javahelp.dita#javahelp/args.javahelp.map.desc"/>
-            <pd conaction="pushafter">
-              <draft-comment author="Kristen James Eberlein" time="11 August 2012">What does this mean? How does this
-                differ from the <parmname>args.input</parmname> parameter? Or should this read "Specifies the name of
-                the JavaHelp map file?</draft-comment>
-            </pd>
-          </plentry>
-          <plentry id="args.javahelp.toc">
-            <pt>
-              <parmname>args.javahelp.toc</parmname>
-            </pt>
-            <pd conaction="mark" conref="parameters-javahelp.dita#javahelp/args.javahelp.toc.desc"/>
-            <pd conaction="pushafter">Default value is the name of the ditamap file for your project. <draft-comment
-                author="Kristen James Eberlein" time="11 August 2012">I assume that the first sentence means "Specifies
-                the name of the JavaHelp TOC file." But what does the second sentence mean? That the default value for
-                the <parmname>args.javahelp.toc</parmname> parameter is the name of the master DITA map? Or that the
-                default value for the <parmname>args.javahelp.toc</parmname> parameter is the value of the
-                  <parmname>args.javahelp.map</parmname> parameter?</draft-comment></pd>
-          </plentry>
-        </parml>
-      </section>
-    </refbody>
+    <shortdesc conaction="pushreplace" conref="parameters-htmlhelp.dita#htmlhelp/shortdesc">Certain parameters are
+      specific to the Microsoft Compiled HTML Help (.chm) transformation.</shortdesc>
+    <refbody/>
   </reference>
 
   <reference id="pdf">

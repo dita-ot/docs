@@ -4,16 +4,18 @@
 
 <map>
   <title>DITA-OT transformations</title>
-  <topicref href="AvailableTransforms.dita" navtitle="Output formats" locktitle="yes">
-    <topicref href="dita2eclipsehelp.dita"/>
-    <topicref href="dita2html5.dita"/>
-    <topicref href="dita2htmlhelp.dita" platform="windows"/>
-    <topicref href="dita2javahelp.dita"/>
-    <topicref href="dita2pdf.dita">
-      <topicref href="pdf2-creating-change-bars.dita" keys="pdf2-creating-change-bars"/>
-    </topicref>
-    <topicref href="dita2tocjs.dita"/>
-    <topicref href="dita2troff.dita"/>
-    <topicref href="dita2xhtml.dita"/>
+  <topicref keyref="AvailableTransforms" locktitle="yes">
+    <topicmeta>
+      <navtitle>Output formats</navtitle>
+    </topicmeta>
+    <topicref keyref="dita2pdf"/>
+    <topicref keyref="dita2html5"/>
+    <topicref keyref="dita2eclipsehelp"/>
+    <topicref keyref="dita2htmlhelp" platform="windows"/>
+    <topicref keyref="dita2markdown"/>
+    <topicref keyref="dita2dita"/>
+    <topicref keyref="dita2tocjs"/>
+    <topicref keyref="dita2troff"/>
+    <topicref keyref="dita2xhtml"/>
   </topicref>
 </map>

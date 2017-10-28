@@ -6,14 +6,14 @@
   <reltable>
     <relrow>
       <relcell>
-        <topicref href="../dev_ref/plugin-addgeneratedtext.dita">
+        <topicref keyref="plugin-addgeneratedtext">
           <topicmeta>
             <linktext>How to add support for new languages in HTML</linktext>
           </topicmeta>
         </topicref>
       </relcell>
       <relcell>
-        <topicref href="../user-guide/DITA-globalization-languages.dita">
+        <topicref keyref="DITA-globalization-languages">
           <topicmeta>
             <linktext>Languages supported by the core toolkit</linktext>
           </topicmeta>
@@ -30,23 +30,23 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/ant.dita" navtitle="Ant overview"/>
+        <topicref keyref="ant" navtitle="Ant overview"/>
       </relcell>
       <relcell>
         <topicgroup collection-type="family">
-          <topicref href="../user-guide/building-with-ant.dita" navtitle="Building output using Ant"/>
-          <topicref href="../user-guide/creating-an-ant-build-script.dita" navtitle="Creating an Ant build script"/>
+          <topicref keyref="building-with-ant" navtitle="Building output using Ant"/>
+          <topicref keyref="creating-an-ant-build-script" navtitle="Creating an Ant build script"/>
         </topicgroup>
       </relcell>
       <relcell>
-        <topicref href="../parameters/parameters_intro.dita" linking="targetonly"/>
+        <topicref keyref="parameters_intro" linking="targetonly"/>
         <topicref href="http://ant.apache.org/manual" navtitle="Apache Ant documentation" format="html" scope="external"
         />
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/dita2eclipsehelp.dita">
+        <topicref keyref="dita2eclipsehelp">
           <topicmeta>
             <linktext>Eclipse help transformation</linktext>
           </topicmeta>
@@ -54,12 +54,14 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
+        <topicref keyref="parameters-base"/>
+        <topicref keyref="parameters-base-html"/>
+        <topicref keyref="parameters-eclipsehelp"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/dita2htmlhelp.dita" platform="windows">
+        <topicref keyref="dita2htmlhelp" platform="windows">
           <topicmeta>
             <linktext>HTML help transformation</linktext>
           </topicmeta>
@@ -67,12 +69,14 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="../parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
+        <topicref keyref="parameters-base"/>
+        <topicref keyref="parameters-base-html"/>
+        <topicref keyref="parameters-htmlhelp"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/dita2pdf.dita">
+        <topicref keyref="dita2pdf">
           <topicmeta>
             <linktext>PDF transformation</linktext>
           </topicmeta>
@@ -80,12 +84,13 @@
       </relcell>
       <relcell/>
       <relcell>
-        <topicref href="../parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
+        <topicref keyref="parameters-base"/>
+        <topicref keyref="parameters-pdf"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/dita2xhtml.dita">
+        <topicref keyref="dita2xhtml">
           <topicmeta>
             <linktext>XHTML transformation</linktext>
           </topicmeta>
@@ -95,13 +100,14 @@
         <topicref keyref="html-customization-parameters"/>
       </relcell>
       <relcell>
-        <topicref href="../parameters/parameters-base-html.dita"/>
-        <topicref href="../parameters/parameters-xhtml.dita"/>
+        <topicref keyref="parameters-base"/>
+        <topicref keyref="parameters-base-html"/>
+        <topicref keyref="parameters-xhtml"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/dita2html5.dita">
+        <topicref keyref="dita2html5">
           <topicmeta>
             <linktext>HTML5 transformation</linktext>
           </topicmeta>
@@ -111,8 +117,61 @@
         <topicref keyref="html-customization-parameters"/>
       </relcell>
       <relcell>
-        <topicref href="../parameters/parameters-base-html.dita"/>
-        <topicref href="../parameters/parameters-html5.dita"/>
+        <topicref keyref="parameters-base"/>
+        <topicref keyref="parameters-base-html"/>
+        <topicref keyref="parameters-html5"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2markdown" type="topic">
+          <topicmeta>
+            <linktext>Markdown transformations</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+      <relcell/>
+      <relcell>
+        <topicref keyref="parameters-base"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2dita" type="topic">
+          <topicmeta>
+            <linktext>Normalized DITA transformations</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+      <relcell/>
+      <relcell>
+        <topicref keyref="parameters-base"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2tocjs">
+          <topicmeta>
+            <linktext>TocJS transformation</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+      <relcell/>
+      <relcell>
+        <topicref keyref="parameters-base"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2troff">
+          <topicmeta>
+            <linktext>troff transformation</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+      <relcell/>
+      <relcell>
+        <topicref keyref="parameters-base"/>
       </relcell>
     </relrow>
     <relrow>
@@ -121,7 +180,7 @@
         <topicref keyref="html-customization-plugin-bundle-css"/>
       </relcell>
       <relcell>
-        <topicref href="../parameters/parameters-base-html.dita"/>
+        <topicref keyref="parameters-base-html"/>
       </relcell>
     </relrow>
     <relrow>
@@ -130,26 +189,45 @@
         <topicref keyref="increasing-the-jvm" linking="targetonly"/>
       </relcell>
       <relcell>
-        <topicref href="../parameters/parameters-other.dita"/>
-        <topicref href="../user-guide/other-errors.dita"/>
+        <topicref keyref="parameters-other"/>
+        <topicref keyref="other-errors"/>
       </relcell>
     </relrow>
   </reltable>
   <reltable>
-    <title>Source and target: Transformations and all-transformations topics</title>
+    <title>Source and target</title>
     <relheader>
       <relcolspec linking="sourceonly"/>
       <relcolspec linking="targetonly"/>
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
-        <topicref href="../parameters/parameters-htmlhelp.dita" navtitle="HTML Help transformation"/>
-        <topicref href="../parameters/parameters-pdf.dita" navtitle="PDF transformation"/>
-        <topicref href="../parameters/parameters-xhtml.dita" navtitle="XHTML transformation"/>
+        <topicref keyref="parameters-eclipsehelp" navtitle="Eclipse help transformation"/>
+        <topicref keyref="parameters-htmlhelp" navtitle="HTML Help transformation"/>
+        <topicref keyref="parameters-pdf" navtitle="PDF transformation"/>
+        <topicref keyref="parameters-xhtml" navtitle="XHTML transformation"/>
       </relcell>
       <relcell>
-        <topicref href="../parameters/parameters-base.dita" navtitle="All transformation types"/>
+        <topicref keyref="parameters-base" navtitle="All transformation types"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2eclipsehelp"/>
+        <topicref keyref="dita2html5"/>
+        <topicref keyref="dita2htmlhelp"/>
+        <topicref keyref="dita2xhtml"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="generate-copy-outer"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2pdf"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="pdf2-creating-change-bars"/>
       </relcell>
     </relrow>
   </reltable>
@@ -161,31 +239,31 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="../parameters/parameters-base-html.dita" navtitle="HTML-based transformations"/>
+        <topicref keyref="parameters-base-html" navtitle="HTML-based transformations"/>
       </relcell>
       <relcell>
-        <topicref href="../parameters/parameters-eclipsehelp.dita" navtitle="Eclipse help transformation"/>
-        <topicref href="../parameters/parameters-html5.dita"/>
-        <topicref href="../parameters/parameters-htmlhelp.dita"/>
-        <topicref href="../parameters/parameters-xhtml.dita" navtitle="XHTML transformation"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
-        <topicref href="../user-guide/other-errors.dita" navtitle="Out of Memory errors" locktitle="yes"/>
-      </relcell>
-      <relcell>
-        <topicref href="../parameters/parameters-other.dita" navtitle="Reload style sheets parameters" locktitle="yes"/>
+        <topicref keyref="parameters-eclipsehelp" navtitle="Eclipse help transformation"/>
+        <topicref keyref="parameters-html5"/>
+        <topicref keyref="parameters-htmlhelp"/>
+        <topicref keyref="parameters-xhtml" navtitle="XHTML transformation"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../extension-points/extension-points-in-org.dita.base.dita"/>
+        <topicref keyref="other-errors" navtitle="Out of Memory errors" locktitle="yes"/>
       </relcell>
       <relcell>
-        <topicref href="../extension-points/plugin-extension-points-pre-processing.dita"/>
-        <topicref href="../extension-points/plugin-extension-points-support.dita"/>
-        <topicref href="../extension-points/plugin-extension-points-general.dita"/>
+        <topicref keyref="parameters-other" navtitle="Reload style sheets parameters" locktitle="yes"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="extension-points-in-org.dita.base"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-pre-processing"/>
+        <topicref keyref="plugin-extension-points-support"/>
+        <topicref keyref="plugin-extension-points-general"/>
       </relcell>
     </relrow>
   </reltable>
@@ -208,7 +286,7 @@
     <title>External resources</title>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/dita2eclipsehelp.dita"/>
+        <topicref keyref="dita2eclipsehelp"/>
       </relcell>
       <relcell>
         <topicref href="http://www.eclipse.org" navtitle="Official Eclipse Web site" format="html" scope="external"/>
@@ -216,7 +294,7 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/DITA-globalization.dita"/>
+        <topicref keyref="DITA-globalization"/>
       </relcell>
       <relcell>
         <topicref format="html" href="http://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/translation.html"
@@ -225,7 +303,7 @@
             <linktext>Localization overview in the OASIS DITA standard</linktext>
           </topicmeta>
         </topicref>
-        <topicref href="../dev_ref/plugin-addgeneratedtext.dita"/>
+        <topicref keyref="plugin-addgeneratedtext"/>
       </relcell>
     </relrow>
   </reltable>
@@ -237,11 +315,11 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="../dev_ref/plugin-configfile.dita"/>
+        <topicref keyref="plugin-configfile"/>
       </relcell>
       <relcell>
-        <topicref href="../dev_ref/plugin-newtranstype.dita" type="task"/>
-        <topicref href="../dev_ref/plugin-sample.dita"/>
+        <topicref keyref="plugin-newtranstype" type="task"/>
+        <topicref keyref="plugin-sample"/>
       </relcell>
     </relrow>
   </reltable>
@@ -253,18 +331,18 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="../dev_ref/pdf-customization-example.dita"/>
-        <topicref href="../dev_ref/plugin-antpreprocess.dita"/>
-        <topicref href="../dev_ref/plugin-anttarget.dita"/>
-        <topicref href="../dev_ref/plugin-javalib.dita"/>
-        <topicref href="../dev_ref/plugin-messages.dita"/>
-        <topicref href="../dev_ref/plugin-newtranstype.dita"/>
-        <topicref href="../dev_ref/plugin-overridestyle.dita"/>
-        <topicref href="../dev_ref/plugin-xmlcatalog.dita"/>
-        <topicref href="../dev_ref/plugin-xsltparams.dita"/>
+        <topicref keyref="pdf-customization-example"/>
+        <topicref keyref="plugin-antpreprocess"/>
+        <topicref keyref="plugin-anttarget"/>
+        <topicref keyref="plugin-javalib"/>
+        <topicref keyref="plugin-messages"/>
+        <topicref keyref="plugin-newtranstype"/>
+        <topicref keyref="plugin-overridestyle"/>
+        <topicref keyref="plugin-xmlcatalog"/>
+        <topicref keyref="plugin-xsltparams"/>
       </relcell>
       <relcell>
-        <topicref href="../dev_ref/plugins-installing.dita"/>
+        <topicref keyref="plugins-installing"/>
       </relcell>
     </relrow>
   </reltable>
@@ -276,11 +354,11 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref href="../user-guide/other-errors.dita"/>
+        <topicref keyref="other-errors"/>
       </relcell>
       <relcell>
-        <topicref href="../release-notes/index.dita"/>
-        <topicref href="../getting-started/installing-client.dita"/>
+        <topicref keyref="release-notes"/>
+        <topicref keyref="installing-client"/>
       </relcell>
     </relrow>
   </reltable>

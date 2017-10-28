@@ -4,17 +4,13 @@
 
 <map>
   <title>Troubleshooting</title>
-  <topicref href="troubleshooting-overview.dita">
-    <topicref href="prerequisite-software.dita"/>
-    <topicref href="DITA-messages.xml" keys="messages">
-      <topicref href="DITA-messages-details.xml" processing-role="resource-only" keys="messages-push"/>
-    </topicref>
-    <topicref href="other-errors.dita"/>
-    <topicref href="log-files.dita"/>
-    <topicref href="dita-command-help.dita"/>
-    <topicref href="determining-version-of-ditaot.dita" navtitle="Determining version of the DITA OT"/>
-    <topicref href="enabling-debug-mode.dita"/>
-    <topicref href="increasing-the-jvm.dita" keys="increasing-the-jvm"/>
-    <topicref href="reducing-processing-time.dita"/>
-  </topicref>
+
+  <topicref keyref="log-files"/>
+  <topicref keyref="DITA-messages"/>
+  <topicref keyref="other-errors"/>
+  <topicref keyref="dita-command-help"/>
+  <topicref keyref="enabling-debug-mode"/>
+  <topicref keyref="increasing-the-jvm"/>
+  <topicref keyref="reducing-processing-time"/>
+
 </map>

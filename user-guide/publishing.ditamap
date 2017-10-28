@@ -4,26 +4,37 @@
 
 <map>
   <title>Publishing</title>
-  <topicref href="transforming-dita-content.dita" navtitle="Transforming DITA content">
-    <topicref href="using-dita-command.dita" keys="build-using-dita-command" locktitle="yes">
+
+  <topicref keyref="using-dita-command" keys="build-using-dita-command" locktitle="yes">
+    <topicmeta>
+      <navtitle>Using the <cmdname>dita</cmdname> command</navtitle>
+    </topicmeta>
+    <ditavalref href="../resources/expert.ditaval">
+      <ditavalmeta>
+        <dvrResourcePrefix>build-</dvrResourcePrefix>
+      </ditavalmeta>
+    </ditavalref>
+    <topicref keyref="using-dita-properties-file">
       <topicmeta>
-        <navtitle>Using the <cmdname>dita</cmdname> command</navtitle>
+        <navtitle>Using a properties file</navtitle>
       </topicmeta>
-      <ditavalref href="../resources/expert.ditaval">
-        <ditavalmeta>
-          <dvrResourcePrefix>build-</dvrResourcePrefix>
-        </ditavalmeta>
-      </ditavalref>
-      <topicref href="using-dita-properties-file.dita" navtitle="Using a properties file"
-        keys="using-dita-properties-file"/>
-      <topicref href="migrating-ant-to-dita.dita" navtitle="Migrating Ant builds"
-        keys="migrating-ant-to-dita"/>
     </topicref>
-    <topicref href="publishing-with-ant.dita" navtitle="Using Ant" locktitle="yes">
-      <topicref href="ant.dita" navtitle="Ant overview"/>
-      <topicref href="building-with-ant.dita" navtitle="Building output using Ant"/>
-      <topicref href="creating-an-ant-build-script.dita" navtitle="Creating an Ant build script"/>
+    <topicref keyref="migrating-ant-to-dita" locktitle="yes">
+      <topicmeta>
+        <navtitle>Migrating Ant builds</navtitle>
+      </topicmeta>
     </topicref>
   </topicref>
+  <topicref keyref="publishing-with-ant" locktitle="yes">
+    <topicmeta>
+      <navtitle>Using Ant</navtitle>
+    </topicmeta>
+    <topicref keyref="ant"/>
+    <topicref keyref="building-with-ant"/>
+    <topicref keyref="creating-an-ant-build-script"/>
+  </topicref>
+
+  <mapref href="transformations.ditamap"/>
+
   <mapref href="publishing-reltables.ditamap"/>
 </map>

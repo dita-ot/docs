@@ -4,6 +4,9 @@
 
 <task id="t-increasing-the-JVM">
   <title>Increasing Java memory allocation</title>
+  <titlealts>
+    <navtitle>Increasing Java memory</navtitle>
+  </titlealts>
   <shortdesc>If you are working with large documents with extensive metadata or key references, you will need to
     increase the memory allocation for the Java process. You can do this from the command-line prompt for a specific
     session, or you can increase the value of the <codeph>ANT_OPTS</codeph> environment variable.</shortdesc>

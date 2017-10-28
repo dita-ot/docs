@@ -61,9 +61,12 @@
               <p id="transtypes">You can create plug-ins to add new output formats; by default, the following values are
                 available:
                 <ul>
+                  <li><option>dita</option></li>
                   <li><option>eclipsehelp</option></li>
                   <li><option>html5</option></li>
                   <li platform="windows"><option>htmlhelp</option></li>
+                  <li><option>markdown</option>, <option>markdown_gitbook</option>, and
+                    <option>markdown_github</option></li>
                   <li><option>pdf</option></li>
                   <li><option>tocjs</option></li>
                   <li><option>troff</option></li>

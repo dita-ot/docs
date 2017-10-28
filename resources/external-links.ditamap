@@ -334,6 +334,17 @@
         </topicmeta>
       </keydef>
     </topicset>
+    <topicset id="lightweight-dita">
+      <keydef
+        keys="lwdita"
+        href="http://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/LwDITA-v1.0-cn01.pdf"
+        scope="external"
+        format="pdf">
+        <topicmeta>
+          <linktext>Lightweight DITA</linktext>
+        </topicmeta>
+      </keydef>
+    </topicset>
     <keydef
       keys="fo-spec"
       scope="external"
@@ -482,6 +493,24 @@
       format="html">
       <topicmeta>
         <linktext>Font configuration in PDF2</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="markdown"
+      href="https://daringfireball.net/projects/markdown/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Markdown</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="commonmark"
+      href="http://commonmark.org"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>CommonMark</linktext>
       </topicmeta>
     </keydef>
   </topicset>

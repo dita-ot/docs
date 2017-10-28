@@ -4,9 +4,9 @@
 
 <map>
   <title>Input formats</title>
-  <topicref href="alternative-input-formats.dita" collection-type="family">
-    <topicref href="markdown-input.dita"/>
-    <topicref href="lwdita-input.dita" navtitle="Lightweight DITA" locktitle="yes"/>
-    <topicref href="markdown-dita-syntax-reference.dita" navtitle="Markdown DITA syntax" locktitle="yes"/>
-  </topicref>
+
+  <topicref keyref="markdown-input"/>
+  <topicref keyref="lwdita-input" navtitle="Lightweight DITA" locktitle="yes"/>
+  <topicref keyref="markdown-dita-syntax-reference" navtitle="Markdown DITA syntax" locktitle="yes"/>
+
 </map>

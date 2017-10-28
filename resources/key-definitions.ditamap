@@ -6,6 +6,9 @@
 
   <!-- Submap with key definitions for external web resources -->
   <mapref href="external-links.ditamap"/>
+  
+  <!-- Submap with key definitions for each topic -->
+  <mapref href="source-files.ditamap"/>
 
   <!--VERSION NUMBERS: DITA-OT-->
   <keydef keys="release-notes" href="../release-notes/index.dita"/>

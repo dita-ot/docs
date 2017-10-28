@@ -7,13 +7,8 @@
 
   <topicref keyref="landing-page"/>
   <topicref keyref="release-notes"/>
-  <!-- Retain to ensure topics are copied & filtered -->
-  <mapref href="../getting-started/getting-started.ditamap" toc="no"/>
   <topicref keyref="installing-client" locktitle="yes">
-    <!-- Replace with mapref  -->
-    <topicref keyref="prerequisite-software"/>
-    <topicref keyref="determining-version-of-ditaot"/>
-    <topicref keyref="first-build-using-dita-command"/>
+    <mapref href="../getting-started/installing.ditamap"/>
   </topicref>
   <topicref keyref="alternative-input-formats" collection-type="family">
     <mapref href="../user-guide/input-formats.ditamap"/>

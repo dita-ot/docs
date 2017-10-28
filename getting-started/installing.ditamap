@@ -7,7 +7,8 @@
 
   <topicref keyref="prerequisite-software"/>
   <topicref keyref="determining-version-of-ditaot"/>
-  <topicref keyref="using-dita-command" copy-to="using-dita-command.dita" keys="first-build-using-dita-command">
+  <topicref href="../user-guide/using-dita-command.dita" copy-to="using-dita-command.dita"
+    keys="first-build-using-dita-command">
     <topicmeta>
       <navtitle>Building output</navtitle>
     </topicmeta>

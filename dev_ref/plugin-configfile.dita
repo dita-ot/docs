@@ -186,7 +186,7 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
           </pd>
         </plentry>
         <plentry>
-          <pt><xmlelement>transtype</xmlelement></pt>
+          <pt><?oxy_comment_start author="Radu Coravu" timestamp="20171030T213909+0000" comment="Just by looking at the XML element description I have no idea how it is used in a plugin.xml. Maybe some sample XML content would be good. Also maybe mention that there is a RNG schema in the DITA OT which can be used to validate and edit the plugin.xml."?><xmlelement>transtype</xmlelement><?oxy_comment_end?></pt>
           <pd>
             <p>An optional element that defines a new output format (transformation type).</p>
             <p>The following attributes are supported:</p>

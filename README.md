@@ -16,24 +16,15 @@ For best results, follow the [coding guidelines][6] and [best practices][7] outl
 
 ## Building the documentation output
 
-To generate additional topics and build the HTML and PDF versions of the documentation as included in DITA-OT releases, run the Ant build script from the root level of the `docs` repository by entering `ant` on the command line.
+To generate additional topics and build the HTML and PDF versions of the documentation as included in DITA-OT releases, run the Gradle build script from the root level of the `docs` repository and pass the path to your DITA-OT installation as a parameter:
+
+    ./gradlew -PditaHome=../dita-ot/src/main
 
 You can also specify a single output format. To build HTML output, enter the following on the command line:
 
-    ant html
+    ./gradlew -PditaHome=../dita-ot/src/main html
 
 Output will be generated in the `/out` folder of the `docs` repository. This folder is created automatically if it doesn't exist. _(Git ignores the contents of this folder so you don't inadvertently commit these transient files.)_
-
-**NOTE:** The build script assumes that the `$DITA_HOME` environment variable or the `dita.home` Ant property points to a working DITA-OT installation. If neither is set or you need to override the value, you can also set it on the command line.
-
-either:
-
-    export DITA_HOME=/path/to/dita-ot
-    ant ...
-
-or:
-
-    ant -Ddita.home=/path/to/dita-ot
 
 ## Building with development versions of DITA Open Toolkit
 

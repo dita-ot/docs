@@ -6,17 +6,13 @@ plugins {
 import com.github.eerohele.DitaOtTask
 import com.github.eerohele.SaxonXsltTask
 
-def getPropertyOrDefault(String name, def defaultValue) {
-    hasProperty(name) ? findProperty(name) : defaultValue
-}
-
-String ditaHome = getPropertyOrDefault('ditaHome', projectDir.getParent())
-String ditaHomeSrc = getPropertyOrDefault('ditaHomeSrc', ditaHome)
+String ditaHome = properties.get('ditaHome', projectDir.getParent())
+String ditaHomeSrc = properties.get('ditaHomeSrc', ditaHome)
 String configDir = "${ditaHomeSrc}/config"
 String ditavalFile = "${projectDir}/platform.ditaval"
 Boolean toolkitBuild = file("${projectDir}/../lib/dost.jar").exists()
 String samplesDir = toolkitBuild ? "${ditaHome}/docsrc/samples" : "${projectDir}/samples"
-String outputDir = getPropertyOrDefault('outputDir', toolkitBuild ? "${ditaHome}/doc" : "${projectDir}/out")
+String outputDir = properties.get('outputDir', toolkitBuild ? "${ditaHome}/doc" : "${projectDir}/out")
 
 String toURI(String path) {
     file(path).toURI().toString()
@@ -133,7 +129,7 @@ task site(type: DitaOtTask) {
     dependsOn 'messages', 'params', 'extensionPoints', 'gitMetadata'
 
     input file("${projectDir}/site.ditamap")
-    output getPropertyOrDefault('outputDir', "${buildDir}/site")
+    output properties.get('outputDir', "${buildDir}/site")
 
     transtype 'org.dita-ot.html'
 

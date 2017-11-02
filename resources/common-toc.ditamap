@@ -28,11 +28,8 @@
   <topicref keyref="reference">
     <mapref href="../dev_ref/reference.ditamap"/>
   </topicref>
-
   <topicref keyref="dita-and-dita-ot-resources">
-    <topicmeta>
-      <navtitle>Resources</navtitle>
-    </topicmeta>
+    <mapref href="../user-guide/dita-resources.ditamap" toc="no"/>
   </topicref>
 
   <topicgroup processing-role="resource-only">

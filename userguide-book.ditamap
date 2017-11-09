@@ -39,13 +39,13 @@
     <chapter href="dev_ref/reference.ditamap" format="ditamap"/>
   </part>
   <appendices navtitle="Resources and Licensing">
-    <appendix href="user-guide/dita-and-dita-ot-resources.dita">
-      <topicref href="user-guide/web-based-resources.dita" print="yes"/>
+    <appendix keyref="dita-and-dita-ot-resources">
+      <topicref keyref="web-based-resources" print="yes"/>
     </appendix>
     <appendix href="license/license.ditamap" format="ditamap"/>
   </appendices>
   <backmatter>
-    <topicref href="release-notes/index.dita" navtitle="Release Notes" locktitle="yes"/>
+    <topicref keyref="release-notes" navtitle="Release Notes" locktitle="yes"/>
     <mapref href="resources/common-resources.ditamap" processing-role="resource-only"/>
   </backmatter>
 </bookmap>

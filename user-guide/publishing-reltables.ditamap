@@ -53,10 +53,10 @@
     </relrow>
     <relrow>
       <relcell>
-        <topicref href="publishing-with-ant.dita"/>
-        <topicref href="ant.dita"/>
-        <topicref href="building-with-ant.dita"/>
-        <topicref href="creating-an-ant-build-script.dita"/>
+        <topicref keyref="publishing-with-ant"/>
+        <topicref keyref="ant"/>
+        <topicref keyref="building-with-ant"/>
+        <topicref keyref="creating-an-ant-build-script"/>
       </relcell>
       <relcell/>
       <relcell>

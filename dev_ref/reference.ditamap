@@ -59,10 +59,9 @@
         <topicref keyref="preprocess-chunk"/>
       </relcell>
       <relcell>
-        <topicref format="html" href="http://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/chunking.html"
-          scope="external">
+        <topicref keyref="dita12-spec-chunking">
           <topicmeta>
-            <navtitle>Chunking definition in the DITA 1.2 specification</navtitle>
+            <linktext>Chunking definition in the DITA 1.2 specification</linktext>
           </topicmeta>
         </topicref>
       </relcell>

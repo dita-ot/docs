@@ -4,12 +4,12 @@
 
 <map>
   <title>Reference</title>
-  <topicref keyref="DITA-OTArchitecture">
+  <topicref keyref="architecture">
     <topicref keyref="processing-structure"/>
     <topicref keyref="map-first-preproc"/>
     <topicref keyref="processing-pipeline-modules"/>
     <topicref keyref="processing-order"/>
-    <topicref collection-type="sequence" keyref="DITA-OTPreprocess">
+    <topicref collection-type="sequence" keyref="preprocessing">
       <topicref keyref="preprocess-genlist"/>
       <topicref keyref="preprocess-debugfilter"/>
       <topicref keyref="preprocess-mapref"/>
@@ -36,7 +36,7 @@
       <topicref keyref="XhtmlTocjs"/>
       <topicref keyref="XhtmlCHM"/>
     </topicref>
-    <topicref keyref="PdfDefault">
+    <topicref keyref="pdf-transform">
       <topicref keyref="pdf-transformation-history"/>
     </topicref>
   </topicref>

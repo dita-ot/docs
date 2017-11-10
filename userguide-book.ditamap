@@ -30,19 +30,19 @@
     <chapter href="parameters/parameters.ditamap" format="ditamap"/>
   </part>
   <part navtitle="Customizing DITA-OT" keyref="extending-the-ot">
-    <chapter href="dev_ref/customization.ditamap" format="ditamap"/>
+    <chapter href="reference/customization.ditamap" format="ditamap"/>
   </part>
   <part navtitle="Troubleshooting" keyref="troubleshooting-overview">
     <chapter href="user-guide/troubleshooting.ditamap" format="ditamap"/>
   </part>
   <part navtitle="Reference" keyref="reference">
-    <chapter href="dev_ref/reference.ditamap" format="ditamap"/>
+    <chapter href="reference/reference.ditamap" format="ditamap"/>
   </part>
   <appendices navtitle="Resources and Licensing">
     <appendix keyref="dita-and-dita-ot-resources">
       <topicref keyref="web-based-resources" print="yes"/>
     </appendix>
-    <appendix href="dev_ref/license.ditamap" format="ditamap"/>
+    <appendix href="reference/license.ditamap" format="ditamap"/>
   </appendices>
   <backmatter>
     <topicref keyref="release-notes" navtitle="Release Notes" locktitle="yes"/>

@@ -594,17 +594,20 @@
             <pd conaction="pushafter">
               <div conref="./ant-parameters-details.dita#base-html/args.css.details"/></pd>
           </plentry>
-          <plentry id="args.csspath">
-            <pt>
-              <parmname>args.csspath</parmname>
-            </pt>
-            <pd conaction="pushreplace" conref="parameters-html5.dita#html5/args.csspath.desc">
-              <div conref="./ant-parameters-details.dita#base-html/args.csspath.desc"/></pd>
-            <pd conaction="mark" conref="parameters-html5.dita#html5/args.csspath.desc"/>
-            <pd conaction="pushafter">
-              <div conref="./ant-parameters-details.dita#base-html/args.csspath.details"/>
-            </pd>
-          </plentry>
+<!-- ↓ excerpt-csspath (shift left to avoid indendation in codeblock/coderef) ↓ -->
+<plentry id="args.csspath">
+  <pt>
+    <parmname>args.csspath</parmname>
+  </pt>
+  <pd conaction="pushreplace" conref="parameters-html5.dita#html5/args.csspath.desc">
+    <div conref="./ant-parameters-details.dita#base-html/args.csspath.desc"/>
+  </pd>
+  <pd conaction="mark" conref="parameters-html5.dita#html5/args.csspath.desc"/>
+  <pd conaction="pushafter">
+    <div conref="./ant-parameters-details.dita#base-html/args.csspath.details"/>
+  </pd>
+</plentry>
+<!-- ↑ end-excerpt ↑ -->
           <plentry id="args.cssroot">
             <pt>
               <parmname>args.cssroot</parmname>

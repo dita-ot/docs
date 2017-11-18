@@ -3,11 +3,13 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <subjectScheme>
+  <!-- ↓ excerpt-audience ↓ -->
   <subjectdef keys="audience">
     <subjectdef keys="novice"/>
     <subjectdef keys="expert"/>
     <subjectdef keys="xslt-customizer"/>
   </subjectdef>
+  <!-- ↑ end-excerpt ↑ -->
   <subjectdef keys="os">
     <subjectdef keys="windows"/>
     <subjectdef keys="unix">

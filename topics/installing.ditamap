@@ -7,6 +7,7 @@
 
   <topicref keyref="prerequisite-software"/>
   <topicref keyref="determining-version-of-ditaot"/>
+  <!-- ↓ branch-filter ↓ -->
   <topicref href="using-dita-command.dita" keys="first-build-using-dita-command">
     <topicmeta>
       <navtitle>Building output</navtitle>
@@ -17,5 +18,5 @@
       </ditavalmeta>
     </ditavalref>
   </topicref>
-
+  <!-- ↑ end-filtering ↑ -->
 </map>

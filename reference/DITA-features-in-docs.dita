@@ -23,61 +23,32 @@
     <section>
       <title>Subject schemes </title>
       <p>Various topics, sections and elements in the docs are profiled by audience:</p>
-      <codeblock>&lt;li id="novice-variables-last" audience="novice"&gt;
-  &lt;p id="common-format-info"&gt;
-    &lt;varname&gt;format&lt;/varname&gt; is the output format (transformation type).
-    Use the same values available for the &lt;parmname&gt;transtype&lt;/parmname&gt;
-    build parameter, for example, &lt;codeph&gt;html5&lt;/codeph&gt; or &lt;codeph&gt;pdf&lt;/codeph&gt;.
-  &lt;/p&gt;
-&lt;/li&gt;</codeblock>
+      <p><codeblock><coderef href="../resources/conref-task.dita#token=excerpt-variables,end-excerpt"/></codeblock></p>
       <p>An “audience” subject scheme controls the values that are available for the <xmlatt>audience</xmlatt>
         attribute:</p>
-      <codeblock>&lt;subjectdef keys="audience"&gt;
-  &lt;subjectdef keys="novice"/&gt;
-  &lt;subjectdef keys="expert"/&gt;
-  &lt;subjectdef keys="xslt-customizer"/&gt;
-&lt;/subjectdef&gt;</codeblock>
+      <p><codeblock><coderef href="../resources/subjectscheme.ditamap#token=excerpt-audience,end-excerpt"/></codeblock></p>
     </section>
     <section>
       <title>Branch filtering: re-using profiled content</title>
     </section>
     <section>
-      <p>The <cite>Getting Started</cite> section pulls a subset of the build description from the <cite>User
-          Guide</cite>, filtered to display only content deemed suitable for novice users under
+      <p><cite>Installing DITA-OT</cite> pulls a subset of the build description from <cite>Building output</cite>,
+        filtered to display only content deemed suitable for novice users under
         <xref keyref="first-build-using-dita-command"/>:</p>
-      <codeblock>&lt;topicref href="../topics/using-dita-command.dita"
-  copy-to="using-dita-command.dita" keys="first-build-using-dita-command"&gt;
-  &lt;topicmeta&gt;
-    &lt;navtitle&gt;Building output&lt;/navtitle&gt;
-  &lt;/topicmeta&gt;
-
-  &lt;ditavalref href="../resources/novice.ditaval"&gt;
-    &lt;ditavalmeta&gt;
-      &lt;dvrResourcePrefix&gt;first-build-&lt;/dvrResourcePrefix&gt;
-    &lt;/ditavalmeta&gt;
-  &lt;/ditavalref&gt;
-&lt;/topicref&gt;</codeblock>
-      <p>The same content appears later in the <cite>User Guide</cite> with additional information on arguments, options
-        and examples (see
-        <xref keyref="build-using-dita-command"/>).</p>
+      <p><codeblock><coderef href="../topics/installing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
+      <p>The same content appears later in
+        <xref keyref="build-using-dita-command"/> with additional information on arguments, options and examples.</p>
+      <p><codeblock><coderef href="../topics/publishing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
     </section>
     <section>
       <title>Conref push</title>
     </section>
     <section>
-      <p>The docs build uses the conref push mechanism (specifically
-          <xmlatt>conaction</xmlatt>=<codeph>"pushafter"</codeph>) to extend the parameter descriptions embedded in the
-        default plug-ins:</p>
-      <codeblock>&lt;plentry id="args.csspath"&gt;
-  &lt;pt&gt;
-    &lt;parmname&gt;args.csspath&lt;/parmname&gt;
-  &lt;/pt&gt;
-  &lt;pd conaction="mark"
-      conref="parameters-base-html.dita#base-html/args.csspath.desc"/&gt;
-  &lt;pd conaction="pushafter" audience="xslt-customizer"&gt;
-    Corresponds to the XSLT parameter &lt;parmname&gt;CSSPATH&lt;/parmname&gt;.
-    DITA-OT will copy the file to this location.&lt;/pd&gt;
-&lt;/plentry&gt;</codeblock>
+      <p>The docs build uses the conref push mechanism (with the <codeph>pushreplace</codeph>, <codeph>mark</codeph>,
+        and <codeph>pushafter</codeph>
+        <xref keyref="dita13-spec-conaction">conactions</xref>) to extend the parameter
+        descriptions embedded in the default plug-ins:</p>
+      <p><codeblock><coderef href="../parameters/ant-parameters-details.dita#token=excerpt-csspath,end-excerpt"/></codeblock></p>
       <p>The pushed content appears in the output after the default description. (See
         <xref keyref="parameters-base-html"/>.)</p>
       <note type="tip">You could also use the same mechanism to extend the documentation with custom information that
@@ -89,13 +60,7 @@
     <section>
       <p>The <codeph>key-definitions.ditamap</codeph> defines keys for version references, re-usable links, etc.</p>
       <p>This key definition defines the maintenance release version:</p>
-      <codeblock>&lt;keydef keys="maintenance-version"&gt;
-  &lt;topicmeta&gt;
-    &lt;keywords&gt;
-      &lt;keyword&gt;2.3.3&lt;/keyword&gt;
-    &lt;/keywords&gt;
-  &lt;/topicmeta&gt;
-&lt;/keydef&gt;</codeblock>
+      <p><codeblock><coderef href="../resources/key-definitions.ditamap#token=excerpt-version,end-excerpt"/></codeblock></p>
       <p>In topics, the keyword is used in place of hard-coded version references:</p>
       <codeblock>&lt;title&gt;DITA Open Toolkit &lt;keyword keyref="maintenance-version"/&gt; Release Notes&lt;/title&gt;</codeblock>
     </section>

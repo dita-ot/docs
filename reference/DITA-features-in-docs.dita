@@ -45,7 +45,7 @@
       <p>The <cite>Getting Started</cite> section pulls a subset of the build description from the <cite>User
           Guide</cite>, filtered to display only content deemed suitable for novice users under
         <xref keyref="first-build-using-dita-command"/>:</p>
-      <codeblock>&lt;topicref href="../user-guide/using-dita-command.dita" 
+      <codeblock>&lt;topicref href="../topics/using-dita-command.dita"
   copy-to="using-dita-command.dita" keys="first-build-using-dita-command"&gt;
   &lt;topicmeta&gt;
     &lt;navtitle&gt;Building output&lt;/navtitle&gt;

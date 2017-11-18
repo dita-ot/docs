@@ -74,7 +74,7 @@
   <target name="generate-msg-topic" depends="init" description="Regenerate message file">
     <property name="message.xsl" location="${basedir}/resources/messages.xsl"/>
     <property name="message.input" location="${config.dir}/messages.xml"/>
-    <property name="message.outputtopic" location="${basedir}/user-guide/DITA-messages.xml"/>
+    <property name="message.outputtopic" location="${basedir}/topics/DITA-messages.xml"/>
 
     <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
     <xslt in="${message.input}" out="${message.outputtopic}" style="${message.xsl}"/>

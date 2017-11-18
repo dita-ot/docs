@@ -23,7 +23,7 @@ def toURI(String directory) {
 
 task messages(type: SaxonXsltTask) {
   input "$configDir/messages.xml"
-  output "user-guide/DITA-messages.xml"
+  output "topics/DITA-messages.xml"
   stylesheet "resources/messages.xsl"
 }
 

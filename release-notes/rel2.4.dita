@@ -429,21 +429,21 @@
           the code reference by specifying keywords (or “<term>tokens</term>”) that appear in the referenced file.
           <xref href="https://github.com/dita-ot/dita-ot/pull/2469" scope="external" format="html">#2469</xref>
         </p>
-        <div conref="../user-guide/extended-functionality.dita#code-reference/coderef-by-content"/>
-        <note conref="../user-guide/extended-functionality.dita#code-reference/coderef-by-content-tip"/>
+        <div conref="../reference/extended-functionality.dita#code-reference/coderef-by-content"/>
+        <note conref="../reference/extended-functionality.dita#code-reference/coderef-by-content-tip"/>
         <p>For more information, see
-          <xref href="../user-guide/extended-functionality.dita#code-reference"/>.</p>
+          <xref href="../reference/extended-functionality.dita#code-reference"/>.</p>
       </section>
       <section id="2405">
         <title>Standalone <option>HTML5</option> plug-in</title>
-        <div conref="../dev_ref/migrating-to-2.4.dita#migrating-to-2.4/24-html5-split"/>
+        <div conref="../reference/migrating-to-2.4.dita#migrating-to-2.4/24-html5-split"/>
         <p>
           <xref href="https://github.com/dita-ot/dita-ot/pull/2405" scope="external" format="html">#2405</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/2511" scope="external" format="html">#2511</xref>
         </p>
       </section>
 
-      <section id="1542" conref="../dev_ref/migrating-to-2.4.dita#migrating-to-2.4/24-legacy-plugin-removal"/>
+      <section id="1542" conref="../reference/migrating-to-2.4.dita#migrating-to-2.4/24-legacy-plugin-removal"/>
       <section>
         <p>
           <xref href="https://github.com/dita-ot/dita-ot/issues/1542" scope="external" format="html">#1542</xref></p>

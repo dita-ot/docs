@@ -38,7 +38,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2833" format="html" scope="external">#2833</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2838" format="html" scope="external">#2838</xref>
           </li>
-          <li id="2836">Update LwDITA plugin to 2.0.1
+          <li id="2836">Generating Markdown output with DITA-OT 3.0 failed with references to a missing stylesheet. The
+            Lightweight DITA plug-in has been updated to the latest version (2.0.1), which corrects the plug-in
+            directory path in the stylesheet reference, so Markdown output is now generated as expected.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2836" format="html" scope="external">#2836</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2846" format="html" scope="external">#2846</xref>
           </li>

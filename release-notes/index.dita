@@ -20,6 +20,11 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
+          <li id="1151">Fix corrupted chars in HHC, HHK
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1151" format="html" scope="external">#1151</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1271" format="html" scope="external">#1271</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2852" format="html" scope="external">#2852</xref>
+          </li>
           <li id="2824">Rendering problem in PDF when depth of the nested 'ul' elements is greater than 4
             <xref href="https://github.com/dita-ot/dita-ot/issues/2824" format="html" scope="external">#2824</xref>
           </li>
@@ -36,6 +41,9 @@
           <li id="2836">Update LwDITA plugin to 2.0.1
             <xref href="https://github.com/dita-ot/dita-ot/issues/2836" format="html" scope="external">#2836</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2846" format="html" scope="external">#2846</xref>
+          </li>
+          <li id="2851">Fix broken CHM compile
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2851" format="html" scope="external">#2851</xref>
           </li>
           <li>
             <p>The documentation includes minor

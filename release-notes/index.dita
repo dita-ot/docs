@@ -60,6 +60,11 @@
             not properly initialized. This has been fixed and CHM files are generated using the original map name.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2851" format="html" scope="external">#2851</xref>
           </li>
+          <li id="2854">In 3.0, the <parmname>args.output.base</parmname> property to name output files does not
+            work properly for HTML Help. The property is now used to produce a CHM file with the correct name
+            and contents.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2854" format="html" scope="external">#2854</xref>
+          </li>
           <li>
             <p>The documentation includes minor
               <xref href="https://github.com/dita-ot/docs/compare/3.0...3.0.1" format="html" scope="external">

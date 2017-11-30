@@ -47,8 +47,8 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2830" format="html" scope="external">#2830</xref>
           </li>
           <li id="2833">Simplified common variable definitions in 3.0 could not be overridden using the traditional
-            customization directory approach; the override process now checks for common variables to ensure those in
-            the customization directory are used.
+            customization approach; the override process now checks for common variables to ensure those in the
+            configuration directory are used.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2833" format="html" scope="external">#2833</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2838" format="html" scope="external">#2838</xref>
           </li>
@@ -68,7 +68,7 @@
           </li>
           <li id="2856">In 3.0, content references to warehouse topics that contain unresolved cross-references would
             cause PDF builds to fail, even if the invalid reference was not explicitly included in the content
-            reference. DITA-OT now checks to make sure such files exist and only parses them if necessary.
+            reference. DITA-OT now checks to make sure such files exist and only parses them if available.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2856" format="html" scope="external">#2856</xref>
           </li>
           <li>

@@ -13,7 +13,7 @@
         </topicref>
       </relcell>
       <relcell>
-        <topicref keyref="DITA-globalization-languages">
+        <topicref keyref="globalization-languages">
           <topicmeta>
             <linktext>Languages supported by the core toolkit</linktext>
           </topicmeta>
@@ -40,8 +40,11 @@
       </relcell>
       <relcell>
         <topicref keyref="parameters_intro" linking="targetonly"/>
-        <topicref href="http://ant.apache.org/manual" navtitle="Apache Ant documentation" format="html" scope="external"
-        />
+        <topicref keyref="ant-manual">
+          <topicmeta>
+            <linktext>Apache Ant documentation</linktext>
+          </topicmeta>
+        </topicref>
       </relcell>
     </relrow>
     <relrow>
@@ -289,21 +292,23 @@
         <topicref keyref="dita2eclipsehelp"/>
       </relcell>
       <relcell>
-        <topicref href="http://www.eclipse.org" navtitle="Official Eclipse Web site" format="html" scope="external"/>
+        <topicref keyref="eclipse-website">
+          <topicmeta>
+            <linktext>Official Eclipse website</linktext>
+          </topicmeta>
+        </topicref>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref keyref="DITA-globalization"/>
+        <topicref keyref="globalization"/>
       </relcell>
       <relcell>
-        <topicref format="html" href="http://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/translation.html"
-          scope="external" type="reference">
+        <topicref keyref="dita12-spec-l10n" type="reference">
           <topicmeta>
             <linktext>Localization overview in the OASIS DITA standard</linktext>
           </topicmeta>
         </topicref>
-        <topicref keyref="plugin-addgeneratedtext"/>
       </relcell>
     </relrow>
   </reltable>

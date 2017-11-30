@@ -4,8 +4,8 @@
 
 <map>
   <title>Publishing</title>
-
-  <topicref keyref="using-dita-command" keys="build-using-dita-command" locktitle="yes">
+  <!-- ↓ branch-filter ↓ -->
+  <topicref href="using-dita-command.dita" keys="build-using-dita-command">
     <topicmeta>
       <navtitle>Using the <cmdname>dita</cmdname> command</navtitle>
     </topicmeta>
@@ -14,6 +14,7 @@
         <dvrResourcePrefix>build-</dvrResourcePrefix>
       </ditavalmeta>
     </ditavalref>
+    <!-- ↑ end-filtering ↑ -->
     <topicref keyref="using-dita-properties-file">
       <topicmeta>
         <navtitle>Using a properties file</navtitle>

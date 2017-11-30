@@ -84,7 +84,7 @@ calls to the deprecated templates; in some cases, the calls can be
 replaced           with 2 lines to process flags in new places. You
 should compare your override to the updated XHTML code and update
           as needed. See "XHTML migration for flagging updates in
-DITA-OT 1.7" in the <xref href="../../dev_ref/DITA-OTPreprocess.dita"></xref> section
+DITA-OT 1.7" in the <xref href="../../reference/preprocessing.dita"></xref> section
 for details.</p>         <p>Plug-ins that provide support for new
 transforms need to ensure that they properly support the DITA &lt;foreign&gt;
           element, which should be ignored by default; if so, this
@@ -92,7 +92,7 @@ change will have no immediate impact. Support for flagging
    new transform types may be more easily added based on this update,
 because there is no need to re-implement flagging logic,         
  but this is not required. See "Flagging in the toolkit" in the <xref
-href="../../dev_ref/DITA-OTPreprocess.dita"></xref> section for details
+href="../../reference/preprocessing.dita"></xref> section for details
 on how to add flagging support.</p>       </section>
 <section>         <title>PDF</title>         <p>The following deprecated
 XSLT variables have been removed:</p>         <ul>

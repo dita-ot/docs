@@ -20,33 +20,35 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="1151">HTML Help requires a Windows codepage rather than UTF-8, so many characters are converted to
-            HTML entities to ensure they are preserved during the codepage conversion. These entities appear corrupted
-            when they appear in index terms or in topic titles in the TOC. This is now fixed; characters that exist
-            in the target codepage are not converted to entities, so they will appear properly in the compiled help file.
+          <li id="1151">Microsoft Compiled HTML Help requires a Windows codepage rather than UTF-8, so many characters
+            are converted to HTML entities to ensure they are preserved during the codepage conversion. In earlier
+            versions of DITA-OT, these entities were not rendered correctly in index terms or in topic titles on the
+              <uicontrol>Contents</uicontrol> tab of the .chm file. This is now fixed; characters that exist in the
+            target codepage are not converted to entities, so they will appear properly in the compiled help file.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1151" format="html" scope="external">#1151</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/1271" format="html" scope="external">#1271</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2852" format="html" scope="external">#2852</xref>
           </li>
-          <!--
-          <li id="2824">When unordered lists nest greater than 4 levels, PDF processing generates a warning about
-            a missing variable, and deeply nested lists use text such as<codeph>Unordered List bullet 5</codeph> 
-            in place of a bullet character. Characters for levels 1 through 4 now repeat in deeply nested lists.
+          <li id="2824">When unordered lists nest greater than 4 levels, PDF processing generates a warning about a
+            missing variable, and deeply nested lists use text such as <codeph>Unordered List bullet 5</codeph> instead
+            of a bullet character. Characters for levels 1 through 4 now repeat in deeply nested lists.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2824" format="html" scope="external">#2824</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2853" format="html" scope="external">#2853</xref>
           </li>
+          <!--
           <li id="2828">NullPointerException in DITA OT 3.x
             <xref href="https://github.com/dita-ot/dita-ot/issues/2828" format="html" scope="external">#2828</xref>
           </li>
           -->
-          <li id="2830">Map-first processing in 3.0 uses generated file names in the temp directory for HTML Help,
-            but this removes the ability to create context help based on file names. Topics in the compiled help
-            file are now restored to their original names.
+          <li id="2830">Map-first processing in 3.0 uses generated file names in the temp directory for HTML Help, but
+            this breaks any existing context-sensitive help projects that call topics directly by file name rather than
+            by aliased constants (topic IDs) or help context numbers. Topics in the compiled help file are now restored
+            to their original names to support external applications that to link to topics within a CHM by file name.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2830" format="html" scope="external">#2830</xref>
           </li>
           <li id="2833">Simplified common variable definitions in 3.0 could not be overridden using the traditional
-            customization directory approach; the override process now checks for common variables to ensure those
-            in the customization directory are used.
+            customization directory approach; the override process now checks for common variables to ensure those in
+            the customization directory are used.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2833" format="html" scope="external">#2833</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2838" format="html" scope="external">#2838</xref>
           </li>
@@ -56,13 +58,12 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2836" format="html" scope="external">#2836</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2846" format="html" scope="external">#2846</xref>
           </li>
-          <li id="2851">In 3.0, HTML Help files would not compile to CHM files because a property definition was
+          <li id="2851">In 3.0, HTML Help project files would not compile to CHM files because a property definition was
             not properly initialized. This has been fixed and CHM files are generated using the original map name.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2851" format="html" scope="external">#2851</xref>
           </li>
-          <li id="2854">In 3.0, the <parmname>args.output.base</parmname> property to name output files does not
-            work properly for HTML Help. The property is now used to produce a CHM file with the correct name
-            and contents.
+          <li id="2854">In 3.0, the <parmname>args.output.base</parmname> property to name output files does not work
+            properly for HTML Help. The property is now used to produce a CHM file with the correct name and contents.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2854" format="html" scope="external">#2854</xref>
           </li>
           <li>

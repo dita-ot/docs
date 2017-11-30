@@ -26,15 +26,16 @@
         <cmd>Construct a <filepath>plugin.xml</filepath> file that contains the following content:</cmd>
         <info><codeblock>&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="<varname>extension-point</varname>" file="<varname>file</varname>"/>
-&lt;/plugin></codeblock>where:<ul>
+&lt;/plugin></codeblock>where:
+          <ul>
             <li><varname>plugin-id</varname> is the plug-in identifier, for example,
                 <codeph>com.example.newparam</codeph>.</li>
             <li><varname>extension-point</varname> is the DITA-OT extension point, for example,<codeph>
                 dita.conductor.xhtml.param</codeph>. This indicates the DITA-OT processing step where the parameters
               will be available.</li>
-            <li><varname>file</varname> is the name of the XML file that you created in step <xref
-                href="#plugin-xsltparams/create-xml-file" format="dita"/>, for example,
-                <filepath>insertParameters.xml</filepath>. </li>
+            <li><varname>file</varname> is the name of the XML file that you created in step
+              <xref href="#./create-xml-file" format="dita"/>, for example, <filepath>insertParameters.xml</filepath>.
+            </li>
           </ul></info>
       </step>
       <step>

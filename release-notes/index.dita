@@ -9,10 +9,82 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> is a feature release that provides new features and
-      enhancements, including <ph conref="#highlights/summary"/></shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#highlights/summary"/></shortdesc>
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
+
+  <reference id="v301">
+    <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="1151">Microsoft Compiled HTML Help requires a Windows codepage rather than UTF-8, so many characters
+            are converted to HTML entities to ensure they are preserved during the codepage conversion. In earlier
+            versions of DITA-OT, these entities were not rendered correctly in index terms or in topic titles on the
+              <uicontrol>Contents</uicontrol> tab of the .chm file. This is now fixed; characters that exist in the
+            target codepage are not converted to entities, so they will appear properly in the compiled help file.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1151" format="html" scope="external">#1151</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1271" format="html" scope="external">#1271</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2852" format="html" scope="external">#2852</xref>
+          </li>
+          <li id="2824">When unordered lists nest greater than 4 levels, PDF processing generates a warning about a
+            missing variable, and deeply nested lists use text such as <codeph>Unordered List bullet 5</codeph> instead
+            of a bullet character. Characters for levels 1 through 4 now repeat in deeply nested lists.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2824" format="html" scope="external">#2824</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2853" format="html" scope="external">#2853</xref>
+          </li>
+          <!--
+          <li id="2828">NullPointerException in DITA OT 3.x
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2828" format="html" scope="external">#2828</xref>
+          </li>
+          -->
+          <li id="2830">Map-first processing in 3.0 uses generated file names in the temp directory for HTML Help, but
+            this breaks any existing context-sensitive help projects that call topics directly by file name rather than
+            by aliased constants (topic IDs) or help context numbers. Topics in the compiled help file are now restored
+            to their original names to support external applications that to link to topics within a CHM by file name.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2830" format="html" scope="external">#2830</xref>
+          </li>
+          <li id="2833">Simplified common variable definitions in 3.0 could not be overridden using the traditional
+            customization approach; the override process now checks for common variables to ensure those in the
+            configuration directory are used.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2833" format="html" scope="external">#2833</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2838" format="html" scope="external">#2838</xref>
+          </li>
+          <li id="2836">Generating Markdown output with DITA-OT 3.0 failed with references to a missing stylesheet. The
+            Lightweight DITA plug-in has been updated to the latest version (2.0.1), which corrects the plug-in
+            directory path in the stylesheet reference, so Markdown output is now generated as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2836" format="html" scope="external">#2836</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2846" format="html" scope="external">#2846</xref>
+          </li>
+          <li id="2851">In 3.0, HTML Help project files would not compile to CHM files because a property definition was
+            not properly initialized. This has been fixed and CHM files are generated using the original map name.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2851" format="html" scope="external">#2851</xref>
+          </li>
+          <li id="2854">In 3.0, the <parmname>args.output.base</parmname> property to name output files does not work
+            properly for HTML Help. The property is now used to produce a CHM file with the correct name and contents.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2854" format="html" scope="external">#2854</xref>
+          </li>
+          <li id="2856">In 3.0, content references to warehouse topics that contain unresolved cross-references would
+            cause PDF builds to fail, even if the invalid reference was not explicitly included in the content
+            reference. DITA-OT now checks to make sure such files exist and only parses them if available.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2856" format="html" scope="external">#2856</xref>
+          </li>
+          <li>
+            <p>The documentation includes minor
+              <xref href="https://github.com/dita-ot/docs/compare/3.0...3.0.1" format="html" scope="external">
+                changes</xref> with
+              <xref href="https://github.com/dita-ot/docs/milestone/30?closed=1" format="html" scope="external"
+                >corrections and improvements</xref> to existing topics.</p>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.0...3.0.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
 
   <reference id="requirements">
     <title>Requirements</title>
@@ -110,9 +182,9 @@
 
       <section id="map-first">
         <title>Map-first preprocessing</title>
-        <p><ph conref="../dev_ref/map-first-preprocessing.dita#ID/map-first-preproc-desc"/></p>
-        <p conref="../dev_ref/map-first-preprocessing.dita#ID/map-first-preproc-gain"/>
-        <note conref="../dev_ref/map-first-preprocessing.dita#ID/map-first-preproc-note"/>
+        <p><ph conref="../reference/map-first-preprocessing.dita#ID/map-first-preproc-desc"/></p>
+        <p conref="../reference/map-first-preprocessing.dita#ID/map-first-preproc-gain"/>
+        <note conref="../reference/map-first-preprocessing.dita#ID/map-first-preproc-note"/>
       </section>
     </refbody>
   </reference>
@@ -186,7 +258,8 @@
           </li>
           <li id="2721">Upgrade to Saxon-HE 9.8
             <xref href="https://github.com/dita-ot/dita-ot/issues/2721" format="html" scope="external">#2721</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2727" format="html" scope="external">#2727</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2727" format="html" scope="external">#2727</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2822" format="html" scope="external">#2822</xref>
           </li>
           <li id="2736">Upgrade to FOP 2.2
             <xref href="https://github.com/dita-ot/dita-ot/issues/2736" format="html" scope="external">#2736</xref>

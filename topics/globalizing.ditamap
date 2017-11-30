@@ -4,9 +4,9 @@
 
 <map>
   <title>Globalizing DITA content</title>
-  <topicref keyref="DITA-globalization">
-    <topicref keyref="globalization-supported-in-dita-ot"/>
+  <topicref keyref="globalization">
+    <topicref keyref="globalization-support"/>
     <topicref keyref="plugin-addgeneratedtext"/>
-    <topicref keyref="DITA-globalization-languages"/>
+    <topicref keyref="globalization-languages"/>
   </topicref>
 </map>

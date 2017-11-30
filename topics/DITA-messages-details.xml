@@ -61,8 +61,8 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA002F-extra" conaction="pushreplace">The input parameter was not
           specified, so there is no DITA or DITAMAP file to transform. Ensure the parameter is set properly; see <xref
-            href="../parameters/parameters-base.dita">DITA-OT common parameters (args.input)</xref> if you are unsure
-          how to specify the input file.</stentry>
+            keyref="parameters-base">DITA-OT common parameters (args.input)</xref> if you are unsure how to specify the
+          input file.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA003F-extra" conaction="pushreplace">An alternate stylesheet was
@@ -317,14 +317,13 @@
           <p>Note that for security reasons, references to code samples outside of the scope of the map directory are
             not supported by default, as this could allow a reference to access and display any restricted or hidden
             file on the system. If you are certain that the path is valid and the file should be loaded, the current
-            workaround is to set a parameter to allow these references. See <xref
-              href="../parameters/parameters-base.dita">DITA-OT common parameters (outer.control and
-              generate.copy.outer)</xref> for details.</p></stentry>
+            workaround is to set a parameter to allow these references. See <xref keyref="parameters-base">DITA-OT
+              common parameters (outer.control and generate.copy.outer)</xref> for details.</p></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ052E-extra" conaction="pushreplace">The DITA-OT supports a special
           syntax on coderef elements to specify the character set of the target document. See <xref
-            href="extended-functionality.dita"/> for details on the expected syntax.</stentry>
+            keyref="extended-functionality"/> for details on the expected syntax.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ053W-extra" conaction="pushreplace">By default, the DITA-OT supports

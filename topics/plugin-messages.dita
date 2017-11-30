@@ -12,23 +12,22 @@
       <step id="step_create-message-xml">
         <cmd>Create an XML file that contains the messages that you want to add. Be sure to use the following format for
           the XML file:</cmd>
-        <info><codeblock>&lt;dummy>
+        <info><codeblock>&lt;messages>
   &lt;!-- See resources/messages.xml for the details. -->
   &lt;message id="<varname>Prefix</varname><varname>Number</varname><varname>Letter</varname>" type="<varname>error-severity</varname>">
     &lt;reason>Message text&lt;/reason>
     &lt;response>How to resolve&lt;/response>
   &lt;/message>
-&lt;/dummy></codeblock>where:
+&lt;/messages></codeblock>where:
           <ul>
             <li><varname>Prefix</varname> is a sequence of four capital letters.<note>By convention, the toolkit
                 messages use <codeph>DOTX</codeph> but any sequence can be used by plug-in developers.</note></li>
             <li><varname>Number</varname> is a three-digit integer.</li>
             <li><varname>Letter</varname> is one of the following upper-case letters: I, W, E, F. It should match the
-              value that is specified for the <xmlatt>type</xmlatt> attribute.</li>
-          </ul><note>As the <xmlatt>id</xmlatt> attribute is used as a whole and not decomposed by recent versions of
-            the toolkit, you could use any sequence as the message identifier. Nevertheless, to facilitate reuse of the
-            plug-in and make it more readable by other users, we recommend following these guidelines.</note>
-          <ul>
+              value that is specified for the <xmlatt>type</xmlatt> attribute.<note>As the <xmlatt>id</xmlatt> attribute
+                is used as a whole and not decomposed by recent versions of the toolkit, you could use any sequence as
+                the message identifier. Nevertheless, to facilitate reuse of the plug-in and make it more readable by
+                other users, we recommend following these guidelines.</note></li>
             <li><varname>error-severity</varname> specifies the severity of the error. It must be one of the following
               values:
               <dl conkeyref="messages-push/severity-levels">
@@ -36,11 +35,11 @@
                   <dt/>
                   <dd/>
                 </dlentry>
-              </dl><note>the <codeph>FATAL</codeph> value throws a fatal error message in XSLT and an exception in
-                Java.</note></li>
-          </ul><draft-comment author="Kristen Eberlein" time="31 March 2013">What advice should we give users to prevent
-            them from using a message number and letter combination that is already used by the DITA-OT? If that
-            happens, what is the result?</draft-comment></info>
+              </dl><note>The <codeph>FATAL</codeph> value throws a fatal error message in XSLT and an exception in
+                Java.</note>
+              <note type="tip">If the <xmlatt>id</xmlatt> attribute of your message is equal to the <xmlatt>id</xmlatt>
+                of a default DITA-OT message, your message will override the default one.</note></li>
+          </ul></info>
       </step>
       <step>
         <cmd>Create a <filepath>plugin.xml</filepath> file that contains the following content:</cmd>

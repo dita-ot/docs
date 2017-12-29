@@ -214,7 +214,7 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.0+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
-          <li id="1200">A new property named <parmname>args.output.base</parmname> can be used control the name of the
+          <li id="1200">A new property named <parmname>args.output.base</parmname> can be used to control the name of the
             output file for transform types that produce a single output file. The value of the property is the base
             file name of the output file, without file extension. The file extension is defined by the transform type.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1200" format="html" scope="external">#1200</xref>

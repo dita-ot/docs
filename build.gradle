@@ -26,7 +26,7 @@ ditaOt.dir ditaHome
 
 task messages(type: SaxonXsltTask) {
     input "${configDir}/messages.xml"
-    output "${projectDir}/user-guide/DITA-messages.xml"
+    output "${projectDir}/topics/DITA-messages.xml"
     stylesheet "${projectDir}/resources/messages.xsl"
 }
 

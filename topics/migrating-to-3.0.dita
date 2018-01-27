@@ -13,9 +13,8 @@
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 3.0 that may require modifications to custom stylesheets
-        or plug-ins.
-        <!--For more information on changes in this release, see the
-        <xref keyref="3.0-release-notes"/>.--></note>
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="3.0-release-notes"/>.</note>
     </section>
 
     <section id="30-legacy-plugin-removal">
@@ -48,5 +47,12 @@
       <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname> <filepath>https://github.com/dita-ot/org.dita.javahelp/archive/2.5.zip</filepath></codeblock>
     </section>
 
+    <section id="map-first">
+      <title>Map-first preprocessing</title>
+      <p><ph conref="../reference/map-first-preprocessing.dita#ID/map-first-preproc-desc"/></p>
+      <note type="tip">See
+        <xref keyref="map-first-preproc"/> for information on how to use (or test) map-first preprocessing, or revert to
+        the default <codeph>preprocess</codeph> target.</note>
+    </section>
   </refbody>
 </reference>

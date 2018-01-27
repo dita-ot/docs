@@ -441,18 +441,42 @@
         <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
           improvements to existing topics, along with new information:</p>
         <ul>
-          <li>Revised top-level documentation structure
+          <li>The top-level documentation structure has been revised to replace book-based paradigms (<cite>User
+              Guide</cite>, <cite>Developer Reference</cite>) with more task-oriented groupings
             <xref href="https://github.com/dita-ot/docs/issues/121" format="html" scope="external">#121</xref>
+            <ul>
+              <li>
+                <xref keyref="installing-client"/></li>
+              <li>
+                <xref keyref="building-output"/></li>
+              <li>
+                <xref keyref="extending-the-ot"/></li>
+              <li>
+                <xref keyref="troubleshooting-overview"/></li>
+            </ul>
           </li>
-          <li>New topics on Markdown plug-in
+          <li>New input formats
             <xref href="https://github.com/dita-ot/docs/issues/150" format="html" scope="external">#150</xref>
-          </li>
-          <li>New topic on Lightweight DITA
             <xref href="https://github.com/dita-ot/docs/issues/151" format="html" scope="external">#151</xref>
-          </li>
-          <li>New topic on normalization plug-in
+            <ul>
+              <li>
+                <xref keyref="markdown-input"/></li>
+              <li>
+                <xref keyref="lwdita-input"/></li>
+            </ul></li>
+          <li>New output formats
             <xref href="https://github.com/dita-ot/docs/issues/152" format="html" scope="external">#152</xref>
+            <ul>
+              <li>
+                <xref keyref="dita2markdown"/></li>
+              <li>
+                <xref keyref="dita2dita"/></li>
+            </ul>
           </li>
+          <li>
+            <xref keyref="map-first-preproc"/></li>
+          <li>
+            <xref keyref="migrating-to-3.0"/></li>
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"/>, see the

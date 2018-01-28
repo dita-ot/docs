@@ -8,10 +8,13 @@
     <navtitle>Custom plug-ins</navtitle>
   </titlealts>
   <shortdesc id="plugins-creating">You can install or create DITA-OT plug-ins to change the default output types in
-    various ways, to add entirely new kinds of output formats, or to implement support for your DITA topic
-    specializations.</shortdesc>
+    various ways, add entirely new kinds of output formats, or implement DITA topic specializations.</shortdesc>
 
   <conbody>
+
+    <p>A plug-in consists of a directory, typically stored within the <filepath>plugins/</filepath> directory inside of
+      the DITA-OT. Every plug-in is controlled by a file named <filepath>plugin.xml</filepath>, which is located in the
+      root directory of the plug-in.</p>
 
     <section id="plugin-benefits">
       <title>Plug-in benefits</title>
@@ -32,11 +35,9 @@
       </ul>
     </section>
 
-    <section id="plugins-overview">
-      <title>Plug-in structure</title>
-      <p>A plug-in consists of a directory, typically stored within the <filepath>plugins/</filepath> directory inside
-        of the DITA-OT. Every plug-in is controlled by a file named <filepath>plugin.xml</filepath>, which is located in
-        the root directory of the plug-in.</p>
+    <section>
+      <title>Working with plug-ins</title> 
+      <p>Extended documentation for creating plug-ins is provided in the following topics.</p>
     </section>
   </conbody>
 </concept>

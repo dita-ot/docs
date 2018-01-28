@@ -11,11 +11,6 @@
     <topicref keyref="pdf-customization-approaches"/>
     <topicref keyref="pdf-customization-plugin-types"/>
     <topicref keyref="pdf-plugin-structure"/>
-    <topicref keyref="pdf-customization-best-practices" locktitle="yes">
-      <topicmeta>
-        <navtitle>Customization best practices</navtitle>
-      </topicmeta>
-    </topicref>
     <topicref keyref="pdf-customization-example" locktitle="yes">
       <topicmeta>
         <navtitle>Simple PDF plug-in example</navtitle>
@@ -28,4 +23,17 @@
     </topicref>
     <topicref keyref="pdf2-creating-change-bars"/>
   </topicref>
+
+  <reltable title="Bi-directional links">
+    <relrow>
+      <relcell>
+        <topicref keyref="pdf-customization"/>
+        <topicref keyref="pdf-customization-approaches"/>
+      </relcell>
+      <relcell>
+        <!-- Link formerly PDF-specific content to new location -->
+        <topicref keyref="plugin-best-practices"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

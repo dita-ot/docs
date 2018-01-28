@@ -299,9 +299,9 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.0+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="2121">Obsolete or unmaintained plugins have been moved to their own repositories. The following
-            plugins have been moved: Docbook, Eclipse Content, Eclipse map specialization, RTF, ODT, and support for
-            pre-OASIS DITA document types.
+          <li id="2121">Legacy plug-ins that were removed from the distribution package in earlier releases have been
+            moved to their own repositories. The following plug-ins have been moved: DocBook, Eclipse Content, Eclipse
+            map specialization, RTF, ODT, and support for pre-OASIS DITA document types.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2121" format="html" scope="external">#2121</xref>
           </li>
           <li id="2232">Use XMLUnit 2
@@ -312,7 +312,7 @@
               <xmlelement>div</xmlelement>, as required to comply with WCAG 2.0 accessibility guidelines.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2447" format="html" scope="external">#2447</xref>
           </li>
-          <li id="2713">Upgrade Gradle to 3.5
+          <li id="2713">Upgrade Gradle to version 3.5
             <xref href="https://github.com/dita-ot/dita-ot/pull/2713" format="html" scope="external">#2713</xref>
           </li>
           <li id="2718">When building PDF from files that do not use <filepath>.dita</filepath> or
@@ -320,12 +320,12 @@
             no longer included in the generated PDF file name.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2718" format="html" scope="external">#2718</xref>
           </li>
-          <li id="2721">Upgrade to Saxon-HE 9.8
+          <li id="2721">Upgrade Saxon-HE to version 9.8
             <xref href="https://github.com/dita-ot/dita-ot/issues/2721" format="html" scope="external">#2721</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2727" format="html" scope="external">#2727</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2822" format="html" scope="external">#2822</xref>
           </li>
-          <li id="2736">Upgrade to FOP 2.2
+          <li id="2736">Upgrade <tm tmtype="tm">Apache</tm> FOP to version 2.2
             <xref href="https://github.com/dita-ot/dita-ot/issues/2736" format="html" scope="external">#2736</xref>
           </li>
           <li id="2739">When merging submaps for processing, preserve titles and metadata from the referenced submap so
@@ -335,13 +335,13 @@
           <li id="2748">Add flagging information from DITAVAL during the same step that handles DITAVAL filtering.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2748" format="html" scope="external">#2748</xref>
           </li>
-          <li id="2755">Allow for plugin param type 'url'
+          <li id="2755">Allow plug-ins to specify custom parameters of type <codeph>url</codeph>
             <xref href="https://github.com/dita-ot/dita-ot/issues/2755" format="html" scope="external">#2755</xref>
           </li>
           <li id="2765">Move or rename Java classes
             <xref href="https://github.com/dita-ot/dita-ot/issues/2765" format="html" scope="external">#2765</xref>
           </li>
-          <li id="2770">Make it easier for PDF plugins or overrides to customize how processing handles the DITA
+          <li id="2770">Make it easier for PDF plug-ins or overrides to customize how processing handles the DITA
               <xmlatt>outputclass</xmlatt> attribute, such as by mapping it to corresponding XSL:FO attributes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2770" format="html" scope="external">#2770</xref>
           </li>

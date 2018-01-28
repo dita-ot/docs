@@ -6,9 +6,9 @@
 
   <title>Migrating to release 3.0</title>
 
-  <shortdesc>DITA-OT 3.0 includes a new map-first preprocessing routine, new transformation types that can be used to
-    generate Markdown output from DITA source, and a DITA to DITA plug-in that generates normalized DITA output with all
-    references resolved.</shortdesc>
+  <shortdesc>DITA-OT 3.0 <ph id="summary">adds support for Markdown, normalized DITA output, and the alternative
+      authoring formats proposed for Lightweight DITA. The map-first preprocessing approach provides a modern
+      alternative to the default <codeph>preprocess</codeph> operation.</ph></shortdesc>
 
   <refbody>
     <section>
@@ -53,6 +53,16 @@
       <note type="tip">See
         <xref keyref="map-first-preproc"/> for information on how to use (or test) map-first preprocessing, or revert to
         the default <codeph>preprocess</codeph> target.</note>
+    </section>
+
+    <section>
+      <title>New <codeph>ant.import</codeph> extension point</title>
+      <p>A new extension point has been added to make it easier to add new targets to the Ant processing pipeline.</p>
+      <p>Earlier versions of DITA-OT use the <codeph>dita.conductor.target.relative</codeph> to call a wrapper file with
+        a dummy task that imports the Ant project file. This approach is still supported for backwards compatibility,
+        but the simpler <codeph>ant.import</codeph> approach should be used for all new customizations. </p>
+      <note type="tip">See
+        <xref keyref="plugin-anttarget"/> for details.</note>
     </section>
   </refbody>
 </reference>

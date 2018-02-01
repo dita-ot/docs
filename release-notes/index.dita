@@ -52,14 +52,10 @@
             DITA Technical Committee (Errata 02, 16 January 2018). These changes allow XML Schema-based validators like
             Saxon EE to resolve schema references based on URI mappings, and replace declarations of the
               <xmlatt>domains</xmlatt> attribute in modules with <codeph>domains-att</codeph> references to facilitate
-            domain attribute substitution. The DITA 1.2 schemas have also been corrected to use version-specific
-            identifiers in the <xmlatt>schemaLocation</xmlatt> references to ensure that "latest module" inclusions
-            resolve to DITA 1.3.
+            domain attribute substitution.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2725" format="html" scope="external">#2725</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2818" format="html" scope="external">#2818</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2860" format="html" scope="external">#2860</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2874" format="html" scope="external">#2874</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2878" format="html" scope="external">#2878</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2860" format="html" scope="external">#2860</xref>
           </li>
           <li id="2828">In DITA-OT 3.0, image references in bookmap bookmeta data caused builds to fail. Processing has
             been corrected to ignore images when reading topics from the map, allowing builds to complete successfully.
@@ -77,6 +73,11 @@
             Z535.4 Annex D.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2864" format="html" scope="external">#2864</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2871" format="html" scope="external">#2871</xref>
+          </li>
+          <li id="2874">The DITA 1.2 schemas have been corrected to use version-specific identifiers in the
+              <xmlatt>schemaLocation</xmlatt> references to ensure that "latest module" inclusions resolve to DITA 1.3.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2874" format="html" scope="external">#2874</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2878" format="html" scope="external">#2878</xref>
           </li>
         </ul>
         <p>For the complete list of changes since the previous release, see the

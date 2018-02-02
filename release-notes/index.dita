@@ -61,6 +61,11 @@
             been corrected to ignore images when reading topics from the map, allowing builds to complete successfully.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2828" format="html" scope="external">#2828</xref>
           </li>
+          <li id="2829">Earlier versions of DITA-OT failed to process resources where the filename includes the percent
+              <codeph>%</codeph> character. The URI parser has been corrected to escape these characters correctly and
+            rewrite references in valid URI syntax.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2829" format="html" scope="external">#2829</xref>
+          </li>
           <li id="2862">In DITA-OT 3.0, cross-references to external resources caused problems if the
               <xmlatt>scope</xmlatt> attribute was not explicitly set to <codeph>external</codeph>. The preprocess
             validation filter has been revised to implicitly treat such references as external in lax processing mode

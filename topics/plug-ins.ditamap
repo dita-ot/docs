@@ -7,7 +7,6 @@
   <topicref keyref="custom-plugins">
     <topicref keyref="plugins-installing"/>
     <topicref keyref="plugins-removing"/>
-    <topicref keyref="rebuilding-the-dita-ot-documentation" keys="rebuild-docs"/>
     <topicref keyref="plugin-configfile"/>
     <topicref keyref="plugin-dependencies"/>
     <topicref keyref="plugin-applications">
@@ -23,6 +22,11 @@
       <topicref keyref="plugin-newextensions"/>
     </topicref>
     <topicref keyref="plugin-sample"/>
+    <topicref keyref="plugin-best-practices" locktitle="yes">
+      <topicmeta>
+        <navtitle>Best practices for plug-ins</navtitle>
+      </topicmeta>
+    </topicref>
   </topicref>
 
   <reltable title="Source and target links">

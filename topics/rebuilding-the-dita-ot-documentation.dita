@@ -8,6 +8,12 @@
     helpful if your environment contains plug-ins that add new extension points, messages, or parameters to the
     toolkit.</shortdesc>
   <taskbody>
+    <context>
+      <p>The documentation build script reads the toolkit’s plug-in configuration and automatically regenerates topics
+        and properties file templates based on the extension points, messages, and parameters provided by the installed
+        plug-ins.</p>
+      <note type="attention">If you have installed new plug-ins, you may need to add the corresponding generated topics
+        to the DITA maps to include the new information in the output.</note></context>
     <steps>
       <step>
         <cmd>Change to the <filepath>docsrc</filepath> directory.</cmd>

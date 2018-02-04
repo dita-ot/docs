@@ -14,7 +14,7 @@
       <p>MDITA is the LwDITA authoring format based on Markdown.</p>
       <p>Recent proposals for LwDITA include two profiles for authoring MDITA topics:</p>
       <ul>
-        <li>The “<term>Core profile</term>” is based on GitHub Flavored Markdown and includes elements that are common
+        <li>The “<term>Core profile</term>” is based on <xref keyref="gfm-spec"/> and includes elements that are common
           to many other Markdown implementations.</li>
         <li>The “<term>Extended profile</term>” borrows additional features from other flavors of Markdown to represent
           a broader range of DITA content with existing plain-text syntax conventions.</li>

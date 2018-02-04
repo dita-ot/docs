@@ -131,6 +131,15 @@
         <linktext>DITA-OT 2.5 Release Notes</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="3.0-release-notes"
+      href="http://www.dita-ot.org/3.0/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 3.0 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
   <topicset
@@ -556,6 +565,15 @@
       format="html">
       <topicmeta>
         <linktext>CommonMark</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="gfm-spec"
+      href="https://github.github.com/gfm/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>GitHub-Flavored Markdown</linktext>
       </topicmeta>
     </keydef>
   </topicset>

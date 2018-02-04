@@ -19,16 +19,15 @@
           <p>To publish Markdown DITA files, use the <option>markdown</option> transtype.</p></li>
         <li>
           <p>To generate
-            <xref format="html" href="https://help.github.com/categories/writing-on-github/" scope="external">GitHub
-              Flavored Markdown</xref> files, use the <option>markdown_github</option> transtype.</p></li>
+            <xref keyref="gfm-spec"/> files, use the <option>markdown_github</option> transtype.</p></li>
         <li>
-          <p>To publish GitHub Flavored Markdown and generate a <filepath>SUMMARY.md</filepath> table of contents file for
-            publication via
+          <p>To publish GitHub-Flavored Markdown and generate a <filepath>SUMMARY.md</filepath> table of contents file
+            for publication via
             <xref format="html" href="https://www.gitbook.com" scope="external">GitBook</xref>, use the
               <option>markdown_gitbook</option> transtype.</p></li>
       </ul>
-      <p>Run the <cmdname>dita</cmdname> command and set the value of the output <parmname>--format</parmname> option
-        to the desired format:</p><codeblock xml:space="preserve"><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>markdown</option></codeblock>
+      <p>Run the <cmdname>dita</cmdname> command and set the value of the output <parmname>--format</parmname> option to
+        the desired format:</p><codeblock xml:space="preserve"><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>markdown</option></codeblock>
       <p>where:</p>
       <ul>
         <li conref="../resources/conref-task.dita#ID/novice-variables-1"

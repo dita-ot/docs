@@ -109,7 +109,7 @@
     <title>Maintenance Release 3.0.1</title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <p>DITA Open Toolkit Release 3.0.1 includes the following bug fixes.</p>
         <ul>
           <li id="1151">Microsoft Compiled HTML Help requires a Windows codepage rather than UTF-8, so many characters
             are converted to HTML entities to ensure they are preserved during the codepage conversion. In earlier

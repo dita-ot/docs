@@ -66,6 +66,11 @@
             rewrite references in valid URI syntax.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2829" format="html" scope="external">#2829</xref>
           </li>
+          <li id="2837">The Lightweight DITA plug-in has been updated to the latest version (2.0.2) to prevent errors
+            when processing Markdown input that contains typographic quotation marks.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2837" format="html" scope="external">#2837</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2866" format="html" scope="external">#2866</xref>
+          </li>
           <li id="2862">In DITA-OT 3.0, cross-references to external resources caused problems if the
               <xmlatt>scope</xmlatt> attribute was not explicitly set to <codeph>external</codeph>. The preprocess
             validation filter has been revised to implicitly treat such references as external in lax processing mode

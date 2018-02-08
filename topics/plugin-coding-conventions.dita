@@ -4,6 +4,9 @@
 
 <concept id="ID">
   <title>Plug-in coding conventions</title>
+  <titlealts>
+    <navtitle>Coding conventions</navtitle>
+  </titlealts>
   <shortdesc>To ensure custom plug-ins work well with the core toolkit code and remain compatible with future releases,
     the DITA Open Toolkit project recommends that plug-ins use modern development practices and common coding
     patterns.</shortdesc>

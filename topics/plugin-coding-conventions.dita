@@ -71,6 +71,9 @@
       <p><codeblock>&lt;xsl:import href="../../org.dita.base/xsl/common/output-message.xsl"/></codeblock></p>
       <p>use:</p>
       <p><codeblock>&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock></p>
+      <p>As with the plug-in directory property in Ant, this allows plugins to resolve to the correct directory
+        even when a plugin moves to a new location. The plugin is referenced using the syntax
+        <codeph>plugin:<varname>plugin-id</varname>:<varname>path/within/plugin/file.xsl</varname></codeph>.</p>
     </section>
   </conbody>
 </concept>

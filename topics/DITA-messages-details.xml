@@ -331,6 +331,13 @@
           your topics use one of these extensions, or configure the toolkit to allow additional extensions.</stentry>
       </strow>
       <strow>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ054E-extra" conaction="pushreplace">This message indicates that the
+          <xmlatt>href</xmlatt> value specified in <varname>%1</varname> does not use proper URI syntax. This may occur when
+          <xmlatt>href</xmlatt> includes characters that should be escaped (such as the space character, which should be
+          <codeph>%20</codeph> when in a URI). In strict processing mode this will cause a build failure;
+          in other processing modes the build will continue using the value in <varname>%2</varname>.</stentry>
+      </strow>
+      <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ068E-extra" conaction="pushreplace">A conref "mark" action has been
           used to mark a target element without a corresponding content reference target. This may occur when the order
           of the "mark" element and the pushed element is reversed.</stentry>

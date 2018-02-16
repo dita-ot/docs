@@ -61,6 +61,35 @@
   &lt;ditafileset format="image" />
 &lt;/copy></codeblock>
       </p>
+      <p>The <xmlelement>ditafileset</xmlelement> resource collection can be used to select different types of
+        files.</p>
+      <table id="table_dgb_v5p_wcb">
+        <title>Usage examples of <xmlelement>ditafileset</xmlelement></title>
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1" colwidth="1*"/>
+          <colspec colname="c2" colnum="2" colwidth="1*"/>
+          <thead>
+            <row>
+              <entry>Example</entry>
+              <entry>Description</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><codeph>&lt;ditafileset format="dita"/></codeph></entry>
+              <entry>Selects all DITA topics in current temporary directory.</entry>
+            </row>
+            <row>
+              <entry><codeph>&lt;ditafileset format="ditamap"/></codeph></entry>
+              <entry>Selects all DITA maps in current temporary directory.</entry>
+            </row>
+            <row>
+              <entry><codeph>&lt;ditafileset format="image"/></codeph></entry>
+              <entry>Selects images of all known types in current temporary directory.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
     </section>
 
     <section>

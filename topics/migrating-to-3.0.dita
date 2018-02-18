@@ -17,6 +17,8 @@
         <xref keyref="3.0-release-notes"/>.</note>
     </section>
 
+    <section conkeyref="reusable-components/use-xslt2"/>
+
     <section id="30-legacy-plugin-removal">
       <title>Legacy plug-ins removed</title>
       <p>DITA-OT 3.0 no longer includes the following legacy transformation plug-ins in the default distribution:</p>

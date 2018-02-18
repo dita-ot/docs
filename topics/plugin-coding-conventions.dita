@@ -11,6 +11,7 @@
     the DITA Open Toolkit project recommends that plug-ins use modern development practices and common coding
     patterns.</shortdesc>
   <conbody>
+    <section conkeyref="reusable-components/use-xslt2"/>
     <section>
       <title>Use custom <xmlelement>pipeline</xmlelement> elements</title>
       <p>In Ant scripts, use the XSLT module from DITA-OT instead of Ant’s built-in <xmlelement>xslt</xmlelement> or

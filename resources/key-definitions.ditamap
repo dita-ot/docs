@@ -2,11 +2,12 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<map id="keydefs" title="Key definitions (variables)">
+<map id="keydefs">
+  <title>Key definitions (variables)</title>
 
   <!-- Submap with key definitions for external web resources -->
   <mapref href="external-links.ditamap"/>
-  
+
   <!-- Submap with key definitions for each topic -->
   <mapref href="source-files.ditamap"/>
 

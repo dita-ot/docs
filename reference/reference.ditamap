@@ -49,9 +49,7 @@
     <topicref keyref="DITA-features-in-docs"/>
   </topicref>
   <topicref keyref="java-api"/>
-  <topicref keyref="license">
-    <topicref keyref="third-party-software"/>
-  </topicref>
+  <mapref href="license.ditamap"/>
 
   <reltable>
     <relrow>

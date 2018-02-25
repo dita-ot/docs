@@ -32,8 +32,9 @@
       <title>Branch filtering: re-using profiled content</title>
     </section>
     <section>
-      <p><cite>Installing DITA-OT</cite> pulls a subset of the build description from <cite>Building output</cite>,
-        filtered to display only content deemed suitable for novice users under
+      <p><cite>Installing DITA-OT</cite> pulls a subset of the build description from <cite>using the
+            <cmdname>dita</cmdname> command</cite>, filtered to display only content deemed suitable for novice users
+        under
         <xref keyref="first-build-using-dita-command"/>:</p>
       <p><codeblock><coderef href="../topics/installing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
       <p>The same content appears later in
@@ -46,8 +47,8 @@
     <section>
       <p>The docs build uses the conref push mechanism (with the <codeph>pushreplace</codeph>, <codeph>mark</codeph>,
         and <codeph>pushafter</codeph>
-        <xref keyref="dita13-spec-conaction">conactions</xref>) to extend the parameter
-        descriptions embedded in the default plug-ins:</p>
+        <xref keyref="dita13-spec-conaction">conactions</xref>) to extend the parameter descriptions embedded in the
+        default plug-ins:</p>
       <p><codeblock><coderef href="../parameters/ant-parameters-details.dita#token=excerpt-csspath,end-excerpt"/></codeblock></p>
       <p>The pushed content appears in the output after the default description. (See
         <xref keyref="parameters-base-html"/>.)</p>

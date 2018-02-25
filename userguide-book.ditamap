@@ -17,37 +17,34 @@
       <toc/>
     </booklists>
   </frontmatter>
-  <part keyref="installing-client">
+  <part keyref="installing-client" locktitle="yes">
     <chapter format="ditamap" href="topics/installing.ditamap"/>
   </part>
-  <part keyref="alternative-input-formats">
+  <part keyref="alternative-input-formats" locktitle="yes">
     <chapter href="topics/input-formats.ditamap" format="ditamap"/>
   </part>
   <part keyref="building-output">
     <chapter href="topics/publishing.ditamap" format="ditamap"/>
   </part>
-  <part keyref="parameters">
+  <part keyref="parameters" locktitle="yes">
     <chapter href="parameters/parameters.ditamap" format="ditamap"/>
   </part>
-  <part keyref="extending-the-ot">
+  <part keyref="extending-the-ot" locktitle="yes">
     <chapter href="topics/customization.ditamap" format="ditamap"/>
   </part>
-  <part keyref="troubleshooting-overview">
+  <part keyref="troubleshooting-overview" locktitle="yes">
     <chapter href="topics/troubleshooting.ditamap" format="ditamap"/>
   </part>
   <part keyref="reference">
     <chapter href="reference/reference.ditamap" format="ditamap"/>
   </part>
   <appendices>
-    <topicmeta>
-      <navtitle>Resources</navtitle>
-    </topicmeta>
-    <appendix keyref="dita-and-dita-ot-resources">
+    <appendix keyref="dita-and-dita-ot-resources" locktitle="yes">
       <topicref keyref="web-based-resources" print="yes"/>
     </appendix>
+    <appendix keyref="release-notes" locktitle="yes"/>
   </appendices>
   <backmatter>
-    <topicref keyref="release-notes"/>
     <mapref href="resources/common-resources.ditamap" processing-role="resource-only"/>
   </backmatter>
 </bookmap>

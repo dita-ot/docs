@@ -5,6 +5,9 @@
 <reference id="migrating-to-2.3">
 
   <title>Migrating to release 2.3</title>
+  <titlealts>
+    <navtitle>To 2.3</navtitle>
+  </titlealts>
 
   <shortdesc>In DITA-OT 2.3, <option>HTML5</option> table processing has been refactored to use HTML5 best practices and
     improved CSS properties. In PDF output, table heads and key columns no longer include shading, and unused

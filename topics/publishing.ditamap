@@ -15,11 +15,7 @@
       </ditavalmeta>
     </ditavalref>
     <!-- ↑ end-filtering ↑ -->
-    <topicref keyref="using-dita-properties-file">
-      <topicmeta>
-        <navtitle>Using a properties file</navtitle>
-      </topicmeta>
-    </topicref>
+    <topicref keyref="using-dita-properties-file"/>
     <topicref keyref="migrating-ant-to-dita"/>
   </topicref>
   <topicref keyref="publishing-with-ant">

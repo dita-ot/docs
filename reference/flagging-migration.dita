@@ -4,6 +4,9 @@
 
 <reference id="flagging-migration" rev="1.7" xml:lang="en-US">
   <title>XHTML migration for flagging updates in DITA-OT 1.7</title>
+  <titlealts>
+    <navtitle>Flagging updates</navtitle>
+  </titlealts>
   <shortdesc>This topic is primarily of interest to developers with XHTML transform overrides written prior to DITA-OT
     1.7. Due to significant changes in the flagging process with the 1.7 release, some changes may be needed to make
     overrides work properly with DITAVAL based flagging. The new design is significantly simpler than the old design; in

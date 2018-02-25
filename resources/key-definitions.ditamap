@@ -141,10 +141,17 @@
     </topicmeta>
   </keydef>
   <!-- Saxon: Bundled version -->
+  <keydef keys="tool.saxon.edition">
+    <topicmeta>
+      <keywords>
+        <keyword>Saxon-HE</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
   <keydef keys="tool.saxon.version">
     <topicmeta>
       <keywords>
-        <keyword>9.1.0.8</keyword>
+        <keyword>9.8.0.7</keyword>
       </keywords>
     </topicmeta>
   </keydef>

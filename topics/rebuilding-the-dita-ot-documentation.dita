@@ -4,6 +4,9 @@
 
 <task id="rebuilding-the-dita-ot-documentation">
   <title>Rebuilding the DITA-OT documentation</title>
+  <titlealts>
+    <navtitle>Rebuilding documentation</navtitle>
+  </titlealts>
   <shortdesc>The DITA-OT ships with Ant scripts that enable you to rebuild the toolkit documentation. This is especially
     helpful if your environment contains plug-ins that add new extension points, messages, or parameters to the
     toolkit.</shortdesc>

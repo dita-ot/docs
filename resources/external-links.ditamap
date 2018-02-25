@@ -7,8 +7,10 @@
   <!-- Key definitions for external web resources -->
 
   <topicset
-    id="dita-ot-github"
-    navtitle="DITA-OT GitHub Project">
+    id="dita-ot-github">
+    <topicmeta>
+      <navtitle>DITA-OT GitHub Project</navtitle>
+    </topicmeta>
     <keydef
       keys="github-help"
       href="https://help.github.com/articles/set-up-git"
@@ -75,8 +77,10 @@
   </topicset>
 
   <topicset
-    id="dita-ot-rn"
-    navtitle="DITA-OT Release Notes">
+    id="dita-ot-rn">
+    <topicmeta>
+      <navtitle>DITA-OT Release Notes</navtitle>
+    </topicmeta>
     <keydef
       keys="2.0-release-notes"
       href="http://www.dita-ot.org/2.0/readme/changes/rel2.0.html"
@@ -143,8 +147,10 @@
   </topicset>
 
   <topicset
-    id="downloads"
-    navtitle="Download links">
+    id="downloads">
+    <topicmeta>
+      <navtitle>Download links</navtitle>
+    </topicmeta>
     <keydef
       keys="download.ant"
       href="http://ant.apache.org"
@@ -195,8 +201,10 @@
   </topicset>
 
   <topicset
-    id="fop"
-    navtitle="FOP links">
+    id="fop">
+    <topicmeta>
+      <navtitle>FOP links</navtitle>
+    </topicmeta>
     <keydef
       keys="fop-20-rn"
       href="https://xmlgraphics.apache.org/fop/2.0/releaseNotes_2.0.html"
@@ -227,8 +235,10 @@
   </topicset>
 
   <topicset
-    id="specs"
-    navtitle="Specs and RFC links">
+    id="specs">
+    <topicmeta>
+      <navtitle>Specs and RFC links</navtitle>
+    </topicmeta>
     <topicset
       id="dita13spec">
       <keydef
@@ -370,7 +380,8 @@
         </topicmeta>
       </keydef>
     </topicset>
-    <topicset id="lightweight-dita">
+    <topicset
+      id="lightweight-dita">
       <keydef
         keys="lwdita"
         href="http://docs.oasis-open.org/dita/LwDITA/v1.0/cnprd01/LwDITA-v1.0-cnprd01.pdf"
@@ -425,8 +436,10 @@
   </topicset>
 
   <topicset
-    id="licenses"
-    navtitle="Third-party licenses">
+    id="licenses">
+    <topicmeta>
+      <navtitle>Third-party licenses</navtitle>
+    </topicmeta>
     <keydef
       keys="license-apache-2"
       href="https://www.apache.org/licenses/LICENSE-2.0"
@@ -493,8 +506,10 @@
   </topicset>
 
   <topicset
-    id="websites"
-    navtitle="Other Websites">
+    id="websites">
+    <topicmeta>
+      <navtitle>Other Websites</navtitle>
+    </topicmeta>
     <keydef
       keys="ant-manual"
       href="http://ant.apache.org/manual"

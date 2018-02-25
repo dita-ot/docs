@@ -20,16 +20,9 @@
         <navtitle>Using a properties file</navtitle>
       </topicmeta>
     </topicref>
-    <topicref keyref="migrating-ant-to-dita" locktitle="yes">
-      <topicmeta>
-        <navtitle>Migrating Ant builds</navtitle>
-      </topicmeta>
-    </topicref>
+    <topicref keyref="migrating-ant-to-dita"/>
   </topicref>
-  <topicref keyref="publishing-with-ant" locktitle="yes">
-    <topicmeta>
-      <navtitle>Using Ant</navtitle>
-    </topicmeta>
+  <topicref keyref="publishing-with-ant">
     <topicref keyref="ant"/>
     <topicref keyref="building-with-ant"/>
     <topicref keyref="creating-an-ant-build-script"/>

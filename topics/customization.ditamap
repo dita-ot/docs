@@ -11,9 +11,5 @@
   <mapref href="plug-ins.ditamap"/>
   <mapref href="../extension-points/extension-points.ditamap"/>
   <mapref href="migration.ditamap"/>
-  <topicref keyref="rebuilding-the-dita-ot-documentation" keys="rebuild-docs" locktitle="yes">
-    <topicmeta>
-      <navtitle>Rebuilding documentation</navtitle>
-    </topicmeta>
-  </topicref>
+  <topicref keyref="rebuilding-the-dita-ot-documentation" keys="rebuild-docs"/>
 </map>

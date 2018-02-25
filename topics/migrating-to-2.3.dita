@@ -13,29 +13,28 @@
     improved CSS properties. In PDF output, table heads and key columns no longer include shading, and unused
     localization variables have been deprecated. The template for generated error messages has been updated to use a
     single <codeph>id</codeph> variable that contains the entire message ID.</shortdesc>
+
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 2.3 that may require modifications to custom stylesheets
-        or plug-ins. For more information on changes in this release, see the
-        <xref keyref="2.3-release-notes"/>.</note>
+        or plug-ins. For more information on changes in this release, see the <xref keyref="2.3-release-notes"/>.</note>
     </section>
     <section>
       <title>HTML5</title>
       <p>The <option>HTML5</option> table processing has been refactored to use valid HTML5 markup, HTML5 best
-        practices, and better CSS properties for styling.
-        <xref href="https://en.bem.info/methodology/" format="html" scope="external">BEM</xref>-style CSS classes are
-        now generated with the name of the containing element, the name of the attribute, and the value of the
-        attribute. </p>
-      <p>Common CSS files are now generated using separate modules for each DITA domain, implemented as
-        <xref keyref="sass-lang"/> partials to better support extensions with CSS frameworks, custom plug-ins and future
+        practices, and better CSS properties for styling. <xref href="https://en.bem.info/methodology/" format="html"
+          scope="external">BEM</xref>-style CSS classes are now generated with the name of the containing element, the
+        name of the attribute, and the value of the attribute. </p>
+      <p>Common CSS files are now generated using separate modules for each DITA domain, implemented as <xref
+          keyref="sass-lang"/> partials to better support extensions with CSS frameworks, custom plug-ins and future
         toolkit versions.</p>
     </section>
     <section>
       <title>HTML-based formats</title>
-      <p>The XSLT <codeph>tm-area</codeph> named template, which used to toggle rendering of trademark symbols in US English
-        and Asian languages (Japanese, Korean, and both Chinese) but ignore them in all other languages, has been
-        deprecated. Trademark symbols are now rendered uniformly for all languages and the template will be removed in
-        an upcoming release.</p>
+      <p>The XSLT <codeph>tm-area</codeph> named template, which used to toggle rendering of trademark symbols in US
+        English and Asian languages (Japanese, Korean, and both Chinese) but ignore them in all other languages, has
+        been deprecated. Trademark symbols are now rendered uniformly for all languages and the template will be removed
+        in an upcoming release.</p>
       <p id="2191">In previous releases, short descriptions in <xmlelement>abstract</xmlelement> elements were rendered
         as division elements (<xmlelement>div</xmlelement>), rather than paragraphs (<xmlelement>p</xmlelement>).
         Processing has been revised to ensure that short descriptions are consistently rendered as paragraphs,

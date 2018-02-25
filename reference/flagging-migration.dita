@@ -18,7 +18,8 @@
       <p>If your builds do not make use of DITAVAL based flagging, but calls the deprecated flagging templates, then you
         should override but there is little urgency. You will not see any difference in the output, but those templates
         will be removed in a future release.</p>
-      <p>If you do make use of DITAVAL based flagging, try using your override with 1.7. Check the elements you override:<ol>
+      <p>If you do make use of DITAVAL based flagging, try using your override with 1.7. Check the elements you override:
+        <ol>
           <li>In some cases flags may be doubled. This will be the case if you call routines such as
               <codeph>"start-flagit"</codeph>.</li>
           <li>In some cases flags may be removed. This will be the case if you call shortcut routines such as
@@ -30,13 +31,15 @@
       <title>Deprecated templates in DITA-OT 1.7</title>
       <p>All of the old DITAVAL based templates are deprecated in DITA-OT 1.7. If your overrides include any of the
         following templates, they should be migrated for the new release; in many cases the templates below will not
-        have any effect on your output, but all instances should be migrated.</p><ul>
+        have any effect on your output, but all instances should be migrated.</p>
+      <ul>
         <li>The <codeph>"gen-style"</codeph> template used to add CSS styling</li>
         <li>The <codeph>"start-flagit"</codeph> and <codeph>"end-flagit"</codeph> templates used to generate image flags
           based on property attributes like @audience</li>
         <li>The <codeph>"start-revflag"</codeph> and <codeph>"end-revflag"</codeph> templates, used to generate images
           for active revisions</li>
-        <li>Shortcut templates that group these templates into a single call, such as:<ul>
+        <li>Shortcut templates that group these templates into a single call, such as:
+          <ul>
             <li><codeph>"start-flags-and-rev"</codeph> and <codeph>"end-flags-and-rev"</codeph>, used to combine flags
               and revisions into one call</li>
             <li><codeph>"revblock"</codeph> and <codeph>"revtext"</codeph>, both used to output start revisions, element

@@ -14,11 +14,44 @@
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
 
-  <reference id="v302">
+  <reference id="v303">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="2892">Make import explicit to work around Saxon caching on Windows
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2892" format="html" scope="external">#2892</xref>
+          </li>
+          <li id="2894">Fatal message should terminate XSL
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2894" format="html" scope="external">#2894</xref>
+          </li>
+          <li id="2897">Fix processing for <xmlelement>navtitle</xmlelement> in maps
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2897" format="html" scope="external">#2897</xref>
+          </li>
+          <li id="2900">Fix XSLT error with non-specific glossary key
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2900" format="html" scope="external">#2900</xref>
+          </li>
+          <li id="2904">Respect navtitle element inside topics for PDF TOC and bookmarks
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2904" format="html" scope="external">#2904</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2906" format="html" scope="external">#2906</xref>
+          </li>
+          <li id="2896">Use more meaningful message for invalid DITAVAL
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2896" format="html" scope="external">#2896</xref>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.0.2...3.0.3" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v302">
+    <title>Maintenance Release 3.0.2</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 3.0.2 includes the following bug fixes.</p>
         <ul>
           <li id="1550">If a map or branch of a map was chunked to create a single document, but that portion of the map
             also contained a <xmlelement>topicref</xmlelement> reference to a non-DITA resource, earlier versions of

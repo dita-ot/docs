@@ -20,11 +20,10 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2892">In some scenarios on Windows platforms, the version of Saxon shipped in DITA-OT 3.0 caches one
-            copy of the toolkit module <filepath>functions.xsl</filepath> and then uses that copy in place of a second
-            (different) module named <filepath>functions.xsl</filepath>. This causes when using the
-              <cmdname>ant</cmdname> command to run HTML5 builds. Adding an explicit path to one of the imports works
-            around the problem.
+          <li id="2892">In some scenarios on Windows, the version of Saxon shipped in DITA-OT 3.0 caches one copy of the
+            toolkit module <filepath>functions.xsl</filepath> and then uses that copy in place of a second (different)
+            module with the same name. This causes problems when using the <cmdname>ant</cmdname> command to run HTML5
+            builds. Adding an explicit path to one of the imports works around the problem.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2892" format="html" scope="external">#2892</xref>
           </li>
           <li id="2894">If an XSLT message is declared to be fatal, throwing that message should halt the build. This
@@ -34,9 +33,9 @@
           </li>
           <li id="2897">When the <xmlelement>navtitle</xmlelement> element is used in a map, it should be ignored by
             default (for the purposes of TOC titles, PDF bookmarks or generated links), except in cases where the
-            attribute <codeph>locktitle="yes"</codeph> is specified on the containing topic reference. This has always
-            worked when using the <xmlatt>navtitle</xmlatt> attribute on topic references, but previously the
-              <xmlelement>navtitle</xmlelement> attribute in maps was always used.
+              <xmlatt>locktitle</xmlatt> attribute on the containing topic reference is set to <codeph>yes</codeph>.
+            This has always worked when using the <xmlatt>navtitle</xmlatt> attribute on topic references, but
+            previously the <xmlelement>navtitle</xmlelement> element in maps was used even if it was not locked.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2897" format="html" scope="external">#2897</xref>
           </li>
           <li id="2900">When a DITA document contains more than one <xmlelement>glossentry</xmlelement> element, and
@@ -45,17 +44,16 @@
             terms linking to glossary entries will go to the correct file, and no error will be generated.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2900" format="html" scope="external">#2900</xref>
           </li>
-          <li id="2904">In PDF builds, the <xmlelement>navtitle</xmlelement> element inside of a topic is ignored in
-            most cases when creating bookmarks and the table of contents. The <xmlelement>navtitle</xmlelement> element
-            should be used for each of those cases except when a map overrides the navigation title using
-              <codeph>locktitle="no"</codeph>.
+          <li id="2904">In PDF builds, the <xmlelement>navtitle</xmlelement> element inside of a topic was ignored when
+            creating bookmarks and the table of contents. The <xmlelement>navtitle</xmlelement> element in topics is now
+            used for each of those cases except when a map overrides the navigation title.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2904" format="html" scope="external">#2904</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2906" format="html" scope="external">#2906</xref>
           </li>
           <li id="2896">When a DITAVAL document contains a typo in the <xmlatt>action</xmlatt> attribute (which should
-            be set to one of "include", "exclude", "flag", or "passthrough), the build ends with a message that is
-            difficult to diagnose. The message has been updated to be more explicit and to use our normal message
-            format.
+            be set to one of <codeph>include</codeph>, <codeph>exclude</codeph>, <codeph>flag</codeph>, or
+              <codeph>passthrough</codeph>), the build ends with a message that is difficult to diagnose. The message
+            has been updated to be more explicit and to use the toolkit’s standard message format.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2896" format="html" scope="external">#2896</xref>
           </li>
         </ul>

@@ -50,12 +50,22 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2904" format="html" scope="external">#2904</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2906" format="html" scope="external">#2906</xref>
           </li>
-          <li id="2896">When a DITAVAL document contains a typo in the <xmlatt>action</xmlatt> attribute (which should
-            be set to one of <codeph>include</codeph>, <codeph>exclude</codeph>, <codeph>flag</codeph>, or
-              <codeph>passthrough</codeph>), the build ends with a message that is difficult to diagnose. The message
-            has been updated to be more explicit and to use the toolkit’s standard message format.
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2896" format="html" scope="external">#2896</xref>
-          </li>
+          <li id="2896">When a DITAVAL document contains a typo in the <xmlatt>action</xmlatt>
+attribute (which should be set to one of <codeph>include</codeph>, <codeph>exclude</codeph>,
+<codeph>flag</codeph>, or <codeph>passthrough</codeph>), the build ends with a message that is
+difficult to diagnose. The message has been updated to be more explicit and to use the toolkit’s
+standard message format. <xref href="https://github.com/dita-ot/dita-ot/pull/2896" format="html"
+scope="external">#2896</xref></li>
+<li id="2908"> When the <xmlelement>choicetable</xmlelement> element does not specify a table
+header, it should generate default values for the "Option" and "Description" fields. In PDF, the
+"Description" column was not generating the correct header. This has been fixed so that each column
+gets the proper header. <xref href="https://github.com/dita-ot/dita-ot/issues/2908" format="html"
+scope="external">#2908</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/2909"
+format="html" scope="external">#2909</xref></li>
+<li id="2912">In HTML5, the default output process generates a Dublin Core metadata tag that
+specifies the content format as XHTML. This is leftover from earlier releases when the two formats
+shared the same code. The format value is now correctly set to HTML5. <xref
+href="https://github.com/dita-ot/dita-ot/pull/2912" format="html" scope="external">#2912</xref></li>
         </ul>
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.0.2...3.0.3" format="html" scope="external">

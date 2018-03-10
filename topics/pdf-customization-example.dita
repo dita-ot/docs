@@ -4,6 +4,9 @@
 
 <task id="dita2pdf-customization" xml:lang="en">
   <title>Example: Creating a simple PDF plug-in</title>
+  <titlealts>
+    <navtitle>Simple PDF plug-in example</navtitle>
+  </titlealts>
   <shortdesc>This scenario walks through the process of creating a very simple plug-in
       (<codeph>com.example.print-pdf</codeph>) that creates a new transformation type: <option>print-pdf</option>. </shortdesc>
   <taskbody>
@@ -138,7 +141,8 @@
   plugin.xml</codeblock>
     </result>
     <postreq>
-      <p>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--install</parmname> to install the plug-in and make the <option>print-pdf</option> transformation
+      <p>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/>
+        <parmname>--install</parmname> to install the plug-in and make the <option>print-pdf</option> transformation
         available.</p>
     </postreq>
   </taskbody>

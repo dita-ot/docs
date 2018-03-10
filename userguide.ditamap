@@ -19,7 +19,11 @@
         <topicref keyref="java-api"/>
       </relcell>
       <relcell>
-        <topicref href="api/index.html" format="html" navtitle="DITA-OT Java API documentation" scope="peer"/>
+        <topicref href="api/index.html" format="html" scope="peer">
+          <topicmeta>
+            <navtitle>DITA-OT Java API documentation</navtitle>
+          </topicmeta>
+        </topicref>
       </relcell>
     </relrow>
     <relrow>

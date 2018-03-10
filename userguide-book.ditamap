@@ -20,32 +20,31 @@
   <part keyref="installing-client">
     <chapter format="ditamap" href="topics/installing.ditamap"/>
   </part>
-  <part navtitle="Authoring formats" keyref="alternative-input-formats">
+  <part keyref="alternative-input-formats">
     <chapter href="topics/input-formats.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Building output" keyref="building-output">
+  <part keyref="building-output">
     <chapter href="topics/publishing.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Setting parameters" keyref="parameters">
+  <part keyref="parameters">
     <chapter href="parameters/parameters.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Customizing DITA-OT" keyref="extending-the-ot">
+  <part keyref="extending-the-ot">
     <chapter href="topics/customization.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Troubleshooting" keyref="troubleshooting-overview">
+  <part keyref="troubleshooting-overview">
     <chapter href="topics/troubleshooting.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Reference" keyref="reference">
+  <part keyref="reference">
     <chapter href="reference/reference.ditamap" format="ditamap"/>
   </part>
-  <appendices navtitle="Resources and Licensing">
+  <appendices>
     <appendix keyref="dita-and-dita-ot-resources">
       <topicref keyref="web-based-resources" print="yes"/>
     </appendix>
-    <appendix href="reference/license.ditamap" format="ditamap"/>
+    <appendix keyref="release-notes"/>
   </appendices>
   <backmatter>
-    <topicref keyref="release-notes" navtitle="Release Notes" locktitle="yes"/>
     <mapref href="resources/common-resources.ditamap" processing-role="resource-only"/>
   </backmatter>
 </bookmap>

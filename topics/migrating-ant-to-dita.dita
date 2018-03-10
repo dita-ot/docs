@@ -4,6 +4,9 @@
 
 <task id="migrating-ant-to-dita">
   <title>Migrating Ant builds to use the <cmdname>dita</cmdname> command</title>
+  <titlealts>
+    <navtitle>Migrating Ant builds</navtitle>
+  </titlealts>
   <shortdesc>Although Ant builds are still supported in the DITA Open Toolkit, you might want to switch to use the new
       <cmdname>dita</cmdname> command.</shortdesc>
   <taskbody>
@@ -31,7 +34,8 @@
           option.</cmd>
       </step>
     </steps>
-    <example><title>Example: Ant build</title>
+    <example>
+      <title>Example: Ant build</title>
       <p>Sample build file: <filepath id="samples-dir"
           ><varname>dita-ot-dir</varname>/docsrc/samples</filepath><filepath>/ant_sample/build-chm-pdf.xml</filepath>
         <codeblock><coderef href="../samples/ant_sample/build-chm-pdf.xml"/></codeblock></p></example>

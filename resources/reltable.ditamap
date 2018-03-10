@@ -2,7 +2,8 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<map id="reltable" title="Relationship tables">
+<map id="reltable">
+  <title>Relationship tables</title>
   <reltable>
     <relrow>
       <relcell>
@@ -30,12 +31,12 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref keyref="ant" navtitle="Ant overview"/>
+        <topicref keyref="ant"/>
       </relcell>
       <relcell>
         <topicgroup collection-type="family">
-          <topicref keyref="building-with-ant" navtitle="Building output using Ant"/>
-          <topicref keyref="creating-an-ant-build-script" navtitle="Creating an Ant build script"/>
+          <topicref keyref="building-with-ant"/>
+          <topicref keyref="creating-an-ant-build-script"/>
         </topicgroup>
       </relcell>
       <relcell>
@@ -205,13 +206,13 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref keyref="parameters-eclipsehelp" navtitle="Eclipse help transformation"/>
-        <topicref keyref="parameters-htmlhelp" navtitle="HTML Help transformation"/>
-        <topicref keyref="parameters-pdf" navtitle="PDF transformation"/>
-        <topicref keyref="parameters-xhtml" navtitle="XHTML transformation"/>
+        <topicref keyref="parameters-eclipsehelp"/>
+        <topicref keyref="parameters-htmlhelp"/>
+        <topicref keyref="parameters-pdf"/>
+        <topicref keyref="parameters-xhtml"/>
       </relcell>
       <relcell>
-        <topicref keyref="parameters-base" navtitle="All transformation types"/>
+        <topicref keyref="parameters-base"/>
       </relcell>
     </relrow>
     <relrow>
@@ -242,21 +243,21 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref keyref="parameters-base-html" navtitle="HTML-based transformations"/>
+        <topicref keyref="parameters-base-html"/>
       </relcell>
       <relcell>
-        <topicref keyref="parameters-eclipsehelp" navtitle="Eclipse help transformation"/>
+        <topicref keyref="parameters-eclipsehelp"/>
         <topicref keyref="parameters-html5"/>
         <topicref keyref="parameters-htmlhelp"/>
-        <topicref keyref="parameters-xhtml" navtitle="XHTML transformation"/>
+        <topicref keyref="parameters-xhtml"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref keyref="other-errors" navtitle="Out of Memory errors" locktitle="yes"/>
+        <topicref keyref="other-errors"/>
       </relcell>
       <relcell>
-        <topicref keyref="parameters-other" navtitle="Reload style sheets parameters" locktitle="yes"/>
+        <topicref keyref="parameters-other"/>
       </relcell>
     </relrow>
     <relrow>

@@ -4,6 +4,9 @@
 
 <task id="customizing-pdf-output">
   <title>Customizing PDF output</title>
+  <titlealts>
+    <navtitle>Customizing PDF</navtitle>
+  </titlealts>
   <shortdesc>You can create custom DITA-OT plug-ins that build on the default DITA to PDF transformation. Plug-ins can
     customize covers and page layouts, modify formatting, override logic of the default PDF plug-in, and much
     more.</shortdesc>

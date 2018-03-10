@@ -26,19 +26,47 @@
       <p><codeblock><coderef href="../resources/conref-task.dita#token=excerpt-variables,end-excerpt"/></codeblock></p>
       <p>An “audience” subject scheme controls the values that are available for the <xmlatt>audience</xmlatt>
         attribute:</p>
-      <p><codeblock><coderef href="../resources/subjectscheme.ditamap#token=excerpt-audience,end-excerpt"/></codeblock></p>
+      <!-- Disable coderef to map files pending resolution of № 2901 -->
+      <!--<p><codeblock><coderef href="../resources/subjectscheme.ditamap#token=excerpt-audience,end-excerpt"/></codeblock></p>-->
+      <p><codeblock>&lt;subjectdef keys="audience">
+  &lt;subjectdef keys="novice"/>
+  &lt;subjectdef keys="expert"/>
+  &lt;subjectdef keys="xslt-customizer"/>
+&lt;/subjectdef></codeblock></p>
     </section>
     <section>
       <title>Branch filtering: re-using profiled content</title>
     </section>
     <section>
-      <p><cite>Installing DITA-OT</cite> pulls a subset of the build description from <cite>Building output</cite>,
-        filtered to display only content deemed suitable for novice users under
+      <p><cite>Installing DITA-OT</cite> pulls a subset of the build description from <cite>using the
+            <cmdname>dita</cmdname> command</cite>, filtered to display only content deemed suitable for novice users
+        under
         <xref keyref="first-build-using-dita-command"/>:</p>
-      <p><codeblock><coderef href="../topics/installing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
+      <!-- Disable coderef to map files pending resolution of № 2901 -->
+      <!--<p><codeblock><coderef href="../topics/installing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>-->
+      <p><codeblock>&lt;topicref href="using-dita-command.dita" keys="first-build-using-dita-command" locktitle="yes">
+  &lt;topicmeta>
+    &lt;navtitle>Building output&lt;/navtitle>
+  &lt;/topicmeta>
+  &lt;ditavalref href="../resources/novice.ditaval">
+    &lt;ditavalmeta>
+      &lt;dvrResourcePrefix>first-build-&lt;/dvrResourcePrefix>
+    &lt;/ditavalmeta>
+  &lt;/ditavalref>
+&lt;/topicref></codeblock></p>
       <p>The same content appears later in
         <xref keyref="build-using-dita-command"/> with additional information on arguments, options and examples.</p>
-      <p><codeblock><coderef href="../topics/publishing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
+      <!-- Disable coderef to map files pending resolution of № 2901 -->
+      <!--<p><codeblock><coderef href="../topics/publishing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>-->
+      <p><codeblock>&lt;topicref href="using-dita-command.dita" keys="build-using-dita-command" locktitle="yes">
+  &lt;topicmeta>
+    &lt;navtitle>Using the &lt;cmdname>dita&lt;/cmdname> command&lt;/navtitle>
+  &lt;/topicmeta>
+  &lt;ditavalref href="../resources/expert.ditaval">
+    &lt;ditavalmeta>
+      &lt;dvrResourcePrefix>build-&lt;/dvrResourcePrefix>
+    &lt;/ditavalmeta>
+  &lt;/ditavalref></codeblock></p>
     </section>
     <section>
       <title>Conref push</title>
@@ -46,8 +74,8 @@
     <section>
       <p>The docs build uses the conref push mechanism (with the <codeph>pushreplace</codeph>, <codeph>mark</codeph>,
         and <codeph>pushafter</codeph>
-        <xref keyref="dita13-spec-conaction">conactions</xref>) to extend the parameter
-        descriptions embedded in the default plug-ins:</p>
+        <xref keyref="dita13-spec-conaction">conactions</xref>) to extend the parameter descriptions embedded in the
+        default plug-ins:</p>
       <p><codeblock><coderef href="../parameters/ant-parameters-details.dita#token=excerpt-csspath,end-excerpt"/></codeblock></p>
       <p>The pushed content appears in the output after the default description. (See
         <xref keyref="parameters-base-html"/>.)</p>
@@ -60,7 +88,15 @@
     <section>
       <p>The <codeph>key-definitions.ditamap</codeph> defines keys for version references, re-usable links, etc.</p>
       <p>This key definition defines the maintenance release version:</p>
-      <p><codeblock><coderef href="../resources/key-definitions.ditamap#token=excerpt-version,end-excerpt"/></codeblock></p>
+      <!-- Disable coderef to map files pending resolution of № 2901 -->
+      <!--<p><codeblock><coderef href="../resources/key-definitions.ditamap#token=excerpt-version,end-excerpt"/></codeblock></p>-->
+      <p><codeblock>&lt;keydef keys="maintenance-version">
+  &lt;topicmeta>
+    &lt;keywords>
+      &lt;keyword>3.0.3&lt;/keyword>
+    &lt;/keywords>
+  &lt;/topicmeta>
+&lt;/keydef></codeblock></p>
       <p>In topics, the keyword is used in place of hard-coded version references:</p>
       <codeblock>&lt;title&gt;DITA Open Toolkit &lt;keyword keyref="maintenance-version"/&gt; Release Notes&lt;/title&gt;</codeblock>
     </section>

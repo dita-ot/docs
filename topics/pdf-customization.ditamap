@@ -4,27 +4,17 @@
 
 <map>
   <title>Customizing PDF output</title>
-  <topicref keyref="pdf-customization" locktitle="yes">
-    <topicmeta>
-      <navtitle>Customizing PDF</navtitle>
-    </topicmeta>
+  <topicref keyref="pdf-customization">
     <topicref keyref="pdf-customization-approaches"/>
     <topicref keyref="pdf-customization-plugin-types"/>
     <topicref keyref="pdf-plugin-structure"/>
-    <topicref keyref="pdf-customization-example" locktitle="yes">
-      <topicmeta>
-        <navtitle>Simple PDF plug-in example</navtitle>
-      </topicmeta>
-    </topicref>
-    <topicref keyref="pdf-customization-resources" locktitle="yes">
-      <topicmeta>
-        <navtitle>Custom PDF plug-in resources</navtitle>
-      </topicmeta>
-    </topicref>
+    <topicref keyref="pdf-customization-example"/>
+    <topicref keyref="pdf-customization-resources"/>
     <topicref keyref="pdf2-creating-change-bars"/>
   </topicref>
 
-  <reltable title="Bi-directional links">
+  <reltable>
+    <title>Bi-directional links</title>
     <relrow>
       <relcell>
         <topicref keyref="pdf-customization"/>

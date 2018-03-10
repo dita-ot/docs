@@ -5,6 +5,9 @@
 <reference id="migrating-to-2.4">
 
   <title>Migrating to release 2.4</title>
+  <titlealts>
+    <navtitle>To 2.4</navtitle>
+  </titlealts>
 
   <shortdesc>In DITA-OT 2.4, the <option>HTML5</option> transformation was refactored as an independent plug-in that no
     longer depends on the <option>XHTML</option> plug-in. </shortdesc>

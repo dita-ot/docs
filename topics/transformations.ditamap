@@ -4,10 +4,7 @@
 
 <map>
   <title>DITA-OT transformations</title>
-  <topicref keyref="output-formats" locktitle="yes">
-    <topicmeta>
-      <navtitle>Output formats</navtitle>
-    </topicmeta>
+  <topicref keyref="output-formats">
     <topicref keyref="dita2pdf"/>
     <topicref keyref="dita2html5"/>
     <topicref keyref="dita2eclipsehelp"/>

@@ -26,7 +26,8 @@
     <topicref keyref="plugin-coding-conventions"/>
   </topicref>
 
-  <reltable title="Bi-directional links">
+  <reltable>
+    <title>Bi-directional links</title>
     <relrow>
       <relcell>
         <topicref keyref="plugin-best-practices"/>
@@ -37,7 +38,8 @@
     </relrow>
   </reltable>
 
-  <reltable title="Source and target links">
+  <reltable>
+    <title>Source and target links</title>
     <relheader>
       <relcolspec linking="sourceonly"/>
       <relcolspec linking="targetonly"/>

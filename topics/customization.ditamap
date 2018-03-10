@@ -4,16 +4,192 @@
 
 <map>
   <title>Customizing/Extending DITA-OT</title>
+  <!-- Disable maprefs pending resolution of № 2898 -->
 
-  <mapref href="html-customization.ditamap"/>
-  <mapref href="pdf-customization.ditamap"/>
-  <mapref href="globalizing.ditamap"/>
-  <mapref href="plug-ins.ditamap"/>
-  <mapref href="../extension-points/extension-points.ditamap"/>
-  <mapref href="migration.ditamap"/>
-  <topicref keyref="rebuilding-the-dita-ot-documentation" keys="rebuild-docs" locktitle="yes">
-    <topicmeta>
-      <navtitle>Rebuilding documentation</navtitle>
-    </topicmeta>
+  <!--<mapref href="html-customization.ditamap"/>-->
+  <topicref keyref="html-customization" collection-type="family">
+    <topicref keyref="html-customization-parameters" collection-type="family">
+      <topicref keyref="html-customization-navigation"/>
+      <topicref keyref="html-customization-css"/>
+      <topicref keyref="html-customization-header"/>
+      <topicref keyref="generate-copy-outer"/>
+    </topicref>
+    <topicref keyref="html-customization-properties-file"/>
+    <topicref keyref="html-customization-plugins">
+      <topicref keyref="html-customization-plugin-bundle-css"/>
+    </topicref>
   </topicref>
+
+  <!--<mapref href="pdf-customization.ditamap"/>-->
+  <topicref keyref="pdf-customization">
+    <topicref keyref="pdf-customization-approaches"/>
+    <topicref keyref="pdf-customization-plugin-types"/>
+    <topicref keyref="pdf-plugin-structure"/>
+    <topicref keyref="pdf-customization-example"/>
+    <topicref keyref="pdf-customization-resources"/>
+    <topicref keyref="pdf2-creating-change-bars"/>
+  </topicref>
+
+  <reltable>
+    <title>Bi-directional links</title>
+    <relrow>
+      <relcell>
+        <topicref keyref="pdf-customization"/>
+        <topicref keyref="pdf-customization-approaches"/>
+      </relcell>
+      <relcell>
+        <!-- Link formerly PDF-specific content to new location -->
+        <topicref keyref="plugin-best-practices"/>
+      </relcell>
+    </relrow>
+  </reltable>
+
+  <!--<mapref href="globalizing.ditamap"/>-->
+  <topicref keyref="globalization">
+    <topicref keyref="globalization-support"/>
+    <topicref keyref="plugin-addgeneratedtext"/>
+    <topicref keyref="globalization-languages"/>
+  </topicref>
+
+  <!--<mapref href="plug-ins.ditamap"/>-->
+  <topicref keyref="custom-plugins">
+    <topicref keyref="plugins-installing"/>
+    <topicref keyref="plugins-removing"/>
+    <topicref keyref="plugin-configfile"/>
+    <topicref keyref="plugin-dependencies"/>
+    <topicref keyref="plugin-applications">
+      <topicref keyref="plugin-xmlcatalog"/>
+      <topicref keyref="plugin-anttarget"/>
+      <topicref keyref="plugin-antpreprocess"/>
+      <topicref keyref="plugin-newtranstype"/>
+      <topicref keyref="plugin-overridestyle"/>
+      <topicref keyref="using-plugin-URI-extension"/>
+      <topicref keyref="plugin-xsltparams"/>
+      <topicref keyref="plugin-javalib"/>
+      <topicref keyref="plugin-messages"/>
+      <topicref keyref="plugin-newextensions"/>
+    </topicref>
+    <topicref keyref="plugin-sample"/>
+    <topicref keyref="plugin-best-practices"/>
+  </topicref>
+
+  <reltable>
+    <title>Source and target links</title>
+    <relheader>
+      <relcolspec linking="sourceonly"/>
+      <relcolspec linking="targetonly"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-xmlcatalog"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-general"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-anttarget"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-general"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-antpreprocess"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-pre-processing"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-newtranstype"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-general"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-overridestyle"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-xslt-import"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-xsltparams"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-xslt-parameters"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-javalib"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-general"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-messages"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-extension-points-general"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-configfile"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-newextensions"/>
+      </relcell>
+    </relrow>
+  </reltable>
+
+  <!--<mapref href="../extension-points/extension-points.ditamap"/>-->
+  <topicref keyref="plugin-extension-points">
+    <topicref keyref="all-extension-points"/>
+    <topicref keyref="plugin-extension-points-general"/>
+    <topicref keyref="plugin-extension-points-pre-processing"/>
+    <topicref keyref="plugin-extension-points-xslt-import"/>
+    <topicref keyref="plugin-extension-points-xslt-parameters"/>
+    <topicref keyref="plugin-extension-points-support"/>
+    <topicref keyref="extension-points-by-plugin">
+      <!-- Include only topics for plug-ins that actually provide extension points. -->
+      <topicref keyref="extension-points-in-org.dita.base"/>
+      <topicref keyref="extension-points-in-org.dita.eclipsehelp"/>
+      <topicref keyref="extension-points-in-org.dita.html5"/>
+      <topicref keyref="extension-points-in-org.dita.htmlhelp"/>
+      <topicref keyref="extension-points-in-org.dita.pdf2"/>
+      <topicref keyref="extension-points-in-org.dita.troff"/>
+      <topicref keyref="extension-points-in-org.dita.xhtml"/>
+    </topicref>
+    <topicref keyref="extension-points-details" processing-role="resource-only" toc="no"/>
+  </topicref>
+
+  <!--<mapref href="migration.ditamap"/>-->
+  <topicref keyref="migration">
+    <topicref keyref="migrating-to-3.0"/>
+    <topicref keyref="migrating-to-2.5"/>
+    <topicref keyref="migrating-to-2.4"/>
+    <topicref keyref="migrating-to-2.3"/>
+    <topicref keyref="migrating-to-2.2"/>
+    <topicref keyref="migrating-to-2.1"/>
+    <topicref keyref="migrating-to-2.0"/>
+    <topicref keyref="migrating-to-1.8"/>
+    <topicref keyref="migrating-to-1.7">
+      <topicref rev="1.7" keyref="flagging-migration"/>
+    </topicref>
+    <topicref keyref="migrating-to-1.6"/>
+    <topicref keyref="migrating-to-1.5.4"/>
+  </topicref>
+
+  <topicref keyref="rebuilding-the-dita-ot-documentation" keys="rebuild-docs"/>
 </map>

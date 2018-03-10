@@ -5,6 +5,9 @@
 <reference id="migrating-to-2.1">
 
   <title>Migrating to release 2.1</title>
+  <titlealts>
+    <navtitle>To 2.1</navtitle>
+  </titlealts>
 
   <shortdesc>In DITA-OT 2.1, the <codeph>insertVariable</codeph> template was deprecated for PDF transformations and
     should be replaced with the <codeph>getVariable</codeph> template. Various <codeph>dita.<b>out.</b>map.*</codeph>

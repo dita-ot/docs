@@ -5,6 +5,9 @@
 <reference id="ID" rev="1.7">
 
   <title>Migrating to release 1.7</title>
+  <titlealts>
+    <navtitle>To 1.7</navtitle>
+  </titlealts>
 
   <shortdesc>In DITA-OT 1.7, a new preprocessing step implements flagging for HTML-based output formats. PDF processing
     was corrected with regard to <codeph>shortdesc</codeph> handling, and a new XSLT template mode was introduced for

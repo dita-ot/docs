@@ -5,6 +5,9 @@
 <reference id="migrating-to-2.2">
 
   <title>Migrating to release 2.2</title>
+  <titlealts>
+    <navtitle>To 2.2</navtitle>
+  </titlealts>
 
   <shortdesc>In DITA-OT 2.2, the <option>HTML5</option> transformation was refactored as its own plug-in and separate
     plug-ins were created for each of the rendering engine-specific PDF transformations.<draft-comment author="staylor">

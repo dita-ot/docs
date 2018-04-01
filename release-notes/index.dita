@@ -14,11 +14,41 @@
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
 
-  <reference id="v303">
+  <reference id="v304">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="2005">Ditaval File with DOCTYPE declaration crashed DITA-OT
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2005" format="html" scope="external">#2005</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2922" format="html" scope="external">#2922</xref>
+          </li>
+          <li id="2901">PDF: 3.0.1 breaks coderefs to map files
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2901" format="html" scope="external">#2901</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2916" format="html" scope="external">#2916</xref>
+          </li>
+          <li id="2910">PDF file is not generated in specified output location
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2910" format="html" scope="external">#2910</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2923" format="html" scope="external">#2923</xref>
+          </li>
+          <li id="2917">Image with keyref not included in output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2917" format="html" scope="external">#2917</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2921" format="html" scope="external">#2921</xref>
+          </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.0.3...3.0.4" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v303">
+    <title>Maintenance Release 3.0.3</title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 3.0.3 includes the following bug fixes.</p>
         <ul>
           <li id="2892">In some scenarios on Windows, the version of Saxon shipped in DITA-OT 3.0 caches one copy of the
             toolkit module <filepath>functions.xsl</filepath> and then uses that copy in place of a second (different)

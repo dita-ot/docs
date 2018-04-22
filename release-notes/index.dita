@@ -27,7 +27,8 @@
   </reference>
 
   <reference id="v304">
-    <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
+    <title>Maintenance Release <keyword keyref="maintenance-version"/>
+      <ph outputclass="small"><i>(pending release)</i></ph></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
@@ -60,7 +61,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2917" format="html" scope="external">#2917</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2921" format="html" scope="external">#2921</xref>
           </li>
-          <li id="2926">PDF should respect scaling for fig content 
+          <li id="2926">PDF should respect scaling for fig content
             <xref href="https://github.com/dita-ot/dita-ot/pull/2926" format="html" scope="external">#2926</xref>
           </li>
           <li id="2927">Use linktext as fallback title for peer content
@@ -75,10 +76,10 @@
   </reference>
 
   <reference id="v303">
-    <title>Maintenance Release 3.0.3</title>
+    <title>DITA-OT 3.0.3 <ph outputclass="small">released March 10, 2018</ph></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release 3.0.3 includes the following bug fixes.</p>
+        <p>DITA Open Toolkit 3.0.3 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="2892">In some scenarios on Windows, the version of Saxon shipped in DITA-OT 3.0 caches one copy of the
             toolkit module <filepath>functions.xsl</filepath> and then uses that copy in place of a second (different)
@@ -133,10 +134,10 @@
   </reference>
 
   <reference id="v302">
-    <title>Maintenance Release 3.0.2</title>
+    <title>DITA-OT 3.0.2 <ph outputclass="small">released February 5, 2018</ph></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release 3.0.2 includes the following bug fixes.</p>
+        <p>DITA Open Toolkit 3.0.2 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="1550">If a map or branch of a map was chunked to create a single document, but that portion of the map
             also contained a <xmlelement>topicref</xmlelement> reference to a non-DITA resource, earlier versions of
@@ -229,10 +230,10 @@
   </reference>
 
   <reference id="v301">
-    <title>Maintenance Release 3.0.1</title>
+    <title>DITA-OT 3.0.1 <ph outputclass="small">released November 30, 2017</ph></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release 3.0.1 includes the following bug fixes.</p>
+        <p>DITA Open Toolkit 3.0.1 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="1151">Microsoft Compiled HTML Help requires a Windows codepage rather than UTF-8, so many characters
             are converted to HTML entities to ensure they are preserved during the codepage conversion. In earlier
@@ -296,7 +297,7 @@
   </reference>
 
   <reference id="highlights">
-    <title>Release Highlights</title>
+    <title>DITA-OT 3.0 <ph outputclass="small">released October 28, 2017</ph></title>
     <refbody>
       <section>
         <p>DITA-OT <keyword keyref="release"/>

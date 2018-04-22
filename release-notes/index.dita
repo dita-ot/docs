@@ -14,6 +14,18 @@
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
 
+  <reference id="requirements">
+    <title>Requirements</title>
+    <refbody>
+      <section>
+        <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
+          since previous release.</draft-comment>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) version
+            <keyword keyref="tool.java.version"/> or later.</p>
+      </section>
+    </refbody>
+  </reference>
+
   <reference id="v304">
     <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
     <refbody>
@@ -279,18 +291,6 @@
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.0...3.0.1" format="html" scope="external">
             changelog</xref> on GitHub.</p>
-      </section>
-    </refbody>
-  </reference>
-
-  <reference id="requirements">
-    <title>Requirements</title>
-    <refbody>
-      <section>
-        <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
-          since previous release.</draft-comment>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) version
-            <keyword keyref="tool.java.version"/> or later.</p>
       </section>
     </refbody>
   </reference>

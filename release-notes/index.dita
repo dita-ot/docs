@@ -40,7 +40,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2005" format="html" scope="external">#2005</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2922" format="html" scope="external">#2922</xref>
           </li>
-          <li id="2835">PDF customizations in 3.0 broken (Remove base catalog file from catalog defaults)
+          <li id="2835">DITA-OT 3.0 failed to recognize PDF customizations if the custom plug-in used the same file
+            names as the base PDF plug-in. The default catalog has been removed from the catalog configuration file to
+            ensure that only explicitly configured catalogs are used and customizations take precedence regardless of
+            the file names in the custom plug-in.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2835" format="html" scope="external">#2835</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2937" format="html" scope="external">#2937</xref>
           </li>
@@ -57,7 +60,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2842" format="html" scope="external">#2842</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2935" format="html" scope="external">#2935</xref>
           </li>
-          <li id="2901">PDF: 3.0.1 breaks coderefs to map files
+          <li id="2901">In DITA-OT 3.0.1, <xmlelement>coderef</xmlelement> elements that contained references to line
+            ranges in DITA map files were not reliably included in PDF output as the preprocessing routine may change
+            maps. All code references are now resolved from the original files to ensure that code blocks reflect the
+            intended source range.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2901" format="html" scope="external">#2901</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2916" format="html" scope="external">#2916</xref>
           </li>
@@ -67,7 +73,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2910" format="html" scope="external">#2910</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2923" format="html" scope="external">#2923</xref>
           </li>
-          <li id="2917">Image with keyref not included in output
+          <li id="2917">When generating HTML output with DITA-OT 3.0.2, images referenced indirectly via keys were not
+            copied to the output folder. Processing has been corrected to ensure that the list of images in the job
+            configuration includes those referenced via keys.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2917" format="html" scope="external">#2917</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2921" format="html" scope="external">#2921</xref>
           </li>

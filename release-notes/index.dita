@@ -27,11 +27,12 @@
   </reference>
 
   <reference id="v304">
-    <title>Maintenance Release <keyword keyref="maintenance-version"/>
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
       <ph outputclass="small"><i>(pending release)</i></ph></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
         <ul>
           <li id="2005">In previous releases, including a <codeph>&lt;!DOCTYPE></codeph> declaration
 in a DITAVAL document resulted in a build failure. This is now fixed, and the referenced grammar

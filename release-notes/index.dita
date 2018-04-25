@@ -33,40 +33,58 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2005">Ditaval File with DOCTYPE declaration crashed DITA-OT
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2005" format="html" scope="external">#2005</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2922" format="html" scope="external">#2922</xref>
-          </li>
+          <li id="2005">In previous releases, including a <codeph>&lt;!DOCTYPE></codeph> declaration
+in a DITAVAL document resulted in a build failure. This is now fixed, and the referenced grammar
+file will be found using the same catalog that is used to locate other grammar files. <xref
+href="https://github.com/dita-ot/dita-ot/issues/2005" format="html" scope="external">#2005</xref>,
+<xref href="https://github.com/dita-ot/dita-ot/pull/2922" format="html" scope="external"
+>#2922</xref>
+</li>
           <li id="2835">PDF customizations in 3.0 broken (Remove base catalog file from catalog defaults)
             <xref href="https://github.com/dita-ot/dita-ot/issues/2835" format="html" scope="external">#2835</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2937" format="html" scope="external">#2937</xref>
           </li>
-          <li id="2841">NPE from preprocess for links to copy-to result
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2841" format="html" scope="external">#2841</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2936" format="html" scope="external">#2936</xref>
-          </li>
-          <li id="2842">Copy-to with key links to original rather than to copy
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2842" format="html" scope="external">#2842</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2935" format="html" scope="external">#2935</xref>
-          </li>
+          <li id="2841">In DITA-OT 3.0, URI based links can result in a Null Pointer Error when the
+link target will only exist after evaluation of <xmlatt>copy-to</xmlatt> attributes. The build
+failure has been removed, and this type of link will now generate normal build errors as in previous
+releases. <xref href="https://github.com/dita-ot/dita-ot/issues/2841" format="html" scope="external"
+>#2841</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/2936" format="html"
+scope="external">#2936</xref>
+</li>
+          <li id="2842">In previous releases, if a key definition specified both
+<xmlatt>href</xmlatt> and <xmlatt>copy-to</xmlatt>, references to that key always resolved to the
+original <xmlatt>href</xmlatt> rather than to the new copy specified with <xmlatt>copy-to</xmlatt>.
+Key references to this type of definition will now resolve to the appropriate copy of the resource.
+<xref href="https://github.com/dita-ot/dita-ot/issues/2842" format="html" scope="external"
+>#2842</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/2935" format="html"
+scope="external">#2935</xref>
+</li>
           <li id="2901">PDF: 3.0.1 breaks coderefs to map files
             <xref href="https://github.com/dita-ot/dita-ot/issues/2901" format="html" scope="external">#2901</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2916" format="html" scope="external">#2916</xref>
           </li>
-          <li id="2910">PDF file is not generated in specified output location
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2910" format="html" scope="external">#2910</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2923" format="html" scope="external">#2923</xref>
-          </li>
+          <li id="2910">In DITA-OT 3.0, PDF output files could be placed outside of the specified
+output directory when the map referenced content outside of the map directory. This has been fixed,
+and the PDF output file will always be placed in the specified output directory. <xref
+href="https://github.com/dita-ot/dita-ot/issues/2910" format="html" scope="external">#2910</xref>,
+<xref href="https://github.com/dita-ot/dita-ot/pull/2923" format="html" scope="external"
+>#2923</xref>
+</li>
           <li id="2917">Image with keyref not included in output
             <xref href="https://github.com/dita-ot/dita-ot/issues/2917" format="html" scope="external">#2917</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2921" format="html" scope="external">#2921</xref>
           </li>
-          <li id="2926">PDF should respect scaling for fig content
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2926" format="html" scope="external">#2926</xref>
-          </li>
-          <li id="2927">Use linktext as fallback title for peer content
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2927" format="html" scope="external">#2927</xref>
-          </li>
+          <li id="2926">In earlier releases, <xmlatt>scale</xmlatt> attributes on the
+<xmlelement>fig</xmlelement> element were ignored for PDF output. The <xmlatt>scale</xmlatt>
+attribute is now respected for PDF figures. <xref
+href="https://github.com/dita-ot/dita-ot/pull/2926" format="html" scope="external">#2926</xref>
+</li>
+          <li id="2927">In earlier releases, topic references to peer DITA content reported "missing
+navigation title" errors even when the reference included <xmlelement>linktext</xmlelement>. As with
+all other peer, external, and non-DITA references, the <xmlelement>linktext</xmlelement> for peer
+topics will now be used as a fallback title when no navigation title is available. <xref
+href="https://github.com/dita-ot/dita-ot/pull/2927" format="html" scope="external">#2927</xref>
+</li>
         </ul>
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.0.3...3.0.4" format="html" scope="external">

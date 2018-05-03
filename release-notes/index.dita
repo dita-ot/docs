@@ -90,6 +90,17 @@
             fallback title when no navigation title is available.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2927" format="html" scope="external">#2927</xref>
           </li>
+          <li id="2942">When generating PDF output for tables that specified row headers, DITA-OT failed to honor
+            vertical spans defined via the <xmlatt>morerows</xmlatt> attribute on an <xmlelement>entry</xmlelement>
+            (cell). Row headers are now properly applied when cells span additional rows.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2942" format="html" scope="external">#2942</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2946" format="html" scope="external">#2946</xref>
+          </li>
+          <li id="2945">When <xmlelement>fragref</xmlelement> elements were used to reference a syntax diagram fragment,
+            earlier versions of DITA-OT displayed an error. Processing has been updated to use the latest designs from
+            the topicpull module and fix the error.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2945" format="html" scope="external">#2945</xref>
+          </li>
         </ul>
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.0.3...3.0.4" format="html" scope="external">

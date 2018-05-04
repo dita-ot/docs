@@ -40,6 +40,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2005" format="html" scope="external">#2005</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2922" format="html" scope="external">#2922</xref>
           </li>
+          <li id="2821">HTML5 builds in DITA-OT 3.0 warned that the <filepath>map2html5Impl.xsl</filepath> stylesheet
+            was included or imported more than once. The redundant import has been removed to quiet the log message.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2821" format="html" scope="external">#2821</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2950" format="html" scope="external">#2950</xref>
+          </li>
           <li id="2835">DITA-OT 3.0 failed to recognize PDF customizations if the custom plug-in used the same file
             names as the base PDF plug-in. The default catalog has been removed from the catalog configuration file to
             ensure that only explicitly configured catalogs are used and customizations take precedence regardless of

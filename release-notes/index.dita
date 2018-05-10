@@ -29,7 +29,7 @@
 
   <reference id="v304">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small"><i>(pending release)</i></ph></title>
+      <ph outputclass="small">released May 10, 2018</ph></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
@@ -55,7 +55,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2835" format="html" scope="external">#2835</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2937" format="html" scope="external">#2937</xref>
           </li>
-          <li id="2841">In DITA-OT 3.0, URI-based links may cause Null Pointer Exceptions when link targets do not exist
+          <li id="2841">In DITA-OT 3.0, URI-based links may cause NullPointerExceptions when link targets do not exist
             until after <xmlatt>copy-to</xmlatt> attributes are evaluated. The build failure has been removed, and this
             type of link will now generate normal build errors as in previous releases.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2841" format="html" scope="external">#2841</xref>,
@@ -569,7 +569,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/1364" format="html" scope="external">#1364</xref>
           </li>
           -->
-          <li id="2654">Email links without a scope or format previously generated a Null Pointer Exception. The
+          <li id="2654">Email links without a scope or format previously generated a NullPointerException. The
               <codeph>mailto:</codeph> syntax is now recognized as an email link and will not be read as a file
             reference.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2654" format="html" scope="external">#2654</xref>

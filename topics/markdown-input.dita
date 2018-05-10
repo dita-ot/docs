@@ -25,8 +25,8 @@
     <section>
       <title>Adding Markdown topics</title>
       <p>To add a Markdown topic to a DITA publication, create a topic reference in your map and set the
-          <xmlatt>format</xmlatt> attribute to <codeph>markdown</codeph> (or <codeph>md</codeph>) so the toolkit will
-        recognize the source file as Markdown and convert it to DITA:</p>
+          <xmlatt>format</xmlatt> attribute to <codeph>markdown</codeph> so the toolkit will recognize the source file
+        as Markdown and convert it to DITA:</p>
       <p><codeblock>&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 &lt;map>

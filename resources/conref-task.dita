@@ -6,6 +6,16 @@
   <title>Conref file for tasks</title>
   <taskbody>
     <context>
+      <p id="semver-info">DITA-OT releases follow
+        <xref keyref="semver"/> guidelines. Version numbers use the
+            <codeph><varname>major</varname>.<varname>minor</varname>.<varname>patch</varname></codeph> syntax, where
+          <varname>major</varname> versions may include incompatible API changes, <varname>minor</varname> versions add
+        functionality in a backwards-compatible manner and <varname>patch</varname> versions are maintenance releases
+        that include backwards-compatible bug fixes.</p>
+      <p id="semver-plugins">Custom plug-ins developed for a previous <varname>major</varname> version may require
+        changes to work correctly with recent toolkit versions. Most plug-ins should be compatible with subsequent
+          <varname>minor</varname> and <varname>patch</varname> versions of the <varname>major</varname> release for
+        which they were originally developed.</p>
       <dl>
         <dlentry>
           <dt>Standard Path / Directory Names</dt>

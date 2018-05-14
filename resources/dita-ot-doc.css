@@ -259,3 +259,7 @@ nav[role=toc] li.active > a {
   font-weight: bold;
 }
 /* ↑ end-nav-ref ↑ */
+
+nav[role=toc] > ul {
+  margin-right: 2em;
+}

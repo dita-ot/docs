@@ -263,3 +263,7 @@ nav[role=toc] li.active > a {
 nav[role=toc] > ul {
   margin-right: 2em;
 }
+
+nav[role=toc] > ul > li ul {
+  margin-left: 1.2em;
+}

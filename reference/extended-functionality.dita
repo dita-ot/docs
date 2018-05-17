@@ -22,7 +22,7 @@
       <codeblock>format (";" space* "charset=" charset)?</codeblock>
       <p>If a character set is not defined, the system default character set will be used. If the character set is not
         recognized or supported, the <msgnum>DOTJ052E</msgnum> error is thrown and the system default character set is
-        used as a fall-back.</p>
+        used as a fallback.</p>
     </section>
     <example>
       <codeblock>&lt;coderef href="unicode.txt" format="txt; charset=UTF-8"/></codeblock>
@@ -48,7 +48,7 @@
         omitted, the range starts from the first line; if the end range is omitted, the range ends on the last line of
         the file. The format for line position is:</p>
       <codeblock>uri ("#line=" position )?</codeblock>
-      <p>Position line number starts from 0.</p>
+      <p>The position line number starts from 0.</p>
     </section>
     <example>
       <codeblock>&lt;coderef href="Parser.scala#line=4,10" format="scala"/></codeblock>
@@ -81,5 +81,31 @@
         range for the reference may shift if preceding lines are added or removed. Specifying ranges by line content
         makes references more robust, as long as the <codeph>token</codeph> keywords are preserved when the referenced
         resource is modified.</note></example>
+    <refbodydiv id="normalize-codeblock-whitespace">
+      <section>
+        <title>Whitespace normalization</title>
+        <p>DITA-OT can normalize the leading whitespace in code blocks to remove excess indentation and keep lines as
+          short as possible.</p>
+      </section>
+      <example>
+        <p>Given an XML snippet in a codeblock with lines that all begin with spaces (indicated here as dots “·”),</p>
+        <p><codeblock>··&lt;subjectdef keys="audience">
+····&lt;subjectdef keys="novice"/>
+····&lt;subjectdef keys="expert"/>
+····&lt;subjectdef keys="xslt-customizer"/>
+··&lt;/subjectdef></codeblock></p>
+        <p>DITA-OT can remove the leading whitespace that is common to all lines in the code block. To trim the excess
+          space, set the <xmlatt>outputclass</xmlatt> attribute on the <xmlelement>codeblock</xmlelement> element to
+            <codeph>normalize-space</codeph>.</p>
+        <p>In this case, two spaces (“··”) would be removed from the beginning of each line, shifting each line to the
+          left by two characters, while preserving the indentation of any lines that contain additional leading
+          whitespace (beyond the common indent):</p>
+        <p><codeblock>&lt;subjectdef keys="audience">
+··&lt;subjectdef keys="novice"/>
+··&lt;subjectdef keys="expert"/>
+··&lt;subjectdef keys="xslt-customizer"/>
+&lt;/subjectdef></codeblock></p>
+      </example>
+    </refbodydiv>
   </refbody>
 </reference>

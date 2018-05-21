@@ -7,9 +7,9 @@
   <titlealts>
     <navtitle>Rebuilding documentation</navtitle>
   </titlealts>
-  <shortdesc>The DITA-OT ships with Ant scripts that enable you to rebuild the toolkit documentation. This is especially
-    helpful if your environment contains plug-ins that add new extension points, messages, or parameters to the
-    toolkit.</shortdesc>
+  <shortdesc>The DITA-OT ships with a <keyword keyref="gradle"/> build script that enables you to rebuild the toolkit
+    documentation. This is especially helpful if your environment contains plug-ins that add new extension points,
+    messages, or parameters to the toolkit.</shortdesc>
   <taskbody>
     <context>
       <p>The documentation build script reads the toolkit’s plug-in configuration and automatically regenerates topics
@@ -24,7 +24,7 @@
       <step>
         <cmd>Run the following command:</cmd>
         <info>
-          <codeblock>ant -f build.xml <varname>target</varname></codeblock>
+          <codeblock>./gradlew <varname>target</varname></codeblock>
         </info>
         <info>
           <p>The <varname>target</varname> parameter is optional and specifies a transformation type. It takes the
@@ -35,7 +35,7 @@
               <li><option>pdf</option></li>
             </ul>
           </p>
-          <p>If you do not specify an Ant target, HTML5 and PDF output is generated.</p>
+          <p>If you do not specify a target, HTML5 and PDF output is generated.</p>
         </info>
       </step>
     </steps>

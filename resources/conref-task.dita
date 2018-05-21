@@ -60,15 +60,15 @@
             <li id="novice-variables-1"><filepath conref="#ID/ot-dir"/> is the DITA-OT installation directory.</li>
             <li id="novice-variables-2"><varname>input-file</varname> is the DITA map or DITA file that you want to
               process.</li>
-<!-- ↓ excerpt-variables (shift left to avoid indendation in codeblock/coderef) ↓ -->
-<li id="novice-variables-last" audience="novice">
-  <p id="common-format-info">
-    <varname>format</varname> is the output format (transformation type).
-    This argument corresponds to the common parameter <parmname>transtype</parmname>. 
-    Use the same values as for the <parmname>transtype</parmname> build parameter,
-    for example, <option>html5</option> or <option>pdf</option>.</p>
-</li>
-<!-- ↑ end-excerpt ↑ -->
+            <!-- ↓ excerpt-variables ↓ -->
+            <li id="novice-variables-last" audience="novice">
+              <p id="common-format-info">
+                <varname>format</varname> is the output format (transformation type).
+                This argument corresponds to the common parameter <parmname>transtype</parmname>.
+                Use the same values as for the <parmname>transtype</parmname> build parameter,
+                for example, <option>html5</option> or <option>pdf</option>.</p>
+            </li>
+            <!-- ↑ end-excerpt ↑ -->
             <li id="expert-variables-last" audience="expert">
               <p conref="#ID/common-format-info"/>
               <p id="transtypes">You can create plug-ins to add new output formats; by default, the following values are

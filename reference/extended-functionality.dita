@@ -41,8 +41,8 @@
     </example>
     <section>
       <title>RFC 5147</title>
-      <p>DITA-OT also supports the line position and range syntax from
-        <xref keyref="rfc5147"/>. The format for line range is:</p>
+      <p>DITA-OT also supports the line position and range syntax from <xref keyref="rfc5147"/>. The format for line
+        range is:</p>
       <codeblock>uri ("#line=" start? "," end? )?</codeblock>
       <p>Start and end line numbers start from 0 and are inclusive and exclusive, respectively. If the start range is
         omitted, the range starts from the first line; if the end range is omitted, the range ends on the last line of
@@ -69,12 +69,12 @@
     </section>
     <example>
       <p>Given a Haskell source file named <filepath>fact.hs</filepath> with the following content,</p>
-      <codeblock><coderef href="../resources/fact.hs"/></codeblock>
+      <codeblock outputclass="show-line-numbers show-whitespace"><coderef href="../resources/fact.hs"/></codeblock>
       <p>a range of lines can be referenced as:</p>
       <codeblock>&lt;coderef href="fact.hs#token=START-FACT,END-FACT"/></codeblock>
-      <p>to include the range of lines that follows the <codeph>START-FACT</codeph> token, up to (but not including) the
-        line that contains the <codeph>END-FACT</codeph> token. The resulting <xmlelement>codeblock</xmlelement> would
-        contain the following lines:</p>
+      <p>to include the range of lines that follows the <codeph>START-FACT</codeph> token on Line 1, up to (but not
+        including) the line that contains the <codeph>END-FACT</codeph> token (Line 5). The resulting
+          <xmlelement>codeblock</xmlelement> would contain lines 2–4:</p>
       <codeblock><coderef href="../resources/fact.hs#token=START-FACT,END-FACT"/></codeblock>
       <note type="tip" id="coderef-by-content-tip">This approach can be used to reference code samples that are
         frequently edited. In these cases, referencing line ranges by line number can be error-prone, as the target line
@@ -84,26 +84,23 @@
     <refbodydiv id="normalize-codeblock-whitespace">
       <section>
         <title>Whitespace normalization</title>
-        <p>DITA-OT can normalize the leading whitespace in code blocks to remove excess indentation and keep lines as
-          short as possible.</p>
+        <p>DITA-OT can adjust the leading whitespace in code blocks to remove excess indentation and keep lines short.
+          Given an XML snippet in a codeblock with lines that all begin with spaces (indicated here as dots “·”),</p>
       </section>
       <example>
-        <p>Given an XML snippet in a codeblock with lines that all begin with spaces (indicated here as dots “·”),</p>
         <p><codeblock>··&lt;subjectdef keys="audience">
 ····&lt;subjectdef keys="novice"/>
 ····&lt;subjectdef keys="expert"/>
-····&lt;subjectdef keys="xslt-customizer"/>
 ··&lt;/subjectdef></codeblock></p>
         <p>DITA-OT can remove the leading whitespace that is common to all lines in the code block. To trim the excess
           space, set the <xmlatt>outputclass</xmlatt> attribute on the <xmlelement>codeblock</xmlelement> element to
           include the <codeph>normalize-space</codeph> keyword.</p>
-        <p>In this case, two spaces (“··”) would be removed from the beginning of each line, shifting each line to the
-          left by two characters, while preserving the indentation of any lines that contain additional leading
-          whitespace (beyond the common indent):</p>
+        <p>In this case, two spaces (“··”) would be removed from the beginning of each line, shifting content to the
+          left by two characters, while preserving the indentation of lines that contain additional whitespace (beyond
+          the common indent):</p>
         <p><codeblock>&lt;subjectdef keys="audience">
 ··&lt;subjectdef keys="novice"/>
 ··&lt;subjectdef keys="expert"/>
-··&lt;subjectdef keys="xslt-customizer"/>
 &lt;/subjectdef></codeblock></p>
       </example>
     </refbodydiv>

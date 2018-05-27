@@ -12,8 +12,8 @@
       <step id="step_create-message-xml">
         <cmd>Create an XML file that contains the messages that you want to add. Be sure to use the following format for
           the XML file:</cmd>
-        <info><codeblock>&lt;messages>
-  &lt;!-- See resources/messages.xml for the details. -->
+        <info><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;messages>
+  <i>&lt;!-- See resources/messages.xml for the details. --></i>
   &lt;message id="<varname>Prefix</varname><varname>Number</varname><varname>Letter</varname>" type="<varname>error-severity</varname>">
     &lt;reason>Message text&lt;/reason>
     &lt;response>How to resolve&lt;/response>
@@ -44,7 +44,7 @@
       <step>
         <cmd>Create a <filepath>plugin.xml</filepath> file that contains the following content:</cmd>
         <info>
-          <codeblock>&lt;plugin id="<varname>plugin-id</varname>">
+          <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="dita.xsl.messages" file="<varname>file</varname>"/>
 &lt;/plugin></codeblock>
           <p>where:</p>
@@ -63,11 +63,10 @@
     </steps>
     <postreq>
       <p>Add the following call in XSLT modules to generate a message when a specific condition occurs:</p>
-      <codeblock>&lt;xsl:call-template name="output-message">
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="output-message">
   &lt;xsl:with-param name="id"><varname>prefix</varname><varname>number</varname><varname>letter</varname>&lt;/xsl:with-param>
   &lt;xsl:with-param name="msg">Message text and parameters.&lt;/xsl:with-param>
-&lt;/xsl:call-template>
-</codeblock>
+&lt;/xsl:call-template></codeblock>
       <p>Use the <codeph>ctx</codeph> parameter if calling from a function.</p>
     </postreq>
   </taskbody>

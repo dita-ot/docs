@@ -13,7 +13,7 @@
       </step>
       <step>
         <cmd>Construct a <filepath>plugin.xml</filepath> file that contains the following content:</cmd>
-        <info><codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+        <info><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="<varname>extension-point</varname>" file="<varname>relative-path</varname>"/>
 &lt;/plugin></codeblock>where:
@@ -36,13 +36,13 @@
       <title>Example: Overriding XHTML header processing</title>
       <p>The following two files represent a complete, simple style plug-in.</p>
       <p>The <filepath>plugin.xml</filepath> file declares an XSLT file that extends XHTML processing:</p>
-      <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;plugin id="com.example.brandheader">
   &lt;feature extension="dita.xsl.xhtml" file="xsl/header.xsl"/>
 &lt;/plugin></codeblock>
       <p>The <filepath>xsl/header.xsl</filepath> XSLT file referenced in <filepath>plugin.xml</filepath> overrides the
         default header processing to add a banner:</p>
-      <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;xsl:stylesheet version="1.0" 
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   &lt;xsl:template name="gen-user-header">

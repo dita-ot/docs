@@ -8,7 +8,8 @@
   <topicref keyref="prerequisite-software"/>
   <topicref keyref="determining-version-of-ditaot"/>
   <!-- ↓ branch-filter ↓ -->
-  <topicref href="using-dita-command.dita" keys="first-build-using-dita-command" locktitle="yes">
+  <topicref href="using-dita-command.dita"
+            keys="first-build-using-dita-command" locktitle="yes">
     <topicmeta>
       <navtitle>Building output</navtitle>
     </topicmeta>

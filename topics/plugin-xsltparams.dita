@@ -13,9 +13,10 @@
         <cmd>Create an XML file that contains one or more Ant <xmlelement>param</xmlelement> elements nested within a
             <xmlelement>dummy</xmlelement> wrapper element.</cmd>
         <stepxmp>
-          <codeblock>&lt;dummy>
-  &lt;!-- Any Ant code allowed in xslt task is possible. Common example: -->
-  &lt;param name="paramNameinXSLT" expression="${antProperty}" if="antProperty"/>
+          <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;dummy>
+  <i>&lt;!-- Any Ant code allowed in xslt task is possible. Example: --></i>
+  &lt;param name="paramNameinXSLT" expression="${antProperty}" 
+         if="antProperty"/>
 &lt;/dummy></codeblock>
           <draft-comment author="Kristen Eberlein" time="31 March 2013">Need a better example here, or replace the
               <xmlelement>stepxmp</xmlelement> with a generic code sample in an <xmlelement>info</xmlelement>
@@ -24,7 +25,7 @@
       </step>
       <step>
         <cmd>Construct a <filepath>plugin.xml</filepath> file that contains the following content:</cmd>
-        <info><codeblock>&lt;plugin id="<varname>plugin-id</varname>">
+        <info><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="<varname>extension-point</varname>" file="<varname>file</varname>"/>
 &lt;/plugin></codeblock>where:
           <ul>
@@ -49,8 +50,9 @@
       <p>The following plug-in passes the parameters defined in the <filepath>insertParameters.xml</filepath> file as
         input to the XHTML process. Generally, an additional XSLT override will make use of the parameters to do
         something new with the generated content.</p>
-      <codeblock>&lt;plugin id="com.example.newparam">
-  &lt;feature extension="dita.conductor.xhtml.param" file="insertParameters.xml"/>
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.newparam">
+  &lt;feature extension="dita.conductor.xhtml.param" 
+           file="insertParameters.xml"/>
 &lt;/plugin></codeblock>
     </example>
   </taskbody>

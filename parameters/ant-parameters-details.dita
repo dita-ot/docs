@@ -599,7 +599,8 @@
             <pt>
               <parmname>args.csspath</parmname>
             </pt>
-            <pd conaction="pushreplace" conref="parameters-html5.dita#html5/args.csspath.desc">
+            <pd conaction="pushreplace"
+                conref="parameters-html5.dita#html5/args.csspath.desc">
               <div conref="./ant-parameters-details.dita#base-html/args.csspath.desc"/>
             </pd>
             <pd conaction="mark" conref="parameters-html5.dita#html5/args.csspath.desc"/>

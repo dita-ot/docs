@@ -143,18 +143,19 @@
         banner.</p>
       <fig>
         <title>Contents of the <filepath>plugin.xml</filepath> file</title>
-        <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;plugin id="com.example.brandheader">
   &lt;feature extension="dita.xsl.xhtml" file="xsl/header.xsl"/>
 &lt;/plugin></codeblock>
       </fig>
       <fig>
         <title>Contents of the <filepath>xsl/header.xsl</filepath> file</title>
-        <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   &lt;xsl:template name="gen-user-header">
     &lt;div>
-      &lt;img src="http://www.example.com/company_banner.jpg" alt="Example Company Banner"/>
+      &lt;img src="http://www.example.com/company_banner.jpg" 
+           alt="Example Company Banner"/>
     &lt;/div>
   &lt;/xsl:template>
 &lt;/xsl:stylesheet></codeblock>

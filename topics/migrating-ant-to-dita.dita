@@ -38,15 +38,19 @@
       <title>Example: Ant build</title>
       <p>Sample build file: <filepath id="samples-dir"
           ><varname>dita-ot-dir</varname>/docsrc/samples</filepath><filepath>/ant_sample/build-chm-pdf.xml</filepath>
-        <codeblock><coderef href="../samples/ant_sample/build-chm-pdf.xml"/></codeblock></p></example>
+        <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/ant_sample/build-chm-pdf.xml"/></codeblock></p></example>
     <example>
       <title>Example: <filepath>.properties</filepath> files with <cmdname>dita</cmdname> command</title>
       <p>The following <filepath>.properties</filepath> files and <cmdname>dita</cmdname> commands are equivalent to the
         example Ant build.</p>
       <p>Sample <filepath>.properties</filepath> file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
-          /><filepath>/properties/chm.properties</filepath><codeblock><coderef href="../samples/properties/chm.properties"/></codeblock></p>
+          /><filepath>/properties/chm.properties</filepath></p>
+      <p>
+        <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/chm.properties"/></codeblock></p>
       <p>Sample <filepath>.properties</filepath> file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
-          /><filepath>/properties/pdf.properties</filepath><codeblock><coderef href="../samples/properties/pdf.properties"/></codeblock></p>
+          /><filepath>/properties/pdf.properties</filepath></p>
+      <p>
+        <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/pdf.properties"/></codeblock></p>
       <p>Run from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>:</p>
       <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>htmlhelp</option> \
      <parmname>--propertyfile</parmname>=<filepath>properties/chm.properties</filepath>
@@ -61,7 +65,8 @@
         task.</p>
       <p>This example uses a <xmlelement>dita-cmd</xmlelement> Ant macro defined in the <filepath
           conref="../resources/conref-task.dita#ID/samples-dir"/><filepath>/ant_sample/dita-cmd.xml</filepath> file:</p>
-      <codeblock><coderef href="../samples/ant_sample/dita-cmd.xml#line=11,21"/></codeblock>
+      <p>
+        <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/ant_sample/dita-cmd.xml#line=11,21"/></codeblock></p>
       <p>You can use this macro in your Ant build to call the <cmdname>dita</cmdname> command and pass the
           <parmname>input</parmname>, <parmname>format</parmname> and <parmname>propertyfile</parmname> parameters as
         follows:
@@ -74,8 +79,9 @@
         optional parameters in one build (but not another), use different <filepath>.properties</filepath> files for
         each build.</note>
       <p>Sample build file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
-          /><filepath>/ant_sample/build-chm-pdf-hybrid.xml</filepath>
-        <codeblock><coderef href="../samples/ant_sample/build-chm-pdf-hybrid.xml"/></codeblock>
+          /><filepath>/ant_sample/build-chm-pdf-hybrid.xml</filepath></p>
+      <p>
+        <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/ant_sample/build-chm-pdf-hybrid.xml"/></codeblock>
       </p>
     </example>
   </taskbody>

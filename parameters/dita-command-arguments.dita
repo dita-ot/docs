@@ -144,9 +144,12 @@
             <parmname>-o</parmname>
             <varname>dir</varname>
           </pt>
-          <pd id="output.dir.desc">Specifies the path of the output directory; the path can be absolute or relative to
-            the current directory. This argument corresponds to the common parameter <parmname>output.dir</parmname>. By
-            default, the output is written to the <filepath>out</filepath> subdirectory of the current directory.</pd>
+          <pd id="output.dir.desc">
+            <p>Specifies the path of the output directory; the path can be absolute or relative to the current
+              directory.</p>
+            <p>This argument corresponds to the common parameter <parmname>output.dir</parmname>. By default, the output
+              is written to the <filepath>out</filepath> subdirectory of the current directory.</p>
+          </pd>
         </plentry>
         <plentry>
           <pt>

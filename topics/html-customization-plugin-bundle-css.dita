@@ -44,11 +44,12 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>plugin.xml</filepath> file</title>
-            <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-<i>&lt;!-- This plug-in extends DITA-OT HTML5 processing with a custom CSS file. --&gt;</i>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<i>&lt;!-- Plug-in to extend DITA-OT HTML5 output with a custom CSS file --&gt;</i>
 &lt;plugin id="com.example.html5.custom.css"&gt;
   <b>&lt;require plugin="org.dita.html5"/&gt;</b>
-  <b>&lt;feature extension="dita.conductor.transtype.check" value="html5-custom-css"/&gt;</b>
+  <b>&lt;feature extension="dita.conductor.transtype.check"
+           value="html5-custom-css"/&gt;</b>
   &lt;feature extension="dita.conductor.target.relative" file="build.xml"/&gt;
 &lt;/plugin&gt;</codeblock>
           </fig>
@@ -66,12 +67,11 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>custom.css</filepath> file</title>
-            <codeblock><i>/* These custom styles extend or override DITA Open Toolkit default styles. */</i>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><i>/* These custom styles extend the DITA Open Toolkit default styles */</i>
 
 body {
   color: red
-}
-</codeblock>
+}</codeblock>
           </fig>
           <note type="tip">When you first create the plug-in, you may want to include a rule in your custom stylesheet
             that makes it readily apparent when the custom styles are applied (the example above will change body text
@@ -84,13 +84,14 @@ body {
         <stepxmp>
           <fig>
             <title>Sample <filepath>build.xml</filepath> file</title>
-            <codeblock>&lt;?xml version='1.0' encoding='UTF-8'?&gt;
-<i>&lt;!-- This plug-in extends DITA-OT HTML5 processing with a custom CSS file. --&gt;</i>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+<i>&lt;!-- Plug-in to extend DITA-OT HTML5 output with a custom CSS file --&gt;</i>
 &lt;project name="com.example.html5.custom.css"&gt;
   &lt;target name="dita2html5-custom-css"&gt;
     &lt;antcall target="dita2html5"&gt;
       <i>&lt;!-- Custom .css file used to style output --&gt;</i>
-      <b>&lt;param name="args.css" value="${dita.plugin.com.example.html5.custom.css.dir}/css/custom.css"/&gt;</b>
+      <b>&lt;param name="args.css" 
+             value="${dita.plugin.com.example.html5.custom.css.dir}/css/custom.css"/&gt;</b>
       <i>&lt;!-- Copy the custom .css file to the output directory --&gt;</i>
       &lt;param name="args.copycss" value="yes"/&gt;
       <i>&lt;!-- Location of the copied .css file relative to the output --&gt;</i>

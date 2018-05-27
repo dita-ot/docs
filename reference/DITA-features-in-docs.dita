@@ -24,10 +24,10 @@
     <section>
       <title>Subject schemes </title>
       <p>Various topics, sections and elements in the docs are profiled by audience:</p>
-      <p><codeblock outputclass="normalize-space"><coderef href="../resources/conref-task.dita#token=excerpt-variables,end-excerpt"/></codeblock></p>
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../resources/conref-task.dita#token=excerpt-variables,end-excerpt"/></codeblock></p>
       <p>An “audience” subject scheme controls the values that are available for the <xmlatt>audience</xmlatt>
         attribute:</p>
-      <p><codeblock outputclass="normalize-space"><coderef href="../resources/subjectscheme.ditamap#token=excerpt-audience,end-excerpt"/></codeblock></p>
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../resources/subjectscheme.ditamap#token=excerpt-audience,end-excerpt"/></codeblock></p>
     </section>
 
     <section>
@@ -38,10 +38,10 @@
             <cmdname>dita</cmdname> command</cite>, filtered to display only content deemed suitable for novice users
         under
         <xref keyref="first-build-using-dita-command"/>:</p>
-      <p><codeblock outputclass="normalize-space"><coderef href="../topics/installing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../topics/installing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
       <p>The same content appears later in
         <xref keyref="build-using-dita-command"/> with additional information on arguments, options and examples.</p>
-      <p><codeblock outputclass="normalize-space"><coderef href="../topics/publishing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
+      <p><codeblock outputclass="show-line-numbers show-whitespace"><coderef href="../topics/publishing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
     </section>
 
     <section>
@@ -52,7 +52,7 @@
         and <codeph>pushafter</codeph>
         <xref keyref="dita13-spec-conaction">conactions</xref>) to extend the parameter descriptions embedded in the
         default plug-ins:</p>
-      <p><codeblock outputclass="normalize-space"><coderef href="../parameters/ant-parameters-details.dita#token=excerpt-csspath,end-excerpt"/></codeblock></p>
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../parameters/ant-parameters-details.dita#token=excerpt-csspath,end-excerpt"/></codeblock></p>
       <p>The pushed content appears in the output after the default description. (See
         <xref keyref="parameters-base-html"/>.)</p>
       <note type="tip">You could also use the same mechanism to extend the documentation with custom information that

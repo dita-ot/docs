@@ -4,21 +4,21 @@
 
 <reference id="code-reference">
 
-  <title>Extended code reference processing</title>
+  <title>Extended codeblock processing</title>
 
   <titlealts>
-    <navtitle>Coderef extensions</navtitle>
+    <navtitle>Codeblock extensions</navtitle>
   </titlealts>
 
-  <shortdesc>DITA-OT provides additional code reference processing support beyond that which is mandated by the DITA
-    specification. These extensions can be used to define character encodings or line ranges for use in code
-    blocks.</shortdesc>
+  <shortdesc>DITA-OT provides additional processing support beyond that which is mandated by the DITA specification.
+    These extensions can be used to define character encodings or line ranges for code references, normalize
+    indendation, add line numbers or display whitespace characters in code blocks.</shortdesc>
 
   <refbody>
     <section id="coderef-charset">
       <title>Character set definition</title>
-      <p>DITA-OT supports defining the code reference target file encoding using the <xmlatt>format</xmlatt> attribute.
-        The supported format is:</p>
+      <p>For <xmlelement>coderef</xmlelement> elements, DITA-OT supports defining the code reference target file
+        encoding using the <xmlatt>format</xmlatt> attribute. The supported format is:</p>
       <codeblock>format (";" space* "charset=" charset)?</codeblock>
       <p>If a character set is not defined, the system default character set will be used. If the character set is not
         recognized or supported, the <msgnum>DOTJ052E</msgnum> error is thrown and the system default character set is
@@ -96,7 +96,7 @@
 ··&lt;/subjectdef></codeblock></p>
         <p>DITA-OT can remove the leading whitespace that is common to all lines in the code block. To trim the excess
           space, set the <xmlatt>outputclass</xmlatt> attribute on the <xmlelement>codeblock</xmlelement> element to
-            <codeph>normalize-space</codeph>.</p>
+          include the <codeph>normalize-space</codeph> keyword.</p>
         <p>In this case, two spaces (“··”) would be removed from the beginning of each line, shifting each line to the
           left by two characters, while preserving the indentation of any lines that contain additional leading
           whitespace (beyond the common indent):</p>
@@ -105,6 +105,42 @@
 ··&lt;subjectdef keys="expert"/>
 ··&lt;subjectdef keys="xslt-customizer"/>
 &lt;/subjectdef></codeblock></p>
+      </example>
+    </refbodydiv>
+    <refbodydiv id="visualize-codeblock-whitespace">
+      <section>
+        <title>Whitespace visualization (PDF)</title>
+        <p>DITA-OT can be set to display the whitespace characters in code blocks to visualize indentation in PDF
+          output.</p>
+        <p>To enable this feature, set the <xmlatt>outputclass</xmlatt> attribute on the
+            <xmlelement>codeblock</xmlelement> element to include the <codeph>show-whitespace</codeph> keyword.</p>
+        <p>When PDF output is generated, space characters in the code will be replaced with a middle dot or “interpunct”
+          character ( <codeph>·</codeph> ); tab characters are replaced with a rightwards arrow and three spaces
+            ( <codeph>→   </codeph> ).</p>
+      </section>
+      <example>
+        <fig>
+          <title>Sample Java code with visible whitespace characters <i>(PDF only)</i></title>
+          <codeblock outputclass="language-java show-whitespace">	for i in 0..10 {
+		println(i)
+	}</codeblock>
+        </fig>
+      </example>
+    </refbodydiv>
+    <refbodydiv id="codeblock-line-numbers">
+      <section>
+        <title>Line numbering (PDF)</title>
+        <p>DITA-OT can be set to add line numbers to code blocks to make it easier to distinguish specific lines.</p>
+        <p>To enable this feature, set the <xmlatt>outputclass</xmlatt> attribute on the
+            <xmlelement>codeblock</xmlelement> element to include the <codeph>show-line-numbers</codeph> keyword.</p>
+      </section>
+      <example>
+        <fig>
+          <title>Sample Java code with line numbers and visible whitespace characters <i>(PDF only)</i></title>
+          <codeblock outputclass="language-java show-line-numbers show-whitespace">	for i in 0..10 {
+		println(i)
+	}</codeblock>
+        </fig>
       </example>
     </refbodydiv>
   </refbody>

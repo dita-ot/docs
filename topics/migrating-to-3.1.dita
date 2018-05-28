@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<reference id="migrating-to-3.1">
+
+  <title>Migrating to release 3.1</title>
+  <titlealts>
+    <navtitle>To 3.1</navtitle>
+  </titlealts>
+
+  <shortdesc>DITA-OT 3.1 <ph id="summary">adds support for … [feature highlights].</ph></shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 3.1 that may require modifications to custom stylesheets
+        or plug-ins.
+        <!--For more information on changes in this release, see the
+        <xref keyref="3.1-release-notes"/>.--></note>
+    </section>
+
+    <section id="pdf-line-numbers">
+      <title>PDF – Enabling line numbers in codeblocks </title>
+      <p>The <codeph>codeblock.generate-line-number</codeph> template mode default has been changed to check for the
+          <codeph>show-line-numbers</codeph> keyword in the <xmlatt>outputclass</xmlatt> attribute. Earlier versions of
+        DITA-OT required custom PDF plug-ins to override the template mode to return <codeph>true()</codeph>. </p>
+    </section>
+
+
+  </refbody>
+</reference>

@@ -115,7 +115,7 @@
           character ( <codeph>·</codeph> ); tab characters are replaced with a rightwards arrow and three spaces
             ( <codeph>→   </codeph> ).</p>
       </section>
-      <example>
+      <example deliveryTarget="pdf">
         <fig>
           <title>Sample Java code with visible whitespace characters <i>(PDF only)</i></title>
           <codeblock outputclass="language-java show-whitespace">	for i in 0..10 {
@@ -131,7 +131,7 @@
         <p>To enable this feature, set the <xmlatt>outputclass</xmlatt> attribute on the
             <xmlelement>codeblock</xmlelement> element to include the <codeph>show-line-numbers</codeph> keyword.</p>
       </section>
-      <example>
+      <example deliveryTarget="pdf">
         <fig>
           <title>Sample Java code with line numbers and visible whitespace characters <i>(PDF only)</i></title>
           <codeblock outputclass="language-java show-line-numbers show-whitespace">	for i in 0..10 {

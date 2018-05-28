@@ -85,6 +85,7 @@ task html(type: DitaOtTask, dependsOn: autoGenerate) {
     input "${projectDir}/userguide.ditamap"
     output outputDir
     transtype 'html5'
+    filter "${projectDir}/resources/html.ditaval"
 
     properties {
         property(file: "${projectDir}/samples/properties/docs-build-html5.properties")
@@ -134,6 +135,7 @@ task site(type: DitaOtTask) {
 
     input file("${projectDir}/site.ditamap")
     output getPropertyOrDefault('outputDir', "${buildDir}/site")
+    filter "${projectDir}/resources/html.ditaval"
 
     transtype 'org.dita-ot.html'
 

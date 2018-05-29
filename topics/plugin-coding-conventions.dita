@@ -19,7 +19,7 @@
       <p>The XSLT module allows access to DITA-OT features like using the job configuration to select files in the
         temporary folder based on file metadata and custom XSLT extension functions. </p>
       <p>Instead of:</p>
-      <p><codeblock outputclass="show-line-numbers show-whitespace">&lt;xslt style="${dita.plugin.example.dir}/custom.xsl"
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;xslt style="${dita.plugin.example.dir}/custom.xsl"
       basedir="${dita.temp.dir}"
       destdir="${dita.output.dir}"
       includesfile="${dita.temp.dir}/${fullditatopicfile}"/></codeblock></p>

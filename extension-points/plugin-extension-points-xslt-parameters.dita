@@ -15,11 +15,7 @@
         <dlentry>
           <dt><parmname>dita.preprocess.conref.param</parmname></dt>
           <dd>Pass parameters to the <codeph>conref</codeph> module in the pre-processing pipeline</dd>
-        </dlentry>
-        <dlentry>
-          <dt><parmname>dita.preprocess.maplink.param</parmname></dt>
-          <dd>Pass parameters to the <codeph>maplink</codeph> module in the pre-processing pipeline</dd>
-        </dlentry>
+        </dlentry>   
         <dlentry>
           <dt><parmname>dita.preprocess.mappull.param</parmname></dt>
           <dd>Pass parameters to the <codeph>mappull</codeph> module in the pre-processing pipeline</dd>

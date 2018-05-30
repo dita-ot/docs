@@ -12,20 +12,20 @@
         <dlentry>
           <dt><parmname>package.support.name</parmname></dt>
           <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/package.support.name.desc"
-            >Specifies the person who provides support for the DITA-OT plug-in.</dd>
+            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/package.support.name.desc">Specifies the
+            person who provides support for the DITA-OT plug-in.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>package.support.email</parmname></dt>
           <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/package.support.email.desc"
-            >Specifies the e-mail address of the person who provides support for the DITA-OT plug-in.</dd>
+            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/package.support.email.desc">Specifies the
+            e-mail address of the person who provides support for the DITA-OT plug-in.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>package.version</parmname></dt>
           <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/package.version.desc">Specifies
-            the version of the DITA-OT plug-in.</dd>
+            conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/package.version.desc">Specifies the version
+            of the DITA-OT plug-in.</dd>
           <dd>
             <p>The value uses the following syntax:</p>
             <codeblock><varname>major</varname>.<varname>minor</varname>.<varname>micro</varname>.<varname>qualifier</varname></codeblock>

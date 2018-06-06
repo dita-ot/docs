@@ -10,7 +10,7 @@
 
   <abstract>
     <shortdesc>DITA Open Toolkit <keyword keyref="release"/> is a feature release that provides new features and
-      enhancements, including <ph conref="#highlights/summary"/>.</shortdesc>
+      enhancements, including <ph conref="#v3.1/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
@@ -27,25 +27,13 @@
     </refbody>
   </reference>
 
-
-  <reference id="highlights">
+  <reference id="v3.1">
     <title>DITA-OT 3.1 <ph outputclass="small">(pending release)</ph></title>
     <refbody>
       <section>
-        <p>DITA-OT <keyword keyref="release"/>
-          <ph id="summary">(summary of release highlights).</ph></p>
-      </section>
-
-
-    </refbody>
-  </reference>
-
-  <reference id="issues">
-    <title>Resolved issues</title>
-    <refbody>
-      <section>
-        <p>In addition to the highlights mentioned above, DITA Open Toolkit Release <keyword keyref="release"/> includes
-          the following changes.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">support for DITA 1.3 SVG
+            domain elements, enhanced codeblock processing, and incremental improvements to Lightweight DITA processing
+            and PDF output</ph>.</p>
       </section>
 
       <section id="features">

@@ -9,7 +9,8 @@
     <navtitle>To 3.1</navtitle>
   </titlealts>
 
-  <shortdesc>DITA-OT 3.1 <ph id="summary">adds support for … [feature highlights].</ph></shortdesc>
+  <shortdesc>DITA-OT 3.1 includes <ph id="summary">support for DITA 1.3 SVG domain elements, enhanced codeblock
+      processing, and incremental improvements to Lightweight DITA processing and PDF output</ph>.</shortdesc>
 
   <refbody>
     <section>
@@ -25,7 +26,6 @@
           <codeph>show-line-numbers</codeph> keyword in the <xmlatt>outputclass</xmlatt> attribute. Earlier versions of
         DITA-OT required custom PDF plug-ins to override the template mode to return <codeph>true()</codeph>. </p>
     </section>
-
 
   </refbody>
 </reference>

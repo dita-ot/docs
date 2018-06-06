@@ -110,8 +110,8 @@
           </li>
           -->
           <li id="2964">Alternate text for images is now preserved in the XSL-FO files generated for PDF, using the
-            custom attributes necessary for FOP, RenderX XEP, and Antenna House processors. The alternate text is now
-            available in the final output file when processors generate accessible PDF.
+            custom attributes necessary for <tm tmtype="tm">Apache</tm> FOP, RenderX XEP, and Antenna House processors.
+            The alternate text is now available in the final output file when processors generate accessible PDF.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2850" format="html" scope="external">#2850</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2964" format="html" scope="external">#2964</xref></li>
           <li id="2967">PDF processing with FOP now uses SLF4J for logging, allowing for better control and formatting

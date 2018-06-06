@@ -45,12 +45,12 @@
             handling of content references and key references in nested maps.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2875" format="html" scope="external">#2875</xref>
           </li>
-          <li id="2880">Updates to the Java code that calls Saxon now allow the use of integrated extension functions
-            for Saxon HE (versions >= 9.2).
+          <li id="2880">Updates to the Java code that calls Saxon now support integrated extension functions for Saxon
+            HE (versions ≥ 9.2).
             <xref href="https://github.com/dita-ot/dita-ot/pull/2880" format="html" scope="external">#2880</xref>
           </li>
-          <li id="2932">A new end-to-end test case ensures we have a basic test in place for all supported transform
-            types with every update to DITA-OT.
+          <li id="2932">A new end-to-end test case ensures a basic test is run for all supported transformation types
+            with every update to DITA-OT.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2932" format="html" scope="external">#2932</xref>
           </li>
           <li id="2960">DITA-OT now supports the DITA 1.3 SVG domain elements, including <xmlelement>svgref</xmlelement>

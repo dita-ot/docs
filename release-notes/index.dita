@@ -49,10 +49,6 @@
             for Saxon HE (versions >= 9.2).
             <xref href="https://github.com/dita-ot/dita-ot/pull/2880" format="html" scope="external">#2880</xref>
           </li>
-          <li id="2907">Remove leading spaces in coderefs
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2907" format="html" scope="external">#2907</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2953" format="html" scope="external">#2953</xref>
-          </li>
           <li id="2932">A new end-to-end test case ensures we have a basic test in place for all supported transform
             types with every update to DITA-OT.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2932" format="html" scope="external">#2932</xref>
@@ -68,6 +64,32 @@
               <xmlelement>term</xmlelement>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2025" format="html" scope="external">#2025</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2961" format="html" scope="external">#2961</xref>
+          </li>
+          <li>Processing for <xmlelement>codeblock</xmlelement> elements has been enhanced to support new
+              <xmlatt>outputclass</xmlatt> keywords that can be used to adjust the presentation of code samples.
+            <ul>
+              <li id="2907">To remove leading whitespace in external code references, set the
+                  <xmlatt>outputclass</xmlatt> attribute to include the <codeph>normalize-space</codeph> keyword. With
+                this setting, DITA-OT trims any leading whitespace that is common to all lines in the code block to
+                remove excess indentation and keep lines short.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/2907" format="html" scope="external">#2907</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/pull/2953" format="html" scope="external">#2953</xref>
+              </li>
+              <li id="2975">To highlight whitespace characters in code blocks, set the <xmlatt>outputclass</xmlatt>
+                attribute to include the <codeph>show-whitespace</codeph> keyword. When PDF output is generated, space
+                characters in the code will be replaced with a middle dot or “interpunct” character
+                ( <codeph>·</codeph> ); tab characters are replaced with a rightwards arrow and three spaces
+                  ( <codeph>→   </codeph> ).
+                <xref href="https://github.com/dita-ot/dita-ot/pull/2975" format="html" scope="external">#2975</xref>
+              </li>
+              <li>To add line numbers to code blocks in PDF output, set the <xmlatt>outputclass</xmlatt> attribute to
+                include the <codeph>show-line-numbers</codeph> keyword. <note>Line numbering has been available since
+                  DITA-OT 2.0, but previously required custom PDF plug-ins to override the
+                    <codeph>codeblock.generate-line-number</codeph> template mode to return <codeph>true()</codeph>.
+                  DITA-OT 3.1 now checks for the keyword in the <xmlatt>outputclass</xmlatt>, so line numbering can be
+                  enabled without custom PDF plug-ins.</note>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -118,11 +140,6 @@
           <li id="2974">The FOP processor is updated to version 2.3.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2974" format="html" scope="external">#2974</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2976" format="html" scope="external">#2976</xref>
-          </li>
-          <li id="2975">PDF processing now supports a custom value in the <xmlatt>outputclass</xmlatt> attribute on
-              <xmlelement>codeblock</xmlelement> that results in visible characters to highlight white space in the code
-            block.
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2975" format="html" scope="external">#2975</xref>
           </li>
           <li id="2978">The <xmlatt>frame</xmlatt> attribute on <xmlelement>choicetable</xmlelement> elements is now
             respected in PDF output; previously all values for <xmlatt>frame</xmlatt> on this element were ignored in

@@ -120,12 +120,13 @@
           </li>
           -->
           <li id="2964">Alternate text for images is now preserved in the XSL-FO files generated for PDF, using the
-            custom attributes necessary for <tm tmtype="tm">Apache</tm> FOP, RenderX XEP, and Antenna House processors.
-            The alternate text is now available in the final output file when processors generate accessible PDF.
+            custom attributes necessary for <tm trademark="Apache" tmtype="tm">Apache</tm> FOP, RenderX XEP, and Antenna
+            House processors. The alternate text is now available in the final output file when processors generate
+            accessible PDF.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2850" format="html" scope="external">#2850</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2964" format="html" scope="external">#2964</xref></li>
-          <li id="2967">PDF processing with FOP now uses SLF4J for logging, allowing for better control and formatting
-            of messages from the FOP processor.
+          <li id="2967">PDF processing with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP now uses SLF4J for
+            logging, allowing for better control and formatting of messages from the FOP processor.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2967" format="html" scope="external">#2967</xref>
           </li>
           <li id="2970">The HTML5 XSLT stylesheets used to create TOC navigation have been refactored to use a new
@@ -137,7 +138,9 @@
           <li id="2972">Update distribution build to use docs Gradle build
             <xref href="https://github.com/dita-ot/dita-ot/issues/2972" format="html" scope="external">#2972</xref>
           </li>
-          <li id="2974">The FOP processor is updated to version 2.3.
+          <li id="2974">The bundled <tm trademark="Apache" tmtype="tm">Apache</tm> FOP version has been updated to <ph
+              keyref="tool.fop.version"/>. (For details on recent changes, see the
+            <xref keyref="fop-23-rn"/>.)
             <xref href="https://github.com/dita-ot/dita-ot/issues/2974" format="html" scope="external">#2974</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2976" format="html" scope="external">#2976</xref>
           </li>

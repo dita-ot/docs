@@ -135,6 +135,11 @@
           <li id="2976">The FOP processor is updated to version 2.3.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2976" format="html" scope="external">#2976</xref>
           </li>
+          <li id="2978">The <xmlatt>frame</xmlatt> attribute on <xmlelement>choicetable</xmlelement> elements is now
+            respected in PDF output; previously all values for <xmlatt>frame</xmlatt> on this element were ignored in
+            PDF.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2978" format="html" scope="external">#2978</xref>
+          </li>
           <li id="2982">The LwDITA plugin has been updated to version 2.0.4, pulling in a number of fixes for
             Lightweight DITA processing.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2982" format="html" scope="external">#2982</xref>
@@ -174,11 +179,6 @@
           </li>
           <li id="2973">Remove empty <filepath>temp/</filepath> directory from distribution package
             <xref href="https://github.com/dita-ot/dita-ot/issues/2973" format="html" scope="external">#2973</xref>
-          </li>
-          <li id="2978">The <xmlatt>frame</xmlatt> attribute on <xmlelement>choicetable</xmlelement> elements is now
-            respected in PDF output; previously all values for <xmlatt>frame</xmlatt> on this element were ignored in
-            PDF.
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2978" format="html" scope="external">#2978</xref>
           </li>
           <!--
           <li id="2978">

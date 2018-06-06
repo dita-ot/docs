@@ -127,13 +127,14 @@
           <li id="2972">Update distribution build to use docs Gradle build
             <xref href="https://github.com/dita-ot/dita-ot/issues/2972" format="html" scope="external">#2972</xref>
           </li>
+          <li id="2974">The FOP processor is updated to version 2.3.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2974" format="html" scope="external">#2974</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2976" format="html" scope="external">#2976</xref>
+          </li>
           <li id="2975">PDF processing now supports a custom value in the <xmlatt>outputclass</xmlatt> attribute on
               <xmlelement>codeblock</xmlelement> that results in visible characters to highlight white space in the code
             block.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2975" format="html" scope="external">#2975</xref>
-          </li>
-          <li id="2976">The FOP processor is updated to version 2.3.
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2976" format="html" scope="external">#2976</xref>
           </li>
           <li id="2978">The <xmlatt>frame</xmlatt> attribute on <xmlelement>choicetable</xmlelement> elements is now
             respected in PDF output; previously all values for <xmlatt>frame</xmlatt> on this element were ignored in

@@ -149,9 +149,10 @@
             PDF.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2978" format="html" scope="external">#2978</xref>
           </li>
-          <li id="2982">The LwDITA plugin has been updated to version 2.0.4, pulling in a number of fixes for
+          <li id="2982">The LwDITA plugin has been updated to version 2.0.5, pulling in a number of fixes for
             Lightweight DITA processing.
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2982" format="html" scope="external">#2982</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2982" format="html" scope="external">#2982</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2993" format="html" scope="external">#2993</xref>
           </li>
           <li id="2984">PDF processing now includes a processing hook that can be used to add custom
               <xmlelement>fo:marker</xmlelement> elements on any topic. New processing hooks are also available to add
@@ -159,10 +160,10 @@
             location within a PDF.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2984" format="html" scope="external">#2984</xref>
           </li>
-          <li id="2991">Update Gradle wrapper to 4.7
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2991" format="html" scope="external">#2991</xref>
+          <li id="2991">Update Gradle wrapper to 4.8
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2991" format="html" scope="external">#2991</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2994" format="html" scope="external">#2994</xref>
           </li>
-
         </ul>
       </section>
 

@@ -105,8 +105,8 @@
           </li>
           <li id="2890">Ant scripts for DITA-OT builds now make use of <xmlatt>if:set</xmlatt> and
               <xmlatt>unless:set</xmlatt> attributes in the Ant namespace, which can be used to control whether the item
-            is run or otherwise takes effect. These attributes replace custom implementations of <codeph>if</codeph>
-            and <codeph>unless</codeph> logic introduced before Ant had this capability.
+            is run or otherwise takes effect. These attributes replace custom implementations of <codeph>if</codeph> and
+              <codeph>unless</codeph> logic introduced before Ant had this capability.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2890" format="html" scope="external">#2890</xref>
           </li>
           <li id="2938">The PDF build code has been refactored and simplified to use the
@@ -125,8 +125,9 @@
             accessible PDF.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2850" format="html" scope="external">#2850</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2964" format="html" scope="external">#2964</xref></li>
-          <li id="2967">PDF processing with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP now uses SLF4J for
-            logging, allowing for better control and formatting of messages from the FOP processor.
+          <li id="2967">In PDF processing with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP, DITA-OT 3.1 now uses
+            the Simple Logging Facade for Java (SLF4J), allowing for better control and formatting of FOP log messages.
+            To reduce noise on the console, all FOP messages are set to the Info level and hidden by default.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2967" format="html" scope="external">#2967</xref>
           </li>
           <li id="2970">The HTML5 XSLT stylesheets used to create TOC navigation have been refactored to use a new

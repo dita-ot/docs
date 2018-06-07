@@ -20,6 +20,29 @@
         <xref keyref="3.1-release-notes"/>.--></note>
     </section>
 
+    <section>
+      <title>Custom if/unless attributes in Ant scripts</title>
+      <p>Ant scripts for DITA-OT builds now make use of <xmlatt>if:set</xmlatt> and <xmlatt>unless:set</xmlatt>
+        attributes in the Ant namespace, which can be used to control whether the item is run or otherwise takes effect.
+        These attributes replace custom implementations of <codeph>if</codeph> and <codeph>unless</codeph> logic
+        introduced before Ant had this capability.</p>
+      <p>If your plug-ins include Ant scripts that use the earlier custom implementations, add the following namespace
+        attributes to the root project:
+        <ul>
+          <li><xmlnsname>xmlns:if</xmlnsname>=<codeph>"ant:if"</codeph></li>
+          <li><xmlnsname>xmlns:unless</xmlnsname>=<codeph>"ant:unless"</codeph></li>
+        </ul></p>
+      <p>In custom Ant build files and in any files that supply parameters to existing Ant build files, replace all
+        occurrences of <codeph>if="property"</codeph> with <codeph>if<b>:set</b>="property"</codeph> (and
+          <codeph>unless</codeph> → <codeph>unless<b>:set</b></codeph> respectively).</p>
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;root xmlns:if="ant:if" xmlns:unless="ant:unless">
+  &lt;param name="antProperty" expression="${antProperty}"
+         if<b>:set</b>="antProperty"/>
+&lt;/root></codeblock></p>
+      <p>For more information on passing parameters to existing XSLT steps, see
+        <xref keyref="plugin-extension-points-xslt-parameters"/>.</p>
+    </section>
+
     <section id="pdf-line-numbers">
       <title>PDF – Enabling line numbers in codeblocks </title>
       <p>The <codeph>codeblock.generate-line-number</codeph> template mode default has been changed to check for the

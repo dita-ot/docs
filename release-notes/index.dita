@@ -136,7 +136,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2821" format="html" scope="external">#2821</xref>
             <xref href="https://github.com/dita-ot/dita-ot/pull/2970" format="html" scope="external">#2970</xref>
           </li>
-          <li id="2972">Update distribution build to use docs Gradle build
+          <li id="2972">The distribution build has been updated to use the documentation Gradle build instead of Ant.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2972" format="html" scope="external">#2972</xref>
           </li>
           <li id="2974">The bundled <tm trademark="Apache" tmtype="tm">Apache</tm> FOP version has been updated to <ph
@@ -151,17 +151,19 @@
             <xref href="https://github.com/dita-ot/dita-ot/pull/2978" format="html" scope="external">#2978</xref>
           </li>
           <li id="2982">The LwDITA plugin has been updated to version 2.0.5, pulling in a number of fixes for
-            Lightweight DITA processing.
+            Lightweight DITA processing. (Topic metadata is now preserved in YAML headers when generating Markdown for
+            composite topics, autolinks in Markdown topics are treated as external cross references, and definition
+            lists in Markdown input and links to ID fragments are now handled correctly.)
             <xref href="https://github.com/dita-ot/dita-ot/pull/2982" format="html" scope="external">#2982</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2993" format="html" scope="external">#2993</xref>
           </li>
-          <li id="2984">PDF processing now includes a processing hook that can be used to add custom
+          <li id="2984">PDF processing now includes a hook that can be used to add custom
               <xmlelement>fo:marker</xmlelement> elements on any topic. New processing hooks are also available to add
             custom anchors on any topic or titled sub-topic element, intended as a way to enable stable links into a
             location within a PDF.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2984" format="html" scope="external">#2984</xref>
           </li>
-          <li id="2991">Update Gradle wrapper to 4.8
+          <li id="2991">The Gradle wrapper used to run the documentation build has been updated to version 4.8.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2991" format="html" scope="external">#2991</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/2994" format="html" scope="external">#2994</xref>
           </li>
@@ -179,7 +181,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2494" format="html" scope="external">#2494</xref>
           </li>
           <li id="2898">When a <xmlelement>chapter</xmlelement> element refers to another map that is not a bookmap, PDF
-            processing now formats the referenced content as a chapter. In earlier versions the content could be
+            processing now formats the referenced content as a chapter. In earlier versions, the content could be
             formatted as a generic topic that did not match other chapters in the same map.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2898" format="html" scope="external">#2898</xref>
           </li>
@@ -188,7 +190,8 @@
             indicate a problem that results in broken output, will now appear as <msgnum>DOTJ007W</msgnum>.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2958" format="html" scope="external">#2958</xref>
           </li>
-          <li id="2973">Remove empty <filepath>temp/</filepath> directory from distribution package
+          <li id="2973">The empty <filepath>temp/</filepath> directory included in DITA-OT 3.0 distribution packages has
+            been removed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2973" format="html" scope="external">#2973</xref>
           </li>
           <!--
@@ -197,12 +200,13 @@
           </li>
           -->
           <li id="2985">Several duplicate ID messages that appeared in PDF processing have been fixed by removing
-            incorrectly ID definitions. These messages could previously appear when nested elements inside of topic
-            titles or topic short descriptions specified their own <xmlatt>id</xmlatt> attribute; in DITA-OT 3.0, this
-            also appeared for all <xmlelement>pt</xmlelement> elements that specified <xmlatt>id</xmlatt>.
+            incorrect ID definitions. These messages could previously appear when nested elements inside of topic titles
+            or topic short descriptions specified their own <xmlatt>id</xmlatt> attribute; in DITA-OT 3.0, this also
+            appeared for all <xmlelement>pt</xmlelement> elements that specified <xmlatt>id</xmlatt>.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2985" format="html" scope="external">#2985</xref>
           </li>
-          <li id="2990">Remove unnecessary files from <filepath>docsrc</filepath> distribution
+          <li id="2990">Several unnecessary files have been removed from the <filepath>docsrc/</filepath> folder of the
+            distribution package.
             <xref href="https://github.com/dita-ot/dita-ot/pull/2990" format="html" scope="external">#2990</xref>
           </li>
 
@@ -232,12 +236,16 @@
       <section id="docs">
         <title>Documentation updates</title>
         <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
-          improvements to existing topics, along with new information:</p>
+          improvements to existing topics, along with new information in the following topics:</p>
         <ul>
+          <li>
+            <xref keyref="extended-functionality"/></li>
           <li>
             <xref keyref="plugin-coding-conventions"/></li>
           <li>
             <xref keyref="migrating-to-3.1"/></li>
+          <li>
+            <xref keyref="log-files"/></li>
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"/>, see the

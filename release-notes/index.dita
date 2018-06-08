@@ -104,11 +104,12 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2079" format="html" scope="external">#2079</xref>
           </li>
           <li id="2890">Ant scripts for DITA-OT builds now make use of <xmlatt>if:set</xmlatt> and
-              <xmlatt>unless:set</xmlatt> attributes in the Ant namespace, which can be used to control whether the item
-            is run or otherwise takes effect. These attributes replace custom implementations of <codeph>if</codeph> and
-              <codeph>unless</codeph> logic introduced before Ant had this capability.
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2890" format="html" scope="external">#2890</xref>
-          </li>
+<xmlatt>unless:set</xmlatt> attributes in the Ant namespace, which can be used to control whether
+parameters are passed to XSLT modules. These attributes replace custom implementations of
+<codeph>if</codeph> and <codeph>unless</codeph> logic introduced before Ant had this capability.
+<xref href="https://github.com/dita-ot/dita-ot/pull/2890" format="html" scope="external"
+>#2890</xref>
+</li>
           <li id="2938">The PDF build code has been refactored and simplified to use the
               <xmlelement>xmlcatalog</xmlelement> element instead of using a custom <codeph>xml.catalog.files</codeph>
             property.

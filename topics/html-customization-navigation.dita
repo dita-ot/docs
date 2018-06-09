@@ -31,8 +31,9 @@
         <cmd>Add custom CSS rules to style the navigation.</cmd>
         <info>
           <p>For example, the DITA-OT documentation stylesheet includes the following rules to place the table of
-            contents on the left side of the browser viewport and highlight the current topic in bold:
-            <codeblock><coderef href="../resources/dita-ot-doc.css#token=nav-coderef,end-nav-ref"/></codeblock>
+            contents on the left side of the browser viewport and highlight the current topic in bold:</p>
+          <p>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../resources/dita-ot-doc.css#token=nav-coderef,end-nav-ref"/></codeblock>
           </p>
         </info>
       </step>

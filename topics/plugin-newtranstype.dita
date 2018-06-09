@@ -24,8 +24,9 @@
       <step>
         <cmd>Create the following feature:</cmd>
         <info>
-          <codeblock>&lt;plugin id="<varname>plugin-id </varname>">
-  &lt;feature extension="dita.conductor.transtype.check" value="<varname>new-transtype</varname>"/>
+          <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id </varname>">
+  &lt;feature extension="dita.conductor.transtype.check" 
+           value="<varname>new-transtype</varname>"/>
   <b>&lt;feature extension="dita.transtype.print" value="<varname>new-transtype</varname>"/></b>
   &lt;feature extension="dita.conductor.target.relative" file="<varname>ant-file</varname>"/>
 &lt;/plugin></codeblock>
@@ -49,19 +50,20 @@
       <p>The following <filepath>plugin.xml</filepath> file defines a new transformation type named "newtext"; it also
         defines the transformation type to be a print type. The build will look for a <parmname>dita2newtext</parmname>
         target.</p>
-      <codeblock>&lt;plugin id="com.example.newtext">
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.newtext">
   &lt;feature extension="dita.conductor.transtype.check" value="newtext"/>
   &lt;feature extension="dita.transtype.print" value="newtext"/>
-  &lt;feature extension="dita.conductor.target.relative" file="build-newtext.xml"/>
+  &lt;feature extension="dita.conductor.target.relative" 
+           file="build-newtext.xml"/>
 &lt;/plugin></codeblock>
       <p>While the <filepath>org.dita.html5</filepath> plug-in was separated from <codeph>common-html</codeph> in version 2.4,
           the following example shows how earlier versions of that plug-in used the
           <xmlelement>transtype</xmlelement> element to extend the common HTML transformation with a new
           <option>html5</option> transformation type and define a new <parmname>nav-toc</parmname> parameter with three
         possible values:</p>
-      <codeblock><b>&lt;transtype name="html5" extends="common-html" desc="HTML5"></b>
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><b>&lt;transtype name="html5" extends="common-html" desc="HTML5"></b>
   &lt;param name="nav-toc" type="enum" 
-         desc="Specifies whether to generate a navigation TOC in topic pages.">
+         desc="Specifies whether to generate navigation in topic pages.">
     &lt;val default="true" desc="No TOC">none&lt;/val>
     &lt;val desc="Partial TOC that shows the current topic">partial&lt;/val>
     &lt;val desc="Full TOC">full&lt;/val>

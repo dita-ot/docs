@@ -20,14 +20,16 @@
       <li>keys and key references</li>
       <li>XML mention domain</li>
     </ul>
+
     <section>
       <title>Subject schemes </title>
       <p>Various topics, sections and elements in the docs are profiled by audience:</p>
-      <p><codeblock><coderef href="../resources/conref-task.dita#token=excerpt-variables,end-excerpt"/></codeblock></p>
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../resources/conref-task.dita#token=excerpt-variables,end-excerpt"/></codeblock></p>
       <p>An “audience” subject scheme controls the values that are available for the <xmlatt>audience</xmlatt>
         attribute:</p>
-      <p><codeblock><coderef href="../resources/subjectscheme.ditamap#token=excerpt-audience,end-excerpt"/></codeblock></p>
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../resources/subjectscheme.ditamap#token=excerpt-audience,end-excerpt"/></codeblock></p>
     </section>
+
     <section>
       <title>Branch filtering: re-using profiled content</title>
     </section>
@@ -36,11 +38,12 @@
             <cmdname>dita</cmdname> command</cite>, filtered to display only content deemed suitable for novice users
         under
         <xref keyref="first-build-using-dita-command"/>:</p>
-      <p><codeblock><coderef href="../topics/installing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../topics/installing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
       <p>The same content appears later in
         <xref keyref="build-using-dita-command"/> with additional information on arguments, options and examples.</p>
-      <p><codeblock><coderef href="../topics/publishing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../topics/publishing.ditamap#token=branch-filter,end-filtering"/></codeblock></p>
     </section>
+
     <section>
       <title>Conref push</title>
     </section>
@@ -49,22 +52,24 @@
         and <codeph>pushafter</codeph>
         <xref keyref="dita13-spec-conaction">conactions</xref>) to extend the parameter descriptions embedded in the
         default plug-ins:</p>
-      <p><codeblock><coderef href="../parameters/ant-parameters-details.dita#token=excerpt-csspath,end-excerpt"/></codeblock></p>
+      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../parameters/ant-parameters-details.dita#token=excerpt-csspath,end-excerpt"/></codeblock></p>
       <p>The pushed content appears in the output after the default description. (See
         <xref keyref="parameters-base-html"/>.)</p>
       <note type="tip">You could also use the same mechanism to extend the documentation with custom information that
         applies only to your company's toolkit distribution.</note>
     </section>
+
     <section>
       <title>Keys and key references</title>
     </section>
     <section>
       <p>The <codeph>key-definitions.ditamap</codeph> defines keys for version references, re-usable links, etc.</p>
       <p>This key definition defines the maintenance release version:</p>
-      <p><codeblock><coderef href="../resources/key-definitions.ditamap#token=excerpt-version,end-excerpt"/></codeblock></p>
+      <p><codeblock outputclass="normalize-space"><coderef href="../resources/key-definitions.ditamap#token=excerpt-version,end-excerpt"/></codeblock></p>
       <p>In topics, the keyword is used in place of hard-coded version references:</p>
       <codeblock>&lt;title&gt;DITA Open Toolkit &lt;keyword keyref="maintenance-version"/&gt; Release Notes&lt;/title&gt;</codeblock>
     </section>
+
     <section>
       <title>XML mention domain</title>
     </section>

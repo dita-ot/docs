@@ -21,8 +21,9 @@
       configuration for the Java application.</note>
     <example>
       <title>Example usage</title>
-      <codeblock outputclass="language-java">// Create a reusable processor factory with DITA-OT base directory and temporary directory
+      <codeblock outputclass="language-java normalize-space show-line-numbers show-whitespace">// Create a reusable processor factory with DITA-OT base directory
 ProcessorFactory pf = ProcessorFactory.newInstance(ditaDir);
+// and set the temporary directory
 pf.setBaseTempDir(tempDir);
 
 // Create a processor using the factory and configure the processor

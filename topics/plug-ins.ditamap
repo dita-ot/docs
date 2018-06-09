@@ -23,7 +23,20 @@
     </topicref>
     <topicref keyref="plugin-sample"/>
     <topicref keyref="plugin-best-practices"/>
+    <topicref keyref="plugin-coding-conventions"/>
   </topicref>
+
+  <reltable>
+    <title>Bi-directional links</title>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-best-practices"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+    </relrow>
+  </reltable>
 
   <reltable>
     <title>Source and target links</title>

@@ -22,9 +22,11 @@
             point for your own customizations. This file is available in the installation folder under
               <filepath>docsrc/samples/properties/docs-build-html5.properties</filepath>.</note>
         </info>
-        <stepxmp>For example: <fig>
+        <stepxmp>
+          <p>For example:</p>
+          <fig>
             <title>The <filepath>docsrc/samples/properties/docs-build-html5.properties</filepath> file</title>
-            <codeblock><coderef href="../samples/properties/docs-build-html5.properties"/></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/docs-build-html5.properties"/></codeblock>
           </fig>
         </stepxmp>
       </step>

@@ -43,7 +43,7 @@
         <li>When there are multiple <xmlelement>revprop</xmlelement> elements with the same <xmlatt>val</xmlatt>
           attribute, no error or warning is thrown</li>
         <li>When multiple prop elements define a duplicate attribute and value combination, attribute default, or
-          fall-back behavior, the <msgnum>DOTJ007E</msgnum> error is thrown.</li>
+          fall-back behavior, the <msgnum>DOTJ007W</msgnum> warning is thrown.</li>
       </ul>
     </section>
     <section id="section_kjq_egs_qc">

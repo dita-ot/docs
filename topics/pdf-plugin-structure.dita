@@ -51,7 +51,7 @@
         locale-dependent variable files, such as</p>
       <codeblock>cfg/common/vars</codeblock>
       <p>The variables that control <xmlelement>note</xmlelement> graphics all follow the form</p>
-      <codeblock>  &lt;variable id="{type} Note Image Path"&gt; {Path to image file} &lt;/variable&gt;</codeblock>
+      <codeblock>&lt;variable id="{type} Note Image Path"&gt; {Path to image file} &lt;/variable&gt;</codeblock>
       <p>where {type} contains a possible value for the <xmlelement>note</xmlelement>
         <xmlatt>type</xmlatt> attribute.</p>
     </section>

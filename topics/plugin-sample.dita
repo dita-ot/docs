@@ -14,8 +14,9 @@
         <xref format="html" href="https://sourceforge.net/projects/dita-ot/files/Plug-in_%20Music/" scope="external"
           >SourceForge</xref>.</p>
     </section>
-    <example><codeblock>&lt;plugin id="org.metadita.specialization.music">
-  &lt;feature extension="dita.specialization.catalog.relative" file="catalog-dita.xml"/>
+    <example><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="org.metadita.specialization.music">
+  &lt;feature extension="dita.specialization.catalog.relative" 
+           file="catalog-dita.xml"/>
   &lt;feature extension="dita.xsl.xhtml" file="xsl/music2xhtml.xsl"/>
 &lt;/plugin></codeblock></example>
   </refbody>

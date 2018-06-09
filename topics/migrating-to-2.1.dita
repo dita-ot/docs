@@ -61,7 +61,7 @@
       </ul>
       <p>Calls to that template will result in warnings in the build log.</p>
       <p>To update your plug-in, make the following changes:</p>
-      <codeblock>&lt;xsl:call-template name="<line-through>insertVariable</line-through><b>getVariable</b>">
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="<line-through>insertVariable</line-through><b>getVariable</b>">
   &lt;xsl:with-param name="<line-through>theVariableID</line-through><b>id</b>" select="<varname>var-id</varname>"/>
   &lt;xsl:with-param name="<line-through>theParameters</line-through><b>params</b>">
     <varname>params</varname>
@@ -96,11 +96,11 @@
         updated <codeph>dita.map.xhtml.toc</codeph> equivalent.</p>
       <p>Keydef processing has been removed from the XHTML rendering code. Keys are now resolved in one preprocessing
         step, whereas in earlier versions of DITA-OT, the XHTML code returned to the <filepath>keydef.xml</filepath>
-        file to look up targets for phrase elements and pull in text when needed. This change affects non-linking
-        elements that can't take <xmlatt>href</xmlatt> attributes, such as <xmlelement>ph</xmlelement>,
-          <xmlelement>keyword</xmlelement>, <xmlelement>cite</xmlelement>, <xmlelement>dt</xmlelement>,
-          <xmlelement>term</xmlelement>, and <xmlelement>indexterm</xmlelement> (when <codeph>$INDEXSHOW</codeph> is
-        active).</p>
+        file to look up targets for phrase elements and pull in text when needed.</p>
+      <p>This change affects non-linking elements that can't take <xmlatt>href</xmlatt> attributes, such as
+          <xmlelement>ph</xmlelement>, <xmlelement>keyword</xmlelement>, <xmlelement>cite</xmlelement>,
+          <xmlelement>dt</xmlelement>, <xmlelement>term</xmlelement>, and <xmlelement>indexterm</xmlelement> (when
+          <codeph>$INDEXSHOW</codeph> is active).</p>
     </section>
 
     <section>

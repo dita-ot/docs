@@ -27,7 +27,7 @@
       <p>The <xmlatt>format</xmlatt> attribute can be set to <codeph>mdita</codeph> to apply LwDITA-specific processing
         to Markdown topics:</p>
       <p>
-        <codeblock>&lt;map>
+        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;map>
   &lt;topicref href="mdita-topic.md" <b>format="mdita"</b>/>
 &lt;/map></codeblock>
       </p>
@@ -47,7 +47,7 @@
       <p>The <xmlatt>format</xmlatt> attribute can be set to <codeph>hdita</codeph> to apply LwDITA-specific processing
         to HTML topics:</p>
       <p>
-        <codeblock>&lt;map>
+        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;map>
   &lt;topicref href="hdita-topic.html" <b>format="hdita"</b>/>
 &lt;/map></codeblock>
       </p>

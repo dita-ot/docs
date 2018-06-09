@@ -38,8 +38,11 @@
         <info>
           <note conref="../resources/conref-task.dita#ID/template-properties"/>
         </info>
-        <stepxmp>For
-          example:<codeblock><coderef href="../samples/properties/sequence-html5.properties"/></codeblock></stepxmp>
+        <stepxmp>
+          <p>For example:</p>
+          <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/sequence-html5.properties"/></codeblock>
+          </p>
+        </stepxmp>
       </step>
       <step>
         <cmd>Reference your <filepath>.properties</filepath> file with the <cmdname>dita</cmdname> command when building

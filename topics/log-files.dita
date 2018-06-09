@@ -57,6 +57,19 @@
         </dlentry>
       </dl>
     </section>
+    <section>
+      <title>FOP debug logging</title>
+      <p>In PDF processing with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP, DITA-OT 3.1 now uses the Simple
+        Logging Facade for Java (SLF4J), allowing for better control and formatting of FOP log messages. To reduce noise
+        on the console, all FOP messages are set to the Info level and hidden by default.</p>
+      <p>To enable debug logging, modify the <filepath>config/logback.xml</filepath> file or add your own
+          <filepath>logback.xml</filepath> to the classpath with a higher priority to override the default settings. For
+        more information, see the
+        <xref href="https://logback.qos.ch/manual/configuration.html" format="html" scope="external">Logback
+          configuration documentation</xref>.</p>
+      <note type="attention">Enabling FOP debug logging will dramatically increase the size of generated log
+        files.</note>
+    </section>
     <!--<section><title>Analyze messages on the screen</title><p>During the building process, some information or messages
         occur on the screen to tell you about the status, warnings, errors, or fatal errors. You need to analyze the
         messages to solve the problems. <ul>

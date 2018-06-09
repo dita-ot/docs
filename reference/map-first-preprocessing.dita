@@ -41,35 +41,34 @@
         transformation types instead of using the default <codeph>preprocess</codeph> target.</p>
       <p>For example, if you have a custom HTML5 transformation type named "myhtml", then you may have a plug-in
         extension that looks this:</p>
-      <codeblock>&lt;!-- Simple variant: set properties and call default HTML5 -->
+      <codeblock><i>&lt;!-- Simple variant: set properties and call default HTML5 --></i>
 &lt;target name="dita2myhtml" depends="myhtml.init,dita2html5"/>
 </codeblock>
       <p>This type of extension is quite common, and is used to set default properties for your environment followed by
         a normal build to use those properties. In this case, you'll need to replace <codeph>dita2html5</codeph> with
         the normal HTML5 steps, swapping out <codeph>preprocess</codeph> for <codeph>preprocess2</codeph>:</p>
-      <codeblock>&lt;!-- Simple variant: set properties and call default HTML5 -->
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;!-- Simple variant: set properties and call default HTML5 -->
 &lt;target name="dita2myhtml" 
-          depends="myhtml.init,
-                   html5.init,
-                   build-init,
-                   <b>preprocess2,</b>
-                   html5.topic,
-                   html5.map,
-                   html5.css"/>
-</codeblock>
+        depends="myhtml.init,
+                 html5.init,
+                 build-init,
+                 <b>preprocess2,</b>
+                 html5.topic,
+                 html5.map,
+                 html5.css"/></codeblock>
       <note>If you use this simple method for customized PDF, HTML Help, or JavaHelp builds, you will automatically be
         using <codeph>preprocess2</codeph>.</note>
       <p>Some custom transformation types already require you to repeat the default dependencies, in which case you
         should already call <codeph>preprocess</codeph> directly, as in the following:</p>
-      <codeblock>&lt;!-- More complex variant: add processing steps to default HTML5 -->
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;!-- More complex variant: add processing steps to default HTML5 -->
 &lt;target name="dita2myhtml"
-          depends="myhtml.init,
-                   build-init,
-                   preprocess,
-                   local-extensions-after-preprocess,
-                   html5.topic,
-                   html5.map,
-                   html5.css"/></codeblock>
+        depends="myhtml.init,
+                 build-init,
+                 preprocess,
+                 local-extensions-after-preprocess,
+                 html5.topic,
+                 html5.map,
+                 html5.css"/></codeblock>
       <p>In such cases, the modification is much easier – simply add a <codeph>2</codeph> to the existing
           <codeph>preprocess</codeph> target.</p>
     </section>
@@ -84,19 +83,18 @@
         variant called <codeph>myhtml</codeph> as above, instead of modifying that transformation directly, you could
         create a second transformation type called <codeph>myhtml-beta</codeph> that provides exactly the same support,
         but with the new map-first preprocessing:</p>
-      <codeblock>&lt;!-- Original "myhtml" is not modified, used for production -->
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><i>&lt;!-- Original "myhtml" is not modified, used for production --></i>
 &lt;target name="dita2myhtml5" depends="myhtml.init,dita2html5"/>
 
-&lt;!-- "myhtml-beta" provides a way to test and provide feedback on preprocess2 -->
+<i>&lt;!-- "myhtml-beta" used to test and provide feedback on preprocess2 --></i>
 &lt;target name="dita2myhtml-beta" 
-          depends="myhtml.init,
-                   html5.init,
-                   build-init,
-                   <b>preprocess2,</b>
-                   html5.topic,
-                   html5.map,
-                   html5.css"/>
-</codeblock>
+        depends="myhtml.init,
+                 html5.init,
+                 build-init,
+                 <b>preprocess2,</b>
+                 html5.topic,
+                 html5.map,
+                 html5.css"/></codeblock>
     </section>
     <section>
       <title>Known limitations</title>

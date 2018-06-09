@@ -141,9 +141,7 @@ ul {
 }
 
 pre {
-  margin-bottom: 0.75em;
-  margin-left: 2em;
-  margin-top: 0.75em;
+  margin: 10px 0;
   padding: 0;
 }
 
@@ -153,7 +151,7 @@ Block elements
 
 .codeblock,
 .screen {
-  background-color: #eee;
+  background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 6px;
@@ -259,3 +257,11 @@ nav[role=toc] li.active > a {
   font-weight: bold;
 }
 /* ↑ end-nav-ref ↑ */
+
+nav[role=toc] > ul {
+  margin-right: 2em;
+}
+
+nav[role=toc] > ul > li ul {
+  margin-left: 1.2em;
+}

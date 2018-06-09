@@ -78,25 +78,31 @@
       <title>Example DITAVAL</title>
       <p>Assume the following DITAVAL file is in use during a build. This DITAVAL will be used for each of the following
         content examples.</p>
-      <codeblock>&lt;?xml version="1.0" encoding="UTF-8"?>
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;val>
-  &lt;!-- Define what happens in the case of conflicting styles -->
+  <i>&lt;!-- Define what happens in the case of conflicting styles --></i>
   &lt;style-conflict background-conflict-color="red"/>
 
-  &lt;!-- Define two flagging properties that give styles (no image) -->
-  &lt;prop action="flag" att="audience" style="underline" val="user" backcolor="green"/>
-  &lt;prop action="flag" att="platform" style="overline" val="win" backcolor="blue"/>
+  <i>&lt;!-- Define two flagging properties that give styles (no image) --></i>
+  &lt;prop action="flag" att="audience" style="underline" val="user"
+        backcolor="green"/>
+  &lt;prop action="flag" att="platform" style="overline" val="win"
+        backcolor="blue"/>
 
-  &lt;!-- Define a property that includes start and end image flags -->
-  &lt;prop action="flag" att="platform" val="linux" style="overline" backcolor="blue">
-    &lt;startflag imageref="startlin.png">&lt;alt-text>Start linux&lt;/alt-text>&lt;/startflag>
-    &lt;endflag imageref="endlin.png">&lt;alt-text>End linux&lt;/alt-text>&lt;/endflag>
+  <i>&lt;!-- Define a property that includes start and end image flags --></i>
+  &lt;prop action="flag" att="platform" val="linux" style="overline"
+        backcolor="blue">
+    &lt;startflag imageref="startlin.png">
+      &lt;alt-text>Start linux&lt;/alt-text>&lt;/startflag>
+    &lt;endflag imageref="endlin.png">
+      &lt;alt-text>End linux&lt;/alt-text>&lt;/endflag>
   &lt;/prop>
 
-  &lt;!-- Define a revision that includes start and end image flags -->
+  <i>&lt;!-- Define a revision that includes start and end image flags --></i>
   &lt;revprop action="flag" style="double-underline" val="rev2">
-    &lt;startflag imageref="start_rev.gif">&lt;alt-text>ssssssssssstart&lt;/alt-text>&lt;/startflag>
-    &lt;endflag imageref="end_rev.gif">&lt;alt-text>eeeeeeeeeeeeeend&lt;/alt-text>&lt;/endflag>
+    &lt;startflag imageref="start_rev.gif">
+      &lt;alt-text>START&lt;/alt-text>&lt;/startflag>
+    &lt;endflag imageref="end_rev.gif">&lt;alt-text>END&lt;/alt-text>&lt;/endflag>
   &lt;/revprop>
 &lt;/val></codeblock>
     </example>
@@ -105,8 +111,7 @@
       <p>Now assume the following paragraph exists in a topic. Class attributes are included, as they would normally be
         in the middle of the preprocess routine; <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are left off for
         clarity.</p>
-      <codeblock>&lt;p audience="user">Simple user; includes style but no images&lt;/p>
-</codeblock>
+      <codeblock>&lt;p audience="user">Simple user; includes style but no images&lt;/p></codeblock>
       <p>Based on the DITAVAL above, audience="user" results in a style with underlining and with a green background.
         The interpreted CSS value is added to <xmlatt>outputclass</xmlatt> on
         <xmlelement>ditaval-startprop</xmlelement>, and the actual property definition is included at the start and end
@@ -114,15 +119,19 @@
         attributes added as they would appear in the temporary file):</p>
       <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
           <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
-      <codeblock>&lt;p audience="user" class="- topic/p ">
-  <b>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop " 
-           outputclass="background-color:green;text-decoration:underline;">
-    &lt;prop action="flag" att="audience" style="underline" val="user" backcolor="green"/>
-  &lt;/ditaval-startprop></b>
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;p audience="user" class="- topic/p ">
+  <b>&lt;ditaval-startprop</b>
+      <b>class="+ topic/foreign ditaot-d/ditaval-startprop "</b>
+      <b>outputclass="background-color:green;text-decoration:underline;"></b>
+    <b>&lt;prop action="flag" att="audience" style="underline" val="user"
+          backcolor="green"/></b>
+  <b>&lt;/ditaval-startprop></b>
   Simple user; includes style but no images
-  <b>&lt;ditaval-endprop class="+ topic/foreign ditaot-d/ditaval-endprop ">
-    &lt;prop action="flag" att="audience" style="underline" val="user" backcolor="green"/>
-  &lt;/ditaval-endprop></b>
+  <b>&lt;ditaval-endprop</b>
+      <b>class="+ topic/foreign ditaot-d/ditaval-endprop "></b>
+    <b>&lt;prop action="flag" att="audience" style="underline" val="user"
+          backcolor="green"/></b>
+  <b>&lt;/ditaval-endprop></b>
 &lt;/p></codeblock>
     </example>
     <example>
@@ -137,17 +146,25 @@
         copied into the generated <xmlelement>ditaval-startprop</xmlelement> element.</p>
       <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
           <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
-      <codeblock>&lt;p audience="user" platform="win" class="- topic/p ">
-  <b>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop " 
-           outputclass="background-color:red;">
-    &lt;style-conflict background-conflict-color="red"/>
-    &lt;prop action="flag" att="audience" style="underline" val="user" backcolor="green"/>
-    &lt;prop action="flag" att="platform" style="overline" val="win" backcolor="blue"/>
-  &lt;/ditaval-startprop></b>
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;p audience="user" platform="win" class="- topic/p ">
+  <b>&lt;ditaval-startprop</b>
+           <b>class="+ topic/foreign ditaot-d/ditaval-startprop "</b>
+           <b>outputclass="background-color:red;"></b>
+    <b>&lt;style-conflict background-conflict-color="red"/></b>
+    <b>&lt;prop action="flag" att="audience" style="underline" val="user"
+          backcolor="green"/></b>
+    <b>&lt;prop action="flag" att="platform" style="overline" val="win"
+          backcolor="blue"/></b>
+  <b>&lt;/ditaval-startprop></b>
+
   Conflicting styles (still no images)
-  <b>&lt;ditaval-endprop class="+ topic/foreign ditaot-d/ditaval-endprop ">
-    &lt;prop action="flag" att="platform" style="overline" val="win" backcolor="blue"/>
-    &lt;prop action="flag" att="audience" style="underline" val="user" backcolor="green"/>
+
+  <b>&lt;ditaval-endprop</b>
+           <b>class="+ topic/foreign ditaot-d/ditaval-endprop "></b>
+    <b>&lt;prop action="flag" att="platform" style="overline" val="win"
+          backcolor="blue"/></b>
+    <b>&lt;prop action="flag" att="audience" style="underline" val="user"
+          backcolor="green"/></b><b>
   &lt;/ditaval-endprop></b>
 &lt;/p></codeblock>
     </example>
@@ -155,7 +172,7 @@
       <title>Content example 3: Adding image flags</title>
       <p>This example includes image flags for both <xmlatt>platform</xmlatt> and <xmlatt>rev</xmlatt>, which are
         defined in DITAVAL <xmlelement>prop</xmlelement> and <xmlelement>revprop</xmlelement> elements.</p>
-      <codeblock>&lt;ol platform="linux" rev="rev2">
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;ol platform="linux" rev="rev2">
   &lt;li>Generate images for platform="linux" and rev="2"&lt;/li>
 &lt;/ol></codeblock>
       <p>As above, the <xmlelement>ditaval-startprop</xmlelement> and <xmlelement>ditaval-endprop</xmlelement> nest the
@@ -166,25 +183,33 @@
         and the order is reversed for <xmlelement>ditaval-endprop</xmlelement>.</p>
       <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
           <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
-      <codeblock>&lt;ol platform="linux" rev="rev2" class="- topic/ol ">
-  <b>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop " 
-           outputclass="background-color:blue;text-decoration:underline;text-decoration:overline;">
-    &lt;prop action="flag" att="platform" val="linux" style="overline" backcolor="blue">
-      &lt;startflag imageref="startlin.png">&lt;alt-text>Start linux&lt;/alt-text>&lt;/startflag>
-    &lt;/prop>
-    &lt;revprop action="flag" style="double-underline" val="rev2">
-      &lt;startflag imageref="start_rev.gif">&lt;alt-text>ssssssssssstart&lt;/alt-text>&lt;/startflag>
-    &lt;/revprop>
-  &lt;/ditaval-startprop></b>
-  &lt;li class="- topic/li ">Generate images for platform="linux" and rev="2"&lt;/li>
-  <b>&lt;ditaval-endprop class="+ topic/foreign ditaot-d/ditaval-endprop ">
-    &lt;revprop action="flag" style="double-underline" val="rev2">
-      &lt;endflag imageref="end_rev.gif">&lt;alt-text>eeeeeeeeeeeeeend&lt;/alt-text>&lt;/endflag>
-    &lt;/revprop>
-    &lt;prop action="flag" att="platform" val="linux" style="overline" backcolor="blue">
-      &lt;endflag imageref="endlin.png">&lt;alt-text>End linux&lt;/alt-text>&lt;/endflag>
-    &lt;/prop>
-  &lt;/ditaval-endprop></b>
+      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;ol platform="linux" rev="rev2" class="- topic/ol ">
+  <b>&lt;ditaval-startprop</b>
+           <b>class="+ topic/foreign ditaot-d/ditaval-startprop "</b>
+           <b>outputclass="background-color:blue;</b>
+                        <b>text-decoration:underline;</b>
+                        <b>text-decoration:overline;"></b>
+    <b>&lt;prop action="flag" att="platform" val="linux" style="overline"
+          backcolor="blue"></b>
+      <b>&lt;startflag imageref="startlin.png"></b>
+        <b>&lt;alt-text>Start linux&lt;/alt-text>&lt;/startflag>&lt;/prop></b>
+    <b>&lt;revprop action="flag" style="double-underline" val="rev2"></b>
+      <b>&lt;startflag imageref="start_rev.gif"></b>
+        <b>&lt;alt-text> &lt;/alt-text>&lt;/startflag>&lt;/revprop></b>
+  <b>&lt;/ditaval-startprop></b>
+  &lt;li class="- topic/li ">
+    Generate images for platform="linux" and rev="2"
+  &lt;/li>
+  <b>&lt;ditaval-endprop</b>
+           <b>class="+ topic/foreign ditaot-d/ditaval-endprop "></b>
+    <b>&lt;revprop action="flag" style="double-underline" val="rev2"></b>
+      <b>&lt;endflag imageref="end_rev.gif"></b>
+        <b>&lt;alt-text>END&lt;/alt-text>&lt;/endflag>&lt;/revprop></b>
+    <b>&lt;prop action="flag" att="platform" val="linux" style="overline"</b>
+                                                   <b>backcolor="blue"></b>
+      <b>&lt;endflag imageref="endlin.png"></b>
+        <b>&lt;alt-text>End linux&lt;/alt-text>&lt;/endflag>&lt;/prop></b>
+  <b>&lt;/ditaval-endprop></b>
 &lt;/ol></codeblock>
     </example>
   </refbody>

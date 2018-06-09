@@ -12,39 +12,12 @@
       <navtitle>DITA-OT GitHub Project</navtitle>
     </topicmeta>
     <keydef
-      keys="github-help"
-      href="https://help.github.com/articles/set-up-git"
-      scope="external"
-      format="html">
-      <topicmeta>
-        <linktext>Setting up Git</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef
-      keys="github-project"
-      href="https://github.com/dita-ot/dita-ot"
-      scope="external"
-      format="html">
-      <topicmeta>
-        <linktext>DITA-OT project on GitHub</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef
       keys="dita-ot-issues"
       href="https://github.com/dita-ot/dita-ot/issues"
       scope="external"
       format="html">
       <topicmeta>
         <linktext>GitHub issues tracker</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef
-      keys="contributor-meeting-minutes"
-      href="https://github.com/dita-ot/dita-ot/wiki/Meeting-minutes"
-      scope="external"
-      format="html">
-      <topicmeta>
-        <linktext>DITA-OT Contributor Meeting Minutes</linktext>
       </topicmeta>
     </keydef>
     <keydef
@@ -224,6 +197,15 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="fop-23-rn"
+      href="https://xmlgraphics.apache.org/fop/2.3/releaseNotes_2.3.html"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Apache FOP 2.3 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="fop-accessibility"
       href="https://xmlgraphics.apache.org/fop/trunk/accessibility.html"
       scope="external"
@@ -392,11 +374,6 @@
         </topicmeta>
       </keydef>
     </topicset>
-    <keydef
-      keys="fo-spec"
-      scope="external"
-      format="html"
-      href="http://www.w3.org/TR/xsl/"/>
     <keydef
       keys="fo-spec.change-bar-begin"
       scope="external"

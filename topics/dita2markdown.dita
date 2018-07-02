@@ -27,7 +27,8 @@
               <option>markdown_gitbook</option> transtype.</p></li>
       </ul>
       <p>Run the <cmdname>dita</cmdname> command and set the value of the output <parmname>--format</parmname> option to
-        the desired format:</p><codeblock xml:space="preserve"><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>markdown</option></codeblock>
+        the desired format, for example:</p>
+      <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>markdown</option></codeblock>
       <p>where:</p>
       <ul>
         <li conref="../resources/conref-task.dita#ID/novice-variables-1"

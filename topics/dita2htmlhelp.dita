@@ -37,5 +37,11 @@
     <p>To run the HTML Help transformation, set the <parmname>transtype</parmname> parameter to
         <option>htmlhelp</option>, or pass the <parmname>--format</parmname>=<option>htmlhelp</option> option to the
         <cmdname>dita</cmdname> command line.</p>
+    <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>htmlhelp</option></codeblock>
+    <p>where:</p>
+    <ul>
+      <li conref="../resources/conref-task.dita#ID/novice-variables-1"
+        conrefend="../resources/conref-task.dita#ID/novice-variables-2"/>
+    </ul>
   </conbody>
 </concept>

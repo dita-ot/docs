@@ -64,7 +64,7 @@
             <li id="novice-variables-last" audience="novice">
               <p id="common-format-info">
                 <varname>format</varname> is the output format (transformation type).
-                This argument corresponds to the common parameter 
+                This argument corresponds to the common parameter
                 <parmname>transtype</parmname>.
                 Use the same values as for the <parmname>transtype</parmname> build
                 parameter, for example <option>html5</option> or <option>pdf</option>.
@@ -87,9 +87,11 @@
                   <li><option>troff</option></li>
                   <li><option>xhtml</option></li>
                 </ul>
+                <note type="tip">See <xref keyref="output-formats"/> for sample command line syntax and more information
+                  on each transformation.</note>
               </p>
             </li>
-            <li id="options"><varname>options</varname> include the following optional build parameters:
+            <li id="options"><varname>[options]</varname> include the following optional build parameters:
               <parml conref="../parameters/dita-command-arguments.dita#dita-command-properties/dita_build_options">
                 <plentry>
                   <pt/>

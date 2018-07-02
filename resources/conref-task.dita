@@ -87,6 +87,8 @@
                   <li><option>troff</option></li>
                   <li><option>xhtml</option></li>
                 </ul>
+                <note type="tip">See <xref keyref="output-formats"/> for sample command line syntax and more information
+                  on each transformation.</note>
               </p>
             </li>
             <li id="options"><varname>[options]</varname> include the following optional build parameters:

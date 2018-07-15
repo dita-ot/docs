@@ -22,7 +22,7 @@
       </step>
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
-        <info><codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname>format</varname> <varname audience="expert">options</varname></codeblock>
+        <info><codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname>format</varname> <ph audience="expert">[<varname>options</varname>]</ph></codeblock>
           <p>where:</p>
           <ul>
             <li conref="../resources/conref-task.dita#ID/novice-variables-1"

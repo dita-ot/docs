@@ -11,17 +11,10 @@
       <dl>
         <dlentry>
           <dt>
-            <xref href="https://www.dita-ot.org" format="html" scope="external">DITA-OT project website at
+            <xref href="https://www.dita-ot.org" format="html" scope="external">DITA-OT project website:
               dita-ot.org</xref></dt>
           <dd>The DITA-OT project website at dita-ot.org provides information about the latest toolkit releases,
             including download links, release notes, and documentation for recent DITA-OT versions.</dd>
-        </dlentry>
-        <dlentry>
-          <dt>
-            <xref href="http://dita.xml.org/wiki/the-dita-open-toolkit" format="html" scope="external">DITA-OT project
-              archive at dita.xml.org</xref></dt>
-          <dd>The DITA-OT project archive at dita.xml.org provides news about earlier toolkit releases, and release
-            notes for all past releases.</dd>
         </dlentry>
         <dlentry>
           <dt>
@@ -36,7 +29,7 @@
             <xref format="html" href="https://groups.google.com/d/forum/dita-ot-users" scope="external">DITA-OT Users
               Google Group</xref>
           </dt>
-          <dd>General interest DITA-OT product forum, for questions on any aspect of the toolkit - from installation and
+          <dd>General interest DITA-OT product forum, for questions on any aspect of the toolkit — from installation and
             getting started to questions about specific overrides, plug-ins, and customizations.</dd>
         </dlentry>
         <dlentry>
@@ -45,13 +38,20 @@
           </dt>
           <dd>Forum for discussion related to DITA-OT development and design. Topics in this forum are more technical in
             nature, covering upcoming design or code changes. To request an invitation and join in the discussion, visit
-            <xref href="http://slack.dita-ot.org" format="html" scope="external">slack.dita-ot.org</xref>.</dd>
+              <xref href="http://slack.dita-ot.org" format="html" scope="external">slack.dita-ot.org</xref>.</dd>
         </dlentry>
         <dlentry>
           <dt>
             <xref href="http://www.oasis-open.org/committees/dita/" format="html" scope="external">Home page for the
-              OASIS DITA Technical Committee</xref></dt>
+              DITA Technical Committee</xref></dt>
           <dd>The OASIS DITA Technical Committee develops the DITA standard.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>
+            <xref href="http://dita-archive.xml.org/wiki/the-dita-open-toolkit" format="html" scope="external">DITA-OT
+              project archive</xref></dt>
+          <dd>The DITA-OT project archive at dita-archive.xml.org provides news about earlier toolkit releases, and
+            release notes for legacy versions.</dd>
         </dlentry>
       </dl>
     </section>

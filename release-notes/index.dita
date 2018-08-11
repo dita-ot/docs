@@ -33,60 +33,55 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
         <ul>
-          <li id="2222">When a content reference was combined with <xmlatt>conrefend</xmlatt> to
-reference a sequence of topics, all but the first topic were copied without a required
-<xmlatt>id</xmlatt> attribute. This resulted in Null Pointer Errors from later processing steps that
-expected <xmlatt>id</xmlatt> on all topics. The content reference behavior has been fixed to avoid
-the error. <xref href="https://github.com/dita-ot/dita-ot/issues/2222" format="html"
-scope="external">#2222</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/3033"
-format="html" scope="external">#3033</xref></li>
-<li id="2940">In earlier versions, when a topic with index terms had an empty title (or a title with
-only metadata), HTML Help and Eclipse Help index processing would end in a Null Pointer Error. This
-error has been fixed. <xref href="https://github.com/dita-ot/dita-ot/issues/2940" format="html"
-scope="external">#2940</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/3043"
-format="html" scope="external">#3043</xref>
-</li>
-<li id="2948">In earlier versions, when the input file was a topic that contained a
-<xmlatt>conref</xmlatt> reference to itself, that topic would not generate output for XHTML or
-HTML5. The issue has been fixed. <xref href="https://github.com/dita-ot/dita-ot/issues/2948"
-format="html" scope="external">#2948</xref>, <xref
-href="https://github.com/dita-ot/dita-ot/pull/3045" format="html" scope="external">#3045</xref>
-</li>
-          <li id="3008">When processing without schema validation, it is possible to add
-<xmlatt>keyref</xmlatt> attributes on elements where they are not legal. In earlier releases, this
-resulted in a Null Pointer Error from the keyref resolution module. These invalid attributes are now
-ignored. <xref href="https://github.com/dita-ot/dita-ot/issues/3008" format="html" scope="external"
->#3008</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/3034" format="html"
-scope="external">#3034</xref></li>
-          <li id="3023">The Lightweight DITA plug in has been updated to version 2.0.6, which
-provides improved support for inline HTML elements. <xref
-href="https://github.com/dita-ot/dita-ot/pull/3023" format="html" scope="external">#3023</xref>
-</li>
-          <li id="3024">In DITA-OT 3.1, configuration data is read from two files, but some
-processes would incorrectly load only one file and miss properties in the other. This is fixed by
-removing <filepath>lib/configuration.properties</filepath> and storing all configuration properties
-in <filepath>config/configuration.properties</filepath>. <xref
-href="https://github.com/dita-ot/dita-ot/pull/3024" format="html" scope="external">#3024</xref>
-</li>
-          <li id="3027">In earlier releases, when the "same file" reference syntax
-<codeph>href="#./elementid</codeph> was pulled into another file as part of a content reference, the
-<xmlatt>href</xmlatt> attribute was corrupted, resulting in broken links. These references have been
-fixed and now refer to the element with <codeph>id="elementid"</codeph> in the new resolved context.
-<xref href="https://github.com/dita-ot/dita-ot/pull/3027" format="html" scope="external"
->#3027</xref>
-</li>
+          <li id="2222">When a content reference was combined with <xmlatt>conrefend</xmlatt> to reference a sequence of
+            topics, all but the first topic were copied without a required <xmlatt>id</xmlatt> attribute. This resulted
+            in Null Pointer Errors from later processing steps that expected <xmlatt>id</xmlatt> on all topics. The
+            content reference behavior has been fixed to avoid the error.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2222" format="html" scope="external">#2222</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3033" format="html" scope="external">#3033</xref></li>
+          <li id="2940">In earlier versions, when a topic with index terms had an empty title (or a title with only
+            metadata), HTML Help and Eclipse Help index processing would end in a Null Pointer Error. This error has
+            been fixed.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2940" format="html" scope="external">#2940</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3043" format="html" scope="external">#3043</xref>
+          </li>
+          <li id="2948">In earlier versions, when the input file was a topic that contained a <xmlatt>conref</xmlatt>
+            reference to itself, that topic would not generate output for XHTML or HTML5. The issue has been fixed.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2948" format="html" scope="external">#2948</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3045" format="html" scope="external">#3045</xref>
+          </li>
+          <li id="3008">When processing without schema validation, it is possible to add <xmlatt>keyref</xmlatt>
+            attributes on elements where they are not legal. In earlier releases, this resulted in a Null Pointer Error
+            from the keyref resolution module. These invalid attributes are now ignored.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3008" format="html" scope="external">#3008</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3034" format="html" scope="external">#3034</xref></li>
+          <li id="3023">The Lightweight DITA plug in has been updated to version 2.0.6, which provides improved support
+            for inline HTML elements.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3023" format="html" scope="external">#3023</xref>
+          </li>
+          <li id="3024">In DITA-OT 3.1, configuration data is read from two files, but some processes would incorrectly
+            load only one file and miss properties in the other. This is fixed by removing
+              <filepath>lib/configuration.properties</filepath> and storing all configuration properties in
+              <filepath>config/configuration.properties</filepath>.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3024" format="html" scope="external">#3024</xref>
+          </li>
+          <li id="3027">In earlier releases, when the "same file" reference syntax <codeph>href="#./elementid</codeph>
+            was pulled into another file as part of a content reference, the <xmlatt>href</xmlatt> attribute was
+            corrupted, resulting in broken links. These references have been fixed and now refer to the element with
+              <codeph>id="elementid"</codeph> in the new resolved context.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3027" format="html" scope="external">#3027</xref>
+          </li>
           <li id="3029">In DITA-OT 3.0 and 3.1, Saxon would generate XSLT errors when it encountered
-<xmlelement>cite</xmlelement> or <xmlelement>term</xmlelement> inside of a
-<xmlelement>linktext</xmlelement> element in the related links section of a topic. The XSLT syntax
-has been fixed to avoid this error. <xref href="https://github.com/dita-ot/dita-ot/pull/3029"
-format="html" scope="external">#3029</xref>
-</li>
-          <li id="3040">In earlier versions, the Ant build code for PDF2 set up a
-<codeph>CLASSPATH</codeph> variable that referenced JAR files that no longer exist. These references
-have been removed. <xref href="https://github.com/dita-ot/dita-ot/issues/2832" format="html"
-scope="external">#2832</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/3040"
-format="html" scope="external">#3040</xref>
-</li>
+              <xmlelement>cite</xmlelement> or <xmlelement>term</xmlelement> inside of a
+              <xmlelement>linktext</xmlelement> element in the related links section of a topic. The XSLT syntax has
+            been fixed to avoid this error.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3029" format="html" scope="external">#3029</xref>
+          </li>
+          <li id="3040">In earlier versions, the Ant build code for PDF2 set up a <codeph>CLASSPATH</codeph> variable
+            that referenced JAR files that no longer exist. These references have been removed.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2832" format="html" scope="external">#2832</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3040" format="html" scope="external">#3040</xref>
+          </li>
         </ul>
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.1.1...3.1.2" format="html" scope="external">

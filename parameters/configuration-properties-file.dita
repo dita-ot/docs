@@ -7,8 +7,8 @@
   <titlealts>
     <navtitle><filepath>configuration.properties</filepath></navtitle>
   </titlealts>
-  <shortdesc>The <filepath>lib/configuration.properties</filepath> file controls certain common properties, as well as
-    some properties that control PDF processing.</shortdesc>
+  <shortdesc>The <filepath>configuration.properties</filepath> file controls certain common properties, as well as some
+    properties that control PDF processing.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -21,7 +21,7 @@
           <indexterm>plugindirs</indexterm>
           <indexterm>temp-file-name-scheme</indexterm>
         </indexterm>
-        <indexterm>files <indexterm>lib/configuration.properties file</indexterm>
+        <indexterm>files <indexterm>config/configuration.properties file</indexterm>
         </indexterm>
         <indexterm>PDF processing <indexterm>configuration properties</indexterm>
         </indexterm>
@@ -30,9 +30,9 @@
   </prolog>
   <refbody>
     <section>
-      <p>The contents of the <filepath>configuration.properties</filepath> file are added to the DITA-OT configuration
-        in the <codeph>dost-configuration.jar</codeph> file when the plug-in integration process runs. The following
-        properties are typically set in this file:</p>
+      <p>The contents of the <filepath>config/configuration.properties</filepath> file are added to the DITA-OT
+        configuration in the <codeph>dost-configuration.jar</codeph> file when the plug-in integration process runs. The
+        following properties are typically set in this file:</p>
       <parml>
         <plentry id="otrelease-otversion">
           <pt><parmname>otrelease</parmname></pt>

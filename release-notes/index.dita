@@ -35,12 +35,12 @@
         <ul>
           <li id="2222">When a content reference was combined with <xmlatt>conrefend</xmlatt> to reference a sequence of
             topics, all but the first topic were copied without a required <xmlatt>id</xmlatt> attribute. This resulted
-            in Null Pointer Errors from later processing steps that expected <xmlatt>id</xmlatt> on all topics. The
+            in NullPointerExceptions from later processing steps that expected <xmlatt>id</xmlatt> on all topics. The
             content reference behavior has been fixed to avoid the error.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2222" format="html" scope="external">#2222</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/3033" format="html" scope="external">#3033</xref></li>
           <li id="2940">In earlier versions, when a topic with index terms had an empty title (or a title with only
-            metadata), HTML Help and Eclipse Help index processing would end in a Null Pointer Error. This error has
+            metadata), HTML Help and Eclipse Help index processing would end in a NullPointerException. This error has
             been fixed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2940" format="html" scope="external">#2940</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/3043" format="html" scope="external">#3043</xref>
@@ -51,8 +51,8 @@
             <xref href="https://github.com/dita-ot/dita-ot/pull/3045" format="html" scope="external">#3045</xref>
           </li>
           <li id="3008">When processing without schema validation, it is possible to add <xmlatt>keyref</xmlatt>
-            attributes on elements where they are not legal. In earlier releases, this resulted in a Null Pointer Error
-            from the keyref resolution module. These invalid attributes are now ignored.
+            attributes on elements where they are not legal. In earlier releases, this resulted in a
+            NullPointerException from the keyref resolution module. These invalid attributes are now ignored.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3008" format="html" scope="external">#3008</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/3034" format="html" scope="external">#3034</xref></li>
           <li id="3023">The Lightweight DITA plug in has been updated to version 2.0.6, which provides improved support

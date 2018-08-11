@@ -102,7 +102,7 @@ format="html" scope="external">#3040</xref>
         <p>DITA Open Toolkit Release 3.1.1 includes the following bug fixes.</p>
         <ul>
           <li id="2662">When generating PDF output with Antenna House Formatter, earlier versions would sometimes fail
-            when interpreting the Antenna House log. Processing has been improved to improve test coverage and handle
+            when interpreting the Antenna House log. Processing has been updated to improve test coverage and handle
             these cases more gracefully.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2662" format="html" scope="external">#2662</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3012" format="html" scope="external">#3012</xref>

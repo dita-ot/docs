@@ -21,9 +21,9 @@
     <topicref keyref="ant-parameters-details" keys="parameters-push" processing-role="resource-only" toc="no"/>
   </topicref>
   <topicref keyref="configuration-properties">
-    <topicref keyref="local-properties"/>
-    <topicref keyref="lib-plugin-properties"/>
-    <topicref keyref="lib-configuration-properties"/>
+    <topicref keyref="local-properties-file"/>
+    <topicref keyref="plugin-properties-file"/>
+    <topicref keyref="configuration-properties-file"/>
     <topicref keyref="internal-ant-properties"/>
   </topicref>
 </map>

@@ -55,7 +55,7 @@
             NullPointerException from the keyref resolution module. These invalid attributes are now ignored.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3008" format="html" scope="external">#3008</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/3034" format="html" scope="external">#3034</xref></li>
-          <li id="3023">The Lightweight DITA plug in has been updated to version 2.0.6, which provides improved support
+          <li id="3023">The Lightweight DITA plug-in has been updated to version 2.0.6, which provides improved support
             for inline HTML elements.
             <xref href="https://github.com/dita-ot/dita-ot/pull/3023" format="html" scope="external">#3023</xref>
           </li>
@@ -91,7 +91,7 @@
   </reference>
 
   <reference id="v3.1.1">
-    <title>Maintenance Release 3.1.1</title>
+    <title>Maintenance Release 3.1.1 <ph outputclass="small">released July 16, 2018</ph></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit Release 3.1.1 includes the following bug fixes.</p>

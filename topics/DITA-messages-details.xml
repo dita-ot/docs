@@ -44,7 +44,7 @@
       </sthead>
       <strow>
         <stentry>To add additional explanation to any message, add the explanation to this table in a single cell, and
-          set the the following attributes on the <xmlelement>stentry</xmlelement> tag:
+          set the following attributes on the <xmlelement>stentry</xmlelement> tag:
           <ul>
             <li><codeph>conref="DITA-messages.xml#msgs/MESSAGEID-extra"</codeph> -- for example, use the following to
               add additional info to message DOTX001F:

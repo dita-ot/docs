@@ -19,13 +19,15 @@
         to the DITA maps to include the new information in the output.</note></context>
     <steps>
       <step>
-        <cmd>Change to the <filepath>docsrc</filepath> directory.</cmd>
+        <cmd>Change to the <filepath>docsrc/</filepath> subdirectory of the DITA-OT installation.</cmd>
       </step>
       <step>
-        <cmd>Run the following command:</cmd>
-        <info>
-          <codeblock>./gradlew <varname>target</varname></codeblock>
-        </info>
+        <cmd>Run one of the following commands.</cmd>
+        <choices>
+          <choice platform="linux osx">On Linux and macOS:
+            <codeblock>./gradlew <varname>target</varname></codeblock></choice>
+          <choice platform="windows">On Windows: <codeblock>gradlew.bat <varname>target</varname></codeblock></choice>
+        </choices>
         <info>
           <p>The <varname>target</varname> parameter is optional and specifies a transformation type. It takes the
             following values:

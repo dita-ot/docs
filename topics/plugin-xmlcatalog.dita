@@ -5,7 +5,7 @@
 <task id="plugin-xmlcatalog" xml:lang="en-US">
   <title>Extending an XML catalog file</title>
   <shortdesc>You can update either the main DITA-OT XML catalog or the XML catalog that is used by the PDF plug-in. This
-    enables the DITA-OT to support new specializations and document-type shells.</shortdesc>
+    enables DITA-OT to support new specializations and document-type shells.</shortdesc>
   <taskbody>
     <context>
       <p>You can use the <parmname>dita.specialization.catalog.relative</parmname> and

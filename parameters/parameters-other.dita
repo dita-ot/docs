@@ -7,7 +7,7 @@
   <titlealts>
     <navtitle>Other</navtitle>
   </titlealts>
-  <shortdesc>These parameters enable you to reload style sheets that the DITA-OT uses for specific pre-processing
+  <shortdesc>These parameters enable you to reload style sheets that DITA-OT uses for specific pre-processing
     stages.</shortdesc>
   <refbody>
     <section>
@@ -44,9 +44,9 @@
             <parmname>dita.xhtml.reloadstylesheet</parmname>
           </pt>
           <pd id="dita.preprocess.reloadstylesheet.desc">
-            <p>Specifies whether the DITA-OT reloads the XSL style sheets that are used for the transformation. The
-              allowed values are <option>true</option> and <option>false</option>; the default value is
-                <option>false</option>.</p>
+            <p>Specifies whether DITA-OT reloads the XSL style sheets that are used for the transformation. The allowed
+              values are <option>true</option> and <option>false</option>; the default value is
+              <option>false</option>.</p>
             <p>During the pre-processing stage, DITA-OT processes one DITA topic at a time, using the same XSLT
               stylesheet for the entire process. These parameters control whether Ant will use the same
                 <codeph>Transformer</codeph> object in Java, the object that handles the XSLT processing, for all

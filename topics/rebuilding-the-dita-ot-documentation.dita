@@ -7,7 +7,7 @@
   <titlealts>
     <navtitle>Rebuilding documentation</navtitle>
   </titlealts>
-  <shortdesc>The DITA-OT ships with a <keyword keyref="gradle"/> build script that enables you to rebuild the toolkit
+  <shortdesc>DITA-OT ships with a <keyword keyref="gradle"/> build script that enables you to rebuild the toolkit
     documentation. This is especially helpful if your environment contains plug-ins that add new extension points,
     messages, or parameters to the toolkit.</shortdesc>
   <taskbody>

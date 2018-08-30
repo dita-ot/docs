@@ -3,7 +3,7 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="installing-client" xml:lang="en-US">
-  <title>Installing the DITA Open Toolkit</title>
+  <title>Installing DITA Open Toolkit</title>
   <titlealts>
     <navtitle>Installing DITA-OT</navtitle>
   </titlealts>
@@ -25,7 +25,7 @@
         <cmd><ph conref="../resources/conref-task.dita#ID/download-ot"/></cmd>
       </step>
       <step>
-        <cmd>Extract the contents of the package to the directory where you want to install the DITA-OT.</cmd>
+        <cmd>Extract the contents of the package to the directory where you want to install DITA-OT.</cmd>
       </step>
       <step importance="optional">
         <cmd>Add the absolute path for the <filepath>bin</filepath> directory to the <varname>PATH</varname> system

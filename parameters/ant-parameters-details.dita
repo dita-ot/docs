@@ -11,7 +11,7 @@
       <navtitle>All transformations</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace" conref="parameters-base.dita#base/shortdesc">Certain parameters apply to all
-      transformations that are supported by the DITA Open Toolkit.</shortdesc>
+      transformations that DITA Open Toolkit supports.</shortdesc>
     <refbody>
       <section>
         <parml>
@@ -139,8 +139,8 @@
               <parmname>dita.temp.dir</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/dita.temp.dir.desc"/>
-            <pd conaction="pushafter">The temporary directory is where the DITA-OT writes temporary files that are
-              generated during the transformation process.</pd>
+            <pd conaction="pushafter">The temporary directory is where DITA-OT writes temporary files that are generated
+              during the transformation process.</pd>
           </plentry>
           <plentry id="dita.input.valfile" importance="deprecated">
             <pt>

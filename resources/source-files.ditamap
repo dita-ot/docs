@@ -13,9 +13,11 @@
   <keydef keys="building-output" href="../topics/building-output.dita"/>
   <keydef keys="building-with-ant" href="../topics/building-with-ant.dita"/>
   <keydef keys="configuration-properties" href="../parameters/configuration-properties.dita"/>
+  <keydef keys="configuration-properties-file" href="../parameters/configuration-properties-file.dita"/>
   <keydef keys="conref-task" href="../resources/conref-task.dita"/>
   <keydef keys="creating-an-ant-build-script" href="../topics/creating-an-ant-build-script.dita"/>
   <keydef keys="custom-plugins" href="../topics/custom-plugins.dita"/>
+  <keydef keys="customizing" href="../topics/customizing.dita"/>
   <keydef keys="determining-version-of-ditaot" href="../topics/determining-version-of-ditaot.dita"/>
   <keydef keys="dita-and-dita-ot-resources" href="../topics/dita-and-dita-ot-resources.dita"/>
   <keydef keys="dita-command-arguments" href="../parameters/dita-command-arguments.dita"/>
@@ -37,7 +39,6 @@
   <keydef keys="DITA_v1-3-support" href="../reference/DITA_v1-3-support.dita"/>
   <keydef keys="enabling-debug-mode" href="../topics/enabling-debug-mode.dita"/>
   <keydef keys="extended-functionality" href="../reference/extended-functionality.dita"/>
-  <keydef keys="extending-the-ot" href="../topics/extending-the-ot.dita"/>
   <keydef keys="extension-points-by-plugin" href="../extension-points/extension-points-by-plugin.dita"/>
   <keydef keys="extension-points-details" href="../extension-points/extension-points-details.dita"/>
   <keydef keys="flagging-migration" href="../reference/flagging-migration.dita"/>
@@ -60,8 +61,6 @@
   <keydef keys="internal-ant-properties" href="../parameters/internal-ant-properties.dita"/>
   <keydef keys="java-api" href="../reference/java-api.dita"/>
   <keydef keys="landing-page" href="../index.dita"/>
-  <keydef keys="configuration-properties-file" href="../parameters/configuration-properties-file.dita"/>
-  <keydef keys="plugin-properties-file" href="../parameters/plugin-properties-file.dita"/>
   <keydef keys="license" href="../reference/license.dita"/>
   <keydef keys="local-properties-file" href="../parameters/local-properties-file.dita"/>
   <keydef keys="log-files" href="../topics/log-files.dita"/>
@@ -116,6 +115,7 @@
   <keydef keys="plugin-newextensions" href="../topics/plugin-newextensions.dita"/>
   <keydef keys="plugin-newtranstype" href="../topics/plugin-newtranstype.dita"/>
   <keydef keys="plugin-overridestyle" href="../topics/plugin-overridestyle.dita"/>
+  <keydef keys="plugin-properties-file" href="../parameters/plugin-properties-file.dita"/>
   <keydef keys="plugin-sample" href="../topics/plugin-sample.dita"/>
   <keydef keys="plugin-xmlcatalog" href="../topics/plugin-xmlcatalog.dita"/>
   <keydef keys="plugin-xsltparams" href="../topics/plugin-xsltparams.dita"/>
@@ -144,7 +144,7 @@
   <keydef keys="processing-pipeline-modules" href="../reference/processing-pipeline-modules.dita"/>
   <keydef keys="processing-structure" href="../reference/processing-structure.dita"/>
   <keydef keys="publishing-with-ant" href="../topics/publishing-with-ant.dita"/>
-  <keydef keys="rebuilding-the-dita-ot-documentation" href="../topics/rebuilding-the-dita-ot-documentation.dita"/>
+  <keydef keys="rebuilding-docs" href="../topics/rebuilding-docs.dita"/>
   <keydef keys="reducing-processing-time" href="../topics/reducing-processing-time.dita"/>
   <keydef keys="reference" href="../reference/index.dita"/>
   <keydef keys="release-notes" href="../release-notes/index.dita"/>

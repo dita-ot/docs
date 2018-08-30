@@ -4,7 +4,7 @@
 
 <topic id="dita-otprojecthome" xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
-  <shortdesc>The <term>DITA Open Toolkit</term>, or <term>DITA-OT</term> for short, is a set of Java-based, open-source
+  <shortdesc><term>DITA Open Toolkit</term>, or <term>DITA-OT</term> for short, is a set of Java-based, open-source
     tools that provide processing for content authored in the <term>Darwin Information Typing
     Architecture</term>.</shortdesc>
   <body>
@@ -27,7 +27,7 @@
         <li><xref keyref="parameters"/> explains how to adjust the behavior of DITA Open Toolkit via
             <cmdname>dita</cmdname> command arguments and options, DITA-OT parameter settings, and configuration
           properties.</li>
-        <li><xref keyref="extending-the-ot"/> provides more advanced information on extending DITA-OT. <xref
+        <li><xref keyref="customizing"/> provides more advanced information on extending DITA-OT. <xref
             keyref="html-customization"/> and <xref keyref="pdf-customization"/> describe some of the most common
           customization scenarios. More advanced solutions are described in <xref keyref="custom-plugins"/>.</li>
         <li>The <xref keyref="troubleshooting-overview"/> section contains information about resolving problems that you

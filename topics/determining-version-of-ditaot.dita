@@ -16,7 +16,7 @@
       <step>
         <cmd>Issue the following command:</cmd>
         <choicetable frame="topbot" relcolwidth="1.0* 3.0*">
-          <chrow platform="linux osx">
+          <chrow platform="linux mac">
             <choption>Linux or macOS&#xA0;</choption>
             <chdesc>
               <cmdname>bin/dita</cmdname>

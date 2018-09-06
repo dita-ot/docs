@@ -12,8 +12,7 @@
   <taskbody>
     <prereq>
       <p>The steps below assume you have already installed <xref keyref="homebrew"/> according to the instructions at
-          <xref keyref="homebrew">brew.sh</xref>:</p>
-      <codeblock>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</codeblock>
+          <xref keyref="homebrew">brew.sh</xref>.</p>
       <note type="tip">Verify that your <varname>PATH</varname> environment begins with
           <filepath>/usr/local/bin</filepath> to ensure that Homebrew-installed software takes precedence over any
         programs of the same name elsewhere on the system.</note>

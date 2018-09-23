@@ -15,22 +15,26 @@
       <p>This scenario walks through the process of creating a very simple plug-in
           (<codeph>com.example.html5.custom.css</codeph>) that creates a new transformation type:
           <option>html5-custom-css</option>. </p>
-      <p>The <option>html5-custom-css</option> transformation includes a custom CSS file and sets three parameters to
+      <p>The <option>html5-custom-css</option> transformation includes a custom CSS file and sets four parameters to
         integrate the custom stylesheet in the generated HTML5 output. These parameter settings make the following
         changes:</p>
       <ul>
         <li>
-          <p>Specify the name of the custom .css file with <parmname>args.css</parmname>.</p>
-          <p>The value of this parameter tells DITA-OT to use the custom .css file provided by the plug-in.</p></li>
+          <p>Specify the name of the custom CSS file with <parmname>args.css</parmname>.</p>
+          <p>The value of this parameter tells DITA-OT to use the <filepath>custom.css</filepath> file provided by the
+            plug-in.</p></li>
         <li>
-          <p>Ensure that the custom .css file is copied to the output directory by setting
-              <parmname>args.copycss</parmname> to <option>yes</option>.</p></li>
+          <p>Specify the <filepath>css</filepath> subfolder of the plug-in as the source directory for custom CSS with
+              <parmname>args.cssroot</parmname>.</p></li>
         <li>
-          <p>Set the relative path for .css files in the output folder with <parmname>args.csspath</parmname>.</p>
+          <p>Ensure that the CSS file is copied to the output directory by setting <parmname>args.copycss</parmname> to
+              <option>yes</option>.</p></li>
+        <li>
+          <p>Set the destination path for CSS files in the output folder with <parmname>args.csspath</parmname>.</p>
           <p>CSS files are copied to the root level of the output folder by default. Setting this parameter places CSS
-            files in a dedicated subfolder.</p></li>
+            files in a dedicated <filepath>css</filepath> subfolder.</p></li>
       </ul>
-      <p>All three parameters are set in the Ant script (<filepath>build.xml</filepath>).</p>
+      <p>All four parameters are set in the Ant script (<filepath>build.xml</filepath>).</p>
     </context>
     <steps>
       <step>

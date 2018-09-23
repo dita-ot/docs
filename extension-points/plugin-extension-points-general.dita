@@ -4,9 +4,9 @@
 
 <reference id="plugin-general-extension-points">
   <title>General extension points</title>
-  <shortdesc>These extension points enable you to extend the DITA-OT. You can add Ant targets or imports; add a Java
-    library to the <parmname>classpath</parmname> parameter; add a new transformation type; extend a catalog file; add
-    new diagnostic messages, and more.</shortdesc>
+  <shortdesc>These extension points enable you to extend DITA-OT. You can add Ant targets or imports; add a Java library
+    to the <parmname>classpath</parmname> parameter; add a new transformation type; extend a catalog file; add new
+    diagnostic messages, and more.</shortdesc>
   <refbody>
     <section>
       <dl>
@@ -27,8 +27,7 @@
             conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/dita.conductor.target.desc">Adds an Ant
             import to the main Ant build file.
             <p>
-              <note type="attention">This extension point is deprecated; use
-                  <codeph>dita.conductor.target.relative</codeph> or <codeph>ant.import</codeph> instead.</note>
+              <note type="attention">This extension point is deprecated; use <codeph>ant.import</codeph> instead.</note>
             </p>
           </dd>
         </dlentry>
@@ -74,7 +73,7 @@
           <dt><parmname>dita.xsl.messages</parmname></dt>
           <dd conaction="pushreplace"
             conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/dita.xsl.messages.desc">Adds new diagnostic
-            messages to the DITA-OT.</dd>
+            messages to DITA-OT.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>org.dita.pdf2.catalog.relative</parmname></dt>

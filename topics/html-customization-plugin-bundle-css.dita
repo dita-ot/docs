@@ -15,22 +15,26 @@
       <p>This scenario walks through the process of creating a very simple plug-in
           (<codeph>com.example.html5.custom.css</codeph>) that creates a new transformation type:
           <option>html5-custom-css</option>. </p>
-      <p>The <option>html5-custom-css</option> transformation includes a custom CSS file and sets three parameters to
+      <p>The <option>html5-custom-css</option> transformation includes a custom CSS file and sets four parameters to
         integrate the custom stylesheet in the generated HTML5 output. These parameter settings make the following
         changes:</p>
       <ul>
         <li>
-          <p>Specify the name of the custom .css file with <parmname>args.css</parmname>.</p>
-          <p>The value of this parameter tells DITA-OT to use the custom .css file provided by the plug-in.</p></li>
+          <p>Specify the name of the custom CSS file with <parmname>args.css</parmname>.</p>
+          <p>The value of this parameter tells DITA-OT to use the <filepath>custom.css</filepath> file provided by the
+            plug-in.</p></li>
         <li>
-          <p>Ensure that the custom .css file is copied to the output directory by setting
-              <parmname>args.copycss</parmname> to <option>yes</option>.</p></li>
+          <p>Specify the <filepath>css</filepath> subfolder of the plug-in as the source directory for custom CSS with
+              <parmname>args.cssroot</parmname>.</p></li>
         <li>
-          <p>Set the relative path for .css files in the output folder with <parmname>args.csspath</parmname>.</p>
+          <p>Ensure that the CSS file is copied to the output directory by setting <parmname>args.copycss</parmname> to
+              <option>yes</option>.</p></li>
+        <li>
+          <p>Set the destination path for CSS files in the output folder with <parmname>args.csspath</parmname>.</p>
           <p>CSS files are copied to the root level of the output folder by default. Setting this parameter places CSS
-            files in a dedicated subfolder.</p></li>
+            files in a dedicated <filepath>css</filepath> subfolder.</p></li>
       </ul>
-      <p>All three parameters are set in the Ant script (<filepath>build.xml</filepath>).</p>
+      <p>All four parameters are set in the Ant script (<filepath>build.xml</filepath>).</p>
     </context>
     <steps>
       <step>
@@ -45,12 +49,12 @@
           <fig>
             <title>Sample <filepath>plugin.xml</filepath> file</title>
             <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-<i>&lt;!-- Plug-in to extend DITA-OT HTML5 output with a custom CSS file --&gt;</i>
+<i>&lt;!-- This plug-in extends DITA-OT HTML5 processing with a custom CSS file. --&gt;</i>
 &lt;plugin id="com.example.html5.custom.css"&gt;
   <b>&lt;require plugin="org.dita.html5"/&gt;</b>
   <b>&lt;feature extension="dita.conductor.transtype.check"
            value="html5-custom-css"/&gt;</b>
-  &lt;feature extension="dita.conductor.target.relative" file="build.xml"/&gt;
+  &lt;feature extension="ant.import" file="build.xml"/&gt;
 &lt;/plugin&gt;</codeblock>
           </fig>
           <note>This plug-in will extend the default HTML5 transformation, so the <xmlelement>require</xmlelement>
@@ -80,24 +84,28 @@ body {
         </stepxmp>
       </step>
       <step>
-        <cmd>Add an Ant script (<filepath>build.xml</filepath>) to define the transformation type.</cmd>
+        <cmd>In the <filepath>com.example.html5.custom.css</filepath> root directory, add an Ant script
+            (<filepath>build.xml</filepath>) to define the transformation type.</cmd>
         <stepxmp>
           <fig>
             <title>Sample <filepath>build.xml</filepath> file</title>
             <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
-<i>&lt;!-- Plug-in to extend DITA-OT HTML5 output with a custom CSS file --&gt;</i>
+<i>&lt;!-- This plug-in extends DITA-OT HTML5 processing with a custom CSS file. --&gt;</i>
 &lt;project name="com.example.html5.custom.css"&gt;
-  &lt;target name="dita2html5-custom-css"&gt;
-    &lt;antcall target="dita2html5"&gt;
-      <i>&lt;!-- Custom .css file used to style output --&gt;</i>
-      <b>&lt;param name="args.css" 
-             value="${dita.plugin.com.example.html5.custom.css.dir}/css/custom.css"/&gt;</b>
-      <i>&lt;!-- Copy the custom .css file to the output directory --&gt;</i>
-      &lt;param name="args.copycss" value="yes"/&gt;
-      <i>&lt;!-- Location of the copied .css file relative to the output --&gt;</i>
-      &lt;param name="args.csspath" value="css"/&gt;
-    &lt;/antcall&gt;
+  &lt;target name="dita2html5-custom-css.init"&gt;
+    <i>&lt;!-- Custom .css file used to style output --&gt;</i>
+    <b>&lt;property name="args.css" value="custom.css"/&gt;</b>
+    <i>&lt;!-- Source directory that contains the custom .css file --&gt;</i>
+    <b>&lt;property name="args.cssroot"
+              value="${dita.plugin.com.example.html5.custom.css.dir}/css"/&gt;</b>
+    <i>&lt;!-- Copy the custom .css file to the output directory --&gt;</i>
+    <b>&lt;property name="args.copycss" value="yes"/&gt;</b>
+    <i>&lt;!-- Location of the copied .css file relative to the output --&gt;</i>
+    <b>&lt;property name="args.csspath" value="css"/&gt;</b>
   &lt;/target&gt;
+  &lt;target name="dita2html5-custom-css"
+          depends="dita2html5-custom-css.init,
+                   dita2html5"/&gt;
 &lt;/project&gt;</codeblock>
           </fig>
         </stepxmp>

@@ -28,7 +28,7 @@
   &lt;feature extension="dita.conductor.transtype.check" 
            value="<varname>new-transtype</varname>"/>
   <b>&lt;feature extension="dita.transtype.print" value="<varname>new-transtype</varname>"/></b>
-  &lt;feature extension="dita.conductor.target.relative" file="<varname>ant-file</varname>"/>
+  &lt;feature extension="ant.import" file="<varname>ant-file</varname>"/>
 &lt;/plugin></codeblock>
           <p>where:</p>
           <ul>
@@ -53,8 +53,7 @@
       <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.newtext">
   &lt;feature extension="dita.conductor.transtype.check" value="newtext"/>
   &lt;feature extension="dita.transtype.print" value="newtext"/>
-  &lt;feature extension="dita.conductor.target.relative" 
-           file="build-newtext.xml"/>
+  &lt;feature extension="ant.import" file="build-newtext.xml"/>
 &lt;/plugin></codeblock>
       <p>While the <filepath>org.dita.html5</filepath> plug-in was separated from <codeph>common-html</codeph> in version 2.4,
           the following example shows how earlier versions of that plug-in used the

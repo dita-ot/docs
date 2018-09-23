@@ -35,7 +35,7 @@
         </dlentry>
       </dl>
       <p>Plug-ins may be used to add additional messages to the toolkit; for more information, see <xref
-          keyref="rebuild-docs"/>.</p>
+          keyref="rebuilding-docs"/>.</p>
     </section>
     <simpletable>
       <sthead>
@@ -44,7 +44,7 @@
       </sthead>
       <strow>
         <stentry>To add additional explanation to any message, add the explanation to this table in a single cell, and
-          set the the following attributes on the <xmlelement>stentry</xmlelement> tag:
+          set the following attributes on the <xmlelement>stentry</xmlelement> tag:
           <ul>
             <li><codeph>conref="DITA-messages.xml#msgs/MESSAGEID-extra"</codeph> -- for example, use the following to
               add additional info to message DOTX001F:
@@ -321,14 +321,14 @@
               common parameters (outer.control and generate.copy.outer)</xref> for details.</p></stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTJ052E-extra" conaction="pushreplace">The DITA-OT supports a special
+        <stentry conref="DITA-messages.xml#msgs/DOTJ052E-extra" conaction="pushreplace">DITA-OT supports a special
           syntax on coderef elements to specify the character set of the target document. See <xref
             keyref="extended-functionality"/> for details on the expected syntax.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTJ053W-extra" conaction="pushreplace">By default, the DITA-OT supports
-          the extensions "dita" and "xml" for DITA topics, as mandated by the DITA Specification. Please verify that
-          your topics use one of these extensions, or configure the toolkit to allow additional extensions.</stentry>
+        <stentry conref="DITA-messages.xml#msgs/DOTJ053W-extra" conaction="pushreplace">By default, DITA-OT supports the
+          extensions "dita" and "xml" for DITA topics, as mandated by the DITA specification. Please verify that your
+          topics use one of these extensions, or configure the toolkit to allow additional extensions.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ054E-extra" conaction="pushreplace">This message indicates that the
@@ -488,11 +488,11 @@
           your links to sort inappropriately.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX020E-extra" conaction="pushreplace">The DITA-OT is only able to
+        <stentry conref="DITA-messages.xml#msgs/DOTX020E-extra" conaction="pushreplace">DITA-OT is only able to
           dynamically retrieve titles when the target is a local (not peer or external) DITA resource.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX021E-extra" conaction="pushreplace">The DITA-OT is only able to
+        <stentry conref="DITA-messages.xml#msgs/DOTX021E-extra" conaction="pushreplace">DITA-OT is only able to
           dynamically retrieve titles when the target is a local DITA resource.</stentry>
       </strow>
       <strow>
@@ -506,12 +506,12 @@
           ensure the scope and format attributes are set appropriately.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX024E-extra" conaction="pushreplace">The DITA-OT is only able to
+        <stentry conref="DITA-messages.xml#msgs/DOTX024E-extra" conaction="pushreplace">DITA-OT is only able to
           dynamically retrieve titles and link text when the target is a local (not peer or external) DITA
           resource.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX025E-extra" conaction="pushreplace">The DITA-OT is only able to
+        <stentry conref="DITA-messages.xml#msgs/DOTX025E-extra" conaction="pushreplace">DITA-OT is only able to
           dynamically retrieve titles when the target is a local DITA resource.</stentry>
       </strow>
       <strow>
@@ -612,11 +612,11 @@
           have an image next to the phrase, you may place an image directly into the document.</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX043I-extra" conaction="pushreplace">The DITA-OT is able to remove
+        <stentry conref="DITA-messages.xml#msgs/DOTX043I-extra" conaction="pushreplace">DITA-OT is able to remove
           duplicate links in most cases. However, if two links to the same resource use different attributes or link
           text, it is possible for them to appear together. For example, if the same link shows up with role="next" and
           again with no specified role, it may show up as both the "Next topic" link and as a related link. Note that
-          links generated from a <xmlelement>reltable</xmlelement> in a DITA Map will have the role attribute set to
+          links generated from a <xmlelement>reltable</xmlelement> in a DITA map will have the role attribute set to
           "friend".</stentry>
       </strow>
       <strow>

@@ -28,10 +28,11 @@
   </reference>
 
   <reference id="v3.1.2">
-    <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
+    <title>DITA-OT <keyword keyref="maintenance-version"/> <ph outputclass="small">released August 13, 2018</ph></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
         <ul>
           <li id="2222">When a content reference was combined with <xmlatt>conrefend</xmlatt> to reference a sequence of
             topics, all but the first topic were copied without a required <xmlatt>id</xmlatt> attribute. This resulted
@@ -91,10 +92,10 @@
   </reference>
 
   <reference id="v3.1.1">
-    <title>Maintenance Release 3.1.1 <ph outputclass="small">released July 16, 2018</ph></title>
+    <title>DITA-OT 3.1.1 <ph outputclass="small">released July 16, 2018</ph></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release 3.1.1 includes the following bug fixes.</p>
+        <p>DITA Open Toolkit 3.1.1 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="2662">When generating PDF output with Antenna House Formatter, earlier versions would sometimes fail
             when interpreting the Antenna House log. Processing has been updated to improve test coverage and handle

@@ -4,17 +4,17 @@
 
 <concept id="prerequisite-software">
   <title>Prerequisite software</title>
-  <shortdesc>The prerequisite software that the DITA-OT requires depends on the types of transformations that you want
-    to use.</shortdesc>
+  <shortdesc>The prerequisite software that DITA-OT requires depends on the types of transformations that you want to
+    use.</shortdesc>
   <conbody>
     <section>
       <title>Software required for core DITA-OT processing</title>
-      <p>The DITA-OT requires the following software applications:
+      <p>DITA-OT requires the following software applications:
         <dl>
           <dlentry>
             <dt>Java Runtime Environment (JRE) or Java Development Kit (JDK), version <keyword
                 keyref="tool.java.version"/> or later</dt>
-            <dd>Provides the basic environment for the DITA-OT. You can download the Oracle JRE or JDK from <xref
+            <dd>Provides the basic environment for DITA-OT. You can download the Oracle JRE or JDK from <xref
                 keyref="download.oracle-jdk"/>. <note>This is the <i>only</i> prerequisite software that you need to
                 install. The remaining required software is included in the distribution package.</note></dd>
           </dlentry>

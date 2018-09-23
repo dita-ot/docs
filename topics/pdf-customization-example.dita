@@ -36,8 +36,7 @@
   &lt;feature extension="dita.conductor.transtype.check" 
            value="print-pdf"/>
   &lt;feature extension="dita.transtype.print" value="print-pdf"/>
-  &lt;feature extension="dita.conductor.target.relative" 
-           file="integrator.xml"/>
+  &lt;feature extension="ant.import" file="integrator.xml"/>
 &lt;/plugin></codeblock>
           </fig>
         </info>

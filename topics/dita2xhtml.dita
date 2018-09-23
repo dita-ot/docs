@@ -5,8 +5,8 @@
 <concept id="dita2xhtml" xml:lang="en-US">
   <title>XHTML</title>
   <shortdesc>The <option>xhtml</option> transformation generates XHTML output and a table of contents (TOC) file. This
-    was the first transformation created for the DITA Open Toolkit, and originally served as the basis for all
-    HTML-based transformations.</shortdesc>
+    was the first transformation created for DITA Open Toolkit, and originally served as the basis for all HTML-based
+    transformations.</shortdesc>
   <conbody>
     <p>The XHTML output is always associated with the default DITA-OT CSS file (<filepath>commonltr.css</filepath> or
         <filepath>commonrtl.css</filepath> for right-to-left languages). You can use toolkit parameters to add a custom

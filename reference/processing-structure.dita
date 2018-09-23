@@ -4,12 +4,12 @@
 
 <concept id="processing-structure">
   <title>Processing structure</title>
-  <shortdesc>The DITA-OT implements a multi-stage, map-driven architecture to process DITA content. Each stage in the
+  <shortdesc>DITA-OT implements a multi-stage, map-driven architecture to process DITA content. Each stage in the
     process examines some or all of the content; some stages result in temporary files that are used by later steps,
     while others stages result in updated copies of the DITA content. Most of the processing takes place in a temporary
     working directory; the source files themselves are never modified.</shortdesc>
   <conbody>
-    <p>The DITA-OT is designed as a pipeline. Most of the pipeline is common to all output formats; it is known as the
+    <p>DITA-OT is designed as a pipeline. Most of the pipeline is common to all output formats; it is known as the
         <term>pre-processing stage</term>. In general, any DITA process begins with this common set of pre-processing
       routines.</p>
     <p>Once the pre-processing is completed, the pipeline diverges based on the requested output format. Some processing

@@ -51,7 +51,7 @@ task generatePlatformFilter {
         os(family: 'windows')
     }
 
-    ant.condition(property: 'platform', value: 'osx' ) {
+    ant.condition(property: 'platform', value: 'mac' ) {
         os(family: 'mac')
     }
 

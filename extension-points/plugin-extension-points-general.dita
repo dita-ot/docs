@@ -27,8 +27,7 @@
             conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/dita.conductor.target.desc">Adds an Ant
             import to the main Ant build file.
             <p>
-              <note type="attention">This extension point is deprecated; use
-                  <codeph>dita.conductor.target.relative</codeph> or <codeph>ant.import</codeph> instead.</note>
+              <note type="attention">This extension point is deprecated; use <codeph>ant.import</codeph> instead.</note>
             </p>
           </dd>
         </dlentry>

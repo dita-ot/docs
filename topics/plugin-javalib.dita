@@ -34,7 +34,7 @@
       <ul>
         <li>The JAR file must be added to the classpath.</li>
         <li>The Ant target must be added to the dependency chain for conref.</li>
-        <li>An Ant target must be created that uses this class, and the Ant wrapper integrated into the code.</li>
+        <li>An Ant target must be created that uses this class, and integrated into the code.</li>
       </ul>
       <p>The files might look like the following:</p>
       <fig>
@@ -45,19 +45,11 @@
   <b>&lt;feature extension="dita.conductor.lib.import" 
            file="com.example.sampleValidation.jar"/></b>
   <i>&lt;!-- Integrate the Ant code --></i>
-  &lt;feature extension="dita.conductor.target.relative"
-           file="antWrapper.xml"/>
+  &lt;feature extension="ant.import" file="calljava-antcode.xml"/>
   <i>&lt;!-- Define the Ant target to call, and when (before conref) --></i>
   &lt;feature extension="depend.preprocess.conref.pre" 
            value="validateWithJava"/>
 &lt;/plugin></codeblock>
-      </fig>
-      <fig>
-        <title><filepath>antWrapper.xml</filepath> file</title>
-        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;dummy>
-  &lt;import file="calljava-antcode.xml"/>
-&lt;/dummy></codeblock>
       </fig>
       <fig>
         <title><filepath>calljava-antcode.xml</filepath> file</title>

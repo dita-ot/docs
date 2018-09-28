@@ -34,25 +34,44 @@
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
-          <li id="3060">Force align left for footnotes
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3060" format="html" scope="external">#3060</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3065" format="html" scope="external">#3065</xref>
-          </li>
-          <li id="3064">Fix for conref in title of submap in subdir
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3064" format="html" scope="external">#3064</xref>
-          </li>
-          <li id="3066">Fix PDF error when indexterm is in draft section + draft is off
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3066" format="html" scope="external">#3066</xref>
-          </li>
-          <li id="3071">Use correct error message for missing image
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3071" format="html" scope="external">#3071</xref>
-          </li>
-          <li id="3073">Fix invalid IDs in FO index links
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3073" format="html" scope="external">#3073</xref>
-          </li>
-          <li id="3077">Fix Java failure when chunking is combined with uplevels
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3077" format="html" scope="external">#3077</xref>
-          </li>
+          <li id="3060">In earlier releases, if a footnote was defined in a table cell that
+specified <codeph>align="center"</codeph>, the footnote content at the bottom of a PDF page would
+also be center-aligned. This has been fixed so that PDF footnotes always align to the start of the
+page. <xref href="https://github.com/dita-ot/dita-ot/issues/3060" format="html" scope="external"
+>#3060</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/3065" format="html"
+scope="external">#3065</xref>
+</li>
+          <li id="3064">In DITA-OT 3.0 and 3.1, when a nested map in another directory has a
+<xmlelement>title</xmlelement> that contains a valid content reference, it is possible for those
+references to result in unresolved <xmlatt>conref</xmlatt> errors. This issue has been fixed. <xref
+href="https://github.com/dita-ot/dita-ot/issues/3064" format="html" scope="external">#3064</xref>
+</li>
+          <li id="3066">In PDF, index entries inside of <xmlelement>draft-comment</xmlelement> and
+<xmlelement>required-cleanup</xmlelement> would appear in the generated index as broken links when
+draft content was excluded. This has been fixed, and the entries will not appear in the index unless
+draft content is included. <xref href="https://github.com/dita-ot/dita-ot/issues/3066" format="html"
+scope="external">#3066</xref>
+</li>
+          <li id="3071">In earlier releases, missing images could result in a missing file warning
+that suggested that a <xmlelement>navtitle</xmlelement> was needed to use the image in a table of
+contents. This message has been fixed to simply describe the missing file. <xref
+href="https://github.com/dita-ot/dita-ot/issues/3071" format="html" scope="external">#3071</xref>
+</li>
+          <li id="3073">In earlier releases, PDF many index entries were defined in the XSL-FO file
+using <xmlatt>id</xmlatt> attributes that worked but were technically invalid. This could result in
+a large number of warnings from tools that rendered the XSL-FO file. The <xmlatt>id</xmlatt>
+attributes have been fixed to ensure validity. <xref
+href="https://github.com/dita-ot/dita-ot/issues/3073" format="html" scope="external">#3073</xref>
+</li>
+<li id="3077">When maps use content outside of the map directory, and some
+<xmlelement>topicref</xmlelement> elements in the build specify <codeph>chunk="by-topic"</codeph>,
+earlier releases could fail with Java errors when evaluating the <xmlatt>chunk</xmlatt> attribute.
+This has been fixed so that chunking is resolved properly when content is referenced outside of the
+map directory.<xref href="https://github.com/dita-ot/dita-ot/issues/3077" format="html"
+scope="external">#3077</xref>
+</li>
+<!--<li id="3081">In PDF processing for DITA-OT 3.0 and 3.1, a variable that stores navigation titles was typed in a way that caused XSLT errors for some values. The variable type has been corrected. <xref href="https://github.com/dita-ot/dita-ot/pull/3081" format="html" scope="external">#3081</xref> </li>-->
+<!--<li id="3082">In earlier releases, PDF builds with broken links improperly reported a fatal error. A fix in DITA-OT 3.0 caused fatal errors to halt the build, which caused these PDF builds to fail. The error message level has been corrected from <codeph>FATAL</codeph> to <codeph>ERROR</codeph>. <xref href="https://github.com/dita-ot/dita-ot/pull/3082" format="html" scope="external">#3082</xref> </li>-->
         </ul>
         <p>For the complete list of changes since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.1.2...3.1.3" format="html" scope="external">
@@ -172,8 +191,7 @@
             <p>The documentation includes minor
               <xref href="https://github.com/dita-ot/docs/compare/3.1...3.1.1" format="html" scope="external">
                 changes</xref> with
-              <xref href="https://github.com/dita-ot/docs/milestone/34?closed=1" format="html" scope="external"
-                >corrections and improvements</xref> to existing topics.</p>
+              <xref href="https://github.com/dita-ot/docs/milestone/34?closed=1" format="html" scope="external">corrections and improvements</xref> to existing topics.</p>
           </li>
         </ul>
         <p>For the complete list of changes since the previous release, see the
@@ -295,8 +313,7 @@
           <li id="2972">The distribution build has been updated to use the documentation Gradle build instead of Ant.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2972" format="html" scope="external">#2972</xref>
           </li>
-          <li id="2974">The bundled <tm trademark="Apache" tmtype="tm">Apache</tm> FOP version has been updated to <ph
-              keyref="tool.fop.version"/>. (For details on recent changes, see the
+          <li id="2974">The bundled <tm trademark="Apache" tmtype="tm">Apache</tm> FOP version has been updated to <ph keyref="tool.fop.version"/>. (For details on recent changes, see the
             <xref keyref="fop-23-rn"/>.)
             <xref href="https://github.com/dita-ot/dita-ot/issues/2974" format="html" scope="external">#2974</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/2976" format="html" scope="external">#2976</xref>
@@ -403,10 +420,8 @@
           <li>
             <xref keyref="log-files"/></li>
         </ul>
-        <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
-            keyref="release"/>, see the
-          <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.1+is%3Aclosed" format="html"
-            scope="external">
+        <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword keyref="release"/>, see the
+          <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.1+is%3Aclosed" format="html" scope="external">
             <keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
           <xref keyref="docs-contributions"/> by the following people:</p>

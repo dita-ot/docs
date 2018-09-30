@@ -40,12 +40,12 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3060" format="html" scope="external">#3060</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/3065" format="html" scope="external">#3065</xref>
           </li>
-          <li id="3064">In DITA-OT 3.0 and 3.1, when a nested map in another directory has a
-              <xmlelement>title</xmlelement> that contains a valid content reference, it is possible for those
-            references to result in unresolved <xmlatt>conref</xmlatt> errors. This issue has been fixed.
+          <li id="3064">In DITA-OT 3.0 and 3.1, unresolved <xmlatt>conref</xmlatt> errors may appear when nested submaps
+            that are not in the same directory as the referencing map have <xmlelement>title</xmlelement> elements with
+            valid content references. This issue has been fixed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3064" format="html" scope="external">#3064</xref>
           </li>
-          <li id="3066">In PDF, index entries inside of <xmlelement>draft-comment</xmlelement> and
+          <li id="3066">In PDF output, index entries inside of <xmlelement>draft-comment</xmlelement> and
               <xmlelement>required-cleanup</xmlelement> would appear in the generated index as broken links when draft
             content was excluded. This has been fixed, and the entries will not appear in the index unless draft content
             is included.
@@ -56,7 +56,7 @@
             been fixed to simply describe the missing file.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3071" format="html" scope="external">#3071</xref>
           </li>
-          <li id="3073">In earlier releases, PDF many index entries were defined in the XSL-FO file using
+          <li id="3073">In earlier releases, many PDF index entries were defined in the XSL-FO file using
               <xmlatt>id</xmlatt> attributes that worked but were technically invalid. This could result in a large
             number of warnings from tools that rendered the XSL-FO file. The <xmlatt>id</xmlatt> attributes have been
             fixed to ensure validity.
@@ -75,9 +75,9 @@
           </li>
           -->
           <!--
-          <li id="3082">In earlier releases, PDF builds with broken links improperly reported a fatal error. A fix in
-            DITA-OT 3.0 caused fatal errors to halt the build, which caused these PDF builds to fail. The error message
-            level has been corrected from <codeph>FATAL</codeph> to <codeph>ERROR</codeph>.
+          <li id="3082">In earlier releases, PDF builds with broken links improperly reported a fatal error. DITA-OT 3.0
+            was changed to halt the build on fatal errors, which caused these PDF builds to fail. The error message
+            level has been corrected from <codeph>FATAL</codeph> to <codeph>ERROR</codeph>, allowing builds to finish.
             <xref href="https://github.com/dita-ot/dita-ot/pull/3082" format="html" scope="external">#3082</xref>
           </li>
           -->

@@ -27,12 +27,75 @@
     </refbody>
   </reference>
 
-  <reference id="v3.1.2">
-    <title>DITA-OT <keyword keyref="maintenance-version"/> <ph outputclass="small">released August 13, 2018</ph></title>
+  <reference id="v3.1.3">
+    <title>DITA-OT <keyword keyref="maintenance-version"/> <ph outputclass="small">released October 3, 2018</ph></title>
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <ul>
+          <li id="3060">In earlier releases, if a footnote was defined in a table cell that specified
+              <codeph>align="center"</codeph>, the footnote content at the bottom of a PDF page would also be
+            center-aligned. This has been fixed so that PDF footnotes always align to the start of the page.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3060" format="html" scope="external">#3060</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3065" format="html" scope="external">#3065</xref>
+          </li>
+          <li id="3064">In DITA-OT 3.0 and 3.1, unresolved <xmlatt>conref</xmlatt> errors may appear when nested submaps
+            that are not in the same directory as the referencing map have <xmlelement>title</xmlelement> elements with
+            valid content references. This issue has been fixed.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3064" format="html" scope="external">#3064</xref>
+          </li>
+          <li id="3066">In PDF output, index entries inside of <xmlelement>draft-comment</xmlelement> and
+              <xmlelement>required-cleanup</xmlelement> would appear in the generated index as broken links when draft
+            content was excluded. This has been fixed, and the entries will not appear in the index unless draft content
+            is included.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3066" format="html" scope="external">#3066</xref>
+          </li>
+          <li id="3071">In earlier releases, missing images could result in a missing file warning that suggested that a
+              <xmlelement>navtitle</xmlelement> was needed to use the image in a table of contents. This message has
+            been fixed to simply describe the missing file.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3071" format="html" scope="external">#3071</xref>
+          </li>
+          <li id="3073">In earlier releases, many PDF index entries were defined in the XSL-FO file using
+              <xmlatt>id</xmlatt> attributes that worked but were technically invalid. This could result in a large
+            number of warnings from tools that rendered the XSL-FO file. The <xmlatt>id</xmlatt> attributes have been
+            fixed to ensure validity.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3073" format="html" scope="external">#3073</xref>
+          </li>
+          <li id="3077">When maps use content outside of the map directory, and some <xmlelement>topicref</xmlelement>
+            elements in the build specify <codeph>chunk="by-topic"</codeph>, earlier releases could fail with Java
+            errors when evaluating the <xmlatt>chunk</xmlatt> attribute. This has been fixed so that chunking is
+            resolved properly when content is referenced outside of the map directory.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3077" format="html" scope="external">#3077</xref>
+          </li>
+          <li id="3081">In PDF processing for DITA-OT 3.0 and 3.1, a variable that stores navigation titles was typed in
+            a way that caused XSLT errors for some values. The variable type has been corrected.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3081" format="html" scope="external">#3081</xref>
+          </li>
+          <li id="3082">In earlier releases, PDF builds with broken links improperly reported a fatal error. DITA-OT 3.0
+            was changed to halt the build on fatal errors, which caused these PDF builds to fail. The error message
+            level has been corrected from <codeph>FATAL</codeph> to <codeph>ERROR</codeph>, allowing builds to finish.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3082" format="html" scope="external">#3082</xref>
+          </li>
+          <li id="3083">In DITA-OT 3.0 and 3.1, the PDF build using <codeph>preprocess2</codeph> had build errors
+            when the <xmlatt>copy-to</xmlatt> attribute was used. This error has been resolved, and the
+            <xmlatt>copy-to</xmlatt> attribute is evaluated correctly in <codeph>preprocess2</codeph>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3083" format="html" scope="external">#3083</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3085" format="html" scope="external">#3085</xref>
+        </li>
+        </ul>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.1.2...3.1.3" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.1.2">
+    <title>DITA-OT 3.1.2 <ph outputclass="small">released August 13, 2018</ph></title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.1.2 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="2222">When a content reference was combined with <xmlatt>conrefend</xmlatt> to reference a sequence of
             topics, all but the first topic were copied without a required <xmlatt>id</xmlatt> attribute. This resulted

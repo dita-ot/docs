@@ -4,8 +4,8 @@
 
 <concept id="loghandling">
   <title>Log files</title>
-  <shortdesc>When you run the DITA-OT, key information is logged on the screen. This information can also be written to
-    a log file. If you encounter a problem, you can analyze this information to determine the source of the problem and
+  <shortdesc>When you run DITA-OT, key information is logged on the screen. This information can also be written to a
+    log file. If you encounter a problem, you can analyze this information to determine the source of the problem and
     then take action to resolve it.</shortdesc>
   <conbody>
     <p>The logging behavior varies depending on whether you use the <cmdname>dita</cmdname> command or Ant to invoke a
@@ -49,7 +49,7 @@
         <dlentry>
           <dt>Ant</dt>
           <dd>
-            <p>If you prefer to launch the DITA-OT directly from Ant, you can also add the logger to the
+            <p>If you prefer to launch DITA-OT directly from Ant, you can also add the logger to the
                 <codeph>ANT_ARGS</codeph> environment variable, as explained above. You can also set the logger with the
                 <codeph>-logger</codeph> parameter when calling Ant.</p>
             <codeblock>ant -logger org.apache.tools.ant.listener.AnsiColorLogger</codeblock>

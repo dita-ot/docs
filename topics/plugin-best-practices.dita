@@ -7,9 +7,8 @@
   <titlealts>
     <navtitle>Best practices</navtitle>
   </titlealts>
-  <shortdesc>Adhering to certain development practices will properly isolate your code from that of the DITA Open
-    Toolkit. This will make it easier to you to upgrade to new versions of the DITA-OT when they are
-    released.</shortdesc>
+  <shortdesc>Adhering to certain development practices will properly isolate your code from that of DITA Open Toolkit.
+    This will make it easier to you to upgrade to new versions of DITA-OT when they are released.</shortdesc>
   <conbody>
     <ul>
       <li>Use a properly-constructed DITA-OT plug-in.</li>
@@ -25,7 +24,7 @@
       <li>In cases that require substantial customizations, you may prefer to organize the files in a folder structure
         that mimics the hierarchy of the default plug-in you are customizing. This facilitates comparisons with the
         default settings in the base plug-in and makes it easier to migrate your changes to new toolkit versions.</li>
-      <li>Upgrade your customization plug-in to new versions of the DITA-OT regularly. Do not wait through several major
+      <li>Upgrade your customization plug-in to new versions of DITA-OT regularly. Do not wait through several major
         releases before upgrading.</li>
     </ul>
   </conbody>

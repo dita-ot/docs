@@ -23,9 +23,9 @@
       <titlealts>
         <navtitle>All extension points</navtitle>
       </titlealts>
-      <shortdesc id="shortdesc">The pre-defined extension points can be used to extend the functionality of the
-        DITA-OT. If your toolkit installation includes custom plug-ins that define additional extension points, you can
-        add to this list by rebuilding the DITA-OT documentation.</shortdesc>
+      <shortdesc id="shortdesc">The pre-defined extension points can be used to add new functionality to DITA-OT. If
+        your toolkit installation includes custom plug-ins that define additional extension points, you can add to this
+        list by rebuilding the DITA-OT documentation.</shortdesc>
         <refbody>
           <section>
             <dl>

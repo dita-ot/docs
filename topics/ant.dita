@@ -17,8 +17,8 @@
     </metadata>
   </prolog>
   <conbody>
-    <p>The DITA-OT uses Ant to manage the XSLT scripts that are used to perform the various transformation; it also uses
-      Ant to manage intermediate steps that are written in Java. </p>
+    <p>DITA-OT uses Ant to manage the XSLT scripts that are used to perform the various transformation; it also uses Ant
+      to manage intermediate steps that are written in Java. </p>
     <p>The most important Ant script is the <filepath>build.xml</filepath> file. This script defines and combines common
       pre-processing and output transformation routines; it also defines the DITA-OT extension points.</p>
   </conbody>

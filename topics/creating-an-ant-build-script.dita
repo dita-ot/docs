@@ -42,7 +42,8 @@
         </substeps>
       </step>
       <step>
-        <cmd>Set the value of the <parmname>dita.dir</parmname> property to the location of the DITA-OT.</cmd>
+        <cmd>Set the value of the <parmname>dita.dir</parmname> property to the location of the DITA-OT
+          installation.</cmd>
         <info>This can be a fully qualified path, or you can specify it relative to the location of the Ant build script
           that you are writing. </info>
       </step>
@@ -73,7 +74,7 @@
         <ul>
           <li>The <parmname>args.gen.task.lbl</parmname> property is set to YES, which ensures that headings are
             automatically generated for the sections of task topics.</li>
-          <li>The <parmname>output.dir</parmname> property specifies where the DITA-OT writes the output of the
+          <li>The <parmname>output.dir</parmname> property specifies where DITA-OT writes the output of the
             transformations.</li>
         </ul></p>
       <p>The pdf target also specifies that related links should be generated in the PDF, but only those links that are

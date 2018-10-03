@@ -8,11 +8,11 @@
     base path of another installed DITA-OT plug-in.</shortdesc>
     <taskbody>
     <section>
-      <p>Sometimes you need to reference content in another DITA-OT plug-in. However, the path to an
-        installed plug-in is not guaranteed to be the same between different installed instances of
-        the DITA-OT. The <filepath conref="#using-plugin-URI-extension/plugin-uri-ext"/> URI
-        extension and <filepath conref="#using-plugin-URI-extension/antvar"/> Ant variable are
-        provided so your build  and XSLT files always use the correct path to the plug-in.</p>
+      <p>Sometimes you need to reference content in another DITA-OT plug-in. However, the path to an installed plug-in
+        is not guaranteed to be the same between different installed instances of DITA-OT. The <filepath
+          conref="#using-plugin-URI-extension/plugin-uri-ext"/> URI extension and <filepath
+          conref="#using-plugin-URI-extension/antvar"/> Ant variable are provided so your build and XSLT files always
+        use the correct path to the plug-in.</p>
       <p>Within a single plug-in, you can safely use relative path references, for example,
           <filepath>xsl/my.xsl</filepath> without specifying the path to the plug-in itself.</p>
     </section>

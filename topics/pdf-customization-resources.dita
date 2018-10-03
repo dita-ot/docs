@@ -7,7 +7,7 @@
   <titlealts>
     <navtitle>Custom PDF plug-in resources</navtitle>
   </titlealts>
-  <shortdesc>There are several external resources that can help you generate and refine custom PDF plug-ins for the DITA
+  <shortdesc>There are several external resources that can help you generate and refine custom PDF plug-ins for DITA
     Open Toolkit.</shortdesc>
 
   <refbody>
@@ -20,7 +20,7 @@
           >dita-generator.elovirta.com</xref> walks you through the process of creating a custom PDF plug-in and allows
         you to adjust a variety of settings for your PDF output. For example, you can:</p>
       <ul>
-        <li>Define the target environment, selecting from the most current and two previous versions of the DITA-OT</li>
+        <li>Define the target environment, selecting from the most current and two previous versions of DITA-OT</li>
         <li>Select the XSL formatting engine (FOP, Antenna House Formatter, or RenderX XEP)</li>
         <li>Specify page size, columns, and margins</li>
         <li>Select from (limited) options for headers and footers</li>
@@ -69,13 +69,13 @@
           practice.</p>
         <p>Instead, you should copy only the specific attribute sets and templates that you want to override. Following
           this practice will more cleanly isolate your customizations from the DITA-OT code, which will make it easier
-          for you to update your plug-ins to work with future versions of the DITA-OT.</p></note>
+          for you to update your plug-ins to work with future versions of DITA-OT.</p></note>
     </section>
 
     <section id="dita-for-practitioners">
       <title><cite>DITA for Practitioners: Volume 1, Architecture and Technology</cite> (2012)</title>
-      <p>Authored by Eliot Kimber and published by XML Press, this seminal resource contains a chapter dedicated to the
-        DITA Open Toolkit: “Running, Configuring, and Customizing the Open Toolkit”. In addition to a robust overview of
+      <p>Authored by Eliot Kimber and published by XML Press, this seminal resource contains a chapter dedicated to DITA
+        Open Toolkit: “Running, Configuring, and Customizing the Open Toolkit”. In addition to a robust overview of
         DITA-OT customization and extension, the chapter contains a detailed example of customizing a PDF plug-in to
         specify 7" × 10" paper size and custom fonts for body text and headers.</p>
       <p>The DITA-OT chapter in <cite>DITA for Practitioners: Volume 1</cite> was written for DITA-OT 1.5.4, which was

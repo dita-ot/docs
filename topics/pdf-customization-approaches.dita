@@ -4,7 +4,7 @@
 
 <concept id="pdf_customization_approaches">
   <title>PDF customization approaches</title>
-  <shortdesc>Various methods may be used to customize the PDF output produced by the DITA Open Toolkit. Each of these
+  <shortdesc>Various methods may be used to customize the PDF output that DITA Open Toolkit produces. Each of these
     approaches have advantages and shortcomings that should be considered when preparing a customization project. Some
     of these methods are considered “anti-patterns” with disadvantages that outweigh their apparent appeal. In most
     cases, you should create a custom PDF plug-in.</shortdesc>
@@ -46,13 +46,13 @@
 
     <section id="external_customization_directories">
       <title>Specifying an external customization directory</title>
-      <p>To ensure that overrides in customization folders are not overwritten when upgrading the DITA-OT to a new
+      <p>To ensure that overrides in customization folders are not overwritten when upgrading DITA-OT to a new
         release, an external customization directory can be specified at build time or in build scripts via the
           <parmname>customization.dir</parmname> parameter.</p>
       <p>This method is preferable to the use of the <filepath>org.dita.pdf2/Customization</filepath> folder, as the
         contents of external folders are unaffected when upgrading DITA-OT. In distributed environments, users can use
-        local installations of the DITA-OT, yet still take advantage of common customizations stored in a network
-        location available to the entire team, such as a shared drive.</p>
+        local installations of DITA-OT, yet still take advantage of common customizations stored in a network location
+        available to the entire team, such as a shared drive.</p>
       <p>It can also be useful in environments where corporate policy, CMS permissions, or network access rights prevent
         changes to the toolkit installation, which may prohibit the installation of custom plug-ins.</p>
       <note type="tip">Users who specify external customization directories via <parmname>customization.dir</parmname>

@@ -7,7 +7,7 @@
   <titlealts>
     <navtitle>Checking the version</navtitle>
   </titlealts>
-  <shortdesc>You can determine the version number of the DITA Open Toolkit from a command prompt.</shortdesc>
+  <shortdesc>You can determine the DITA Open Toolkit version number from a command prompt.</shortdesc>
   <taskbody>
     <steps>
       <step>
@@ -16,7 +16,7 @@
       <step>
         <cmd>Issue the following command:</cmd>
         <choicetable frame="topbot" relcolwidth="1.0* 3.0*">
-          <chrow platform="linux osx">
+          <chrow platform="linux mac">
             <choption>Linux or macOS&#xA0;</choption>
             <chdesc>
               <cmdname>bin/dita</cmdname>

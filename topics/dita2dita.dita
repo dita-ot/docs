@@ -5,9 +5,8 @@
 <topic id="normalized-dita">
   <title>Normalized DITA</title>
   <shortdesc>The <codeph>dita</codeph> transformation generates normalized topics and maps from DITA input. The
-    normalized output includes the results of the DITA Open Toolkit pre-processing operations, which resolve map
-    references, keys, content references, code references and push metadata back and forth between maps and
-    topics.</shortdesc>
+    normalized output includes the results of DITA Open Toolkit pre-processing operations, which resolve map references,
+    keys, content references, code references and push metadata back and forth between maps and topics.</shortdesc>
 
   <body>
     <p>In comparison to the source DITA files, the normalized DITA files are modified in the following ways:</p>

@@ -5,8 +5,8 @@
 <concept id="xhtmltocjs" xml:lang="en-US">
   <title>TocJS processing</title>
   <shortdesc>The <option>tocjs</option> transformation was originally created as a plug-in that was distributed outside
-    of the toolkit, but it now ships bundled in the default packages. This HTML5-based output type creates a
-    JavaScript-based frameset with TOC entries that expand and collapse.</shortdesc>
+    of the toolkit, but it is now bundled in the default distribution. It generates a JavaScript-based frameset for
+    XHTML output with Table of Contents entries that expand and collapse.</shortdesc>
   <conbody>
     <section>
       <p>The following Ant targets control most of the TocJS processing:</p>
@@ -24,7 +24,7 @@
           </dlentry>
           <dlentry>
             <dt><codeph>tocjsDefaultOutput</codeph></dt>
-            <dd>Ensures that the HTML5 processing module is run. If scripts are missing required information, such as a
+            <dd>Ensures that the XHTML processing module is run. If scripts are missing required information, such as a
               name for the default frameset, this target copies default style and control files. This target was added
               to DITA-OT in version 1.5.4; earlier versions of the TocJS transformation created only the JavaScript
               control file by default.</dd>

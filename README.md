@@ -24,7 +24,11 @@ You can also specify a single output format. To build HTML output, enter the fol
 
     ./gradlew -PditaHome=../dita-ot/src/main html
 
-Output will be generated in the `/out` folder of the `docs` repository. This folder is created automatically if it doesn't exist. _(Git ignores the contents of this folder so you don't inadvertently commit these transient files.)_
+**Note:** On Windows, use `gradlew.bat` and adjust the path to your DITA-OT installation:
+
+    gradlew -PditaHome=..\dita-ot\src\main
+
+Output will be generated in the `out` folder of the `docs` repository. This folder is created automatically if it doesn't exist. _(Git ignores the contents of this folder so you don't inadvertently commit these transient files.)_
 
 ## Building with development versions of DITA Open Toolkit
 

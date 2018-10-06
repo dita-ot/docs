@@ -29,7 +29,7 @@
         <refbody>
           <section>
             <dl>
-              <xsl:apply-templates select="//extension-point">
+              <xsl:apply-templates select="//extension-point" mode="reuse">
                 <xsl:sort select="@name"/>
               </xsl:apply-templates>
             </dl>
@@ -105,6 +105,30 @@
       <dd id="{@id}.desc">
         <xsl:value-of select="@name"/>
       </dd>
+    </dlentry>
+  </xsl:template>
+
+  <xsl:template match="extension-point" mode="reuse">
+    <xsl:variable name="containing-plugin" select="ancestor::plugin/@id"/>
+    <dlentry id="{@id}">
+      <xsl:if test="@deprecated = 'true'">
+        <xsl:attribute name="importance">deprecated</xsl:attribute>
+      </xsl:if>
+      <xsl:if test="@required = 'true'">
+        <xsl:attribute name="importance">required</xsl:attribute>
+      </xsl:if>
+      <dt>
+        <parmname>
+          <xsl:value-of select="@id"/>
+        </parmname>
+      </dt>
+      <!-- Changing the keyref to "extension-points-in-{$containing-plugin}/{@id}" would link to the exact parameter. -->
+      <dd>Defined in plug-in
+        <xref keyref="extension-points-in-{$containing-plugin}">
+          <codeph><xsl:value-of select="$containing-plugin"/></codeph>
+        </xref>.
+      </dd>
+      <dd conkeyref="extension-points-in-{$containing-plugin}/{@id}.desc" id="{@id}.desc"/>
     </dlentry>
   </xsl:template>
 

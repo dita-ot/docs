@@ -107,7 +107,7 @@
       </dd>
     </dlentry>
   </xsl:template>
-  
+
   <xsl:template match="extension-point" mode="reuse">
     <xsl:variable name="containing-plugin" select="ancestor::plugin/@id"/>
     <dlentry id="{@id}">
@@ -126,7 +126,7 @@
       <dd>Defined in plug-in
         <xref keyref="extension-points-in-{$containing-plugin}">
           <codeph><xsl:value-of select="$containing-plugin"/></codeph>
-        </xref>
+        </xref>.
       </dd>
       <dd conkeyref="extension-points-in-{$containing-plugin}/{@id}.desc" id="{@id}.desc"/>
     </dlentry>

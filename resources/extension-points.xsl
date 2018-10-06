@@ -123,7 +123,11 @@
         </parmname>
       </dt>
       <!-- Changing the keyref to "extension-points-in-{$containing-plugin}/{@id}" would link to the exact parameter. -->
-      <dd>Defined in plug-in <keyword keyref="extension-points-in-{$containing-plugin}"><xsl:value-of select="$containing-plugin"/></keyword></dd>
+      <dd>Defined in plug-in
+        <xref keyref="extension-points-in-{$containing-plugin}">
+          <codeph><xsl:value-of select="$containing-plugin"/></codeph>
+        </xref>
+      </dd>
       <dd conkeyref="extension-points-in-{$containing-plugin}/{@id}.desc" id="{@id}.desc"/>
     </dlentry>
   </xsl:template>

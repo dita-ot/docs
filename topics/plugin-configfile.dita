@@ -273,7 +273,7 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
         </plentry>
       </parml>
       <p>Any extension that is not recognized by DITA-OT is ignored. Since DITA-OT version 1.5.3, you can combine
-        multiple extension definitions within a single <filepath>plug-in.xml</filepath> file; in older versions, only
+        multiple extension definitions within a single <filepath>plugin.xml</filepath> file; in older versions, only
         the last extension definition was used. </p>
     </section>
   </refbody>

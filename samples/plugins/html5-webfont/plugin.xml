@@ -2,9 +2,9 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <?xml-model href="../../../../resources/plugin.rnc" type="application/relax-ng-compact-syntax"?>
 
-<plugin id="com.example.html5-noto">
+<plugin id="com.example.html5-webfont">
   <require plugin="org.dita.html5"/>
-  <transtype name="html5-noto" extends="html5" desc="HTML5 with Noto Sans webfont"/>
-  <feature extension="dita.conductor.transtype.check" value="html5-noto"/>
-  <feature extension="ant.import" file="build_dita2html5-noto.xml"/>
+  <transtype name="html5-webfont" extends="html5" desc="HTML5 with Noto Sans webfont"/>
+  <feature extension="dita.conductor.transtype.check" value="html5-webfont"/>
+  <feature extension="ant.import" file="build_dita2html5-webfont.xml"/>
 </plugin>

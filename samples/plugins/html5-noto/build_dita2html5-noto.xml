@@ -2,22 +2,18 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <project xmlns:dita="http://dita-ot.sourceforge.net" name="dita2html5-noto">
+
   <target name="dita2html5-noto.init">
-    <!-- Embed Noto Sans font resources in the <head> element of the generated HTML files -->
     <property name="args.hdf"
               value="${dita.plugin.com.example.html5-noto.dir}/includes/html5-noto.hdf.xml"/>
-    <!-- Custom .css file used to style output -->
     <property name="args.css" value="custom.css"/>
-    <!-- Force absolute path for `cssroot` per https://github.com/dita-ot/dita-ot/issues/3016 -->
     <property name="args.cssroot"
               value="${dita.plugin.com.example.html5-noto.dir}/css"/>
-    <!-- Copy the custom .css file to the output directory -->
     <property name="args.copycss" value="yes"/>
-    <!-- Location of the copied .css file relative to the output -->
     <property name="args.csspath" value="css"/>
   </target>
 
   <target name="dita2html5-noto"
-          depends="dita2html5-noto.init,
-                   dita2html5"/>
+       depends="dita2html5-noto.init,
+                dita2html5"/>
 </project>

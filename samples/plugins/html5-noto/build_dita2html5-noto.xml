@@ -3,6 +3,10 @@
 
 <project xmlns:dita="http://dita-ot.sourceforge.net" name="dita2html5-noto">
 
+  <target name="dita2html5-noto"
+       depends="dita2html5-noto.init,
+                dita2html5"/>
+
   <target name="dita2html5-noto.init">
     <property name="args.hdf"
               value="${dita.plugin.com.example.html5-noto.dir}/includes/html5-noto.hdf.xml"/>
@@ -13,7 +17,4 @@
     <property name="args.csspath" value="css"/>
   </target>
 
-  <target name="dita2html5-noto"
-       depends="dita2html5-noto.init,
-                dita2html5"/>
 </project>

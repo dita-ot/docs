@@ -4,8 +4,7 @@
 
 <plugin id="com.example.html5-noto">
   <require plugin="org.dita.html5"/>
-  <transtype name="html5-noto" extends="html5" desc="HTML5 with Noto Sans webfont">
-  </transtype>
+  <transtype name="html5-noto" extends="html5" desc="HTML5 with Noto Sans webfont"/>
   <feature extension="dita.conductor.transtype.check" value="html5-noto"/>
   <feature extension="ant.import" file="build_dita2html5-noto.xml"/>
 </plugin>

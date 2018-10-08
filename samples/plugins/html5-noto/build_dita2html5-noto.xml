@@ -10,9 +10,9 @@
   <target name="dita2html5-noto.init">
     <property name="args.hdf"
               value="${dita.plugin.com.example.html5-noto.dir}/includes/html5-noto.hdf.xml"/>
-    <property name="args.css" value="custom.css"/>
     <property name="args.cssroot"
               value="${dita.plugin.com.example.html5-noto.dir}/css"/>
+    <property name="args.css" value="custom.css"/>
     <property name="args.copycss" value="yes"/>
     <property name="args.csspath" value="css"/>
   </target>

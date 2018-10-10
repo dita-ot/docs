@@ -84,7 +84,11 @@
       </step>
     </steps>
     <result>
-      <p>The new plug-in directory has the following layout and files:</p>
+      <note type="tip">The files for this sample plug-in are included in the DITA-OT installation directory under
+          <filepath>docsrc/samples/plugins/com.example.html5.custom.css/</filepath> and on
+        <xref href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.html5.custom.css"
+          format="html" scope="external">GitHub</xref>.</note>
+      <p>The plug-in directory has the following layout and files:</p>
       <codeblock>com.example.html5.custom.css
 ├── build.xml
 ├── css

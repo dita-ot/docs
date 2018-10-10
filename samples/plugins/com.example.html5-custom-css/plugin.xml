@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This plug-in extends DITA-OT HTML5 processing with a custom CSS file. -->
-<plugin id="com.example.html5.custom.css">
+<plugin id="com.example.html5-custom-css">
   <require plugin="org.dita.html5"/>
   <feature extension="dita.conductor.transtype.check" value="html5-custom-css"/>
   <feature extension="ant.import" file="build.xml"/>

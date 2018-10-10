@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../../resources/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+
 <!-- This plug-in extends DITA-OT HTML5 processing with a custom CSS file. -->
 <plugin id="com.example.html5-custom-css">
   <require plugin="org.dita.html5"/>

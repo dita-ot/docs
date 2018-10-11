@@ -1,12 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<project xmlns:dita="http://dita-ot.sourceforge.net" name="dita2html5-webfont">
-
+<project  name="dita2html5-webfont">
   <target name="dita2html5-webfont"
        depends="dita2html5-webfont.init,
                 dita2html5"/>
-
   <target name="dita2html5-webfont.init">
     <property name="args.hdf"
               value="${dita.plugin.com.example.html5-webfont.dir}/include/webfont.hdf.xml"/>
@@ -16,5 +14,4 @@
     <property name="args.copycss" value="yes"/>
     <property name="args.csspath" value="css"/>
   </target>
-
 </project>

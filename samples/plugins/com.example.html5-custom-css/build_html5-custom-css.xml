@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <project name="com.example.html5-custom-css">
+  <target name="dita2html5-custom-css"
+       depends="dita2html5-custom-css.init,
+                dita2html5"/>
   <target name="dita2html5-custom-css.init">
     <property name="args.css" value="custom.css"/>
     <property name="args.cssroot"
@@ -8,7 +11,4 @@
     <property name="args.copycss" value="yes"/>
     <property name="args.csspath" value="css"/>
   </target>
-  <target name="dita2html5-custom-css"
-          depends="dita2html5-custom-css.init,
-                   dita2html5"/>
 </project>

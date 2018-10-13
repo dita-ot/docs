@@ -64,26 +64,7 @@
         <cmd>Create the <filepath>cfg/fo/xsl/custom.xsl</filepath> file, and add XSLT overrides to it.</cmd>
         <stepxmp>For example, the following code changes the rendering of <xmlelement>figure</xmlelement> elements.<fig>
             <title><filepath>cfg/fo/xsl/custom.xsl</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns:fo="http://www.w3.org/1999/XSL/Format"
-                version="2.0">
-  &lt;!-- Move figure title to top and description to bottom -->
-  &lt;xsl:template match="*[contains(@class,' topic/fig ')]">
-    &lt;fo:block xsl:use-attribute-sets="fig">
-      &lt;xsl:call-template name="commonattributes"/>
-      &lt;xsl:if test="not(@id)">
-        &lt;xsl:attribute name="id">
-          &lt;xsl:call-template name="get-id"/>
-        &lt;/xsl:attribute>
-      &lt;/xsl:if>
-      &lt;xsl:apply-templates select="*[contains(@class,' topic/title ')]"/>
-      &lt;xsl:apply-templates select="*[not(contains(@class,' topic/title ') or contains(@class,' topic/desc '))]"/>
-      &lt;xsl:apply-templates select="*[contains(@class,' topic/desc ')]"/>
-    &lt;/fo:block>
-  &lt;/xsl:template>
-&lt;/xsl:stylesheet></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/fo/xsl/custom.xsl"/></codeblock>
           </fig></stepxmp>
       </step>
       <step>

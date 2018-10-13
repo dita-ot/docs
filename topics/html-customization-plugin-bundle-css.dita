@@ -34,7 +34,7 @@
           <p>CSS files are copied to the root level of the output folder by default. Setting this parameter places CSS
             files in a dedicated <filepath>css</filepath> subfolder.</p></li>
       </ul>
-      <p>All four parameters are set in the Ant script (<filepath>build.xml</filepath>).</p>
+      <p>All four parameters are set in the Ant script (<filepath>build_html5-custom-css.xml</filepath>).</p>
     </context>
     <steps>
       <step>
@@ -74,11 +74,11 @@
       </step>
       <step>
         <cmd>In the <filepath>com.example.html5-custom-css</filepath> root directory, add an Ant script
-            (<filepath>build.xml</filepath>) to define the transformation type.</cmd>
+            (<filepath>build_html5-custom-css.xml</filepath>) to define the transformation type.</cmd>
         <stepxmp>
           <fig>
-            <title>Sample <filepath>build.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-custom-css/build.xml"/></codeblock>
+            <title>Sample build file: <filepath>build_html5-custom-css.xml</filepath></title>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-custom-css/build_html5-custom-css.xml"/></codeblock>
           </fig>
         </stepxmp>
       </step>
@@ -90,7 +90,7 @@
           format="html" scope="external">GitHub</xref>.</note>
       <p>The plug-in directory has the following layout and files:</p>
       <codeblock>com.example.html5-custom-css
-├── build.xml
+├── build_html5-custom-css.xml
 ├── css
 │   └── custom.css
 └── plugin.xml</codeblock>

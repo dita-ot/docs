@@ -55,15 +55,9 @@
       <step>
         <cmd>Create the <filepath>cfg/fo/attrs/custom.xsl</filepath> file, and add attribute and variable overrides to
           it.</cmd>
-        <stepxmp>For example, add the content highlighted with bold to change the page size to A4.<fig>
+        <stepxmp>For example, add the following variables to change the page size to A4.<fig>
             <title><filepath>cfg/fo/attrs/custom.xsl</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                version="2.0">
-  <b>&lt;!-- Change page size to A4 --></b>
-  <b>&lt;xsl:variable name="page-width">210mm&lt;/xsl:variable></b>
-  <b>&lt;xsl:variable name="page-height">297mm&lt;/xsl:variable></b>
-&lt;/xsl:stylesheet></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/fo/attrs/custom.xsl"/></codeblock>
           </fig></stepxmp>
       </step>
       <step>

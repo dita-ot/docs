@@ -73,15 +73,7 @@
         <stepxmp>For example, the following code removes the period after the number for an ordered-list item; it also
           specifies that the bullet for an unordered list item should be an em dash.<fig>
             <title><filepath>cfg/common/vars/en.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;vars xmlns="http://www.idiominc.com/opentopic/vars">
-  &lt;!-- Remove dot from list number -->
-  &lt;variable id="Ordered List Number">
-    &lt;param ref-name="number"/>
-  &lt;/variable>
-  &lt;!-- Change unordered list bullet to an em dash -->
-  &lt;variable id="Unordered List bullet">&amp;#x2014;&lt;/variable>
-&lt;/vars></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/common/vars/en.xml"/></codeblock>
           </fig></stepxmp>
       </step>
     </steps>

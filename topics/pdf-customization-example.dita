@@ -30,14 +30,7 @@
         <info>
           <fig>
             <title><filepath>plugin.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version='1.0' encoding='UTF-8'?>
-&lt;plugin id="com.example.print-pdf">
-  &lt;require plugin="org.dita.pdf2"/>
-  &lt;feature extension="dita.conductor.transtype.check" 
-           value="print-pdf"/>
-  &lt;feature extension="dita.transtype.print" value="print-pdf"/>
-  &lt;feature extension="ant.import" file="integrator.xml"/>
-&lt;/plugin></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/plugin.xml"/></codeblock>
           </fig>
         </info>
       </step>

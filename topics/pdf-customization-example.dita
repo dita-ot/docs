@@ -48,12 +48,7 @@
         <stepxmp>
           <fig>
             <title><filepath>cfg/catalog.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;catalog prefer="system" 
-         xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-  &lt;uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/>
-  &lt;uri name="cfg:fo/xsl/custom.xsl" uri="fo/xsl/custom.xsl"/>
-&lt;/catalog></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/catalog.xml"/></codeblock>
           </fig>
         </stepxmp>
       </step>

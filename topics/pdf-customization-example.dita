@@ -98,9 +98,14 @@
   plugin.xml</codeblock>
     </result>
     <postreq>
-      <p>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/>
-        <parmname>--install</parmname> to install the plug-in and make the <option>print-pdf</option> transformation
-        available.</p>
+      <ol>
+        <li>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/>
+          <parmname>--install</parmname> to install the plug-in and make the <option>print-pdf</option> transformation
+          available.</li>
+        <li>Build output with the new transformation type to verify that the plug-in works as intended.
+          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>print-pdf</option></codeblock>
+        </li>
+      </ol>
     </postreq>
   </taskbody>
 </task>

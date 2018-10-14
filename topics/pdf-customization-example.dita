@@ -30,14 +30,7 @@
         <info>
           <fig>
             <title><filepath>plugin.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version='1.0' encoding='UTF-8'?>
-&lt;plugin id="com.example.print-pdf">
-  &lt;require plugin="org.dita.pdf2"/>
-  &lt;feature extension="dita.conductor.transtype.check" 
-           value="print-pdf"/>
-  &lt;feature extension="dita.transtype.print" value="print-pdf"/>
-  &lt;feature extension="ant.import" file="integrator.xml"/>
-&lt;/plugin></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/plugin.xml"/></codeblock>
           </fig>
         </info>
       </step>
@@ -46,14 +39,7 @@
         <info>
           <fig>
             <title><filepath>integrator.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version='1.0' encoding='UTF-8'?>
-&lt;project name="com.example.print-pdf">
-  &lt;target name="dita2print-pdf.init">
-    &lt;property name="customization.dir" 
-     location="${dita.plugin.com.example.print-pdf.dir}/cfg"/>&lt;/target>
-  &lt;target name="dita2print-pdf" 
-          depends="dita2print-pdf.init, dita2pdf2"/>
-&lt;/project></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/integrator.xml"/></codeblock>
           </fig></info>
       </step>
       <step>
@@ -62,53 +48,23 @@
         <stepxmp>
           <fig>
             <title><filepath>cfg/catalog.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;catalog prefer="system" 
-         xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-  &lt;uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/>
-  &lt;uri name="cfg:fo/xsl/custom.xsl" uri="fo/xsl/custom.xsl"/>
-&lt;/catalog></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/catalog.xml"/></codeblock>
           </fig>
         </stepxmp>
       </step>
       <step>
         <cmd>Create the <filepath>cfg/fo/attrs/custom.xsl</filepath> file, and add attribute and variable overrides to
           it.</cmd>
-        <stepxmp>For example, add the content highlighted with bold to change the page size to A4.<fig>
+        <stepxmp>For example, add the following variables to change the page size to A4.<fig>
             <title><filepath>cfg/fo/attrs/custom.xsl</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                version="2.0">
-  <b>&lt;!-- Change page size to A4 --></b>
-  <b>&lt;xsl:variable name="page-width">210mm&lt;/xsl:variable></b>
-  <b>&lt;xsl:variable name="page-height">297mm&lt;/xsl:variable></b>
-&lt;/xsl:stylesheet></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/fo/attrs/custom.xsl"/></codeblock>
           </fig></stepxmp>
       </step>
       <step>
         <cmd>Create the <filepath>cfg/fo/xsl/custom.xsl</filepath> file, and add XSLT overrides to it.</cmd>
         <stepxmp>For example, the following code changes the rendering of <xmlelement>figure</xmlelement> elements.<fig>
             <title><filepath>cfg/fo/xsl/custom.xsl</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns:fo="http://www.w3.org/1999/XSL/Format"
-                version="2.0">
-  &lt;!-- Move figure title to top and description to bottom -->
-  &lt;xsl:template match="*[contains(@class,' topic/fig ')]">
-    &lt;fo:block xsl:use-attribute-sets="fig">
-      &lt;xsl:call-template name="commonattributes"/>
-      &lt;xsl:if test="not(@id)">
-        &lt;xsl:attribute name="id">
-          &lt;xsl:call-template name="get-id"/>
-        &lt;/xsl:attribute>
-      &lt;/xsl:if>
-      &lt;xsl:apply-templates select="*[contains(@class,' topic/title ')]"/>
-      &lt;xsl:apply-templates select="*[not(contains(@class,' topic/title ') or contains(@class,' topic/desc '))]"/>
-      &lt;xsl:apply-templates select="*[contains(@class,' topic/desc ')]"/>
-    &lt;/fo:block>
-  &lt;/xsl:template>
-&lt;/xsl:stylesheet></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/fo/xsl/custom.xsl"/></codeblock>
           </fig></stepxmp>
       </step>
       <step>
@@ -117,20 +73,16 @@
         <stepxmp>For example, the following code removes the period after the number for an ordered-list item; it also
           specifies that the bullet for an unordered list item should be an em dash.<fig>
             <title><filepath>cfg/common/vars/en.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;vars xmlns="http://www.idiominc.com/opentopic/vars">
-  &lt;!-- Remove dot from list number -->
-  &lt;variable id="Ordered List Number">
-    &lt;param ref-name="number"/>
-  &lt;/variable>
-  &lt;!-- Change unordered list bullet to an em dash -->
-  &lt;variable id="Unordered List bullet">&amp;#x2014;&lt;/variable>
-&lt;/vars></codeblock>
+            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/common/vars/en.xml"/></codeblock>
           </fig></stepxmp>
       </step>
     </steps>
     <result>
-      <p>The new plug-in directory has the following layout and files:</p>
+      <note type="tip">The files for this sample plug-in are included in the DITA-OT installation directory under
+          <filepath>docsrc/samples/plugins/com.example.print-pdf/</filepath> and on
+        <xref href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.print-pdf" format="html"
+          scope="external">GitHub</xref>.</note>
+      <p>The plug-in directory has the following layout and files:</p>
       <codeblock>com.example.print-pdf/
   cfg/
     common/
@@ -146,9 +98,14 @@
   plugin.xml</codeblock>
     </result>
     <postreq>
-      <p>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/>
-        <parmname>--install</parmname> to install the plug-in and make the <option>print-pdf</option> transformation
-        available.</p>
+      <ol>
+        <li>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/>
+          <parmname>--install</parmname> to install the plug-in and make the <option>print-pdf</option> transformation
+          available.</li>
+        <li>Build output with the new transformation type to verify that the plug-in works as intended.
+          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>print-pdf</option></codeblock>
+        </li>
+      </ol>
     </postreq>
   </taskbody>
 </task>

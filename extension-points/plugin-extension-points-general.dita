@@ -47,8 +47,8 @@
           <dd conaction="pushreplace"
             conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/dita.conductor.transtype.check.desc">
             <p>Adds a new value to the list of valid transformation types.</p>
-            <note type="tip">This extension point is still supported for backwards compatibility, but any new
-              customizations should instead use the <xmlelement>transtype</xmlelement> element in the
+            <note type="tip">This extension point is still supported for backwards compatibility, but since DITA-OT 2.1,
+              any new customizations should instead use the <xmlelement>transtype</xmlelement> element in the
               <xref keyref="plugin-configfile"/> to define a new transformation.</note>
           </dd>
         </dlentry>

@@ -26,6 +26,7 @@
         default settings in the base plug-in and makes it easier to migrate your changes to new toolkit versions.</li>
       <li>Upgrade your customization plug-in to new versions of DITA-OT regularly. Do not wait through several major
         releases before upgrading.</li>
+      <li><div conkeyref="reusable-components/plugin.rnc"/></li>
       <li>
         <p>For XSLT customizations, use a custom namespace for any modified template modes, template names, attribute
           sets, functions, and variables. This helps to clarify which portions of the code are specific to your

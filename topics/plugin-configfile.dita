@@ -8,6 +8,7 @@
     each extension visible to the rest of the toolkit. The file uses pre-defined extension points to locate changes, and
     then integrates those changes into the core DITA-OT code.</shortdesc>
   <refbody>
+    <section conkeyref="reusable-components/validating-plugins"/>
     <section>
       <title>Plug-in identifiers</title>
       <p>Every DITA-OT plug-in must have a unique identifier composed of one or more dot-delimited tokens, for example,
@@ -28,8 +29,6 @@
       <title><xmlelement>plugin</xmlelement></title>
       <p>The root element of the <filepath>plugin.xml</filepath> file is <xmlelement>plugin</xmlelement>, which has a
         required <xmlatt>id</xmlatt> attribute set to the unique plug-in identifier.</p>
-      <!--<codeblock>id    ::= token('.'token)*
-token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
     </section>
     <section>
       <title>Plug-in elements</title>
@@ -273,8 +272,8 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
         </plentry>
       </parml>
       <p>Any extension that is not recognized by DITA-OT is ignored. Since DITA-OT version 1.5.3, you can combine
-        multiple extension definitions within a single <filepath>plugin.xml</filepath> file; in older versions, only
-        the last extension definition was used. </p>
+        multiple extension definitions within a single <filepath>plugin.xml</filepath> file; in older versions, only the
+        last extension definition was used. </p>
     </section>
   </refbody>
 </reference>

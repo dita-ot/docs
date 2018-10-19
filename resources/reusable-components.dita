@@ -22,5 +22,19 @@
         but the DITA Open Toolkit project recommends upgrading all stylesheets to XSLT 2.0 to ensure plug-ins remain
         compatible with future versions of DITA-OT and Saxon-HE.</note>
     </section>
+    <section id="validating-plugins">
+      <title>Validating plug-ins</title>
+      <div id="plugin.rnc">
+        <p>DITA-OT includes a RELAX NG schema file that can be used to validate the <filepath>plugin.xml</filepath>
+          files that define the capabilities of each plug-in.</p>
+        <p>To ensure the syntax of your custom plug-in is correct, include the following <xmlpi>xml-model</xmlpi>
+          processing instruction at the beginning of the <filepath>plugin.xml</filepath> file, immediately after the XML
+          prolog:</p>
+        <p><xmlpi>&lt;?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?&gt;</xmlpi></p>
+        <p>If your authoring environment does not apply this schema automatically, point your editor to <filepath
+            id="samples-dir"><varname>dita-ot-dir</varname>/resources/plugin.rnc</filepath> to associate the schema with
+          your plug-in file.</p>
+      </div>
+    </section>
   </conbody>
 </concept>

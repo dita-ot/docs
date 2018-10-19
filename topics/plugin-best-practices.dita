@@ -11,21 +11,29 @@
     This will make it easier to you to upgrade to new versions of DITA-OT when they are released.</shortdesc>
   <conbody>
     <ul>
-      <li>Use a properly-constructed DITA-OT plug-in.</li>
-      <li>Use a version control system to store your code.</li>
-      <li>Never modify any of the core DITA-OT code.<note type="tip">You may want to set the permissions on default
-          plug-in directories such as <filepath>org.dita.pdf2</filepath> to “read-only” to ensure that you do not
-          accidentally modify the files within as you develop your customized plug-in.</note></li>
-      <li>Avoid copying entire DITA-OT files into your customization plug-in. When you only copy the attribute sets and
-        templates that you need to override, there is less risk of impact from new features or fixes in the base code,
-        making your code more stable and easier to upgrade between releases.</li>
-      <li>If you only need to change a few attribute sets and templates, you may prefer to store your overrides in
-          <filepath>custom.xsl</filepath> files, or a simple folder hierarchy within your custom plug-in.</li>
-      <li>In cases that require substantial customizations, you may prefer to organize the files in a folder structure
-        that mimics the hierarchy of the default plug-in you are customizing. This facilitates comparisons with the
-        default settings in the base plug-in and makes it easier to migrate your changes to new toolkit versions.</li>
-      <li>Upgrade your customization plug-in to new versions of DITA-OT regularly. Do not wait through several major
-        releases before upgrading.</li>
+      <li>
+        <p>Use a properly-constructed DITA-OT plug-in.</p></li>
+      <li>
+        <p>Use a version control system to store your code.</p></li>
+      <li>
+        <p>Never modify any of the core DITA-OT code.<note type="tip">You may want to set the permissions on default
+            plug-in directories such as <filepath>org.dita.pdf2</filepath> to “read-only” to ensure that you do not
+            accidentally modify the files within as you develop your customized plug-in.</note></p></li>
+      <li>
+        <p>Avoid copying entire DITA-OT files into your customization plug-in. When you only copy the attribute sets and
+          templates that you need to override, there is less risk of impact from new features or fixes in the base code,
+          making your code more stable and easier to upgrade between releases.</p></li>
+      <li>
+        <p>If you only need to change a few attribute sets and templates, you may prefer to store your overrides in
+            <filepath>custom.xsl</filepath> files, or a simple folder hierarchy within your custom plug-in.</p></li>
+      <li>
+        <p>In cases that require substantial customizations, you may prefer to organize the files in a folder structure
+          that mimics the hierarchy of the default plug-in you are customizing. This facilitates comparisons with the
+          default settings in the base plug-in and makes it easier to migrate your changes to new toolkit
+        versions.</p></li>
+      <li>
+        <p>Upgrade your customization plug-in to new versions of DITA-OT regularly. Do not wait through several major
+          releases before upgrading.</p></li>
       <li><div conkeyref="reusable-components/plugin.rnc"/></li>
       <li>
         <p>For XSLT customizations, use a custom namespace for any modified template modes, template names, attribute

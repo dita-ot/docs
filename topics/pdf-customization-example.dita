@@ -83,19 +83,19 @@
         <xref href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.print-pdf" format="html"
           scope="external">GitHub</xref>.</note>
       <p>The plug-in directory has the following layout and files:</p>
-      <codeblock>com.example.print-pdf/
-  cfg/
-    common/
-      vars/
-        en.xml
-    fo/
-      attrs/
-        custom.xsl
-      xsl/
-        custom.xsl
-    catalog.xml
-  integrator.xml
-  plugin.xml</codeblock>
+      <codeblock>com.example.print-pdf
+├── cfg
+│   ├── catalog.xml
+│   ├── common
+│   │   └── vars
+│   │       └── en.xml
+│   └── fo
+│       ├── attrs
+│       │   └── custom.xsl
+│       └── xsl
+│           └── custom.xsl
+├── integrator.xml
+└── plugin.xml</codeblock>
     </result>
     <postreq>
       <ol>

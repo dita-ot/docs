@@ -76,17 +76,17 @@
 #
 #   GENERATED PROPERTIES FILE FOR USE WITH THE DITA COMMAND
 #
-#   Lines in this file that start with a # are comments.
+#   Lines in this file that start with a number sign '#' are comments.
 #
-#   To set a build parameter, remove the commenting # at the start of the line
-#   and specify the value for the parameter after the = sign, for example,
+#   To set a build parameter, remove the commenting '#' at the start of the line
+#   and specify the value for the parameter after the '=' sign, for example,
 #
 #   args.filter = my-filter.ditaval
 #
-#   Use the dita command with the -propertyfile option to use the build parameters
-#   specified in a properties file, for example:
+#   Use the `dita` command with the `--propertyfile` option to use the build
+#   parameters specified in a properties file, for example:
 #
-#   dita -i my.ditamap -f html5 -propertyfile my.properties
+#   dita --input=my.ditamap --format=html5 --propertyfile=my.properties
 #
 #   Build parameters in this file are grouped by transformation type.
 #   Supported parameter values are listed in brackets [] after each description,

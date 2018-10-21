@@ -4,20 +4,20 @@
                 xmlns:fn="http://example.com/namespace"
                 exclude-result-prefixes="xs fn"
                 version="2.0">
-  
+
   <xsl:output method="text"/>
   <xsl:strip-space elements="*"/>
-  
+
   <xsl:variable name="wrapCol" select="80"/>
   <xsl:variable name="indentSize" select="20"/>
-  
+
   <xsl:variable name="crlf" select="codepoints-to-string((13,10))"/>
   <xsl:variable name="comment" select="concat($crlf,'# ')"/>
   <xsl:variable name="divBar" select="concat('# ',fn:padIt('=',$wrapCol - 4),' #')"/>
   <xsl:variable name="sctn-start" select="concat($crlf,$crlf,'##### ')"/>
   <xsl:variable name="sctn-end" select="concat(' PROPERTIES #####',$crlf)"/>
   <xsl:variable name="indentSpaces" select="fn:padIt(' ',$indentSize)"/>
-  
+
   <xsl:function name="fn:padIt" as="xs:string">
     <xsl:param name="string" as="xs:string"/>
     <xsl:param name="len" as="xs:integer"/>
@@ -28,7 +28,7 @@
     </xsl:variable>
     <xsl:value-of select="string-join($seq,'')"/>
   </xsl:function>
-  
+
   <xsl:function name="fn:breakAfter">
     <xsl:param name="string" as="xs:string"/>
     <xsl:param name="breakpoint" as="xs:integer"/>
@@ -46,16 +46,16 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:function>
-  
+
   <xsl:function name="fn:wrapAndIndent" as="xs:string">
     <xsl:param name="name" as="xs:string"/>
     <xsl:param name="description" as="xs:string"/>
-    
-    <xsl:variable name="step1" 
+
+    <xsl:variable name="step1"
       select="fn:breakAfter(concat(normalize-space($name),$indentSpaces,normalize-space($description)),$indentSize - 1)"/>
-    <xsl:variable name="step2" 
+    <xsl:variable name="step2"
       select="fn:breakAfter(concat($step1[1],normalize-space($step1[2])),$wrapCol)"/>
-    
+
     <xsl:choose>
       <xsl:when test="string-length($step2[2]) gt 0">
         <xsl:value-of select="concat($comment,$step2[1],fn:wrapAndIndent('',$step2[2]))"/>
@@ -65,11 +65,11 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:function>
-  
+
   <xsl:template match="/">
     <xsl:call-template name="all"/>
   </xsl:template>
-  
+
   <xsl:template name="all">
     <xsl:text>
 # ============================================================================ #
@@ -88,7 +88,7 @@
 #
 #   dita -i my.ditamap -f html5 -propertyfile my.properties
 #
-#   Build parameters in this file are grouped by transformation type. 
+#   Build parameters in this file are grouped by transformation type.
 #   Supported parameter values are listed in brackets [] after each description,
 #   with an asterisk (*) indicating the default value where appropriate.
 #
@@ -98,7 +98,7 @@
       <xsl:sort select="@desc"/>
       <xsl:variable name="padsize" select="(ceiling( (($wrapCol - string-length(@desc)) div 2 ) ) - 2) cast as xs:integer"/>
       <xsl:variable name="descpad" select="fn:padIt(' ',$padsize)"/>
-      <xsl:value-of 
+      <xsl:value-of
         select="upper-case(concat($crlf,$crlf,$divBar,$crlf,'#',$descpad,@desc,$crlf,$divBar))"/>
       <xsl:for-each-group select="current-group()/param" group-by="@name">
         <xsl:sort select="@name"/>

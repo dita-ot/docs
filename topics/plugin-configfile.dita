@@ -244,7 +244,7 @@
               </strow>
             </simpletable>
             <fig>
-              <title>Sample element</title>
+              <title>Sample <xmlelement>transtype</xmlelement> element</title>
               <codeblock>&lt;transtype name="base" abstract="true" desc="Common">
   &lt;!-- ⋮ -->
   &lt;param name="link-crawl" 

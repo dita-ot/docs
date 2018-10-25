@@ -67,7 +67,13 @@ task generatePlatformFilter {
     }
 }
 
-task autoGenerate(dependsOn: [messages, params, extensionPoints, generatePlatformFilter]) {
+task generatePropertiesTemplate(type: SaxonXsltTask) {
+    input "${configDir}/plugins.xml"
+    output "${samplesDir}/properties/template.properties"
+    stylesheet "${projectDir}/resources/properties-file.xsl"
+}
+
+task autoGenerate(dependsOn: [messages, params, extensionPoints, generatePlatformFilter, generatePropertiesTemplate]) {
     description 'Run tasks that generate content from resource files and the build environment.'
 }
 

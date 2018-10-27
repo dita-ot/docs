@@ -172,11 +172,19 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--filter</parmname>=<varname>file</varname>
+            <parmname>--filter</parmname>=<varname>files</varname>
           </pt>
           <pd>Specifies filter file(s) used to include, exclude, or flag content. </pd>
           <pd>This argument corresponds to the common parameter <parmname>args.filter</parmname>. Relative paths are
             resolved against the current directory and internally converted to absolute paths.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--force</parmname>
+          </pt>
+          <pd>Force-install an existing plug-in.</pd>
+          <pd>Passed as an additional option to the installation command:
+              <cmdname>dita</cmdname> <parmname>--install</parmname> <parmname>--force</parmname> <varname>plug-in-zip</varname></pd>
         </plentry>
         <plentry>
           <pt>

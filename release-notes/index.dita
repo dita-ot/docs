@@ -180,7 +180,35 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.0+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <li/>
+          <li id="1364">Images referenced in conref source copied to output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1364" format="html" scope="external">#1364</xref>
+          </li>
+          <li id="2654">NullPointerException when processing invalid email link
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2654" format="html" scope="external">#2654</xref>
+          </li>
+          <li id="2742">Wrong language code is set when processing xml:lang="zh-Hans"
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2742" format="html" scope="external">#2742</xref>
+          </li>
+          <li id="2752">Extract image alternate text from keydef linktext
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2752" format="html" scope="external">#2752</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/2814" format="html" scope="external">#2814</xref>
+          </li>
+          <li id="2782">Warn about broken tables, and avoid FOP crash
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2782" format="html" scope="external">#2782</xref>
+          </li>
+          <li id="2797">Fix failing relative path test on Windows
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2797" format="html" scope="external">#2797</xref>
+          </li>
+          <li id="2807">Replace wrapping <xmlelement>p</xmlelement> with wrapping <xmlelement>div</xmlelement> for
+              <xmlelement>stepsection</xmlelement> elements in HTML5
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2807" format="html" scope="external">#2807</xref>
+          </li>
+          <li id="2810">Update grammar files for coming DITA 1.3 errata
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2810" format="html" scope="external">#2810</xref>
+          </li>
+          <li id="2823">PDF: Conref regression with preprocess2
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2823" format="html" scope="external">#2823</xref>
+          </li>
         </ul>
       </section>
 

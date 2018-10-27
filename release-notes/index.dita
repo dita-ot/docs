@@ -43,6 +43,41 @@
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.2+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
           <li/>
+          <li id="1132">Support generating text only reference in reltable
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1132" format="html" scope="external">#1132</xref>
+            <!-- Corresponding PR № 3030 listed under Enhancements. Choose a category -->
+          </li>
+          <li id="1248">Example section consistency
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1248" format="html" scope="external">#1248</xref>
+          </li>
+          <li id="1414">The ANT build should fail by default if the XSL-FO processor cannot create the PDF file
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1414" format="html" scope="external">#1414</xref>
+          </li>
+          <li id="1960">Need dita action to list IDs of installed plugins (Add --plugins argument to dita command line)
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1960" format="html" scope="external">#1960</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3037" format="html" scope="external">#3037</xref>
+          </li>
+          <li id="2019">Support RELAXNG parsing and validation
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2019" format="html" scope="external">#2019</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3106" format="html" scope="external">#3106</xref>
+          </li>
+          <li id="2033">Report warning for undefined element template match (Remove yellow and add warning for unknown
+            elements)
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2033" format="html" scope="external">#2033</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3035" format="html" scope="external">#3035</xref>
+          </li>
+          <li id="3028">Support for plugin registry
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3028" format="html" scope="external">#3028</xref>
+          </li>
+          <li id="3101">Add updating plugin registry during dist build
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3101" format="html" scope="external">#3101</xref>
+          </li>
+          <li id="3102">New parameter to stop crawling non-map topic links
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3102" format="html" scope="external">#3102</xref>
+          </li>
+          <li id="3120">Add option to force install existing plugin
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3120" format="html" scope="external">#3120</xref>
+          </li>
         </ul>
       </section>
 

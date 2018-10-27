@@ -49,9 +49,11 @@
           </li>
           <li id="1248">Example section consistency
             <xref href="https://github.com/dita-ot/dita-ot/issues/1248" format="html" scope="external">#1248</xref>
+            <!-- Corresponding PR № 3057 listed under Enhancements. Choose a category -->
           </li>
           <li id="1414">The ANT build should fail by default if the XSL-FO processor cannot create the PDF file
             <xref href="https://github.com/dita-ot/dita-ot/issues/1414" format="html" scope="external">#1414</xref>
+            <!-- Corresponding PR № 1831 listed under Enhancements. Choose a category -->
           </li>
           <li id="1960">Need dita action to list IDs of installed plugins (Add --plugins argument to dita command line)
             <xref href="https://github.com/dita-ot/dita-ot/issues/1960" format="html" scope="external">#1960</xref>,
@@ -77,6 +79,7 @@
           </li>
           <li id="3120">Add option to force install existing plugin
             <xref href="https://github.com/dita-ot/dita-ot/pull/3120" format="html" scope="external">#3120</xref>
+            <!-- Corresponding issue № 3070 listed under Enhancements. Choose a category -->
           </li>
         </ul>
       </section>
@@ -87,7 +90,88 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.2+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li/>
+          <li id="1831">Fail Ant build if PDF rendering fails
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1831" format="html" scope="external">#1831</xref>
+          </li>
+          <li id="2403">Remove the text-align="justify" property for the PDF TOC entries
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2403" format="html" scope="external">#2403</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3036" format="html" scope="external">#3036</xref>
+          </li>
+          <li id="2461">Not helpful exception reported when DTD of root map cannot be found
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2461" format="html" scope="external">#2461</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3124" format="html" scope="external">#3124</xref>
+          </li>
+          <li id="2479">Avoid the "chunk" stage completely for the PDF output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2479" format="html" scope="external">#2479</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3118" format="html" scope="external">#3118</xref>
+          </li>
+          <li id="2481">Handling of <xmlelement>q</xmlelement> element in output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2481" format="html" scope="external">#2481</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3032" format="html" scope="external">#3032</xref>
+          </li>
+          <li id="3009">Better PDF styling for DITA "lq"
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3009" format="html" scope="external">#3009</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3031" format="html" scope="external">#3031</xref>
+          </li>
+          <li id="3011">Deprecate and remove Ant properties
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3011" format="html" scope="external">#3011</xref>
+          </li>
+          <li id="3020">Refactor HTML5 CSS configuration
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3020" format="html" scope="external">#3020</xref>
+          </li>
+          <li id="3025">Remove legacy arguments in CLI
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3025" format="html" scope="external">#3025</xref>
+          </li>
+          <li id="3030">Allow text-only links to appear with related-links
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3030" format="html" scope="external">#3030</xref>
+          </li>
+          <li id="3039">Implement defaults output for hazard domain in PDF
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3039" format="html" scope="external">#3039</xref>
+          </li>
+          <li id="3050">Fix pdf2 import
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3050" format="html" scope="external">#3050</xref>
+          </li>
+          <li id="3056">Support link text when link targets titles, dt
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3056" format="html" scope="external">#3056</xref>
+          </li>
+          <li id="3057">Use intended block on section/example content #1248
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3057" format="html" scope="external">#3057</xref>
+          </li>
+          <li id="3059">DITA-OT Homebrew formula for macOS
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3059" format="html" scope="external">#3059</xref>
+          </li>
+          <li id="3070">Add option --update as alternative to --uninstall/--install
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3070" format="html" scope="external">#3070</xref>
+          </li>
+          <li id="3079">Optimize topicpull processing by skipping resource-only
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3079" format="html" scope="external">#3079</xref>
+          </li>
+          <li id="3084">Relax domain requirements for DITA to XDITA conref
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3084" format="html" scope="external">#3084</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3097" format="html" scope="external">#3097</xref>
+          </li>
+          <li id="3090">Extract attributes from structural HTML5 elements into attribute sets
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3090" format="html" scope="external">#3090</xref>
+          </li>
+          <li id="3100">Add revbar in TOC when topic revised + changebar specified
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3100" format="html" scope="external">#3100</xref>
+          </li>
+          <li id="3107">Remove transitive dependencies for Guava
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3107" format="html" scope="external">#3107</xref>
+          </li>
+          <li id="3109">Provide CLI feedback for plug-in installation
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3109" format="html" scope="external">#3109</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3110" format="html" scope="external">#3110</xref>
+          </li>
+          <li id="3111">Rev marking should cover whole part, topic
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3111" format="html" scope="external">#3111</xref>
+          </li>
+          <li id="3114">Move --propertyfile option to Options
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3114" format="html" scope="external">#3114</xref>
+          </li>
+          <li id="3121">Add license file generation to dist
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3121" format="html" scope="external">#3121</xref>
+          </li>
         </ul>
       </section>
 

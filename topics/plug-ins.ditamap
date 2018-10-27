@@ -7,6 +7,7 @@
   <topicref keyref="custom-plugins">
     <topicref keyref="plugins-installing"/>
     <topicref keyref="plugins-removing"/>
+    <topicref keyref="plugins-registry"/>
     <topicref keyref="plugin-configfile"/>
     <topicref keyref="plugin-dependencies"/>
     <topicref keyref="plugin-applications">
@@ -34,6 +35,14 @@
       </relcell>
       <relcell>
         <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-installing"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugins-registry"/>
       </relcell>
     </relrow>
   </reltable>

@@ -40,38 +40,41 @@
       </ul>
     </section>
     <section id="publishing-to-registry"><title>Publishing plug-ins to the registry</title>
-      <p>The main plug-in registry lives in https://github.com/dita-ot/registry. New plug-ins or new versions are added
-        by creating a PR that add the plug-in entry in JSON format. The entries are named
-          <codeph>&lt;plugin-name&gt;.json</codeph>. The contents of the entry file is an array of plug-in version
-        entries.</p>
-      <p>Structure of the plug-in version entries:</p><table>
+      <p>The contents of the DITA-OT plug-in registry are stored in a Git repository at <xref keyref="registry-repo"/>. </p>
+      <p>New plug-ins or new versions can be added by sending a <xref keyref="pull-request"/> that includes a new
+        plug-in entry in JSON format. The entries for each plug-in are stored in a file named after the plug-in ID as
+          <codeph>&lt;plugin-name&gt;.json</codeph>.</p>
+      <p>The contents of the entry file is an array of plug-in version entries with a pre-defined structure.</p>
+      <p/>
+      <table>
+        <title>Plug-in version entry structure</title>
         <tgroup cols="3">
           <colspec colname="col1"/>
           <colspec colname="col2"/>
           <colspec colname="col3"/>
           <thead>
             <row>
-              <entry>key</entry>
-              <entry>mandatory</entry>
-              <entry>description</entry>
+              <entry>Key</entry>
+              <entry>Mandatory</entry>
+              <entry>Description</entry>
             </row>
           </thead>
           <tbody>
             <row>
               <entry><codeph>name</codeph></entry>
               <entry>yes</entry>
-              <entry>Plugin name</entry>
+              <entry>Plug-in name</entry>
             </row>
             <row>
               <entry><codeph>version</codeph></entry>
               <entry>yes</entry>
-              <entry>Plugin version in SemVer format</entry>
+              <entry>Plug-in version in <xref keyref="semver"/> format</entry>
             </row>
             <row>
               <entry><codeph>deps</codeph></entry>
               <entry>yes</entry>
               <entry>Array of dependency entries. The only mandatory plug-in dependency is
-                  <codeph>org.dita.base</codeph> which defines the supported DITA-OT platform.</entry>
+                  <codeph>org.dita.base</codeph>, which defines the supported DITA-OT platform.</entry>
             </row>
             <row>
               <entry><codeph>url</codeph></entry>
@@ -96,7 +99,7 @@
             <row>
               <entry><codeph>homepage</codeph></entry>
               <entry>no</entry>
-              <entry>Plugin homepage URL</entry>
+              <entry>Plug-in homepage URL</entry>
             </row>
             <row>
               <entry><codeph>license</codeph></entry>
@@ -107,37 +110,40 @@
           </tbody>
         </tgroup>
       </table>
-      <p>Structure for dependency entries:</p><table>
+      <table>
+        <title>Structure for dependency entries</title>
         <tgroup cols="3">
           <colspec colname="col1"/>
           <colspec colname="col2"/>
           <colspec colname="col3"/>
           <thead>
             <row>
-              <entry>key</entry>
-              <entry>mandatory</entry>
-              <entry>description</entry>
+              <entry>Key</entry>
+              <entry>Mandatory</entry>
+              <entry>Description</entry>
             </row>
           </thead>
           <tbody>
             <row>
               <entry><codeph>name</codeph></entry>
               <entry>yes</entry>
-              <entry>Plugin name</entry>
+              <entry>Plug-in name</entry>
             </row>
             <row>
               <entry><codeph>req</codeph></entry>
               <entry>yes</entry>
-              <entry>Required plug-in version in SemVer format that may contain <xref
+              <entry>Required plug-in version in <xref keyref="semver"/> format that may contain <xref
                   href="https://docs.npmjs.com/misc/semver#ranges" format="html" scope="external">ranges</xref>.</entry>
             </row>
           </tbody>
         </tgroup>
       </table></section>
-    <section id="example-1"><title>Example</title>
-      <p>Troff <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.troff.json" format="json"
-          scope="external">plug-in
-      entry</xref></p><codeblock xml:space="preserve" outputclass="json">[
+    <section id="example-1">
+      <title>Sample plug-in entry file</title>
+      <p>The example below shows an entry for the <codeph>troff</codeph> plug-in. The complete file is available in the
+        registry as <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.troff.json" format="json"
+          scope="external">org.dita.troff.json</xref>.</p>
+      <codeblock xml:space="preserve" outputclass="json">[
   {
     "name": "org.dita.troff",
     "vers": "3.1.1",

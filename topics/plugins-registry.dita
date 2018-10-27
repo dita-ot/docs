@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="plugin-registry">
+  <title>Plugin Registry</title>
+  <shortdesc>Document plugin registry feature dita-ot/dita-ot#3028, publishing plugins to the registry, and installing
+    plugins using the registry.</shortdesc>
+  <body>
+    <section id="background"><title>Background</title>
+      <p>Support for plugin repositories has been added to make publishing plugins easier by allowing plugin
+        installation with just the plugin name. Previously plugins have been installed by either downloading plugins to
+        a local disk and installing by pointing the integration process to that local file; alternative has been to give
+        the integration process the URL of the plugin distribution file and DITA-OT has downloaded the file on-demand.
+        This has required to know the URL of the distribution package. Using the registry the user can install plugins
+        and dependent plugins by passing the name of the plugin to the integrator process, with optional
+      version.</p></section>
+    <section id="using-the-registry"><title>Using the registry</title>
+      <p>Plugins are installed by running</p><codeblock xml:space="preserve" outputclass="bash">$ dita --install &lt;plugin-name&gt;</codeblock>
+      <p>or with optional plugin name</p><codeblock xml:space="preserve" outputclass="bash">$ dita --install &lt;plugin-name&gt;@&lt;plugin-version&gt;</codeblock>
+      <p>If the plugin had dependencies to other plugins, those are also installed recursively.</p>
+      <p>If a matching plugin cannot be found, an error message is thrown. Possible reasons for failure include</p>
+      <ul>
+        <li>
+          <p>Plugin not found in registry</p></li>
+        <li>
+          <p>Plugin with specific version not found in registry</p></li>
+        <li>
+          <p>Plugin version that works on the use DITA-OT version not found in registry</p></li>
+      </ul></section>
+    <section id="example"
+      ><title>Example</title><codeblock xml:space="preserve" outputclass="bash">$ dita --install com.dita.troff</codeblock></section>
+    <section id="adding-custom-registries"><title>Adding custom registries</title>
+      <p>Configuration file <codeph>config/configuration.properties</codeph> has key <codeph>registry</codeph> that is a
+        space separated list of registry URLs. Add custom registries into the <codeph>registry</codeph> key
+      value.</p></section>
+    <section id="publishing-to-registry"><title>Publishing to registry</title>
+      <p>The main plugin registry lives in https://github.com/dita-ot/registry. New plugins or new versions are added by
+        creating a PR that add the plugin entry in JSON format. The entries are named
+          <codeph>&lt;plugin-name&gt;.json</codeph>. The contents of the entry file is an array of plugin version
+        entries.</p>
+      <p>Structure of the plugin version entries:</p><table>
+        <tgroup cols="3">
+          <colspec colname="col1"/>
+          <colspec colname="col2"/>
+          <colspec colname="col3"/>
+          <thead>
+            <row>
+              <entry>key</entry>
+              <entry>mandatory</entry>
+              <entry>description</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><codeph>name</codeph></entry>
+              <entry>yes</entry>
+              <entry>Plugin name</entry>
+            </row>
+            <row>
+              <entry><codeph>version</codeph></entry>
+              <entry>yes</entry>
+              <entry>Plugin version in SemVer format</entry>
+            </row>
+            <row>
+              <entry><codeph>deps</codeph></entry>
+              <entry>yes</entry>
+              <entry>Array of dependency entries. The only mandatory plugin dependency is <codeph>org.dita.base</codeph>
+                which defines the supported DITA-OT platform.</entry>
+            </row>
+            <row>
+              <entry><codeph>url</codeph></entry>
+              <entry>yes</entry>
+              <entry>Absolute URL to plugin distribution file</entry>
+            </row>
+            <row>
+              <entry><codeph>cksum</codeph></entry>
+              <entry>no</entry>
+              <entry>SHA-256 hash of the plugin distribution file</entry>
+            </row>
+            <row>
+              <entry><codeph>description</codeph></entry>
+              <entry>no</entry>
+              <entry>Description of the plugin</entry>
+            </row>
+            <row>
+              <entry><codeph>keywords</codeph></entry>
+              <entry>no</entry>
+              <entry>Array of keywords</entry>
+            </row>
+            <row>
+              <entry><codeph>homepage</codeph></entry>
+              <entry>no</entry>
+              <entry>Plugin homepage URL</entry>
+            </row>
+            <row>
+              <entry><codeph>license</codeph></entry>
+              <entry>no</entry>
+              <entry>License in <xref href="https://spdx.org/licenses/" format="html" scope="external">SPDX</xref>
+                format</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p>Structure for dependency entries:</p><table>
+        <tgroup cols="3">
+          <colspec colname="col1"/>
+          <colspec colname="col2"/>
+          <colspec colname="col3"/>
+          <thead>
+            <row>
+              <entry>key</entry>
+              <entry>mandatory</entry>
+              <entry>description</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><codeph>name</codeph></entry>
+              <entry>yes</entry>
+              <entry>Plugin name</entry>
+            </row>
+            <row>
+              <entry><codeph>req</codeph></entry>
+              <entry>yes</entry>
+              <entry>Required plugin version in SemVer format that may contain <xref
+                  href="https://docs.npmjs.com/misc/semver#ranges" format="html" scope="external">ranges</xref>.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table></section>
+    <section id="example-1"><title>Example</title>
+      <p>Troff <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.troff.json" format="json"
+          scope="external">plugin
+      entry</xref></p><codeblock xml:space="preserve" outputclass="json">[
+  {
+    "name": "org.dita.troff",
+    "vers": "3.1.1",
+    "deps": [
+      {
+        "name": "org.dita.base",
+        "req": "&gt;=3.1"
+      }
+    ],
+    "url": "https://github.com/dita-ot/org.dita.troff/archive/3.1.1.zip",
+    "cksum": "20ba674c505d38b9cfb315d9d327a07f021fb12a663ccdb75271241b92f04e1e"
+  }
+]</codeblock></section>
+  </body>
+</topic>

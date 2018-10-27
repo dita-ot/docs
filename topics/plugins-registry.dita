@@ -158,9 +158,12 @@
   }
 ]</codeblock>
     </section>
-    <section id="adding-custom-registries"><title>Adding custom registries</title>
-      <p>Configuration file <codeph>config/configuration.properties</codeph> has key <codeph>registry</codeph> that is a
-        space separated list of registry URLs. Add custom registries into the <codeph>registry</codeph> key
-      value.</p></section>
+    <section id="adding-custom-registries">
+      <title>Adding custom registries</title>
+      <p>In addition to the main plug-in registry at <xref keyref="site-plugin-registry"/>, you can create a registry of
+        your own to store the custom plug-ins for your company or organization.</p>
+      <p>To add a custom registry location, edit the <filepath>config/configuration.properties</filepath> file in the
+        DITA-OT installation directory and add the URL for your custom registry to the <codeph>registry</codeph> key
+        value, separating each entry with a space.</p></section>
   </body>
 </topic>

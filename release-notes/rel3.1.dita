@@ -3,14 +3,14 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <reference id="ID" rev="3.1">
-  <title>DITA Open Toolkit <keyword keyref="maintenance-version"/> Release Notes</title>
+  <title>DITA Open Toolkit 3.1.3 Release Notes</title>
   <titlealts>
     <navtitle>Release Notes</navtitle>
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
-      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v3.1/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit 3.1.3 is a maintenance release that fixes issues
+      reported in DITA-OT 3.1, which includes <ph conref="#v3.1/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
@@ -21,17 +21,17 @@
       <section>
         <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
           since previous release.</draft-comment>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) version
+        <p>DITA Open Toolkit Release 3.1 requires the Java Runtime Environment (JRE) version
             <keyword keyref="tool.java.version"/> or later.</p>
       </section>
     </refbody>
   </reference>
 
   <reference id="v3.1.3">
-    <title>DITA-OT <keyword keyref="maintenance-version"/> <ph outputclass="small">released October 3, 2018</ph></title>
+    <title>DITA-OT 3.1.3 <ph outputclass="small">released October 3, 2018</ph></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+        <p>DITA Open Toolkit 3.1.3 is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
           <li id="3060">In earlier releases, if a footnote was defined in a table cell that specified
@@ -217,14 +217,14 @@
     <title>DITA-OT 3.1 <ph outputclass="small">released June 9, 2018</ph></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">support for DITA 1.3 SVG
+        <p>DITA Open Toolkit Release 3.1 includes <ph id="summary">support for DITA 1.3 SVG
             domain elements, enhanced <xmlelement>codeblock</xmlelement> processing, and incremental improvements to
             Lightweight DITA processing and PDF output</ph>.</p>
       </section>
 
       <section id="features">
         <title>Features</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
+        <p>DITA Open Toolkit Release 3.1 includes the following new features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.1+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
           <li id="2875">A new Java wrapper for the XSLT <codeph>mapref</codeph> map resolution module allows for better
@@ -282,7 +282,7 @@
 
       <section id="enhancements">
         <title>Enhancements and changes</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
+        <p>DITA Open Toolkit Release 3.1 includes the following enhancements and changes to
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.1+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
@@ -301,7 +301,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/pull/2938" format="html" scope="external">#2938</xref>
           </li>
           <!--
-          <li id="2939">Removes the redundant map2html5Impl.xsl import 
+          <li id="2939">Removes the redundant map2html5Impl.xsl import
             <xref href="https://github.com/dita-ot/dita-ot/pull/2939" format="html" scope="external">#2939</xref>
           </li>
           -->
@@ -358,7 +358,7 @@
 
       <section id="bugs">
         <title>Bugs</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
+        <p>DITA Open Toolkit Release 3.1 provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.0+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <li id="2494">When a nested map uses <xmlatt>conref</xmlatt> to pull content from another map, but the root
@@ -401,7 +401,7 @@
 
       <section id="contrib">
         <title>Contributors</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+        <p>DITA Open Toolkit Release 3.1 includes
           <xref keyref="contributions"/> by the following people:</p>
         <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 3.0..` -->
         <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
@@ -421,7 +421,7 @@
 
       <section id="docs">
         <title>Documentation updates</title>
-        <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
+        <p>The documentation for DITA Open Toolkit Release 3.1 provides corrections and
           improvements to existing topics, along with new information in the following topics:</p>
         <ul>
           <li>
@@ -437,8 +437,8 @@
             keyref="release"/>, see the
           <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.1+is%3Aclosed" format="html"
             scope="external">
-            <keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+            3.1 milestone</xref> in the documentation repository.</p>
+        <p>DITA Open Toolkit Release 3.1 includes
           <xref keyref="docs-contributions"/> by the following people:</p>
         <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>
         <ol>

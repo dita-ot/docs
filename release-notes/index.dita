@@ -10,7 +10,7 @@
 
   <abstract>
     <shortdesc>DITA Open Toolkit <keyword keyref="release"/> is a feature release that provides new features and
-      enhancements, including <ph conref="#highlights/summary"/>.</shortdesc>
+      enhancements, including <ph conref="#v3.2/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
@@ -34,7 +34,7 @@
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">support for RELAX NG parsing
             and validation, preliminary processing for the XDITA authoring format proposed for Lightweight DITA, and a
-            new plug-in registry that makes it easier to discover and install new plug-ins.</ph>.</p>
+            new plug-in registry that makes it easier to discover and install new plug-ins</ph>.</p>
       </section>
 
       <section id="features">
@@ -42,7 +42,6 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.2+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
-          <li/>
           <li id="1132">Support generating text only reference in reltable
             <xref href="https://github.com/dita-ot/dita-ot/issues/1132" format="html" scope="external">#1132</xref>
             <!-- Corresponding PR № 3030 listed under Enhancements. Choose a category -->

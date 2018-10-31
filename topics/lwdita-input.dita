@@ -12,6 +12,10 @@
     representations of DITA content in XML, Markdown and HTML5.</shortdesc>
 
   <body>
+    <note type="attention">Since
+      <xref keyref="lwdita"/> has not yet been released as a formal specification, the implementation for XDITA, MDITA
+      and HDITA authoring formats is subject to change. Future versions of DITA Open Toolkit will be updated as LwDITA
+      evolves.</note>
     <section>
       <title>XDITA</title>
       <p>XDITA is the LwDITA authoring format that uses XML to structure information. XDITA is a subset of DITA, with
@@ -73,10 +77,5 @@
       </p>
       <note>The HDITA map does not yet work with DITA-OT. Instead, use an XDITA map or a DITA 1.3 map.</note>
     </section>
-
-    <note type="attention">Since
-      <xref keyref="lwdita"/> has not yet been released as a formal specification, the implementation for XDITA, MDITA
-      and HDITA authoring formats is subject to change. Future versions of DITA Open Toolkit will be updated as LwDITA
-      evolves.</note>
   </body>
 </topic>

@@ -59,7 +59,8 @@
         additional metadata can be specified for the topic via a YAML front matter block.</p>
       <note>Setting the <xmlatt>format</xmlatt> attribute to <codeph>mdita</codeph> triggers stricter parsing than the
         more lenient document parsing approach that is applied to <codeph>markdown</codeph> documents.</note>
-      <note>The MDITA map does not yet work with DITA-OT. Instead, use an XDITA map or a DITA 1.3 map.</note>
+      <note type="attention">The MDITA map format is not yet supported. To include Markdown content in publications, use
+        an XDITA map or a DITA 1.3 map.</note>
     </section>
 
     <section>
@@ -76,7 +77,8 @@
   &lt;topicref href="hdita-topic.html" <b>format="hdita"</b>/>
 &lt;/map></codeblock>
       </p>
-      <note>The HDITA map does not yet work with DITA-OT. Instead, use an XDITA map or a DITA 1.3 map.</note>
+      <note type="attention">The HDITA map format is not yet supported. To include HDITA content, use an XDITA map or a
+        DITA 1.3 map.</note>
     </section>
   </body>
 </topic>

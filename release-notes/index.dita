@@ -42,14 +42,6 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.2+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
-          <li id="1132">Support generating text only reference in reltable
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1132" format="html" scope="external">#1132</xref>
-            <!-- Corresponding PR № 3030 listed under Enhancements. Choose a category -->
-          </li>
-          <li id="1248">Example section consistency
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1248" format="html" scope="external">#1248</xref>
-            <!-- Corresponding PR № 3057 listed under Enhancements. Choose a category -->
-          </li>
           <li id="1414">The ANT build should fail by default if the XSL-FO processor cannot create the PDF file
             <xref href="https://github.com/dita-ot/dita-ot/issues/1414" format="html" scope="external">#1414</xref>
             <!-- Corresponding PR № 1831 listed under Enhancements. Choose a category -->
@@ -62,20 +54,19 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2019" format="html" scope="external">#2019</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/3106" format="html" scope="external">#3106</xref>
           </li>
-          <li id="2033">Report warning for undefined element template match (Remove yellow and add warning for unknown
-            elements)
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2033" format="html" scope="external">#2033</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3035" format="html" scope="external">#3035</xref>
-          </li>
           <li id="3028">Support for plugin registry
             <xref href="https://github.com/dita-ot/dita-ot/pull/3028" format="html" scope="external">#3028</xref>
           </li>
           <li id="3101">Add updating plugin registry during dist build
             <xref href="https://github.com/dita-ot/dita-ot/pull/3101" format="html" scope="external">#3101</xref>
           </li>
-          <li id="3102">New parameter to stop crawling non-map topic links
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3102" format="html" scope="external">#3102</xref>
-          </li>
+          <li id="3102">A new parameter <parmname>link-crawl</parmname> has been added to control
+whether links within topics are followed. By default, links within topics are followed, as are links
+in any found topics, so that a map with one topic can end up processing any number of topics. When
+<parmname>link-crawl</parmname> is set to <codeph>map</codeph> instead of the default
+<codeph>topic</codeph>, DITA-OT will only process topics that are referenced in the map. <xref
+href="https://github.com/dita-ot/dita-ot/pull/3102" format="html" scope="external">#3102</xref>
+</li>
           <li id="3120">Add option to force install existing plugin
             <xref href="https://github.com/dita-ot/dita-ot/pull/3120" format="html" scope="external">#3120</xref>
             <!-- Corresponding issue № 3070 listed under Enhancements. Choose a category -->
@@ -89,29 +80,63 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.2+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
+<li id="1132">Text-only entries in relationship tables (that is, an entry that has link text but no
+<xmlatt>href</xmlatt> attribute) now result in text-only entries in the related links section of
+relevant topics. This update also removes an unnecessary error message for
+<xmlelement>link</xmlelement> or <xmlelement>xref</xmlelement> elements that do not specify
+<xmlatt>href</xmlatt>. <xref href="https://github.com/dita-ot/dita-ot/issues/1132" format="html"
+scope="external">#1132</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/3030"
+format="html" scope="external">#3030</xref></li>
+<li id="1248">XSL:FO output for for <xmlelement>section</xmlelement> and
+<xmlelement>example</xmlelement> elements has been updated for consistency, ensuring that all
+default sections use the same blocks and attribute sets. <xref
+href="https://github.com/dita-ot/dita-ot/issues/1248" format="html" scope="external">#1248</xref>,
+<xref href="https://github.com/dita-ot/dita-ot/issues/3057" format="html" scope="external"
+>#3057</xref></li>
           <li id="1831">Fail Ant build if PDF rendering fails
             <xref href="https://github.com/dita-ot/dita-ot/issues/1831" format="html" scope="external">#1831</xref>
           </li>
-          <li id="2403">Remove the text-align="justify" property for the PDF TOC entries
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2403" format="html" scope="external">#2403</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3036" format="html" scope="external">#3036</xref>
-          </li>
-          <li id="2461">Not helpful exception reported when DTD of root map cannot be found
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2461" format="html" scope="external">#2461</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3124" format="html" scope="external">#3124</xref>
-          </li>
-          <li id="2479">Avoid the "chunk" stage completely for the PDF output
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2479" format="html" scope="external">#2479</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3118" format="html" scope="external">#3118</xref>
-          </li>
-          <li id="2481">Handling of <xmlelement>q</xmlelement> element in output
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2481" format="html" scope="external">#2481</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3032" format="html" scope="external">#3032</xref>
-          </li>
-          <li id="3009">Better PDF styling for DITA "lq"
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3009" format="html" scope="external">#3009</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3031" format="html" scope="external">#3031</xref>
-          </li>
+<li id="2033">In earlier releases, when XHTML and HTML5 processing encountered an unknown element
+with no fallback processing, the result appeared in yellow. These output processes have been updated
+to generate a warning for this case, and to remove the yellow formatting. <xref
+href="https://github.com/dita-ot/dita-ot/issues/2033" format="html" scope="external">#2033</xref>,
+<xref href="https://github.com/dita-ot/dita-ot/pull/3035" format="html" scope="external"
+>#3035</xref>
+</li>
+          <li id="2403">The default TOC alignment of "justify" has been removed for PDF output with
+FOP. This was originally added to work around a defect in FOP; that defect is resolved, so the
+workaround can be removed. <xref href="https://github.com/dita-ot/dita-ot/issues/2403" format="html"
+scope="external">#2403</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/3036"
+format="html" scope="external">#3036</xref>
+</li>
+          <li id="2461">When a grammar file (DTD, Schema, or RNG) cannot be found, DITA-OT
+previously issued a "file cannot be loaded" exception that only referred to the map or topic. A new
+message has been added to distinguish between topics that cannot be found and grammar files that are
+not available or not installed properly. <xref href="https://github.com/dita-ot/dita-ot/issues/2461"
+format="html" scope="external">#2461</xref>, <xref
+href="https://github.com/dita-ot/dita-ot/pull/3124" format="html" scope="external">#3124</xref>
+</li>
+          <li id="2479">Most values for the <xmlatt>chunk</xmlatt> attribute have no meaning for PDF
+processing, because we always produce a single output file. Beginning with this release, chunk
+processing will be disabled by default in PDF. It can be re-enabled for <xmlatt>chunk</xmlatt>
+attribute edge cases by setting <codeph>org.dita.pdf2.chunk.enabled=true</codeph>.<xref
+href="https://github.com/dita-ot/dita-ot/issues/2479" format="html" scope="external">#2479</xref>,
+<xref href="https://github.com/dita-ot/dita-ot/pull/3118" format="html" scope="external"
+>#3118</xref>
+</li>
+          <li id="2481">The <xmlelement>q</xmlelement> element now generates an equivalent XHTML and
+HTML5 <xmlelement>q</xmlelement> element, rather than generating quote characters. This improves
+accessibility of the XHTML and HTML5, and defers any internationalization concerns to settings
+within the browser. <xref href="https://github.com/dita-ot/dita-ot/issues/2481" format="html"
+scope="external">#2481</xref>, <xref href="https://github.com/dita-ot/dita-ot/pull/3032"
+format="html" scope="external">#3032</xref>
+</li>
+          <li id="3009">In PDF output, the <xmlelement>lq</xmlelement> (long quote) element is now
+indented by default, as with other output formats. <xref
+href="https://github.com/dita-ot/dita-ot/issues/3009" format="html" scope="external">#3009</xref>,
+<xref href="https://github.com/dita-ot/dita-ot/pull/3031" format="html" scope="external"
+>#3031</xref>
+</li>
           <li id="3011">Deprecate and remove Ant properties
             <xref href="https://github.com/dita-ot/dita-ot/issues/3011" format="html" scope="external">#3011</xref>
           </li>
@@ -121,40 +146,49 @@
           <li id="3025">Remove legacy arguments in CLI
             <xref href="https://github.com/dita-ot/dita-ot/issues/3025" format="html" scope="external">#3025</xref>
           </li>
-          <li id="3030">Allow text-only links to appear with related-links
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3030" format="html" scope="external">#3030</xref>
-          </li>
           <li id="3039">Implement defaults output for hazard domain in PDF
             <xref href="https://github.com/dita-ot/dita-ot/issues/3039" format="html" scope="external">#3039</xref>
           </li>
           <li id="3050">Fix pdf2 import
             <xref href="https://github.com/dita-ot/dita-ot/issues/3050" format="html" scope="external">#3050</xref>
           </li>
-          <li id="3056">Support link text when link targets titles, dt
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3056" format="html" scope="external">#3056</xref>
-          </li>
-          <li id="3057">Use intended block on section/example content #1248
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3057" format="html" scope="external">#3057</xref>
-          </li>
+          <li id="3056">In all earlier releases, links to topics or other elements with titles would
+automatically retrieve the title for use as link text, but links to the title would not. With the
+growing use of WYSIWYG editors, it is easy to set (and link to) IDs directly on titles rather than
+on the container. Accordingly, output transforms have been updated to pull the same link text when a
+reference is to a title as it would with the reference to a container. The same update is made for
+links to definition list terms and the containing definition list entry.<xref
+href="https://github.com/dita-ot/dita-ot/issues/3056" format="html" scope="external">#3056</xref>
+</li>
           <li id="3059">DITA-OT Homebrew formula for macOS
             <xref href="https://github.com/dita-ot/dita-ot/issues/3059" format="html" scope="external">#3059</xref>
           </li>
           <li id="3070">Add option --update as alternative to --uninstall/--install
             <xref href="https://github.com/dita-ot/dita-ot/issues/3070" format="html" scope="external">#3070</xref>
           </li>
-          <li id="3079">Optimize topicpull processing by skipping resource-only
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3079" format="html" scope="external">#3079</xref>
-          </li>
-          <li id="3084">Relax domain requirements for DITA to XDITA conref
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3084" format="html" scope="external">#3084</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3097" format="html" scope="external">#3097</xref>
-          </li>
+          <li id="3079">The <codeph>topicpull</codeph> step of DITA-OT preprocessing is used
+primarily to update link text. This step previously ran on all located topics in the build, but this
+processing was not useful for <codeph>resource-only</codeph> topics that are not published.
+Accordingly, the <codeph>topicpull</codeph> step is updated to only run on normal-role topics.<xref
+href="https://github.com/dita-ot/dita-ot/issues/3079" format="html" scope="external">#3079</xref>
+</li>
+          <li id="3084">In earlier releases, <xmlatt>conref</xmlatt> resolution would fail with an
+error when the referring document had a constraint that was not also specified on the target
+document. Based on the DITA specification, this is an error condition but should only fail when the
+constraint is defined as "strict". Accordingly, the <xmlatt>conref</xmlatt> processor has been
+updated to allow resolution of <xmlatt>conref</xmlatt> with an error for ordinary constraints. <xref
+href="https://github.com/dita-ot/dita-ot/issues/3084" format="html" scope="external">#3084</xref>,
+<xref href="https://github.com/dita-ot/dita-ot/pull/3097" format="html" scope="external"
+>#3097</xref>
+</li>
           <li id="3090">Extract attributes from structural HTML5 elements into attribute sets
             <xref href="https://github.com/dita-ot/dita-ot/issues/3090" format="html" scope="external">#3090</xref>
           </li>
-          <li id="3100">Add revbar in TOC when topic revised + changebar specified
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3100" format="html" scope="external">#3100</xref>
-          </li>
+          <li id="3100">PDF output has been updated so that if change bars are used for revisions,
+and an entire topic is revised, the change bar will also appear alongside the title in the table of
+contents. <xref href="https://github.com/dita-ot/dita-ot/issues/3100" format="html" scope="external"
+>#3100</xref>
+</li>
           <li id="3107">Remove transitive dependencies for Guava
             <xref href="https://github.com/dita-ot/dita-ot/issues/3107" format="html" scope="external">#3107</xref>
           </li>
@@ -162,9 +196,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3109" format="html" scope="external">#3109</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/3110" format="html" scope="external">#3110</xref>
           </li>
-          <li id="3111">Rev marking should cover whole part, topic
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3111" format="html" scope="external">#3111</xref>
-          </li>
+          <li id="3111">PDF output has been updated so that if change bars are used for revisions,
+and an entire topic is revised, the revision bar now extends to cover the full topic. Previously the
+bar only appeared alongside the topic body. <xref
+href="https://github.com/dita-ot/dita-ot/issues/3111" format="html" scope="external">#3111</xref>
+</li>
           <li id="3114">Move --propertyfile option to Options
             <xref href="https://github.com/dita-ot/dita-ot/issues/3114" format="html" scope="external">#3114</xref>
           </li>

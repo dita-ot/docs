@@ -43,8 +43,8 @@
       </ul>
       <p>The Markdown DITA parser included in the <codeph>org.lwdita</codeph> plug-in provides preliminary support for
         these profiles and additional Markdown constructs as described in the syntax reference.</p>
-      <p>The <xmlatt>format</xmlatt> attribute can be set to <codeph>mdita</codeph> to apply LwDITA-specific processing
-        to Markdown topics:</p>
+      <p>To apply LwDITA-specific processing to Markdown topics, set the <xmlatt>format</xmlatt> attribute to
+          <codeph>mdita</codeph>:</p>
       <p>
         <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;map>
   &lt;topicref href="mdita-topic.md" <b>format="mdita"</b>/>
@@ -64,8 +64,8 @@
         DITA.</p>
       <p>The HDITA parser included in the <codeph>org.lwdita</codeph> plug-in provides preliminary support for these
         constructs.</p>
-      <p>The <xmlatt>format</xmlatt> attribute can be set to <codeph>hdita</codeph> to apply LwDITA-specific processing
-        to HTML topics:</p>
+      <p>To apply LwDITA-specific processing to HTML topics, set the <xmlatt>format</xmlatt> attribute to
+          <codeph>hdita</codeph>:</p>
       <p>
         <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;map>
   &lt;topicref href="hdita-topic.html" <b>format="hdita"</b>/>

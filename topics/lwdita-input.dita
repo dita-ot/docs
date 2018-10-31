@@ -7,11 +7,27 @@
   <titlealts>
     <navtitle>Lightweight DITA</navtitle>
   </titlealts>
-  <shortdesc>DITA-OT provides preview support for the MDITA and HDITA authoring formats proposed for
+  <shortdesc>DITA-OT provides preview support for the XDITA, MDITA and HDITA authoring formats proposed for
     <xref keyref="lwdita"/>, or “<term>LwDITA</term>”. These proposed formats are alternative representations of DITA
-    content in Markdown or HTML.</shortdesc>
+    content in XML, Markdown and HTML5.</shortdesc>
 
   <body>
+    <section>
+      <title>XDITA</title>
+      <p>XDITA is the LwDITA authoring format based on XML. It is much simpler than full DITA 1.3 XML. There is an XDITA
+        map and an XDITA topic.</p>
+      <p>The XDITA parser included in the <codeph>org.lwdita</codeph> plug-in provides preliminary support for
+        XDITA.</p>
+      <p>The <xmlatt>format</xmlatt> attribute on <xmlelement>topicref</xmlelement> in a map can be set to
+          <codeph>xdita</codeph> to apply LwDITA-specific processing to XDITA topics:</p>
+      <p>
+        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;map>
+  &lt;topicref href="xdita-topic.xml" <b>format="xdita"</b>/>
+&lt;/map></codeblock>
+      </p>
+      <note>You can use an XDITA map or a full DITA 1.3 map for XDITA, MDITA and HDITA topics. See the sample LwDITA
+        files in <filepath>dita-ot/plugins/org.oasis-open.xdita.v0_2_1/samples</filepath>.</note>
+    </section>
     <section>
       <title>MDITA</title>
       <p>MDITA is the LwDITA authoring format based on Markdown.</p>
@@ -35,6 +51,7 @@
         additional metadata can be specified for the topic via a YAML front matter block.</p>
       <note>Setting the <xmlatt>format</xmlatt> attribute to <codeph>mdita</codeph> triggers stricter parsing than the
         more lenient document parsing approach that is applied to <codeph>markdown</codeph> documents.</note>
+      <note>The MDITA map does not yet work with DITA-OT. Instead, use an XDITA map or a DITA 1.3 map.</note>
     </section>
 
     <section>
@@ -51,10 +68,11 @@
   &lt;topicref href="hdita-topic.html" <b>format="hdita"</b>/>
 &lt;/map></codeblock>
       </p>
+      <note>The HDITA map does not yet work with DITA-OT. Instead, use an XDITA map or a DITA 1.3 map.</note>
     </section>
 
     <note type="attention">Since
-      <xref keyref="lwdita"/> has not yet been released as a formal specification, the implementation for MDITA and
+      <xref keyref="lwdita"/> has not yet been released as a formal specification, the implementation for XDITA, MDITA and
       HDITA authoring formats is subject to change. Future versions of DITA Open Toolkit will be updated as LwDITA
       evolves.</note>
   </body>

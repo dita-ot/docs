@@ -30,8 +30,9 @@
   &lt;topicref href="xdita-topic.xml" <b>format="xdita"</b>/>
 &lt;/map></codeblock>
       </p>
-      <note>You can use an XDITA map or a full DITA 1.3 map for XDITA, MDITA and HDITA topics. See the sample LwDITA
-        files in <filepath>dita-ot/plugins/org.oasis-open.xdita.v0_2_2/samples</filepath>.</note>
+      <note type="tip">For examples of cross-format content sharing between topics in XDITA, HDITA, extended-profile
+        MDITA, and DITA 1.3, see the LwDITA sample files in the DITA-OT installation directory under
+          <filepath>plugins/org.oasis-open.xdita.v0_2_2/samples</filepath>.</note>
     </section>
     <section>
       <title>MDITA</title>

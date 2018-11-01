@@ -110,6 +110,9 @@
           </tbody>
         </tgroup>
       </table>
+      <note type="tip">To calculate the SHA-256 checksum for the <codeph>cksum</codeph> key, use <codeph>shasum -a 256
+            <varname>&lt;plugin-file&gt;</varname></codeph> on macOS or Linux. On Windows, use
+            <codeph>Get-FileHash <varname>&lt;plugin-file&gt;</varname> | Format-List</codeph>.</note>
       <table>
         <title>Structure for dependency entries</title>
         <tgroup cols="3">

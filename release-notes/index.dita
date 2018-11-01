@@ -72,11 +72,13 @@
                 schematypens="http://relaxng.org/ns/structure/1.0"</xmlpi>
             </p>
           </li>
-          <li id="3028">Support for plugin registry
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3028" format="html" scope="external">#3028</xref>
-          </li>
-          <li id="3101">Add updating plugin registry during dist build
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3101" format="html" scope="external">#3101</xref>
+          <li id="3028">
+            <p><ph conkeyref="plugins-registry/registry-summary"/></p>
+            <p>For more information, see
+              <xref keyref="plugins-registry"/>.
+              <xref href="https://github.com/dita-ot/dita-ot/pull/3028" format="html" scope="external">#3028</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/pull/3101" format="html" scope="external">#3101</xref>
+            </p>
           </li>
           <li id="3102">A new parameter <parmname>link-crawl</parmname> has been added to control whether links within
             topics are followed. By default, links within topics are followed, as are links in any found topics, so that

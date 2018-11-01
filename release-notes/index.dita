@@ -32,21 +32,34 @@
       <ph outputclass="small">released November 3, 2018</ph></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">support for RELAX NG parsing
-            and validation, preliminary processing for the XDITA authoring format proposed for Lightweight DITA, new
-            command-line options and a plug-in registry that makes it easier to discover and install new
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">new command-line options,
+            support for RELAX NG parsing and validation, preliminary processing for the XDITA authoring format proposed
+            for Lightweight DITA, and a plug-in registry that makes it easier to discover and install new
           plug-ins</ph>.</p>
       </section>
 
       <section id="features">
-        <title>Features</title>
+        <title>Feature Highlights</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.2+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
-
-          <li id="1960">Need dita action to list IDs of installed plugins (Add --plugins argument to dita command line)
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1960" format="html" scope="external">#1960</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3037" format="html" scope="external">#3037</xref>
+          <li id="1960">
+            <p>The <cmdname>dita</cmdname> command has been extended with several new arguments and options to improve
+              the usability of the plug-in installation and removal processes.</p>
+            <ul>
+              <li>The <parmname>--plugins</parmname> argument shows a list of the currently installed plug-ins</li>
+              <li>The <parmname>--transtypes</parmname> argument shows the available output formats (transformation
+                types)</li>
+              <li>The <parmname>--force</parmname> option can be passed to
+                  <cmdname>dita</cmdname> <parmname>--install</parmname> to overwrite an existing plug-in with a new
+                version.</li>
+            </ul>
+            <p>When the plug-in integration process runs, the console now shows a list of plug-ins that were added or
+              removed.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/1960" format="html" scope="external">#1960</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/pull/3037" format="html" scope="external">#3037</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3070" format="html" scope="external">#3070</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/pull/3120" format="html" scope="external">#3120</xref></p>
           </li>
           <li id="2019">Support RELAXNG parsing and validation
             <xref href="https://github.com/dita-ot/dita-ot/issues/2019" format="html" scope="external">#2019</xref>,
@@ -62,12 +75,8 @@
             topics are followed. By default, links within topics are followed, as are links in any found topics, so that
             a map with one topic can end up processing any number of topics. When <parmname>link-crawl</parmname> is set
             to <codeph>map</codeph> instead of the default <codeph>topic</codeph>, DITA-OT will only process topics that
-            are referenced in the map.
+            are actually referenced in the map.
             <xref href="https://github.com/dita-ot/dita-ot/pull/3102" format="html" scope="external">#3102</xref>
-          </li>
-          <li id="3120">Add option to force install existing plugin
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3120" format="html" scope="external">#3120</xref>
-            <!-- Corresponding issue № 3070 listed under Enhancements. Choose a category -->
           </li>
         </ul>
       </section>
@@ -154,9 +163,6 @@
           </li>
           <li id="3059">DITA-OT Homebrew formula for macOS
             <xref href="https://github.com/dita-ot/dita-ot/issues/3059" format="html" scope="external">#3059</xref>
-          </li>
-          <li id="3070">Add option --update as alternative to --uninstall/--install
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3070" format="html" scope="external">#3070</xref>
           </li>
           <li id="3079">The <codeph>topicpull</codeph> step of DITA-OT preprocessing is used primarily to update link
             text. This step previously ran on all located topics in the build, but this processing was not useful for

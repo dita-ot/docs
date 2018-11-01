@@ -61,9 +61,16 @@
               <xref href="https://github.com/dita-ot/dita-ot/issues/3070" format="html" scope="external">#3070</xref>,
               <xref href="https://github.com/dita-ot/dita-ot/pull/3120" format="html" scope="external">#3120</xref></p>
           </li>
-          <li id="2019">Support RELAXNG parsing and validation
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2019" format="html" scope="external">#2019</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/3106" format="html" scope="external">#3106</xref>
+          <li id="2019">
+            <p>RELAX NG schemas can now be used to parse and validate DITA topics and maps without installing additional
+              plug-ins.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2019" format="html" scope="external">#2019</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/pull/3106" format="html" scope="external">#3106</xref></p>
+            <p>To use a RELAX NG schema instead of a DTD or schema, add an <xmlpi>xml-model</xmlpi> processing
+              instruction at the beginning of the file, immediately after the XML prolog, for example:</p>
+            <p><xmlpi>xml-model href="urn:oasis:names:tc:dita:rng:topic.rng"
+                schematypens="http://relaxng.org/ns/structure/1.0"</xmlpi>
+            </p>
           </li>
           <li id="3028">Support for plugin registry
             <xref href="https://github.com/dita-ot/dita-ot/pull/3028" format="html" scope="external">#3028</xref>

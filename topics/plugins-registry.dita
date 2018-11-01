@@ -137,24 +137,29 @@
             </row>
           </tbody>
         </tgroup>
-      </table></section>
+      </table>
+    </section>
     <section id="example-1">
       <title>Sample plug-in entry file</title>
-      <p>The example below shows an entry for the <codeph>troff</codeph> plug-in. The complete file is available in the
-        registry as <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.troff.json" format="json"
-          scope="external">org.dita.troff.json</xref>.</p>
+      <p>The example below shows an entry for the <codeph>DocBook</codeph> plug-in. The complete file is available in
+        the registry as <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.docbook.json" format="json"
+          scope="external">org.dita.docbook.json</xref>.</p>
       <codeblock xml:space="preserve" outputclass="json">[
   {
-    "name": "org.dita.troff",
-    "vers": "3.1.1",
+    "name": "org.dita.docbook",
+    "description": "Convert DITA to DocBook.",
+    "keywords": ["DocBook"],
+    "homepage": "https://github.com/dita-ot/org.dita.docbook/",
+    "vers": "2.3",
+    "license": "Apache-2.0",
     "deps": [
       {
         "name": "org.dita.base",
-        "req": "&gt;=3.1"
+        "req": ">=2.3"
       }
     ],
-    "url": "https://github.com/dita-ot/org.dita.troff/archive/3.1.1.zip",
-    "cksum": "20ba674c505d38b9cfb315d9d327a07f021fb12a663ccdb75271241b92f04e1e"
+    "url": "https://github.com/dita-ot/org.dita.docbook/archive/2.3.zip",
+    "cksum": "eaf06b0dca8d942bd4152615e39ee8cfb73a624b96d70e10ab269ed6f8a13e21"
   }
 ]</codeblock>
     </section>

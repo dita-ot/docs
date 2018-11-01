@@ -33,8 +33,9 @@
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">support for RELAX NG parsing
-            and validation, preliminary processing for the XDITA authoring format proposed for Lightweight DITA, and a
-            new plug-in registry that makes it easier to discover and install new plug-ins</ph>.</p>
+            and validation, preliminary processing for the XDITA authoring format proposed for Lightweight DITA, new
+            command-line options and a plug-in registry that makes it easier to discover and install new
+          plug-ins</ph>.</p>
       </section>
 
       <section id="features">

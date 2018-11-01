@@ -43,10 +43,7 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.2+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
-          <li id="1414">The ANT build should fail by default if the XSL-FO processor cannot create the PDF file
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1414" format="html" scope="external">#1414</xref>
-            <!-- Corresponding PR № 1831 listed under Enhancements. Choose a category -->
-          </li>
+
           <li id="1960">Need dita action to list IDs of installed plugins (Add --plugins argument to dita command line)
             <xref href="https://github.com/dita-ot/dita-ot/issues/1960" format="html" scope="external">#1960</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/3037" format="html" scope="external">#3037</xref>
@@ -92,7 +89,8 @@
             attribute sets.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1248" format="html" scope="external">#1248</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3057" format="html" scope="external">#3057</xref></li>
-          <li id="1831">Fail Ant build if PDF rendering fails
+          <li id="1414">The ANT build should fail by default if the XSL-FO processor cannot create the PDF file
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1414" format="html" scope="external">#1414</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/1831" format="html" scope="external">#1831</xref>
           </li>
           <li id="2033">In earlier releases, when XHTML and HTML5 processing encountered an unknown element with no

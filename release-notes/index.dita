@@ -204,36 +204,31 @@
       <section id="bugs">
         <title>Bugs</title>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.0+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.2+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <li id="1364">Images referenced in conref source copied to output
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1364" format="html" scope="external">#1364</xref>
+          <li id="1094">Inconsistent PIs for linktext generated from navtitle
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1094" format="html" scope="external">#1094</xref>
           </li>
-          <li id="2654">NullPointerException when processing invalid email link
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2654" format="html" scope="external">#2654</xref>
+          <li id="3063">Default PDF layout: extra indent on shortdesc in abstract
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3063" format="html" scope="external">#3063</xref>
           </li>
-          <li id="2742">Wrong language code is set when processing xml:lang="zh-Hans"
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2742" format="html" scope="external">#2742</xref>
+          <li id="3091">PDF2: Force footnote to 'normal' when anchor is styled
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3091" format="html" scope="external">#3091</xref>
           </li>
-          <li id="2752">Extract image alternate text from keydef linktext
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2752" format="html" scope="external">#2752</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/pull/2814" format="html" scope="external">#2814</xref>
+          <li id="3115">Div should inherit common block processing in PDF
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3115" format="html" scope="external">#3115</xref>
           </li>
-          <li id="2782">Warn about broken tables, and avoid FOP crash
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2782" format="html" scope="external">#2782</xref>
+          <li id="3116">Fix PDF indentation for shortdesc in abstract
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3116" format="html" scope="external">#3116</xref>
           </li>
-          <li id="2797">Fix failing relative path test on Windows
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2797" format="html" scope="external">#2797</xref>
+          <li id="3117">Add formatting for xmlpi
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3117" format="html" scope="external">#3117</xref>
           </li>
-          <li id="2807">Replace wrapping <xmlelement>p</xmlelement> with wrapping <xmlelement>div</xmlelement> for
-              <xmlelement>stepsection</xmlelement> elements in HTML5
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2807" format="html" scope="external">#2807</xref>
+          <li id="3119">Handle namespace atts in conref push module
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3119" format="html" scope="external">#3119</xref>
           </li>
-          <li id="2810">Update grammar files for coming DITA 1.3 errata
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2810" format="html" scope="external">#2810</xref>
-          </li>
-          <li id="2823">PDF: Conref regression with preprocess2
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2823" format="html" scope="external">#2823</xref>
+          <li id="3127">Fix MapMeta bug that causes OutOfMemory Error
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3127" format="html" scope="external">#3127</xref>
           </li>
         </ul>
       </section>

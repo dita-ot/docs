@@ -314,8 +314,34 @@
         <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
           improvements to existing topics, along with new information in the following topics:</p>
         <ul>
-          <li/>
+          <li>
+            <xref keyref="installing-via-homebrew"/></li>
+          <li>
+            <xref keyref="lwdita-input"/></li>
+          <li>
+            <xref keyref="plugins-registry"/></li>
+          <li>
+            <xref keyref="plugin-coding-conventions"/></li>
+          <li>
+            <xref keyref="plugin-configfile"/></li>
+          <li>
+            <xref keyref="books"/></li>
         </ul>
+        <p>Additional use cases and sample files are now provided in
+          <xref keyref="html-customization-plugins"/>, including:
+          <ul>
+            <li>
+              <xref keyref="html-customization-plugin-bundle-css"/></li>
+            <li>
+              <xref keyref="html-customization-plugin-javascript"/></li>
+            <li>
+              <xref keyref="html-customization-plugin-webfont"/></li>
+          </ul>
+          <note type="tip">The files for these sample plug-ins are available on
+            <xref href="https://github.com/dita-ot/docs/tree/develop/samples/plugins" format="html" scope="external"
+              >GitHub</xref> and included in the DITA-OT installation directory under
+              <filepath>docsrc/samples/plugins/</filepath>.</note>
+        </p>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"/>, see the
           <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.2+is%3Aclosed" format="html"
@@ -326,7 +352,7 @@
         <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>
         <ol>
           <li>Roger Sheen</li>
-          <li>Robert D. Anderson</li>
+          <li>Robert D Anderson</li>
           <li>Mark Giffin</li>
           <li>Jarno Elovirta</li>
         </ol>

@@ -247,28 +247,40 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.2+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <li id="1094">Inconsistent PIs for linktext generated from navtitle
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1094" format="html" scope="external">#1094</xref>
+          <li id="3063">When a <xmlelement>shortdesc</xmlelement> element is nested in <xmlelement>abstract</xmlelement>
+            along with other elements and PDF output is generated with the default chapter layout, earlier versions of
+            DITA-OT indented the short description further than its siblings. Processing has been updated to ensure that
+            the correct indentation from the parent is applied for both BASIC and MINITOC layouts.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3063" format="html" scope="external">#3063</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3116" format="html" scope="external">#3116</xref>
           </li>
-          <li id="3063">Default PDF layout: extra indent on shortdesc in abstract
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3063" format="html" scope="external">#3063</xref>
-          </li>
-          <li id="3091">PDF2: Force footnote to 'normal' when anchor is styled
+          <li id="3091">In earlier releases, footnotes defined inside elements with extra styling (such as bold, italic,
+            or centered text) erroneously applied the anchor style to the footnote body in PDF output. These footnotes
+            are now rendered with the same formatting as other footnotes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3091" format="html" scope="external">#3091</xref>
           </li>
-          <li id="3115">Div should inherit common block processing in PDF
+          <li id="3115">In PDF output generated with earlier releases, <xmlelement>div</xmlelement> elements were
+            rendered with nothing more than a new line. This has been corrected to render logical division elements like
+            other blocks, separated by a bit of space from the previous block (and pick up any standard overrides from
+            the <codeph>common.block</codeph> attribute set).
             <xref href="https://github.com/dita-ot/dita-ot/issues/3115" format="html" scope="external">#3115</xref>
           </li>
-          <li id="3116">Fix PDF indentation for shortdesc in abstract
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3116" format="html" scope="external">#3116</xref>
+          <li id="3117">Default formatting for <xmlelement>xmlpi</xmlelement> elements has been added to all output
+            types (including HTML-based formats, PDF, and troff) to ensure that XML processing instructions are wrapped
+            in question marks and angle brackets. A processing instruction tagged as <codeph>&lt;xmlpi&gt;test
+              this&lt;/xmlpi&gt;</codeph> is now rendered in the output as <codeph>&lt;?test this?&gt;</codeph>.
+            <xref format="html" href="https://github.com/dita-ot/dita-ot/issues/3117" scope="external">#3117</xref>
           </li>
-          <li id="3117">Add formatting for xmlpi
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3117" format="html" scope="external">#3117</xref>
-          </li>
-          <li id="3119">Handle namespace atts in conref push module
+          <li id="3119">In earlier releases, the conref push module did not properly handle namespaced debugging
+            attributes. (It wrote out the attribute but removed the namespace declaration.) The namespaces are now
+            preserved.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3119" format="html" scope="external">#3119</xref>
           </li>
-          <li id="3127">Fix MapMeta bug that causes OutOfMemory Error
+          <li id="3127">When the same document appeared more than once in a map, cascading metadata was added for every
+            instance of that document. For maps that reference individual topics in a large document (such as a document
+            with 500 small topics), this resulted in <msgph>OutOfMemory</msgph> errors from the
+              <codeph>move-meta</codeph> preprocessing step. This has been fixed so metadata is handled properly for
+            each reference to a document.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3127" format="html" scope="external">#3127</xref>
           </li>
         </ul>

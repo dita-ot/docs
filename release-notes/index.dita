@@ -169,8 +169,8 @@
             <xref href="https://github.com/dita-ot/dita-ot/pull/3031" format="html" scope="external">#3031</xref>
           </li>
           <li id="3011">The previously deprecated <codeph>dost.jar.path</codeph> alias has been removed, and the
-              <codeph>dost.class.path</codeph> property to which it referredhas been deprecated, as the classpath is now
-            defined outside the Ant process.
+              <codeph>dost.class.path</codeph> property to which it referred has been deprecated, as the classpath is
+            now defined outside the Ant process.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3011" format="html" scope="external">#3011</xref>
           </li>
           <li id="3020">HTML5 CSS configuration has been refactored to improve test coverage and simplify property

@@ -211,10 +211,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3079" format="html" scope="external">#3079</xref>
           </li>
           <li id="3084">In earlier releases, <xmlatt>conref</xmlatt> resolution would fail with an error when the
-            referring document had a constraint that was not also specified on the target document (as for DITA to XDITA
-            conrefs, for example). Based on the DITA specification, this is an error condition but should only fail when
-            the constraint is defined as "strict". Accordingly, the <xmlatt>conref</xmlatt> processor has been updated
-            to allow resolution of <xmlatt>conref</xmlatt> with an error for ordinary constraints.
+            referring document had a constraint that was not also specified on the target document (as when referencing
+            DITA content from an XDITA topic, for example). Based on the DITA specification, this is an error condition
+            but should only fail when the constraint is defined as "strict". Accordingly, the <xmlatt>conref</xmlatt>
+            processor has been updated to allow resolution of <xmlatt>conref</xmlatt> with an error for ordinary
+            constraints.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3084" format="html" scope="external">#3084</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/3097" format="html" scope="external">#3097</xref>
           </li>

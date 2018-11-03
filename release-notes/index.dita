@@ -283,6 +283,13 @@
             each reference to a document.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3127" format="html" scope="external">#3127</xref>
           </li>
+          <li id="3128">In earlier releases, input documents that included tables with the <xmlatt>frame</xmlatt>
+            attribute set to <codeph>"none"</codeph> generated invalid HTML5 markup (<codeph>border="0"</codeph>).
+            Processing has been corrected to ensure that the <xmlatt>border</xmlatt> attribute is omitted for tables
+            that have no border.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3128" format="html" scope="external">#3128</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3139" format="html" scope="external">#3139</xref>
+          </li>
         </ul>
       </section>
 

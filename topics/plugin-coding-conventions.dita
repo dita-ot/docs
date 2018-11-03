@@ -105,5 +105,8 @@
         when a plug-in moves to a new location. The plug-in is referenced using the syntax
             <codeph>plugin:<varname>plugin-id</varname>:<varname>path/within/plugin/file.xsl</varname></codeph>.</p>
     </section>
+
+    <section conkeyref="reusable-components/validating-plugins"/>
+
   </conbody>
 </concept>

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<task id="custom-html-plugins">
+<concept id="custom-html-plugins">
   <title>Custom HTML plug-ins</title>
-  <shortdesc>For more complex customizations, you can create custom DITA-OT plug-ins that build on the default XHTML and
-    HTML5 transformations, bundle custom stylesheets, modify the HTML markup, or override other aspects of HTML
-    processing.</shortdesc>
-</task>
+  <shortdesc>For more complex customizations, you can create custom DITA-OT plug-ins that bundle custom fonts,
+    JavaScript, and stylesheets; modify the HTML markup, or override other aspects of HTML processing.</shortdesc>
+  <conbody>
+    <note>These examples are not intended to be used as-is, but illustrate basic techniques you can use in your own
+      plug-ins. In practise, custom plug-ins often combine several of these approaches.</note>
+  </conbody>
+</concept>

@@ -3,19 +3,19 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <reference id="ID" rev="2.5">
-  <title>DITA Open Toolkit <keyword keyref="maintenance-version"/> Release Notes</title>
+  <title>DITA Open Toolkit 2.5.4 Release Notes</title>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
-      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#highlights/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit 2.5.4 is a maintenance release that fixes issues
+      reported in DITA-OT 2.5, which includes <ph conref="#highlights/summary"/>.</shortdesc>
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
 
   <reference id="v254">
-    <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
+    <title>Maintenance Release 2.5.4</title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <p>DITA Open Toolkit Release 2.5.4 includes the following bug fixes.</p>
         <ul>
           <li id="2226">In earlier releases, plugins that contributed variables (or strings) did not work when the
             variables were contributed with mixed case (such as <codeph>pt-BR</codeph> instead of
@@ -224,7 +224,7 @@
       <section>
         <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
           since previous release.</draft-comment>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) version
+        <p>DITA Open Toolkit Release 2.5 requires the Java Runtime Environment (JRE) version
             <keyword keyref="tool.java.version"/> or later.</p>
       </section>
     </refbody>
@@ -232,7 +232,7 @@
 
   <reference id="highlights">
     <title>Release Highlights</title>
-    <shortdesc>DITA-OT <keyword keyref="release"/> includes <ph id="summary">a basic Java API, an experimental map-first
+    <shortdesc>DITA-OT 2.5 includes <ph id="summary">a basic Java API, an experimental map-first
         preprocessing option, better support for DITA composite documents, publishing with multiple DITAVAL files, and
         more consistent styling for default PDF output</ph>.</shortdesc>
     <refbody>
@@ -308,12 +308,12 @@
 
   <reference id="issues">
     <title>Resolved issues</title>
-    <shortdesc>In addition to the highlights mentioned above, DITA Open Toolkit Release <keyword keyref="release"/>
+    <shortdesc>In addition to the highlights mentioned above, DITA Open Toolkit Release 2.5
       includes the following changes.</shortdesc>
     <refbody>
       <section id="features">
         <title>Features</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
+        <p>DITA Open Toolkit Release 2.5 includes the following new features:</p>
         <ul>
           <li id="1134">The PDF transformation now uses variables to control ordered list numbering and unordered list
             bullets. This allows list styles to be more easily configured in overrides or by locale.
@@ -362,7 +362,7 @@
 
       <section id="enhancements">
         <title>Enhancements and changes</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
+        <p>DITA Open Toolkit Release 2.5 includes the following enhancements and changes to
           existing features:</p>
         <ul>
           <li id="1238">DITA-OT now works with Saxon-HE (home edition) 9.4.0.3. Some XSLT modules in earlier versions
@@ -444,7 +444,7 @@
 
       <section id="bugs">
         <title>Bugs</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
+        <p>DITA Open Toolkit Release 2.5 provides fixes for the following bugs:</p>
         <ul>
           <li id="1210">In previous releases, when a child map specified the <xmlatt>chunk</xmlatt> attribute on the
               <xmlelement>map</xmlelement> element, the resulting generated map in the temp directory no longer had the
@@ -556,7 +556,7 @@
 
       <section id="contrib">
         <title>Contributors</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+        <p>DITA Open Toolkit Release 2.5 includes
           <xref keyref="contributions"/> by the following people:</p>
         <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 2.4..` -->
         <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
@@ -579,7 +579,7 @@
 
       <section id="docs">
         <title>Documentation updates</title>
-        <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
+        <p>The documentation for DITA Open Toolkit Release 2.5 provides corrections and
           improvements to existing topics, along with new information:</p>
         <ul>
           <li>
@@ -595,8 +595,8 @@
             keyref="release"/>, see the
           <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A2.5+is%3Aclosed" format="html"
             scope="external">
-            <keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+            2.5 milestone</xref> in the documentation repository.</p>
+        <p>DITA Open Toolkit Release 2.5 includes
           <xref keyref="docs-contributions"/> by the following people:</p>
         <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>
         <ol>

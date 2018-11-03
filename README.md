@@ -8,11 +8,11 @@ We welcome contributions to the DITA-OT documentation. Please review the [guidel
 
 For best results, follow the [coding guidelines][6] and [best practices][7] outlined in the docs project wiki:
 
-* [Test before committing][8]
-* [Commit related changes][9]
-* [Commit often][10]
-* [Write good commit messages][11]
-* [Sign your work][12]
+- [Test before committing][8]
+- [Commit related changes][9]
+- [Commit often][10]
+- [Write good commit messages][11]
+- [Sign your work][12]
 
 ## Building the documentation output
 
@@ -24,14 +24,17 @@ You can also specify a single output format. To build HTML output, enter the fol
 
     ./gradlew -PditaHome=../dita-ot/src/main html
 
-Output will be generated in the `/out` folder of the `docs` repository. This folder is created automatically if it doesn't exist. _(Git ignores the contents of this folder so you don't inadvertently commit these transient files.)_
+**Note:** On Windows, use `gradlew.bat` and adjust the path to your DITA-OT installation:
+
+    gradlew -PditaHome=..\dita-ot\src\main
+
+Output will be generated in the `out` folder of the `docs` repository. This folder is created automatically if it doesn't exist. _(Git ignores the contents of this folder so you don't inadvertently commit these transient files.)_
 
 ## Building with development versions of DITA Open Toolkit
 
 The `develop` branch of the documentation repository may depend on features from recent development versions of the DITA Open Toolkit.
 
 To use these features when building the documentation, you may either download the [latest development version][13] of the distribution package, or clone the [DITA-OT repository][14] and install the [bundled plug-ins][15] via `dita --install`.
-
 
 [1]: https://travis-ci.org/dita-ot/docs.svg?branch=develop
 [2]: http://slack.dita-ot.org/badge.svg

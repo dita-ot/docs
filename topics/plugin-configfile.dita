@@ -8,6 +8,7 @@
     each extension visible to the rest of the toolkit. The file uses pre-defined extension points to locate changes, and
     then integrates those changes into the core DITA-OT code.</shortdesc>
   <refbody>
+    <section conkeyref="reusable-components/validating-plugins"/>
     <section>
       <title>Plug-in identifiers</title>
       <p>Every DITA-OT plug-in must have a unique identifier composed of one or more dot-delimited tokens, for example,
@@ -28,8 +29,10 @@
       <title><xmlelement>plugin</xmlelement></title>
       <p>The root element of the <filepath>plugin.xml</filepath> file is <xmlelement>plugin</xmlelement>, which has a
         required <xmlatt>id</xmlatt> attribute set to the unique plug-in identifier.</p>
-      <!--<codeblock>id    ::= token('.'token)*
-token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
+      <fig>
+        <title>Sample <xmlelement>plugin</xmlelement> element</title>
+        <codeblock><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml#line=3,4"/></codeblock>
+      </fig>
     </section>
     <section>
       <title>Plug-in elements</title>
@@ -64,6 +67,10 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
               more dot-delimited tokens.</p>
             <note id="entension-point-ids-note">Extension point identifiers should begin with the identifier of the
               defining plug-in and append one or more tokens, for example, <codeph>org.dita.example.pre</codeph>.</note>
+            <fig>
+              <title>Sample <xmlelement>extension-point</xmlelement> element</title>
+              <codeblock>&lt;extension-point id="dita.xsl.html5" name="HTML5 XSLT import"/></codeblock>
+            </fig>
           </pd>
         </plentry>
         <plentry>
@@ -102,11 +109,15 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
                 <stentry>No</stentry>
               </strow>
             </simpletable>
-            <p>If more than one <xmlelement>feature</xmlelement> element supplies values to the same extension point,
-              the values are additive. For example, the following are
-              equivalent:<codeblock>&lt;feature extension="org.dita.example.extension-point" value="a,b,c"/></codeblock><codeblock>&lt;feature extension="org.dita.example.extension-point" value="a"/>
+            <fig>
+              <title>Sample <xmlelement>feature</xmlelement> elements</title>
+              <p>If more than one <xmlelement>feature</xmlelement> element supplies values to the same extension point,
+                the values are additive. For example, the following are equivalent:</p>
+              <codeblock>&lt;feature extension="org.dita.example.extension-point" value="a,b,c"/></codeblock>
+              <codeblock>&lt;feature extension="org.dita.example.extension-point" value="a"/>
 &lt;feature extension="org.dita.example.extension-point" value="b"/>
-&lt;feature extension="org.dita.example.extension-point" value="c"/></codeblock></p>
+&lt;feature extension="org.dita.example.extension-point" value="c"/></codeblock>
+            </fig>
           </pd>
         </plentry>
         <plentry>
@@ -131,6 +142,10 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
                 <stentry>Yes</stentry>
               </strow>
             </simpletable>
+            <fig>
+              <title>Sample <xmlelement>meta</xmlelement> element</title>
+              <codeblock>&lt;meta type="foo" value="bar"/></codeblock>
+            </fig>
           </pd>
         </plentry>
         <plentry>
@@ -159,6 +174,10 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
                 <stentry>No</stentry>
               </strow>
             </simpletable>
+            <fig>
+              <title>Sample <xmlelement>require</xmlelement> element</title>
+              <codeblock outputclass="normalize-space"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml#line=4,5"/></codeblock>
+            </fig>
           </pd>
         </plentry>
         <plentry>
@@ -183,6 +202,10 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
                 <stentry>Yes</stentry>
               </strow>
             </simpletable>
+            <fig>
+              <title>Sample <xmlelement>template</xmlelement> element</title>
+              <codeblock>&lt;template file="build_dita2html5_template.xml"/></codeblock>
+            </fig>
           </pd>
         </plentry>
         <plentry>
@@ -220,6 +243,20 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
                 <stentry>No</stentry>
               </strow>
             </simpletable>
+            <fig>
+              <title>Sample <xmlelement>transtype</xmlelement> element</title>
+              <codeblock>&lt;transtype name="base" abstract="true" desc="Common">
+  &lt;!-- ⋮ -->
+  &lt;param name="link-crawl" 
+         desc="Specifies whether to crawl only topic links found in maps, or all discovered topic links."
+         type="enum">
+    &lt;val>map&lt;/val>
+    &lt;val default="true">topic&lt;/val>
+  &lt;/param>
+  &lt;!-- ⋮ -->
+&lt;/transtype>
+</codeblock>
+            </fig>
             <p>The <xmlelement>transtype</xmlelement> element may define additional parameters for the transformation
               type using the following child elements.</p>
             <parml>
@@ -273,8 +310,8 @@ token ::= ( [0..9] | [a..zA..Z] | ’_’ | ’-’ )+</codeblock>-->
         </plentry>
       </parml>
       <p>Any extension that is not recognized by DITA-OT is ignored. Since DITA-OT version 1.5.3, you can combine
-        multiple extension definitions within a single <filepath>plug-in.xml</filepath> file; in older versions, only
-        the last extension definition was used. </p>
+        multiple extension definitions within a single <filepath>plugin.xml</filepath> file; in older versions, only the
+        last extension definition was used. </p>
     </section>
   </refbody>
 </reference>

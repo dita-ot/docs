@@ -92,6 +92,8 @@
           </pt>
           <pd conref="parameters-base.dita#base/transtype.desc"/>
           <pd>This argument corresponds to the common parameter <parmname>transtype</parmname>.</pd>
+          <pd>To list the formats that are currently available in your environment, use <cmdname>dita</cmdname>
+            <parmname>--transtypes</parmname>.</pd>
           <pd>
             <p conref="../resources/conref-task.dita#ID/transtypes"/>
           </pd>
@@ -114,9 +116,26 @@
             <parmname>--uninstall</parmname> <varname>id</varname>
           </pt>
           <pd>
-            <p>Uninstall a plug-in with the specified ID.</p>
+            <p>Remove the plug-in with the specified ID.</p>
+          </pd>
+          <pd>For a list of the currently installed plug-in IDs, use <cmdname>dita</cmdname>
+            <parmname>--plugins</parmname>.</pd>
+          <pd>
             <note conref="../resources/conref-task.dita#ID/plugin-remove-subdir"/>
           </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--plugins</parmname>
+          </pt>
+          <pd>Show a list of the currently installed plug-ins.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--transtypes</parmname>
+          </pt>
+          <pd>Show a list of the available output formats (transformation types).</pd>
+          <pd>The entries in this list may be passed as values to the <parmname>--format</parmname> argument.</pd>
         </plentry>
         <plentry>
           <pt>
@@ -153,11 +172,19 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--filter</parmname>=<varname>file</varname>
+            <parmname>--filter</parmname>=<varname>files</varname>
           </pt>
           <pd>Specifies filter file(s) used to include, exclude, or flag content. </pd>
           <pd>This argument corresponds to the common parameter <parmname>args.filter</parmname>. Relative paths are
             resolved against the current directory and internally converted to absolute paths.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--force</parmname>
+          </pt>
+          <pd>Force-install an existing plug-in.</pd>
+          <pd>Passed as an additional option to the installation command:
+              <cmdname>dita</cmdname> <parmname>--install</parmname> <parmname>--force</parmname> <varname>plug-in-zip</varname></pd>
         </plentry>
         <plentry>
           <pt>

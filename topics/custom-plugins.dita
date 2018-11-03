@@ -3,10 +3,7 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <concept id="custom-plugins">
-  <title>Customizing DITA-OT with plug-ins</title>
-  <titlealts>
-    <navtitle>Custom plug-ins</navtitle>
-  </titlealts>
+  <title>Working with plug-ins</title>
   <shortdesc id="plugins-creating">You can install or create DITA-OT plug-ins to change the default output types in
     various ways, add entirely new kinds of output formats, or implement DITA topic specializations.</shortdesc>
 
@@ -36,8 +33,8 @@
     </section>
 
     <section>
-      <title>Working with plug-ins</title> 
-      <p>Extended documentation for creating plug-ins is provided in the following topics.</p>
+      <title>Plug-in details</title>
+      <p>The following topics provide additional information on working with plug-ins and creating your own.</p>
     </section>
   </conbody>
 </concept>

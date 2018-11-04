@@ -170,8 +170,24 @@
       <title>Adding custom registries</title>
       <p>In addition to the main plug-in registry at <xref keyref="site-plugin-registry"/>, you can create a registry of
         your own to store the custom plug-ins for your company or organization.</p>
-      <p>To add a custom registry location, edit the <filepath>config/configuration.properties</filepath> file in the
-        DITA-OT installation directory and add the URL for your custom registry to the <codeph>registry</codeph> key
-        value, separating each entry with a space.</p></section>
+      <p>A registry is just a directory that contains JSON files like the one above; each JSON file
+represents one entry in the registry. To add a custom registry location, edit the
+<filepath>config/configuration.properties</filepath> file in the DITA-OT installation directory and
+add the URL for your custom registry directory to the <codeph>registry</codeph> key value,
+separating each entry with a space.</p>
+<note type="tip">Custom registry entries are a simple way to test your own plug-in entry file before
+submitting to a common registry.<ol>
+<li>Fork the plug-in registry, which creates a new repository under your user ID – for example,
+<codeph>https://github.com/example-user-id/registry.git</codeph>.</li>
+<li>Create a new branch for your plug-in entry, and add the JSON file to the branch – for example,
+create <filepath>org.example.newPlugin.json</filepath> in the branch <codeph>addPlugin</codeph></li>
+<li>As long as your repository is accessible, that branch now represents a working "custom registry"
+that can be added to your configuration file. Add the raw github URL for the directory that contains
+the JSON file; with the example user ID and branch name above, you can add your registry
+with:<codeblock>registry = http://plugins.dita-ot.org/ https://raw.githubusercontent.com/example-user-id/registry/addPlugin/</codeblock></li>
+<li>Test installing the plugin with:<codeblock>dita --install org.example.newPlugin</codeblock></li>
+<li>Once you've confirmed that the entry works, you can submit a pull request to have your entry
+added to the common registry.</li>
+</ol> Now </note></section>
   </body>
 </topic>

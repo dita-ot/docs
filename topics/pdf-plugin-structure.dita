@@ -15,7 +15,29 @@
       this approach, a dedicated folder within the plug-in was used to store customized files. While this method is no
       longer recommended, the same organization principles can be used in custom PDF plug-ins.</p>
     <p>To begin creating a new custom plug-in, you can copy the <filepath>plugins/org.dita.pdf2/Customization</filepath>
-      folder to a new folder, such as <filepath>plugins/com.company.pdf</filepath>.</p>
+      folder to a new folder, such as <filepath>plugins/com.company.pdf/cfg</filepath>.</p>
+    <p>A simple suitable structure looks like:
+      <ul>
+        <li>plugin.xml </li>
+        <li>ant-include.xml </li>
+        <li>cfg/catalog.xml </li>
+        <li>cfg/build.properties </li>
+        <li>cfg/common/[artwork/] </li>
+        <li>cfg/common/vars/strings.xml </li>
+        <li>cfg/common/vars/en.xml</li>
+      </ul></p>
+    <p>For PDF styling (acting on @class values)
+      <ul>
+        <li>cfg/fo/font-mappings.xml </li>
+        <li>cfg/fo/layout-masters.xsl </li>
+        <li>cfg/fo/attrs/custom.xsl </li>
+        <li>cfg/fo/xsl/custom.xsl</li>
+      </ul></p>
+    <p>For DITA preprocessing (acting on element names):
+      <ul>
+        <li>xsl/fo/my_effects2fo.xsl</li>
+      </ul>
+    </p>
     <p>DITA-OT provides template files that you can start with throughout the <filepath>Customization</filepath>
       directory structure. These files end in the suffix <codeph>.orig</codeph> (for example,
         <filepath>catalog.xml.orig</filepath>). To enable these files, copy them to your custom plug-in and remove the

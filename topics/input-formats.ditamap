@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!DOCTYPE map PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Map//EN" "lw-map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <map>
-  <title>Input formats</title>
+  <topicmeta>
+    <navtitle>Input formats</navtitle>
+  </topicmeta>
 
   <topicref keyref="markdown-input"/>
   <topicref keyref="lwdita-input"/>

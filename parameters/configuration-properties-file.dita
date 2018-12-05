@@ -14,8 +14,6 @@
       <keywords>
         <indexterm>configuration properties <indexterm>default.cascade</indexterm>
           <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
-          <indexterm>otrelease</indexterm>
-          <indexterm>otversion</indexterm>
           <indexterm>plugin.ignores</indexterm>
           <indexterm>plugin.order</indexterm>
           <indexterm>plugindirs</indexterm>
@@ -34,13 +32,6 @@
         configuration in the <codeph>dost-configuration.jar</codeph> file when the plug-in integration process runs. The
         following properties are typically set in this file:</p>
       <parml>
-        <plentry id="otrelease-otversion">
-          <pt><parmname>otrelease</parmname></pt>
-          <pt><parmname>otversion</parmname></pt>
-          <pd>The DITA-OT release number and maintenance version stored here are read when version information is
-            requested on the commmand line via <cmdname>dita</cmdname>
-            <option>--version</option>.</pd>
-        </plentry>
         <plentry id="default-cascade">
           <pt><parmname>default.cascade</parmname></pt>
           <pd>
@@ -89,6 +80,14 @@
             significant. If multiple plug-ins define the same thing (differently), the first catalog entry “wins”.
             DITA-OT uses this property to define the order in which catalog entries are written. This mechanism is
             currently used to ensure that DITA 1.3 grammar files take precedence over their DITA 1.2 equivalents.</pd>
+        </plentry>
+        <plentry id="registry">
+          <pt><parmname>registry</parmname></pt>
+          <pd>Defines the list (and order) of plug-in repositories that are searched for available plug-ins during the
+            installation process. In addition to the main plug-in registry at <xref keyref="site-plugin-registry"/>, you
+            can create a registry of your own to store the custom plug-ins for your company or organization. To add a
+            new entry, append the URL for your custom registry directory to the <codeph>registry</codeph> key value,
+            separating each entry with a space. For more information, see <xref keyref="plugins-registry"/>.</pd>
         </plentry>
         <plentry conref="ant-parameters-details.dita#pdf/org.dita.pdf2.i18n.enabled">
           <pt/>

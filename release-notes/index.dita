@@ -9,8 +9,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> is a feature release that provides new features and
-      enhancements, including <ph conref="#v3.2/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v3.2/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
@@ -23,6 +23,53 @@
           since previous release.</draft-comment>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) version
             <keyword keyref="tool.java.version"/> or later.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.2.1">
+    <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <ul>
+          <li id="3140">In earlier releases, the base directory resolution treated input files as local resources. Input
+            file handling has been extended to support non-local (HTTP and HTTPS) input URIs.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3140" format="html" scope="external">#3140</xref>
+          </li>
+          <li id="3148">The parsing mechanism for <keyword keyref="semver"/> was extended to support pre-release
+            versions and build metadata in plug-in repository version information.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3148" format="html" scope="external">#3148</xref>
+          </li>
+          <li id="3155">In earlier releases, branch filtering using <xmlelement>ditavalref</xmlelement> elements failed
+            when the map included references outside the scope of the map directory. This has been fixed and filtered
+            topics are handled as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3155" format="html" scope="external">#3155</xref>
+          </li>
+          <li id="3156">To make XSLT import and include elements consistent, remaining relative URIs in the default
+            plug-ins were rewritten to use the absolute <codeph>plugin</codeph> URI scheme. This allows Saxon to detect
+            duplicate imports more easily and makes it easier to copy import and include elements to other stylesheets.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3156" format="html" scope="external">#3156</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3159" format="html" scope="external">#3159</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/3163" format="html" scope="external">#3163</xref>
+          </li>
+          <li id="112">The plugin registry UI at <keyword keyref="site-plugin-registry"/> was not working on certain
+            older Windows browsers that do not support all of the necessary Javascript features. Polyfills were added to
+            allow these browsers to correctly display the list of available plug-ins.
+            <xref href="https://github.com/dita-ot/dita-ot.github.io/issues/112" format="html" scope="external"
+              >#112</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot.github.io/pull/113" format="html" scope="external"
+              >#113</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot.github.io/pull/114" format="html" scope="external"
+              >#114</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.2.1+is%3Aclosed" format="html"
+            scope="external">
+            <keyword keyref="release"/> milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.2...3.2.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>

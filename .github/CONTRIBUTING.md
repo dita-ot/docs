@@ -94,4 +94,4 @@ Follow this process to ensure your contribution meets our expectations and incre
 [9]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-often
 [10]: https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
 [11]: https://help.github.com/articles/interactive-rebase
-[12]: http://www.dita-ot.org/DCO
+[12]: https://www.dita-ot.org/DCO

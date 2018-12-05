@@ -38,8 +38,8 @@ To use these features when building the documentation, you may either download t
 
 [1]: https://travis-ci.org/dita-ot/docs.svg?branch=develop
 [2]: http://slack.dita-ot.org/badge.svg
-[3]: http://www.dita-ot.org/dev/
-[4]: http://www.dita-ot.org
+[3]: https://www.dita-ot.org/dev/
+[4]: https://www.dita-ot.org
 [5]: CONTRIBUTING.md
 [6]: https://github.com/dita-ot/docs/wiki/Coding-guidelines
 [7]: https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
@@ -47,7 +47,7 @@ To use these features when building the documentation, you may either download t
 [9]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
 [10]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-often
 [11]: https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
-[12]: http://www.dita-ot.org/DCO
+[12]: https://www.dita-ot.org/DCO
 [13]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
 [14]: https://github.com/dita-ot/dita-ot
 [15]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L123-L128

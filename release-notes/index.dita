@@ -28,10 +28,11 @@
   </reference>
 
   <reference id="v3.2.1">
-    <title>Maintenance Release <keyword keyref="maintenance-version"/></title>
+    <title>DITA-OT <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="maintenance-version"/> includes the following bug fixes.</p>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
         <ul>
           <li id="3140">In earlier releases, the base directory resolution treated input files as local resources. Input
             file handling has been extended to support non-local (HTTP and HTTPS) input URIs.

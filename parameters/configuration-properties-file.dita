@@ -14,8 +14,6 @@
       <keywords>
         <indexterm>configuration properties <indexterm>default.cascade</indexterm>
           <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
-          <indexterm>otrelease</indexterm>
-          <indexterm>otversion</indexterm>
           <indexterm>plugin.ignores</indexterm>
           <indexterm>plugin.order</indexterm>
           <indexterm>plugindirs</indexterm>
@@ -34,13 +32,6 @@
         configuration in the <codeph>dost-configuration.jar</codeph> file when the plug-in integration process runs. The
         following properties are typically set in this file:</p>
       <parml>
-        <plentry id="otrelease-otversion">
-          <pt><parmname>otrelease</parmname></pt>
-          <pt><parmname>otversion</parmname></pt>
-          <pd>The DITA-OT release number and maintenance version stored here are read when version information is
-            requested on the commmand line via <cmdname>dita</cmdname>
-            <option>--version</option>.</pd>
-        </plentry>
         <plentry id="default-cascade">
           <pt><parmname>default.cascade</parmname></pt>
           <pd>

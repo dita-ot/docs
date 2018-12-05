@@ -81,6 +81,14 @@
             DITA-OT uses this property to define the order in which catalog entries are written. This mechanism is
             currently used to ensure that DITA 1.3 grammar files take precedence over their DITA 1.2 equivalents.</pd>
         </plentry>
+        <plentry id="registry">
+          <pt><parmname>registry</parmname></pt>
+          <pd>Defines the list (and order) of plug-in repositories that are searched for available plug-ins during the
+            installation process. In addition to the main plug-in registry at <xref keyref="site-plugin-registry"/>, you
+            can create a registry of your own to store the custom plug-ins for your company or organization. To add a
+            new entry, append the URL for your custom registry directory to the <codeph>registry</codeph> key value,
+            separating each entry with a space. For more information, see <xref keyref="plugins-registry"/>.</pd>
+        </plentry>
         <plentry conref="ant-parameters-details.dita#pdf/org.dita.pdf2.i18n.enabled">
           <pt/>
           <pd/>

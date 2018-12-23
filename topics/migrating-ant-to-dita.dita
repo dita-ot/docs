@@ -61,7 +61,7 @@
       <title>Example: Call the <cmdname>dita</cmdname> command from an Ant build</title>
       <p>In some cases, you might still want to use an Ant build to implement some pre- or post-processing steps, but
         also want the convenience of using the <cmdname>dita</cmdname> command with <filepath>.properties</filepath>
-        files to define the parameters for each build. This can be accomplished with Ant's <xmlelement>exec</xmlelement>
+        files to define the parameters for each build. This can be accomplished with Ant’s <xmlelement>exec</xmlelement>
         task.</p>
       <p>This example uses a <xmlelement>dita-cmd</xmlelement> Ant macro defined in the <filepath
           conref="../resources/conref-task.dita#ID/samples-dir"/><filepath>/ant_sample/dita-cmd.xml</filepath> file:</p>

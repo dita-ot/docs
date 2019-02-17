@@ -8,32 +8,32 @@
     are needed to produce a Microsoft Compiled HTML Help (.chm) file.</shortdesc>
   <conbody>
     <p>In addition to the HTML output and CSS files, this transformation returns the following files, where
-        <varname>mapname</varname> is the name of the master DITA map. <simpletable frame="all" relcolwidth="2* 3*">
-        <sthead>
-          <stentry>File name</stentry>
-          <stentry>Description</stentry>
-        </sthead>
-        <strow>
-          <stentry><filepath><varname>mapname</varname>.hhc</filepath></stentry>
-          <stentry>Table of contents</stentry>
-        </strow>
-        <strow>
-          <stentry><filepath><varname>mapname</varname>.hhk</filepath></stentry>
-          <stentry>Sorted index</stentry>
-        </strow>
-        <strow>
-          <stentry><filepath><varname>mapname</varname>.hhp</filepath></stentry>
-          <stentry>HTML Help project file</stentry>
-        </strow>
-        <strow>
-          <stentry><filepath><varname>mapname</varname>.chm</filepath></stentry>
-          <stentry>
-            <p>Compiled HTML Help file</p>
-            <note>The compiled file is only generated if the HTML Help Workshop is installed on the build system.</note>
-          </stentry>
-        </strow>
-      </simpletable>
-    </p>
+        <varname>mapname</varname> is the name of the master DITA map.</p>
+    <simpletable outputclass="table-hover" frame="all" relcolwidth="2* 3*">
+      <sthead>
+        <stentry>File name</stentry>
+        <stentry>Description</stentry>
+      </sthead>
+      <strow>
+        <stentry><filepath><varname>mapname</varname>.hhc</filepath></stentry>
+        <stentry>Table of contents</stentry>
+      </strow>
+      <strow>
+        <stentry><filepath><varname>mapname</varname>.hhk</filepath></stentry>
+        <stentry>Sorted index</stentry>
+      </strow>
+      <strow>
+        <stentry><filepath><varname>mapname</varname>.hhp</filepath></stentry>
+        <stentry>HTML Help project file</stentry>
+      </strow>
+      <strow>
+        <stentry><filepath><varname>mapname</varname>.chm</filepath></stentry>
+        <stentry>
+          <p>Compiled HTML Help file</p>
+          <note>The compiled file is only generated if the HTML Help Workshop is installed on the build system.</note>
+        </stentry>
+      </strow>
+    </simpletable>
     <p>To run the HTML Help transformation, set the <parmname>transtype</parmname> parameter to
         <option>htmlhelp</option>, or pass the <parmname>--format</parmname>=<option>htmlhelp</option> option to the
         <cmdname>dita</cmdname> command line.</p>

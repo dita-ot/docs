@@ -19,41 +19,49 @@
         removed.</p>
       <p>The <filepath>demo</filepath> folder has been deprecated and the following plug-ins have been moved to the
           <filepath>plugins</filepath> folder:</p>
-      <simpletable>
-        <sthead>
-          <stentry>old path</stentry>
-          <stentry>new path</stentry>
-        </sthead>
-        <strow>
-          <stentry><filepath>demo/dita11</filepath></stentry>
-          <stentry><filepath>plugins/org.dita.specialization.dita11</filepath></stentry>
-        </strow>
-        <strow>
-          <stentry><filepath>demo/dita132</filepath></stentry>
-          <stentry><filepath>plugins/org.dita.specialization.dita132</filepath></stentry>
-        </strow>
-        <strow>
-          <stentry><filepath>demo/eclipsemap</filepath></stentry>
-          <stentry><filepath>plugins/org.dita.specialization.eclipsemap</filepath></stentry>
-        </strow>
-        <strow>
-          <stentry><filepath>demo/fo</filepath></stentry>
-          <stentry><filepath>plugins/org.dita.pdf2</filepath></stentry>
-        </strow>
-        <strow>
-          <stentry><filepath>demo/tocjs</filepath></stentry>
-          <stentry><filepath>plugins/com.sophos.tocjs</filepath></stentry>
-        </strow>
-        <!-- These plugins are pulled from ext-plugins during build -->
-        <strow>
-          <stentry><filepath>demo/h2d</filepath></stentry>
-          <stentry><filepath>plugins/h2d</filepath></stentry>
-        </strow>
-        <strow>
-          <stentry><filepath>demo/legacypdf</filepath></stentry>
-          <stentry><filepath>plugins/legacypdf</filepath></stentry>
-        </strow>
-      </simpletable>
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+        <tgroup cols="2">
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
+          <thead>
+            <row>
+              <entry>old path</entry>
+              <entry>new path</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><filepath>demo/dita11</filepath></entry>
+              <entry><filepath>plugins/org.dita.specialization.dita11</filepath></entry>
+            </row>
+            <row>
+              <entry><filepath>demo/dita132</filepath></entry>
+              <entry><filepath>plugins/org.dita.specialization.dita132</filepath></entry>
+            </row>
+            <row>
+              <entry><filepath>demo/eclipsemap</filepath></entry>
+              <entry><filepath>plugins/org.dita.specialization.eclipsemap</filepath></entry>
+            </row>
+            <row>
+              <entry><filepath>demo/fo</filepath></entry>
+              <entry><filepath>plugins/org.dita.pdf2</filepath></entry>
+            </row>
+            <row>
+              <entry><filepath>demo/tocjs</filepath></entry>
+              <entry><filepath>plugins/com.sophos.tocjs</filepath></entry>
+            </row>
+            <!-- These plugins are pulled from ext-plugins during build -->
+            <row>
+              <entry><filepath>demo/h2d</filepath></entry>
+              <entry><filepath>plugins/h2d</filepath></entry>
+            </row>
+            <row>
+              <entry><filepath>demo/legacypdf</filepath></entry>
+              <entry><filepath>plugins/legacypdf</filepath></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
       <p>The remaining plug-ins in the demo folder have been moved to a separate repository at <xref
           href="https://github.com/dita-ot/ext-plugins" scope="external" format="html"
           >github.com/dita-ot/ext-plugins</xref>.</p>

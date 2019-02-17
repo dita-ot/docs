@@ -50,7 +50,7 @@
           <codeph>&lt;plugin-name&gt;.json</codeph>. The file contains an array of entries with a pre-defined
         structure.</p>
       <p/>
-      <table>
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Plug-in version entry structure</title>
         <tgroup cols="3">
           <colspec colwidth="1*"/>
@@ -120,7 +120,7 @@
             href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6"
             format="html" scope="external">Get-FileHash</xref> <varname>&lt;plugin-file&gt;</varname> |
           Format-List</codeph>.</note>
-      <table>
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Structure for dependency entries</title>
         <tgroup cols="3">
           <colspec colwidth="1*"/>

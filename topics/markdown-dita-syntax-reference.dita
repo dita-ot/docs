@@ -122,30 +122,30 @@ Context
       <p>The format of local link targets is detected based on file extension. The following extensions are treated as
         DITA files:</p><table>
         <tgroup cols="2">
-          <colspec colname="col1" colnum="1"/>
-          <colspec colname="col2" colnum="2"/>
+          <colspec/>
+          <colspec/>
           <thead>
             <row>
-              <entry colname="col1">extension</entry>
-              <entry colname="col2">format</entry>
+              <entry>extension</entry>
+              <entry>format</entry>
             </row>
           </thead>
           <tbody>
             <row>
-              <entry colname="col1"><codeph>.dita</codeph></entry>
-              <entry colname="col2"><codeph>dita</codeph></entry>
+              <entry><codeph>.dita</codeph></entry>
+              <entry><codeph>dita</codeph></entry>
             </row>
             <row>
-              <entry colname="col1"><codeph>.xml</codeph></entry>
-              <entry colname="col2"><codeph>dita</codeph></entry>
+              <entry><codeph>.xml</codeph></entry>
+              <entry><codeph>dita</codeph></entry>
             </row>
             <row>
-              <entry colname="col1"><codeph>.md</codeph></entry>
-              <entry colname="col2"><codeph>markdown</codeph></entry>
+              <entry><codeph>.md</codeph></entry>
+              <entry><codeph>markdown</codeph></entry>
             </row>
             <row>
-              <entry colname="col1"><codeph>.markdown</codeph></entry>
-              <entry colname="col2"><codeph>markdown</codeph></entry>
+              <entry><codeph>.markdown</codeph></entry>
+              <entry><codeph>markdown</codeph></entry>
             </row>
           </tbody>
         </tgroup>

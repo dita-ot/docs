@@ -14,9 +14,9 @@
     <table frame="all" colsep="1" rowsep="1">
       <title>Supported languages</title>
       <tgroup cols="3">
-        <colspec colnum="1" colwidth="3.0*" colname="language"/>
-        <colspec colnum="2" colwidth="2.0*" colname="code"/>
-        <colspec colnum="3" colwidth="5.0*" colname="notes"/>
+        <colspec colwidth="3*" colname="language"/>
+        <colspec colwidth="2*" colname="code"/>
+        <colspec colwidth="5*" colname="notes"/>
         <thead>
           <row>
             <entry>Language</entry>

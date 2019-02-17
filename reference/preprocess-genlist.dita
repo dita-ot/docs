@@ -14,125 +14,125 @@
         example, the <codeph>conref.list</codeph> file is generated for “conreffile” and a corresponding list property
         is provided for each generated list, in this case “conreflist”.</p>
       <p>The result of this step is a set of several list files in the temporary directory, including
-          <filepath>dita.list</filepath> and <filepath>dita.xml.properties</filepath>.</p><table>
+          <filepath>dita.list</filepath> and <filepath>dita.xml.properties</filepath>.</p>
+      <table>
         <tgroup cols="3">
-          <colspec colname="col1" colwidth="2*"/>
-          <colspec colname="col2" colwidth="3*"/>
-          <colspec colname="col3" colwidth="3*"/>
+          <colspec colwidth="2*"/>
+          <colspec colwidth="3*"/>
+          <colspec colwidth="3*"/>
           <thead>
             <row>
-              <entry colname="col1">List file property</entry>
-              <entry colname="col2">List file</entry>
-              <entry colname="col3">Usage</entry>
+              <entry>List file property</entry>
+              <entry>List file</entry>
+              <entry>Usage</entry>
             </row>
           </thead>
           <tbody>
             <row>
-              <entry colname="col1">canditopicsfile</entry>
-              <entry colname="col2"><codeph>canditopics.list</codeph></entry>
-              <entry colname="col3"/>
+              <entry>canditopicsfile</entry>
+              <entry><codeph>canditopics.list</codeph></entry>
+              <entry/>
             </row>
             <row>
-              <entry colname="col1">conreffile</entry>
-              <entry colname="col2"><codeph>conref.list</codeph></entry>
-              <entry colname="col3">Documents that contain conref attributes that need to be resolved in
-                preprocess.</entry>
+              <entry>conreffile</entry>
+              <entry><codeph>conref.list</codeph></entry>
+              <entry>Documents that contain conref attributes that need to be resolved in preprocess.</entry>
             </row>
             <row>
-              <entry colname="col1">conreftargetsfile</entry>
-              <entry colname="col2"><codeph>conreftargets.list</codeph></entry>
-              <entry colname="col3"/>
+              <entry>conreftargetsfile</entry>
+              <entry><codeph>conreftargets.list</codeph></entry>
+              <entry/>
             </row>
             <row>
-              <entry colname="col1">copytosourcefile</entry>
-              <entry colname="col2"><codeph>copytosource.list</codeph></entry>
-              <entry colname="col3"/>
+              <entry>copytosourcefile</entry>
+              <entry><codeph>copytosource.list</codeph></entry>
+              <entry/>
             </row>
             <row>
-              <entry colname="col1">flagimagefile</entry>
-              <entry colname="col2"><codeph>flagimage.list</codeph></entry>
-              <entry colname="col3"/>
+              <entry>flagimagefile</entry>
+              <entry><codeph>flagimage.list</codeph></entry>
+              <entry/>
             </row>
             <row>
-              <entry colname="col1">fullditamapandtopicfile</entry>
-              <entry colname="col2"><codeph>fullditamapandtopic.list</codeph></entry>
-              <entry colname="col3">All of the ditamap and topic files that are referenced during the transformation.
-                These may be referenced by href or conref attributes.</entry>
+              <entry>fullditamapandtopicfile</entry>
+              <entry><codeph>fullditamapandtopic.list</codeph></entry>
+              <entry>All of the ditamap and topic files that are referenced during the transformation. These may be
+                referenced by href or conref attributes.</entry>
             </row>
             <row>
-              <entry colname="col1">fullditamapfile</entry>
-              <entry colname="col2"><codeph>fullditamap.list</codeph></entry>
-              <entry colname="col3">All of the ditamap files in dita.list</entry>
+              <entry>fullditamapfile</entry>
+              <entry><codeph>fullditamap.list</codeph></entry>
+              <entry>All of the ditamap files in dita.list</entry>
             </row>
             <row>
-              <entry colname="col1">fullditatopicfile</entry>
-              <entry colname="col2"><codeph>fullditatopic.list</codeph></entry>
-              <entry colname="col3">All of the topic files in dita.list</entry>
+              <entry>fullditatopicfile</entry>
+              <entry><codeph>fullditatopic.list</codeph></entry>
+              <entry>All of the topic files in dita.list</entry>
             </row>
             <row>
-              <entry colname="col1">hrefditatopicfile</entry>
-              <entry colname="col2"><codeph>hrefditatopic.list</codeph></entry>
-              <entry colname="col3">All of the topic files that are referenced with an href attribute</entry>
+              <entry>hrefditatopicfile</entry>
+              <entry><codeph>hrefditatopic.list</codeph></entry>
+              <entry>All of the topic files that are referenced with an href attribute</entry>
             </row>
             <row>
-              <entry colname="col1">hreftargetsfile</entry>
-              <entry colname="col2"><codeph>hreftargets.list</codeph></entry>
-              <entry colname="col3">Link targets</entry>
+              <entry>hreftargetsfile</entry>
+              <entry><codeph>hreftargets.list</codeph></entry>
+              <entry>Link targets</entry>
             </row>
             <row importance="deprecated">
-              <entry colname="col1">htmlfile</entry>
-              <entry colname="col2"><codeph>html.list</codeph></entry>
-              <entry colname="col3">Resource files</entry>
+              <entry>htmlfile</entry>
+              <entry><codeph>html.list</codeph></entry>
+              <entry>Resource files</entry>
             </row>
             <row importance="deprecated">
-              <entry colname="col1">imagefile</entry>
-              <entry colname="col2"><codeph>image.list</codeph></entry>
-              <entry colname="col3">Image files that are referenced in the content</entry>
+              <entry>imagefile</entry>
+              <entry><codeph>image.list</codeph></entry>
+              <entry>Image files that are referenced in the content</entry>
             </row>
             <row>
-              <entry colname="col1">outditafilesfile</entry>
-              <entry colname="col2"><codeph>outditafiles.list</codeph></entry>
-              <entry colname="col3"/>
+              <entry>outditafilesfile</entry>
+              <entry><codeph>outditafiles.list</codeph></entry>
+              <entry/>
             </row>
             <row>
-              <entry colname="col1">resourceonlyfile</entry>
-              <entry colname="col2"><codeph>resourceonly.list</codeph></entry>
-              <entry colname="col3"/>
+              <entry>resourceonlyfile</entry>
+              <entry><codeph>resourceonly.list</codeph></entry>
+              <entry/>
             </row>
             <row>
-              <entry colname="col1">subjectschemefile</entry>
-              <entry colname="col2"><codeph>subjectscheme.list</codeph></entry>
-              <entry colname="col3"/>
+              <entry>subjectschemefile</entry>
+              <entry><codeph>subjectscheme.list</codeph></entry>
+              <entry/>
             </row>
             <row>
-              <entry colname="col1">subtargetsfile</entry>
-              <entry colname="col2"><codeph>subtargets.list</codeph></entry>
-              <entry colname="col3"/>
+              <entry>subtargetsfile</entry>
+              <entry><codeph>subtargets.list</codeph></entry>
+              <entry/>
             </row>
             <row>
-              <entry colname="col1">tempdirToinputmapdir.relative.value</entry>
-              <entry colname="col2"/>
-              <entry colname="col3"/>
+              <entry>tempdirToinputmapdir.relative.value</entry>
+              <entry/>
+              <entry/>
             </row>
             <row>
-              <entry colname="col1">uplevels</entry>
-              <entry colname="col2"/>
-              <entry colname="col3"/>
+              <entry>uplevels</entry>
+              <entry/>
+              <entry/>
             </row>
             <row>
-              <entry colname="col1">user.input.dir</entry>
-              <entry colname="col2"/>
-              <entry colname="col3">Absolute input directory path</entry>
+              <entry>user.input.dir</entry>
+              <entry/>
+              <entry>Absolute input directory path</entry>
             </row>
             <row>
-              <entry colname="col1">user.input.file.listfile</entry>
-              <entry colname="col2"/>
-              <entry colname="col3">Input file list file</entry>
+              <entry>user.input.file.listfile</entry>
+              <entry/>
+              <entry>Input file list file</entry>
             </row>
             <row>
-              <entry colname="col1">user.input.file</entry>
-              <entry colname="col2"/>
-              <entry colname="col3">Input file path, relative to the input directory</entry>
+              <entry>user.input.file</entry>
+              <entry/>
+              <entry>Input file path, relative to the input directory</entry>
             </row>
           </tbody>
         </tgroup>

@@ -49,8 +49,8 @@
         styles.</p>
       <table frame="none" rowsep="1" colsep="0">
         <tgroup cols="2">
-          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
-          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
           <thead>
             <row>
               <entry>Plug-in </entry>

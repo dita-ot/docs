@@ -40,14 +40,15 @@
       </ul>
     </section>
     <section id="publishing-to-registry"><title>Publishing plug-ins to the registry</title>
-      <p>The contents of the DITA-OT plug-in registry are stored in a Git repository at <xref keyref="registry-repo"/>. </p>
-      <p>New plug-ins or new versions can be added by sending a <xref keyref="pull-request"/> that includes a new
-        plug-in entry in JSON format. The entries for each plug-in are stored in a file named after the plug-in ID as
-          <codeph>&lt;plugin-name&gt;.json</codeph>.</p>
-      <p>As for other contributions to the Open Toolkit, pull requests must be signed using the
-          <codeph>-s</codeph> parameter of the git <cmdname>commit</cmdname> command. See <xref
-          href="https://www.dita-ot.org/contributing" format="html" scope="external"/>.</p>
-      <p>The contents of the entry file is an array of plug-in version entries with a pre-defined structure.</p>
+      <p>The contents of the DITA Open Toolkit plug-in registry are stored in a Git repository at <xref
+          keyref="registry-repo"/>. New plug-ins or new versions can be added by sending a <xref keyref="pull-request"/>
+        that includes a single new plug-in entry in JavaScript Object Notation (JSON) format.</p>
+      <note>As for all other contributions to the project, pull requests to the registry must be signed off by passing
+        the <codeph>--signoff</codeph> option to the <cmdname>git commit</cmdname> command to certify that you have the
+        rights to submit this contribution. For more information on this process, see <xref keyref="signoff"/>.</note>
+      <p>The version entries for each plug-in are stored in a file that is named after the plug-in ID as
+          <codeph>&lt;plugin-name&gt;.json</codeph>. The file contains an array of entries with a pre-defined
+        structure.</p>
       <p/>
       <table>
         <title>Plug-in version entry structure</title>

@@ -41,8 +41,9 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
-          <li id="1778">1.3: Support rotate on entry element
-            <xref href="https://github.com/dita-ot/dita-ot/issues/1778" format="html" scope="external">#1778</xref>
+          <li id="1778">The <xmlatt>rotate</xmlatt> attribute on <xmlelement>entry</xmlelement> elements, which was
+            added in the DITA 1.3 specification, is now supported in PDF output. <xref
+              href="https://github.com/dita-ot/dita-ot/issues/1778" format="html" scope="external">#1778</xref>
           </li>
           <li id="3175">Add support for custom integrator
             <xref href="https://github.com/dita-ot/dita-ot/issues/3175" format="html" scope="external">#3175</xref>
@@ -60,15 +61,16 @@
           <li id="3157">Move base plugin files to plugin directory
             <xref href="https://github.com/dita-ot/dita-ot/issues/3157" format="html" scope="external">#3157</xref>
           </li>
-          <li id="2717">Support rotate attribute on table entries #2717
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2717" format="html" scope="external">#2717</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3161" format="html" scope="external">#3161</xref>
+          <li id="2717">Support is added for the <xmlatt>rotate</xmlatt> attribute on table entries in PDF <xref
+              href="https://github.com/dita-ot/dita-ot/issues/1778" format="html" scope="external">#1778</xref>, <xref
+              href="https://github.com/dita-ot/dita-ot/issues/2717" format="html" scope="external">#2717</xref>, <xref
+              href="https://github.com/dita-ot/dita-ot/issues/3161" format="html" scope="external">#3161</xref>
           </li>
           <li id="3176">Deprecate templates integration configuration
             <xref href="https://github.com/dita-ot/dita-ot/issues/3176" format="html" scope="external">#3176</xref>
           </li>
-          <li id="3177">Generate HTML5 section element for task steps
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3177" format="html" scope="external">#3177</xref>
+          <li id="3177">Generate HTML5 <xmlelement>section</xmlelement> element as a container for task steps <xref
+              href="https://github.com/dita-ot/dita-ot/issues/3177" format="html" scope="external">#3177</xref>
           </li>
           <li id="3178">Add missing DITA classes to Java constants
             <xref href="https://github.com/dita-ot/dita-ot/issues/3178" format="html" scope="external">#3178</xref>
@@ -76,8 +78,9 @@
           <li id="3182">Add support for SAX filter in pipeline modules
             <xref href="https://github.com/dita-ot/dita-ot/issues/3182" format="html" scope="external">#3182</xref>
           </li>
-          <li id="3187">Add extension points to contribute params to reader modules
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3187" format="html" scope="external">#3187</xref>
+          <li id="3187">Add extension points to contribute parameters to map reader, topic reader, and debug-filter Java
+            modules <xref href="https://github.com/dita-ot/dita-ot/issues/3187" format="html" scope="external"
+              >#3187</xref>
           </li>
           <li id="3188">Use base Jing as a dependency
             <xref href="https://github.com/dita-ot/dita-ot/issues/3188" format="html" scope="external">#3188</xref>
@@ -85,14 +88,15 @@
           <li id="3191">Upgrade dependencies
             <xref href="https://github.com/dita-ot/dita-ot/issues/3191" format="html" scope="external">#3191</xref>
           </li>
-          <li id="3193">Add keyscope test for mapref
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3193" format="html" scope="external">#3193</xref>
+          <li id="3193">Add keyscope test for mapref for improved test coverage <xref
+              href="https://github.com/dita-ot/dita-ot/issues/3193" format="html" scope="external">#3193</xref>
           </li>
-          <li id="3195">Add configuration option for default coderef charset
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3195" format="html" scope="external">#3195</xref>
+          <li id="3195">Add configuration option for default <xmlelement>coderef</xmlelement> charset <xref
+              href="https://github.com/dita-ot/dita-ot/issues/3195" format="html" scope="external">#3195</xref>
           </li>
-          <li id="3196">Add support for exclusions in ditafileset
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3196" format="html" scope="external">#3196</xref>
+          <li id="3196">Add support for exclusions in <xmlelement>ditafileset</xmlelement>, to more easily control which
+            files get processed (or do not get processed) by each processing step <xref
+              href="https://github.com/dita-ot/dita-ot/issues/3196" format="html" scope="external">#3196</xref>
           </li>
           <li id="3197">Add support for truthy values in dita command property values
             <xref href="https://github.com/dita-ot/dita-ot/issues/3197" format="html" scope="external">#3197</xref>
@@ -100,9 +104,13 @@
           <li id="3204">Update to Gradle 5.2
             <xref href="https://github.com/dita-ot/dita-ot/issues/3204" format="html" scope="external">#3204</xref>
           </li>
-          <li id="3217">Provide meaningful warning for conref=""
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3217" format="html" scope="external">#3217</xref>
-          </li>
+<li id="3207">HTML5 and XHTML now provide generic hazard statement styling based on ISO 3864 standards, matching the SVG
+            icon and color definitions added to PDF in DITA-OT 3.2. <xref
+              href="https://github.com/dita-ot/dita-ot/pull/3207" format="html" scope="external">#3207</xref></li>
+          <li id="3217">Provide meaningful warning and then ignore empty attribute value
+<codeph>conref=""</codeph>; this construct previously resulted in parser errors <xref
+href="https://github.com/dita-ot/dita-ot/issues/3217" format="html" scope="external">#3217</xref>
+</li>
 
         </ul>
       </section>
@@ -112,14 +120,21 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <li id="2523">Feature/2523 keyscopes in flattened map not handled
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2523" format="html" scope="external">#2523</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3141" format="html" scope="external">#3141</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3194" format="html" scope="external">#3194</xref>
+          <li id="2523">Feature/2523 keyscopes in flattened map not handled <xref
+              href="https://github.com/dita-ot/dita-ot/issues/2523" format="html" scope="external">#2523</xref>, <xref
+              href="https://github.com/dita-ot/dita-ot/issues/3141" format="html" scope="external">#3141</xref>, <xref
+              href="https://github.com/dita-ot/dita-ot/issues/3194" format="html" scope="external">#3194</xref>
           </li>
-          <li id="2899">xref with format pdf, txt, .. do not work properly in DITA OT 3.x
-            <xref href="https://github.com/dita-ot/dita-ot/issues/2899" format="html" scope="external">#2899</xref>
+          <li id="2899">In some recent releases, cross references to local, non-DITA files with formats such as "pd" or
+            "txt" did not copy those referenced files to the output directory. When appropriate, such as when generating
+            HTML output, these files are now copied to the output directory as they were in older releases. <xref
+              href="https://github.com/dita-ot/dita-ot/issues/2899" format="html" scope="external">#2899</xref>
           </li>
+          <!--<li id="3179">In earlier releases, external URIs referenced via <xmlatt>keyref</xmlatt> from within
+            relationship tables resulted in links with broken link text. This has been fixed, and metadata
+            including link text or titles is preserved for external URIs referenced by key within a map.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1439" format="html" scope="external">#1439</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/pulls/3179" format="html" scope="external">#3179</xref></li>-->
           <li id="3183">plugin.rnc missing from distribution
             <xref href="https://github.com/dita-ot/dita-ot/issues/3183" format="html" scope="external">#3183</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3220" format="html" scope="external">#3220</xref>
@@ -128,30 +143,63 @@
           <li id="3196">Add support for exclusions in ditafileset
             <xref href="https://github.com/dita-ot/dita-ot/issues/3196" format="html" scope="external">#3196</xref>
           </li>-->
-          <li id="3198">Merge adjacent text events before codeblock normalization
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3198" format="html" scope="external">#3198</xref>
+          <li id="3198">Merge adjacent text events before codeblock normalization <xref
+              href="https://github.com/dita-ot/dita-ot/issues/3198" format="html" scope="external">#3198</xref>
           </li>
-          <li id="3210">Add [1] and as= for key() lookups as appropriate
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3210" format="html" scope="external">#3210</xref>
+          <li id="3210">In earlier releases, some indirect key references to glossary entries could result in XSLT
+            errors when more than one possible key target existed. This is corrected by using the single desired target
+            to resolve such links. <xref href="https://github.com/dita-ot/dita-ot/issues/3210" format="html"
+              scope="external">#3210</xref>
           </li>
           <li id="3211">Fix preprocess clean with resource that have different URI scheme
             <xref href="https://github.com/dita-ot/dita-ot/issues/3211" format="html" scope="external">#3211</xref>
           </li>
-          <li id="3214">No support for revprop on <xmlelement>tm</xmlelement> element in PDF output
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3214" format="html" scope="external">#3214</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3215" format="html" scope="external">#3215</xref>
+          <li id="3214">In earlier releases, some revision properties were ignored on <xmlelement>tm</xmlelement>
+            elements in PDF output. This is now corrected, so that revision flagging such as text color or background
+            color are properly supported. <xref href="https://github.com/dita-ot/dita-ot/issues/3214" format="html"
+              scope="external">#3214</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/3215" format="html"
+              scope="external">#3215</xref>
           </li>
-          <li id="3216">Fixes and improvements to chunk on topic groups
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3216" format="html" scope="external">#3216</xref>
+          <li id="3216">Several fixes have been added to improve support for the <xmlatt>chunk</xmlatt> attribute on
+            topic groups (covering both <xmlelement>topicgroup</xmlelement> and any other
+              <xmlelement>topicref</xmlelement> style container that does not reference a file). <xref
+              href="https://github.com/dita-ot/dita-ot/issues/3216" format="html" scope="external">#3216</xref>, <xref
+              href="https://github.com/dita-ot/dita-ot/issues/2428" format="html" scope="external">#2428</xref>, <xref
+              href="https://github.com/dita-ot/dita-ot/issues/2730" format="html" scope="external">#2730</xref>, <xref
+              href="https://github.com/dita-ot/dita-ot/issues/2843" format="html" scope="external">#2843</xref>
+            <ul>
+              <li>In earlier releases, using <codeph>chunk="to-content"</codeph> on a grouping element <i>within</i>
+                another branch or map that specified <codeph>chunk="to-content"</codeph> would result in a Null Pointer
+                Error. This error has been fixed.</li>
+              <li>In earlier releases, using <codeph>chunk="to-content"</codeph> on a nested map would result in the
+                same Null Pointer Error when the map reference was inside of a chunked branch or map.</li>
+              <li>In earlier releases, <xmlelement>topicgroup</xmlelement> elements with no title that used
+                  <codeph>chunk="to-content"</codeph> would result in a generated heading in the output file, such as
+                "Chunk1234567". Chunked containers without a heading will no longer result in a generated heading in the
+                output.</li>
+              <li>In earlier releases, <xmlelement>topichead</xmlelement> elements inside of a chunked branch would
+                result in headings that appeared out of order for PDF. This has been fixed, topic headings will appear
+                where expected in the PDF flow.</li>
+            </ul>
           </li>
-          <li id="3219">Drop duplicates when listing transform types
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3219" format="html" scope="external">#3219</xref>
+          <li id="3219">In documentation and error messages about available transform types, extensions of an existing
+            transform could result in duplicate values (such as 3 instances of "pdf"). Duplicates are now removed when
+            listing available transform types. <xref href="https://github.com/dita-ot/dita-ot/issues/3219" format="html"
+              scope="external">#3219</xref>
           </li>
-          <li id="3223">Turn warning into info for duplicate ditaval condition
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3223" format="html" scope="external">#3223</xref>
+          <li id="3223">In earlier releases, duplicate conditions in DITAVAL properties (such as using two DITAVAL
+            documents for a build that each set up rules for <codeph>rev="rev3"</codeph>) would generate a warning. This
+            message has been reduced in severity and will now appear only as an informational message with verbose
+            logging. <xref href="https://github.com/dita-ot/dita-ot/issues/3223" format="html" scope="external"
+              >#3223</xref>
           </li>
-          <li id="3224">Fix errors for <codeph>href="-dita-use-conref-target"</codeph>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3224" format="html" scope="external">#3224</xref>
+          <li id="3224">In earlier releases, content references on elements that specified
+              <codeph>href="-dita-use-conref-target"</codeph> would evaluate that value as a literal file name. That
+            token (defined in the <xref
+              href="http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part1-base/langRef/attributes/ditauseconreftarget.html"
+              format="html" scope="external">DITA specification</xref>) is now ignored on elements that also use
+              <xmlatt>conref</xmlatt>. <xref href="https://github.com/dita-ot/dita-ot/issues/3224" format="html"
+              scope="external">#3224</xref>
           </li>
 
         </ul>

@@ -7,6 +7,19 @@
   <shortdesc>You can use the <codeph>dita.conductor.lib.import</codeph> extension point to add an additional Java
     library to the DITA-OT <parmname>classpath</parmname> parameter.</shortdesc>
   <taskbody>
+    <context id="context_y4q_khr_vgb">
+      <p>Starting with Open Toolkit 3.1 the Java class path is managed automatically, meaning you do
+        not (and should not) use explicit references to Java class paths in your Ant scripts. In
+        particular the old "dost.class.path" property has been deprecated and should not be used. If
+        you are migrating older plugins that manage their class path directly, you should remove any
+        explicit class path configuration. If your plugin was not already using the
+          <codeph>dita.conductor.lib.import</codeph> extension point to integrate it's JAR
+        dependencies you must add it.</p>
+      <p>The effective Open Toolkit class path is the combination of the JAR files in the main
+          <filepath>lib/</filepath> directory and the plug-in-contributed jars, which are listed in
+          <filepath>config/env.sh</filepath>. The <filepath>env.sh</filepath> file is updated
+        automatically when plug-ins are installed or removed.</p>
+    </context>
     <steps>
       <step>
         <cmd>If necessary, compile the Java code into a JAR file.</cmd>

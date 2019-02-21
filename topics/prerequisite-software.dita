@@ -12,11 +12,12 @@
       <p>DITA-OT requires the following software applications:
         <dl>
           <dlentry>
-            <dt>Java Runtime Environment (JRE) or Java Development Kit (JDK), version <keyword
-                keyref="tool.java.version"/> or later</dt>
-            <dd>Provides the basic environment for DITA-OT. You can download the Oracle JRE or JDK from <xref
-                keyref="download.oracle-jdk"/>. <note>This is the <i>only</i> prerequisite software that you need to
-                install. The remaining required software is included in the distribution package.</note></dd>
+            <dt>Java Runtime Environment (JRE) or Java Development Kit (JDK)</dt>
+            <dd>
+              <p conkeyref="reusable-components/java-clients"/>
+              <note>This is the <i>only</i> prerequisite software that you need to install. The remaining required
+                software is included in the distribution package.</note>
+            </dd>
           </dlentry>
           <dlentry id="antbuild">
             <dt>Apache Ant</dt>

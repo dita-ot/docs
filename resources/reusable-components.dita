@@ -28,8 +28,8 @@
       <div id="plugin.rnc">
         <p>DITA-OT includes a RELAX NG schema file that can be used to validate the <filepath>plugin.xml</filepath>
           files that define the capabilities of each plug-in.</p>
-        <p>To ensure the syntax of your custom plug-in is correct, include the following <xmlpi>xml-model</xmlpi>
-          processing instruction at the beginning of the <filepath>plugin.xml</filepath> file, immediately after the XML
+        <p>To ensure the syntax of your custom plug-in is correct, include an <xmlpi>xml-model</xmlpi> processing
+          instruction at the beginning of the <filepath>plugin.xml</filepath> file, immediately after the XML
           prolog:</p>
         <p><xmlpi>xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"</xmlpi></p>
         <p>If your authoring environment does not apply this schema automatically, point your editor to <filepath

@@ -176,6 +176,24 @@
       scope="external"
       format="html"/>
     <keydef
+      keys="download.openjdk"
+      href="https://adoptopenjdk.net"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>adoptopenjdk.net</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="download.openjdk.corretto"
+      href="https://aws.amazon.com/corretto/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>aws.amazon.com/corretto</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="download.oracle-jdk"
       href="http://www.oracle.com/technetwork/java/javase/downloads"
       scope="external"

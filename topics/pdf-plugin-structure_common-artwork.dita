@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<topic id="custom_artwork_the_common_artwork_folder">
+  <title>Custom artwork</title>
+  <shortdesc>The <filepath>common/artwork</filepath> folder houses custom artwork files that override the standard icons
+    in <filepath>org.dita.pdf2/cfg/common/artwork</filepath>.</shortdesc>
+  <body>
+    <p>These files are used to graphically identify different types of DITA <xmlelement>note</xmlelement> element.</p>
+    <p>The mapping between <xmlelement>note</xmlelement> type and graphic is contained in a subset of the
+      locale-dependent variable files, such as</p>
+    <codeblock>cfg/common/vars</codeblock>
+    <p>The variables that control <xmlelement>note</xmlelement> graphics all follow the form</p>
+    <codeblock>&amp;lt;variable id="{type} Note Image Path"&amp;gt; {Path to image file} &amp;lt;/variable&amp;gt;</codeblock>
+    <p>where {type} contains a possible value for the <xmlelement>note</xmlelement>
+      <xmlatt>type</xmlatt> attribute.</p>
+  </body>
+</topic>

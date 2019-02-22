@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="implement-saxon-extension-functions">
+    <title>Implementing Saxon Extension Functions</title>
+  <shortdesc>Plug-ins can contribute Saxon extension functions for use in XSLT transforms run by the
+    Open Toolkit.</shortdesc>
+    <body>
+        <p>Starting with Saxon 9.2 the mechanism for implementing extension functions has changed
+      such that Saxon HE, in particular, can no longer use the older "reflexive" mechanism for
+      finding Java extension functions using a magic URL. Instead you implement extension functions
+      and then register them directly on the Saxon Configuration object. The Open Toolkit provides a
+      dynamic mechanism for doing this registration for plug-in-provided extension functions.</p>
+    <p>To implement extension functions you must do the following:<ol id="ol_npt_5mc_vgb">
+        <li>Add your plugin's Java JAR file in the Toolkit's class path: <xref
+            keyref="plugin-javalib"/>.</li>
+        <li>For each function, implement a class that extends
+            <keyword>net.sf.saxon.lib.ExtensionFunctionDefinition</keyword>. This class provides the
+          namespace name and function name for the function as well as details about its arguments
+          and so on. See <xref keyref="saxon-java-extensions-impl"/> in the Saxon
+          documentation.</li>
+        <li>Include a file named <filepath>net.sf.saxon.lib.ExtensionFunctionDefinition</filepath>
+          in the directory <filepath>META-INF/services</filepath> in the compiled jar your plugin
+          provides. Each line of the file must be the name of a class that implements
+            <keyword>net.sf.saxon.lib.ExtensionFunctionDefinition</keyword>:<codeblock>com.example.saxon.functions.Add
+com.example.saxon.functions.Substract</codeblock><p>You
+            can create the file using <xmlelement>service</xmlelement> elements in an Ant
+              <cmdname>jar</cmdname>
+            task:<codeblock>&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">
+  ...
+  &lt;service type="net.sf.saxon.lib.ExtensionFunctionDefinition">
+    &lt;provider classname="com.example.saxon.functions.Add"/>
+    &lt;provider classname="com.example.saxon.functions.Subtract"/>
+  &lt;/service>
+  ...
+&lt;/jar></codeblock></p></li>
+        <li>In your XSLT transforms declare the namespace the functions are bound
+          to:<codeblock>&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                <b>xmlns:eg="http://example.com/saxon-extensions"</b>
+                version="2.0"></codeblock></li>
+      </ol></p>
+    <p>You should then be able to use the extension functions as you would any other
+      function:<codeblock>&lt;xsl:variable name="test" select="<b>eq:add(1, 2)</b>"/></codeblock></p>
+    </body>
+</topic>

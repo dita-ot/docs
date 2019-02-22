@@ -28,13 +28,13 @@
       new model also takes advantage of hashed topic file names in the temporary directory, which simplifies many
       processing steps, and is better able to handle topics referenced outside of the map directory (that case has
       resulted in a variety of issues with the original model).</p>
-    <note id="map-first-preproc-note">The map-first preprocessing option is enabled by default in DITA-OT 3.0 for PDF,
-      HTML Help, and Java Help. These three formats were chosen because they all generate a compiled result file, so
-      temporarily hashed file names should all be invisible to the build. After further testing and feedback, the new
-      option will most likely become the default for other output formats in future versions. Because the DITA-OT
-      development team cannot have access to all varieties of DITA, all edge cases, or even all the ways DITA-OT itself
-      is extended, the switch to default map-first preprocessing for other output formats will be smoother for everyone
-      if more people can test and provide feedback.</note>
+    <note id="map-first-preproc-note">The map-first preprocessing option is enabled by default in DITA-OT 3.0 for PDF
+      and HTML Help. These formats were chosen because they generate a compiled result file, so temporarily hashed file
+      names should all be invisible to the build. After further testing and feedback, the new option will most likely
+      become the default for other output formats in future versions. Because the DITA-OT development team cannot have
+      access to all varieties of DITA, all edge cases, or even all the ways DITA-OT itself is extended, the switch to
+      default map-first preprocessing for other output formats will be smoother for everyone if more people can test and
+      provide feedback.</note>
     <section>
       <title>How to use map-first preprocessing</title>
       <p>To use (or test) map-first preprocessing, call the <codeph>preprocess2</codeph> Ant target in your custom
@@ -56,8 +56,8 @@
                  html5.topic,
                  html5.map,
                  html5.css"/></codeblock>
-      <note>If you use this simple method for customized PDF, HTML Help, or JavaHelp builds, you will automatically be
-        using <codeph>preprocess2</codeph>.</note>
+      <note>If you use this simple method for customized PDF or HTML Help builds, you will automatically be using
+          <codeph>preprocess2</codeph>.</note>
       <p>Some custom transformation types already require you to repeat the default dependencies, in which case you
         should already call <codeph>preprocess</codeph> directly, as in the following:</p>
       <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;!-- More complex variant: add processing steps to default HTML5 -->

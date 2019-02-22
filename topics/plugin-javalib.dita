@@ -3,7 +3,10 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="plugin-javalib" xml:lang="en-US">
-  <title>Adding a Java library to the DITA-OT <parmname>classpath</parmname> parameter</title>
+  <title>Adding a Java library to the DITA-OT <parmname>classpath</parmname></title>
+  <titlealts>
+    <navtitle>Adding a Java library to the <parmname>classpath</parmname></navtitle>
+  </titlealts>
   <shortdesc>You can use the <codeph>dita.conductor.lib.import</codeph> extension point to add an additional Java
     library to the DITA-OT <parmname>classpath</parmname> parameter.</shortdesc>
   <taskbody>
@@ -28,7 +31,8 @@
   &lt;feature extension="dita.conductor.lib.import" file="<varname>file</varname>"/>
 &lt;/plugin></codeblock>where:
           <ul>
-            <li><varname>plugin-id</varname> is the plug-in identifier, for example, com.example.addjar.</li>
+            <li><varname>plugin-id</varname> is the plug-in identifier, for example,
+              <codeph>com.example.addjar</codeph>.</li>
             <li><varname>file</varname> is the name of the JAR file, for example,
               <filepath>myJavaLibrary.jar</filepath>. </li>
           </ul></info>

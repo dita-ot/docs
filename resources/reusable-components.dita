@@ -84,5 +84,13 @@
         </ul>
       </p>
     </section>
+
+    <section id="preprocess2">
+      <title>Limitations of map-first pre-processing</title>
+      <p id="no-internal-preprocess2-ext">The internal extension points that run before or after individual steps in the
+        original <codeph>preprocess</codeph> pipeline (<codeph>preprocess.*.pre/preprocess.*.post</codeph>) are not
+        available in the newer map-first preprocessing pipeline (<codeph>preprocess2</codeph>), which is used in the 
+        PDF and HTML Help transformations as of DITA-OT 3.0.</p>
+    </section>
   </conbody>
 </concept>

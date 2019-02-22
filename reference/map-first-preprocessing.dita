@@ -33,8 +33,8 @@
       temporarily hashed file names should all be invisible to the build. After further testing and feedback, the new
       option will most likely become the default for other output formats in future versions. Because the DITA-OT
       development team cannot have access to all varieties of DITA, all edge cases, or even all the ways DITA-OT itself
-      is extended, the switch to default map-first preprocessing for other output formats will be smoother for
-      everyone if more people can test and provide feedback.</note>
+      is extended, the switch to default map-first preprocessing for other output formats will be smoother for everyone
+      if more people can test and provide feedback.</note>
     <section>
       <title>How to use map-first preprocessing</title>
       <p>To use (or test) map-first preprocessing, call the <codeph>preprocess2</codeph> Ant target in your custom
@@ -100,6 +100,7 @@
       <title>Known limitations</title>
       <p>The <codeph>preprocess2</codeph> implementation details are subject to change; dependencies within
           <codeph>preprocess2</codeph> may be renamed or removed based on feedback.</p>
+      <p conkeyref="reusable-components/no-internal-preprocess2-ext"/>
     </section>
   </conbody>
 </concept>

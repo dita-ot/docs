@@ -24,9 +24,9 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--input=</kwd>
+            <kwd>--input</kwd><oper>=</oper>
             <var>file</var>
-            <kwd>--format=</kwd>
+            <kwd>--format</kwd><oper>=</oper>
             <var>name</var>
             <groupcomp importance="optional">
               <var>options</var>
@@ -36,7 +36,7 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--install</kwd>
+            <kwd>--install</kwd><oper>=</oper>
             <groupchoice importance="optional">
               <var>filename</var>
               <var>URL</var>
@@ -46,7 +46,7 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--uninstall</kwd>
+            <kwd>--uninstall</kwd><oper>=</oper>
             <var>id</var>
           </groupseq>
         </fragment>

@@ -28,8 +28,8 @@
       <div id="plugin.rnc">
         <p>DITA-OT includes a RELAX NG schema file that can be used to validate the <filepath>plugin.xml</filepath>
           files that define the capabilities of each plug-in.</p>
-        <p>To ensure the syntax of your custom plug-in is correct, include the following <xmlpi>xml-model</xmlpi>
-          processing instruction at the beginning of the <filepath>plugin.xml</filepath> file, immediately after the XML
+        <p>To ensure the syntax of your custom plug-in is correct, include an <xmlpi>xml-model</xmlpi> processing
+          instruction at the beginning of the <filepath>plugin.xml</filepath> file, immediately after the XML
           prolog:</p>
         <p><xmlpi>xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"</xmlpi></p>
         <p>If your authoring environment does not apply this schema automatically, point your editor to <filepath
@@ -68,6 +68,29 @@
         specify 7" × 10" paper size and custom fonts for body text and headers.</p>
       <p>The DITA-OT chapter in <cite>DITA for Practitioners: Volume 1</cite> was written for DITA-OT 1.5.4, which was
         the latest stable version at the time it was written.</p>
+    </section>
+
+    <section id="java">
+      <title>Supported Java versions</title>
+      <p id="java-clients">DITA-OT is designed to run on Java version <keyword keyref="tool.java.version"/> or later.
+        Compatible Java distributions are available from multiple sources:
+        <ul>
+          <li>You can download the Oracle JRE or JDK from
+            <xref keyref="download.oracle-jdk"/>.</li>
+          <li>OpenJDK is an open-source implementation of Java available from
+            <xref keyref="download.openjdk"/>.</li>
+          <li>Amazon Corretto is an OpenJDK distribution with no-cost long-term support from
+            <xref keyref="download.openjdk.corretto"/>.</li>
+        </ul>
+      </p>
+    </section>
+
+    <section id="preprocess2">
+      <title>Limitations of map-first pre-processing</title>
+      <p id="no-internal-preprocess2-ext">The internal extension points that run before or after individual steps in the
+        original <codeph>preprocess</codeph> pipeline (<codeph>preprocess.*.pre/preprocess.*.post</codeph>) are not
+        available in the newer map-first preprocessing pipeline (<codeph>preprocess2</codeph>), which is used in the 
+        PDF and HTML Help transformations as of DITA-OT 3.0.</p>
     </section>
   </conbody>
 </concept>

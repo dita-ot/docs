@@ -23,14 +23,14 @@
         and install new plug-ins by name and optional version.</p>
       <p>Search the registry for a plug-in and install it by providing the plug-in name to the <cmdname>dita</cmdname>
         command.</p>
-      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname> <varname>&lt;plugin-name&gt;</varname></codeblock>
+      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;</varname></codeblock>
       <p>If the registry includes multiple versions of the same plug-in, you can specify the version to install as
         follows:</p>
-      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname> <varname>&lt;plugin-name&gt;@&lt;plugin-version&gt;</varname></codeblock>
+      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;@&lt;plugin-version&gt;</varname></codeblock>
       <p>If the plug-in requires other plug-ins, those are also installed recursively.</p>
       <p>For example, to revert PDF output to the legacy PDF2 layout that was the default in DITA-OT before 2.5, install
         the <filepath>org.dita.pdf2.legacy</filepath> plug-in as follows:</p>
-      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname> org.dita.pdf2.legacy</codeblock>
+      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=org.dita.pdf2.legacy</codeblock>
       <p>If a matching plug-in cannot be found, an error message will appear. Possible reasons for failure include:</p>
       <ul>
         <li>A plug-in with the specified name was not found in the registry</li>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<reference id="migrating-to-3.3">
+
+  <title>Migrating to release 3.3</title>
+  <titlealts>
+    <navtitle>To 3.3</navtitle>
+  </titlealts>
+
+  <shortdesc>DITA-OT 3.3 includes <ph id="summary">support for rotated table cells in PDF output and HTML support for
+      hazard statements</ph>.</shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 3.3 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="3.3-release-notes"/>.</note>
+    </section>
+
+    <section>
+      <title>Base plug-in files moved to <filepath>plugins</filepath> directory</title>
+      <p>Various XSLT files and other resources have been moved from the root of the DITA-OT installation directory to
+        the base plug-in directory <filepath>plugins/org.dita.base</filepath>.</p>
+      <note type="attention">There is no longer an <filepath>xsl/</filepath> directory in the installation root.</note>
+      <p>If your plug-ins use the <codeph>plugin</codeph> URI scheme as recommended in the
+        <xref keyref="plugin-coding-conventions"/>, this change should not require any modifications to custom plug-in
+        code:</p>
+      <lq>
+        <p>In XSLT, use the <codeph>plugin</codeph> URI scheme in <xmlelement>xsl:import</xmlelement> and
+            <xmlelement>xsl:include</xmlelement> to reference files in other plug-ins.</p>
+        <p>Instead of:</p>
+        <p><codeblock>&lt;xsl:import href="../../org.dita.base/xsl/common/output-message.xsl"/></codeblock></p>
+        <p>use:</p>
+        <p><codeblock>&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock></p>
+        <p>As with the plug-in directory property in Ant, this allows plug-ins to resolve to the correct directory even
+          when a plug-in moves to a new location. The plug-in is referenced using the syntax
+              <codeph>plugin:<varname>plugin-id</varname>:<varname>path/within/plugin/file.xsl</varname></codeph>.</p>
+      </lq>
+    </section>
+
+    <section>
+      <title>Deprecated catalog file</title>
+      <p>
+        <ph id="catalog">The legacy <filepath>catalog-dita.xml</filepath> file in the root of the DITA-OT installation
+          directory has been deprecated and may be removed in an upcoming release. The contents of the catalog have been
+          moved to the base plug-in, and replaced with a <xmlelement>nextCatalog</xmlelement> entry for backwards
+          compatibility.</ph></p>
+      <fig>
+        <title>Legacy catalog content</title>
+        <codeblock>&lt;nextCatalog catalog="plugins/org.dita.base/catalog-dita.xml"/></codeblock>
+      </fig>
+    </section>
+
+    <section>
+      <title>Deprecated properties</title>
+      <p><ph id="templates">The <codeph>templates</codeph> key in configuration properties has been deprecated in favor
+          of the <xmlelement>template</xmlelement> element in <filepath>plugin.xml</filepath>.</ph></p>
+    </section>
+
+  </refbody>
+</reference>

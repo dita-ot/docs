@@ -16,9 +16,8 @@
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 3.1 that may require modifications to custom stylesheets
-        or plug-ins.
-        <!--For more information on changes in this release, see the
-        <xref keyref="3.1-release-notes"/>.--></note>
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="3.1-release-notes"/>.</note>
     </section>
 
     <section>
@@ -44,6 +43,24 @@
 &lt;/root></codeblock></p>
       <p>For more information on passing parameters to existing XSLT steps, see
         <xref keyref="plugin-extension-points-xslt-parameters"/>.</p>
+    </section>
+
+    <section>
+      <title>Deprecated properties</title>
+      <sectiondiv>
+        <!-- From plugin-javalib.dita -->
+        <p>As of DITA-OT 3.1, the Java class path is managed automatically, meaning you do not (and should not) use
+          explicit references to Java class paths in your build scripts. In particular, the old
+            <codeph>dost.class.path</codeph> property has been deprecated and should not be used. If you are migrating
+          older plug-ins that manage their class path directly, you should remove any explicit class path configuration.
+          If your plug-in was not already using the <codeph>dita.conductor.lib.import</codeph> extension point to
+          integrate its JAR dependencies you must add it.</p>
+        <p>The effective DITA-OT class path is the combination of the JAR files in the main <filepath>lib/</filepath>
+          directory and the plug-in-contributed JARs, which are listed in <filepath>config/env.sh</filepath>. The
+            <filepath>env.sh</filepath> file is updated automatically when plug-ins are installed or removed.</p>
+      </sectiondiv>
+      <p>The <codeph>xml.catalog.files</codeph> property has been deprecated and should not be used. Replace any such
+        references with the <codeph>xml.catalog.path</codeph> instead.</p>
     </section>
 
     <section id="pdf-line-numbers">

@@ -59,5 +59,20 @@
           of the <xmlelement>template</xmlelement> element in <filepath>plugin.xml</filepath>.</ph></p>
     </section>
 
+    <section>
+      <title>New attribute sets for HTML5 customization</title>
+      <p>A series of new attribute sets has been added to the default HTML5 transformation to facilitate customization
+        with additional ARIA roles, attributes, or CSS classes. Attribute sets are provided for:
+        <ul>
+          <li><codeph>article</codeph></li>
+          <li><codeph>banner</codeph></li>
+          <li><codeph>footer</codeph></li>
+          <li><codeph>main</codeph></li>
+          <li><codeph>navigation</codeph></li>
+          <li><codeph>toc</codeph></li>
+        </ul>If you have previously copied XSL templates (or template modes) to custom plug-ins only to add classes
+        required by web frameworks such as Bootstrap or Foundation (or your company CSS), you may be able to simplify
+        your customizations by using the new attribute sets instead of overriding the default templates.</p>
+    </section>
   </refbody>
 </reference>

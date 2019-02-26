@@ -172,6 +172,14 @@
             link text or titles is preserved for external URIs referenced by key within a map.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1439" format="html" scope="external">#1439</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pulls/3179" format="html" scope="external">#3179</xref></li>
+          <li id="1951">Relative paths in peer or non-DITA key references were not handled correctly in earlier
+            releases. The paths are now adjusted as needed to stay valid in any referencing location.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1951" format="html" scope="external">#1951</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2250" format="html" scope="external">#2250</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2581" format="html" scope="external">#2581</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2620" format="html" scope="external">#2620</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3234" format="html" scope="external">#3234</xref>
+          </li>
           <li id="2428">Several fixes have been added to improve support for the <xmlatt>chunk</xmlatt> attribute on
             topic groups (covering both <xmlelement>topicgroup</xmlelement> and any other
               <xmlelement>topicref</xmlelement> style container that does not reference a file).
@@ -265,6 +273,10 @@
               format="html" scope="external">DITA specification</xref>) is now ignored on elements that also use
               <xmlatt>conref</xmlatt>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3224" format="html" scope="external">#3224</xref>
+          </li>
+          <li id="3235">Revised figures and tables are now marked with change bars in booklists when DITAVAL files
+            define flagging for the corresponding revision values.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3235" format="html" scope="external">#3235</xref>
           </li>
         </ul>
       </section>

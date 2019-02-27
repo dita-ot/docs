@@ -23,10 +23,16 @@
       <p>If a character set is not defined, the system default character set will be used. If the character set is not
         recognized or supported, the <msgnum>DOTJ052E</msgnum> error is thrown and the system default character set is
         used as a fallback.</p>
-    </section>
-    <example>
       <codeblock>&lt;coderef href="unicode.txt" format="txt; charset=UTF-8"/></codeblock>
-    </example>
+      <p>As of DITA-OT 3.3, the default character set for code references can be changed by adding the
+          <parmname>default.coderef-charset</parmname> key to the
+        <xref keyref="configuration-properties-file">configuration.properties</xref> file:</p>
+      <codeblock>default.coderef-charset = ISO-8859-1</codeblock>
+      <p>The character set values are those supported by the Java
+        <xref format="html" href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html"
+          scope="external">Charset</xref> class.</p>
+    </section>
+
     <section>
       <title>Line range extraction</title>
       <p>Code references can be limited to extract only a specified line range by defining the
@@ -41,8 +47,8 @@
     </example>
     <section>
       <title>RFC 5147</title>
-      <p>DITA-OT also supports the line position and range syntax from <xref keyref="rfc5147"/>. The format for line
-        range is:</p>
+      <p>DITA-OT also supports the line position and range syntax from
+        <xref keyref="rfc5147"/>. The format for line range is:</p>
       <codeblock>uri ("#line=" start? "," end? )?</codeblock>
       <p>Start and end line numbers start from 0 and are inclusive and exclusive, respectively. If the start range is
         omitted, the range starts from the first line; if the end range is omitted, the range ends on the last line of

@@ -76,6 +76,12 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
+          <li id="2225">The <cmdname>dita</cmdname> command now recognizes a wider range of “truthy” property values,
+            including <codeph>true</codeph>, <codeph>yes</codeph>, <codeph>1</codeph>, and <codeph>on</codeph> and
+            handles inconsistently cased values more gracefully.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2225" format="html" scope="external">#2225</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3197" format="html" scope="external">#3197</xref>
+          </li>
           <li id="3157">Various XSLT files and other resources have been moved from the root of the DITA-OT installation
             directory to the base plug-in directory <filepath>plugins/org.dita.base</filepath>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3157" format="html" scope="external">#3157</xref> (If
@@ -150,11 +156,6 @@
             of the preprocessing pipeline to match the order in map-first preprocessing (<codeph>preprocess2</codeph>).
             <xref href="https://github.com/dita-ot/dita-ot/issues/3196" format="html" scope="external">#3196</xref>
           </li>
-          <li id="3197">The <cmdname>dita</cmdname> command now recognizes a wider range of “truthy” property values,
-            including <codeph>true</codeph>, <codeph>yes</codeph>, <codeph>1</codeph>, and <codeph>on</codeph> and
-            handles inconsistently cased values more gracefully.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3197" format="html" scope="external">#3197</xref>
-          </li>
           <li id="3204">The
             <xref keyref="gradle"/> build system has been updated to the latest patch release (5.2.1).
             <xref href="https://github.com/dita-ot/dita-ot/issues/3204" format="html" scope="external">#3204</xref>
@@ -166,8 +167,6 @@
           <li id="3230"><ph conkeyref="migrating-to-3.3/catalog"/>
             <xref href="https://github.com/dita-ot/dita-ot/issues/3230" format="html" scope="external">#3230</xref>
           </li>
-
-
         </ul>
       </section>
 

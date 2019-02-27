@@ -30,45 +30,62 @@
     <section>
       <title>New plug-in extension points </title>
       <p>New plug-in extension points have been added allow configuring DITA-OT behavior based on file extensions.</p>
-      <simpletable id="simpletable_xym_ryi_uc">
-        <sthead>
-          <stentry>Extension point</stentry>
-          <stentry>Description</stentry>
-          <stentry>Default values</stentry>
-        </sthead>
-        <strow>
-          <stentry><parmname>dita.topic.extension</parmname></stentry>
-          <stentry>DITA topic</stentry>
-          <stentry><filepath>.dita</filepath>, <filepath>.xml</filepath></stentry>
-        </strow>
-        <strow>
-          <stentry><parmname>dita.map.extensions</parmname></stentry>
-          <stentry>DITA map</stentry>
-          <stentry><filepath>.ditamap</filepath></stentry>
-        </strow>
-        <strow>
-          <stentry><parmname>dita.html.extensions</parmname></stentry>
-          <stentry>HTML file</stentry>
-          <stentry><filepath>.html</filepath>, <filepath>.htm</filepath></stentry>
-        </strow>
-        <strow>
-          <stentry><parmname>dita.resource.extensions</parmname></stentry>
-          <stentry>Resource file</stentry>
-          <stentry><filepath>.pdf</filepath>, <filepath>.swf</filepath></stentry>
-        </strow>
-      </simpletable>
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+        <tgroup cols="3">
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
+          <thead>
+            <row>
+              <entry>Extension point</entry>
+              <entry>Description</entry>
+              <entry>Default values</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><parmname>dita.topic.extension</parmname></entry>
+              <entry>DITA topic</entry>
+              <entry><filepath>.dita</filepath>, <filepath>.xml</filepath></entry>
+            </row>
+            <row>
+              <entry><parmname>dita.map.extensions</parmname></entry>
+              <entry>DITA map</entry>
+              <entry><filepath>.ditamap</filepath></entry>
+            </row>
+            <row>
+              <entry><parmname>dita.html.extensions</parmname></entry>
+              <entry>HTML file</entry>
+              <entry><filepath>.html</filepath>, <filepath>.htm</filepath></entry>
+            </row>
+            <row>
+              <entry><parmname>dita.resource.extensions</parmname></entry>
+              <entry>Resource file</entry>
+              <entry><filepath>.pdf</filepath>, <filepath>.swf</filepath></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
       <p>Both HTML and resource file extensions are used to determine if a file in source is copied to output.</p>
       <p>A new plug-in extension point has been added to declare transformation types as print types.</p>
-      <simpletable id="simpletable_xts_5wq_rt">
-        <sthead>
-          <stentry>Extension point</stentry>
-          <stentry>Description</stentry>
-        </sthead>
-        <strow>
-          <stentry><parmname>dita.transtype.print</parmname></stentry>
-          <stentry>Declare transformation type as a print type.</stentry>
-        </strow>
-      </simpletable>
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+        <tgroup cols="2">
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
+          <thead>
+            <row>
+              <entry>Extension point</entry>
+              <entry>Description</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><parmname>dita.transtype.print</parmname></entry>
+              <entry>Declare transformation type as a print type.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
       <p>The <codeph>print_transtypes</codeph> property in <filepath>integrator.properties</filepath> has been
         deprecated in favor of <parmname>dita.transtype.print</parmname>.</p>
     </section>
@@ -103,16 +120,24 @@
       <p>The <parmname>args.bookmap-order</parmname> property has been added to control how front and back matter are
         processed in bookmaps. The default is to reorder the frontmatter content as in previous releases.</p>
       <p>A new extension point has been added to add mappings to the PDF configuration catalog file.</p>
-      <simpletable id="simpletable_jkf_bxq_rt">
-        <sthead>
-          <stentry>Extension point</stentry>
-          <stentry>Description</stentry>
-        </sthead>
-        <strow>
-          <stentry><parmname>org.dita.pdf2.catalog.relative</parmname></stentry>
-          <stentry>Configuration catalog includes.</stentry>
-        </strow>
-      </simpletable>
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+        <tgroup cols="2">
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
+          <thead>
+            <row>
+              <entry>Extension point</entry>
+              <entry>Description</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><parmname>org.dita.pdf2.catalog.relative</parmname></entry>
+              <entry>Configuration catalog includes.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
       <p>Support for the following languages has been added:</p>
       <ul>
         <li>Finnish</li>

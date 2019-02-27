@@ -53,11 +53,11 @@
     <section id="24-legacy-plugin-removal">
       <title>Legacy plug-ins removed</title>
       <p>DITA-OT 2.4 no longer includes the following legacy transformation plug-ins in the default distribution:</p>
-      <table frame="none" rowsep="1" colsep="0">
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Legacy plug-ins</title>
         <tgroup cols="2">
-          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
-          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
           <thead>
             <row>
               <entry>Plug-in </entry>

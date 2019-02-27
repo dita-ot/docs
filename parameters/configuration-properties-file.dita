@@ -57,10 +57,10 @@
           <pd>
             <p>Specifies whether the <cmdname>dita</cmdname> command prints colored output on the command line console.
               When set to <option>true</option>, error messages in <cmdname>dita</cmdname> command output will appear in
-              red on terminals that support <xref href="https://en.wikipedia.org/wiki/ANSI_escape_code" format="html"
-                scope="external">ANSI escape codes</xref>, such as on Linux or macOS. Set to <option>false</option> to
-              disable the color. (Colored output is not supported on Windows consoles such as <cmdname>cmd.exe</cmdname>
-              or PowerShell).</p>
+              red on terminals that support
+              <xref href="https://en.wikipedia.org/wiki/ANSI_escape_code" format="html" scope="external">ANSI escape
+                codes</xref>, such as on Linux or macOS. Set to <option>false</option> to disable the color. (Colored
+              output is not supported on Windows consoles such as <cmdname>cmd.exe</cmdname> or PowerShell).</p>
           </pd>
         </plentry>
         <plentry id="plugindirs">
@@ -84,14 +84,22 @@
         <plentry id="registry">
           <pt><parmname>registry</parmname></pt>
           <pd>Defines the list (and order) of plug-in repositories that are searched for available plug-ins during the
-            installation process. In addition to the main plug-in registry at <xref keyref="site-plugin-registry"/>, you
-            can create a registry of your own to store the custom plug-ins for your company or organization. To add a
-            new entry, append the URL for your custom registry directory to the <codeph>registry</codeph> key value,
-            separating each entry with a space. For more information, see <xref keyref="plugins-registry"/>.</pd>
+            installation process. In addition to the main plug-in registry at
+            <xref keyref="site-plugin-registry"/>, you can create a registry of your own to store the custom plug-ins
+            for your company or organization. To add a new entry, append the URL for your custom registry directory to
+            the <codeph>registry</codeph> key value, separating each entry with a space. For more information, see
+            <xref keyref="plugins-registry"/>.</pd>
         </plentry>
         <plentry conref="ant-parameters-details.dita#pdf/org.dita.pdf2.i18n.enabled">
           <pt/>
           <pd/>
+        </plentry>
+        <plentry id="charset">
+          <pt><parmname>default.coderef-charset</parmname></pt>
+          <pd>As of DITA-OT 3.3, the default character set for code references can be changed by specifying one of the
+            character set values supported by the Java
+            <xref format="html" href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html"
+              scope="external">Charset</xref> class.</pd>
         </plentry>
       </parml>
     </section>

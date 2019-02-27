@@ -28,11 +28,11 @@ You can also specify a single output format. To build HTML output, enter the fol
 
     gradlew -PditaHome=..\dita-ot\src\main
 
-Output will be generated in the `out` folder of the `docs` repository. This folder is created automatically if it doesn't exist. _(Git ignores the contents of this folder so you don't inadvertently commit these transient files.)_
+Output will be generated in the `out` folder of the `docs` repository. This folder is created automatically if it doesn’t exist. _(Git ignores the contents of this folder so you don’t inadvertently commit these transient files.)_
 
 ## Building with development versions of DITA Open Toolkit
 
-The `develop` branch of the documentation repository may depend on features from recent development versions of the DITA Open Toolkit.
+The `develop` branch of the documentation repository may depend on features from recent development versions of DITA Open Toolkit.
 
 To use these features when building the documentation, you may either download the [latest development version][13] of the distribution package, or clone the [DITA-OT repository][14] and install the [bundled plug-ins][15] via `dita --install`.
 
@@ -50,4 +50,4 @@ To use these features when building the documentation, you may either download t
 [12]: https://www.dita-ot.org/DCO
 [13]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
 [14]: https://github.com/dita-ot/dita-ot
-[15]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L123-L128
+[15]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L163-L167

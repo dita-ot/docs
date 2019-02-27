@@ -47,10 +47,10 @@
       <p>If you have a custom PDF plug-in that explicitly depends on the previous default settings for the
         aforementioned styles, the <codeph>org.dita.pdf2.legacy</codeph> plug-in can be used to restore the pre–2.5
         styles.</p>
-      <table frame="none" rowsep="1" colsep="0">
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <tgroup cols="2">
-          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
-          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
           <thead>
             <row>
               <entry>Plug-in </entry>
@@ -67,7 +67,7 @@
         </tgroup>
       </table>
       <p>To install the legacy PDF plug-in, run the following command:</p>
-      <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname> <filepath>https://github.com/dita-ot/org.dita.pdf2.legacy/archive/2.5.zip</filepath></codeblock>
+      <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<filepath>https://github.com/dita-ot/org.dita.pdf2.legacy/archive/2.5.zip</filepath></codeblock>
       <note type="attention">Only install the legacy PDF plug-in if you have a custom PDF plug-in that requires the
         pre–2.5 styles. If your plug-in was designed for DITA-OT 2.4 and does not override these settings, there is no
         need to install the legacy PDF plug-in.</note>

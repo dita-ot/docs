@@ -97,7 +97,7 @@
       <p>Keydef processing has been removed from the XHTML rendering code. Keys are now resolved in one preprocessing
         step, whereas in earlier versions of DITA-OT, the XHTML code returned to the <filepath>keydef.xml</filepath>
         file to look up targets for phrase elements and pull in text when needed.</p>
-      <p>This change affects non-linking elements that can't take <xmlatt>href</xmlatt> attributes, such as
+      <p>This change affects non-linking elements that can’t take <xmlatt>href</xmlatt> attributes, such as
           <xmlelement>ph</xmlelement>, <xmlelement>keyword</xmlelement>, <xmlelement>cite</xmlelement>,
           <xmlelement>dt</xmlelement>, <xmlelement>term</xmlelement>, and <xmlelement>indexterm</xmlelement> (when
           <codeph>$INDEXSHOW</codeph> is active).</p>

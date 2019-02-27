@@ -23,14 +23,14 @@
         and install new plug-ins by name and optional version.</p>
       <p>Search the registry for a plug-in and install it by providing the plug-in name to the <cmdname>dita</cmdname>
         command.</p>
-      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname> <varname>&lt;plugin-name&gt;</varname></codeblock>
+      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;</varname></codeblock>
       <p>If the registry includes multiple versions of the same plug-in, you can specify the version to install as
         follows:</p>
-      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname> <varname>&lt;plugin-name&gt;@&lt;plugin-version&gt;</varname></codeblock>
+      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;@&lt;plugin-version&gt;</varname></codeblock>
       <p>If the plug-in requires other plug-ins, those are also installed recursively.</p>
       <p>For example, to revert PDF output to the legacy PDF2 layout that was the default in DITA-OT before 2.5, install
         the <filepath>org.dita.pdf2.legacy</filepath> plug-in as follows:</p>
-      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname> org.dita.pdf2.legacy</codeblock>
+      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=org.dita.pdf2.legacy</codeblock>
       <p>If a matching plug-in cannot be found, an error message will appear. Possible reasons for failure include:</p>
       <ul>
         <li>A plug-in with the specified name was not found in the registry</li>
@@ -40,18 +40,22 @@
       </ul>
     </section>
     <section id="publishing-to-registry"><title>Publishing plug-ins to the registry</title>
-      <p>The contents of the DITA-OT plug-in registry are stored in a Git repository at <xref keyref="registry-repo"/>. </p>
-      <p>New plug-ins or new versions can be added by sending a <xref keyref="pull-request"/> that includes a new
-        plug-in entry in JSON format. The entries for each plug-in are stored in a file named after the plug-in ID as
-          <codeph>&lt;plugin-name&gt;.json</codeph>.</p>
-      <p>The contents of the entry file is an array of plug-in version entries with a pre-defined structure.</p>
+      <p>The contents of the DITA Open Toolkit plug-in registry are stored in a Git repository at <xref
+          keyref="registry-repo"/>. New plug-ins or new versions can be added by sending a <xref keyref="pull-request"/>
+        that includes a single new plug-in entry in JavaScript Object Notation (JSON) format.</p>
+      <note>As for all other contributions to the project, pull requests to the registry must be signed off by passing
+        the <codeph>--signoff</codeph> option to the <cmdname>git commit</cmdname> command to certify that you have the
+        rights to submit this contribution. For more information on this process, see <xref keyref="signoff"/>.</note>
+      <p>The version entries for each plug-in are stored in a file that is named after the plug-in ID as
+          <codeph>&lt;plugin-name&gt;.json</codeph>. The file contains an array of entries with a pre-defined
+        structure.</p>
       <p/>
-      <table>
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Plug-in version entry structure</title>
         <tgroup cols="3">
-          <colspec colname="col1"/>
-          <colspec colname="col2"/>
-          <colspec colname="col3"/>
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
+          <colspec colwidth="3*"/>
           <thead>
             <row>
               <entry>Key</entry>
@@ -116,12 +120,12 @@
             href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6"
             format="html" scope="external">Get-FileHash</xref> <varname>&lt;plugin-file&gt;</varname> |
           Format-List</codeph>.</note>
-      <table>
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Structure for dependency entries</title>
         <tgroup cols="3">
-          <colspec colname="col1"/>
-          <colspec colname="col2"/>
-          <colspec colname="col3"/>
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
+          <colspec colwidth="3*"/>
           <thead>
             <row>
               <entry>Key</entry>

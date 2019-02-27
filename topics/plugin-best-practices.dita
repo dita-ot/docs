@@ -29,8 +29,8 @@
       <li>
         <p>In cases that require substantial customizations, you may prefer to organize the files in a folder structure
           that mimics the hierarchy of the default plug-in you are customizing. This facilitates comparisons with the
-          default settings in the base plug-in and makes it easier to migrate your changes to new toolkit
-        versions.</p></li>
+          default settings in the base plug-in and makes it easier to migrate your changes to new toolkit versions. See
+          <xref keyref="pdf-plugin-structure"/> for information on the files in the base PDF plug-in.</p></li>
       <li>
         <p>Upgrade your customization plug-in to new versions of DITA-OT regularly. Do not wait through several major
           releases before upgrading.</p></li>

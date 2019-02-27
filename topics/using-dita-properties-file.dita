@@ -21,7 +21,7 @@
         <li>Lines beginning with the <codeph>#</codeph> character are comments.</li>
         <li>Properties specified as arguments of the <cmdname>dita</cmdname> command override those set in
             <filepath>.properties</filepath> files. <note type="restriction">For this reason,
-              <parmname>args.input</parmname> and <parmname>transtype</parmname> can't be set in the
+              <parmname>args.input</parmname> and <parmname>transtype</parmname> can’t be set in the
               <filepath>.properties</filepath> file.</note></li>
         <li>If you specify the same property more than once, the last instance is used.</li>
         <li>Properties not used by the selected transformation type are ignored.</li>

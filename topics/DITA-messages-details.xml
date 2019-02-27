@@ -171,7 +171,7 @@
           <ul>
             <li>Errors earlier in the transform prevented this step of the transform from running; correct any errors
               and try the build again.</li>
-            <li>An Ant build or plug-in is directly calling the toolkit's topic merge module, and is doing so
+            <li>An Ant build or plug-in is directly calling the toolkit’s topic merge module, and is doing so
               improperly; in this case the Ant build or plug-in needs to be fixed.</li>
             <li>In the past, problems have been encountered when calling this module with an absolute path; this should
               no longer be an issue, but may be fixed in older releases by updating the Ant build or plug-in.</li>
@@ -179,7 +179,7 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ026E-extra" conaction="pushreplace">This message should only appear
-          if an Ant build or plug-in is directly calling the toolkit's topic merge module, or if earlier errors resulted
+          if an Ant build or plug-in is directly calling the toolkit’s topic merge module, or if earlier errors resulted
           in problems with some of the content. If the topic merge module is called correctly, then this indicates a
           program error that should be reported to the DITA-OT development team via the <xref keyref="dita-ot-issues"/>.
         </stentry>
@@ -373,7 +373,7 @@
         <stentry conref="DITA-messages.xml#msgs/DOTX001W-extra" conaction="pushreplace">This build uses generated text,
           such as the phrase "Related information" (which is generated above many link groups). The toolkit was unable
           to locate the string <varname>%1</varname> for your specified language, so the string will appear in the
-          default language. This generally indicates that the toolkit's strings need to be updated to support your
+          default language. This generally indicates that the toolkit’s strings need to be updated to support your
           language, or that your language setting is incorrect.</stentry>
       </strow>
       <strow>
@@ -388,7 +388,7 @@
           converted to an Eclipse TOC).</stentry>
       </strow>
       <strow>
-        <stentry conref="DITA-messages.xml#msgs/DOTX004I-extra" conaction="pushreplace">Eclipse builds use DITA's
+        <stentry conref="DITA-messages.xml#msgs/DOTX004I-extra" conaction="pushreplace">Eclipse builds use DITA’s
             <xmlelement>navref</xmlelement> element to pull in other Eclipse TOC files. The build found a
             <xmlelement>navref</xmlelement> element that does not reference any other file; the element will be
           ignored.</stentry>
@@ -545,12 +545,12 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX031E-extra" conaction="pushreplace">The build attempted to access
           the specified file in order to retrive a title or short description, but the file could not be found. If the
-          file exists, it is possible that a DITAVAL file was used to remove the file's contents from the build. Be
+          file exists, it is possible that a DITAVAL file was used to remove the file’s contents from the build. Be
           aware that the path information above may not match the link in your topic.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX032E-extra" conaction="pushreplace">When a link or cross reference
-          does not have content, the build will attempt to pull the target's title for use as link text. If the target
+          does not have content, the build will attempt to pull the target’s title for use as link text. If the target
           is unavailable, be sure to set the scope attribute to an appropriate value. If the target does not have a
           title (such as when linking to a paragraph), be sure to provide link text inside the cross
           reference.</stentry>
@@ -683,7 +683,7 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX056W-extra" conaction="pushreplace">The build attempted to access
           the specified file in order to retrive a title or short description, but the file could not be found. If the
-          file exists, it is possible that a DITAVAL file was used to remove the file's contents from the build. Another
+          file exists, it is possible that a DITAVAL file was used to remove the file’s contents from the build. Another
           possibility is that the file is located outside of the scope of the main input directory, and was not
           available because the <xref keyref="parameters-base">onlytopic.in.map</xref> parameter was specified. Be aware
           that the path information above may not match the link in your topic.</stentry>
@@ -695,13 +695,13 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX058W-extra" conaction="pushreplace">Processing for terms, acronyms,
-          or abbreviated forms will associate the key from the element's keyref attribute with a glossentry (glossary
+          or abbreviated forms will associate the key from the element’s keyref attribute with a glossentry (glossary
           entry) topic. This message will appear if the key was defined, but was not associated with a glossentry topic.
           The process will try to use the best available fallback (usually the title of the referenced topic).</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX060W-extra" conaction="pushreplace">Processing for abbreviated form
-          elements will associate the key from the element's keyref attribute with a glossentry (glossary entry) topic.
+          elements will associate the key from the element’s keyref attribute with a glossentry (glossary entry) topic.
           This message will appear if the key was defined, but was not associated with a glossentry topic. This element
           is only supported with keys that are associated with glossary topics; the element will not generate any
           output. Please correct the reference, or use a different element to reference your topic.</stentry>
@@ -711,7 +711,7 @@
           Specification, references from maps should either go to DITA Maps, DITA Topics, or any non-DITA resource.
           References below the topic level should only be made from cross references (using
             <xmlelement>xref</xmlelement> or similar) inside of a topic. For details, see the href attribute description
-          in the OASIS standard's definition of the <xref
+          in the OASIS standard’s definition of the <xref
             href="http://docs.oasis-open.org/dita/v1.2/os/spec/langref/topicref.html" format="html" scope="external"
             >topicref element</xref>.</stentry>
       </strow>
@@ -741,7 +741,7 @@
         <stentry conref="DITA-messages.xml#msgs/DOTX067E-extra" conaction="pushreplace">This PDF build uses generated
           text, such as the phrase "Related information" (which is generated above many link groups). The toolkit was
           unable to locate the string <varname>%1</varname> for your specified language, so the string will appear in
-          the default language. This generally indicates that the toolkit's strings need to be updated to support your
+          the default language. This generally indicates that the toolkit’s strings need to be updated to support your
           language, or that your language setting is incorrect.</stentry>
       </strow>
     </simpletable>

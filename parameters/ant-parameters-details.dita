@@ -77,7 +77,7 @@
             <pd conaction="mark" conref="parameters-base.dita#base/args.input.desc"/>
             <pd conaction="pushafter">Typically this is a DITA map, however it also can be a DITA topic if you want to
               transform a single DITA file. The path can be absolute, relative to <parmname>args.input.dir</parmname>,
-              or relative to the directory where your project's Ant build script resides if
+              or relative to the directory where your project’s Ant build script resides if
                 <parmname>args.input.dir</parmname> is not defined. </pd>
           </plentry>
           <plentry id="args.input.dir">

@@ -24,9 +24,9 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--input=</kwd>
+            <kwd>--input</kwd><oper>=</oper>
             <var>file</var>
-            <kwd>--format=</kwd>
+            <kwd>--format</kwd><oper>=</oper>
             <var>name</var>
             <groupcomp importance="optional">
               <var>options</var>
@@ -36,7 +36,7 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--install</kwd>
+            <kwd>--install</kwd><oper>=</oper>
             <groupchoice importance="optional">
               <var>filename</var>
               <var>URL</var>
@@ -46,7 +46,7 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--uninstall</kwd>
+            <kwd>--uninstall</kwd><oper>=</oper>
             <var>id</var>
           </groupseq>
         </fragment>
@@ -100,9 +100,9 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--install</parmname> <varname>filename</varname></pt>
+            <parmname>--install</parmname>=<varname>filename</varname></pt>
           <pt>
-            <parmname>--install</parmname> <varname>URL</varname></pt>
+            <parmname>--install</parmname>=<varname>URL</varname></pt>
           <pd>Install a single plug-in from a local ZIP file or from a URL.</pd>
         </plentry>
         <plentry>
@@ -113,7 +113,7 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--uninstall</parmname> <varname>id</varname>
+            <parmname>--uninstall</parmname>=<varname>id</varname>
           </pt>
           <pd>
             <p>Remove the plug-in with the specified ID.</p>
@@ -184,7 +184,7 @@
           </pt>
           <pd>Force-install an existing plug-in.</pd>
           <pd>Passed as an additional option to the installation command:
-              <cmdname>dita</cmdname> <parmname>--install</parmname> <parmname>--force</parmname> <varname>plug-in-zip</varname></pd>
+              <cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>plug-in-zip</varname> <parmname>--force</parmname></pd>
         </plentry>
         <plentry>
           <pt>
@@ -202,7 +202,8 @@
           <pt>
             <parmname>-v</parmname>
           </pt>
-          <pd>Verbose logging.</pd>
+          <pd>Verbose logging prints additional information to the console, including directory settings, effective
+            values for Ant properties, input/output files, and informational messages to assist in troubleshooting.</pd>
         </plentry>
         <plentry>
           <pt>
@@ -210,7 +211,11 @@
           <pt>
             <parmname>-d</parmname>
           </pt>
-          <pd>Debug logging.</pd>
+          <pd>Debug logging prints considerably more additional information. The debug log includes all information from
+            the verbose log, plus details on Java classes, additional Ant properties and overrides, preprocessing
+            filters, parameters, and stages, and the complete build sequence. Debug logging requires additional
+            resources and can slow down the build process, so it should only be enabled when further details are
+            required to diagnose problems.</pd>
         </plentry>
         <plentry>
           <pt>

@@ -2,21 +2,21 @@
 
 We welcome your contributions to the DITA-OT documentation.
 
-Thanks for your interest — here's how you can help us _“write the docs.”_
+Thanks for your interest — here’s how you can help us _“write the docs.”_
 
 ## Creating an issue
 
 If you find a bug or would like to suggest a new topic for the DITA-OT docs, create an issue:
 
-1. Search [dita-ot/docs/issues][1] to ensure your issue hasn't already been reported.
-2. [Create an issue][2]. If it's a bug, provide steps to recreate the issue.
+1. Search [dita-ot/docs/issues][1] to ensure your issue hasn’t already been reported.
+2. [Create an issue][2]. If it’s a bug, provide steps to recreate the issue.
 3. [Send a pull request][3]. If you know how to fix the issue yourself, submit a pull request with the proposed changes.
 
 _Read on for details…_
 
 ## Submitting pull requests
 
-Good pull requests—corrections, improvements, new topics—are a great help. They should remain focused in scope and shouldn't contain unrelated commits.
+Good pull requests—corrections, improvements, new topics—are a great help. They should remain focused in scope and shouldn’t contain unrelated commits.
 
 Follow this process to ensure your contribution meets our expectations and increase the chances that your changes will be included:
 
@@ -40,7 +40,7 @@ Follow this process to ensure your contribution meets our expectations and incre
     git pull upstream develop
     ```
 
-3. Create a new feature branch _(off the upstream project's `develop` branch)_ for your new feature, change, or fix:
+3. Create a new feature branch _(off the upstream project’s `develop` branch)_ for your new feature, change, or fix:
 
     ```bash
     git checkout -b your-new-branch
@@ -55,7 +55,7 @@ Follow this process to ensure your contribution meets our expectations and incre
     * [Commit often][9]
     * [Write good commit messages][10]
 
-    Use Git's [interactive rebase][11] feature to tidy up your commits, if necessary, before making them public.
+    Use Git’s [interactive rebase][11] feature to tidy up your commits, if necessary, before making them public.
 
 5. Indicate that you agree to the terms of the Apache License Version 2.0 by "[signing off][12]" your contribution with `git commit -s`.
 
@@ -79,7 +79,7 @@ Follow this process to ensure your contribution meets our expectations and incre
 
 8. [Open a pull request][3] with a clear title and description.
 
-    **Pro tip:** If there's no corresponding issue for the changes you're proposing, there's no need to create one first.
+    **Pro tip:** If there’s no corresponding issue for the changes you're proposing, there’s no need to create one first.
     You can describe the problem and provide the solution all in one step.
     _(Under the hood, pull requests are just a special type of issue.)_
 

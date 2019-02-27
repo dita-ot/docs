@@ -119,7 +119,7 @@
     </xsl:param>
     <xsl:choose>
       <xsl:when test="@name = 'args.input' or @name = 'transtype' or @deprecated = 'true'">
-        <!-- don't output these as they shouldn't be used in properties file -->
+        <!-- don’t output these as they shouldn’t be used in properties file -->
       </xsl:when>
       <xsl:otherwise>
         <xsl:variable name="exampleval">

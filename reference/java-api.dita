@@ -15,7 +15,7 @@
     </metadata>
   </prolog>
   <conbody>
-    <p>When using the API, programmers don't need to know or care that DITA-OT uses Ant, they can just use Java. </p>
+    <p>When using the API, programmers don’t need to know or care that DITA-OT uses Ant, they can just use Java. </p>
     <note>When running DITA-OT via the <cmdname>dita</cmdname> command, an <codeph>ant</codeph> shell script handles the
       classpath setup, but when using the API the classpath should be set up as part of the normal classpath
       configuration for the Java application.</note>

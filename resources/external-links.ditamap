@@ -135,6 +135,33 @@
         <linktext>DITA-OT 3.0 Release Notes</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="3.1-release-notes"
+      href="https://www.dita-ot.org/3.1/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 3.1 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="3.2-release-notes"
+      href="https://www.dita-ot.org/3.2/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 3.2 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="3.3-release-notes"
+      href="https://www.dita-ot.org/3.3/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 3.3 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
   <topicset
@@ -144,9 +171,13 @@
     </topicmeta>
     <keydef
       keys="download.ant"
-      href="http://ant.apache.org"
+      href="https://ant.apache.org"
       scope="external"
-      format="html"/>
+      format="html">
+      <topicmeta>
+        <linktext>ant.apache.org</linktext>
+      </topicmeta>
+    </keydef>
     <keydef
       keys="download.dita-ot"
       href="https://www.dita-ot.org/download"
@@ -158,9 +189,13 @@
     </keydef>
     <keydef
       keys="download.fop"
-      href="http://xmlgraphics.apache.org/fop/download.html"
+      href="https://xmlgraphics.apache.org/fop/download.html"
       scope="external"
-      format="html"/>
+      format="html">
+      <topicmeta>
+        <linktext>xmlgraphics.apache.org/fop</linktext>
+      </topicmeta>
+    </keydef>
     <keydef
       keys="download.html-help-workshop"
       href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms669985%28v=vs.85%29.aspx"
@@ -174,7 +209,29 @@
       keys="download.icu4j"
       href="http://site.icu-project.org/download"
       scope="external"
-      format="html"/>
+      format="html">
+      <topicmeta>
+        <linktext>icu-project.org/download</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="download.openjdk"
+      href="https://adoptopenjdk.net"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>adoptopenjdk.net</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="download.openjdk.corretto"
+      href="https://aws.amazon.com/corretto/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>aws.amazon.com/corretto</linktext>
+      </topicmeta>
+    </keydef>
     <keydef
       keys="download.oracle-jdk"
       href="http://www.oracle.com/technetwork/java/javase/downloads"
@@ -188,7 +245,11 @@
       keys="download.saxon"
       href="http://saxon.sourceforge.net"
       scope="external"
-      format="html"/>
+      format="html">
+      <topicmeta>
+        <linktext>saxon.sourceforge.net</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
   <topicset
@@ -623,12 +684,30 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="saxon-java-extensions-impl"
+      href="http://www.saxonica.com/html/documentation9.8/extensibility/integratedfunctions"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Integrated extension functions</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="site-plugin-registry"
       href="https://www.dita-ot.org/plugins"
       scope="external"
       format="html">
       <topicmeta>
         <linktext>dita-ot.org/plugins</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="signoff"
+      href="https://www.dita-ot.org/DCO"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>signing your work</linktext>
       </topicmeta>
     </keydef>
   </topicset>

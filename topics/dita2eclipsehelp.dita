@@ -8,33 +8,33 @@
     that are needed for Eclipse help.</shortdesc>
   <conbody>
     <p>In addition to the XHTML output and CSS files, this transformation returns the following files, where
-        <varname>mapname</varname> is the name of the master DITA map. <simpletable frame="all" relcolwidth="2.0* 3.0*">
-        <sthead>
-          <stentry>File name</stentry>
-          <stentry>Description</stentry>
-        </sthead>
-        <strow>
-          <stentry><filepath>plugin.xml</filepath></stentry>
-          <stentry>Control file for the Eclipse plug-in</stentry>
-        </strow>
-        <strow>
-          <stentry><filepath><varname>mapname</varname>.xml</filepath></stentry>
-          <stentry>Table of contents</stentry>
-        </strow>
-        <strow>
-          <stentry><filepath>index.xml</filepath></stentry>
-          <stentry>Index file</stentry>
-        </strow>
-        <strow>
-          <stentry><filepath>plugin.properties</filepath></stentry>
-          <stentry/>
-        </strow>
-        <strow>
-          <stentry><filepath>META-INF/MANIFEST.MF</filepath></stentry>
-          <stentry/>
-        </strow>
-      </simpletable>
-    </p>
+        <varname>mapname</varname> is the name of the master DITA map.</p>
+    <simpletable outputclass="table-hover" frame="all" relcolwidth="2* 3*">
+      <sthead>
+        <stentry>File name</stentry>
+        <stentry>Description</stentry>
+      </sthead>
+      <strow>
+        <stentry><filepath>plugin.xml</filepath></stentry>
+        <stentry>Control file for the Eclipse plug-in</stentry>
+      </strow>
+      <strow>
+        <stentry><filepath><varname>mapname</varname>.xml</filepath></stentry>
+        <stentry>Table of contents</stentry>
+      </strow>
+      <strow>
+        <stentry><filepath>index.xml</filepath></stentry>
+        <stentry>Index file</stentry>
+      </strow>
+      <strow>
+        <stentry><filepath>plugin.properties</filepath></stentry>
+        <stentry/>
+      </strow>
+      <strow>
+        <stentry><filepath>META-INF/MANIFEST.MF</filepath></stentry>
+        <stentry/>
+      </strow>
+    </simpletable>
     <p>To run the Eclipse help transformation, set the <parmname>transtype</parmname> parameter to
         <option>eclipsehelp</option>, or pass the <parmname>--format</parmname>=<option>eclipsehelp</option> option to
       the <cmdname>dita</cmdname> command line.</p>

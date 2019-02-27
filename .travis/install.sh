@@ -19,7 +19,7 @@ unzip dita-ot-develop.zip
 
 #if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
   # Install site plugin
-  curl -L https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -o org.dita-ot.html.zip
+  curl -L https://github.com/dita-ot/org.dita-ot.html/archive/develop.zip -o org.dita-ot.html.zip
   $DITA_HOME/bin/dita -install org.dita-ot.html.zip -v
 
   # Clone site

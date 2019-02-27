@@ -73,7 +73,6 @@
   &lt;target name="validateWithJava">
     &lt;java classname="com.example.sampleValidation">
       &lt;!-- The class was added to the DITA-OT classpath -->
-      &lt;classpath refid="dost.class.path"/>
     &lt;/java>
   &lt;/target>
 &lt;/project></codeblock>

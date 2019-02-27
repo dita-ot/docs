@@ -126,7 +126,7 @@
           <li id="3188">The DITA-OT fork of the
             <xref href="https://github.com/relaxng/jing-trang" format="html" scope="external">jing-trang</xref> project
             used to provide RELAX NG schema validation in DITA-OT 3.2 has been replaced with the upstream code after the
-            patches provided by the DITA-OT team were included.
+            patches provided by George Bina were included.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3188" format="html" scope="external">#3188</xref>
           </li>
           <li id="3191">Several bundled dependencies have been upgraded to the latest versions.
@@ -231,7 +231,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3239" format="html" scope="external">#3239</xref>
           </li>
           <li id="3180">In earlier versions, setting an <xmlatt>id</xmlatt> attribute on a <xmlelement>dt</xmlelement>
-            created duplicate definition terms in the XSL-FO file.
+            created duplicate IDs in the XSL-FO file, which caused warnings when rendering FO to PDF.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3180" format="html" scope="external">#3180</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3185" format="html" scope="external">#3185</xref>
           </li>

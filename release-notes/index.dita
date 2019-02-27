@@ -56,7 +56,8 @@
             ANSI Z535 standards, with an SVG icon and
             <xref keyref="sass-lang"/> variables for the corresponding ISO and ANSI color definitions. The ANSI colors
             are used by default to match the PDF styling previously added in DITA-OT 3.2.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3207" format="html" scope="external">#3207</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3207" format="html" scope="external">#3207</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3231" format="html" scope="external">#3231</xref>
           </li>
         </ul>
       </section>
@@ -214,6 +215,13 @@
             "txt" did not copy those referenced files to the output directory. When appropriate, such as when generating
             HTML output, these files are now copied to the output directory as they were in earlier releases.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2899" format="html" scope="external">#2899</xref>
+          </li>
+          <li id="3162">On Linux and other systems where the DITA-OT installation directory and temporary directory are
+            not on the same volume, plug-in installation would fail when DITA-OT tried to move a non-empty directory.
+            The installation process has been refactored to ensure that plug-ins are correctly installed in these cases.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3162" format="html" scope="external">#3162</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3238" format="html" scope="external">#3238</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3239" format="html" scope="external">#3239</xref>
           </li>
           <li id="3180">In earlier versions, setting an <xmlatt>id</xmlatt> attribute on a <xmlelement>dt</xmlelement>
             created duplicate definition terms in the XSL-FO file.

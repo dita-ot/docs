@@ -9,8 +9,8 @@
     <navtitle>To 3.3</navtitle>
   </titlealts>
 
-  <shortdesc>DITA-OT 3.3 includes <ph id="summary">support for custom integration processing, rotated table cells in PDF
-      output, and hazard statements in HTML output</ph>.</shortdesc>
+  <shortdesc>DITA-OT 3.3 includes <ph id="summary">new attribute sets for HTML5 customization, support for custom
+      integration processing, rotated table cells in PDF output, and hazard statements in HTML output</ph>.</shortdesc>
 
   <refbody>
     <section>
@@ -43,10 +43,12 @@
     <section>
       <title>Deprecated catalog file</title>
       <p>
-        <ph id="catalog">The legacy <filepath>catalog-dita.xml</filepath> file in the root of the DITA-OT installation
-          directory has been deprecated and may be removed in an upcoming release. The contents of the catalog have been
-          moved to the base plug-in, and replaced with a <xmlelement>nextCatalog</xmlelement> entry for backwards
-          compatibility.</ph></p>
+        <ph id="catalog">The contents of the <filepath>catalog-dita.xml</filepath> file in the root of the DITA-OT
+          installation directory have been moved to the base plug-in, and replaced with a
+            <xmlelement>nextCatalog</xmlelement> entry for backwards compatibility. Any references to the catalog should
+          use the <codeph>plugin</codeph> URI scheme to refer to the file as
+            <codeph>${dita.plugin.org.dita.base.dir}/catalog-dita.xml</codeph>, as the legacy placeholder file in the
+          root of the DITA-OT installation directory may be removed in an upcoming release.</ph></p>
       <fig>
         <title>Legacy catalog content</title>
         <codeblock>&lt;nextCatalog catalog="plugins/org.dita.base/catalog-dita.xml"/></codeblock>
@@ -61,8 +63,9 @@
 
     <section>
       <title>New attribute sets for HTML5 customization</title>
-      <p>A series of new attribute sets has been added to the default HTML5 transformation to facilitate customization
-        with additional ARIA roles, attributes, or CSS classes. Attribute sets are provided for:
+      <p id="html5-att-sets">A series of new attribute sets has been added to the default HTML5 transformation to
+        facilitate customization with additional ARIA roles, attributes, or CSS classes. Attribute sets are provided
+        for:
         <ul>
           <li><codeph>article</codeph></li>
           <li><codeph>banner</codeph></li>

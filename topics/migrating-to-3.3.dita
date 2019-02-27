@@ -41,16 +41,17 @@
     </section>
 
     <section>
-      <title>Deprecated catalog file</title>
+      <title>Relocated catalog</title>
       <p>
-        <ph id="catalog">The contents of the <filepath>catalog-dita.xml</filepath> file in the root of the DITA-OT
-          installation directory have been moved to the base plug-in, and replaced with a
-            <xmlelement>nextCatalog</xmlelement> entry for backwards compatibility. Any references to the catalog should
-          use the <codeph>plugin</codeph> URI scheme to refer to the file as
-            <codeph>${dita.plugin.org.dita.base.dir}/catalog-dita.xml</codeph>, as the legacy placeholder file in the
-          root of the DITA-OT installation directory may be removed in an upcoming release.</ph></p>
+        <ph id="catalog">Along with the other base plug-in files, the <filepath>catalog-dita.xml</filepath> file has
+          been moved from the root of the DITA-OT installation directory to <filepath>plugins/org.dita.base</filepath>.
+          External systems that rely on this catalog should be updated with the new location. Ant scripts and DITA-OT
+          plug-ins should use the plug-in directory property to refer to the file as
+            <codeph>${dita.plugin.org.dita.base.dir}/catalog-dita.xml</codeph>. A placeholder with a
+            <xmlelement>nextCatalog</xmlelement> entry is provided in the original location for backwards compatibility,
+          but this file may be removed in an upcoming release.</ph></p>
       <fig>
-        <title>Legacy catalog content</title>
+        <title>Legacy catalog placeholder content</title>
         <codeblock>&lt;nextCatalog catalog="plugins/org.dita.base/catalog-dita.xml"/></codeblock>
       </fig>
     </section>

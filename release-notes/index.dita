@@ -293,6 +293,13 @@
             define flagging for the corresponding revision values.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3235" format="html" scope="external">#3235</xref>
           </li>
+          <li id="3245">The command line syntax for the <cmdname>dita</cmdname>
+            <parmname>--install</parmname> option has been updated to support the “=” equals sign.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3245" format="html" scope="external">#3245</xref>
+            <p>Both of the following formats are now supported:
+              <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>plug-in-zip</varname>
+<cmdname>dita</cmdname> <parmname>--install</parmname> <varname>plug-in-zip</varname></codeblock></p>
+          </li>
         </ul>
       </section>
 

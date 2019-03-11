@@ -69,6 +69,44 @@
           conref="../resources/conref-task.dita#ID/samples-dir"/><filepath>/ant_sample/dita-cmd.xml</filepath> file:</p>
       <p>
         <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/ant_sample/dita-cmd.xml#line=11,21"/></codeblock></p>
+      <draft-comment author="EKimber">In general you can't call a shell script directly with exec,
+        or at least I couldn't get it to work. Likewise, for batch files you must use the cmd
+          processor:<lq>Note that <systemoutput>.bat</systemoutput> files cannot in general by
+          executed directly. One normally needs to execute the command shell executable
+            <userinput>cmd</userinput>using the <userinput>/c</userinput> switch.</lq><p>From the
+          Ant docs for exec.</p><p>I also prefer to put each argument in its own
+          like:<codeblock>&lt;target name="run-dita-ot-windows" if="isWindows" depends="make-output-dir, make-pdf-filename">
+    &lt;exec dir="${basedir}" executable="cmd" failonerror="true">
+      &lt;arg line='/c "${dita-ot.dir}/bin/dita.bat"'/>
+      &lt;arg line='-i "${pub-name}.ditamap"'/>
+      &lt;arg line="-f ${transtype}"/>
+      &lt;arg line='-o "${basedir}/output/pdf/${pub-name}"'/>
+      &lt;arg line='-t "${basedir}/temp/pdf/${pub-name}"'/>
+      &lt;arg line="-v"/>
+      &lt;arg line='--filter="${basedir}/_DITAVALS/${engine-family-ditaval}"'/>
+      &lt;arg line='-DoutputFile.base="${pdf.filename.base}"'/>
+      &lt;arg line="-Dpdf.formatter=${pdf.formatter}"/>
+      &lt;arg line='-Daxf.path="${axf.path}"'/>
+
+
+&lt;/target>    &lt;/exec>
+       
+&lt;condition property="isMac" value="true">
+    &lt;os family="mac" />
+  &lt;/condition>
+  
+  &lt;condition property="isWindows" value="true">
+    &lt;os family="windows" />
+  &lt;/condition>
+  
+  &lt;condition property="isUnix" value="trunix"/>e">
+    &lt;os fa/condition>target>
+
+
+
+
+
+</codeblock></p></draft-comment>
       <p>You can use this macro in your Ant build to call the <cmdname>dita</cmdname> command and pass the
           <parmname>input</parmname>, <parmname>format</parmname> and <parmname>propertyfile</parmname> parameters as
         follows:

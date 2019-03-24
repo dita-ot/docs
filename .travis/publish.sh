@@ -9,9 +9,7 @@ export SITE_DIR=$PWD/dita-ot.github.io
 #if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
   # Remove target output directory before generating new output
   for i in `find "$SITE_DIR/dev" -type f`; do
-    if grep -q 'redirect_to:' "$i"; then
-      echo "Skip redirect file $i"
-    elif grep -q 'Generated from DITA source' "$i"; then
+    if grep -q 'Generated from DITA source' "$i"; then
       echo "Skip generated file $i"
     elif grep -q 'generated: true' "$i"; then
       echo "Skip generated file $i"

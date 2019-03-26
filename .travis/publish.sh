@@ -4,7 +4,7 @@
 
 export DITA_HOME=$PWD/dita-ot-$DITA_OT_VERSION
 export DITA_OT_DEV=$(find $PWD -name 'dita-ot-*+*' -type d | head -1)
-export SITE_DIR=$PWD/dita-ot.github.io
+export SITE_DIR=$PWD/website
 
 #if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
   # Remove target output directory before generating new output

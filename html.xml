@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../resources/project.rnc" type="application/relax-ng-compact-syntax"?>
+<project>
+  <deliverable name="HTML5">
+    <context>
+      <inputs>
+        <input href="userguide.ditamap"/>
+      </inputs>
+      <profile>
+        <ditaval href="resources/html.ditaval"/>
+      </profile>
+    </context>
+    <output href="."/>
+    <publication transtype="html5">
+      <param name="args.copycss" value="yes"/>
+      <param name="args.css" value="dita-ot-doc.css"/>
+      <param name="args.csspath" value="css"/>
+      <param name="args.cssroot" value="resources"/>
+      <param name="args.gen.task.lbl" value="YES"/>
+      <param name="args.hdr" href="resources/header.xml"/>
+      <param name="args.html5.toc" value="toc"/>
+      <param name="nav-toc" value="partial"/>
+      <param name="processing-mode" value="strict"/>
+    </publication>
+  </deliverable>
+</project>

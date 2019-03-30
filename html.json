@@ -1,13 +1,11 @@
 {
+  "includes": [
+    "common.json"
+  ],
   "deliverables": [
     {
       "name": "HTML5",
-      "context": {
-        "inputs": ["userguide.ditamap"],
-        "profiles": {
-          "ditavals": ["resources/html.ditaval"]
-        }
-      },
+      "context": {"idref": "html"},
       "output": ".",
       "publication": {
         "transtype": "html5",

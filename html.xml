@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../resources/project.rnc" type="application/relax-ng-compact-syntax"?>
 <project>
+  <include href="common.xml"/>
   <deliverable name="HTML5">
-    <context>
-      <inputs>
-        <input href="userguide.ditamap"/>
-      </inputs>
-      <profile>
-        <ditaval href="resources/html.ditaval"/>
-      </profile>
-    </context>
+    <context idref="html"/>
     <output href="."/>
     <publication transtype="html5">
       <param name="args.copycss" value="yes"/>

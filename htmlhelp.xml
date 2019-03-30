@@ -2,14 +2,7 @@
 <?xml-model href="../resources/project.rnc" type="application/relax-ng-compact-syntax"?>
 <project>
   <deliverable name="HTMLHelp">
-    <context>
-      <inputs>
-        <input href="userguide.ditamap"/>
-      </inputs>
-      <profile>
-        <ditaval href="resources/html.ditaval"/>
-      </profile>
-    </context>
+    <context idref="html"/>
     <output href="htmlhelp"/>
     <publication transtype="htmlhelp">
       <param name="args.copycss" value="yes"/>

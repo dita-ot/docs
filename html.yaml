@@ -1,12 +1,10 @@
 ---
+includes:
+- "common.yaml"
 deliverables:
 - name: "HTML5"
   context:
-    inputs:
-    - "userguide.ditamap"
-    profiles:
-      ditavals:
-      - "resources/html.ditaval"
+    idref: "html"
   output: "."
   publication:
     transtype: "html5"

@@ -1,0 +1,8 @@
+---
+contexts:
+- id: "html"
+  inputs:
+  - "userguide.ditamap"
+  profiles:
+    ditavals:
+    - "resources/html.ditaval"

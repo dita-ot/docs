@@ -1,0 +1,31 @@
+---
+deliverables:
+- name: "HTML5"
+  context:
+    inputs:
+    - "userguide.ditamap"
+    profiles:
+      ditavals:
+      - "resources/html.ditaval"
+  output: "."
+  publication:
+    transtype: "html5"
+    params:
+    - name: "args.copycss"
+      value: "yes"
+    - name: "args.css"
+      value: "dita-ot-doc.css"
+    - name: "args.csspath"
+      value: "css"
+    - name: "args.cssroot"
+      value: "resources"
+    - name: "args.gen.task.lbl"
+      value: "YES"
+    - name: "args.hdr"
+      href: "resources/header.xml"
+    - name: "args.html5.toc"
+      value: "toc"
+    - name: "nav-toc"
+      value: "partial"
+    - name: "processing-mode"
+      value: "strict"

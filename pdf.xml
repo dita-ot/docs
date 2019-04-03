@@ -3,9 +3,7 @@
 <project>
   <deliverable name="PDF">
     <context>
-      <inputs>
-        <input href="userguide-book.ditamap"/>
-      </inputs>
+      <input href="userguide-book.ditamap"/>
       <profile>
         <ditaval href="resources/html.ditaval"/>
       </profile>

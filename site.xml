@@ -3,9 +3,7 @@
 <project>
   <deliverable name="Site">
     <context>
-      <inputs>
-        <input href="site.ditamap"/>
-      </inputs>
+      <input href="site.ditamap"/>
       <profile>
         <ditaval href="platform.ditaval"/>
       </profile>

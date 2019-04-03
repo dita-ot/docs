@@ -2,9 +2,7 @@
 <?xml-model href="../resources/project.rnc" type="application/relax-ng-compact-syntax"?>
 <project>
   <context id="html">
-    <inputs>
-      <input href="userguide.ditamap"/>
-    </inputs>
+    <input href="userguide.ditamap"/>
     <profile>
       <ditaval href="resources/html.ditaval"/>
     </profile>

@@ -2,7 +2,7 @@
 <?xml-model href="../resources/project.rnc" type="application/relax-ng-compact-syntax"?>
 <project>
   <include href="common.xml"/>
-  <deliverable name="HTML5">
+  <deliverable name="HTML5" id="html">
     <context idref="html"/>
     <output href="."/>
     <publication transtype="html5">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../resources/project.rnc" type="application/relax-ng-compact-syntax"?>
 <project>
-  <deliverable name="PDF">
+  <deliverable name="PDF" id="pdf">
     <context>
       <input href="userguide-book.ditamap"/>
       <profile>

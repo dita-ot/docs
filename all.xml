@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../resources/project.rnc" type="application/relax-ng-compact-syntax"?>
+<project>
+  <include href="html.xml"/>
+  <include href="htmlhelp.xml"/>
+  <include href="site.xml"/>
+  <include href="pdf.xml"/>
+</project>

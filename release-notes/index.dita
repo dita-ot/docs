@@ -27,13 +27,27 @@
     </refbody>
   </reference>
 
-  <reference id="v3.2.1">
-    <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released December 6, 2018</ph></title>
+  <reference id="v3.2.2">
+    <title>DITA-OT <keyword keyref="maintenance-version"/></title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
-          following bug fixes.</p>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes a single
+          change. The <cmdname>dita</cmdname> command now uses a secure connection to the plug-in registry when
+          installing new plug-ins.</p>
+        <note type="attention">To ensure data integrity during the plug-in installation process, Transport Layer
+          Security (TLS) will soon be required to access the plug-in registry. If you are using DITA-OT 3.2 or 3.2.1 and
+          are unable to upgrade, modify the <codeph>registry</codeph> key in the
+            <filepath>config/configuration.properties</filepath> file to switch the URI schema to
+            <codeph>http<b>s</b>://</codeph>, so the entry reads <codeph>https://plugins.dita-ot.org/</codeph>.</note>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.2.1">
+    <title>DITA-OT 3.2.1 <ph outputclass="small text-muted">released December 6, 2018</ph></title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.2.1 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="3140">In earlier releases, the base directory resolution treated input files as local resources. Input
             file handling has been extended to support non-local (HTTP and HTTPS) input URIs.

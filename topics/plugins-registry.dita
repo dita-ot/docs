@@ -198,7 +198,7 @@
           added to the <filepath>config/configuration.properties</filepath> file. Edit the <codeph>registry</codeph> key
           and add the raw GitHub URL for the branch that contains the JSON file. With the example username and branch
           name above, you can add your registry
-          with:<codeblock>registry=https://raw.githubusercontent.com/USERNAME/registry/addPlugin/ http://plugins.dita-ot.org/</codeblock></li>
+          with:<codeblock>registry=https://raw.githubusercontent.com/USERNAME/registry/addPlugin/ https://plugins.dita-ot.org/</codeblock></li>
         <li>You can now test the plug-in installation with:
           <codeblock>dita --install org.example.newPlugin</codeblock></li>
         <li>Once you’ve confirmed that the entry works, you can submit a pull request to have your entry added to the

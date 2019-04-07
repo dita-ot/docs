@@ -20,6 +20,17 @@
     </section>
 
     <section>
+      <title>Secure connections to the plug-in registry</title>
+      <note type="attention">To ensure data integrity during the plug-in installation process, Transport Layer Security
+        (TLS) will soon be required to access the plug-in registry. If you are using DITA-OT 3.3, 3.2, or 3.2.1 and are
+        unable to upgrade to the latest version, modify the <codeph>registry</codeph> key in the
+          <filepath>config/configuration.properties</filepath> file to switch the URI schema to
+          <codeph>http<b>s</b>://</codeph>, so the entry reads <codeph>https://plugins.dita-ot.org/</codeph>.</note>
+      <p>For more information, see
+        <xref keyref="plugins-registry"/>.</p>
+    </section>
+
+    <section>
       <title>Base plug-in files moved to <filepath>plugins</filepath> directory</title>
       <p>Various XSLT files and other resources have been moved from the root of the DITA-OT installation directory to
         the base plug-in directory <filepath>plugins/org.dita.base</filepath>.</p>

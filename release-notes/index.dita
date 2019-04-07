@@ -36,19 +36,31 @@
           following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.1+sort%3Acreated-asc -->
-          <li id="3248">Fix duplicate conref target message
+          <li id="3248">When processing content references in cases with more than one possible target for the
+              <xmlatt>conref</xmlatt> value, recent versions of DITA-OT warned about the duplicate ID, but failed to
+            include the reference target in the message. The <msgnum>DOTX011W</msgnum> warning now restores this context
+            to aid in troubleshooting.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3248" format="html" scope="external">#3248</xref>
           </li>
-          <li id="3249">Fix table numbering when draft excluded
+          <li id="3249">When processing source files with tables or figures in <xmlelement>draft-comment</xmlelement> or
+              <xmlelement>required-cleanup</xmlelement> elements, earlier versions of DITA-OT included them in lists and
+            numbered references even when DRAFT output was not active. Hidden elements are now excluded from lists of
+            figures and tables, and when numbering references.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3249" format="html" scope="external">#3249</xref>
           </li>
-          <li id="3251">Fix plugin param types
+          <li id="3251">The <xmlatt>type</xmlatt> attribute of the <parmname>args.css</parmname> and
+              <parmname>args.cssroot</parmname> parameters has been changed to <codeph>string</codeph> to better support
+            values that include relative paths. The <parmname>transtype</parmname> has also been corrected to
+              <codeph>string</codeph>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3251" format="html" scope="external">#3251</xref>
           </li>
-          <li id="3260">Fix conkeyref with temp file scheme that flattens the directory structure
+          <li id="3260">When copying files to a temporary file scheme that flattens the directory structure, the
+            map-first preprocessing routine will now correctly handle indirect content references defined via
+              <xmlatt>conkeyref</xmlatt>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3260" format="html" scope="external">#3260</xref>
           </li>
-          <li id="3272">Integrator class uses method not defined in "xml-apis-1.4.01.jar"
+          <li id="3272">The integrator and topic reader modules have been modified to use an alternative method
+            supported by the XML APIs library to prevent errors when compiling the toolkit’s JAR file.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3272" format="html" scope="external">#3272</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3273" format="html" scope="external">#3273</xref>
           </li>

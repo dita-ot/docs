@@ -35,11 +35,32 @@
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.1+sort%3Acreated-asc -->
           <li id="3248">Fix duplicate conref target message
             <xref href="https://github.com/dita-ot/dita-ot/issues/3248" format="html" scope="external">#3248</xref>
           </li>
           <li id="3249">Fix table numbering when draft excluded
             <xref href="https://github.com/dita-ot/dita-ot/issues/3249" format="html" scope="external">#3249</xref>
+          </li>
+          <li id="3251">Fix plugin param types
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3251" format="html" scope="external">#3251</xref>
+          </li>
+          <li id="3260">Fix conkeyref with temp file scheme that flattens the directory structure
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3260" format="html" scope="external">#3260</xref>
+          </li>
+          <li id="3272">Integrator class uses method not defined in "xml-apis-1.4.01.jar"
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3272" format="html" scope="external">#3272</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3273" format="html" scope="external">#3273</xref>
+          </li>
+          <li id="3278">The <cmdname>dita</cmdname> command now uses a secure connection to the plug-in registry when
+            installing new plug-ins.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3278" format="html" scope="external">#3278</xref>
+            <note type="attention">To ensure data integrity during the plug-in installation process, Transport Layer
+              Security (TLS) will soon be required to access the plug-in registry. If you are using DITA-OT 3.3, 3.2, or
+              3.2.1 and are unable to upgrade to 3.3.1, modify the <codeph>registry</codeph> key in the
+                <filepath>config/configuration.properties</filepath> file to switch the URI schema to
+                  <codeph>http<b>s</b>://</codeph>, so the entry reads
+              <codeph>https://plugins.dita-ot.org/</codeph>.</note>
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the

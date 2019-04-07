@@ -21,8 +21,7 @@
       <section>
         <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
           since previous release.</draft-comment>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) version
-            <keyword keyref="tool.java.version"/> or later.</p>
+        <p conkeyref="reusable-components/java-clients"/>
       </section>
     </refbody>
   </reference>

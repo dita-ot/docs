@@ -4,7 +4,7 @@
 
 if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
   export SSH_DIR=$PWD/.travis
-  export SITE_DIR=$PWD/dita-ot.github.io
+  export SITE_DIR=$PWD/website
 
   # install SSH key
   eval "$(ssh-agent -s)"
@@ -23,6 +23,6 @@ if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "develop" ]; then
   # Commit generated site output
   git commit -a -m "Deploy dita-ot/docs@${TRAVIS_COMMIT:0:7} to 'dev' docs"
   # push
-  git remote set-url origin git@github.com:dita-ot/dita-ot.github.io.git
+  git remote set-url origin git@github.com:dita-ot/website.git
   git push -v origin master
 fi

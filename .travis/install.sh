@@ -23,5 +23,5 @@ unzip dita-ot-develop.zip
   $DITA_HOME/bin/dita -install org.dita-ot.html.zip -v
 
   # Clone site
-  git clone -b master https://github.com/dita-ot/dita-ot.github.io.git
+  git clone -b master https://github.com/dita-ot/website.git
 #fi

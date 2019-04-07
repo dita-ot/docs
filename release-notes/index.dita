@@ -9,8 +9,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> is a feature release that provides new features and
-      enhancements, including <ph conref="#v3.3/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v3.3/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
@@ -28,7 +28,7 @@
 
   <reference id="v3.3.1">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <!--<ph outputclass="small">(release date)</ph>-->
+      <!--<ph outputclass="small text-muted">(release date)</ph>-->
     </title>
     <refbody>
       <section>

@@ -7,8 +7,9 @@
   <titlealts>
     <navtitle>Migrating Ant builds</navtitle>
   </titlealts>
-  <shortdesc>Although DITA Open Toolkit still supports Ant builds, you might want to switch to use the new
-      <cmdname>dita</cmdname> command.</shortdesc>
+  <shortdesc>Although DITA Open Toolkit still supports Ant builds, switching to the <cmdname>dita</cmdname> command
+    offers a simpler command interface, sets all required environment variables and allows you to run DITA-OT without
+    setting up anything beforehand.</shortdesc>
   <taskbody>
     <context>
       <p>Building output with the <cmdname>dita</cmdname> command is often easier than using Ant. In particular, you can
@@ -36,6 +37,7 @@
     </steps>
     <example>
       <title>Example: Ant build</title>
+      <p>Prior to DITA-OT 2.0, an Ant build like this was typically used to define the properties for each target.</p>
       <p>Sample build file: <filepath id="samples-dir"
           ><varname>dita-ot-dir</varname>/docsrc/samples</filepath><filepath>/ant_sample/build-chm-pdf.xml</filepath>
         <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/ant_sample/build-chm-pdf.xml"/></codeblock></p></example>

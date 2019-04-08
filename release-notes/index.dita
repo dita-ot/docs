@@ -9,8 +9,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> is a feature release that provides new features and
-      enhancements, including <ph conref="#v3.3/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v3.3/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
@@ -21,8 +21,65 @@
       <section>
         <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
           since previous release.</draft-comment>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> requires the Java Runtime Environment (JRE) version
-            <keyword keyref="tool.java.version"/> or later.</p>
+        <p conkeyref="reusable-components/java-clients"/>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.3.1">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">(release date)</ph>-->
+    </title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.1+sort%3Acreated-asc -->
+          <li id="3248">When processing content references in cases with more than one possible target for the
+              <xmlatt>conref</xmlatt> value, recent versions of DITA-OT warned about the duplicate ID, but failed to
+            include the reference target in the message. The <msgnum>DOTX011W</msgnum> warning now restores this context
+            to aid in troubleshooting.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3248" format="html" scope="external">#3248</xref>
+          </li>
+          <li id="3249">When processing source files with tables or figures in <xmlelement>draft-comment</xmlelement> or
+              <xmlelement>required-cleanup</xmlelement> elements, earlier versions of DITA-OT included them in lists and
+            numbered references even when DRAFT output was not active. Hidden elements are now excluded from lists of
+            figures and tables, and when numbering references.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3249" format="html" scope="external">#3249</xref>
+          </li>
+          <li id="3251">The <xmlatt>type</xmlatt> attribute of the <parmname>args.css</parmname> and
+              <parmname>args.cssroot</parmname> parameters has been changed to <codeph>string</codeph> to better support
+            values that include relative paths. The <parmname>transtype</parmname> has also been corrected to
+              <codeph>string</codeph>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3251" format="html" scope="external">#3251</xref>
+          </li>
+          <li id="3260">When copying files to a temporary file scheme that flattens the directory structure, the
+            map-first preprocessing routine will now correctly handle indirect content references defined via
+              <xmlatt>conkeyref</xmlatt>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3260" format="html" scope="external">#3260</xref>
+          </li>
+          <li id="3272">The integrator and topic reader modules have been modified to use an alternative method
+            supported by the XML APIs library to prevent errors when compiling the toolkit’s JAR file.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3272" format="html" scope="external">#3272</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3273" format="html" scope="external">#3273</xref>
+          </li>
+          <li id="3278">The <cmdname>dita</cmdname> command now uses a secure connection to the plug-in registry when
+            installing new plug-ins.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3278" format="html" scope="external">#3278</xref>
+            <note type="attention">To ensure data integrity during the plug-in installation process, Transport Layer
+              Security (TLS) will soon be required to access the plug-in registry. If you are using DITA-OT 3.3, 3.2, or
+              3.2.1 and are unable to upgrade to 3.3.1, modify the <codeph>registry</codeph> key in the
+                <filepath>config/configuration.properties</filepath> file to switch the URI schema to
+                  <codeph>http<b>s</b>://</codeph>, so the entry reads
+              <codeph>https://plugins.dita-ot.org/</codeph>.</note>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.1+is%3Aclosed" format="html"
+            scope="external">3.3.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.3...3.3.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>

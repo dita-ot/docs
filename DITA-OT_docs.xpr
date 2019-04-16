@@ -107,6 +107,10 @@
                         <Integer>120</Integer>
                     </entry>
                     <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>key.editor.format.option.pane.group</String>
                         <Boolean>true</Boolean>
                     </entry>
@@ -441,6 +445,11 @@
         </options>
     </meta>
     <projectTree name="DITA-OT_docs.xpr">
+        <folder masterFiles="true" name="Master Files">
+            <file name="userguide.ditamap"/>
+            <file name="userguide-book.ditamap"/>
+            <file name="site.ditamap"/>
+        </folder>
         <folder path="."/>
     </projectTree>
 </project>

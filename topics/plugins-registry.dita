@@ -181,16 +181,18 @@
       <p>When you have multiple versions of a plug-in, include a descriptor for each version,
         separated by a
         comma:<codeblock>[
- { "name": "org.example.myplugin",
-   ...
-   "vers": "2.1.0",
-   ...
- }<b>,</b>
- { "name": "org.example.myplugin",
-   ...
-   "vers": "1.0.1",
-   ...
- }
+  {
+    "name": "org.example.myplugin",
+     ⋮
+    "vers": "2.1.0",
+     ⋮
+  }<b>,</b>
+  {
+    "name": "org.example.myplugin",
+     ⋮
+    "vers": "1.0.1",
+     ⋮
+  }
 ]</codeblock></p>
     </section>
     <section id="adding-custom-registries">

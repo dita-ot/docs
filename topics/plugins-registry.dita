@@ -46,10 +46,10 @@
       <note>As for all other contributions to the project, pull requests to the registry must be signed off by passing
         the <codeph>--signoff</codeph> option to the <cmdname>git commit</cmdname> command to certify that you have the
         rights to submit this contribution. For more information on this process, see <xref keyref="signoff"/>.</note>
-      <p>The version entries for each plug-in are stored in a file that is named after the plug-in ID as
-          <codeph>&lt;plugin-name&gt;.json</codeph>. The file contains an array of entries with a pre-defined
-        structure.</p>
-      <p/>
+      <p>The version entries for each plug-in are stored in a file that is named after the plug-in
+        ID as <codeph>&lt;plugin-name&gt;.json</codeph>. The file contains an array of entries with
+        a pre-defined structure. You should have one entry for each supported version of the
+        plug-in.</p>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Plug-in version entry structure</title>
         <tgroup cols="3">
@@ -70,7 +70,7 @@
               <entry>Plug-in name</entry>
             </row>
             <row>
-              <entry><codeph>version</codeph></entry>
+              <entry><codeph>vers</codeph></entry>
               <entry>yes</entry>
               <entry>Plug-in version in <xref keyref="semver"/> format</entry>
             </row>
@@ -180,6 +180,20 @@
 ]</codeblock>
     </section>
     <section id="adding-custom-registries">
+      <p>When you have multiple versions of a plug-in, include a descriptor for each version,
+        separated by a
+        comma:<codeblock>[
+ { "name": "org.example.myplugin",
+   ...
+   "vers": "2.1.0",
+   ...
+ }<b>,</b>
+ { "name": "org.example.myplugin",
+   ...
+   "vers": "1.0.1",
+   ...
+ }
+]</codeblock></p>
       <title>Adding custom registries</title>
       <p>In addition to the main plug-in registry at <xref keyref="site-plugin-registry"/>, you can create a registry of
         your own to store the custom plug-ins for your company or organization.</p>

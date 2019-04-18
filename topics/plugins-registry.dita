@@ -178,8 +178,6 @@
     "cksum": "eaf06b0dca8d942bd4152615e39ee8cfb73a624b96d70e10ab269ed6f8a13e21"
   }
 ]</codeblock>
-    </section>
-    <section id="adding-custom-registries">
       <p>When you have multiple versions of a plug-in, include a descriptor for each version,
         separated by a
         comma:<codeblock>[
@@ -194,6 +192,8 @@
    ...
  }
 ]</codeblock></p>
+    </section>
+    <section id="adding-custom-registries">
       <title>Adding custom registries</title>
       <p>In addition to the main plug-in registry at <xref keyref="site-plugin-registry"/>, you can create a registry of
         your own to store the custom plug-ins for your company or organization.</p>

@@ -46,10 +46,9 @@
       <note>As for all other contributions to the project, pull requests to the registry must be signed off by passing
         the <codeph>--signoff</codeph> option to the <cmdname>git commit</cmdname> command to certify that you have the
         rights to submit this contribution. For more information on this process, see <xref keyref="signoff"/>.</note>
-      <p>The version entries for each plug-in are stored in a file that is named after the plug-in
-        ID as <codeph>&lt;plugin-name&gt;.json</codeph>. The file contains an array of entries with
-        a pre-defined structure. You should have one entry for each supported version of the
-        plug-in.</p>
+      <p>The version entries for each plug-in are stored in a file that is named after the plug-in ID as
+          <codeph>&lt;plugin-name&gt;.json</codeph>. The file contains an array of entries with a pre-defined structure.
+        You should have one entry for each supported version of the plug-in.</p>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Plug-in version entry structure</title>
         <tgroup cols="3">
@@ -178,9 +177,11 @@
     "cksum": "eaf06b0dca8d942bd4152615e39ee8cfb73a624b96d70e10ab269ed6f8a13e21"
   }
 ]</codeblock>
-      <p>When you have multiple versions of a plug-in, include a descriptor for each version,
-        separated by a
-        comma:<codeblock>[
+    </section>
+    <section id="multiple-versions">
+      <title>Maintaining multiple plug-in versions</title>
+      <p>When you have multiple versions of a plug-in, include an entry for each version, separated by a comma:</p>
+      <codeblock>[
   {
     "name": "org.example.myplugin",
      ⋮
@@ -193,7 +194,10 @@
     "vers": "1.0.1",
      ⋮
   }
-]</codeblock></p>
+]</codeblock>
+      <note type="tip">To publish a new version of your plug-in to the registry, add a new entry to the array in the
+        existing plug-in entry file rather than overwriting an existing entry. This allows users to install the previous
+        version of the plug-in if they are using an older version of DITA-OT.</note>
     </section>
     <section id="adding-custom-registries">
       <title>Adding custom registries</title>

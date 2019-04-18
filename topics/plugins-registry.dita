@@ -147,7 +147,7 @@
           </tbody>
         </tgroup>
       </table>
-      <note>Version numbers in the <codeph>version</codeph> and <codeph>req</codeph> keys use the three-digit format
+      <note>Version numbers in the <codeph>vers</codeph> and <codeph>req</codeph> keys use the three-digit format
         specified by <xref keyref="semver"/>. An initial development release of a plug-in might start at version 0.1.0,
         and an initial production release at 1.0.0. If your plug-in requires DITA-OT 3.1 or later, set the
           <codeph>req</codeph> key to <codeph>&gt;=3.1.0</codeph>. Using the greater-than sign allows your plug-in to

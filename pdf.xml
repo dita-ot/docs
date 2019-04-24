@@ -4,9 +4,6 @@
   <deliverable id="pdf">
     <context>
       <input href="userguide-book.ditamap"/>
-      <profile>
-        <ditaval href="resources/html.ditaval"/>
-      </profile>
     </context>
     <output href="."/>
     <publication transtype="pdf2">

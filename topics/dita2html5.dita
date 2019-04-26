@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<concept id="dita2html5" xml:lang="en">
+  <title>HTML5</title>
+  <shortdesc>The <option>html5</option> transformation generates HTML5 output and a table of contents (TOC)
+    file.</shortdesc>
+  <conbody>
+    <p>The HTML5 output is always associated with the default DITA-OT CSS file (<filepath>commonltr.css</filepath> or
+        <filepath>commonrtl.css</filepath> for right-to-left languages). You can use toolkit parameters to add a custom
+      style sheet that overrides the default styles, or generate a <xmlelement>nav</xmlelement> element with a
+      navigation TOC in topic pages.</p>
+    <p>To run the HTML5 transformation, set the <parmname>transtype</parmname> parameter to <option>html5</option>, or
+      pass the <parmname>--format</parmname>=<option>html5</option> option to the <cmdname>dita</cmdname> command
+      line.</p>
+    <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>html5</option></codeblock>
+    <p>where:</p>
+    <ul>
+      <li conref="../resources/conref-task.dita#ID/novice-variables-1"
+        conrefend="../resources/conref-task.dita#ID/novice-variables-2"/>
+    </ul>
+  </conbody>
+</concept>

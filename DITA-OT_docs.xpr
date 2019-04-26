@@ -1,13 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="19.1">
+<project version="21.0">
     <meta>
-        <filters directoryPatterns="*gradle, build, out*, temp" filePatterns="Icon.png, *gradle*" positiveFilePatterns="" showHiddenFiles="false"/>
+        <filters directoryPatterns="*gradle, build, out*, temp" filePatterns="Icon.png, LICENSE*, platform.ditaval, *gradle*" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="19.1" xml:space="preserve">
+            <serialized version="21.0" xml:space="preserve">
                 <serializableOrderedMap>
+                    <entry>
+                        <String>editor.format.break.line.elements</String>
+                        <breakLineElement-array>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>ol</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>1</Integer>
+                                </field>
+                            </breakLineElement>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>p</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>1</Integer>
+                                </field>
+                            </breakLineElement>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>ul</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>1</Integer>
+                                </field>
+                            </breakLineElement>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>xref</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>1</Integer>
+                                </field>
+                            </breakLineElement>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>dl</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>1</Integer>
+                                </field>
+                            </breakLineElement>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>parml</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>1</Integer>
+                                </field>
+                            </breakLineElement>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>title</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>0</Integer>
+                                </field>
+                            </breakLineElement>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>section</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>0</Integer>
+                                </field>
+                            </breakLineElement>
+                        </breakLineElement-array>
+                    </entry>
+                    <entry>
+                        <String>editor.format.preserve.spaces.elements.v11</String>
+                        <String-array>
+                            <String>xsl:text</String>
+                            <String>address</String>
+                            <String>literallayout</String>
+                            <String>programlisting</String>
+                            <String>screen</String>
+                            <String>synopsis</String>
+                            <String>pre</String>
+                            <String>xd:pre</String>
+                            <String>codeblock</String>
+                            <String>msgblock</String>
+                            <String>lines</String>
+                        </String-array>
+                    </entry>
                     <entry>
                         <String>editor.hard.line.wrap</String>
                         <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>editor.indent.in.preserve.space.elements</String>
+                        <Boolean>false</Boolean>
                     </entry>
                     <entry>
                         <String>editor.indent.size.v9.2</String>
@@ -19,6 +108,10 @@
                     </entry>
                     <entry>
                         <String>key.editor.format.option.pane.group</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.format.xml.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
@@ -96,6 +189,12 @@
                                     <null/>
                                 </field>
                                 <field name="webhelpResponsiveTemplate">
+                                    <null/>
+                                </field>
+                                <field name="publishingTemplateDataPO">
+                                    <null/>
+                                </field>
+                                <field name="oxygenFeedbackPO">
                                     <null/>
                                 </field>
                                 <field name="additionalAntArgs">

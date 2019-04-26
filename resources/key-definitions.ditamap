@@ -2,43 +2,36 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<map id="keydefs" title="Key definitions (variables)">
+<map id="keydefs">
+  <title>Key definitions (variables)</title>
 
   <!-- Submap with key definitions for external web resources -->
   <mapref href="external-links.ditamap"/>
-  
+
   <!-- Submap with key definitions for each topic -->
   <mapref href="source-files.ditamap"/>
 
   <!--VERSION NUMBERS: DITA-OT-->
-  <keydef keys="release-notes" href="../release-notes/index.dita"/>
-
-  <!-- DITA-OT: Single-digit major version -->
-  <keydef keys="version">
-    <topicmeta>
-      <keywords>
-        <keyword>2</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
 
   <!-- DITA-OT: Major & minor release version (2 digits) -->
   <keydef keys="release">
     <topicmeta>
       <keywords>
-        <keyword>3.0</keyword>
+        <keyword>3.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>
 
   <!-- DITA-OT: Latest maintenance version (normally 3 digits, 2 for initial minor release) -->
+  <!-- ↓ excerpt-version ↓ -->
   <keydef keys="maintenance-version">
     <topicmeta>
       <keywords>
-        <keyword>3.0</keyword>
+        <keyword>3.3.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- ↑ end-excerpt ↑ -->
 
   <!--VERSION NUMBERS: OTHER APPLICATIONS-->
 
@@ -46,7 +39,7 @@
   <keydef keys="tool.ant.version">
     <topicmeta>
       <keywords>
-        <keyword>1.10.1</keyword>
+        <keyword>1.10.5</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -62,7 +55,7 @@
   <keydef keys="tool.io.version">
     <topicmeta>
       <keywords>
-        <keyword>2.5</keyword>
+        <keyword>2.6</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -70,7 +63,7 @@
   <keydef keys="tool.guava.version">
     <topicmeta>
       <keywords>
-        <keyword>19.0</keyword>
+        <keyword>25.1-jre</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -78,7 +71,7 @@
   <keydef keys="tool.icu4j.version">
     <topicmeta>
       <keywords>
-        <keyword>57.1</keyword>
+        <keyword>61.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -86,7 +79,7 @@
   <keydef keys="tool.java.version">
     <topicmeta>
       <keywords>
-        <keyword>8</keyword>
+        <keyword>8u101</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -94,7 +87,7 @@
   <keydef keys="tool.logback.version">
     <topicmeta>
       <keywords>
-        <keyword>1.2.1</keyword>
+        <keyword>1.2.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -102,7 +95,7 @@
   <keydef keys="tool.SLF4J.version">
     <topicmeta>
       <keywords>
-        <keyword>1.7.23</keyword>
+        <keyword>1.7.25</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -110,7 +103,7 @@
   <keydef keys="tool.xerces.version">
     <topicmeta>
       <keywords>
-        <keyword>2.11.0</keyword>
+        <keyword>2.12.0</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -118,7 +111,7 @@
   <keydef keys="tool.fop.version">
     <topicmeta>
       <keywords>
-        <keyword>2.2</keyword>
+        <keyword>2.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -139,10 +132,17 @@
     </topicmeta>
   </keydef>
   <!-- Saxon: Bundled version -->
+  <keydef keys="tool.saxon.edition">
+    <topicmeta>
+      <keywords>
+        <keyword>Saxon-HE</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
   <keydef keys="tool.saxon.version">
     <topicmeta>
       <keywords>
-        <keyword>9.1.0.8</keyword>
+        <keyword>9.8.0.14</keyword>
       </keywords>
     </topicmeta>
   </keydef>

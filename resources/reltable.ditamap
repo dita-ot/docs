@@ -2,7 +2,8 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<map id="reltable" title="Relationship tables">
+<map id="reltable">
+  <title>Relationship tables</title>
   <reltable>
     <relrow>
       <relcell>
@@ -13,7 +14,7 @@
         </topicref>
       </relcell>
       <relcell>
-        <topicref keyref="DITA-globalization-languages">
+        <topicref keyref="globalization-languages">
           <topicmeta>
             <linktext>Languages supported by the core toolkit</linktext>
           </topicmeta>
@@ -30,18 +31,21 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref keyref="ant" navtitle="Ant overview"/>
+        <topicref keyref="ant"/>
       </relcell>
       <relcell>
         <topicgroup collection-type="family">
-          <topicref keyref="building-with-ant" navtitle="Building output using Ant"/>
-          <topicref keyref="creating-an-ant-build-script" navtitle="Creating an Ant build script"/>
+          <topicref keyref="building-with-ant"/>
+          <topicref keyref="creating-an-ant-build-script"/>
         </topicgroup>
       </relcell>
       <relcell>
         <topicref keyref="parameters_intro" linking="targetonly"/>
-        <topicref href="http://ant.apache.org/manual" navtitle="Apache Ant documentation" format="html" scope="external"
-        />
+        <topicref keyref="ant-manual">
+          <topicmeta>
+            <linktext>Apache Ant documentation</linktext>
+          </topicmeta>
+        </topicref>
       </relcell>
     </relrow>
     <relrow>
@@ -186,6 +190,16 @@
     <relrow>
       <relcell/>
       <relcell>
+        <topicref keyref="html-customization-plugin-webfont"/>
+        <topicref keyref="html-customization-plugin-javascript"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="parameters-base-html"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
         <topicref keyref="increasing-the-jvm" linking="targetonly"/>
       </relcell>
       <relcell>
@@ -202,13 +216,13 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref keyref="parameters-eclipsehelp" navtitle="Eclipse help transformation"/>
-        <topicref keyref="parameters-htmlhelp" navtitle="HTML Help transformation"/>
-        <topicref keyref="parameters-pdf" navtitle="PDF transformation"/>
-        <topicref keyref="parameters-xhtml" navtitle="XHTML transformation"/>
+        <topicref keyref="parameters-eclipsehelp"/>
+        <topicref keyref="parameters-htmlhelp"/>
+        <topicref keyref="parameters-pdf"/>
+        <topicref keyref="parameters-xhtml"/>
       </relcell>
       <relcell>
-        <topicref keyref="parameters-base" navtitle="All transformation types"/>
+        <topicref keyref="parameters-base"/>
       </relcell>
     </relrow>
     <relrow>
@@ -239,21 +253,21 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref keyref="parameters-base-html" navtitle="HTML-based transformations"/>
+        <topicref keyref="parameters-base-html"/>
       </relcell>
       <relcell>
-        <topicref keyref="parameters-eclipsehelp" navtitle="Eclipse help transformation"/>
+        <topicref keyref="parameters-eclipsehelp"/>
         <topicref keyref="parameters-html5"/>
         <topicref keyref="parameters-htmlhelp"/>
-        <topicref keyref="parameters-xhtml" navtitle="XHTML transformation"/>
+        <topicref keyref="parameters-xhtml"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref keyref="other-errors" navtitle="Out of Memory errors" locktitle="yes"/>
+        <topicref keyref="other-errors"/>
       </relcell>
       <relcell>
-        <topicref keyref="parameters-other" navtitle="Reload style sheets parameters" locktitle="yes"/>
+        <topicref keyref="parameters-other"/>
       </relcell>
     </relrow>
     <relrow>
@@ -289,21 +303,23 @@
         <topicref keyref="dita2eclipsehelp"/>
       </relcell>
       <relcell>
-        <topicref href="http://www.eclipse.org" navtitle="Official Eclipse Web site" format="html" scope="external"/>
+        <topicref keyref="eclipse-website">
+          <topicmeta>
+            <linktext>Official Eclipse website</linktext>
+          </topicmeta>
+        </topicref>
       </relcell>
     </relrow>
     <relrow>
       <relcell>
-        <topicref keyref="DITA-globalization"/>
+        <topicref keyref="globalization"/>
       </relcell>
       <relcell>
-        <topicref format="html" href="http://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/translation.html"
-          scope="external" type="reference">
+        <topicref keyref="dita12-spec-l10n" type="reference">
           <topicmeta>
             <linktext>Localization overview in the OASIS DITA standard</linktext>
           </topicmeta>
         </topicref>
-        <topicref keyref="plugin-addgeneratedtext"/>
       </relcell>
     </relrow>
   </reltable>

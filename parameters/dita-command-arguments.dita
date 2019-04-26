@@ -24,9 +24,9 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--input=</kwd>
+            <kwd>--input</kwd><oper>=</oper>
             <var>file</var>
-            <kwd>--format=</kwd>
+            <kwd>--format</kwd><oper>=</oper>
             <var>name</var>
             <groupcomp importance="optional">
               <var>options</var>
@@ -36,7 +36,7 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--install</kwd>
+            <kwd>--install</kwd><oper>=</oper>
             <groupchoice importance="optional">
               <var>filename</var>
               <var>URL</var>
@@ -46,7 +46,7 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--uninstall</kwd>
+            <kwd>--uninstall</kwd><oper>=</oper>
             <var>id</var>
           </groupseq>
         </fragment>
@@ -92,15 +92,17 @@
           </pt>
           <pd conref="parameters-base.dita#base/transtype.desc"/>
           <pd>This argument corresponds to the common parameter <parmname>transtype</parmname>.</pd>
+          <pd>To list the formats that are currently available in your environment, use <cmdname>dita</cmdname>
+            <parmname>--transtypes</parmname>.</pd>
           <pd>
             <p conref="../resources/conref-task.dita#ID/transtypes"/>
           </pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--install</parmname> <varname>filename</varname></pt>
+            <parmname>--install</parmname>=<varname>filename</varname></pt>
           <pt>
-            <parmname>--install</parmname> <varname>URL</varname></pt>
+            <parmname>--install</parmname>=<varname>URL</varname></pt>
           <pd>Install a single plug-in from a local ZIP file or from a URL.</pd>
         </plentry>
         <plentry>
@@ -111,12 +113,29 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--uninstall</parmname> <varname>id</varname>
+            <parmname>--uninstall</parmname>=<varname>id</varname>
           </pt>
           <pd>
-            <p>Uninstall a plug-in with the specified ID.</p>
+            <p>Remove the plug-in with the specified ID.</p>
+          </pd>
+          <pd>For a list of the currently installed plug-in IDs, use <cmdname>dita</cmdname>
+            <parmname>--plugins</parmname>.</pd>
+          <pd>
             <note conref="../resources/conref-task.dita#ID/plugin-remove-subdir"/>
           </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--plugins</parmname>
+          </pt>
+          <pd>Show a list of the currently installed plug-ins.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--transtypes</parmname>
+          </pt>
+          <pd>Show a list of the available output formats (transformation types).</pd>
+          <pd>The entries in this list may be passed as values to the <parmname>--format</parmname> argument.</pd>
         </plentry>
         <plentry>
           <pt>
@@ -144,17 +163,28 @@
             <parmname>-o</parmname>
             <varname>dir</varname>
           </pt>
-          <pd id="output.dir.desc">Specifies the path of the output directory; the path can be absolute or relative to
-            the current directory. This argument corresponds to the common parameter <parmname>output.dir</parmname>. By
-            default, the output is written to the <filepath>out</filepath> subdirectory of the current directory.</pd>
+          <pd id="output.dir.desc">
+            <p>Specifies the path of the output directory; the path can be absolute or relative to the current
+              directory.</p>
+            <p>This argument corresponds to the common parameter <parmname>output.dir</parmname>. By default, the output
+              is written to the <filepath>out</filepath> subdirectory of the current directory.</p>
+          </pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--filter</parmname>=<varname>file</varname>
+            <parmname>--filter</parmname>=<varname>files</varname>
           </pt>
           <pd>Specifies filter file(s) used to include, exclude, or flag content. </pd>
           <pd>This argument corresponds to the common parameter <parmname>args.filter</parmname>. Relative paths are
             resolved against the current directory and internally converted to absolute paths.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--force</parmname>
+          </pt>
+          <pd>Force-install an existing plug-in.</pd>
+          <pd>Passed as an additional option to the installation command:
+              <cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>plug-in-zip</varname> <parmname>--force</parmname></pd>
         </plentry>
         <plentry>
           <pt>
@@ -172,7 +202,8 @@
           <pt>
             <parmname>-v</parmname>
           </pt>
-          <pd>Verbose logging.</pd>
+          <pd>Verbose logging prints additional information to the console, including directory settings, effective
+            values for Ant properties, input/output files, and informational messages to assist in troubleshooting.</pd>
         </plentry>
         <plentry>
           <pt>
@@ -180,7 +211,11 @@
           <pt>
             <parmname>-d</parmname>
           </pt>
-          <pd>Debug logging.</pd>
+          <pd>Debug logging prints considerably more additional information. The debug log includes all information from
+            the verbose log, plus details on Java classes, additional Ant properties and overrides, preprocessing
+            filters, parameters, and stages, and the complete build sequence. Debug logging requires additional
+            resources and can slow down the build process, so it should only be enabled when further details are
+            required to diagnose problems.</pd>
         </plentry>
         <plentry>
           <pt>

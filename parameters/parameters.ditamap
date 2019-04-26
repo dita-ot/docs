@@ -6,20 +6,24 @@
   <title>Parameter Reference</title>
   <topicref keyref="dita-command-arguments"/>
   <topicref keyref="parameters_intro" keys="dita-ot-params">
-    <topicref keyref="parameters-base" navtitle="Common"/>
+    <topicref keyref="parameters-base"/>
     <topicref keyref="parameters-pdf"/>
     <topicref keyref="parameters-base-html"/>
     <topicref keyref="parameters-html5"/>
     <topicref keyref="parameters-xhtml"/>
-    <topicref keyref="parameters-htmlhelp" locktitle="yes" navtitle="HTML Help" platform="windows"/>
-    <topicref keyref="parameters-eclipsehelp" navtitle="Eclipse Help"/>
-    <topicref keyref="parameters-other" navtitle="Other"/>
+    <topicref keyref="parameters-htmlhelp" locktitle="yes" platform="windows">
+      <topicmeta>
+        <navtitle>HTML Help</navtitle>
+      </topicmeta>
+    </topicref>
+    <topicref keyref="parameters-eclipsehelp"/>
+    <topicref keyref="parameters-other"/>
     <topicref keyref="ant-parameters-details" keys="parameters-push" processing-role="resource-only" toc="no"/>
   </topicref>
   <topicref keyref="configuration-properties">
-    <topicref keyref="local-properties"/>
-    <topicref keyref="lib-plugin-properties"/>
-    <topicref keyref="lib-configuration-properties"/>
+    <topicref keyref="local-properties-file"/>
+    <topicref keyref="plugin-properties-file"/>
+    <topicref keyref="configuration-properties-file"/>
     <topicref keyref="internal-ant-properties"/>
   </topicref>
 </map>

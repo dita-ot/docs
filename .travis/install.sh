@@ -21,9 +21,7 @@ unzip dita-ot-develop.zip
   # Install site plugin
   curl -L https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -o org.dita-ot.html.zip
   $DITA_HOME/bin/dita -install org.dita-ot.html.zip -v
-  # Install LwDITA plugin
-  $DITA_HOME/bin/dita --install https://github.com/jelovirt/org.lwdita/releases/download/2.0/org.lwdita-2.0.zip
 
   # Clone site
-  git clone -b master https://github.com/dita-ot/dita-ot.github.io.git
+  git clone -b master https://github.com/dita-ot/website.git
 #fi

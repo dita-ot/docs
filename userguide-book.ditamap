@@ -18,34 +18,34 @@
     </booklists>
   </frontmatter>
   <part keyref="installing-client">
-    <chapter format="ditamap" href="getting-started/installing.ditamap"/>
+    <chapter format="ditamap" href="topics/installing.ditamap"/>
   </part>
-  <part navtitle="Authoring formats" keyref="alternative-input-formats">
-    <chapter href="user-guide/input-formats.ditamap" format="ditamap"/>
+  <part keyref="alternative-input-formats">
+    <chapter href="topics/input-formats.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Building output" keyref="transforming-dita-content">
-    <chapter href="user-guide/publishing.ditamap" format="ditamap"/>
+  <part keyref="building-output">
+    <chapter href="topics/publishing.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Setting parameters" keyref="parameters">
+  <part keyref="parameters">
     <chapter href="parameters/parameters.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Customizing DITA-OT" keyref="extending-the-ot">
-    <chapter href="dev_ref/customization.ditamap" format="ditamap"/>
+  <part keyref="customizing">
+    <chapter href="topics/customization.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Troubleshooting" keyref="troubleshooting-overview">
-    <chapter href="user-guide/troubleshooting.ditamap" format="ditamap"/>
+  <part keyref="troubleshooting-overview">
+    <chapter href="topics/troubleshooting.ditamap" format="ditamap"/>
   </part>
-  <part navtitle="Reference" keyref="reference">
-    <chapter href="dev_ref/reference.ditamap" format="ditamap"/>
+  <part keyref="reference">
+    <chapter href="reference/reference.ditamap" format="ditamap"/>
   </part>
-  <appendices navtitle="Resources and Licensing">
-    <appendix href="user-guide/dita-and-dita-ot-resources.dita">
-      <topicref href="user-guide/web-based-resources.dita" print="yes"/>
+  <appendices>
+    <appendix keyref="dita-and-dita-ot-resources">
+      <topicref keyref="web-based-resources" print="yes"/>
+      <topicref keyref="books"/>
     </appendix>
-    <appendix href="license/license.ditamap" format="ditamap"/>
+    <appendix keyref="release-notes"/>
   </appendices>
   <backmatter>
-    <topicref href="release-notes/index.dita" navtitle="Release Notes" locktitle="yes"/>
     <mapref href="resources/common-resources.ditamap" processing-role="resource-only"/>
   </backmatter>
 </bookmap>

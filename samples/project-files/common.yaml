@@ -1,7 +1,7 @@
 ---
 contexts:
 - id: "html"
-  input: "userguide.ditamap"
+  input: "../../userguide.ditamap"
   profiles:
     ditavals:
-    - "resources/html.ditaval"
+    - "../../resources/html.ditaval"

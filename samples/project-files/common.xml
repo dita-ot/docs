@@ -3,5 +3,8 @@
 <project xmlns="https://www.dita-ot.org/project">
   <context id="html">
     <input href="../../userguide.ditamap"/>
+    <profile>
+      <ditaval href="../../resources/html.ditaval"/>
+    </profile>
   </context>
 </project>

@@ -8,7 +8,7 @@
       <param name="args.copycss" value="yes"/>
       <param name="args.css" value="dita-ot-doc.css"/>
       <param name="args.csspath" value="css"/>
-      <param name="args.cssroot" value="../../resources"/>
+      <param name="args.cssroot" file="../../resources"/>
       <param name="args.gen.task.lbl" value="YES"/>
       <param name="processing-mode" value="strict"/>
     </publication>

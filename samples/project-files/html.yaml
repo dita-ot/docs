@@ -16,7 +16,7 @@ deliverables:
     - name: "args.csspath"
       value: "css"
     - name: "args.cssroot"
-      file: "../../resources"
+      path: "../../resources"
     - name: "args.gen.task.lbl"
       value: "YES"
     - name: "args.hdr"

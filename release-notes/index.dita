@@ -26,7 +26,7 @@
     </refbody>
   </reference>
 
-  <reference id="v3.3.1">
+  <reference id="v3.3.2">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
       <!--<ph outputclass="small text-muted">(release date)</ph>-->
     </title>
@@ -34,6 +34,52 @@
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.2+sort%3Acreated-asc -->
+          <li id="2722">Earlier versions of DITA-OT would attempt to download remote media objects referenced via the
+              <xmlatt>data</xmlatt> attribute of the <xmlelement>object</xmlelement> element, and failed to copy local
+            media objects to the output folder. Processing has been corrected to handle these references correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2722" format="html" scope="external">#2722</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2861" format="html" scope="external">#2861</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2947" format="html" scope="external">#2947</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3306" format="html" scope="external">#3306</xref>
+          </li>
+          <li id="3284">DITA-OT 3.3.1 would generate an invalid catalog file with an empty XML namespace when the
+            bundled version 9.8.0.14 of Saxon Home Edition was replaced with Saxon-HE 9.8.0.15. This has been corrected
+            to ensure that the OASIS namespace is used when generating the <filepath>catalog-dita.xml</filepath> file.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3284" format="html" scope="external">#3284</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3287" format="html" scope="external">#3287</xref>
+            <note>DITA-OT <keyword keyref="maintenance-version"/> still ships with <keyword keyref="tool.saxon.edition"/>
+              <keyword keyref="tool.saxon.version"/>, but now also works with version 9.8.0.15.</note>
+          </li>
+          <li id="3304">In PDF output, the bitmap warning icon has been replaced with the SVG image previously added for
+            the PDF implementation of the hazard domain. The new image appears in <xmlelement>note</xmlelement> elements
+            of type <codeph>attention</codeph>, <codeph>caution</codeph>, <codeph>danger</codeph>,
+              <codeph>trouble</codeph>, and <codeph>warning</codeph> and is scaled to match the previous icon size.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3304" format="html" scope="external">#3304</xref>
+            <note type="attention">The legacy <filepath>warning.gif</filepath> file remains available in the common
+              artwork folder, but will be removed in an upcoming version.</note>
+          </li>
+          <li id="3310">Translations of the generated string for “continued” index entries have been added to the
+            Bosnian, Danish, Montenegrin, and Vietnamese localizations.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3310" format="html" scope="external">#3310</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.2+is%3Aclosed" format="html"
+            scope="external">3.3.2 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.3.1...3.3.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.3.1">
+    <title>DITA-OT 3.3.1 <ph outputclass="small text-muted">released April 8, 2019</ph>
+    </title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.3.1 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.1+sort%3Acreated-asc -->
           <li id="3248">When processing content references in cases with more than one possible target for the

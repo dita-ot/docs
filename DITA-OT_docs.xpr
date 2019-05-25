@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="21.0">
     <meta>
-        <filters directoryPatterns="*gradle, build, out*, temp" filePatterns="Icon.png, LICENSE*, platform.ditaval, *gradle*" positiveFilePatterns="" showHiddenFiles="false"/>
+        <filters directoryPatterns="*gradle, build, out*, temp" filePatterns="Icon.png, LICENSE*, platform.ditaval, *gradle*, *.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
             <serialized version="21.0" xml:space="preserve">
                 <serializableOrderedMap>
@@ -105,6 +105,10 @@
                     <entry>
                         <String>editor.line.width</String>
                         <Integer>120</Integer>
+                    </entry>
+                    <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
                     </entry>
                     <entry>
                         <String>key.editor.format.option.pane.group</String>
@@ -441,6 +445,11 @@
         </options>
     </meta>
     <projectTree name="DITA-OT_docs.xpr">
+        <folder masterFiles="true" name="Master Files">
+            <file name="userguide.ditamap"/>
+            <file name="userguide-book.ditamap"/>
+            <file name="site.ditamap"/>
+        </folder>
         <folder path="."/>
     </projectTree>
 </project>

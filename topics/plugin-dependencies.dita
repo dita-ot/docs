@@ -6,6 +6,13 @@
   <title>Plug-in dependencies</title>
   <shortdesc>A DITA-OT plug-in can be dependent on other plug-ins. Prerequisite plug-ins are installed first, which
     ensures that DITA-OT handles XSLT overrides correctly.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>require</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <draft-comment author="Kristen Eberlein" time="24 February 2016">
       <p>I'm not entirely happy with this topic as it currently is, but want to move forward with the overall

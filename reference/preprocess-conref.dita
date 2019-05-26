@@ -6,6 +6,15 @@
   <title>Resolve content references (conref)</title>
   <shortdesc>The <codeph>conref</codeph> step resolves content references, processing only the DITA maps or topics that
     use the <xmlatt>conref</xmlatt> attribute. This step is implemented in XSLT.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>fig</xmlelement></indexterm>
+        <indexterm><xmlelement>xref</xmlelement></indexterm>
+        <indexterm><xmlelement>section</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section>
       <p>The values of the <xmlatt>id</xmlatt> attribute on referenced content are changed as the elements are pulled

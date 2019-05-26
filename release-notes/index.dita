@@ -14,6 +14,27 @@
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>draft-comment</xmlelement></indexterm>
+        <indexterm><xmlelement>required-cleanup</xmlelement></indexterm>
+        <indexterm><xmlelement>entry</xmlelement></indexterm>
+        <indexterm><xmlelement>steps</xmlelement></indexterm>
+        <indexterm><xmlelement>section</xmlelement></indexterm>
+        <indexterm><xmlelement>entry</xmlelement></indexterm>
+        <indexterm><xmlelement>example</xmlelement></indexterm>
+        <indexterm><xmlelement>prereq</xmlelement></indexterm>
+        <indexterm><xmlelement>stepsection</xmlelement></indexterm>
+        <indexterm><xmlelement>mapref</xmlelement></indexterm>
+        <indexterm><xmlelement>topicref</xmlelement></indexterm>
+        <indexterm><xmlelement>topicgroup</xmlelement></indexterm>
+        <indexterm><xmlelement>topichead</xmlelement></indexterm>
+        <indexterm><xmlelement>dt</xmlelement></indexterm>
+        <indexterm><xmlelement>tm</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <reference id="requirements">
     <title>Requirements</title>

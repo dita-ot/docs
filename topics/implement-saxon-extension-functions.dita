@@ -9,6 +9,14 @@
   </titlealts>
   <shortdesc>Plug-ins can contribute Saxon extension functions for use in XSLT transformations run by DITA Open
     Toolkit.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Saxon<indexterm><xmlelement>service</xmlelement></indexterm></indexterm>
+        <indexterm>Ant<indexterm><xmlelement>jar</xmlelement></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <body>
     <p>Starting with Saxon 9.2, the mechanism for implementing extension functions has changed such that Saxon HE, in
       particular, can no longer use the older “reflexive” mechanism for finding Java extension functions using a magic

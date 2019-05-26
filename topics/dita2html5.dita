@@ -6,6 +6,13 @@
   <title>HTML5</title>
   <shortdesc>The <option>html5</option> transformation generates HTML5 output and a table of contents (TOC)
     file.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>nav</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>The HTML5 output is always associated with the default DITA-OT CSS file (<filepath>commonltr.css</filepath> or
         <filepath>commonrtl.css</filepath> for right-to-left languages). You can use toolkit parameters to add a custom

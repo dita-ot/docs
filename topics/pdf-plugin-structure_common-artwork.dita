@@ -6,6 +6,13 @@
   <title>Custom artwork</title>
   <shortdesc>The <filepath>common/artwork</filepath> folder houses custom artwork files that override the standard icons
     in <filepath>org.dita.pdf2/cfg/common/artwork</filepath>.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>note</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <body>
     <p>These files are used to graphically identify different types of DITA <xmlelement>note</xmlelement> element.</p>
     <p>The mapping between <xmlelement>note</xmlelement> type and graphic is contained in a subset of the

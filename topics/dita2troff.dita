@@ -6,6 +6,14 @@
   <title>troff</title>
   <shortdesc>The <option>troff</option> transformation produces output for use with the troff viewer on Unix-style
     platforms, particularly for programs such as the man page viewer.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>table</xmlelement></indexterm>
+        <indexterm><xmlelement>simpletable</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>Each DITA topic generally produces one troff output file. The <option>troff</option> transformation supports most
       common DITA structures, but it does not support <xmlelement>table</xmlelement> or

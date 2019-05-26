@@ -9,6 +9,15 @@
   </titlealts>
   <shortdesc>JavaScript code can be bundled in a custom plug-in and automatically inserted into the generated HTML pages
     to enable web analytics or dynamic content delivery.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>footer</xmlelement></indexterm>
+        <indexterm><xmlelement>require</xmlelement></indexterm>
+        <indexterm><xmlelement>head</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>This scenario walks through the process of creating a very simple plug-in

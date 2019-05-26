@@ -11,6 +11,14 @@
     reference a set of build parameters defined in a <filepath>.properties</filepath> file when building output with the
       <cmdname>dita</cmdname> command. If needed, you can override any parameter by specifying it explicitly as an
     argument to the <cmdname>dita</cmdname> command.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>draft</xmlelement></indexterm>
+        <indexterm><xmlelement>required-cleanup</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <section>
       <title>About <filepath>.properties</filepath> files</title>

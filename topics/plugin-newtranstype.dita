@@ -7,6 +7,14 @@
   <shortdesc>Plug-ins can add an entirely new transformation type. The new transformation type can be very simple, such
     as an HTML build that creates an additional control file; it also can be very complex, adding any number of new
     processing steps.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>transtype</xmlelement></indexterm>
+        <indexterm><xmlelement>param</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>You can use the <xmlelement>transtype</xmlelement> element to define a new transformation type with any new

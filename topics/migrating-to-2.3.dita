@@ -13,7 +13,18 @@
     improved CSS properties. In PDF output, table heads and key columns no longer include shading, and unused
     localization variables have been deprecated. The template for generated error messages has been updated to use a
     single <codeph>id</codeph> variable that contains the entire message ID.</shortdesc>
-
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>div</xmlelement></indexterm>
+        <indexterm><xmlelement>p</xmlelement></indexterm>
+        <indexterm><xmlelement>abstract</xmlelement></indexterm>
+        <indexterm><xmlelement>simpletable</xmlelement></indexterm>
+        <indexterm><xmlelement>properties</xmlelement></indexterm>
+        <indexterm><xmlelement>choicetable</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 2.3 that may require modifications to custom stylesheets

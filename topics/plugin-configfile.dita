@@ -7,6 +7,22 @@
   <shortdesc>The plug-in descriptor file (<filepath>plugin.xml</filepath>) controls all aspects of a plug-in, making
     each extension visible to the rest of the toolkit. The file uses pre-defined extension points to locate changes, and
     then integrates those changes into the core DITA-OT code.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>plugin</xmlelement></indexterm>
+        <indexterm><xmlelement>extension-point</xmlelement></indexterm>
+        <indexterm><xmlelement>feature</xmlelement></indexterm>
+        <indexterm><xmlelement>meta</xmlelement></indexterm>
+        <indexterm><xmlelement>require</xmlelement></indexterm>
+        <indexterm><xmlelement>template</xmlelement></indexterm>
+        <indexterm><xmlelement>dita:extension</xmlelement></indexterm>
+        <indexterm><xmlelement>transtype</xmlelement></indexterm>
+        <indexterm><xmlelement>param</xmlelement></indexterm>
+        <indexterm><xmlelement>val</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section conkeyref="reusable-components/validating-plugins"/>
     <section>

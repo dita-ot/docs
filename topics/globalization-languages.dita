@@ -5,6 +5,13 @@
 <reference id="dita-globalization-languages" xml:lang="en-US">
   <title>Supported languages</title>
   <shortdesc>The following languages are supported for all PDF, XHTML, and HTML5-based transformation types.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlatt>xml:lang</xmlatt></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <refsyn>
       <note>While language codes listed below use the conventional capitalization style of "aa-BB" and "aa-Script-BB",

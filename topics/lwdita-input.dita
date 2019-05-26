@@ -10,6 +10,13 @@
   <shortdesc>DITA-OT provides preview support for the authoring formats proposed for
     <xref keyref="lwdita"/>, or “<term>LwDITA</term>”. The XDITA, MDITA and HDITA formats are alternative
     representations of DITA content in XML, Markdown and HTML5.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>topicref</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <body>
     <note type="attention">Since

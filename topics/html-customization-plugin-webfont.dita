@@ -9,6 +9,15 @@
   </titlealts>
   <shortdesc>A custom plug-in can be created to generate HTML output that uses custom fonts for enhanced typographic
     features, extended character sets or a unique corporate identity.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>require</xmlelement></indexterm>
+        <indexterm><xmlelement>link</xmlelement></indexterm>
+        <indexterm><xmlelement>head</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>This scenario walks through the process of creating a very simple plug-in

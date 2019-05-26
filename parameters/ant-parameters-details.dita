@@ -12,6 +12,24 @@
     </titlealts>
     <shortdesc conaction="pushreplace" conref="parameters-base.dita#base/shortdesc">Certain parameters apply to all
       transformations that DITA Open Toolkit supports.</shortdesc>
+    <prolog>
+      <metadata>
+        <keywords>
+          <indexterm><xmlelement>titlealts</xmlelement></indexterm>
+          <indexterm><xmlelement>topicref</xmlelement></indexterm>
+          <indexterm><xmlelement>div</xmlelement></indexterm>
+<!--          <indexterm>HTML elements
+            <index-see-also>specific element name</index-see-also>
+          </indexterm>
+          <indexterm>HTML5 elements
+            <index-see-also>specific element name</index-see-also>
+          </indexterm>-->
+          <indexterm><xmlelement>header</xmlelement></indexterm>
+          <indexterm><xmlelement>prereq</xmlelement></indexterm>
+          <indexterm><xmlelement>section</xmlelement></indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
     <refbody>
       <section>
         <parml>

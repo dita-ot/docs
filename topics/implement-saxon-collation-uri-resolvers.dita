@@ -8,6 +8,14 @@
     <navtitle>Custom collation URI resolvers</navtitle>
   </titlealts>
   <shortdesc>Plug-ins can provide custom URI resolvers that provide collators for specific collation URIs.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Saxon<indexterm><xmlelement>service</xmlelement></indexterm></indexterm>
+        <indexterm>Ant<indexterm><xmlelement>jar</xmlelement></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <body>
     <p>To do custom sorting and grouping in XSLT, you identify collators using URIs that Saxon resolves to collator
       implementations. You implement the mapping from collation URIs to collators through custom collation URI

@@ -9,6 +9,13 @@
   </titlealts>
   <shortdesc>This scenario walks through the process of creating a very simple plug-in
       (<codeph>com.example.print-pdf</codeph>) that creates a new transformation type: <option>print-pdf</option>. </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>figure</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>The <option>print-pdf</option> transformation has the following characteristics:</p>

@@ -6,6 +6,13 @@
   <title>History of the PDF transformation</title>
   <shortdesc>The DITA Open Toolkit PDF transformation was originally based on a third-party contribution by Idiom
     Technologies, and is commonly known as the “pdf2” plug-in.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>info</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>When IBM developed the code that later became DITA-OT, it included only a proof-of-concept PDF
       transformation. IBM had their own processing chain for producing PDFs from SGML, which they had developed over

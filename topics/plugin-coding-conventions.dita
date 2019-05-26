@@ -10,6 +10,18 @@
   <shortdesc>To ensure custom plug-ins work well with the core toolkit code and remain compatible with future releases,
     the DITA Open Toolkit project recommends that plug-ins use modern development practices and common coding
     patterns.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Ant<indexterm><xmlelement>pipeline</xmlelement></indexterm></indexterm>
+        <indexterm>Ant<indexterm><xmlelement>xslt</xmlelement></indexterm></indexterm>
+        <indexterm>Ant<indexterm><xmlelement>style</xmlelement></indexterm></indexterm>
+        <indexterm>Ant<indexterm><xmlelement>ditafileset</xmlelement></indexterm></indexterm>
+        <indexterm>Ant<indexterm><xmlelement>xsl:import</xmlelement></indexterm></indexterm>
+        <indexterm>Ant<indexterm><xmlelement>xsl:include</xmlelement></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section conkeyref="reusable-components/use-xslt2"/>
     <section>

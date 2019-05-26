@@ -7,6 +7,15 @@
   <shortdesc>You can pass parameters from the Ant build to existing XSLT steps in both the pre-processing pipeline and
     certain DITA-OT transformations. This can be useful if you want to make the parameters available as global
       <xmlelement>xsl:param</xmlelement> values within XSLT overrides.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>xsl:param</xmlelement></indexterm>
+        <indexterm><xmlelement>param</xmlelement></indexterm>
+        <indexterm><xmlelement>dummy</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step id="create-xml-file">

@@ -11,7 +11,16 @@
 
   <shortdesc>DITA-OT 3.3 includes <ph id="summary">new attribute sets for HTML5 customization, support for custom
       integration processing, rotated table cells in PDF output, and hazard statements in HTML output</ph>.</shortdesc>
-
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>xsl:include</xmlelement></indexterm>
+        <indexterm><xmlelement>xsl:import</xmlelement></indexterm>
+        <indexterm><xmlelement>nextCatalog</xmlelement></indexterm>
+        <indexterm><xmlelement>template</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 3.3 that may require modifications to custom stylesheets

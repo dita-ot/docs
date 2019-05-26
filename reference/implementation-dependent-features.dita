@@ -10,6 +10,17 @@
     implementation alternatives. In these cases, there may be differences in behavior when DITA content is handled by
     different processors. DITA-OT supports implementation-specific features by applying one or more of the permissible
     processing approaches.</shortdesc>
+  
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>revprop</xmlelement></indexterm>
+        <indexterm><xmlelement>indexterm</xmlelement></indexterm>
+        <indexterm><xmlelement>shortdesc</xmlelement></indexterm>
+        <indexterm><xmlelement>coderef</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <refbody>
     <section id="section_jla_oqn_qc">

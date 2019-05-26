@@ -7,6 +7,13 @@
   <shortdesc>When the debug mode is enabled, additional diagnostic information is written to the log file. This
     information, which includes environment variables and stack trace data, can help you determine the root cause of a
     problem.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>property</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step>

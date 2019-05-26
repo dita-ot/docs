@@ -11,7 +11,13 @@
 
   <shortdesc>In DITA-OT 2.5, several frequently-overridden legacy style settings were removed from the default PDF
     plug-in. A separate plug-in can be used to restore the original settings.</shortdesc>
-
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>example</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 2.5 that may require modifications to custom stylesheets

@@ -8,6 +8,23 @@
     preprocessing step. The module evaluates the DITAVAL against all flagging attributes, and adds DITA-OT–specific
     hints to the topic when flags are active. Any extended transformation type may use these hints to support flagging
     without adding logic to interpret the DITAVAL.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>foreign</xmlelement></indexterm>
+        <indexterm><xmlelement>ditaval-startprop</xmlelement></indexterm>
+        <indexterm><xmlelement>prop</xmlelement></indexterm>
+        <indexterm><xmlelement>revprop</xmlelement></indexterm>
+        <indexterm><xmlelement>startflag</xmlelement></indexterm>
+        <indexterm><xmlelement>endflag</xmlelement></indexterm>
+        <indexterm><xmlelement>ditaval-endprop</xmlelement></indexterm>
+        <indexterm><xmlelement>ditaval-prop</xmlelement></indexterm>
+        <indexterm><xmlelement>p</xmlelement></indexterm>
+        <indexterm><xmlelement>ol</xmlelement></indexterm>
+        <indexterm><xmlelement>li</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <title>Evaluating the DITAVAL flags</title>

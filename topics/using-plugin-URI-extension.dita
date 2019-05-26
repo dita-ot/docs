@@ -6,6 +6,15 @@
         >plugin:<varname>plugin-id</varname></filepath> URI extension and the <filepath id="antvar"
         >${dita.plugin.<varname>plugin-id</varname>.dir}</filepath> Ant variable to reference the
     base path of another installed DITA-OT plug-in.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>xsl:import</xmlelement></indexterm>
+        <indexterm><xmlelement>xmlcatalog</xmlelement></indexterm>
+        <indexterm><xmlelement>xslt</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
     <taskbody>
     <section>
       <p>Sometimes you need to reference content in another DITA-OT plug-in. However, the path to an installed plug-in

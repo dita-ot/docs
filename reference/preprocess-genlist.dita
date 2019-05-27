@@ -7,6 +7,16 @@
   <shortdesc>The <codeph>gen-list</codeph> step examines the input files and creates lists of topics, images, document
     properties, or other content. These lists are used by later steps in the pipeline. This step is implemented in
     Java.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated feature<indexterm><parmname>htmlfile</parmname></indexterm></indexterm>
+        <indexterm>deprecated feature<indexterm><codeph>html.file</codeph></indexterm></indexterm>
+        <indexterm>deprecated feature<indexterm><parmname>imagefile</parmname></indexterm></indexterm>
+        <indexterm>deprecated feature<indexterm><codeph>image.file</codeph></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <p>For example, one list includes all topics that make use of the conref attribute; only those files are processed

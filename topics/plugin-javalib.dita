@@ -9,6 +9,13 @@
   </titlealts>
   <shortdesc>You can use the <codeph>dita.conductor.lib.import</codeph> extension point to add an additional Java
     library to the DITA-OT <parmname>classpath</parmname> parameter.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated feature<indexterm><codeph>dost.class.path</codeph> property</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>As of DITA-OT 3.1, the Java class path is managed automatically, meaning you do not (and should not) use

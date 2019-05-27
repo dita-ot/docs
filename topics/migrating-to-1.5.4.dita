@@ -13,6 +13,16 @@
     transformation types and add mappings to the PDF configuration catalog file. PDF output supports mirrored page
     layout and uses new font family definitions. Support for several new languages was added for PDF and XHTML
     output.</shortdesc>
+  
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated feature<indexterm><codeph>print_transtypes</codeph></indexterm></indexterm>
+        <indexterm>deprecated feature<indexterm><codeph>page-margin-left</codeph></indexterm></indexterm>
+        <indexterm>deprecated feature<indexterm><codeph>page-margin-right</codeph></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <refbody>
     <section id="section_vc5_gld_g2">

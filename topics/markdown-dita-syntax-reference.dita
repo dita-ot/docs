@@ -9,6 +9,13 @@
   </titlealts>
   <shortdesc>Markdown DITA uses
     <xref keyref="commonmark"/> as the underlying markup language.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Pandoc</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <body>
     <p>Markdown DITA files must be UTF-8 encoded.</p>

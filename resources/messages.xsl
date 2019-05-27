@@ -53,7 +53,9 @@
           <xsl:for-each select="/*/message">
             <xsl:sort select="@id"/>
             <strow id="{@id}">
-              <stentry><msgnum><xsl:value-of select="@id"/></msgnum></stentry>
+              <stentry><msgnum><xsl:value-of select="@id"/></msgnum><indexterm><msgnum><xsl:value-of
+                select="@id"/></msgnum></indexterm><indexterm>error message<indexterm><msgnum><xsl:value-of
+                  select="@id"/></msgnum></indexterm></indexterm></stentry>
               <stentry>
                 <xsl:choose>
                   <xsl:when test="@type='INFO'">Info</xsl:when>

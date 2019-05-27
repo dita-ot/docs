@@ -6,6 +6,13 @@
   <title>Re-usable components</title>
   <shortdesc>Warehouse topic used to store re-usable content for concept topics or other constructs that would not be
     valid in the existing warehouse task <filepath>conref-task.dita</filepath>.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>PDF2</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section id="use-xslt2">
       <title>Upgrade stylesheets to XSLT 2.0</title>

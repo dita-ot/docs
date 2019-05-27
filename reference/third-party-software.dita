@@ -6,6 +6,13 @@
   <title>Third-party software</title>
   <shortdesc>DITA Open Toolkit uses third-party software components to provide certain features in the core toolkit,
     Java API, and bundled plug-ins.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>PDF2</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section>
       <title>DITA-OT <keyword keyref="release"/></title>

@@ -7,6 +7,13 @@
   <shortdesc>This file provides additional details that are pushed to the generated topics to replace the navigation
     titles and short descriptions embedded in the plug-in source code. Descriptions for individual extension points are
     pushed from the manually authored topics as necessary.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>PDF2</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <reference id="base">
     <title>All transformations</title>

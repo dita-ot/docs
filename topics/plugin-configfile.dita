@@ -285,6 +285,16 @@
                         <option>string</option>)</stentry>
                       <stentry>Yes</stentry>
                     </strow>
+                    <strow>
+                      <stentry>deprecated</stentry>
+                      <stentry>When <option>true</option>, identifies this parameter as deprecated </stentry>
+                      <stentry>No</stentry>
+                    </strow>
+                    <strow>
+                      <stentry>required</stentry>
+                      <stentry>When <option>true</option>, identifies this parameter as required</stentry>
+                      <stentry>No</stentry>
+                    </strow>
                   </simpletable></pd>
               </plentry>
               <plentry>

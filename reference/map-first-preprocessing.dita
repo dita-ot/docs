@@ -12,6 +12,13 @@
       experimental feature, has been improved and is ready for use in many production scenarios. Map-first-preprocessing
       provides the same functionality as the default <codeph>preprocess</codeph>, but takes a different
     approach.</ph></shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>filter</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p id="map-first-preproc-gain">Whereas the default preprocessing routine handles both maps and topics at the same
       time, often switching back and forth between map operations and topic operations, the map-first approach only

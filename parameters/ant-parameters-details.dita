@@ -18,12 +18,14 @@
           <indexterm><xmlelement>titlealts</xmlelement></indexterm>
           <indexterm><xmlelement>topicref</xmlelement></indexterm>
           <indexterm><xmlelement>div</xmlelement></indexterm>
-<!--          <indexterm>HTML elements
-            <index-see-also>specific element name</index-see-also>
+          <!--
+          <indexterm>HTML elements
+            <index-see>specific element name</index-see>
           </indexterm>
           <indexterm>HTML5 elements
-            <index-see-also>specific element name</index-see-also>
-          </indexterm>-->
+            <index-see>specific element name</index-see>
+          </indexterm>
+          -->
           <indexterm><xmlelement>header</xmlelement></indexterm>
           <indexterm><xmlelement>prereq</xmlelement></indexterm>
           <indexterm><xmlelement>section</xmlelement></indexterm>
@@ -32,6 +34,8 @@
           <indexterm><xmlatt>chunk</xmlatt></indexterm>
           <indexterm><xmlatt>role</xmlatt></indexterm>
           <indexterm><xmlatt>id</xmlatt></indexterm>
+          <indexterm>deprecated feature<indexterm><parmname>args.hide.parent.link</parmname></indexterm></indexterm>
+          <indexterm>deprecated feature<indexterm><parmname>publish.required.cleanup</parmname></indexterm></indexterm>
         </keywords>
       </metadata>
     </prolog>

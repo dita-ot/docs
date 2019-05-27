@@ -8,6 +8,14 @@
     approaches have advantages and shortcomings that should be considered when preparing a customization project. Some
     of these methods are considered “anti-patterns” with disadvantages that outweigh their apparent appeal. In most
     cases, you should create a custom PDF plug-in.</shortdesc>
+  
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated feature<indexterm><filepath>Customization</filepath> folder</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <conbody>
     <section id="why_not_edit_default_files">

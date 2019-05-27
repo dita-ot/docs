@@ -6,6 +6,13 @@
   <title>Extending an XML catalog file</title>
   <shortdesc>You can update either the main DITA-OT XML catalog or the XML catalog that is used by the PDF plug-in. This
     enables DITA-OT to support new specializations and document-type shells.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated feature<indexterm><parmname>dita.specialization.catalog</parmname></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>You can use the <parmname>dita.specialization.catalog.relative</parmname> and

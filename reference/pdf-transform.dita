@@ -7,6 +7,13 @@
   <shortdesc>The <option>PDF</option> (formerly known as <option>PDF2</option>) transformation process runs the
     pre-processing routine and follows it by a series of additional targets. These steps work together to create a
     merged set of content, convert the merged content to XSL-FO, and then format the XSL-FO file to PDF.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>DITAVAL</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section>
       <p>The PDF process includes many Ant targets. During a typical conversion from map to PDF, the following targets

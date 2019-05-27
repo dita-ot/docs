@@ -7,4 +7,11 @@
   <shortdesc>The <codeph>copy-files</codeph> step copies non-DITA resources to the output directory, such as HTML files
     that are referenced in a map or images that are referenced by a DITAVAL file. Which files are copied depends on the
     transformation type.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>DITAVAL</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 </concept>

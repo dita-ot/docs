@@ -188,7 +188,7 @@
               transformation-type-specific build files via <xmlelement>dita:extension</xmlelement> elements. When the
               plug-in installation process runs, template files are used to recreate build files, and the specified
               extension points are replaced with references to the appropriate plug-ins.</p>
-            <p>The following attributes are supported: </p>
+            <p>The following attributes are supported:</p>
             <simpletable keycol="1">
               <sthead>
                 <stentry>Attribute</stentry>
@@ -262,8 +262,10 @@
             <parml>
               <plentry>
                 <pt><xmlelement>param</xmlelement></pt>
-                <pd>An optional element that specifies a parameter for the transformation type.
-                  <p>The following parameter attributes are supported:</p><simpletable keycol="1">
+                <pd>
+                  <p>An optional element that specifies a parameter for the transformation type.</p>
+                  <p>The following parameter attributes are supported:</p>
+                  <simpletable keycol="1">
                     <sthead>
                       <stentry>Attribute</stentry>
                       <stentry>Description</stentry>
@@ -287,7 +289,7 @@
                     </strow>
                     <strow>
                       <stentry>deprecated</stentry>
-                      <stentry>When <option>true</option>, identifies this parameter as deprecated </stentry>
+                      <stentry>When <option>true</option>, identifies this parameter as deprecated</stentry>
                       <stentry>No</stentry>
                     </strow>
                     <strow>
@@ -299,9 +301,11 @@
               </plentry>
               <plentry>
                 <pt><xmlelement>val</xmlelement></pt>
-                <pd>A child of <xmlelement>param</xmlelement> (when <xmlatt>type</xmlatt>=<option>enum</option>) that
-                  specifies an enumeration value.
-                  <p>The following attributes are supported:</p><simpletable keycol="1">
+                <pd>
+                  <p>A child of <xmlelement>param</xmlelement> (when <xmlatt>type</xmlatt>=<option>enum</option>) that
+                    specifies an enumeration value.</p>
+                  <p>The following attributes are supported:</p>
+                  <simpletable keycol="1">
                     <sthead>
                       <stentry>Attribute</stentry>
                       <stentry>Description</stentry>
@@ -321,7 +325,7 @@
       </parml>
       <p>Any extension that is not recognized by DITA-OT is ignored. Since DITA-OT version 1.5.3, you can combine
         multiple extension definitions within a single <filepath>plugin.xml</filepath> file; in older versions, only the
-        last extension definition was used. </p>
+        last extension definition was used.</p>
     </section>
   </refbody>
 </reference>

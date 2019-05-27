@@ -101,6 +101,11 @@
         <parmname>
           <xsl:value-of select="@id"/>
         </parmname>
+        <ph>
+          <indexterm>
+            <parmname><xsl:value-of select="@id"/></parmname>
+          </indexterm>
+        </ph>
       </dt>
       <dd id="{@id}.desc">
         <xsl:value-of select="@name"/>
@@ -121,6 +126,11 @@
         <parmname>
           <xsl:value-of select="@id"/>
         </parmname>
+        <ph>
+          <indexterm>
+            <parmname><xsl:value-of select="@id"/></parmname>
+          </indexterm>
+        </ph>
       </dt>
       <!-- Changing the keyref to "extension-points-in-{$containing-plugin}/{@id}" would link to the exact parameter. -->
       <dd>Defined in plug-in

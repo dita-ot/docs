@@ -9,4 +9,12 @@
   </titlealts>
   <shortdesc>DITA-OT³ supports several alternative input formats in addition to standard DITA XML, including Markdown
     and the proposed XDITA, MDITA and HDITA authoring formats currently in development for Lightweight DITA.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Lightweight DITA</indexterm>
+        <!--<indexterm>LwDITA<index-see>Lightweight DITA</index-see></indexterm>-->
+      </keywords>
+    </metadata>
+  </prolog>
 </topic>

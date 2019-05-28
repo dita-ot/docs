@@ -15,57 +15,7 @@
     <prolog>
       <metadata>
         <keywords>
-          <indexterm><xmlelement>titlealts</xmlelement></indexterm>
-          <indexterm><xmlelement>topicref</xmlelement></indexterm>
-          <indexterm><xmlelement>div</xmlelement></indexterm>
-          <!--
-          <indexterm>HTML elements
-            <index-see>specific element name</index-see>
-          </indexterm>
-          <indexterm>HTML5 elements
-            <index-see>specific element name</index-see>
-          </indexterm>
-          -->
-          <indexterm><xmlelement>header</xmlelement></indexterm>
-          <indexterm><xmlelement>prereq</xmlelement></indexterm>
-          <indexterm><xmlelement>section</xmlelement></indexterm>
-          <indexterm><xmlatt>xml:lang</xmlatt></indexterm>
-          <indexterm><xmlatt>href</xmlatt></indexterm>
-          <indexterm><xmlatt>chunk</xmlatt></indexterm>
-          <indexterm><xmlatt>role</xmlatt></indexterm>
-          <indexterm><xmlatt>id</xmlatt></indexterm>
-          <indexterm>deprecated feature<indexterm><parmname>args.hide.parent.link</parmname></indexterm></indexterm>
-          <indexterm>deprecated feature<indexterm><parmname>publish.required.cleanup</parmname></indexterm></indexterm>
-          <indexterm>DITAVAL</indexterm>
-          <!-- 
-          <indexterm>DITAVAL
-            <index-see-also>filter</index-see>
-          </indexterm>
-          <indexterm>filter
-            <index-see-also>DITAVAL</index-see>
-          </indexterm>
-          <indexterm>DITAVAL
-            <index-see-also>profiling</index-see>
-          </indexterm>
-          <indexterm>profiling
-            <index-see-also>DITAVAL</index-see>
-          </indexterm>
-          -->
-          <indexterm>filter</indexterm>
-          <indexterm>macOS</indexterm>
-          <!--
-          <indexterm>Mac
-            <index-see>macOS</index-see>
-          </indexterm>
-          -->
-          <indexterm>Linux</indexterm>
-          <indexterm>Windows</indexterm>
-          <indexterm>FOP</indexterm>
-          <!--
-          <indexterm>Apache FOP
-            <index-see>FOP</index-see>
-          </indexterm>
-          -->
+          <!-- This is a resource-only topic. Place index entries in the content below. -->
         </keywords>
       </metadata>
     </prolog>
@@ -80,7 +30,9 @@
             <pd conaction="pushafter" audience="xslt-customizer">Corresponds to the XSLT parameter
                 <parmname>DRAFT</parmname> in most XSLT modules.<note type="tip">For PDF output, setting the
                   <parmname>args.draft</parmname> parameter to <option>yes</option> causes the contents of the
-                  <xmlelement>titlealts</xmlelement> element to be rendered below the title.</note>
+                  <xmlelement>titlealts</xmlelement> element to be rendered below the title.
+                  <indexterm><xmlelement>titlealts</xmlelement></indexterm>
+                </note>
             </pd>
           </plentry>
           <plentry id="args.figurelink.style">
@@ -109,6 +61,15 @@
                 <p>DITAVAL files are evaluated in the order specified, so conditions specified in the first file take
                   precedence over matching conditions specified in later files, just as conditions at the start of a
                   DITAVAL document take precedence over matching conditions later in the same document.</p>
+                <indexterm>DITAVAL</indexterm>
+                <indexterm>DITAVAL<index-see-also>filter</index-see-also></indexterm>
+                <indexterm>DITAVAL<index-see-also>profiling</index-see-also></indexterm>
+                <indexterm>filter<index-see-also>DITAVAL</index-see-also></indexterm>
+                <indexterm>profiling<index-see-also>DITAVAL</index-see-also></indexterm>
+                <indexterm>Mac<index-see>macOS</index-see></indexterm>
+                <indexterm>macOS</indexterm>
+                <indexterm>Linux</indexterm>
+                <indexterm>Windows</indexterm>
               </note>
             </pd>
           </plentry>
@@ -194,7 +155,9 @@
               that is used if the input file does not have the <xmlatt>xml:lang</xmlatt> attribute set on the root
               element. By default, this is set to <option>en</option>. The allowed values are those that are defined in
               IETF BCP 47, <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external">Tags for
-                Identifying Languages</xref>.</pd>
+                Identifying Languages</xref>.
+              <indexterm><xmlatt>xml:lang</xmlatt></indexterm>
+            </pd>
           </plentry>
           <plentry id="dita.temp.dir">
             <pt>
@@ -269,7 +232,10 @@
               <note type="warning" platform="windows">Microsoft HTML Help Compiler cannot produce HTML Help for
                 documentation projects that use outer content. The content files must reside in or below the directory
                 containing the master DITA map file, and the map file cannot specify ".." at the start of the
-                  <xmlatt>href</xmlatt> attributes for <xmlelement>topicref</xmlelement> elements.</note>
+                <xmlatt>href</xmlatt> attributes for <xmlelement>topicref</xmlelement> elements.
+                <indexterm><xmlelement>topicref</xmlelement></indexterm>
+                <indexterm><xmlatt>href</xmlatt></indexterm>
+              </note>
             </pd>
           </plentry>
           <plentry id="output.dir">
@@ -287,7 +253,9 @@
             <pd conaction="mark" conref="parameters-base.dita#base/root-chunk-override.desc"/>
             <pd conaction="pushafter">Acceptable values include any value normally allowed on the <xmlatt>chunk</xmlatt>
               attribute. If the map does not have a <xmlatt>chunk</xmlatt> attribute, this value will be used; if the
-              map already has a <xmlatt>chunk</xmlatt> attribute specified, this value will be used instead.</pd>
+              map already has a <xmlatt>chunk</xmlatt> attribute specified, this value will be used instead.
+              <indexterm><xmlatt>chunk</xmlatt></indexterm>
+            </pd>
           </plentry>
           <plentry id="transtype">
             <pt>
@@ -309,7 +277,13 @@
       <navtitle>HTML-based output</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace" conref="parameters-base-html.dita#base-html/shortdesc">Certain parameters apply
-      to all HTML-based transformation types: HTML5, XHTML, HTML&#xA0;Help, Eclipse help, and TocJS.</shortdesc>
+      to all HTML-based transformation types: HTML5, XHTML, HTML&#xA0;Help, Eclipse help, and TocJS.
+    <ph>
+      <indexterm>HTML5</indexterm>
+      <indexterm>HTML elements<index-see>specific HTML5 element name</index-see></indexterm>
+      <indexterm>specific HTML5 element name</indexterm>
+    </ph>
+    </shortdesc>
     <refbody>
       <section>
         <parml>
@@ -383,7 +357,11 @@
                 <note>The footer file should be specified using an absolute path and must contain valid XML. A common
                   practice is to place all content into a <xmlelement>div</xmlelement> element. In HTML5 output, the
                   footer file contents will be wrapped in an HTML5 <xmlelement>footer</xmlelement> element with the
-                    <xmlatt>role</xmlatt> attribute set to <option>contentinfo</option>.</note>
+                    <xmlatt>role</xmlatt> attribute set to <option>contentinfo</option>.
+                  <indexterm><xmlelement>div</xmlelement></indexterm>
+                  <indexterm><xmlatt>role</xmlatt></indexterm>
+                  <indexterm>HTML5</indexterm>
+                </note>
               </div></pd>
           </plentry>
           <plentry id="args.gen.default.meta">
@@ -406,7 +384,9 @@
                 <note type="tip">The header file should be specified using an absolute path and must contain valid XML.
                   If you need to insert more than one element into the HTML page head, wrap the content in a
                     <xmlelement>div</xmlelement> element. The division wrapper in the header file will be discarded when
-                  generating HTML files, and the contents will be inserted into each page head.</note></div></pd>
+                  generating HTML files, and the contents will be inserted into each page head.
+                  <indexterm><xmlelement>div</xmlelement></indexterm>
+                </note></div></pd>
           </plentry>
           <plentry id="args.hdr">
             <pt>
@@ -419,12 +399,18 @@
                 <note>The header file should be specified using an absolute path and must contain valid XML. A common
                   practice is to place all content into a <xmlelement>div</xmlelement> element. In HTML5 output, the
                   contents of the header file will be wrapped in an HTML5 <xmlelement>header</xmlelement> element with
-                  the <xmlatt>role</xmlatt> attribute set to <option>banner</option>.</note>
+                  the <xmlatt>role</xmlatt> attribute set to <option>banner</option>.
+                  <indexterm><xmlelement>div</xmlelement></indexterm>
+                  <indexterm><xmlelement>header</xmlelement></indexterm>
+                  <indexterm><xmlatt>role</xmlatt></indexterm>
+                  <indexterm>HTML5</indexterm>
+                </note>
               </div></pd>
           </plentry>
           <plentry id="args.hide.parent.link" importance="deprecated">
             <pt>
               <parmname>args.hide.parent.link</parmname>
+              <ph><indexterm>deprecated feature<indexterm><parmname>args.hide.parent.link</parmname></indexterm></indexterm></ph>
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.hide.parent.link.desc"/>
             <pd conaction="pushafter">
@@ -454,7 +440,10 @@
                 audience="xslt-customizer">Corresponds to the XSLT parameter
                 <parmname>PRESERVE-DITA-CLASS</parmname>.</ph><note>Beginning with DITA-OT release 1.5.2, the default
                 value is <option>yes</option>. For release 1.5 and 1.5.1, the default value was <option>no</option>.
-              </note></pd>
+              </note>
+              <indexterm><xmlelement>prereq</xmlelement></indexterm>
+              <indexterm><xmlelement>section</xmlelement></indexterm>
+            </pd>
           </plentry>
           <plentry id="args.xsl">
             <pt>
@@ -527,7 +516,9 @@
                 <xmlatt>id</xmlatt> value from the DITA map or the Eclipse map collection (Eclipse help specialization)
               is the symbolic name for the plugin in Eclipse. The default value is
                 <option>org.sample.help.doc</option>.<note type="tip">The toolkit ignores the value of this parameter
-                when it processes an Eclipse map.</note><draft-comment author="Kristen James Eberlein"
+                when it processes an Eclipse map.
+                <indexterm><xmlatt>id</xmlatt></indexterm>
+                </note><draft-comment author="Kristen James Eberlein"
                 time="11 August 2012">I'm not clear what this means. Is the default value for the
                   <parmname>args.eclipse.symbolic.name</parmname> parameter the value of the <xmlatt>id</xmlatt>
                 attribute on the <xmlelement>map</xmlelement> or <xmlelement>plugin</xmlelement> element, if provided,
@@ -571,7 +562,10 @@
             <pd conaction="pushreplace" conref="parameters-pdf.dita#pdf/org.dita.pdf2.i18n.enabled.desc">
               <p>Enables internationalization (I18N) font processing to provide per-character font selection for FO
                 renderers that do not support the <codeph>font-selection-strategy</codeph> property (such as Apache
-                FOP).</p>
+                FOP).
+                <indexterm>Apache FOP<index-see>FOP</index-see></indexterm>
+                <indexterm>FOP</indexterm>
+              </p>
               <p>When this feature is enabled, DITA-OT uses a font mapping process that takes the content language into
                 consideration. The mapping process uses configuration files for each language to define characters that
                 should be rendered with certain logical fonts, and font mappings that associate each logical font to
@@ -598,11 +592,12 @@
             <pt>
               <parmname>pdf.formatter</parmname>
             </pt>
-            <pd>The client package comes with Apache FOP; other XSL processors must be separately installed.</pd>
+            <pd>The client package comes with Apache FOP; other XSL processors must be separately installed.<indexterm>FOP</indexterm></pd>
           </plentry>
           <plentry id="publish.required.cleanup" importance="deprecated">
             <pt>
               <parmname>publish.required.cleanup</parmname>
+              <ph><indexterm>deprecated feature<indexterm><parmname>publish.required.cleanup</parmname></indexterm></indexterm></ph>
             </pt>
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/publish.required.cleanup.desc"/>
             <pd conaction="pushafter">The default value is the value of the <parmname>args.draft</parmname> parameter.
@@ -642,7 +637,9 @@
     </titlealts>
     <shortdesc conaction="pushreplace" conref="parameters-html5.dita#html5/shortdesc">The HTML5 transformation shares
       common parameters with other HTML-based transformations and provides additional parameters that are specific to
-      HTML5 output.</shortdesc>
+      HTML5 output.
+      <ph><indexterm>HTML5</indexterm></ph>
+    </shortdesc>
     <refbody>
       <!-- args.html5.contenttarget is listed in generated topic, but does not appear in default HTML5 output files. -->
       <section>
@@ -719,6 +716,7 @@
           <plentry id="args.hide.parent.link" importance="deprecated">
             <pt>
               <parmname>args.hide.parent.link</parmname>
+              <ph><indexterm>deprecated feature<indexterm><parmname>args.hide.parent.link</parmname></indexterm></indexterm></ph>
             </pt>
             <pd conaction="mark" conref="parameters-html5.dita#html5/args.hide.parent.link.desc"/>
             <pd conaction="pushafter">
@@ -745,7 +743,9 @@
             <pt><parmname>nav-toc</parmname></pt>
             <pd conaction="pushreplace" conref="parameters-html5.dita#html5/nav-toc.desc">
               <p>Specifies whether to generate a table of contents (ToC) in the HTML5 <xmlelement>nav</xmlelement>
-                element of each page. The navigation can then be rendered in a sidebar or menu via CSS. </p>
+                element of each page. The navigation can then be rendered in a sidebar or menu via CSS. 
+                <indexterm>HTML5</indexterm>
+              </p>
               <p>The following values are supported:
                 <ul>
                   <li><option>none</option> (default) – No table of contents will be generated</li>

@@ -10,9 +10,7 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>PDF2</indexterm>
-        <indexterm>UNIX</indexterm>
-        <!--<indexterm>UNIX<index-see-also>Linux</index-see-also></indexterm>-->
+        <!-- This is a resource-only topic. Place index entries in the content below. -->
       </keywords>
     </metadata>
   </prolog>
@@ -85,7 +83,7 @@
     </titlealts>
     <shortdesc conaction="pushreplace"
       conref="extension-points-in-org.dita.pdf2.dita#org.dita.pdf2-ext/shortdesc">Certain extension points are
-      specific to the PDF transformation (formerly known as “PDF2”).</shortdesc>
+      specific to the PDF transformation (formerly known as “PDF2”).<ph><indexterm>PDF2</indexterm></ph></shortdesc>
     <refbody/>
   </reference>
 
@@ -98,7 +96,7 @@
     <shortdesc conaction="pushreplace"
       conref="extension-points-in-org.dita.troff.dita#org.dita.troff-ext/shortdesc">Certain extension points
       are specific to the troff transformation, which produces output for use with the troff viewer on Unix-style
-      platforms, particularly for programs such as the man page viewer.</shortdesc>
+      platforms, particularly for programs such as the man page viewer.<ph><indexterm>UNIX<index-see-also>Linux</index-see-also></indexterm></ph></shortdesc>
     <refbody/>
   </reference>
 

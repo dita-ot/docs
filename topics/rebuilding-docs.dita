@@ -10,6 +10,13 @@
   <shortdesc>DITA-OT ships with a <keyword keyref="gradle"/> build script that enables you to rebuild the toolkit
     documentation. This is especially helpful if your environment contains plug-ins that add new extension points,
     messages, or parameters to the toolkit.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>macOS</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>The documentation build script reads the toolkit’s plug-in configuration and automatically regenerates topics

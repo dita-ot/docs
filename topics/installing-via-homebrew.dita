@@ -9,6 +9,13 @@
   </titlealts>
   <shortdesc>An alternative installation method can be used to install DITA-OT on macOS via <xref keyref="homebrew"/>,
     the platform’s most popular open-source package manager.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>macOS</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <prereq>
       <p>The steps below assume you have already installed <xref keyref="homebrew"/> according to the instructions at

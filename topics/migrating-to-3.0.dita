@@ -12,6 +12,14 @@
   <shortdesc>DITA-OT 3.0 <ph id="summary">adds support for Markdown, normalized DITA output, and the alternative
       authoring formats proposed for Lightweight DITA. The map-first preprocessing approach provides a modern
       alternative to the default <codeph>preprocess</codeph> operation.</ph></shortdesc>
+  
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Lightweight DITA</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <refbody>
     <section>

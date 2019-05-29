@@ -90,7 +90,8 @@
             <pd conaction="pushafter">
               <note>This option dramatically speeds up processing time. However, there is a known problem with using
                 this feature for documents that use XML entities. If your build fails with parser errors about entity
-                resolution, set this parameter to <option>no</option>.</note>
+                resolution, set this parameter to <option>no</option>.
+              <indexterm>processing time</indexterm></note>
             </pd>
           </plentry>
           <plentry id="args.input">

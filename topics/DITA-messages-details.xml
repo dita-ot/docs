@@ -219,7 +219,9 @@
           outside the scope of the map; for example, if the main input map references
             <filepath>"../other-directory/some.dita"</filepath>. The result would cause an output file to be created
           outside of the output directory. See <xref keyref="parameters-base">DITA-OT common parameters (outer.control
-            and generate.copy.outer)</xref> for details.</stentry>
+            and generate.copy.outer)</xref> for details.
+          <indexterm>generate.copy.outer</indexterm>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ036W-extra" conaction="pushreplace">This will appear when a topic is
@@ -228,7 +230,8 @@
           outside of the output directory. If you do not want to see the warning message, please use the Ant parameter
           'outer.control', and set the value to "quiet". Otherwise, move the referenced file into the input dita/map
           directory. See <xref keyref="parameters-base">DITA-OT common parameters (outer.control and
-            generate.copy.outer)</xref> for details.</stentry>
+            generate.copy.outer)</xref> for details.
+          <indexterm>generate.copy.outer</indexterm></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ037W-extra" conaction="pushreplace">DITA processing is based on
@@ -318,7 +321,7 @@
             not supported by default, as this could allow a reference to access and display any restricted or hidden
             file on the system. If you are certain that the path is valid and the file should be loaded, the current
             workaround is to set a parameter to allow these references. See <xref keyref="parameters-base">DITA-OT
-              common parameters (outer.control and generate.copy.outer)</xref> for details.</p></stentry>
+              common parameters (outer.control and generate.copy.outer)</xref> for details.<indexterm>generate.copy.outer</indexterm></p></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ052E-extra" conaction="pushreplace">DITA-OT supports a special

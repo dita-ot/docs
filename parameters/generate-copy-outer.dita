@@ -7,6 +7,13 @@
   <shortdesc>By default, DITA-OT assumes content is located in or beneath the directory containing the DITA map file.
     The <parmname>generate.copy.outer</parmname> parameter can be used to adjust how output is generated for content
     that is located outside the map directory.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><parmname>generate.copy.outer</parmname></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <conbody>
     <section>

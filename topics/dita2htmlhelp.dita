@@ -6,6 +6,13 @@
   <title>HTML Help</title>
   <shortdesc>The <option>htmlhelp</option> transformation generates HTML output, CSS files, and the control files that
     are needed to produce a Microsoft Compiled HTML Help (.chm) file.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>command line</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>In addition to the HTML output and CSS files, this transformation returns the following files, where
         <varname>mapname</varname> is the name of the master DITA map.</p>

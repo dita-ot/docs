@@ -5,6 +5,13 @@
 <task id="plugins-removing" xml:lang="en">
   <title>Removing plug-ins</title>
   <shortdesc>Use the <cmdname>dita</cmdname> command to uninstall a plug-in.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>command line</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step>

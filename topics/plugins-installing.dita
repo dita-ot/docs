@@ -5,6 +5,13 @@
 <task id="plugins-installing" xml:lang="en">
   <title>Installing plug-ins</title>
   <shortdesc>Use the <cmdname>dita</cmdname> command to install a plug-in.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>command line</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step>

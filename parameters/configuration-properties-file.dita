@@ -30,6 +30,9 @@
         <indexterm>PowerShell</indexterm>
         <indexterm>command line<index-see-also>dita command</index-see-also></indexterm>
         <indexterm>terminal<index-see>command line</index-see></indexterm>
+        <indexterm>grammar files<index-see-also>schema</index-see-also><!-- LE: Only "See also DTD" appears in the index -->
+                                <index-see-also>DTD</index-see-also>
+                                <index-see-also>RELAX NG</index-see-also></indexterm>
       </keywords>
     </metadata>
   </prolog>

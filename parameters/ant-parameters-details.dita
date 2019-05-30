@@ -44,11 +44,16 @@
             <pd conaction="pushreplace" conref="parameters-base.dita#base/args.filter.desc">
               <p>Specifies filter file(s) used to include, exclude, or flag content. Relative paths are resolved against
                 the DITA-OT base directory (for backwards compatibility) and internally converted to absolute paths.</p>
-              <note>The system path separator character is used to delimit individual file paths in the list of values
-                (semicolon ‘<codeph>;</codeph>’ on Windows, and colon ‘<codeph>:</codeph>’ on macOS and Linux). DITAVAL
-                files are evaluated in the order specified, so conditions specified in the first file take precedence
-                over matching conditions specified in later files, just as conditions at the start of a DITAVAL document
-                take precedence over matching conditions later in the same document.</note></pd>
+              <note>
+                <p>To specify multiple filter files, use the system path separator character to delimit individual file
+                  paths (semicolon ‘<codeph>;</codeph>’ on Windows, and colon ‘<codeph>:</codeph>’ on macOS and Linux)
+                  and wrap the value in quotes:</p>
+                <p><codeph>--args.filter="filter1.ditaval;filter2.ditaval;filter3.ditaval"</codeph></p>
+                <p>DITAVAL files are evaluated in the order specified, so conditions specified in the first file take
+                  precedence over matching conditions specified in later files, just as conditions at the start of a
+                  DITAVAL document take precedence over matching conditions later in the same document.</p>
+              </note>
+            </pd>
           </plentry>
           <plentry id="args.gen.task.lbl">
             <pt>

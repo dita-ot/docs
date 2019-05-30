@@ -109,7 +109,9 @@
             directory).</p>
           <note id="dita-in-path" type="tip">Add the absolute path for <filepath conref="#ID/ot-dir"
               /><filepath>/bin</filepath> to the <varname>PATH</varname> environment variable to run the
-              <cmdname>dita</cmdname> command from any location on the file system without typing the path.</note>
+              <cmdname>dita</cmdname> command from any location on the file system without typing the path.
+            <indexterm><cmdname>dita</cmdname> command</indexterm>
+          </note>
         </stepresult>
       </step>
       <step>
@@ -132,7 +134,9 @@
       <note type="tip" id="pass-input-dir">If you are building in different environments where the location of the input
         files is not consistent, set <option>args.input.dir</option> with the <cmdname>dita</cmdname> command and
         reference its value with <codeph>${args.input.dir}</codeph> in your <filepath>.properties</filepath>
-        file.</note>
+        file.
+        <indexterm><cmdname>dita</cmdname> command</indexterm>
+      </note>
     </postreq>
   </taskbody>
 </task>

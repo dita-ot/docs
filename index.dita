@@ -7,6 +7,13 @@
   <shortdesc><term>DITA Open Toolkit</term>, or <term>DITA-OT</term> for short, is a set of Java-based, open-source
     tools that provide processing for content authored in the <term>Darwin Information Typing
     Architecture</term>.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><cmdname>dita</cmdname> command</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <body>
 
     <note>While the DITA standard is owned and developed by OASIS, the DITA Open Toolkit project is governed separately.

@@ -158,6 +158,8 @@
               IETF BCP 47, <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external">Tags for
                 Identifying Languages</xref>.
               <indexterm><xmlatt>xml:lang</xmlatt></indexterm>
+              <indexterm>IETF BCP 47</indexterm>
+              <indexterm>languages<indexterm>default</indexterm></indexterm>
             </pd>
           </plentry>
           <plentry id="dita.temp.dir">
@@ -567,6 +569,7 @@
                 FOP).
                 <indexterm>Apache FOP<index-see>FOP</index-see></indexterm>
                 <indexterm>FOP</indexterm>
+                <indexterm>I18N</indexterm>
               </p>
               <p>When this feature is enabled, DITA-OT uses a font mapping process that takes the content language into
                 consideration. The mapping process uses configuration files for each language to define characters that

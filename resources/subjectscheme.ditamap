@@ -25,4 +25,59 @@
     <attributedef name="platform"/>
     <subjectdef keyref="os"/>
   </enumerationdef>
+  <!-- Start: Controlling @outputclass values for various elements -->
+  <enumerationdef>
+    <elementdef name="codeblock"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keys="bootstrap">
+      <subjectdef keys="normalize-space"/>
+      <subjectdef keys="show-line-numbers"/>
+      <subjectdef keys="show-whitespace"/>
+      <subjectdef keys="language-java"/>
+      <subjectdef keys="language-xml"/>
+      <subjectdef keys="markdown"/>
+      <subjectdef keys="xml"/>
+      <subjectdef keys="bash"/>
+      <subjectdef keys="json"/>
+    </subjectdef>
+  </enumerationdef>
+  <enumerationdef>
+    <elementdef name="codeph"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keys="codeph-outputclass">
+      <subjectdef keys="ant-target"/>
+      <subjectdef keys="plugin-name"/>
+      <subjectdef keys="preprocess"/>
+    </subjectdef>
+  </enumerationdef>
+  <enumerationdef>
+    <elementdef name="title"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keys="title-outputclass">
+      <subjectdef keys="generated"/> <!-- Only added by automated processes; not to be manually added by authors. -->
+    </subjectdef>
+  </enumerationdef>
+  <enumerationdef>
+    <elementdef name="table"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keys="table-outputclass">
+      <subjectdef keys="table-hover"/>
+    </subjectdef>
+  </enumerationdef>
+  <enumerationdef>
+    <elementdef name="simpletable"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keys="table-outputclass">
+      <subjectdef keys="table-hover"/>
+    </subjectdef>
+  </enumerationdef>
+  <enumerationdef>
+    <elementdef name="ph"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keys="ph-outputclass">
+      <subjectdef keys="small"/>
+      <subjectdef keys="text-muted"/>
+    </subjectdef>
+  </enumerationdef>
+  <!-- End: Controlling @outputclass values for various elements -->
 </subjectScheme>

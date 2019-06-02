@@ -7,6 +7,17 @@
   <shortdesc>To modify the appearance of the default HTML output that DITA Open Toolkit generates, you can reference a
     custom Cascading Style Sheet (CSS) file with the typography, colors, and other presentation aspects that define your
     corporate identity.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>cascading style sheet<index-see>CSS</index-see></indexterm>
+        <indexterm>CSS</indexterm>
+        <indexterm>HTML<indexterm>CSS</indexterm></indexterm>
+        <indexterm>HTML5<indexterm>CSS</indexterm></indexterm>
+        <indexterm>transformations<indexterm>HTML5</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>You can use this approach when you need to adjust the look and feel of the default output for a single project,

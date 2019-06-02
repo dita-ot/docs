@@ -6,6 +6,17 @@
   <title>Custom HTML plug-ins</title>
   <shortdesc>For more complex customizations, you can create custom DITA-OT plug-ins that bundle custom fonts,
     JavaScript, and stylesheets; modify the HTML markup, or override other aspects of HTML processing.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>HTML<indexterm>custom plug-in</indexterm></indexterm>
+        <indexterm>HTML<indexterm>fonts</indexterm></indexterm>
+        <indexterm>HTML<indexterm>JavaScript</indexterm></indexterm>
+        <indexterm>HTML<indexterm>CSS</indexterm></indexterm>
+        <indexterm>HTML<indexterm>markup, adding</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <note>These examples are not intended to be used as-is, but illustrate basic techniques you can use in your own
       plug-ins. In practise, custom plug-ins often combine several of these approaches.</note>

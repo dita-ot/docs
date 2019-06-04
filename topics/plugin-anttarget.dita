@@ -7,6 +7,16 @@
   <shortdesc>As of DITA-OT 3.0, the <codeph>ant.import</codeph> extension point can be used to make new targets
     available to the Ant processing pipeline. This can be done as part of creating a new transformation, extending
     pre-processing, or simply to make new Ant targets available to other plug-ins.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>plug-ins<indexterm>Ant process</indexterm></indexterm>
+        <indexterm><codeph>ant.import</codeph></indexterm>
+        <indexterm>pre-processing</indexterm>
+        <indexterm>Ant<indexterm>targets</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step>

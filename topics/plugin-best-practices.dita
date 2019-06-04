@@ -9,6 +9,13 @@
   </titlealts>
   <shortdesc>Adhering to certain development practices will properly isolate your code from that of DITA Open Toolkit.
     This will make it easier to you to upgrade to new versions of DITA-OT when they are released.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>plug-ins<indexterm>best practices</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <ul>
       <li>

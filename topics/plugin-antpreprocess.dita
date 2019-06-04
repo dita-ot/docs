@@ -6,6 +6,14 @@
   <title>Adding an Ant target to the pre-processing pipeline</title>
   <shortdesc>You can add an Ant target to the pre-processing pipeline. This enables you to insert additional processing
     before or after the pre-processing chain or a specific step in the pre-processing operation.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>plug-ins<indexterm>Ant</indexterm></indexterm>
+        <indexterm>Ant<indexterm>pre-processing</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>You can use the <codeph>depend.preprocess.pre</codeph> and <codeph>depend.preprocess.post</codeph> extension

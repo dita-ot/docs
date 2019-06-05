@@ -39,7 +39,8 @@
                 <filepath>plugins</filepath> directory. Any plug-ins added or removed in the process will be listed by
                 their plug-in ID.</ph></li>
               <li><note id="plugin-remove-subdir" type="attention">The <parmname>--uninstall</parmname> option also
-                  removes the corresponding subdirectory from the <filepath>plugins</filepath> folder.</note></li>
+                  removes the corresponding subdirectory from the <filepath>plugins</filepath>
+                folder.<indexterm>uninstalling</indexterm></note></li>
             </ul>
           </dd>
         </dlentry>

@@ -16,6 +16,11 @@
   <conbody>
     <section id="use-xslt2">
       <title>Upgrade stylesheets to XSLT 2.0</title>
+      <indexterm>upgrading</indexterm>
+      <indexterm>Saxon</indexterm>
+      <indexterm>XSLT 1.0</indexterm>
+      <indexterm>XSLT 2.0</indexterm>
+      <indexterm>plugins<indexterm>upgrading</indexterm></indexterm>
       <p>The Saxon project has announced plans to remove XSLT 1.0 support from the Saxon-HE library that ships with
         DITA-OT:</p>
       <lq href="https://www.xml.com/news/release-saxon-98/" format="html" scope="external">…we’re dropping XSLT 1.0

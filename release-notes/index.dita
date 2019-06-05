@@ -75,6 +75,13 @@
     <title>DITA-OT <keyword keyref="maintenance-version"/>
       <ph outputclass="small text-muted">released May 28, 2019</ph>
     </title>
+    <prolog>
+      <metadata>
+        <keywords>
+          <indexterm>OASIS</indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the

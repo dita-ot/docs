@@ -7,6 +7,16 @@
   <shortdesc>After the HTML5 files are generated, the <option>html5</option> transformation generates a table of
     contents (ToC) file called <filepath>index.html</filepath>, which can be loaded as a cover page or rendered in a
     navigation sidebar or menu via CSS.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>HTML<indexterm>HTML5</indexterm></indexterm>
+        <indexterm>HTML5</indexterm>
+        <indexterm>target</indexterm>
+        <indexterm>nav-toc</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>As of DITA-OT 2.2, the <parmname>nav-toc</parmname> parameter can be used in HTML5 transformations to embed
       navigation directly in topics using native HTML5 elements without JavaScript or framesets.</p>

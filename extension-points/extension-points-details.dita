@@ -24,7 +24,12 @@
     <shortdesc conaction="pushreplace"
       conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/shortdesc">The
         <codeph>org.dita.base</codeph> plug-in provides common extension points that are available to extend processing
-      in all transformations that DITA Open Toolkit supports.</shortdesc>
+      in all transformations that DITA Open Toolkit supports.
+      <ph>
+        <indexterm><codeph>org.dita.base</codeph></indexterm>
+        <indexterm>extension point<indexterm>common</indexterm></indexterm>
+      </ph>
+    </shortdesc>
     <refbody/>
   </reference>
 
@@ -36,7 +41,23 @@
     <shortdesc conaction="pushreplace"
       conref="extension-points-in-org.dita.xhtml.dita#org.dita.xhtml-ext/shortdesc">The
         <codeph>org.dita.xhtml</codeph> plug-in provides shared extension points that can be used to modify processing
-      in HTML-based transformation types such as Eclipse help, HTML Help, TocJS, and XHTML.</shortdesc>
+      in HTML-based transformation types such as Eclipse help, HTML Help, TocJS, and XHTML.
+      <ph>
+        <indexterm><codeph>org.dita.xhtml</codeph></indexterm>
+        <indexterm>extension point<indexterm>HTML</indexterm></indexterm>
+        <indexterm>extension point<indexterm>HTML5</indexterm></indexterm>
+        <indexterm>extension point<indexterm>HTML Help</indexterm></indexterm>
+        <indexterm>extension point<indexterm>Eclipse Help</indexterm></indexterm>
+        <indexterm>extension point<indexterm>TocJS</indexterm></indexterm>
+        <indexterm>extension point<indexterm>XHTML</indexterm></indexterm>
+        <indexterm>HTML</indexterm>
+        <indexterm>HTML5</indexterm>
+        <indexterm>HTML Help</indexterm>
+        <indexterm>Eclipse Help</indexterm>
+        <indexterm>TocJS</indexterm>
+        <indexterm>XHTML</indexterm>
+      </ph>
+    </shortdesc>
     <refbody/>
   </reference>
 
@@ -49,7 +70,12 @@
       conref="extension-points-in-org.dita.html5.dita#org.dita.html5-ext/shortdesc">In addition to the
       extension points provided by common processing and those shared by with other HTML-based transformations, the
         <codeph>org.dita.html5</codeph> plug-in provides extension points that are specific to the HTML5
-      transformation.</shortdesc>
+      transformation.
+      <ph>
+        <indexterm><codeph>org.dita.html5</codeph></indexterm>
+        <indexterm>extension point<indexterm><codeph>org.dita.html5</codeph></indexterm></indexterm>
+      </ph>
+    </shortdesc>
     <refbody/>
   </reference>
 
@@ -60,7 +86,13 @@
     </titlealts>
     <shortdesc conaction="pushreplace"
       conref="extension-points-in-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-ext/shortdesc">Certain
-      extension points are specific to the Eclipse Help transformation.</shortdesc>
+      extension points are specific to the Eclipse Help transformation.
+      <ph>
+        <indexterm><codeph>org.dita.eclipsehelp</codeph></indexterm>
+        <indexterm>extension point<indexterm><codeph>org.dita.eclipsehelp</codeph></indexterm></indexterm>
+        <indexterm>Eclipse Help</indexterm>
+      </ph>
+    </shortdesc>
     <refbody/>
   </reference>
 
@@ -72,7 +104,13 @@
     </titlealts>
     <shortdesc conaction="pushreplace"
       conref="extension-points-in-org.dita.htmlhelp.dita#org.dita.htmlhelp-ext/shortdesc">Certain extension
-      points are specific to the HTML Help transformation.</shortdesc>
+      points are specific to the HTML Help transformation.
+      <ph>
+        <indexterm><codeph>org.dita.htmlhelp</codeph></indexterm>
+        <indexterm>extension point<indexterm><codeph>org.dita.htmlhelp</codeph></indexterm></indexterm>
+        <indexterm>HTML Help</indexterm>
+      </ph>
+    </shortdesc>
     <refbody/>
   </reference>
 
@@ -83,7 +121,13 @@
     </titlealts>
     <shortdesc conaction="pushreplace"
       conref="extension-points-in-org.dita.pdf2.dita#org.dita.pdf2-ext/shortdesc">Certain extension points are
-      specific to the PDF transformation (formerly known as “PDF2”).<ph><indexterm>PDF2</indexterm></ph></shortdesc>
+      specific to the PDF transformation (formerly known as “PDF2”).
+      <ph>
+        <indexterm>PDF2</indexterm>
+        <indexterm><codeph>org.dita.pdf2</codeph></indexterm>
+        <indexterm>extension point<indexterm><codeph>org.dita.pdf2</codeph></indexterm></indexterm>
+      </ph>
+    </shortdesc>
     <refbody/>
   </reference>
 
@@ -96,7 +140,13 @@
     <shortdesc conaction="pushreplace"
       conref="extension-points-in-org.dita.troff.dita#org.dita.troff-ext/shortdesc">Certain extension points
       are specific to the troff transformation, which produces output for use with the troff viewer on Unix-style
-      platforms, particularly for programs such as the man page viewer.<ph><indexterm>UNIX<index-see-also>Linux</index-see-also></indexterm></ph></shortdesc>
+      platforms, particularly for programs such as the man page viewer.
+      <ph>
+        <indexterm>UNIX<index-see-also>Linux</index-see-also></indexterm>
+        <indexterm><codeph>org.dita.troff</codeph></indexterm>
+        <indexterm>extension point<indexterm><codeph>org.dita.troff</codeph></indexterm></indexterm>
+      </ph>
+    </shortdesc>
     <refbody/>
   </reference>
 

@@ -12,12 +12,15 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>configuration properties <indexterm>default.cascade</indexterm>
-          <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
-          <indexterm>plugin.ignores</indexterm>
-          <indexterm>plugin.order</indexterm>
-          <indexterm>plugindirs</indexterm>
-          <indexterm>temp-file-name-scheme</indexterm>
+        <indexterm>configuration properties<indexterm>default.cascade</indexterm>
+                                            <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
+                                            <indexterm>plugin.ignores</indexterm>
+                                            <indexterm>plugin.order</indexterm>
+                                            <indexterm>plugindirs</indexterm>
+                                            <indexterm>temp-file-name-scheme</indexterm>
+                                            <indexterm>cli.color</indexterm>
+                                            <indexterm>registry</indexterm>
+                                            <indexterm>default.coderef-charset</indexterm>
         </indexterm>
         <indexterm>files <indexterm>config/configuration.properties file</indexterm>
         </indexterm>
@@ -37,6 +40,15 @@
         <indexterm>metadata<indexterm><xmlatt>cascade</xmlatt></indexterm></indexterm>
         <indexterm>DITA 1.2</indexterm>
         <indexterm>DITA 1.3</indexterm>
+        <indexterm>default.cascade</indexterm>
+        <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
+        <indexterm>plugin.ignores</indexterm>
+        <indexterm>plugin.order</indexterm>
+        <indexterm>plugindirs</indexterm>
+        <indexterm>temp-file-name-scheme</indexterm>
+        <indexterm>cli.color</indexterm>
+        <indexterm>registry</indexterm>
+        <indexterm>default.coderef-charset</indexterm>
       </keywords>
     </metadata>
   </prolog>

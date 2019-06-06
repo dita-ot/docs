@@ -242,7 +242,9 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ038E-extra" conaction="pushreplace">This appears to indicate an
           error in creating specialized metadata elements. Please verify that the document type you are using is
-          complete and complies with DITA Specialization rules.</stentry>
+          complete and complies with DITA Specialization rules.
+          <indexterm>metadata<indexterm>specialization error</indexterm></indexterm>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ039E-extra" conaction="pushreplace">Please see the topic on <xref

@@ -7,6 +7,15 @@
   <shortdesc>You can use these extension points to pass parameters into existing XSLT steps in both the pre-processing
     pipeline and DITA-OT transformation. The parameters generally will be available as global
       <xmlelement>xsl:param</xmlelement> values with XSLT overrides.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>XSLT</indexterm>
+        <indexterm>preprocessing<indexterm>XSLT</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm>extension points</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <title>Pre-processing</title>

@@ -9,6 +9,15 @@
   </titlealts>
   <shortdesc>These parameters enable you to reload style sheets that DITA-OT uses for specific pre-processing
     stages.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>XSLT</indexterm>
+        <indexterm>preprocessing<indexterm>XSLT</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm>extension points</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <parml>

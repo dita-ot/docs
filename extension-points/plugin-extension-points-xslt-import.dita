@@ -12,9 +12,13 @@
     <metadata>
       <keywords>
         <indexterm><xmlelement>xref</xmlelement></indexterm>
-        <indexterm>DITA elements<index-see>specific DITA element name</index-see></indexterm>
+        <indexterm>DITA elements<index-see>the specific DITA element name</index-see></indexterm>
         <indexterm><xmlatt>file</xmlatt></indexterm>
-        <indexterm>specific DITA element name</indexterm>
+        <indexterm>the specific DITA element name</indexterm>
+        <indexterm>XSLT</indexterm>
+        <indexterm>extension points<indexterm>XSLT</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm>XSLT</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm>extension points</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>

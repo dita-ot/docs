@@ -207,7 +207,9 @@
             <pd conaction="pushafter">
               <note>Disabling debugging attributes reduces the size of temporary files and thus reduces memory
                 consumption. However, the log messages no longer have the source information available and thus the
-                ability to debug problems might deteriorate.</note>
+                ability to debug problems might deteriorate.
+              <indexterm>debug</indexterm>
+              </note>
             </pd>
           </plentry>
           <plentry id="generate.copy.outer">

@@ -129,7 +129,11 @@
             <pd conaction="mark" conref="parameters-base.dita#base/args.rellinks.desc"/>
             <pd conaction="pushafter">
               <p>For PDF output, the default value is <option>nofamily</option>. For all other formats, the default
-                value is <option>all</option>.</p></pd>
+                value is <option>all</option>.
+                <indexterm>args.rellinks</indexterm>
+                <indexterm>PDF<indexterm>related links</indexterm><indexterm>args.rellinks</indexterm></indexterm>
+                <indexterm>HTML5<indexterm>related links</indexterm><indexterm>args.rellinks</indexterm></indexterm>
+              </p></pd>
           </plentry>
           <plentry id="args.tablelink.style">
             <pt>

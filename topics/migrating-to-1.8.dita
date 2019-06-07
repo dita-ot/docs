@@ -65,6 +65,10 @@
     </section>
     <section>
       <title>PDF</title>
+      <div>
+        <indexterm>args.rellinks</indexterm>
+        <indexterm>PDF<indexterm>related links</indexterm><indexterm>args.rellinks</indexterm></indexterm>
+      </div>
       <p>The following deprecated XSLT stylesheets have been removed:</p>
       <ul>
         <li><filepath>artwork-preprocessor.xsl</filepath></li>

@@ -324,7 +324,9 @@
                 <note type="tip">If <parmname>args.csspath</parmname> is not set, the custom CSS file (and the default
                   CSS files) will be copied to the root level of the output folder. To copy CSS files to an output
                   subfolder named <filepath>css</filepath>, set <parmname>args.csspath</parmname> to
-                    <option>css</option>.</note></div>
+                    <option>css</option>.
+                  <indexterm>CSS<indexterm>copy to specific location</indexterm></indexterm>
+                </note></div>
             </pd>
           </plentry>
           <plentry id="args.cssroot">

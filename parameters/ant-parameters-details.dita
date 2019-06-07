@@ -286,9 +286,9 @@
     <shortdesc conaction="pushreplace" conref="parameters-base-html.dita#base-html/shortdesc">Certain parameters apply
       to all HTML-based transformation types: HTML5, XHTML, HTML&#xA0;Help, Eclipse help, and TocJS.
     <ph>
-      <indexterm>HTML5</indexterm>
-      <indexterm>HTML elements<index-see>specific HTML5 element name</index-see></indexterm>
-      <indexterm>specific HTML5 element name</indexterm>
+      <indexterm>HTML5<indexterm>parameters</indexterm></indexterm>
+      <indexterm>HTML elements<index-see>the specific HTML element name</index-see></indexterm>
+      <indexterm>the specific HTML element name</indexterm>
     </ph>
     </shortdesc>
     <refbody>
@@ -369,7 +369,7 @@
                     <xmlatt>role</xmlatt> attribute set to <option>contentinfo</option>.
                   <indexterm><xmlelement>div</xmlelement></indexterm>
                   <indexterm><xmlatt>role</xmlatt></indexterm>
-                  <indexterm>HTML5</indexterm>
+                  <indexterm>HTML5<indexterm>footers</indexterm></indexterm>
                 </note>
               </div></pd>
           </plentry>
@@ -412,7 +412,7 @@
                   <indexterm><xmlelement>div</xmlelement></indexterm>
                   <indexterm><xmlelement>header</xmlelement></indexterm>
                   <indexterm><xmlatt>role</xmlatt></indexterm>
-                  <indexterm>HTML5</indexterm>
+                  <indexterm>HTML5<indexterm>headers</indexterm></indexterm>
                 </note>
               </div></pd>
           </plentry>

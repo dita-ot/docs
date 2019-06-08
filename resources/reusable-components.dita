@@ -93,11 +93,13 @@
 
     <section id="java">
       <title>Supported Java versions</title>
-      <indexterm>Java<indexterm>versions</indexterm></indexterm>
-      <indexterm>Amazon Corretto</indexterm>
-      <indexterm>OpenJDK</indexterm>
       <p id="java-clients">DITA-OT is designed to run on Java version <keyword keyref="tool.java.version"/> or later.
         Compatible Java distributions are available from multiple sources:
+        <div>
+          <indexterm>Java<indexterm>versions</indexterm></indexterm>
+          <indexterm>Amazon Corretto</indexterm>
+          <indexterm>OpenJDK</indexterm>
+        </div>
         <ul>
           <li>You can download the Oracle JRE or JDK from
             <xref keyref="download.oracle-jdk"/>.</li>

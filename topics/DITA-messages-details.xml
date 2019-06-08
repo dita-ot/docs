@@ -165,7 +165,9 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ023E-extra" conaction="pushreplace">Check whether the image exists
-          in the source location or already exists in the output directory.</stentry>
+          in the source location or already exists in the output directory.
+          <indexterm>image</indexterm>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTJ025E-extra" conaction="pushreplace">This message should only appear
@@ -633,7 +635,8 @@
         <stentry conref="DITA-messages.xml#msgs/DOTX044E-extra" conaction="pushreplace">The
             <xmlelement>area</xmlelement> element in an image map must provide a link target for the specified area.
           Please add an <xmlelement>xref</xmlelement> element as a child of <xmlelement>area</xmlelement> and ensure
-          that it specifies a link target.</stentry>
+          that it specifies a link target.
+        <indexterm>image map</indexterm></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX045W-extra" conaction="pushreplace">Cross reference text inside the

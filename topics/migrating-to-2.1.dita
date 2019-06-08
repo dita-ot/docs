@@ -124,6 +124,9 @@
 
     <section>
       <title>XHTML</title>
+      <div>
+        <indexterm>keydef</indexterm>
+      </div>
       <p>The <codeph>dita.<b>out.</b>map.xhtml.toc</codeph> target has been deprecated and should be replaced with the
         updated <codeph>dita.map.xhtml.toc</codeph> equivalent.</p>
       <p>Keydef processing has been removed from the XHTML rendering code. Keys are now resolved in one preprocessing

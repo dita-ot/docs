@@ -62,7 +62,9 @@
         <stentry conref="DITA-messages.xml#msgs/DOTA002F-extra" conaction="pushreplace">The input parameter was not
           specified, so there is no DITA or DITAMAP file to transform. Ensure the parameter is set properly; see <xref
             keyref="parameters-base">DITA-OT common parameters (args.input)</xref> if you are unsure how to specify the
-          input file.</stentry>
+          input file.
+        <indexterm>DITAMAP<indexterm>input file</indexterm></indexterm>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA003F-extra" conaction="pushreplace">An alternate stylesheet was

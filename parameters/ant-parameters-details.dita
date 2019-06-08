@@ -601,7 +601,8 @@
             </pt>
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/outputFile.base.desc"/>
             <pd conaction="pushafter">By default, the PDF file uses the base filename of the input
-                <filepath>.ditamap</filepath> file.</pd>
+                <filepath>.ditamap</filepath> file.
+            <indexterm>DITAMAP<indexterm>PDF file name</indexterm></indexterm></pd>
           </plentry>
           <plentry id="pdf.formatter">
             <pt>

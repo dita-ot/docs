@@ -33,6 +33,9 @@
                   <xmlelement>titlealts</xmlelement> element to be rendered below the title.
                   <indexterm><xmlelement>titlealts</xmlelement></indexterm>
                   <indexterm start="ant-xslt-params">XSLT</indexterm>
+                  <indexterm>draft<indexterm>args.draft</indexterm><indexterm>PDF</indexterm></indexterm>
+                  <indexterm>PDF<indexterm>draft</indexterm></indexterm>
+                  <indexterm>parameter<indexterm>args.draft</indexterm></indexterm>
                 </note>
             </pd>
           </plentry>

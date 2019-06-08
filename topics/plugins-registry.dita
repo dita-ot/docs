@@ -172,6 +172,9 @@
     </section>
     <section id="example-1">
       <title>Sample plug-in entry file</title>
+      <div>
+        <indexterm>DocBook</indexterm>
+      </div>
       <p>The example below shows an entry for the <codeph>DocBook</codeph> plug-in. The complete file is available in
         the registry as <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.docbook.json" format="json"
           scope="external">org.dita.docbook.json</xref>.</p>

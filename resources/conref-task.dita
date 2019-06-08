@@ -77,6 +77,7 @@
               <p conref="#ID/common-format-info"/>
               <p id="transtypes">You can create plug-ins to add new output formats; by default, the following values are
                 available:
+                <indexterm>transtype</indexterm>
                 <ul>
                   <li><option>dita</option></li>
                   <li><option>eclipsehelp</option></li>

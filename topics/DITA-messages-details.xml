@@ -496,7 +496,9 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX020E-extra" conaction="pushreplace">DITA-OT is only able to
-          dynamically retrieve titles when the target is a local (not peer or external) DITA resource.</stentry>
+          dynamically retrieve titles when the target is a local (not peer or external) DITA resource.
+        <indexterm start="navtitle">navtitle</indexterm>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX021E-extra" conaction="pushreplace">DITA-OT is only able to
@@ -519,7 +521,8 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX025E-extra" conaction="pushreplace">DITA-OT is only able to
-          dynamically retrieve titles when the target is a local DITA resource.</stentry>
+          dynamically retrieve titles when the target is a local DITA resource.
+        <indexterm end="navtitle"/></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX026W-extra" conaction="pushreplace">The referenc to this document
@@ -775,6 +778,9 @@
               <xmlelement>index-see</xmlelement> with an index term, that term should not be used to create page
             references and should not reference additional terms. Treating the <xmlelement>index-see</xmlelement> as
               <xmlelement>index-see-also</xmlelement>.</stentry>
+        </strow>
+        <strow>
+          <stentry conref="DITA-messages.xml#msgs/DOTX072I-extra" conaction="pushreplace"><indexterm>navtitle</indexterm></stentry>
         </strow>
       </simpletable>
     </section>

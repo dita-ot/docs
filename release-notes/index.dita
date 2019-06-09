@@ -311,6 +311,7 @@
             get processed) by each processing step. The <codeph>copy-files</codeph> task has been been moved to the end
             of the preprocessing pipeline to match the order in map-first preprocessing (<codeph>preprocess2</codeph>).
             <xref href="https://github.com/dita-ot/dita-ot/issues/3196" format="html" scope="external">#3196</xref>
+            <indexterm>ditafileset</indexterm>
           </li>
           <li id="3204">The
             <xref keyref="gradle"/> build system has been updated to the latest patch release (5.2.1).

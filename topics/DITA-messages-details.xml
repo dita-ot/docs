@@ -631,7 +631,9 @@
           text, it is possible for them to appear together. For example, if the same link shows up with role="next" and
           again with no specified role, it may show up as both the "Next topic" link and as a related link. Note that
           links generated from a <xmlelement>reltable</xmlelement> in a DITA map will have the role attribute set to
-          "friend".</stentry>
+          "friend".
+          <indexterm><xmlelement>reltable</xmlelement><index-see-also>relationship table</index-see-also></indexterm>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX044E-extra" conaction="pushreplace">The

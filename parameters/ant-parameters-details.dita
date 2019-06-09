@@ -611,7 +611,14 @@
             <pt>
               <parmname>pdf.formatter</parmname>
             </pt>
-            <pd>The client package comes with Apache FOP; other XSL processors must be separately installed.<indexterm>FOP</indexterm></pd>
+            <pd>The client package comes with Apache FOP; other XSL processors must be separately installed.</pd>
+            <!-- Added to inject index entries into the right location. -->
+            <pd conaction="mark" conref="parameters-pdf.dita#pdf/pdf.formatter.desc"/>
+            <pd conaction="pushafter">
+              <indexterm>FOP</indexterm>
+              <indexterm>formatter</indexterm>
+              <indexterm>PDF<indexterm>formatter</indexterm></indexterm>
+            </pd>
           </plentry>
           <plentry id="publish.required.cleanup" importance="deprecated">
             <pt>

@@ -43,6 +43,7 @@
           files that define the capabilities of each plug-in.
         <indexterm>RELAX NG</indexterm>
         <indexterm>schema</indexterm>
+        <indexterm>validate</indexterm>
         </p>
         <p>To ensure the syntax of your custom plug-in is correct, include an <xmlpi>xml-model</xmlpi> processing
           instruction at the beginning of the <filepath>plugin.xml</filepath> file, immediately after the XML

@@ -368,7 +368,9 @@
               <xmlatt>class</xmlatt> has been explicitly set on a DITA element. The attribute should be removed from the
             document so that the expected default value can be automatically used.</p>
           <p>If this is a non-DITA element, it needs to be placed inside a <xmlelement>foreign</xmlelement> element so
-            that is not validated against DITA rules.</p>
+            that is not validated against DITA rules.
+          <indexterm>validate</indexterm>
+          </p>
         </stentry>
       </strow>
       <strow>

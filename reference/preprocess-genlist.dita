@@ -16,6 +16,7 @@
         <indexterm>deprecated feature<indexterm><codeph>image.file</codeph></indexterm></indexterm>
         <indexterm>preprocessing<indexterm><codeph>gen-list</codeph></indexterm></indexterm>
         <indexterm><codeph>gen-list</codeph></indexterm>
+        <indexterm>conref</indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -42,58 +43,58 @@
           <tbody>
             <row>
               <entry>canditopicsfile</entry>
-              <entry><codeph>canditopics.list</codeph></entry>
+              <entry><codeph>canditopics.list</codeph><indexterm>canditopics.list</indexterm></entry>
               <entry/>
             </row>
             <row>
               <entry>conreffile</entry>
-              <entry><codeph>conref.list</codeph></entry>
+              <entry><codeph>conref.list</codeph><indexterm>conref.list</indexterm></entry>
               <entry>Documents that contain conref attributes that need to be resolved in preprocess.</entry>
             </row>
             <row>
               <entry>conreftargetsfile</entry>
-              <entry><codeph>conreftargets.list</codeph></entry>
+              <entry><codeph>conreftargets.list</codeph><indexterm>conreftargets.list</indexterm></entry>
               <entry/>
             </row>
             <row>
               <entry>copytosourcefile</entry>
-              <entry><codeph>copytosource.list</codeph></entry>
+              <entry><codeph>copytosource.list</codeph><indexterm>copytosource.list</indexterm></entry>
               <entry/>
             </row>
             <row>
               <entry>flagimagefile</entry>
-              <entry><codeph>flagimage.list</codeph></entry>
+              <entry><codeph>flagimage.list</codeph><indexterm>flagimage.list</indexterm></entry>
               <entry/>
             </row>
             <row>
               <entry>fullditamapandtopicfile</entry>
-              <entry><codeph>fullditamapandtopic.list</codeph></entry>
+              <entry><codeph>fullditamapandtopic.list</codeph><indexterm>fullditamapandtopic.list</indexterm></entry>
               <entry>All of the ditamap and topic files that are referenced during the transformation. These may be
                 referenced by href or conref attributes.</entry>
             </row>
             <row>
               <entry>fullditamapfile</entry>
-              <entry><codeph>fullditamap.list</codeph></entry>
+              <entry><codeph>fullditamap.list</codeph><indexterm>fullditamap.list</indexterm></entry>
               <entry>All of the ditamap files in dita.list</entry>
             </row>
             <row>
               <entry>fullditatopicfile</entry>
-              <entry><codeph>fullditatopic.list</codeph></entry>
+              <entry><codeph>fullditatopic.list</codeph><indexterm>fullditatopic.list</indexterm></entry>
               <entry>All of the topic files in dita.list</entry>
             </row>
             <row>
               <entry>hrefditatopicfile</entry>
-              <entry><codeph>hrefditatopic.list</codeph></entry>
+              <entry><codeph>hrefditatopic.list</codeph><indexterm>hrefditatopic.list</indexterm></entry>
               <entry>All of the topic files that are referenced with an href attribute</entry>
             </row>
             <row>
               <entry>hreftargetsfile</entry>
-              <entry><codeph>hreftargets.list</codeph></entry>
+              <entry><codeph>hreftargets.list</codeph><indexterm>hreftargets.list</indexterm></entry>
               <entry>Link targets</entry>
             </row>
             <row importance="deprecated">
               <entry>htmlfile</entry>
-              <entry><codeph>html.list</codeph></entry>
+              <entry><codeph>html.list</codeph><indexterm>html.list</indexterm></entry>
               <entry>Resource files</entry>
             </row>
             <row importance="deprecated">
@@ -103,22 +104,22 @@
             </row>
             <row>
               <entry>outditafilesfile</entry>
-              <entry><codeph>outditafiles.list</codeph></entry>
+              <entry><codeph>outditafiles.list</codeph><indexterm>outditafiles.list</indexterm></entry>
               <entry/>
             </row>
             <row>
               <entry>resourceonlyfile</entry>
-              <entry><codeph>resourceonly.list</codeph></entry>
+              <entry><codeph>resourceonly.list</codeph><indexterm>resourceonly.list</indexterm></entry>
               <entry/>
             </row>
             <row>
               <entry>subjectschemefile</entry>
-              <entry><codeph>subjectscheme.list</codeph></entry>
+              <entry><codeph>subjectscheme.list</codeph><indexterm>subjectscheme.list</indexterm></entry>
               <entry/>
             </row>
             <row>
               <entry>subtargetsfile</entry>
-              <entry><codeph>subtargets.list</codeph></entry>
+              <entry><codeph>subtargets.list</codeph><indexterm>subtargets.list</indexterm></entry>
               <entry/>
             </row>
             <row>
@@ -132,17 +133,17 @@
               <entry/>
             </row>
             <row>
-              <entry>user.input.dir</entry>
+              <entry>user.input.dir<indexterm>user.input.dir</indexterm></entry>
               <entry/>
               <entry>Absolute input directory path</entry>
             </row>
             <row>
-              <entry>user.input.file.listfile</entry>
+              <entry>user.input.file.listfile<indexterm>user.input.file.listfile</indexterm></entry>
               <entry/>
               <entry>Input file list file</entry>
             </row>
             <row>
-              <entry>user.input.file</entry>
+              <entry>user.input.file<indexterm>user.input.file</indexterm></entry>
               <entry/>
               <entry>Input file path, relative to the input directory</entry>
             </row>

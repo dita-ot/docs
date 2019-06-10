@@ -396,7 +396,9 @@
         <stentry conref="DITA-messages.xml#msgs/DOTX003I-extra" conaction="pushreplace">Eclipse uses anchor references
           to connect with other TOC files. For this to work in content generated from a DITA map, the anchorref element
           must reference either an existing Eclipse TOC XML file, or another DITA map (which will presumably also be
-          converted to an Eclipse TOC).</stentry>
+          converted to an Eclipse TOC).
+          <indexterm>table of contents<indexterm>Eclipse Help</indexterm></indexterm>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX004I-extra" conaction="pushreplace">Eclipse builds use DITA’s
@@ -426,11 +428,17 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX008W-extra" conaction="pushreplace">To fix the table of contents,
           specify a navigation title in your map or ensure that the referenced file is local and can be accessed. <ph
-            conref="DITA-messages-details.xml#errormessages/changeExtension"/></stentry>
+            conref="DITA-messages-details.xml#errormessages/changeExtension"/>
+          <indexterm>table of contents<indexterm>navigation title</indexterm></indexterm>
+          <indexterm>table of contents<indexterm>DOTX008W</indexterm></indexterm>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX009W-extra" conaction="pushreplace">No title was found in the
-          specified topic, so the table of contents will use the indicated fallback value for this topic.</stentry>
+          specified topic, so the table of contents will use the indicated fallback value for this topic.
+          <indexterm>table of contents<indexterm>DOTX009W</indexterm></indexterm>
+          <indexterm>table of contents<indexterm>no title</indexterm></indexterm>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX010E-extra" conaction="pushreplace">The conref attribute must be a
@@ -662,7 +670,9 @@
           actual HTML file that will not be available, it cannot be included in the project, and you should set the toc
           attribute to "no" on your topicref element. Otherwise, check to be sure your HTML file was included in the
           CHM; if it was not, you will need to place it in the correct location with your other output files and
-          recompile.</stentry>
+          recompile.
+          <indexterm>table of contents<indexterm>HTML Help</indexterm></indexterm>
+        </stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX049I-extra" conaction="pushreplace">The PDF, ODT, and RTF output

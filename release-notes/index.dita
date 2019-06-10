@@ -464,6 +464,7 @@
               format="html" scope="external">DITA specification</xref>) is now ignored on elements that also use
               <xmlatt>conref</xmlatt>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3224" format="html" scope="external">#3224</xref>
+            <indexterm>-dita-use-conref-target</indexterm>
           </li>
           <li id="3235">Revised figures and tables are now marked with change bars in booklists when DITAVAL files
             define flagging for the corresponding revision values.

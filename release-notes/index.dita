@@ -215,7 +215,7 @@
 
       <section id="enhancements">
         <title>Enhancements and changes</title>
-        <div>
+        <div outputclass="div-index">
           <indexterm><xmlelement>steps</xmlelement></indexterm>
           <indexterm><xmlelement>section</xmlelement></indexterm>
           <indexterm><xmlelement>example</xmlelement></indexterm>
@@ -330,7 +330,7 @@
 
       <section id="bugs">
         <title>Bugs</title>
-        <div>
+        <div outputclass="div-index">
           <indexterm><xmlelement>topicgroup</xmlelement></indexterm>
           <indexterm><xmlelement>topichead</xmlelement></indexterm>
           <indexterm><xmlelement>dt</xmlelement></indexterm>
@@ -483,7 +483,7 @@
 
       <section id="contrib">
         <title>Contributors</title>
-        <div>
+        <div outputclass="div-index">
           <indexterm>Jarno Elovirta</indexterm>
           <indexterm>Eliot Kimber</indexterm>
           <indexterm>Robert D Anderson</indexterm>
@@ -510,7 +510,7 @@
 
       <section id="docs">
         <title>Documentation updates</title>
-        <div>
+        <div outputclass="div-index">
           <indexterm>Quick van Rijt</indexterm>
         </div>
         <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and

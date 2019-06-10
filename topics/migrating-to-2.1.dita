@@ -124,7 +124,7 @@
 
     <section>
       <title>XHTML</title>
-      <div>
+      <div outputclass="div-index">
         <indexterm>keydef</indexterm>
       </div>
       <p>The <codeph>dita.<b>out.</b>map.xhtml.toc</codeph> target has been deprecated and should be replaced with the
@@ -150,7 +150,7 @@
     </section>
     <section>
       <title>JavaHelp</title>
-      <div>
+      <div outputclass="div-index">
         <indexterm>JavaHelp</indexterm>
       </div>
       <p>The <codeph>dita.<b>out.</b>map.javahelp.*</codeph> targets have been deprecated and should be replaced with

@@ -147,7 +147,9 @@
                 <option>TITLE</option> results in the title of the table. <ph audience="xslt-customizer">Corresponds to
                 the XSLT parameter <parmname>TABLELINK</parmname>.</ph><note rev="2.0">Support for PDF was added in
                 DITA-OT 2.0. By default PDF uses the value <option>NUMTITLE</option>, which is not supported for other
-                transformation types; this results in "Table 5. Title".</note></pd>
+                transformation types; this results in "Table 5. Title".
+                <indexterm>table<indexterm>args.tablelink.style</indexterm></indexterm>
+                </note></pd>
           </plentry>
           <plentry id="cleantemp">
             <pt>

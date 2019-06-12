@@ -5,25 +5,48 @@
 <subjectScheme>
   <subjectHead>
     <subjectHeadMeta>
-      <navtitle> Controlled values for @outputclass on certain elements </navtitle>
+      <navtitle>Controlled values for @outputclass on certain elements</navtitle>
     </subjectHeadMeta>
   </subjectHead>
-  <!-- Start of subject definitions -->
-  <subjectdef keys="codeblock-outputclass">
-    <subjectdef keys="codeblock-dita-ot-extensions">
-      <!-- https://www.dita-ot.org/dev/reference/extended-functionality.html#code-reference__normalize-codeblock-whitespace -->
+
+  <subjectdef keys="bootstrap-classes">
+    <topicmeta>
+      <navtitle>Bootstrap–specific classes </navtitle>
+      <shortdesc>Used to pick up Bootstrap formatting in site output.</shortdesc>
+    </topicmeta>
+    <subjectdef keys="table-outputclass">
       <topicmeta>
-        <navtitle>DITA-OT &lt;codeblock&gt; Processing Extensions</navtitle>
+        <navtitle>Tables</navtitle>
+        <shortdesc>Highlight rows on hover</shortdesc>
+      </topicmeta>
+      <subjectdef keys="table-hover"/>
+    </subjectdef>
+    <subjectdef keys="ph-outputclass">
+      <topicmeta>
+        <navtitle>Phrases</navtitle>
+      </topicmeta>
+      <subjectdef keys="small"/>
+      <subjectdef keys="text-muted"/>
+    </subjectdef>
+  </subjectdef>
+
+  <subjectdef keys="codeblock-outputclass">
+    <topicmeta>
+      <navtitle>Codeblocks</navtitle>
+    </topicmeta>
+    <subjectdef keys="codeblock-dita-ot-extensions">
+      <topicmeta>
+        <navtitle>DITA-OT Processing Extensions</navtitle>
+        <shortdesc>https://www.dita-ot.org/dev/reference/extended-functionality.html</shortdesc>
       </topicmeta>
       <subjectdef keys="normalize-space"/>
       <subjectdef keys="show-line-numbers"/>
       <subjectdef keys="show-whitespace"/>
     </subjectdef>
     <subjectdef keys="codeblock-syntax-highlights">
-      <!-- Used to trigger syntax highlighting via http://rouge.jneen.net/ or https://prismjs.com/ -->
       <topicmeta>
-        <navtitle>Codeblock Syntax Highlights</navtitle>
-        <shortdesc/>
+        <navtitle>Syntax Highlights</navtitle>
+        <shortdesc>Used to trigger syntax highlighting via http://rouge.jneen.net or https://prismjs.com.</shortdesc>
       </topicmeta>
       <!-- TODO?: Standardize naming convention; update source files with any changes. Add other languages?
                     Remove unused? -->
@@ -31,25 +54,14 @@
       <subjectdef keys="language-xml"/>
       <subjectdef keys="markdown"/>
       <subjectdef keys="xml"/>
-      <subjectdef keys="bash">
-        <topicmeta>
-          <navtitle> Kris and Lief are talking subjectScheme </navtitle>
-          <shortdesc>More text explaining stuff here</shortdesc>
-        </topicmeta>
-      </subjectdef>
+      <subjectdef keys="bash"/>
       <subjectdef keys="json"/>
     </subjectdef>
   </subjectdef>
-  <subjectdef keys="table-outputclass">
-    <!-- Bootstrap–specific classes used to pick up Bootstrap formatting in site output. -->
-    <topicmeta>
-      <navtitle>Table Outputclass Values</navtitle>
-    </topicmeta>
-    <subjectdef keys="table-hover"/>
-  </subjectdef>
+
   <subjectdef keys="codeph-outputclass">
     <topicmeta>
-      <navtitle>Codeph Outputclass Values</navtitle>
+      <navtitle>Code phrases</navtitle>
       <shortdesc>&lt;codeph&gt; is used semantically three unique ways in the OT docs. Rather than using element
         specialization this limits @outputclass on &lt;codeph&gt;, effectively creating semantic specialization without
         needing to modify DTDs or schemas. How &lt;codeph&gt; is used:
@@ -59,22 +71,14 @@
     <subjectdef keys="plugin-name"/>
     <subjectdef keys="preprocess"/>
   </subjectdef>
-  <subjectdef keys="ph-outputclass">
-    <!-- Bootstrap–specific classes used to pick up Bootstrap formatting in site output. -->
-    <topicmeta>
-      <navtitle>Ph Outputclass Values</navtitle>
-    </topicmeta>
-    <subjectdef keys="small"/>
-    <subjectdef keys="text-muted"/>
-  </subjectdef>
+
   <subjectdef keys="title-outputclass">
     <topicmeta>
-      <navtitle>Title Outputclass Values</navtitle>
+      <navtitle>Titles</navtitle>
+      <shortdesc>Added by automated processes; not to be manually added by authors.</shortdesc>
     </topicmeta>
     <subjectdef keys="generated"/>
-    <!-- Only added by automated processes; not to be manually added by authors. -->
   </subjectdef>
-  <!-- End of subject definitions -->
 
   <!-- Bind an attribute to a tree of related values -->
   <enumerationdef>

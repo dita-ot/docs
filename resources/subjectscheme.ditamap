@@ -3,6 +3,8 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <subjectScheme>
+  <!-- Outputclass Controlled Values -->
+  <schemeref href="subjectscheme-outputclass.ditamap"/>
   <!-- ↓ excerpt-audience ↓ -->
   <subjectdef keys="audience">
     <subjectdef keys="novice"/>
@@ -25,6 +27,4 @@
     <attributedef name="platform"/>
     <subjectdef keyref="os"/>
   </enumerationdef>
-  <!-- Outputclass Controlled Values -->
-  <schemeref href="subjectscheme-outputclass.ditamap"/>
 </subjectScheme>

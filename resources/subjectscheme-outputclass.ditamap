@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd"> 
+<subjectScheme>
+    <subjectHead>
+        <subjectHeadMeta>
+            <navtitle>
+                Controlled values for @outputclass on certain elements
+            </navtitle>
+        </subjectHeadMeta>
+    </subjectHead>
+    <!-- Start of subject definitions -->
+    <subjectdef keys="codeblock-outputclass">
+        <subjectdef keys="codeblock-dita-ot-extensions">
+            <!-- https://www.dita-ot.org/dev/reference/extended-functionality.html#code-reference__normalize-codeblock-whitespace -->
+            <topicmeta>
+                <navtitle>DITA-OT &lt;codeblock&gt; Processing Extensions</navtitle>
+            </topicmeta>
+            <subjectdef keys="normalize-space"/>
+            <subjectdef keys="show-line-numbers"/>
+            <subjectdef keys="show-whitespace"/>
+        </subjectdef>
+        <subjectdef keys="codeblock-syntax-highlights">
+            <!-- Used to trigger syntax highlighting via http://rouge.jneen.net/ or https://prismjs.com/ -->
+            <topicmeta>
+                <navtitle>Codeblock Syntax Highlights</navtitle>
+                <shortdesc></shortdesc>
+            </topicmeta>
+            <!-- TODO?: Standardize naming convention; update source files with any changes. Add other languages?
+                    Remove unused? -->
+            <subjectdef keys="language-java"/>
+            <subjectdef keys="language-xml"/>
+            <subjectdef keys="markdown"/>
+            <subjectdef keys="xml"/>
+            <subjectdef keys="bash">
+                <topicmeta>
+                    <navtitle>
+                        Kris and Lief are talking subjectScheme
+                    </navtitle>
+                    <shortdesc>More text explaining stuff here</shortdesc>
+                </topicmeta>
+            </subjectdef>
+            <subjectdef keys="json"/>
+        </subjectdef>
+    </subjectdef>
+    <subjectdef keys="table-outputclass">
+        <!-- Bootstrap–specific classes used to pick up Bootstrap formatting in site output. -->
+        <topicmeta>
+            <navtitle>Table Outputclass Values</navtitle>
+        </topicmeta>
+        <subjectdef keys="table-hover"/>
+    </subjectdef>
+    <subjectdef keys="codeph-outputclass">
+        <topicmeta>
+            <navtitle>Codeph Outputclass Values</navtitle>
+            <shortdesc>&lt;codeph&gt; is used semantically three unique ways in the OT docs. Rather than using element specialization this limits 
+                @outputclass on &lt;codeph&gt;, effectively creating semantic specialization without needing to modify DTDs or schemas.   
+                How &lt;codeph&gt; is used: https://github.com/dita-ot/docs/wiki/coding-guidelines#plug-ins</shortdesc>
+        </topicmeta>
+        <subjectdef keys="ant-target"/>
+        <subjectdef keys="plugin-name"/>
+        <subjectdef keys="preprocess"/>
+    </subjectdef>
+    <subjectdef keys="ph-outputclass">
+        <!-- Bootstrap–specific classes used to pick up Bootstrap formatting in site output. -->
+        <topicmeta>
+            <navtitle>Ph Outputclass Values</navtitle>
+        </topicmeta>
+        <subjectdef keys="small"/>
+        <subjectdef keys="text-muted"/>
+    </subjectdef>
+    <subjectdef keys="title-outputclass">
+        <topicmeta>
+            <navtitle>Title Outputclass Values</navtitle>
+        </topicmeta>
+        <subjectdef keys="generated"/> <!-- Only added by automated processes; not to be manually added by authors. -->
+    </subjectdef>
+    <!-- End of subject definitions -->
+    
+    <!-- Bind an attribute to a tree of related values -->
+    <enumerationdef>
+        <elementdef name="codeblock"/>
+        <attributedef name="outputclass"/>
+        <subjectdef keyref="codeblock-dita-ot-extensions"/>
+        <subjectdef keyref="codeblock-syntax-highlights"/>
+    </enumerationdef>
+    <enumerationdef>
+        <elementdef name="codeph"/>
+        <attributedef name="outputclass"/>
+        <subjectdef keyref="codeph-outputclass"/>
+    </enumerationdef>
+    <enumerationdef>
+        <elementdef name="ph"/>
+        <attributedef name="outputclass"/>
+        <subjectdef keyref="ph-outputclass"/>
+    </enumerationdef>
+    <enumerationdef>
+        <elementdef name="simpletable"/>
+        <attributedef name="outputclass"/>
+        <subjectdef keyref="table-outputclass"/>
+    </enumerationdef>
+    <enumerationdef>
+        <elementdef name="table"/>
+        <attributedef name="outputclass"/>
+        <subjectdef keyref="table-outputclass"/>
+    </enumerationdef>
+    <enumerationdef>
+        <elementdef name="title"/>
+        <attributedef name="outputclass"/>
+        <subjectdef keyref="title-outputclass"/>
+    </enumerationdef>
+</subjectScheme>

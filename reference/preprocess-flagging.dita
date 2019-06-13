@@ -78,7 +78,7 @@
       <title>Example DITAVAL</title>
       <p>Assume the following DITAVAL file is in use during a build. This DITAVAL will be used for each of the following
         content examples.</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;val>
   <i>&lt;!-- Define what happens in the case of conflicting styles --></i>
   &lt;style-conflict background-conflict-color="red"/>
@@ -119,7 +119,7 @@
         attributes added as they would appear in the temporary file):</p>
       <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
           <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;p audience="user" class="- topic/p ">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;p audience="user" class="- topic/p ">
   <b>&lt;ditaval-startprop</b>
       <b>class="+ topic/foreign ditaot-d/ditaval-startprop "</b>
       <b>outputclass="background-color:green;text-decoration:underline;"></b>
@@ -146,7 +146,7 @@
         copied into the generated <xmlelement>ditaval-startprop</xmlelement> element.</p>
       <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
           <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;p audience="user" platform="win" class="- topic/p ">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;p audience="user" platform="win" class="- topic/p ">
   <b>&lt;ditaval-startprop</b>
            <b>class="+ topic/foreign ditaot-d/ditaval-startprop "</b>
            <b>outputclass="background-color:red;"></b>
@@ -172,7 +172,7 @@
       <title>Content example 3: Adding image flags</title>
       <p>This example includes image flags for both <xmlatt>platform</xmlatt> and <xmlatt>rev</xmlatt>, which are
         defined in DITAVAL <xmlelement>prop</xmlelement> and <xmlelement>revprop</xmlelement> elements.</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;ol platform="linux" rev="rev2">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;ol platform="linux" rev="rev2">
   &lt;li>Generate images for platform="linux" and rev="2"&lt;/li>
 &lt;/ol></codeblock>
       <p>As above, the <xmlelement>ditaval-startprop</xmlelement> and <xmlelement>ditaval-endprop</xmlelement> nest the
@@ -183,7 +183,7 @@
         and the order is reversed for <xmlelement>ditaval-endprop</xmlelement>.</p>
       <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
           <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;ol platform="linux" rev="rev2" class="- topic/ol ">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;ol platform="linux" rev="rev2" class="- topic/ol ">
   <b>&lt;ditaval-startprop</b>
            <b>class="+ topic/foreign ditaot-d/ditaval-startprop "</b>
            <b>outputclass="background-color:blue;</b>

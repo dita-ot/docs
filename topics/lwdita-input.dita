@@ -26,7 +26,7 @@
       <p>To apply XDITA-specific processing to topics in an XDITA map or a full DITA 1.3 map, set the
           <xmlatt>format</xmlatt> attribute on a <xmlelement>topicref</xmlelement> to <codeph>xdita</codeph>:</p>
       <p>
-        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;map>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;map>
   &lt;topicref href="xdita-topic.xml" <b>format="xdita"</b>/>
 &lt;/map></codeblock>
       </p>
@@ -51,7 +51,7 @@
       <p>To apply LwDITA-specific processing to Markdown topics, set the <xmlatt>format</xmlatt> attribute to
           <codeph>mdita</codeph>:</p>
       <p>
-        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;map>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;map>
   &lt;topicref href="mdita-topic.md" <b>format="mdita"</b>/>
 &lt;/map></codeblock>
       </p>
@@ -73,7 +73,7 @@
       <p>To apply LwDITA-specific processing to HTML topics, set the <xmlatt>format</xmlatt> attribute to
           <codeph>hdita</codeph>:</p>
       <p>
-        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;map>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;map>
   &lt;topicref href="hdita-topic.html" <b>format="hdita"</b>/>
 &lt;/map></codeblock>
       </p>

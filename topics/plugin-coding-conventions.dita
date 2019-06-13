@@ -19,12 +19,12 @@
       <p>The XSLT module allows access to DITA-OT features like using the job configuration to select files in the
         temporary folder based on file metadata and custom XSLT extension functions. </p>
       <p>Instead of:</p>
-      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;xslt style="${dita.plugin.example.dir}/custom.xsl"
+      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt style="${dita.plugin.example.dir}/custom.xsl"
       basedir="${dita.temp.dir}"
       destdir="${dita.output.dir}"
       includesfile="${dita.temp.dir}/${fullditatopicfile}"/></codeblock></p>
       <p>use:</p>
-      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;pipeline>
+      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;pipeline>
   &lt;xslt style="${dita.plugin.example.dir}/custom.xsl"
         destdir="${dita.output.dir}">
     &lt;ditafileset format="dita" />
@@ -48,7 +48,7 @@
       <title>Use <xmlelement>ditafileset</xmlelement> to select files</title>
       <p>In Ant scripts, use <xmlelement>ditafileset</xmlelement> to select resources in the temporary directory.</p>
       <p>For example, to select all images referenced by input DITA files, instead of:</p>
-      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;copy todir="${copy-image.todir}">
+      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;copy todir="${copy-image.todir}">
   &lt;fileset dir="${user.input.dir}">
     &lt;includes name="*.jpg"/>
     &lt;includes name="*.jpeg"/>
@@ -58,7 +58,7 @@
   &lt;/fileset>
 &lt;/copy></codeblock></p>
       <p>use:</p>
-      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;copy todir="${copy-image.todir}">
+      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;copy todir="${copy-image.todir}">
   &lt;ditafileset format="image" />
 &lt;/copy></codeblock>
       </p>

@@ -14,7 +14,7 @@
       </step>
       <step>
         <cmd>Create the <filepath>plugin.xml</filepath> file:</cmd>
-        <stepxmp><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
+        <stepxmp><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="ant.import" file="<varname>build-file</varname>"/>
 &lt;/plugin></codeblock>where:
           <ul>

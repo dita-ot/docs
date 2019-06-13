@@ -75,13 +75,13 @@
     </section>
     <example>
       <p>Given a Haskell source file named <filepath>fact.hs</filepath> with the following content,</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../resources/fact.hs"/></codeblock>
+      <codeblock outputclass="language-haskell normalize-space show-line-numbers show-whitespace"><coderef href="../resources/fact.hs"/></codeblock>
       <p>a range of lines can be referenced as:</p>
       <codeblock>&lt;coderef href="fact.hs#token=START-FACT,END-FACT"/></codeblock>
       <p>to include the range of lines that follows the <codeph>START-FACT</codeph> token on Line 1, up to (but not
         including) the line that contains the <codeph>END-FACT</codeph> token (Line 5). The resulting
           <xmlelement>codeblock</xmlelement> would contain lines 2–4:</p>
-      <codeblock><coderef href="../resources/fact.hs#token=START-FACT,END-FACT"/></codeblock>
+      <codeblock outputclass="language-haskell"><coderef href="../resources/fact.hs#token=START-FACT,END-FACT"/></codeblock>
       <note type="tip" id="coderef-by-content-tip">This approach can be used to reference code samples that are
         frequently edited. In these cases, referencing line ranges by line number can be error-prone, as the target line
         range for the reference may shift if preceding lines are added or removed. Specifying ranges by line content

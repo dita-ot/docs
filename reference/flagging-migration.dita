@@ -130,7 +130,7 @@
       </ul>
       <p>For example, the following lines are used in DITA-OT 1.7 to process the <xmlelement>ul</xmlelement> element
         (replacing the 29 lines used in DITA-OT
-        1.6):<codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;xsl:template match="*[contains(@class,' topic/ul ')]">
+        1.6):<codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xsl:template match="*[contains(@class,' topic/ul ')]">
   <b>&lt;xsl:apply-templates select="*[contains(@class,' ditaot-d/ditaval-startprop ')]" mode="out-of-line"/></b>
   &lt;xsl:call-template name="setaname"/>
   &lt;ul>

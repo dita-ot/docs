@@ -159,7 +159,7 @@
       <p>The example below shows an entry for the <codeph>DocBook</codeph> plug-in. The complete file is available in
         the registry as <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.docbook.json" format="json"
           scope="external">org.dita.docbook.json</xref>.</p>
-      <codeblock xml:space="preserve" outputclass="language-json">[
+      <codeblock outputclass="language-json" xml:space="preserve">[
   {
     "name": "org.dita.docbook",
     "description": "Convert DITA to DocBook.",
@@ -181,7 +181,7 @@
     <section id="multiple-versions">
       <title>Maintaining multiple plug-in versions</title>
       <p>When you have multiple versions of a plug-in, include an entry for each version, separated by a comma:</p>
-      <codeblock>[
+      <codeblock outputclass="language-json">[
   {
     "name": "org.example.myplugin",
      ⋮

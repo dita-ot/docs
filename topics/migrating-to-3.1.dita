@@ -37,7 +37,7 @@
         occurrences of <codeph>if="property"</codeph> on <xmlelement>param</xmlelement> elements with
             <codeph>if<b>:set</b>="property"</codeph> (and <codeph>unless</codeph> → <codeph>unless<b>:set</b></codeph>
         respectively).</p>
-      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;root xmlns:if="ant:if" xmlns:unless="ant:unless">
+      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;root xmlns:if="ant:if" xmlns:unless="ant:unless">
   &lt;param name="antProperty" expression="${antProperty}"
          if<b>:set</b>="antProperty"/>
 &lt;/root></codeblock></p>

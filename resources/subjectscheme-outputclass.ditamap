@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd"> 
+<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <subjectScheme>
@@ -46,15 +46,22 @@
     <subjectdef keys="codeblock-syntax-highlights">
       <topicmeta>
         <navtitle>Syntax Highlights</navtitle>
-        <shortdesc>Used to trigger syntax highlighting via http://rouge.jneen.net or https://prismjs.com.</shortdesc>
+        <shortdesc>Used to trigger syntax highlighting via https://prismjs.com.</shortdesc>
       </topicmeta>
-      <!-- TODO?: Standardize naming convention; update source files with any changes. Add other languages?
-                    Remove unused? -->
-      <subjectdef keys="language-java"/>
-      <subjectdef keys="language-xml"/>
-      <subjectdef keys="language-markdown"/>
       <subjectdef keys="language-bash"/>
+      <subjectdef keys="language-clike"/>
+      <subjectdef keys="language-css"/>
+      <subjectdef keys="language-haskell"/>
+      <subjectdef keys="language-html"/>
+      <subjectdef keys="language-java"/>
+      <subjectdef keys="language-javascript"/>
       <subjectdef keys="language-json"/>
+      <subjectdef keys="language-markdown"/>
+      <subjectdef keys="language-markup"/>
+      <subjectdef keys="language-mathml"/>
+      <subjectdef keys="language-svg"/>
+      <subjectdef keys="language-xml"/>
+      <subjectdef keys="language-yaml"/>
     </subjectdef>
   </subjectdef>
 

@@ -105,7 +105,7 @@
           <indexterm>
             <parmname><xsl:value-of select="@id"/></parmname>
           </indexterm>
-          <indexterm>extension point<indexterm>
+          <indexterm>extension points<indexterm>
             <parmname><xsl:value-of select="@id"/></parmname>
           </indexterm></indexterm>
         </ph>
@@ -141,7 +141,7 @@
           <indexterm>
             <parmname><xsl:value-of select="@id"/></parmname>
           </indexterm>
-          <indexterm>extension point<indexterm>
+          <indexterm>extension points<indexterm>
             <parmname><xsl:value-of select="@id"/></parmname>
           </indexterm></indexterm>
         </ph>

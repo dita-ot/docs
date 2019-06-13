@@ -27,7 +27,7 @@
       in all transformations that DITA Open Toolkit supports.
       <ph>
         <indexterm><codeph>org.dita.base</codeph></indexterm>
-        <indexterm>extension point<indexterm>common</indexterm></indexterm>
+        <indexterm>extension points<indexterm>common</indexterm></indexterm>
       </ph>
     </shortdesc>
     <refbody/>
@@ -44,14 +44,14 @@
       in HTML-based transformation types such as Eclipse help, HTML Help, TocJS, and XHTML.
       <ph>
         <indexterm><codeph>org.dita.xhtml</codeph></indexterm>
-        <indexterm>extension point<indexterm>HTML</indexterm></indexterm>
-        <indexterm>extension point<indexterm>HTML5</indexterm></indexterm>
-        <indexterm>extension point<indexterm>HTML Help</indexterm></indexterm>
-        <indexterm>extension point<indexterm>Eclipse Help</indexterm></indexterm>
-        <indexterm>extension point<indexterm>TocJS</indexterm></indexterm>
-        <indexterm>extension point<indexterm>XHTML</indexterm></indexterm>
+        <indexterm>extension points<indexterm>HTML</indexterm></indexterm>
+        <indexterm>extension points<indexterm>HTML5</indexterm></indexterm>
+        <indexterm>extension points<indexterm>HTML Help</indexterm></indexterm>
+        <indexterm>extension points<indexterm>Eclipse Help</indexterm></indexterm>
+        <indexterm>extension points<indexterm>TocJS</indexterm></indexterm>
+        <indexterm>extension points<indexterm>XHTML</indexterm></indexterm>
         <indexterm>HTML</indexterm>
-        <indexterm>HTML5<indexterm>extension point</indexterm></indexterm>
+        <indexterm>HTML5<indexterm>extension points</indexterm></indexterm>
         <indexterm>HTML Help</indexterm>
         <indexterm>Eclipse Help</indexterm>
         <indexterm>TocJS</indexterm>
@@ -73,7 +73,7 @@
       transformation.
       <ph>
         <indexterm><codeph>org.dita.html5</codeph></indexterm>
-        <indexterm>extension point<indexterm><codeph>org.dita.html5</codeph></indexterm></indexterm>
+        <indexterm>extension points<indexterm><codeph>org.dita.html5</codeph></indexterm></indexterm>
       </ph>
     </shortdesc>
     <refbody/>
@@ -89,7 +89,7 @@
       extension points are specific to the Eclipse Help transformation.
       <ph>
         <indexterm><codeph>org.dita.eclipsehelp</codeph></indexterm>
-        <indexterm>extension point<indexterm><codeph>org.dita.eclipsehelp</codeph></indexterm></indexterm>
+        <indexterm>extension points<indexterm><codeph>org.dita.eclipsehelp</codeph></indexterm></indexterm>
         <indexterm>Eclipse Help</indexterm>
       </ph>
     </shortdesc>
@@ -107,7 +107,7 @@
       points are specific to the HTML Help transformation.
       <ph>
         <indexterm><codeph>org.dita.htmlhelp</codeph></indexterm>
-        <indexterm>extension point<indexterm><codeph>org.dita.htmlhelp</codeph></indexterm></indexterm>
+        <indexterm>extension points<indexterm><codeph>org.dita.htmlhelp</codeph></indexterm></indexterm>
         <indexterm>HTML Help</indexterm>
       </ph>
     </shortdesc>
@@ -125,7 +125,7 @@
       <ph>
         <indexterm>PDF2</indexterm>
         <indexterm><codeph>org.dita.pdf2</codeph></indexterm>
-        <indexterm>extension point<indexterm><codeph>org.dita.pdf2</codeph></indexterm></indexterm>
+        <indexterm>extension points<indexterm><codeph>org.dita.pdf2</codeph></indexterm></indexterm>
       </ph>
     </shortdesc>
     <refbody/>
@@ -144,7 +144,7 @@
       <ph>
         <indexterm>UNIX<index-see-also>Linux</index-see-also></indexterm>
         <indexterm><codeph>org.dita.troff</codeph></indexterm>
-        <indexterm>extension point<indexterm><codeph>org.dita.troff</codeph></indexterm></indexterm>
+        <indexterm>extension points<indexterm><codeph>org.dita.troff</codeph></indexterm></indexterm>
       </ph>
     </shortdesc>
     <refbody/>

@@ -15,9 +15,9 @@
     <section id="titles-and-document-structure">
       <title>Titles and document structure</title>
       <p>Each header level will generate a topic and associated title:</p>
-      <codeblock outputclass="markdown" xml:space="preserve"># Topic title
+      <codeblock outputclass="language-markdown" xml:space="preserve"># Topic title
 
-## Nested topic title</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;topic id="topic_title"&gt;
+## Nested topic title</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;topic id="topic_title"&gt;
   &lt;title&gt;Topic title&lt;/title&gt;
   &lt;topic id="nested_topic_title"&gt;
     &lt;title&gt;Nested topic title&lt;/title&gt;
@@ -26,18 +26,18 @@
       <p>Pandoc
         <xref format="html#extension-header_attributes" href="http://pandoc.org/MANUAL.html#extension-header_attributes"
           scope="external">header_attributes</xref> can be used to define <codeph>id</codeph> or
-          <codeph>outputclass</codeph> attributes:</p><codeblock outputclass="markdown" xml:space="preserve"># Topic title {#carrot .juice}</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;topic id="carrot" outputclass="juice"&gt;
+          <codeph>outputclass</codeph> attributes:</p><codeblock outputclass="language-markdown" xml:space="preserve"># Topic title {#carrot .juice}</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;topic id="carrot" outputclass="juice"&gt;
   &lt;title&gt;Topic title&lt;/title&gt;</codeblock>
       <p>If topic ID is not defined using header_attributes, the ID is generated from title contents.</p>
       <p>Pandoc
         <xref format="html#extension-pandoc_title_block"
           href="http://pandoc.org/MANUAL.html#extension-pandoc_title_block" scope="external">pandoc_title_block</xref>
         extension can be used to group multiple level 1 headers under a common
-      title:</p><codeblock outputclass="markdown" xml:space="preserve">% Common title
+      title:</p><codeblock outputclass="language-markdown" xml:space="preserve">% Common title
 
 # Topic title
 
-# Second title</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;topic id="common_title"&gt;
+# Second title</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;topic id="common_title"&gt;
   &lt;title&gt;Common title&lt;/title&gt;
   &lt;topic id="topic_title"&gt;
     &lt;title&gt;Topic title&lt;/title&gt;
@@ -64,13 +64,13 @@
           <p><codeph>reference</codeph></p></li>
       </ul>
       <p>They can be used to change the Markdown DITA topic type to one of the built-in structural specialization
-        types.</p><codeblock outputclass="markdown" xml:space="preserve"># Task {.task}
+        types.</p><codeblock outputclass="language-markdown" xml:space="preserve"># Task {.task}
 
 Context
 
 1.  Command
 
-    Info.</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;task id="task"&gt;
+    Info.</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;task id="task"&gt;
   &lt;title&gt;Task &lt;/title&gt;
   &lt;taskbody&gt;
     &lt;context&gt;
@@ -102,11 +102,11 @@ Context
             ><codeph>section</codeph></xref> and
         <xref format="html" href="http://docs.oasis-open.org/dita/v1.2/os/spec/langref/example.html" scope="external"
             ><codeph>example</codeph></xref>
-      elements:</p><codeblock outputclass="markdown" xml:space="preserve"># Topic title
+      elements:</p><codeblock outputclass="language-markdown" xml:space="preserve"># Topic title
 
 ## Section title {.section}
 
-## Example title {.example}</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;topic id="topic_title"&gt;
+## Example title {.example}</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;topic id="topic_title"&gt;
   &lt;title&gt;Topic title&lt;/title&gt;
   &lt;body&gt;
     &lt;section&gt;
@@ -153,10 +153,10 @@ Context
       </table>
       <p>All other link targets use <codeph>format</codeph> from file extension and are treated as non-DITA files.
         Absolute links targets are treated as external scope
-      links:</p><codeblock outputclass="markdown" xml:space="preserve">[Markdown](test.md)
+      links:</p><codeblock outputclass="language-markdown" xml:space="preserve">[Markdown](test.md)
 [DITA](test.dita)
 [HTML](test.html)
-[External](http://www.example.com/test.html)</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;xref href="test.md"&gt;Markdown&lt;/xref&gt;
+[External](http://www.example.com/test.html)</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;xref href="test.md"&gt;Markdown&lt;/xref&gt;
 &lt;xref href="test.dita"&gt;DITA&lt;/xref&gt;
 &lt;xref href="test.html" format="html"&gt;HTML&lt;/xref&gt;
 &lt;xref href="http://www.example.com/test.html" format="html" scope="external"&gt;External&lt;/xref&gt;</codeblock></section>
@@ -164,11 +164,11 @@ Context
       <title>Images</title>
       <p>Images used in inline content will result in inline placement. If a block level image contains a title, it will
         be treated as an image wrapped in
-      figure:</p><codeblock outputclass="markdown" xml:space="preserve">An inline ![Alt](test.jpg).
+      figure:</p><codeblock outputclass="language-markdown" xml:space="preserve">An inline ![Alt](test.jpg).
 
 ![Alt](test.jpg)
 
-![Alt](test.jpg "Title")</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;p&gt;An inline &lt;image href="test.jpg"&gt;&lt;alt&gt;Alt&lt;/alt&gt;&lt;/image&gt;.&lt;/p&gt;
+![Alt](test.jpg "Title")</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;p&gt;An inline &lt;image href="test.jpg"&gt;&lt;alt&gt;Alt&lt;/alt&gt;&lt;/image&gt;.&lt;/p&gt;
 &lt;image href="test.jpg" placement="break"&gt;
   &lt;alt&gt;Alt&lt;/alt&gt;
 &lt;/image&gt;
@@ -183,25 +183,25 @@ Context
       <p>Key reference can be used with
         <xref format="html" href="http://spec.commonmark.org/0.18/#shortcut-reference-link" scope="external">shortcut
           reference
-      links</xref>:</p><codeblock outputclass="markdown" xml:space="preserve">[key]
-![image-key]</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;xref keyref="key"/&gt;
+      links</xref>:</p><codeblock outputclass="language-markdown" xml:space="preserve">[key]
+![image-key]</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;xref keyref="key"/&gt;
 &lt;image keyref="image-key"/&gt;</codeblock></section>
     <section id="inline">
       <title>Inline</title>
       <p>The following inline elements are
-      supported:</p><codeblock outputclass="markdown" xml:space="preserve">**bold**
+      supported:</p><codeblock outputclass="language-markdown" xml:space="preserve">**bold**
 *italic*
 `code`
-~~strikethrough~~</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;b&gt;bold&lt;/b&gt;
+~~strikethrough~~</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;b&gt;bold&lt;/b&gt;
 &lt;i&gt;italic&lt;/i&gt;
 &lt;codeph&gt;code&lt;/codeph&gt;
 &lt;ph status="deleted"&gt;strikethrough&lt;/ph&gt;</codeblock></section>
     <section id="lists">
       <title>Lists</title>
-      <p>Unordered can be marked up with either hyphen or ampersand:</p><codeblock outputclass="markdown" xml:space="preserve">*   one
+      <p>Unordered can be marked up with either hyphen or ampersand:</p><codeblock outputclass="language-markdown" xml:space="preserve">*   one
 *   two
     -   three
-    -   four</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;ul&gt;
+    -   four</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;ul&gt;
   &lt;li&gt;one&lt;/li&gt;
   &lt;li&gt;two
     &lt;ul&gt;
@@ -210,10 +210,10 @@ Context
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</codeblock>
-      <p>Ordered can be marked up with either number or number sign, followed by a period:</p><codeblock outputclass="markdown" xml:space="preserve">1.  one
+      <p>Ordered can be marked up with either number or number sign, followed by a period:</p><codeblock outputclass="language-markdown" xml:space="preserve">1.  one
 2.  two
     #.  three
-    #.  four</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;ol&gt;
+    #.  four</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;ol&gt;
   &lt;li&gt;one&lt;/li&gt;
   &lt;li&gt;two
     &lt;ol&gt;
@@ -224,8 +224,8 @@ Context
 &lt;/ul&gt;</codeblock>
       <p>Definition lists use the
         <xref format="html" href="http://michelf.com/projects/php-markdown/extra/#def-list" scope="external">PHP
-          Markdown Extra</xref> format:</p><codeblock outputclass="markdown" xml:space="preserve">Term
-:   Definition.</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;dl&gt;
+          Markdown Extra</xref> format:</p><codeblock outputclass="language-markdown" xml:space="preserve">Term
+:   Definition.</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;dl&gt;
   &lt;delentry&gt;
     &lt;dt&gt;Term&lt;/dt&gt;
     &lt;dd&gt;Defintion.&lt;/dd&gt;
@@ -236,10 +236,10 @@ Context
       <title>Tables</title>
       <p>Tables use
         <xref format="html" href="http://fletcherpenney.net/multimarkdown/" scope="external">MultiMarkdown</xref> table
-        extension format:</p><codeblock outputclass="markdown" xml:space="preserve">| First Header | Second Header | Third Header |
+        extension format:</p><codeblock outputclass="language-markdown" xml:space="preserve">| First Header | Second Header | Third Header |
 | ------------ | :-----------: | -----------: |
 | Content      | *Long Cell*                 ||
-| Content      | **Cell**      | Cell         |</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;table&gt;
+| Content      | **Cell**      | Cell         |</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;table&gt;
   &lt;tgroup cols="3"&gt;
     &lt;colspec colname="col1"/&gt;
     &lt;colspec colname="col2" align="center"/&gt;
@@ -293,7 +293,7 @@ Context
           <p><codeph>resourceid</codeph></p></li>
       </ul>
       <p>Unrecognized keys are output using <codeph>data</codeph>
-      element.</p><codeblock outputclass="markdown" xml:space="preserve">---
+      element.</p><codeblock outputclass="language-markdown" xml:space="preserve">---
 author:
   - Author One
   - Author Two
@@ -311,7 +311,7 @@ resourceid:
 workflow: review
 ---
 
-# Sample with YAML header</codeblock><codeblock outputclass="xml" xml:space="preserve">&lt;title&gt;Sample with YAML header&lt;/title&gt;
+# Sample with YAML header</codeblock><codeblock outputclass="language-xml" xml:space="preserve">&lt;title&gt;Sample with YAML header&lt;/title&gt;
 &lt;prolog&gt;
   &lt;author&gt;Author One&lt;/author&gt;
   &lt;author&gt;Author Two&lt;/author&gt;

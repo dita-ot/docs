@@ -42,7 +42,7 @@
         last line of the file.</p>
     </section>
     <example>
-      <codeblock>&lt;coderef href="Parser.scala#line-range(5, 10)" format="scala"/></codeblock>
+      <codeblock outputclass="language-xml">&lt;coderef href="Parser.scala#line-range(5, 10)" format="scala"/></codeblock>
       <p>Only lines from 5 to 10 will be included in the output.</p>
     </example>
     <section>
@@ -57,7 +57,7 @@
       <p>The position line number starts from 0.</p>
     </section>
     <example>
-      <codeblock>&lt;coderef href="Parser.scala#line=4,10" format="scala"/></codeblock>
+      <codeblock outputclass="language-xml">&lt;coderef href="Parser.scala#line=4,10" format="scala"/></codeblock>
       <p>Only lines from 5 to 10 will be included in the output.</p>
     </example>
     <section>
@@ -94,7 +94,7 @@
           Given an XML snippet in a codeblock with lines that all begin with spaces (indicated here as dots “·”),</p>
       </section>
       <example>
-        <p><codeblock>··&lt;subjectdef keys="audience">
+        <p><codeblock outputclass="language-xml">··&lt;subjectdef keys="audience">
 ····&lt;subjectdef keys="novice"/>
 ····&lt;subjectdef keys="expert"/>
 ··&lt;/subjectdef></codeblock></p>
@@ -104,7 +104,7 @@
         <p>In this case, two spaces (“··”) would be removed from the beginning of each line, shifting content to the
           left by two characters, while preserving the indentation of lines that contain additional whitespace (beyond
           the common indent):</p>
-        <p><codeblock>&lt;subjectdef keys="audience">
+        <p><codeblock outputclass="language-xml">&lt;subjectdef keys="audience">
 ··&lt;subjectdef keys="novice"/>
 ··&lt;subjectdef keys="expert"/>
 &lt;/subjectdef></codeblock></p>

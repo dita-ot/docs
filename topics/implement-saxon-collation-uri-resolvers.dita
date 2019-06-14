@@ -66,7 +66,7 @@
             <codeph>org.dita.dost.module.saxon.DelegatingCollationUriResolver</codeph>:<codeblock>org.example.i18n.saxon.MyCollationUriResolver</codeblock>
           <p>You can create the services file using <xmlelement>service</xmlelement> elements in an Ant
             <xmlelement>jar</xmlelement>
-            task:<codeblock>&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">
+            task:<codeblock outputclass="language-xml">&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">
   ⋮
   &lt;service type="org.dita.dost.module.saxon.DelegatingCollationUriResolver">
     &lt;provider classname="org.example.i18n.saxon.MyCollationUriResolver"/>
@@ -75,7 +75,7 @@
 &lt;/jar></codeblock></p></li>
         <li>To use the collator in XSLT style sheets, specify the collation URI on <xmlatt>xsl:sort</xmlatt> elements (or
           anywhere a collator URI can be
-          specified):<codeblock>&lt;xsl:apply-templates select="word">
+          specified):<codeblock outputclass="language-xml">&lt;xsl:apply-templates select="word">
   &lt;xsl:sort collation="http://org.example.i18n.MyCollator"/>
 &lt;/xsl:apply-templates></codeblock></li>
       </ol></p>

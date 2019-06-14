@@ -9,7 +9,7 @@
   <conbody>
     <section>
       <p>Maps reference other maps by using the following sorts of markup:
-        <codeblock>&lt;topicref href="other.ditamap" format="ditamap"/>
+        <codeblock outputclass="language-xml">&lt;topicref href="other.ditamap" format="ditamap"/>
 ...
 &lt;mapref href="other.ditamap"/></codeblock></p>
       <p>As a result of the mapref step, the element that references another map is replaced by the topic references

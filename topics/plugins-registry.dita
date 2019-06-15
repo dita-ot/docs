@@ -224,7 +224,7 @@
           name above, you can add your registry
           with:<codeblock outputclass="language-properties">registry=https://raw.githubusercontent.com/USERNAME/registry/addPlugin/ http://plugins.dita-ot.org/</codeblock></li>
         <li>You can now test the plug-in installation with:
-          <codeblock>dita --install org.example.newPlugin</codeblock></li>
+          <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=org.example.newPlugin</codeblock></li>
         <li>Once you’ve confirmed that the entry works, you can submit a pull request to have your entry added to the
           common registry.</li>
       </ol>

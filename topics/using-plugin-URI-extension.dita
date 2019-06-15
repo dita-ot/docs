@@ -42,7 +42,7 @@
         </info>
         <stepxmp>
           <p>The following example imports the base output-message.xsl processing:</p>
-          <codeblock>&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock>
+          <codeblock outputclass="language-xml">&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock>
         </stepxmp>
         <info>
           <p>To use the URI extension, your plug-in must reference the DITA-OT catalog file. In your

@@ -23,7 +23,7 @@
           <pd>
             <p>When any flag is active on an element, a <xmlelement>ditaval-startprop</xmlelement> element will be
               created as the first child of the flagged element:</p>
-            <codeblock>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop "></codeblock>
+            <codeblock outputclass="language-xml">&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop "></codeblock>
             <p>The <xmlelement>ditaval-startprop</xmlelement> element will contain the following:
               <ul>
                 <li>If the active flags should create a new style, that style is included using standard CSS markup on
@@ -44,7 +44,7 @@
           <pd>
             <p>When any flag is active on an element, a <xmlelement>ditaval-endprop</xmlelement> element will be created
               as the last child of the flagged element:</p>
-            <codeblock>&lt;ditaval-endprop class="+ topic/foreign ditaot-d/ditaval-endprop "></codeblock>
+            <codeblock outputclass="language-xml">&lt;ditaval-endprop class="+ topic/foreign ditaot-d/ditaval-endprop "></codeblock>
             <p>CSS values and <xmlelement>style-conflict</xmlelement> elements are not included on this element.</p>
             <p>Any <xmlelement>prop</xmlelement> or <xmlelement>revprop</xmlelement> elements that define active flags
               will be copied in as children of <xmlelement>ditaval-prop</xmlelement>. Any
@@ -111,7 +111,7 @@
       <p>Now assume the following paragraph exists in a topic. Class attributes are included, as they would normally be
         in the middle of the preprocess routine; <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are left off for
         clarity.</p>
-      <codeblock>&lt;p audience="user">Simple user; includes style but no images&lt;/p></codeblock>
+      <codeblock outputclass="language-xml">&lt;p audience="user">Simple user; includes style but no images&lt;/p></codeblock>
       <p>Based on the DITAVAL above, audience="user" results in a style with underlining and with a green background.
         The interpreted CSS value is added to <xmlatt>outputclass</xmlatt> on
         <xmlelement>ditaval-startprop</xmlelement>, and the actual property definition is included at the start and end
@@ -139,7 +139,7 @@
       <p>This example includes a paragraph with conflicting styles. When the audience and platform attributes are both
         evaluated, the DITAVAL indicates that the background color is both green and blue. In this situation, the
           <xmlelement>style-conflict</xmlelement> element is evaluated to determine how to style the content.</p>
-      <codeblock>&lt;p audience="user" platform="win">Conflicting styles (still no images)&lt;/p></codeblock>
+      <codeblock outputclass="language-xml">&lt;p audience="user" platform="win">Conflicting styles (still no images)&lt;/p></codeblock>
       <p>The <xmlelement>style-conflict</xmlelement> element results in a background color of red, so this value is
         added to <xmlatt>outputclass</xmlatt> on <xmlelement>ditaval-startprop</xmlelement>. As above, active properties
         are copied into the generated elements; the <xmlelement>style-conflict</xmlelement> element itself is also

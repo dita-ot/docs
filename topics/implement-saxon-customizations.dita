@@ -21,7 +21,7 @@
     <p>These extensions use the DITA Open Toolkit Ant <xmlelement>pipeline</xmlelement> element to wrap
         <xmlelement>xslt</xmlelement> elements. You can do this in plug-ins as shown in this excerpt from the DITA
       Community I18N plugin’s <filepath>build.xml</filepath>
-      file:<codeblock>&lt;target name="org.dita-community.i18n-saxon-extension-test">
+      file:<codeblock outputclass="language-xml">&lt;target name="org.dita-community.i18n-saxon-extension-test">
   &lt;pipeline message="Test the DITA Community i18n Saxon extension functions"
             taskname="i18n-extension-function-test">
     &lt;xslt

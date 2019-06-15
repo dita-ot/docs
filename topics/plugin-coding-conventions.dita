@@ -37,9 +37,9 @@
       <p>In Ant scripts, always refer to files in other plug-ins using the
             <codeph>dita.plugin.<varname>plugin-id</varname>.dir</codeph> property.</p>
       <p>Instead of:</p>
-      <p><codeblock>&lt;property name="base" location="../example/custom.xsl"/></codeblock></p>
+      <p><codeblock outputclass="language-xml">&lt;property name="base" location="../example/custom.xsl"/></codeblock></p>
       <p>use:</p>
-      <p><codeblock>&lt;property name="base" location="${dita.plugin.example.dir}/custom.xsl"/></codeblock></p>
+      <p><codeblock outputclass="language-xml">&lt;property name="base" location="${dita.plugin.example.dir}/custom.xsl"/></codeblock></p>
       <p>This fixes cases where plug-ins are installed to custom plug-in directories or the plug-in folder name doesn’t
         match the plug-in ID.</p>
     </section>
@@ -98,9 +98,9 @@
       <p>In XSLT, use the <codeph>plugin</codeph> URI scheme in <xmlelement>xsl:import</xmlelement> and
           <xmlelement>xsl:include</xmlelement> to reference files in other plug-ins.</p>
       <p>Instead of:</p>
-      <p><codeblock>&lt;xsl:import href="../../org.dita.base/xsl/common/output-message.xsl"/></codeblock></p>
+      <p><codeblock outputclass="language-xml">&lt;xsl:import href="../../org.dita.base/xsl/common/output-message.xsl"/></codeblock></p>
       <p>use:</p>
-      <p><codeblock>&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock></p>
+      <p><codeblock outputclass="language-xml">&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock></p>
       <p>As with the plug-in directory property in Ant, this allows plug-ins to resolve to the correct directory even
         when a plug-in moves to a new location. The plug-in is referenced using the syntax
             <codeph>plugin:<varname>plugin-id</varname>:<varname>path/within/plugin/file.xsl</varname></codeph>.</p>

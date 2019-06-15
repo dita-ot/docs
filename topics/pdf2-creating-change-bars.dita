@@ -34,7 +34,7 @@
     </ul>
     <fig>
       <title>Sample revision bar configuration</title>
-      <codeblock outputclass="language-xml xml">&lt;revprop action="flag" changebar="solid" color="green"/></codeblock>
+      <codeblock outputclass="language-xml">&lt;revprop action="flag" changebar="solid" color="green"/></codeblock>
     </fig>
     <p>DITA-OT uses a default offset of 2 mm to place the revision bar near the edge of the text column. The offset,
       placement and width are not currently configurable via attribute values.</p>

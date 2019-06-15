@@ -27,7 +27,7 @@
 com.example.saxon.functions.Substract</codeblock>
           <p>You can create the file using <xmlelement>service</xmlelement> elements in an Ant
               <xmlelement>jar</xmlelement>
-            task:<codeblock>&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">
+            task:<codeblock outputclass="language-xml">&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">
   ⋮
   &lt;service type="net.sf.saxon.lib.ExtensionFunctionDefinition">
     &lt;provider classname="com.example.saxon.functions.Add"/>
@@ -36,12 +36,12 @@ com.example.saxon.functions.Substract</codeblock>
   ⋮
 &lt;/jar></codeblock></p></li>
         <li>In your XSLT transformations, declare the namespace the functions are bound
-          to:<codeblock>&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+          to:<codeblock outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 <b>xmlns:eg="http://example.com/saxon-extensions"</b>
                 version="2.0"></codeblock></li>
       </ol></p>
     <p>You should then be able to use the extension functions as you would any other
-      function:<codeblock>&lt;xsl:variable name="test" select="<b>eg:add(1, 2)</b>"/></codeblock></p>
+      function:<codeblock outputclass="language-xml">&lt;xsl:variable name="test" select="<b>eg:add(1, 2)</b>"/></codeblock></p>
   </body>
 </topic>

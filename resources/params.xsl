@@ -131,9 +131,9 @@
         </ph>
         <xsl:if test="@deprecated = 'true'">
           <ph>
-            <indexterm>deprecated feature<indexterm>
+            <indexterm>deprecated features<indexterm>parameters<indexterm>
                 <parmname><xsl:value-of select="@name"/></parmname>
-              </indexterm>
+                </indexterm></indexterm>
             </indexterm>
           </ph>
         </xsl:if>

@@ -111,9 +111,9 @@
         </ph>
         <xsl:if test="parent::*[@deprecated = 'true']">
           <ph>
-            <indexterm>deprecated feature<indexterm>
-                <parmname><xsl:value-of select="@id"/></parmname>
-              </indexterm>
+            <indexterm>deprecated features<indexterm>extension points<indexterm>
+              <parmname><xsl:value-of select="@id"/></parmname>
+            </indexterm></indexterm>
             </indexterm>
           </ph>
         </xsl:if>
@@ -147,9 +147,9 @@
         </ph>
         <xsl:if test="parent::*[@deprecated = 'true']">
           <ph>
-            <indexterm>deprecated feature<indexterm>
+            <indexterm>deprecated features<indexterm>extension points<indexterm>
                 <parmname><xsl:value-of select="@id"/></parmname>
-              </indexterm>
+            </indexterm></indexterm>
             </indexterm>
           </ph>
         </xsl:if>

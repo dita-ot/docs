@@ -429,7 +429,7 @@
           <plentry id="args.hide.parent.link" importance="deprecated">
             <pt>
               <parmname>args.hide.parent.link</parmname>
-              <ph><indexterm>deprecated feature<indexterm><parmname>args.hide.parent.link</parmname></indexterm></indexterm></ph>
+              <ph><indexterm>deprecated features<indexterm><parmname>args.hide.parent.link</parmname></indexterm></indexterm></ph>
             </pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.hide.parent.link.desc"/>
             <pd conaction="pushafter">
@@ -626,7 +626,7 @@
           <plentry id="publish.required.cleanup" importance="deprecated">
             <pt>
               <parmname>publish.required.cleanup</parmname>
-              <ph><indexterm>deprecated feature<indexterm><parmname>publish.required.cleanup</parmname></indexterm></indexterm></ph>
+              <ph><indexterm>deprecated features<indexterm><parmname>publish.required.cleanup</parmname></indexterm></indexterm></ph>
             </pt>
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/publish.required.cleanup.desc"/>
             <pd conaction="pushafter">The default value is the value of the <parmname>args.draft</parmname> parameter.
@@ -748,7 +748,7 @@
           <plentry id="args.hide.parent.link" importance="deprecated">
             <pt>
               <parmname>args.hide.parent.link</parmname>
-              <ph><indexterm>deprecated feature<indexterm><parmname>args.hide.parent.link</parmname></indexterm></indexterm></ph>
+              <ph><indexterm>deprecated features<indexterm><parmname>args.hide.parent.link</parmname></indexterm></indexterm></ph>
             </pt>
             <pd conaction="mark" conref="parameters-html5.dita#html5/args.hide.parent.link.desc"/>
             <pd conaction="pushafter">

@@ -65,9 +65,9 @@
     <section>
       <p>The <codeph>key-definitions.ditamap</codeph> defines keys for version references, re-usable links, etc.</p>
       <p>This key definition defines the maintenance release version:</p>
-      <p><codeblock outputclass="normalize-space"><coderef href="../resources/key-definitions.ditamap#token=excerpt-version,end-excerpt"/></codeblock></p>
+      <p><codeblock outputclass="language-xml normalize-space"><coderef href="../resources/key-definitions.ditamap#token=excerpt-version,end-excerpt"/></codeblock></p>
       <p>In topics, the keyword is used in place of hard-coded version references:</p>
-      <codeblock>&lt;title&gt;DITA Open Toolkit &lt;keyword keyref="maintenance-version"/&gt; Release Notes&lt;/title&gt;</codeblock>
+      <codeblock outputclass="language-xml">&lt;title&gt;DITA Open Toolkit &lt;keyword keyref="maintenance-version"/&gt; Release Notes&lt;/title&gt;</codeblock>
     </section>
 
     <section>
@@ -78,7 +78,7 @@
         <xref format="html"
           href="http://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/langRef/containers/xml-mention-domain.html#xml-mention-domain"
           scope="external">XML mention domain</xref> to mark up XML elements and attributes:</p>
-      <codeblock>&lt;li id="1777"&gt;
+      <codeblock outputclass="language-xml">&lt;li id="1777"&gt;
   DITA 1.3: Initial support has been added for the &lt;xmlatt&gt;orient&lt;/xmlatt&gt;
   attribute on &lt;xmlelement&gt;table&lt;/xmlelement&gt; elements. These changes allow
   Antenna House Formatter to render tables in landscape mode when the

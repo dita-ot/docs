@@ -41,7 +41,7 @@
         transformation types instead of using the default <codeph>preprocess</codeph> target.</p>
       <p>For example, if you have a custom HTML5 transformation type named "myhtml", then you may have a plug-in
         extension that looks this:</p>
-      <codeblock><i>&lt;!-- Simple variant: set properties and call default HTML5 --></i>
+      <codeblock outputclass="language-xml">&lt;!-- Simple variant: set properties and call default HTML5 -->
 &lt;target name="dita2myhtml" depends="myhtml.init,dita2html5"/>
 </codeblock>
       <p>This type of extension is quite common, and is used to set default properties for your environment followed by

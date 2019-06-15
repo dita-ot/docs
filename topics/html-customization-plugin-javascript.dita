@@ -48,7 +48,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>javascript.ftr.xml</filepath> file</title>
-            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/include/javascript.ftr.xml"/></codeblock>
+            <codeblock outputclass="language-javascript normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/include/javascript.ftr.xml"/></codeblock>
           </fig>
           <p>The division wrapper will be discarded when generating HTML files, and the contents will be inserted into
             the <xmlelement>footer</xmlelement> element of each page.</p>

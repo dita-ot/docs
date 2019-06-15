@@ -23,11 +23,11 @@
       <p>If a character set is not defined, the system default character set will be used. If the character set is not
         recognized or supported, the <msgnum>DOTJ052E</msgnum> error is thrown and the system default character set is
         used as a fallback.</p>
-      <codeblock>&lt;coderef href="unicode.txt" format="txt; charset=UTF-8"/></codeblock>
+      <codeblock outputclass="language-xml">&lt;coderef href="unicode.txt" format="txt; charset=UTF-8"/></codeblock>
       <p>As of DITA-OT 3.3, the default character set for code references can be changed by adding the
           <parmname>default.coderef-charset</parmname> key to the
         <xref keyref="configuration-properties-file">configuration.properties</xref> file:</p>
-      <codeblock>default.coderef-charset = ISO-8859-1</codeblock>
+      <codeblock outputclass="language-properties">default.coderef-charset = ISO-8859-1</codeblock>
       <p>The character set values are those supported by the Java
         <xref format="html" href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html"
           scope="external">Charset</xref> class.</p>
@@ -77,7 +77,7 @@
       <p>Given a Haskell source file named <filepath>fact.hs</filepath> with the following content,</p>
       <codeblock outputclass="language-haskell normalize-space show-line-numbers show-whitespace"><coderef href="../resources/fact.hs"/></codeblock>
       <p>a range of lines can be referenced as:</p>
-      <codeblock>&lt;coderef href="fact.hs#token=START-FACT,END-FACT"/></codeblock>
+      <codeblock outputclass="language-xml">&lt;coderef href="fact.hs#token=START-FACT,END-FACT"/></codeblock>
       <p>to include the range of lines that follows the <codeph>START-FACT</codeph> token on Line 1, up to (but not
         including) the line that contains the <codeph>END-FACT</codeph> token (Line 5). The resulting
           <xmlelement>codeblock</xmlelement> would contain lines 2–4:</p>

@@ -72,7 +72,7 @@
       <p>You can use this macro in your Ant build to call the <cmdname>dita</cmdname> command and pass the
           <parmname>input</parmname>, <parmname>format</parmname> and <parmname>propertyfile</parmname> parameters as
         follows:
-        <codeblock>&lt;dita-cmd input="sample.ditamap" format="pdf" propertyfile="sample.properties"/></codeblock>
+        <codeblock outputclass="language-xml">&lt;dita-cmd input="sample.ditamap" format="pdf" propertyfile="sample.properties"/></codeblock>
       </p>
       <p>This approach allows you to use Ant builds to perform additional tasks at build time while allowing the
           <cmdname>dita</cmdname> command to set the classpath and ensure that all necessary JAR libraries are

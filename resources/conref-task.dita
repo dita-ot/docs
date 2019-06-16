@@ -111,7 +111,7 @@
           <note id="dita-in-path" type="tip">Add the absolute path for <filepath conref="#ID/ot-dir"
               /><filepath>/bin</filepath> to the <varname>PATH</varname> environment variable to run the
               <cmdname>dita</cmdname> command from any location on the file system without typing the path.
-            <indexterm><cmdname>dita</cmdname> command</indexterm>
+            <indexterm><cmdname>dita</cmdname> command<indexterm>PATH environment variable</indexterm></indexterm>
           </note>
         </stepresult>
       </step>
@@ -136,7 +136,8 @@
         files is not consistent, set <option>args.input.dir</option> with the <cmdname>dita</cmdname> command and
         reference its value with <codeph>${args.input.dir}</codeph> in your <filepath>.properties</filepath>
         file.
-        <indexterm><cmdname>dita</cmdname> command</indexterm>
+        <indexterm><cmdname>dita</cmdname>
+          command<indexterm><option>args.input.dir</option></indexterm><indexterm>.properties file</indexterm></indexterm>
         <indexterm>args.input.dir</indexterm>
       </note>
     </postreq>

@@ -98,7 +98,7 @@
           <indexterm>registry</indexterm>
           <indexterm><xmlelement>draft-comment</xmlelement></indexterm>
           <indexterm><xmlelement>required-cleanup</xmlelement></indexterm>
-          <indexterm><xmlatt>conref</xmlatt></indexterm>
+          <indexterm><xmlatt>conref</xmlatt><indexterm>multiple targets</indexterm></indexterm>
           <indexterm><xmlatt>type</xmlatt></indexterm>
           <indexterm><xmlatt>conkeyref</xmlatt></indexterm>
           <indexterm><cmdname>dita</cmdname> command</indexterm>
@@ -228,6 +228,7 @@
           <indexterm><cmdname>dita</cmdname> command</indexterm>
           <indexterm>XSLT</indexterm>
           <indexterm>Saxon<indexterm>version</indexterm></indexterm>
+          <indexterm><xmlatt>conref</xmlatt><indexterm>empty</indexterm></indexterm>
         </div>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
           existing features:</p>
@@ -335,7 +336,7 @@
           <indexterm><xmlelement>topichead</xmlelement></indexterm>
           <indexterm><xmlelement>dt</xmlelement></indexterm>
           <indexterm><xmlelement>tm</xmlelement></indexterm>
-          <indexterm><xmlatt>conref</xmlatt></indexterm>
+          <indexterm><xmlatt>conref</xmlatt><indexterm>-dita-use-conref-target</indexterm></indexterm>
           <indexterm><xmlatt>keyref</xmlatt></indexterm>
           <indexterm><xmlatt>chunk</xmlatt><indexterm>processing changes</indexterm></indexterm>
           <indexterm><xmlatt>id</xmlatt></indexterm>

@@ -271,7 +271,7 @@
             <pd conaction="pushafter">Acceptable values include any value normally allowed on the <xmlatt>chunk</xmlatt>
               attribute. If the map does not have a <xmlatt>chunk</xmlatt> attribute, this value will be used; if the
               map already has a <xmlatt>chunk</xmlatt> attribute specified, this value will be used instead.
-              <indexterm><xmlatt>chunk</xmlatt></indexterm>
+              <indexterm><xmlatt>chunk</xmlatt><indexterm><parmname>root-chunk-override</parmname></indexterm></indexterm>
             </pd>
           </plentry>
           <plentry id="transtype">

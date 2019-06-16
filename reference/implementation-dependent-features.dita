@@ -24,7 +24,6 @@
         <indexterm><xmlatt>copy-to</xmlatt></indexterm>
         <indexterm>filter</indexterm>
         <indexterm>encoding</indexterm>
-        <indexterm>chunking</indexterm>
         <indexterm>filtering</indexterm>
         <indexterm>images<indexterm>scaling</indexterm></indexterm>
         <indexterm>map processing</indexterm>
@@ -40,6 +39,10 @@
   <refbody>
     <section id="section_jla_oqn_qc">
       <title>Chunking</title>
+      <div outputclass="div-index">
+        <indexterm><xmlatt>chunk</xmlatt><indexterm>supported methods</indexterm></indexterm>
+        <indexterm><xmlatt>chunk</xmlatt><indexterm>error recovery</indexterm></indexterm>
+      </div>
       <p>DITA content can be divided or merged into new output documents in different ways, depending on the value of
         the <xmlatt>chunk</xmlatt> attribute.</p>
       <p>DITA-OT supports the following chunking methods:</p>

@@ -18,12 +18,13 @@
         <indexterm><xmlelement>xsl:import</xmlelement></indexterm>
         <indexterm><xmlelement>nextCatalog</xmlelement></indexterm>
         <indexterm><xmlelement>template</xmlelement></indexterm>
-        <indexterm>deprecated features<indexterm><filepath>plugin.xml</filepath>, <codeph>templates</codeph> key</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><filepath>plugin.xml</filepath>, <codeph>templates</codeph>
+            key</indexterm></indexterm>
         <indexterm>security</indexterm>
         <indexterm>TLS</indexterm>
         <indexterm>registry</indexterm>
         <indexterm>XSLT</indexterm>
-        <indexterm>catalog</indexterm>
+        <indexterm>catalog<indexterm>location</indexterm></indexterm>
         <indexterm>CSS<indexterm>HTML5</indexterm></indexterm>
         <indexterm>HTML5<indexterm>CSS</indexterm></indexterm>
         <indexterm>table<indexterm>PDF</indexterm></indexterm>

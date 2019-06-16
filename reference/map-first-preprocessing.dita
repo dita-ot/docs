@@ -19,7 +19,7 @@
         <indexterm>preprocessing<indexterm>map first</indexterm></indexterm>
         <indexterm>DITA 1.0</indexterm>
         <indexterm>DITA 1.2</indexterm>
-        <indexterm>DITA 1.3</indexterm>
+        <indexterm>DITA 1.3<indexterm>effect on preprocessing</indexterm></indexterm>
         <indexterm>pipeline<indexterm>map first</indexterm></indexterm>
         <indexterm>validate</indexterm>
         <indexterm>DITAMAP<indexterm>validate</indexterm></indexterm>
@@ -34,7 +34,7 @@
       referenced after filtering, for example, or to only process the map to validate the map structure.</p>
     <p>The current preprocessing architecture was established during the DITA 1.0 era when there were fewer DITA
       features that operated on the map level. Initially, the difference between processing modes was not that great.
-      DITA 1.2 and 1.3 introduced many more map-level features such as keys and key scopes that make it difficult to
+      DITA 1.2 and 1.3 introduced many more map-level features, such as keys and key scopes, that make it difficult to
       reliably work with topics before all map features have been resolved. </p>
     <p>The original preprocessing operation already handles many map operations first, but this was not the original
       design and requires regular refactoring to handle edge cases. The new map-first preprocessing is designed with

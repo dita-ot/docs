@@ -339,7 +339,7 @@
           <indexterm><xmlatt>conref</xmlatt><indexterm>-dita-use-conref-target</indexterm></indexterm>
           <indexterm><xmlatt>keyref</xmlatt></indexterm>
           <indexterm><xmlatt>chunk</xmlatt><indexterm>processing changes</indexterm></indexterm>
-          <indexterm><xmlatt>id</xmlatt></indexterm>
+          <indexterm><xmlatt>id</xmlatt><indexterm><xmlelement>dt</xmlelement></indexterm></indexterm>
           <indexterm>DITAVAL<indexterm>duplicate conditions</indexterm><indexterm>change bars</indexterm></indexterm>
           <indexterm>Linux</indexterm>
           <indexterm>RELAX NG</indexterm>

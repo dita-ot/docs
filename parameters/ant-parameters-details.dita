@@ -534,7 +534,7 @@
               is the symbolic name for the plugin in Eclipse. The default value is
                 <option>org.sample.help.doc</option>.<note type="tip">The toolkit ignores the value of this parameter
                 when it processes an Eclipse map.
-                <indexterm><xmlatt>id</xmlatt></indexterm>
+                <indexterm><xmlatt>id</xmlatt><indexterm><parmname>args.eclipse.symbolic.name</parmname></indexterm></indexterm>
                 </note><draft-comment author="Kristen James Eberlein"
                 time="11 August 2012">I'm not clear what this means. Is the default value for the
                   <parmname>args.eclipse.symbolic.name</parmname> parameter the value of the <xmlatt>id</xmlatt>

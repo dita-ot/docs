@@ -580,8 +580,8 @@
               <p>Enables internationalization (I18N) font processing to provide per-character font selection for FO
                 renderers that do not support the <codeph>font-selection-strategy</codeph> property (such as Apache
                 FOP).
-                <indexterm>Apache FOP<index-see>FOP</index-see></indexterm>
-                <indexterm>FOP</indexterm>
+                <indexterm>Apache FOP<indexterm>I18N</indexterm></indexterm>
+                <indexterm>FOP<index-see>Apache FOP</index-see></indexterm>
                 <indexterm>I18N</indexterm>
                 <indexterm>fonts<indexterm>PDF</indexterm></indexterm>
               </p>
@@ -616,7 +616,7 @@
             <!-- Added to inject index entries into the right location. -->
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/pdf.formatter.desc"/>
             <pd conaction="pushafter">
-              <indexterm>FOP</indexterm>
+              <indexterm>Apache FOP<indexterm><parmname>pdf.formatter</parmname></indexterm></indexterm>
               <indexterm>formatter</indexterm>
               <indexterm>PDF<indexterm>formatter</indexterm></indexterm>
             </pd>

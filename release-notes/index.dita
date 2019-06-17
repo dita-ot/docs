@@ -222,8 +222,7 @@
           <indexterm><xmlelement>stepsection</xmlelement></indexterm>
           <indexterm><xmlelement>mapref</xmlelement></indexterm>
           <indexterm><xmlelement>topicref</xmlelement></indexterm>
-          <indexterm>RELAX NG</indexterm>
-          <indexterm>schema</indexterm>
+          <indexterm>schema<indexterm>RELAX NG</indexterm></indexterm>
           <indexterm><cmdname>dita</cmdname> command<indexterm>property values</indexterm></indexterm>
           <indexterm>XSLT</indexterm>
           <indexterm>Saxon<indexterm>version</indexterm></indexterm>
@@ -343,8 +342,8 @@
           <indexterm>Linux<indexterm>installation directory</indexterm></indexterm>
           <indexterm>macOS<indexterm>installation directory</indexterm></indexterm>
           <indexterm>Windows<indexterm>installation directory</indexterm></indexterm>
-          <indexterm>RELAX NG</indexterm>
-          <indexterm>schema</indexterm>
+          <indexterm>RELAX NG<index-see>schema</index-see></indexterm>
+          <indexterm>schema<indexterm>RELAX NG</indexterm></indexterm>
           <indexterm><cmdname>dita</cmdname> command<indexterm>= (equals sign)</indexterm></indexterm>
           <indexterm>XSLT</indexterm>
           <indexterm>nav-toc</indexterm>

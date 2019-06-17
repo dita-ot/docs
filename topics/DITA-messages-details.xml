@@ -69,7 +69,7 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA003F-extra" conaction="pushreplace">An alternate stylesheet was
           specified to run in place of the default XSLT output process, but that stylesheet could not be loaded. Please
-          correct the parameter to specify a valid stylesheet.<indexterm>XSLT</indexterm></stentry>
+          correct the parameter to specify a valid stylesheet.<indexterm>XSLT<indexterm>stylesheet error</indexterm></indexterm></stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTA004F-extra" conaction="pushreplace">This optional parameter is used

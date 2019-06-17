@@ -224,7 +224,7 @@
           <indexterm><xmlelement>topicref</xmlelement></indexterm>
           <indexterm>schema<indexterm>RELAX NG</indexterm></indexterm>
           <indexterm><cmdname>dita</cmdname> command<indexterm>property values</indexterm></indexterm>
-          <indexterm>XSLT</indexterm>
+          <indexterm>XSLT<indexterm>file location</indexterm></indexterm>
           <indexterm>Saxon<indexterm>version</indexterm></indexterm>
           <indexterm><xmlatt>conref</xmlatt><indexterm>empty</indexterm></indexterm>
         </div>
@@ -345,7 +345,6 @@
           <indexterm>RELAX NG<index-see>schema</index-see></indexterm>
           <indexterm>schema<indexterm>RELAX NG</indexterm></indexterm>
           <indexterm><cmdname>dita</cmdname> command<indexterm>= (equals sign)</indexterm></indexterm>
-          <indexterm>XSLT</indexterm>
           <indexterm>nav-toc</indexterm>
         </div>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>

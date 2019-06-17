@@ -65,7 +65,9 @@
                 <p>DITAVAL files are evaluated in the order specified, so conditions specified in the first file take
                   precedence over matching conditions specified in later files, just as conditions at the start of a
                   DITAVAL document take precedence over matching conditions later in the same document.</p>
-                <indexterm>DITAVAL<indexterm><parmname>args.filter</parmname></indexterm><index-see-also>filter</index-see-also><index-see-also>profiling</index-see-also></indexterm>
+                <indexterm>DITAVAL<indexterm><parmname>args.filter</parmname></indexterm></indexterm>
+                <indexterm>DITAVAL<index-see-also>filter</index-see-also></indexterm> <!-- https://github.com/dita-ot/dita-ot/issues/3319 -->
+                <indexterm>DITAVAL<index-see-also>profiling</index-see-also></indexterm>
                 <indexterm>Mac<index-see>macOS</index-see></indexterm>
                 <indexterm>macOS</indexterm>
                 <indexterm>Linux</indexterm>

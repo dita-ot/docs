@@ -47,7 +47,7 @@
         </choicetable>
         <info>
           <p>You also can add a <xmlelement>property</xmlelement> element to an Ant target in your build file, for
-            example: <codeblock>&lt;property name="args.debug" value="yes"/></codeblock></p></info>
+            example: <codeblock outputclass="language-xml">&lt;property name="args.debug" value="yes"/></codeblock></p></info>
       </step>
     </steps>
   </taskbody>

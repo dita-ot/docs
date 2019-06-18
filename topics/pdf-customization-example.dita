@@ -40,7 +40,7 @@
         <info>
           <fig>
             <title><filepath>plugin.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/plugin.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/plugin.xml"/></codeblock>
           </fig>
         </info>
       </step>
@@ -49,7 +49,7 @@
         <info>
           <fig>
             <title><filepath>integrator.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/integrator.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/integrator.xml"/></codeblock>
           </fig></info>
       </step>
       <step>
@@ -58,7 +58,7 @@
         <stepxmp>
           <fig>
             <title><filepath>cfg/catalog.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/catalog.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/catalog.xml"/></codeblock>
           </fig>
         </stepxmp>
       </step>
@@ -67,14 +67,14 @@
           it.</cmd>
         <stepxmp>For example, add the following variables to change the page size to A4.<fig>
             <title><filepath>cfg/fo/attrs/custom.xsl</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/fo/attrs/custom.xsl"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/fo/attrs/custom.xsl"/></codeblock>
           </fig></stepxmp>
       </step>
       <step>
         <cmd>Create the <filepath>cfg/fo/xsl/custom.xsl</filepath> file, and add XSLT overrides to it.</cmd>
         <stepxmp>For example, the following code changes the rendering of <xmlelement>figure</xmlelement> elements.<fig>
             <title><filepath>cfg/fo/xsl/custom.xsl</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/fo/xsl/custom.xsl"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/fo/xsl/custom.xsl"/></codeblock>
           </fig></stepxmp>
       </step>
       <step>
@@ -83,7 +83,7 @@
         <stepxmp>For example, the following code removes the period after the number for an ordered-list item; it also
           specifies that the bullet for an unordered list item should be an em dash.<fig>
             <title><filepath>cfg/common/vars/en.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/common/vars/en.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/cfg/common/vars/en.xml"/></codeblock>
           </fig></stepxmp>
       </step>
     </steps>

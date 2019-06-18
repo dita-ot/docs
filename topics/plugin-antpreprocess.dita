@@ -27,7 +27,7 @@
       </step>
       <step>
         <cmd>Create the following <filepath>plugin.xml</filepath> file:</cmd>
-        <info><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
+        <info><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="<varname>extension-point</varname>" value="<varname>Ant-target</varname>"/>
 &lt;/plugin></codeblock>where
           <ul>
@@ -47,7 +47,7 @@
       <p>The following <filepath>plugin.xml</filepath> file specifies that the
           <parmname>myAntTargetBeforeChunk</parmname> target is always run before the <codeph>chunk</codeph> step in the
         pre-processing stage.</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.extendchunk">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.extendchunk">
   &lt;feature extension="depend.preprocess.chunk.pre" 
            value="myAntTargetBeforeChunk"/>
 &lt;/plugin></codeblock>

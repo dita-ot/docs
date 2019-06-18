@@ -114,7 +114,7 @@
       <title>Plugin URI scheme</title>
       <p>Support for the <keyword>plugin</keyword> URI scheme has been added to XSLT stylesheets. Plug-ins can refer to
         files in other plug-ins without hard-coding relative paths, for example: </p>
-      <codeblock xml:space="preserve">&lt;xsl:import href="plugin:org.dita.pdf2:xsl/fo/topic2fo_1.0.xsl"/&gt;</codeblock>
+      <codeblock outputclass="language-xml" xml:space="preserve">&lt;xsl:import href="plugin:org.dita.pdf2:xsl/fo/topic2fo_1.0.xsl"/&gt;</codeblock>
     </section>
     <section>
       <title>XHTML</title>

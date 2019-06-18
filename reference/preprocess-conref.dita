@@ -30,7 +30,7 @@
         values of the <xmlatt>id</xmlatt> and <xmlatt>xref</xmlatt> attributes are updated so that they remain valid in
         the new location. For example, a referenced topic might include a section as in the following example: <fig>
           <title>Referenced topic that contains a section and cross reference</title>
-          <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;topic id="referenced_topic">
+          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;topic id="referenced_topic">
   &lt;title>...&lt;/title>
   &lt;body>
     &lt;section id="sect">
@@ -51,7 +51,7 @@
         as a local reference. For example, if the referencing topic has an <xmlatt>id</xmlatt> set to "new_topic", then
         the conrefed element may look like this in the intermediate document <xmlelement>section</xmlelement>. <fig>
           <title>Resolved conrefed <xmlelement>section</xmlelement> element after the conref step</title>
-          <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;section id="sect">
+          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;section id="sect">
   &lt;title>Sample section&lt;/title>
   &lt;p>Figure &lt;xref href="#new_topic/d1e25"/> contains a code sample
     that demonstrates ... .&lt;/p>

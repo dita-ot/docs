@@ -41,7 +41,7 @@
         </info>
         <stepxmp>
           <p>The following example copies CSS files from the HTML5 plug-in:</p>
-          <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;copy todir="${dita.temp.dir}/css">
+          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;copy todir="${dita.temp.dir}/css">
   &lt;fileset dir="${dita.plugin.org.dita.html5.dir}/css" 
            includes="*.css"/>
 &lt;/copy></codeblock>
@@ -57,7 +57,7 @@
         </info>
         <stepxmp>
           <p>The following example imports the base output-message.xsl processing:</p>
-          <codeblock>&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock>
+          <codeblock outputclass="language-xml">&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock>
         </stepxmp>
         <info>
           <p>To use the URI extension, your plug-in must reference the DITA-OT catalog file. In your
@@ -65,7 +65,7 @@
             DITA-OT catalog file as a child of the <xmlelement>xslt</xmlelement> element.</p>
         </info>
         <stepxmp>
-          <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;xslt style="xsl/my.xsl"
+          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt style="xsl/my.xsl"
       in="${dita.temp.dir}/input.file" 
       out="${dita.temp.dir}/output.file">
   &lt;xmlcatalog refid="dita.catalog"/>

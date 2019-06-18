@@ -67,7 +67,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>plugin.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/plugin.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/plugin.xml"/></codeblock>
           </fig>
           <note>This plug-in will extend the default HTML5 transformation, so the <xmlelement>require</xmlelement>
             element explicitly defines <filepath>org.dita.html5</filepath> as a dependency.</note>
@@ -83,7 +83,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>webfont.hdf.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/include/webfont.hdf.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/include/webfont.hdf.xml"/></codeblock>
           </fig>
           <p>This example uses the <xref keyref="noto-sans-font"/> font. You can use multiple fonts by creating
             additional <xmlelement>link</xmlelement> references in this file. The division wrapper will be discarded
@@ -101,7 +101,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>custom.css</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/css/custom.css"/></codeblock>
+            <codeblock outputclass="language-css normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/css/custom.css"/></codeblock>
           </fig>
           <p>This example uses <xref keyref="noto-sans-font"/> for all body content. In practice, you would normally use
             different fonts for headings, body content, tables, etc. by creating additional rules in your CSS file.</p>
@@ -113,7 +113,7 @@
         <stepxmp>
           <fig>
             <title>Sample build file: <filepath>build_html5-webfont.xml</filepath></title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/build_html5-webfont.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/build_html5-webfont.xml"/></codeblock>
           </fig>
         </stepxmp>
       </step>

@@ -33,7 +33,7 @@
           <option>contentinfo</option>.</p>
       <p>For example, the DITA-OT documentation includes a simple header banner with the publication title and a
         horizontal rule to separate the header from the generated topic content: </p>
-      <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../resources/header.xml"/></codeblock>
+      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../resources/header.xml"/></codeblock>
       </p>
       <note>Header and footer files should be specified using absolute paths and must contain valid XML. A common
         practice is to place all content into a <xmlelement>div</xmlelement> element.</note>
@@ -52,7 +52,7 @@
         <cmd>Add custom CSS rules to style headers and/or footers.</cmd>
         <info>
           <p>For example, the DITA-OT documentation stylesheet includes the following header rules: </p>
-          <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../resources/dita-ot-doc.css#token=header-coderef,end-header-ref"/></codeblock>
+          <p><codeblock outputclass="language-css normalize-space show-line-numbers show-whitespace"><coderef href="../resources/dita-ot-doc.css#token=header-coderef,end-header-ref"/></codeblock>
           </p>
         </info>
       </step>

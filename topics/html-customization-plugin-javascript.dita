@@ -43,7 +43,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>plugin.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml"/></codeblock>
           </fig>
           <note>This plug-in will extend the default HTML5 transformation, so the <xmlelement>require</xmlelement>
             element explicitly defines <filepath>org.dita.html5</filepath> as a dependency.</note>
@@ -59,7 +59,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>javascript.ftr.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/include/javascript.ftr.xml"/></codeblock>
+            <codeblock outputclass="language-javascript normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/include/javascript.ftr.xml"/></codeblock>
           </fig>
           <p>The division wrapper will be discarded when generating HTML files, and the contents will be inserted into
             the <xmlelement>footer</xmlelement> element of each page.</p>
@@ -72,7 +72,7 @@
         <stepxmp>
           <fig>
             <title>Sample build file: <filepath>build_html5-javascript.xml</filepath></title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/build_html5-javascript.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/build_html5-javascript.xml"/></codeblock>
           </fig>
         </stepxmp>
       </step>

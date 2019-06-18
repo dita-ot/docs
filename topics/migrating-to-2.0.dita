@@ -45,7 +45,7 @@
       </section>
       <example>
         <p>For example:</p>
-        <codeblock>&lt;xsl:variable name="urltest">
+        <codeblock outputclass="language-xml">&lt;xsl:variable name="urltest">
 &lt;xsl:variable name="urltest" <b>as="xs:boolean"</b>></codeblock>
       </example>
       <section>

@@ -93,7 +93,7 @@
       </ul>
       <p>Calls to that template will result in warnings in the build log.</p>
       <p>To update your plug-in, make the following changes:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="<line-through>insertVariable</line-through><b>getVariable</b>">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="<line-through>insertVariable</line-through><b>getVariable</b>">
   &lt;xsl:with-param name="<line-through>theVariableID</line-through><b>id</b>" select="<varname>var-id</varname>"/>
   &lt;xsl:with-param name="<line-through>theParameters</line-through><b>params</b>">
     <varname>params</varname>

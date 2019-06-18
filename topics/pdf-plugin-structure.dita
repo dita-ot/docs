@@ -71,9 +71,9 @@
       the changes in the publishing process, you find the corresponding entry for each file you modified in the
         <filepath>catalog.xml</filepath> file.</p>
     <p>It should look like this:</p>
-    <codeblock>&lt;!--uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/--&gt;</codeblock>
+    <codeblock outputclass="language-xml">&lt;!--uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/--&gt;</codeblock>
     <p>Remove the comment markers <codeph>!--</codeph> and <codeph>--</codeph> to enable the change:</p>
-    <codeblock>&lt;uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/&gt;</codeblock>
+    <codeblock outputclass="language-xml">&lt;uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/&gt;</codeblock>
     <p>Your customization should now be enabled as part of the publishing process.</p>
     <fig>
       <title>Sample custom plug-in structure</title>

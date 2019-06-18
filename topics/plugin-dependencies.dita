@@ -40,7 +40,7 @@
       <title>Example: Plug-in with a prerequisite plug-in</title>
       <p>The following plug-in will only be installed if the plug-in with the ID <codeph>com.example.primary</codeph> is
         available. If that plug-in is not available, a warning is generated and the installation operation fails.</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.builds-on-primary">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.builds-on-primary">
   &lt;!-- ... Extensions here -->
   &lt;require plugin="com.example.primary"/>
 &lt;/plugin></codeblock>
@@ -50,7 +50,7 @@
       <p>The following plug-in will only be installed if either the plug-in with the ID <codeph>pluginA</codeph> or the
         plug-in with the ID <codeph>pluginB</codeph> is available. If neither of those plug-ins are installed, a warning
         is generated but the installation operation is completed.</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="pluginC">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="pluginC">
   &lt;!-- ...extensions here -->
   &lt;require plugin="pluginA|pluginB" importance="optional"/>
 &lt;/plugin></codeblock>

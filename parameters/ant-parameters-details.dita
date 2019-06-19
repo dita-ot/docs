@@ -35,7 +35,7 @@
                   <indexterm start="ant-xslt-params">XSLT</indexterm>
                   <indexterm>draft<indexterm>args.draft</indexterm><indexterm>PDF</indexterm></indexterm>
                   <indexterm>PDF<indexterm>draft</indexterm></indexterm>
-                  <indexterm>parameter<indexterm>args.draft</indexterm></indexterm>
+                  <indexterm>parameters<indexterm>args.draft</indexterm></indexterm>
                 </note>
             </pd>
           </plentry>
@@ -68,7 +68,7 @@
                 <indexterm>DITAVAL<indexterm><parmname>args.filter</parmname></indexterm></indexterm>
                 <indexterm>DITAVAL<index-see-also>filter</index-see-also></indexterm> <!-- https://github.com/dita-ot/dita-ot/issues/3319 -->
                 <indexterm>DITAVAL<index-see-also>profiling</index-see-also></indexterm>
-                <indexterm>Mac<index-see>macOS</index-see></indexterm>
+                <indexterm>OSX<index-see>macOS</index-see></indexterm>
                 <indexterm>macOS<indexterm>delimiter</indexterm></indexterm>
                 <indexterm>Linux<indexterm>delimiter</indexterm></indexterm>
                 <indexterm>Windows<indexterm>delimiter</indexterm></indexterm>
@@ -295,8 +295,6 @@
       to all HTML-based transformation types: HTML5, XHTML, HTML&#xA0;Help, Eclipse help, and TocJS.
     <ph>
       <indexterm>HTML5<indexterm>parameters</indexterm></indexterm>
-      <indexterm>HTML elements<index-see>the specific HTML element name</index-see></indexterm>
-      <indexterm>the specific HTML element name</indexterm>
     </ph>
     </shortdesc>
     <refbody>

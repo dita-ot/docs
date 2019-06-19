@@ -125,7 +125,7 @@
           <indexterm>
             <parmname><xsl:value-of select="@name"/></parmname>
           </indexterm>
-          <indexterm>parameter<indexterm>
+          <indexterm>parameters<indexterm>
             <parmname><xsl:value-of select="@name"/></parmname>
           </indexterm></indexterm>
         </ph>

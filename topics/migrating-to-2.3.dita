@@ -16,17 +16,6 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm><xmlelement>div</xmlelement><indexterm><codeph>div.shortdesc</codeph></indexterm></indexterm>
-        <indexterm><xmlelement>p</xmlelement></indexterm>
-        <indexterm><xmlelement>abstract</xmlelement></indexterm>
-        <indexterm><xmlelement>simpletable</xmlelement></indexterm>
-        <indexterm><xmlelement>properties</xmlelement></indexterm>
-        <indexterm><xmlelement>choicetable</xmlelement></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>tm-area</codeph> named template</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm>PDF localization variables</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>conreffile</parmname></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>conref-check</parmname> target</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>coderef</parmname> target</indexterm></indexterm>
         <indexterm>languages<indexterm>supported</indexterm></indexterm>
         <indexterm>Chinese</indexterm>
         <indexterm>English</indexterm>
@@ -56,6 +45,15 @@
     </section>
     <section>
       <title>HTML-based formats</title>
+      <div outputclass="div-index">
+        <indexterm><xmlelement>div</xmlelement><indexterm><codeph>div.shortdesc</codeph></indexterm></indexterm>
+        <indexterm><xmlelement>p</xmlelement></indexterm>
+        <indexterm><xmlelement>abstract</xmlelement></indexterm>
+        <indexterm><xmlelement>simpletable</xmlelement></indexterm>
+        <indexterm><xmlelement>properties</xmlelement></indexterm>
+        <indexterm><xmlelement>choicetable</xmlelement></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>tm-area</codeph> named template</indexterm></indexterm>
+      </div>
       <p>The XSLT <codeph>tm-area</codeph> named template, which used to toggle rendering of trademark symbols in US
         English and Asian languages (Japanese, Korean, and both Chinese) but ignore them in all other languages, has
         been deprecated. Trademark symbols are now rendered uniformly for all languages and the template will be removed
@@ -69,6 +67,13 @@
     </section>
     <section>
       <title>PDF</title>
+      <div outputclass="div-index">
+        <indexterm>deprecated features<indexterm><codeph>tm-area</codeph> named template</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm>PDF localization variables</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>conreffile</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>conref-check</parmname> target</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>coderef</parmname> target</indexterm></indexterm>
+      </div>
       <p>The <codeph>antiquewhite</codeph> background color has been removed from table heads and key column contents in
           <xmlelement>simpletable</xmlelement> and <xmlelement>properties</xmlelement> tables to synchronize
         presentation with <xmlelement>choicetable</xmlelement> and provide a more uniform customization baseline between

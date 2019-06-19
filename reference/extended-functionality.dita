@@ -24,9 +24,6 @@
         <indexterm>codeblock formatting</indexterm>
         <indexterm><msgnum>DOTJ052E</msgnum></indexterm>
         <indexterm>character set</indexterm>
-        <indexterm>RFC 5147</indexterm>
-        <indexterm>whitespace handling</indexterm>
-        <indexterm>line numbering</indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -64,6 +61,7 @@
     </example>
     <section>
       <title>RFC 5147</title>
+      <indexterm>RFC 5147</indexterm>
       <p>DITA-OT also supports the line position and range syntax from
         <xref keyref="rfc5147"/>. The format for line range is:</p>
       <codeblock>uri ("#line=" start? "," end? )?</codeblock>
@@ -107,6 +105,7 @@
     <refbodydiv id="normalize-codeblock-whitespace">
       <section>
         <title>Whitespace normalization</title>
+        <indexterm>whitespace handling</indexterm>
         <p>DITA-OT can adjust the leading whitespace in code blocks to remove excess indentation and keep lines short.
           Given an XML snippet in a codeblock with lines that all begin with spaces (indicated here as dots “·”),</p>
       </section>
@@ -150,6 +149,7 @@
     <refbodydiv id="codeblock-line-numbers">
       <section>
         <title>Line numbering (PDF)</title>
+        <indexterm>line numbering</indexterm>
         <p>DITA-OT can be set to add line numbers to code blocks to make it easier to distinguish specific lines.</p>
         <p>To enable this feature, set the <xmlatt>outputclass</xmlatt> attribute on the
             <xmlelement>codeblock</xmlelement> element to include the <codeph>show-line-numbers</codeph> keyword.</p>

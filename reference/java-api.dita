@@ -12,10 +12,8 @@
         <indexterm>Java<indexterm>API</indexterm></indexterm>
         <indexterm>API</indexterm>
         <indexterm><cmdname>dita</cmdname> command<indexterm>classpath</indexterm></indexterm>
-        <indexterm>Maven Central</indexterm>
         <indexterm>Java<indexterm>classpath</indexterm></indexterm>
         <indexterm>classpath<indexterm>Java</indexterm><indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
-        <indexterm>debugging<indexterm>logging</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -41,6 +39,7 @@ Processor p = pf.newProcessor("html5")
 p.run();</codeblock>
     </example>
     <section>
+      <indexterm>debugging<indexterm>logging</indexterm></indexterm>
       <p>By default, running DITA-OT via the API will write a debug log to the temporary directory. A custom SLF4J
         logger can also be used to access the log via the Simple Logging Facade for Java.</p>
       <p>The processor cleans the temporary directory by default, but this can be disabled to simplify debugging in
@@ -51,6 +50,7 @@ p.run();</codeblock>
     </section>
     <section>
       <title>Downloading DITA-OT from Maven Central</title>
+      <indexterm>Maven Central</indexterm>
       <p>As of version 2.5, the DITA Open Toolkit base library (<filepath>dost.jar</filepath>) is available via the
         Maven 2 Central Repository. You can use this mechanism to download the main JAR file and include it in the build
         for other Java projects.</p>

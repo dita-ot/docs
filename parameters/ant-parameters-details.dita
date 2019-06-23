@@ -66,7 +66,7 @@
                   precedence over matching conditions specified in later files, just as conditions at the start of a
                   DITAVAL document take precedence over matching conditions later in the same document.</p>
                 <indexterm>DITAVAL<indexterm><parmname>args.filter</parmname></indexterm></indexterm>
-                <indexterm>DITAVAL<index-see-also>filter</index-see-also></indexterm> <!-- https://github.com/dita-ot/dita-ot/issues/3319 -->
+                <indexterm>DITAVAL<index-see-also>filters</index-see-also></indexterm> <!-- https://github.com/dita-ot/dita-ot/issues/3319 -->
                 <indexterm>DITAVAL<index-see-also>profiling</index-see-also></indexterm>
                 <indexterm>OSX<index-see>macOS</index-see></indexterm>
                 <indexterm>macOS<indexterm>delimiter</indexterm></indexterm>
@@ -146,7 +146,7 @@
                 the XSLT parameter <parmname>TABLELINK</parmname>.</ph><note rev="2.0">Support for PDF was added in
                 DITA-OT 2.0. By default PDF uses the value <option>NUMTITLE</option>, which is not supported for other
                 transformation types; this results in "Table 5. Title".
-                <indexterm>table<indexterm>args.tablelink.style</indexterm></indexterm>
+                <indexterm>tables<indexterm>args.tablelink.style</indexterm></indexterm>
                 </note></pd>
           </plentry>
           <plentry id="cleantemp">
@@ -604,7 +604,7 @@
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/outputFile.base.desc"/>
             <pd conaction="pushafter">By default, the PDF file uses the base filename of the input
                 <filepath>.ditamap</filepath> file.
-            <indexterm>DITA map<indexterm>PDF file name</indexterm></indexterm></pd>
+            <indexterm>DITA maps<indexterm>PDF file name</indexterm></indexterm></pd>
           </plentry>
           <plentry id="pdf.formatter">
             <pt>

@@ -63,7 +63,7 @@
           specified, so there is no DITA or DITAMAP file to transform. Ensure the parameter is set properly; see <xref
             keyref="parameters-base">DITA-OT common parameters (args.input)</xref> if you are unsure how to specify the
           input file.
-        <indexterm>DITA map<indexterm>input file</indexterm></indexterm>
+        <indexterm>DITA maps<indexterm>input file</indexterm></indexterm>
         </stentry>
       </strow>
       <strow>
@@ -640,7 +640,7 @@
           again with no specified role, it may show up as both the "Next topic" link and as a related link. Note that
           links generated from a <xmlelement>reltable</xmlelement> in a DITA map will have the role attribute set to
           "friend".
-          <indexterm><xmlelement>reltable</xmlelement><index-see-also>relationship table</index-see-also></indexterm>
+          <indexterm><xmlelement>reltable</xmlelement><index-see-also>relationship tables</index-see-also></indexterm>
         </stentry>
       </strow>
       <strow>

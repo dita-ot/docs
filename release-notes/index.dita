@@ -168,7 +168,7 @@
           <indexterm><xmlelement>entry</xmlelement></indexterm>
           <indexterm><xmlatt>rotate</xmlatt></indexterm>
           <indexterm>DITA 1.3<indexterm><xmlatt>rotate</xmlatt></indexterm></indexterm>
-          <indexterm>table<indexterm>attribute sets</indexterm><indexterm>rotated cells</indexterm></indexterm>
+          <indexterm>tables<indexterm>attribute sets</indexterm><indexterm>rotated cells</indexterm></indexterm>
         </keywords>
       </metadata>
     </prolog>
@@ -481,14 +481,6 @@
 
       <section id="contrib">
         <title>Contributors</title>
-        <div outputclass="div-index">
-          <indexterm>Jarno Elovirta</indexterm>
-          <indexterm>Eliot Kimber</indexterm>
-          <indexterm>Robert D Anderson</indexterm>
-          <indexterm>Roger Sheen</indexterm>
-          <indexterm>Simen Tinderholt</indexterm>
-          <indexterm>Eric Sirois</indexterm>
-        </div>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
           <xref keyref="contributions"/> by the following people:</p>
         <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 3.2..` -->
@@ -508,9 +500,6 @@
 
       <section id="docs">
         <title>Documentation updates</title>
-        <div outputclass="div-index">
-          <indexterm>Quick van Rijt</indexterm>
-        </div>
         <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
           improvements to existing topics, along with new information in the following topics:</p>
         <ul>

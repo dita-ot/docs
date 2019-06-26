@@ -2,8 +2,9 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>Glossary entries</title>
-    <topicref href="glossary.dita" format="dita" scope="local" type="concept" keys="glossary">
-        <glossref href="gloss-argument.dita" format="dita" scope="local" type="glossentry" keys="gloss-argument" print="yes"/>
+    <topicref href="glossary.dita" format="dita" scope="local" type="concept" keys="glossary" chunk="to-content">
+        <glossref href="gloss-argument.dita" format="dita" scope="local" type="glossentry" keys="gloss-argument"
+            print="yes"/>
         <glossref href="gloss-dost.dita" format="dita" scope="local" type="glossentry" keys="gloss-dost" print="yes"/>
         <glossref href="gloss-dita-open-toolkit.dita" format="dita" scope="local" type="glossentry"
             keys="gloss-dita-open-toolkit" print="yes"/>
@@ -12,19 +13,21 @@
         <glossref href="gloss-option.dita" format="dita" scope="local" type="glossentry" keys="gloss-option" print="yes"/>
         <glossref href="gloss-output-format.dita" format="dita" scope="local" type="glossentry"
             keys="gloss-output-format"/>
-        <glossref href="gloss-parameter.dita" format="dita" scope="local" type="glossentry" keys="gloss-parameter" print="yes"/>
+        <glossref href="gloss-parameter.dita" format="dita" scope="local" type="glossentry" keys="gloss-parameter"
+            print="yes"/>
         <glossref href="gloss-plug-in.dita" format="dita" scope="local" type="glossentry" keys="gloss-plug-in"
             print="yes"/>
         <glossref href="gloss-processor.dita" format="dita" scope="local" type="glossentry" keys="gloss-processor"
             print="yes"/>
-        <glossref href="gloss-property.dita" format="dita" scope="local" type="glossentry" keys="gloss-property" print="yes"/>
+        <glossref href="gloss-property.dita" format="dita" scope="local" type="glossentry" keys="gloss-property"
+            print="yes"/>
         <glossref href="gloss-template-plugin.dita" format="dita" scope="local" type="glossentry"
             keys="gloss-template-plugin" print="yes"/>
         <glossref href="gloss-template-xslt.dita" format="dita" scope="local" type="glossentry"
-            keys="gloss-template-xslt"
-            print="yes"/>
+            keys="gloss-template-xslt" print="yes"/>
         <glossref href="gloss-transtype.dita" format="dita" scope="local" type="glossentry" keys="gloss-transtype"
             print="yes"/>
-        <glossref href="gloss-variable.dita" format="dita" scope="local" type="glossentry" keys="gloss-variable" print="yes"/>
+        <glossref href="gloss-variable.dita" format="dita" scope="local" type="glossentry" keys="gloss-variable"
+            print="yes"/>
     </topicref>
 </map>

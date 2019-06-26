@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="gloss-template-plugin">
+    <glossterm>template</glossterm>
+    <glossdef>Element of <filepath>plugin.xml</filepath> that identifies an XML or XSL file. This file, often with
+            <filepath>_template</filepath> appended to its name, might be used to create a custom extension point, group
+        targets, and more. Anything contained in the plug-in's template files is integrated when the plug-in is
+        installed.</glossdef>
+</glossentry>

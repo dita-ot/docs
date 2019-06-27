@@ -9,6 +9,23 @@
     Virtually all Ant and XSLT modules can be extended by adding a plug-in to the toolkit; new Ant targets may be
     inserted before or after common processing, and new rules may be imported into common XSLT modules to override
     default processing.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>specializations<index-see>DITA<indexterm>specializations</indexterm></index-see></indexterm>
+        <indexterm>DITA<indexterm>specializations</indexterm></indexterm>
+        <indexterm>processing</indexterm>
+        <indexterm>Ant<indexterm>extending</indexterm></indexterm>
+        <indexterm>Java<indexterm>extending</indexterm><indexterm>processing modules</indexterm></indexterm>
+        <indexterm>XSLT<indexterm>processing modules</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm>extension points (overview)</indexterm></indexterm>
+        <indexterm>index<indexterm>sorting</indexterm></indexterm>
+        <indexterm>pipelines<indexterm>Ant module</indexterm></indexterm>
+        <indexterm>pipelines<indexterm>Java module</indexterm></indexterm>
+        <indexterm>locale</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section>
       <title>XSLT modules</title>

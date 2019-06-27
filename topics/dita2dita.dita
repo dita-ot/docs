@@ -7,6 +7,20 @@
   <shortdesc>The <codeph>dita</codeph> transformation generates normalized topics and maps from DITA input. The
     normalized output includes the results of DITA Open Toolkit pre-processing operations, which resolve map references,
     keys, content references, code references and push metadata back and forth between maps and topics.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><cmdname>dita</cmdname> command<indexterm>normalized DITA</indexterm></indexterm>
+        <indexterm>transformations<indexterm>normalized DITA</indexterm></indexterm>
+        <indexterm>DITA<indexterm>normalized</indexterm></indexterm>
+        <indexterm>metadata<indexterm>map</indexterm></indexterm>
+        <indexterm>metadata<indexterm>topic</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>dita2dita</indexterm></indexterm>
+        <indexterm>dita2dita</indexterm>
+        <indexterm>relationship tables<indexterm>normalized DITA</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <body>
     <p>In comparison to the source DITA files, the normalized DITA files are modified in the following ways:</p>

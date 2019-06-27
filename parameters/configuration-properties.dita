@@ -7,6 +7,21 @@
   <shortdesc>DITA-OT uses <filepath>.properties</filepath> files and internal properties that store configuration
     settings for the toolkit and its plug-ins. Configuration properties are available to both Ant and Java processes,
     but unlike argument properties, they cannot be set at run time.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>command line<indexterm>properties</indexterm></indexterm>
+        <indexterm>properties</indexterm>
+        <indexterm>Ant<indexterm>properties</indexterm></indexterm>
+        <indexterm>Java<indexterm>properties</indexterm></indexterm>
+        <indexterm>Ant<indexterm>configuring</indexterm></indexterm>
+        <indexterm>Java<indexterm>configuring</indexterm></indexterm>
+        <indexterm>Ant<indexterm>precedence</indexterm></indexterm>
+        <indexterm>Java<indexterm>precedence</indexterm></indexterm>
+        <indexterm><filepath>local.properties file</filepath></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <p>When DITA-OT starts the Ant process, it looks for property values in the following order and locations:</p>

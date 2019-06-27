@@ -6,6 +6,17 @@
   <title>Creating an Ant build script</title>
   <shortdesc>Instead of typing the DITA-OT parameters at the command prompt, you might want to create an Ant build
     script that contains all of the parameters.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>link</xmlelement></indexterm>
+        <indexterm><xmlatt>name</xmlatt></indexterm>
+        <indexterm><xmlatt>default</xmlatt></indexterm>
+        <indexterm>Ant<indexterm>build script</indexterm></indexterm>
+        <indexterm>relationship tables<indexterm>PDF</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step>

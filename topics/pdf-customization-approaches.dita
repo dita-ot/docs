@@ -8,6 +8,16 @@
     approaches have advantages and shortcomings that should be considered when preparing a customization project. Some
     of these methods are considered “anti-patterns” with disadvantages that outweigh their apparent appeal. In most
     cases, you should create a custom PDF plug-in.</shortdesc>
+  
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>PDF<indexterm>customizing, best practices</indexterm></indexterm>
+        <indexterm>upgrading<indexterm>default plug-ins</indexterm></indexterm>
+        <indexterm>upgrading<indexterm>PDF</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <conbody>
     <section id="why_not_edit_default_files">
@@ -26,6 +36,10 @@
 
     <section id="the_customization_folder">
       <title>Using the <filepath>Customization</filepath> folder</title>
+      <div outputclass="div-index">
+        <indexterm>deprecated features<indexterm><filepath>Customization</filepath> folder</indexterm></indexterm>
+        <indexterm>Customization directory</indexterm>
+      </div>
       <p>The original Idiom plug-in used its own extension mechanism to provide overrides to the PDF transformation.
         With this approach, a dedicated folder within the plug-in is used to store customized files.</p>
       <p>Files in the <filepath>org.dita.pdf2/Customization</filepath> folder can override their default counterparts,

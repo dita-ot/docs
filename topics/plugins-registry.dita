@@ -10,6 +10,18 @@
   <shortdesc><ph id="registry-summary">DITA-OT 3.2 supports a new plug-in registry that makes it easier to discover and
       install new plug-ins. The registry provides a searchable list of plug-ins at <xref keyref="site-plugin-registry"
       />.</ph></shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>PDF<indexterm>plug-in</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command<indexterm>plug-in registry</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>registry</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>installing</indexterm></indexterm>
+        <indexterm>GitHub</indexterm>
+        <indexterm>plug-ins<indexterm>URL</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <body>
     <section id="background">
       <p>In the past, installing plug-ins required you to either download a plug-in to your computer and provide the
@@ -118,7 +130,11 @@
             <codeph><xref
             href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6"
             format="html" scope="external">Get-FileHash</xref> <varname>&lt;plugin-file&gt;</varname> |
-          Format-List</codeph>.</note>
+          Format-List</codeph>.
+        <indexterm>macOS<indexterm>plug-in registry checksum</indexterm></indexterm>
+        <indexterm>Linux<indexterm>plug-in registry checksum</indexterm></indexterm>
+        <indexterm>Windows<indexterm>plug-in registry checksum</indexterm></indexterm>
+      </note>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Structure for dependency entries</title>
         <tgroup cols="3">
@@ -156,6 +172,9 @@
     </section>
     <section id="example-1">
       <title>Sample plug-in entry file</title>
+      <div outputclass="div-index">
+        <indexterm>DocBook</indexterm>
+      </div>
       <p>The example below shows an entry for the <codeph>DocBook</codeph> plug-in. The complete file is available in
         the registry as <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.docbook.json" format="json"
           scope="external">org.dita.docbook.json</xref>.</p>

@@ -9,6 +9,23 @@
   </titlealts>
   <shortdesc>DITA Open Toolkit offers globalization support in the following areas: generated text, index sorting, and
     bi-directional text.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlatt>dir</xmlatt></indexterm>
+        <indexterm><xmlatt>index:lang</xmlatt></indexterm>
+        <indexterm>languages<indexterm>index sorting</indexterm></indexterm>
+        <indexterm>languages<indexterm>right-to-left</indexterm></indexterm>
+        <indexterm>languages<indexterm>bi-directional</indexterm></indexterm>
+        <indexterm>English</indexterm>
+        <indexterm>strings</indexterm>
+        <indexterm>index<indexterm>sorting</indexterm></indexterm>
+        <indexterm>bi-directional languages</indexterm>
+        <indexterm>generated text</indexterm>
+        <indexterm>CSS<indexterm>bi-directional languages</indexterm><indexterm>right-to-left languages</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>
       <dl>

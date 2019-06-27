@@ -10,6 +10,16 @@
   <shortdesc>You can create a DITA-OT plug-in that provides a custom stylesheet with the typography and colors that
     define your corporate identity. Coworkers can install this plug-in to ensure consistent HTML output across projects
     without having to copy the stylesheet to each project.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>require</xmlelement></indexterm>
+        <indexterm>HTML<indexterm>custom plug-in</indexterm></indexterm>
+        <indexterm>HTML<indexterm>CSS</indexterm></indexterm>
+        <indexterm>CSS<indexterm>HTML transforms</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>This scenario walks through the process of creating a very simple plug-in

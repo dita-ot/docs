@@ -11,6 +11,15 @@
 
   <shortdesc>In DITA-OT 2.4, the <option>HTML5</option> transformation was refactored as an independent plug-in that no
     longer depends on the <option>XHTML</option> plug-in. </shortdesc>
+  
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated features<indexterm><codeph>.notetitle</codeph> classes</indexterm></indexterm>
+        <indexterm>GitHub</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <refbody>
     <section>
@@ -52,6 +61,16 @@
     </section>
     <section id="24-legacy-plugin-removal">
       <title>Legacy plug-ins removed</title>
+      <div outputclass="div-index">
+        <indexterm>DocBook</indexterm>
+        <indexterm>Eclipse Content</indexterm>
+        <indexterm>OpenDocument Text</indexterm>
+        <indexterm>RTF</indexterm>
+        <indexterm>plug-ins<indexterm>DocBook</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>Eclipse Content</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>OpenDocument Text</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>RTF</indexterm></indexterm>        
+      </div>
       <p>DITA-OT 2.4 no longer includes the following legacy transformation plug-ins in the default distribution:</p>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Legacy plug-ins</title>

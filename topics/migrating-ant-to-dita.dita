@@ -10,6 +10,18 @@
   <shortdesc>Although DITA Open Toolkit still supports Ant builds, switching to the <cmdname>dita</cmdname> command
     offers a simpler command interface, sets all required environment variables and allows you to run DITA-OT without
     setting up anything beforehand.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Ant<indexterm><xmlelement>exec</xmlelement></indexterm></indexterm>
+        <indexterm>Ant<indexterm><xmlelement>dita-cmd</xmlelement></indexterm><indexterm><cmdname>dita</cmdname>
+            command, benefits of</indexterm></indexterm>
+        <indexterm>dita-cmd</indexterm>
+        <indexterm><cmdname>dita</cmdname> command<indexterm>migrating Ant scripts</indexterm></indexterm>
+        <indexterm>classpath<indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>Building output with the <cmdname>dita</cmdname> command is often easier than using Ant. In particular, you can

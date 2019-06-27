@@ -7,6 +7,21 @@
   <shortdesc>If you use Antenna House Formatter or RenderX XEP, you can generate revision bars in your PDF output by
     using the <xmlatt>changebar</xmlatt> and <xmlatt>color</xmlatt> attributes of the DITAVAL
       <xmlelement>revprop</xmlelement> element.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>revprop</xmlelement></indexterm>
+        <indexterm><xmlatt>changebar</xmlatt></indexterm>
+        <indexterm><xmlatt>color</xmlatt></indexterm>
+        <indexterm>DITAVAL<indexterm>change bars</indexterm></indexterm>
+        <indexterm>RenderX<indexterm>change bars</indexterm></indexterm>
+        <indexterm>Antenna House<indexterm>change bars</indexterm></indexterm>
+        <indexterm>Apache FOP<indexterm>change bars</indexterm></indexterm>
+        <indexterm>PDF<indexterm>change bars</indexterm></indexterm>
+        <indexterm>transformations<indexterm end="pdf"/></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <note>The Apache Formatting Objects Processor (FOP <keyword keyref="tool.fop.version"/>) bundled with DITA-OT does
       not yet support the XSL <codeph>fo:change-bar</codeph> formatting object. A patch has been submitted to enable

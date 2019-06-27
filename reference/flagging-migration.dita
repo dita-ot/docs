@@ -11,6 +11,18 @@
     1.7. Due to significant changes in the flagging process with the 1.7 release, some changes may be needed to make
     overrides work properly with DITAVAL-based flagging. The new design is significantly simpler than the old design; in
     many cases, migration will consist of deleting old code that is no longer needed.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>ul</xmlelement></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>mode="elementname-fmt"</codeph></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>DITAVAL templates</codeph></indexterm></indexterm>
+        <indexterm>DITAVAL<indexterm>template changes in 1.7</indexterm></indexterm>
+        <indexterm>CSS<indexterm>gen-style</indexterm></indexterm>
+        <indexterm>flagging</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <title>Which XHTML overrides need to migrate?</title>

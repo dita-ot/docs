@@ -12,6 +12,22 @@
   <shortdesc>In DITA-OT 1.6, various <filepath>demo</filepath> plug-ins were removed along with many deprecated
     properties, targets, templates and modes. The PDF2 transformation no longer supports the beta version of DITA from
     IBM, the "bkinfo" demo plug-in, or <filepath>layout-masters.xml</filepath> configuration.</shortdesc>
+  
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated features<indexterm><filepath>demo</filepath> folder</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>workdir</codeph> processing instruction</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>workdir</codeph> processing instruction</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm>topic pull templates, list of</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm>"bkinfo" demo plug-in</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><filepath>layout-masters.xml</filepath></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm>PDF2 templates, list of</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm>XHTML templates, list of</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm>ODT templates, list of</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <refbody>
     <section>

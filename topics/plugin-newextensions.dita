@@ -7,6 +7,25 @@
   <shortdesc>If your plug-in needs to define its own extension point in an XML file, add the string
       "<codeph>_template</codeph>" to the filename before the file suffix. When the plug-in is installed, this file will
     be processed like the built-in DITA-OT templates.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>template</xmlelement></indexterm>
+        <indexterm><xmlelement>dita:extension</xmlelement></indexterm>
+        <indexterm><xmlelement>pathelement</xmlelement></indexterm>
+        <indexterm><xmlelement>xsl:import</xmlelement></indexterm>
+        <indexterm><xmlatt>id</xmlatt><indexterm>plug-in</indexterm></indexterm>
+        <indexterm><xmlatt>behavior</xmlatt></indexterm>
+        <indexterm><xmlatt>dita:extension</xmlatt></indexterm>
+        <indexterm>plug-ins<indexterm>extension points</indexterm></indexterm>
+        <indexterm>extension points<indexterm>creating</indexterm></indexterm>
+        <indexterm>XSLT<indexterm>extension points</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm>XSLT</indexterm></indexterm>
+        <indexterm>metadata<indexterm>plug-in</indexterm></indexterm>
+        <indexterm>catalog</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <p>Template files are used to integrate most DITA-OT extensions. For example, the

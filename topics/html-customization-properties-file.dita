@@ -11,6 +11,16 @@
     building output with the <cmdname>dita</cmdname> command. The DITA-OT documentation uses a
       <filepath>.properties</filepath> file to include custom CSS, header branding, and table-of-contents navigation in
     the HTML5 output.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><cmdname>dita</cmdname> command<indexterm>.properties file</indexterm></indexterm>
+        <indexterm>HTML<indexterm>build properties</indexterm></indexterm>
+        <indexterm>CSS<indexterm>.properties file</indexterm></indexterm>
+        <indexterm>.properties file</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
 
     <steps>

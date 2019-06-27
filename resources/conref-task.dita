@@ -39,7 +39,8 @@
                 <filepath>plugins</filepath> directory. Any plug-ins added or removed in the process will be listed by
                 their plug-in ID.</ph></li>
               <li><note id="plugin-remove-subdir" type="attention">The <parmname>--uninstall</parmname> option also
-                  removes the corresponding subdirectory from the <filepath>plugins</filepath> folder.</note></li>
+                  removes the corresponding subdirectory from the <filepath>plugins</filepath>
+                folder.<indexterm>uninstalling</indexterm></note></li>
             </ul>
           </dd>
         </dlentry>
@@ -76,6 +77,7 @@
               <p conref="#ID/common-format-info"/>
               <p id="transtypes">You can create plug-ins to add new output formats; by default, the following values are
                 available:
+                <indexterm>transtype<indexterm>list</indexterm></indexterm>
                 <ul>
                   <li><option>dita</option></li>
                   <li><option>eclipsehelp</option></li>
@@ -89,7 +91,8 @@
                   <li><option>xhtml</option></li>
                 </ul>
                 <note type="tip">See <xref keyref="output-formats"/> for sample command line syntax and more information
-                  on each transformation.</note>
+                  on each transformation.
+                </note>
               </p>
             </li>
             <li id="options">[<varname>options</varname>] include the following optional build parameters:
@@ -107,7 +110,9 @@
             directory).</p>
           <note id="dita-in-path" type="tip">Add the absolute path for <filepath conref="#ID/ot-dir"
               /><filepath>/bin</filepath> to the <varname>PATH</varname> environment variable to run the
-              <cmdname>dita</cmdname> command from any location on the file system without typing the path.</note>
+              <cmdname>dita</cmdname> command from any location on the file system without typing the path.
+            <indexterm><cmdname>dita</cmdname> command<indexterm>PATH environment variable</indexterm></indexterm>
+          </note>
         </stepresult>
       </step>
       <step>
@@ -130,7 +135,11 @@
       <note type="tip" id="pass-input-dir">If you are building in different environments where the location of the input
         files is not consistent, set <option>args.input.dir</option> with the <cmdname>dita</cmdname> command and
         reference its value with <codeph>${args.input.dir}</codeph> in your <filepath>.properties</filepath>
-        file.</note>
+        file.
+        <indexterm><cmdname>dita</cmdname>
+          command<indexterm><option>args.input.dir</option></indexterm><indexterm>.properties file</indexterm></indexterm>
+        <indexterm>args.input.dir</indexterm>
+      </note>
     </postreq>
   </taskbody>
 </task>

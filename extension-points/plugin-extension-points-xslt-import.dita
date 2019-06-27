@@ -8,6 +8,17 @@
     transformation types. The value of the <xmlatt>file</xmlatt> attribute in the <xmlelement>feature</xmlelement>
     element specifies a relative path to an XSL file in the current plug-in. The plug-in installer adds a XSL import
     statement to the default DITA-OT code, so that the XSL override becomes part of the normal build.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>xref</xmlelement></indexterm>
+        <indexterm><xmlatt>file</xmlatt></indexterm>
+        <indexterm>XSLT<indexterm>extension points</indexterm></indexterm>
+        <indexterm>extension points<indexterm>XSLT</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm>extension points, XSLT</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <title>Pre-processing</title>

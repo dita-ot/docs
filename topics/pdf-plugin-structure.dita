@@ -6,6 +6,20 @@
   <title>PDF plug-in structure</title>
   <shortdesc>In cases that require substantial customizations, it is often useful to organize the files in a folder
     structure that mimics the hierarchy of the default PDF plug-in.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>languages<indexterm>adding support for</indexterm></indexterm>
+        <indexterm>I18N<indexterm>plug-in</indexterm></indexterm>
+        <indexterm>PDF<indexterm start="pdf-plugin">plug-in</indexterm></indexterm>
+        <indexterm>font-mappings.xml</indexterm>
+        <indexterm>fonts<indexterm>PDF</indexterm></indexterm>
+        <indexterm>PDF<indexterm>fonts</indexterm></indexterm>
+        <indexterm>index<indexterm>PDF</indexterm></indexterm>
+        <indexterm>Customization directory</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <conbody>
     <note>For simpler customizations, you may want to structure your plug-in differently, but the information in this

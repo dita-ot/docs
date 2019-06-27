@@ -8,6 +8,21 @@
     process examines some or all of the content; some stages result in temporary files that are used by later steps,
     while others stages result in updated copies of the DITA content. Most of the processing takes place in a temporary
     working directory; the source files themselves are never modified.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>architecture</indexterm>
+        <indexterm>preprocessing</indexterm>
+        <indexterm>Eclipse Help</indexterm>
+        <indexterm>HTML Help</indexterm>
+        <indexterm>XHTML</indexterm>
+        <indexterm>PDF</indexterm>
+        <indexterm>HTML5<indexterm>preprocesing</indexterm></indexterm>
+        <indexterm>pipelines<indexterm>description of</indexterm></indexterm>
+        <indexterm>pipelines<index-see-also>preprocessing</index-see-also></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>DITA-OT is designed as a pipeline. Most of the pipeline is common to all output formats; it is known as the
         <term>pre-processing stage</term>. In general, any DITA process begins with this common set of pre-processing

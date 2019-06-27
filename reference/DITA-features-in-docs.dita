@@ -8,7 +8,18 @@
     <navtitle>DITA features in docs</navtitle>
   </titlealts>
   <shortdesc>DITA Open Toolkit uses various recent DITA features in the project documentation.</shortdesc>
-
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlatt>audience</xmlatt></indexterm>
+        <indexterm><xmlatt>orient</xmlatt></indexterm>
+        <indexterm>profiling</indexterm>
+        <indexterm>branch filters</indexterm>
+        <indexterm>Antenna House<indexterm>DITA XML mention domain</indexterm></indexterm>
+        <indexterm>DITA 1.3<indexterm>XML mention domain</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>The
       <xref href="https://github.com/dita-ot/docs" format="html" scope="external">source files</xref> for the DITA-OT

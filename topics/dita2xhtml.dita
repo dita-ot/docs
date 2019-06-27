@@ -7,6 +7,20 @@
   <shortdesc>The <option>xhtml</option> transformation generates XHTML output and a table of contents (TOC) file. This
     was the first transformation created for DITA Open Toolkit, and originally served as the basis for all HTML-based
     transformations.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>languages<indexterm>right-to-left</indexterm></indexterm>
+        <indexterm>transformations<indexterm>XHTML</indexterm></indexterm>
+        <indexterm>XHTML<index-see-also>transformations</index-see-also></indexterm>
+        <indexterm>HTML</indexterm>
+        <indexterm>plug-ins<indexterm>dita2xhtml</indexterm></indexterm>
+        <indexterm>dita2xhtml</indexterm>
+        <indexterm>CSS<indexterm>XHTML</indexterm></indexterm>
+        <indexterm>table of contents<indexterm>XHTML</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>The XHTML output is always associated with the default DITA-OT CSS file (<filepath>commonltr.css</filepath> or
         <filepath>commonrtl.css</filepath> for right-to-left languages). You can use toolkit parameters to add a custom

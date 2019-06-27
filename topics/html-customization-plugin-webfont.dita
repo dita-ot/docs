@@ -9,6 +9,24 @@
   </titlealts>
   <shortdesc>A custom plug-in can be created to generate HTML output that uses custom fonts for enhanced typographic
     features, extended character sets or a unique corporate identity.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>require</xmlelement></indexterm>
+        <indexterm><xmlelement>link</xmlelement></indexterm>
+        <indexterm><xmlelement>head</xmlelement></indexterm>
+        <indexterm>HTML<indexterm>custom plug-in</indexterm></indexterm>
+        <indexterm>HTML<indexterm>fonts</indexterm></indexterm>
+        <indexterm>CSS<indexterm>web fonts</indexterm></indexterm>
+        <indexterm>fonts<indexterm>HTML</indexterm></indexterm>
+        <indexterm>web fonts<index-see>fonts</index-see></indexterm>
+        <indexterm>custom.css</indexterm>
+        <indexterm>build_html5-webfont.xml</indexterm>
+        <indexterm>plugin.xml</indexterm>
+        <indexterm>org.dita.html5</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>This scenario walks through the process of creating a very simple plug-in

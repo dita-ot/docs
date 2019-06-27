@@ -6,6 +6,21 @@
   <title>Prerequisite software</title>
   <shortdesc>The prerequisite software that DITA-OT requires depends on the types of transformations that you want to
     use.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>RenderX<indexterm>XSL-FO processor</indexterm></indexterm>
+        <indexterm>Antenna House<indexterm>XSL-FO processor</indexterm></indexterm>
+        <indexterm>Apache FOP<indexterm>XSL-FO processor</indexterm></indexterm>
+        <indexterm>installing<indexterm>prerequisites</indexterm></indexterm>
+        <indexterm>XSLT<indexterm>processor</indexterm></indexterm>
+        <indexterm>XSLT<indexterm>2.0</indexterm></indexterm>
+        <indexterm>Saxon<indexterm>version</indexterm></indexterm>
+        <indexterm>Java<indexterm>Java Development Kit (JDK)</indexterm><indexterm>Java Runtime Environment (JRE)</indexterm></indexterm>
+        <indexterm>XSL-FO processor<index-see>Antenna House</index-see><index-see>RenderX</index-see><index-see>Apache FOP</index-see></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section>
       <title>Software required for core DITA-OT processing</title>
@@ -34,6 +49,9 @@
     </section>
     <section>
       <title>Software required for specific transformations</title>
+      <div outputclass="div-index">
+        <indexterm>locale</indexterm>
+      </div>
       <p>Depending on the type of output that you want to generate, you might need the following applications:
         <dl>
           <dlentry>

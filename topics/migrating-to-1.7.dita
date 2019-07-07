@@ -13,6 +13,19 @@
     was corrected with regard to <codeph>shortdesc</codeph> handling, and a new XSLT template mode was introduced for
     HTML TOC processing. Several stylesheets were moved to plug-in specific folders and deprecated properties and XSLT
     variables were removed. </shortdesc>
+  
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated features<indexterm><codeph>dita.input</codeph></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>dita.input.dirname</codeph></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>dita.extname</codeph></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm>XHTML, flagging-related templates</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>page-margin-left</codeph></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>page-margin-right</codeph></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <refbody>
     <section>

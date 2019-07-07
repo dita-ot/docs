@@ -7,6 +7,18 @@
   <shortdesc>When you run DITA-OT, key information is logged on the screen. This information can also be written to a
     log file. If you encounter a problem, you can analyze this information to determine the source of the problem and
     then take action to resolve it.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Apache FOP<indexterm>log files</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command<indexterm>logging</indexterm></indexterm>
+        <indexterm>logging</indexterm>
+        <indexterm>Ant<indexterm>logging</indexterm></indexterm>
+        <indexterm>debugging<index-see-also>logging</index-see-also></indexterm>
+        <indexterm>Java<indexterm>logging</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>The logging behavior varies depending on whether you use the <cmdname>dita</cmdname> command or Ant to invoke a
       toolkit build.</p>
@@ -59,6 +71,10 @@
     </section>
     <section>
       <title>FOP debug logging</title>
+      <div outputclass="div-index">
+        <indexterm>logback.xml</indexterm>
+        <indexterm>classpath<indexterm>logging</indexterm></indexterm>
+      </div>
       <p>In PDF processing with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP, DITA-OT 3.1 now uses the Simple
         Logging Facade for Java (SLF4J), allowing for better control and formatting of FOP log messages. To reduce noise
         on the console, all FOP messages are set to the Info level and hidden by default.</p>

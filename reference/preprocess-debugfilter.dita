@@ -7,6 +7,20 @@
   <shortdesc>The <codeph>debug-filter</codeph> step processes all referenced DITA content and creates copies in a
     temporary directory. As the DITA content is copied, filtering is performed, debugging information is inserted, and
     table column names are adjusted. This step is implemented in Java.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>ph</xmlelement></indexterm>
+        <indexterm><xmlatt>xtrf</xmlatt></indexterm>
+        <indexterm><xmlatt>xtrc</xmlatt></indexterm>
+        <indexterm>DITAVAL<indexterm><codeph>debug-filter</codeph> preprocess step</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm><codeph>debug-filter</codeph></indexterm></indexterm>
+        <indexterm><codeph>debug-filter</codeph></indexterm>
+        <indexterm>debugging<indexterm><codeph>debug-filter</codeph> preprocess step</indexterm></indexterm>
+        <indexterm>tables<indexterm>DITAVAL</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section>
       <p>The following modifications are made to the DITA source:</p>

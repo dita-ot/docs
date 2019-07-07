@@ -7,6 +7,26 @@
   <shortdesc>The <codeph>move-meta-entries</codeph> step pushes metadata back and forth between maps and topics. For
     example, index entries and copyrights in the map are pushed into affected topics, so that the topics can be
     processed later in isolation while retaining all relevant metadata. This step is implemented in Java.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>topicref</xmlelement></indexterm>
+        <indexterm><xmlelement>linktext</xmlelement></indexterm>
+        <indexterm><xmlelement>shortdesc</xmlelement></indexterm>
+        <indexterm><xmlatt>locktitle</xmlatt></indexterm>
+        <indexterm><xmlatt>type</xmlatt></indexterm>
+        <indexterm><xmlatt>toc</xmlatt></indexterm>
+        <indexterm><xmlatt>print</xmlatt></indexterm>
+        <indexterm>preprocessing<indexterm><codeph>move-meta-entries</codeph></indexterm></indexterm>
+        <indexterm><codeph>move-meta-entries</codeph></indexterm>
+        <indexterm>Java<indexterm>move-meta-entries</indexterm></indexterm>
+        <indexterm>metadata<indexterm>moving</indexterm></indexterm>
+        <indexterm>XSLT<indexterm><codeph>move-meta-entries</codeph></indexterm></indexterm>
+        <indexterm>index<indexterm>entries in map file</indexterm></indexterm>
+        <indexterm>TOC<index-see>table of contents</index-see></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <conbody>
     <note>As of DITA-OT 2.2, the <codeph>move-meta-entries</codeph> and <codeph>mappull</codeph> steps have been merged.

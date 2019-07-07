@@ -10,6 +10,18 @@
   <shortdesc><ph id="registry-summary">DITA-OT 3.2 supports a new plug-in registry that makes it easier to discover and
       install new plug-ins. The registry provides a searchable list of plug-ins at <xref keyref="site-plugin-registry"
       />.</ph></shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>PDF<indexterm>plug-in</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command<indexterm>plug-in registry</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>registry</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>installing</indexterm></indexterm>
+        <indexterm>GitHub</indexterm>
+        <indexterm>plug-ins<indexterm>URL</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <body>
     <section id="background">
       <p>In the past, installing plug-ins required you to either download a plug-in to your computer and provide the
@@ -23,14 +35,14 @@
         and install new plug-ins by name and optional version.</p>
       <p>Search the registry for a plug-in and install it by providing the plug-in name to the <cmdname>dita</cmdname>
         command.</p>
-      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;</varname></codeblock>
+      <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;</varname></codeblock>
       <p>If the registry includes multiple versions of the same plug-in, you can specify the version to install as
         follows:</p>
-      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;@&lt;plugin-version&gt;</varname></codeblock>
+      <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;@&lt;plugin-version&gt;</varname></codeblock>
       <p>If the plug-in requires other plug-ins, those are also installed recursively.</p>
       <p>For example, to revert PDF output to the legacy PDF2 layout that was the default in DITA-OT before 2.5, install
         the <filepath>org.dita.pdf2.legacy</filepath> plug-in as follows:</p>
-      <codeblock outputclass="bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=org.dita.pdf2.legacy</codeblock>
+      <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=org.dita.pdf2.legacy</codeblock>
       <p>If a matching plug-in cannot be found, an error message will appear. Possible reasons for failure include:</p>
       <ul>
         <li>A plug-in with the specified name was not found in the registry</li>
@@ -118,7 +130,11 @@
             <codeph><xref
             href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6"
             format="html" scope="external">Get-FileHash</xref> <varname>&lt;plugin-file&gt;</varname> |
-          Format-List</codeph>.</note>
+          Format-List</codeph>.
+        <indexterm>macOS<indexterm>plug-in registry checksum</indexterm></indexterm>
+        <indexterm>Linux<indexterm>plug-in registry checksum</indexterm></indexterm>
+        <indexterm>Windows<indexterm>plug-in registry checksum</indexterm></indexterm>
+      </note>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Structure for dependency entries</title>
         <tgroup cols="3">
@@ -156,10 +172,13 @@
     </section>
     <section id="example-1">
       <title>Sample plug-in entry file</title>
+      <div outputclass="div-index">
+        <indexterm>DocBook</indexterm>
+      </div>
       <p>The example below shows an entry for the <codeph>DocBook</codeph> plug-in. The complete file is available in
         the registry as <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.docbook.json" format="json"
           scope="external">org.dita.docbook.json</xref>.</p>
-      <codeblock xml:space="preserve" outputclass="json">[
+      <codeblock outputclass="language-json" xml:space="preserve">[
   {
     "name": "org.dita.docbook",
     "description": "Convert DITA to DocBook.",
@@ -181,7 +200,7 @@
     <section id="multiple-versions">
       <title>Maintaining multiple plug-in versions</title>
       <p>When you have multiple versions of a plug-in, include an entry for each version, separated by a comma:</p>
-      <codeblock>[
+      <codeblock outputclass="language-json">[
   {
     "name": "org.example.myplugin",
      ⋮
@@ -222,9 +241,9 @@
           added to the <filepath>config/configuration.properties</filepath> file. Edit the <codeph>registry</codeph> key
           and add the raw GitHub URL for the branch that contains the JSON file. With the example username and branch
           name above, you can add your registry
-          with:<codeblock>registry=https://raw.githubusercontent.com/USERNAME/registry/addPlugin/ http://plugins.dita-ot.org/</codeblock></li>
+          with:<codeblock outputclass="language-properties">registry=https://raw.githubusercontent.com/USERNAME/registry/addPlugin/ http://plugins.dita-ot.org/</codeblock></li>
         <li>You can now test the plug-in installation with:
-          <codeblock>dita --install org.example.newPlugin</codeblock></li>
+          <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=org.example.newPlugin</codeblock></li>
         <li>Once you’ve confirmed that the entry works, you can submit a pull request to have your entry added to the
           common registry.</li>
       </ol>

@@ -6,10 +6,21 @@
   <title>Resolve map references (mapref)</title>
   <shortdesc>The <codeph>mapref</codeph> step resolves references from one DITA map to another. This step is implemented
     in XSLT.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>map</xmlelement></indexterm>
+        <indexterm>preprocessing<indexterm><codeph>mapref</codeph></indexterm></indexterm>
+        <indexterm><codeph>mapref</codeph></indexterm>
+        <indexterm>XSLT<indexterm><codeph>mapref</codeph> preprocessing step</indexterm></indexterm>
+        <indexterm>relationship tables<indexterm><codeph>mapref</codeph> preprocessing step</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section>
       <p>Maps reference other maps by using the following sorts of markup:
-        <codeblock>&lt;topicref href="other.ditamap" format="ditamap"/>
+        <codeblock outputclass="language-xml">&lt;topicref href="other.ditamap" format="ditamap"/>
 ...
 &lt;mapref href="other.ditamap"/></codeblock></p>
       <p>As a result of the mapref step, the element that references another map is replaced by the topic references

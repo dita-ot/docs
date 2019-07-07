@@ -6,6 +6,21 @@
         >plugin:<varname>plugin-id</varname></filepath> URI extension and the <filepath id="antvar"
         >${dita.plugin.<varname>plugin-id</varname>.dir}</filepath> Ant variable to reference the
     base path of another installed DITA-OT plug-in.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>xsl:import</xmlelement></indexterm>
+        <indexterm><xmlelement>xmlcatalog</xmlelement></indexterm>
+        <indexterm><xmlelement>xslt</xmlelement></indexterm>
+        <indexterm>plug-ins<indexterm>using file in another plug-in</indexterm></indexterm>
+        <indexterm>XSLT<indexterm>using another plug-in</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm>XSLT</indexterm></indexterm>
+        <indexterm>catalog<indexterm>referencing</indexterm></indexterm>
+        <indexterm>CSS<indexterm>HTML5</indexterm></indexterm>
+        <indexterm>HTML5<indexterm>CSS</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
     <taskbody>
     <section>
       <p>Sometimes you need to reference content in another DITA-OT plug-in. However, the path to an installed plug-in
@@ -26,7 +41,7 @@
         </info>
         <stepxmp>
           <p>The following example copies CSS files from the HTML5 plug-in:</p>
-          <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;copy todir="${dita.temp.dir}/css">
+          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;copy todir="${dita.temp.dir}/css">
   &lt;fileset dir="${dita.plugin.org.dita.html5.dir}/css" 
            includes="*.css"/>
 &lt;/copy></codeblock>
@@ -42,7 +57,7 @@
         </info>
         <stepxmp>
           <p>The following example imports the base output-message.xsl processing:</p>
-          <codeblock>&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock>
+          <codeblock outputclass="language-xml">&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock>
         </stepxmp>
         <info>
           <p>To use the URI extension, your plug-in must reference the DITA-OT catalog file. In your
@@ -50,7 +65,7 @@
             DITA-OT catalog file as a child of the <xmlelement>xslt</xmlelement> element.</p>
         </info>
         <stepxmp>
-          <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;xslt style="xsl/my.xsl"
+          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt style="xsl/my.xsl"
       in="${dita.temp.dir}/input.file" 
       out="${dita.temp.dir}/output.file">
   &lt;xmlcatalog refid="dita.catalog"/>

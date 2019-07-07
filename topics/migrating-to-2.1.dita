@@ -12,7 +12,39 @@
   <shortdesc>In DITA-OT 2.1, the <codeph>insertVariable</codeph> template was deprecated for PDF transformations and
     should be replaced with the <codeph>getVariable</codeph> template. Various <codeph>dita.<b>out.</b>map.*</codeph>
     targets have been deprecated in favor of updated <codeph>dita.map.*</codeph> equivalents.</shortdesc>
-
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>ph</xmlelement></indexterm>
+        <indexterm><xmlelement>keyword</xmlelement></indexterm>
+        <indexterm><xmlelement>cite</xmlelement></indexterm>
+        <indexterm><xmlelement>dt</xmlelement></indexterm>
+        <indexterm><xmlelement>term</xmlelement></indexterm>
+        <indexterm><xmlelement>indexterm</xmlelement></indexterm>
+        <indexterm><xmlatt>href</xmlatt></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>help</codeph> build target</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>imagefile</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>image.list</codeph></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>htmlfile</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>html.list</codeph></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>copy-subsidiary</codeph> target</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>copy-subsidiary-check</codeph> target</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>depend.preprocess.copy-subsidiary.pre</parmname> extension points</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm>PDF, <codeph>insertVariable</codeph> template</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><varname>keydefs</varname> variable</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>KEYREF-FILE</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>displaytext</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>keys</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>target</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>pull-in-title</codeph> template</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>common-processing-phrase-within-link</codeph> template</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>dita.out.map.xhtml.toc</codeph> target</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>dita.out.map.htmlhelp.*</codeph> targets</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>dita.out.map.javahelp.*</codeph> targets</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>args.odt.img.embed</parmname></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 2.1 that may require modifications to custom stylesheets
@@ -61,7 +93,7 @@
       </ul>
       <p>Calls to that template will result in warnings in the build log.</p>
       <p>To update your plug-in, make the following changes:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="<line-through>insertVariable</line-through><b>getVariable</b>">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="<line-through>insertVariable</line-through><b>getVariable</b>">
   &lt;xsl:with-param name="<line-through>theVariableID</line-through><b>id</b>" select="<varname>var-id</varname>"/>
   &lt;xsl:with-param name="<line-through>theParameters</line-through><b>params</b>">
     <varname>params</varname>
@@ -92,6 +124,9 @@
 
     <section>
       <title>XHTML</title>
+      <div outputclass="div-index">
+        <indexterm>keydef</indexterm>
+      </div>
       <p>The <codeph>dita.<b>out.</b>map.xhtml.toc</codeph> target has been deprecated and should be replaced with the
         updated <codeph>dita.map.xhtml.toc</codeph> equivalent.</p>
       <p>Keydef processing has been removed from the XHTML rendering code. Keys are now resolved in one preprocessing
@@ -115,6 +150,9 @@
     </section>
     <section>
       <title>JavaHelp</title>
+      <div outputclass="div-index">
+        <indexterm>JavaHelp</indexterm>
+      </div>
       <p>The <codeph>dita.<b>out.</b>map.javahelp.*</codeph> targets have been deprecated and should be replaced with
         the updated <codeph>dita.map.javahelp.*</codeph> equivalents:</p>
       <ul>

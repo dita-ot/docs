@@ -14,8 +14,19 @@
     <attribute name="format"/>
     <attribute name="propertyfile"/>
     <sequential>
-      <exec executable="${dita.dir}/bin/dita">
-        <arg line="--input=@{input} --format=@{format} --propertyfile=@{propertyfile}"/>
+      <!-- For Unix run the DITA executable-->
+      <exec taskname="dita-cmd" executable="${dita.dir}/bin/dita" osfamily="unix" failonerror="true">
+        <arg value="--input"/>
+        <arg value="@{input}"/>
+        <arg value="--format"/>
+        <arg value="@{format}"/>
+        <arg value="--propertyfile"/>
+        <arg value="@{propertyfile}"/>
+      </exec>
+      <!-- For Windows run DITA from a DOS command -->
+      <exec taskname="dita-cmd" dir="${dita.dir}/bin" executable="cmd" osfamily="windows" failonerror="true">
+        <arg value="/C"/>
+        <arg value="dita --input @{input} --format @{format} --propertyfile=@{propertyfile}"/>
       </exec>
     </sequential>
   </macrodef>

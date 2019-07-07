@@ -9,6 +9,15 @@
   </titlealts>
   <shortdesc>Adhering to certain development practices will properly isolate your code from that of DITA Open Toolkit.
     This will make it easier to you to upgrade to new versions of DITA-OT when they are released.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>plug-ins<indexterm>best practices</indexterm></indexterm>
+        <indexterm>upgrading<indexterm>best practices</indexterm></indexterm>
+        <indexterm>XSLT<indexterm>best practices</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <ul>
       <li>
@@ -43,8 +52,8 @@
         <p>For example, instead of creating a template named <codeph>searchbar</codeph>, use something like
             <codeph>corp:searchbar</codeph> instead. This ensures that if future versions of DITA-OT add a
             <codeph>searchbar</codeph> template, your custom version will be unaffected.</p>
-        <p>Instead of: <codeblock>&lt;xsl:template name="searchbar"/></codeblock></p>
-        <p>use: <codeblock>&lt;xsl:template name="corp:searchbar"/></codeblock></p>
+        <p>Instead of: <codeblock outputclass="language-xml">&lt;xsl:template name="searchbar"/></codeblock></p>
+        <p>use: <codeblock outputclass="language-xml">&lt;xsl:template name="corp:searchbar"/></codeblock></p>
       </li>
     </ul>
   </conbody>

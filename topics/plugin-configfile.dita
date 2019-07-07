@@ -7,10 +7,22 @@
   <shortdesc>The plug-in descriptor file (<filepath>plugin.xml</filepath>) controls all aspects of a plug-in, making
     each extension visible to the rest of the toolkit. The file uses pre-defined extension points to locate changes, and
     then integrates those changes into the core DITA-OT code.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>plug-ins<indexterm>identfiers</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm><filepath>plugin.xml</filepath></indexterm></indexterm>
+        <indexterm>metadata<indexterm>plug-in</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section conkeyref="reusable-components/validating-plugins"/>
     <section>
       <title>Plug-in identifiers</title>
+      <div outputclass="div-index">
+        <indexterm><xmlatt>id</xmlatt><indexterm>plug-in</indexterm></indexterm>
+      </div>
       <p>Every DITA-OT plug-in must have a unique identifier composed of one or more dot-delimited tokens, for example,
           <codeph>com.example.rss</codeph>. This identifier is used to identify the plug-in to the toolkit for
         installation, processing, and when determining plug-in dependencies.</p>
@@ -31,11 +43,14 @@
         required <xmlatt>id</xmlatt> attribute set to the unique plug-in identifier.</p>
       <fig>
         <title>Sample <xmlelement>plugin</xmlelement> element</title>
-        <codeblock><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml#line=3,4"/></codeblock>
+        <codeblock outputclass="language-xml"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml#line=3,4"/></codeblock>
       </fig>
     </section>
     <section>
       <title>Plug-in elements</title>
+      <div outputclass="div-index">
+        <indexterm><xmlelement>plugin</xmlelement></indexterm>
+      </div>
       <draft-comment author="Kristen Eberlein" time="13 May 2013">Perhaps all the following tables should have a Data
         type column? That would match with the DITA spec; also, it seems as if some attributes must take a predefined
         set of values.</draft-comment>
@@ -44,6 +59,7 @@
         <plentry>
           <pt><xmlelement>extension-point</xmlelement></pt>
           <pd>
+            <indexterm><xmlelement>extension-point</xmlelement></indexterm>
             <p>An optional element that defines a new extension point that can be used by other DITA-OT plug-ins.</p>
             <p>The following attributes are supported:</p>
             <simpletable keycol="1">
@@ -69,13 +85,16 @@
               defining plug-in and append one or more tokens, for example, <codeph>org.dita.example.pre</codeph>.</note>
             <fig>
               <title>Sample <xmlelement>extension-point</xmlelement> element</title>
-              <codeblock>&lt;extension-point id="dita.xsl.html5" name="HTML5 XSLT import"/></codeblock>
+              <codeblock outputclass="language-xml">&lt;extension-point id="dita.xsl.html5" name="HTML5 XSLT import"/></codeblock>
             </fig>
           </pd>
         </plentry>
         <plentry>
           <pt><xmlelement>feature</xmlelement></pt>
           <pd>
+            <indexterm><xmlelement>feature</xmlelement></indexterm>
+            <indexterm><xmlatt>value</xmlatt></indexterm>
+            <indexterm><xmlatt>file</xmlatt></indexterm>
             <p>An optional element that supplies values to a DITA-OT extension point.</p>
             <p>The following attributes are supported:</p>
             <simpletable keycol="1">
@@ -113,8 +132,8 @@
               <title>Sample <xmlelement>feature</xmlelement> elements</title>
               <p>If more than one <xmlelement>feature</xmlelement> element supplies values to the same extension point,
                 the values are additive. For example, the following are equivalent:</p>
-              <codeblock>&lt;feature extension="org.dita.example.extension-point" value="a,b,c"/></codeblock>
-              <codeblock>&lt;feature extension="org.dita.example.extension-point" value="a"/>
+              <codeblock outputclass="language-xml">&lt;feature extension="org.dita.example.extension-point" value="a,b,c"/></codeblock>
+              <codeblock outputclass="language-xml">&lt;feature extension="org.dita.example.extension-point" value="a"/>
 &lt;feature extension="org.dita.example.extension-point" value="b"/>
 &lt;feature extension="org.dita.example.extension-point" value="c"/></codeblock>
             </fig>
@@ -123,6 +142,7 @@
         <plentry>
           <pt><xmlelement>meta</xmlelement></pt>
           <pd>
+            <indexterm><xmlelement>meta</xmlelement></indexterm>
             <p>An optional element that defines metadata.</p>
             <p>The following attributes are supported:</p>
             <simpletable keycol="1">
@@ -144,13 +164,14 @@
             </simpletable>
             <fig>
               <title>Sample <xmlelement>meta</xmlelement> element</title>
-              <codeblock>&lt;meta type="foo" value="bar"/></codeblock>
+              <codeblock outputclass="language-xml">&lt;meta type="foo" value="bar"/></codeblock>
             </fig>
           </pd>
         </plentry>
         <plentry>
           <pt><xmlelement>require</xmlelement></pt>
           <pd>
+            <indexterm><xmlelement>require</xmlelement></indexterm>
             <p>An optional element that defines plug-in dependencies.</p>
             <p>The following attributes are supported:</p>
             <simpletable keycol="1">
@@ -176,13 +197,15 @@
             </simpletable>
             <fig>
               <title>Sample <xmlelement>require</xmlelement> element</title>
-              <codeblock outputclass="normalize-space"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml#line=4,5"/></codeblock>
+              <codeblock outputclass="language-xml normalize-space"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml#line=4,5"/></codeblock>
             </fig>
           </pd>
         </plentry>
         <plentry>
           <pt><xmlelement>template</xmlelement></pt>
           <pd>
+            <indexterm><xmlelement>template</xmlelement></indexterm>
+            <indexterm><xmlelement>dita:extension</xmlelement></indexterm>
             <p>An optional element that defines files that should be treated as templates.</p>
             <p>Template files can be used to integrate DITA-OT extensions. Templates typically extend the default
               transformation-type-specific build files via <xmlelement>dita:extension</xmlelement> elements. When the
@@ -204,13 +227,14 @@
             </simpletable>
             <fig>
               <title>Sample <xmlelement>template</xmlelement> element</title>
-              <codeblock>&lt;template file="build_dita2html5_template.xml"/></codeblock>
+              <codeblock outputclass="language-xml">&lt;template file="build_dita2html5_template.xml"/></codeblock>
             </fig>
           </pd>
         </plentry>
         <plentry>
           <pt><xmlelement>transtype</xmlelement></pt>
           <pd>
+            <indexterm><xmlelement>transtype</xmlelement><indexterm><filepath>plugin.xml</filepath></indexterm></indexterm>
             <p>An optional element that defines a new output format (transformation type).</p>
             <p>The following attributes are supported:</p>
             <simpletable keycol="1">
@@ -245,7 +269,7 @@
             </simpletable>
             <fig>
               <title>Sample <xmlelement>transtype</xmlelement> element</title>
-              <codeblock>&lt;transtype name="base" abstract="true" desc="Common">
+              <codeblock outputclass="language-xml">&lt;transtype name="base" abstract="true" desc="Common">
   &lt;!-- ⋮ -->
   &lt;param name="link-crawl" 
          desc="Specifies whether to crawl only topic links found in maps, or all discovered topic links."
@@ -263,6 +287,7 @@
               <plentry>
                 <pt><xmlelement>param</xmlelement></pt>
                 <pd>
+                  <indexterm><xmlelement>param</xmlelement></indexterm>
                   <p>An optional element that specifies a parameter for the transformation type.</p>
                   <p>The following parameter attributes are supported:</p>
                   <simpletable keycol="1">
@@ -302,6 +327,7 @@
               <plentry>
                 <pt><xmlelement>val</xmlelement></pt>
                 <pd>
+                  <indexterm><xmlelement>val</xmlelement></indexterm>
                   <p>A child of <xmlelement>param</xmlelement> (when <xmlatt>type</xmlatt>=<option>enum</option>) that
                     specifies an enumeration value.</p>
                   <p>The following attributes are supported:</p>

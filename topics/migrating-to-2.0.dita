@@ -14,6 +14,19 @@
     plugins by allowing installation from a URL.<draft-comment author="staylor">There are likely other changes that
       should be noted here. See <xref keyref="2.0-release-notes"/>. </draft-comment>
   </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlatt>as</xmlatt></indexterm>
+        <indexterm><cmdname>dita</cmdname> command<indexterm>plug-ins</indexterm></indexterm>
+        <indexterm>uninstalling</indexterm>
+        <indexterm>removing<index-see>uninstalling</index-see></indexterm>
+        <indexterm>deinstalling<index-see>uninstalling</index-see></indexterm>
+        <indexterm>XSLT<indexterm>2.0</indexterm></indexterm>
+        <indexterm>Customization directory</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <refbody>
     <section>
@@ -32,7 +45,7 @@
       </section>
       <example>
         <p>For example:</p>
-        <codeblock>&lt;xsl:variable name="urltest">
+        <codeblock outputclass="language-xml">&lt;xsl:variable name="urltest">
 &lt;xsl:variable name="urltest" <b>as="xs:boolean"</b>></codeblock>
       </example>
       <section>

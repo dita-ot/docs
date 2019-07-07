@@ -6,8 +6,20 @@
   <title>Variable overrides</title>
   <shortdesc>The <filepath>common/vars</filepath> folder houses custom variable definitions that override the standard
     definitions in <filepath>org.dita.pdf2/cfg/common/vars</filepath>. </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>variable</xmlelement></indexterm>
+        <indexterm><xmlelement>param</xmlelement></indexterm>
+        <indexterm><xmlatt>id</xmlatt><indexterm>variables, overriding</indexterm></indexterm>
+        <indexterm>languages<indexterm>adding support for</indexterm></indexterm>
+        <indexterm>languages<indexterm>ISO 639-1</indexterm></indexterm>
+        <indexterm>ISO 639-1</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <body>
-    <p>As with index configuration, Each file contains data for a single language, and should take that language’s ISO
+    <p>As with index configuration, each file contains data for a single language, and should take that language’s ISO
       639-1 language designator as its name.</p>
     <p>Variable files contain a set of <xmlelement>variable</xmlelement> elements, identified by their
         <xmlatt>id</xmlatt> attribute. The variable definitions are used to store static text that is used as part of

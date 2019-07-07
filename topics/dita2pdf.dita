@@ -5,6 +5,17 @@
 <concept id="dita2pdf" xml:lang="en-US">
   <title>PDF</title>
   <shortdesc>The <option>pdf</option> transformation generates output in Portable Document Format.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>PDF<index-see-also>transformations</index-see-also></indexterm>
+        <indexterm>transformations<indexterm>PDF</indexterm></indexterm>
+        <indexterm>PDF<indexterm>plug-in, history of</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>dita2pdf</indexterm></indexterm>
+        <indexterm>dita2pdf</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>This transformation was originally created as a plug-in and maintained outside of the main toolkit code. It was
       created as a more robust alternative to the demo PDF transformation in the original toolkit, and thus was known as

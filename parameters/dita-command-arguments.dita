@@ -13,7 +13,12 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>dita command<indexterm>syntax</indexterm></indexterm>
+        <indexterm>filters<indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command<indexterm>arguments list</indexterm></indexterm>
+        <indexterm>arguments<index-see-also><cmdname>dita</cmdname> command</index-see-also></indexterm>
+        <indexterm>installing</indexterm>
+        <indexterm>uninstalling</indexterm>
+        <indexterm>artlbl<index-see>args.artlbl</index-see></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -69,6 +74,19 @@
     </section>
     <section>
       <title>Arguments</title>
+      <div outputclass="div-index">
+        <indexterm><parmname>--input</parmname></indexterm>
+        <indexterm><parmname>-i</parmname></indexterm>
+        <indexterm><parmname>--format</parmname></indexterm>
+        <indexterm><parmname>-f</parmname></indexterm>
+        <indexterm><parmname>--install</parmname></indexterm>
+        <indexterm><parmname>--uninstall</parmname></indexterm>
+        <indexterm><parmname>--plugins</parmname></indexterm>
+        <indexterm><parmname>--transtypes</parmname></indexterm>
+        <indexterm><parmname>--help</parmname></indexterm>
+        <indexterm><parmname>-h</parmname></indexterm>
+        <indexterm><parmname>--version</parmname></indexterm>
+      </div>
       <parml>
         <plentry>
           <pt>
@@ -155,6 +173,25 @@
     </section>
     <section>
       <title>Options</title>
+      <div outputclass="div-index">
+        <indexterm><parmname>-o</parmname></indexterm>
+        <indexterm><parmname>--output</parmname></indexterm>
+        <indexterm><parmname>--filter</parmname></indexterm>
+        <indexterm><parmname>--force</parmname></indexterm>
+        <indexterm><parmname>--temp</parmname></indexterm>
+        <indexterm><parmname>-t</parmname></indexterm>
+        <indexterm><parmname>--verbose</parmname></indexterm>
+        <indexterm><parmname>-v</parmname></indexterm>
+        <indexterm><parmname>--debug</parmname></indexterm>
+        <indexterm><parmname>-d</parmname></indexterm>
+        <indexterm><parmname>--logfile</parmname></indexterm>
+        <indexterm><parmname>-l</parmname></indexterm>
+        <indexterm><parmname>--parameter</parmname></indexterm>
+        <indexterm><parmname>-D</parmname></indexterm>
+        <indexterm><parmname>--propertyfile</parmname></indexterm>
+        <indexterm>Java<indexterm>classes</indexterm></indexterm>
+        <indexterm>debugging<indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
+      </div>
       <parml id="dita_build_options">
         <plentry>
           <pt>
@@ -175,8 +212,19 @@
             <parmname>--filter</parmname>=<varname>files</varname>
           </pt>
           <pd>Specifies filter file(s) used to include, exclude, or flag content. </pd>
-          <pd>This argument corresponds to the common parameter <parmname>args.filter</parmname>. Relative paths are
-            resolved against the current directory and internally converted to absolute paths.</pd>
+          <pd>
+            <p>This argument corresponds to the common parameter <parmname>args.filter</parmname>. Relative paths are
+              resolved against the current directory and internally converted to absolute paths.</p>
+            <note>
+              <p>To specify multiple filter files, use the system path separator character to delimit individual file
+                paths (semicolon ‘<codeph>;</codeph>’ on Windows, and colon ‘<codeph>:</codeph>’ on macOS and Linux) and
+                wrap the value in quotes:</p>
+              <p><codeph>--filter="filter1.ditaval;filter2.ditaval;filter3.ditaval"</codeph></p>
+              <p>DITAVAL files are evaluated in the order specified, so conditions specified in the first file take
+                precedence over matching conditions specified in later files, just as conditions at the start of a
+                DITAVAL document take precedence over matching conditions later in the same document.</p>
+            </note>
+          </pd>
         </plentry>
         <plentry>
           <pt>

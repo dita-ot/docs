@@ -6,9 +6,21 @@
   <title>Re-usable components</title>
   <shortdesc>Warehouse topic used to store re-usable content for concept topics or other constructs that would not be
     valid in the existing warehouse task <filepath>conref-task.dita</filepath>.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><!-- This file contains reusable content. Index entries are in each <section>.  --></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section id="use-xslt2">
       <title>Upgrade stylesheets to XSLT 2.0</title>
+      <indexterm>upgrading</indexterm>
+      <indexterm>Saxon</indexterm>
+      <indexterm>XSLT<indexterm>1.0</indexterm></indexterm>
+      <indexterm>XSLT<indexterm>2.0</indexterm></indexterm>
+      <indexterm>plug-ins<indexterm>upgrading</indexterm></indexterm>
       <p>The Saxon project has announced plans to remove XSLT 1.0 support from the Saxon-HE library that ships with
         DITA-OT:</p>
       <lq href="https://www.xml.com/news/release-saxon-98/" format="html" scope="external">…we’re dropping XSLT 1.0
@@ -27,7 +39,10 @@
       <title>Validating plug-ins</title>
       <div id="plugin.rnc">
         <p>DITA-OT includes a RELAX NG schema file that can be used to validate the <filepath>plugin.xml</filepath>
-          files that define the capabilities of each plug-in.</p>
+          files that define the capabilities of each plug-in.
+        <indexterm>schema<indexterm>RELAX NG</indexterm></indexterm>
+        <indexterm>validate</indexterm>
+        </p>
         <p>To ensure the syntax of your custom plug-in is correct, include an <xmlpi>xml-model</xmlpi> processing
           instruction at the beginning of the <filepath>plugin.xml</filepath> file, immediately after the XML
           prolog:</p>
@@ -40,6 +55,8 @@
 
     <section id="dita-for-print">
       <title><cite>DITA for Print: A DITA Open Toolkit Workbook</cite> (Second Edition, 2017)</title>
+      <indexterm>Leigh White</indexterm>
+      <indexterm>DITA for Print</indexterm>
       <p>Authored by Leigh W. White, DITA Specialist at IXIASOFT, and published by XML Press, <cite>DITA for
           Print</cite> walks readers through developing a PDF customization from scratch. </p>
       <p>Here is an excerpt from the back cover:</p>
@@ -62,6 +79,8 @@
 
     <section id="dita-for-practitioners">
       <title><cite>DITA for Practitioners: Volume 1, Architecture and Technology</cite> (2012)</title>
+      <indexterm>Eliot Kimber</indexterm>
+      <indexterm>DITA for Practitioners: Volume 1, Architecture and Technology</indexterm>
       <p>Authored by Eliot Kimber and published by XML Press, this seminal resource contains a chapter dedicated to DITA
         Open Toolkit: “Running, Configuring, and Customizing the Open Toolkit”. In addition to a robust overview of
         DITA-OT customization and extension, the chapter contains a detailed example of customizing a PDF plug-in to
@@ -74,6 +93,11 @@
       <title>Supported Java versions</title>
       <p id="java-clients">DITA-OT is designed to run on Java version <keyword keyref="tool.java.version"/> or later.
         Compatible Java distributions are available from multiple sources:
+        <div outputclass="div-index">
+          <indexterm>Java<indexterm>versions</indexterm></indexterm>
+          <indexterm>Amazon Corretto</indexterm>
+          <indexterm>OpenJDK</indexterm>
+        </div>
         <ul>
           <li>You can download the Oracle JRE or JDK from
             <xref keyref="download.oracle-jdk"/>.</li>

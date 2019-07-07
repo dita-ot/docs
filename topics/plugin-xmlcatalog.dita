@@ -6,6 +6,17 @@
   <title>Extending an XML catalog file</title>
   <shortdesc>You can update either the main DITA-OT XML catalog or the XML catalog that is used by the PDF plug-in. This
     enables DITA-OT to support new specializations and document-type shells.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated features<indexterm><parmname>dita.specialization.catalog</parmname></indexterm></indexterm>
+        <indexterm>DITA<indexterm>specializations</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>DITA specializations</indexterm></indexterm>
+        <indexterm>OASIS</indexterm>
+        <indexterm>catalog<indexterm>extending</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>You can use the <parmname>dita.specialization.catalog.relative</parmname> and
@@ -20,7 +31,7 @@
       </step>
       <step>
         <cmd>Create a <filepath>plugin.xml</filepath> file that contains the following content:</cmd>
-        <info><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
+        <info><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="<varname>extension-point</varname>" file="<varname>file</varname>"/>
 &lt;/plugin></codeblock>where:
           <ul>
@@ -47,7 +58,7 @@
         shells inside this plug-in. The catalog entries in <filepath>catalog-dita.xml</filepath> are relative to the
         catalog itself; when the plug-in is installed, they are added to the core DITA-OT catalog (with the correct
         path).</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.catalog">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.catalog">
   &lt;feature extension="dita.specialization.catalog.relative"
            file="catalog-dita.xml"/>
 &lt;/plugin></codeblock>

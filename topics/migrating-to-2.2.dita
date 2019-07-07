@@ -13,6 +13,24 @@
     plug-ins were created for each of the rendering engine-specific PDF transformations.<draft-comment author="staylor">
       There are likely other changes that should be noted here. </draft-comment>
   </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>toc</xmlelement></indexterm>
+        <indexterm><xmlelement>preface</xmlelement></indexterm>
+        <indexterm><xmlelement>frontmatter</xmlelement></indexterm>
+        <indexterm><xmlelement>bookmap</xmlelement></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>.notetitle</codeph> classes</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>user.input.file</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>user.input.dir</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>InputMapDir</parmname></indexterm></indexterm>
+        <indexterm>RenderX<indexterm>plug-in</indexterm></indexterm>
+        <indexterm>Antenna House<indexterm>plug-in</indexterm></indexterm>
+        <indexterm>Apache FOP<indexterm>plug-in</indexterm></indexterm>
+        <indexterm>table of contents<indexterm>PDF</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <refbody>
     <section>

@@ -6,6 +6,19 @@
   <title>Pull content into topics (topicpull)</title>
   <shortdesc>The <codeph>topicpull</codeph> step pulls content into <xmlelement>xref</xmlelement> and
       <xmlelement>link</xmlelement> elements. This step is implemented in XSLT.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>xref</xmlelement></indexterm>
+        <indexterm><xmlelement>link</xmlelement></indexterm>
+        <indexterm><xmlelement>desc</xmlelement></indexterm>
+        <indexterm><xmlelement>linktext</xmlelement></indexterm>
+        <indexterm>preprocessing<indexterm><codeph>topicpull</codeph></indexterm></indexterm>
+        <indexterm><codeph>topicpull</codeph></indexterm>
+        <indexterm>XSLT<indexterm><codeph>topicpull</codeph></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section><p>If an <xmlelement>xref</xmlelement> element does not contain link text, the target is examined and the link text is
         pulled. For example, a reference to a topic pulls the title of the topic; a reference to a list item pulls the

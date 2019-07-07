@@ -101,6 +101,22 @@
         <parmname>
           <xsl:value-of select="@id"/>
         </parmname>
+        <ph>
+          <indexterm>
+            <parmname><xsl:value-of select="@id"/></parmname>
+          </indexterm>
+          <indexterm>extension points<indexterm>
+            <parmname><xsl:value-of select="@id"/></parmname>
+          </indexterm></indexterm>
+        </ph>
+        <xsl:if test="parent::*[@deprecated = 'true']">
+          <ph>
+            <indexterm>deprecated features<indexterm>extension points<indexterm>
+              <parmname><xsl:value-of select="@id"/></parmname>
+            </indexterm></indexterm>
+            </indexterm>
+          </ph>
+        </xsl:if>
       </dt>
       <dd id="{@id}.desc">
         <xsl:value-of select="@name"/>
@@ -121,6 +137,22 @@
         <parmname>
           <xsl:value-of select="@id"/>
         </parmname>
+        <ph>
+          <indexterm>
+            <parmname><xsl:value-of select="@id"/></parmname>
+          </indexterm>
+          <indexterm>extension points<indexterm>
+            <parmname><xsl:value-of select="@id"/></parmname>
+          </indexterm></indexterm>
+        </ph>
+        <xsl:if test="parent::*[@deprecated = 'true']">
+          <ph>
+            <indexterm>deprecated features<indexterm>extension points<indexterm>
+                <parmname><xsl:value-of select="@id"/></parmname>
+            </indexterm></indexterm>
+            </indexterm>
+          </ph>
+        </xsl:if>
       </dt>
       <!-- Changing the keyref to "extension-points-in-{$containing-plugin}/{@id}" would link to the exact parameter. -->
       <dd>Defined in plug-in

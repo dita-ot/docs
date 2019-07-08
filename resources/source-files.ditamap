@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
 <map>
   <title>Source File Key Definitions</title>
   <topicmeta>
@@ -47,6 +48,7 @@
   <keydef keys="globalization" href="../topics/globalization.dita"/>
   <keydef keys="globalization-languages" href="../topics/globalization-languages.dita"/>
   <keydef keys="globalization-support" href="../topics/globalization-support.dita"/>
+  <keydef keys="glossary" href="../reference/glossary.dita"/><!-- Glossary keys are defined in glossary.ditamap -->
   <keydef keys="html-customization" href="../topics/html-customization.dita"/>
   <keydef keys="html-customization-css" href="../topics/html-customization-css.dita"/>
   <keydef keys="html-customization-header" href="../topics/html-customization-header.dita"/>
@@ -177,8 +179,6 @@
   <keydef keys="XhtmlEclipse" href="../reference/XhtmlEclipse.dita"/>
   <keydef keys="XhtmlTocjs" href="../reference/XhtmlTocjs.dita"/>
   <keydef keys="XhtmlWithNavigation" href="../reference/XhtmlWithNavigation.dita"/>
-  <keydef keys="glossary" href="../reference/glossary.dita"/>
-  <!-- Glossary keys are defined in ../reference/glossary.ditamap. -->
 
   <!-- Generated topics; this list should probably be generated automatically when all targets are valid -->
   <keydef keys="all-extension-points" href="../extension-points/all-extension-points.dita"/>

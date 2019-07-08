@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
 <glossentry id="gloss-dita-open-toolkit">
-    <glossterm>DITA Open Toolkit</glossterm>
-    <glossdef></glossdef>
-    <glossBody>
-        <glossPartOfSpeech value="proper-noun"/>
-        <glossUsage>Treat as a proper noun; do not precede with <i>the</i>.</glossUsage>
-        <glossAlt>
-            <glossAbbreviation>DITA-OT</glossAbbreviation>
-        </glossAlt>
-    </glossBody>
+  <glossterm>DITA Open Toolkit</glossterm>
+  <glossdef/>
+  <glossBody>
+    <glossPartOfSpeech value="proper-noun"/>
+    <glossUsage>Treat as a proper noun; do not precede with <i>the</i>.</glossUsage>
+    <glossAlt>
+      <glossAbbreviation>DITA-OT</glossAbbreviation>
+    </glossAlt>
+  </glossBody>
 </glossentry>

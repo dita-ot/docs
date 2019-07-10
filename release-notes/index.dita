@@ -34,7 +34,6 @@
       <metadata>
         <keywords>
           <indexterm>HTML5<indexterm>table <xmlatt>headers</xmlatt></indexterm></indexterm>
-          <indexterm>images<indexterm>flagging</indexterm></indexterm>
           <indexterm>flagging</indexterm>
           <indexterm><xmlatt>xml:lang</xmlatt></indexterm>
           <indexterm><xmlelement>linklist</xmlelement></indexterm>
@@ -60,16 +59,18 @@
             readers to identify the header cells to which table cells are related.)
             <xref href="https://github.com/dita-ot/dita-ot/issues/3313" format="html" scope="external">#3313</xref>
           </li>
+          <!--
           <li id="3316">For HTML-based output formats, image flag processing has been improved to ensure that flag
             images are reliably copied to the correct location(s) in the output directory, regardless of whether the
             DITAVAL is outside the map directory, in the map directory, or in a subdirectory of the map location.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3316" format="html" scope="external">#3316</xref>
           </li>
-          <!--
-          <li id="3317">Preserve flags for generated links
+          -->
+          <li id="3317">In recent (3.x) versions of DITA-OT, flagging information is added before generated links are
+            created, so any flags on the topic reference are ignored. Processing has been updated to copy flags from the
+              <xmlelement>topicref</xmlelement> to the links that are generated to point to that topic.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3317" format="html" scope="external">#3317</xref>
           </li>
-          -->
           <li id="3321">Earlier versions of DITA-OT failed to honor the effective <xmlatt>xml:lang</xmlatt> attribute
             value when processing links. This error has been corrected to ensure that the closest language value is
             preserved on the generated <xmlelement>linklist</xmlelement>, so locale-based headings such as ”Related

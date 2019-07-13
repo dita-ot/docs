@@ -26,9 +26,89 @@
     </refbody>
   </reference>
 
-  <reference id="v3.3.2">
+  <reference id="v3.3.3">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released May 28, 2019</ph>
+      <!--<ph outputclass="small text-muted">released MMMM DD, 2019</ph>-->
+    </title>
+    <prolog>
+      <metadata>
+        <keywords>
+          <indexterm>HTML5<indexterm>table <xmlatt>headers</xmlatt></indexterm></indexterm>
+          <indexterm>flagging</indexterm>
+          <indexterm><xmlatt>xml:lang</xmlatt></indexterm>
+          <indexterm><xmlelement>linklist</xmlelement></indexterm>
+          <indexterm>languages<indexterm><xmlelement>linklist</xmlelement></indexterm></indexterm>
+          <indexterm>link processing</indexterm>
+          <indexterm>Trouble note labels</indexterm>
+          <indexterm><xmlelement>note</xmlelement></indexterm>
+          <indexterm>passthrough</indexterm>
+          <indexterm>DITAVAL<indexterm>passthrough action</indexterm></indexterm>
+          <indexterm><xmlatt>action</xmlatt></indexterm>
+          <indexterm><xmlelement>prop</xmlelement></indexterm>
+          <indexterm>Saxon<indexterm>tables</indexterm><indexterm>screen readers</indexterm></indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <li id="3313">The code that generates <xmlatt>headers</xmlatt> attributes in HTML-based output formats has
+            been simplified to prevent Saxon crashes when processing complex tables. (These attributes help screen
+            readers to identify the header cells to which table cells are related.)
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3313" format="html" scope="external">#3313</xref>
+          </li>
+          <!--
+          <li id="3316">For HTML-based output formats, image flag processing has been improved to ensure that flag
+            images are reliably copied to the correct location(s) in the output directory, regardless of whether the
+            DITAVAL is outside the map directory, in the map directory, or in a subdirectory of the map location.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3316" format="html" scope="external">#3316</xref>
+          </li>
+          -->
+          <li id="3317">In recent (3.x) versions of DITA-OT, flagging information is added before generated links are
+            created, so any flags on the topic reference are ignored. Processing has been updated to copy flags from the
+              <xmlelement>topicref</xmlelement> to the links that are generated to point to that topic.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3317" format="html" scope="external">#3317</xref>
+          </li>
+          <li id="3321">Earlier versions of DITA-OT failed to honor the effective <xmlatt>xml:lang</xmlatt> attribute
+            value when processing links. This error has been corrected to ensure that the closest language value is
+            preserved on the generated <xmlelement>linklist</xmlelement>, so locale-based headings such as ”Related
+            information” are applied correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3321" format="html" scope="external">#3321</xref>
+          </li>
+          <li id="3322">The strings files for each supported language now include default translations for the “Trouble”
+            note label that is used for <xmlelement>note</xmlelement> elements with the <xmlatt>type</xmlatt> attribute
+            set to <codeph>trouble</codeph>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3322" format="html" scope="external">#3322</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3336" format="html" scope="external">#3336</xref>
+          </li>
+          <li id="3325">When generating HTML5 output, DITAVAL files can now preserve profiling attributes by default by
+            setting the <xmlatt>action</xmlatt> attribute of a <xmlelement>prop</xmlelement> element to
+              <codeph>passthrough</codeph>. Earlier versions of DITA-OT would only pass values through if the DITAVAL
+            filter defined matching attribute/value pairs via specific <xmlatt>att</xmlatt> and <xmlatt>val</xmlatt>
+            settings.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3325" format="html" scope="external">#3325</xref>
+          </li>
+          <li id="3338">The LwDITA plugin has been updated to version 2.3.0 to fix several issues in Lightweight DITA
+            processing. (Nested lists are now properly generated in Markdown output when list items starts with inline
+            markup such as bold, or italics. Topic references with the <xmlatt>format</xmlatt> attribute set to
+              <codeph>html</codeph> will no longer be interpreted as DITA content. LwDITA-specific processing can be
+            applied to HTML topics by setting the <xmlatt>format</xmlatt> attribute to <codeph>hdita</codeph>.)
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3338" format="html" scope="external">#3338</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.3+is%3Aclosed" format="html"
+            scope="external">3.3.3 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.3.2...3.3.3" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.3.2">
+    <title>DITA-OT 3.3.2 <ph outputclass="small text-muted">released May 28, 2019</ph>
     </title>
     <prolog>
       <metadata>
@@ -45,8 +125,7 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
-          following bug fixes.</p>
+        <p>DITA Open Toolkit 3.3.2 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.2+sort%3Acreated-asc -->
           <li id="2722">Earlier versions of DITA-OT would attempt to download remote media objects referenced via the
@@ -62,7 +141,7 @@
             to ensure that the OASIS namespace is used when generating the <filepath>catalog-dita.xml</filepath> file.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3284" format="html" scope="external">#3284</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3287" format="html" scope="external">#3287</xref>
-            <note>DITA-OT <keyword keyref="maintenance-version"/> still ships with <keyword keyref="tool.saxon.edition"/>
+            <note>DITA-OT 3.3.2 still ships with <keyword keyref="tool.saxon.edition"/>
               <keyword keyref="tool.saxon.version"/>, but now also works with version 9.8.0.15.</note>
           </li>
           <li id="3304">In PDF output, the bitmap warning icon has been replaced with the SVG image previously added for

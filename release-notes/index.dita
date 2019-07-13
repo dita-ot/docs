@@ -90,17 +90,12 @@
             settings.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3325" format="html" scope="external">#3325</xref>
           </li>
-          <li id="3338">The LwDITA plugin has been updated to version 2.2.2 to fix several issues in Lightweight DITA
+          <li id="3338">The LwDITA plugin has been updated to version 2.3.0 to fix several issues in Lightweight DITA
             processing. (Nested lists are now properly generated in Markdown output when list items starts with inline
             markup such as bold, or italics. Topic references with the <xmlatt>format</xmlatt> attribute set to
-              <codeph>html</codeph> will no longer be interpreted as DITA content. As with earlier versions,
-            LwDITA-specific processing can be applied to HTML topics by setting the <xmlatt>format</xmlatt> attribute to
-              <codeph>hdita</codeph>.)
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3338" format="html" scope="external">#3338</xref>,
-            <xref href="https://github.com/jelovirt/org.lwdita/issues/46" format="html" scope="external"
-              >org.lwdita#46</xref>,
-            <xref href="https://github.com/jelovirt/org.lwdita/issues/47" format="html" scope="external"
-              >org.lwdita#47</xref>
+              <codeph>html</codeph> will no longer be interpreted as DITA content. LwDITA-specific processing can be
+            applied to HTML topics by setting the <xmlatt>format</xmlatt> attribute to <codeph>hdita</codeph>.)
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3338" format="html" scope="external">#3338</xref>
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the

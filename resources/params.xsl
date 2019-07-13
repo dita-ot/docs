@@ -121,6 +121,22 @@
         <parmname>
           <xsl:value-of select="@name"/>
         </parmname>
+        <ph>
+          <indexterm>
+            <parmname><xsl:value-of select="@name"/></parmname>
+          </indexterm>
+          <indexterm>parameters<indexterm>
+            <parmname><xsl:value-of select="@name"/></parmname>
+          </indexterm></indexterm>
+        </ph>
+        <xsl:if test="@deprecated = 'true'">
+          <ph>
+            <indexterm>deprecated features<indexterm>parameters<indexterm>
+                <parmname><xsl:value-of select="@name"/></parmname>
+                </indexterm></indexterm>
+            </indexterm>
+          </ph>
+        </xsl:if>
       </pt>
       <pd id="{@name}.desc">
         <xsl:value-of select="@desc"/>

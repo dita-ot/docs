@@ -9,6 +9,24 @@
   </titlealts>
   <shortdesc>A custom plug-in can be created to generate HTML output that uses custom fonts for enhanced typographic
     features, extended character sets or a unique corporate identity.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>require</xmlelement></indexterm>
+        <indexterm><xmlelement>link</xmlelement></indexterm>
+        <indexterm><xmlelement>head</xmlelement></indexterm>
+        <indexterm>HTML<indexterm>custom plug-in</indexterm></indexterm>
+        <indexterm>HTML<indexterm>fonts</indexterm></indexterm>
+        <indexterm>CSS<indexterm>web fonts</indexterm></indexterm>
+        <indexterm>fonts<indexterm>HTML</indexterm></indexterm>
+        <indexterm>web fonts<index-see>fonts</index-see></indexterm>
+        <indexterm>custom.css</indexterm>
+        <indexterm>build_html5-webfont.xml</indexterm>
+        <indexterm>plugin.xml</indexterm>
+        <indexterm>org.dita.html5</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>This scenario walks through the process of creating a very simple plug-in
@@ -49,7 +67,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>plugin.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/plugin.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/plugin.xml"/></codeblock>
           </fig>
           <note>This plug-in will extend the default HTML5 transformation, so the <xmlelement>require</xmlelement>
             element explicitly defines <filepath>org.dita.html5</filepath> as a dependency.</note>
@@ -65,7 +83,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>webfont.hdf.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/include/webfont.hdf.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/include/webfont.hdf.xml"/></codeblock>
           </fig>
           <p>This example uses the <xref keyref="noto-sans-font"/> font. You can use multiple fonts by creating
             additional <xmlelement>link</xmlelement> references in this file. The division wrapper will be discarded
@@ -83,7 +101,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>custom.css</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/css/custom.css"/></codeblock>
+            <codeblock outputclass="language-css normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/css/custom.css"/></codeblock>
           </fig>
           <p>This example uses <xref keyref="noto-sans-font"/> for all body content. In practice, you would normally use
             different fonts for headings, body content, tables, etc. by creating additional rules in your CSS file.</p>
@@ -95,7 +113,7 @@
         <stepxmp>
           <fig>
             <title>Sample build file: <filepath>build_html5-webfont.xml</filepath></title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/build_html5-webfont.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/build_html5-webfont.xml"/></codeblock>
           </fig>
         </stepxmp>
       </step>

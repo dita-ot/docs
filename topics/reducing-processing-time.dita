@@ -5,7 +5,17 @@
 <topic id="reducing-processing-time" xml:lang="en-US">
    <title>Reducing processing time</title>
    <shortdesc>Several configuration changes can significantly reduce DITA-OT processing time.</shortdesc>
-
+   <prolog>
+      <metadata>
+         <keywords>
+            <indexterm><xmlatt>xtrf</xmlatt></indexterm>
+            <indexterm><xmlatt>xtrc</xmlatt></indexterm>
+            <indexterm>processing time</indexterm>
+            <indexterm>Java<indexterm>required version</indexterm></indexterm>
+            <indexterm>debugging<indexterm>generate-debug-attributes</indexterm></indexterm>
+         </keywords>
+      </metadata>
+   </prolog>
    <body>
       <section>
          <title>Disable debug attribute generation</title>

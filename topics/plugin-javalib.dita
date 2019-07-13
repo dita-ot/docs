@@ -9,6 +9,17 @@
   </titlealts>
   <shortdesc>You can use the <codeph>dita.conductor.lib.import</codeph> extension point to add an additional Java
     library to the DITA-OT <parmname>classpath</parmname> parameter.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated features<indexterm><codeph>dost.class.path</codeph> property</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm>Java</indexterm></indexterm>
+        <indexterm>Java<indexterm>classpath</indexterm></indexterm>
+        <indexterm>classpath<indexterm>Java</indexterm></indexterm>
+        <indexterm>XSLT<indexterm>Java</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>As of DITA-OT 3.1, the Java class path is managed automatically, meaning you do not (and should not) use
@@ -27,7 +38,7 @@
       </step>
       <step>
         <cmd>Create a <filepath>plugin.xml</filepath> file that contains the following code:</cmd>
-        <info><codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
+        <info><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="dita.conductor.lib.import" file="<varname>file</varname>"/>
 &lt;/plugin></codeblock>where:
           <ul>
@@ -54,7 +65,7 @@
       <p>The files might look like the following:</p>
       <fig>
         <title><filepath>plugin.xml</filepath> file</title>
-        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;plugin id="com.example.samplejava">
   <i>&lt;!-- Add the JAR file to the DITA-OT CLASSPATH --></i>
   <b>&lt;feature extension="dita.conductor.lib.import" 
@@ -68,7 +79,7 @@
       </fig>
       <fig>
         <title><filepath>calljava-antcode.xml</filepath> file</title>
-        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;project default="validateWithJava">
   &lt;target name="validateWithJava">
     &lt;java classname="com.example.sampleValidation">

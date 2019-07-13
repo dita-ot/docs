@@ -8,10 +8,11 @@
   </target>
   <target name="main">
     <description>Build the CHM and PDF with the dita command</description>
-    <dita-cmd input="../sequence.ditamap" format="htmlhelp"
-              propertyfile="../properties/chm.properties"/>
-    <dita-cmd input="../taskbook.ditamap" format="pdf"
-              propertyfile="../properties/pdf.properties"/>
+    <property name="absolute.path.base" location="../"/>
+    <dita-cmd input="${absolute.path.base}/sequence.ditamap" format="htmlhelp"
+              propertyfile="${absolute.path.base}/properties/chm.properties"/>
+    <dita-cmd input="${absolute.path.base}/taskbook.ditamap" format="pdf"
+              propertyfile="${absolute.path.base}/properties/pdf.properties"/>
   </target>
   <target name="post">
     <description>Postprocessing steps</description>

@@ -7,6 +7,17 @@
   <shortdesc>The <option>tocjs</option> transformation was originally created as a plug-in that was distributed outside
     of the toolkit, but it is now bundled in the default distribution. It generates a JavaScript-based frameset for
     XHTML output with Table of Contents entries that expand and collapse.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>HTML<indexterm>TocJS</indexterm></indexterm>
+        <indexterm>dita.map.tocjs</indexterm>
+        <indexterm>TocJS</indexterm>
+        <indexterm>targets<indexterm>TocJS</indexterm></indexterm>
+        <indexterm>table of contents<indexterm>TocJS</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section>
       <p>The following Ant targets control most of the TocJS processing:</p>

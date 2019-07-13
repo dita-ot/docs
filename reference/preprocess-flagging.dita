@@ -8,6 +8,36 @@
     preprocessing step. The module evaluates the DITAVAL against all flagging attributes, and adds DITA-OT–specific
     hints to the topic when flags are active. Any extended transformation type may use these hints to support flagging
     without adding logic to interpret the DITAVAL.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>foreign</xmlelement></indexterm>
+        <indexterm><xmlelement>ditaval-startprop</xmlelement></indexterm>
+        <indexterm><xmlelement>prop</xmlelement></indexterm>
+        <indexterm><xmlelement>revprop</xmlelement></indexterm>
+        <indexterm><xmlelement>startflag</xmlelement></indexterm>
+        <indexterm><xmlelement>endflag</xmlelement></indexterm>
+        <indexterm><xmlelement>ditaval-endprop</xmlelement></indexterm>
+        <indexterm><xmlelement>ditaval-prop</xmlelement></indexterm>
+        <indexterm><xmlelement>p</xmlelement></indexterm>
+        <indexterm><xmlelement>ol</xmlelement></indexterm>
+        <indexterm><xmlelement>li</xmlelement></indexterm>
+        <indexterm><xmlatt>outputclass</xmlatt></indexterm>
+        <indexterm><xmlatt>xtrf</xmlatt></indexterm>
+        <indexterm><xmlatt>xtrc</xmlatt></indexterm>
+        <indexterm><xmlatt>outputclass</xmlatt></indexterm>
+        <indexterm><xmlatt>rev</xmlatt></indexterm>
+        <indexterm>DITAVAL<indexterm><codeph>flag-module</codeph> preprocess step</indexterm></indexterm>
+        <indexterm>DITA<indexterm>specializations</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm><codeph>flag-module</codeph></indexterm></indexterm>
+        <indexterm><codeph>flag-module</codeph></indexterm>
+        <indexterm>flagging</indexterm>
+        <indexterm>XSLT<indexterm><codeph>flag-module</codeph> preprocess step</indexterm></indexterm>
+        <indexterm>CSS<indexterm><xmlatt>outputclass</xmlatt></indexterm></indexterm>
+        <indexterm>images<indexterm>flagging</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <title>Evaluating the DITAVAL flags</title>
@@ -23,7 +53,7 @@
           <pd>
             <p>When any flag is active on an element, a <xmlelement>ditaval-startprop</xmlelement> element will be
               created as the first child of the flagged element:</p>
-            <codeblock>&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop "></codeblock>
+            <codeblock outputclass="language-xml">&lt;ditaval-startprop class="+ topic/foreign ditaot-d/ditaval-startprop "></codeblock>
             <p>The <xmlelement>ditaval-startprop</xmlelement> element will contain the following:
               <ul>
                 <li>If the active flags should create a new style, that style is included using standard CSS markup on
@@ -44,7 +74,7 @@
           <pd>
             <p>When any flag is active on an element, a <xmlelement>ditaval-endprop</xmlelement> element will be created
               as the last child of the flagged element:</p>
-            <codeblock>&lt;ditaval-endprop class="+ topic/foreign ditaot-d/ditaval-endprop "></codeblock>
+            <codeblock outputclass="language-xml">&lt;ditaval-endprop class="+ topic/foreign ditaot-d/ditaval-endprop "></codeblock>
             <p>CSS values and <xmlelement>style-conflict</xmlelement> elements are not included on this element.</p>
             <p>Any <xmlelement>prop</xmlelement> or <xmlelement>revprop</xmlelement> elements that define active flags
               will be copied in as children of <xmlelement>ditaval-prop</xmlelement>. Any
@@ -78,7 +108,7 @@
       <title>Example DITAVAL</title>
       <p>Assume the following DITAVAL file is in use during a build. This DITAVAL will be used for each of the following
         content examples.</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;val>
   <i>&lt;!-- Define what happens in the case of conflicting styles --></i>
   &lt;style-conflict background-conflict-color="red"/>
@@ -111,7 +141,7 @@
       <p>Now assume the following paragraph exists in a topic. Class attributes are included, as they would normally be
         in the middle of the preprocess routine; <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are left off for
         clarity.</p>
-      <codeblock>&lt;p audience="user">Simple user; includes style but no images&lt;/p></codeblock>
+      <codeblock outputclass="language-xml">&lt;p audience="user">Simple user; includes style but no images&lt;/p></codeblock>
       <p>Based on the DITAVAL above, audience="user" results in a style with underlining and with a green background.
         The interpreted CSS value is added to <xmlatt>outputclass</xmlatt> on
         <xmlelement>ditaval-startprop</xmlelement>, and the actual property definition is included at the start and end
@@ -119,7 +149,7 @@
         attributes added as they would appear in the temporary file):</p>
       <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
           <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;p audience="user" class="- topic/p ">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;p audience="user" class="- topic/p ">
   <b>&lt;ditaval-startprop</b>
       <b>class="+ topic/foreign ditaot-d/ditaval-startprop "</b>
       <b>outputclass="background-color:green;text-decoration:underline;"></b>
@@ -139,14 +169,14 @@
       <p>This example includes a paragraph with conflicting styles. When the audience and platform attributes are both
         evaluated, the DITAVAL indicates that the background color is both green and blue. In this situation, the
           <xmlelement>style-conflict</xmlelement> element is evaluated to determine how to style the content.</p>
-      <codeblock>&lt;p audience="user" platform="win">Conflicting styles (still no images)&lt;/p></codeblock>
+      <codeblock outputclass="language-xml">&lt;p audience="user" platform="win">Conflicting styles (still no images)&lt;/p></codeblock>
       <p>The <xmlelement>style-conflict</xmlelement> element results in a background color of red, so this value is
         added to <xmlatt>outputclass</xmlatt> on <xmlelement>ditaval-startprop</xmlelement>. As above, active properties
         are copied into the generated elements; the <xmlelement>style-conflict</xmlelement> element itself is also
         copied into the generated <xmlelement>ditaval-startprop</xmlelement> element.</p>
       <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
           <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;p audience="user" platform="win" class="- topic/p ">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;p audience="user" platform="win" class="- topic/p ">
   <b>&lt;ditaval-startprop</b>
            <b>class="+ topic/foreign ditaot-d/ditaval-startprop "</b>
            <b>outputclass="background-color:red;"></b>
@@ -172,7 +202,7 @@
       <title>Content example 3: Adding image flags</title>
       <p>This example includes image flags for both <xmlatt>platform</xmlatt> and <xmlatt>rev</xmlatt>, which are
         defined in DITAVAL <xmlelement>prop</xmlelement> and <xmlelement>revprop</xmlelement> elements.</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;ol platform="linux" rev="rev2">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;ol platform="linux" rev="rev2">
   &lt;li>Generate images for platform="linux" and rev="2"&lt;/li>
 &lt;/ol></codeblock>
       <p>As above, the <xmlelement>ditaval-startprop</xmlelement> and <xmlelement>ditaval-endprop</xmlelement> nest the
@@ -183,7 +213,7 @@
         and the order is reversed for <xmlelement>ditaval-endprop</xmlelement>.</p>
       <p>The resulting file after the flagging step looks like this; for clarity, newlines are added, while
           <xmlatt>xtrf</xmlatt> and <xmlatt>xtrc</xmlatt> are removed:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;ol platform="linux" rev="rev2" class="- topic/ol ">
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;ol platform="linux" rev="rev2" class="- topic/ol ">
   <b>&lt;ditaval-startprop</b>
            <b>class="+ topic/foreign ditaot-d/ditaval-startprop "</b>
            <b>outputclass="background-color:blue;</b>

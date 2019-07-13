@@ -8,6 +8,32 @@
       OASIS DITA 1.3 specification. Initial preview support for this specification was added in version 2.0 of the
       toolkit; version 2.2 extended this foundation to support key scopes and branch filtering along with additional
       DITA 1.3 features.</ph></shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>ditavalref</xmlelement></indexterm>
+        <indexterm><xmlelement>xmlelement</xmlelement></indexterm>
+        <indexterm><xmlelement>xmlatt</xmlelement></indexterm>
+        <indexterm><xmlelement>line-through</xmlelement></indexterm>
+        <indexterm><xmlelement>overline</xmlelement></indexterm>
+        <indexterm><xmlelement>object</xmlelement></indexterm>
+        <indexterm><xmlelement>div</xmlelement><indexterm>support</indexterm></indexterm>
+        <indexterm><xmlatt>keyscope</xmlatt></indexterm>
+        <indexterm><xmlatt>deliveryTarget</xmlatt></indexterm>
+        <indexterm><xmlatt>orient</xmlatt></indexterm>
+        <indexterm><xmlatt>keyref</xmlatt></indexterm>
+        <indexterm><xmlatt>cascade</xmlatt></indexterm>
+        <indexterm>profiling</indexterm>
+        <indexterm>filters<indexterm>support</indexterm></indexterm>
+        <indexterm>branch filters</indexterm>
+        <indexterm>DTD</indexterm>
+        <indexterm>schema<indexterm>DITA 1.3</indexterm></indexterm>
+        <indexterm>grammar files</indexterm>
+        <indexterm>DITA 1.3<indexterm>specification support</indexterm></indexterm>
+        <indexterm>catalog<indexterm>grammar file resolution</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <conbody>
     <p id="p">Because DITA 1.3 is fully backwards compatible with previous DITA DTDs and schemas, DITA-OT provides the

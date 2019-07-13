@@ -10,6 +10,14 @@
   <shortdesc>There are several ways to customize and extend the toolkit. You can adjust various aspects of the default
     output by setting parameters or using custom stylesheets. For more complex customizations, use custom DITA-OT
     plug-ins to override other parts of processing.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>plug-ins<indexterm>best practices</indexterm></indexterm>
+        <indexterm>upgrading<indexterm>default plug-ins</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <p>A single XSL file can be used as an override by passing it in as a parameter. For example, when building XHTML

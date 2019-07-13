@@ -7,6 +7,23 @@
   <shortdesc>DITA Open Toolkit <keyword keyref="release"/> supports the DITA 1.2 specification. While 1.2 is no longer
     the latest version of DITA, the grammar files (DTD and XML Schema) are still included with DITA-OT and content
     explicitly created for 1.2 continues to work as intended.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>abbreviated-form</xmlelement></indexterm>
+        <indexterm><xmlatt>keyref</xmlatt></indexterm>
+        <indexterm><xmlatt>processing-role</xmlatt></indexterm>
+        <indexterm><xmlatt>conref</xmlatt><indexterm>support</indexterm></indexterm>
+        <indexterm>filters<indexterm>subject scheme</indexterm></indexterm>
+        <indexterm>DITA<indexterm>specializations</indexterm></indexterm>
+        <indexterm>DTD</indexterm>
+        <indexterm>schema<indexterm>DITA 1.2</indexterm></indexterm>
+        <indexterm>grammar files</indexterm>
+        <indexterm>DITA 1.2</indexterm>
+        <indexterm>SCORM</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>Highlights of DITA 1.2 support in the toolkit include:
       <ul>

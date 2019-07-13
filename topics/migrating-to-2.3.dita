@@ -13,7 +13,21 @@
     improved CSS properties. In PDF output, table heads and key columns no longer include shading, and unused
     localization variables have been deprecated. The template for generated error messages has been updated to use a
     single <codeph>id</codeph> variable that contains the entire message ID.</shortdesc>
-
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>languages<indexterm>supported</indexterm></indexterm>
+        <indexterm>Chinese</indexterm>
+        <indexterm>English</indexterm>
+        <indexterm>Indonesian</indexterm>
+        <indexterm>Korean</indexterm>
+        <indexterm>I18N<indexterm>PDF processing</indexterm></indexterm>
+        <indexterm>metadata<indexterm>chunking, effect of</indexterm></indexterm>
+        <indexterm>tables<indexterm>HTML5</indexterm></indexterm>
+        <indexterm>tables<indexterm>PDF</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 2.3 that may require modifications to custom stylesheets
@@ -31,6 +45,15 @@
     </section>
     <section>
       <title>HTML-based formats</title>
+      <div outputclass="div-index">
+        <indexterm><xmlelement>div</xmlelement><indexterm><codeph>div.shortdesc</codeph></indexterm></indexterm>
+        <indexterm><xmlelement>p</xmlelement></indexterm>
+        <indexterm><xmlelement>abstract</xmlelement></indexterm>
+        <indexterm><xmlelement>simpletable</xmlelement></indexterm>
+        <indexterm><xmlelement>properties</xmlelement></indexterm>
+        <indexterm><xmlelement>choicetable</xmlelement></indexterm>
+        <indexterm>deprecated features<indexterm><codeph>tm-area</codeph> named template</indexterm></indexterm>
+      </div>
       <p>The XSLT <codeph>tm-area</codeph> named template, which used to toggle rendering of trademark symbols in US
         English and Asian languages (Japanese, Korean, and both Chinese) but ignore them in all other languages, has
         been deprecated. Trademark symbols are now rendered uniformly for all languages and the template will be removed
@@ -44,6 +67,13 @@
     </section>
     <section>
       <title>PDF</title>
+      <div outputclass="div-index">
+        <indexterm>deprecated features<indexterm><codeph>tm-area</codeph> named template</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm>PDF localization variables</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>conreffile</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>conref-check</parmname> target</indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>coderef</parmname> target</indexterm></indexterm>
+      </div>
       <p>The <codeph>antiquewhite</codeph> background color has been removed from table heads and key column contents in
           <xmlelement>simpletable</xmlelement> and <xmlelement>properties</xmlelement> tables to synchronize
         presentation with <xmlelement>choicetable</xmlelement> and provide a more uniform customization baseline between
@@ -115,7 +145,7 @@
         single <codeph>id</codeph> variable that contains the entire message ID.</p>
       <p>Plug-ins that make use of the <codeph>output-message</codeph> function should be updated to use the single
           <codeph>id</codeph> variable, as
-        in:<codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="output-message">
+        in:<codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="output-message">
   &lt;xsl:with-param name="id" select="'FULLMESSAGENUMBER'"/>
   &lt;xsl:with-param name="msgparams">optional-message-parameters&lt;/xsl:with-param>
 &lt;/xsl:call-template></codeblock>

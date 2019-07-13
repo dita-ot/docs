@@ -8,6 +8,20 @@
     <navtitle>Custom collation URI resolvers</navtitle>
   </titlealts>
   <shortdesc>Plug-ins can provide custom URI resolvers that provide collators for specific collation URIs.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Saxon<indexterm><xmlelement>service</xmlelement></indexterm></indexterm>
+        <indexterm>Ant<indexterm><xmlelement>jar</xmlelement></indexterm></indexterm>
+        <indexterm><xmlatt>xsl:sort</xmlatt></indexterm>
+        <indexterm>Chinese</indexterm>
+        <indexterm>I18N<indexterm>plug-in</indexterm></indexterm>
+        <indexterm>plug-ins<indexterm end="plugin-ideas"/></indexterm>
+        <indexterm>plug-ins<indexterm end="plugins-saxon"/></indexterm>
+        <indexterm>XSLT<indexterm>URI resolver</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <body>
     <p>To do custom sorting and grouping in XSLT, you identify collators using URIs that Saxon resolves to collator
       implementations. You implement the mapping from collation URIs to collators through custom collation URI
@@ -66,7 +80,7 @@
             <codeph>org.dita.dost.module.saxon.DelegatingCollationUriResolver</codeph>:<codeblock>org.example.i18n.saxon.MyCollationUriResolver</codeblock>
           <p>You can create the services file using <xmlelement>service</xmlelement> elements in an Ant
             <xmlelement>jar</xmlelement>
-            task:<codeblock>&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">
+            task:<codeblock outputclass="language-xml">&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">
   ⋮
   &lt;service type="org.dita.dost.module.saxon.DelegatingCollationUriResolver">
     &lt;provider classname="org.example.i18n.saxon.MyCollationUriResolver"/>
@@ -75,7 +89,7 @@
 &lt;/jar></codeblock></p></li>
         <li>To use the collator in XSLT style sheets, specify the collation URI on <xmlatt>xsl:sort</xmlatt> elements (or
           anywhere a collator URI can be
-          specified):<codeblock>&lt;xsl:apply-templates select="word">
+          specified):<codeblock outputclass="language-xml">&lt;xsl:apply-templates select="word">
   &lt;xsl:sort collation="http://org.example.i18n.MyCollator"/>
 &lt;/xsl:apply-templates></codeblock></li>
       </ol></p>

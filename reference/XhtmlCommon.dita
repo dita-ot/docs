@@ -6,6 +6,16 @@
   <title>Common HTML-based processing</title>
   <shortdesc>After the pre-processing operation runs, HTML-based builds each run a common series of Ant targets to
     generate HTML file. Navigation may be created before or after this set of common routines.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlatt>chunk</xmlatt><indexterm>HTML-based processing</indexterm></indexterm>
+        <indexterm>DITAVAL<indexterm>HTML-based formats</indexterm></indexterm>
+        <indexterm>HTML<indexterm>common processing</indexterm></indexterm>
+        <indexterm>CSS<indexterm>HTML transforms</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>After the pre-processing is completed, the following targets are run for all of the HTML-based builds:</p>
     <p>

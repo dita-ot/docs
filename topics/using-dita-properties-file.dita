@@ -11,6 +11,17 @@
     reference a set of build parameters defined in a <filepath>.properties</filepath> file when building output with the
       <cmdname>dita</cmdname> command. If needed, you can override any parameter by specifying it explicitly as an
     argument to the <cmdname>dita</cmdname> command.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>draft<indexterm><xmlelement>draft</xmlelement></indexterm></indexterm>
+        <indexterm><xmlelement>required-cleanup</xmlelement></indexterm>
+        <indexterm><cmdname>dita</cmdname> command<indexterm>.properties file</indexterm></indexterm>
+        <indexterm>DITA maps<indexterm>properties file</indexterm></indexterm>
+        <indexterm>.properties file</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <section>
       <title>About <filepath>.properties</filepath> files</title>
@@ -40,7 +51,7 @@
         </info>
         <stepxmp>
           <p>For example:</p>
-          <p><codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/sequence-html5.properties"/></codeblock>
+          <p><codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/sequence-html5.properties"/></codeblock>
           </p>
         </stepxmp>
       </step>

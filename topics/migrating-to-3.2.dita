@@ -12,6 +12,21 @@
   <shortdesc>DITA-OT 3.2 includes <ph id="summary">new command-line options, support for RELAX NG parsing and
       validation, preliminary processing for the XDITA authoring format proposed for Lightweight DITA, and a plug-in
       registry that makes it easier to discover and install new plug-ins</ph>.</shortdesc>
+  
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated features<indexterm><parmname>configuration-jar</parmname> Ant target</indexterm></indexterm>
+        <indexterm>Lightweight DITA</indexterm>
+        <indexterm>command line<indexterm>RELAX NG parsing</indexterm></indexterm>
+        <indexterm>security</indexterm>
+        <indexterm>TLS</indexterm>
+        <indexterm>registry</indexterm>
+        <indexterm>targets<indexterm>deprecated</indexterm></indexterm>
+        <indexterm>classpath<indexterm><parmname>configuration-jar</parmname></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <refbody>
     <section>

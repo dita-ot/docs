@@ -14,6 +14,14 @@
       <keywords>
         <indexterm>files<indexterm>local.properties</indexterm></indexterm>
         <indexterm>local.properties file</indexterm>
+        <indexterm>Windows</indexterm>
+        <indexterm>RenderX<indexterm><filepath>local.properties</filepath></indexterm></indexterm>
+        <indexterm>Antenna House<indexterm><filepath>local.properties</filepath></indexterm></indexterm>
+        <indexterm>command line<indexterm><filepath>local.properties</filepath> file</indexterm></indexterm>
+        <indexterm>Java<indexterm>local.properties file</indexterm></indexterm>
+        <indexterm>PDF<indexterm>formatter</indexterm></indexterm>
+        <indexterm>formatter<index-see-also>Apache FOP</index-see-also><index-see-also>Antenna
+          House</index-see-also><index-see-also>RenderX</index-see-also></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -22,7 +30,7 @@
       <p>For example, if you always use the same rendering engine to produce PDF output for all of your projects, you
         could create a <filepath>local.properties</filepath> file in the root directory of your DITA-OT installation to
         set the <parmname>pdf.formatter</parmname> parameter and additional options for the XSL processor:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace"># Use RenderX XEP Engine for PDF output
+      <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"># Use RenderX XEP Engine for PDF output
 pdf.formatter = xep
 
 # Specify the user configuration file for RenderX
@@ -30,7 +38,7 @@ custom.xep.config = /path/to/custom.config</codeblock>
       <p>Backslash “\” characters in .properties files must be escaped with a second backslash as “\\”. If you use
         Antenna House Formatter on a Windows system, for example, you would set the path to the command using a
         properties file entry like this:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace"># Use Antenna House Formatter for PDF output
+      <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"># Use Antenna House Formatter for PDF output
 pdf.formatter = ah
 
 # Specify the path to the Antenna House Formatter command

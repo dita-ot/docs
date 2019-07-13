@@ -7,6 +7,14 @@
   <shortdesc>These extension points enable you to extend DITA-OT. You can add Ant targets or imports; add a Java library
     to the <parmname>classpath</parmname> parameter; add a new transformation type; extend a catalog file; add new
     diagnostic messages, and more.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>deprecated features<indexterm><parmname>dita.conductor.target</parmname></indexterm></indexterm>
+        <indexterm>deprecated features<indexterm><parmname>dita.specialization.catalog</parmname></indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <dl>

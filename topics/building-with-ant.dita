@@ -5,6 +5,17 @@
 <task id="runant" xml:lang="en">
   <title>Building output using Ant</title>
   <shortdesc>You can build output by using an Ant build script to provide the DITA-OT parameters.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlatt>default</xmlatt></indexterm>
+        <indexterm>macOS<indexterm>Ant</indexterm></indexterm>
+        <indexterm>Linux<indexterm>Ant</indexterm></indexterm>
+        <indexterm>Windows<indexterm>Ant</indexterm></indexterm>
+        <indexterm>Ant<indexterm>publishing with</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step>

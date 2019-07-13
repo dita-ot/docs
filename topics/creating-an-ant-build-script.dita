@@ -6,12 +6,23 @@
   <title>Creating an Ant build script</title>
   <shortdesc>Instead of typing the DITA-OT parameters at the command prompt, you might want to create an Ant build
     script that contains all of the parameters.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>link</xmlelement></indexterm>
+        <indexterm><xmlatt>name</xmlatt></indexterm>
+        <indexterm><xmlatt>default</xmlatt></indexterm>
+        <indexterm>Ant<indexterm>build script</indexterm></indexterm>
+        <indexterm>relationship tables<indexterm>PDF</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step>
         <cmd>Create an XML file that contains the following content:</cmd>
         <info>
-          <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8" ?>
+          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8" ?>
 &lt;project name="%project-name%" default="%default-target%" basedir=".">
 
   &lt;property name="dita.dir" location="%path-to-DITA-OT%"/>
@@ -68,7 +79,7 @@
     <example>
       <p>The following Ant build script generates CHM and PDF output for the sample DITA maps.</p>
       <p>
-        <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/ant_sample/build-chm-pdf.xml"/></codeblock></p>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/ant_sample/build-chm-pdf.xml"/></codeblock></p>
       <p>In addition to the mandatory parameters (<parmname>args.input</parmname> and <parmname>transtype</parmname>),
         the chm and pdf targets each specify some optional parameters:
         <ul>

@@ -7,6 +7,28 @@
   <shortdesc>The <option>PDF</option> (formerly known as <option>PDF2</option>) transformation process runs the
     pre-processing routine and follows it by a series of additional targets. These steps work together to create a
     merged set of content, convert the merged content to XSL-FO, and then format the XSL-FO file to PDF.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>DITAVAL<indexterm>PDF</indexterm></indexterm>
+        <indexterm>Antenna House<indexterm><codeph>transform.fo2pdf</codeph></indexterm><indexterm><filepath>topic.fo</filepath></indexterm></indexterm>
+        <indexterm>Apache FOP<indexterm><codeph>transform.fo2pdf</codeph></indexterm><indexterm><filepath>topic.fo</filepath></indexterm></indexterm>
+        <indexterm>PDF<indexterm>preprocessing</indexterm></indexterm>
+        <indexterm>targets<indexterm>PDF</indexterm></indexterm>
+        <indexterm>XSLT<indexterm>PDF</indexterm></indexterm>
+        <indexterm>RenderX<indexterm><codeph>transform.fo2pdf</codeph></indexterm><indexterm><filepath>topic.fo</filepath></indexterm></indexterm>
+        <indexterm>XEP<index-see>RenderX</index-see></indexterm>
+        <indexterm>index<indexterm>PDF</indexterm></indexterm>
+        <indexterm><filepath>stage1.xml</filepath></indexterm>
+        <indexterm>pipelines<indexterm>PDF</indexterm></indexterm>
+        <indexterm><filepath>topic.fo</filepath></indexterm>
+        <indexterm><filepath>stage1a.xml</filepath></indexterm>
+        <indexterm><filepath>stage2.fo</filepath></indexterm>
+        <indexterm><filepath>stage3.fo</filepath></indexterm>
+        <indexterm><filepath>topic.fo</filepath></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <section>
       <p>The PDF process includes many Ant targets. During a typical conversion from map to PDF, the following targets

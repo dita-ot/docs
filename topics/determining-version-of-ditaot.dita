@@ -8,6 +8,17 @@
     <navtitle>Checking the version</navtitle>
   </titlealts>
   <shortdesc>You can determine the DITA Open Toolkit version number from a command prompt.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>macOS<indexterm>DITA-OT version</indexterm></indexterm>
+        <indexterm>Linux<indexterm>DITA-OT version</indexterm></indexterm>
+        <indexterm>Windows<indexterm>DITA-OT version</indexterm></indexterm>
+        <indexterm>command line<indexterm>checking DITA-OT version</indexterm></indexterm>
+        <indexterm>installing<indexterm>check current version</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <steps>
       <step>

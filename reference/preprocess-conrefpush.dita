@@ -6,4 +6,13 @@
   <title>Conref push (conrefpush)</title>
   <shortdesc>The <codeph>conrefpush</codeph> step resolves "conref push" references. This step only processes documents
     that use conref push or that are updated due to the push action. This step is implemented in Java.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>preprocessing<indexterm><codeph>conrefpush</codeph></indexterm></indexterm>
+        <indexterm><codeph>conrefpush</codeph></indexterm>
+        <indexterm>Java<indexterm>conrefpush</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 </concept>

@@ -9,6 +9,17 @@
   </titlealts>
   <shortdesc>JavaScript code can be bundled in a custom plug-in and automatically inserted into the generated HTML pages
     to enable web analytics or dynamic content delivery.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>footer</xmlelement></indexterm>
+        <indexterm><xmlelement>require</xmlelement></indexterm>
+        <indexterm><xmlelement>head</xmlelement></indexterm>
+        <indexterm>transformations<indexterm end="html"/></indexterm> <!-- LE: This range is not appearing in the FOP index. -->
+        <indexterm>HTML5<indexterm>JavaScript, adding</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <taskbody>
     <context>
       <p>This scenario walks through the process of creating a very simple plug-in
@@ -32,7 +43,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>plugin.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml"/></codeblock>
           </fig>
           <note>This plug-in will extend the default HTML5 transformation, so the <xmlelement>require</xmlelement>
             element explicitly defines <filepath>org.dita.html5</filepath> as a dependency.</note>
@@ -48,7 +59,7 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>javascript.ftr.xml</filepath> file</title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/include/javascript.ftr.xml"/></codeblock>
+            <codeblock outputclass="language-javascript normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/include/javascript.ftr.xml"/></codeblock>
           </fig>
           <p>The division wrapper will be discarded when generating HTML files, and the contents will be inserted into
             the <xmlelement>footer</xmlelement> element of each page.</p>
@@ -61,7 +72,7 @@
         <stepxmp>
           <fig>
             <title>Sample build file: <filepath>build_html5-javascript.xml</filepath></title>
-            <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/build_html5-javascript.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/build_html5-javascript.xml"/></codeblock>
           </fig>
         </stepxmp>
       </step>

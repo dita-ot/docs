@@ -8,6 +8,17 @@
     transformation types. The value of the <xmlatt>file</xmlatt> attribute in the <xmlelement>feature</xmlelement>
     element specifies a relative path to an XSL file in the current plug-in. The plug-in installer adds a XSL import
     statement to the default DITA-OT code, so that the XSL override becomes part of the normal build.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>xref</xmlelement></indexterm>
+        <indexterm><xmlatt>file</xmlatt></indexterm>
+        <indexterm>XSLT<indexterm>extension points</indexterm></indexterm>
+        <indexterm>extension points<indexterm>XSLT</indexterm></indexterm>
+        <indexterm>preprocessing<indexterm>extension points, XSLT</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <title>Pre-processing</title>
@@ -143,14 +154,14 @@
         banner.</p>
       <fig>
         <title>Contents of the <filepath>plugin.xml</filepath> file</title>
-        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;plugin id="com.example.brandheader">
   &lt;feature extension="dita.xsl.xhtml" file="xsl/header.xsl"/>
 &lt;/plugin></codeblock>
       </fig>
       <fig>
         <title>Contents of the <filepath>xsl/header.xsl</filepath> file</title>
-        <codeblock outputclass="normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   &lt;xsl:template name="gen-user-header">
     &lt;div>

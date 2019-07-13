@@ -11,7 +11,16 @@
 
   <shortdesc>DITA-OT 3.3 includes <ph id="summary">new attribute sets for HTML5 customization, support for custom
       integration processing, rotated table cells in PDF output, and hazard statements in HTML output</ph>.</shortdesc>
-
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>security</indexterm>
+        <indexterm>TLS</indexterm>
+        <indexterm>registry</indexterm>
+        <indexterm>tables<indexterm>PDF</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 3.3 that may require modifications to custom stylesheets
@@ -32,6 +41,10 @@
 
     <section>
       <title>Base plug-in files moved to <filepath>plugins</filepath> directory</title>
+      <div outputclass="div-index">
+        <indexterm><xmlelement>xsl:include</xmlelement></indexterm>
+        <indexterm><xmlelement>xsl:import</xmlelement></indexterm>
+      </div>
       <p>Various XSLT files and other resources have been moved from the root of the DITA-OT installation directory to
         the base plug-in directory <filepath>plugins/org.dita.base</filepath>.</p>
       <note type="attention">There is no longer an <filepath>xsl/</filepath> directory in the installation root.</note>
@@ -42,9 +55,9 @@
         <p>In XSLT, use the <codeph>plugin</codeph> URI scheme in <xmlelement>xsl:import</xmlelement> and
             <xmlelement>xsl:include</xmlelement> to reference files in other plug-ins.</p>
         <p>Instead of:</p>
-        <p><codeblock>&lt;xsl:import href="../../org.dita.base/xsl/common/output-message.xsl"/></codeblock></p>
+        <p><codeblock outputclass="language-xml">&lt;xsl:import href="../../org.dita.base/xsl/common/output-message.xsl"/></codeblock></p>
         <p>use:</p>
-        <p><codeblock>&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock></p>
+        <p><codeblock outputclass="language-xml">&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock></p>
         <p>As with the plug-in directory property in Ant, this allows plug-ins to resolve to the correct directory even
           when a plug-in moves to a new location. The plug-in is referenced using the syntax
               <codeph>plugin:<varname>plugin-id</varname>:<varname>path/within/plugin/file.xsl</varname></codeph>.</p>
@@ -53,6 +66,10 @@
 
     <section>
       <title>Relocated catalog</title>
+      <div outputclass="div-index">
+        <indexterm><xmlelement>nextCatalog</xmlelement></indexterm>
+        <indexterm>catalog<indexterm>location</indexterm></indexterm>
+      </div>
       <p>
         <ph id="catalog">Along with the other base plug-in files, the <filepath>catalog-dita.xml</filepath> file has
           been moved from the root of the DITA-OT installation directory to <filepath>plugins/org.dita.base</filepath>.
@@ -63,18 +80,28 @@
           but this file may be removed in an upcoming release.</ph></p>
       <fig>
         <title>Legacy catalog placeholder content</title>
-        <codeblock>&lt;nextCatalog catalog="plugins/org.dita.base/catalog-dita.xml"/></codeblock>
+        <codeblock outputclass="language-xml">&lt;nextCatalog catalog="plugins/org.dita.base/catalog-dita.xml"/></codeblock>
       </fig>
     </section>
 
     <section>
       <title>Deprecated properties</title>
+      <div outputclass="div-index">
+        <indexterm><xmlelement>template</xmlelement></indexterm>
+        <indexterm>deprecated features<indexterm><filepath>plugin.xml</filepath>, <codeph>templates</codeph>
+          key</indexterm></indexterm>
+      </div>
       <p><ph id="templates">The <codeph>templates</codeph> key in configuration properties has been deprecated in favor
           of the <xmlelement>template</xmlelement> element in <filepath>plugin.xml</filepath>.</ph></p>
     </section>
 
     <section>
       <title>New attribute sets for HTML5 customization</title>
+      <div outputclass="div-index">
+        <indexterm>Bootstrap</indexterm>
+        <indexterm>CSS<indexterm>HTML5</indexterm></indexterm>
+        <indexterm>HTML5<indexterm>CSS</indexterm></indexterm>
+      </div>
       <p id="html5-att-sets">A series of new attribute sets has been added to the default HTML5 transformation to
         facilitate customization with additional ARIA roles, attributes, or CSS classes. Attribute sets are provided
         for:

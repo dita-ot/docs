@@ -11,7 +11,15 @@
 
   <shortdesc>In DITA-OT 2.5, several frequently-overridden legacy style settings were removed from the default PDF
     plug-in. A separate plug-in can be used to restore the original settings.</shortdesc>
-
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>example</xmlelement></indexterm>
+        <indexterm>PDF<indexterm><codeph>org.dita.pdf2.legacy</codeph></indexterm></indexterm>
+        <indexterm>languages<indexterm>right-to-left</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 2.5 that may require modifications to custom stylesheets
@@ -26,6 +34,9 @@
     </section>-->
     <section id="25-pdf-changes">
       <title>Default PDF style improvements</title>
+      <div outputclass="div-index">
+        <indexterm>tables<indexterm>indentation</indexterm></indexterm>
+      </div>
       <p>Several legacy styles have been modified or removed in the default PDF plug-in <codeph>org.dita.pdf2</codeph>,
         including the following:</p>
       <p>

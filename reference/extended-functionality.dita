@@ -13,6 +13,19 @@
   <shortdesc>DITA-OT provides additional processing support beyond that which is mandated by the DITA specification.
     These extensions can be used to define character encodings or line ranges for code references, normalize
     indendation, add line numbers or display whitespace characters in code blocks.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlelement>coderef</xmlelement></indexterm>
+        <indexterm><xmlelement>codeblock</xmlelement></indexterm>
+        <indexterm><xmlatt>format</xmlatt></indexterm>
+        <indexterm><xmlatt>outputclass</xmlatt></indexterm>
+        <indexterm>encoding</indexterm>
+        <indexterm><msgnum>DOTJ052E</msgnum></indexterm>
+        <indexterm>character set</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
 
   <refbody>
     <section id="coderef-charset">
@@ -23,11 +36,11 @@
       <p>If a character set is not defined, the system default character set will be used. If the character set is not
         recognized or supported, the <msgnum>DOTJ052E</msgnum> error is thrown and the system default character set is
         used as a fallback.</p>
-      <codeblock>&lt;coderef href="unicode.txt" format="txt; charset=UTF-8"/></codeblock>
+      <codeblock outputclass="language-xml">&lt;coderef href="unicode.txt" format="txt; charset=UTF-8"/></codeblock>
       <p>As of DITA-OT 3.3, the default character set for code references can be changed by adding the
           <parmname>default.coderef-charset</parmname> key to the
         <xref keyref="configuration-properties-file">configuration.properties</xref> file:</p>
-      <codeblock>default.coderef-charset = ISO-8859-1</codeblock>
+      <codeblock outputclass="language-properties">default.coderef-charset = ISO-8859-1</codeblock>
       <p>The character set values are those supported by the Java
         <xref format="html" href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html"
           scope="external">Charset</xref> class.</p>
@@ -42,11 +55,12 @@
         last line of the file.</p>
     </section>
     <example>
-      <codeblock>&lt;coderef href="Parser.scala#line-range(5, 10)" format="scala"/></codeblock>
+      <codeblock outputclass="language-xml">&lt;coderef href="Parser.scala#line-range(5, 10)" format="scala"/></codeblock>
       <p>Only lines from 5 to 10 will be included in the output.</p>
     </example>
     <section>
       <title>RFC 5147</title>
+      <indexterm>RFC 5147</indexterm>
       <p>DITA-OT also supports the line position and range syntax from
         <xref keyref="rfc5147"/>. The format for line range is:</p>
       <codeblock>uri ("#line=" start? "," end? )?</codeblock>
@@ -57,7 +71,7 @@
       <p>The position line number starts from 0.</p>
     </section>
     <example>
-      <codeblock>&lt;coderef href="Parser.scala#line=4,10" format="scala"/></codeblock>
+      <codeblock outputclass="language-xml">&lt;coderef href="Parser.scala#line=4,10" format="scala"/></codeblock>
       <p>Only lines from 5 to 10 will be included in the output.</p>
     </example>
     <section>
@@ -75,13 +89,13 @@
     </section>
     <example>
       <p>Given a Haskell source file named <filepath>fact.hs</filepath> with the following content,</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace"><coderef href="../resources/fact.hs"/></codeblock>
+      <codeblock outputclass="language-haskell normalize-space show-line-numbers show-whitespace"><coderef href="../resources/fact.hs"/></codeblock>
       <p>a range of lines can be referenced as:</p>
-      <codeblock>&lt;coderef href="fact.hs#token=START-FACT,END-FACT"/></codeblock>
+      <codeblock outputclass="language-xml">&lt;coderef href="fact.hs#token=START-FACT,END-FACT"/></codeblock>
       <p>to include the range of lines that follows the <codeph>START-FACT</codeph> token on Line 1, up to (but not
         including) the line that contains the <codeph>END-FACT</codeph> token (Line 5). The resulting
           <xmlelement>codeblock</xmlelement> would contain lines 2–4:</p>
-      <codeblock><coderef href="../resources/fact.hs#token=START-FACT,END-FACT"/></codeblock>
+      <codeblock outputclass="language-haskell"><coderef href="../resources/fact.hs#token=START-FACT,END-FACT"/></codeblock>
       <note type="tip" id="coderef-by-content-tip">This approach can be used to reference code samples that are
         frequently edited. In these cases, referencing line ranges by line number can be error-prone, as the target line
         range for the reference may shift if preceding lines are added or removed. Specifying ranges by line content
@@ -90,11 +104,12 @@
     <refbodydiv id="normalize-codeblock-whitespace">
       <section>
         <title>Whitespace normalization</title>
+        <indexterm>whitespace handling</indexterm>
         <p>DITA-OT can adjust the leading whitespace in code blocks to remove excess indentation and keep lines short.
           Given an XML snippet in a codeblock with lines that all begin with spaces (indicated here as dots “·”),</p>
       </section>
       <example>
-        <p><codeblock>··&lt;subjectdef keys="audience">
+        <p><codeblock outputclass="language-xml">··&lt;subjectdef keys="audience">
 ····&lt;subjectdef keys="novice"/>
 ····&lt;subjectdef keys="expert"/>
 ··&lt;/subjectdef></codeblock></p>
@@ -104,7 +119,7 @@
         <p>In this case, two spaces (“··”) would be removed from the beginning of each line, shifting content to the
           left by two characters, while preserving the indentation of lines that contain additional whitespace (beyond
           the common indent):</p>
-        <p><codeblock>&lt;subjectdef keys="audience">
+        <p><codeblock outputclass="language-xml">&lt;subjectdef keys="audience">
 ··&lt;subjectdef keys="novice"/>
 ··&lt;subjectdef keys="expert"/>
 &lt;/subjectdef></codeblock></p>
@@ -133,6 +148,7 @@
     <refbodydiv id="codeblock-line-numbers">
       <section>
         <title>Line numbering (PDF)</title>
+        <indexterm>line numbering</indexterm>
         <p>DITA-OT can be set to add line numbers to code blocks to make it easier to distinguish specific lines.</p>
         <p>To enable this feature, set the <xmlatt>outputclass</xmlatt> attribute on the
             <xmlelement>codeblock</xmlelement> element to include the <codeph>show-line-numbers</codeph> keyword.</p>

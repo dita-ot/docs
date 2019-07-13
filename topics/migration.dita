@@ -7,6 +7,20 @@
   <shortdesc>If you have XSL transformation overrides, plug-ins or other customizations written prior to DITA-OT
       <keyword keyref="release"/>, you may need to make changes to ensure your overrides work properly with the latest
     toolkit versions. </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>upgrading<indexterm>plug-ins</indexterm></indexterm>
+        <!-- LE: Only first alphabetical index-see-also prints in the index -->
+        <indexterm>upgrading<index-see-also>migrating</index-see-also><index-see-also>installing</index-see-also></indexterm>
+        <indexterm>migrating</indexterm> <!-- LE: Build crash for the line above if this line does not exist even though
+        the line below does. Its existence causes duplicate page number to be emitted. Also, the line below does not generate a range. The @end is in migrating-to-1.5.4.dita. -->
+        <indexterm start="migrate">migrating</indexterm>
+        <indexterm>plug-ins<indexterm>upgrading</indexterm></indexterm>
+        <indexterm>installing</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <refbody>
     <section>
       <p>In some cases, you may be able to remove old code that is no longer needed. In other cases, you may need to

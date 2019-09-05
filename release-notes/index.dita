@@ -26,9 +26,56 @@
     </refbody>
   </reference>
 
-  <reference id="v3.3.3">
+  <reference id="v3.3.4">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released July 13, 2019</ph>
+      <!--<ph outputclass="small text-muted">released MMMM DD, 2019</ph>-->
+    </title>
+    <prolog>
+      <metadata>
+        <keywords/>
+      </metadata>
+    </prolog>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <li id="3333">
+            Using onlytopic.in.map parameter breaks link
+            Fix uplevels when topic has uplevels and map does not
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3333" format="html" scope="external">#3333</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3350" format="html" scope="external">#3350</xref>
+          </li>
+          <!--
+          <li id="3346">Fix link text for flagged links
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3346" format="html" scope="external">#3346</xref>
+          </li>
+          -->
+          <li id="3347">Drop phrase IDs from title marker
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3347" format="html" scope="external">#3347</xref>
+          </li>
+          <li id="3348">DITA-OT distribution packages are now built and tested with the open-source Java distribution
+            <xref keyref="download.openjdk">OpenJDK 8</xref>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3348" format="html" scope="external">#3348</xref>
+          </li>
+          <li id="3349">Fix footnote-by-reference link text
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3349" format="html" scope="external">#3349</xref>
+          </li>
+          <li id="3351">Fix empty docinfo when authorInfo has no name
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3351" format="html" scope="external">#3351</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.4+is%3Aclosed" format="html"
+            scope="external">3.3.4 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.3.3...3.3.4" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.3.3">
+    <title>DITA-OT 3.3.3 <ph outputclass="small text-muted">released July 13, 2019</ph>
     </title>
     <prolog>
       <metadata>
@@ -51,8 +98,7 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
-          following bug fixes.</p>
+        <p>DITA Open Toolkit 3.3.3 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="3313">The code that generates <xmlatt>headers</xmlatt> attributes in HTML-based output formats has
             been simplified to prevent Saxon crashes when processing complex tables. (These attributes help screen

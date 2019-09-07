@@ -40,30 +40,42 @@
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
-          <li id="3333">
-            Using onlytopic.in.map parameter breaks link
-            Fix uplevels when topic has uplevels and map does not
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3333" format="html" scope="external">#3333</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3350" format="html" scope="external">#3350</xref>
-          </li>
+          <li id="3333">In earlier releases, when a topic contained links to files outside of the
+map directory (but the map itself did not link to anything outside of the map directory), setting
+the parameter <parmname>onlytopic.in.map</parmname> to <codeph>true</codeph> would corrupt those
+peer links in the topics. This has been fixed, and relative links within topics use the expected
+path. <xref href="https://github.com/dita-ot/dita-ot/issues/3333" format="html" scope="external"
+>#3333</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/3350" format="html"
+scope="external">#3350</xref>
+</li>
           <!--
-          <li id="3346">Fix link text for flagged links
+          <li id="3346">In earlier releases, when a <xmlelement>link</xmlelement> element without link text also specified attributes that resulted in DITAVAL based flag images, generated link text used the target document's file name instead of a title. The link text has been fixed to pull a title from the referenced document.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3346" format="html" scope="external">#3346</xref>
           </li>
           -->
-          <li id="3347">Drop phrase IDs from title marker
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3347" format="html" scope="external">#3347</xref>
-          </li>
+          <li id="3347">When a topic title contains elements with <xmlatt>id</xmlatt> attributes,
+and those topics are converted to PDF, earlier releases would place an extra copy of the ID in
+<xmlelement>fo:marker</xmlelement> elements used to help with headers. The duplicate ID, which
+resulted in warnings from some FO processors, has been removed. <xref
+href="https://github.com/dita-ot/dita-ot/issues/3347" format="html" scope="external">#3347</xref>
+</li>
           <li id="3348">DITA-OT distribution packages are now built and tested with the open-source Java distribution
             <xref keyref="download.openjdk">OpenJDK 8</xref>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3348" format="html" scope="external">#3348</xref>
           </li>
-          <li id="3349">Fix footnote-by-reference link text
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3349" format="html" scope="external">#3349</xref>
-          </li>
-          <li id="3351">Fix empty docinfo when authorInfo has no name
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3351" format="html" scope="external">#3351</xref>
-          </li>
+          <li id="3349">In earlier releases, cross references to footnotes in XHTML and HTML5
+applied superscript styling too early in the build, resulting in errors from later processing
+stages. This has been corrected, and the build creates the expected styling without any errors.
+<xref href="https://github.com/dita-ot/dita-ot/issues/3349" format="html" scope="external"
+>#3349</xref>
+</li>
+          <li id="3351">In earlier releases, when a map included an
+<xmlelement>authorinformation</xmlelement> element that did not provide an author or organization,
+formatters would generate errors when creating PDF metadata based on that empty metadata. The build
+has been updated to ignore empty author information in source documents. <xref
+href="https://github.com/dita-ot/dita-ot/issues/3351" format="html" scope="external">#3351</xref>
+</li>
+<!--<li id="3356">In DITA-OT 3.3.3, we updated XHTML and HTML5 processing to make more efficient use of table metadata when calculating table cell positions for accessibility. That processing failed for some tables that used invalid CALS markup. The processing has been updated to make it more tolerant of incorrect input. <xref href="https://github.com/dita-ot/dita-ot/issues/3356" format="html" scope="external">#3356</xref> </li>-->
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.3.4+is%3Aclosed" format="html"

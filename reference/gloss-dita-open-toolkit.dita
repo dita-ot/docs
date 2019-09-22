@@ -6,11 +6,24 @@
   <glossterm>DITA Open Toolkit</glossterm>
   <glossdef>The open-source publishing engine for content authored in the Darwin Information Typing
     Architecture.</glossdef>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>DOST</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <glossBody>
     <glossPartOfSpeech value="proper-noun"/>
-    <glossUsage>Treat as a proper noun; do not precede with <i>the</i>.</glossUsage>
     <glossAlt>
       <glossAbbreviation>DITA-OT</glossAbbreviation>
+      <glossUsage>Treat as a proper noun; do not precede with <i>the</i> definite article.</glossUsage>
+    </glossAlt>
+    <glossAlt>
+      <glossAcronym>DOST</glossAcronym>
+      <glossStatus value="deprecated"/>
+      <glossUsage>Deprecated acronym for “<b>D</b>ITA <b>O</b>pen <i><b>S</b>ource</i>
+        <b>T</b>oolkit”. Use <term>DITA-OT</term> instead.</glossUsage>
     </glossAlt>
   </glossBody>
 </glossentry>

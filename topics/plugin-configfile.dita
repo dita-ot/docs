@@ -23,6 +23,7 @@
     <section conkeyref="reusable-components/validating-plugins"/>
     <section>
       <title>Plug-in identifiers</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlatt>id</xmlatt>
           <indexterm>plug-in</indexterm></indexterm>
@@ -52,6 +53,7 @@
     </section>
     <section>
       <title>Plug-in elements</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlelement>plugin</xmlelement></indexterm>
       </div>

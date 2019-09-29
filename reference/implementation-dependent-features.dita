@@ -20,6 +20,7 @@
   <refbody>
     <section id="section_jla_oqn_qc">
       <title>Chunking</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlatt>chunk</xmlatt>
           <indexterm>supported methods</indexterm></indexterm>
@@ -50,6 +51,7 @@
     </section>
     <section id="section_zaa_bgs_qc">
       <title>Filtering</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlelement>revprop</xmlelement></indexterm>
         <indexterm><xmlatt>val</xmlatt></indexterm>
@@ -66,6 +68,7 @@
     </section>
     <section id="section_kjq_egs_qc">
       <title>Debugging attributes</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>debugging
           <indexterm>attributes</indexterm>
@@ -96,6 +99,7 @@
     </section>
     <section>
       <title>Map processing</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlelement>topicref</xmlelement></indexterm>
         <indexterm>map processing</indexterm>
@@ -106,6 +110,7 @@
     </section>
     <section id="section_h3h_jsx_1h">
       <title>Link processing</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlatt>href</xmlatt></indexterm>
         <indexterm>link processing</indexterm>
@@ -117,6 +122,7 @@
     </section>
     <section>
       <title>Copy-to processing</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlelement>shortdesc</xmlelement></indexterm>
         <indexterm><xmlatt>copy-to</xmlatt></indexterm>
@@ -126,6 +132,7 @@
     </section>
     <section>
       <title>Coderef processing</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlelement>coderef</xmlelement></indexterm>
         <indexterm>encoding</indexterm>

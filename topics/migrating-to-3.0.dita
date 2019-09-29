@@ -33,6 +33,7 @@
 
     <section id="30-legacy-plugin-removal">
       <title>Legacy plug-ins removed</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>JavaHelp</indexterm>
         <indexterm>deprecated features

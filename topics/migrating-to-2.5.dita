@@ -36,6 +36,7 @@
     </section>-->
     <section id="25-pdf-changes">
       <title>Default PDF style improvements</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>tables
           <indexterm>indentation</indexterm></indexterm>

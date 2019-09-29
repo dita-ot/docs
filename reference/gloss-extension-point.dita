@@ -4,6 +4,8 @@
 
 <glossentry id="gloss-extension-point">
   <glossterm>extension point</glossterm>
-  <glossdef>A pre-defined location where a feature from a <filepath>plugin.xml</filepath> file can be extended or
-    changed.</glossdef>
+  <glossdef>Pre-defined interface that can be added to a plug-in to allow other plug-ins to extend or customize portions
+    of its functionality. An extendable feature is defined by declaring an <xmlelement>extension-point</xmlelement>
+    element in the <filepath>plugin.xml</filepath> file. Other plug-ins can then override the default behavior by
+    defining custom code that runs when this extension point is called.</glossdef>
 </glossentry>

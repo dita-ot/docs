@@ -8,13 +8,16 @@
     approaches have advantages and shortcomings that should be considered when preparing a customization project. Some
     of these methods are considered “anti-patterns” with disadvantages that outweigh their apparent appeal. In most
     cases, you should create a custom PDF plug-in.</shortdesc>
-  
+
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>PDF<indexterm>customizing, best practices</indexterm></indexterm>
-        <indexterm>upgrading<indexterm>default plug-ins</indexterm></indexterm>
-        <indexterm>upgrading<indexterm>PDF</indexterm></indexterm>
+        <indexterm>PDF
+          <indexterm>customizing, best practices</indexterm></indexterm>
+        <indexterm>upgrading
+          <indexterm>default plug-ins</indexterm></indexterm>
+        <indexterm>upgrading
+          <indexterm>PDF</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -25,7 +28,7 @@
       <p>When first experimenting with PDF customization, novice users are often tempted to simply edit the default
           <filepath>org.dita.pdf2</filepath> files in place to see what happens.</p>
       <p>As practical as this approach may seem, the DITA-OT project does not recommend changing any of the files in the
-          default plug-ins.</p>
+        default plug-ins.</p>
       <p>While this method yields quick results and can help users to determine which files and templates control
         various aspects of PDF output, it quickly leads to problems, as any errors may prevent the toolkit from
         generating PDF output.</p>
@@ -37,7 +40,8 @@
     <section id="the_customization_folder">
       <title>Using the <filepath>Customization</filepath> folder</title>
       <div outputclass="div-index">
-        <indexterm>deprecated features<indexterm><filepath>Customization</filepath> folder</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><filepath>Customization</filepath> folder</indexterm></indexterm>
         <indexterm>Customization directory</indexterm>
       </div>
       <p>The original Idiom plug-in used its own extension mechanism to provide overrides to the PDF transformation.
@@ -60,8 +64,8 @@
 
     <section id="external_customization_directories">
       <title>Specifying an external customization directory</title>
-      <p>To ensure that overrides in customization folders are not overwritten when upgrading DITA-OT to a new
-        release, an external customization directory can be specified at build time or in build scripts via the
+      <p>To ensure that overrides in customization folders are not overwritten when upgrading DITA-OT to a new release,
+        an external customization directory can be specified at build time or in build scripts via the
           <parmname>customization.dir</parmname> parameter.</p>
       <p>This method is preferable to the use of the <filepath>org.dita.pdf2/Customization</filepath> folder, as the
         contents of external folders are unaffected when upgrading DITA-OT. In distributed environments, users can use

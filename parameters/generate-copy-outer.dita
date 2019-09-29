@@ -11,8 +11,10 @@
     <metadata>
       <keywords>
         <indexterm><parmname>generate.copy.outer</parmname></indexterm>
-        <indexterm>HTML<indexterm>files outside map directory</indexterm></indexterm>
-        <indexterm>DITA maps<indexterm>relative file locations</indexterm></indexterm>
+        <indexterm>HTML
+          <indexterm>files outside map directory</indexterm></indexterm>
+        <indexterm>DITA maps
+          <indexterm>relative file locations</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -40,7 +42,8 @@ topics/
       <title>Exclude content outside the map directory</title>
       <div outputclass="div-index">
         <indexterm>index<index-see-also>entry file</index-see-also></indexterm>
-        <indexterm>entry file<indexterm>broken links, reason for</indexterm></indexterm>
+        <indexterm>entry file
+          <indexterm>broken links, reason for</indexterm></indexterm>
       </div>
       <p>Let’s assume that you run the HTML5 transformation. By default, DITA-OT uses the
           <parmname>generate.copy.outer</parmname> parameter with a value of <option>1</option>, which means that no
@@ -74,7 +77,8 @@ commonrtl.css</pre></p>
         specified via <parmname>args.css</parmname>) will be copied to the root level of the output folder. To copy CSS
         files to an output subfolder named <filepath>css</filepath>, set <parmname>args.csspath</parmname> to
           <option>css</option>.
-        <indexterm>CSS<indexterm>copy to specific location</indexterm></indexterm>
+        <indexterm>CSS
+          <indexterm>copy to specific location</indexterm></indexterm>
       </note>
     </section>
   </conbody>

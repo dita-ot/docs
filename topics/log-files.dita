@@ -10,12 +10,16 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>Apache FOP<indexterm>log files</indexterm></indexterm>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>logging</indexterm></indexterm>
+        <indexterm>Apache FOP
+          <indexterm>log files</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>logging</indexterm></indexterm>
         <indexterm>logging</indexterm>
-        <indexterm>Ant<indexterm>logging</indexterm></indexterm>
+        <indexterm>Ant
+          <indexterm>logging</indexterm></indexterm>
         <indexterm>debugging<index-see-also>logging</index-see-also></indexterm>
-        <indexterm>Java<indexterm>logging</indexterm></indexterm>
+        <indexterm>Java
+          <indexterm>logging</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -73,7 +77,8 @@
       <title>FOP debug logging</title>
       <div outputclass="div-index">
         <indexterm>logback.xml</indexterm>
-        <indexterm>classpath<indexterm>logging</indexterm></indexterm>
+        <indexterm>classpath
+          <indexterm>logging</indexterm></indexterm>
       </div>
       <p>In PDF processing with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP, DITA-OT 3.1 now uses the Simple
         Logging Facade for Java (SLF4J), allowing for better control and formatting of FOP log messages. To reduce noise

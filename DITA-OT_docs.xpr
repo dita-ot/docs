@@ -72,6 +72,14 @@
                                     <Integer>0</Integer>
                                 </field>
                             </breakLineElement>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>indexterm</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>1</Integer>
+                                </field>
+                            </breakLineElement>
                         </breakLineElement-array>
                     </entry>
                     <entry>

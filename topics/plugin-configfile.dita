@@ -10,9 +10,12 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>plug-ins<indexterm>identfiers</indexterm></indexterm>
-        <indexterm>plug-ins<indexterm><filepath>plugin.xml</filepath></indexterm></indexterm>
-        <indexterm>metadata<indexterm>plug-in</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm>identfiers</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm><filepath>plugin.xml</filepath></indexterm></indexterm>
+        <indexterm>metadata
+          <indexterm>plug-in</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -21,7 +24,8 @@
     <section>
       <title>Plug-in identifiers</title>
       <div outputclass="div-index">
-        <indexterm><xmlatt>id</xmlatt><indexterm>plug-in</indexterm></indexterm>
+        <indexterm><xmlatt>id</xmlatt>
+          <indexterm>plug-in</indexterm></indexterm>
       </div>
       <p>Every DITA-OT plug-in must have a unique identifier composed of one or more dot-delimited tokens, for example,
           <codeph>com.example.rss</codeph>. This identifier is used to identify the plug-in to the toolkit for
@@ -234,7 +238,8 @@
         <plentry>
           <pt><xmlelement>transtype</xmlelement></pt>
           <pd>
-            <indexterm><xmlelement>transtype</xmlelement><indexterm><filepath>plugin.xml</filepath></indexterm></indexterm>
+            <indexterm><xmlelement>transtype</xmlelement>
+              <indexterm><filepath>plugin.xml</filepath></indexterm></indexterm>
             <p>An optional element that defines a new output format (transformation type).</p>
             <p>The following attributes are supported:</p>
             <simpletable keycol="1">
@@ -271,7 +276,7 @@
               <title>Sample <xmlelement>transtype</xmlelement> element</title>
               <codeblock outputclass="language-xml">&lt;transtype name="base" abstract="true" desc="Common">
   &lt;!-- ⋮ -->
-  &lt;param name="link-crawl" 
+  &lt;param name="link-crawl"
          desc="Specifies whether to crawl only topic links found in maps, or all discovered topic links."
          type="enum">
     &lt;val>map&lt;/val>

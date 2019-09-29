@@ -17,7 +17,8 @@
         <indexterm>security</indexterm>
         <indexterm>TLS</indexterm>
         <indexterm>registry</indexterm>
-        <indexterm>tables<indexterm>PDF</indexterm></indexterm>
+        <indexterm>tables
+          <indexterm>PDF</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -68,7 +69,8 @@
       <title>Relocated catalog</title>
       <div outputclass="div-index">
         <indexterm><xmlelement>nextCatalog</xmlelement></indexterm>
-        <indexterm>catalog<indexterm>location</indexterm></indexterm>
+        <indexterm>catalog
+          <indexterm>location</indexterm></indexterm>
       </div>
       <p>
         <ph id="catalog">Along with the other base plug-in files, the <filepath>catalog-dita.xml</filepath> file has
@@ -88,8 +90,8 @@
       <title>Deprecated properties</title>
       <div outputclass="div-index">
         <indexterm><xmlelement>template</xmlelement></indexterm>
-        <indexterm>deprecated features<indexterm><filepath>plugin.xml</filepath>, <codeph>templates</codeph>
-          key</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><filepath>plugin.xml</filepath>, <codeph>templates</codeph> key</indexterm></indexterm>
       </div>
       <p><ph id="templates">The <codeph>templates</codeph> key in configuration properties has been deprecated in favor
           of the <xmlelement>template</xmlelement> element in <filepath>plugin.xml</filepath>.</ph></p>
@@ -99,8 +101,10 @@
       <title>New attribute sets for HTML5 customization</title>
       <div outputclass="div-index">
         <indexterm>Bootstrap</indexterm>
-        <indexterm>CSS<indexterm>HTML5</indexterm></indexterm>
-        <indexterm>HTML5<indexterm>CSS</indexterm></indexterm>
+        <indexterm>CSS
+          <indexterm>HTML5</indexterm></indexterm>
+        <indexterm>HTML5
+          <indexterm>CSS</indexterm></indexterm>
       </div>
       <p id="html5-att-sets">A series of new attribute sets has been added to the default HTML5 transformation to
         facilitate customization with additional ARIA roles, attributes, or CSS classes. Attribute sets are provided

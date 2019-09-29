@@ -22,26 +22,46 @@
         <indexterm><xmlelement>term</xmlelement></indexterm>
         <indexterm><xmlelement>indexterm</xmlelement></indexterm>
         <indexterm><xmlatt>href</xmlatt></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>help</codeph> build target</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>imagefile</parmname></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>image.list</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>htmlfile</parmname></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>html.list</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>copy-subsidiary</codeph> target</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>copy-subsidiary-check</codeph> target</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>depend.preprocess.copy-subsidiary.pre</parmname> extension points</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm>PDF, <codeph>insertVariable</codeph> template</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><varname>keydefs</varname> variable</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>KEYREF-FILE</parmname></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>displaytext</parmname></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>keys</parmname></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>target</parmname></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>pull-in-title</codeph> template</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>common-processing-phrase-within-link</codeph> template</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>dita.out.map.xhtml.toc</codeph> target</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>dita.out.map.htmlhelp.*</codeph> targets</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>dita.out.map.javahelp.*</codeph> targets</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>args.odt.img.embed</parmname></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>help</codeph> build target</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>imagefile</parmname></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>image.list</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>htmlfile</parmname></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>html.list</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>copy-subsidiary</codeph> target</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>copy-subsidiary-check</codeph> target</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>depend.preprocess.copy-subsidiary.pre</parmname> extension points</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm>PDF, <codeph>insertVariable</codeph> template</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><varname>keydefs</varname> variable</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>KEYREF-FILE</parmname></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>displaytext</parmname></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>keys</parmname></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>target</parmname></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>pull-in-title</codeph> template</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>common-processing-phrase-within-link</codeph> template</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>dita.out.map.xhtml.toc</codeph> target</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>dita.out.map.htmlhelp.*</codeph> targets</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>dita.out.map.javahelp.*</codeph> targets</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>args.odt.img.embed</parmname></indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>

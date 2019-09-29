@@ -13,12 +13,17 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>PDF<indexterm>plug-in</indexterm></indexterm>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>plug-in registry</indexterm></indexterm>
-        <indexterm>plug-ins<indexterm>registry</indexterm></indexterm>
-        <indexterm>plug-ins<indexterm>installing</indexterm></indexterm>
+        <indexterm>PDF
+          <indexterm>plug-in</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>plug-in registry</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm>registry</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm>installing</indexterm></indexterm>
         <indexterm>GitHub</indexterm>
-        <indexterm>plug-ins<indexterm>URL</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm>URL</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -131,9 +136,12 @@
             href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6"
             format="html" scope="external">Get-FileHash</xref> <varname>&lt;plugin-file&gt;</varname> |
           Format-List</codeph>.
-        <indexterm>macOS<indexterm>plug-in registry checksum</indexterm></indexterm>
-        <indexterm>Linux<indexterm>plug-in registry checksum</indexterm></indexterm>
-        <indexterm>Windows<indexterm>plug-in registry checksum</indexterm></indexterm>
+        <indexterm>macOS
+          <indexterm>plug-in registry checksum</indexterm></indexterm>
+        <indexterm>Linux
+          <indexterm>plug-in registry checksum</indexterm></indexterm>
+        <indexterm>Windows
+          <indexterm>plug-in registry checksum</indexterm></indexterm>
       </note>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Structure for dependency entries</title>

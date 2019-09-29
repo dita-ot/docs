@@ -15,7 +15,8 @@
         <indexterm>Pandoc</indexterm>
         <indexterm end="lwdita"/>
         <indexterm>UTF</indexterm>
-        <indexterm>DITA<indexterm>specializations</indexterm></indexterm>
+        <indexterm>DITA
+          <indexterm>specializations</indexterm></indexterm>
         <indexterm>Markdown</indexterm>
         <indexterm>CommonMark</indexterm>
       </keywords>
@@ -175,7 +176,8 @@ Context
     <section id="images">
       <title>Images</title>
       <div outputclass="div-index">
-        <indexterm>images<indexterm>Markdown</indexterm></indexterm>
+        <indexterm>images
+          <indexterm>Markdown</indexterm></indexterm>
       </div>
       <p>Images used in inline content will result in inline placement. If a block level image contains a title, it will
         be treated as an image wrapped in
@@ -250,7 +252,8 @@ Context
     <section id="tables">
       <title>Tables</title>
       <div outputclass="div-index">
-        <indexterm>tables<indexterm>Markdown</indexterm></indexterm>
+        <indexterm>tables
+          <indexterm>Markdown</indexterm></indexterm>
       </div>
       <p>Tables use
         <xref format="html" href="http://fletcherpenney.net/multimarkdown/" scope="external">MultiMarkdown</xref> table
@@ -287,8 +290,10 @@ Context
     <section id="metadata">
       <title>Metadata</title>
       <div outputclass="div-index">
-        <indexterm>metadata<indexterm>Lightweight DITA</indexterm></indexterm>
-        <indexterm>metadata<indexterm>Markdown</indexterm></indexterm>
+        <indexterm>metadata
+          <indexterm>Lightweight DITA</indexterm></indexterm>
+        <indexterm>metadata
+          <indexterm>Markdown</indexterm></indexterm>
         <indexterm>Pandoc</indexterm>
       </div>
       <p>

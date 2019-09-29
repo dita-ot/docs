@@ -13,8 +13,10 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>filters<indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>arguments list</indexterm></indexterm>
+        <indexterm>filters
+          <indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>arguments list</indexterm></indexterm>
         <indexterm>arguments<index-see-also><cmdname>dita</cmdname> command</index-see-also></indexterm>
         <indexterm>installing</indexterm>
         <indexterm>uninstalling</indexterm>
@@ -29,9 +31,11 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--input</kwd><oper>=</oper>
+            <kwd>--input</kwd>
+            <oper>=</oper>
             <var>file</var>
-            <kwd>--format</kwd><oper>=</oper>
+            <kwd>--format</kwd>
+            <oper>=</oper>
             <var>name</var>
             <groupcomp importance="optional">
               <var>options</var>
@@ -41,7 +45,8 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--install</kwd><oper>=</oper>
+            <kwd>--install</kwd>
+            <oper>=</oper>
             <groupchoice importance="optional">
               <var>filename</var>
               <var>URL</var>
@@ -51,7 +56,8 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--uninstall</kwd><oper>=</oper>
+            <kwd>--uninstall</kwd>
+            <oper>=</oper>
             <var>id</var>
           </groupseq>
         </fragment>
@@ -189,8 +195,10 @@
         <indexterm><parmname>--parameter</parmname></indexterm>
         <indexterm><parmname>-D</parmname></indexterm>
         <indexterm><parmname>--propertyfile</parmname></indexterm>
-        <indexterm>Java<indexterm>classes</indexterm></indexterm>
-        <indexterm>debugging<indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
+        <indexterm>Java
+          <indexterm>classes</indexterm></indexterm>
+        <indexterm>debugging
+          <indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
       </div>
       <parml id="dita_build_options">
         <plentry>

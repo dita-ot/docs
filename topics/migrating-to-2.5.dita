@@ -15,8 +15,10 @@
     <metadata>
       <keywords>
         <indexterm><xmlelement>example</xmlelement></indexterm>
-        <indexterm>PDF<indexterm><codeph>org.dita.pdf2.legacy</codeph></indexterm></indexterm>
-        <indexterm>languages<indexterm>right-to-left</indexterm></indexterm>
+        <indexterm>PDF
+          <indexterm><codeph>org.dita.pdf2.legacy</codeph></indexterm></indexterm>
+        <indexterm>languages
+          <indexterm>right-to-left</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -35,7 +37,8 @@
     <section id="25-pdf-changes">
       <title>Default PDF style improvements</title>
       <div outputclass="div-index">
-        <indexterm>tables<indexterm>indentation</indexterm></indexterm>
+        <indexterm>tables
+          <indexterm>indentation</indexterm></indexterm>
       </div>
       <p>Several legacy styles have been modified or removed in the default PDF plug-in <codeph>org.dita.pdf2</codeph>,
         including the following:</p>

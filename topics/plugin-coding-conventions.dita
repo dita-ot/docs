@@ -27,6 +27,7 @@
     <section conkeyref="reusable-components/use-xslt2"/>
     <section>
       <title>Use custom <xmlelement>pipeline</xmlelement> elements</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>Ant
           <indexterm><xmlelement>pipeline</xmlelement></indexterm></indexterm>
@@ -67,6 +68,7 @@
 
     <section>
       <title>Use <xmlelement>ditafileset</xmlelement> to select files</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>Ant
           <indexterm><xmlelement>ditafileset</xmlelement></indexterm></indexterm>
@@ -124,6 +126,7 @@
 
     <section>
       <title>Use the <codeph>plugin</codeph> URI scheme</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>Ant
           <indexterm><xmlelement>xsl:import</xmlelement></indexterm></indexterm>

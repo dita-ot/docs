@@ -42,6 +42,7 @@
 
     <section>
       <title>Base plug-in files moved to <filepath>plugins</filepath> directory</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlelement>xsl:include</xmlelement></indexterm>
         <indexterm><xmlelement>xsl:import</xmlelement></indexterm>
@@ -67,6 +68,7 @@
 
     <section>
       <title>Relocated catalog</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlelement>nextCatalog</xmlelement></indexterm>
         <indexterm>catalog
@@ -88,6 +90,7 @@
 
     <section>
       <title>Deprecated properties</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlelement>template</xmlelement></indexterm>
         <indexterm>deprecated features
@@ -99,6 +102,7 @@
 
     <section>
       <title>New attribute sets for HTML5 customization</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>Bootstrap</indexterm>
         <indexterm>CSS

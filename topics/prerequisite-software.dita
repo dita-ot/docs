@@ -59,6 +59,7 @@
     </section>
     <section>
       <title>Software required for specific transformations</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>locale</indexterm>
       </div>

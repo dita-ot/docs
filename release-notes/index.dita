@@ -366,6 +366,7 @@
 
       <section id="enhancements">
         <title>Enhancements and changes</title>
+        <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
         <div outputclass="div-index">
           <indexterm><xmlelement>steps</xmlelement></indexterm>
           <indexterm><xmlelement>section</xmlelement></indexterm>
@@ -486,6 +487,7 @@
 
       <section id="bugs">
         <title>Bugs</title>
+        <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
         <div outputclass="div-index">
           <indexterm><xmlelement>topicgroup</xmlelement></indexterm>
           <indexterm><xmlelement>topichead</xmlelement></indexterm>

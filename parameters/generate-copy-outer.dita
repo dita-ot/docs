@@ -40,6 +40,7 @@ topics/
 
     <section>
       <title>Exclude content outside the map directory</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>index<index-see-also>entry file</index-see-also></indexterm>
         <indexterm>entry file

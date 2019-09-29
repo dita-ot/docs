@@ -50,6 +50,7 @@
     </section>
     <section>
       <title>HTML-based formats</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm><xmlelement>div</xmlelement>
           <indexterm><codeph>div.shortdesc</codeph></indexterm></indexterm>
@@ -74,6 +75,7 @@
     </section>
     <section>
       <title>PDF</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>deprecated features
           <indexterm><codeph>tm-area</codeph> named template</indexterm></indexterm>

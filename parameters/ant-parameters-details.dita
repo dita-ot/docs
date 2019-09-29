@@ -825,6 +825,7 @@
                     and children</li>
                   <li><option>full</option> – Generate a complete ToC for the entire map</li>
                 </ul>
+                <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
                 <div outputclass="div-index">
                   <indexterm>table of contents
                     <indexterm>HTML5</indexterm></indexterm>

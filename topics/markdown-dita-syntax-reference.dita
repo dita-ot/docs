@@ -175,6 +175,7 @@ Context
 &lt;xref href="http://www.example.com/test.html" format="html" scope="external"&gt;External&lt;/xref&gt;</codeblock></section>
     <section id="images">
       <title>Images</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>images
           <indexterm>Markdown</indexterm></indexterm>
@@ -251,6 +252,7 @@ Context
       <p>Each definition entry must have only one term and contain only inline content.</p></section>
     <section id="tables">
       <title>Tables</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>tables
           <indexterm>Markdown</indexterm></indexterm>
@@ -289,6 +291,7 @@ Context
         Markdown DITA.</p></section>
     <section id="metadata">
       <title>Metadata</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>metadata
           <indexterm>Lightweight DITA</indexterm></indexterm>

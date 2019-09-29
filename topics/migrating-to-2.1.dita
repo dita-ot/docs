@@ -144,6 +144,7 @@
 
     <section>
       <title>XHTML</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>keydef</indexterm>
       </div>
@@ -170,6 +171,7 @@
     </section>
     <section>
       <title>JavaHelp</title>
+      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
       <div outputclass="div-index">
         <indexterm>JavaHelp</indexterm>
       </div>

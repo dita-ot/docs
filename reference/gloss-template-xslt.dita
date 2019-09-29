@@ -3,6 +3,6 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <glossentry id="gloss-template-xslt">
-  <glossterm>template</glossterm>
-  <glossdef>XSL element used to match specific XML structures using XPath.</glossdef>
+  <glossterm>XSL template</glossterm>
+  <glossdef>Set of rules in an XSL stylesheet that are applied to nodes that match specific XML structures.</glossdef>
 </glossentry>

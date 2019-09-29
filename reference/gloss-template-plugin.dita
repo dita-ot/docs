@@ -4,8 +4,8 @@
 
 <glossentry id="gloss-template-plugin">
   <glossterm>template</glossterm>
-  <glossdef>Element of <filepath>plugin.xml</filepath> that identifies an XML or XSL file. This file, often with
-      <filepath>_template</filepath> appended to its name, might be used to create a custom extension point, group
-    targets, and more. Anything contained in the plug-in's template files is integrated when the plug-in is
-    installed.</glossdef>
+  <glossdef>Optional <xmlelement>template</xmlelement> elements can be added to <filepath>plugin.xml</filepath> files to
+    define XML or XSL files that integrate DITA-OT extensions. Template files are often named with a
+      <filepath>_template</filepath> suffix, and may be used to create custom extensions, group targets, and more.
+    Anything contained in the plug-in’s template files is integrated when the plug-in is installed.</glossdef>
 </glossentry>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<glossentry id="gloss-transformation-type">
+  <glossterm>transformation type</glossterm>
+  <glossdef>Component of a plug-in that defines an output format.</glossdef>
+  <glossBody>
+    <glossAlt>
+      <glossAbbreviation>transtype</glossAbbreviation>
+      <glossUsage>Abbreviated form of <term>transformation type</term>. Use only to refer to the
+          <parmname>transtype</parmname> parameter of the <cmdname>dita</cmdname> command, or to the
+          <xmlelement>transtype</xmlelement> element in a <filepath>plugin.xml</filepath> file that defines the output
+        format.</glossUsage>
+    </glossAlt>
+  </glossBody>
+</glossentry>

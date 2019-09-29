@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<map>
+  <title>Glossary entries</title>
+  <topicref keyref="glossary" chunk="to-content">
+    <glossref href="gloss-argument.dita" keys="gloss-argument" print="yes" toc="yes"/>
+    <glossref href="gloss-dita-open-toolkit.dita" keys="gloss-dita-open-toolkit" print="yes" toc="yes"/>
+    <glossref href="gloss-extension-point.dita" keys="gloss-extension-point" print="yes" toc="yes"/>
+    <glossref href="gloss-option.dita" keys="gloss-option" print="yes" toc="yes"/>
+    <glossref href="gloss-output-format.dita" keys="gloss-output-format" print="yes" toc="yes"/>
+    <glossref href="gloss-parameter.dita" keys="gloss-parameter" print="yes" toc="yes"/>
+    <glossref href="gloss-plug-in.dita" keys="gloss-plug-in" print="yes" toc="yes"/>
+    <glossref href="gloss-processor.dita" keys="gloss-processor" print="yes" toc="yes"/>
+    <glossref href="gloss-property.dita" keys="gloss-property" print="yes" toc="yes"/>
+    <glossref href="gloss-template-plugin.dita" keys="gloss-template-plugin" print="yes" toc="yes"/>
+    <glossref href="gloss-transformation-type.dita" keys="gloss-transformation-type" print="yes" toc="yes"/>
+    <glossref href="gloss-variable.dita" keys="gloss-variable" print="yes" toc="yes"/>
+    <glossref href="gloss-template-xslt.dita" keys="gloss-template-xslt" print="yes" toc="yes"/>
+  </topicref>
+</map>

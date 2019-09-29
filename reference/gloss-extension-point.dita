@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<glossentry id="gloss-extension-point">
+  <glossterm>extension point</glossterm>
+  <glossdef>Pre-defined interface that can be added to a plug-in to allow other plug-ins to extend or customize portions
+    of its functionality. An extendable feature is defined by declaring an <xmlelement>extension-point</xmlelement>
+    element in the <filepath>plugin.xml</filepath> file. Other plug-ins can then override the default behavior by
+    defining custom code that runs when this extension point is called.</glossdef>
+</glossentry>

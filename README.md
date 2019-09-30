@@ -16,17 +16,21 @@ For best results, follow the [coding guidelines][6] and [best practices][7] outl
 
 ## Building the documentation output
 
-To generate additional topics and build the HTML and PDF versions of the documentation as included in DITA-OT releases, run the Gradle build script from the root level of the `docs` repository and pass the path to your DITA-OT installation as a parameter:
+⚠️ **Important:** The maps in this repository contain references to additional topics that are created at build time from the toolkit’s plug-in configuration.
 
-    ./gradlew -PditaHome=../dita-ot/src/main
+To generate the missing topics and build the HTML and PDF versions of the documentation, run the Gradle build script from the root level of the `docs` repository and pass the path to your DITA-OT installation as a parameter.
 
-You can also specify a single output format. To build HTML output, enter the following on the command line:
+- For example, if you’re using a clone of the [DITA-OT development repository][13] as your toolkit installation alongside your clone of the docs repository, run the build script on **Linux** or **macOS** like this:
 
-    ./gradlew -PditaHome=../dita-ot/src/main html
+        ./gradlew -PditaHome=../dita-ot/src/main
 
-**Note:** On Windows, use `gradlew.bat` and adjust the path to your DITA-OT installation:
+- You can also specify a single output format. To build HTML output, enter the following on the command line:
 
-    gradlew -PditaHome=..\dita-ot\src\main
+        ./gradlew -PditaHome=../dita-ot/src/main html
+
+- On **Windows**, use `gradlew.bat` and adjust the path to your DITA-OT installation:
+
+        gradlew -PditaHome=C:\path\to\dita-ot
 
 Output will be generated in the `out` folder of the `docs` repository. This folder is created automatically if it doesn’t exist. _(Git ignores the contents of this folder so you don’t inadvertently commit these transient files.)_
 
@@ -34,7 +38,7 @@ Output will be generated in the `out` folder of the `docs` repository. This fold
 
 The `develop` branch of the documentation repository may depend on features from recent development versions of DITA Open Toolkit.
 
-To use these features when building the documentation, you may either download the [latest development version][13] of the distribution package, or clone the [DITA-OT repository][14] and install the [bundled plug-ins][15] via `dita --install`.
+To use these features when building the documentation, you may either download the [latest development version][14] of the distribution package, or clone the [DITA-OT repository][13] and install the [bundled plug-ins][15] via `dita --install`.
 
 [1]: https://travis-ci.org/dita-ot/docs.svg?branch=develop
 [2]: http://slack.dita-ot.org/badge.svg
@@ -48,6 +52,6 @@ To use these features when building the documentation, you may either download t
 [10]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-often
 [11]: https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
 [12]: https://www.dita-ot.org/DCO
-[13]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
-[14]: https://github.com/dita-ot/dita-ot
+[13]: https://github.com/dita-ot/dita-ot
+[14]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
 [15]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L163-L167

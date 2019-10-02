@@ -44,7 +44,7 @@ To use these features when building the documentation, you may either download t
 [2]: http://slack.dita-ot.org/badge.svg
 [3]: https://www.dita-ot.org/dev/
 [4]: https://www.dita-ot.org
-[5]: CONTRIBUTING.md
+[5]: .github/CONTRIBUTING.md
 [6]: https://github.com/dita-ot/docs/wiki/Coding-guidelines
 [7]: https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
 [8]: https://github.com/dita-ot/docs/wiki/Git-workflow#test-before-committing

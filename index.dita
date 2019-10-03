@@ -29,9 +29,11 @@
         <li>
           <xref keyref="installing-client"/> shows how to install the toolkit and run a build to verify the
           installation.</li>
+        <li><xref keyref="building-output"/> provides information about transforming content, and the available output
+          formats.</li>
         <li><xref keyref="alternative-input-formats"/> introduces the new input formats supported in DITA-OT ≥ 3.0.</li>
-        <li><xref keyref="building-output"/> provides information about transforming content, and the
-          available output formats.</li>
+        <li><xref keyref="output-formats">Output formats</xref> provides an overview of the default transformations that
+          generate output from DITA content.</li>
         <li><xref keyref="parameters"/> explains how to adjust the behavior of DITA Open Toolkit via
             <cmdname>dita</cmdname> command arguments and options, DITA-OT parameter settings, and configuration
           properties.</li>

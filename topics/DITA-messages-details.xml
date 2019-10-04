@@ -509,7 +509,7 @@
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX020E-extra" conaction="pushreplace">DITA-OT is only able to
           dynamically retrieve titles when the target is a local (not peer or external) DITA resource.
-        <indexterm start="navtitle">navtitle</indexterm>
+        <indexterm>navtitle</indexterm>
         </stentry>
       </strow>
       <strow>
@@ -533,8 +533,7 @@
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX025E-extra" conaction="pushreplace">DITA-OT is only able to
-          dynamically retrieve titles when the target is a local DITA resource.
-        <indexterm end="navtitle"/></stentry>
+          dynamically retrieve titles when the target is a local DITA resource.</stentry>
       </strow>
       <strow>
         <stentry conref="DITA-messages.xml#msgs/DOTX026W-extra" conaction="pushreplace">The referenc to this document

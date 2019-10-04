@@ -32,7 +32,7 @@
                   <parmname>args.draft</parmname> parameter to <option>yes</option> causes the contents of the
                   <xmlelement>titlealts</xmlelement> element to be rendered below the title.
                 <indexterm><xmlelement>titlealts</xmlelement></indexterm>
-                <indexterm start="ant-xslt-params">XSLT</indexterm>
+                <indexterm>XSLT</indexterm>
                 <indexterm>draft
                   <indexterm>args.draft</indexterm>
                   <indexterm>PDF</indexterm></indexterm>
@@ -668,8 +668,7 @@
             <pd conaction="pushafter">The default value is the value of the <parmname>args.draft</parmname> parameter.
                 <ph audience="xslt-customizer">Corresponds to the XSLT parameter
                   <parmname>publishRequiredCleanup</parmname>.</ph><note type="notice">This parameter is deprecated in
-                favor of the <parmname>args.draft</parmname> parameter.
-                <indexterm end="ant-xslt-params"/></note></pd>
+                favor of the <parmname>args.draft</parmname> parameter.</note></pd>
           </plentry>
         </parml>
       </section>

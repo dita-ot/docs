@@ -27,10 +27,10 @@
   <taskbody>
     <context>
       <p>Earlier versions of DITA-OT used the TocJS transformation to render a JavaScript-based table of contents in an
-        XHTML frameset for topic navigation. While this approach is still supported for XHTML output, recent toolkit
-        versions provide a modern HTML5 navigation alternative.</p>
+        XHTML frameset for topic navigation. Recent toolkit versions provide a modern HTML5 navigation alternative.</p>
       <p>As of DITA-OT 2.2, the <parmname>nav-toc</parmname> parameter can be used in HTML5 transformations to embed
-        navigation directly in topics using native HTML5 elements without JavaScript or framesets.</p></context>
+        navigation directly in topics using native HTML5 elements without JavaScript or framesets.</p>
+    </context>
     <steps>
       <step>
         <cmd>Set the <parmname>nav-toc</parmname> parameter to one of the following options:</cmd>

@@ -18,7 +18,9 @@
     <!-- ↑ end-filtering ↑ -->
     <topicref keyref="using-dita-properties-file"/>
     <topicref keyref="migrating-ant-to-dita"/>
-    <topicref keyref="using-project-files"/>
+    <topicref keyref="using-project-files">
+      <topicref keyref="project-files-xml"/>
+    </topicref>
   </topicref>
   <topicref keyref="publishing-with-ant">
     <topicref keyref="ant"/>

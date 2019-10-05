@@ -441,6 +441,15 @@
         </topicmeta>
       </keydef>
     </topicset>
+    <keydef
+      keys="json"
+      href="https://json.org"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>JavaScript Object Notation (JSON)</linktext>
+      </topicmeta>
+    </keydef>
     <topicset
       id="lightweight-dita">
       <keydef
@@ -487,6 +496,15 @@
       format="html">
       <topicmeta>
         <linktext>RFC 5147</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="yaml"
+      href="https://yaml.org"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>YAML</linktext>
       </topicmeta>
     </keydef>
   </topicset>

@@ -11,6 +11,15 @@
     <xref keyref="json"/> format that can be used to define a publication project. Like the XML project samples, the
     sample JSON files illustrate how deliverables can be described for use in publication projects. The JSON samples are
     functionally equivalent to their XML and YAML counterparts, with minor adaptations to JSON file syntax.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>JSON project files</indexterm>
+        <indexterm>project files
+          <indexterm>JSON</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
   <conbody>
     <p>Project files can be designed in a modular fashion to create reusable configuration structures that allow you to
       define settings in one file and refer to them in other projects to publish multiple deliverables at once.</p>

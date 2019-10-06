@@ -55,7 +55,7 @@
         last line of the file.</p>
     </section>
     <example>
-      <codeblock outputclass="language-xml">&lt;coderef href="Parser.scala#line-range(5, 10)" format="scala"/></codeblock>
+      <codeblock outputclass="language-xml">&lt;coderef href="Parser.scala#line-range(5,10)" format="scala"/></codeblock>
       <p>Only lines from 5 to 10 will be included in the output.</p>
     </example>
     <section>

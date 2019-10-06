@@ -24,9 +24,9 @@
   <taskbody>
     <section>
       <title>About project files</title>
-      <p id="projects-formats">Project files may be defined in one of three formats:
-        <xref keyref="json"/>,
-        <xref keyref="yaml"/>, or XML. The XML format can be validated with a RELAX NG schema provided in the
+      <p id="projects-formats">Project files may be defined in one of three formats: XML,
+        <xref keyref="json"/>, or
+        <xref keyref="yaml"/>. The XML format can be validated with a RELAX NG schema provided in the
           <filepath>resources</filepath> folder of the DITA-OT installation (<filepath>project.rnc</filepath>).</p>
       <p id="projects-advantages">Whereas <filepath>.properties</filepath> files can only be used to set parameters,
         project files go further, allowing you to define multiple deliverables with separate input files and output

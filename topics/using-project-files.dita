@@ -16,8 +16,9 @@
     <metadata>
       <keywords>
         <indexterm><cmdname>dita</cmdname> command
-          <indexterm>project file</indexterm></indexterm>
-        <indexterm>project file</indexterm>
+          <indexterm>project files</indexterm></indexterm>
+        <indexterm>project files
+          <indexterm>using</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -60,7 +61,8 @@
                 </p>
               </li>
               <li>
-                <p>an <codeph>output</codeph> location</p></li>
+                <p>an <codeph>output</codeph> location (relative to the CLI <parmname>--output</parmname>
+                directory)</p></li>
               <li>a <codeph>publication</codeph> that defines:
                 <ul compact="yes">
                   <li>an output format via <codeph>transtype</codeph>, and</li>

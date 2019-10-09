@@ -129,23 +129,5 @@
     <refbody/>
   </reference>
 
-  <reference id="troff">
-    <title>troff</title>
-    <titlealts>
-      <navtitle conaction="pushreplace"
-        conref="extension-points-in-org.dita.troff.dita#org.dita.troff-ext/navtitle">troff</navtitle>
-    </titlealts>
-    <shortdesc conaction="pushreplace"
-      conref="extension-points-in-org.dita.troff.dita#org.dita.troff-ext/shortdesc">Certain extension points
-      are specific to the troff transformation, which produces output for use with the troff viewer on Unix-style
-      platforms, particularly for programs such as the man page viewer.
-      <ph>
-        <indexterm>UNIX<index-see-also>Linux</index-see-also></indexterm>
-        <indexterm><codeph>org.dita.troff</codeph></indexterm>
-        <indexterm>extension points<indexterm><codeph>org.dita.troff</codeph></indexterm></indexterm>
-      </ph>
-    </shortdesc>
-    <refbody/>
-  </reference>
 
 </reference>

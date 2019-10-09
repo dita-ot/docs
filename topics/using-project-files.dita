@@ -29,6 +29,9 @@
         <xref keyref="json"/>, or
         <xref keyref="yaml"/>. The XML format can be validated with a RELAX NG schema provided in the
           <filepath>resources</filepath> folder of the DITA-OT installation (<filepath>project.rnc</filepath>).</p>
+      <note>The XML project file format is the normative version provided for interoperability with existing XML-based
+        toolchains. The JSON and YAML versions are alternative compact formats that are easier to read and write, but
+        otherwise equivalent to the XML syntax.</note>
       <p id="projects-advantages">Whereas <filepath>.properties</filepath> files can only be used to set parameters,
         project files go further, allowing you to define multiple deliverables with separate input files and output
         folders and formats for each publication. A project file can also refer to other project files, so you can

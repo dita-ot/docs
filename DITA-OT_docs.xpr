@@ -80,6 +80,22 @@
                                     <Integer>1</Integer>
                                 </field>
                             </breakLineElement>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>index-see</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>1</Integer>
+                                </field>
+                            </breakLineElement>
+                            <breakLineElement>
+                                <field name="elementExpression">
+                                    <String>index-see-also</String>
+                                </field>
+                                <field name="breakPolicy">
+                                    <Integer>1</Integer>
+                                </field>
+                            </breakLineElement>
                         </breakLineElement-array>
                     </entry>
                     <entry>

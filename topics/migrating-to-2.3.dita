@@ -36,32 +36,31 @@
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 2.3 that may require modifications to custom stylesheets
-        or plug-ins. For more information on changes in this release, see the <xref keyref="2.3-release-notes"/>.</note>
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="2.3-release-notes"/>.</note>
     </section>
     <section>
       <title>HTML5</title>
       <p>The <option>HTML5</option> table processing has been refactored to use valid HTML5 markup, HTML5 best
-        practices, and better CSS properties for styling. <xref href="https://en.bem.info/methodology/" format="html"
-          scope="external">BEM</xref>-style CSS classes are now generated with the name of the containing element, the
-        name of the attribute, and the value of the attribute. </p>
-      <p>Common CSS files are now generated using separate modules for each DITA domain, implemented as <xref
-          keyref="sass-lang"/> partials to better support extensions with CSS frameworks, custom plug-ins and future
+        practices, and better CSS properties for styling.
+        <xref href="https://en.bem.info/methodology/" format="html" scope="external">BEM</xref>-style CSS classes are
+        now generated with the name of the containing element, the name of the attribute, and the value of the
+        attribute. </p>
+      <p>Common CSS files are now generated using separate modules for each DITA domain, implemented as
+        <xref keyref="sass-lang"/> partials to better support extensions with CSS frameworks, custom plug-ins and future
         toolkit versions.</p>
     </section>
     <section>
       <title>HTML-based formats</title>
-      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-      <div outputclass="div-index">
-        <indexterm><xmlelement>div</xmlelement>
-          <indexterm><codeph>div.shortdesc</codeph></indexterm></indexterm>
-        <indexterm><xmlelement>p</xmlelement></indexterm>
-        <indexterm><xmlelement>abstract</xmlelement></indexterm>
-        <indexterm><xmlelement>simpletable</xmlelement></indexterm>
-        <indexterm><xmlelement>properties</xmlelement></indexterm>
-        <indexterm><xmlelement>choicetable</xmlelement></indexterm>
-        <indexterm>deprecated features
-          <indexterm><codeph>tm-area</codeph> named template</indexterm></indexterm>
-      </div>
+      <indexterm><xmlelement>div</xmlelement>
+        <indexterm><codeph>div.shortdesc</codeph></indexterm></indexterm>
+      <indexterm><xmlelement>p</xmlelement></indexterm>
+      <indexterm><xmlelement>abstract</xmlelement></indexterm>
+      <indexterm><xmlelement>simpletable</xmlelement></indexterm>
+      <indexterm><xmlelement>properties</xmlelement></indexterm>
+      <indexterm><xmlelement>choicetable</xmlelement></indexterm>
+      <indexterm>deprecated features
+        <indexterm><codeph>tm-area</codeph> named template</indexterm></indexterm>
       <p>The XSLT <codeph>tm-area</codeph> named template, which used to toggle rendering of trademark symbols in US
         English and Asian languages (Japanese, Korean, and both Chinese) but ignore them in all other languages, has
         been deprecated. Trademark symbols are now rendered uniformly for all languages and the template will be removed
@@ -75,19 +74,16 @@
     </section>
     <section>
       <title>PDF</title>
-      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-      <div outputclass="div-index">
-        <indexterm>deprecated features
-          <indexterm><codeph>tm-area</codeph> named template</indexterm></indexterm>
-        <indexterm>deprecated features
-          <indexterm>PDF localization variables</indexterm></indexterm>
-        <indexterm>deprecated features
-          <indexterm><parmname>conreffile</parmname></indexterm></indexterm>
-        <indexterm>deprecated features
-          <indexterm><parmname>conref-check</parmname> target</indexterm></indexterm>
-        <indexterm>deprecated features
-          <indexterm><parmname>coderef</parmname> target</indexterm></indexterm>
-      </div>
+      <indexterm>deprecated features
+        <indexterm><codeph>tm-area</codeph> named template</indexterm></indexterm>
+      <indexterm>deprecated features
+        <indexterm>PDF localization variables</indexterm></indexterm>
+      <indexterm>deprecated features
+        <indexterm><parmname>conreffile</parmname></indexterm></indexterm>
+      <indexterm>deprecated features
+        <indexterm><parmname>conref-check</parmname> target</indexterm></indexterm>
+      <indexterm>deprecated features
+        <indexterm><parmname>coderef</parmname> target</indexterm></indexterm>
       <p>The <codeph>antiquewhite</codeph> background color has been removed from table heads and key column contents in
           <xmlelement>simpletable</xmlelement> and <xmlelement>properties</xmlelement> tables to synchronize
         presentation with <xmlelement>choicetable</xmlelement> and provide a more uniform customization baseline between

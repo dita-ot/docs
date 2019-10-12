@@ -39,12 +39,9 @@
 
     <section id="the_customization_folder">
       <title>Using the <filepath>Customization</filepath> folder</title>
-      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-      <div outputclass="div-index">
-        <indexterm>deprecated features
-          <indexterm><filepath>Customization</filepath> folder</indexterm></indexterm>
-        <indexterm>Customization directory</indexterm>
-      </div>
+      <indexterm>deprecated features
+        <indexterm><filepath>Customization</filepath> folder</indexterm></indexterm>
+      <indexterm>Customization directory</indexterm>
       <p>The original Idiom plug-in used its own extension mechanism to provide overrides to the PDF transformation.
         With this approach, a dedicated folder within the plug-in is used to store customized files.</p>
       <p>Files in the <filepath>org.dita.pdf2/Customization</filepath> folder can override their default counterparts,

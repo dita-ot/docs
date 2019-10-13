@@ -80,13 +80,10 @@
     </section>
     <section>
       <title>PDF</title>
-      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-      <div outputclass="div-index">
-        <indexterm>args.rellinks</indexterm>
-        <indexterm>PDF
-          <indexterm>related links</indexterm>
-          <indexterm>args.rellinks</indexterm></indexterm>
-      </div>
+      <indexterm>args.rellinks</indexterm>
+      <indexterm>PDF
+        <indexterm>related links</indexterm>
+        <indexterm>args.rellinks</indexterm></indexterm>
       <p>The following deprecated XSLT stylesheets have been removed:</p>
       <ul>
         <li><filepath>artwork-preprocessor.xsl</filepath></li>

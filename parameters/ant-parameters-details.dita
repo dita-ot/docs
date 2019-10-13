@@ -72,9 +72,12 @@
                 <indexterm>DITAVAL
                   <indexterm><parmname>args.filter</parmname></indexterm></indexterm>
                 <!-- https://github.com/dita-ot/dita-ot/issues/3319 -->
-                <indexterm>DITAVAL<index-see-also>filters</index-see-also></indexterm>
-                <indexterm>DITAVAL<index-see-also>profiling</index-see-also></indexterm>
-                <indexterm>OS X<index-see>macOS</index-see></indexterm>
+                <indexterm>DITAVAL
+                  <index-see-also>filters</index-see-also></indexterm>
+                <indexterm>DITAVAL
+                  <index-see-also>profiling</index-see-also></indexterm>
+                <indexterm>OS X
+                  <index-see>macOS</index-see></indexterm>
                 <indexterm>macOS
                   <indexterm>delimiter</indexterm></indexterm>
                 <indexterm>Linux
@@ -177,8 +180,9 @@
             <pd conaction="pushreplace" conref="parameters-base.dita#base/default.language.desc">Specifies the language
               that is used if the input file does not have the <xmlatt>xml:lang</xmlatt> attribute set on the root
               element. By default, this is set to <option>en</option>. The allowed values are those that are defined in
-              IETF BCP 47, <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external">Tags for
-                Identifying Languages</xref>.
+              IETF BCP 47,
+              <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external">Tags for Identifying
+                Languages</xref>.
               <indexterm><xmlatt>xml:lang</xmlatt></indexterm>
               <indexterm>IETF BCP 47</indexterm>
               <indexterm>languages
@@ -244,7 +248,8 @@
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/generate.copy.outer.desc"/>
             <pd conaction="pushafter">
-              <p>See <xref keyref="generate-copy-outer"/> for more information.</p>
+              <p>See
+                <xref keyref="generate-copy-outer"/> for more information.</p>
             </pd>
           </plentry>
           <plentry id="onlytopic.in.map">
@@ -310,10 +315,10 @@
       <navtitle>HTML-based output</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace" conref="parameters-base-html.dita#base-html/shortdesc">Certain parameters apply
-      to all HTML-based transformation types: HTML5, XHTML, HTML&#xA0;Help, and Eclipse help.
-    <ph>
-      <indexterm>HTML5<indexterm>parameters</indexterm></indexterm>
-    </ph>
+      to all HTML-based transformation types: HTML5, XHTML, HTML&#xA0;Help, and Eclipse help. <ph>
+        <indexterm>HTML5
+          <indexterm>parameters</indexterm></indexterm>
+      </ph>
     </shortdesc>
     <refbody>
       <section>
@@ -483,8 +488,7 @@
               from <xmlelement>section</xmlelement>) would generate <codeph>class="section prereq"</codeph>. <ph
                 audience="xslt-customizer">Corresponds to the XSLT parameter
                 <parmname>PRESERVE-DITA-CLASS</parmname>.</ph><note>Beginning with DITA-OT release 1.5.2, the default
-                value is <option>yes</option>. For release 1.5 and 1.5.1, the default value was <option>no</option>.
-              </note>
+                value is <option>yes</option>. For release 1.5 and 1.5.1, the default value was <option>no</option>. </note>
               <indexterm><xmlelement>prereq</xmlelement></indexterm>
               <indexterm><xmlelement>section</xmlelement></indexterm>
             </pd>
@@ -612,7 +616,8 @@
                 FOP).
                 <indexterm>Apache FOP
                   <indexterm>I18N</indexterm></indexterm>
-                <indexterm>FOP<index-see>Apache FOP</index-see></indexterm>
+                <indexterm>FOP
+                  <index-see>Apache FOP</index-see></indexterm>
                 <indexterm>I18N
                   <indexterm><parmname>org.dita.pdf2.i18n.enabled</parmname></indexterm></indexterm>
                 <indexterm>fonts
@@ -629,7 +634,8 @@
               </ul>
               <note type="tip">If you don’t use custom character mappings, turning off font mapping makes it easier to
                 define custom fonts simply by changing font names in the XSL attributes files of your custom PDF
-                plug-in. For details, see <xref keyref="jelovirt-on-pdf2-i18n"/>.</note>
+                plug-in. For details, see
+                <xref keyref="jelovirt-on-pdf2-i18n"/>.</note>
             </pd>
           </plentry>
           <plentry id="outputFile.base">
@@ -730,8 +736,7 @@
             <pt>
               <parmname>args.csspath</parmname>
             </pt>
-            <pd conaction="pushreplace"
-                conref="parameters-html5.dita#html5/args.csspath.desc">
+            <pd conaction="pushreplace" conref="parameters-html5.dita#html5/args.csspath.desc">
               <div conref="./ant-parameters-details.dita#base-html/args.csspath.desc"/>
             </pd>
             <pd conaction="mark" conref="parameters-html5.dita#html5/args.csspath.desc"/>
@@ -824,13 +829,10 @@
                     and children</li>
                   <li><option>full</option> – Generate a complete ToC for the entire map</li>
                 </ul>
-                <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-                <div outputclass="div-index">
-                  <indexterm>table of contents
-                    <indexterm>HTML5</indexterm></indexterm>
-                  <indexterm>table of contents
-                    <indexterm>nav-toc</indexterm></indexterm>
-                </div>
+                <indexterm>table of contents
+                  <indexterm>HTML5</indexterm></indexterm>
+                <indexterm>table of contents
+                  <indexterm>nav-toc</indexterm></indexterm>
               </p>
             </pd>
           </plentry>

@@ -98,14 +98,11 @@
       <p id="java-clients">DITA-OT is designed to run on Java version <keyword keyref="tool.java.version"/> or later and
         built and tested with the Open Java Development Kit (OpenJDK). Compatible Java distributions are available from
         multiple sources:
-        <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-        <div outputclass="div-index">
-          <indexterm>Java
-            <indexterm>versions</indexterm></indexterm>
-          <indexterm>Amazon Corretto</indexterm>
-          <indexterm>OpenJDK</indexterm>
-          <indexterm>Oracle JDK</indexterm>
-        </div>
+        <indexterm>Java
+          <indexterm>versions</indexterm></indexterm>
+        <indexterm>Amazon Corretto</indexterm>
+        <indexterm>OpenJDK</indexterm>
+        <indexterm>Oracle JDK</indexterm>
         <ul>
           <li>You can download the Oracle JRE or JDK from
             <xref keyref="download.oracle-jdk"/> under commercial license.</li>

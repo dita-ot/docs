@@ -26,15 +26,12 @@
     <section conkeyref="reusable-components/use-xslt2"/>
     <section>
       <title>Use custom <xmlelement>pipeline</xmlelement> elements</title>
-      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-      <div outputclass="div-index">
-        <indexterm>Ant
-          <indexterm><xmlelement>pipeline</xmlelement></indexterm></indexterm>
-        <indexterm>Ant
-          <indexterm><xmlelement>xslt</xmlelement></indexterm></indexterm>
-        <indexterm>Ant
-          <indexterm><xmlelement>style</xmlelement></indexterm></indexterm>
-      </div>
+      <indexterm>Ant
+        <indexterm><xmlelement>pipeline</xmlelement></indexterm></indexterm>
+      <indexterm>Ant
+        <indexterm><xmlelement>xslt</xmlelement></indexterm></indexterm>
+      <indexterm>Ant
+        <indexterm><xmlelement>style</xmlelement></indexterm></indexterm>
       <p>In Ant scripts, use the XSLT module from DITA-OT instead of Ant’s built-in <xmlelement>xslt</xmlelement> or
           <xmlelement>style</xmlelement> tasks. </p>
       <p>The XSLT module allows access to DITA-OT features like using the job configuration to select files in the
@@ -67,15 +64,13 @@
 
     <section>
       <title>Use <xmlelement>ditafileset</xmlelement> to select files</title>
-      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-      <div outputclass="div-index">
-        <indexterm>Ant
-          <indexterm><xmlelement>ditafileset</xmlelement></indexterm></indexterm>
-        <indexterm><xmlelement>ditafileset</xmlelement></indexterm>
-        <indexterm>images
-          <indexterm>selecting</indexterm></indexterm>
-        <indexterm>images<index-see-also>copy-files</index-see-also></indexterm>
-      </div>
+      <indexterm>Ant
+        <indexterm><xmlelement>ditafileset</xmlelement></indexterm></indexterm>
+      <indexterm><xmlelement>ditafileset</xmlelement></indexterm>
+      <indexterm>images
+        <indexterm>selecting</indexterm></indexterm>
+      <indexterm>images
+        <index-see-also>copy-files</index-see-also></indexterm>
       <p>In Ant scripts, use <xmlelement>ditafileset</xmlelement> to select resources in the temporary directory.</p>
       <p>For example, to select all images referenced by input DITA files, instead of:</p>
       <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;copy todir="${copy-image.todir}">
@@ -125,13 +120,10 @@
 
     <section>
       <title>Use the <codeph>plugin</codeph> URI scheme</title>
-      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-      <div outputclass="div-index">
-        <indexterm>Ant
-          <indexterm><xmlelement>xsl:import</xmlelement></indexterm></indexterm>
-        <indexterm>Ant
-          <indexterm><xmlelement>xsl:include</xmlelement></indexterm></indexterm>
-      </div>
+      <indexterm>Ant
+        <indexterm><xmlelement>xsl:import</xmlelement></indexterm></indexterm>
+      <indexterm>Ant
+        <indexterm><xmlelement>xsl:include</xmlelement></indexterm></indexterm>
       <p>In XSLT, use the <codeph>plugin</codeph> URI scheme in <xmlelement>xsl:import</xmlelement> and
           <xmlelement>xsl:include</xmlelement> to reference files in other plug-ins.</p>
       <p>Instead of:</p>

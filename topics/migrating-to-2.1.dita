@@ -68,13 +68,15 @@
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 2.1 that may require modifications to custom stylesheets
-        or plug-ins. For more information on changes in this release, see the <xref keyref="2.1-release-notes"/>.</note>
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="2.1-release-notes"/>.</note>
     </section>
 
     <section>
       <p>The custom<systemoutput>FileUtils</systemoutput> code used to handle input and output in earlier versions of
-        DITA-OT has been replaced with the <xref href="http://commons.apache.org/proper/commons-io/" format="html"
-          scope="external">Apache Commons IO</xref> utilities library. </p>
+        DITA-OT has been replaced with the
+        <xref href="http://commons.apache.org/proper/commons-io/" format="html" scope="external">Apache Commons
+          IO</xref> utilities library. </p>
     </section>
 
     <section>
@@ -144,10 +146,7 @@
 
     <section>
       <title>XHTML</title>
-      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-      <div outputclass="div-index">
-        <indexterm>keydef</indexterm>
-      </div>
+      <indexterm>keydef</indexterm>
       <p>The <codeph>dita.<b>out.</b>map.xhtml.toc</codeph> target has been deprecated and should be replaced with the
         updated <codeph>dita.map.xhtml.toc</codeph> equivalent.</p>
       <p>Keydef processing has been removed from the XHTML rendering code. Keys are now resolved in one preprocessing
@@ -171,10 +170,7 @@
     </section>
     <section>
       <title>JavaHelp</title>
-      <!-- Wrap index terms to permit post-processing workaround for https://github.com/dita-ot/dita-ot/issues/3042 -->
-      <div outputclass="div-index">
-        <indexterm>JavaHelp</indexterm>
-      </div>
+      <indexterm>JavaHelp</indexterm>
       <p>The <codeph>dita.<b>out.</b>map.javahelp.*</codeph> targets have been deprecated and should be replaced with
         the updated <codeph>dita.map.javahelp.*</codeph> equivalents:</p>
       <ul>

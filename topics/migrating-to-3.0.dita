@@ -12,7 +12,7 @@
   <shortdesc>DITA-OT 3.0 <ph id="summary">adds support for Markdown, normalized DITA output, and the alternative
       authoring formats proposed for Lightweight DITA. The map-first preprocessing approach provides a modern
       alternative to the default <codeph>preprocess</codeph> operation.</ph></shortdesc>
-  
+
   <prolog>
     <metadata>
       <keywords>
@@ -33,11 +33,11 @@
 
     <section id="30-legacy-plugin-removal">
       <title>Legacy plug-ins removed</title>
-      <div outputclass="div-index">
-        <indexterm>JavaHelp</indexterm>
-        <indexterm>deprecated features<indexterm>JavaHelp plug-in</indexterm></indexterm>
-        <indexterm>plug-ins<indexterm>JavaHelp</indexterm></indexterm>
-      </div>
+      <indexterm>JavaHelp</indexterm>
+      <indexterm>deprecated features
+        <indexterm>JavaHelp plug-in</indexterm></indexterm>
+      <indexterm>plug-ins
+        <indexterm>JavaHelp</indexterm></indexterm>
       <p>DITA-OT 3.0 no longer includes the following legacy transformation plug-ins in the default distribution:</p>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Legacy plug-ins</title>
@@ -52,7 +52,8 @@
           </thead>
           <tbody>
             <row>
-              <entry>JavaHelp<indexterm>JavaHelp</indexterm></entry>
+              <entry>JavaHelp
+                <indexterm>JavaHelp</indexterm></entry>
               <entry>
                 <xref href="https://github.com/dita-ot/org.dita.javahelp" format="html" scope="external"/></entry>
             </row>

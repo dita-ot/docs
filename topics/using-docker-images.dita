@@ -113,7 +113,7 @@
           <filepath>FROM</filepath> directive.</p>
       <p>Each subsequent declaration in the Dockerfile modifies this parent image.</p>
       <p>For example:</p>
-      <codeblock>FROM docker.pkg.github.com/dita-ot/dita-ot/dita-ot:3.3.4
+      <codeblock outputclass="language-dockerfile normalize-space show-line-numbers show-whitespace">FROM docker.pkg.github.com/dita-ot/dita-ot/dita-ot:3.3.4
 
 RUN dita --install https://example.com/plugin.zip
 RUN dita --install from-plugin-registry</codeblock>

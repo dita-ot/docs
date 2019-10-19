@@ -104,6 +104,12 @@
   -v /c/Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> \
   -i /src/input.ditamap -o /src/out -f html5 -v</codeblock>
         </stepxmp>
+        <info>
+          <note>The DITA-OT container image uses the <codeph>ENTRYPOINT</codeph> instruction to run the
+              <cmdname>dita</cmdname> command from the <filepath>/opt/app/bin/</filepath> directory of the container
+            automatically, so you there’s no need to include the <cmdname>dita</cmdname> command itself, only the
+            arguments and options you need to publish your content.</note>
+        </info>
       </step>
     </steps>
     <example>

@@ -118,8 +118,54 @@
           <filepath>Dockerfile</filepath> and specify the official DITA-OT image as the basis for your image in the
           <filepath>FROM</filepath> directive.</p>
       <p>Each subsequent declaration in the Dockerfile modifies this parent image.</p>
-      <p>For example:</p>
-      <codeblock outputclass="language-dockerfile normalize-space show-line-numbers show-whitespace"><coderef href="../samples/docker/Dockerfile"/></codeblock>
+      <p>The <filepath>docsrc/samples</filepath> folder in the DITA-OT installation directory contains an example:</p>
+      <fig>
+        <title>Sample Dockerfile with custom plug-ins: <filepath conkeyref="conref-task/samples-dir"
+            /><filepath>/docker/Dockerfile</filepath></title>
+        <codeblock outputclass="language-dockerfile normalize-space show-line-numbers show-whitespace"><coderef href="../samples/docker/Dockerfile"/></codeblock>
+      </fig>
+      <p>You can build a Docker image from this example by running the following command from the <filepath
+          conkeyref="conref-task/samples-dir"/> directory:</p>
+      <codeblock>$ <cmdname>docker</cmdname> image build -t sample-docker-image:1.0 .
+Sending build context to Docker daemon  2.048kB
+Step 1/3 : FROM docker.pkg.github.com/dita-ot/dita-ot/dita-ot:3.3.4
+ ---> 9abb96827538
+Step 2/3 : RUN dita --install https://github.com/infotexture/dita-bootstrap/archive/3.3.zip
+ ---> Running in d510f874cae0
+Added net.infotexture.dita-bootstrap
+Removing intermediate container d510f874cae0
+ ---> 63deb8e15b5b
+Step 3/3 : RUN dita --install org.dita-community.pdf-page-break
+ ---> Running in b4ef2fcad916
+Added org.dita-community.pdf-page-break
+Removing intermediate container b4ef2fcad916
+ ---> 402885636b7f
+Successfully built 402885636b7f
+Successfully tagged sample-docker-image:1.0
+</codeblock>
+      <p>Docker steps through each instruction in the Dockerfile to build the sample image. In this case, the
+          <cmdname>dita</cmdname> command provides feedback on each installed plug-in.</p>
+      <p>You can then start a container based on your new image:</p>
+      <codeblock>$ <cmdname>docker</cmdname> container run -it \
+  -v /path/to/dita-ot-dir/docsrc:/src sample-docker-image:1.0 \
+  -i /src/userguide.ditamap \
+  -o /src/out/dita-bootstrap \
+  -f html5-bootstrap -v</codeblock>
+      <p>This command sequence specifies the following options:
+        <ul>
+          <li><option>-v</option> mounts the <filepath>docsrc</filepath> subfolder of the DITA-OT directory and binds it
+            to the <filepath>/src</filepath> volume in the container</li>
+          <li><option>-i</option> specifies <filepath conkeyref="conref-task/docsrc-dir"
+              /><filepath>/userguide.ditamap</filepath> as the input map file</li>
+          <li><option>-o</option> writes the output to <filepath conkeyref="conref-task/docsrc-dir"
+              /><filepath>/out/dita-bootstrap</filepath></li>
+          <li><option>-f</option> sets the output format to the Bootstrap template, and</li>
+          <li><option>-v</option> displays build progress messages with verbose logging</li>
+        </ul>
+      </p>
+      <p>When the build is finished, you should find a copy of the DITA-OT documentation under <filepath
+          conkeyref="conref-task/docsrc-dir"/><filepath>/out/dita-bootstrap</filepath>, styled with the basic Bootstrap
+        template from the custom plug-in.</p>
     </example>
   </taskbody>
 </task>

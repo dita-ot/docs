@@ -90,19 +90,29 @@
         <cmd>To build output, map a host directory to a container volume and specify options for the
             <cmdname>dita</cmdname> command.</cmd>
         <stepxmp>
-          <p>For example, to mount the <filepath>source</filepath> subfolder of your home directory and bind it to the
-              <filepath>/src</filepath> volume in the container:</p>
-          <codeblock><cmdname>docker</cmdname> run -it \
+          <codeblock>$ <cmdname>docker</cmdname> run -it \
   -v /Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> \
-  -i /src/input.ditamap -o /src/out -f html5 -v</codeblock>
-          <p>This command sequence specifies the <filepath>input.ditamap</filepath> file in your
-              <filepath>source</filepath> folder as input, generates HTML5 output in <filepath>source/out</filepath> and
-            displays build progress messages with verbose logging.</p>
+  -i /src/input.ditamap \
+  -o /src/out \
+  -f html5 -v</codeblock>
+          <p>This command sequence specifies the following options:
+            <ul>
+              <li><option>-v</option> mounts the <filepath>source</filepath> subfolder of your home directory and binds
+                it to the <filepath>/src</filepath> volume in the container</li>
+              <li><option>-i</option> specifies the <filepath>input.ditamap</filepath> file in your
+                  <filepath>source</filepath> folder as the input map file</li>
+              <li><option>-o</option> writes the output to <filepath>source/out</filepath></li>
+              <li><option>-f</option> sets the output format to HTML5, and</li>
+              <li><option>-v</option> displays build progress messages with verbose logging</li>
+            </ul>
+          </p>
           <p>On Windows, if your <filepath>Users</filepath> directory is on the <filepath>C:\</filepath> drive, use
               <filepath>/c/Users/…</filepath> to map the host directory:</p>
-          <codeblock><cmdname>docker</cmdname> run -it \
+          <codeblock>C:\Users\username> <cmdname>docker</cmdname> run -it \
   -v /c/Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> \
-  -i /src/input.ditamap -o /src/out -f html5 -v</codeblock>
+  -i /src/input.ditamap \
+  -o /src/out \
+  -f html5 -v</codeblock>
         </stepxmp>
         <info>
           <note>The DITA-OT container image uses the <codeph>ENTRYPOINT</codeph> instruction to run the

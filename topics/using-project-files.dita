@@ -105,7 +105,6 @@
         <stepxmp>
           <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>pdf.xml</varname></codeblock>
         </stepxmp>
-        <info/>
       </step>
       <step importance="optional">
         <cmd>If needed, pass additional arguments to the <cmdname>dita</cmdname> command to override specific build

@@ -24,7 +24,9 @@
       <topicref keyref="project-files-yaml"/>
     </topicref>
   </topicref>
-  <topicref keyref="using-docker-images"/>
+  <topicref keyref="using-docker-images">
+    <topicref keyref="creating-docker-images"/>
+  </topicref>
   <topicref keyref="publishing-with-ant">
     <topicref keyref="ant"/>
     <topicref keyref="building-with-ant"/>

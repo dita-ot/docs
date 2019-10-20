@@ -55,7 +55,7 @@
           </choice>
           <choice>On macOS, you can also install Docker Desktop via
             <xref keyref="homebrew"/>:
-            <codeblock>$ <cmdname>brew cask install docker</cmdname>
+            <codeblock>$ <cmdname>brew</cmdname> cask install docker
 <systemoutput>Downloading…</systemoutput></codeblock>
           </choice>
           <choice>On Linux, install Docker Community Edition (CE) via your operating system’s package manager, for

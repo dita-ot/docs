@@ -79,7 +79,51 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li/>
+          <li id="3250">Process only merged root map in preprocess and preprocess2
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3250" format="html" scope="external">#3250</xref>
+          </li>
+          <li id="3288">Remove obsolete demo build script
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3288" format="html" scope="external">#3288</xref>
+          </li>
+          <li id="3297">Refactor property declarations with isset guards to plain declarations
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3297" format="html" scope="external">#3297</xref>
+          </li>
+          <li id="3308">Decrease logging for Apache HTTP client packages
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3308" format="html" scope="external">#3308</xref>
+          </li>
+          <li id="3315">Convert conref push parser to DOM filter
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3315" format="html" scope="external">#3315</xref>
+          </li>
+          <li id="3329">Travis CI parallel jobs
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3329" format="html" scope="external">#3329</xref>
+          </li>
+          <li id="3330">Update Saxon to 9.9.1.4
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3330" format="html" scope="external">#3330</xref>
+          </li>
+          <li id="3339">Add location to transformer exception messages
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3339" format="html" scope="external">#3339</xref>
+          </li>
+          <li id="3341">If XSLT used in mapref module has error, it's impossible to see stack trace in console output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3341" format="html" scope="external">#3341</xref>
+          </li>
+          <li id="3354">Update Ant to 1.10.6
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3354" format="html" scope="external">#3354</xref>
+          </li>
+          <li id="3362">Update to Jackson 2.9.9
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3362" format="html" scope="external">#3362</xref>
+          </li>
+          <li id="3363">Remove TocJS plugin from default distribution
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3363" format="html" scope="external">#3363</xref>
+          </li>
+          <li id="3364">Remove troff plugin from default distribution
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3364" format="html" scope="external">#3364</xref>
+          </li>
+          <li id="3371">Update org.lwdita to 2.3.1
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3371" format="html" scope="external">#3371</xref>
+          </li>
+          <li id="3390">Add extension point for PDF2 index processing
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3390" format="html" scope="external">#3390</xref>
+          </li>
         </ul>
       </section>
 

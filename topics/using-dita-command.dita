@@ -56,7 +56,7 @@
       <p>
         <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option> \
      <parmname>--output</parmname>=<filepath>output/sequence</filepath> \
-     <parmname>--args.input.dir</parmname>=<filepath conref="../resources/conref-task.dita#ID/samples-dir"/> \
+     <parmname>--args.input.dir</parmname>=<filepath conref="../resources/conref-task.dita#ID/samples-absolute"/> \
      <parmname>--propertyfile</parmname>=<filepath>properties/sequence-html5.properties</filepath></codeblock>
       </p>
       <p>This builds <filepath>sequence.ditamap</filepath> to HTML5 output in <filepath>output/sequence</filepath> using

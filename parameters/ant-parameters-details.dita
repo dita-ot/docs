@@ -118,14 +118,6 @@
               or relative to the directory where your project’s Ant build script resides if
                 <parmname>args.input.dir</parmname> is not defined. </pd>
           </plentry>
-          <plentry id="args.input.dir">
-            <pt>
-              <parmname>args.input.dir</parmname>
-            </pt>
-            <pd conaction="mark" conref="parameters-base.dita#base/args.input.dir.desc"/>
-            <pd conaction="pushafter">The default value is the parent directory of the file specified by
-                <parmname>args.input</parmname>.</pd>
-          </plentry>
           <plentry id="args.logdir">
             <pt><parmname>args.logdir</parmname></pt>
             <pd conaction="mark" conref="parameters-base.dita#base/args.logdir.desc"/>

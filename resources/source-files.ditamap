@@ -14,6 +14,7 @@
   <keydef keys="books" href="../reference/books.dita"/>
   <keydef keys="building-output" href="../topics/building-output.dita"/>
   <keydef keys="building-with-ant" href="../topics/building-with-ant.dita"/>
+  <keydef keys="common-html-processing" href="../reference/common-html-processing.dita"/>
   <keydef keys="configuration-properties" href="../parameters/configuration-properties.dita"/>
   <keydef keys="configuration-properties-file" href="../parameters/configuration-properties-file.dita"/>
   <keydef keys="conref-task" href="../resources/conref-task.dita"/>
@@ -25,9 +26,9 @@
   <keydef keys="dita-and-dita-ot-resources" href="../topics/dita-and-dita-ot-resources.dita"/>
   <keydef keys="dita-command-arguments" href="../parameters/dita-command-arguments.dita"/>
   <keydef keys="dita-command-help" href="../topics/dita-command-help.dita"/>
-  <keydef keys="DITA-features-in-docs" href="../reference/DITA-features-in-docs.dita"/>
-  <keydef keys="DITA-messages messages" href="../topics/DITA-messages.xml"/>
-  <keydef keys="DITA-messages-details" href="../topics/DITA-messages-details.xml"/>
+  <keydef keys="dita-spec-support" href="../reference/dita-spec-support.dita"/>
+  <keydef keys="dita-v1-2-support" href="../reference/dita-v1-2-support.dita"/>
+  <keydef keys="dita-v1-3-support" href="../reference/dita-v1-3-support.dita"/>
   <keydef keys="dita2dita" href="../topics/dita2dita.dita"/>
   <keydef keys="dita2eclipsehelp" href="../topics/dita2eclipsehelp.dita"/>
   <keydef keys="dita2html5" href="../topics/dita2html5.dita"/>
@@ -35,10 +36,11 @@
   <keydef keys="dita2markdown" href="../topics/dita2markdown.dita"/>
   <keydef keys="dita2pdf" href="../topics/dita2pdf.dita"/>
   <keydef keys="dita2xhtml" href="../topics/dita2xhtml.dita"/>
-  <keydef keys="DITA_spec-support" href="../reference/DITA_spec-support.dita"/>
-  <keydef keys="DITA_v1-2-support" href="../reference/DITA_v1-2-support.dita"/>
-  <keydef keys="DITA_v1-3-support" href="../reference/DITA_v1-3-support.dita"/>
+  <keydef keys="docs-dita-features" href="../reference/docs-dita-features.dita"/>
+  <keydef keys="eclipsehelp-processing" href="../reference/eclipsehelp-processing.dita"/>
   <keydef keys="enabling-debug-mode" href="../topics/enabling-debug-mode.dita"/>
+  <keydef keys="error-messages messages" href="../topics/error-messages.xml"/>
+  <keydef keys="error-messages-details messages-push" href="../topics/error-messages-details.xml"/>
   <keydef keys="extended-functionality" href="../reference/extended-functionality.dita"/>
   <keydef keys="extension-points-by-plugin" href="../extension-points/extension-points-by-plugin.dita"/>
   <keydef keys="extension-points-details" href="../extension-points/extension-points-details.dita"/>
@@ -48,6 +50,7 @@
   <keydef keys="globalization-languages" href="../topics/globalization-languages.dita"/>
   <keydef keys="globalization-support" href="../topics/globalization-support.dita"/>
   <keydef keys="glossary" href="../reference/glossary.dita"/><!-- Glossary keys are defined in glossary.ditamap -->
+  <keydef keys="html-based-processing" href="../reference/html-based-processing.dita"/>
   <keydef keys="html-customization" href="../topics/html-customization.dita"/>
   <keydef keys="html-customization-css" href="../topics/html-customization-css.dita"/>
   <keydef keys="html-customization-header" href="../topics/html-customization-header.dita"/>
@@ -58,7 +61,8 @@
   <keydef keys="html-customization-plugin-webfont" href="../topics/html-customization-plugin-webfont.dita"/>
   <keydef keys="html-customization-plugins" href="../topics/html-customization-plugins.dita"/>
   <keydef keys="html-customization-properties-file" href="../topics/html-customization-properties-file.dita"/>
-  <keydef keys="html5" href="../reference/html5.dita"/>
+  <keydef keys="html5-processing" href="../reference/html5-processing.dita"/>
+  <keydef keys="htmlhelp-processing" href="../reference/htmlhelp-processing.dita"/>
   <keydef keys="implementation-dependent-features" href="../reference/implementation-dependent-features.dita"/>
   <keydef keys="increasing-the-jvm" href="../topics/increasing-the-jvm.dita"/>
   <keydef keys="installing-client" href="../topics/installing-client.dita"/>
@@ -167,6 +171,7 @@
   <keydef keys="rebuilding-docs" href="../topics/rebuilding-docs.dita"/>
   <keydef keys="reducing-processing-time" href="../topics/reducing-processing-time.dita"/>
   <keydef keys="reference" href="../reference/index.dita"/>
+  <keydef keys="referencing-other-plugins" href="../topics/referencing-other-plugins.dita"/>
   <keydef keys="release-notes" href="../release-notes/index.dita"/>
   <keydef keys="reusable-components" href="../resources/reusable-components.dita"/>
   <keydef keys="third-party-software" href="../reference/third-party-software.dita"/>
@@ -174,14 +179,9 @@
   <keydef keys="using-dita-command" href="../topics/using-dita-command.dita"/>
   <keydef keys="using-dita-properties-file" href="../topics/using-dita-properties-file.dita"/>
   <keydef keys="using-docker-images" href="../topics/using-docker-images.dita"/>
-  <keydef keys="using-plugin-URI-extension" href="../topics/using-plugin-URI-extension.dita"/>
   <keydef keys="using-project-files" href="../topics/using-project-files.dita"/>
   <keydef keys="web-based-resources" href="../topics/web-based-resources.dita"/>
-  <keydef keys="XhtmlCHM" href="../reference/XhtmlCHM.dita"/>
-  <keydef keys="XhtmlCommon" href="../reference/XhtmlCommon.dita"/>
-  <keydef keys="XhtmlDefault" href="../reference/XhtmlDefault.dita"/>
-  <keydef keys="XhtmlEclipse" href="../reference/XhtmlEclipse.dita"/>
-  <keydef keys="XhtmlWithNavigation" href="../reference/XhtmlWithNavigation.dita"/>
+  <keydef keys="xhtml-processing" href="../reference/xhtml-processing.dita"/>
 
   <!-- Generated topics; this list should probably be generated automatically when all targets are valid -->
   <keydef keys="all-extension-points" href="../extension-points/all-extension-points.dita"/>

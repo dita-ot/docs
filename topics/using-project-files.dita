@@ -7,11 +7,11 @@
   <titlealts>
     <navtitle>Using a project file</navtitle>
   </titlealts>
-  <shortdesc><ph id="projects-desc">DITA-OT project files can be used to define an entire publication project with
-      multiple deliverables. Project files allow you to specify the settings for each deliverable in advance, including
-      input files, output folders, profiling conditions, transformation type, and parameters for each publication. You
-      can pass a project file to the <cmdname>dita</cmdname> command to publish multiple deliverables at
-    once.</ph></shortdesc>
+  <shortdesc><ph id="projects-desc">DITA-OT 3.4 introduces new project files to define publication projects with
+      multiple deliverables. Projects specify a context, output folder, and publication for each deliverable. A
+      re-usable context groups source files and filters, and a publication defines an output format with transformation
+      parameters. You can pass a project file to the <cmdname>dita</cmdname> command to publish multiple deliverables at
+      once.</ph></shortdesc>
   <prolog>
     <metadata>
       <keywords>

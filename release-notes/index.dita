@@ -28,7 +28,7 @@
 
   <reference id="v3.4">
     <title>DITA-OT <keyword keyref="release"/>
-      <!--<ph outputclass="small text-muted">released MMM d, yyyy</ph>-->
+      <ph outputclass="small text-muted">scheduled for release November 9, 2019</ph>
     </title>
     <prolog>
       <metadata>
@@ -40,42 +40,53 @@
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">an official Docker container
-            image and new project file formats that can be used to define an entire publication project with multiple
-            deliverables</ph>.</p>
+            image, a new option to skip HTML5 cover pages, and initial support for project files that allow you to
+            define multiple deliverables in advance, and publish them all at once</ph>.</p>
       </section>
 
-      <section id="features">
-        <title>Feature Highlights</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following new features:</p>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
-        <ul>
-          <li id="3243">Add support for project configuration
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3243" format="html" scope="external">#3243</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3256" format="html" scope="external">#3256</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3262" format="html" scope="external">#3262</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3265" format="html" scope="external">#3265</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3268" format="html" scope="external">#3268</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3269" format="html" scope="external">#3269</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3276" format="html" scope="external">#3276</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3298" format="html" scope="external">#3298</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3300" format="html" scope="external">#3300</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3382" format="html" scope="external">#3382</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3388" format="html" scope="external">#3388</xref>
-          </li>
-          <li id="3301">Add property to skip HTML5 TOC file generation
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3301" format="html" scope="external">#3301</xref>
-          </li>
-          <li id="3358">Add Docker configuration
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3358" format="html" scope="external">#3358</xref>
-          </li>
-        </ul>
+      <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
+      <section id="docker">
+        <title>Docker container image</title>
+        <p id="3358"><ph conkeyref="using-docker-images/docker-desc"/>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3358" format="html" scope="external">#3358</xref>
+        </p>
+      </section>
+
+      <section id="html5-toc">
+        <title>Skip HTML5 cover pages</title>
+        <p id="3301">The HTML5 transformation supports a new property that determines whether a table of contents file
+          should be generated to link to the other topics from the input map. The
+            <parmname>html5.toc.generate</parmname> parameter is set to <option>yes</option> by default, and creates a
+          cover page named <filepath>index.html</filepath> as with previous versions of DITA-OT. If you’re using the
+            <parmname>nav-toc</parmname> parameter to embed navigation links in topics, you can set
+            <parmname>html5.toc.generate</parmname> to <option>no</option> to stop creating the extra file.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3301" format="html" scope="external">#3301</xref>
+        </p></section>
+
+      <section id="projects">
+        <title>Project files</title>
+        <p id="3243"><ph conkeyref="using-project-files/projects-desc"/></p>
+        <p conkeyref="using-project-files/projects-formats"/>
+        <p>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3243" format="html" scope="external">#3243</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3256" format="html" scope="external">#3256</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3262" format="html" scope="external">#3262</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3265" format="html" scope="external">#3265</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3268" format="html" scope="external">#3268</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3269" format="html" scope="external">#3269</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3276" format="html" scope="external">#3276</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3298" format="html" scope="external">#3298</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3300" format="html" scope="external">#3300</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3382" format="html" scope="external">#3382</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3388" format="html" scope="external">#3388</xref>
+        </p>
       </section>
 
       <section id="enhancements">
         <title>Enhancements and changes</title>
         <indexterm/>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
-          existing features:</p>
+        <p>In addition to the highlights mentioned above, DITA Open Toolkit Release <keyword keyref="release"/> includes
+          the following enhancements and changes to existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
           <li id="3250">Process only merged root map in preprocess and preprocess2
@@ -200,9 +211,8 @@
               <li>
                 <xref keyref="creating-docker-images"/></li>
             </ul></li>
-          <!--
           <li>
-            <xref keyref="migrating-to-3.4"/></li> -->
+            <xref keyref="migrating-to-3.4"/></li>
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"/>, see the

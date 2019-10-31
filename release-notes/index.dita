@@ -30,6 +30,9 @@
     <title>DITA-OT <keyword keyref="release"/>
       <ph outputclass="small text-muted">scheduled for release November 9, 2019</ph>
     </title>
+    <titlealts>
+      <navtitle>DITA-OT <keyword keyref="release"/></navtitle>
+    </titlealts>
     <prolog>
       <metadata>
         <keywords>
@@ -192,7 +195,7 @@
       <section id="docs">
         <title>Documentation updates</title>
         <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
-          improvements to existing topics, along with a basic
+          improvements to existing topics, sample project files in the <filepath>docsrc/samples/</filepath> folder, a
           <xref keyref="glossary"/>, PDF index, and new information in the following topics:</p>
         <ul>
           <li>

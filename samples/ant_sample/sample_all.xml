@@ -4,8 +4,6 @@
 
 <project name="sample_all" default="all" basedir=".">
 
-  <property name="args.logdir" value="log"/>
-
   <import file="sample_html5.xml"/>
   <import file="sample_xhtml_plus_css.xml"/>
   <import file="sample_eclipsehelp.xml"/>

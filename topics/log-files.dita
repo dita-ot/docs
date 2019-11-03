@@ -3,7 +3,10 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <concept id="loghandling">
-  <title>Log files</title>
+  <title>Logging build information</title>
+  <titlealts>
+    <navtitle>Logging</navtitle>
+  </titlealts>
   <shortdesc>When you run DITA-OT, key information is logged on the screen. This information can also be written to a
     log file. If you encounter a problem, you can analyze this information to determine the source of the problem and
     then take action to resolve it.</shortdesc>

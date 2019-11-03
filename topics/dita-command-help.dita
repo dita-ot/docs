@@ -4,6 +4,9 @@
 
 <task id="accessing-help-from-the-cl-tool">
   <title>Accessing help for the dita command</title>
+  <titlealts>
+    <navtitle>Command line help</navtitle>
+  </titlealts>
   <shortdesc>You can access a list of supported parameters for the <cmdname>dita</cmdname> command by passing the
       <parmname>--help</parmname> option on the command line.</shortdesc>
   <prolog>

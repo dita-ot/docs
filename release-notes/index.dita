@@ -43,8 +43,9 @@
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">an official Docker container
-            image, a new option to skip HTML5 cover pages, and initial support for project files that allow you to
-            define multiple deliverables in advance, and publish them all at once</ph>.</p>
+            image, a separate plug-in for PDF indexing, a new option to skip HTML5 cover pages, and initial support for
+            project files that allow you to define multiple deliverables in advance, and publish them all at
+          once</ph>.</p>
       </section>
 
       <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
@@ -52,6 +53,15 @@
         <title>Docker container image</title>
         <p id="3358"><ph conkeyref="using-docker-images/docker-desc"/>
           <xref href="https://github.com/dita-ot/dita-ot/issues/3358" format="html" scope="external">#3358</xref>
+        </p>
+      </section>
+
+      <section id="indexing-plugin">
+        <title>New indexing plug-in</title>
+        <sectiondiv conkeyref="migrating-to-3.4/indexing-plugin"/>
+        <p id="3390">
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3390" format="html" scope="external">#3390</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3396" format="html" scope="external">#3396</xref>
         </p>
       </section>
 
@@ -133,9 +143,6 @@
           </li>
           <li id="3371">Update org.lwdita to 2.3.1
             <xref href="https://github.com/dita-ot/dita-ot/issues/3371" format="html" scope="external">#3371</xref>
-          </li>
-          <li id="3390">Add extension point for PDF2 index processing
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3390" format="html" scope="external">#3390</xref>
           </li>
         </ul>
       </section>

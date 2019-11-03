@@ -102,47 +102,78 @@
           the following enhancements and changes to existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="3250">Process only merged root map in preprocess and preprocess2
+          <li id="3250">The original preprocessing and map-first preprocessing pipelines have been simplified to process
+            only the merged root map, where previous versions would redundantly process all DITA maps.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3250" format="html" scope="external">#3250</xref>
           </li>
-          <li id="3288">Remove obsolete demo build script
+          <li id="3288">The obsolete <filepath>build_demo.xml</filepath> script that was previously used to build Ant
+            samples has been removed from the source code repository. (The file was removed from distribution packages
+            with version 2.1.)
             <xref href="https://github.com/dita-ot/dita-ot/issues/3288" format="html" scope="external">#3288</xref>
           </li>
-          <li id="3297">Refactor property declarations with isset guards to plain declarations
+          <li id="3297">Ant scripts have been refactored to simplify <xmlelement>condition</xmlelement> elements with
+              <xmlelement>isset</xmlelement> guards to set properties with plain <xmlelement>property</xmlelement>
+            declarations instead.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3297" format="html" scope="external">#3297</xref>
           </li>
-          <li id="3308">Decrease logging for Apache HTTP client packages
+          <li id="3307">The logging level for Apache HTTP Client libraries has been reduced to <codeph>INFO</codeph> to
+            quiet the default log output. This information can be displayed if necessary by enabling verbose logging.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3307" format="html" scope="external">#3307</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3308" format="html" scope="external">#3308</xref>
           </li>
-          <li id="3315">Convert conref push parser to DOM filter
+          <li id="3315">The <codeph>ConrefPushParser</codeph> has been converted from a SAX filter to a DOM filter.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3315" format="html" scope="external">#3315</xref>
           </li>
-          <li id="3329">Travis CI parallel jobs
+          <li id="3329">
+            <xref href="https://travis-ci.org/" format="html" scope="external">Travis CI</xref> build stages are now
+            used to run tests and deployments in parallel to speed up continuous integration builds.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3329" format="html" scope="external">#3329</xref>
           </li>
-          <li id="3330">Update Saxon to 9.9.1.4
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3330" format="html" scope="external">#3330</xref>
+          <li id="3330">Several bundled dependencies have been upgraded to the latest versions.
+            <ul>
+              <li>Ant 1.10.6
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3354" format="html" scope="external">#3354</xref>
+              </li>
+              <li>Gradle 5.6.3
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3375" format="html" scope="external">#3375</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3402" format="html" scope="external">#3402</xref>
+              </li>
+              <li>Jackson 2.9.9
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3362" format="html" scope="external">#3362</xref>
+              </li>
+              <li>Saxon-HE 9.9.1.4
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3330" format="html" scope="external">#3330</xref>
+              </li>
+            </ul>
           </li>
-          <li id="3339">Add location to transformer exception messages
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3339" format="html" scope="external">#3339</xref>
-          </li>
-          <li id="3341">If XSLT used in mapref module has error, it's impossible to see stack trace in console output
+          <li id="3334">XSLT error messages now include location information in more cases to make it easier to find the
+            source of the problem.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3334" format="html" scope="external">#3334</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3339" format="html" scope="external">#3339</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3341" format="html" scope="external">#3341</xref>
           </li>
-          <li id="3354">Update Ant to 1.10.6
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3354" format="html" scope="external">#3354</xref>
-          </li>
-          <li id="3362">Update to Jackson 2.9.9
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3362" format="html" scope="external">#3362</xref>
-          </li>
-          <li id="3363">Remove TocJS plugin from default distribution
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3363" format="html" scope="external">#3363</xref>
-          </li>
-          <li id="3364">Remove troff plugin from default distribution
+          <li id="3363">DITA-OT 3.4 no longer includes the TocJS and troff transformation plug-ins in the default
+            distribution.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3363" format="html" scope="external">#3363</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3364" format="html" scope="external">#3364</xref>
+            <note conkeyref="reusable-components/legacy-plugins-note"/>
           </li>
-          <li id="3371">Update org.lwdita to 2.3.1
+          <li id="3371">The LwDITA plugin has been updated to version 2.3.1, pulling in a number of fixes for
+            Lightweight DITA processing, including support for absolute links in Markdown input, and updated processing
+            for escaped characters and nested blocks in Markdown output.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3371" format="html" scope="external">#3371</xref>
+          </li>
+          <li id="3399">The <parmname>args.logdir</parmname> parameter (deprecated since DITA-OT 2.5) has been removed.
+            To write the log to a file, use <cmdname>dita</cmdname>
+            <parmname>--logfile</parmname>=<varname>file</varname> or <cmdname>ant</cmdname>
+            <parmname>-l</parmname>
+            <varname>file</varname> and specify the path to the log file.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3399" format="html" scope="external">#3399</xref>
+          </li>
+          <li id="3401">The source code for the DITA 1.1 and 1.2 plug-ins has been removed from the core repository and
+            extracted to dedicated code repositories. The plug-ins themselves remain available in the DITA-OT 3.4
+            distribution package.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3401" format="html" scope="external">#3401</xref>
           </li>
         </ul>
       </section>

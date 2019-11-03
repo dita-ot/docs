@@ -86,9 +86,7 @@
           </tbody>
         </tgroup>
       </table>
-      <note>If necessary, legacy plug-ins may be re-installed from earlier DITA-OT distributions, but they are no longer
-        actively maintained or supported by the core toolkit committers. The source code is available on GitHub for
-        anyone interested in maintaining the plug-ins for use with future toolkit versions.</note>
+      <note conkeyref="reusable-components/legacy-plugins-note"/>
       <p>To re-install the plug-in(s) from the plug-in registry at
         <xref keyref="site-plugin-registry"/>, run the following command(s):</p>
       <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<filepath>com.sophos.tocjs</filepath>

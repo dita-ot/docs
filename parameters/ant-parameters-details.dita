@@ -327,8 +327,8 @@
             <pt><parmname>args.css</parmname></pt>
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.css.desc"/>
             <pd conaction="pushafter">
-              <div id="args.css.details">The value of this parameter should be only the file name (or an absolute path
-                to the file). A relative path can be specified with <parmname>args.cssroot</parmname>.</div></pd>
+              <div id="args.css.details">The value of this parameter should be only the file name. The absolute path to
+                the parent directory should be specified with <parmname>args.cssroot</parmname>.</div></pd>
           </plentry>
           <plentry id="args.csspath">
             <pt>
@@ -362,10 +362,8 @@
             <pd conaction="pushafter">
               <div id="args.cssroot.details">
                 <p>DITA-OT will copy the file <b>from</b> this location.</p>
-                <note type="tip">The value you enter here will be interpreted relative to the location of the input map
-                  file. If your map is stored at the root level of your project folder and the CSS file is stored in a
-                  subfolder named <filepath>resources</filepath>, set <parmname>args.cssroot</parmname> to
-                    <option>resources</option>.</note>
+                <note type="important">Enter the absolute path to the parent directory of the custom CSS file specified
+                  with <parmname>args.css</parmname>.</note>
               </div></pd>
           </plentry>
           <plentry id="args.dita.locale">

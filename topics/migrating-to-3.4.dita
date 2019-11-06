@@ -28,8 +28,10 @@
           processing targets to PDF output.</p>
         <p>The built-in index processing has been disabled and deprecated. If you have overridden index processing via
           the <codeph>transform.topic2fo</codeph> target in the past, you can set the new
-            <parmname>pdf2.index.skip</parmname> property to <option>yes</option> and re-enable the
-            <codeph>transform.topic2fo.index</codeph> target to use your existing customizations.</p>
+            <parmname>org.dita.index.skip</parmname> property to <option>yes</option> and re-enable the
+            <codeph>transform.topic2fo.index</codeph> target with <xmlelement>feature
+            extension="depend.org.dita.pdf2.index" value="transform.topic2fo.index"/</xmlelement> in your plug-in
+          configuration.</p>
       </sectiondiv>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>New plug-ins</title>

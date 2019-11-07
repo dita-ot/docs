@@ -11,7 +11,8 @@
       <keywords>
         <indexterm><xmlelement>note</xmlelement></indexterm>
         <indexterm><xmlatt>xml:lang</xmlatt></indexterm>
-        <indexterm>languages<indexterm>adding support for</indexterm></indexterm>
+        <indexterm>languages
+          <indexterm>adding support for</indexterm></indexterm>
         <indexterm>English</indexterm>
         <indexterm>Icelandic</indexterm>
         <indexterm>Russian</indexterm>
@@ -19,7 +20,8 @@
         <indexterm>Gaelic</indexterm>
         <indexterm>strings</indexterm>
         <indexterm>generated text</indexterm>
-        <indexterm>draft<indexterm>localizing generated text</indexterm></indexterm>
+        <indexterm>draft
+          <indexterm>localizing generated text</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -46,10 +48,10 @@
     </section>
     <example>
       <title>Example: adding new strings</title>
-      <p>First copy the file <filepath>xsl/common/strings.xml</filepath> to your plug-in, and edit it to contain the
-        languages that you are providing translations for ("en-US" must be present). For this sample, copy the file into
-        your plug-in as <filepath>xsl/my-new-strings.xml</filepath>. The new strings file will look something like
-        this:</p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="utf-8"?>
+      <p>First, copy the file <filepath>xsl/common/strings.xml</filepath> from the base plug-in directory
+          <filepath>plugins/org.dita.base</filepath> to your plug-in, and edit it to contain the languages that you are
+        providing translations for ("en-US" must be present). For this sample, copy the file into your plug-in as
+          <filepath>xsl/my-new-strings.xml</filepath>. The new strings file will look something like this:</p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;!-- Provide strings for my plug-in; this plug-in supports
      English, Icelandic, and Russian. -->
 &lt;langlist>
@@ -60,9 +62,10 @@
   &lt;lang xml:lang="ru"     filename="mystring-ru-ru.xml"/>
   &lt;lang xml:lang="ru-RU"  filename="mystring-ru-ru.xml"/>
 &lt;/langlist></codeblock>
-      <p>Next, copy the file <filepath>xsl/common/strings-en-us.xml</filepath> to your plug-in, and replace the content
-        with your own strings (be sure to give them unique name attributes). Do the same for each language that you are
-        providing a translation for. For example, the file <filepath>mystring-en-us.xml</filepath> might contain:</p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="utf-8"?>
+      <p>Next, copy the file <filepath>xsl/common/strings-en-us.xml</filepath> from the base plug-in directory
+          <filepath>plugins/org.dita.base</filepath> to your plug-in, and replace the content with your own strings (be
+        sure to give them unique name attributes). Do the same for each language that you are providing a translation
+        for. For example, the file <filepath>mystring-en-us.xml</filepath> might contain:</p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;strings xml:lang="en-US">
   &lt;str name="String1">English generated text&lt;/str>
   &lt;str name="Another String">Another String in English&lt;/str>
@@ -70,9 +73,9 @@
       <p>Use the following extension code to include your strings in the set of generated text: </p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.strings">
   &lt;feature extension="dita.xsl.strings" file="xsl/my-new-strings.xml"/>
 &lt;/plugin></codeblock>
-      <p>The string is now available to the "getVariable" template used in many DITA-OT XSLT files.
-        For example, if processing in a context where the xml:lang value is "en-US", the following
-        call would return "Another String in English":</p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="getVariable">
+      <p>The string is now available to the "getVariable" template used in many DITA-OT XSLT files. For example, if
+        processing in a context where the xml:lang value is "en-US", the following call would return "Another String in
+        English":</p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="getVariable">
   &lt;xsl:with-param name="id" select="'Another String'"/>
 &lt;/xsl:call-template></codeblock>
       <note>If two plug-ins define the same string, the results will be non-deterministic, so multiple plug-ins should
@@ -84,10 +87,11 @@
       <p>The process for modifying existing generated text is exactly the same as for adding new text, except that the
         strings you provide override values that already exist. To begin, set up the
           <filepath>xsl/my-new-strings.xml</filepath> file in your plug-in as in the previous example. </p>
-      <p>Next, copy the file <filepath>xsl/common/strings-en-us.xml</filepath> to your plug-in, and choose the strings
-        you wish to change (be sure to leave the name attribute unchanged, because this is the key used to look up the
-        string). Create a strings file for each language that needs to modify existing strings. For example, the new
-        file <filepath>mystring-en-us.xml</filepath> might contain:</p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="utf-8"?>
+      <p>Next, copy the file <filepath>xsl/common/strings-en-us.xml</filepath> from the base plug-in directory
+          <filepath>plugins/org.dita.base</filepath> to your plug-in, and choose the strings you wish to change (be sure
+        to leave the name attribute unchanged, because this is the key used to look up the string). Create a strings
+        file for each language that needs to modify existing strings. For example, the new file
+          <filepath>mystring-en-us.xml</filepath> might contain:</p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;strings xml:lang="en-US">
   &lt;str name="Figure">Fig&lt;/str>
   &lt;str name="Draft comment">ADDRESS THIS DRAFT COMMENT&lt;/str>
@@ -113,8 +117,9 @@
   &lt;lang xml:lang="vi"     filename="strings-vi.xml"/>
   &lt;lang xml:lang="vi-VN"  filename="strings-vi.xml"/>
 &lt;/langlist></codeblock></p>
-      <p>Next, copy the file <filepath>xsl/common/strings-en-us.xml</filepath> to your plug-in, and rename it to match
-        the language you wish to add. For example, to support Vietnamese strings you may want to pick a name like
+      <p>Next, copy the file <filepath>xsl/common/strings-en-us.xml</filepath> from the base plug-in directory
+          <filepath>plugins/org.dita.base</filepath> to your plug-in, and rename it to match the language you wish to
+        add. For example, to support Vietnamese strings you may want to pick a name like
           <filepath>strings-vi.xml</filepath>. In that file, change the <xmlatt>xml:lang</xmlatt> attribute on the root
         element to match your new language.</p>
       <p>Once the file is ready, translate the contents of each <xmlelement>str</xmlelement> element (be sure to leave

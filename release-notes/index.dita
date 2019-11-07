@@ -91,7 +91,8 @@
           <xref href="https://github.com/dita-ot/dita-ot/issues/3298" format="html" scope="external">#3298</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/3300" format="html" scope="external">#3300</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/3382" format="html" scope="external">#3382</xref>,
-          <xref href="https://github.com/dita-ot/dita-ot/issues/3388" format="html" scope="external">#3388</xref>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3388" format="html" scope="external">#3388</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3394" format="html" scope="external">#3394</xref>
         </p>
       </section>
 
@@ -105,6 +106,10 @@
           <li id="3250">The original preprocessing and map-first preprocessing pipelines have been simplified to process
             only the merged root map, where previous versions would redundantly process all DITA maps.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3250" format="html" scope="external">#3250</xref>
+          </li>
+          <li id="3264">Conref processing has been updated to resolve content references to specializations of the
+            referencing element
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3264" format="html" scope="external">#3264</xref>
           </li>
           <li id="3288">The obsolete <filepath>build_demo.xml</filepath> script that was previously used to build Ant
             samples has been removed from the source code repository. (The file was removed from distribution packages

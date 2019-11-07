@@ -167,10 +167,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3364" format="html" scope="external">#3364</xref>
             <note conkeyref="reusable-components/legacy-plugins-note"/>
           </li>
-          <li id="3371">The LwDITA plugin has been updated to version 2.3.1, pulling in a number of fixes for
-            Lightweight DITA processing, including support for absolute links in Markdown input, and updated processing
-            for escaped characters and nested blocks in Markdown output.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3371" format="html" scope="external">#3371</xref>
+          <li id="3371">The LwDITA plug-in has been updated to version 2.3.2, pulling in a number of fixes for
+            Lightweight DITA processing, including support for absolute links and strikethrough in Markdown input, and
+            updated processing for escaped characters and nested blocks in Markdown output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3371" format="html" scope="external">#3371</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3408" format="html" scope="external">#3408</xref>
           </li>
           <li id="3399">The <parmname>args.logdir</parmname> parameter (deprecated since DITA-OT 2.5) has been removed.
             To write the log to a file, use <cmdname>dita</cmdname>

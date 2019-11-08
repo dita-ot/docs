@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<glossentry id="gloss-template-plugin">
+  <glossterm>template</glossterm>
+  <glossdef>Optional <xmlelement>template</xmlelement> elements can be added to <filepath>plugin.xml</filepath> files to
+    define XML or XSL files that integrate DITA-OT extensions. Template files are often named with a
+      <filepath>_template</filepath> suffix, and may be used to create custom extensions, group targets, and more.
+    Anything contained in the plug-in’s template files is integrated when the plug-in is installed.</glossdef>
+</glossentry>

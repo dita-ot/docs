@@ -14,9 +14,12 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>.properties file</indexterm></indexterm>
-        <indexterm>HTML<indexterm>build properties</indexterm></indexterm>
-        <indexterm>CSS<indexterm>.properties file</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>.properties file</indexterm></indexterm>
+        <indexterm>HTML
+          <indexterm>build properties</indexterm></indexterm>
+        <indexterm>CSS
+          <indexterm>.properties file</indexterm></indexterm>
         <indexterm>.properties file</indexterm>
       </keywords>
     </metadata>
@@ -28,15 +31,15 @@
         <cmd>Create a <filepath>.properties</filepath> file to store the parameter settings for your
           customization.</cmd>
         <info>
-          <note type="tip">You can use the <filepath>.properties</filepath> for the DITA-OT documentation as a starting
-            point for your own customizations. This file is available in the installation folder under
-              <filepath>docsrc/samples/properties/docs-build-html5.properties</filepath>.</note>
+          <note type="tip">You can use one of the sample <filepath>.properties</filepath> files from the DITA-OT
+            documentation as a starting point for your own customizations. These files are available in the installation
+            folder under <filepath>docsrc/samples/properties/</filepath>.</note>
         </info>
         <stepxmp>
           <p>For example:</p>
           <fig>
-            <title>The <filepath>docsrc/samples/properties/docs-build-html5.properties</filepath> file</title>
-            <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/docs-build-html5.properties"/></codeblock>
+            <title>The <filepath>docsrc/samples/properties/sequence-html5.properties</filepath> file</title>
+            <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/sequence-html5.properties"/></codeblock>
           </fig>
         </stepxmp>
       </step>

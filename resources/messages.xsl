@@ -10,13 +10,13 @@
 
   <xsl:template match="/">
     <xsl:comment>
-     This file is part of the DITA Open Toolkit project. 
+     This file is part of the DITA Open Toolkit project.
      See the accompanying LICENSE file for applicable license.
     </xsl:comment>
     <xsl:comment>
      This file is generated based on the message information shipped
      with DITA-OT, as defined in the file
-     DITA-OT/resources/messages.xml
+     DITA-OT/config/messages.xml
      To regenerate this topic, run the following command:
      DITA-OT/docsrc/gradlew messages
 

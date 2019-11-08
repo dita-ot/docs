@@ -20,10 +20,10 @@
   <refbody>
     <section id="section_jla_oqn_qc">
       <title>Chunking</title>
-      <div outputclass="div-index">
-        <indexterm><xmlatt>chunk</xmlatt><indexterm>supported methods</indexterm></indexterm>
-        <indexterm><xmlatt>chunk</xmlatt><indexterm>error recovery</indexterm></indexterm>
-      </div>
+      <indexterm><xmlatt>chunk</xmlatt>
+        <indexterm>supported methods</indexterm></indexterm>
+      <indexterm><xmlatt>chunk</xmlatt>
+        <indexterm>error recovery</indexterm></indexterm>
       <p>DITA content can be divided or merged into new output documents in different ways, depending on the value of
         the <xmlatt>chunk</xmlatt> attribute.</p>
       <p>DITA-OT supports the following chunking methods:</p>
@@ -48,11 +48,10 @@
     </section>
     <section id="section_zaa_bgs_qc">
       <title>Filtering</title>
-      <div outputclass="div-index">
-        <indexterm><xmlelement>revprop</xmlelement></indexterm>
-        <indexterm><xmlatt>val</xmlatt></indexterm>
-        <indexterm>filters<indexterm>duplicate conditions</indexterm></indexterm>
-      </div>
+      <indexterm><xmlelement>revprop</xmlelement></indexterm>
+      <indexterm><xmlatt>val</xmlatt></indexterm>
+      <indexterm>filters
+        <indexterm>duplicate conditions</indexterm></indexterm>
       <p>Error recovery:</p>
       <ul>
         <li>When there are multiple <xmlelement>revprop</xmlelement> elements with the same <xmlatt>val</xmlatt>
@@ -63,11 +62,12 @@
     </section>
     <section id="section_kjq_egs_qc">
       <title>Debugging attributes</title>
-      <div outputclass="div-index">
-        <indexterm>debugging<indexterm>attributes</indexterm><indexterm>xtrf</indexterm><indexterm>xtrc</indexterm></indexterm>
+      <indexterm>debugging
+        <indexterm>attributes</indexterm>
         <indexterm>xtrf</indexterm>
-        <indexterm>xtrc</indexterm>
-      </div>
+        <indexterm>xtrc</indexterm></indexterm>
+      <indexterm>xtrf</indexterm>
+      <indexterm>xtrc</indexterm>
       <p>The debug attributes are populated as follows:</p>
       <dl>
         <dlentry>
@@ -83,26 +83,23 @@
     </section>
     <section id="section_dco_qgs_qc">
       <title>Image scaling</title>
-      <indexterm>images<indexterm>scaling</indexterm></indexterm>
+      <indexterm>images
+        <indexterm>scaling</indexterm></indexterm>
       <p>If both height and width attributes are given, the image is scaled non-uniformly.</p>
       <p>If the scale attribute is not an unsigned integer, no error or warning is thrown during preprocessing.</p>
     </section>
     <section>
       <title>Map processing</title>
-      <div outputclass="div-index">
-        <indexterm><xmlelement>topicref</xmlelement></indexterm>
-        <indexterm>map processing</indexterm>
-      </div>
+      <indexterm><xmlelement>topicref</xmlelement></indexterm>
+      <indexterm>map processing</indexterm>
       <p>When a <xmlelement>topicref</xmlelement> element that references a map contains child
           <xmlelement>topicref</xmlelement> elements, the <msgnum>DOTX068W</msgnum> error is thrown and the child
           <xmlelement>topicref</xmlelement> elements are ignored. </p>
     </section>
     <section id="section_h3h_jsx_1h">
       <title>Link processing</title>
-      <div outputclass="div-index">
-        <indexterm><xmlatt>href</xmlatt></indexterm>
-        <indexterm>link processing</indexterm>
-      </div>
+      <indexterm><xmlatt>href</xmlatt></indexterm>
+      <indexterm>link processing</indexterm>
       <p>When the value of a hyperlink reference in the <xmlatt>href</xmlatt> attribute is not a valid URI reference,
         the <msgnum>DOTJ054E</msgnum> error is thrown. Depending on the
         <xref href="../parameters/parameters-base.dita#base/processing-mode">processing-mode</xref> setting, error
@@ -110,19 +107,15 @@
     </section>
     <section>
       <title>Copy-to processing</title>
-      <div outputclass="div-index">
-        <indexterm><xmlelement>shortdesc</xmlelement></indexterm>
-        <indexterm><xmlatt>copy-to</xmlatt></indexterm>
-      </div>
+      <indexterm><xmlelement>shortdesc</xmlelement></indexterm>
+      <indexterm><xmlatt>copy-to</xmlatt></indexterm>
       <p>When the <xmlatt>copy-to</xmlatt> attribute is specified on a <xmlelement>topicref</xmlelement>, the content of
         the <xmlelement>shortdesc</xmlelement> element is not used to override the short description of the topic.</p>
     </section>
     <section>
       <title>Coderef processing</title>
-      <div outputclass="div-index">
-        <indexterm><xmlelement>coderef</xmlelement></indexterm>
-        <indexterm>encoding</indexterm>
-      </div>
+      <indexterm><xmlelement>coderef</xmlelement></indexterm>
+      <indexterm>encoding</indexterm>
       <p>When <xmlelement>coderef</xmlelement> elements are used within code blocks to reference external files with
         literal code samples, the system default character set is used as the target file encoding unless a different
         character set is explicitly defined via the mechanisms described under

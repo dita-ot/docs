@@ -20,11 +20,14 @@
   <part keyref="installing-client">
     <chapter format="ditamap" href="topics/installing.ditamap"/>
   </part>
+  <part keyref="building-output">
+    <chapter href="topics/publishing.ditamap" format="ditamap"/>
+  </part>
   <part keyref="alternative-input-formats">
     <chapter href="topics/input-formats.ditamap" format="ditamap"/>
   </part>
-  <part keyref="building-output">
-    <chapter href="topics/publishing.ditamap" format="ditamap"/>
+  <part keyref="output-formats">
+    <chapter href="topics/transformations.ditamap" format="ditamap"/>
   </part>
   <part keyref="parameters">
     <chapter href="parameters/parameters.ditamap" format="ditamap"/>
@@ -46,6 +49,9 @@
     <appendix keyref="release-notes"/>
   </appendices>
   <backmatter>
+    <booklists>
+      <indexlist/>
+    </booklists>
     <mapref href="resources/common-resources.ditamap" processing-role="resource-only"/>
   </backmatter>
 </bookmap>

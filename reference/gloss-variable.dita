@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<glossentry id="gloss-variable">
+  <glossterm>variable</glossterm>
+  <glossdef>Language-specific piece of generated text, most often defined in the files in
+      <filepath>org.dita.base\xsl\common</filepath>.</glossdef>
+</glossentry>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<concept id="ID">
+  <title>Sample XML project files</title>
+  <titlealts>
+    <navtitle>XML project files</navtitle>
+  </titlealts>
+  <shortdesc>DITA-OT includes sample XML project files that can be used to define a publication project. The XML format
+    can be validated with a RELAX NG schema provided in the <filepath>resources</filepath> folder of the DITA-OT
+    installation (<filepath>project.rnc</filepath>).</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>XML project files</indexterm>
+        <indexterm>project files
+          <indexterm>XML</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Project files can be designed in a modular fashion to create reusable configuration structures that allow you to
+      define settings in one file and refer to them in other projects to publish multiple deliverables at once.</p>
+    <p>For example, <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/html.xml</filepath> defines
+      a single HTML deliverable.</p>
+    <fig>
+      <title>Sample project file for HTML output</title>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/project-files/html.xml"/></codeblock>
+    </fig>
+    <p>This file can be used to generate the HTML version of the DITA-OT documentation by running the following command
+      from the <filepath>docsrc</filepath> folder of the DITA-OT installation directory:</p>
+    <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>samples/project-files/html.xml</varname></codeblock>
+    <p>The project file for HTML output imports the common <codeph>html</codeph> context from a shared project context
+      defined in the <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/common.xml</filepath> file,
+      which includes the input map file and the DITAVAL file used to filter the output.</p>
+    <fig>
+      <title>Sample shared context for HTML-based output</title>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/project-files/common.xml"/></codeblock>
+    </fig>
+    <p>The same common <codeph>html</codeph> context is also referenced in the project file for HTMLHelp output, as
+      illustrated in <filepath conkeyref="conref-task/samples-dir"
+      /><filepath>/project-files/htmlhelp.xml</filepath>.</p>
+    <fig>
+      <title>Sample project file for HTMLHelp output</title>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/project-files/htmlhelp.xml"/></codeblock>
+    </fig>
+    <p>The <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/pdf.xml</filepath> file defines a
+      single PDF deliverable.</p>
+    <fig>
+      <title>Sample project file for PDF output</title>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/project-files/pdf.xml"/></codeblock>
+    </fig>
+    <p>This file can be used to generate the PDF version of the DITA-OT documentation by running the following command
+      from the <filepath>docsrc</filepath> folder of the DITA-OT installation directory:</p>
+    <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>samples/project-files/pdf.xml</varname></codeblock>
+    <p>The <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/distribution-docs.xml</filepath> file
+      includes both the HTML and PDF projects as follows:</p>
+    <codeblock outputclass="language-xml normalize-space show-whitespace"><coderef href="../samples/project-files/distribution-docs.xml#line-range(3,6)"/></codeblock>
+    <p>To build both the HTML and PDF versions of the documentation as included in the distribution package, run the
+      following command from the <filepath>docsrc</filepath> folder of the DITA-OT installation directory:</p>
+    <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>samples/project-files/distribution-docs.xml</varname></codeblock>
+    <p>The <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/all.xml</filepath> file includes all
+      three project deliverables as follows:</p>
+    <codeblock outputclass="language-xml normalize-space show-whitespace"><coderef href="../samples/project-files/all.xml#line-range(3,7)"/></codeblock>
+  </conbody>
+</concept>

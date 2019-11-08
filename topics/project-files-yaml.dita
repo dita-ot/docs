@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<concept id="ID">
+  <title>Sample YAML project files</title>
+  <titlealts>
+    <navtitle>YAML project files</navtitle>
+  </titlealts>
+  <shortdesc>DITA-OT includes sample project files in
+    <xref keyref="yaml"/> format that can be used to define a publication project. Like the XML project samples, the
+    sample YAML files illustrate how deliverables can be described for use in publication projects. The YAML samples are
+    functionally equivalent to their XML and JSON counterparts, with minor adaptations to YAML file syntax.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>YAML project files</indexterm>
+        <indexterm>project files
+          <indexterm>YAML</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Project files can be designed in a modular fashion to create reusable configuration structures that allow you to
+      define settings in one file and refer to them in other projects to publish multiple deliverables at once.</p>
+    <p>For example, <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/html.yaml</filepath> defines
+      a single HTML deliverable.</p>
+    <fig>
+      <title>Sample project file for HTML output</title>
+      <codeblock outputclass="language-yaml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/project-files/html.yaml"/></codeblock>
+    </fig>
+    <p>This file can be used to generate the HTML version of the DITA-OT documentation by running the following command
+      from the <filepath>docsrc</filepath> folder of the DITA-OT installation directory:</p>
+    <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>samples/project-files/html.yaml</varname></codeblock>
+    <p>The project file for HTML output imports the common <codeph>html</codeph> context from a shared project context
+      defined in the <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/common.yaml</filepath>
+      file, which includes the input map file and the DITAVAL file used to filter the output.</p>
+    <fig>
+      <title>Sample shared context for HTML-based output</title>
+      <codeblock outputclass="language-yaml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/project-files/common.yaml"/></codeblock>
+    </fig>
+  </conbody>
+</concept>

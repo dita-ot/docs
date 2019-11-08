@@ -12,25 +12,40 @@
   <shortdesc>In DITA-OT 1.8, certain stylesheets were moved to plug-in specific folders and various deprecated Ant
     properties, XSLT stylesheets, parameters and modes were removed from the XHTML, PDF and ODT
     transformations.</shortdesc>
-  
+
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>deprecated features<indexterm><codeph>dita.script.dir</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>dita.resource.dir</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>dita.empty</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>args.message.file</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>ImgUtils</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><filepath>artwork-preprocessor.xsl</filepath></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><filepath>otdita2fo_frontend.xsl</filepath></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>insertVariable.old</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm>XSLT mode, <codeph>layout-masters-processing</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm>XSLT mode, <codeph>toc-prefix-text</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm>XSLT mode, <codeph>toc-topic-text</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>args.fo.include.rellinks</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm>Legacy PDF</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>args.odt.include.rellinks</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>disableRelatedLinks</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>dita.script.dir</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>dita.resource.dir</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>dita.empty</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>args.message.file</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>ImgUtils</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><filepath>artwork-preprocessor.xsl</filepath></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><filepath>otdita2fo_frontend.xsl</filepath></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>insertVariable.old</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm>XSLT mode, <codeph>layout-masters-processing</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm>XSLT mode, <codeph>toc-prefix-text</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm>XSLT mode, <codeph>toc-topic-text</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>args.fo.include.rellinks</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm>Legacy PDF</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>args.odt.include.rellinks</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>disableRelatedLinks</codeph></indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -65,10 +80,10 @@
     </section>
     <section>
       <title>PDF</title>
-      <div outputclass="div-index">
-        <indexterm>args.rellinks</indexterm>
-        <indexterm>PDF<indexterm>related links</indexterm><indexterm>args.rellinks</indexterm></indexterm>
-      </div>
+      <indexterm>args.rellinks</indexterm>
+      <indexterm>PDF
+        <indexterm>related links</indexterm>
+        <indexterm>args.rellinks</indexterm></indexterm>
       <p>The following deprecated XSLT stylesheets have been removed:</p>
       <ul>
         <li><filepath>artwork-preprocessor.xsl</filepath></li>

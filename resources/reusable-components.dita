@@ -18,9 +18,12 @@
       <title>Upgrade stylesheets to XSLT 2.0</title>
       <indexterm>upgrading</indexterm>
       <indexterm>Saxon</indexterm>
-      <indexterm>XSLT<indexterm>1.0</indexterm></indexterm>
-      <indexterm>XSLT<indexterm>2.0</indexterm></indexterm>
-      <indexterm>plug-ins<indexterm>upgrading</indexterm></indexterm>
+      <indexterm>XSLT
+        <indexterm>1.0</indexterm></indexterm>
+      <indexterm>XSLT
+        <indexterm>2.0</indexterm></indexterm>
+      <indexterm>plug-ins
+        <indexterm>upgrading</indexterm></indexterm>
       <p>The Saxon project has announced plans to remove XSLT 1.0 support from the Saxon-HE library that ships with
         DITA-OT:</p>
       <lq href="https://www.xml.com/news/release-saxon-98/" format="html" scope="external">…we’re dropping XSLT 1.0
@@ -40,8 +43,9 @@
       <div id="plugin.rnc">
         <p>DITA-OT includes a RELAX NG schema file that can be used to validate the <filepath>plugin.xml</filepath>
           files that define the capabilities of each plug-in.
-        <indexterm>schema<indexterm>RELAX NG</indexterm></indexterm>
-        <indexterm>validate</indexterm>
+          <indexterm>schema
+            <indexterm>RELAX NG</indexterm></indexterm>
+          <indexterm>validate</indexterm>
         </p>
         <p>To ensure the syntax of your custom plug-in is correct, include an <xmlpi>xml-model</xmlpi> processing
           instruction at the beginning of the <filepath>plugin.xml</filepath> file, immediately after the XML
@@ -93,12 +97,12 @@
       <title>Supported Java versions</title>
       <p id="java-clients">DITA-OT is designed to run on Java version <keyword keyref="tool.java.version"/> or later and
         built and tested with the Open Java Development Kit (OpenJDK). Compatible Java distributions are available from
-        multiple sources: <div outputclass="div-index">
-          <indexterm>Java<indexterm>versions</indexterm></indexterm>
-          <indexterm>Amazon Corretto</indexterm>
-          <indexterm>OpenJDK</indexterm>
-          <indexterm>Oracle JDK</indexterm>
-        </div>
+        multiple sources:
+        <indexterm>Java
+          <indexterm>versions</indexterm></indexterm>
+        <indexterm>Amazon Corretto</indexterm>
+        <indexterm>OpenJDK</indexterm>
+        <indexterm>Oracle JDK</indexterm>
         <ul>
           <li>You can download the Oracle JRE or JDK from
             <xref keyref="download.oracle-jdk"/> under commercial license.</li>
@@ -114,8 +118,16 @@
       <title>Limitations of map-first pre-processing</title>
       <p id="no-internal-preprocess2-ext">The internal extension points that run before or after individual steps in the
         original <codeph>preprocess</codeph> pipeline (<codeph>preprocess.*.pre/preprocess.*.post</codeph>) are not
-        available in the newer map-first preprocessing pipeline (<codeph>preprocess2</codeph>), which is used in the 
-        PDF and HTML Help transformations as of DITA-OT 3.0.</p>
+        available in the newer map-first preprocessing pipeline (<codeph>preprocess2</codeph>), which is used in the PDF
+        and HTML Help transformations as of DITA-OT 3.0.</p>
+    </section>
+
+    <section id="legacy-plugins">
+      <title>Unbundled plug-ins</title>
+      <note id="legacy-plugins-note">If necessary, legacy plug-ins may be re-installed from earlier DITA-OT
+        distributions, but they are no longer actively maintained or supported by the core toolkit committers. The
+        source code is available on GitHub for anyone interested in maintaining the plug-ins for use with future toolkit
+        versions.</note>
     </section>
   </conbody>
 </concept>

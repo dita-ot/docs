@@ -21,7 +21,9 @@
           <dt>Standard Path / Directory Names</dt>
           <dd><filepath id="ot-dir"><varname>dita-ot-dir</varname></filepath></dd>
           <dd><filepath id="dita-cmd"><varname>dita-ot-dir</varname>/bin/<cmdname>dita</cmdname></filepath></dd>
+          <dd><filepath id="docsrc-dir"><varname>dita-ot-dir</varname>/docsrc</filepath></dd>
           <dd><filepath id="samples-dir"><varname>dita-ot-dir</varname>/docsrc/samples</filepath></dd>
+          <dd><filepath id="samples-absolute"><varname>/absolute/path/to/dita-ot-dir</varname>/docsrc/samples</filepath></dd>
         </dlentry>
         <dlentry>
           <dt>Plug-In Info</dt>
@@ -86,8 +88,6 @@
                   <li><option>markdown</option>, <option>markdown_gitbook</option>, and
                     <option>markdown_github</option></li>
                   <li><option>pdf</option></li>
-                  <li><option>tocjs</option></li>
-                  <li><option>troff</option></li>
                   <li><option>xhtml</option></li>
                 </ul>
                 <note type="tip">See <xref keyref="output-formats"/> for sample command line syntax and more information

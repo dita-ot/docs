@@ -8,17 +8,22 @@
     <navtitle>Plug-in registry</navtitle>
   </titlealts>
   <shortdesc><ph id="registry-summary">DITA-OT 3.2 supports a new plug-in registry that makes it easier to discover and
-      install new plug-ins. The registry provides a searchable list of plug-ins at <xref keyref="site-plugin-registry"
-      />.</ph></shortdesc>
+      install new plug-ins. The registry provides a searchable list of plug-ins at
+      <xref keyref="site-plugin-registry"/>.</ph></shortdesc>
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>PDF<indexterm>plug-in</indexterm></indexterm>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>plug-in registry</indexterm></indexterm>
-        <indexterm>plug-ins<indexterm>registry</indexterm></indexterm>
-        <indexterm>plug-ins<indexterm>installing</indexterm></indexterm>
+        <indexterm>PDF
+          <indexterm>plug-in</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>plug-in registry</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm>registry</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm>installing</indexterm></indexterm>
         <indexterm>GitHub</indexterm>
-        <indexterm>plug-ins<indexterm>URL</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm>URL</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -31,8 +36,8 @@
     </section>
     <section id="using-the-registry">
       <title>Installing plug-ins from the registry</title>
-      <p>With the registry, you can now search the list of available plug-ins at <xref keyref="site-plugin-registry"/>
-        and install new plug-ins by name and optional version.</p>
+      <p>With the registry, you can now search the list of available plug-ins at
+        <xref keyref="site-plugin-registry"/> and install new plug-ins by name and optional version.</p>
       <p>Search the registry for a plug-in and install it by providing the plug-in name to the <cmdname>dita</cmdname>
         command.</p>
       <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;</varname></codeblock>
@@ -52,12 +57,14 @@
       </ul>
     </section>
     <section id="publishing-to-registry"><title>Publishing plug-ins to the registry</title>
-      <p>The contents of the DITA Open Toolkit plug-in registry are stored in a Git repository at <xref
-          keyref="registry-repo"/>. New plug-ins or new versions can be added by sending a <xref keyref="pull-request"/>
-        that includes a single new plug-in entry in JavaScript Object Notation (JSON) format.</p>
+      <p>The contents of the DITA Open Toolkit plug-in registry are stored in a Git repository at
+        <xref keyref="registry-repo"/>. New plug-ins or new versions can be added by sending a
+        <xref keyref="pull-request"/> that includes a single new plug-in entry in JavaScript Object Notation (JSON)
+        format.</p>
       <note>As for all other contributions to the project, pull requests to the registry must be signed off by passing
         the <codeph>--signoff</codeph> option to the <cmdname>git commit</cmdname> command to certify that you have the
-        rights to submit this contribution. For more information on this process, see <xref keyref="signoff"/>.</note>
+        rights to submit this contribution. For more information on this process, see
+        <xref keyref="signoff"/>.</note>
       <p>The version entries for each plug-in are stored in a file that is named after the plug-in ID as
           <codeph>&lt;plugin-name&gt;.json</codeph>. The file contains an array of entries with a pre-defined structure.
         You should have one entry for each supported version of the plug-in.</p>
@@ -83,7 +90,8 @@
             <row>
               <entry><codeph>vers</codeph></entry>
               <entry>yes</entry>
-              <entry>Plug-in version in <xref keyref="semver"/> format</entry>
+              <entry>Plug-in version in
+                <xref keyref="semver"/> format</entry>
             </row>
             <row>
               <entry><codeph>deps</codeph></entry>
@@ -119,21 +127,24 @@
             <row>
               <entry><codeph>license</codeph></entry>
               <entry>no</entry>
-              <entry>License in <xref href="https://spdx.org/licenses/" format="html" scope="external">SPDX</xref>
-                format</entry>
+              <entry>License in
+                <xref href="https://spdx.org/licenses/" format="html" scope="external">SPDX</xref> format</entry>
             </row>
           </tbody>
         </tgroup>
       </table>
       <note type="tip">To calculate the SHA-256 checksum for the <codeph>cksum</codeph> key, use <codeph>shasum -a 256
-            <varname>&lt;plugin-file&gt;</varname></codeph> on macOS or Linux. With Windows PowerShell, use
-            <codeph><xref
+            <varname>&lt;plugin-file&gt;</varname></codeph> on macOS or Linux. With Windows PowerShell, use <codeph>
+          <xref
             href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6"
             format="html" scope="external">Get-FileHash</xref> <varname>&lt;plugin-file&gt;</varname> |
           Format-List</codeph>.
-        <indexterm>macOS<indexterm>plug-in registry checksum</indexterm></indexterm>
-        <indexterm>Linux<indexterm>plug-in registry checksum</indexterm></indexterm>
-        <indexterm>Windows<indexterm>plug-in registry checksum</indexterm></indexterm>
+        <indexterm>macOS
+          <indexterm>plug-in registry checksum</indexterm></indexterm>
+        <indexterm>Linux
+          <indexterm>plug-in registry checksum</indexterm></indexterm>
+        <indexterm>Windows
+          <indexterm>plug-in registry checksum</indexterm></indexterm>
       </note>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Structure for dependency entries</title>
@@ -157,26 +168,28 @@
             <row>
               <entry><codeph>req</codeph></entry>
               <entry>yes</entry>
-              <entry>Required plug-in version in <xref keyref="semver"/> format that may contain <xref
-                  href="https://docs.npmjs.com/misc/semver#ranges" format="html" scope="external">ranges</xref>.</entry>
+              <entry>Required plug-in version in
+                <xref keyref="semver"/> format that may contain
+                <xref href="https://docs.npmjs.com/misc/semver#ranges" format="html" scope="external"
+                >ranges</xref>.</entry>
             </row>
           </tbody>
         </tgroup>
       </table>
       <note>Version numbers in the <codeph>vers</codeph> and <codeph>req</codeph> keys use the three-digit format
-        specified by <xref keyref="semver"/>. An initial development release of a plug-in might start at version 0.1.0,
-        and an initial production release at 1.0.0. If your plug-in requires DITA-OT 3.1 or later, set the
-          <codeph>req</codeph> key to <codeph>&gt;=3.1.0</codeph>. Using the greater-than sign allows your plug-in to
-        work with compatible maintenance releases, such as 3.1.3. If the requirement is set to <codeph>=3.1.0</codeph>,
-        the registry will only offer it for installation on that exact version.</note>
+        specified by
+        <xref keyref="semver"/>. An initial development release of a plug-in might start at version 0.1.0, and an
+        initial production release at 1.0.0. If your plug-in requires DITA-OT 3.1 or later, set the <codeph>req</codeph>
+        key to <codeph>&gt;=3.1.0</codeph>. Using the greater-than sign allows your plug-in to work with compatible
+        maintenance releases, such as 3.1.3. If the requirement is set to <codeph>=3.1.0</codeph>, the registry will
+        only offer it for installation on that exact version.</note>
     </section>
     <section id="example-1">
       <title>Sample plug-in entry file</title>
-      <div outputclass="div-index">
-        <indexterm>DocBook</indexterm>
-      </div>
+      <indexterm>DocBook</indexterm>
       <p>The example below shows an entry for the <codeph>DocBook</codeph> plug-in. The complete file is available in
-        the registry as <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.docbook.json" format="json"
+        the registry as
+        <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.docbook.json" format="json"
           scope="external">org.dita.docbook.json</xref>.</p>
       <codeblock outputclass="language-json" xml:space="preserve">[
   {
@@ -220,8 +233,9 @@
     </section>
     <section id="adding-custom-registries">
       <title>Adding custom registries</title>
-      <p>In addition to the main plug-in registry at <xref keyref="site-plugin-registry"/>, you can create a registry of
-        your own to store the custom plug-ins for your company or organization.</p>
+      <p>In addition to the main plug-in registry at
+        <xref keyref="site-plugin-registry"/>, you can create a registry of your own to store the custom plug-ins for
+        your company or organization.</p>
       <p>A registry is just a directory that contains JSON files like the one above; each JSON file represents one entry
         in the registry. To add a custom registry location, edit the
           <filepath>config/configuration.properties</filepath> file in the DITA-OT installation directory and add the

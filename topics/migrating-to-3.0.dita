@@ -12,7 +12,7 @@
   <shortdesc>DITA-OT 3.0 <ph id="summary">adds support for Markdown, normalized DITA output, and the alternative
       authoring formats proposed for Lightweight DITA. The map-first preprocessing approach provides a modern
       alternative to the default <codeph>preprocess</codeph> operation.</ph></shortdesc>
-  
+
   <prolog>
     <metadata>
       <keywords>
@@ -33,11 +33,11 @@
 
     <section id="30-legacy-plugin-removal">
       <title>Legacy plug-ins removed</title>
-      <div outputclass="div-index">
-        <indexterm>JavaHelp</indexterm>
-        <indexterm>deprecated features<indexterm>JavaHelp plug-in</indexterm></indexterm>
-        <indexterm>plug-ins<indexterm>JavaHelp</indexterm></indexterm>
-      </div>
+      <indexterm>JavaHelp</indexterm>
+      <indexterm>deprecated features
+        <indexterm>JavaHelp plug-in</indexterm></indexterm>
+      <indexterm>plug-ins
+        <indexterm>JavaHelp</indexterm></indexterm>
       <p>DITA-OT 3.0 no longer includes the following legacy transformation plug-ins in the default distribution:</p>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <title>Legacy plug-ins</title>
@@ -52,16 +52,15 @@
           </thead>
           <tbody>
             <row>
-              <entry>JavaHelp<indexterm>JavaHelp</indexterm></entry>
+              <entry>JavaHelp
+                <indexterm>JavaHelp</indexterm></entry>
               <entry>
                 <xref href="https://github.com/dita-ot/org.dita.javahelp" format="html" scope="external"/></entry>
             </row>
           </tbody>
         </tgroup>
       </table>
-      <note>If necessary, legacy plug-ins may be re-installed from earlier DITA-OT distributions, but they are no longer
-        actively maintained or supported by the core toolkit committers. The source code is available on GitHub for
-        anyone interested in maintaining the plug-ins for use with future toolkit versions.</note>
+      <note conkeyref="reusable-components/legacy-plugins-note"/>
       <p>To re-install the JavaHelp plug-in, run the following command:</p>
       <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<filepath>https://github.com/dita-ot/org.dita.javahelp/archive/2.5.zip</filepath></codeblock>
     </section>

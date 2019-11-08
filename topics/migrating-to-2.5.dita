@@ -15,8 +15,10 @@
     <metadata>
       <keywords>
         <indexterm><xmlelement>example</xmlelement></indexterm>
-        <indexterm>PDF<indexterm><codeph>org.dita.pdf2.legacy</codeph></indexterm></indexterm>
-        <indexterm>languages<indexterm>right-to-left</indexterm></indexterm>
+        <indexterm>PDF
+          <indexterm><codeph>org.dita.pdf2.legacy</codeph></indexterm></indexterm>
+        <indexterm>languages
+          <indexterm>right-to-left</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -26,17 +28,30 @@
         or plug-ins. For more information on changes in this release, see the
         <xref keyref="2.5-release-notes"/>.</note>
     </section>
-    <!--<section>
-      <title>HTML5</title>
+    <section>
+      <title>Deprecated logging parameters</title>
+      <p>The <codeph>args.debug</codeph> and <codeph>args.logdir</codeph> properties have been deprecated and will be
+        removed in an upcoming version of DITA-OT.</p>
       <ul>
-        <li/>
+        <li>
+          <p>To enable debug logging, use <cmdname>dita</cmdname>
+            <parmname>--debug</parmname>.</p>
+          <note type="attention">Debug logging requires additional resources and can slow down the build process, so it
+            should only be enabled when further details are required to diagnose problems.</note>
+        </li>
+        <li>
+          <p>To write the log to a file, use <cmdname>dita</cmdname>
+            <parmname>--logfile</parmname>=<varname>file</varname> or <cmdname>ant</cmdname>
+            <parmname>-l</parmname>
+            <varname>file</varname> and specify the path to the log file.</p>
+          <p>Unless an absolute path is specified, the value will be interpreted relative to the current
+          directory.</p></li>
       </ul>
-    </section>-->
+    </section>
     <section id="25-pdf-changes">
       <title>Default PDF style improvements</title>
-      <div outputclass="div-index">
-        <indexterm>tables<indexterm>indentation</indexterm></indexterm>
-      </div>
+      <indexterm>tables
+        <indexterm>indentation</indexterm></indexterm>
       <p>Several legacy styles have been modified or removed in the default PDF plug-in <codeph>org.dita.pdf2</codeph>,
         including the following:</p>
       <p>

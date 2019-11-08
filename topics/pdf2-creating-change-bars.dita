@@ -13,19 +13,21 @@
         <indexterm><xmlelement>revprop</xmlelement></indexterm>
         <indexterm><xmlatt>changebar</xmlatt></indexterm>
         <indexterm><xmlatt>color</xmlatt></indexterm>
-        <indexterm>DITAVAL<indexterm>change bars</indexterm></indexterm>
-        <indexterm>RenderX<indexterm>change bars</indexterm></indexterm>
-        <indexterm>Antenna House<indexterm>change bars</indexterm></indexterm>
-        <indexterm>Apache FOP<indexterm>change bars</indexterm></indexterm>
-        <indexterm>PDF<indexterm>change bars</indexterm></indexterm>
-        <indexterm>transformations<indexterm end="pdf"/></indexterm>
+        <indexterm>DITAVAL
+          <indexterm>change bars</indexterm></indexterm>
+        <indexterm>RenderX
+          <indexterm>change bars</indexterm></indexterm>
+        <indexterm>Antenna House
+          <indexterm>change bars</indexterm></indexterm>
+        <indexterm>Apache FOP
+          <indexterm>change bars</indexterm></indexterm>
+        <indexterm>PDF
+          <indexterm>change bars</indexterm></indexterm>
+        <indexterm>transformations</indexterm>
       </keywords>
     </metadata>
   </prolog>
   <conbody>
-    <note>The Apache Formatting Objects Processor (FOP <keyword keyref="tool.fop.version"/>) bundled with DITA-OT does
-      not yet support the XSL <codeph>fo:change-bar</codeph> formatting object. A patch has been submitted to enable
-      this support in a future version of FOP.</note>
     <p>The DITA specification for <xmlatt>changebar</xmlatt> simply says:<lq>
         <dl>
           <dlentry>
@@ -40,8 +42,8 @@
     <ul>
       <li>
         <p>The <xmlatt>changebar</xmlatt> attribute value defines the style to use for the line. The list of possible
-          values is the same as for other XSL-FO rules (see <xref keyref="fo-spec.change-bar-style"/>). The default
-          value is <option>groove</option>.</p></li>
+          values is the same as for other XSL-FO rules (see
+          <xref keyref="fo-spec.change-bar-style"/>). The default value is <option>groove</option>.</p></li>
       <li>
         <p>The <xmlatt>color</xmlatt> attribute value specifies the change bar color using any color value recognized by
           XSL-FO, including the usual color names or a hex color value. The default value is

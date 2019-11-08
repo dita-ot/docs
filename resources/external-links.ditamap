@@ -162,6 +162,15 @@
         <linktext>DITA-OT 3.3 Release Notes</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="3.4-release-notes"
+      href="https://www.dita-ot.org/3.4/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 3.4 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
   <topicset
@@ -441,6 +450,15 @@
         </topicmeta>
       </keydef>
     </topicset>
+    <keydef
+      keys="json"
+      href="https://json.org"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>JSON</linktext>
+      </topicmeta>
+    </keydef>
     <topicset
       id="lightweight-dita">
       <keydef
@@ -487,6 +505,15 @@
       format="html">
       <topicmeta>
         <linktext>RFC 5147</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="yaml"
+      href="https://yaml.org"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>YAML</linktext>
       </topicmeta>
     </keydef>
   </topicset>
@@ -603,6 +630,15 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="docker"
+      href="https://www.docker.com"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>Docker</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="sass-lang"
       href="http://sass-lang.com"
       scope="external"
@@ -653,7 +689,7 @@
       scope="external"
       format="html">
       <topicmeta>
-        <linktext>Semantic Versioning 2.0.0</linktext>
+        <linktext>semantic versioning</linktext>
       </topicmeta>
     </keydef>
     <keydef

@@ -289,3 +289,26 @@ nav[role=toc] > ul > li ul {
   margin-left: 1.2em;
   margin-top: 0.5em;
 }
+
+/****************************************
+Glossary
+****************************************/
+
+.glossAbbreviation,
+.glossAcronym {
+  color: #555;
+  font-size: 90%;
+  font-style: italic;
+  font-weight: normal;
+  margin-left: 2em;
+}
+
+.glossAbbreviation::before,
+.glossAcronym::before {
+  content: "Abbreviation: “";
+}
+
+.glossAbbreviation::after,
+.glossAcronym::after {
+    content: '”';
+}

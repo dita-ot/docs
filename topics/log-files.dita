@@ -3,7 +3,10 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <concept id="loghandling">
-  <title>Log files</title>
+  <title>Logging build information</title>
+  <titlealts>
+    <navtitle>Logging</navtitle>
+  </titlealts>
   <shortdesc>When you run DITA-OT, key information is logged on the screen. This information can also be written to a
     log file. If you encounter a problem, you can analyze this information to determine the source of the problem and
     then take action to resolve it.</shortdesc>
@@ -15,6 +18,7 @@
         <indexterm><cmdname>dita</cmdname> command
           <indexterm>logging</indexterm></indexterm>
         <indexterm>logging</indexterm>
+        <indexterm>verbose logging</indexterm>
         <indexterm>Ant
           <indexterm>logging</indexterm></indexterm>
         <indexterm>debugging
@@ -30,9 +34,30 @@
     <dl>
       <dlentry>
         <dt><cmdname>dita</cmdname> command</dt>
-        <dd>By default, only warning and error messages are written to the screen. If you use the
-            <parmname>-v</parmname> option, logging will be more verbose and informative messages are also written out.
-          The <parmname>-l</parmname> option can be used to write the log messages into a file.</dd>
+        <dd>
+          <p>By default, only warning and error messages are written to the screen.</p>
+          <ul>
+            <li>
+              <p>For more information, enable verbose logging with <cmdname>dita</cmdname>
+                <parmname>--verbose</parmname>.</p>
+              <p>Verbose logging prints additional information to the console, including directory settings, effective
+                values for Ant properties, input/output files, and informational messages to assist in
+                troubleshooting.</p></li>
+            <li>
+              <p>To enable debug logging, use <cmdname>dita</cmdname>
+                <parmname>--debug</parmname>.</p>
+              <p>Debug logging prints considerably more additional information. The debug log includes all information
+                from the verbose log, plus details on Java classes, additional Ant properties and overrides,
+                preprocessing filters, parameters, and stages, and the complete build sequence.</p>
+              <note type="attention">Debug logging requires additional resources and can slow down the build process, so
+                it should only be enabled when further details are required to diagnose problems.</note>
+            </li>
+            <li>
+              <p>To write the log to a file, use <cmdname>dita</cmdname>
+                <parmname>--logfile</parmname>=<varname>file</varname> and specify the path to the log file.</p>
+              <p>Unless an absolute path is specified, the value will be interpreted relative to the current
+                directory.</p></li>
+          </ul></dd>
       </dlentry>
       <dlentry>
         <dt>Ant</dt>
@@ -79,9 +104,9 @@
       <indexterm>logback.xml</indexterm>
       <indexterm>classpath
         <indexterm>logging</indexterm></indexterm>
-      <p>In PDF processing with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP, DITA-OT 3.1 now uses the Simple
-        Logging Facade for Java (SLF4J), allowing for better control and formatting of FOP log messages. To reduce noise
-        on the console, all FOP messages are set to the Info level and hidden by default.</p>
+      <p>In PDF processing with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP, DITA-OT uses the Simple Logging
+        Facade for Java (SLF4J) for better control and formatting of FOP log messages. To reduce noise on the console,
+        all FOP messages are set to the Info level and hidden by default.</p>
       <p>To enable debug logging, modify the <filepath>config/logback.xml</filepath> file or add your own
           <filepath>logback.xml</filepath> to the classpath with a higher priority to override the default settings. For
         more information, see the

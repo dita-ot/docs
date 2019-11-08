@@ -121,5 +121,13 @@
         available in the newer map-first preprocessing pipeline (<codeph>preprocess2</codeph>), which is used in the PDF
         and HTML Help transformations as of DITA-OT 3.0.</p>
     </section>
+
+    <section id="legacy-plugins">
+      <title>Unbundled plug-ins</title>
+      <note id="legacy-plugins-note">If necessary, legacy plug-ins may be re-installed from earlier DITA-OT
+        distributions, but they are no longer actively maintained or supported by the core toolkit committers. The
+        source code is available on GitHub for anyone interested in maintaining the plug-ins for use with future toolkit
+        versions.</note>
+    </section>
   </conbody>
 </concept>

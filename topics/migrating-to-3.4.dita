@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<reference id="migrating-to-3.4">
+
+  <title>Migrating to release 3.4</title>
+  <titlealts>
+    <navtitle>To 3.4</navtitle>
+  </titlealts>
+
+  <shortdesc>DITA-OT 3.4 includes <ph id="summary">an official Docker container image, a separate plug-in for PDF
+      indexing, a new option to skip HTML5 cover pages, and initial support for project files that allow you to define
+      multiple deliverables in advance, and publish them all at once</ph>.</shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 3.4 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="3.4-release-notes"/>.</note>
+    </section>
+
+    <section>
+      <title>New indexing plug-in</title>
+      <sectiondiv id="indexing-plugin">
+        <p>DITA-OT 3.4 extracts the PDF indexing code to a separate <filepath>org.dita.index</filepath> plug-in, and
+          adds a new <codeph>depend.org.dita.pdf2.index</codeph> extension point that can be used to add custom index
+          processing targets to PDF output.</p>
+        <p>The built-in index processing has been disabled and deprecated. If you have overridden index processing via
+          the <codeph>transform.topic2fo</codeph> target in the past, you can set the new
+            <parmname>org.dita.index.skip</parmname> property to <option>yes</option> and re-enable the
+            <codeph>transform.topic2fo.index</codeph> target with <xmlelement>feature
+            extension="depend.org.dita.pdf2.index" value="transform.topic2fo.index"/</xmlelement> in your plug-in
+          configuration.</p>
+      </sectiondiv>
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+        <title>New plug-ins</title>
+        <tgroup cols="2">
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
+          <thead>
+            <row>
+              <entry>Plug-in </entry>
+              <entry>Source code location</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>org.dita.index</entry>
+              <entry>
+                <xref href="https://github.com/dita-ot/org.dita.index" format="html" scope="external"/></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+
+    <section id="34-legacy-plugin-removal">
+      <title>Legacy plug-ins removed</title>
+      <indexterm>TocJS</indexterm>
+      <indexterm>deprecated features
+        <indexterm>TocJS plug-in</indexterm></indexterm>
+      <indexterm>plug-ins
+        <indexterm>TocJS</indexterm></indexterm>
+      <p>DITA-OT 3.4 no longer includes the following legacy transformation plug-ins in the default distribution:</p>
+      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+        <title>Legacy plug-ins</title>
+        <tgroup cols="2">
+          <colspec colwidth="1*"/>
+          <colspec colwidth="1*"/>
+          <thead>
+            <row>
+              <entry>Plug-in </entry>
+              <entry>Source code location</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>TocJS</entry>
+              <entry>
+                <xref href="https://github.com/dita-ot/com.sophos.tocjs" format="html" scope="external"/></entry>
+            </row>
+            <row>
+              <entry>troff</entry>
+              <entry>
+                <xref href="https://github.com/dita-ot/org.dita.troff" format="html" scope="external"/></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <note conkeyref="reusable-components/legacy-plugins-note"/>
+      <p>To re-install the plug-in(s) from the plug-in registry at
+        <xref keyref="site-plugin-registry"/>, run the following command(s):</p>
+      <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<filepath>com.sophos.tocjs</filepath>
+<cmdname>dita</cmdname> <parmname>--install</parmname>=<filepath>org.dita.troff</filepath></codeblock>
+    </section>
+  </refbody>
+</reference>

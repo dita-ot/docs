@@ -11,12 +11,16 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>Saxon<indexterm><xmlelement>service</xmlelement></indexterm></indexterm>
-        <indexterm>Ant<indexterm><xmlelement>jar</xmlelement></indexterm></indexterm>
+        <indexterm>Saxon
+          <indexterm><xmlelement>service</xmlelement></indexterm></indexterm>
+        <indexterm>Ant
+          <indexterm><xmlelement>jar</xmlelement></indexterm></indexterm>
         <indexterm><xmlatt>xsl:sort</xmlatt></indexterm>
         <indexterm>Chinese</indexterm>
-        <indexterm>I18N<indexterm>plug-in</indexterm></indexterm>
-        <indexterm>XSLT<indexterm>URI resolver</indexterm></indexterm>
+        <indexterm>I18N
+          <indexterm>plug-in</indexterm></indexterm>
+        <indexterm>XSLT
+          <indexterm>URI resolver</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -69,7 +73,8 @@
 }</codeblock></p>
     <p>To implement a custom collation URI resolver:
       <ol>
-        <li>Add your plugin’s JAR file in the DITA-OT class path as described in <xref keyref="plugin-javalib"/>.</li>
+        <li>Add your plugin’s JAR file in the DITA-OT class path as described in
+          <xref keyref="plugin-javalib"/>.</li>
         <li>Implement an instance of <codeph>org.dita.dost.module.saxon.DelegatingCollationUriResolver</codeph> as
           described above.</li>
         <li>Include a file named <filepath>org.dita.dost.module.saxon.DelegatingCollationUriResolver</filepath> in the
@@ -77,7 +82,7 @@
           the file must be the name of a class that implements
             <codeph>org.dita.dost.module.saxon.DelegatingCollationUriResolver</codeph>:<codeblock>org.example.i18n.saxon.MyCollationUriResolver</codeblock>
           <p>You can create the services file using <xmlelement>service</xmlelement> elements in an Ant
-            <xmlelement>jar</xmlelement>
+              <xmlelement>jar</xmlelement>
             task:<codeblock outputclass="language-xml">&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">
   ⋮
   &lt;service type="org.dita.dost.module.saxon.DelegatingCollationUriResolver">
@@ -85,8 +90,8 @@
   &lt;/service>
   ⋮
 &lt;/jar></codeblock></p></li>
-        <li>To use the collator in XSLT style sheets, specify the collation URI on <xmlatt>xsl:sort</xmlatt> elements (or
-          anywhere a collator URI can be
+        <li>To use the collator in XSLT style sheets, specify the collation URI on <xmlatt>xsl:sort</xmlatt> elements
+          (or anywhere a collator URI can be
           specified):<codeblock outputclass="language-xml">&lt;xsl:apply-templates select="word">
   &lt;xsl:sort collation="http://org.example.i18n.MyCollator"/>
 &lt;/xsl:apply-templates></codeblock></li>

@@ -15,11 +15,16 @@
         <indexterm><xmlelement>require</xmlelement></indexterm>
         <indexterm><xmlelement>link</xmlelement></indexterm>
         <indexterm><xmlelement>head</xmlelement></indexterm>
-        <indexterm>HTML<indexterm>custom plug-in</indexterm></indexterm>
-        <indexterm>HTML<indexterm>fonts</indexterm></indexterm>
-        <indexterm>CSS<indexterm>web fonts</indexterm></indexterm>
-        <indexterm>fonts<indexterm>HTML</indexterm></indexterm>
-        <indexterm>web fonts<index-see>fonts</index-see></indexterm>
+        <indexterm>HTML
+          <indexterm>custom plug-in</indexterm></indexterm>
+        <indexterm>HTML
+          <indexterm>fonts</indexterm></indexterm>
+        <indexterm>CSS
+          <indexterm>web fonts</indexterm></indexterm>
+        <indexterm>fonts
+          <indexterm>HTML</indexterm></indexterm>
+        <indexterm>web fonts
+          <index-see>fonts</index-see></indexterm>
         <indexterm>custom.css</indexterm>
         <indexterm>build_html5-webfont.xml</indexterm>
         <indexterm>plugin.xml</indexterm>
@@ -85,10 +90,11 @@
             <title>Sample <filepath>webfont.hdf.xml</filepath> file</title>
             <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/include/webfont.hdf.xml"/></codeblock>
           </fig>
-          <p>This example uses the <xref keyref="noto-sans-font"/> font. You can use multiple fonts by creating
-            additional <xmlelement>link</xmlelement> references in this file. The division wrapper will be discarded
-            when generating HTML files, and the contents will be inserted into the <xmlelement>head</xmlelement> element
-            of each page.</p>
+          <p>This example uses the
+            <xref keyref="noto-sans-font"/> font. You can use multiple fonts by creating additional
+              <xmlelement>link</xmlelement> references in this file. The division wrapper will be discarded when
+            generating HTML files, and the contents will be inserted into the <xmlelement>head</xmlelement> element of
+            each page.</p>
         </stepxmp>
       </step>
       <step>
@@ -103,8 +109,9 @@
             <title>Sample <filepath>custom.css</filepath> file</title>
             <codeblock outputclass="language-css normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-webfont/css/custom.css"/></codeblock>
           </fig>
-          <p>This example uses <xref keyref="noto-sans-font"/> for all body content. In practice, you would normally use
-            different fonts for headings, body content, tables, etc. by creating additional rules in your CSS file.</p>
+          <p>This example uses
+            <xref keyref="noto-sans-font"/> for all body content. In practice, you would normally use different fonts
+            for headings, body content, tables, etc. by creating additional rules in your CSS file.</p>
         </stepxmp>
       </step>
       <step>
@@ -120,9 +127,9 @@
     </steps>
     <result>
       <note type="tip">The files for this sample plug-in are included in the DITA-OT installation directory under
-          <filepath>docsrc/samples/plugins/com.example.html5-webfont/</filepath> and on <xref
-          href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.html5-webfont" format="html"
-          scope="external">GitHub</xref>.</note>
+          <filepath>docsrc/samples/plugins/com.example.html5-webfont/</filepath> and on
+        <xref href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.html5-webfont"
+          format="html" scope="external">GitHub</xref>.</note>
       <p>The plug-in directory has the following layout and files:</p>
       <codeblock>com.example.html5-webfont
 ├── build_html5-webfont.xml

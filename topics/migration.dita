@@ -10,11 +10,14 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>upgrading<indexterm>plug-ins</indexterm></indexterm>
-        <!-- LE: Only first alphabetical index-see-also prints in the index -->
-        <indexterm>upgrading<index-see-also>migrating</index-see-also><index-see-also>installing</index-see-also></indexterm>
+        <indexterm>upgrading
+          <indexterm>plug-ins</indexterm></indexterm>
+        <indexterm>upgrading
+          <index-see-also>migrating</index-see-also>
+          <index-see-also>installing</index-see-also></indexterm>
         <indexterm>migrating</indexterm>
-        <indexterm>plug-ins<indexterm>upgrading</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm>upgrading</indexterm></indexterm>
         <indexterm>installing</indexterm>
       </keywords>
     </metadata>
@@ -29,7 +32,8 @@
         2.2 and want to move to 3.3, you should review all of the changes in 2.3 through 3.3. You may want to start at
         the oldest version and read forward so you can chronologically follow the changes, since it is possible that
         files or topics have had multiple changes. </p>
-      <note><p conkeyref="conref-task/semver-info" conrefend="semver-plugins"/></note>
+      <note>
+        <p conkeyref="conref-task/semver-info" conrefend="semver-plugins"/></note>
     </section>
   </refbody>
 </reference>

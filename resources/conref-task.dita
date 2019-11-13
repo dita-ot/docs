@@ -23,7 +23,8 @@
           <dd><filepath id="dita-cmd"><varname>dita-ot-dir</varname>/bin/<cmdname>dita</cmdname></filepath></dd>
           <dd><filepath id="docsrc-dir"><varname>dita-ot-dir</varname>/docsrc</filepath></dd>
           <dd><filepath id="samples-dir"><varname>dita-ot-dir</varname>/docsrc/samples</filepath></dd>
-          <dd><filepath id="samples-absolute"><varname>/absolute/path/to/dita-ot-dir</varname>/docsrc/samples</filepath></dd>
+          <dd><filepath id="samples-absolute"
+            ><varname>/absolute/path/to/dita-ot-dir</varname>/docsrc/samples</filepath></dd>
         </dlentry>
         <dlentry>
           <dt>Plug-In Info</dt>
@@ -38,11 +39,11 @@
                   provided, the installation process reloads the current set of plug-ins from the
                     <filepath>plugins</filepath> directory. This approach can be used to add or remove multiple plug-ins
                   at once, or any individual plug-ins you have already copied to (or removed from) the
-                <filepath>plugins</filepath> directory. Any plug-ins added or removed in the process will be listed by
-                their plug-in ID.</ph></li>
+                    <filepath>plugins</filepath> directory. Any plug-ins added or removed in the process will be listed
+                  by their plug-in ID.</ph></li>
               <li><note id="plugin-remove-subdir" type="attention">The <parmname>--uninstall</parmname> option also
-                  removes the corresponding subdirectory from the <filepath>plugins</filepath>
-                folder.<indexterm>uninstalling</indexterm></note></li>
+                  removes the corresponding subdirectory from the <filepath>plugins</filepath> folder.
+                  <indexterm>uninstalling</indexterm></note></li>
             </ul>
           </dd>
         </dlentry>
@@ -53,7 +54,8 @@
         <cmd>
           <!-- Used in installation topic & Release Notes -->
           <ph id="download-ot">Download the <filepath>dita-ot-<keyword keyref="maintenance-version"/>.zip</filepath>
-            package from the project website at <xref keyref="download.dita-ot"/>.</ph>
+            package from the project website at
+            <xref keyref="download.dita-ot"/>.</ph>
         </cmd>
       </step>
       <step>
@@ -67,19 +69,18 @@
             <!-- ↓ excerpt-variables ↓ -->
             <li id="novice-variables-last" audience="novice">
               <p id="common-format-info">
-                <varname>format</varname> is the output format (transformation type).
-                This argument corresponds to the common parameter
-                <parmname>transtype</parmname>.
-                Use the same values as for the <parmname>transtype</parmname> build
-                parameter, for example <option>html5</option> or <option>pdf</option>.
-              </p>
+                <varname>format</varname> is the output format (transformation type). This argument corresponds to the
+                common parameter <parmname>transtype</parmname>. Use the same values as for the
+                  <parmname>transtype</parmname> build parameter, for example <option>html5</option> or
+                  <option>pdf</option>. </p>
             </li>
             <!-- ↑ end-excerpt ↑ -->
             <li id="expert-variables-last" audience="expert">
               <p conref="#ID/common-format-info"/>
               <p id="transtypes">You can create plug-ins to add new output formats; by default, the following values are
                 available:
-                <indexterm>transtype<indexterm>list</indexterm></indexterm>
+                <indexterm>transtype
+                  <indexterm>list</indexterm></indexterm>
                 <ul>
                   <li><option>dita</option></li>
                   <li><option>eclipsehelp</option></li>
@@ -90,9 +91,9 @@
                   <li><option>pdf</option></li>
                   <li><option>xhtml</option></li>
                 </ul>
-                <note type="tip">See <xref keyref="output-formats"/> for sample command line syntax and more information
-                  on each transformation.
-                </note>
+                <note type="tip">See
+                  <xref keyref="output-formats"/> for sample command line syntax and more information on each
+                  transformation. </note>
               </p>
             </li>
             <li id="options">[<varname>options</varname>] include the following optional build parameters:
@@ -111,7 +112,8 @@
           <note id="dita-in-path" type="tip">Add the absolute path for <filepath conref="#ID/ot-dir"
               /><filepath>/bin</filepath> to the <varname>PATH</varname> environment variable to run the
               <cmdname>dita</cmdname> command from any location on the file system without typing the path.
-            <indexterm><cmdname>dita</cmdname> command<indexterm>PATH environment variable</indexterm></indexterm>
+            <indexterm><cmdname>dita</cmdname> command
+              <indexterm>PATH environment variable</indexterm></indexterm>
           </note>
         </stepresult>
       </step>
@@ -134,10 +136,10 @@
         set.</note>
       <note type="tip" id="pass-input-dir">If you are building in different environments where the location of the input
         files is not consistent, set <option>args.input.dir</option> with the <cmdname>dita</cmdname> command and
-        reference its value with <codeph>${args.input.dir}</codeph> in your <filepath>.properties</filepath>
-        file.
-        <indexterm><cmdname>dita</cmdname>
-          command<indexterm><option>args.input.dir</option></indexterm><indexterm>.properties file</indexterm></indexterm>
+        reference its value with <codeph>${args.input.dir}</codeph> in your <filepath>.properties</filepath> file.
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm><option>args.input.dir</option></indexterm>
+          <indexterm>.properties file</indexterm></indexterm>
         <indexterm>args.input.dir</indexterm>
       </note>
     </postreq>

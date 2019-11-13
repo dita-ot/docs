@@ -334,7 +334,8 @@
             not supported by default, as this could allow a reference to access and display any restricted or hidden
             file on the system. If you are certain that the path is valid and the file should be loaded, the current
             workaround is to set a parameter to allow these references. See
-            <xref keyref="parameters-base">DITA-OT common parameters (outer.control and generate.copy.outer)</xref> for details.
+            <xref keyref="parameters-base">DITA-OT common parameters (outer.control and generate.copy.outer)</xref> for
+            details.
             <indexterm>generate.copy.outer</indexterm></p></stentry>
       </strow>
       <strow>

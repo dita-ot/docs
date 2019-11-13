@@ -14,14 +14,20 @@
         <indexterm><xmlelement>dita:extension</xmlelement></indexterm>
         <indexterm><xmlelement>pathelement</xmlelement></indexterm>
         <indexterm><xmlelement>xsl:import</xmlelement></indexterm>
-        <indexterm><xmlatt>id</xmlatt><indexterm>plug-in</indexterm></indexterm>
+        <indexterm><xmlatt>id</xmlatt>
+          <indexterm>plug-in</indexterm></indexterm>
         <indexterm><xmlatt>behavior</xmlatt></indexterm>
         <indexterm><xmlatt>dita:extension</xmlatt></indexterm>
-        <indexterm>plug-ins<indexterm>extension points</indexterm></indexterm>
-        <indexterm>extension points<indexterm>creating</indexterm></indexterm>
-        <indexterm>XSLT<indexterm>extension points</indexterm></indexterm>
-        <indexterm>preprocessing<indexterm>XSLT</indexterm></indexterm>
-        <indexterm>metadata<indexterm>plug-in</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm>extension points</indexterm></indexterm>
+        <indexterm>extension points
+          <indexterm>creating</indexterm></indexterm>
+        <indexterm>XSLT
+          <indexterm>extension points</indexterm></indexterm>
+        <indexterm>preprocessing
+          <indexterm>XSLT</indexterm></indexterm>
+        <indexterm>metadata
+          <indexterm>plug-in</indexterm></indexterm>
         <indexterm>catalog</indexterm>
       </keywords>
     </metadata>
@@ -42,8 +48,8 @@
     </section>
     <section>
       <title><xmlelement>dita:extension</xmlelement> element</title>
-      <p>The <xmlelement>dita:extension</xmlelement> elements are used to insert generated content during the
-        plug-in installation process. There are two required attributes:</p>
+      <p>The <xmlelement>dita:extension</xmlelement> elements are used to insert generated content during the plug-in
+        installation process. There are two required attributes:</p>
       <ul>
         <li>The <xmlatt>id</xmlatt> attribute defines the extension point ID that provides the argument data.</li>
         <li>The <xmlatt>behavior</xmlatt> attribute defines which processing action is used.</li>
@@ -57,9 +63,9 @@
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportAntLibAction</codeph></pt>
-          <pd>Create Ant <xmlelement>pathelement</xmlelement> elements for the <xref keyref="plugin-javalib">library
-              import extension point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point
-            ID.</pd>
+          <pd>Create Ant <xmlelement>pathelement</xmlelement> elements for the
+            <xref keyref="plugin-javalib">library import extension point</xref>. The <xmlatt>id</xmlatt> attribute is
+            used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportPluginCatalogAction</codeph></pt>
@@ -71,29 +77,33 @@
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportStringsAction</codeph></pt>
-          <pd>Include plug-in string file content based on the <xref keyref="plugin-addgeneratedtext">generated text
-              extension point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+          <pd>Include plug-in string file content based on the
+            <xref keyref="plugin-addgeneratedtext">generated text extension point</xref>. The <xmlatt>id</xmlatt>
+            attribute is used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ImportXSLAction</codeph></pt>
-          <pd>Create <xmlelement>xsl:import</xmlelement> elements based on the <xref keyref="plugin-overridestyle">XSLT
-              import extension point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point
-            ID.</pd>
+          <pd>Create <xmlelement>xsl:import</xmlelement> elements based on the
+            <xref keyref="plugin-overridestyle">XSLT import extension point</xref>. The <xmlatt>id</xmlatt> attribute is
+            used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.InsertAction</codeph></pt>
-          <pd>Include plug-in conductor content based on the <xref keyref="plugin-anttarget">Ant import extension
-              point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+          <pd>Include plug-in conductor content based on the
+            <xref keyref="plugin-anttarget">Ant import extension point</xref>. The <xmlatt>id</xmlatt> attribute is used
+            to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.InsertAntActionRelative</codeph></pt>
-          <pd>Include plug-in conductor content based on the <xref keyref="plugin-anttarget">relative Ant import
-              extension point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+          <pd>Include plug-in conductor content based on the
+            <xref keyref="plugin-anttarget">relative Ant import extension point</xref>. The <xmlatt>id</xmlatt>
+            attribute is used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.InsertCatalogActionRelative</codeph></pt>
-          <pd>Include plug-in catalog content based on the <xref keyref="plugin-xmlcatalog">catalog import extension
-              point</xref>. The <xmlatt>id</xmlatt> attribute is used to define the extension point ID.</pd>
+          <pd>Include plug-in catalog content based on the
+            <xref keyref="plugin-xmlcatalog">catalog import extension point</xref>. The <xmlatt>id</xmlatt> attribute is
+            used to define the extension point ID.</pd>
         </plentry>
         <plentry>
           <pt><codeph>org.dita.dost.platform.ListTranstypeAction</codeph></pt>
@@ -127,8 +137,8 @@
                    name="Custom target content"/>
   &lt;template file="myBuildFile_template.xml"/>
 &lt;/plugin></codeblock>
-      <p>When the plug-in is installed, this will be used to recreate <filepath>myBuildFile.xml</filepath>, replacing Ant
-        file content based on extension point use.</p>
+      <p>When the plug-in is installed, this will be used to recreate <filepath>myBuildFile.xml</filepath>, replacing
+        Ant file content based on extension point use.</p>
       <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;project xmlns:dita="http://dita-ot.sourceforge.net">
   &lt;target name="dita2custom"
      dita:depends="dita2custom.init,

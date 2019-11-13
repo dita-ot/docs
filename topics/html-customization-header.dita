@@ -15,13 +15,20 @@
       <keywords>
         <indexterm><xmlelement>header</xmlelement></indexterm>
         <indexterm><xmlelement>footer</xmlelement></indexterm>
-        <indexterm><xmlelement>div</xmlelement><indexterm>HTML header</indexterm><indexterm>HTML footer</indexterm></indexterm>
+        <indexterm><xmlelement>div</xmlelement>
+          <indexterm>HTML header</indexterm>
+          <indexterm>HTML footer</indexterm></indexterm>
         <indexterm><xmlatt>role</xmlatt></indexterm>
-        <indexterm>HTML5<indexterm>headers</indexterm></indexterm>
-        <indexterm>HTML5<indexterm>footers</indexterm></indexterm>
-        <indexterm>CSS<indexterm>adding custom</indexterm></indexterm>
-        <indexterm>CSS<indexterm>HTML5</indexterm></indexterm>
-        <indexterm>HTML5<indexterm>CSS</indexterm></indexterm>
+        <indexterm>HTML5
+          <indexterm>headers</indexterm></indexterm>
+        <indexterm>HTML5
+          <indexterm>footers</indexterm></indexterm>
+        <indexterm>CSS
+          <indexterm>adding custom</indexterm></indexterm>
+        <indexterm>CSS
+          <indexterm>HTML5</indexterm></indexterm>
+        <indexterm>HTML5
+          <indexterm>CSS</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>

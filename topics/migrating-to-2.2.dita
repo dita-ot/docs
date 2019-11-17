@@ -20,14 +20,22 @@
         <indexterm><xmlelement>preface</xmlelement></indexterm>
         <indexterm><xmlelement>frontmatter</xmlelement></indexterm>
         <indexterm><xmlelement>bookmap</xmlelement></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>.notetitle</codeph> classes</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>user.input.file</parmname></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>user.input.dir</parmname></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><parmname>InputMapDir</parmname></indexterm></indexterm>
-        <indexterm>RenderX<indexterm>plug-in</indexterm></indexterm>
-        <indexterm>Antenna House<indexterm>plug-in</indexterm></indexterm>
-        <indexterm>Apache FOP<indexterm>plug-in</indexterm></indexterm>
-        <indexterm>table of contents<indexterm>PDF</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>.notetitle</codeph> classes</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>user.input.file</parmname></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>user.input.dir</parmname></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><parmname>InputMapDir</parmname></indexterm></indexterm>
+        <indexterm>RenderX
+          <indexterm>plug-in</indexterm></indexterm>
+        <indexterm>Antenna House
+          <indexterm>plug-in</indexterm></indexterm>
+        <indexterm>Apache FOP
+          <indexterm>plug-in</indexterm></indexterm>
+        <indexterm>table of contents
+          <indexterm>PDF</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -35,7 +43,8 @@
   <refbody>
     <section>
       <note>This topic provides a summary of changes in DITA-OT 2.2 that may require modifications to custom stylesheets
-        or plug-ins. For more information on changes in this release, see the <xref keyref="2.2-release-notes"/>.</note>
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="2.2-release-notes"/>.</note>
     </section>
     <section>
       <title>HTML5</title>

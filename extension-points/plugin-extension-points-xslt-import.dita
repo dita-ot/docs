@@ -13,9 +13,12 @@
       <keywords>
         <indexterm><xmlelement>xref</xmlelement></indexterm>
         <indexterm><xmlatt>file</xmlatt></indexterm>
-        <indexterm>XSLT<indexterm>extension points</indexterm></indexterm>
-        <indexterm>extension points<indexterm>XSLT</indexterm></indexterm>
-        <indexterm>preprocessing<indexterm>extension points, XSLT</indexterm></indexterm>
+        <indexterm>XSLT
+          <indexterm>extension points</indexterm></indexterm>
+        <indexterm>extension points
+          <indexterm>XSLT</indexterm></indexterm>
+        <indexterm>preprocessing
+          <indexterm>extension points, XSLT</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>

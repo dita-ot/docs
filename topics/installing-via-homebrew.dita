@@ -7,21 +7,24 @@
   <titlealts>
     <navtitle>Installing via Homebrew</navtitle>
   </titlealts>
-  <shortdesc>An alternative installation method can be used to install DITA-OT on macOS via <xref keyref="homebrew"/>,
-    the platform’s most popular open-source package manager.</shortdesc>
+  <shortdesc>An alternative installation method can be used to install DITA-OT on macOS via
+    <xref keyref="homebrew"/>, the platform’s most popular open-source package manager.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
         <indexterm>macOS</indexterm>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>Homebrew</indexterm></indexterm>
-        <indexterm>installing<indexterm>Homebrew</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>Homebrew</indexterm></indexterm>
+        <indexterm>installing
+          <indexterm>Homebrew</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
   <taskbody>
     <prereq>
-      <p>The steps below assume you have already installed <xref keyref="homebrew"/> according to the instructions at
-          <xref keyref="homebrew">brew.sh</xref>.</p>
+      <p>The steps below assume you have already installed
+        <xref keyref="homebrew"/> according to the instructions at
+        <xref keyref="homebrew">brew.sh</xref>.</p>
       <note type="tip">Verify that your <varname>PATH</varname> environment begins with
           <filepath>/usr/local/bin</filepath> to ensure that Homebrew-installed software takes precedence over any
         programs of the same name elsewhere on the system.</note>

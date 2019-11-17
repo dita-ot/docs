@@ -4,15 +4,16 @@
 
 <concept id="xhtmlchm" xml:lang="en-US">
   <title>HTML Help processing</title>
-  <shortdesc>The <option>htmlhelp</option> transformation creates HTML Help control files. If the
-    build runs on a system that has the HTML Help compiler installed, the control files are compiled
-    into a CHM file.</shortdesc>
+  <shortdesc>The <option>htmlhelp</option> transformation creates HTML Help control files. If the build runs on a system
+    that has the HTML Help compiler installed, the control files are compiled into a CHM file.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>HTML<indexterm>CHM</indexterm></indexterm>
+        <indexterm>HTML
+          <indexterm>CHM</indexterm></indexterm>
         <indexterm>dita.map.htmlhelp</indexterm>
-        <indexterm>targets<indexterm>HTML Help</indexterm></indexterm>
+        <indexterm>targets
+          <indexterm>HTML Help</indexterm></indexterm>
         <indexterm><filepath>.hhp</filepath></indexterm>
         <indexterm><filepath>.hhc</filepath></indexterm>
         <indexterm><filepath>.hhk</filepath></indexterm>
@@ -22,8 +23,8 @@
   </prolog>
   <conbody>
     <section>
-      <p>Once the pre-processing and XHTML processes are completed, most of the HTML Help processing is handled
-        by the following targets:</p>
+      <p>Once the pre-processing and XHTML processes are completed, most of the HTML Help processing is handled by the
+        following targets:</p>
       <dl>
         <dlentry>
           <dt><codeph>dita.map.htmlhelp</codeph></dt>

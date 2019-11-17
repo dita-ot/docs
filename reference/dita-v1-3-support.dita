@@ -17,20 +17,25 @@
         <indexterm><xmlelement>line-through</xmlelement></indexterm>
         <indexterm><xmlelement>overline</xmlelement></indexterm>
         <indexterm><xmlelement>object</xmlelement></indexterm>
-        <indexterm><xmlelement>div</xmlelement><indexterm>support</indexterm></indexterm>
+        <indexterm><xmlelement>div</xmlelement>
+          <indexterm>support</indexterm></indexterm>
         <indexterm><xmlatt>keyscope</xmlatt></indexterm>
         <indexterm><xmlatt>deliveryTarget</xmlatt></indexterm>
         <indexterm><xmlatt>orient</xmlatt></indexterm>
         <indexterm><xmlatt>keyref</xmlatt></indexterm>
         <indexterm><xmlatt>cascade</xmlatt></indexterm>
         <indexterm>profiling</indexterm>
-        <indexterm>filters<indexterm>support</indexterm></indexterm>
+        <indexterm>filters
+          <indexterm>support</indexterm></indexterm>
         <indexterm>branch filters</indexterm>
         <indexterm>DTD</indexterm>
-        <indexterm>schema<indexterm>DITA 1.3</indexterm></indexterm>
+        <indexterm>schema
+          <indexterm>DITA 1.3</indexterm></indexterm>
         <indexterm>grammar files</indexterm>
-        <indexterm>DITA 1.3<indexterm>specification support</indexterm></indexterm>
-        <indexterm>catalog<indexterm>grammar file resolution</indexterm></indexterm>
+        <indexterm>DITA 1.3
+          <indexterm>specification support</indexterm></indexterm>
+        <indexterm>catalog
+          <indexterm>grammar file resolution</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>

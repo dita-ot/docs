@@ -9,10 +9,14 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>macOS<indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
-        <indexterm>Linux<indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
-        <indexterm>Windows<indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>using</indexterm></indexterm>
+        <indexterm>macOS
+          <indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
+        <indexterm>Linux
+          <indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
+        <indexterm>Windows
+          <indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>using</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -49,7 +53,8 @@
       <p>Run from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>, the following command generates
         HTML5 output for the <filepath>sequence.ditamap</filepath> file:</p>
       <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
-      <indexterm>DITA maps<indexterm><cmdname>dita</cmdname> command example</indexterm></indexterm>
+      <indexterm>DITA maps
+        <indexterm><cmdname>dita</cmdname> command example</indexterm></indexterm>
     </example>
     <example audience="expert">
       <p>For example, from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>, run:</p>
@@ -65,7 +70,8 @@
       <p>
         <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/sequence-html5.properties"/></codeblock>
       </p>
-      <indexterm>DITA maps<indexterm><cmdname>dita</cmdname> command example</indexterm></indexterm>
+      <indexterm>DITA maps
+        <indexterm><cmdname>dita</cmdname> command example</indexterm></indexterm>
     </example>
     <postreq>
       <p audience="novice">Most builds require you to specify more options than are described in this topic.</p>

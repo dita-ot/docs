@@ -15,7 +15,8 @@
         <indexterm><xmlelement>footer</xmlelement></indexterm>
         <indexterm><xmlelement>require</xmlelement></indexterm>
         <indexterm><xmlelement>head</xmlelement></indexterm>
-        <indexterm>HTML5<indexterm>JavaScript, adding</indexterm></indexterm>
+        <indexterm>HTML5
+          <indexterm>JavaScript, adding</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -78,9 +79,9 @@
     </steps>
     <result>
       <note type="tip">The files for this sample plug-in are included in the DITA-OT installation directory under
-          <filepath>docsrc/samples/plugins/com.example.html5-javascript/</filepath> and on <xref
-          href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.html5-javascript" format="html"
-          scope="external">GitHub</xref>.</note>
+          <filepath>docsrc/samples/plugins/com.example.html5-javascript/</filepath> and on
+        <xref href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.html5-javascript"
+          format="html" scope="external">GitHub</xref>.</note>
       <p>The plug-in directory has the following layout and files:</p>
       <codeblock>com.example.html5-javascript
 ├── build_html5-javascript.xml

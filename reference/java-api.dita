@@ -9,11 +9,16 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>Java<indexterm>API</indexterm></indexterm>
+        <indexterm>Java
+          <indexterm>API</indexterm></indexterm>
         <indexterm>API</indexterm>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>classpath</indexterm></indexterm>
-        <indexterm>Java<indexterm>classpath</indexterm></indexterm>
-        <indexterm>classpath<indexterm>Java</indexterm><indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>classpath</indexterm></indexterm>
+        <indexterm>Java
+          <indexterm>classpath</indexterm></indexterm>
+        <indexterm>classpath
+          <indexterm>Java</indexterm>
+          <indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -39,7 +44,8 @@ Processor p = pf.newProcessor("html5")
 p.run();</codeblock>
     </example>
     <section>
-      <indexterm>debugging<indexterm>logging</indexterm></indexterm>
+      <indexterm>debugging
+        <indexterm>logging</indexterm></indexterm>
       <p>By default, running DITA-OT via the API will write a debug log to the temporary directory. A custom SLF4J
         logger can also be used to access the log via the Simple Logging Facade for Java.</p>
       <p>The processor cleans the temporary directory by default, but this can be disabled to simplify debugging in
@@ -54,8 +60,9 @@ p.run();</codeblock>
       <p>As of version 2.5, the DITA Open Toolkit base library (<filepath>dost.jar</filepath>) is available via the
         Maven 2 Central Repository. You can use this mechanism to download the main JAR file and include it in the build
         for other Java projects.</p>
-      <p>To locate the latest version, <xref href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.dita-ot%22"
-          format="html" scope="external">search for the <codeph>org.dita-ot</codeph> group ID</xref>.</p>
+      <p>To locate the latest version,
+        <xref href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.dita-ot%22" format="html" scope="external"
+          >search for the <codeph>org.dita-ot</codeph> group ID</xref>.</p>
       <note type="important">The <filepath>dost.jar</filepath> file provides only the DITA Open Toolkit base library. It
         does <b>not</b> contain the full DITA-OT distribution and cannot be used to run DITA-OT by itself. You will need
         to ensure that your build installs the other files and directories required for the toolkit along with the

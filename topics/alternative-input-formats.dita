@@ -7,20 +7,27 @@
   <titlealts>
     <navtitle>Authoring formats</navtitle>
   </titlealts>
-  <shortdesc>DITA-OT supports several alternative input formats in addition to <xref keyref="dita13-spec">standard DITA
-      XML</xref>, including Markdown and the proposed XDITA, MDITA and HDITA authoring formats currently in development
-    for Lightweight DITA.</shortdesc>
+  <shortdesc>DITA-OT supports several alternative input formats in addition to
+    <xref keyref="dita13-spec">standard DITA XML</xref>, including Markdown and the proposed XDITA, MDITA and HDITA
+    authoring formats currently in development for Lightweight DITA.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
         <indexterm>Lightweight DITA</indexterm>
-        <indexterm>LwDITA<index-see>Lightweight DITA</index-see></indexterm>
-        <indexterm>MDITA<index-see>Lightweight DITA</index-see></indexterm>
-        <indexterm>XDITA<index-see>Lightweight DITA</index-see></indexterm>
-        <indexterm>HDITA<index-see>Lightweight DITA</index-see></indexterm>
+        <indexterm>LwDITA
+          <index-see>Lightweight DITA</index-see></indexterm>
+        <indexterm>MDITA
+          <index-see>Lightweight DITA</index-see></indexterm>
+        <indexterm>XDITA
+          <index-see>Lightweight DITA</index-see></indexterm>
+        <indexterm>HDITA
+          <index-see>Lightweight DITA</index-see></indexterm>
         <indexterm>authoring formats</indexterm>
-        <indexterm>input formats<index-see>authoring formats</index-see></indexterm>
-        <indexterm>formats<index-see>authoring formats</index-see><index-see>transformations</index-see></indexterm>
+        <indexterm>input formats
+          <index-see>authoring formats</index-see></indexterm>
+        <indexterm>formats
+          <index-see>authoring formats</index-see>
+          <index-see>transformations</index-see></indexterm>
       </keywords>
     </metadata>
   </prolog>

@@ -14,15 +14,21 @@
       <keywords>
         <indexterm><xmlatt>dir</xmlatt></indexterm>
         <indexterm><xmlatt>index:lang</xmlatt></indexterm>
-        <indexterm>languages<indexterm>index sorting</indexterm></indexterm>
-        <indexterm>languages<indexterm>right-to-left</indexterm></indexterm>
-        <indexterm>languages<indexterm>bi-directional</indexterm></indexterm>
+        <indexterm>languages
+          <indexterm>index sorting</indexterm></indexterm>
+        <indexterm>languages
+          <indexterm>right-to-left</indexterm></indexterm>
+        <indexterm>languages
+          <indexterm>bi-directional</indexterm></indexterm>
         <indexterm>English</indexterm>
         <indexterm>strings</indexterm>
-        <indexterm>index<indexterm>sorting</indexterm></indexterm>
+        <indexterm>index
+          <indexterm>sorting</indexterm></indexterm>
         <indexterm>bi-directional languages</indexterm>
         <indexterm>generated text</indexterm>
-        <indexterm>CSS<indexterm>bi-directional languages</indexterm><indexterm>right-to-left languages</indexterm></indexterm>
+        <indexterm>CSS
+          <indexterm>bi-directional languages</indexterm>
+          <indexterm>right-to-left languages</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -53,7 +59,8 @@
       </dl>When DITA-OT generates output, it takes the first value for the <xmlatt>xml:lang</xmlatt> attribute that it
       encounters, and then it uses that value to create generated text, perform index sorting, and determine which
       default CSS file is used. If no value for the <xmlatt>xml:lang</xmlatt> attribute is found, the toolkit defaults
-      to U.S. English. You can use the <xref href="../parameters/configuration-properties.dita"
-        >configuration.properties</xref> to change the default language.</p>
+      to U.S. English. You can use the
+      <xref href="../parameters/configuration-properties.dita">configuration.properties</xref> to change the default
+      language.</p>
   </conbody>
 </concept>

@@ -13,16 +13,22 @@
     was corrected with regard to <codeph>shortdesc</codeph> handling, and a new XSLT template mode was introduced for
     HTML TOC processing. Several stylesheets were moved to plug-in specific folders and deprecated properties and XSLT
     variables were removed. </shortdesc>
-  
+
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>deprecated features<indexterm><codeph>dita.input</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>dita.input.dirname</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>dita.extname</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm>XHTML, flagging-related templates</indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>page-margin-left</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>page-margin-right</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>dita.input</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>dita.input.dirname</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>dita.extname</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm>XHTML, flagging-related templates</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>page-margin-left</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>page-margin-right</codeph></indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -79,12 +85,13 @@
       <p>If you override the X/HTML transforms, you may need to update your overrides to use the new flagging logic. In
         most cases this just means deleting calls to the deprecated templates; in some cases, the calls can be replaced
         with 2 lines to process flags in new places. You should compare your override to the updated XHTML code and
-        update as needed. See <xref keyref="flagging-migration"/> for details.</p>
+        update as needed. See
+        <xref keyref="flagging-migration"/> for details.</p>
       <p>Plug-ins that provide support for new transforms need to ensure that they properly support the DITA
         &lt;foreign&gt; element, which should be ignored by default; if so, this change will have no immediate impact.
         Support for flagging new transformation types may be more easily added based on this update, because there is no
-        need to re-implement flagging logic, but this is not required. See <xref keyref="preprocess-flagging"/> for
-        details on how to add flagging support.</p>
+        need to re-implement flagging logic, but this is not required. See
+        <xref keyref="preprocess-flagging"/> for details on how to add flagging support.</p>
     </section>
     <section>
       <title>PDF</title>

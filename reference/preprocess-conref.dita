@@ -12,12 +12,16 @@
         <indexterm><xmlelement>fig</xmlelement></indexterm>
         <indexterm><xmlelement>xref</xmlelement></indexterm>
         <indexterm><xmlelement>section</xmlelement></indexterm>
-        <indexterm><xmlatt>conref</xmlatt><indexterm>resolving</indexterm></indexterm>
-        <indexterm><xmlatt>id</xmlatt><indexterm><xmlatt>conref</xmlatt> resolution</indexterm></indexterm>
+        <indexterm><xmlatt>conref</xmlatt>
+          <indexterm>resolving</indexterm></indexterm>
+        <indexterm><xmlatt>id</xmlatt>
+          <indexterm><xmlatt>conref</xmlatt> resolution</indexterm></indexterm>
         <indexterm><xmlatt>xref</xmlatt></indexterm>
-        <indexterm>preprocessing<indexterm><codeph>conref</codeph></indexterm></indexterm>
+        <indexterm>preprocessing
+          <indexterm><codeph>conref</codeph></indexterm></indexterm>
         <indexterm><codeph>conref</codeph></indexterm>
-        <indexterm>XSLT<indexterm><codeph>conref</codeph> step</indexterm></indexterm>
+        <indexterm>XSLT
+          <indexterm><codeph>conref</codeph> step</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>

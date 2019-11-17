@@ -9,8 +9,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> is a feature release that provides new features and
-      enhancements, including <ph conref="#v3.4/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v3.4/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
   </abstract>
@@ -22,6 +22,32 @@
         <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
           since previous release.</draft-comment>
         <p conkeyref="reusable-components/java-clients"/>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.4.1">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">(release date)</ph>-->
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <li id="3409"> The RELAX NG schema required to validate XML project files was missing in the 3.4 distribution
+            package. The <filepath>project.rnc</filepath> file is now provided in the <filepath>resources</filepath>
+            folder of the DITA-OT installation.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3409" format="html" scope="external">#3409</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3410" format="html" scope="external">#3410</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4.1+is%3Aclosed" format="html"
+            scope="external">3.4.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.4...3.4.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>
@@ -207,10 +233,10 @@
                 <xref href="https://github.com/dita-ot/dita-ot/issues/2914" format="html" scope="external">#2914</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3381" format="html" scope="external">#3381</xref>
               </li>
-              <li id="3042">When publishing to PDF with Antenna House Formatter, destination anchors for index
-                links now use <xmlelement>fo:wrapper</xmlelement> instead of <xmlelement>fo:inline</xmlelement>. In
-                previous versions of DITA-OT, index terms that appeared in source files between section titles and
-                other section content created empty space in PDF output. 
+              <li id="3042">When publishing to PDF with Antenna House Formatter, destination anchors for index links now
+                use <xmlelement>fo:wrapper</xmlelement> instead of <xmlelement>fo:inline</xmlelement>. In previous
+                versions of DITA-OT, index terms that appeared in source files between section titles and other section
+                content created empty space in PDF output.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3042" format="html" scope="external">#3042</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3379" format="html" scope="external">#3379</xref>
               </li>

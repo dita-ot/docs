@@ -36,12 +36,41 @@
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
-          <li id="3409"> The RELAX NG schema required to validate XML project files was missing in the 3.4 distribution
+          <li id="2980">In earlier versions of DITA-OT, when the DITA 1.3 <xmlelement>dvrResourcePrefix</xmlelement> or
+              <xmlelement>dvrResourceSuffix</xmlelement> elements were used to rename filtered topics, the unfiltered
+            original resources were still copied to the output folder, even if they were not referenced elsewhere in the
+            publication. The branch filtering process has been revised to ensure only referenced resources are passed to
+            output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2980" format="html" scope="external">#2980</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3411" format="html" scope="external">#3411</xref>
+          </li>
+
+          <li id="3202">Due to an omission in the DITA 1.3 shell files provided by the
+            <xref keyref="dita-tc"/>, classification maps based on the XML Schema Definition were considered invalid.
+            The error was reported to the TC and resolved in the official OASIS repository and in the grammar files
+            bundled with DITA-OT.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3202" format="html" scope="external">#3202</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3426" format="html" scope="external">#3426</xref>
+          </li>
+          <li id="3409">The RELAX NG schema required to validate XML project files was missing in the 3.4 distribution
             package. The <filepath>project.rnc</filepath> file is now provided in the <filepath>resources</filepath>
             folder of the DITA-OT installation.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3409" format="html" scope="external">#3409</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3410" format="html" scope="external">#3410</xref>
           </li>
+          <li id="3414">When the bundled <tm trademark="Apache" tmtype="tm">Apache</tm> Formatting Objects Processor
+            (FOP) was upgraded to version 2.4 for DITA-OT 3.4, a required library reference was omitted, which prevented
+            embedded SVG images from appearing in PDF output. The library has been restored to the distribution package
+            to ensure that SVGs are rendered as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3414" format="html" scope="external">#3414</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3419" format="html" scope="external">#3419</xref>
+          </li>
+          <li id="3420">The bundled Jackson data binding library was updated to version 2.10.1 to resolve several
+            vulnerabilities reported in previous versions.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3420" format="html" scope="external">#3420</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3421" format="html" scope="external">#3421</xref>
+          </li>
+
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4.1+is%3Aclosed" format="html"

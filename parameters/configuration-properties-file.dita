@@ -115,7 +115,7 @@
               example, to install all of the sample plug-ins that are included in the DITA-OT documentation, append
                 <filepath>;docsrc/samples/plugins</filepath> to the property value and run <cmdname>dita</cmdname>
               <parmname>--install</parmname>. You can maintain custom plug-ins in version-controlled repositories
-              outside of the DITA-OT installation directory, and add the repository location to the list of plug-in
+              outside of the DITA-OT installation directory, and add the repository locations to the list of plug-in
               directories here to test your code.</note></pd>
         </plentry>
         <plentry id="plugin.ignores">

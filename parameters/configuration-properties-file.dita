@@ -107,9 +107,16 @@
         </plentry>
         <plentry id="plugindirs">
           <pt><parmname>plugindirs</parmname></pt>
-          <pd id="plugindirs.desc">A semicolon-separated list of directory paths that DITA-OT searches for plug-ins to
-            install; any relative paths are resolved against the DITA-OT base directory. Any immediate subdirectory that
-            contains a <filepath>plugin.xml</filepath> file is installed.</pd>
+          <pd id="plugindirs.desc">
+            <p>A semicolon-separated list of directory paths that DITA-OT searches for plug-ins to install; any relative
+              paths are resolved against the DITA-OT base directory. Any immediate subdirectory that contains a
+                <filepath>plugin.xml</filepath> file is installed.</p>
+            <note type="tip">You can use this property to test custom plug-ins that are stored in other locations. For
+              example, to install all of the sample plug-ins that are included in the DITA-OT documentation, append
+                <filepath>;docsrc/samples/plugins</filepath> to the property value and run <cmdname>dita</cmdname>
+              <parmname>--install</parmname>. You can maintain custom plug-ins in version-controlled repositories
+              outside of the DITA-OT installation directory, and add the repository locations to the list of plug-in
+              directories here to test your code.</note></pd>
         </plentry>
         <plentry id="plugin.ignores">
           <pt><parmname>plugin.ignores</parmname></pt>

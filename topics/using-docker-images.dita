@@ -66,12 +66,13 @@
         <cmd>Log in to the GitHub Package Registry.</cmd>
         <substeps>
           <substep>
-            <cmd>In your
-              <xref href="https://github.com/settings/tokens" format="html" scope="external">GitHub profile
-                settings</xref>, create a new personal access token with the <codeph>read:packages</codeph> scope.</cmd>
-            <info>For more information, see
-              <xref href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line"
-                scope="external" format="html">Creating a personal access token for the command line</xref>.</info>
+            <cmd>In your <xref href="https://github.com/settings/tokens" format="html"
+                scope="external">GitHub profile settings</xref>, create a new personal access token
+              with the <codeph>read:packages</codeph> and <codeph>repo</codeph> scopes.</cmd>
+            <info>For more information, see <xref
+                href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line"
+                scope="external" format="html">Creating a personal access token for the command
+                line</xref>.</info>
           </substep>
           <substep>
             <cmd>On the command line, run the <cmdname>docker</cmdname> command to log in with your GitHub

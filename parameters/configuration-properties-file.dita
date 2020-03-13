@@ -12,7 +12,8 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>configuration properties<indexterm>default.cascade</indexterm>
+        <indexterm>configuration properties
+          <indexterm>default.cascade</indexterm>
           <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
           <indexterm>plugin.ignores</indexterm>
           <indexterm>plugin.order</indexterm>
@@ -22,21 +23,32 @@
           <indexterm>registry</indexterm>
           <indexterm>default.coderef-charset</indexterm>
         </indexterm>
-        <indexterm>files <indexterm>config/configuration.properties file</indexterm>
+        <indexterm>files
+          <indexterm>config/configuration.properties file</indexterm>
         </indexterm>
-        <indexterm>PDF<indexterm>configuration properties</indexterm>
+        <indexterm>PDF
+          <indexterm>configuration properties</indexterm>
         </indexterm>
         <indexterm><xmlatt>cascade</xmlatt></indexterm>
-        <indexterm>macOS<indexterm>colored console output</indexterm></indexterm>
-        <indexterm>Linux<indexterm>colored console output</indexterm></indexterm>
-        <indexterm>Windows<indexterm>colored console output</indexterm></indexterm>
-        <indexterm>command line<index-see-also>dita command</index-see-also></indexterm>
-        <indexterm>terminal<index-see>command line</index-see></indexterm>
-        <indexterm>grammar files<index-see-also>schema</index-see-also><!-- LE: https://github.com/dita-ot/dita-ot/issues/3314 -->
+        <indexterm>macOS
+          <indexterm>colored console output</indexterm></indexterm>
+        <indexterm>Linux
+          <indexterm>colored console output</indexterm></indexterm>
+        <indexterm>Windows
+          <indexterm>colored console output</indexterm></indexterm>
+        <indexterm>command line
+          <index-see-also>dita command</index-see-also></indexterm>
+        <indexterm>terminal
+          <index-see>command line</index-see></indexterm>
+        <indexterm>grammar files
+          <index-see-also>schema</index-see-also>
           <index-see-also>DTD</index-see-also></indexterm>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>colored console output</indexterm></indexterm>
-        <indexterm>metadata<indexterm><xmlatt>cascade</xmlatt></indexterm></indexterm>
-        <indexterm>DITA 1.3<indexterm><xmlatt>cascade</xmlatt></indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>colored console output</indexterm></indexterm>
+        <indexterm>metadata
+          <indexterm><xmlatt>cascade</xmlatt></indexterm></indexterm>
+        <indexterm>DITA 1.3
+          <indexterm><xmlatt>cascade</xmlatt></indexterm></indexterm>
         <indexterm>default.cascade</indexterm>
         <indexterm>org.dita.pdf2.i18n.enabled</indexterm>
         <indexterm>plugin.ignores</indexterm>
@@ -46,10 +58,13 @@
         <indexterm>cli.color</indexterm>
         <indexterm>registry</indexterm>
         <indexterm>default.coderef-charset</indexterm>
-        <indexterm>Java<indexterm>temporary file names</indexterm></indexterm>
+        <indexterm>Java
+          <indexterm>temporary file names</indexterm></indexterm>
         <indexterm>temporary file names</indexterm>
-        <indexterm>catalog<indexterm>import precedence</indexterm></indexterm>
-        <indexterm>internationalization<index-see>I18N</index-see></indexterm>
+        <indexterm>catalog
+          <indexterm>import precedence</indexterm></indexterm>
+        <indexterm>internationalization
+          <index-see>I18N</index-see></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -92,9 +107,16 @@
         </plentry>
         <plentry id="plugindirs">
           <pt><parmname>plugindirs</parmname></pt>
-          <pd id="plugindirs.desc">A semicolon-separated list of directory paths that DITA-OT searches for plug-ins to
-            install; any relative paths are resolved against the DITA-OT base directory. Any immediate subdirectory that
-            contains a <filepath>plugin.xml</filepath> file is installed.</pd>
+          <pd id="plugindirs.desc">
+            <p>A semicolon-separated list of directory paths that DITA-OT searches for plug-ins to install; any relative
+              paths are resolved against the DITA-OT base directory. Any immediate subdirectory that contains a
+                <filepath>plugin.xml</filepath> file is installed.</p>
+            <note type="tip">You can use this property to test custom plug-ins that are stored in other locations. For
+              example, to install all of the sample plug-ins that are included in the DITA-OT documentation, append
+                <filepath>;docsrc/samples/plugins</filepath> to the property value and run <cmdname>dita</cmdname>
+              <parmname>--install</parmname>. You can maintain custom plug-ins in version-controlled repositories
+              outside of the DITA-OT installation directory, and add the repository locations to the list of plug-in
+              directories here to test your code.</note></pd>
         </plentry>
         <plentry id="plugin.ignores">
           <pt><parmname>plugin.ignores</parmname></pt>

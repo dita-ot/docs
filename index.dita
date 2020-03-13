@@ -17,35 +17,48 @@
   <body>
 
     <note>While the DITA standard is owned and developed by OASIS, the DITA Open Toolkit project is governed separately.
-      DITA-OT is an independent, open-source implementation of the <xref keyref="dita13-spec">DITA
-      standard</xref>.</note>
+      DITA-OT is an independent, open-source implementation of the
+      <xref keyref="dita13-spec">DITA standard</xref>.</note>
 
     <section>
       <title>DITA-OT documentation</title>
       <p>The DITA Open Toolkit documentation provides information about installing, running, configuring and extending
         the toolkit.</p>
-      <ul outputclass="list-group">
-        <li outputclass="list-group-item list-group-item-action">See the <xref keyref="release-notes"/> for information
-          on the changes in the current release.</li>
-        <li outputclass="list-group-item list-group-item-action"><xref keyref="installing-client"/> shows how to install
-          the toolkit and run a build to verify the installation.</li>
-        <li outputclass="list-group-item list-group-item-action"><xref keyref="building-output"/> provides information
-          about transforming DITA content to other formats.</li>
-        <li outputclass="list-group-item list-group-item-action"><xref keyref="alternative-input-formats"/> introduces
-          new input formats supported in DITA-OT ≥ 3.0.</li>
-        <li outputclass="list-group-item list-group-item-action"><xref keyref="output-formats">Output formats</xref>
-          describes the core transformations that convert DITA to other formats.</li>
-        <li outputclass="list-group-item list-group-item-action"><xref keyref="parameters"/> explains how to adjust the
-          behavior of DITA Open Toolkit via <cmdname>dita</cmdname> command arguments and options, DITA-OT parameter
-          settings, and configuration properties.</li>
-        <li outputclass="list-group-item list-group-item-action"><xref keyref="customizing"/> provides information on
-          extending DITA-OT. <xref keyref="html-customization"/> and <xref keyref="pdf-customization"/> describe common
-          customization scenarios, and more advanced solutions are described in <xref keyref="custom-plugins"/>.</li>
-        <li outputclass="list-group-item list-group-item-action"><xref keyref="troubleshooting-overview"/> contains
-          information about resolving problems that you might encounter.</li>
-        <li outputclass="list-group-item list-group-item-action"><xref keyref="reference"/> topics provide additional
-          information about the <xref keyref="architecture"/>, <xref keyref="dita-spec-support"/>, a <xref
-            keyref="glossary"/> and other <xref keyref="dita-and-dita-ot-resources"/>.</li>
+      <ul outputclass="list-group mb-5">
+        <li outputclass="list-group-item list-group-item-action">See the
+          <xref keyref="release-notes" outputclass="stretched-link"/> for information on the changes in the current
+          release.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="installing-client" outputclass="stretched-link"/> shows how to install the toolkit and run a
+          build to verify the installation.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="building-output" outputclass="stretched-link"/> provides information about transforming DITA
+          content to other formats.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="alternative-input-formats" outputclass="stretched-link"/> introduces new input formats supported
+          in DITA-OT ≥ 3.0.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="output-formats" outputclass="stretched-link">Output formats</xref> describes the core
+          transformations that convert DITA to other formats.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="parameters" outputclass="stretched-link"/> explains how to adjust the behavior of DITA Open
+          Toolkit via <cmdname>dita</cmdname> command arguments and options, DITA-OT parameter settings, and
+          configuration properties.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="customizing" outputclass="stretched-link"/> provides information on extending DITA-OT.
+          <xref keyref="html-customization"/> and
+          <xref keyref="pdf-customization"/> describe common customization scenarios, and more advanced solutions are
+          described in
+          <xref keyref="custom-plugins"/>.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="troubleshooting-overview" outputclass="stretched-link"/> contains information about resolving
+          problems that you might encounter.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="reference" outputclass="stretched-link"/> topics provide additional information about the
+          <xref keyref="architecture"/>,
+          <xref keyref="dita-spec-support"/>, a
+          <xref keyref="glossary"/> and other
+          <xref keyref="dita-and-dita-ot-resources"/>.</li>
       </ul>
     </section>
   </body>

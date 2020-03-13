@@ -12,10 +12,14 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>Saxon<indexterm><xmlelement>service</xmlelement></indexterm></indexterm>
-        <indexterm>Ant<indexterm><xmlelement>jar</xmlelement></indexterm></indexterm>
-        <indexterm>XSLT<indexterm>Saxon</indexterm></indexterm>
-        <indexterm>Java<indexterm>extension functions</indexterm></indexterm>
+        <indexterm>Saxon
+          <indexterm><xmlelement>service</xmlelement></indexterm></indexterm>
+        <indexterm>Ant
+          <indexterm><xmlelement>jar</xmlelement></indexterm></indexterm>
+        <indexterm>XSLT
+          <indexterm>Saxon</indexterm></indexterm>
+        <indexterm>Java
+          <indexterm>extension functions</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -26,11 +30,12 @@
       DITA-OT provides a dynamic mechanism to perform this registration for plug-in-provided extension functions.</p>
     <p>To implement extension functions, you must do the following:
       <ol>
-        <li>Add your plug-in’s JAR file in the DITA-OT class path as described in <xref keyref="plugin-javalib"/>.</li>
+        <li>Add your plug-in’s JAR file in the DITA-OT class path as described in
+          <xref keyref="plugin-javalib"/>.</li>
         <li>For each function, implement a class that extends
             <codeph>net.sf.saxon.lib.ExtensionFunctionDefinition</codeph>. This class provides the namespace name and
-          function name for the function as well as details about its arguments and so on. See <xref
-            keyref="saxon-java-extensions-impl"/> in the Saxon documentation.</li>
+          function name for the function as well as details about its arguments and so on. See
+          <xref keyref="saxon-java-extensions-impl"/> in the Saxon documentation.</li>
         <li>Include a file named <filepath>net.sf.saxon.lib.ExtensionFunctionDefinition</filepath> in the directory
             <filepath>META-INF/services</filepath> in the compiled JAR that your plug-in provides. Each line of the file
           must be the name of a class that implements <codeph>net.sf.saxon.lib.ExtensionFunctionDefinition</codeph>: <codeblock>com.example.saxon.functions.Add

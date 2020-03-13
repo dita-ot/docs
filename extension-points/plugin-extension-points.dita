@@ -10,10 +10,14 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>extension points<indexterm>overview</indexterm><indexterm>plug-in</indexterm></indexterm>
-        <indexterm>extension points<index-see-also>preprocessing</index-see-also></indexterm>
+        <indexterm>extension points
+          <indexterm>overview</indexterm>
+          <indexterm>plug-in</indexterm></indexterm>
+        <indexterm>extension points
+          <index-see-also>preprocessing</index-see-also></indexterm>
         <indexterm><filepath>plugin.xml</filepath></indexterm>
-        <indexterm>topicmerge<index-see>org.dita.pdf2.xsl.topicmerge</index-see></indexterm>
+        <indexterm>topicmerge
+          <index-see>org.dita.pdf2.xsl.topicmerge</index-see></indexterm>
       </keywords>
     </metadata>
   </prolog>

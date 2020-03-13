@@ -11,23 +11,29 @@
       <keywords>
         <indexterm><xmlelement>info</xmlelement></indexterm>
         <indexterm>legacypdf</indexterm>
-        <indexterm>PDF2<index-see>PDF<indexterm>plug-in, history of</indexterm></index-see></indexterm>
-        <indexterm>languages<indexterm>auto-generated strings</indexterm></indexterm>
-        <indexterm>PDF<indexterm>plug-in, history of</indexterm><indexterm>HTML formatting
-          differences</indexterm></indexterm>
+        <indexterm>PDF2
+          <index-see>PDF
+            <indexterm>plug-in, history of</indexterm></index-see></indexterm>
+        <indexterm>languages
+          <indexterm>auto-generated strings</indexterm></indexterm>
+        <indexterm>PDF
+          <indexterm>plug-in, history of</indexterm>
+          <indexterm>HTML formatting differences</indexterm></indexterm>
         <indexterm>Idiom Technologies</indexterm>
-        <indexterm>HTML<indexterm>PDF formatting differences</indexterm></indexterm>
+        <indexterm>HTML
+          <indexterm>PDF formatting differences</indexterm></indexterm>
         <indexterm>DITA 1.1</indexterm>
-        <indexterm>index<indexterm>indexing domain</indexterm></indexterm>
+        <indexterm>index
+          <indexterm>indexing domain</indexterm></indexterm>
         <indexterm>Customization directory</indexterm>
         <indexterm>org.dita.pdf2</indexterm>
       </keywords>
     </metadata>
   </prolog>
   <conbody>
-    <p>When IBM developed the code that later became DITA-OT, it included only a proof-of-concept PDF
-      transformation. IBM had their own processing chain for producing PDFs from SGML, which they had developed over
-      several decades, so resources were focused primarily on XHTML output and preprocessing.</p>
+    <p>When IBM developed the code that later became DITA-OT, it included only a proof-of-concept PDF transformation.
+      IBM had their own processing chain for producing PDFs from SGML, which they had developed over several decades, so
+      resources were focused primarily on XHTML output and preprocessing.</p>
     <p>Since the initial proof-of-concept transformation was not robust enough for production-grade output, companies
       began to develop their own PDF transformations. One company, Idiom Technologies, made their transformation (known
       as the “pdf2” transformation) available as open source on 23 February 2006. The Idiom plug-in was initially

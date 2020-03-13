@@ -12,9 +12,12 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>plug-ins<indexterm>best practices</indexterm></indexterm>
-        <indexterm>upgrading<indexterm>best practices</indexterm></indexterm>
-        <indexterm>XSLT<indexterm>best practices</indexterm></indexterm>
+        <indexterm>plug-ins
+          <indexterm>best practices</indexterm></indexterm>
+        <indexterm>upgrading
+          <indexterm>best practices</indexterm></indexterm>
+        <indexterm>XSLT
+          <indexterm>best practices</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -24,6 +27,11 @@
         <p>Use a properly-constructed DITA-OT plug-in.</p></li>
       <li>
         <p>Use a version control system to store your code.</p></li>
+      <li>
+        <p>Store your custom plug-ins outside of the DITA-OT installation directory, and add the repository location to
+          the list of plug-in directories defined in the <parmname>plugindirs</parmname> entry of the
+          <xref keyref="configuration-properties-file"><filepath>configuration.properties</filepath> file</xref>.
+        </p></li>
       <li>
         <p>Never modify any of the core DITA-OT code.<note type="tip">You may want to set the permissions on default
             plug-in directories such as <filepath>org.dita.pdf2</filepath> to “read-only” to ensure that you do not

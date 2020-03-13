@@ -12,12 +12,19 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>macOS<indexterm>installing DITA-OT</indexterm></indexterm>
-        <indexterm>Linux<indexterm>installing DITA-OT</indexterm></indexterm>
-        <indexterm>Windows<indexterm>installing DITA-OT</indexterm></indexterm>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>installing</indexterm></indexterm>
-        <indexterm>installing<indexterm>DITA-OT</indexterm></indexterm>
-        <indexterm>Java<indexterm>Java Development Kit (JDK)</indexterm><indexterm>Java Runtime Environment (JRE)</indexterm></indexterm>
+        <indexterm>macOS
+          <indexterm>installing DITA-OT</indexterm></indexterm>
+        <indexterm>Linux
+          <indexterm>installing DITA-OT</indexterm></indexterm>
+        <indexterm>Windows
+          <indexterm>installing DITA-OT</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>installing</indexterm></indexterm>
+        <indexterm>installing
+          <indexterm>DITA-OT</indexterm></indexterm>
+        <indexterm>Java
+          <indexterm>Java Development Kit (JDK)</indexterm>
+          <indexterm>Java Runtime Environment (JRE)</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -29,7 +36,8 @@
           <p conkeyref="reusable-components/java-clients"/></li>
         <li importance="optional" platform="windows">If you want to generate HTML Help, ensure that you have HTML Help
           Workshop installed.
-          <p>You can download the Help Workshop from <xref keyref="download.html-help-workshop"/>.</p></li>
+          <p>You can download the Help Workshop from
+            <xref keyref="download.html-help-workshop"/>.</p></li>
       </ul>
     </prereq>
     <steps>

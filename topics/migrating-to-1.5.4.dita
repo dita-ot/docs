@@ -13,14 +13,18 @@
     transformation types and add mappings to the PDF configuration catalog file. PDF output supports mirrored page
     layout and uses new font family definitions. Support for several new languages was added for PDF and XHTML
     output.</shortdesc>
-  
+
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>deprecated features<indexterm><codeph>print_transtypes</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>page-margin-left</codeph></indexterm></indexterm>
-        <indexterm>deprecated features<indexterm><codeph>page-margin-right</codeph></indexterm></indexterm>
-        <indexterm>languages<indexterm>supported</indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>print_transtypes</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>page-margin-left</codeph></indexterm></indexterm>
+        <indexterm>deprecated features
+          <indexterm><codeph>page-margin-right</codeph></indexterm></indexterm>
+        <indexterm>languages
+          <indexterm>supported</indexterm></indexterm>
         <indexterm>Finnish</indexterm>
         <indexterm>Hebrew</indexterm>
         <indexterm>Indonesian</indexterm>
@@ -29,7 +33,8 @@
         <indexterm>Romanian</indexterm>
         <indexterm>Russian</indexterm>
         <indexterm>Swedish</indexterm>
-        <indexterm>I18N<indexterm><parmname>org.dita.pdf2.i18n.enabled</parmname></indexterm></indexterm>
+        <indexterm>I18N
+          <indexterm><parmname>org.dita.pdf2.i18n.enabled</parmname></indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>

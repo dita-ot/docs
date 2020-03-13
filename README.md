@@ -20,19 +20,41 @@ For best results, follow the [coding guidelines][6] and [best practices][7] outl
 
 To generate the missing topics and build the HTML and PDF versions of the documentation, run the Gradle build script from the root level of the `docs` repository and pass the path to your DITA-OT installation as a parameter.
 
-- For example, if you’re using a clone of the [DITA-OT development repository][13] as your toolkit installation alongside your clone of the docs repository, run the build script on **Linux** or **macOS** like this:
+### Prerequisites
 
-        ./gradlew -PditaHome=../dita-ot/src/main
+You must have a JRE and a local installation of DITA-OT. There is no need to download and install Gradle.
 
-- You can also specify a single output format. To build HTML output, enter the following on the command line:
+### Steps
 
-        ./gradlew -PditaHome=../dita-ot/src/main html
+1. Open a command prompt, and change to the location of your local repository for the documentation source.
+2. Type a variant of the following command for your operating system, adjust the path to your DITA-OT installation, and press <kbd>Enter</kbd>:
 
-- On **Windows**, use `gradlew.bat` and adjust the path to your DITA-OT installation:
+    - On Linux or macOS, use `./gradlew`:
 
-        gradlew -PditaHome=C:\path\to\dita-ot
+          ./gradlew -PditaHome=/path/to/dita-ot
 
-Output will be generated in the `out` folder of the `docs` repository. This folder is created automatically if it doesn’t exist. _(Git ignores the contents of this folder so you don’t inadvertently commit these transient files.)_
+    - On **Windows**, use `gradlew.bat`:
+
+          gradlew.bat -PditaHome=C:\path\to\dita-ot
+
+    <details>
+    <summary>Using a `dita-ot` repository clone</summary>
+
+    - If you’re using a clone of the [DITA-OT development repository][13] as your toolkit installation alongside your clone of the docs repository, run the build script on **Linux** or **macOS** like this:
+
+            ./gradlew -PditaHome=../dita-ot/src/main
+
+    - You can also specify a single output format. To build HTML output, enter the following on the command line:
+
+            ./gradlew -PditaHome=../dita-ot/src/main html
+
+    </details>
+
+### Results
+
+If all goes well, you receive a "BUILD SUCCESSFUL" message, and the generated DITA topics are written to the `extension-points` and `parameters` directories in the `out` folder of the `docs` repository.
+
+This folder is created automatically if it doesn’t exist. _(Git ignores the contents so you don’t inadvertently commit these transient output files.)_
 
 ## Building with development versions of DITA Open Toolkit
 
@@ -54,4 +76,4 @@ To use these features when building the documentation, you may either download t
 [12]: https://www.dita-ot.org/DCO
 [13]: https://github.com/dita-ot/dita-ot
 [14]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
-[15]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L163-L167
+[15]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L169-L176

@@ -9,10 +9,14 @@
     <metadata>
       <keywords>
         <indexterm><xmlatt>default</xmlatt></indexterm>
-        <indexterm>macOS<indexterm>Ant</indexterm></indexterm>
-        <indexterm>Linux<indexterm>Ant</indexterm></indexterm>
-        <indexterm>Windows<indexterm>Ant</indexterm></indexterm>
-        <indexterm>Ant<indexterm>publishing with</indexterm></indexterm>
+        <indexterm>macOS
+          <indexterm>Ant</indexterm></indexterm>
+        <indexterm>Linux
+          <indexterm>Ant</indexterm></indexterm>
+        <indexterm>Windows
+          <indexterm>Ant</indexterm></indexterm>
+        <indexterm>Ant
+          <indexterm>publishing with</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -47,8 +51,9 @@
           <ul>
             <li><varname>build-script</varname> is name of the Ant build script.</li>
             <li><varname>target</varname> is an optional switch that specifies the name of the Ant target that you want
-              to run. <p>If you do not specify a target, the value of the <xmlatt>default</xmlatt> attribute for the Ant
-                project is used.</p>
+              to run.
+              <p>If you do not specify a target, the value of the <xmlatt>default</xmlatt> attribute for the Ant project
+                is used.</p>
             </li>
           </ul></info>
       </step>

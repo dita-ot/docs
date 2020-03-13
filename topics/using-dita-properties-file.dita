@@ -14,10 +14,13 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>draft<indexterm><xmlelement>draft</xmlelement></indexterm></indexterm>
+        <indexterm>draft
+          <indexterm><xmlelement>draft</xmlelement></indexterm></indexterm>
         <indexterm><xmlelement>required-cleanup</xmlelement></indexterm>
-        <indexterm><cmdname>dita</cmdname> command<indexterm>.properties file</indexterm></indexterm>
-        <indexterm>DITA maps<indexterm>properties file</indexterm></indexterm>
+        <indexterm><cmdname>dita</cmdname> command
+          <indexterm>.properties file</indexterm></indexterm>
+        <indexterm>DITA maps
+          <indexterm>properties file</indexterm></indexterm>
         <indexterm>.properties file</indexterm>
       </keywords>
     </metadata>

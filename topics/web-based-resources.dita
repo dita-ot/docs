@@ -4,8 +4,8 @@
 
 <reference id="ID">
   <title>Web-based resources</title>
-  <shortdesc>There are many vital DITA resources online, including the Yahoo! dita-users group and the DITA-OT project
-    website at dita-ot.org.</shortdesc>
+  <shortdesc>There are many vital DITA resources online, including the DITA Users group and the DITA-OT project website
+    at dita-ot.org.</shortdesc>
   <refbody>
     <section>
       <dl>
@@ -14,15 +14,20 @@
             <xref href="https://www.dita-ot.org" format="html" scope="external">DITA-OT project website:
               dita-ot.org</xref></dt>
           <dd>The DITA-OT project website at dita-ot.org provides information about the latest toolkit releases,
-            including download links, release notes, and documentation for recent DITA-OT versions.</dd>
+            including download links, release notes, and documentation for recent DITA-OT versions.
+            <indexterm>dita-ot.org</indexterm>
+            <indexterm>project website
+              <index-see>dita-ot.org</index-see></indexterm></dd>
         </dlentry>
         <dlentry>
           <dt>
-            <xref href="http://groups.yahoo.com/group/dita-users/" format="html" scope="external">Yahoo! dita-users
-              group</xref></dt>
-          <dd>The original DITA list-serv is a vital resource for the DITA community. People post regularly, both asking
-            for and offering help. While the archived messages can be difficult to search, this is a treasure trove of
-            information.</dd>
+            <xref href="https://groups.io/g/dita-users" format="html" scope="external">DITA Users group</xref></dt>
+          <dd>The original dita-users group was founded in 2004 as a Yahoo! Group and moved to Groups.io in November
+            2019. The mailing list addresses the needs of DITA users at all levels of experience, from beginners to
+            experts, and serves as a vital resource for the DITA community.
+            <indexterm>DITA Users group</indexterm>
+            <indexterm>Yahoo! dita-users group
+              <index-see>DITA Users group</index-see></indexterm></dd>
         </dlentry>
         <dlentry>
           <dt>
@@ -30,21 +35,29 @@
               Google Group</xref>
           </dt>
           <dd>General interest DITA-OT product forum, for questions on any aspect of the toolkit — from installation and
-            getting started to questions about specific overrides, plug-ins, and customizations.</dd>
+            getting started to questions about specific overrides, plug-ins, and customizations.
+            <indexterm>DITA-OT Users Google Group</indexterm>
+            <indexterm>Google Group
+              <index-see>DITA-OT Users Google Group</index-see></indexterm></dd>
         </dlentry>
         <dlentry>
           <dt>
-            <xref href="https://dita-ot.slack.com" format="html" scope="external">DITA-OT Development Slack team</xref>
+            <xref href="https://dita-ot.slack.com" format="html" scope="external">DITA-OT Slack workspace</xref>
           </dt>
           <dd>Forum for discussion related to DITA-OT development and design. Topics in this forum are more technical in
             nature, covering upcoming design or code changes. To request an invitation and join in the discussion, visit
-              <xref href="http://slack.dita-ot.org" format="html" scope="external">slack.dita-ot.org</xref>.</dd>
+            <xref href="http://slack.dita-ot.org" format="html" scope="external">slack.dita-ot.org</xref>.
+            <indexterm>DITA-OT Slack workspace</indexterm>
+            <indexterm>Slack
+              <index-see>DITA-OT Slack workspace</index-see></indexterm></dd>
         </dlentry>
         <dlentry>
           <dt>
             <xref href="http://www.oasis-open.org/committees/dita/" format="html" scope="external">Home page for the
               DITA Technical Committee</xref></dt>
-          <dd>The OASIS DITA Technical Committee develops the DITA standard.<indexterm>OASIS</indexterm></dd>
+          <dd>The OASIS DITA Technical Committee develops the DITA standard.
+            <indexterm>OASIS</indexterm>
+            <indexterm>DITA Technical Committee</indexterm></dd>
         </dlentry>
         <dlentry>
           <dt>

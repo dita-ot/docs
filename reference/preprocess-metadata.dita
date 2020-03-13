@@ -17,13 +17,19 @@
         <indexterm><xmlatt>type</xmlatt></indexterm>
         <indexterm><xmlatt>toc</xmlatt></indexterm>
         <indexterm><xmlatt>print</xmlatt></indexterm>
-        <indexterm>preprocessing<indexterm><codeph>move-meta-entries</codeph></indexterm></indexterm>
+        <indexterm>preprocessing
+          <indexterm><codeph>move-meta-entries</codeph></indexterm></indexterm>
         <indexterm><codeph>move-meta-entries</codeph></indexterm>
-        <indexterm>Java<indexterm>move-meta-entries</indexterm></indexterm>
-        <indexterm>metadata<indexterm>moving</indexterm></indexterm>
-        <indexterm>XSLT<indexterm><codeph>move-meta-entries</codeph></indexterm></indexterm>
-        <indexterm>index<indexterm>entries in map file</indexterm></indexterm>
-        <indexterm>TOC<index-see>table of contents</index-see></indexterm>
+        <indexterm>Java
+          <indexterm>move-meta-entries</indexterm></indexterm>
+        <indexterm>metadata
+          <indexterm>moving</indexterm></indexterm>
+        <indexterm>XSLT
+          <indexterm><codeph>move-meta-entries</codeph></indexterm></indexterm>
+        <indexterm>index
+          <indexterm>entries in map file</indexterm></indexterm>
+        <indexterm>TOC
+          <index-see>table of contents</index-see></indexterm>
       </keywords>
     </metadata>
   </prolog>

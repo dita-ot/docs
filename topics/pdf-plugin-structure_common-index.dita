@@ -11,12 +11,16 @@
       <keywords>
         <indexterm><xmlelement>index.group</xmlelement></indexterm>
         <indexterm><xmlelement>char.set</xmlelement></indexterm>
-        <indexterm>languages<indexterm>ISO 639-1</indexterm></indexterm>
+        <indexterm>languages
+          <indexterm>ISO 639-1</indexterm></indexterm>
         <indexterm>ISO 639-1</indexterm>
         <indexterm>Portuguese</indexterm>
-        <indexterm>index<indexterm>PDF</indexterm></indexterm>
-        <indexterm>catalog<indexterm><filepath>catalog.xml</filepath></indexterm></indexterm>
-        <indexterm>catalog<indexterm>index configuration</indexterm></indexterm>
+        <indexterm>index
+          <indexterm>PDF</indexterm></indexterm>
+        <indexterm>catalog
+          <indexterm><filepath>catalog.xml</filepath></indexterm></indexterm>
+        <indexterm>catalog
+          <indexterm>index configuration</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>

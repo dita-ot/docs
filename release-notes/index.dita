@@ -57,41 +57,33 @@
           <li id="3437">Refactor CLI to support subcommands
             <xref href="https://github.com/dita-ot/dita-ot/issues/3437" format="html" scope="external">#3437</xref>
           </li>
-          <li id="3449">DITA 2.0 Preview: this release includes processing support for the latest
-            DRAFT versions of the DITA 2.0 DTD and RelaxNG grammar files from OASIS (as of March
-            2020). This means that DITA documents which reference the draft grammar files can be
-            parsed, and where features overlap with DITA 1.3, those features will work as expected.
-            New or revised DITA 2.0 features are not supported except where called out in these
-            release notes. <xref href="https://github.com/dita-ot/dita-ot/issues/3449" format="html"
-              scope="external">#3449</xref>
+          <li id="3449">DITA 2.0 Preview: this release includes processing support for the latest DRAFT versions of the
+            DITA 2.0 DTD and RelaxNG grammar files from OASIS (as of March 2020). This means that DITA documents which
+            reference the draft grammar files can be parsed, and where features overlap with DITA 1.3, those features
+            will work as expected. New or revised DITA 2.0 features are not supported except where called out in these
+            release notes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3449" format="html" scope="external">#3449</xref>
           </li>
-          <li id="3453">Add support for the new <xmlelement>include</xmlelement> element from DITA
-            2.0. This new DITA 2.0 element is intended to reference text or XML content from other
-            files. <xref href="https://github.com/dita-ot/dita-ot/issues/3453" format="html"
-              scope="external">#3453</xref>
+          <li id="3453">Add support for the new <xmlelement>include</xmlelement> element from DITA 2.0. This new DITA
+            2.0 element is intended to reference text or XML content from other files.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3453" format="html" scope="external">#3453</xref>
           </li>
-          <li id="3462">Add support for the new DITA 2.0 <xmlatt>specializations</xmlatt> attribute,
-            which replaces the DITA 1.x <xmlatt>domains</xmlatt> attribute as a way to declare
-            specialized attributes.  <xref href="https://github.com/dita-ot/dita-ot/issues/3440"
-              format="html" scope="external">#3440</xref>, <xref
-              href="https://github.com/dita-ot/dita-ot/issues/3462" format="html" scope="external"
-              >#3462</xref>
+          <li id="3462">Add support for the new DITA 2.0 <xmlatt>specializations</xmlatt> attribute, which replaces the
+            DITA 1.x <xmlatt>domains</xmlatt> attribute as a way to declare specialized attributes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3440" format="html" scope="external">#3440</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3462" format="html" scope="external">#3462</xref>
           </li>
-          <li id="3463">Add support for declaring <xmlatt>outputclass</xmlatt> as a flagging
-            behavior in a DITAVAL file. This DITA 2.0 feature allows you to flag an element by
-            processing it as if it specified the <xmlatt>outputclass</xmlatt> value in your DITAVAL.
-              <xref href="https://github.com/dita-ot/dita-ot/issues/3463" format="html"
-              scope="external">#3463</xref>, <xref
-              href="https://github.com/dita-ot/dita-ot/issues/3482" format="html" scope="external"
-              >#3482</xref>
+          <li id="3463">Add support for declaring <xmlatt>outputclass</xmlatt> as a flagging behavior in a DITAVAL file.
+            This DITA 2.0 feature allows you to flag an element by processing it as if it specified the
+              <xmlatt>outputclass</xmlatt> value in your DITAVAL.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3463" format="html" scope="external">#3463</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3482" format="html" scope="external">#3482</xref>
           </li>
-          <li id="3464">DITA 2.0: Add support for row and column spanning in
-              <xmlelement>simpletable</xmlelement> entries, as well for specifying a title on simple
-            tables. <xref href="https://github.com/dita-ot/dita-ot/issues/3464" format="html"
-              scope="external">#3464</xref>, <xref
-              href="https://github.com/dita-ot/dita-ot/issues/3465" format="html" scope="external"
-              >#3465</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/3479"
-              format="html" scope="external">#3479</xref>
+          <li id="3464">DITA 2.0: Add support for row and column spanning in <xmlelement>simpletable</xmlelement>
+            entries, as well for specifying a title on simple tables.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3464" format="html" scope="external">#3464</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3465" format="html" scope="external">#3465</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3479" format="html" scope="external">#3479</xref>
           </li>
         </ul>
       </section>
@@ -115,10 +107,9 @@
           <li id="3434">Remove unused and deprecated preprocessing configuration
             <xref href="https://github.com/dita-ot/dita-ot/issues/3434" format="html" scope="external">#3434</xref>
           </li>
-          <li id="3442">The <codeph>org.dita.eclipsehelp</codeph> plugin, which is still bundled
-            with DITA-OT, is now installed from a separate repository. <xref
-              href="https://github.com/dita-ot/dita-ot/issues/3442" format="html" scope="external"
-              >#3442</xref>
+          <li id="3442">The <codeph>org.dita.eclipsehelp</codeph> plugin, which is still bundled with DITA-OT, is now
+            installed from a separate repository.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3442" format="html" scope="external">#3442</xref>
           </li>
           <li id="3452">Use new way of specifying message emitter
             <xref href="https://github.com/dita-ot/dita-ot/issues/3452" format="html" scope="external">#3452</xref>
@@ -129,13 +120,12 @@
           <li id="3473">Use singleton XML utils
             <xref href="https://github.com/dita-ot/dita-ot/issues/3473" format="html" scope="external">#3473</xref>
           </li>
-          <li id="3483">DITA 2.0: where DITA 1.x defined conflicting <xmlatt>class</xmlatt> values
-            for <xmlelement>linktext</xmlelement>, <xmlelement>shortdesc</xmlelement>, and
-              <xmlelement>searchtitle</xmlelement> in maps and topics, the new draft of DITA 2.0
-            uses the topic based <xmlatt>class</xmlatt> value in all cases. Processing is updated to
-            recognize the updated value when these elements are used in maps. <xref
-              href="https://github.com/dita-ot/dita-ot/issues/3483" format="html" scope="external"
-              >#3483</xref>
+          <li id="3483">DITA 2.0: where DITA 1.x defined conflicting <xmlatt>class</xmlatt> values for
+              <xmlelement>linktext</xmlelement>, <xmlelement>shortdesc</xmlelement>, and
+              <xmlelement>searchtitle</xmlelement> in maps and topics, the new draft of DITA 2.0 uses the topic based
+              <xmlatt>class</xmlatt> value in all cases. Processing is updated to recognize the updated value when these
+            elements are used in maps.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3483" format="html" scope="external">#3483</xref>
           </li>
         </ul>
       </section>
@@ -147,24 +137,20 @@
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <li id="1899">The DITA 1.x specification defines cascade behaviors for maps such that
-              <xmlelement>othermeta</xmlelement> and <xmlelement>source</xmlelement> do not cascade
-            to child <xmlelement>topicref</xmlelement> elements. In earlier releases the
-              <codeph>mappull</codeph> stage of processing pushed these to nested elements; that
-            behavior is now corrected to match the specification. <xref
-              href="https://github.com/dita-ot/dita-ot/issues/1899" format="html" scope="external"
-              >#1899</xref>, <xref href="https://github.com/dita-ot/dita-ot/issues/3326"
-              format="html" scope="external">#3326</xref></li>
+              <xmlelement>othermeta</xmlelement> and <xmlelement>source</xmlelement> do not cascade to child
+              <xmlelement>topicref</xmlelement> elements. In earlier releases the <codeph>mappull</codeph> stage of
+            processing pushed these to nested elements; that behavior is now corrected to match the specification.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1899" format="html" scope="external">#1899</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3326" format="html" scope="external">#3326</xref></li>
           <li id="3383">Cannot run publishing using a licensed Saxon 9.9 distribution
             <xref href="https://github.com/dita-ot/dita-ot/issues/3383" format="html" scope="external">#3383</xref>
           </li>
           <li id="3429">Run mapref even if input file is not a map
             <xref href="https://github.com/dita-ot/dita-ot/issues/3429" format="html" scope="external">#3429</xref>
           </li>
-          <li id="3484">In some earlier releases, a call to an empty stub template for table
-              <xmlatt>summary</xmlatt> attributes was dropped. Calls to that template have been
-            restored, making it available for easy overrides. <xref
-              href="https://github.com/dita-ot/dita-ot/issues/3484" format="html" scope="external"
-              >#3484</xref>
+          <li id="3484">In some earlier releases, a call to an empty stub template for table <xmlatt>summary</xmlatt>
+            attributes was dropped. Calls to that template have been restored, making it available for easy overrides.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3484" format="html" scope="external">#3484</xref>
           </li>
         </ul>
       </section>

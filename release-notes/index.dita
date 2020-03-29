@@ -81,6 +81,13 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3465" format="html" scope="external">#3465</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3479" format="html" scope="external">#3479</xref>
           </li>
+          <li id="3483">Where DITA 1.x defined conflicting <xmlatt>class</xmlatt> values for
+              <xmlelement>linktext</xmlelement>, <xmlelement>shortdesc</xmlelement>, and
+              <xmlelement>searchtitle</xmlelement> in maps and topics, the new draft of DITA 2.0 uses the topic-based
+              <xmlatt>class</xmlatt> value in all cases. Processing is updated to recognize the updated value when these
+            elements are used in maps.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3483" format="html" scope="external">#3483</xref>
+          </li>
         </ul>
         <note>Other new or revised features proposed for DITA 2.0 are not yet supported. Additional features will be
           implemented in future versions of DITA-OT as the specification evolves.</note>
@@ -133,13 +140,6 @@
           </li>
           <li id="3473">Use singleton XML utils
             <xref href="https://github.com/dita-ot/dita-ot/issues/3473" format="html" scope="external">#3473</xref>
-          </li>
-          <li id="3483">DITA 2.0: where DITA 1.x defined conflicting <xmlatt>class</xmlatt> values for
-              <xmlelement>linktext</xmlelement>, <xmlelement>shortdesc</xmlelement>, and
-              <xmlelement>searchtitle</xmlelement> in maps and topics, the new draft of DITA 2.0 uses the topic based
-              <xmlatt>class</xmlatt> value in all cases. Processing is updated to recognize the updated value when these
-            elements are used in maps.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3483" format="html" scope="external">#3483</xref>
           </li>
         </ul>
       </section>

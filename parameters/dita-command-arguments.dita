@@ -141,12 +141,12 @@
             <parmname>-f</parmname>
             <varname>name</varname>
           </pt>
-          <pd conref="parameters-base.dita#base/transtype.desc"/>
+          <pd conkeyref="parameters-base/transtype.desc"/>
           <pd>This argument corresponds to the common parameter <parmname>transtype</parmname>.</pd>
           <pd>To list the formats that are currently available in your environment, use <cmdname>dita
               transtypes</cmdname>.</pd>
           <pd>
-            <p conref="../resources/conref-task.dita#ID/transtypes"/>
+            <p conkeyref="conref-task/transtypes"/>
           </pd>
         </plentry>
       </parml>
@@ -196,7 +196,7 @@
           <pt>
             <parmname>--install</parmname>
           </pt>
-          <pd><ph conref="../resources/conref-task.dita#ID/plugin-integrate-all"/></pd>
+          <pd><ph conkeyref="conref-task/plugin-integrate-all"/></pd>
         </plentry>
         <plentry>
           <pt>
@@ -211,7 +211,7 @@
           </pd>
           <pd>For a list of the currently installed plug-in IDs, use <cmdname>dita plugins</cmdname>.</pd>
           <pd>
-            <note conref="../resources/conref-task.dita#ID/plugin-remove-subdir"/>
+            <note conkeyref="conref-task/plugin-remove-subdir"/>
           </pd>
         </plentry>
         <plentry>
@@ -348,7 +348,7 @@
               form can also be used to specify additional non-configured parameters or set system properties.</p>
             <p>Parameters not implemented by the specified transformation type or referenced in a
                 <filepath>.properties</filepath> file are ignored.</p><note
-              conref="../resources/conref-task.dita#ID/pass-input-dir"/></pd>
+              conkeyref="conref-task/pass-input-dir"/></pd>
         </plentry>
         <plentry>
           <pt>
@@ -365,7 +365,7 @@
             <parmname>-t</parmname>
             <varname>dir</varname>
           </pt>
-          <pd conref="parameters-base.dita#base/dita.temp.dir.desc"/>
+          <pd conkeyref="parameters-base/dita.temp.dir.desc"/>
           <pd>This argument corresponds to the common parameter <parmname>dita.temp.dir</parmname>.</pd>
         </plentry>
         <plentry>

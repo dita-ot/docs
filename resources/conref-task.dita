@@ -112,7 +112,7 @@
               </p>
             </li>
             <li id="options">[<varname>options</varname>] include the following optional build parameters:
-              <parml conref="../parameters/dita-command-arguments.dita#dita-command-properties/dita_build_options">
+              <parml conkeyref="dita-command-arguments/dita_build_options">
                 <plentry>
                   <pt/>
                   <pd/>

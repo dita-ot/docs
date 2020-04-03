@@ -141,11 +141,11 @@
     </result>
     <postreq>
       <ol>
-        <li>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/>
+        <li>Run <filepath conkeyref="conref-task/dita-cmd"/>
           <parmname>--install</parmname> to install the plug-in and make the <option>html5-webfont</option>
           transformation available.</li>
         <li>Build output with the new transformation type to verify that the plug-in works as intended.
-          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5-webfont</option></codeblock>
+          <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5-webfont</option></codeblock>
         </li>
         <li>Refine the styles in your <filepath>custom.css</filepath> file to adjust the font usage as necessary.</li>
       </ol>

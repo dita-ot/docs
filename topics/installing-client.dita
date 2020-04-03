@@ -42,7 +42,7 @@
     </prereq>
     <steps>
       <step>
-        <cmd><ph conref="../resources/conref-task.dita#ID/download-ot"/></cmd>
+        <cmd><ph conkeyref="conref-task/download-ot"/></cmd>
       </step>
       <step>
         <cmd>Extract the contents of the package to the directory where you want to install DITA-OT.</cmd>

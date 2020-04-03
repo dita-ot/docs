@@ -156,17 +156,22 @@
       <title>Subcommands</title>
       <indexterm><cmdname>deliverables</cmdname> subcommand</indexterm>
       <indexterm><cmdname>install</cmdname> subcommand</indexterm>
-      <indexterm><parmname>--install</parmname></indexterm>
+      <indexterm><parmname>--install</parmname>
+        <index-see><cmdname>install</cmdname> subcommand</index-see></indexterm>
       <indexterm><cmdname>uninstall</cmdname> subcommand</indexterm>
-      <indexterm><parmname>--uninstall</parmname></indexterm>
+      <indexterm><parmname>--uninstall</parmname>
+        <index-see><cmdname>uninstall</cmdname> subcommand</index-see></indexterm>
       <indexterm><cmdname>plugins</cmdname> subcommand</indexterm>
-      <indexterm><parmname>--plugins</parmname></indexterm>
+      <indexterm><parmname>--plugins</parmname>
+        <index-see><cmdname>plugins</cmdname> subcommand</index-see></indexterm>
       <indexterm><cmdname>transtypes</cmdname> subcommand</indexterm>
-      <indexterm><parmname>--transtypes</parmname></indexterm>
+      <indexterm><parmname>--transtypes</parmname>
+        <index-see><cmdname>transtypes</cmdname> subcommand</index-see></indexterm>
       <indexterm><parmname>--help</parmname></indexterm>
       <indexterm><parmname>-h</parmname></indexterm>
       <indexterm><cmdname>version</cmdname> subcommand</indexterm>
-      <indexterm><parmname>--version</parmname></indexterm>
+      <indexterm><parmname>--version</parmname>
+        <index-see><cmdname>version</cmdname> subcommand</index-see></indexterm>
       <parml>
         <plentry>
           <pt>

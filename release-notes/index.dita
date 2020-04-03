@@ -107,31 +107,55 @@
             transformations that use the map-first pre-processing routine (<codeph>preprocess2</codeph>).
             <xref href="https://github.com/dita-ot/dita-ot/issues/3413" format="html" scope="external">#3413</xref>
             <ul>
-              <li>Use <parmname>result.rewrite-rule.class</parmname> to specify a Java class used to rewrite
-                filenames</li>
+              <li>Use <parmname>result.rewrite-rule.class</parmname> to rewrite filenames with a Java class</li>
               <li>Use <parmname>result.rewrite-rule.xsl</parmname> to rewrite via an XSLT stylesheet</li>
             </ul>
           </li>
           <li id="3437">
             <p>The <cmdname>dita</cmdname> command line interface has been refactored to support subcommands for common
-              operations.</p>
-            <ul>
-              <li><cmdname>dita install</cmdname> installs or reloads plug-ins</li>
-              <li><cmdname>dita uninstall</cmdname> removes and deletes a plug-in </li>
-              <li><cmdname>dita plugins</cmdname> prints a list of installed plug-ins</li>
-              <li><cmdname>dita transtypes</cmdname> prints a list of installed transformation types (output
-                formats)</li>
-              <li><cmdname>dita deliverables</cmdname> prints the list of deliverables in a project file</li>
-              <li><cmdname>dita version</cmdname> prints version information and exits</li>
-            </ul>
-            <p>The GNU-style double-hyphen syntax is retained for backwards compatibility, so if you use
-                <cmdname>dita</cmdname>
-              <parmname>--install</parmname> in scripts (or out of habit), it will still work.</p>
-            <p>Each subcommand has its own <parmname>--help</parmname> option, so you can run <cmdname>dita
-                install</cmdname>
-              <parmname>--help</parmname> for details on the available arguments and options.
+              operations.
               <xref href="https://github.com/dita-ot/dita-ot/issues/3437" format="html" scope="external"
               >#3437</xref></p>
+            <dl>
+              <dlentry>
+                <dt><cmdname>dita deliverables</cmdname></dt>
+                <dd>Prints the list of deliverables in a project <varname>file</varname></dd>
+              </dlentry>
+              <dlentry>
+                <dt><cmdname>dita install</cmdname></dt>
+                <dd>Installs or reloads plug-ins (replaces <cmdname>dita</cmdname>
+                  <parmname>--install</parmname>)</dd>
+              </dlentry>
+              <dlentry>
+                <dt><cmdname>dita plugins</cmdname></dt>
+                <dd>Prints a list of installed plug-ins (replaces <cmdname>dita</cmdname>
+                  <parmname>--plugins</parmname>)</dd>
+              </dlentry>
+              <dlentry>
+                <dt><cmdname>dita transtypes</cmdname></dt>
+                <dd>Prints a list of installed transformation types, or <i>output formats</i> (replaces
+                    <cmdname>dita</cmdname>
+                  <parmname>--transtypes</parmname>)</dd>
+              </dlentry>
+              <dlentry>
+                <dt><cmdname>dita uninstall</cmdname></dt>
+                <dd>Removes and deletes a plug-in (replaces <cmdname>dita</cmdname>
+                  <parmname>--uninstall</parmname>)</dd>
+              </dlentry>
+              <dlentry>
+                <dt><cmdname>dita version</cmdname></dt>
+                <dd>Prints version information and exits (replaces <cmdname>dita</cmdname>
+                  <parmname>--version</parmname>)</dd>
+              </dlentry>
+            </dl>
+            <p>For syntax details, see
+              <xref keyref="dita-command-arguments"/>.</p>
+            <note>The double-hyphen option syntax has been retained for backwards compatibility, so if you use
+                <cmdname>dita</cmdname>
+              <parmname>--install</parmname> in scripts (or out of habit), it will still work.</note>
+            <note type="tip">Each subcommand has its own <parmname>--help</parmname> option, so you can run
+                <cmdname>dita install</cmdname>
+              <parmname>--help</parmname> for details on the available arguments and options.</note>
           </li>
           <li id="3489">
             <p>DITAVAL <xmlatt>style</xmlatt> tokens are now also generated as CSS classes that are added to the

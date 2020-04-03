@@ -30,20 +30,35 @@
           <dt>Plug-In Info</dt>
           <dd>
             <ul>
-              <li id="plug-in-id"><filepath><varname>plug-in-id</varname></filepath> is the unique ID of the plug-in, as
-                defined in the plug-in’s configuration file (<filepath>plugin.xml</filepath>).</li>
+              <li id="plug-in-id"><filepath><varname>&lt;plug-in-id&gt;</varname></filepath> is the unique ID of the
+                plug-in, as defined in the plug-in’s configuration file (<filepath>plugin.xml</filepath>).</li>
               <li id="plug-in-zip"><filepath><varname>plug-in-zip</varname></filepath> is the
                   <varname>filename</varname> or <varname>URL</varname> of the plug-in’s distribution ZIP file
                 (optional).</li>
-              <li><ph id="plugin-integrate-all">If no <varname>filename</varname> or <varname>URL</varname> argument is
-                  provided, the installation process reloads the current set of plug-ins from the
-                    <filepath>plugins</filepath> directory. This approach can be used to add or remove multiple plug-ins
-                  at once, or any individual plug-ins you have already copied to (or removed from) the
+              <li id="plug-in">the optional <filepath><varname>&lt;plug-in&gt;</varname></filepath> argument is one of
+                the following:
+                <ul>
+                  <li>the unique <varname>ID</varname> of the plug-in as defined in the plug-in registry at
+                    <xref keyref="site-plugin-registry"/> (or a local registry)</li>
+                  <li>the remote <varname>URL</varname> of the plug-in’s distribution ZIP file</li>
+                  <li>the name of a local ZIP <varname>file</varname></li>
+                </ul>
+              </li>
+              <li><ph id="plugin-integrate-all">If no <varname>ID</varname>, <varname>URL</varname>, or
+                    <varname>file</varname> argument is provided, the installation process reloads the current set of
+                  plug-ins from the <filepath>plugins</filepath> directory. This approach can be used to add or remove
+                  multiple plug-ins at once, or any individual plug-ins you have already copied to (or removed from) the
                     <filepath>plugins</filepath> directory. Any plug-ins added or removed in the process will be listed
                   by their plug-in ID.</ph></li>
-              <li><note id="plugin-remove-subdir" type="attention">The <parmname>--uninstall</parmname> option also
-                  removes the corresponding subdirectory from the <filepath>plugins</filepath> folder.
+              <li><note id="plugin-remove-subdir" type="attention">The <cmdname>uninstall</cmdname> subcommand also
+                  removes the corresponding plug-in directory from the <filepath>plugins</filepath> folder.
                   <indexterm>uninstalling</indexterm></note></li>
+              <li><note>
+                  <ph id="pre-subcommands-2-4-ph">In earlier versions of DITA-OT (2.4–3.4), use the double-hyphen option
+                    syntax <cmdname>dita</cmdname></ph>
+                  <parmname>--uninstall</parmname>. <ph id="pre-subcommands-2-0-ph">In DITA-OT 2.0–2.3, use the
+                    single-hyphen form: <cmdname>dita</cmdname></ph>
+                </note></li>
             </ul>
           </dd>
         </dlentry>

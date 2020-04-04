@@ -120,8 +120,10 @@
             <indexterm><cmdname>version</cmdname> subcommand</indexterm>
             <p>The <cmdname>dita</cmdname> command line interface has been refactored to support subcommands for common
               operations.
-              <xref href="https://github.com/dita-ot/dita-ot/issues/3437" format="html" scope="external"
-              >#3437</xref></p>
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3437" format="html" scope="external">#3437</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3492" format="html" scope="external">#3492</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3494" format="html" scope="external">#3494</xref>
+            </p>
             <dl>
               <dlentry>
                 <dt><cmdname>dita deliverables</cmdname></dt>
@@ -238,6 +240,10 @@
             attributes was dropped. Calls to that template have been restored, making it available for easy overrides.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3484" format="html" scope="external">#3484</xref>
           </li>
+          <li id="3232">Coderef using keyref also prints temporary file name
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3232" format="html" scope="external">#3232</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3496" format="html" scope="external">#3496</xref>
+          </li>
         </ul>
       </section>
 
@@ -265,10 +271,16 @@
         <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
           improvements to existing topics, along with new information in the following topics:</p>
         <ul>
-          <li/>
+          <li>
+            <xref keyref="dita-command-arguments"/></li>
+          <li>
+            <xref keyref="plugins-installing"/></li>
+          <li>
+            <xref keyref="plugins-removing"/></li>
           <!--
           <li>
-            <xref keyref="migrating-to-3.5"/></li> -->
+            <xref keyref="migrating-to-3.5"/></li>
+          -->
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"/>, see the

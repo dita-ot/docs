@@ -190,29 +190,42 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="3395">Treatment for UncheckedXPathException exceptions
+          <li id="3395">Handling for <msgph>UncheckedXPathException</msgph> errors has been improved to provide more
+            details on the source of the error including line and column information.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3395" format="html" scope="external">#3395</xref>
           </li>
-          <li id="3425">Fix preprocess2 integration tests
+          <li id="3425">The integration tests for the map-first preprocessing routine (<codeph>preprocess2</codeph>)
+            have been separated from the previous preprocessing tests, with dedicated results defined to evaluate the
+            compliance of map-first preprocessing with the expected output.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3425" format="html" scope="external">#3425</xref>
           </li>
-          <li id="3430">added attribute-sets for linklists
+          <li id="3430">The HTML5 plug-in includes new attribute sets for link lists that make it easier for custom
+            plug-ins to add supplementary classes or other customizations without overriding entire templates. The
+            default output includes the same CSS classes as previous versions of DITA-OT (<codeph>relconcepts</codeph>,
+              <codeph>relinfo</codeph>, <codeph>relref</codeph>, <codeph>reltasks</codeph>), so existing customizations
+            that rely on these classes will behave as expected.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3430" format="html" scope="external">#3430</xref>
           </li>
-          <li id="3434">Remove unused and deprecated preprocessing configuration
+          <li id="3434">Various unused and deprecated Ant properties, list files, and targets have been removed from the
+            preprocessing configuration. Recent DITA-OT versions provide alternative mechanisms to achieve the same
+            results, such as the <xmlelement>ditafileset</xmlelement> element to select resources in the temporary
+            directory.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3434" format="html" scope="external">#3434</xref>
           </li>
           <li id="3442">The <codeph>org.dita.eclipsehelp</codeph> plugin, which is still bundled with DITA-OT, is now
             installed from a separate repository.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3442" format="html" scope="external">#3442</xref>
           </li>
-          <li id="3452">Use new way of specifying message emitter
+          <li id="3452">The Java code has been refactored to generate <codeph>xsl:message</codeph> output using methods
+            that are compatible with Saxon Enterprise Edition.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3452" format="html" scope="external">#3452</xref>
           </li>
-          <li id="3471">Move from JAXP to S9API
+          <li id="3471">XSLT processing has been adjusted to use Saxon’s preferred Java API for XSLT, XQuery, XPath, and
+            XML Schema processing (S9API) directly instead of the JAXP wrapper used by previous versions of DITA-OT.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3471" format="html" scope="external">#3471</xref>
           </li>
-          <li id="3473">Use singleton XML utils
+          <li id="3473">Java code has been refactored to use a single instance of XML utilities during processing. This
+            approach allows other XML-related resources to be shared, including Saxon processors and name pools.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3473" format="html" scope="external">#3473</xref>
           </li>
         </ul>

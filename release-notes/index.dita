@@ -190,6 +190,11 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
+          <li id="3383">The Java code has been refactored to generate <codeph>xsl:message</codeph> output using methods
+            that are compatible with Saxon Enterprise Edition.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3383" format="html" scope="external">#3383</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3452" format="html" scope="external">#3452</xref>
+          </li>
           <li id="3395">Handling for <msgph>UncheckedXPathException</msgph> errors has been improved to provide more
             details on the source of the error including line and column information.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3395" format="html" scope="external">#3395</xref>
@@ -216,10 +221,6 @@
             installed from a separate repository.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3442" format="html" scope="external">#3442</xref>
           </li>
-          <li id="3452">The Java code has been refactored to generate <codeph>xsl:message</codeph> output using methods
-            that are compatible with Saxon Enterprise Edition.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3452" format="html" scope="external">#3452</xref>
-          </li>
           <li id="3471">XSLT processing has been adjusted to use Saxon’s preferred Java API for XSLT, XQuery, XPath, and
             XML Schema processing (S9API) directly instead of the JAXP wrapper used by previous versions of DITA-OT.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3471" format="html" scope="external">#3471</xref>
@@ -243,17 +244,20 @@
             processing pushed these to nested elements; that behavior is now corrected to match the specification.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1899" format="html" scope="external">#1899</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3326" format="html" scope="external">#3326</xref></li>
-          <li id="3383">Cannot run publishing using a licensed Saxon 9.9 distribution
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3383" format="html" scope="external">#3383</xref>
-          </li>
-          <li id="3429">Run mapref even if input file is not a map
+          <li id="3429">To support
+            <xref href="#v3.5/3412">additional resources</xref>, the <codeph>mapref</codeph> preprocessing stage now
+            runs even if the input file is not a map. DITA-OT now checks whether maps with additional resources are
+            available, even if they are not specified as input files.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3429" format="html" scope="external">#3429</xref>
           </li>
           <li id="3484">In some earlier releases, a call to an empty stub template for table <xmlatt>summary</xmlatt>
             attributes was dropped. Calls to that template have been restored, making it available for easy overrides.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3484" format="html" scope="external">#3484</xref>
           </li>
-          <li id="3232">Coderef using keyref also prints temporary file name
+          <li id="3232">When <xmlelement>coderef</xmlelement> elements imported code samples with key references via the
+              <xmlatt>keyref</xmlatt> attribute, earlier versions of DITA-OT appended the (temporary) file name of the
+            referenced code sample to the last line of the parent <xmlelement>codeblock</xmlelement> element. Processing
+            has been corrected to ensure that code blocks contain only the referenced code samples.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3232" format="html" scope="external">#3232</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3496" format="html" scope="external">#3496</xref>
           </li>

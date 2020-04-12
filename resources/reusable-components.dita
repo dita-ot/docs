@@ -129,5 +129,41 @@
         source code is available on GitHub for anyone interested in maintaining the plug-ins for use with future toolkit
         versions.</note>
     </section>
+    
+    <section id="subcommands">
+      <title>New subcommands in 3.5</title>
+      <dl id="3.5-subcommands">
+        <dlentry>
+          <dt><cmdname>dita deliverables</cmdname></dt>
+          <dd>Prints the list of deliverables in a project <varname>file</varname></dd>
+        </dlentry>
+        <dlentry id="install-subcommand">
+          <dt><cmdname>dita install</cmdname></dt>
+          <dd>Installs or reloads plug-ins (replaces <cmdname>dita</cmdname>
+            <parmname>--install</parmname>)</dd>
+        </dlentry>
+        <dlentry>
+          <dt><cmdname>dita plugins</cmdname></dt>
+          <dd>Prints a list of installed plug-ins (replaces <cmdname>dita</cmdname>
+            <parmname>--plugins</parmname>)</dd>
+        </dlentry>
+        <dlentry>
+          <dt><cmdname>dita transtypes</cmdname></dt>
+          <dd>Prints a list of installed transformation types, or <i>output formats</i> (replaces
+            <cmdname>dita</cmdname>
+            <parmname>--transtypes</parmname>)</dd>
+        </dlentry>
+        <dlentry>
+          <dt><cmdname>dita uninstall</cmdname></dt>
+          <dd>Removes and deletes a plug-in (replaces <cmdname>dita</cmdname>
+            <parmname>--uninstall</parmname>)</dd>
+        </dlentry>
+        <dlentry id="version-subcommand">
+          <dt><cmdname>dita version</cmdname></dt>
+          <dd>Prints version information and exits (replaces <cmdname>dita</cmdname>
+            <parmname>--version</parmname>)</dd>
+        </dlentry>
+      </dl>
+    </section>
   </conbody>
 </concept>

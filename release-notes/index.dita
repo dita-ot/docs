@@ -232,6 +232,24 @@
             attributes was dropped. Calls to that template have been restored, making it available for easy overrides.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3484" format="html" scope="external">#3484</xref>
           </li>
+          <li id="3497">When key definitions with external scope were defined in maps in subdirectories, earlier
+            versions treated absolute paths beginning with slashes as relative paths, and prefixed the name of the
+            enclosing directory to the output path, resulting in broken links. Map reference processing has been
+            corrected to ensure that absolute paths are recognized as such and passed to the output as intended.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3497" format="html" scope="external">#3497</xref>
+          </li>
+          <li id="3498">If <xmlelement>term</xmlelement> elements pointed to missing topics using the
+              <xmlatt>keyref</xmlatt> attribute, earlier versions of DITA-OT would crash during the build process. An
+            additional check has been implemented to catch these cases, allowing the build to finish and report errors
+            for any unresolved term references.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3498" format="html" scope="external">#3498</xref>
+          </li>
+          <li id="3502">In HTML5 output, earlier versions of DITA-OT displayed the “Note” label when the
+              <xmlatt>type</xmlatt> attribute of a <xmlelement>note</xmlelement> element was set to
+              <codeph>notice</codeph>. Processing has been updated to ensure that the “Notice” label is correctly
+            applied.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3502" format="html" scope="external">#3502</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3503" format="html" scope="external">#3503</xref>
           </li>
         </ul>
       </section>

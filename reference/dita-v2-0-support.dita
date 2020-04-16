@@ -2,8 +2,13 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<concept id="dita-13-spec-support" xml:lang="en-US">
-  <title>DITA 2.0 support</title>
+<concept id="ID">
+  <title>DITA 2.0 preview support</title>
+  
+  <titlealts>
+    <navtitle>DITA 2.0 preview</navtitle>
+  </titlealts>
+  
   <shortdesc>DITA Open Toolkit <keyword keyref="release"/> provides an initial preview of features for the upcoming
     OASIS DITA 2.0 specification. This preliminary processing support is provided on the basis of the latest DRAFT
     versions of the DITA 2.0 DTD and RelaxNG grammar files from OASIS (as of March 2020).</shortdesc>

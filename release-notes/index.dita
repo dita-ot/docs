@@ -215,6 +215,13 @@
             processing pushed these to nested elements; that behavior is now corrected to match the specification.
             <xref href="https://github.com/dita-ot/dita-ot/issues/1899" format="html" scope="external">#1899</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3326" format="html" scope="external">#3326</xref></li>
+          <li id="3232">When <xmlelement>coderef</xmlelement> elements imported code samples with key references via the
+              <xmlatt>keyref</xmlatt> attribute, earlier versions of DITA-OT appended the (temporary) file name of the
+            referenced code sample to the last line of the parent <xmlelement>codeblock</xmlelement> element. Processing
+            has been corrected to ensure that code blocks contain only the referenced code samples.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3232" format="html" scope="external">#3232</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3496" format="html" scope="external">#3496</xref>
+          </li>
           <li id="3429">To support
             <xref href="#v3.5/3412">additional resources</xref>, the <codeph>mapref</codeph> preprocessing stage now
             runs even if the input file is not a map. DITA-OT now checks whether maps with additional resources are
@@ -225,12 +232,6 @@
             attributes was dropped. Calls to that template have been restored, making it available for easy overrides.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3484" format="html" scope="external">#3484</xref>
           </li>
-          <li id="3232">When <xmlelement>coderef</xmlelement> elements imported code samples with key references via the
-              <xmlatt>keyref</xmlatt> attribute, earlier versions of DITA-OT appended the (temporary) file name of the
-            referenced code sample to the last line of the parent <xmlelement>codeblock</xmlelement> element. Processing
-            has been corrected to ensure that code blocks contain only the referenced code samples.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3232" format="html" scope="external">#3232</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3496" format="html" scope="external">#3496</xref>
           </li>
         </ul>
       </section>

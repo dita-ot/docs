@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<map>
+  <title>Working with plug-ins</title>
+
+  <topicref keyref="plugins-installing"/>
+  <topicref keyref="plugins-removing"/>
+  <topicref keyref="plugins-registry"/>
+  <topicref keyref="rebuilding-docs"/>
+
+  <reltable>
+    <title>Bi-directional links</title>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-installing"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugins-registry"/>
+      </relcell>
+    </relrow>
+  </reltable>
+
+</map>

@@ -3,33 +3,30 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <map>
-  <title>Working with plug-ins</title>
-  <topicref keyref="custom-plugins">
-    <topicref keyref="plugins-installing"/>
-    <topicref keyref="plugins-removing"/>
-    <topicref keyref="plugins-registry"/>
-    <topicref keyref="plugin-configfile"/>
-    <topicref keyref="plugin-dependencies"/>
-    <topicref keyref="plugin-applications">
-      <topicref keyref="plugin-xmlcatalog"/>
-      <topicref keyref="plugin-anttarget"/>
-      <topicref keyref="plugin-antpreprocess"/>
-      <topicref keyref="plugin-newtranstype"/>
-      <topicref keyref="plugin-overridestyle"/>
-      <topicref keyref="referencing-other-plugins"/>
-      <topicref keyref="plugin-xsltparams"/>
-      <topicref keyref="plugin-javalib"/>
-      <topicref keyref="plugin-messages"/>
-      <topicref keyref="plugin-newextensions"/>
-      <topicref keyref="plugin-implement-saxon-customizations">
-        <topicref keyref="plugin-implement-saxon-extension-functions"/>
-        <topicref keyref="plugin-implement-saxon-collation-uri-resolvers"/>
-      </topicref>
+  <title>Plug-ins</title>
+
+  <topicref keyref="plugin-configfile"/>
+  <topicref keyref="plugin-dependencies"/>
+  <topicref keyref="plugin-applications">
+    <topicref keyref="plugin-xmlcatalog"/>
+    <topicref keyref="plugin-anttarget"/>
+    <topicref keyref="plugin-antpreprocess"/>
+    <topicref keyref="plugin-newtranstype"/>
+    <topicref keyref="plugin-overridestyle"/>
+    <topicref keyref="referencing-other-plugins"/>
+    <topicref keyref="plugin-xsltparams"/>
+    <topicref keyref="plugin-javalib"/>
+    <topicref keyref="plugin-messages"/>
+    <topicref keyref="plugin-newextensions"/>
+    <topicref keyref="plugin-implement-saxon-customizations">
+      <topicref keyref="plugin-implement-saxon-extension-functions"/>
+      <topicref keyref="plugin-implement-saxon-collation-uri-resolvers"/>
     </topicref>
-    <topicref keyref="plugin-sample"/>
-    <topicref keyref="plugin-best-practices"/>
-    <topicref keyref="plugin-coding-conventions"/>
   </topicref>
+  <mapref href="globalizing.ditamap"/>
+  <topicref keyref="plugin-sample"/>
+  <topicref keyref="plugin-best-practices"/>
+  <topicref keyref="plugin-coding-conventions"/>
 
   <reltable>
     <title>Bi-directional links</title>
@@ -39,14 +36,6 @@
       </relcell>
       <relcell>
         <topicref keyref="plugin-coding-conventions"/>
-      </relcell>
-    </relrow>
-    <relrow>
-      <relcell>
-        <topicref keyref="plugins-installing"/>
-      </relcell>
-      <relcell>
-        <topicref keyref="plugins-registry"/>
       </relcell>
     </relrow>
   </reltable>

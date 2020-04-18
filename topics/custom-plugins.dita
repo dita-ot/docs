@@ -3,9 +3,10 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <concept id="custom-plugins">
-  <title>Working with plug-ins</title>
-  <shortdesc id="plugins-creating">You can install or create DITA-OT plug-ins to change the default output types in
-    various ways, add entirely new kinds of output formats, or implement DITA topic specializations.</shortdesc>
+  <title>Creating custom plug-ins</title>
+  <shortdesc id="plugins-creating">In addition to adding plug-ins from the plug-in registry at
+    <xref keyref="site-plugin-registry"/>, you can create custom DITA-OT plug-ins of your own to modify the default
+    output, add new output formats, support new languages, or implement DITA topic specializations.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -14,14 +15,11 @@
         <indexterm>plug-ins</indexterm>
         <indexterm>plug-ins
           <indexterm>benefits</indexterm></indexterm>
-        <indexterm>plug-ins
-          <indexterm>working with</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
 
   <conbody>
-
     <p>A plug-in consists of a directory, typically stored within the <filepath>plugins/</filepath> subdirectory of the
       DITA-OT installation. Every plug-in is controlled by a file named <filepath>plugin.xml</filepath>, which is
       located in the root directory of the plug-in.</p>
@@ -47,7 +45,7 @@
 
     <section>
       <title>Plug-in details</title>
-      <p>The following topics provide additional information on working with plug-ins and creating your own.</p>
+      <p>The following topics provide additional information on creating your own plug-ins.</p>
     </section>
   </conbody>
 </concept>

@@ -7,9 +7,8 @@
   <titlealts>
     <navtitle>Rebuilding documentation</navtitle>
   </titlealts>
-  <shortdesc>DITA-OT ships with a <keyword keyref="gradle"/> build script that enables you to rebuild the toolkit
-    documentation. This is especially helpful if your environment contains plug-ins that add new extension points,
-    messages, or parameters to the toolkit.</shortdesc>
+  <shortdesc>When you add or remove plug-ins, you can rebuild the documentation to update the information on the
+    extension points, messages, and parameters that are available in your environment.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -27,7 +26,8 @@
   </prolog>
   <taskbody>
     <context>
-      <p>The documentation build script reads the toolkit’s plug-in configuration and automatically regenerates topics
+      <p>DITA-OT ships with a <keyword keyref="gradle"/> build script that enables you to rebuild the toolkit
+        documentation. The build script reads the toolkit’s plug-in configuration and automatically regenerates topics
         and properties file templates based on the extension points, messages, and parameters provided by the installed
         plug-ins.</p>
       <note type="attention">If you have installed new plug-ins, you may need to add the corresponding generated topics

@@ -63,7 +63,7 @@
       renderer which fonts to use and where to find them.</p>
     <note type="important"> Wherever possible, avoid copying entire XSL files from the PDF2 plug-in to your custom
       plug-in. Instead, copy only the specific attribute sets and templates that you want to override. For details, see
-      <xref keyref="plugin-best-practices"/>.</note>
+      <xref keyref="plugin-coding-conventions"/>.</note>
     <p>Things you can currently override include:</p>
     <ul>
       <li>Custom XSL via <filepath>xsl/custom.xsl</filepath> and <filepath>attrs/custom.xsl</filepath></li>

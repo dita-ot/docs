@@ -22,8 +22,11 @@
   <topicref keyref="parameters">
     <mapref href="../parameters/parameters.ditamap"/>
   </topicref>
-  <topicref keyref="customizing">
-    <mapref href="../topics/customization.ditamap"/>
+  <topicref keyref="html-customization" collection-type="family">
+    <mapref href="../topics/html-customization.ditamap"/>
+  </topicref>
+  <topicref keyref="pdf-customization">
+    <mapref href="../topics/pdf-customization.ditamap"/>
   </topicref>
   <topicref keyref="troubleshooting-overview">
     <mapref href="../topics/troubleshooting.ditamap"/>

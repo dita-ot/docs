@@ -14,7 +14,6 @@
     <topicref keyref="plugin-antpreprocess"/>
     <topicref keyref="plugin-newtranstype"/>
     <topicref keyref="plugin-overridestyle"/>
-    <topicref keyref="referencing-other-plugins"/>
     <topicref keyref="plugin-xsltparams"/>
     <topicref keyref="plugin-javalib"/>
     <topicref keyref="plugin-messages"/>
@@ -25,7 +24,9 @@
     </topicref>
   </topicref>
   <mapref href="globalizing.ditamap"/>
-  <topicref keyref="plugin-coding-conventions"/>
+  <topicref keyref="plugin-coding-conventions">
+    <topicref keyref="referencing-other-plugins"/>
+  </topicref>
 
   <reltable>
     <title>Source and target links</title>

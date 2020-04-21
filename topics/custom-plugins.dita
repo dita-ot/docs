@@ -4,6 +4,9 @@
 
 <concept id="custom-plugins">
   <title>Creating custom plug-ins</title>
+  <titlealts>
+    <navtitle>Creating plug-ins</navtitle>
+  </titlealts>
   <shortdesc id="plugins-creating">In addition to adding plug-ins from the plug-in registry at
     <xref keyref="site-plugin-registry"/>, you can create custom DITA-OT plug-ins of your own to modify the default
     output, add new output formats, support new languages, or implement DITA topic specializations.</shortdesc>

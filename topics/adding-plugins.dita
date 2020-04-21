@@ -3,7 +3,10 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <concept id="ID">
-  <title>Adding new plug-ins</title>
+  <title>Adding and removing plug-ins</title>
+  <titlealts>
+    <navtitle>Adding plug-ins</navtitle>
+  </titlealts>
   <shortdesc>You can extend DITA-OT with additional plug-ins to change the default output types in various ways, add
     entirely new kinds of output formats, or implement DITA topic specializations. A variety of open source plug-ins are
     available from the plug-in registry at

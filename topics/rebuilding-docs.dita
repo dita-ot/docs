@@ -41,7 +41,7 @@
         <choices>
           <choice platform="linux mac">On Linux and macOS:
             <codeblock>./gradlew <varname>target</varname></codeblock></choice>
-          <choice platform="windows">On Windows: <codeblock>gradlew <varname>target</varname></codeblock></choice>
+          <choice platform="windows">On Windows: <codeblock>gradlew.bat <varname>target</varname></codeblock></choice>
         </choices>
         <info>
           <p>The <varname>target</varname> parameter is optional and specifies a transformation type. It takes the

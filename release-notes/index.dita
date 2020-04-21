@@ -251,6 +251,12 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3502" format="html" scope="external">#3502</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3503" format="html" scope="external">#3503</xref>
           </li>
+          <li id="3505">In previous releases, when <xmlelement>chunk</xmlelement> was used to combine a branch of
+            content, and a file within that branch was missing or invalid, processing within the chunk module could fail
+            with a NullPointerException. This condition has been fixed, and processing will continue without the missing
+            file.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3505" format="html" scope="external">#3505</xref>
+          </li>
         </ul>
       </section>
 

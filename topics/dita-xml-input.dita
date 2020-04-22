@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<topic id="ID">
+  <title>Standard DITA XML</title>
+  <shortdesc>DITA Open Toolkit supports all released versions of the OASIS DITA specification, including 1.0, 1.1, 1.2,
+    and 1.3. As of release <keyword keyref="release"/>, DITA-OT also provides an initial preview of features for the
+    latest draft of the upcoming DITA 2.0 standard.</shortdesc>
+  <body>
+    <p>The DITA specification “defines a set of document types for authoring and organizing topic-oriented information,
+      as well as a set of mechanisms for combining, extending, and constraining document types.” The
+      <xref keyref="dita13-spec"/> is the authoritative source of information on authoring DITA content in XML.</p>
+    <note type="tip">For details on how DITA Open Toolkit processes DITA XML content, see
+      <xref keyref="dita-spec-support"/>.</note>
+  </body>
+</topic>

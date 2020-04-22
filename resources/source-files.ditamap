@@ -8,7 +8,6 @@
     <shortdesc>Provides key definitions for each DITA topic in the repository.</shortdesc>
   </topicmeta>
   <keydef keys="adding-plugins" href="../topics/adding-plugins.dita"/>
-  <keydef keys="alternative-input-formats" href="../topics/alternative-input-formats.dita"/>
   <keydef keys="ant" href="../topics/ant.dita"/>
   <keydef keys="ant-parameters-details" href="../parameters/ant-parameters-details.dita"/>
   <keydef keys="architecture" href="../reference/architecture.dita"/>
@@ -31,6 +30,7 @@
   <keydef keys="dita-v1-2-support" href="../reference/dita-v1-2-support.dita"/>
   <keydef keys="dita-v1-3-support" href="../reference/dita-v1-3-support.dita"/>
   <keydef keys="dita-v2-0-support" href="../reference/dita-v2-0-support.dita"/>
+  <keydef keys="dita-xml-input" href="../topics/dita-xml-input.dita"/>
   <keydef keys="dita2dita" href="../topics/dita2dita.dita"/>
   <keydef keys="dita2eclipsehelp" href="../topics/dita2eclipsehelp.dita"/>
   <keydef keys="dita2html5" href="../topics/dita2html5.dita"/>
@@ -67,6 +67,7 @@
   <keydef keys="htmlhelp-processing" href="../reference/htmlhelp-processing.dita"/>
   <keydef keys="implementation-dependent-features" href="../reference/implementation-dependent-features.dita"/>
   <keydef keys="increasing-the-jvm" href="../topics/increasing-the-jvm.dita"/>
+  <keydef keys="input-formats" href="../topics/input-formats.dita"/>
   <keydef keys="installing-client" href="../topics/installing-client.dita"/>
   <keydef keys="installing-via-homebrew" href="../topics/installing-via-homebrew.dita"/>
   <keydef keys="internal-ant-properties" href="../parameters/internal-ant-properties.dita"/>

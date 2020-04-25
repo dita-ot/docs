@@ -32,8 +32,17 @@
   <part keyref="parameters">
     <chapter href="parameters/parameters.ditamap" format="ditamap"/>
   </part>
-  <part keyref="customizing">
-    <chapter href="topics/customization.ditamap" format="ditamap"/>
+  <part keyref="html-customization">
+    <chapter href="topics/html-customization.ditamap" format="ditamap"/>
+  </part>
+  <part keyref="pdf-customization">
+    <chapter href="topics/pdf-customization.ditamap" format="ditamap"/>
+  </part>
+  <part keyref="adding-plugins">
+    <chapter href="topics/using-plugins.ditamap" format="ditamap"/>
+  </part>
+  <part keyref="custom-plugins">
+    <chapter href="topics/creating-plugins.ditamap" format="ditamap"/>
   </part>
   <part keyref="troubleshooting-overview">
     <chapter href="topics/troubleshooting.ditamap" format="ditamap"/>

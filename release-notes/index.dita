@@ -295,6 +295,11 @@
           <li>
             <xref keyref="dita-v2-0-support"/></li>
         </ul>
+        <p>The topic hierarchy has been revised to promote information on common customization scenarios, including
+          <xref keyref="html-customization"/> and
+          <xref keyref="pdf-customization"/>, and how to extend the toolkit by
+          <xref keyref="adding-plugins"/> and
+          <xref keyref="custom-plugins"/>.</p>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"/>, see the
           <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.5+is%3Aclosed" format="html"
@@ -306,6 +311,7 @@
         <ol>
           <li>Roger Sheen</li>
           <li>Robert D Anderson</li>
+          <li>Jarno Elovirta</li>
           <li>Shane Taylor</li>
           <li>Lief Erickson</li>
           <li>Heston Hoffman</li>

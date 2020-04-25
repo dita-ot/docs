@@ -11,9 +11,17 @@
     <topicref keyref="generate-copy-outer"/>
   </topicref>
   <topicref keyref="html-customization-properties-file"/>
-  <topicref keyref="html-customization-plugins">
-    <topicref keyref="html-customization-plugin-bundle-css"/>
-    <topicref keyref="html-customization-plugin-webfont"/>
-    <topicref keyref="html-customization-plugin-javascript"/>
-  </topicref>
+  
+  <reltable>
+    <title>Bi-directional links</title>
+    <relrow>
+      <relcell>
+        <topicref keyref="html-customization"/>
+        <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="html-customization-plugins"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

@@ -5,17 +5,6 @@
 <map>
   <title>Customizing PDF output</title>
   <topicref keyref="pdf-customization-approaches"/>
-  <topicref keyref="pdf-customization-plugin-types"/>
-  <topicref keyref="pdf-plugin-structure" collection-type="family">
-    <topicref keyref="pdf-plugin-structure_common-artwork"/>
-    <topicref keyref="pdf-plugin-structure_common-index"/>
-    <topicref keyref="pdf-plugin-structure_common-vars"/>
-    <topicref keyref="pdf-plugin-structure_fo-attrs"/>
-    <topicref keyref="pdf-plugin-structure_fo-i18n"/>
-    <topicref keyref="pdf-plugin-structure_fo-xsl"/>
-  </topicref>
-  <topicref keyref="pdf-customization-example"/>
-  <topicref keyref="pdf-customization-resources"/>
   <topicref keyref="pdf2-creating-change-bars"/>
 
   <reltable>
@@ -24,10 +13,10 @@
       <relcell>
         <topicref keyref="pdf-customization"/>
         <topicref keyref="pdf-customization-approaches"/>
+        <topicref keyref="plugin-coding-conventions"/>
       </relcell>
       <relcell>
-        <!-- Link formerly PDF-specific content to new location -->
-        <topicref keyref="plugin-coding-conventions"/>
+        <topicref keyref="pdf-customization-plugins"/>
       </relcell>
     </relrow>
   </reltable>

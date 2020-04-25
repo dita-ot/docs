@@ -7,7 +7,10 @@
 
   <topicref keyref="plugin-benefits"/>
   <topicref keyref="plugin-configfile"/>
-  <topicref keyref="plugin-dependencies"/>
+  <topicref keyref="plugin-coding-conventions"/>
+  <topicref keyref="plugin-dependencies">
+    <topicref keyref="referencing-other-plugins"/>
+  </topicref>
   <topicref keyref="plugin-use-cases">
     <topicref keyref="plugin-xmlcatalog"/>
     <topicref keyref="plugin-anttarget"/>
@@ -23,10 +26,38 @@
       <topicref keyref="plugin-implement-saxon-collation-uri-resolvers"/>
     </topicref>
   </topicref>
-  <mapref href="globalizing.ditamap"/>
-  <topicref keyref="plugin-coding-conventions">
-    <topicref keyref="referencing-other-plugins"/>
+  <topicref keyref="html-customization-plugins">
+    <topicref keyref="html-customization-plugin-bundle-css"/>
+    <topicref keyref="html-customization-plugin-webfont"/>
+    <topicref keyref="html-customization-plugin-javascript"/>
   </topicref>
+  <topicref keyref="pdf-customization-plugins">
+    <topicref keyref="pdf-customization-plugin-types"/>
+    <topicref keyref="pdf-plugin-structure" collection-type="family">
+      <topicref keyref="pdf-plugin-structure_common-artwork"/>
+      <topicref keyref="pdf-plugin-structure_common-index"/>
+      <topicref keyref="pdf-plugin-structure_common-vars"/>
+      <topicref keyref="pdf-plugin-structure_fo-attrs"/>
+      <topicref keyref="pdf-plugin-structure_fo-i18n"/>
+      <topicref keyref="pdf-plugin-structure_fo-xsl"/>
+    </topicref>
+    <topicref keyref="pdf-customization-example"/>
+    <topicref keyref="pdf-customization-resources"/>
+  </topicref>
+  <mapref href="globalizing.ditamap"/>
+
+  <reltable>
+    <title>Bi-directional links</title>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-dependencies"/>
+        <topicref keyref="referencing-other-plugins"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+    </relrow>
+  </reltable>
 
   <reltable>
     <title>Source and target links</title>

@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<task id="customizing-pdf-output">
+<concept id="customizing-pdf-output">
   <title>Customizing PDF output</title>
   <titlealts>
     <navtitle>Customizing PDF</navtitle>
   </titlealts>
-  <shortdesc>You can create custom DITA-OT plug-ins that build on the default DITA to PDF transformation. Plug-ins can
-    customize covers and page layouts, modify formatting, override logic of the default PDF plug-in, and much
-    more.</shortdesc>
+  <shortdesc>You can adjust various aspects of PDF output by changing parameter settings. For more complex
+    customizations, you can create custom DITA-OT plug-ins. </shortdesc>
   <prolog>
     <metadata>
       <keywords>
         <indexterm>transformations
           <indexterm>PDF</indexterm></indexterm>
-        <indexterm>PDF</indexterm>
+        <indexterm>PDF
+          <indexterm>customizing</indexterm></indexterm>
       </keywords>
     </metadata>
   </prolog>
-</task>
+
+  <conbody>
+    <p>For example:</p>
+    <ul>
+      <li>To print the file names of the graphics underneath figures, set <parmname>args.artlbl</parmname> to
+          <option>yes.</option></li>
+      <li>To disable the subsection links on the first page of each chapter, set
+          <parmname>args.chapter.layout</parmname> to <option>BASIC</option>.</li>
+      <li>To change the name of the PDF file to something other than the input map name, set
+          <parmname>outputFile.base</parmname> to the desired file name (without the <filepath>.pdf</filepath>
+        extension).</li>
+    </ul>
+    <note>For the full list of settings for PDF output, see
+      <xref keyref="parameters-pdf"/>.</note>
+
+  </conbody>
+</concept>

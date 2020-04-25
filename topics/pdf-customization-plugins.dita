@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<task id="custom-pdf-plugins">
+  <title>Custom PDF plug-ins</title>
+  <shortdesc>In most cases, PDF output should be customized by creating custom DITA-OT plug-ins that build on the
+    default DITA to PDF transformation. PDF plug-ins can customize covers and page layouts, modify formatting, override
+    the logic of the default PDF plug-in, and much more.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>transformations
+          <indexterm>PDF</indexterm></indexterm>
+        <indexterm>PDF
+          <indexterm>custom plug-in</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+</task>

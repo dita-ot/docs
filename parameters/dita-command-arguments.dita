@@ -347,8 +347,8 @@
               parameters that are configured in the plug-in configuration file; the Java-style <parmname>-D</parmname>
               form can also be used to specify additional non-configured parameters or set system properties.</p>
             <p>Parameters not implemented by the specified transformation type or referenced in a
-                <filepath>.properties</filepath> file are ignored.</p><note
-              conkeyref="conref-task/pass-input-dir"/></pd>
+                <filepath>.properties</filepath> file are ignored.</p>
+            <note conkeyref="conref-task/pass-input-dir"/></pd>
         </plentry>
         <plentry>
           <pt>
@@ -357,6 +357,20 @@
           <pd>Use build parameters defined in the referenced <filepath>.properties</filepath> file.
             <p>Build parameters specified on the command line override those set in the <filepath>.properties</filepath>
               file.</p></pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--resource</parmname>=<varname>file</varname>
+          </pt>
+          <pt>
+            <parmname>-r</parmname>
+            <varname>file</varname>
+          </pt>
+          <pd>Process input with additional resources.
+            <p>For example, to process a single topic file with a map that contains key definitions, use a command like
+              this:
+              <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
+            </p></pd>
         </plentry>
         <plentry>
           <pt>

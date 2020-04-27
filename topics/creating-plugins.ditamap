@@ -3,13 +3,7 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <map>
-  <title>Customizing/Extending DITA-OT</title>
-
-  <mapref href="html-customization.ditamap"/>
-  <mapref href="pdf-customization.ditamap"/>
+  <title>Creating plug-ins</title>
   <mapref href="plug-ins.ditamap"/>
-  <mapref href="../extension-points/extension-points.ditamap"/>
   <mapref href="migration.ditamap"/>
-  <mapref href="globalizing.ditamap"/>
-  <topicref keyref="rebuilding-docs"/>
 </map>

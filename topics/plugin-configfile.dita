@@ -354,5 +354,29 @@
         multiple extension definitions within a single <filepath>plugin.xml</filepath> file; in older versions, only the
         last extension definition was used.</p>
     </section>
+    <example id="plugin-sample">
+      <!--Previously dedicated topic, merged here for 3.5 -->
+      <title>Example <filepath>plugin.xml</filepath> file</title>
+      <indexterm>DITA
+        <indexterm>specializations</indexterm></indexterm>
+      <indexterm>DTD</indexterm>
+      <indexterm>plug-ins
+        <indexterm>DITA specializations</indexterm></indexterm>
+      <indexterm>plug-ins
+        <indexterm><filepath>plugin.xml</filepath></indexterm></indexterm>
+      <indexterm><filepath>plugin.xml</filepath></indexterm>
+      <p>The following is a sample of a <filepath>plugin.xml</filepath> file. This file adds support for a new set of
+        specialized DTDs, and includes an override for the XHTML output processor.</p>
+      <p>This <filepath>plugin.xml</filepath> file would go into a directory such as
+          <filepath>DITA-OT/plugins/music/</filepath> and referenced supporting files would also exist in that
+        directory. A more extensive sample using these values is available in the actual music plug-in, available on
+        <xref format="html" href="https://sourceforge.net/projects/dita-ot/files/Plug-in_%20Music/" scope="external"
+          >SourceForge</xref>.</p>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="org.metadita.specialization.music">
+  &lt;feature extension="dita.specialization.catalog.relative" 
+           file="catalog-dita.xml"/>
+  &lt;feature extension="dita.xsl.xhtml" file="xsl/music2xhtml.xsl"/>
+&lt;/plugin></codeblock>
+    </example>
   </refbody>
 </reference>

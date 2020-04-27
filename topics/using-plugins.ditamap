@@ -3,21 +3,23 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <map>
-  <title>Customizing PDF output</title>
-  <topicref keyref="pdf-customization-approaches"/>
-  <topicref keyref="pdf2-creating-change-bars"/>
+  <title>Working with plug-ins</title>
+
+  <topicref keyref="plugins-installing"/>
+  <topicref keyref="plugins-removing"/>
+  <topicref keyref="plugins-registry"/>
+  <topicref keyref="rebuilding-docs"/>
 
   <reltable>
     <title>Bi-directional links</title>
     <relrow>
       <relcell>
-        <topicref keyref="pdf-customization"/>
-        <topicref keyref="pdf-customization-approaches"/>
-        <topicref keyref="plugin-coding-conventions"/>
+        <topicref keyref="plugins-installing"/>
       </relcell>
       <relcell>
-        <topicref keyref="pdf-customization-plugins"/>
+        <topicref keyref="plugins-registry"/>
       </relcell>
     </relrow>
   </reltable>
+
 </map>

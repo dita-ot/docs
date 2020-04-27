@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<reference id="migrating-to-3.5">
+
+  <title>Migrating to release 3.5</title>
+  <titlealts>
+    <navtitle>To 3.5</navtitle>
+  </titlealts>
+
+  <shortdesc>DITA-OT 3.5 includes <ph id="summary">support for additional input resources, an alternative subcommand
+      syntax for the <cmdname>dita</cmdname> command, and an initial preview of features for the latest draft of the
+      upcoming DITA 2.0 standard</ph>.</shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 3.5 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="3.5-release-notes"/>.</note>
+    </section>
+
+    <section id="subcommands">
+      <title>New subcommands</title>
+      <p>The <cmdname>dita</cmdname> command line interface has been refactored to support subcommands for common
+        operations.</p>
+      <note type="important">The new subcommands supersede the deprecated X-Toolkit–style single-hyphen keyword variants
+        (such as <option>-install</option>), and the corresponding GNU-style option keywords preceded by two hyphens
+        (such as <option>--install</option>).</note>
+      <dl>
+        <dlentry conkeyref="reusable-components/install-subcommand" conrefend="default.dita#ID/version-subcommand">
+          <dt/>
+          <dd/>
+        </dlentry>
+      </dl>
+      <note type="tip">The double-hyphen option syntax has been retained for backwards compatibility, so if you use
+        commands like <cmdname>dita</cmdname>
+        <parmname>--install</parmname> in scripts, they will still work, but you may want to migrate your scripts to the
+        new subcommand syntax.</note>
+    </section>
+    <section id="3.5-legacy-target-removal">
+      <title>Legacy constructs removed</title>
+      <p>DITA-OT 3.5 no longer includes the following legacy properties, list files, and targets, which were deprecated
+        in previous releases. These constructs were no longer used in recent releases, and have now been removed
+        entirely.</p>
+      <p>The following Ant targets have been removed from the pre-processing pipeline:</p>
+      <ul>
+        <li><codeph>mappull</codeph> and <codeph>mappull-check</codeph>, which were used to pull metadata (such as
+          navtitle) into the map from referenced topics prior to DITA-OT 2.2 (merged with
+            <codeph>move-meta-entries</codeph>)</li>
+        <li><codeph>conref-check</codeph>, deprecated since 2.3</li>
+        <li><codeph>coderef</codeph>, which was used to resolve code references in input files prior to 2.3 (merged with
+            <codeph>topic-fragment</codeph>)</li>
+        <li><codeph>copy-subsidiary</codeph> and <codeph>copy-subsidiary-check</codeph>, which were used to copy files
+          to the temporary directory prior to 2.1</li>
+      </ul>
+      <p>Recent DITA-OT versions provide alternative mechanisms to achieve the same results, such as the
+          <xmlelement>ditafileset</xmlelement> element to select resources in the temporary directory.</p>
+      <p>Along with the obsolete targets, the following Ant properties have been removed:</p>
+      <ul>
+        <li><codeph>canditopicsfile</codeph></li>
+        <li><codeph>canditopicslist</codeph></li>
+        <li><codeph>conreffile</codeph></li>
+        <li><codeph>conreflist</codeph></li>
+        <li><codeph>conreftargetsfile</codeph></li>
+        <li><codeph>conreftargetslist</codeph></li>
+        <li><codeph>copytosourcefile</codeph></li>
+        <li><codeph>copytosourcelist</codeph></li>
+        <li><codeph>fullditamapandtopicfile</codeph></li>
+        <li><codeph>fullditamapandtopiclist</codeph></li>
+        <li><codeph>fullditamapfile</codeph></li>
+        <li><codeph>fullditamaplist</codeph></li>
+        <li><codeph>fullditatopicfile</codeph></li>
+        <li><codeph>fullditatopiclist</codeph></li>
+        <li><codeph>hrefditatopicfile</codeph></li>
+        <li><codeph>hrefditatopiclist</codeph></li>
+        <li><codeph>hreftargetsfile</codeph></li>
+        <li><codeph>hreftargetslist</codeph></li>
+        <li><codeph>htmlfile</codeph></li>
+        <li><codeph>htmllist</codeph></li>
+        <li><codeph>imagefile</codeph></li>
+        <li><codeph>imagelist</codeph></li>
+        <li><codeph>outditafilesfile</codeph></li>
+        <li><codeph>outditafileslist</codeph></li>
+        <li><codeph>resourceonlyfile</codeph></li>
+        <li><codeph>resourceonlylist</codeph></li>
+        <li><codeph>subjectschemefile</codeph></li>
+        <li><codeph>subjectschemelist</codeph></li>
+        <li><codeph>subtargetsfile</codeph></li>
+        <li><codeph>subtargetslist</codeph></li>
+        <li><codeph>user.input.file.listfile</codeph></li>
+        <li><codeph>user.input.file</codeph></li>
+      </ul>
+      <p>The following obsolete list files are no longer generated in the temporary directory:</p>
+      <ul>
+        <li><filepath>canditopics.list</filepath></li>
+        <li><filepath>conref.list</filepath></li>
+        <li><filepath>conreftargets.list</filepath></li>
+        <li><filepath>copytosource.list</filepath></li>
+        <li><filepath>fullditamap.list</filepath></li>
+        <li><filepath>fullditamapandtopic.list</filepath></li>
+        <li><filepath>fullditatopic.list</filepath></li>
+        <li><filepath>hrefditatopic.list</filepath></li>
+        <li><filepath>hreftargets.list</filepath></li>
+        <li><filepath>html.list</filepath></li>
+        <li><filepath>image.list</filepath></li>
+        <li><filepath>outditafiles.list</filepath></li>
+        <li><filepath>resourceonly.list</filepath></li>
+        <li><filepath>subjectscheme.list</filepath></li>
+        <li><filepath>subtargets.list</filepath></li>
+        <li><filepath>user.input.file.list</filepath></li>
+        <li><filepath>usr.input.file.list</filepath></li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

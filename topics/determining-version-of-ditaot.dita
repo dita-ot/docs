@@ -27,7 +27,7 @@
   <taskbody>
     <steps>
       <step>
-        <cmd conref="../resources/conref-task.dita#ID/open-terminal"/>
+        <cmd conkeyref="conref-task/open-terminal"/>
       </step>
       <step>
         <cmd>Issue the following command:</cmd>
@@ -48,7 +48,7 @@
           </chrow>
         </choicetable>
         <info>
-          <note conref="../resources/conref-task.dita#ID/dita-in-path"/>
+          <note conkeyref="conref-task/dita-in-path"/>
         </info>
       </step>
     </steps>

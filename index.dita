@@ -32,11 +32,12 @@
           <xref keyref="installing-client" outputclass="stretched-link"/> shows how to install the toolkit and run a
           build to verify the installation.</li>
         <li outputclass="list-group-item list-group-item-action">
-          <xref keyref="building-output" outputclass="stretched-link"/> provides information about transforming DITA
-          content to other formats.</li>
+          <xref keyref="building-output" outputclass="stretched-link"/> explains the methods that can be used to
+          transform DITA content to other formats, including the <cmdname>dita</cmdname> command, Ant, and the Java API,
+          along with information on publishing DITA content from a containerized environment.</li>
         <li outputclass="list-group-item list-group-item-action">
-          <xref keyref="alternative-input-formats" outputclass="stretched-link"/> introduces new input formats supported
-          in DITA-OT ≥ 3.0.</li>
+          <xref keyref="input-formats" outputclass="stretched-link"/> provides information on supported input formats,
+          including standard DITA XML, Markdown and the Lightweight DITA formats (XDITA, MDITA and HDITA).</li>
         <li outputclass="list-group-item list-group-item-action">
           <xref keyref="output-formats" outputclass="stretched-link">Output formats</xref> describes the core
           transformations that convert DITA to other formats.</li>
@@ -45,11 +46,17 @@
           Toolkit via <cmdname>dita</cmdname> command arguments and options, DITA-OT parameter settings, and
           configuration properties.</li>
         <li outputclass="list-group-item list-group-item-action">
-          <xref keyref="customizing" outputclass="stretched-link"/> provides information on extending DITA-OT.
-          <xref keyref="html-customization"/> and
-          <xref keyref="pdf-customization"/> describe common customization scenarios, and more advanced solutions are
-          described in
-          <xref keyref="custom-plugins"/>.</li>
+          <xref keyref="html-customization" outputclass="stretched-link"/> shows how to <ph
+            conkeyref="html-customization/shortdesc-ph"/>.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="pdf-customization" outputclass="stretched-link"/> explains how to <ph
+            conkeyref="pdf-customization/shortdesc-ph"/>.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="adding-plugins" outputclass="stretched-link"/> explains how to install, remove and discover new
+          plug-ins.</li>
+        <li outputclass="list-group-item list-group-item-action">
+          <xref keyref="custom-plugins" outputclass="stretched-link"/> provides information on extending DITA-OT with
+          plug-ins of your own.</li>
         <li outputclass="list-group-item list-group-item-action">
           <xref keyref="troubleshooting-overview" outputclass="stretched-link"/> contains information about resolving
           problems that you might encounter.</li>

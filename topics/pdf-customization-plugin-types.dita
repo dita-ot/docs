@@ -4,6 +4,9 @@
 
 <concept id="types-pdf-customization-plugins">
   <title>Types of custom PDF plug-ins</title>
+  <titlealts>
+    <navtitle>Types of PDF plug-ins</navtitle>
+  </titlealts>
   <shortdesc>There are two common types of plug-ins: A plug-in that simply sets the DITA-OT parameters to be used when a
     PDF is generated, and a plug-in that overrides aspects of the base DITA-OT PDF transformation. A plug-in can, of
     course, do both of these things.</shortdesc>

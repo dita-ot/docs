@@ -31,7 +31,7 @@
       <p>Building output with the <cmdname>dita</cmdname> command is often easier than using Ant. In particular, you can
         use <filepath>.properties</filepath> files to specify sets of DITA-OT parameters for each build.</p>
       <p>You can include the <cmdname>dita</cmdname> command in shell scripts to perform multiple builds.</p>
-      <note conref="../resources/conref-task.dita#ID/dita-in-path"/>
+      <note conkeyref="conref-task/dita-in-path"/>
     </context>
     <steps>
       <step>
@@ -61,15 +61,15 @@
       <title>Example: <filepath>.properties</filepath> files with <cmdname>dita</cmdname> command</title>
       <p>The following <filepath>.properties</filepath> files and <cmdname>dita</cmdname> commands are equivalent to the
         example Ant build.</p>
-      <p>Sample <filepath>.properties</filepath> file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
+      <p>Sample <filepath>.properties</filepath> file: <filepath conkeyref="conref-task/samples-dir"
           /><filepath>/properties/chm.properties</filepath></p>
       <p>
         <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/chm.properties"/></codeblock></p>
-      <p>Sample <filepath>.properties</filepath> file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
+      <p>Sample <filepath>.properties</filepath> file: <filepath conkeyref="conref-task/samples-dir"
           /><filepath>/properties/pdf.properties</filepath></p>
       <p>
         <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/pdf.properties"/></codeblock></p>
-      <p>Run from <filepath conref="../resources/conref-task.dita#ID/samples-dir"/>:</p>
+      <p>Run from <filepath conkeyref="conref-task/samples-dir"/>:</p>
       <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>htmlhelp</option> \
      <parmname>--propertyfile</parmname>=<filepath>properties/chm.properties</filepath>
 <cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>taskbook.ditamap</filepath> <parmname>--format</parmname>=<option>pdf</option> \
@@ -82,7 +82,7 @@
         files to define the parameters for each build. This can be accomplished with Ant’s <xmlelement>exec</xmlelement>
         task.</p>
       <p>This example uses a <xmlelement>dita-cmd</xmlelement> Ant macro defined in the <filepath
-          conref="../resources/conref-task.dita#ID/samples-dir"/><filepath>/ant_sample/dita-cmd.xml</filepath> file:</p>
+          conkeyref="conref-task/samples-dir"/><filepath>/ant_sample/dita-cmd.xml</filepath> file:</p>
       <p>
         <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/ant_sample/dita-cmd.xml#line=11,32"/></codeblock></p>
       <p>You can use this macro in your Ant build to call the <cmdname>dita</cmdname> command and pass the
@@ -96,7 +96,7 @@
       <note>The attributes defined in the Ant macro are required and must be supplied each time the task is run. To set
         optional parameters in one build (but not another), use different <filepath>.properties</filepath> files for
         each build.</note>
-      <p>Sample build file: <filepath conref="../resources/conref-task.dita#ID/samples-dir"
+      <p>Sample build file: <filepath conkeyref="conref-task/samples-dir"
           /><filepath>/ant_sample/build-chm-pdf-hybrid.xml</filepath></p>
       <p>
         <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/ant_sample/build-chm-pdf-hybrid.xml"/></codeblock>

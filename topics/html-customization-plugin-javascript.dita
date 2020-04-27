@@ -91,11 +91,11 @@
     </result>
     <postreq>
       <ol>
-        <li>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/>
+        <li>Run <filepath conkeyref="conref-task/dita-cmd"/>
           <parmname>--install</parmname> to install the plug-in and make the <option>html5-javascript</option>
           transformation available.</li>
         <li>Build output with the new transformation type to verify that the plug-in works as intended.
-          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5-javascript</option></codeblock></li>
+          <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5-javascript</option></codeblock></li>
         <li>Open one of the generated HTML topic files in a modern web browser and check the JavaScript
             <uicontrol>Console</uicontrol>. When the page is loaded, <msgph>Adding Google Analytics tracker</msgph> will
           appear on the console to verify that the sample script is loaded.</li>

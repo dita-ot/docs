@@ -44,7 +44,16 @@
       scope="external"
       format="html">
       <topicmeta>
-        <linktext>GitHub issues tagged with DITA 1.3</linktext>
+        <linktext>DITA 1.3 label</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="dita20-issues"
+      href="https://github.com/dita-ot/dita-ot/issues?q=label%3A%22DITA+2.0%22"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA 2.0 label</linktext>
       </topicmeta>
     </keydef>
     <keydef
@@ -169,6 +178,15 @@
       format="html">
       <topicmeta>
         <linktext>DITA-OT 3.4 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="3.5-release-notes"
+      href="https://www.dita-ot.org/3.5/release-notes/"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>DITA-OT 3.5 Release Notes</linktext>
       </topicmeta>
     </keydef>
   </topicset>

@@ -4,7 +4,7 @@
 
 <task id="plugins-removing" xml:lang="en">
   <title>Removing plug-ins</title>
-  <shortdesc>Use the <cmdname>dita</cmdname> command to uninstall a plug-in.</shortdesc>
+  <shortdesc>Use the <cmdname>dita uninstall</cmdname> subcommand to remove a plug-in.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -20,14 +20,15 @@
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
         <info>
-          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--uninstall</parmname>=<varname>plug-in-id</varname></codeblock>
+          <codeblock><cmdname>dita uninstall</cmdname> <varname>&lt;plug-in-id&gt;</varname></codeblock>
           <p>where:</p>
           <ul>
-            <li conref="../resources/conref-task.dita#ID/novice-variables-1"/>
-            <li conref="../resources/conref-task.dita#ID/plug-in-id"/>
+            <li conkeyref="conref-task/plug-in-id"/>
           </ul>
-          <note conref="../resources/conref-task.dita#ID/plugin-remove-subdir"/>
-          <note conref="../resources/conref-task.dita#ID/dita-in-path"/>
+          <note><ph conkeyref="conref-task/pre-subcommands-2-4-ph"/>
+            <parmname>--uninstall</parmname>. <ph conkeyref="conref-task/pre-subcommands-2-0-ph"/>
+            <parmname>-uninstall</parmname>.</note>
+          <note conkeyref="conref-task/plugin-remove-subdir"/>
         </info>
       </step>
     </steps>

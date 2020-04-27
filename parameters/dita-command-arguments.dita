@@ -7,9 +7,9 @@
   <titlealts>
     <navtitle>DITA command arguments</navtitle>
   </titlealts>
-  <shortdesc>The <cmdname>dita</cmdname> command takes mandatory arguments to process DITA content, manage plug-ins, or
-    print information about the command. Options can be used to modify the command behavior or specify additional
-    configuration parameters.</shortdesc>
+  <shortdesc>The <cmdname>dita</cmdname> command takes mandatory arguments to process DITA content. Subcommands can be
+    used to manage plug-ins, or print information about the current configuration. A series of options are available to
+    modify the command behavior or specify additional configuration parameters.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -29,6 +29,8 @@
   <refbody>
     <section>
       <title>Usage</title>
+      <p>To convert content from one format to another, specify the file to transform and the desired output format. If
+        necessary, you can set additional configuration parameters with options.</p>
       <syntaxdiagram>
         <fragment>
           <groupseq>
@@ -47,52 +49,77 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--install</kwd>
+            <kwd>--project</kwd>
             <oper>=</oper>
+            <var>file</var>
+            <groupcomp importance="optional">
+              <var>options</var>
+            </groupcomp>
+          </groupseq>
+        </fragment>
+      </syntaxdiagram>
+      <note>Most <cmdname>dita</cmdname> command options support several syntax alternatives. All options can be
+        specified with a GNU-style option keyword preceded by two hyphens. In many cases, Unix-style single-letter
+        options (preceded by a single hyphen) are also available for brevity and backwards compatibility.</note>
+      <p>The <cmdname>dita</cmdname> command also supports a series of subcommands that can be used to manage plug-ins,
+        or print information about the current configuration or version.</p>
+      <syntaxdiagram>
+        <fragment>
+          <groupseq>
+            <kwd>dita</kwd>
+            <kwd>deliverables</kwd>
+            <var>file</var>
+          </groupseq>
+        </fragment>
+        <fragment>
+          <groupseq>
+            <kwd>dita</kwd>
+            <kwd>install</kwd>
             <groupchoice importance="optional">
-              <var>filename</var>
+              <var>ID</var>
               <var>URL</var>
+              <var>file</var>
             </groupchoice>
           </groupseq>
         </fragment>
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--uninstall</kwd>
-            <oper>=</oper>
-            <var>id</var>
+            <kwd>plugins</kwd>
           </groupseq>
         </fragment>
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--help</kwd>
+            <kwd>transtypes</kwd>
           </groupseq>
         </fragment>
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
-            <kwd>--version</kwd>
+            <kwd>uninstall</kwd>
+            <var>ID</var>
+          </groupseq>
+        </fragment>
+        <fragment>
+          <groupseq>
+            <kwd>dita</kwd>
+            <kwd>version</kwd>
           </groupseq>
         </fragment>
       </syntaxdiagram>
-      <note>Most <cmdname>dita</cmdname> command options support several syntax alternatives. All options can be
-        specified with a GNU-style option keyword preceded by two hyphens. In many cases, Unix-style single-letter
-        options (preceded by a single hyphen) are also available for backwards compatibility.</note>
+      <note type="attention">Prior to DITA-OT 3.5, subcommands were specified with the double-hyphen option syntax,
+        which is still supported for backwards compatibility. (For example, <cmdname>dita</cmdname>
+        <parmname>--install</parmname> will still work.)</note>
     </section>
+
     <section>
       <title>Arguments</title>
       <indexterm><parmname>--input</parmname></indexterm>
       <indexterm><parmname>-i</parmname></indexterm>
       <indexterm><parmname>--format</parmname></indexterm>
       <indexterm><parmname>-f</parmname></indexterm>
-      <indexterm><parmname>--install</parmname></indexterm>
-      <indexterm><parmname>--uninstall</parmname></indexterm>
-      <indexterm><parmname>--plugins</parmname></indexterm>
-      <indexterm><parmname>--transtypes</parmname></indexterm>
-      <indexterm><parmname>--help</parmname></indexterm>
-      <indexterm><parmname>-h</parmname></indexterm>
-      <indexterm><parmname>--version</parmname></indexterm>
+      <p>Each transformation requires you to specify at least the file to transform and the desired output format.</p>
       <parml>
         <plentry>
           <pt>
@@ -114,47 +141,92 @@
             <parmname>-f</parmname>
             <varname>name</varname>
           </pt>
-          <pd conref="parameters-base.dita#base/transtype.desc"/>
+          <pd conkeyref="parameters-base/transtype.desc"/>
           <pd>This argument corresponds to the common parameter <parmname>transtype</parmname>.</pd>
-          <pd>To list the formats that are currently available in your environment, use <cmdname>dita</cmdname>
-            <parmname>--transtypes</parmname>.</pd>
+          <pd>To list the formats that are currently available in your environment, use <cmdname>dita
+              transtypes</cmdname>.</pd>
           <pd>
-            <p conref="../resources/conref-task.dita#ID/transtypes"/>
+            <p conkeyref="conref-task/transtypes"/>
           </pd>
         </plentry>
+      </parml>
+    </section>
+
+    <section>
+      <title>Subcommands</title>
+      <indexterm><cmdname>deliverables</cmdname> subcommand</indexterm>
+      <indexterm><cmdname>install</cmdname> subcommand</indexterm>
+      <indexterm><parmname>--install</parmname>
+        <index-see><cmdname>install</cmdname> subcommand</index-see></indexterm>
+      <indexterm><cmdname>uninstall</cmdname> subcommand</indexterm>
+      <indexterm><parmname>--uninstall</parmname>
+        <index-see><cmdname>uninstall</cmdname> subcommand</index-see></indexterm>
+      <indexterm><cmdname>plugins</cmdname> subcommand</indexterm>
+      <indexterm><parmname>--plugins</parmname>
+        <index-see><cmdname>plugins</cmdname> subcommand</index-see></indexterm>
+      <indexterm><cmdname>transtypes</cmdname> subcommand</indexterm>
+      <indexterm><parmname>--transtypes</parmname>
+        <index-see><cmdname>transtypes</cmdname> subcommand</index-see></indexterm>
+      <indexterm><parmname>--help</parmname></indexterm>
+      <indexterm><parmname>-h</parmname></indexterm>
+      <indexterm><cmdname>version</cmdname> subcommand</indexterm>
+      <indexterm><parmname>--version</parmname>
+        <index-see><cmdname>version</cmdname> subcommand</index-see></indexterm>
+      <parml>
         <plentry>
           <pt>
-            <parmname>--install</parmname>=<varname>filename</varname></pt>
-          <pt>
-            <parmname>--install</parmname>=<varname>URL</varname></pt>
-          <pd>Install a single plug-in from a local ZIP file or from a URL.</pd>
+            <parmname>deliverables</parmname>
+            <varname>file</varname></pt>
+          <pd>Show a list of the available deliverables in the specified project <varname>file</varname>.</pd>
         </plentry>
         <plentry>
+          <pt>
+            <parmname>install</parmname>
+            <varname>{ ID | URL | file }</varname></pt>
+          <pt>
+            <parmname>--install</parmname>=<varname>{ ID | URL | file }</varname></pt>
+          <pd>Install a single plug-in <varname>ID </varname>from the registry at
+            <xref keyref="site-plugin-registry"/> (or a local registry), from a remote <varname>URL</varname>, or a
+            local ZIP <varname>file</varname>.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>install</parmname>
+          </pt>
           <pt>
             <parmname>--install</parmname>
           </pt>
-          <pd><ph conref="../resources/conref-task.dita#ID/plugin-integrate-all"/></pd>
+          <pd><ph conkeyref="conref-task/plugin-integrate-all"/></pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--uninstall</parmname>=<varname>id</varname>
+            <parmname>uninstall</parmname>
+            <varname>ID</varname>
+          </pt>
+          <pt>
+            <parmname>--uninstall</parmname>=<varname>ID</varname>
           </pt>
           <pd>
-            <p>Remove the plug-in with the specified ID.</p>
+            <p>Remove the plug-in with the specified <varname>ID</varname>.</p>
           </pd>
-          <pd>For a list of the currently installed plug-in IDs, use <cmdname>dita</cmdname>
-            <parmname>--plugins</parmname>.</pd>
+          <pd>For a list of the currently installed plug-in IDs, use <cmdname>dita plugins</cmdname>.</pd>
           <pd>
-            <note conref="../resources/conref-task.dita#ID/plugin-remove-subdir"/>
+            <note conkeyref="conref-task/plugin-remove-subdir"/>
           </pd>
         </plentry>
         <plentry>
+          <pt>
+            <parmname>plugins</parmname>
+          </pt>
           <pt>
             <parmname>--plugins</parmname>
           </pt>
           <pd>Show a list of the currently installed plug-ins.</pd>
         </plentry>
         <plentry>
+          <pt>
+            <parmname>transtypes</parmname>
+          </pt>
           <pt>
             <parmname>--transtypes</parmname>
           </pt>
@@ -163,13 +235,8 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--help</parmname></pt>
-          <pt>
-            <parmname>-h</parmname>
+            <parmname>version</parmname>
           </pt>
-          <pd>Print command usage help.</pd>
-        </plentry>
-        <plentry>
           <pt>
             <parmname>--version</parmname>
           </pt>
@@ -199,6 +266,18 @@
       <indexterm>debugging
         <indexterm><cmdname>dita</cmdname> command</indexterm></indexterm>
       <parml id="dita_build_options">
+        <plentry>
+          <pt>
+            <parmname>--debug</parmname></pt>
+          <pt>
+            <parmname>-d</parmname>
+          </pt>
+          <pd>Debug logging prints considerably more additional information. The debug log includes all information from
+            the verbose log, plus details on Java classes, additional Ant properties and overrides, preprocessing
+            filters, parameters, and stages, and the complete build sequence. Debug logging requires additional
+            resources and can slow down the build process, so it should only be enabled when further details are
+            required to diagnose problems.</pd>
+        </plentry>
         <plentry>
           <pt>
             <parmname>--output</parmname>=<varname>dir</varname></pt>
@@ -237,39 +316,16 @@
             <parmname>--force</parmname>
           </pt>
           <pd>Force-install an existing plug-in.</pd>
-          <pd>Passed as an additional option to the installation command:
-              <cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>plug-in-zip</varname> <parmname>--force</parmname></pd>
+          <pd>Passed as an additional option to the installation subcommand: <cmdname>dita
+              install</cmdname> <varname>plug-in-zip</varname> <parmname>--force</parmname></pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--temp</parmname>=<varname>dir</varname></pt>
+            <parmname>--help</parmname></pt>
           <pt>
-            <parmname>-t</parmname>
-            <varname>dir</varname>
+            <parmname>-h</parmname>
           </pt>
-          <pd conref="parameters-base.dita#base/dita.temp.dir.desc"/>
-          <pd>This argument corresponds to the common parameter <parmname>dita.temp.dir</parmname>.</pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--verbose</parmname></pt>
-          <pt>
-            <parmname>-v</parmname>
-          </pt>
-          <pd>Verbose logging prints additional information to the console, including directory settings, effective
-            values for Ant properties, input/output files, and informational messages to assist in troubleshooting.</pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--debug</parmname></pt>
-          <pt>
-            <parmname>-d</parmname>
-          </pt>
-          <pd>Debug logging prints considerably more additional information. The debug log includes all information from
-            the verbose log, plus details on Java classes, additional Ant properties and overrides, preprocessing
-            filters, parameters, and stages, and the complete build sequence. Debug logging requires additional
-            resources and can slow down the build process, so it should only be enabled when further details are
-            required to diagnose problems.</pd>
+          <pd>Print a list of available arguments, options, and subcommands.</pd>
         </plentry>
         <plentry>
           <pt>
@@ -291,8 +347,8 @@
               parameters that are configured in the plug-in configuration file; the Java-style <parmname>-D</parmname>
               form can also be used to specify additional non-configured parameters or set system properties.</p>
             <p>Parameters not implemented by the specified transformation type or referenced in a
-                <filepath>.properties</filepath> file are ignored.</p><note
-              conref="../resources/conref-task.dita#ID/pass-input-dir"/></pd>
+                <filepath>.properties</filepath> file are ignored.</p>
+            <note conkeyref="conref-task/pass-input-dir"/></pd>
         </plentry>
         <plentry>
           <pt>
@@ -301,6 +357,39 @@
           <pd>Use build parameters defined in the referenced <filepath>.properties</filepath> file.
             <p>Build parameters specified on the command line override those set in the <filepath>.properties</filepath>
               file.</p></pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--resource</parmname>=<varname>file</varname>
+          </pt>
+          <pt>
+            <parmname>-r</parmname>
+            <varname>file</varname>
+          </pt>
+          <pd>Process input with additional resources.
+            <p>For example, to process a single topic file with a map that contains key definitions, use a command like
+              this:
+              <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
+            </p></pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--temp</parmname>=<varname>dir</varname></pt>
+          <pt>
+            <parmname>-t</parmname>
+            <varname>dir</varname>
+          </pt>
+          <pd conkeyref="parameters-base/dita.temp.dir.desc"/>
+          <pd>This argument corresponds to the common parameter <parmname>dita.temp.dir</parmname>.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--verbose</parmname></pt>
+          <pt>
+            <parmname>-v</parmname>
+          </pt>
+          <pd>Verbose logging prints additional information to the console, including directory settings, effective
+            values for Ant properties, input/output files, and informational messages to assist in troubleshooting.</pd>
         </plentry>
       </parml>
     </section>

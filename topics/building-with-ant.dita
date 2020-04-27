@@ -23,7 +23,7 @@
   <taskbody>
     <steps>
       <step>
-        <cmd conref="../resources/conref-task.dita#ID/open-terminal"/>
+        <cmd conkeyref="conref-task/open-terminal"/>
       </step>
       <step>
         <cmd>Issue the following command:</cmd>

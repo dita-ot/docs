@@ -7,9 +7,9 @@
   <titlealts>
     <navtitle>Output formats</navtitle>
   </titlealts>
-  <shortdesc>DITA Open Toolkit ships with several core transformations that generate different output formats from DITA
-    content. Each transformation represents an implementation of the processing that is defined by OASIS in the DITA
-    specification.</shortdesc>
+  <shortdesc>DITA Open Toolkit ships with several core transformations that convert DITA content to different output
+    formats. Additional formats are available from the plug-in registry at
+    <xref keyref="site-plugin-registry"/>.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -21,4 +21,8 @@
       </keywords>
     </metadata>
   </prolog>
+  <conbody>
+    <note type="tip">For information on how to install other formats, see
+      <xref keyref="adding-plugins"/>.</note>
+  </conbody>
 </concept>

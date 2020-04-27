@@ -92,6 +92,15 @@
 
       <section id="features">
         <title>New features</title>
+        <indexterm><parmname>--resource</parmname></indexterm>
+        <indexterm><parmname>result.rewrite-rule.class</parmname></indexterm>
+        <indexterm><parmname>result.rewrite-rule.xsl</parmname></indexterm>
+        <indexterm><cmdname>deliverables</cmdname> subcommand</indexterm>
+        <indexterm><cmdname>install</cmdname> subcommand</indexterm>
+        <indexterm><cmdname>plugins</cmdname> subcommand</indexterm>
+        <indexterm><cmdname>transtypes</cmdname> subcommand</indexterm>
+        <indexterm><cmdname>uninstall</cmdname> subcommand</indexterm>
+        <indexterm><cmdname>version</cmdname> subcommand</indexterm>
         <p>DITA-OT <keyword keyref="release"/> also includes the following new features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
@@ -113,12 +122,6 @@
             </ul>
           </li>
           <li id="3437">
-            <indexterm><cmdname>deliverables</cmdname> subcommand</indexterm>
-            <indexterm><cmdname>install</cmdname> subcommand</indexterm>
-            <indexterm><cmdname>plugins</cmdname> subcommand</indexterm>
-            <indexterm><cmdname>transtypes</cmdname> subcommand</indexterm>
-            <indexterm><cmdname>uninstall</cmdname> subcommand</indexterm>
-            <indexterm><cmdname>version</cmdname> subcommand</indexterm>
             <p>The <cmdname>dita</cmdname> command line interface has been refactored to support subcommands for common
               operations.
               <xref href="https://github.com/dita-ot/dita-ot/issues/3437" format="html" scope="external">#3437</xref>,

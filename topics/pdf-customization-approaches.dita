@@ -4,10 +4,12 @@
 
 <concept id="pdf_customization_approaches">
   <title>PDF customization approaches</title>
+  <titlealts>
+    <navtitle>Customization approaches</navtitle>
+  </titlealts>
   <shortdesc>Various methods may be used to customize the PDF output that DITA Open Toolkit produces. Each of these
-    approaches have advantages and shortcomings that should be considered when preparing a customization project. Some
-    of these methods are considered “anti-patterns” with disadvantages that outweigh their apparent appeal. In most
-    cases, you should create a custom PDF plug-in.</shortdesc>
+    approaches have advantages and shortcomings that should be considered when preparing a customization
+    project.</shortdesc>
 
   <prolog>
     <metadata>
@@ -23,6 +25,8 @@
   </prolog>
 
   <conbody>
+    <note>Some of these methods are considered “anti-patterns” with disadvantages that outweigh their apparent appeal.
+      In most cases, you should create a custom PDF plug-in.</note>
     <section id="why_not_edit_default_files">
       <title>Why not edit default files?</title>
       <p>When first experimenting with PDF customization, novice users are often tempted to simply edit the default

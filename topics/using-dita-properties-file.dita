@@ -50,7 +50,7 @@
       <step>
         <cmd>Create your <filepath>.properties</filepath> file.</cmd>
         <info>
-          <note conref="../resources/conref-task.dita#ID/template-properties"/>
+          <note conkeyref="conref-task/template-properties"/>
         </info>
         <stepxmp>
           <p>For example:</p>
@@ -76,7 +76,7 @@
      <parmname>--args.draft</parmname>=<option>yes</option></codeblock>
         </stepxmp>
         <info>
-          <note conref="../resources/conref-task.dita#ID/pass-input-dir"/>
+          <note conkeyref="conref-task/pass-input-dir"/>
         </info>
       </step>
     </steps>

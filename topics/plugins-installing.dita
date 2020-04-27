@@ -4,7 +4,7 @@
 
 <task id="plugins-installing" xml:lang="en">
   <title>Installing plug-ins</title>
-  <shortdesc>Use the <cmdname>dita</cmdname> command to install a plug-in.</shortdesc>
+  <shortdesc>Use the <cmdname>dita install</cmdname> subcommand to install plug-ins.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -23,16 +23,17 @@
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
         <info>
-          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--install</parmname>=<varname>plug-in-zip</varname></codeblock>
+          <codeblock><cmdname>dita install</cmdname> <varname>&lt;plug-in&gt;</varname></codeblock>
           <p>where:</p>
           <ul>
-            <li conref="../resources/conref-task.dita#ID/novice-variables-1"/>
-            <li conref="../resources/conref-task.dita#ID/plug-in-zip"/>
+            <li conkeyref="conref-task/plug-in"/>
           </ul>
-          <note>
-            <ph conref="../resources/conref-task.dita#ID/plugin-integrate-all"/>
+          <note><ph conkeyref="conref-task/pre-subcommands-2-4-ph"/>
+            <parmname>--install</parmname>. <ph conkeyref="conref-task/pre-subcommands-2-0-ph"/>
+            <parmname>-install</parmname>.</note>
+          <note type="tip">
+            <ph conkeyref="conref-task/plugin-integrate-all"/>
           </note>
-          <note conref="../resources/conref-task.dita#ID/dita-in-path"/>
         </info>
       </step>
     </steps>

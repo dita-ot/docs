@@ -15,6 +15,8 @@
       <keywords>
         <indexterm>plug-ins
           <indexterm>best practices</indexterm></indexterm>
+        <indexterm>upgrading
+          <indexterm>best practices</indexterm></indexterm>
         <indexterm>XSLT
           <indexterm>best practices</indexterm></indexterm>
         <indexterm>preprocessing
@@ -23,7 +25,59 @@
     </metadata>
   </prolog>
   <conbody>
+    <section>
+      <title>Best practices</title>
+      <p>Adhering to certain development practices will properly isolate your code from that of DITA Open Toolkit. This
+        will make it easier to you to upgrade to new versions of DITA-OT when they are released.</p>
+      <ul>
+        <li>
+          <p>Use a properly-constructed DITA-OT plug-in.</p></li>
+        <li>
+          <p>Use a version control system to store your code.</p></li>
+        <li>
+          <p>Store the source code of your plug-ins outside of the DITA-OT installation directory, and add the
+            repository location to the list of plug-in directories defined in the <parmname>plugindirs</parmname> entry
+            of the
+            <xref keyref="configuration-properties-file"><filepath>configuration.properties</filepath> file</xref>.
+          </p></li>
+        <li>
+          <p>Never modify any of the core DITA-OT code.</p>
+          <note type="tip">You may want to set the permissions on default plug-in directories such as
+              <filepath>org.dita.pdf2</filepath> to “read-only” to ensure that you do not accidentally modify the files
+            within as you develop your customized plug-in.</note></li>
+        <li>
+          <p>Avoid copying entire DITA-OT files into your customization plug-in. When you only copy the attribute sets
+            and templates that you need to override, there is less risk of impact from new features or fixes in the base
+            code, making your code more stable and easier to upgrade between releases.</p></li>
+        <li>
+          <p>If you only need to change a few attribute sets and templates, you may prefer to store your overrides in
+              <filepath>custom.xsl</filepath> files, or a simple folder hierarchy within your custom plug-in.</p></li>
+        <li>
+          <p>In cases that require substantial customizations, you may prefer to organize the files in a folder
+            structure that mimics the hierarchy of the default plug-in you are customizing. This facilitates comparisons
+            with the default settings in the base plug-in and makes it easier to migrate your changes to new toolkit
+            versions. See
+            <xref keyref="pdf-plugin-structure"/> for information on the files in the base PDF plug-in.</p></li>
+        <li>
+          <p>Upgrade your customization plug-in to new versions of DITA-OT regularly. Do not wait through several major
+            releases before upgrading.</p></li>
+      </ul></section>
+
+    <section>
+      <title>Use a custom namespace</title>
+      <p>For XSLT customizations, use a custom namespace for any modified template modes, template names, attribute
+        sets, functions, and variables. This helps to clarify which portions of the code are specific to your
+        customizations, and serves to isolate your changes in the event that items with the same name are added to the
+        base plug-ins in the future.</p>
+      <p>For example, instead of creating a template named <codeph>searchbar</codeph>, use something like
+          <codeph>corp:searchbar</codeph> instead. This ensures that if future versions of DITA-OT add a
+          <codeph>searchbar</codeph> template, your custom version will be unaffected.</p>
+      <p>Instead of: <codeblock outputclass="language-xml">&lt;xsl:template name="searchbar"/></codeblock></p>
+      <p>use: <codeblock outputclass="language-xml">&lt;xsl:template name="corp:searchbar"/></codeblock></p>
+    </section>
+
     <section conkeyref="reusable-components/use-xslt2"/>
+
     <section>
       <title>Use custom <xmlelement>pipeline</xmlelement> elements</title>
       <indexterm>Ant
@@ -60,6 +114,27 @@
       <p><codeblock outputclass="language-xml">&lt;property name="base" location="${dita.plugin.example.dir}/custom.xsl"/></codeblock></p>
       <p>This fixes cases where plug-ins are installed to custom plug-in directories or the plug-in folder name doesn’t
         match the plug-in ID.</p>
+      <note type="tip">For details, see
+        <xref keyref="referencing-other-plugins"/>.</note>
+    </section>
+
+    <section>
+      <title>Use the <codeph>plugin</codeph> URI scheme</title>
+      <indexterm>Ant
+        <indexterm><xmlelement>xsl:import</xmlelement></indexterm></indexterm>
+      <indexterm>Ant
+        <indexterm><xmlelement>xsl:include</xmlelement></indexterm></indexterm>
+      <p>In XSLT, use the <codeph>plugin</codeph> URI scheme in <xmlelement>xsl:import</xmlelement> and
+          <xmlelement>xsl:include</xmlelement> to reference files in other plug-ins.</p>
+      <p>Instead of:</p>
+      <p><codeblock outputclass="language-xml">&lt;xsl:import href="../../org.dita.base/xsl/common/output-message.xsl"/></codeblock></p>
+      <p>use:</p>
+      <p><codeblock outputclass="language-xml">&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock></p>
+      <p>As with the plug-in directory property in Ant, this allows plug-ins to resolve to the correct directory even
+        when a plug-in moves to a new location. The plug-in is referenced using the syntax
+            <codeph>plugin:<varname>plugin-id</varname>:<varname>path/within/plugin/file.xsl</varname></codeph>.</p>
+      <note type="tip">For details, see
+        <xref keyref="referencing-other-plugins"/>.</note>
     </section>
 
     <section>
@@ -116,23 +191,6 @@
           </tbody>
         </tgroup>
       </table>
-    </section>
-
-    <section>
-      <title>Use the <codeph>plugin</codeph> URI scheme</title>
-      <indexterm>Ant
-        <indexterm><xmlelement>xsl:import</xmlelement></indexterm></indexterm>
-      <indexterm>Ant
-        <indexterm><xmlelement>xsl:include</xmlelement></indexterm></indexterm>
-      <p>In XSLT, use the <codeph>plugin</codeph> URI scheme in <xmlelement>xsl:import</xmlelement> and
-          <xmlelement>xsl:include</xmlelement> to reference files in other plug-ins.</p>
-      <p>Instead of:</p>
-      <p><codeblock outputclass="language-xml">&lt;xsl:import href="../../org.dita.base/xsl/common/output-message.xsl"/></codeblock></p>
-      <p>use:</p>
-      <p><codeblock outputclass="language-xml">&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock></p>
-      <p>As with the plug-in directory property in Ant, this allows plug-ins to resolve to the correct directory even
-        when a plug-in moves to a new location. The plug-in is referenced using the syntax
-            <codeph>plugin:<varname>plugin-id</varname>:<varname>path/within/plugin/file.xsl</varname></codeph>.</p>
     </section>
 
     <section conkeyref="reusable-components/validating-plugins"/>

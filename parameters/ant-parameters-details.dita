@@ -282,7 +282,7 @@
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/transtype.desc"/>
             <pd conaction="pushafter">
-              <p conref="../resources/conref-task.dita#ID/transtypes"/>
+              <p conkeyref="conref-task/transtypes"/>
             </pd>
           </plentry>
         </parml>

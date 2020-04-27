@@ -95,7 +95,7 @@
       <p>Finally, the all target simply specifies that both the chm and pdf target should be run.</p>
     </example>
     <postreq>Another resource for learning about Ant scripts are the files in the <filepath
-        conref="../resources/conref-task.dita#ID/samples-dir"/><filepath>/ant_sample/</filepath> directory. This
+        conkeyref="conref-task/samples-dir"/><filepath>/ant_sample/</filepath> directory. This
       directory contains sample Ant build files for common output formats, as well as templates that you can use to
       create your own Ant scripts.</postreq>
   </taskbody>

@@ -7,7 +7,7 @@
   <shortdesc>The DITA standard supports content that is written in or translated to any language. In general, DITA Open
     Toolkit passes content through to the output format unchanged. DITA-OT uses the values for the
       <xmlatt>xml:lang</xmlatt> and <xmlatt>dir</xmlatt> attributes that are set in the source content to provide
-    globalization support.</shortdesc>
+    globalization support. You can create custom plug-ins to support additional languages.</shortdesc>
   <prolog>
     <metadata>
       <keywords>

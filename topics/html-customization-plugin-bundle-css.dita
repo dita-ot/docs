@@ -110,11 +110,11 @@
     </result>
     <postreq>
       <ol>
-        <li>Run <filepath conref="../resources/conref-task.dita#ID/dita-cmd"/>
+        <li>Run <filepath conkeyref="conref-task/dita-cmd"/>
           <parmname>--install</parmname> to install the plug-in and make the <option>html5-custom-css</option>
           transformation available.</li>
         <li>Build output with the new transformation type to verify that the plug-in works as intended.
-          <codeblock><filepath conref="../resources/conref-task.dita#ID/dita-cmd"/> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5-custom-css</option></codeblock>
+          <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5-custom-css</option></codeblock>
         </li>
         <li>Refine the styles in your <filepath>custom.css</filepath> file as necessary.</li>
       </ol>

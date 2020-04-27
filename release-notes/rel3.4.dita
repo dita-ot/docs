@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<reference id="ID" rev="3.4">
+  <title>DITA Open Toolkit 3.4 Release Notes</title>
+  <titlealts>
+    <navtitle>Release Notes</navtitle>
+  </titlealts>
+
+  <abstract>
+    <shortdesc>DITA Open Toolkit 3.4.1 is a maintenance release that fixes issues
+      reported in DITA-OT 3.4, which includes <ph conref="#v3.4/summary"/>.</shortdesc>
+    <p conkeyref="conref-task/semver-info"/>
+    <note type="tip"><ph conref="../resources/conref-task.dita#ID/download-ot"/></note>
+  </abstract>
+  <prolog>
+    <author type="contributor">infotexture</author>
+    <critdates>
+      <!--infotexture-->
+      <revised modified="2020-03-26"/>
+    </critdates>
+  </prolog>
+
+  <reference id="requirements">
+    <title>Requirements</title>
+    <refbody>
+      <section>
+        <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
+          since previous release.</draft-comment>
+        <p conkeyref="reusable-components/java-clients"/>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.4.1">
+    <title>DITA-OT 3.4.1
+      <!--<ph outputclass="small text-muted">(release date)</ph>-->
+    </title>
+    <prolog>
+      <metadata>
+        <keywords>
+          <indexterm><filepath>project.rnc</filepath> file</indexterm>
+          <indexterm><xmlelement>dvrResourcePrefix</xmlelement></indexterm>
+          <indexterm><xmlelement>dvrResourceSuffix</xmlelement></indexterm>
+          <indexterm>classification maps</indexterm>
+          <indexterm>Jackson data binding library</indexterm>
+          <indexterm>missing SVG images</indexterm>
+          <indexterm>project files
+            <indexterm>validating</indexterm></indexterm>
+          <indexterm>SVG</indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.4.1 is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <li id="2980">Earlier versions of DITA-OT created extra files in the output folder when the DITA 1.3
+              <xmlelement>dvrResourcePrefix</xmlelement> or <xmlelement>dvrResourceSuffix</xmlelement> elements were
+            used to rename filtered topics. When conditions on topic references within a branch filtered out one or more
+            copies of those files, the renamed resources were removed from the ToC, but still copied to the output
+            folder. The branch filtering process has been revised to ensure those filtered copies are no longer created.
+            In some (but not all) cases, this also resolves a related issue where an extra copy of the file was created
+            in the output folder with the original file name.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2980" format="html" scope="external">#2980</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3411" format="html" scope="external">#3411</xref>
+          </li>
+          <li id="3202">Due to an omission in the DITA 1.3 shell files provided by the
+            <xref keyref="dita-tc"/>, classification maps based on the XML Schema Definition were considered invalid.
+            The error was reported to the TC and resolved in the official OASIS repository and in the grammar files
+            bundled with DITA-OT.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3202" format="html" scope="external">#3202</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3426" format="html" scope="external">#3426</xref>
+          </li>
+          <li id="3409">The RELAX NG schema required to validate XML project files was missing in the 3.4 distribution
+            package. The <filepath>project.rnc</filepath> file is now provided in the <filepath>resources</filepath>
+            folder of the DITA-OT installation.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3409" format="html" scope="external">#3409</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3410" format="html" scope="external">#3410</xref>
+          </li>
+          <li id="3414">When the bundled <tm trademark="Apache" tmtype="tm">Apache</tm> Formatting Objects Processor
+            (FOP) was upgraded to version 2.4 for DITA-OT 3.4, a required library reference was omitted, which prevented
+            embedded SVG images from appearing in PDF output. The library has been restored to the distribution package
+            to ensure that SVGs are rendered as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3414" format="html" scope="external">#3414</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3419" format="html" scope="external">#3419</xref>
+          </li>
+          <li id="3420">The bundled Jackson data binding library was updated to version 2.10.1 to resolve several
+            vulnerabilities reported in previous versions.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3420" format="html" scope="external">#3420</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3421" format="html" scope="external">#3421</xref>
+          </li>
+          <li id="3447">With DITA-OT 3.1.3 or later, generating PDFs from maps with index terms with the RenderX XEP
+            processor throws “<msgph>no entries for index key</msgph>” errors and fails to generate PDF files. Index
+            processing has been corrected to take the new <xmlatt>indexid</xmlatt> attribute into account, which
+            resolves the error and allows builds to complete successfully.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3447" format="html" scope="external">#3447</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3450" format="html" scope="external">#3450</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3455" format="html" scope="external">#3455</xref>
+          </li>
+          <li id="3444">The license for the bundled ICU4J library has been updated to the latest version.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3444" format="html" scope="external">#3444</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3451" format="html" scope="external">#3451</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3454" format="html" scope="external">#3454</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4.1+is%3Aclosed" format="html"
+            scope="external">3.4.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.4...3.4.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.4">
+    <title>DITA-OT 3.4
+      <ph outputclass="small text-muted">released November 9, 2019</ph>
+    </title>
+    <titlealts>
+      <navtitle>DITA-OT 3.4</navtitle>
+    </titlealts>
+    <prolog>
+      <metadata>
+        <keywords>
+          <indexterm><codeph>org.dita.index</codeph></indexterm>
+          <indexterm><filepath>project.rnc</filepath> file</indexterm>
+          <indexterm><parmname>html5.toc.generate</parmname></indexterm>
+          <indexterm>Docker images</indexterm>
+          <indexterm>parameters
+            <indexterm><parmname>html5.toc.generate</parmname></indexterm></indexterm>
+        </keywords>
+      </metadata>
+    </prolog>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 3.4 includes <ph id="summary">an official Docker container
+            image, a separate plug-in for PDF indexing, a new option to skip HTML5 cover pages, and initial support for
+            project files that allow you to define multiple deliverables in advance, and publish them all at
+          once</ph>.</p>
+      </section>
+
+      <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
+      <section id="docker">
+        <title>Docker container image</title>
+        <p id="3358"><ph conkeyref="using-docker-images/docker-desc"/>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3358" format="html" scope="external">#3358</xref>
+        </p>
+      </section>
+
+      <section id="indexing-plugin">
+        <title>New indexing plug-in</title>
+        <sectiondiv conkeyref="migrating-to-3.4/indexing-plugin"/>
+        <p id="3390">
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3390" format="html" scope="external">#3390</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3396" format="html" scope="external">#3396</xref>
+        </p>
+      </section>
+
+      <section id="html5-toc">
+        <title>Skip HTML5 cover pages</title>
+        <p id="3301">The HTML5 transformation supports a new property that determines whether a table of contents file
+          should be generated to link to the other topics from the input map. The
+            <parmname>html5.toc.generate</parmname> parameter is set to <option>yes</option> by default, and creates a
+          cover page named <filepath>index.html</filepath> as with previous versions of DITA-OT. If you’re using the
+            <parmname>nav-toc</parmname> parameter to embed navigation links in topics, you can set
+            <parmname>html5.toc.generate</parmname> to <option>no</option> to stop creating the extra file.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3301" format="html" scope="external">#3301</xref>
+        </p></section>
+
+      <section id="projects">
+        <title>Project files</title>
+        <p id="3243"><ph conkeyref="using-project-files/projects-desc"/></p>
+        <p conkeyref="using-project-files/projects-formats"/>
+        <p>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3243" format="html" scope="external">#3243</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3256" format="html" scope="external">#3256</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3262" format="html" scope="external">#3262</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3265" format="html" scope="external">#3265</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3268" format="html" scope="external">#3268</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3269" format="html" scope="external">#3269</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3276" format="html" scope="external">#3276</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3298" format="html" scope="external">#3298</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3300" format="html" scope="external">#3300</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3382" format="html" scope="external">#3382</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3388" format="html" scope="external">#3388</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3394" format="html" scope="external">#3394</xref>
+        </p>
+      </section>
+
+      <section id="enhancements">
+        <title>Enhancements and changes</title>
+        <indexterm><parmname>args.logdir</parmname></indexterm>
+        <indexterm>parameters
+          <indexterm><parmname>args.logdir</parmname></indexterm></indexterm>
+        <indexterm>Lightweight DITA</indexterm>
+        <indexterm>TocJS</indexterm>
+        <indexterm>troff</indexterm>
+        <p>In addition to the highlights mentioned above, DITA Open Toolkit Release 3.4 includes
+          the following enhancements and changes to existing features:</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
+        <ul>
+          <li id="3250">The original preprocessing and map-first preprocessing pipelines have been simplified to process
+            only the merged root map, where previous versions would redundantly process all DITA maps.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3250" format="html" scope="external">#3250</xref>
+          </li>
+          <li id="3264">Conref processing has been updated to resolve content references to specializations of the
+            referencing element
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3264" format="html" scope="external">#3264</xref>
+          </li>
+          <li id="3288">The obsolete <filepath>build_demo.xml</filepath> script that was previously used to build Ant
+            samples has been removed from the source code repository. (The file was removed from distribution packages
+            with version 2.1.)
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3288" format="html" scope="external">#3288</xref>
+          </li>
+          <li id="3297">Ant scripts have been refactored to simplify <xmlelement>condition</xmlelement> elements with
+              <xmlelement>isset</xmlelement> guards to set properties with plain <xmlelement>property</xmlelement>
+            declarations instead.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3297" format="html" scope="external">#3297</xref>
+          </li>
+          <li id="3307">The logging level for Apache HTTP Client libraries has been reduced to <codeph>INFO</codeph> to
+            quiet the default log output. This information can be displayed if necessary by enabling verbose logging.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3307" format="html" scope="external">#3307</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3308" format="html" scope="external">#3308</xref>
+          </li>
+          <li id="3315">The <codeph>ConrefPushParser</codeph> has been converted from a SAX filter to a DOM filter.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3315" format="html" scope="external">#3315</xref>
+          </li>
+          <li id="3329">
+            <xref href="https://travis-ci.org/" format="html" scope="external">Travis CI</xref> build stages are now
+            used to run tests and deployments in parallel to speed up continuous integration builds.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3329" format="html" scope="external">#3329</xref>
+          </li>
+          <li id="3330">Several bundled dependencies have been upgraded to the latest versions.
+            <ul>
+              <li>Ant 1.10.6
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3354" format="html" scope="external">#3354</xref>
+              </li>
+              <li>FOP 2.4
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3406" format="html" scope="external">#3406</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3407" format="html" scope="external">#3407</xref>
+              </li>
+              <li>Gradle 5.6.3
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3375" format="html" scope="external">#3375</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3402" format="html" scope="external">#3402</xref>
+              </li>
+              <li>Jackson 2.9.9
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3362" format="html" scope="external">#3362</xref>
+              </li>
+              <li>Saxon-HE 9.9.1.4
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3330" format="html" scope="external">#3330</xref>
+              </li>
+            </ul>
+          </li>
+          <li id="3334">XSLT error messages now include location information in more cases to make it easier to find the
+            source of the problem.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3334" format="html" scope="external">#3334</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3339" format="html" scope="external">#3339</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3341" format="html" scope="external">#3341</xref>
+          </li>
+          <li id="3363">DITA-OT 3.4 no longer includes the TocJS and troff transformation plug-ins in the default
+            distribution.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3363" format="html" scope="external">#3363</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3364" format="html" scope="external">#3364</xref>
+            <note conkeyref="reusable-components/legacy-plugins-note"/>
+          </li>
+          <li id="3371">The LwDITA plug-in has been updated to version 2.3.2, pulling in a number of fixes for
+            Lightweight DITA processing, including support for absolute links and strikethrough in Markdown input, and
+            updated processing for escaped characters and nested blocks in Markdown output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3371" format="html" scope="external">#3371</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3408" format="html" scope="external">#3408</xref>
+          </li>
+          <li id="3399">The <parmname>args.logdir</parmname> parameter (deprecated since DITA-OT 2.5) has been removed.
+            To write the log to a file, use <cmdname>dita</cmdname>
+            <parmname>--logfile</parmname>=<varname>file</varname> or <cmdname>ant</cmdname>
+            <parmname>-l</parmname>
+            <varname>file</varname> and specify the path to the log file.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3398" format="html" scope="external">#3398</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3399" format="html" scope="external">#3399</xref>
+          </li>
+          <li id="3401">The source code for the DITA 1.1 and 1.2 plug-ins has been removed from the core repository and
+            extracted to dedicated code repositories. The plug-ins themselves remain available in the DITA-OT 3.4
+            distribution package.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3401" format="html" scope="external">#3401</xref>
+          </li>
+        </ul>
+      </section>
+
+      <section id="bugs">
+        <title>Bugs</title>
+        <indexterm><xmlelement>fo:block</xmlelement></indexterm>
+        <indexterm><xmlelement>fo:inline</xmlelement></indexterm>
+        <indexterm><xmlelement>fo:wrapper</xmlelement></indexterm>
+        <indexterm><xmlelement>index-see-also</xmlelement></indexterm>
+        <indexterm><xmlelement>index-see</xmlelement></indexterm>
+        <p>DITA Open Toolkit Release 3.4 provides fixes for the following bugs:</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.4+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
+        <ul>
+          <li>Several issues have been resolved in the PDF rendering of a generated index:
+            <ul>
+              <li id="2455">To work around an open issue with Apache Formatting Objects Processor
+                <xref href="https://issues.apache.org/jira/browse/FOP-2520" format="html" scope="external"
+                  >FOP-2520</xref>, DITA-OT 3.4 uses <xmlelement>fo:block</xmlelement> instead of
+                  <xmlelement>fo:wrapper</xmlelement> to create the destinations for index links. In previous versions
+                of DITA-OT, index terms that appeared in source files between section titles and paragraph content (and
+                several other places) created empty space in PDF output.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/2455" format="html" scope="external">#2455</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/2914" format="html" scope="external">#2914</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3381" format="html" scope="external">#3381</xref>
+              </li>
+              <li id="3042">When publishing to PDF with Antenna House Formatter, destination anchors for index links now
+                use <xmlelement>fo:wrapper</xmlelement> instead of <xmlelement>fo:inline</xmlelement>. In previous
+                versions of DITA-OT, index terms that appeared in source files between section titles and other section
+                content created empty space in PDF output.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3042" format="html" scope="external">#3042</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3379" format="html" scope="external">#3379</xref>
+              </li>
+              <li id="3314">Index links are now created correctly when entries have subterms. In previous versions,
+                terms with multiple <xmlelement>index-see-also</xmlelement> subterms failed to generate links for all
+                but the first reference, and dropped all instances of a term if even one instance had a sub-term, an
+                  <xmlelement>index-see</xmlelement> or <xmlelement>index-see-also</xmlelement> child.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3314" format="html" scope="external">#3314</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3320" format="html" scope="external">#3320</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3373" format="html" scope="external">#3373</xref>
+              </li>
+              <li id="3391">References to unavailable <xmlelement>index-see</xmlelement> terms are filtered from the
+                final index. Previous versions would create invalid links if the target terms were not available in the
+                current publication context.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3391" format="html" scope="external">#3391</xref>
+              </li>
+            </ul>
+          </li>
+          <li id="3078">Cross-reference links to other topics from short descriptions no longer cause build errors.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3078" format="html" scope="external">#3078</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3324" format="html" scope="external">#3324</xref>
+          </li>
+          <li id="3360">In earlier versions, incorrect parameters passed to the <cmdname>dita</cmdname> command could
+            cause the build to fail with a NullPointerException. The Java code has been updated to issue an appropriate
+            error message in these cases, instead of crashing the build.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3360" format="html" scope="external">#3360</xref>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contrib">
+        <title>Contributors</title>
+        <p>DITA Open Toolkit Release 3.4 includes
+          <xref keyref="contributions"/> by the following people:</p>
+        <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 3.3..` -->
+        <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
+        <ol>
+          <li>Jarno Elovirta</li>
+          <li>Robert D Anderson</li>
+          <li>Roger Sheen</li>
+          <li>Radu Coravu</li>
+          <li>Eliot Kimber</li>
+          <li>Toshihiko Makita</li>
+        </ol>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.3...3.4" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+
+      <section id="docs">
+        <title>Documentation updates</title>
+        <p>The documentation for DITA Open Toolkit Release 3.4 provides corrections and
+          improvements to existing topics, sample project files in the <filepath>docsrc/samples/</filepath> folder, a
+          <xref keyref="glossary"/>, PDF index, and new information in the following topics:</p>
+        <ul>
+          <li>
+            <xref keyref="using-project-files"/>
+            <ul>
+              <li>
+                <xref keyref="project-files-xml"/></li>
+              <li>
+                <xref keyref="project-files-json"/></li>
+              <li>
+                <xref keyref="project-files-yaml"/></li>
+            </ul></li>
+          <li>
+            <xref keyref="using-docker-images"/>
+            <ul>
+              <li>
+                <xref keyref="creating-docker-images"/></li>
+            </ul></li>
+          <li>
+            <xref keyref="migrating-to-3.4"/></li>
+        </ul>
+        <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
+            keyref="release"/>, see the
+          <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.4+is%3Aclosed" format="html"
+            scope="external">
+            3.4 milestone</xref> in the documentation repository.</p>
+        <p>DITA Open Toolkit Release 3.4 includes
+          <xref keyref="docs-contributions"/> by the following people:</p>
+        <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>
+        <ol>
+          <li>Roger Sheen</li>
+          <li>Lief Erickson</li>
+          <li>Jarno Elovirta</li>
+          <li>Robert D Anderson</li>
+          <li>Eliot Kimber</li>
+          <li>Ursula Kallio</li>
+          <li>Jason Fox</li>
+          <li>Radu Coravu</li>
+        </ol>
+        <p>For the complete list of documentation changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/docs/compare/3.3...3.4" format="html" scope="external">
+            changelog</xref>.</p>
+      </section>
+    </refbody>
+  </reference>
+</reference>

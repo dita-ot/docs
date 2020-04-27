@@ -76,4 +76,4 @@ To use these features when building the documentation, you may either download t
 [12]: https://www.dita-ot.org/DCO
 [13]: https://github.com/dita-ot/dita-ot
 [14]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
-[15]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L169-L176
+[15]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L169-L177

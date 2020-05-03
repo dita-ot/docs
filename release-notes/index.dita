@@ -47,7 +47,7 @@
       <section id="dita-2-0-preview">
         <title>DITA 2.0 preview</title>
         <p id="3449">DITA-OT <keyword keyref="release"/> includes processing support for the latest DRAFT versions of
-          the DITA 2.0 DTD and RelaxNG grammar files from OASIS (as of April 2020).
+          the DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of April 2020).
           <xref href="https://github.com/dita-ot/dita-ot/issues/3449" format="html" scope="external">#3449</xref>
         </p>
         <p conkeyref="dita-v2-0-support/grammar-files"/>
@@ -250,6 +250,12 @@
             additional check has been implemented to catch these cases, allowing the build to finish and report errors
             for any unresolved term references.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3498" format="html" scope="external">#3498</xref>
+          </li>
+          <li id="3499" outputclass="mark">Earlier versions of DITA-OT stripped namespace declarations from
+              <xmlelement>mathml</xmlelement> and <xmlelement>svg</xmlelement> elements in topics based on RELAX NG
+            syntax. Pre-processing has been corrected to preserve the namespaces.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3499" format="html" scope="external">#3499</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3501" format="html" scope="external">#3501</xref>
           </li>
           <li id="3502">In HTML5 output, earlier versions of DITA-OT displayed the “Note” label when the
               <xmlatt>type</xmlatt> attribute of a <xmlelement>note</xmlelement> element was set to

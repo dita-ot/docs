@@ -1,0 +1,8 @@
+extends: substitution
+message: Use the correct form '%s'
+level: error
+ignorecase: false
+# swap maps tokens in form of bad: good
+swap:
+  RelaxNG: RELAX NG
+  Relax-NG: RELAX NG

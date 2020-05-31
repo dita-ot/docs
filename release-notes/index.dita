@@ -114,7 +114,9 @@
               <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
             </p></li>
           <li id="3413">Two new parameters can be used to dynamically adjust the names and locations of output files in
-            transformations that use the map-first pre-processing routine (<codeph>preprocess2</codeph>).
+            transformations that use the map-first pre-processing routine (<codeph>preprocess2</codeph>). <ph
+              outputclass="mark">These parameters can be passed on the command line, or included in a custom plug-in via
+                <xmlelement>property</xmlelement> elements in an Ant script.</ph>
             <xref href="https://github.com/dita-ot/dita-ot/issues/3413" format="html" scope="external">#3413</xref>
             <ul>
               <li>Use <parmname>result.rewrite-rule.class</parmname> to rewrite filenames with a Java class</li>

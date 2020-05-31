@@ -7,8 +7,8 @@
   <titlealts>
     <navtitle>Command line help</navtitle>
   </titlealts>
-  <shortdesc>You can access a list of supported parameters for the <cmdname>dita</cmdname> command by passing the
-      <parmname>--help</parmname> option on the command line.</shortdesc>
+  <shortdesc>You can access a list of subcommands and supported parameters for the <cmdname>dita</cmdname> command by
+    passing the <parmname>--help</parmname> option on the command line.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -52,9 +52,16 @@
           <note conkeyref="conref-task/dita-in-path"/>
         </info>
       </step>
+      <step importance="optional">
+        <cmd>For details on the arguments and options available for each subcommand, pass the
+            <parmname>--help</parmname> option after the subcommand name.</cmd>
+        <stepxmp>For example: <cmdname>dita install</cmdname>
+          <parmname>--help</parmname>.</stepxmp>
+      </step>
     </steps>
     <result>
-      <p>A brief description of the supported parameters appears in the command-line window.</p>
+      <p>A brief usage summary appears in the command-line window, along with a list of subcommands, arguments, and
+        options.</p>
     </result>
   </taskbody>
 </task>

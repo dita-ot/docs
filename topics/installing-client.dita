@@ -48,8 +48,8 @@
         <cmd>Extract the contents of the package to the directory where you want to install DITA-OT.</cmd>
       </step>
       <step importance="optional">
-        <cmd>Add the absolute path for the <filepath>bin</filepath> directory to the <varname>PATH</varname> system
-          variable.</cmd>
+        <cmd>Add the absolute path for the <filepath>bin</filepath> directory to the
+          <xref keyref="PATH"/>.</cmd>
         <stepresult>
           <p>This defines the necessary environment variable to run the <cmdname>dita</cmdname> command from the command
             line.</p>

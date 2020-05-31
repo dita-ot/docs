@@ -125,8 +125,9 @@
             specified output directory (by default, in the <filepath>out</filepath> subdirectory of the current
             directory).</p>
           <note id="dita-in-path" type="tip">Add the absolute path for <filepath conref="#ID/ot-dir"
-              /><filepath>/bin</filepath> to the <varname>PATH</varname> environment variable to run the
-              <cmdname>dita</cmdname> command from any location on the file system without typing the path.
+              /><filepath>/bin</filepath> to the
+            <xref keyref="PATH"/> to run the <cmdname>dita</cmdname> command from any location on the file system
+            without typing the path.
             <indexterm><cmdname>dita</cmdname> command
               <indexterm>PATH environment variable</indexterm></indexterm>
           </note>

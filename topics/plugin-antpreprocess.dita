@@ -4,6 +4,9 @@
 
 <task id="plugin-antpreprocess" xml:lang="en-US">
   <title>Adding an Ant target to the pre-processing pipeline</title>
+  <titlealts>
+    <navtitle>Adding a pre-processing step</navtitle>
+  </titlealts>
   <shortdesc>You can add an Ant target to the pre-processing pipeline. This enables you to insert additional processing
     before or after the pre-processing chain or a specific step in the pre-processing operation.</shortdesc>
   <prolog>

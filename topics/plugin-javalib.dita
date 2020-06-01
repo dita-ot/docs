@@ -3,9 +3,9 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
 <task id="plugin-javalib" xml:lang="en-US">
-  <title>Adding a Java library to the DITA-OT <parmname>classpath</parmname></title>
+  <title>Adding a Java library to the <parmname>classpath</parmname></title>
   <titlealts>
-    <navtitle>Adding a Java library to the <parmname>classpath</parmname></navtitle>
+    <navtitle>Adding a Java library</navtitle>
   </titlealts>
   <shortdesc>You can use the <codeph>dita.conductor.lib.import</codeph> extension point to add an additional Java
     library to the DITA-OT <parmname>classpath</parmname> parameter.</shortdesc>

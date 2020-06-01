@@ -116,7 +116,8 @@
           <li id="3413">Two new parameters can be used to dynamically adjust the names and locations of output files in
             transformations that use the map-first pre-processing routine (<codeph>preprocess2</codeph>). <ph
               outputclass="mark">These parameters can be passed on the command line, or included in a custom plug-in via
-                <xmlelement>property</xmlelement> elements in an Ant script.</ph>
+                <xmlelement>property</xmlelement> elements in an Ant script as described in
+              <xref keyref="plugin-rewrite-rules"/>.</ph>
             <xref href="https://github.com/dita-ot/dita-ot/issues/3413" format="html" scope="external">#3413</xref>
             <ul>
               <li>Use <parmname>result.rewrite-rule.class</parmname> to rewrite filenames with a Java class</li>

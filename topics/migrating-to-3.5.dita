@@ -140,7 +140,8 @@
       <p>Two new parameters can be used to dynamically adjust the names and locations of output files in transformations
         that use the map-first pre-processing routine (<codeph>preprocess2</codeph>).</p>
       <p>These parameters can be passed on the command line, or included in a custom plug-in via
-          <xmlelement>property</xmlelement> elements in an Ant script.
+          <xmlelement>property</xmlelement> elements in an Ant script as described in
+        <xref keyref="plugin-rewrite-rules"/>.
         <ul>
           <li>Use <parmname>result.rewrite-rule.class</parmname> to rewrite filenames with a Java class</li>
           <li>Use <parmname>result.rewrite-rule.xsl</parmname> to rewrite via an XSLT stylesheet</li>

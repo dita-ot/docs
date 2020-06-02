@@ -25,9 +25,9 @@
       <p>The steps below assume you have already installed
         <xref keyref="homebrew"/> according to the instructions at
         <xref keyref="homebrew">brew.sh</xref>.</p>
-      <note type="tip">Verify that your <varname>PATH</varname> environment begins with
-          <filepath>/usr/local/bin</filepath> to ensure that Homebrew-installed software takes precedence over any
-        programs of the same name elsewhere on the system.</note>
+      <note type="tip">Verify that your
+        <xref keyref="PATH"/> begins with <filepath>/usr/local/bin</filepath> to ensure that Homebrew-installed software
+        takes precedence over any programs of the same name elsewhere on the system.</note>
     </prereq>
     <steps>
       <step>

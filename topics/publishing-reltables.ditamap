@@ -53,6 +53,15 @@
     </relrow>
     <relrow>
       <relcell>
+        <topicref keyref="dita-command-arguments"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="dita-command-help"/>
+      </relcell>
+      <relcell/>
+    </relrow>
+    <relrow>
+      <relcell>
         <topicref keyref="publishing-with-ant"/>
         <topicref keyref="ant"/>
         <topicref keyref="building-with-ant"/>

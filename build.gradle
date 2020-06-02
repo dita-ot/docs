@@ -141,7 +141,7 @@ task site(type: DitaOtTask) {
 
     input file("${projectDir}/site.ditamap")
     output getPropertyOrDefault('outputDir', "${buildDir}/site")
-    filter "${projectDir}/resources/html.ditaval"
+    filter "${projectDir}/resources/site.ditaval"
 
     transtype 'org.dita-ot.html'
 

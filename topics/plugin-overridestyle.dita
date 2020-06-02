@@ -4,6 +4,9 @@
 
 <task id="plugin-overridestyle" xml:lang="en-US">
   <title>Overriding an XSLT-processing step</title>
+  <titlealts>
+    <navtitle>Overriding XSLT steps</navtitle>
+  </titlealts>
   <shortdesc>You can override specific XSLT-processing steps in both the pre-processing pipeline and certain DITA-OT
     transformations.</shortdesc>
   <prolog>

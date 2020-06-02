@@ -12,15 +12,17 @@
     <topicref keyref="referencing-other-plugins"/>
   </topicref>
   <topicref keyref="plugin-use-cases">
-    <topicref keyref="plugin-xmlcatalog"/>
+    <topicref keyref="plugin-set-parameters"/>
     <topicref keyref="plugin-anttarget"/>
     <topicref keyref="plugin-antpreprocess"/>
     <topicref keyref="plugin-newtranstype"/>
-    <topicref keyref="plugin-overridestyle"/>
     <topicref keyref="plugin-xsltparams"/>
+    <topicref keyref="plugin-overridestyle"/>
     <topicref keyref="plugin-javalib"/>
     <topicref keyref="plugin-messages"/>
     <topicref keyref="plugin-newextensions"/>
+    <topicref keyref="plugin-xmlcatalog"/>
+    <topicref keyref="plugin-rewrite-rules"/>
     <topicref keyref="plugin-implement-saxon-customizations">
       <topicref keyref="plugin-implement-saxon-extension-functions"/>
       <topicref keyref="plugin-implement-saxon-collation-uri-resolvers"/>

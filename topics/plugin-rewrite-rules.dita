@@ -50,6 +50,7 @@
     </p>
     <note>If your rewrite rules are contained in a Java class, you can set the
         <parmname>result.rewrite-rule.class</parmname> parameter instead, and pass the name of your Java class in the
-        <xmlatt>value attribute.</xmlatt></note>
+      <xmlatt>value attribute.</xmlatt> The custom class should implement the
+      <codeph>org.dita.dost.module.RewriteRule</codeph> interface.</note>
   </conbody>
 </concept>

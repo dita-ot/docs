@@ -264,6 +264,26 @@
             <pd conaction="pushafter">By default, the output is written to
                 <filepath><varname>DITA-dir</varname>/out</filepath>.</pd>
           </plentry>
+          <plentry id="result.rewrite-rule.class">
+            <pt>
+              <parmname>result.rewrite-rule.class</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/result.rewrite-rule.class.desc"/>
+            <pd conaction="pushafter">The custom class should implement the
+                <codeph>org.dita.dost.module.RewriteRule</codeph> interface.
+              <indexterm><parmname>result.rewrite-rule.class</parmname></indexterm>
+            </pd>
+          </plentry>
+          <plentry id="result.rewrite-rule.xsl">
+            <pt>
+              <parmname>result.rewrite-rule.xsl</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/result.rewrite-rule.xsl.desc"/>
+            <pd conaction="pushafter">See
+              <xref keyref="plugin-rewrite-rules"/> for details.
+              <indexterm><parmname>result.rewrite-rule.xsl</parmname></indexterm>
+            </pd>
+          </plentry>
           <plentry id="root-chunk-override">
             <pt>
               <parmname>root-chunk-override</parmname>

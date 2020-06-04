@@ -4,6 +4,9 @@
 
 <task id="plugin-xsltparams" xml:lang="en-US">
   <title>Adding parameters to existing XSLT steps</title>
+  <titlealts>
+    <navtitle>Adding new parameters</navtitle>
+  </titlealts>
   <shortdesc>You can pass parameters from the Ant build to existing XSLT steps in both the pre-processing pipeline and
     certain DITA-OT transformations. This can be useful if you want to make the parameters available as global
       <xmlelement>xsl:param</xmlelement> values within XSLT overrides.</shortdesc>

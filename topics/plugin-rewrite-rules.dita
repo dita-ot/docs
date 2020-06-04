@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<concept id="ID">
+  <title>Adjusting file names in map-first pre-processing</title>
+  <titlealts>
+    <navtitle>Rewriting file names</navtitle>
+  </titlealts>
+  <shortdesc>To dynamically adjust the names and locations of output files in the map-first pre-processing routine
+      (<codeph>preprocess2</codeph>), you can create a custom plug-in and specify the code that contains your custom
+    rewrite rules.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><parmname>result.rewrite-rule.xsl</parmname></indexterm>
+        <indexterm><parmname>result.rewrite-rule.class</parmname></indexterm>
+        <indexterm>rewriting file names</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For example, set the <parmname>result.rewrite-rule.xsl</parmname> parameter to specify a bundled XSLT stylesheet
+      that contains your custom rewrite rules.</p>
+    <p>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version='1.0' encoding='UTF-8'?>
+&lt;project name="com.example.rewrite.pdf">
+  &lt;target name="dita2rewrite.pdf.init">
+    &lt;property name="customization.dir"
+              location="${dita.plugin.com.example.rewrite.pdf.dir}/cfg"/>
+    <b>&lt;property name="result.rewrite-rule.xsl" 
+              value="${dita.plugin.com.example.rewrite.pdf.dir}/custom-rules.xsl"/></b>
+  &lt;/target>
+  &lt;target name="dita2rewrite.pdf"
+          depends="dita2rewrite.pdf.init, dita2production.pdf, dita2pdf2"/>
+&lt;/project></codeblock>
+    </p>
+    <p>Your plug-in would also include a <filepath>custom-rules.xsl</filepath> file, which might contain templates like
+      this to move all image files to an <filepath>images</filepath> subdirectory:</p>
+    <p>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xsl:template match="node() | @*">
+  &lt;xsl:copy>
+    &lt;xsl:apply-template select="node() | @*"/>
+  &lt;/xsl:copy>
+&lt;/xsl:template>
+
+&lt;xsl:template match="file[@format = 'image']/@result">
+  &lt;xsl:attribute name="{local-name()}" select="concat('images/', .)"/>
+&lt;/xsl:template></codeblock>
+    </p>
+    <note>If your rewrite rules are contained in a Java class, you can set the
+        <parmname>result.rewrite-rule.class</parmname> parameter instead, and pass the name of your Java class in the
+      <xmlatt>value attribute.</xmlatt> The custom class should implement the
+      <codeph>org.dita.dost.module.RewriteRule</codeph> interface.</note>
+  </conbody>
+</concept>

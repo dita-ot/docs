@@ -4,6 +4,9 @@
 
 <topic id="implement-saxon-customizations">
   <title>Adding Saxon customizations</title>
+  <titlealts>
+    <navtitle>Saxon customizations</navtitle>
+  </titlealts>
   <shortdesc>Plug-ins can contribute XSLT extension functions and collation URI resolvers. These customizations are
     automatically configured to work with Saxon when transformations are run using the DITA-OT
       <xmlelement>pipeline</xmlelement> task with custom XSLT.</shortdesc>

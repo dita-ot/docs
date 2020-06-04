@@ -4,7 +4,10 @@
 
 <reference id="plugin-newextensions" xml:lang="en-US">
   <title>Creating a new plug-in extension point</title>
-  <shortdesc>If your plug-in needs to define its own extension point in an XML file, add the string
+  <titlealts>
+    <navtitle>New extension points</navtitle>
+  </titlealts>
+  <shortdesc>If your plug-in needs to define its own extension points in an XML file, add the string
       "<codeph>_template</codeph>" to the filename before the file suffix. When the plug-in is installed, this file will
     be processed like the built-in DITA-OT templates.</shortdesc>
   <prolog>

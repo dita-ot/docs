@@ -111,6 +111,43 @@
         <li><filepath>user.input.file.list</filepath></li>
         <li><filepath>usr.input.file.list</filepath></li>
       </ul>
+      <p>For example, if your plug-in previously used the <codeph>fullditatopicfile</codeph> to select resources in the
+        temporary directory like this:</p>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt basedir="${dita.temp.dir}"
+      destdir="${output.dir}"
+      includesfile="${dita.temp.dir}${file.separator}${fullditatopicfile}"
+      style="${args.xsl}">
+  &lt;!-- ⋮ -->
+&lt;/xslt></codeblock>
+      <p> With DITA-OT 2.4 or newer, use the <xmlelement>ditafileset</xmlelement> element instead: </p>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt basedir="${dita.temp.dir}"
+      destdir="${output.dir}"
+      style="${args.xsl}">
+  &lt;ditafileset format="dita" processingRole="normal"/>
+  &lt;!-- ⋮ -->
+&lt;/xslt></codeblock>
+      <p>If your plug-in previously used the <codeph>user.input.file.listfile</codeph> to process the start map like
+        this:</p>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt …
+      includesfile="${dita.temp.dir}${file.separator}${user.input.file.listfile}"/></codeblock>
+      <p>Use the <xmlelement>ditafileset</xmlelement> element as follows:</p>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt … >
+  &lt;ditafileset input="true" format="ditamap"/>
+&lt;/xslt></codeblock>
+    </section>
+    <section id="rewriting-output-files">
+      <title>Adjusting output file names</title>
+      <p>Two new parameters can be used to dynamically adjust the names and locations of output files in transformations
+        that use the map-first pre-processing routine (<codeph>preprocess2</codeph>).</p>
+      <p>These parameters can be passed on the command line, or included in a custom plug-in via
+          <xmlelement>property</xmlelement> elements in an Ant script as described in
+        <xref keyref="plugin-rewrite-rules"/>.
+        <ul>
+          <li>Use <parmname>result.rewrite-rule.class</parmname> to rewrite filenames with a Java class that implements
+            the <codeph>org.dita.dost.module.RewriteRule</codeph> interface</li>
+          <li>Use <parmname>result.rewrite-rule.xsl</parmname> to rewrite via an XSLT stylesheet</li>
+        </ul>
+      </p>
     </section>
   </refbody>
 </reference>

@@ -4,6 +4,9 @@
 
 <task id="plugin-anttarget" xml:lang="en-US">
   <title>Adding a new target to the Ant build process</title>
+  <titlealts>
+    <navtitle>Adding a new Ant target</navtitle>
+  </titlealts>
   <shortdesc>As of DITA-OT 3.0, the <codeph>ant.import</codeph> extension point can be used to make new targets
     available to the Ant processing pipeline. This can be done as part of creating a new transformation, extending
     pre-processing, or simply to make new Ant targets available to other plug-ins.</shortdesc>

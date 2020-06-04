@@ -9,8 +9,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> is a feature release that provides new features and
-      enhancements, including <ph conref="#v3.5/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v3.5/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -26,9 +26,59 @@
     </refbody>
   </reference>
 
+  <reference id="v3.5.1" outputclass="mark">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">(release date)</ph>-->
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <li id="3508">In DITA-OT 3.5, Markdown builds failed due to an incompatible plug-in version. The LwDITA
+            plug-in has been updated to version 2.4, which is compatible with DITA-OT 2.4 and newer.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3508" format="html" scope="external">#3508</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3512" format="html" scope="external">#3512</xref>
+          </li>
+          <li id="3509">On macOS, DITA-OT 3.5 failed to build output if the input file was specified with a relative
+            path based at the current working directory with the <codeph>./</codeph> notation. Paths specified on the
+            command line are now normalized to support this syntax.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3509" format="html" scope="external">#3509</xref>
+          </li>
+          <li id="3513">Several bundled dependencies have been updated to address security vulnerabilities, including:
+            <ul>
+              <li id="3515">The bundled Jackson data binding library was updated to version 2.11.0 to resolve several
+                vulnerabilities reported in previous versions, including an OWASP false positive for the SnakeYAML
+                library, which has been updated to version 1.27.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3513" format="html" scope="external">#3513</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3515" format="html" scope="external">#3515</xref>
+              </li>
+              <li id="3522">The bundled Ant version has been updated to version 1.10.8 to address
+                <xref href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1945" format="html" scope="external"
+                  >CVE-2020-1945</xref>.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3522" format="html" scope="external"
+                >#3522</xref></li>
+            </ul>
+          </li>
+          <li id="3517">In DITA-OT 3.5, PDF customizations (and other plug-ins that use <xmlelement>xslt</xmlelement>
+            elements within custom <xmlelement>pipeline</xmlelement> elements) failed to properly compile the custom
+            XSLT code. The XSLT module has been corrected to resolve custom code correctly and apply the customizations.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3517" format="html" scope="external">#3517</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.1+is%3Aclosed" format="html"
+            scope="external">3.5.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.5...3.5.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
   <reference id="v3.5">
     <title>DITA-OT <keyword keyref="release"/>
-      <!--<ph outputclass="small text-muted">released MMM d, yyyy</ph>-->
+      <ph outputclass="small text-muted">released April 27, 2020</ph>
     </title>
     <prolog>
       <metadata>
@@ -120,7 +170,8 @@
               <xref keyref="plugin-rewrite-rules"/>.</ph>
             <xref href="https://github.com/dita-ot/dita-ot/issues/3413" format="html" scope="external">#3413</xref>
             <ul>
-              <li>Use <parmname>result.rewrite-rule.class</parmname> to rewrite filenames with a Java class</li>
+              <li>Use <parmname>result.rewrite-rule.class</parmname> to rewrite filenames with a Java class that
+                implements the <codeph>org.dita.dost.module.RewriteRule</codeph> interface</li>
               <li>Use <parmname>result.rewrite-rule.xsl</parmname> to rewrite via an XSLT stylesheet</li>
             </ul>
           </li>

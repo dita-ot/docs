@@ -143,7 +143,8 @@
           <xmlelement>property</xmlelement> elements in an Ant script as described in
         <xref keyref="plugin-rewrite-rules"/>.
         <ul>
-          <li>Use <parmname>result.rewrite-rule.class</parmname> to rewrite filenames with a Java class</li>
+          <li>Use <parmname>result.rewrite-rule.class</parmname> to rewrite filenames with a Java class that implements
+            the <codeph>org.dita.dost.module.RewriteRule</codeph> interface</li>
           <li>Use <parmname>result.rewrite-rule.xsl</parmname> to rewrite via an XSLT stylesheet</li>
         </ul>
       </p>

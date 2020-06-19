@@ -139,6 +139,15 @@ Context
   &lt;/body&gt;
 &lt;/topic&gt;</codeblock>
     </section>
+    <section id="hard-line-breaks">
+      <title>Hard line breaks</title>
+      <p>A line break that is preceded by two or more spaces is parsed as a hard line break. Because DITA doesn't have a
+          <codeph>&lt;br&gt;</codeph> element for line break, hard line breaks are converted into
+          <xmlpi>linebreak</xmlpi> processing instructions.</p>
+      <codeblock outputclass="language-markdown normalize-space show-line-numbers show-whitespace">foo··
+baz</codeblock>
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;p>foo&lt;?linebreak?>baz&lt;/p></codeblock>
+    </section>
     <section id="links">
       <title>Links</title>
       <p>The format of local link targets is detected based on file extension. The following extensions are treated as

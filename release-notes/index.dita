@@ -164,8 +164,8 @@
               <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
             </p></li>
           <li id="3413">Two new parameters can be used to dynamically adjust the names and locations of output files in
-            transformations that use the map-first pre-processing routine (<codeph>preprocess2</codeph>). <ph
-              outputclass="mark">These parameters can be passed on the command line, or included in a custom plug-in via
+            transformations that use the map-first pre-processing routine (<codeph>preprocess2</codeph>). <ph>These
+              parameters can be passed on the command line, or included in a custom plug-in via
                 <xmlelement>property</xmlelement> elements in an Ant script as described in
               <xref keyref="plugin-rewrite-rules"/>.</ph>
             <xref href="https://github.com/dita-ot/dita-ot/issues/3413" format="html" scope="external">#3413</xref>
@@ -305,9 +305,9 @@
             for any unresolved term references.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3498" format="html" scope="external">#3498</xref>
           </li>
-          <li id="3499" outputclass="mark">Earlier versions of DITA-OT stripped namespace declarations from
-              <xmlelement>mathml</xmlelement> and <xmlelement>svg</xmlelement> elements in topics based on RELAX NG
-            syntax. Pre-processing has been corrected to preserve the namespaces.
+          <li id="3499">Earlier versions of DITA-OT stripped namespace declarations from <xmlelement>mathml</xmlelement>
+            and <xmlelement>svg</xmlelement> elements in topics based on RELAX NG syntax. Pre-processing has been
+            corrected to preserve the namespaces.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3499" format="html" scope="external">#3499</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3501" format="html" scope="external">#3501</xref>
           </li>

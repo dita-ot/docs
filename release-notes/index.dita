@@ -26,14 +26,69 @@
     </refbody>
   </reference>
 
-  <reference id="v3.5.1" outputclass="mark">
+  <reference id="v3.5.2" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released June 4, 2020</ph>
+      <!--<ph outputclass="small text-muted">(release date)</ph>-->
     </title>
 
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <li id="3526">In DITA-OT 3.5.1, generating output from a project file without setting the
+              <parmname>--output</parmname> option caused the build to fail with a NullPointerException. The Java code
+            has been updated to properly initialize the output directory.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3526" format="html" scope="external">#3526</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3531" format="html" scope="external">#3531</xref>
+          </li>
+          <li id="3533">Builds would also fail with a NullPointerException when publishing bookmap chapters with keys to
+            a single file by setting the <xmlatt>chunk</xmlatt> attribute <option>to-content</option>. The metadata push
+            process has been updated to properly handle this case.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3533" format="html" scope="external">#3533</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3534" format="html" scope="external">#3534</xref>
+          </li>
+          <li id="3538">Earlier versions of DITA-OT would sometimes render tables incorrectly when cells were set to
+            span several rows. Processing for <xmlelement>table</xmlelement> and <xmlelement>simpletable</xmlelement>
+            elements has been updated to ensure that cell coordinates are calculated correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3538" format="html" scope="external">#3538</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3539" format="html" scope="external">#3539</xref>
+          </li>
+          <li id="3540">When processing maps with flagging information, temporary files include
+              <xmlelement>ditaval-startprop</xmlelement> elements that contain <xmlelement>prop</xmlelement> elements
+            without <xmlatt>class</xmlatt> attributes, which generated errors in earlier versions. Processing has been
+            updated to ignore foreign content at this stage, allowing Saxon to proceed without errors.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3540" format="html" scope="external">#3540</xref>
+          </li>
+          <li>The documentation includes corrections and new information in the following topics:
+            <ul>
+              <li>
+                <xref keyref="markdown-input"/></li>
+              <li>
+                <xref keyref="markdown-dita-syntax-reference"/></li>
+              <li>
+                <xref keyref="dita2dita"/></li>
+              <li>
+                <xref keyref="lwdita-input"/></li>
+            </ul></li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.2+is%3Aclosed" format="html"
+            scope="external">3.5.2 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.5.1...3.5.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.5.1">
+    <title>DITA-OT 3.5.1
+      <ph outputclass="small text-muted">released June 4, 2020</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.5.1 is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
           <li id="3508">In DITA-OT 3.5, Markdown builds failed due to an incompatible plug-in version. The LwDITA

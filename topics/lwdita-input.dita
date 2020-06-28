@@ -21,6 +21,7 @@
           <indexterm>Lightweight DITA</indexterm></indexterm>
         <indexterm>DITA 1.3
           <indexterm>Lightweight DITA</indexterm></indexterm>
+        <indexterm>converting lightweight formats to DITA</indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -93,6 +94,16 @@
       </p>
       <note type="attention">The HDITA map format is not yet supported. To include HDITA content, use an XDITA map or a
         DITA 1.3 map.</note>
+    </section>
+    <section>
+      <title>Converting lightweight formats to DITA XML</title>
+      <p>When you add LwDITA topics to a DITA publication, the content is temporarily converted to DITA in the
+        background when generating other output formats like HTML or PDF, but the source files remain unchanged.</p>
+      <p>If you prefer to maintain this content in DITA in the future, you can generate DITA output by passing the
+          <parmname>--format</parmname>=<option>dita</option> option on the command line.</p>
+      <p>This converts all input files (both LwDITA formats and DITA XML) to
+        <xref keyref="dita2dita">Normalized DITA</xref>. You can then copy the generated DITA files from the output
+        folder to your project and replace references to the lightweight topics with their DITA equivalents.</p>
     </section>
   </body>
 </topic>

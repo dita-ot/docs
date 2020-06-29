@@ -49,9 +49,9 @@ jobs:
         unzip dita-ot-develop.zip
         echo "::set-env name=DITA_OT_DEV::$(find $PWD -name 'dita-ot-*+*' -type d | head -1)"                
     
-    #- name: Run DITA-OT
-    #  run: |
-    #    ./gradlew site -PditaHome=${{ github.workspace }}/dita-ot-${{ env.DITA_OT_VERSION }} -PoutputDir=${{ github.workspace }}/website/dev -PditaHomeSrc=${{ env.DITA_OT_DEV }} --info --stacktrace --no-daemon
+    - name: Run DITA-OT
+      run: |
+        ./gradlew site -PditaHome=${{ github.workspace }}/dita-ot-${{ env.DITA_OT_VERSION }} -PoutputDir=${{ github.workspace }}/website/dev -PditaHomeSrc=${{ env.DITA_OT_DEV }} --info --stacktrace --no-daemon
 
     - name: Build website
       run: |

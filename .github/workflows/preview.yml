@@ -60,7 +60,7 @@ jobs:
         
     - name: Run DITA-OT
       run: |
-        docs/gradlew site -PditaHome=dita-ot-3.5.1 -PoutputDir=website/dev -PditaHomeSrc=dita-ot-3.5.1 --info --stacktrace --no-daemon
+        docs/gradlew site --project-dir=docs -PditaHome=dita-ot-3.5.1 -PoutputDir=website/dev -PditaHomeSrc=dita-ot-3.5.1 --info --stacktrace --no-daemon
 
     - name: Deploy to Netlify
       run: |

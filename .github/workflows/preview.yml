@@ -16,10 +16,7 @@ jobs:
     - name: Checkout docs
       uses: actions/checkout@v2
       with:
-        path: x-docs
-      
-    - run: echo "github.ref = ${{ github.ref }}"
-      
+        path: x-docs      
     - name: Checkout website
       uses: actions/checkout@v2
       with:
@@ -46,6 +43,10 @@ jobs:
       run: |
         curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
         unzip dita-ot-develop.zip        
+          
+    - run: |
+        echo $PWD
+        find . -depth 1
         
     - name: Run DITA-OT
       run: |

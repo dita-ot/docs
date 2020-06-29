@@ -18,6 +18,8 @@ jobs:
        with:
         path: docs
       
+    - run: echo "preview/${{ github.ref }}"
+      
     - name: Checkout website
       uses: actions/checkout@v2
       with:
@@ -40,7 +42,6 @@ jobs:
         curl -L https://github.com/dita-ot/dita-ot/releases/download/3.5.1/dita-ot-3.5.1.zip -o dita-ot-3.5.1.zip
         unzip dita-ot-3.5.1.zip
         dita-ot-3.5.1/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
-        
     - name: Download develop DITA-OT
       run: |
         curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
@@ -53,7 +54,9 @@ jobs:
 
     - name: Build website
       run: |
-        cd website && npm ci && npm run install 
+        cd website && npm ci && npm run install
+    - name: Run Jekyll
+      uses: helaili/jekyll-action@2.0.1 
 
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master

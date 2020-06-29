@@ -15,6 +15,9 @@ jobs:
     steps:
     - name: Checkout docs
       uses: actions/checkout@v2
+       with:
+        path: docs
+      
     - name: Checkout website
       uses: actions/checkout@v2
       with:
@@ -31,7 +34,6 @@ jobs:
         node-version: 12.x
     - name: Set up Netflify 
       uses: actions/checkout@master
-
     
     - name: Download stable DITA-OT
       run: |
@@ -47,7 +49,7 @@ jobs:
     - name: Run DITA-OT
       run: |
         export DITA_OT_DEV=$(find $PWD -name 'dita-ot-*+*' -type d | head -1)
-        ./gradlew site -PditaHome=dita-ot-3.5.1 -PoutputDir=website/dev -PditaHomeSrc=${DITA_OT_DEV} --info --stacktrace --no-daemon
+        ./gradlew --project-dir docs --site -PditaHome=dita-ot-3.5.1 -PoutputDir=website/dev -PditaHomeSrc=${DITA_OT_DEV} --info --stacktrace --no-daemon
 
     - name: Build website
       run: |
@@ -57,7 +59,7 @@ jobs:
       uses: netlify/actions/cli@master
       with:
         #args: deploy --dir website --alias "preview/${{ env.GITHUB_REF }}" --debug
-        args: deploy --dir website --alias "preview/${{ github.ref }}" --debug
+        args: deploy --dir website/_site --alias "preview/${{ github.ref }}" --debug
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

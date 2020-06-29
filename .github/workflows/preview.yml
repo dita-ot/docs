@@ -19,7 +19,7 @@ name: DITA-OT Java CI for Website preview
 
 on:
   pull_request:
-    branches: [ deploy ]
+    branches: [ develop ]
     types: [ opened, synchronize, reopened ]
 
 jobs:

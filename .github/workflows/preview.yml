@@ -46,12 +46,22 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: curl -L https://github.com/dita-ot/dita-ot/releases/download/3.5.1/dita-ot-3.5.1.zip -o dita-ot-3.5.1.zip
-    - run: unzip dita-ot-3.5.1.zip
-    - run: dita-ot-3.5.1/bin/dita
-
-#    - name: Grant execute permission for gradlew
-#      run: chmod +x gradlew
     
-#    - name: Build with Gradle
-#      run: ./gradlew build
+    - name: Download stable DITA-OT
+      run: |
+        curl -L https://github.com/dita-ot/dita-ot/releases/download/3.5.1/dita-ot-3.5.1.zip -o dita-ot-3.5.1.zip
+        unzip dita-ot-3.5.1.zip
+        dita-ot-3.5.1/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
+        
+    - name: Download develop DITA-OT
+      run: |
+        curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
+        unzip dita-ot-develop.zip        
+        
+    - name: Run DITA-OT
+      run: |
+        docs/gradlew site -PditaHome=dita-ot-3.5.1 -PoutputDir=website/dev -PditaHomeSrc=dita-ot-3.5.1 --info --stacktrace --no-daemon
+
+    - name: Deploy to Netlify
+      run: |
+        echo "Deploy ${GITHUB_REF}"

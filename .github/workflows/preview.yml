@@ -13,16 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout docs
-      uses: actions/checkout@v2
-      with:
-        path: docs
-    - name: Checkout website
-      uses: actions/checkout@v2
-      with:
-        repository: dita-ot/website
-        path: website
-    
     #- name: Set up JDK 1.8
     #  uses: actions/setup-java@v1
     #  with:
@@ -34,13 +24,23 @@ jobs:
     - name: Set up Netflify 
       uses: actions/checkout@master
               
+    - name: Checkout docs
+      uses: actions/checkout@v2
+      #with:
+      #  path: docs
+    - name: Checkout website
+      uses: actions/checkout@v2
+      with:
+        repository: dita-ot/website
+        path: website
+       
     - run: |
         set
         echo "PDF: $PWD"
         ls -l $PWD
         echo "github.workspace ${{ github.workspace }}"
-        ls -l ${{ github.workspace }}/..
-        echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+        ls -l ${{ github.workspace }}/website
+#        echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
 
     #- name: Download stable DITA-OT
     #  run: |

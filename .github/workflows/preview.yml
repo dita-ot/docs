@@ -29,9 +29,6 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6
-    - name: Install Ruby dependencies
-      run: |
-        gem install jekyll
 
     - name: Checkout docs
       uses: actions/checkout@v2
@@ -41,16 +38,16 @@ jobs:
         repository: dita-ot/website
         path: website
 
-    #- name: Download stable DITA-OT
-    #  run: |
-    #    curl -L https://github.com/dita-ot/dita-ot/releases/download/${{ env.DITA_OT_VERSION }}/dita-ot-${{ env.DITA_OT_VERSION }}.zip -o dita-ot-${{ env.DITA_OT_VERSION }}.zip
-    #    unzip dita-ot-${{ env.DITA_OT_VERSION }}.zip
-    #    dita-ot-${{ env.DITA_OT_VERSION }}/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
-    #- name: Download develop DITA-OT
-    #  run: |
-    #    curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
-    #    unzip dita-ot-develop.zip
-    #    echo "::set-env name=DITA_OT_DEV::$(find $PWD -name 'dita-ot-*+*' -type d | head -1)"                
+    - name: Download stable DITA-OT
+      run: |
+        curl -L https://github.com/dita-ot/dita-ot/releases/download/${{ env.DITA_OT_VERSION }}/dita-ot-${{ env.DITA_OT_VERSION }}.zip -o dita-ot-${{ env.DITA_OT_VERSION }}.zip
+        unzip dita-ot-${{ env.DITA_OT_VERSION }}.zip
+        dita-ot-${{ env.DITA_OT_VERSION }}/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
+    - name: Download develop DITA-OT
+      run: |
+        curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
+        unzip dita-ot-develop.zip
+        echo "::set-env name=DITA_OT_DEV::$(find $PWD -name 'dita-ot-*+*' -type d | head -1)"                
     
     #- name: Run DITA-OT
     #  run: |
@@ -78,10 +75,20 @@ jobs:
     #  with:
     #    jekyll_src: /github/workspace/website
 
+    - uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    - name: Install Jekyll
+      run: |
+        gem install jekyll
+        bundle install
     - name: Run Jekyll
       run: |
-        bundle install
         bundle exec jekyll build
+
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master
       with:

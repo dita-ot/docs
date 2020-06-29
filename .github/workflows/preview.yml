@@ -32,12 +32,9 @@ jobs:
     - name: Install Ruby dependencies
       run: |
         gem install jekyll
-        bundle install
 
     - name: Checkout docs
       uses: actions/checkout@v2
-      #with:
-      #  path: docs
     - name: Checkout website
       uses: actions/checkout@v2
       with:
@@ -83,11 +80,11 @@ jobs:
 
     - name: Run Jekyll
       run: |
+        bundle install
         bundle exec jekyll build
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master
       with:
-        #args: deploy --dir website --alias "preview/${{ env.GITHUB_REF }}" --debug
         args: deploy --dir _site --alias "preview-pr-${{ env.PR_ID }}"
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

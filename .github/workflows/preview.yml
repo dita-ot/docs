@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    #- name: Set up JDK 1.8
-    #  uses: actions/setup-java@v1
-    #  with:
-    #    java-version: 1.8
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
     - name: Set Node.js version 12.x
       uses: actions/setup-node@v1
       with:
@@ -34,42 +34,40 @@ jobs:
         repository: dita-ot/website
         path: website
        
-    - run: |
-        set
-        echo "PDF: $PWD"
-        ls -l $PWD
-        echo "github.workspace ${{ github.workspace }}"
-        ls -l ${{ github.workspace }}/website
-#        echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+    #- run: |
+    #    set
+    #    echo "PDF: $PWD"
+    #    ls -l $PWD
+    #    echo "github.workspace ${{ github.workspace }}"
+    #    ls -l ${{ github.workspace }}/website
 
-    #- name: Download stable DITA-OT
-    #  run: |
-    #    curl -L https://github.com/dita-ot/dita-ot/releases/download/3.5.1/dita-ot-3.5.1.zip -o dita-ot-3.5.1.zip
-    #    unzip dita-ot-3.5.1.zip
-    #    dita-ot-3.5.1/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
-    #- name: Download develop DITA-OT
-    #  run: |
-    #    curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
-    #    unzip dita-ot-develop.zip                
-    #- name: Run DITA-OT
-    #  run: |
-    #    export DITA_OT_DEV=$(find $PWD -name 'dita-ot-*+*' -type d | head -1)
-    #    docs/gradlew --project-dir ${{ github.workspace }}/docs site -PditaHome=${{ github.workspace }}/dita-ot-3.5.1 -PoutputDir=${{ github.workspace }}/website/dev -PditaHomeSrc=${DITA_OT_DEV} --info --stacktrace --no-daemon
+    - name: Download stable DITA-OT
+      run: |
+        curl -L https://github.com/dita-ot/dita-ot/releases/download/3.5.1/dita-ot-3.5.1.zip -o dita-ot-3.5.1.zip
+        unzip dita-ot-3.5.1.zip
+        dita-ot-3.5.1/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
+    - name: Download develop DITA-OT
+      run: |
+        curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
+        unzip dita-ot-develop.zip                
+    - name: Run DITA-OT
+      run: |
+        export DITA_OT_DEV=$(find $PWD -name 'dita-ot-*+*' -type d | head -1)
+        docs/gradlew --project-dir ${{ github.workspace }}/docs site -PditaHome=${{ github.workspace }}/dita-ot-3.5.1 -PoutputDir=${{ github.workspace }}/website/dev -PditaHomeSrc=${DITA_OT_DEV} --info --stacktrace --no-daemon
 
     - name: Build website
       run: |
         cd ${{ github.workspace }}/website && npm ci && npm run install
-        cd ${{ github.workspace }}
     - name: Run Jekyll
       uses: helaili/jekyll-action@2.0.1
       with:
-        jekyll_src: ${{ github.workspace }}/website
+        jekyll_src: website
 
-    #- name: Deploy to Netlify
-    #  uses: netlify/actions/cli@master
-    #  with:
-    #    #args: deploy --dir website --alias "preview/${{ env.GITHUB_REF }}" --debug
-    #    args: deploy --dir website/_site --alias "preview/${{ github.ref }}" --debug
-    #  env:
-    #    NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-    #    NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    - name: Deploy to Netlify
+      uses: netlify/actions/cli@master
+      with:
+        #args: deploy --dir website --alias "preview/${{ env.GITHUB_REF }}" --debug
+        args: deploy --dir website/_site --alias "preview/${{ github.ref }}" --debug
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

@@ -15,10 +15,11 @@
 # - ".travis/deploy.sh"
 
 
-name: DITa-OT Java CI for Website preview
+name: DITA-OT Java CI for Website preview
 
 on:
   pull_request:
+    branches: [ deploy ]
     types: [ opened, synchronize, reopened ]
 
 jobs:

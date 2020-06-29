@@ -67,7 +67,7 @@ jobs:
     - name: Run Jekyll
       uses: helaili/jekyll-action@2.0.1
       with:
-        jekyll_src: website
+        jekyll_src: /github/workspace/website
 
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master

@@ -1,21 +1,6 @@
 # This workflow will build PR changes and push to website repo
 
-#sudo: false
-#language: java
-#jdk:
-#- openjdk8
-#env:
-#   global:
-#   - DITA_OT_VERSION=3.5.1
-# install:
-# - ".travis/install.sh"
-# script:
-# - ".travis/publish.sh"
-# after_success:
-# - ".travis/deploy.sh"
-
-
-name: DITA-OT Java CI for Website preview
+name: DITA-OT CI for website preview
 
 on:
   pull_request:
@@ -30,8 +15,6 @@ jobs:
     steps:
     - name: Checkout docs
       uses: actions/checkout@v2
-      with:
-        path: docs
     - name: Checkout website
       uses: actions/checkout@v2
       with:
@@ -60,7 +43,8 @@ jobs:
         
     - name: Run DITA-OT
       run: |
-        docs/gradlew site --project-dir=docs -PditaHome=dita-ot-3.5.1 -PoutputDir=website/dev -PditaHomeSrc=dita-ot-3.5.1 --info --stacktrace --no-daemon
+        export DITA_OT_DEV=$(find $PWD -name 'dita-ot-*+*' -type d | head -1)
+        ./gradlew site -PditaHome=dita-ot-3.5.1 -PoutputDir=website/dev -PditaHomeSrc=${DITA_OT_DEV} --info --stacktrace --no-daemon
 
     - name: Deploy to Netlify
       run: |

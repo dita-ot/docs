@@ -64,16 +64,19 @@ jobs:
         cd ${{ github.workspace }}
         echo "::set-env name=PR_ID::$(echo $GITHUB_REF |  cut -d'/' -f 3 )"
         
+    - name: Move website
+      run: |
+        mv -f ${{ github.workspace }}/website/* ${{ github.workspace }}/
     - name: Run Jekyll
       uses: helaili/jekyll-action@2.0.1
-      with:
-        jekyll_src: /github/workspace/website
+      #with:
+      #  jekyll_src: /github/workspace/website
 
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master
       with:
         #args: deploy --dir website --alias "preview/${{ env.GITHUB_REF }}" --debug
-        args: deploy --dir website/_site --alias "preview-${{ env.PR_ID }}" --debug
+        args: deploy --dir _site --alias "preview-${{ env.PR_ID }}" --debug
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

@@ -21,12 +21,12 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: dita-ot/website
-        path: x-website
+        path: website
     
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
+    #- name: Set up JDK 1.8
+    #  uses: actions/setup-java@v1
+    #  with:
+    #    java-version: 1.8
     - name: Set Node.js version 12.x
       uses: actions/setup-node@v1
       with:
@@ -34,26 +34,26 @@ jobs:
     - name: Set up Netflify 
       uses: actions/checkout@master
     
-    - name: Download stable DITA-OT
-      run: |
-        curl -L https://github.com/dita-ot/dita-ot/releases/download/3.5.1/dita-ot-3.5.1.zip -o dita-ot-3.5.1.zip
-        unzip dita-ot-3.5.1.zip
-        dita-ot-3.5.1/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
-    - name: Download develop DITA-OT
-      run: |
-        curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
-        unzip dita-ot-develop.zip        
+    #- name: Download stable DITA-OT
+    #  run: |
+    #    curl -L https://github.com/dita-ot/dita-ot/releases/download/3.5.1/dita-ot-3.5.1.zip -o dita-ot-3.5.1.zip
+    #    unzip dita-ot-3.5.1.zip
+    #    dita-ot-3.5.1/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
+    #- name: Download develop DITA-OT
+    #  run: |
+    #    curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
+    #    unzip dita-ot-develop.zip        
           
     - run: |
-        echo $PWD
-        echo $GITHUB_WORKSPACE
+        echo "$PWD ${{ github.workspace }}"
+        echo "$GITHUB_WORKSPACE"
         ls -l .
-        ls -l GITHUB_WORKSPACE/..
+        ls -l ${{ github.workspace }}/..
         
-    - name: Run DITA-OT
-      run: |
-        export DITA_OT_DEV=$(find $PWD -name 'dita-ot-*+*' -type d | head -1)
-        ./gradlew --project-dir x-docs site -PditaHome=dita-ot-3.5.1 -PoutputDir=x-website/dev -PditaHomeSrc=${DITA_OT_DEV} --info --stacktrace --no-daemon
+    #- name: Run DITA-OT
+    #  run: |
+    #    export DITA_OT_DEV=$(find $PWD -name 'dita-ot-*+*' -type d | head -1)
+    #    ./gradlew --project-dir x-docs site -PditaHome=dita-ot-3.5.1 -PoutputDir=x-website/dev -PditaHomeSrc=${DITA_OT_DEV} --info --stacktrace --no-daemon
 
     - name: Build website
       run: |

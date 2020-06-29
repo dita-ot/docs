@@ -11,6 +11,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      DITA_OT_VERSION: "3.5.1"
 
     steps:
     - name: Set up JDK 1.8
@@ -43,21 +45,25 @@ jobs:
 
     - name: Download stable DITA-OT
       run: |
-        curl -L https://github.com/dita-ot/dita-ot/releases/download/3.5.1/dita-ot-3.5.1.zip -o dita-ot-3.5.1.zip
-        unzip dita-ot-3.5.1.zip
-        dita-ot-3.5.1/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
+        curl -L https://github.com/dita-ot/dita-ot/releases/download/${{ env.DITA_OT_VERSION }}/dita-ot-${{ env.DITA_OT_VERSION }}.zip -o dita-ot-${{ env.DITA_OT_VERSION }}.zip
+        unzip dita-ot-${{ env.DITA_OT_VERSION }}.zip
+        dita-ot-${{ env.DITA_OT_VERSION }}/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
     - name: Download develop DITA-OT
       run: |
         curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
-        unzip dita-ot-develop.zip                
+        unzip dita-ot-develop.zip
+        echo "::set-env name=DITA_OT_DEV::$(find $PWD -name 'dita-ot-*+*' -type d | head -1)"                
+    
     - name: Run DITA-OT
       run: |
-        export DITA_OT_DEV=$(find $PWD -name 'dita-ot-*+*' -type d | head -1)
-        docs/gradlew --project-dir ${{ github.workspace }}/docs site -PditaHome=${{ github.workspace }}/dita-ot-3.5.1 -PoutputDir=${{ github.workspace }}/website/dev -PditaHomeSrc=${DITA_OT_DEV} --info --stacktrace --no-daemon
+        ./gradlew site -PditaHome=${{ github.workspace }}/dita-ot-${{ env.DITA_OT_VERSION }} -PoutputDir=${{ github.workspace }}/website/dev -PditaHomeSrc=${{ env.DITA_OT_DEV }} --info --stacktrace --no-daemon
 
     - name: Build website
       run: |
         cd ${{ github.workspace }}/website && npm ci && npm run install
+        cd ${{ github.workspace }}
+        echo "::set-env name=PR_ID::$(echo $GITHUB_REF |  cut -d'/' -f 3 )"
+        
     - name: Run Jekyll
       uses: helaili/jekyll-action@2.0.1
       with:
@@ -67,7 +73,7 @@ jobs:
       uses: netlify/actions/cli@master
       with:
         #args: deploy --dir website --alias "preview/${{ env.GITHUB_REF }}" --debug
-        args: deploy --dir website/_site --alias "preview/${{ github.ref }}" --debug
+        args: deploy --dir website/_site --alias "preview-${{ env.PR_ID }}" --debug
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

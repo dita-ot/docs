@@ -84,6 +84,9 @@ jobs:
       uses: netlify/actions/cli@master
       with:
         args: build
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master
       with:

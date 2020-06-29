@@ -67,18 +67,23 @@ jobs:
     - name: Move website
       run: |
         mv -f ${{ github.workspace }}/website/* ${{ github.workspace }}/
+        rm -fr build
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
-    - uses: actions/cache@v1
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
-    - name: Run Jekyll
-      uses: helaili/jekyll-action@2.0.1
-      with:
-        jekyll_src: /github/workspace/website
+    #- uses: actions/cache@v1
+    #  with:
+    #    path: vendor/bundle
+    #    key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+    #    restore-keys: |
+    #      ${{ runner.os }}-gems-
+    #- name: Run Jekyll
+    #  uses: helaili/jekyll-action@2.0.1
+    #  with:
+    #    jekyll_src: /github/workspace/website
 
+    - name: Build to Netlify
+      uses: netlify/actions/cli@master
+      with:
+        args: build
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master
       with:

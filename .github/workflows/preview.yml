@@ -46,7 +46,9 @@ jobs:
           
     - run: |
         echo $PWD
+        echo $GITHUB_WORKSPACE
         ls -l .
+        ls -l GITHUB_WORKSPACE/..
         
     - name: Run DITA-OT
       run: |

@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    if: github.repository_owner == "dita-ot"
+    if: ${{ github.repository_owner == "dita-ot" }}
     runs-on: ubuntu-latest
     env:
       DITA_OT_VERSION: "3.5.1"

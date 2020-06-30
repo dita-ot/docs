@@ -87,7 +87,6 @@ jobs:
       - name: Install Jekyll
         run: |
           bundle config path vendor/bundle
-          gem install jekyll
           bundle install
       - name: Run Jekyll
         run: |

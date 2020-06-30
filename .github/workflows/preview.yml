@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-
+    if: github.repository_owner == "dita-ot"
     runs-on: ubuntu-latest
     env:
       DITA_OT_VERSION: "3.5.1"
@@ -38,11 +38,22 @@ jobs:
         repository: dita-ot/website
         path: website
 
+    - name: Download website plug-in
+      run: |
+        curl -L https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -o org.dita-ot.html.zip
+    - name: Cache stable DITA-OT
+      uses: actions/cache@v2
+      with:
+        path: dita-ot-${{ env.DITA_OT_VERSION }}
+        key: ${{ runner.os }}-dita-ot-${{ env.DITA_OT_VERSION }}
     - name: Download stable DITA-OT
       run: |
-        curl -L https://github.com/dita-ot/dita-ot/releases/download/${{ env.DITA_OT_VERSION }}/dita-ot-${{ env.DITA_OT_VERSION }}.zip -o dita-ot-${{ env.DITA_OT_VERSION }}.zip
-        unzip dita-ot-${{ env.DITA_OT_VERSION }}.zip
-        dita-ot-${{ env.DITA_OT_VERSION }}/bin/dita install https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -v
+        if [ ! -d "dita-ot-${{ env.DITA_OT_VERSION }}" ]; then
+          curl -L https://github.com/dita-ot/dita-ot/releases/download/${{ env.DITA_OT_VERSION }}/dita-ot-${{ env.DITA_OT_VERSION }}.zip -o dita-ot-${{ env.DITA_OT_VERSION }}.zip
+          unzip dita-ot-${{ env.DITA_OT_VERSION }}.zip
+        fi
+        dita-ot-${{ env.DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip -v
+
     - name: Download develop DITA-OT
       run: |
         curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
@@ -58,18 +69,10 @@ jobs:
         cd ${{ github.workspace }}/website && npm ci && npm run install
         cd ${{ github.workspace }}
         echo "::set-env name=PR_ID::$(echo $GITHUB_REF |  cut -d'/' -f 3 )"
-        
-    - name: Move website
-      run: |
+        # Move website to root
         mv -f ${{ github.workspace }}/website/* ${{ github.workspace }}/
         rm -fr build
-    # Use GitHub Actions' cache to shorten build times and decrease load on servers
-    #- uses: actions/cache@v1
-    #  with:
-    #    path: vendor/bundle
-    #    key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-    #    restore-keys: |
-    #      ${{ runner.os }}-gems-
+        
     #- name: Run Jekyll
     #  uses: helaili/jekyll-action@2.0.1
     #  with:

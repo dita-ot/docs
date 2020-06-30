@@ -101,11 +101,11 @@ jobs:
         
     - name: Create status
       uses: Sibz/github-status-action@v1
-        with:
-          authToken: ${{ secrets.GITHUB_TOKEN }}
-          sha: ${{ github.event.pull_request.head.sha }}
-          # may have to use $GITHUB_REPOSITORY and split it into repository and owner by /
-          context: 'Preview'
-          description: 'Website preview generated'
-          state: 'success'
-          target_url: 'https://preview-pr-${{ env.PR_ID }}--dita-ot.netlify.app'
+      with:
+        authToken: ${{ secrets.GITHUB_TOKEN }}
+        sha: ${{ github.event.pull_request.head.sha }}
+        # may have to use $GITHUB_REPOSITORY and split it into repository and owner by /
+        context: 'Preview'
+        description: 'Website preview generated'
+        state: 'success'
+        target_url: 'https://preview-pr-${{ env.PR_ID }}--dita-ot.netlify.app'

@@ -66,10 +66,10 @@ jobs:
       - name: Cache NPM
         uses: actions/cache@v2
         with:
-          path: website/node_modules
-          key: ${{ runner.os }}-nmp-${{ hashFiles('website/package-lock.json') }}
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-npm-
+            ${{ runner.os }}-node-
       - name: Build website
         run: |
           cd ${{ github.workspace }}/website && npm ci && npm run install

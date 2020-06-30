@@ -63,6 +63,13 @@ jobs:
         run: |
           ./gradlew site -PditaHome=${{ github.workspace }}/dita-ot-${{ env.DITA_OT_VERSION }} -PoutputDir=${{ github.workspace }}/website/dev -PditaHomeSrc=${{ env.DITA_OT_DEV }} --info --stacktrace --no-daemon
 
+      - name: Cache NPM
+        uses: actions/cache@v2
+        with:
+          path: website/node_modules
+          key: ${{ runner.os }}-nmp-${{ hashFiles('website/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
       - name: Build website
         run: |
           cd ${{ github.workspace }}/website && npm ci && npm run install

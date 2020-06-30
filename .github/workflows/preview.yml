@@ -51,7 +51,7 @@ jobs:
             curl -L https://github.com/dita-ot/dita-ot/releases/download/${{ env.DITA_OT_VERSION }}/dita-ot-${{ env.DITA_OT_VERSION }}.zip -o dita-ot-${{ env.DITA_OT_VERSION }}.zip
             unzip dita-ot-${{ env.DITA_OT_VERSION }}.zip
           fi
-          dita-ot-${{ env.DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip -v
+          dita-ot-${{ env.DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip --force -v
 
       - name: Download develop DITA-OT
         run: |

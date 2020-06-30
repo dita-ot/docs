@@ -39,7 +39,7 @@ jobs:
 
       - name: Download website plug-in
         run: |
-          curl -L https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -o org.dita-ot.html.zip
+          curl -sL https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -o org.dita-ot.html.zip
       - name: Cache stable DITA-OT
         uses: actions/cache@v2
         with:
@@ -48,16 +48,32 @@ jobs:
       - name: Download stable DITA-OT
         run: |
           if [ ! -d "dita-ot-${{ env.DITA_OT_VERSION }}" ]; then
-            curl -L https://github.com/dita-ot/dita-ot/releases/download/${{ env.DITA_OT_VERSION }}/dita-ot-${{ env.DITA_OT_VERSION }}.zip -o dita-ot-${{ env.DITA_OT_VERSION }}.zip
+            curl -sL https://github.com/dita-ot/dita-ot/releases/download/${{ env.DITA_OT_VERSION }}/dita-ot-${{ env.DITA_OT_VERSION }}.zip -o dita-ot-${{ env.DITA_OT_VERSION }}.zip
             unzip dita-ot-${{ env.DITA_OT_VERSION }}.zip
+          else
+            echo "Use cached dita-ot-${{ env.DITA_OT_VERSION }}"
           fi
           dita-ot-${{ env.DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip --force -v
 
+      - name: Get develop DITA-OT ETag
+        run: |
+          curl -sI https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip | grep -F ETag | cut -d'"' -f 2 > dita-ot-develop.etag
+      - name: Cache develop DITA-OT
+        uses: actions/cache@v2
+        with:
+          path: dita-ot-develop
+          key: ${{ runner.os }}-dita-ot-develop-${{ hashFiles('dita-ot-develop.etag') }}
+          restore-keys: |
+            ${{ runner.os }}-dita-ot-develop-
       - name: Download develop DITA-OT
         run: |
-          curl -L https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
-          unzip dita-ot-develop.zip
-          echo "::set-env name=DITA_OT_DEV::$(find $PWD -name 'dita-ot-*+*' -type d | head -1)"
+          if [ ! -d "dita-ot-develop" ]; then
+            curl -sL https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
+            unzip dita-ot-develop.zip -d dita-ot-develop
+          else
+            echo "Use cached dita-ot-develop"
+          fi
+          echo "::set-env name=DITA_OT_DEV::$(find dita-ot-develop -name 'dita-ot-*+*' -type d | head -1)"
 
       - name: Run DITA-OT
         run: |

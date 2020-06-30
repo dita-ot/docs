@@ -9,11 +9,20 @@ on:
 
 jobs:
   preview:
-    if: secrets.NETLIFY_SITE_ID != null && secrets.NETLIFY_AUTH_TOKEN != null
+    #if: secrets.NETLIFY_SITE_ID != null && secrets.NETLIFY_AUTH_TOKEN != null
     runs-on: ubuntu-latest
     env:
       DITA_OT_VERSION: "3.5.1"
     steps:
+      - name: debug
+        run: |
+          echo "ACTOR = $ACTOR"
+          echo "REPOSITORY = $REPOSITORY"
+          echo "REPOSITORY_OWNER = $REPOSITORY_OWNER"
+        env:
+          ACTOR: ${{ github.actor }}
+          REPOSITORY: ${{github.repository}}
+          REPOSITORY_OWNER: ${{github.repository_owner }}
       - name: Set up JDK 1.8
         uses: actions/setup-java@v1
         with:

@@ -9,7 +9,7 @@ on:
 
 jobs:
   preview:
-    if: github.repository_owner == 'dita-ot'
+    if: secrets.NETLIFY_SITE_ID != null && secrets.NETLIFY_AUTH_TOKEN != null
     runs-on: ubuntu-latest
     env:
       DITA_OT_VERSION: "3.5.1"

@@ -36,6 +36,13 @@
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
+          <li id="3524">DITA-OT 3.5 introduced a regression in key scope processing that saved the effective map too
+            early, before all topic references were updated. In certain cases, keys that were intended to point to
+            different reference targets were merged to a single reference. The keyref processing module has been updated
+            to handle these cases correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3524" format="html" scope="external">#3524</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3542" format="html" scope="external">#3542</xref>
+          </li>
           <li id="3526">In DITA-OT 3.5.1, generating output from a project file without setting the
               <parmname>--output</parmname> option caused the build to fail with a NullPointerException. The Java code
             has been updated to properly initialize the output directory.

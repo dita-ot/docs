@@ -89,14 +89,12 @@
   </reference>
 
   <reference id="v3.5.1">
-    <title>DITA-OT 3.5.1
-      <ph outputclass="small text-muted">released June 4, 2020</ph>
+    <title>DITA-OT 3.5.1 <ph outputclass="small text-muted">released June 4, 2020</ph>
     </title>
 
     <refbody>
       <section>
-        <p>DITA Open Toolkit 3.5.1 is a maintenance release that includes the
-          following bug fixes.</p>
+        <p>DITA Open Toolkit 3.5.1 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="3508">In DITA-OT 3.5, Markdown builds failed due to an incompatible plug-in version. The LwDITA
             plug-in has been updated to version 2.4, which is compatible with DITA-OT 2.4 and newer.

@@ -25,6 +25,7 @@
         <indexterm>dita2dita</indexterm>
         <indexterm>relationship tables
           <indexterm>normalized DITA</indexterm></indexterm>
+        <indexterm>converting lightweight formats to DITA</indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -45,15 +46,20 @@
     <section id="applications">
       <title>Applications</title>
       <p>Normalized output may be useful in situations where post-processing of DITA content is required, but the
-        downstream systems are limited in their ability to resolve DITA references.</p></section>
+        downstream systems are limited in their ability to resolve DITA references.</p>
+      <note type="tip">You can also use the normalized DITA transformation to convert
+        <xref keyref="markdown-input">Markdown</xref> or
+        <xref keyref="lwdita-input">Lightweight DITA</xref> formats to DITA XML. You can then copy the generated DITA
+        files from the output folder to your project and replace references to the lightweight topics with their XML
+        equivalents.</note>
+    </section>
     <section id="generating-normalized-dita-output">
       <title>Generating normalized DITA output</title>
       <p>Run the <cmdname>dita</cmdname> command and set the value of the output <parmname>--format</parmname> option to
           <option>dita</option>:</p><codeblock xml:space="preserve"><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>dita</option></codeblock>
       <p>where:</p>
       <ul>
-        <li conkeyref="conref-task/novice-variables-1"
-          conrefend="../resources/conref-task.dita#ID/novice-variables-2"/>
+        <li conkeyref="conref-task/novice-variables-1" conrefend="../resources/conref-task.dita#ID/novice-variables-2"/>
       </ul>
     </section>
   </body>

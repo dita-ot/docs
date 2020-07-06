@@ -31,7 +31,7 @@
       </step>
       <step>
         <cmd>Issue the following command:</cmd>
-        <choicetable frame="topbot" relcolwidth="1* 3*">
+        <choicetable frame="topbot" relcolwidth="1* 3*" outputclass="multi-platform">
           <chrow platform="linux mac">
             <choption>Linux or macOS&#xA0;</choption>
             <chdesc>

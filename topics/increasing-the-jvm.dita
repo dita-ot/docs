@@ -45,7 +45,7 @@
             <choptionhd>Platform</choptionhd>
             <chdeschd>Command</chdeschd>
           </chhead>
-          <chrow platform="unix">
+          <chrow platform="linux mac" outputclass="multi-platform">
             <choption>Linux or macOS&#xA0;</choption>
             <chdesc><codeph>export ANT_OPTS=$ANT_OPTS -Xmx<varname>1024</varname>M</codeph></chdesc>
           </chrow>

@@ -24,7 +24,7 @@
     <context audience="novice">The DITA-OT client is a command-line tool with no graphical user interface. To verify
       that your installation works correctly, you can build output using the sample files included in the distribution
       package.</context>
-    <steps>
+    <steps outputclass="multi-platform">
       <step audience="novice">
         <cmd>Open a terminal window by typing the following in the search bar:</cmd>
         <info>
@@ -36,7 +36,7 @@
       </step>
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
-        <info><codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname>format</varname> <ph audience="expert">[<varname>options</varname>]</ph></codeblock>
+        <info><codeblock outputclass="language-bash multi-platform"><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname>format</varname> <ph audience="expert">[<varname>options</varname>]</ph></codeblock>
           <p>where:</p>
           <ul>
             <li conkeyref="conref-task/novice-variables-1"
@@ -52,14 +52,14 @@
     <example audience="novice">
       <p>Run from <filepath conkeyref="conref-task/samples-dir"/>, the following command generates
         HTML5 output for the <filepath>sequence.ditamap</filepath> file:</p>
-      <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
+      <codeblock outputclass="language-bash multi-platform"><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
       <indexterm>DITA maps
         <indexterm><cmdname>dita</cmdname> command example</indexterm></indexterm>
     </example>
     <example audience="expert">
       <p>For example, from <filepath conkeyref="conref-task/samples-dir"/>, run:</p>
       <p>
-        <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option> \
+        <codeblock outputclass="language-bash multi-platform"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option> \
      <parmname>--output</parmname>=<filepath>output/sequence</filepath> \
      <parmname>--args.input.dir</parmname>=<filepath conkeyref="conref-task/samples-absolute"/> \
      <parmname>--propertyfile</parmname>=<filepath>properties/sequence-html5.properties</filepath></codeblock>

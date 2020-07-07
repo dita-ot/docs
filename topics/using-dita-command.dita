@@ -36,7 +36,7 @@
       </step>
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
-        <info><codeblock outputclass="language-bash multi-platform"><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname>format</varname> <ph audience="expert">[<varname>options</varname>]</ph></codeblock>
+        <info><codeblock outputclass="language-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname>format</varname> <ph audience="expert">[<varname>options</varname>]</ph></codeblock>
           <p>where:</p>
           <ul>
             <li conkeyref="conref-task/novice-variables-1"

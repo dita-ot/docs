@@ -23,7 +23,7 @@
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
         <info>
-          <codeblock><cmdname>dita install</cmdname> <varname>&lt;plug-in&gt;</varname></codeblock>
+          <codeblock outputclass="language-bash"><cmdname>dita install</cmdname> <varname>&lt;plug-in&gt;</varname></codeblock>
           <p>where:</p>
           <ul>
             <li conkeyref="conref-task/plug-in"/>

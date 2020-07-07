@@ -55,7 +55,7 @@
           </choice>
           <choice platform="mac">On macOS, you can also install Docker Desktop via
             <xref keyref="homebrew"/>:
-            <codeblock>$ <cmdname>brew</cmdname> cask install docker
+            <codeblock outputclass="language-bash">$ <cmdname>brew</cmdname> cask install docker
 <systemoutput>Downloading…</systemoutput></codeblock>
           </choice>
           <choice platform="linux">On Linux, install Docker Community Edition (CE) via your operating system’s package manager, for
@@ -107,8 +107,8 @@
               <li><option>-v</option> displays build progress messages with verbose logging</li>
             </ul>
           </p>
-          <div>
-          <p platform="windows">On Windows, if your <filepath>Users</filepath> directory is on the <filepath>C:\</filepath> drive, use
+          <div platform="windows">
+            <p>On Windows, if your <filepath>Users</filepath> directory is on the <filepath>C:\</filepath> drive, use
               <filepath>/c/Users/…</filepath> to map the host directory:</p>
             <codeblock outputclass="language-batch">C:\Users\username> <cmdname>docker</cmdname> run -it \
   -v /c/Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> \

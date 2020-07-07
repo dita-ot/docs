@@ -369,11 +369,11 @@
           <pd>Convert partial documentation sets by processing input with additional resources.
             <p>For example, to process a single topic file with a map that contains key definitions, use a command like
               this:
-              <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
             </p>
             <p>To convert a chapter map to HTML5 and insert related links from relationship tables in a separate map,
               use:
-              <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>chapter.ditamap</filepath> <parmname>--resource</parmname>=<filepath>reltables.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>chapter.ditamap</filepath> <parmname>--resource</parmname>=<filepath>reltables.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
             </p></pd>
         </plentry>
         <plentry>

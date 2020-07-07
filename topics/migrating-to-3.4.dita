@@ -91,7 +91,7 @@
       <note conkeyref="reusable-components/legacy-plugins-note"/>
       <p>To re-install the plug-in(s) from the plug-in registry at
         <xref keyref="site-plugin-registry"/>, run the following command(s):</p>
-      <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<filepath>com.sophos.tocjs</filepath>
+      <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<filepath>com.sophos.tocjs</filepath>
 <cmdname>dita</cmdname> <parmname>--install</parmname>=<filepath>org.dita.troff</filepath></codeblock>
     </section>
   </refbody>

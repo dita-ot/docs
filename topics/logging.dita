@@ -79,7 +79,7 @@
             <p>To use a custom Ant logger with the <cmdname>dita</cmdname> command, add the logger to the
                 <codeph>ANT_ARGS</codeph> environment variable by calling the following command before calling the
                 <cmdname>dita</cmdname> command:</p>
-            <codeblock>export ANT_ARGS="-logger org.apache.tools.ant.listener.AnsiColorLogger"</codeblock>
+            <codeblock outputclass="language-bash">export ANT_ARGS="-logger org.apache.tools.ant.listener.AnsiColorLogger"</codeblock>
             <p>Now you will get colorized messages when the <cmdname>dita</cmdname> command runs.</p>
             <note type="tip">Environment variables can also be set permanently. See
               <xref href="https://www.java.com/en/download/help/path.xml" format="html" scope="external">How do I set or
@@ -94,7 +94,7 @@
             <p>If you prefer to launch DITA-OT directly from Ant, you can also add the logger to the
                 <codeph>ANT_ARGS</codeph> environment variable, as explained above. You can also set the logger with the
                 <codeph>-logger</codeph> parameter when calling Ant.</p>
-            <codeblock>ant -logger org.apache.tools.ant.listener.AnsiColorLogger</codeblock>
+            <codeblock outputclass="language-bash">ant -logger org.apache.tools.ant.listener.AnsiColorLogger</codeblock>
           </dd>
         </dlentry>
       </dl>

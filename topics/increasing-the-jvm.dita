@@ -40,12 +40,12 @@
     <steps-unordered>
       <step>
         <cmd>To change the value for a specific session, from the command prompt, issue the following command:</cmd>
-        <choicetable>
+        <choicetable outputclass="multi-platform">
           <chhead>
             <choptionhd>Platform</choptionhd>
             <chdeschd>Command</chdeschd>
           </chhead>
-          <chrow platform="linux mac" outputclass="multi-platform">
+          <chrow platform="unix">
             <choption>Linux or macOS&#xA0;</choption>
             <chdesc><codeph>export ANT_OPTS=$ANT_OPTS -Xmx<varname>1024</varname>M</codeph></chdesc>
           </chrow>

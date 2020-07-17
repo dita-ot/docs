@@ -66,6 +66,14 @@
       <subjectdef keys="language-xml"/>
       <subjectdef keys="language-yaml"/>
     </subjectdef>
+    <subjectdef keys="codeblock-syntax">
+      <topicmeta>
+        <navtitle>Code language</navtitle>
+        <shortdesc>Used to define the programming language code in codeblocks.</shortdesc>
+      </topicmeta>
+      <subjectdef keys="syntax-bash"/>
+      <subjectdef keys="syntax-batch"/>
+    </subjectdef>
   </subjectdef>
 
   <subjectdef keys="codeph-outputclass">
@@ -95,11 +103,13 @@
     <attributedef name="outputclass"/>
     <subjectdef keyref="codeblock-dita-ot-extensions"/>
     <subjectdef keyref="codeblock-syntax-highlights"/>
+    <subjectdef keyref="codeblock-syntax"/>
   </enumerationdef>
   <enumerationdef>
     <elementdef name="codeph"/>
     <attributedef name="outputclass"/>
     <subjectdef keyref="codeph-outputclass"/>
+    <subjectdef keyref="codeblock-syntax"/>
   </enumerationdef>
   <enumerationdef>
     <elementdef name="ph"/>

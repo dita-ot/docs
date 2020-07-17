@@ -103,7 +103,7 @@
       <step>
         <cmd>Pass your project file to the <cmdname>dita</cmdname> command to build output.</cmd>
         <stepxmp>
-          <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>pdf.xml</varname></codeblock>
+          <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>pdf.xml</varname></codeblock>
         </stepxmp>
       </step>
       <step importance="optional">
@@ -112,14 +112,14 @@
         <stepxmp>
           <p>For example, to build output once with <xmlelement>draft</xmlelement> and
               <xmlelement>required-cleanup</xmlelement> content:</p>
-          <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>pdf.xml</varname> <parmname>--args.draft</parmname>=<option>yes</option></codeblock>
+          <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>pdf.xml</varname> <parmname>--args.draft</parmname>=<option>yes</option></codeblock>
         </stepxmp>
       </step>
       <step importance="optional">
         <cmd>If your project contains multiple deliverables, you can pass the <parmname>--deliverable</parmname> option
           to generate output for a single deliverable ID.</cmd>
         <stepxmp>
-          <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>all.xml</varname> <parmname>--deliverable</parmname>=<option>htmlhelp</option></codeblock>
+          <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>all.xml</varname> <parmname>--deliverable</parmname>=<option>htmlhelp</option></codeblock>
         </stepxmp>
       </step>
     </steps>

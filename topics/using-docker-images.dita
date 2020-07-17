@@ -55,11 +55,11 @@
           </choice>
           <choice platform="mac">On macOS, you can also install Docker Desktop via
             <xref keyref="homebrew"/>:
-            <codeblock outputclass="language-bash">$ <cmdname>brew</cmdname> cask install docker
+            <codeblock outputclass="syntax-bash">$ <cmdname>brew</cmdname> cask install docker
 <systemoutput>Downloading…</systemoutput></codeblock>
           </choice>
           <choice platform="linux">On Linux, install Docker Community Edition (CE) via your operating system’s package manager, for
-            example: <codeblock outputclass="language-bash">$ <cmdname>sudo</cmdname> apt-get install docker-ce</codeblock></choice>
+            example: <codeblock outputclass="syntax-bash">$ <cmdname>sudo</cmdname> apt-get install docker-ce</codeblock></choice>
         </choices>
       </step>
       <step>
@@ -78,7 +78,7 @@
             <cmd>On the command line, run the <cmdname>docker</cmdname> command to log in with your GitHub
               credentials.</cmd>
             <stepxmp>
-              <codeblock outputclass="language-bash"><cmdname>docker</cmdname> login docker.pkg.github.com -u <varname>USERNAME</varname> -p <varname>PASSWORD/TOKEN</varname></codeblock>
+              <codeblock outputclass="syntax-bash"><cmdname>docker</cmdname> login docker.pkg.github.com -u <varname>USERNAME</varname> -p <varname>PASSWORD/TOKEN</varname></codeblock>
             </stepxmp>
             <info>For more information, see
               <xref
@@ -91,7 +91,7 @@
         <cmd>To build output, map a host directory to a container volume and specify options for the
             <cmdname>dita</cmdname> command.</cmd>
         <stepxmp>
-          <codeblock outputclass="language-bash">$ <cmdname>docker</cmdname> run -it \
+          <codeblock outputclass="syntax-bash">$ <cmdname>docker</cmdname> run -it \
   -v /Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> \
   -i /src/input.ditamap \
   -o /src/out \

@@ -89,6 +89,14 @@
     <subjectdef keys="preprocess"/>
   </subjectdef>
 
+  <subjectdef keyref="filepath-outputclass">
+    <topicmeta>
+      <navtitle>Filepath</navtitle>
+      <shortdesc>Control multi-platform processing</shortdesc>
+    </topicmeta>
+    <subjectdef keys="preserve-separator"/>
+  </subjectdef>
+
   <subjectdef keys="title-outputclass">
     <topicmeta>
       <navtitle>Titles</navtitle>
@@ -110,6 +118,11 @@
     <attributedef name="outputclass"/>
     <subjectdef keyref="codeph-outputclass"/>
     <subjectdef keyref="codeblock-syntax"/>
+  </enumerationdef>
+  <enumerationdef>
+    <elementdef name="filepath"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keyref="filepath-outputclass"/>
   </enumerationdef>
   <enumerationdef>
     <elementdef name="ph"/>

@@ -99,7 +99,7 @@
           <p>This command sequence specifies the following options:
             <ul>
               <li><option>-v</option> mounts the <filepath>source</filepath> subfolder of your home directory and binds
-                it to the <filepath>/src</filepath> volume in the container</li>
+                it to the <filepath outputclass="preserve-separator">/src</filepath> volume in the container</li>
               <li><option>-i</option> specifies the <filepath>input.ditamap</filepath> file in your
                   <filepath>source</filepath> folder as the input map file</li>
               <li><option>-o</option> writes the output to <filepath>source/out</filepath></li>
@@ -119,7 +119,7 @@
         </stepxmp>
         <info>
           <note>The DITA-OT container image uses the <codeph>ENTRYPOINT</codeph> instruction to run the
-              <cmdname>dita</cmdname> command from the <filepath>/opt/app/bin/</filepath> directory of the container
+              <cmdname>dita</cmdname> command from the <filepath outputclass="preserve-separator">/opt/app/bin/</filepath> directory of the container
             automatically, so you there’s no need to include the <cmdname>dita</cmdname> command itself, only the
             arguments and options you need to publish your content.</note>
         </info>

@@ -41,25 +41,25 @@
           <li>To retrieve docker images from the GitHub Package Registry, you will also need a GitHub account.</li>
         </ul></p>
     </prereq>
-    <steps>
+    <steps outputclass="multi-platform">
       <step>
         <cmd>Install Docker for your operating system.</cmd>
         <choices>
-          <choice>
+          <choice platform="windows">
             <xref href="https://docs.docker.com/docker-for-windows/install/" scope="external" format="html">Install
               Docker Desktop on Windows</xref>
           </choice>
-          <choice>
+          <choice platform="mac">
             <xref href="https://docs.docker.com/docker-for-mac/install" scope="external" format="html">Install Docker
               Desktop on Mac</xref>
           </choice>
-          <choice>On macOS, you can also install Docker Desktop via
+          <choice platform="mac">On macOS, you can also install Docker Desktop via
             <xref keyref="homebrew"/>:
-            <codeblock>$ <cmdname>brew</cmdname> cask install docker
+            <codeblock outputclass="syntax-bash">$ <cmdname>brew</cmdname> cask install docker
 <systemoutput>Downloading…</systemoutput></codeblock>
           </choice>
-          <choice>On Linux, install Docker Community Edition (CE) via your operating system’s package manager, for
-            example: <codeblock>$ <cmdname>sudo</cmdname> apt-get install docker-ce</codeblock></choice>
+          <choice platform="linux">On Linux, install Docker Community Edition (CE) via your operating system’s package manager, for
+            example: <codeblock outputclass="syntax-bash">$ <cmdname>sudo</cmdname> apt-get install docker-ce</codeblock></choice>
         </choices>
       </step>
       <step>
@@ -78,7 +78,7 @@
             <cmd>On the command line, run the <cmdname>docker</cmdname> command to log in with your GitHub
               credentials.</cmd>
             <stepxmp>
-              <codeblock><cmdname>docker</cmdname> login docker.pkg.github.com -u <varname>USERNAME</varname> -p <varname>PASSWORD/TOKEN</varname></codeblock>
+              <codeblock outputclass="syntax-bash"><cmdname>docker</cmdname> login docker.pkg.github.com -u <varname>USERNAME</varname> -p <varname>PASSWORD/TOKEN</varname></codeblock>
             </stepxmp>
             <info>For more information, see
               <xref
@@ -91,7 +91,7 @@
         <cmd>To build output, map a host directory to a container volume and specify options for the
             <cmdname>dita</cmdname> command.</cmd>
         <stepxmp>
-          <codeblock>$ <cmdname>docker</cmdname> run -it \
+          <codeblock outputclass="syntax-bash">$ <cmdname>docker</cmdname> run -it \
   -v /Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> \
   -i /src/input.ditamap \
   -o /src/out \
@@ -99,7 +99,7 @@
           <p>This command sequence specifies the following options:
             <ul>
               <li><option>-v</option> mounts the <filepath>source</filepath> subfolder of your home directory and binds
-                it to the <filepath>/src</filepath> volume in the container</li>
+                it to the <filepath outputclass="preserve-separator">/src</filepath> volume in the container</li>
               <li><option>-i</option> specifies the <filepath>input.ditamap</filepath> file in your
                   <filepath>source</filepath> folder as the input map file</li>
               <li><option>-o</option> writes the output to <filepath>source/out</filepath></li>
@@ -107,17 +107,19 @@
               <li><option>-v</option> displays build progress messages with verbose logging</li>
             </ul>
           </p>
-          <p>On Windows, if your <filepath>Users</filepath> directory is on the <filepath>C:\</filepath> drive, use
+          <div platform="windows">
+            <p>On Windows, if your <filepath>Users</filepath> directory is on the <filepath>C:\</filepath> drive, use
               <filepath>/c/Users/…</filepath> to map the host directory:</p>
-          <codeblock>C:\Users\username> <cmdname>docker</cmdname> run -it \
-  -v /c/Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> \
-  -i /src/input.ditamap \
-  -o /src/out \
+            <codeblock>> C:\Users\username> <cmdname>docker</cmdname> run -it ^
+  -v /c/Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> ^
+  -i /src/input.ditamap ^
+  -o /src/out ^
   -f html5 -v</codeblock>
+          </div>
         </stepxmp>
         <info>
           <note>The DITA-OT container image uses the <codeph>ENTRYPOINT</codeph> instruction to run the
-              <cmdname>dita</cmdname> command from the <filepath>/opt/app/bin/</filepath> directory of the container
+              <cmdname>dita</cmdname> command from the <filepath outputclass="preserve-separator">/opt/app/bin/</filepath> directory of the container
             automatically, so you there’s no need to include the <cmdname>dita</cmdname> command itself, only the
             arguments and options you need to publish your content.</note>
         </info>

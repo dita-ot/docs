@@ -97,6 +97,14 @@
     <subjectdef keys="preserve-separator"/>
   </subjectdef>
 
+  <subjectdef keys="multi-platform-outputclass">
+    <topicmeta>
+      <navtitle>Multi-platform examples</navtitle>
+      <shortdesc>Enable multi-platform tabs in site output</shortdesc>
+    </topicmeta>
+    <subjectdef keys="multi-platform"/>
+  </subjectdef>
+
   <subjectdef keys="title-outputclass">
     <topicmeta>
       <navtitle>Titles</navtitle>
@@ -107,11 +115,17 @@
 
   <!-- Bind an attribute to a tree of related values -->
   <enumerationdef>
+    <elementdef name="choicetable"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keyref="multi-platform-outputclass"/>
+  </enumerationdef>
+  <enumerationdef>
     <elementdef name="codeblock"/>
     <attributedef name="outputclass"/>
     <subjectdef keyref="codeblock-dita-ot-extensions"/>
     <subjectdef keyref="codeblock-syntax-highlights"/>
     <subjectdef keyref="codeblock-syntax"/>
+    <subjectdef keyref="multi-platform-outputclass"/>
   </enumerationdef>
   <enumerationdef>
     <elementdef name="codeph"/>
@@ -133,6 +147,11 @@
     <elementdef name="simpletable"/>
     <attributedef name="outputclass"/>
     <subjectdef keyref="table-outputclass"/>
+  </enumerationdef>
+  <enumerationdef>
+    <elementdef name="steps"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keyref="multi-platform-outputclass"/>
   </enumerationdef>
   <enumerationdef>
     <elementdef name="table"/>

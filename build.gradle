@@ -14,6 +14,7 @@ String ditaHome = getPropertyOrDefault('ditaHome', projectDir.getParent())
 String ditaHomeSrc = getPropertyOrDefault('ditaHomeSrc', ditaHome)
 String configDir = "${ditaHomeSrc}/config"
 String ditavalFile = "${projectDir}/platform.ditaval"
+String pluginsDitavalFile = "${projectDir}/plugins.ditaval"
 Boolean toolkitBuild = file("${projectDir}/../lib/dost.jar").exists()
 String samplesDir = toolkitBuild ? "${ditaHome}/docsrc/samples" : "${projectDir}/samples"
 String outputDir = getPropertyOrDefault('outputDir', toolkitBuild ? "${ditaHome}/doc" : "${projectDir}/out")
@@ -67,13 +68,19 @@ task generatePlatformFilter {
     }
 }
 
+task generatePluginDitaval(type: SaxonXsltTask) {
+  input "${configDir}/plugins.xml"
+  output pluginsDitavalFile
+  stylesheet "${projectDir}/resources/plugins-ditaval.xsl"
+}
+
 task generatePropertiesTemplate(type: SaxonXsltTask) {
     input "${configDir}/plugins.xml"
     output "${samplesDir}/properties/template.properties"
     stylesheet "${projectDir}/resources/properties-file.xsl"
 }
 
-task autoGenerate(dependsOn: [messages, params, extensionPoints, generatePlatformFilter, generatePropertiesTemplate]) {
+task autoGenerate(dependsOn: [messages, params, extensionPoints, generatePlatformFilter, generatePluginDitaval, generatePropertiesTemplate]) {
     description 'Run tasks that generate content from resource files and the build environment.'
 }
 
@@ -92,6 +99,7 @@ task html(type: DitaOtTask, dependsOn: autoGenerate) {
     output outputDir
     transtype 'html5'
     filter "${projectDir}/resources/html.ditaval"
+    filter pluginsDitavalFile
 
     properties {
         property(file: "${projectDir}/samples/properties/docs-build-html5.properties")
@@ -103,6 +111,7 @@ task htmlhelp(type: DitaOtTask, dependsOn: autoGenerate) {
     output outputDir
     transtype 'htmlhelp'
     filter ditavalFile
+    filter pluginsDitavalFile
 
     properties {
         property(file: "${projectDir}/samples/properties/docs-build-htmlhelp.properties")
@@ -142,6 +151,7 @@ task site(type: DitaOtTask) {
     input file("${projectDir}/site.ditamap")
     output getPropertyOrDefault('outputDir', "${buildDir}/site")
     filter "${projectDir}/resources/site.ditaval"
+    // filter pluginsDitavalFile
 
     transtype 'org.dita-ot.html'
 

@@ -40,7 +40,7 @@
     <steps-unordered>
       <step>
         <cmd>To change the value for a specific session, from the command prompt, issue the following command:</cmd>
-        <choicetable>
+        <choicetable outputclass="multi-platform">
           <chhead>
             <choptionhd>Platform</choptionhd>
             <chdeschd>Command</chdeschd>

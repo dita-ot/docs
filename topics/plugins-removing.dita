@@ -20,7 +20,7 @@
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
         <info>
-          <codeblock><cmdname>dita uninstall</cmdname> <varname>&lt;plug-in-id&gt;</varname></codeblock>
+          <codeblock outputclass="syntax-bash"><cmdname>dita uninstall</cmdname> <varname>&lt;plug-in-id&gt;</varname></codeblock>
           <p>where:</p>
           <ul>
             <li conkeyref="conref-task/plug-in-id"/>

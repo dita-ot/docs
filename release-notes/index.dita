@@ -26,15 +26,44 @@
     </refbody>
   </reference>
 
-  <reference id="v3.5.2" outputclass="mark">
+  <reference id="v3.5.3" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released July 2, 2020</ph>
+      <!--<ph outputclass="small text-muted">(release date)</ph>-->
     </title>
 
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <ul>
+          <li id="3549">In DITA-OT 3.5, certain branch filtering scenarios prevented key references and content key
+            references from resolving correctly in map-first preprocessing, resulting in missing content in PDF output.
+            The Java code for the reader module has been updated to ensure that all filtered and renamed topics contain
+            the correct information.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3549" format="html" scope="external">#3549</xref>
+          </li>
+          <li id="3550">In HTML5 output, a new <xmlelement>div</xmlelement> wrapper element has been added to preserve
+            attributes like <xmlatt>outputclass</xmlatt> or <xmlatt>id</xmlatt> from the <xmlelement>steps</xmlelement>
+            element in single-step tasks. Earlier versions discarded this information when generating output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3550" format="html" scope="external">#3550</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.3+is%3Aclosed" format="html"
+            scope="external">3.5.3 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.5.2...3.5.3" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.5.2">
+    <title>DITA-OT 3.5.2 <ph outputclass="small text-muted">released July 2, 2020</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.5.2 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="3524">DITA-OT 3.5 introduced a regression in key scope processing that saved the effective map too
             early, before all topic references were updated. In certain cases, keys that were intended to point to

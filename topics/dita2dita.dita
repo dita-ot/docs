@@ -56,10 +56,11 @@
     <section id="generating-normalized-dita-output">
       <title>Generating normalized DITA output</title>
       <p>Run the <cmdname>dita</cmdname> command and set the value of the output <parmname>--format</parmname> option to
-          <option>dita</option>:</p><codeblock xml:space="preserve"><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>dita</option></codeblock>
+          <option>dita</option>:</p>
+      <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>dita</option></codeblock>
       <p>where:</p>
       <ul>
-        <li conkeyref="conref-task/novice-variables-1" conrefend="../resources/conref-task.dita#ID/novice-variables-2"/>
+        <li conkeyref="conref-task/novice-variables"/>
       </ul>
     </section>
   </body>

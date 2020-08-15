@@ -31,7 +31,10 @@
       <p>Building output with the <cmdname>dita</cmdname> command is often easier than using Ant. In particular, you can
         use <filepath>.properties</filepath> files to specify sets of DITA-OT parameters for each build.</p>
       <p>You can include the <cmdname>dita</cmdname> command in shell scripts to perform multiple builds.</p>
-      <note conkeyref="conref-task/dita-in-path"/>
+      <note type="tip">Add the absolute path for the <filepath>bin</filepath> folder of the DITA-OT installation
+        directory to the
+        <xref keyref="PATH"/> to run the <cmdname>dita</cmdname> command from any location on the file system without
+        typing the path.</note>
     </context>
     <steps>
       <step>

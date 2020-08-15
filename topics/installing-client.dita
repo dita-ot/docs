@@ -47,14 +47,16 @@
       <step>
         <cmd>Extract the contents of the package to the directory where you want to install DITA-OT.</cmd>
       </step>
-      <step importance="optional">
-        <cmd>Add the absolute path for the <filepath>bin</filepath> directory to the
+      <step>
+        <cmd>Add the absolute path for the <filepath>bin</filepath> folder of the DITA-OT installation directory to the
           <xref keyref="PATH"/>.</cmd>
         <stepresult>
-          <p>This defines the necessary environment variable to run the <cmdname>dita</cmdname> command from the command
-            line.</p>
-          <note type="tip">This step is recommended, as it allows the <cmdname>dita</cmdname> command to be run from any
-            location on the file system and makes it easier to transform DITA content from any folder.</note>
+          <note id="dita-in-path" type="tip">This defines the necessary environment variable that allows the
+              <cmdname>dita</cmdname> command to be run from any location on the file system without typing the path to
+            the command.
+            <indexterm><cmdname>dita</cmdname> command
+              <indexterm>PATH environment variable</indexterm></indexterm>
+          </note>
         </stepresult>
       </step>
     </steps>

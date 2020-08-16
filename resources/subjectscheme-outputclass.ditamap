@@ -66,6 +66,14 @@
       <subjectdef keys="language-xml"/>
       <subjectdef keys="language-yaml"/>
     </subjectdef>
+    <subjectdef keys="codeblock-syntax">
+      <topicmeta>
+        <navtitle>Code language</navtitle>
+        <shortdesc>Used to define the programming language code in codeblocks.</shortdesc>
+      </topicmeta>
+      <subjectdef keys="syntax-bash"/>
+      <subjectdef keys="syntax-batch"/>
+    </subjectdef>
   </subjectdef>
 
   <subjectdef keys="codeph-outputclass">
@@ -81,6 +89,22 @@
     <subjectdef keys="preprocess"/>
   </subjectdef>
 
+  <subjectdef keys="filepath-outputclass">
+    <topicmeta>
+      <navtitle>Filepath</navtitle>
+      <shortdesc>Control multi-platform processing</shortdesc>
+    </topicmeta>
+    <subjectdef keys="preserve-separator"/>
+  </subjectdef>
+
+  <subjectdef keys="multi-platform-outputclass">
+    <topicmeta>
+      <navtitle>Multi-platform examples</navtitle>
+      <shortdesc>Enable multi-platform tabs in site output</shortdesc>
+    </topicmeta>
+    <subjectdef keys="multi-platform"/>
+  </subjectdef>
+
   <subjectdef keys="title-outputclass">
     <topicmeta>
       <navtitle>Titles</navtitle>
@@ -91,15 +115,28 @@
 
   <!-- Bind an attribute to a tree of related values -->
   <enumerationdef>
+    <elementdef name="choicetable"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keyref="multi-platform-outputclass"/>
+  </enumerationdef>
+  <enumerationdef>
     <elementdef name="codeblock"/>
     <attributedef name="outputclass"/>
     <subjectdef keyref="codeblock-dita-ot-extensions"/>
     <subjectdef keyref="codeblock-syntax-highlights"/>
+    <subjectdef keyref="codeblock-syntax"/>
+    <subjectdef keyref="multi-platform-outputclass"/>
   </enumerationdef>
   <enumerationdef>
     <elementdef name="codeph"/>
     <attributedef name="outputclass"/>
     <subjectdef keyref="codeph-outputclass"/>
+    <subjectdef keyref="codeblock-syntax"/>
+  </enumerationdef>
+  <enumerationdef>
+    <elementdef name="filepath"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keyref="filepath-outputclass"/>
   </enumerationdef>
   <enumerationdef>
     <elementdef name="ph"/>
@@ -110,6 +147,11 @@
     <elementdef name="simpletable"/>
     <attributedef name="outputclass"/>
     <subjectdef keyref="table-outputclass"/>
+  </enumerationdef>
+  <enumerationdef>
+    <elementdef name="steps"/>
+    <attributedef name="outputclass"/>
+    <subjectdef keyref="multi-platform-outputclass"/>
   </enumerationdef>
   <enumerationdef>
     <elementdef name="table"/>

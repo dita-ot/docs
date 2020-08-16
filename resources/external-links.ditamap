@@ -477,6 +477,15 @@
         <linktext>JSON</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="html5-code-highlighting"
+      href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-code-element"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>HTML5-compliant syntax highlighting</linktext>
+      </topicmeta>
+    </keydef>
     <topicset
       id="lightweight-dita">
       <keydef
@@ -771,6 +780,15 @@
       format="html">
       <topicmeta>
         <linktext><varname>PATH</varname> environment variable</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="prismjs"
+      href="https://prismjs.com"
+      scope="external"
+      format="html">
+      <topicmeta>
+        <linktext>prism.js</linktext>
       </topicmeta>
     </keydef>
   </topicset>

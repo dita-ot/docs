@@ -32,14 +32,14 @@
     <steps>
       <step>
         <cmd>Update Homebrew to make sure the latest package formulas are available on your system:</cmd>
-        <stepxmp><codeblock>$ <cmdname>brew update</cmdname>
+        <stepxmp><codeblock outputclass="syntax-bash">$ <cmdname>brew update</cmdname>
 Already up-to-date.</codeblock></stepxmp>
         <stepresult>
           <p>Homebrew responds with a list of any new or updated formulæ.</p></stepresult>
       </step>
       <step importance="optional">
         <cmd>Check the version of DITA-OT that is available from Homebrew:</cmd>
-        <stepxmp><codeblock>$ <cmdname>brew info dita-ot</cmdname>
+        <stepxmp><codeblock outputclass="syntax-bash">$ <cmdname>brew info dita-ot</cmdname>
 <systemoutput>dita-ot: stable <keyword keyref="maintenance-version"/>
 DITA Open Toolkit is an implementation of the OASIS DITA specification
 https://www.dita-ot.org/
@@ -54,7 +54,7 @@ Required: java >= 1.8 ✔</systemoutput>
       </step>
       <step>
         <cmd>Install the <codeph>dita-ot</codeph> package:</cmd>
-        <stepxmp><codeblock>$ <cmdname>brew install dita-ot</cmdname>
+        <stepxmp><codeblock outputclass="syntax-bash">$ <cmdname>brew install dita-ot</cmdname>
 <systemoutput>Downloading…</systemoutput></codeblock></stepxmp>
         <stepresult>
           <p>Homebrew will automatically download the latest version of the toolkit, install it in a subfolder of the
@@ -63,14 +63,14 @@ Required: java >= 1.8 ✔</systemoutput>
       </step>
       <step importance="optional">
         <cmd>Verify the installation:</cmd>
-        <stepxmp><codeblock>$ <cmdname>which dita</cmdname>
+        <stepxmp><codeblock outputclass="syntax-bash">$ <cmdname>which dita</cmdname>
 <systemoutput>/usr/local/bin/dita</systemoutput></codeblock></stepxmp>
         <stepresult>
           <p>The response confirms that the system will use the Homebrew-installed version of DITA-OT.</p></stepresult>
       </step>
       <step importance="optional">
         <cmd>Check the DITA-OT version number:</cmd>
-        <stepxmp><codeblock>$ <cmdname>dita</cmdname> <parmname>--version</parmname>
+        <stepxmp><codeblock outputclass="syntax-bash">$ <cmdname>dita</cmdname> <parmname>--version</parmname>
 <systemoutput>DITA-OT version <keyword keyref="maintenance-version"/></systemoutput></codeblock></stepxmp>
         <stepresult>The DITA-OT version number appears on the console.</stepresult>
       </step>

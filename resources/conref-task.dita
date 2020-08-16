@@ -20,7 +20,7 @@
         <dlentry>
           <dt>Standard Path / Directory Names</dt>
           <dd><filepath id="ot-dir"><varname>dita-ot-dir</varname></filepath></dd>
-          <dd><filepath id="dita-cmd"><varname>dita-ot-dir</varname>/bin/<cmdname>dita</cmdname></filepath></dd>
+          <dd><filepath id="dita-cmd"><cmdname>dita</cmdname></filepath></dd>
           <dd><filepath id="docsrc-dir"><varname>dita-ot-dir</varname>/docsrc</filepath></dd>
           <dd><filepath id="samples-dir"><varname>dita-ot-dir</varname>/docsrc/samples</filepath></dd>
           <dd><filepath id="samples-absolute"
@@ -46,10 +46,12 @@
               </li>
               <li><ph id="plugin-integrate-all">If no <varname>ID</varname>, <varname>URL</varname>, or
                     <varname>file</varname> argument is provided, the installation process reloads the current set of
-                  plug-ins from the <filepath>plugins</filepath> directory. This approach can be used to add or remove
-                  multiple plug-ins at once, or any individual plug-ins you have already copied to (or removed from) the
-                    <filepath>plugins</filepath> directory. Any plug-ins added or removed in the process will be listed
-                  by their plug-in ID.</ph></li>
+                  plug-ins from the <filepath>plugins</filepath> directory (or any custom locations defined via the
+                    <parmname>pluginsdir</parmname> property in the <filepath>configuration.properties</filepath> file
+                  in the <filepath>config</filepath> directory). This approach can be used to add or remove multiple
+                  plug-ins at once, or any individual plug-ins you have already copied to (or removed from) the plug-in
+                  directories. Any plug-ins added or removed in the process will be listed by their plug-in
+                ID.</ph></li>
               <li><note id="plugin-remove-subdir" type="attention">The <cmdname>uninstall</cmdname> subcommand also
                   removes the corresponding plug-in directory from the <filepath>plugins</filepath> folder.
                   <indexterm>uninstalling</indexterm></note></li>
@@ -74,12 +76,10 @@
         </cmd>
       </step>
       <step>
-        <cmd id="open-terminal">Open a command prompt or terminal session, and then change to the directory where DITA
-          Open Toolkit is installed.</cmd>
+        <cmd id="open-terminal">Open a command prompt or terminal session.</cmd>
         <info>
           <ul id="basic-variables">
-            <li id="novice-variables-1"><filepath conref="#ID/ot-dir"/> is the DITA-OT installation directory.</li>
-            <li id="novice-variables-2"><varname>input-file</varname> is the DITA map or DITA file that you want to
+            <li id="novice-variables"><varname>input-file</varname> is the DITA map or DITA file that you want to
               process.</li>
             <!-- ↓ excerpt-variables ↓ -->
             <li id="novice-variables-last" audience="novice">
@@ -87,7 +87,7 @@
                 <varname>format</varname> is the output format (transformation type). This argument corresponds to the
                 common parameter <parmname>transtype</parmname>. Use the same values as for the
                   <parmname>transtype</parmname> build parameter, for example <option>html5</option> or
-                  <option>pdf</option>. </p>
+                  <option>pdf</option>.</p>
             </li>
             <!-- ↑ end-excerpt ↑ -->
             <li id="expert-variables-last" audience="expert">
@@ -124,13 +124,6 @@
           <p>If processing is successful, nothing is printed in the terminal window. The built output is written to the
             specified output directory (by default, in the <filepath>out</filepath> subdirectory of the current
             directory).</p>
-          <note id="dita-in-path" type="tip">Add the absolute path for <filepath conref="#ID/ot-dir"
-              /><filepath>/bin</filepath> to the
-            <xref keyref="PATH"/> to run the <cmdname>dita</cmdname> command from any location on the file system
-            without typing the path.
-            <indexterm><cmdname>dita</cmdname> command
-              <indexterm>PATH environment variable</indexterm></indexterm>
-          </note>
         </stepresult>
       </step>
       <step>

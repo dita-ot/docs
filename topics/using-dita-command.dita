@@ -27,22 +27,25 @@
     <steps>
       <step audience="novice">
         <cmd>Open a terminal window by typing the following in the search bar:</cmd>
-        <info>
-          <ul>
-            <li platform="linux mac">On Linux and macOS, type <userinput>Terminal</userinput>.</li>
-            <li platform="windows">On Windows, type <userinput>Command Prompt</userinput>.</li>
-          </ul>
-        </info>
+        <choicetable frame="topbot" relcolwidth="1* 3*" outputclass="multi-platform">
+          <chrow platform="linux mac">
+            <choption>Linux or macOS&#xA0;</choption>
+            <chdesc>Type <userinput>Terminal</userinput>.</chdesc>
+          </chrow>
+          <chrow platform="windows">
+            <choption>Windows</choption>
+            <chdesc>Type <userinput>Command Prompt</userinput>.</chdesc>
+          </chrow>
+        </choicetable>
       </step>
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
-        <info><codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname>format</varname> <ph audience="expert">[<varname>options</varname>]</ph></codeblock>
+        <info><codeblock outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname>format</varname> <ph audience="expert">[<varname>options</varname>]</ph></codeblock>
           <p>where:</p>
           <ul>
-            <li conkeyref="conref-task/novice-variables-1"
+            <li conkeyref="conref-task/novice-variables"
               conrefend="../resources/conref-task.dita#ID/novice-variables-last" audience="novice"/>
-            <li conkeyref="conref-task/novice-variables-1"
-              conrefend="../resources/conref-task.dita#ID/novice-variables-2" audience="expert"/>
+            <li conkeyref="conref-task/novice-variables" audience="expert"/>
             <li conkeyref="conref-task/expert-variables-last" audience="expert"/>
             <li conkeyref="conref-task/options" audience="expert"/>
           </ul></info>
@@ -50,8 +53,8 @@
       </step>
     </steps>
     <example audience="novice">
-      <p>Run from <filepath conkeyref="conref-task/samples-dir"/>, the following command generates
-        HTML5 output for the <filepath>sequence.ditamap</filepath> file:</p>
+      <p>Run from <filepath conkeyref="conref-task/samples-dir"/>, the following command generates HTML5 output for the
+          <filepath>sequence.ditamap</filepath> file:</p>
       <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
       <indexterm>DITA maps
         <indexterm><cmdname>dita</cmdname> command example</indexterm></indexterm>
@@ -59,7 +62,7 @@
     <example audience="expert">
       <p>For example, from <filepath conkeyref="conref-task/samples-dir"/>, run:</p>
       <p>
-        <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option> \
+        <codeblock outputclass="syntax-bash multi-platform"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option> \
      <parmname>--output</parmname>=<filepath>output/sequence</filepath> \
      <parmname>--args.input.dir</parmname>=<filepath conkeyref="conref-task/samples-absolute"/> \
      <parmname>--propertyfile</parmname>=<filepath>properties/sequence-html5.properties</filepath></codeblock>

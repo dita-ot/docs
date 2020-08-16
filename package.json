@@ -1,0 +1,30 @@
+{
+  "name": "docs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dita-ot/docs"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "fmt": "yarn format",
+    "format": "yarn prettier --write",
+    "prettier": "prettier \"**/*.{dita*,json,md,scss,xml,yaml,yml}\"",
+    "test": "yarn prettier --list-different"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "precise-commits"
+    }
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "0.11.0",
+    "husky": "4.2.5",
+    "precise-commits": "1.0.2",
+    "prettier": "2.0.5"
+  },
+  "precise-commits": {
+    "*.{dita,json,md,scss,yaml,yml}": [
+      "prettier --write"
+    ]
+  }
+}

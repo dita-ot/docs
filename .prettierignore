@@ -1,4 +1,6 @@
-# This file specifies intentionally untracked files that Git should ignore
+# This file specifies files that Prettier should not format
+
+# Mirror entries from .gitignore (don't format untracked files)
 
 ## Directories generated during builds
 build/
@@ -15,3 +17,9 @@ parameters/all-parameters.dita
 parameters/parameters-*.dita
 platform.ditaval
 samples/properties/template.properties
+
+# Prettier-specific ignores
+LICENSE*
+release-notes/changes.ditamap
+release-notes/history.dita
+release-notes/rel*.dita

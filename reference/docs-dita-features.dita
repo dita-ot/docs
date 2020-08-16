@@ -41,6 +41,13 @@
       <p>An “audience” subject scheme controls the values that are available for the <xmlatt>audience</xmlatt>
         attribute:</p>
       <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../resources/subjectscheme.ditamap#token=excerpt-audience,end-excerpt"/></codeblock></p>
+      <p>A dedicated subject scheme map defines several series of permissible values for <xmlatt>outputclass</xmlatt>
+        attributes, which apply styling to elements on the project website, enable
+        <xref keyref="extended-functionality">extended codeblock processing</xref> such as whitespace visualization and
+        line numbering in PDF output, or trigger
+        <xref keyref="html5-code-highlighting"/> via
+        <xref keyref="prismjs"/>.</p>
+      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../resources/subjectscheme.ditamap#token=excerpt-outputclass,excerpt-audience"/></codeblock></p>
     </section>
 
     <section>

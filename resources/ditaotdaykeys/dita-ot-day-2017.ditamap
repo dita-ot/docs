@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <!-- This file was generated from dita-ot-day-ditamap-keys.py. -->
+  <title>DITA-OT Day 2017</title>
+  <keydef keys="PanelWhatsnextforDITA-OT-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#DITA_2017_Panel" format="html" scope="external">
+    <topicmeta>
+      <linktext>Panel: What's next for DITA-OT?</linktext>
+      <shortdesc>No description.</shortdesc>
+      <author>Jarno Elovirta, Robert Anderson, Roger Fienhold Sheen, George Bina</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="WhatarewemissingWherewouldyouliketoseeusgo-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#What_are_we_missing" format="html" scope="external">
+    <topicmeta>
+      <linktext>What are we missing? Where would you like to see us go?</linktext>
+      <shortdesc>This is a feedback session where we want to hear from you! One problem with DITA-OT development is that we don't usually know what our customers like most, what they're using, and (almost as important) what they're not using. It's also likely that in some cases, we're not sure what to ask. In this session we'll discuss potential ways of getting this feedback, related issues such as data privacy, and ideally take suggestions from the audience for improved communication.</shortdesc>
+      <author>Jarno Elovirta and Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DCQL-theDitaCascadingQueryLanguage-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#DCQL" format="html" scope="external">
+    <topicmeta>
+      <linktext>DCQL - the Dita Cascading Query Language</linktext>
+      <shortdesc>Short overview of the DCQL attribute domain and accompanying code that allows pulling DITA content in from SQL or XML databases at publish time or runtime, and even keeping the data link alive on interactive media. </shortdesc>
+      <author>Jang Graat</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Locale-AwareSortingandTextHandlingintheOpenToolkit-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#Open_Toolkit" format="html" scope="external">
+    <topicmeta>
+      <linktext>Locale-Aware Sorting and Text Handling in the OpenToolkit</linktext>
+      <shortdesc>Presents the DITA Community i18n Plugin, which provides an integration with the ICU4J libraries. The i18n plugin provides support for locale-specific grouping and sorting, including dictionary-based Simplified Chinese, as well as facilities for doing locale-specific word and line breaking. </shortdesc>
+      <author>Eliot Kimber</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="AutomaticallyCreateTargetedReviewDocsforyourSMEs-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#Review_Docs" format="html" scope="external">
+    <topicmeta>
+      <linktext>Automatically Create Targeted Review Docs for yourSMEs</linktext>
+      <shortdesc>This presentation illustrates how an OT plugin can leverage CMS status information to create a PDF for review that includes only the content SMEs need to look at, or alternatively, include everything for full context but highlight the specific content that needs reviewing. This presentation demonstrates how to quickly create a PDF that includes material for a specific reviewer, and how to create a PDF intended for multiple reviewers with their names assigned to each topic.</shortdesc>
+      <author>Leigh White</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="BootstrappingDITA-CustomizingHTMLoutputformodernwebframeworks-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#Bootstrapping_DITA" format="html" scope="external">
+    <topicmeta>
+      <linktext>Bootstrapping DITA - Customizing HTML output for modern webframeworks</linktext>
+      <shortdesc> Web developers often use CSS frameworks, HTML5 boilerplate or component libraries like Bootstrap or Foundation to quickly build robust, responsive sites. With custom HTML plug-ins, DITA-OT can be extended to produce HTML5 output that makes use of these common templates so that generated documents can build on existing front-end solutions. This talk will outline the process, using the DITA-OT project website at dita-ot.org as an example.</shortdesc>
+      <author>Roger Fienhold Sheen</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="UsingCSStostylethePDFoutput-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#Using_CSS_to_style_the_PDF_output" format="html" scope="external">
+    <topicmeta>
+      <linktext>Using CSS to style the PDF output</linktext>
+      <shortdesc> Using CSS to produce PDF from DITA content is way easier than writing plugins and customizing XSLT stylesheet and will probably become in the future the most used way to produce a PDF. We will go over the existing solutions for producing PDF from DITA using CSS and maybe try to show a little bit of the CSS pagination standard: change the front matter and backmatter, change headers and footers, change some colors and styles, change the paper type and orientation.</shortdesc>
+      <author>Radu Coravu</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Markdownsupportinside-out-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#Markdown_support_inside-out" format="html" scope="external">
+    <topicmeta>
+      <linktext>Markdown support inside-out</linktext>
+      <shortdesc>Description of how Markdown support was added to DITA-OT to make Markdown a first-class file format for DITA content. Focus is on the implementation details and goals instead of Markdown author perspective.</shortdesc>
+      <author>Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITA-OTDocsDevelopments-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#DITA-OT_Docs_Development" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA-OT Docs Development(s)</linktext>
+      <shortdesc>This talk provides an overview of DITA-OT documentation usage metrics and highlights recent changes to the docs and ideas for future improvements. We’ll close with room for suggestions from the community and a call for contributions with information on the browser-based workflow for suggesting changes.</shortdesc>
+      <author>Roger Fienhold Sheen</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Managingalargescalebuildenvironmentwith50+customplugins-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#Managing_a_large_scale_build_environment" format="html" scope="external">
+    <topicmeta>
+      <linktext>Managing a large scale build environment with 50+ customplugins</linktext>
+      <shortdesc>Tips and tricks, mistakes made, and lessons learned: how IBM manages a single build environment for hundreds of authors with 50+ plugins -- including new doctypes, new transform types, and externally contributed plugins -- while keeping up with the latest DITA-OT releases. </shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="GeneratingSVGsyntaxdiagramswithpluginsforalloutputformats-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#Generating_SVG_syntax_diagrams" format="html" scope="external">
+    <topicmeta>
+      <linktext>Generating SVG syntax diagrams with plugins for all outputformats</linktext>
+      <shortdesc>DITA includes a lot of markup for syntax diagrams, but it's not particularly useful without a way to render the diagrams. Many years ago Deborah Pickett wrote a group of plugins to render those diagrams as SVG, but they were tied to the "html+" transform type and required an obsolete version of DITA-OT. Last year IBM extracted the SVG diagram feature from those plugins, brought it up to date, and made it usable by other formats (including PDF and EPUB). This session will give an overview of Deborah's original plugins, and explain how anybody can use the updated versions with the latest DITA-OT.</shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITAValidationandspell-checking-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#DITA_Validation_and_spell-checking" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA Validation and spell-checking</linktext>
+      <shortdesc> Jason will discuss and demonstrate how HERE Technologies extends DITA-OT using open-sourced plugins to continuously validate and build technical documentation. See: https://github.com/heremaps/dita-ot-plugins for more details. The discussion will cover the design and evolution of the plugins, interaction with end users and how you can integrate the plugins in your own workflows, as well as expected future developments. </shortdesc>
+      <author>Jason Fox</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="AccessibilityinDITA-OT-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#Accessibility_DITA-OT" format="html" scope="external">
+    <topicmeta>
+      <linktext>Accessibility in DITA-OT</linktext>
+      <shortdesc> Not only is accessible content often mandatory, it's also just a good idea -- assuming you want your content available to as many readers as possible. This session provides an overview of the accessibility features in output generated by the DITA-OT. While many features are automated thanks to the semantic nature of DITA elements, others rely on you to make sure your content includes everything it needs to. While going over these features, we will explain how DITA-OT handles your content, while also giving tips for how to ensure your content reaches users on all sorts of devices. </shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Weshallcallitpreprocess2-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#preprocess_2" format="html" scope="external">
+    <topicmeta>
+      <linktext>We shall call it preprocess2</linktext>
+      <shortdesc>Overview of preprocess2, the replacement module for the original preprocessing routines. This session explains the new approach, why we developed it, and why should you care.</shortdesc>
+      <author>Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITA-OT-2017" href="https://www.oxygenxml.com/events/2017/dita-ot_day.html#DITA_Announcement" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA-OT</linktext>
+      <shortdesc>A quick announcement about the DITA-OT project.</shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+</map>

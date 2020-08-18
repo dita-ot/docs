@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <!-- This file was generated from dita-ot-day-ditamap-keys.py. -->
+  <title>DITA-OT Day 2018</title>
+  <keydef keys="WhatsnextforDITA-OT-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA_2018_Panel" format="html" scope="external">
+    <topicmeta>
+      <linktext>What's next for DITA-OT?</linktext>
+      <shortdesc>No description.</shortdesc>
+      <author>Robert Anderson, Roger Sheen, Jarno Elovirta, George Bina</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Whoareyoucallingstale‽-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#who_are_you_calling" format="html" scope="external">
+    <topicmeta>
+      <linktext>Who are you calling “stale” ‽</linktext>
+      <shortdesc>The DITA-OT issue tracker contains a backlog of open issues, many of which have not been updated in several years, and may no longer apply to recent versions. This session will discuss options for removing outdated issues from the backlog to help focus resources on issues that are most important to users.</shortdesc>
+      <author>Robert Anderson, Roger Sheen, Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="TwistedXSLTTricksMakingColumnSwitchingWorkforFOP-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#twisted_xslt_tricks" format="html" scope="external">
+    <topicmeta>
+      <linktext>Twisted XSLT Tricks: Making Column Switching Work for FOP</linktext>
+      <shortdesc>Switching from single column to two-column layout is almost impossible using the PDF2 transform and FOP because FOP enforces XSL-FO's rule that only direct children of fo:flow can change the column spanning. Likewise, splitting page sequences to change from portrait to landscape is hard to do with the PDF2 transform because it provides no easy way to change the page sequence within the context of a topic's body (e.g., to put rotated tables on landscape pages). This talk presents a general XSLT technique for splitting a single tree into multiple trees, enabling changing column spanning and splitting page sequences with a minimum of rework of normal templates.</shortdesc>
+      <author>Eliot Kimber</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITA-OTandDocOps-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA-OT_and_docOps" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA-OT and DocOps</linktext>
+      <shortdesc>Developing documentation concurrent with the software using DITA-OT in VSTS environment at Shell.</shortdesc>
+      <author>Quick van Rijt</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Validationmeetspublication-Applyyourstyleguiderulesduringthepublication-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#apply_your_style_guide_rules_during_the_publication" format="html" scope="external">
+    <topicmeta>
+      <linktext>Validation meets publication - Apply your style guide rules during thepublication</linktext>
+      <shortdesc>DITA-OT warns about technical issues in the input. Why not warn about style guide violations? This talk shows how Schematron can be used to check topics and maps after the preprocessing phase and stop the build if content does not pass the defined quality gates.</shortdesc>
+      <author>Stefan Eike</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="AfastpathforbuildingdataassetsfromDITA-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#fast_path_for_building_data_assets_from_DITA" format="html" scope="external">
+    <topicmeta>
+      <linktext>A fast path for building data assets from DITA</linktext>
+      <shortdesc>Structured content can save the day when product complexity gets in the way. Let's see how DITA content fits into an external database using the org.dita.normalize transformation as base. DITA-OT can be packaged in different ways to prepare dev/test environment setups for IT and developer contributors.</shortdesc>
+      <author>François Violette</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Overviewofdita-semiaopen-sourcepluginsforDITA-OT-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#overview_of_dita-semia_open-source_plugins_for_DITA-OT" format="html" scope="external">
+    <topicmeta>
+      <linktext>Overview of dita-semia open-source plugins for DITA-OT</linktext>
+      <shortdesc>I have created some DITA-OT plugins that are available as open-source (github.com/dita-semia). And I'd like to give an overview of them: postprocessing: Zip the output or set the pdf filename dynamically depending on some content.topic-num: Add numbers to topics, figures and tables (especially for HTML output).image-convert: Convert images for compatibility (e.g. SVG to PNG for HTML output).pdf: Yet another pdf layout working with FOP.diff: Compare two versions of a document and highlight the differences.resolver: Resolve custom attributes (usually set as defaults be the schema) to standard DITA content, e.g. by applying an XSLT transformation to some content, add static text content or resolve identifiers to cross references.</shortdesc>
+      <author>Patrik Stellmann</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="UnitTestingDITA-OTPluginExtensions-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#unit_testing_DITA-OT_plugin_extensions" format="html" scope="external">
+    <topicmeta>
+      <linktext>Unit Testing DITA-OT Plugin Extensions</linktext>
+      <shortdesc>I have created a Unit Testing Framework for DITA-OT Plugins https://github.com/jason-fox/fox.jason.unit-test - This is a DITA-OT Plugin to test DITA-OT Plugins. The complete functionality would include HTML and command line test results, ANT script profiling, XSL template code coverage, e automated CI testing - integration with Travis, and how to write maintainable tests swiftly and painlessly.</shortdesc>
+      <author>Jason Fox</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="StepbystepimplementationofaDITAOpenToolkitplugin-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#step_by_step_implementation_of_a_DITA" format="html" scope="external">
+    <topicmeta>
+      <linktext>Step by step implementation of a DITA Open Toolkit plugin</linktext>
+      <shortdesc>There are lots of DITA-OT extension points, maybe list some of the most common ones, then based on 3-4 use cases implement small plugins which use those extension points. For example: a plugin which changes the default label value for "Note"a plugin which adds an XHTML customization matching a DITA element with a certain @status attribute value and producing a certain HTML spana plugin which customizes the PDF processing in some waya plugin which adds a specialization DTD with an XML catalog</shortdesc>
+      <author>Radu Coravu</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="MetaDITAsamplestestingaroundtheedgecases-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#meta_DITA_samples" format="html" scope="external">
+    <topicmeta>
+      <linktext>Meta DITA samples: testing around the edge cases</linktext>
+      <shortdesc>Over the past few years I've developed a number of test cases that are exhaustive but on very specific features. The sample files are not well suited for automated testing, but can often be used to manually test custom plugins. In this lightning talk, I'll describe the samples that exist today, and also solicit feedback on other similar test sets that might prove useful.</shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Plug-ininstallationmadeeasier-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#plug-in_installation_made_easier" format="html" scope="external">
+    <topicmeta>
+      <linktext>Plug-in installation made easier</linktext>
+      <shortdesc>Description and a demo of the new DITA-OT plug-in repository.</shortdesc>
+      <author>Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="InstallingDITA-OTonmacOSviaHomebrew-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#installing_DITA-OT_on_macOS_via_homebrew" format="html" scope="external">
+    <topicmeta>
+      <linktext>Installing DITA-OT on macOS via Homebrew</linktext>
+      <shortdesc>A new alternative installation method can now be used to install DITA-OT on macOS via the platform's most popular open-source package manager. This talk explains the benefits of this approach, highlights key differences to the default installation via .zip archive and demonstrates the new installation process.</shortdesc>
+      <author>Roger Sheen</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="ComparisonbetweentheDocBookandDITApublishingsystems-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#comparison_between_the_DocBook_and_DITA" format="html" scope="external">
+    <topicmeta>
+      <linktext>Comparison between the DocBook and DITA publishing systems</linktext>
+      <shortdesc>Let's compare side by side look at how the Docbook and DITA publishing systems work. This could give us some ideas about future directions for DITA publishing. The presentation could be structured like this: Main target audiences for Docbook and DITA vocabularies. Maybe initially discuss a little the Docbook and DITA vocabularies, the ways in which Docbook handled new versions, how DITA tried to have all versions backward compatible, the choice not to have a namespace for DITA elements. Show how Docbook solved the problem with supporting both Docbook 4 and Docbook 5 standards. The Docbook @version attribute.Pure XSLT-based processing versus the melange of ANT + Java + XSLT which is the DITA Open Toolkit. How parameters can be discovered and set. Also discuss how many parameters are available by default to be set for Docbook. Maybe ask people if they want more params available by default for DITA processing. Show some examples with how a simple XSLT customization for the HTML output can be accomplished in both systems. Also discuss disadvantages of pure XSLT based publishing approaches, impossibility of copying resources (images for example) to an output folder for example.Adding new elements/attributes to Docbook and DITA. If you change Docbook in any way, it can no longer be named DocbookUser's guides. A very decent user's manual structured a bit like a tutorial binding together the Docbook specs, extending the vocabulary + publishing part:. The DITA-OT documentation only contains documentation about the publishing part.Profiling (filtering content). For example Docbook allows you to filter content based on any attribute (even on xml:lang).Discuss new ideas to be implemented in DITA, after they were originally used in the DocBook publishing system: Index pages creating when using Apache FOPThe Docbook WebHelp project (Javascript-based search).Syntax highlight in code blocksOlinks (linking between publications)You can add xlink:href on any Docbook element converting it to a link.Custom Processing instructions which can change the publishing.</shortdesc>
+      <author>Radu Coravu</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITAGradleandGitasmallteamapproachtopublishing-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA_gradle_and_git" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA, Gradle and Git: a small team approach to publishing</linktext>
+      <shortdesc>At L-Acoustics we adopted an open source toolchain to automate our publishing process. With the CI capabilities of GitLab and the dita-ot-gradle and saxon-gradle plugins developed by Eero Helenius, we have created a comprehensive publishing solution suited to the needs of our small teams. One important feature of our system is the handling of DITA-OT plugin dependencies. This architecture has facilitated the use of DITA by our SMEs and marketing writers since from their point of view they just have to produce content and the output "magically" appears.</shortdesc>
+      <author>Lionel Moizeau</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITA-OTWebsiteSurveyResults-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA_website_survey_results" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA-OT Website Survey Results</linktext>
+      <shortdesc>This session presents the results of a survey of www.dita-ot.org website users conducted in summer 2018. Topic areas included user happiness with the current website, how often and how the site is used, in what formats users desire the DITA-OT documentation, etc.</shortdesc>
+      <author>Lief Erickson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="HighlightsinrecentDITA-OTversions-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#highlights_in_recent_DITA" format="html" scope="external">
+    <topicmeta>
+      <linktext>Highlights in recent DITA-OT versions</linktext>
+      <shortdesc>The core developers present an overview of the changes in DITA Open Toolkit within the past year and highlight new features that may be of particular interest to users.</shortdesc>
+      <author>Robert Anderson/Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+</map>

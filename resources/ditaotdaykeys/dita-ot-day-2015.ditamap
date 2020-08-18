@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <!-- This file was generated from dita-ot-day-ditamap-keys.py. -->
+  <title>DITA-OT Day 2015</title>
+  <keydef keys="DITA-OTdocumentationupdate-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#DITA_OT_Documentation_Update" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA-OT documentation update</linktext>
+      <shortdesc> This talk provides an overview of recent changes to the DITA-OT documentation, points out open issues, highlights ideas for future improvements, and closes with room for suggestions from the community and a call for contributions.</shortdesc>
+      <author>Roger Fienhold Sheen</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="MultipleOTwithGit-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#Multiple_OT_With_Git" format="html" scope="external">
+    <topicmeta>
+      <linktext>Multiple OT with Git</linktext>
+      <shortdesc> If you need to maintain multiple configurations of the OT for day-to-day or minute-by-minute changes to the OT for different projects, clients, etc., you can use git to do it. There are some tricks and gotchas but it does work.</shortdesc>
+      <author>Eliot Kimber</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="SellingDITAwithdemodata-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#Selling_DITA_With_Demo_Data" format="html" scope="external">
+    <topicmeta>
+      <linktext>Selling DITA with demo data</linktext>
+      <shortdesc> Over a couple of years, the Gnostyx team has been preparing and refining a DITA Demonstration Data Set. It's purpose is to provide members of the community a functionally realistic data set with which to demonstrate DITA based applications. It was made available publicly in early 2015 and has since been adopted and used by several members of the DITA Community. This talk is really a demonstration of some of the business use cases that we use to convince business stakeholders that DITA demands serious attention. People will learn a little about the DITA Demonstration Data Set and some of the sales pitches that they might want to use, and to demonstrate, in the future.</shortdesc>
+      <author>Joe Gollner</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="PublishingwithDITA-OT-theCMSperspective-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#Publishing_With_DITA_OT_The_CMS_Perspective" format="html" scope="external">
+    <topicmeta>
+      <linktext>Publishing with DITA-OT - the CMS perspective</linktext>
+      <shortdesc> Publishing from a CMS imposes specific requirements on the DITA-OT. We will review these requirements while showing how IXIASOFT integrated the DITA-OT into their Output Generator.</shortdesc>
+      <author>Jean-François Ameye</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="ParametersannotationsforDITA-OTplugins-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#Parameters_Annotations_For_DITA_OT_Plugins" format="html" scope="external">
+    <topicmeta>
+      <linktext>Parameters annotations for DITA-OT plugins</linktext>
+      <shortdesc> Each DITA-OT plugin provides a set of parameters that can be configured to customize the publishing process. As these need to be made available to users it is important to have an automated way of discovering these parameters and additional information about them - what they represent, what values are possible, etc. DITA-OT makes this possible by allowing parameters to be annotated.</shortdesc>
+      <author>Radu Coravu</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="HowtorunDITA-OT-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#How_To_Run_DITA_OT" format="html" scope="external">
+    <topicmeta>
+      <linktext>How to run DITA-OT</linktext>
+      <shortdesc> There are multiples ways to run DITA-OT and some of them are good, some are bad, and some are just plain ugly. This presentation goes through different interfaces to DITA-OT and when to use them.</shortdesc>
+      <author>Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="CreatingDITA-OTconstraintspecialisationplugins-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#Creating_DITA_OT_constraint_specialisation_plugins" format="html" scope="external">
+    <topicmeta>
+      <linktext>Creating DITA-OT constraint/specialisation plugins</linktext>
+      <shortdesc>This presentation will address the problem of creating DITA constraints/specialisations to customize DITA to meet your specific needs. We will identify a problem, create a Relax NG constraint/specialization to solve it and convert that to DTD. All these will be packaged as a DITA-OT plugin.</shortdesc>
+      <author>Radu Coravu</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITACommunity-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#DITA_Community" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA Community</linktext>
+      <shortdesc> The DITA Community GitHub organization serves as a general place for people to contribute DITA Open Toolkit plugins and other DITA-related tools and utilities that are not maintained by DITA-OT or other projects. This presentation provides an overview of the DITA Community organization, what's there today, and how you can contribute. </shortdesc>
+      <author>Eliot Kimber</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="PDF5-MLPlug-in-featuresforpracticaluse-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#PDF5-ML_Plug-in" format="html" scope="external">
+    <topicmeta>
+      <linktext>PDF5-ML Plug-in - features for practical use</linktext>
+      <shortdesc>Demonstrates the following features of PDF5-ML Multiple language in one documentConditional variable &amp; style definitionFree format cover pages</shortdesc>
+      <author>Toshihiko Makita</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITA-OTreloaded-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#DITA-OT_reloaded" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA-OT ... reloaded!</linktext>
+      <shortdesc>Professional writing can require several features that the present DITA-OT (2.1.1) has not implemented. There are several expensive plugins available as commercial products to improve that situation. Helmut Scherzer presents a match to highly professional DITA-OT extensions which contains a list of more than 20 new powerful features to PDF2 – offered to become part of the public DITA-OT.</shortdesc>
+      <author>Helmut Scherzer</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITA-OTInsidetheblackbox-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#Inside_the_black_box" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA-OT: Inside the black box</linktext>
+      <shortdesc>When creating a product, a good design is critical; in many cases, this rule applies not only to the outside, but also to the parts inside that normal users will not see. Unfortunately, to those who looked, the inner workings of the early toolkit seemed to have almost no design at all. In this session, we'll talk about how Jarno has cleaned up the hidden inner workings of the toolkit -- and how everyone benefits from these changes to things they might never see.</shortdesc>
+      <author>Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="PDFgenerationwithCSS-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#PDF_Generation_With_CSS" format="html" scope="external">
+    <topicmeta>
+      <linktext>PDF generation with CSS</linktext>
+      <shortdesc>Presenting new updates made to the DITA-OT plugin which can now be used to generate PDF from DITA and CSS using either Prince XML or Antenna House. </shortdesc>
+      <author>Radu Coravu</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Markdownplugin-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#Markdown_plugin" format="html" scope="external">
+    <topicmeta>
+      <linktext>Markdown plugin</linktext>
+      <shortdesc>This talk introduces Jarno Elovirta’s DITA-OT Markdown plugins, which extend the DITA Open Toolkit so you can use Markdown files directly in topic references and export existing DITA content in Markdown format for use in other publishing systems. This makes it easier for people to contribute content to DITA publications, enables mobile authoring workflows, facilitates review processes with less technical audiences and expands the range of publishing options to workflows based on Markdown.</shortdesc>
+      <author>Roger Fienhold Sheen</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Whystartcmdisnotyourfriend-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#Why_startcmd_is_not_your_friend" format="html" scope="external">
+    <topicmeta>
+      <linktext>Why "startcmd" is not your friend</linktext>
+      <shortdesc>The startcmd batch script made it possible for many to easily use DITA-OT, but whether you realize it or not, it's no longer really necessary. I'll briefly explain where it came from, why it was always more of a kludge than a Feature, and how better DITA-OT designs mean it's no longer needed.</shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITA-OTPatternsandAnti-patterns-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#DITA-OT_Patterns_and_Anti-patterns" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA-OT Patterns and Anti-patterns</linktext>
+      <shortdesc>What might often seem like a good way to use or extend DITA-OT, but likely result in trouble later? What is the alternative? This session will cover known traps that organizations have fallen into when using DITA-OT, and suggest how to avoid those issues or (perhaps with difficulty) recover from the mistakes. The session will leave time for discussion about other traps that audience members may have fallen into.</shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="WhatsnewinDITA-OT-2015" href="https://www.oxygenxml.com/events/2015/dita-ot_day.html#Whats_new_in_DITA-OT" format="html" scope="external">
+    <topicmeta>
+      <linktext>What's new in DITA-OT</linktext>
+      <shortdesc>What's new in DITA-OT? We'll cover major changes in both 2.1 and 2.2, with a focus on support for new DITA 1.3 features.</shortdesc>
+      <author>Kristen James Eberlein</author>
+    </topicmeta>
+  </keydef>
+</map>

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <!-- This file was generated from dita-ot-day-ditamap-keys.py. -->
+  <title>DITA-OT Day 2016</title>
+  <keydef keys="Panel-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#DITA_2016_Panel_Quo_Vadis" format="html" scope="external">
+    <topicmeta>
+      <linktext>Panel</linktext>
+      <shortdesc>No description.</shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="LongtermDITA-OTplanning-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#Long_term_DITA-OT_planning" format="html" scope="external">
+    <topicmeta>
+      <linktext>Long term DITA-OT planning</linktext>
+      <shortdesc>Kris and Robert will discuss the long term future of DITA-OT: what can we all do to ensure the continued health of this critical piece of the overall DITA infrastructure? </shortdesc>
+      <author>Kristen Eberlein</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Theuse-casesforaDITAtoresolvedDITAtransformation-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#DITA_to_resolved_DITA_transformation" format="html" scope="external">
+    <topicmeta>
+      <linktext>The use-cases for a "DITA to resolved DITA"transformation</linktext>
+      <shortdesc>A DITA to simplified/resolved DITA transformation provides a solution for some of the possible issues with translating DITA. There are also other advantages, especially in connection to the increased dynamics in DITA-OT development. Join me to discover how a DITA to resolved DITA can help you! </shortdesc>
+      <author>George Bina</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITAterminologymanagementandchecking-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#DITA_terminology_management_checking" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA terminology management and checking</linktext>
+      <shortdesc>I'd like to present how we manage and check terminology using the org.doctales.terminology plugin.</shortdesc>
+      <author>Stefan Eike</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="CodeblockQualityAssuranceinsteadofErrata-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#Codeblock_Quality_Assurance_instead_of_Errata" format="html" scope="external">
+    <topicmeta>
+      <linktext>Codeblock Quality Assurance instead of Errata</linktext>
+      <shortdesc>Fixing errors during authoring stage is cheap in both technical communication and software development; fixing errors after publishing is expensive. In this talk I demonstrate a QA method for software documentation in DITA.</shortdesc>
+      <author>Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="TestinginDITA-OT-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#Testing_in_DITA-OT" format="html" scope="external">
+    <topicmeta>
+      <linktext>Testing in DITA-OT</linktext>
+      <shortdesc>Jarno and Robert will discuss how the DITA-OT is tested, get feedback and talk about where we want to go.</shortdesc>
+      <author>Jarno Elovirta, Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="LargeScaleProductionUsingProjectMaps-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#Large_Scale_Production_Using_Project_Maps" format="html" scope="external">
+    <topicmeta>
+      <linktext>Large Scale Production Using Project Maps</linktext>
+      <shortdesc>This presentation will show how SAP has integrated the DITA Open Toolkit to create a large scale production infrastructure able to create daily builds producing 50 000+ outputs for all SAP Product documentation. This covers the end-to-end process from getting the DITA content from the CMS to publishing the produced outputs to the appropriate delivery channels, using so-called project maps as a key ingredient. Advanced features like peer linking across outputs will be shown, as part of the overall implementation. </shortdesc>
+      <author>Youssef BENNANI</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="UsingtheOpenToolkitThroughDockerContainers-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#Using_the_Open_Toolkit_Through_Docker_Containers" format="html" scope="external">
+    <topicmeta>
+      <linktext>Using the Open Toolkit Through Docker Containers</linktext>
+      <shortdesc>Docker containers make it easy to package and use different configurations of software components. Docker containers can also provide the dependencies needed to run a given piece of software. For the Open Toolkit, you can use Docker containers to easily provision and run the Open Toolkit without worrying about the local Java configuration or other dependencies. Docker also makes it easy to set up custom configurations of the Open Toolkit or use different versions. This presentation shows how to use Docker-based Open Toolkit packages.</shortdesc>
+      <author>Eliot Kimber</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="GotchaUpgradingPDFpluginstoDITA-OT2x-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#Upgrading_PDF_plugins_to_DITA_OT_2.x" format="html" scope="external">
+    <topicmeta>
+      <linktext>Gotcha! Upgrading PDF plugins to DITA-OT 2.x</linktext>
+      <shortdesc>There are some significant changes to DITA-OT 2.x that can make upgrading PDF plugins written for earlier versions of the OT a challenge. Having just upgraded several plugins, and released a new edition of "DITA For Print," Leigh will share a few of the major things to look out for.</shortdesc>
+      <author>Leigh White</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DocumentationDevelopments-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#How_the_docs_are_done" format="html" scope="external">
+    <topicmeta>
+      <linktext>Documentation Development(s)</linktext>
+      <shortdesc>This talk provides an overview of recent changes to the DITA-OT documentation, points out open issues, highlights ideas for future improvements, and closes with room for suggestions from the community, a call for contributions and a brief demonstration of the pull request approval process that is applied when people submit changes to the development documentation via the /Edit this Page/ links. </shortdesc>
+      <author>Roger Fienhold Sheen</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="SimplifiedcontributionprocessfortheDITA-OTdocumentation-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#Simplified_contribution_process_for_the_DITA-OT_documentation" format="html" scope="external">
+    <topicmeta>
+      <linktext>Simplified contribution process for the DITA-OTdocumentation</linktext>
+      <shortdesc>Now it is very easy to contribute to the DITA-OT documentation - just read the developer docs and use the "Edit" button to open the source topic from GitHub for editing. Save will automate all the contribution process, sending a pull request with your proposed changes.</shortdesc>
+      <author>George Bina</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="DITA-OTinternalsandfuturedevelopmentplans-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#DITA-OT_internals_and_future_development_plans" format="html" scope="external">
+    <topicmeta>
+      <linktext>DITA-OT internals and future development plans</linktext>
+      <shortdesc>The internals of DITA-OT are in perpetual motion and most of these changes are not visible to end users. In this talk we go through changes in the black box and describe future development plans.</shortdesc>
+      <author>Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="Sevenopen-sourceDITA-OTpluginsdevelopedbyOxygen-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#Seven_Open-Source_DITA-OT_plugins" format="html" scope="external">
+    <topicmeta>
+      <linktext>Seven open-source DITA-OT plugins developed by Oxygen</linktext>
+      <shortdesc> This session shows 7 DITA Open Toolkit open source plugins that the developers of Oxygen XML have created or updated this year including: DITA + CSS = PDF - This pre-existing plugin now was updated to add support for showing Oxygen track changes and comments. DITA Classic PDF Review - This plugin adds support for showing Oxygen track changes and comments in the classic PDF output. Media Support Plugin - Plugin which adds the possibility to embed videos (including YouTube videos) and audio resources in DITA topics and publish to HTML and PDF. DITA Merged - Plugin which produces a single merged XML file from the entire DITA content. DITA Relax NG Defaults - Plugin which adds support to a DITA-OT distribution to process Relax NG-based topics and maps. </shortdesc>
+      <author>Radu Coravu</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="InternationalizationandtheDITA-OTWhodoeswhat-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#DITA-OT_Who_does_what" format="html" scope="external">
+    <topicmeta>
+      <linktext>Internationalization and the DITA-OT: Who does what?</linktext>
+      <shortdesc>While tools can be used to simplify many things, localization can still be scary. In this session, we'll go over how the toolkit is set up to handle publishing in multiple languages: what comes out of the box? What should you expect to do on your own? And how has this changed over the last few releases? Also: stories of panic from the past!</shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef keys="NewDITA-OT24ReleaseAnnouncement-2016" href="https://www.oxygenxml.com/events/2016/dita-ot_day.html#New_DITA-OT_2.4_Release_Announcement" format="html" scope="external">
+    <topicmeta>
+      <linktext>New DITA-OT 2.4 Release Announcement</linktext>
+      <shortdesc>No description.</shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+</map>

@@ -23,7 +23,7 @@
     "prettier": "2.0.5"
   },
   "precise-commits": {
-    "*.{dita,json,md,scss,yaml,yml}": [
+    "*.{dita*,json,md,scss,xml,yaml,yml}": [
       "prettier --write"
     ]
   }

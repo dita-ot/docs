@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>DITA-OT Day 2019</title>
+  <topicref keyref="dita-ot-day-videos-intro-2019" locktitle="yes">
+    <topicmeta>
+      <navtitle>2019 Brussels</navtitle>
+      <linktext>Brussels 2019</linktext>
+    </topicmeta>
+    <ditavalref href="../resources/ditaotdaykeys/brussels19.ditaval"/> <!-- This ditaval prevents duplicate titles in
+      TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <topicref keyref="DITA-OTShopTalk-2019" toc="no"/>
+    <topicref keyref="EasyaspiePDFcustomizationsusingCSS-2019" toc="no"/>
+    <topicref keyref="GeneratingmetricsfromyourDITAproject-2019" toc="no"/>
+    <topicref keyref="CaseStudyofTaxonomyandSearchforDITA-OT-2019" toc="no"/>
+    <topicref keyref="DocumentationDevelopments-2019" toc="no"/>
+    <topicref keyref="TheArtofdoingnothing-2019" toc="no"/>
+    <topicref keyref="AllthecoolkidsareusingtheCloud-2019" toc="no"/>
+    <topicref keyref="AllthecoolkidsareusingJavaScript-2019" toc="no"/>
+    <topicref keyref="EditingDITAOpenToolkitProjectfiles-2019" toc="no"/>
+    <topicref keyref="OnefiletorulethemallDITAProject-2019" toc="no"/>
+    <topicref keyref="AH-WMLDITA-to-WordPlug-in-2019" toc="no"/>
+    <topicref keyref="VarioususefulOpensourcepluginstoenhanceDITApublishing-2019" toc="no"/>
+    <topicref keyref="Runningonsomeoneelsescomputer-2019" toc="no"/>
+    <topicref keyref="Trimyourtoolkitwiththisoneweirdtrick-2019" toc="no"/>
+    <topicref keyref="NewsandAnnouncements-2019" toc="no"/>
+  </topicref>
+</map>

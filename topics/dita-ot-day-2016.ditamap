@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>DITA-OT Day 2016</title>
+  <topicref keyref="dita-ot-day-videos-intro-2016" locktitle="yes">
+    <topicmeta>
+      <navtitle>2016 Munich</navtitle>
+      <linktext>Munich 2016</linktext>
+    </topicmeta>
+    <ditavalref href="../resources/ditaotdaykeys/munich16.ditaval"/><!-- This ditaval prevents duplicate titles in
+      TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <topicref keyref="Panel-2016" toc="no"/>
+    <topicref keyref="LongtermDITA-OTplanning-2016" toc="no"/>
+    <topicref keyref="Theuse-casesforaDITAtoresolvedDITAtransformation-2016" toc="no"/>
+    <topicref keyref="DITAterminologymanagementandchecking-2016" toc="no"/>
+    <topicref keyref="CodeblockQualityAssuranceinsteadofErrata-2016" toc="no"/>
+    <topicref keyref="TestinginDITA-OT-2016" toc="no"/>
+    <topicref keyref="LargeScaleProductionUsingProjectMaps-2016" toc="no"/>
+    <topicref keyref="UsingtheOpenToolkitThroughDockerContainers-2016" toc="no"/>
+    <topicref keyref="GotchaUpgradingPDFpluginstoDITA-OT2x-2016" toc="no"/>
+    <topicref keyref="DocumentationDevelopments-2016" toc="no"/>
+    <topicref keyref="SimplifiedcontributionprocessfortheDITA-OTdocumentation-2016" toc="no"/>
+    <topicref keyref="DITA-OTinternalsandfuturedevelopmentplans-2016" toc="no"/>
+    <topicref keyref="Sevenopen-sourceDITA-OTpluginsdevelopedbyOxygen-2016" toc="no"/>
+    <topicref keyref="InternationalizationandtheDITA-OTWhodoeswhat-2016" toc="no"/>
+    <topicref keyref="NewDITA-OT24ReleaseAnnouncement-2016" toc="no"/>
+  </topicref>
+</map>

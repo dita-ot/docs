@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>DITA-OT Day 2017</title>
+  <topicref keyref="dita-ot-day-videos-intro-2017" locktitle="yes">
+    <topicmeta>
+      <navtitle>2017 Berlin</navtitle>
+      <linktext>Berlin 2017</linktext>
+    </topicmeta>
+    <ditavalref href="../resources/ditaotdaykeys/berlin17.ditaval"/><!-- This ditaval prevents duplicate titles in
+      TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <topicref keyref="PanelWhatsnextforDITA-OT-2017" toc="no"/>
+    <topicref keyref="WhatarewemissingWherewouldyouliketoseeusgo-2017" toc="no"/>
+    <topicref keyref="DCQL-theDitaCascadingQueryLanguage-2017" toc="no"/>
+    <topicref keyref="Locale-AwareSortingandTextHandlingintheOpenToolkit-2017" toc="no"/>
+    <topicref keyref="AutomaticallyCreateTargetedReviewDocsforyourSMEs-2017" toc="no"/>
+    <topicref keyref="BootstrappingDITA-CustomizingHTMLoutputformodernwebframeworks-2017" toc="no"/>
+    <topicref keyref="UsingCSStostylethePDFoutput-2017" toc="no"/>
+    <topicref keyref="Markdownsupportinside-out-2017" toc="no"/>
+    <topicref keyref="DITA-OTDocsDevelopments-2017" toc="no"/>
+    <topicref keyref="Managingalargescalebuildenvironmentwith50+customplugins-2017" toc="no"/>
+    <topicref keyref="GeneratingSVGsyntaxdiagramswithpluginsforalloutputformats-2017" toc="no"/>
+    <topicref keyref="DITAValidationandspell-checking-2017" toc="no"/>
+    <topicref keyref="AccessibilityinDITA-OT-2017" toc="no"/>
+    <topicref keyref="Weshallcallitpreprocess2-2017" toc="no"/>
+    <topicref keyref="DITA-OT-2017" toc="no"/>
+  </topicref>
+</map>

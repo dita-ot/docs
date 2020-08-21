@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>DITA-OT Day 2015</title>
+  <topicref keyref="dita-ot-day-videos-intro-2015" locktitle="yes">
+    <topicmeta>
+      <navtitle>2015 Munich</navtitle>
+      <linktext>Munich 2015</linktext>
+    </topicmeta>    
+    <ditavalref href="../resources/ditaotdaykeys/munich15.ditaval"/><!-- This ditaval prevents duplicate titles in
+      TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <topicref keyref="DITA-OTdocumentationupdate-2015" toc="no"/>
+    <topicref keyref="MultipleOTwithGit-2015" toc="no"/>
+    <topicref keyref="SellingDITAwithdemodata-2015" toc="no"/>
+    <topicref keyref="PublishingwithDITA-OT-theCMSperspective-2015" toc="no"/>
+    <topicref keyref="ParametersannotationsforDITA-OTplugins-2015" toc="no"/>
+    <topicref keyref="HowtorunDITA-OT-2015" toc="no"/>
+    <topicref keyref="CreatingDITA-OTconstraintspecialisationplugins-2015" toc="no"/>
+    <topicref keyref="DITACommunity-2015" toc="no"/>
+    <topicref keyref="PDF5-MLPlug-in-featuresforpracticaluse-2015" toc="no"/>
+    <topicref keyref="DITA-OTreloaded-2015" toc="no"/>
+    <topicref keyref="DITA-OTInsidetheblackbox-2015" toc="no"/>
+    <topicref keyref="PDFgenerationwithCSS-2015" toc="no"/>
+    <topicref keyref="Markdownplugin-2015" toc="no"/>
+    <topicref keyref="Whystartcmdisnotyourfriend-2015" toc="no"/>
+    <topicref keyref="DITA-OTPatternsandAnti-patterns-2015" toc="no"/>
+    <topicref keyref="WhatsnewinDITA-OT-2015" toc="no"/>
+  </topicref>
+</map>

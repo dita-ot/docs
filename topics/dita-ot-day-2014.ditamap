@@ -1,17 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map >
+<map>
   <title>DITA-OT Day 2014</title>
-  <topicref keyref="dita-ot-day-videos-intro-2014" locktitle="yes"> 
+  <topicref keyref="dita-ot-day-videos-intro-2014" locktitle="yes">
     <topicmeta>
       <navtitle>2014 Munich</navtitle>
       <linktext>Munich 2014</linktext>
     </topicmeta>
-    <ditavalref href="../resources/ditaotdaykeys/munich14.ditaval"/><!-- This ditaval prevents duplicate titles in
+    <ditavalref href="../resources/ditaotdaykeys/munich14.ditaval"/>
+    <!-- This ditaval prevents duplicate titles in
       TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
     <topicref keyref="Quovadis-2014" toc="no"/>
     <topicref keyref="ProvidingDesignersaFlexibleWaytoPublishDITAContentintoAdobeInDesign-2014" toc="no"/>
-    <topicref keyref="PublishingDITAContentRe-UsedinDifferentContextinEPUBandEclipseInfocenterbyUsingDITA-OT-2014" toc="no"/>
+    <topicref keyref="PublishingDITAContentRe-UsedinDifferentContextinEPUBandEclipseInfocenterbyUsingDITA-OT-2014"
+      toc="no"/>
     <topicref keyref="SCORMWrapperforDITAtoSCORM-2014" toc="no"/>
     <topicref keyref="DITAOpenToolkitPDFGenerationwithCSS-2014" toc="no"/>
     <topicref keyref="DITAOpenToolkitPDFPluginsWithoutFussMussorWritingXSL-FO-2014" toc="no"/>
@@ -23,4 +25,91 @@
     <topicref keyref="LookingunderthehoodoftheDITAOpenToolkit-2014" toc="no"/>
     <topicref keyref="OverviewoftheDITAOpenToolkit-2014" toc="no"/>
   </topicref>
+
+  <reltable>
+    <relrow>
+      <relcell><!--Source--></relcell>
+      <relcell><!--Target--></relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="Quovadis-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="ProvidingDesignersaFlexibleWaytoPublishDITAContentintoAdobeInDesign-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2eclipsehelp"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="PublishingDITAContentRe-UsedinDifferentContextinEPUBandEclipseInfocenterbyUsingDITA-OT-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="SCORMWrapperforDITAtoSCORM-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="DITAOpenToolkitPDFGenerationwithCSS-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="DITAOpenToolkitPDFPluginsWithoutFussMussorWritingXSL-FO-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="PDFsfromtheDITAOpenToolkitTheEasyandtheNot-so-Easy-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="dita2rdffromtreestotriples-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="ExtendingtheDITAOpenToolkitHowcrazycanyouget-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="RNGtoDTDandXSDusingtheDITAOpenToolkit-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="ContributingtotheToolkitviaGitHub-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="LookingunderthehoodoftheDITAOpenToolkit-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="OverviewoftheDITAOpenToolkit-2014"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

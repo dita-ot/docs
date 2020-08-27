@@ -26,4 +26,124 @@
     <topicref keyref="DITA-OTPatternsandAnti-patterns-2015" toc="no"/>
     <topicref keyref="WhatsnewinDITA-OT-2015" toc="no"/>
   </topicref>
+  
+  <reltable>
+    <relrow>
+      <relcell><!--Source--></relcell>
+      <relcell><!--Target--></relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="WhatsnewinDITA-OT-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="DITA-OTPatternsandAnti-patterns-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="build-using-dita-command"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="Whystartcmdisnotyourfriend-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2markdown"/>
+        <topicref keyref="markdown-input"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="Markdownplugin-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="PDFgenerationwithCSS-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="DITA-OTInsidetheblackbox-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="DITA-OTreloaded-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="PDF5-MLPlug-in-featuresforpracticaluse-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-implement-saxon-collation-uri-resolvers"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="DITACommunity-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-use-cases"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="CreatingDITA-OTconstraintspecialisationplugins-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="building-output"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="HowtorunDITA-OT-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="parameters"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="ParametersannotationsforDITA-OTplugins-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="PublishingwithDITA-OT-theCMSperspective-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="SellingDITAwithdemodata-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="MultipleOTwithGit-2015"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="DITA-OTdocumentationupdate-2015"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

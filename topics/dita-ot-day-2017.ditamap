@@ -25,4 +25,112 @@
     <topicref keyref="Weshallcallitpreprocess2-2017" toc="no"/>
     <topicref keyref="DITA-OT-2017" toc="no"/>
   </topicref>
+  <reltable>
+    <relrow>
+      <relcell><!--Source--></relcell>
+      <relcell><!--Target--></relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="PanelWhatsnextforDITA-OT-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="WhatarewemissingWherewouldyouliketoseeusgo-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="DCQL-theDitaCascadingQueryLanguage-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="globalization"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="Locale-AwareSortingandTextHandlingintheOpenToolkit-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="AutomaticallyCreateTargetedReviewDocsforyourSMEs-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="html-customization"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="BootstrappingDITA-CustomizingHTMLoutputformodernwebframeworks-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="UsingCSStostylethePDFoutput-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2markdown"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="Markdownsupportinside-out-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="DITA-OTDocsDevelopments-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="Managingalargescalebuildenvironmentwith50+customplugins-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="GeneratingSVGsyntaxdiagramswithpluginsforalloutputformats-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="DITAValidationandspell-checking-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita-v1-3-support"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="AccessibilityinDITA-OT-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="map-first-preproc"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="Weshallcallitpreprocess2-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="DITA-OT-2017"/>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

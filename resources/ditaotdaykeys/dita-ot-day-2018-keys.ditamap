@@ -6,7 +6,7 @@
   <keydef keys="WhatsnextforDITA-OT-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA_2018_Panel" format="html" scope="external">
     <topicmeta>
       <linktext>What's next for DITA-OT?</linktext>
-      <shortdesc>No description.</shortdesc>
+      <shortdesc/>
       <author>Robert Anderson, Roger Sheen, Jarno Elovirta, George Bina</author>
     </topicmeta>
   </keydef>
@@ -70,10 +70,10 @@ contributors.</shortdesc>
     <topicmeta>
       <linktext>Overview of dita-semia open-source plugins for DITA-OT</linktext>
       <shortdesc>I have created some DITA-OT plugins that are available as open-source
-(github.com/dita-semia). And I'd like to give an overview of them: postprocessing: Zip the output or set the pdf filename dynamically
-depending on some content.topic-num: Add numbers to topics, figures and tables (especially for
-HTML output).image-convert: Convert images for compatibility (e.g. SVG to PNG for
-HTML output).pdf: Yet another pdf layout working with FOP.diff: Compare two versions of a document and highlight the
+(github.com/dita-semia). And I'd like to give an overview of them: <b>postprocessing</b>: Zip the output or set the pdf filename dynamically
+depending on some content. <b>topic-num</b>: Add numbers to topics, figures and tables (especially for
+HTML output). <b>image-convert</b>: Convert images for compatibility (e.g. SVG to PNG for
+HTML output) <b>.pdf</b>: Yet another pdf layout working with FOP. <b>diff</b>: Compare two versions of a document and highlight the
 differences.resolver: Resolve custom attributes (usually set as defaults be the
 schema) to standard DITA content, e.g. by applying an XSLT transformation to
 some content, add static text content or resolve identifiers to cross
@@ -87,7 +87,7 @@ references.</shortdesc>
       <shortdesc>I have created a Unit Testing Framework for DITA-OT Plugins
 https://github.com/jason-fox/fox.jason.unit-test - This is a DITA-OT Plugin to
 test DITA-OT Plugins. The complete functionality would include HTML and command
-line test results, ANT script profiling, XSL template code coverage, e automated
+line test results, ANT script profiling, XSL template code coverage, automated
 CI testing - integration with Travis, and how to write maintainable tests
 swiftly and painlessly.</shortdesc>
       <author>Jason Fox</author>
@@ -98,7 +98,8 @@ swiftly and painlessly.</shortdesc>
       <linktext>Step by step implementation of a DITA Open Toolkit plugin</linktext>
       <shortdesc>There are lots of DITA-OT extension
 points, maybe list some of the most common ones, then based on 3-4 use cases
-implement small plugins which use those extension points. For example: a plugin which changes the default label value for "Note"a plugin which adds an XHTML customization matching a DITA element
+implement small plugins which use those extension points. For example: a plugin which changes the default label value
+for "Note" a plugin which adds an XHTML customization matching a DITA element
 with a certain @status attribute value and producing a certain HTML
 spana plugin which customizes the PDF processing in some waya plugin which adds a specialization DTD with an XML
 catalog</shortdesc>
@@ -146,7 +147,7 @@ initially discuss a little the Docbook and DITA vocabularies, the ways in
 which Docbook handled new versions, how DITA tried to have all versions
 backward compatible, the choice not to have a namespace for DITA elements.
 Show how Docbook solved the problem with supporting both Docbook 4 and
-Docbook 5 standards. The Docbook @version attribute.Pure XSLT-based processing versus the melange of ANT + Java + XSLT
+Docbook 5 standards. The Docbook @version attribute. Pure XSLT-based processing versus the melange of ANT + Java + XSLT
 which is the DITA Open Toolkit. How parameters can be discovered and set.
 Also discuss how many parameters are available by default to be set for
 Docbook. Maybe ask people if they want more params available by default for
@@ -154,14 +155,15 @@ DITA processing. Show some examples with how a simple XSLT customization for
 the HTML output can be accomplished in both systems. Also discuss
 disadvantages of pure XSLT based publishing approaches, impossibility of
 copying resources (images for example) to an output folder for
-example.Adding new elements/attributes to Docbook and DITA. If you change
-Docbook in any way, it can no longer be named DocbookUser's guides. A very decent user's manual structured a bit like a
+example. Adding new elements/attributes to Docbook and DITA. If you change
+Docbook in any way, it can no longer be named Docbook. User's guides: A very decent user's manual structured a bit like a
 tutorial binding together the Docbook specs, extending the vocabulary +
 publishing part:. The DITA-OT documentation only contains documentation
-about the publishing part.Profiling (filtering content). For example Docbook allows you to
-filter content based on any attribute (even on xml:lang).Discuss new ideas to be implemented in DITA, after they were
-originally used in the DocBook publishing system: Index pages creating when using Apache FOPThe Docbook WebHelp project (Javascript-based search).Syntax highlight in code blocksOlinks (linking between publications)You can add xlink:href on any Docbook element converting it to a
-link.Custom Processing instructions which can change the
+about the publishing part. Profiling (filtering content). For example Docbook allows you to
+filter content based on any attribute (even on xml:lang). Discuss new ideas to be implemented in DITA, after they were
+originally used in the DocBook publishing system: Index pages creating when using Apache FOP. The Docbook WebHelp
+project (Javascript-based search). Syntax highlight in code blocks. Olinks (linking between publications). You can add xlink:href on any Docbook element converting it to a
+link. Custom Processing instructions which can change the
 publishing.</shortdesc>
       <author>Radu Coravu</author>
     </topicmeta>

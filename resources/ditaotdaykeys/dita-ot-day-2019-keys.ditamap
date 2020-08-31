@@ -63,7 +63,7 @@ demonstrates the use of a series of DITA-OT pass-through plugins, which avoid
 DITA-OT pre-processing and extend possible input formats for chapters and topics
 to a wider range of standard documentation formats used by developers and
 non-technical experts (e.g. Word documents, Swagger specifications, Postman
-collections etc.): fox.jason.passthroughfox.jason.passthrough.pandocfox.jason.passthrough.swagger</shortdesc>
+collections etc.): fox.jason.passthrough, fox.jason.passthrough.pandoc, fox.jason.passthrough.swagger</shortdesc>
       <author>Jason Fox</author>
     </topicmeta>
   </keydef>
@@ -73,7 +73,7 @@ collections etc.): fox.jason.passthroughfox.jason.passthrough.pandocfox.jason.pa
       <shortdesc> Demonstration of two new DITA-OT transforms showing how to create
 novel XML-based intermediate outputs and consume cloud-based services. The two
 new transforms cover DITA-to-speech and intelligent natural
-language translation of text based on semantic DITA markup: fox.jason.audiobookfox.jason.translate.xliff</shortdesc>
+language translation of text based on semantic DITA markup: fox.jason.audiobook, fox.jason.translate.xliff</shortdesc>
       <author>Jason Fox</author>
     </topicmeta>
   </keydef>
@@ -85,7 +85,7 @@ JavaScript with ANT and XSLT. An architectural discussion on how to design, test
 and integrate JavaScript-based functions within DITA-OT Plugins and how to split
 the code between different programming languages and appropriate use of
 extension points. The plugins include a syntax-highlighter and a DITA
-prettifier: fox.jason.splashfox.jason.prismjsfox.jason.readthedocsfox.jason.pretty-dita</shortdesc>
+prettifier: fox.jason.splash, fox.jason.prismjs, fox.jason.readthedocs, fox.jason.pretty-dita</shortdesc>
       <author>Jason Fox</author>
     </topicmeta>
   </keydef>
@@ -125,7 +125,7 @@ CALS table rendering, and several standard DITA elements (&lt;p&gt;, &lt;ul&gt;,
       <shortdesc> The DITA Open Toolkit publishing engine has support for plugins which
 can be installed to customize or enhance the publishing process. In time Syncro
 Soft (the company which produces Oxygen XML Editor) has developed and made open
-source lots of small plugins which can be installed in the publishing engine.I will be presenting small examples in order to show case what each
+source lots of small plugins which can be installed in the publishing engine. I will be presenting small examples in order to show case what each
 plugin in the Oxygen XML GitHub organization does and maybe give you ideas about
 how you could use these open source plugins on your side. </shortdesc>
       <author>Radu Coravu</author>
@@ -156,7 +156,7 @@ debt. </shortdesc>
   <keydef keys="NewsandAnnouncements-2019" href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#news_and_announcements" format="html" scope="external">
     <topicmeta>
       <linktext>News and Announcements</linktext>
-      <shortdesc>No description.</shortdesc>
+      <shortdesc/>
       <author>DITA-OT Day team</author>
     </topicmeta>
   </keydef>

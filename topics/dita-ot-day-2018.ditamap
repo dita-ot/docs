@@ -9,22 +9,22 @@
     </topicmeta>
     <ditavalref href="../resources/ditaotdaykeys/rotterdam18.ditaval"/><!-- This ditaval prevents duplicate titles in
       TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
-    <topicref keyref="WhatsnextforDITA-OT-2018" toc="no"/>
-    <topicref keyref="Whoareyoucallingstale-2018" toc="no"/>
-    <topicref keyref="TwistedXSLTTricksMakingColumnSwitchingWorkforFOP-2018" toc="no"/>
-    <topicref keyref="DITA-OTandDocOps-2018" toc="no"/>
-    <topicref keyref="Validationmeetspublication-Applyyourstyleguiderulesduringthepublication-2018" toc="no"/>
-    <topicref keyref="AfastpathforbuildingdataassetsfromDITA-2018" toc="no"/>
-    <topicref keyref="Overviewofdita-semiaopen-sourcepluginsforDITA-OT-2018" toc="no"/>
-    <topicref keyref="UnitTestingDITA-OTPluginExtensions-2018" toc="no"/>
-    <topicref keyref="StepbystepimplementationofaDITAOpenToolkitplugin-2018" toc="no"/>
-    <topicref keyref="MetaDITAsamplestestingaroundtheedgecases-2018" toc="no"/>
-    <topicref keyref="Plug-ininstallationmadeeasier-2018" toc="no"/>
-    <topicref keyref="InstallingDITA-OTonmacOSviaHomebrew-2018" toc="no"/>
-    <topicref keyref="ComparisonbetweentheDocBookandDITApublishingsystems-2018" toc="no"/>
-    <topicref keyref="DITAGradleandGitasmallteamapproachtopublishing-2018" toc="no"/>
-    <topicref keyref="DITA-OTWebsiteSurveyResults-2018" toc="no"/>
-    <topicref keyref="HighlightsinrecentDITA-OTversions-2018" toc="no"/>
+    <topicref keyref="whatsnextfordita-ot-2018" toc="no"/>
+    <topicref keyref="whoareyoucallingstale-2018" toc="no"/>
+    <topicref keyref="twistedxslttricksmakingc-2018" toc="no"/>
+    <topicref keyref="dita-otanddocops-2018" toc="no"/>
+    <topicref keyref="validationmeetspublicati-2018" toc="no"/>
+    <topicref keyref="afastpathforbuildingdata-2018" toc="no"/>
+    <topicref keyref="overviewofdita-semiaopen-2018" toc="no"/>
+    <topicref keyref="unittestingdita-otplugin-2018" toc="no"/>
+    <topicref keyref="stepbystepimplementation-2018" toc="no"/>
+    <topicref keyref="metaditasamplestestingar-2018" toc="no"/>
+    <topicref keyref="plug-ininstallationmadee-2018" toc="no"/>
+    <topicref keyref="installingdita-otonmacos-2018" toc="no"/>
+    <topicref keyref="comparisonbetweenthedocb-2018" toc="no"/>
+    <topicref keyref="ditagradleandgitasmallte-2018" toc="no"/>
+    <topicref keyref="dita-otwebsitesurveyresu-2018" toc="no"/>
+    <topicref keyref="highlightsinrecentdita-o-2018" toc="no"/>
   </topicref>
   <reltable>
     <relrow>
@@ -34,13 +34,13 @@
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="WhatsnextforDITA-OT-2018"/>
+        <topicref keyref="whatsnextfordita-ot-2018"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="Whoareyoucallingstale-2018"/>
+        <topicref keyref="whoareyoucallingstale-2018"/>
       </relcell>
     </relrow>
     <relrow>
@@ -48,13 +48,13 @@
         <topicref keyref="pdf-customization-resources"/>
       </relcell>
       <relcell>
-        <topicref keyref="TwistedXSLTTricksMakingColumnSwitchingWorkforFOP-2018"/>
+        <topicref keyref="twistedxslttricksmakingc-2018"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="DITA-OTandDocOps-2018"/>
+        <topicref keyref="dita-otanddocops-2018"/>
       </relcell>
     </relrow>
     <relrow>
@@ -63,13 +63,13 @@
         <topicref keyref="plugin-coding-conventions"/>
       </relcell>
       <relcell>
-        <topicref keyref="Validationmeetspublication-Applyyourstyleguiderulesduringthepublication-2018"/>
+        <topicref keyref="validationmeetspublicati-2018"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="AfastpathforbuildingdataassetsfromDITA-2018"/>
+        <topicref keyref="afastpathforbuildingdata-2018"/>
       </relcell>
     </relrow>
     <relrow>
@@ -77,7 +77,7 @@
         <topicref keyref="plugins-registry"/>
       </relcell>
       <relcell>
-        <topicref keyref="Overviewofdita-semiaopen-sourcepluginsforDITA-OT-2018"/>
+        <topicref keyref="overviewofdita-semiaopen-2018"/>
       </relcell>
     </relrow>
     <relrow>
@@ -86,7 +86,7 @@
         <topicref keyref="plugin-coding-conventions"/>
       </relcell>
       <relcell>
-        <topicref keyref="UnitTestingDITA-OTPluginExtensions-2018"/>
+        <topicref keyref="unittestingdita-otplugin-2018"/>
       </relcell>
     </relrow>
     <relrow>
@@ -94,7 +94,7 @@
         <topicref keyref="custom-plugins"/>
       </relcell>
       <relcell>
-        <topicref keyref="StepbystepimplementationofaDITAOpenToolkitplugin-2018"/>
+        <topicref keyref="stepbystepimplementation-2018"/>
       </relcell>
     </relrow>
     <relrow>
@@ -102,7 +102,7 @@
         <topicref keyref="plugin-coding-conventions"/>
       </relcell>
       <relcell>
-        <topicref keyref="MetaDITAsamplestestingaroundtheedgecases-2018"/>
+        <topicref keyref="metaditasamplestestingar-2018"/>
       </relcell>
     </relrow>
     <relrow>
@@ -111,7 +111,7 @@
         <topicref keyref="plugins-registry"/>
       </relcell>
       <relcell>
-        <topicref keyref="Plug-ininstallationmadeeasier-2018"/>
+        <topicref keyref="plug-ininstallationmadee-2018"/>
       </relcell>
     </relrow>
     <relrow>
@@ -119,31 +119,31 @@
         <topicref keyref="installing-via-homebrew"/>
       </relcell>
       <relcell>
-        <topicref keyref="InstallingDITA-OTonmacOSviaHomebrew-2018"/>
+        <topicref keyref="installingdita-otonmacos-2018"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="ComparisonbetweentheDocBookandDITApublishingsystems-2018"/>
+        <topicref keyref="comparisonbetweenthedocb-2018"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="DITAGradleandGitasmallteamapproachtopublishing-2018"/>
+        <topicref keyref="ditagradleandgitasmallte-2018"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="DITA-OTWebsiteSurveyResults-2018"/>
+        <topicref keyref="dita-otwebsitesurveyresu-2018"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="HighlightsinrecentDITA-OTversions-2018"/>
+        <topicref keyref="highlightsinrecentdita-o-2018"/>
       </relcell>
     </relrow>
   </reltable>

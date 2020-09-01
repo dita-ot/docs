@@ -9,21 +9,21 @@
     </topicmeta>
     <ditavalref href="../resources/ditaotdaykeys/munich16.ditaval"/><!-- This ditaval prevents duplicate titles in
       TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
-    <topicref keyref="Panel-2016" toc="no"/>
-    <topicref keyref="LongtermDITA-OTplanning-2016" toc="no"/>
-    <topicref keyref="Theuse-casesforaDITAtoresolvedDITAtransformation-2016" toc="no"/>
-    <topicref keyref="DITAterminologymanagementandchecking-2016" toc="no"/>
-    <topicref keyref="CodeblockQualityAssuranceinsteadofErrata-2016" toc="no"/>
-    <topicref keyref="TestinginDITA-OT-2016" toc="no"/>
-    <topicref keyref="LargeScaleProductionUsingProjectMaps-2016" toc="no"/>
-    <topicref keyref="UsingtheOpenToolkitThroughDockerContainers-2016" toc="no"/>
-    <topicref keyref="GotchaUpgradingPDFpluginstoDITA-OT2x-2016" toc="no"/>
-    <topicref keyref="DocumentationDevelopments-2016" toc="no"/>
-    <topicref keyref="SimplifiedcontributionprocessfortheDITA-OTdocumentation-2016" toc="no"/>
-    <topicref keyref="DITA-OTinternalsandfuturedevelopmentplans-2016" toc="no"/>
-    <topicref keyref="Sevenopen-sourceDITA-OTpluginsdevelopedbyOxygen-2016" toc="no"/>
-    <topicref keyref="InternationalizationandtheDITA-OTWhodoeswhat-2016" toc="no"/>
-    <topicref keyref="NewDITA-OT24ReleaseAnnouncement-2016" toc="no"/>
+    <topicref keyref="panel-2016" toc="no"/>
+    <topicref keyref="longtermdita-otplanning-2016" toc="no"/>
+    <topicref keyref="theuse-casesforaditatore-2016" toc="no"/>
+    <topicref keyref="ditaterminologymanagemen-2016" toc="no"/>
+    <topicref keyref="codeblockqualityassuranc-2016" toc="no"/>
+    <topicref keyref="testingindita-ot-2016" toc="no"/>
+    <topicref keyref="largescaleproductionusin-2016" toc="no"/>
+    <topicref keyref="usingtheopentoolkitthrou-2016" toc="no"/>
+    <topicref keyref="gotchaupgradingpdfplugin-2016" toc="no"/>
+    <topicref keyref="documentationdevelopment-2016" toc="no"/>
+    <topicref keyref="simplifiedcontributionpr-2016" toc="no"/>
+    <topicref keyref="dita-otinternalsandfutur-2016" toc="no"/>
+    <topicref keyref="sevenopen-sourcedita-otp-2016" toc="no"/>
+    <topicref keyref="internationalizationandt-2016" toc="no"/>
+    <topicref keyref="newdita-ot24releaseannou-2016" toc="no"/>
   </topicref>
   <reltable>
     <relrow>
@@ -33,13 +33,13 @@
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="Panel-2016" toc="no"/>
+        <topicref keyref="panel-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="LongtermDITA-OTplanning-2016" toc="no"/>
+        <topicref keyref="longtermdita-otplanning-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
@@ -47,7 +47,7 @@
         <topicref keyref="dita2dita"/>
       </relcell>
       <relcell>
-        <topicref keyref="Theuse-casesforaDITAtoresolvedDITAtransformation-2016" toc="no"/>
+        <topicref keyref="theuse-casesforaditatore-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
@@ -55,25 +55,25 @@
         <topicref keyref="plugins-registry"/>
       </relcell>
       <relcell>
-        <topicref keyref="DITAterminologymanagementandchecking-2016" toc="no"/>
+        <topicref keyref="ditaterminologymanagemen-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="CodeblockQualityAssuranceinsteadofErrata-2016" toc="no"/>
+        <topicref keyref="codeblockqualityassuranc-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="TestinginDITA-OT-2016" toc="no"/>
+        <topicref keyref="testingindita-ot-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="LargeScaleProductionUsingProjectMaps-2016" toc="no"/>
+        <topicref keyref="largescaleproductionusin-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
@@ -81,7 +81,7 @@
         <topicref keyref="using-docker-images"/>
       </relcell>
       <relcell>
-        <topicref keyref="UsingtheOpenToolkitThroughDockerContainers-2016" toc="no"/>
+        <topicref keyref="usingtheopentoolkitthrou-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
@@ -89,31 +89,31 @@
         <topicref keyref="migration"/>
       </relcell>
       <relcell>
-        <topicref keyref="GotchaUpgradingPDFpluginstoDITA-OT2x-2016" toc="no"/>
+        <topicref keyref="gotchaupgradingpdfplugin-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="DocumentationDevelopments-2016" toc="no"/>
+        <topicref keyref="documentationdevelopment-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="SimplifiedcontributionprocessfortheDITA-OTdocumentation-2016" toc="no"/>
+        <topicref keyref="simplifiedcontributionpr-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="DITA-OTinternalsandfuturedevelopmentplans-2016" toc="no"/>
+        <topicref keyref="dita-otinternalsandfutur-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="Sevenopen-sourceDITA-OTpluginsdevelopedbyOxygen-2016" toc="no"/>
+        <topicref keyref="sevenopen-sourcedita-otp-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
@@ -121,13 +121,13 @@
         <topicref keyref="globalization"/>
       </relcell>
       <relcell>
-        <topicref keyref="InternationalizationandtheDITA-OTWhodoeswhat-2016" toc="no"/>
+        <topicref keyref="internationalizationandt-2016" toc="no"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="NewDITA-OT24ReleaseAnnouncement-2016" toc="no"/>
+        <topicref keyref="newdita-ot24releaseannou-2016" toc="no"/>
       </relcell>
     </relrow>
   </reltable>

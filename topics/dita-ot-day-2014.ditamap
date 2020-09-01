@@ -10,20 +10,19 @@
     <ditavalref href="../resources/ditaotdaykeys/munich14.ditaval"/>
     <!-- This ditaval prevents duplicate titles in
       TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
-    <topicref keyref="Quovadis-2014" toc="no"/>
-    <topicref keyref="ProvidingDesignersaFlexibleWaytoPublishDITAContentintoAdobeInDesign-2014" toc="no"/>
-    <topicref keyref="PublishingDITAContentRe-UsedinDifferentContextinEPUBandEclipseInfocenterbyUsingDITA-OT-2014"
-      toc="no"/>
-    <topicref keyref="SCORMWrapperforDITAtoSCORM-2014" toc="no"/>
-    <topicref keyref="DITAOpenToolkitPDFGenerationwithCSS-2014" toc="no"/>
-    <topicref keyref="DITAOpenToolkitPDFPluginsWithoutFussMussorWritingXSL-FO-2014" toc="no"/>
-    <topicref keyref="PDFsfromtheDITAOpenToolkitTheEasyandtheNot-so-Easy-2014" toc="no"/>
-    <topicref keyref="dita2rdffromtreestotriples-2014" toc="no"/>
-    <topicref keyref="ExtendingtheDITAOpenToolkitHowcrazycanyouget-2014" toc="no"/>
-    <topicref keyref="RNGtoDTDandXSDusingtheDITAOpenToolkit-2014" toc="no"/>
-    <topicref keyref="ContributingtotheToolkitviaGitHub-2014" toc="no"/>
-    <topicref keyref="LookingunderthehoodoftheDITAOpenToolkit-2014" toc="no"/>
-    <topicref keyref="OverviewoftheDITAOpenToolkit-2014" toc="no"/>
+    <topicref keyref="quovadis-2014" toc="no"/>
+    <topicref keyref="providingdesignersaflexi-2014" toc="no"/>
+    <topicref keyref="publishingditacontentre--2014" toc="no"/>
+    <topicref keyref="scormwrapperforditatosco-2014" toc="no"/>
+    <topicref keyref="ditaopentoolkitpdfgenera-2014" toc="no"/>
+    <topicref keyref="ditaopentoolkitpdfplugin-2014" toc="no"/>
+    <topicref keyref="pdfsfromtheditaopentoolk-2014" toc="no"/>
+    <topicref keyref="dita2rdffromtreestotripl-2014" toc="no"/>
+    <topicref keyref="extendingtheditaopentool-2014" toc="no"/>
+    <topicref keyref="rngtodtdandxsdusingthedi-2014" toc="no"/>
+    <topicref keyref="contributingtothetoolkit-2014" toc="no"/>
+    <topicref keyref="lookingunderthehoodofthe-2014" toc="no"/>
+    <topicref keyref="overviewoftheditaopentoo-2014" toc="no"/>
   </topicref>
 
   <reltable>
@@ -34,13 +33,13 @@
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="Quovadis-2014"/>
+        <topicref keyref="quovadis-2014"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="ProvidingDesignersaFlexibleWaytoPublishDITAContentintoAdobeInDesign-2014"/>
+        <topicref keyref="providingdesignersaflexi-2014"/>
       </relcell>
     </relrow>
     <relrow>
@@ -48,7 +47,7 @@
         <topicref keyref="dita2eclipsehelp"/>
       </relcell>
       <relcell>
-        <topicref keyref="PublishingDITAContentRe-UsedinDifferentContextinEPUBandEclipseInfocenterbyUsingDITA-OT-2014"/>
+        <topicref keyref="publishingditacontentre--2014"/>
       </relcell>
     </relrow>
     <relrow>
@@ -56,13 +55,13 @@
         <topicref keyref="dita-v1-2-support"/>
       </relcell>
       <relcell>
-        <topicref keyref="SCORMWrapperforDITAtoSCORM-2014"/>
+        <topicref keyref="scormwrapperforditatosco-2014"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="DITAOpenToolkitPDFGenerationwithCSS-2014"/>
+        <topicref keyref="ditaopentoolkitpdfgenera-2014"/>
       </relcell>
     </relrow>
     <relrow>
@@ -70,7 +69,7 @@
         <topicref keyref="pdf-customization-resources"/>
       </relcell>
       <relcell>
-        <topicref keyref="DITAOpenToolkitPDFPluginsWithoutFussMussorWritingXSL-FO-2014"/>
+        <topicref keyref="ditaopentoolkitpdfplugin-2014"/>
       </relcell>
     </relrow>
     <relrow>
@@ -78,13 +77,13 @@
         <topicref keyref="pdf-customization-resources"/>
       </relcell>
       <relcell>
-        <topicref keyref="PDFsfromtheDITAOpenToolkitTheEasyandtheNot-so-Easy-2014"/>
+        <topicref keyref="pdfsfromtheditaopentoolk-2014"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="dita2rdffromtreestotriples-2014"/>
+        <topicref keyref="dita2rdffromtreestotripl-2014"/>
       </relcell>
     </relrow>
     <relrow>
@@ -92,7 +91,7 @@
         <topicref keyref="plugin-extension-points"/>
       </relcell>
       <relcell>
-        <topicref keyref="ExtendingtheDITAOpenToolkitHowcrazycanyouget-2014"/>
+        <topicref keyref="extendingtheditaopentool-2014"/>
       </relcell>
     </relrow>
     <relrow>
@@ -100,13 +99,13 @@
         <topicref keyref="dita-v1-3-support"/>
       </relcell>
       <relcell>
-        <topicref keyref="RNGtoDTDandXSDusingtheDITAOpenToolkit-2014"/>
+        <topicref keyref="rngtodtdandxsdusingthedi-2014"/>
       </relcell>
     </relrow>
     <relrow>
       <relcell/>
       <relcell>
-        <topicref keyref="ContributingtotheToolkitviaGitHub-2014"/>
+        <topicref keyref="contributingtothetoolkit-2014"/>
       </relcell>
     </relrow>
     <relrow>
@@ -114,7 +113,7 @@
         <topicref keyref="architecture"/>
       </relcell>
       <relcell>
-        <topicref keyref="LookingunderthehoodoftheDITAOpenToolkit-2014"/>
+        <topicref keyref="lookingunderthehoodofthe-2014"/>
       </relcell>
     </relrow>
     <relrow>
@@ -122,7 +121,7 @@
         <topicref keyref="landing-page"/>
       </relcell>
       <relcell>
-        <topicref keyref="OverviewoftheDITAOpenToolkit-2014"/>
+        <topicref keyref="overviewoftheditaopentoo-2014"/>
       </relcell>
     </relrow>
   </reltable>

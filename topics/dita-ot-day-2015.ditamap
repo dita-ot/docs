@@ -28,10 +28,10 @@
   </topicref>
   
   <reltable>
-    <relrow>
-      <relcell><!--Source--></relcell>
-      <relcell><!--Target--></relcell>
-    </relrow>
+    <relheader>
+      <relcolspec linking="sourceonly"><!-- Source --></relcolspec>
+      <relcolspec linking="targetonly"><!-- Target --></relcolspec>
+    </relheader>
     <relrow>
       <relcell/>
       <relcell>

@@ -26,15 +26,58 @@
     </refbody>
   </reference>
 
-  <reference id="v3.5.3" outputclass="mark">
+  <reference id="v3.5.4" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released August 18, 2020</ph>
+      <!--<ph outputclass="small text-muted">released (date)</ph>-->
     </title>
 
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <ul>
+          <li id="2147">In cases where maps contain references to submaps within key scopes, earlier versions of DITA-OT
+            failed to apply the scopes to relationship tables in the submaps. Processing has been updated to cascade key
+            scope information to the relationship table of the target map, so links between topics in different key
+            scopes work as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2147" format="html" scope="external">#2147</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2393" format="html" scope="external">#2393</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3563" format="html" scope="external">#3563</xref>
+          </li>
+          <li id="2410">In earlier versions, keys in nested key scopes were not resolved correctly. Key processing has
+            been updated to correctly generate key definitions from sibling key scopes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2410" format="html" scope="external">#2410</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3567" format="html" scope="external">#3567</xref>
+          </li>
+          <li id="3566">DITA-OT 3.5.2 introduced a regression that caused builds to fail with a Java error when source
+            files contained irregular table markup. Table processing has been updated to normalize tables with multiple
+            groups and emit a <msgnum>DOTJ082E</msgnum> error when invalid table markup prevents processing.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3566" format="html" scope="external">#3566</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3573" format="html" scope="external">#3573</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3575" format="html" scope="external">#3575</xref>
+          </li>
+          <li id="3574">When parsing topics that contain DTD references, public IDs are now preferred when comparing
+            grammar descriptors with those stored in the grammar cache. This speeds up processing in projects with a
+            large number of topics and subfolders by allowing the parser to re-use the DTD grammars between them.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3574" format="html" scope="external">#3574</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.4+is%3Aclosed" format="html"
+            scope="external">3.5.4 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.5.3...3.5.4" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.5.3">
+    <title>DITA-OT 3.5.3 <ph outputclass="small text-muted">released August 18, 2020</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.5.3 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="3549">In DITA-OT 3.5, certain branch filtering scenarios prevented key references and content key
             references from resolving correctly in map-first preprocessing, resulting in missing content in PDF output.

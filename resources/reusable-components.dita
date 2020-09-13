@@ -165,15 +165,15 @@
         </dlentry>
       </dl>
     </section>
-    
+
     <section id="dita-ot-migration-tip">
       <title>Recommendations for upgrading DITA-OT customizations</title>
-      <p id="migration-recommendation">When migrating customizations, identify the version of the toolkit you're currently using (base version) and
-        the version of the toolkit you want to migrate to (target version). Then, review all of the migration changes
-        described in <i>all</i> of the versions from the base through the target. For instance, if you're currently on
-        2.2 and want to move to 3.3, you should review all of the changes in 2.3 through 3.3. You may want to start at
-        the oldest version and read forward so you can chronologically follow the changes, since it is possible that
-        files or topics have had multiple changes. </p>
+      <p id="migration-recommendation">When migrating customizations, identify the version of the toolkit you're
+        currently using (base version) and the version of the toolkit you want to migrate to (target version). Then,
+        review all of the migration changes described in <i>all</i> of the versions from the base through the target.
+        For instance, if you're currently on 2.2 and want to move to 3.3, you should review all of the changes in 2.3
+        through 3.3. You may want to start at the oldest version and read forward so you can chronologically follow the
+        changes, since it is possible that files or topics have had multiple changes. </p>
     </section>
   </conbody>
 </concept>

@@ -351,4 +351,38 @@
       </relcell>
     </relrow>
   </reltable>
+  <reltable>
+    <title>Release history</title>
+    <relheader>
+      <relcolspec linking="sourceonly"/>
+      <relcolspec linking="targetonly"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref keyref="release-history"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="migration"/>
+        <topicref keyref="3.5-release-notes"/>
+        <topicref keyref="3.4-release-notes"/>
+        <topicref keyref="3.3-release-notes"/>
+        <topicref keyref="3.2-release-notes"/>
+        <topicref keyref="3.1-release-notes"/>
+        <topicref keyref="3.0-release-notes"/>
+        <topicref keyref="2.5-release-notes"/>
+        <topicref keyref="2.4-release-notes"/>
+        <topicref keyref="2.3-release-notes"/>
+        <topicref keyref="2.2-release-notes"/>
+        <topicref keyref="2.1-release-notes"/>
+        <topicref keyref="2.0-release-notes"/>
+        <topicref format="html" href="http://dita-archive.xml.org/wiki/the-dita-open-toolkit" scope="external">
+          <topicmeta>
+            <linktext>DITA-OT 1.8 - 1.0 Release Notes</linktext>
+            <shortdesc>The DITA-OT project archive at dita-archive.xml.org provides news about earlier toolkit releases, and
+              release notes for legacy versions.</shortdesc>
+          </topicmeta>
+        </topicref>
+      </relcell>
+    </relrow>
+  </reltable>
 </map>

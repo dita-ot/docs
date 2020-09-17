@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
 <map>
   <title>DITA-OT Day 2014</title>
   <topicref keyref="dita-ot-day-videos-intro-2014" locktitle="yes">
@@ -7,9 +9,9 @@
       <navtitle>2014 Munich</navtitle>
       <linktext>Munich 2014</linktext>
     </topicmeta>
+    <!-- This ditaval prevents duplicate titles in TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
     <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
-    <!-- This ditaval prevents duplicate titles in
-      TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <!-- See https://github.com/dita-ot/dita-ot/issues/3581 -->
     <topicref keyref="quovadis-2014" toc="no"/>
     <topicref keyref="providingdesignersaflexi-2014" toc="no"/>
     <topicref keyref="publishingditacontentre--2014" toc="no"/>

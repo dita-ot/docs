@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
 <map>
-    <title>DITA-OT Day Videos</title>
-    <topicref keyref="dita-ot-day-videos">
-        <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
-        <mapref href="dita-ot-day-2019.ditamap"/>
-        <mapref href="dita-ot-day-2018.ditamap"/>
-        <mapref href="dita-ot-day-2017.ditamap"/>
-        <mapref href="dita-ot-day-2016.ditamap"/>
-        <mapref href="dita-ot-day-2015.ditamap"/>
-        <mapref href="dita-ot-day-2014.ditamap"/>
-    </topicref>    
+  <title>DITA-OT Day Videos</title>
+  <topicref keyref="dita-ot-day-videos">
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
+    <mapref href="dita-ot-day-2019.ditamap"/>
+    <mapref href="dita-ot-day-2018.ditamap"/>
+    <mapref href="dita-ot-day-2017.ditamap"/>
+    <mapref href="dita-ot-day-2016.ditamap"/>
+    <mapref href="dita-ot-day-2015.ditamap"/>
+    <mapref href="dita-ot-day-2014.ditamap"/>
+  </topicref>
 </map>

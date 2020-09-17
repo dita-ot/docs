@@ -129,7 +129,7 @@
         source code is available on GitHub for anyone interested in maintaining the plug-ins for use with future toolkit
         versions.</note>
     </section>
-    
+
     <section id="subcommands">
       <title>New subcommands in 3.5</title>
       <dl id="3.5-subcommands">
@@ -150,7 +150,7 @@
         <dlentry>
           <dt><cmdname>dita transtypes</cmdname></dt>
           <dd>Prints a list of installed transformation types, or <i>output formats</i> (replaces
-            <cmdname>dita</cmdname>
+              <cmdname>dita</cmdname>
             <parmname>--transtypes</parmname>)</dd>
         </dlentry>
         <dlentry>

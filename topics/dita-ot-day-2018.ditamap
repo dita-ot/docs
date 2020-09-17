@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
 <map>
   <title>DITA-OT Day 2018</title>
   <topicref keyref="dita-ot-day-videos-intro-2018" locktitle="yes">
@@ -7,8 +9,9 @@
       <navtitle>2018 Rotterdam</navtitle>
       <linktext>Rotterdam 2018</linktext>
     </topicmeta>
-    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/><!-- This ditaval prevents duplicate titles in
-      TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <!-- This ditaval prevents duplicate titles in TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
+    <!-- See https://github.com/dita-ot/dita-ot/issues/3581 -->
     <topicref keyref="whatsnextfordita-ot-2018" toc="no"/>
     <topicref keyref="whoareyoucallingstale-2018" toc="no"/>
     <topicref keyref="twistedxslttricksmakingc-2018" toc="no"/>

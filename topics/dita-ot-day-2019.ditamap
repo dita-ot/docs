@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>DITA-OT Day 2019</title>
+  <topicref keyref="dita-ot-day-videos-intro-2019" locktitle="yes">
+    <topicmeta>
+      <navtitle>2019 Brussels</navtitle>
+      <linktext>Brussels 2019</linktext>
+    </topicmeta>
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/> <!-- This ditaval prevents duplicate titles in
+      TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <topicref keyref="dita-otshoptalk-2019" toc="no"/>
+    <topicref keyref="easyaspiepdfcustomizatio-2019" toc="no"/>
+    <topicref keyref="generatingmetricsfromyou-2019" toc="no"/>
+    <topicref keyref="casestudyoftaxonomyandse-2019" toc="no"/>
+    <topicref keyref="documentationdevelopment-2019" toc="no"/>
+    <topicref keyref="theartofdoingnothing-2019" toc="no"/>
+    <topicref keyref="allthecoolkidsareusingth-2019" toc="no"/>
+    <topicref keyref="allthecoolkidsareusingja-2019" toc="no"/>
+    <topicref keyref="editingditaopentoolkitpr-2019" toc="no"/>
+    <topicref keyref="onefiletorulethemalldita-2019" toc="no"/>
+    <topicref keyref="ah-wmldita-to-wordplug-i-2019" toc="no"/>
+    <topicref keyref="varioususefulopensourcep-2019" toc="no"/>
+    <topicref keyref="runningonsomeoneelsescom-2019" toc="no"/>
+    <topicref keyref="trimyourtoolkitwiththiso-2019" toc="no"/>
+    <topicref keyref="newsandannouncements-2019" toc="no"/>
+  </topicref>
+  <reltable>
+    <relheader>
+      <relcolspec linking="sourceonly"><!-- Source --></relcolspec>
+      <relcolspec linking="targetonly"><!-- Target --></relcolspec>
+    </relheader>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="dita-otshoptalk-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="easyaspiepdfcustomizatio-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="generatingmetricsfromyou-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="casestudyoftaxonomyandse-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="documentationdevelopment-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-registry"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="theartofdoingnothing-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-registry"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="allthecoolkidsareusingth-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-registry"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="allthecoolkidsareusingja-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="using-project-files"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="editingditaopentoolkitpr-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="using-project-files"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="onefiletorulethemalldita-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-registry"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="ah-wmldita-to-wordplug-i-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="varioususefulopensourcep-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="runningonsomeoneelsescom-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-removing"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="trimyourtoolkitwiththiso-2019" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="newsandannouncements-2019" toc="no"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

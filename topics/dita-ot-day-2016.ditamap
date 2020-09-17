@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>DITA-OT Day 2016</title>
+  <topicref keyref="dita-ot-day-videos-intro-2016" locktitle="yes">
+    <topicmeta>
+      <navtitle>2016 Munich</navtitle>
+      <linktext>Munich 2016</linktext>
+    </topicmeta>
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/><!-- This ditaval prevents duplicate titles in
+      TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <topicref keyref="panel-2016" toc="no"/>
+    <topicref keyref="longtermdita-otplanning-2016" toc="no"/>
+    <topicref keyref="theuse-casesforaditatore-2016" toc="no"/>
+    <topicref keyref="ditaterminologymanagemen-2016" toc="no"/>
+    <topicref keyref="codeblockqualityassuranc-2016" toc="no"/>
+    <topicref keyref="testingindita-ot-2016" toc="no"/>
+    <topicref keyref="largescaleproductionusin-2016" toc="no"/>
+    <topicref keyref="usingtheopentoolkitthrou-2016" toc="no"/>
+    <topicref keyref="gotchaupgradingpdfplugin-2016" toc="no"/>
+    <topicref keyref="documentationdevelopment-2016" toc="no"/>
+    <topicref keyref="simplifiedcontributionpr-2016" toc="no"/>
+    <topicref keyref="dita-otinternalsandfutur-2016" toc="no"/>
+    <topicref keyref="sevenopen-sourcedita-otp-2016" toc="no"/>
+    <topicref keyref="internationalizationandt-2016" toc="no"/>
+    <topicref keyref="newdita-ot24releaseannou-2016" toc="no"/>
+  </topicref>
+  <reltable>
+    <relheader>
+      <relcolspec linking="sourceonly"><!-- Source --></relcolspec>
+      <relcolspec linking="targetonly"><!-- Target --></relcolspec>
+    </relheader>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="panel-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="longtermdita-otplanning-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2dita"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="theuse-casesforaditatore-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-registry"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="ditaterminologymanagemen-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="codeblockqualityassuranc-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="testingindita-ot-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="largescaleproductionusin-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="using-docker-images"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="usingtheopentoolkitthrou-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="migration"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="gotchaupgradingpdfplugin-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="documentationdevelopment-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="simplifiedcontributionpr-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="dita-otinternalsandfutur-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="sevenopen-sourcedita-otp-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="globalization"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="internationalizationandt-2016" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="newdita-ot24releaseannou-2016" toc="no"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

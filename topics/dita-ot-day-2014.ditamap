@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>DITA-OT Day 2014</title>
+  <topicref keyref="dita-ot-day-videos-intro-2014" locktitle="yes">
+    <topicmeta>
+      <navtitle>2014 Munich</navtitle>
+      <linktext>Munich 2014</linktext>
+    </topicmeta>
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
+    <!-- This ditaval prevents duplicate titles in
+      TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <topicref keyref="quovadis-2014" toc="no"/>
+    <topicref keyref="providingdesignersaflexi-2014" toc="no"/>
+    <topicref keyref="publishingditacontentre--2014" toc="no"/>
+    <topicref keyref="scormwrapperforditatosco-2014" toc="no"/>
+    <topicref keyref="ditaopentoolkitpdfgenera-2014" toc="no"/>
+    <topicref keyref="ditaopentoolkitpdfplugin-2014" toc="no"/>
+    <topicref keyref="pdfsfromtheditaopentoolk-2014" toc="no"/>
+    <topicref keyref="dita2rdffromtreestotripl-2014" toc="no"/>
+    <topicref keyref="extendingtheditaopentool-2014" toc="no"/>
+    <topicref keyref="rngtodtdandxsdusingthedi-2014" toc="no"/>
+    <topicref keyref="contributingtothetoolkit-2014" toc="no"/>
+    <topicref keyref="lookingunderthehoodofthe-2014" toc="no"/>
+    <topicref keyref="overviewoftheditaopentoo-2014" toc="no"/>
+  </topicref>
+
+  <reltable>
+    <relheader>
+      <relcolspec linking="sourceonly"><!-- Source --></relcolspec>
+      <relcolspec linking="targetonly"><!-- Target --></relcolspec>
+    </relheader>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="quovadis-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="providingdesignersaflexi-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2eclipsehelp"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="publishingditacontentre--2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita-v1-2-support"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="scormwrapperforditatosco-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="ditaopentoolkitpdfgenera-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="pdf-customization-resources"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="ditaopentoolkitpdfplugin-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="pdf-customization-resources"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="pdfsfromtheditaopentoolk-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="dita2rdffromtreestotripl-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-extension-points"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="extendingtheditaopentool-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita-v1-3-support"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="rngtodtdandxsdusingthedi-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="contributingtothetoolkit-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="architecture"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="lookingunderthehoodofthe-2014"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="landing-page"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="overviewoftheditaopentoo-2014"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

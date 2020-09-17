@@ -49,6 +49,14 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/2410" format="html" scope="external">#2410</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3567" format="html" scope="external">#3567</xref>
           </li>
+          <li id="2981">In previous versions, the <parmname>dita.xsl.html5.cover</parmname> extension point did not
+            work. The corresponding templates have been moved from the
+              <filepath>org.dita.html5/xsl/map2html5-coverImpl_template.xsl</filepath> wrapper to a new
+              <filepath>org.dita.html5/xsl/cover.xsl</filepath> file to allow custom plug-ins to override the HTML5
+            cover page with a custom stylesheet.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2981" format="html" scope="external">#2981</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3579" format="html" scope="external">#3579</xref>
+          </li>
           <li id="3566">DITA-OT 3.5.2 introduced a regression that caused builds to fail with a Java error when source
             files contained irregular table markup. Table processing has been updated to normalize tables with multiple
             groups and emit a <msgnum>DOTJ082E</msgnum> error when invalid table markup prevents processing.

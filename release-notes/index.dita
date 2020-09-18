@@ -507,6 +507,21 @@
           <xref keyref="pdf-customization"/>, and how to extend the toolkit by
           <xref keyref="adding-plugins"/> and
           <xref keyref="custom-plugins"/>.</p>
+        <p deliveryTarget="html">Information found exclusively on the DITA-OT website or functional website changes
+          include:
+          <ul>
+            <li>A list DITA-OT Day conference videos has been added to
+              <xref keyref="dita-and-dita-ot-resources">Resources</xref>. Additionally, where applicable, individual
+              topics have links to relevant video presentations.
+              <xref href="https://github.com/dita-ot/docs/issues/218" format="html" scope="external">#218</xref></li>
+            <li>A new topic about
+              <xref keyref="release-history"/> was added.
+              <xref href="https://github.com/dita-ot/docs/pull/305" format="html" scope="external">#305</xref></li>
+            <li>In addition to content in <filepath>/dev</filepath>, a search now returns results from all release notes
+              from DITA-OT 2.0 forward.
+              <xref href="https://github.com/algolia/docsearch-configs/pull/2364" format="html" scope="external"
+                >#2364</xref></li>
+          </ul></p>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"/>, see the
           <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.5+is%3Aclosed" format="html"

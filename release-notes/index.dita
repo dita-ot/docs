@@ -69,6 +69,26 @@
             large number of topics and subfolders by allowing the parser to re-use the DTD grammars between them.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3574" format="html" scope="external">#3574</xref>
           </li>
+          <li deliveryTarget="html">HTML versions of the documentation include new information in the following topics:
+            <ul>
+              <li id="docs-218">A list of <cite>DITA-OT Day</cite> conference videos has been added to the
+                <xref keyref="dita-and-dita-ot-resources">Resources</xref> section. Where applicable, individual topics
+                include links to relevant presentations from recent events.
+                <xref href="https://github.com/dita-ot/docs/issues/218" format="html" scope="external">#218</xref>,
+                <xref href="https://github.com/dita-ot/docs/pull/304" format="html" scope="external">#304</xref>
+              </li>
+              <li id="docs-305">A new
+                <xref keyref="release-history"/> topic was added for easier access to details on prior releases.
+                <xref href="https://github.com/dita-ot/docs/pull/305" format="html" scope="external">#305</xref>
+              </li>
+              <li id="docsearch-2364">In addition to the latest development version of the documentation, the site
+                search now returns results from all <cite>Release Notes</cite> from DITA-OT 2.0 forward, to make it
+                easier to find information about the changes in earlier releases.
+                <xref href="https://github.com/algolia/docsearch-configs/pull/2364" format="html" scope="external"
+                  >algolia/docsearch-configs#2364</xref>
+              </li>
+            </ul>
+          </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.4+is%3Aclosed" format="html"

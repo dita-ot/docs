@@ -55,7 +55,9 @@
       <topicref keyref="web-based-resources" print="yes"/>
       <topicref keyref="books"/>
     </appendix>
-    <appendix keyref="release-notes"/>
+    <appendix keyref="release-notes">
+      <ditavalref href="resources/pdf.ditaval"/>
+    </appendix>
   </appendices>
   <backmatter>
     <booklists>

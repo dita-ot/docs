@@ -81,6 +81,7 @@ task pdf(type: DitaOtTask, dependsOn: autoGenerate) {
     input "${projectDir}/userguide-book.ditamap"
     output outputDir
     transtype 'pdf'
+    filter "${projectDir}/resources/pdf.ditaval"
 
     properties {
         property(file: "${projectDir}/samples/properties/docs-build-pdf.properties")

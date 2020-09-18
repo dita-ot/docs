@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<map>
+  <title>DITA-OT Day 2018</title>
+  <topicref keyref="dita-ot-day-videos-intro-2018" locktitle="yes">
+    <topicmeta>
+      <navtitle>2018 Rotterdam</navtitle>
+      <linktext>Rotterdam 2018</linktext>
+    </topicmeta>
+    <!-- This ditaval prevents duplicate titles in TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
+    <!-- See https://github.com/dita-ot/dita-ot/issues/3581 -->
+    <topicref keyref="whatsnextfordita-ot-2018" toc="no"/>
+    <topicref keyref="whoareyoucallingstale-2018" toc="no"/>
+    <topicref keyref="twistedxslttricksmakingc-2018" toc="no"/>
+    <topicref keyref="dita-otanddocops-2018" toc="no"/>
+    <topicref keyref="validationmeetspublicati-2018" toc="no"/>
+    <topicref keyref="afastpathforbuildingdata-2018" toc="no"/>
+    <topicref keyref="overviewofdita-semiaopen-2018" toc="no"/>
+    <topicref keyref="unittestingdita-otplugin-2018" toc="no"/>
+    <topicref keyref="stepbystepimplementation-2018" toc="no"/>
+    <topicref keyref="metaditasamplestestingar-2018" toc="no"/>
+    <topicref keyref="plug-ininstallationmadee-2018" toc="no"/>
+    <topicref keyref="installingdita-otonmacos-2018" toc="no"/>
+    <topicref keyref="comparisonbetweenthedocb-2018" toc="no"/>
+    <topicref keyref="ditagradleandgitasmallte-2018" toc="no"/>
+    <topicref keyref="dita-otwebsitesurveyresu-2018" toc="no"/>
+    <topicref keyref="highlightsinrecentdita-o-2018" toc="no"/>
+  </topicref>
+  <reltable>
+    <relheader>
+      <relcolspec linking="sourceonly"><!-- Source --></relcolspec>
+      <relcolspec linking="targetonly"><!-- Target --></relcolspec>
+    </relheader>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="whatsnextfordita-ot-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="whoareyoucallingstale-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="pdf-customization-resources"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="twistedxslttricksmakingc-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="dita-otanddocops-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-registry"/>
+        <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="validationmeetspublicati-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="afastpathforbuildingdata-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-registry"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="overviewofdita-semiaopen-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-registry"/>
+        <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="unittestingdita-otplugin-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="custom-plugins"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="stepbystepimplementation-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="metaditasamplestestingar-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugins-installing"/>
+        <topicref keyref="plugins-registry"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="plug-ininstallationmadee-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="installing-via-homebrew"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="installingdita-otonmacos-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="comparisonbetweenthedocb-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="ditagradleandgitasmallte-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="dita-otwebsitesurveyresu-2018"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="highlightsinrecentdita-o-2018"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

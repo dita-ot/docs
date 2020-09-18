@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd">
+
+<subjectScheme>
+  <subjectHead>
+    <subjectHeadMeta>
+      <navtitle>Controlled values for the @deliveryTarget attribute</navtitle>
+      <shortdesc>Provides a set of values for use with the @deliveryTarget conditional-processing attribute.</shortdesc>
+    </subjectHeadMeta>
+  </subjectHead>
+  <subjectdef keys="deliveryTarget-values">
+    <topicmeta>
+      <navtitle>Values for @deliveryTarget attributes</navtitle>
+    </topicmeta>
+    <subjectdef keys="print">
+      <topicmeta>
+        <navtitle>Print-primary deliverables</navtitle>
+      </topicmeta>
+      <subjectdef keys="pdf">
+        <topicmeta>
+          <navtitle>PDF</navtitle>
+        </topicmeta>
+      </subjectdef>
+      <subjectdef keys="css-print">
+        <topicmeta>
+          <navtitle>CSS for print</navtitle>
+        </topicmeta>
+      </subjectdef>
+    </subjectdef>
+    <subjectdef keys="online">
+      <topicmeta>
+        <navtitle>Online deliverables</navtitle>
+      </topicmeta>
+      <subjectdef keys="html-based">
+        <topicmeta>
+          <navtitle>HTML-based deliverables</navtitle>
+        </topicmeta>
+        <subjectdef keys="html">
+          <topicmeta>
+            <navtitle>HTML</navtitle>
+          </topicmeta>
+          <subjectdef keys="html5">
+            <topicmeta>
+              <navtitle>HTML5</navtitle>
+            </topicmeta>
+          </subjectdef>
+          <subjectdef keys="site">
+            <topicmeta>
+              <navtitle>Project website: dita-ot.org</navtitle>
+            </topicmeta>
+          </subjectdef>
+        </subjectdef>
+      </subjectdef>
+    </subjectdef>
+  </subjectdef>
+  <enumerationdef>
+    <attributedef name="deliveryTarget"/>
+    <subjectdef keyref="deliveryTarget-values"/>
+  </enumerationdef>
+</subjectScheme>

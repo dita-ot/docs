@@ -6,7 +6,9 @@
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
 
   <topicref keyref="landing-page"/>
-  <topicref keyref="release-notes"/>
+  <topicref keyref="release-notes">
+    <topicref keyref="release-history"/>
+  </topicref>
   <topicref keyref="installing-client">
     <mapref href="../topics/installing.ditamap"/>
   </topicref>
@@ -42,6 +44,7 @@
   </topicref>
   <topicref keyref="dita-and-dita-ot-resources">
     <mapref href="../topics/dita-resources.ditamap" toc="no"/>
+    <mapref href="../topics/dita-ot-day-videos.ditamap"/>
   </topicref>
 
   <topicgroup processing-role="resource-only">

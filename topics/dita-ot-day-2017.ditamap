@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+
+<map>
+  <title>DITA-OT Day 2017</title>
+  <topicref keyref="dita-ot-day-videos-intro-2017" locktitle="yes">
+    <topicmeta>
+      <navtitle>2017 Berlin</navtitle>
+      <linktext>Berlin 2017</linktext>
+    </topicmeta>
+    <!-- This ditaval prevents duplicate titles in TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
+    <!-- See https://github.com/dita-ot/dita-ot/issues/3581 -->
+    <topicref keyref="panelwhatsnextfordita-ot-2017" toc="no"/>
+    <topicref keyref="whatarewemissingwherewou-2017" toc="no"/>
+    <topicref keyref="dcql-theditacascadingque-2017" toc="no"/>
+    <topicref keyref="locale-awaresortingandte-2017" toc="no"/>
+    <topicref keyref="automaticallycreatetarge-2017" toc="no"/>
+    <topicref keyref="bootstrappingdita-custom-2017" toc="no"/>
+    <topicref keyref="usingcsstostylethepdfout-2017" toc="no"/>
+    <topicref keyref="markdownsupportinside-ou-2017" toc="no"/>
+    <topicref keyref="dita-otdocsdevelopments-2017" toc="no"/>
+    <topicref keyref="managingalargescalebuild-2017" toc="no"/>
+    <topicref keyref="generatingsvgsyntaxdiagr-2017" toc="no"/>
+    <topicref keyref="ditavalidationandspell-c-2017" toc="no"/>
+    <topicref keyref="accessibilityindita-ot-2017" toc="no"/>
+    <topicref keyref="weshallcallitpreprocess2-2017" toc="no"/>
+    <topicref keyref="dita-ot-2017" toc="no"/>
+  </topicref>
+  <reltable>
+    <relheader>
+      <relcolspec linking="sourceonly"><!-- Source --></relcolspec>
+      <relcolspec linking="targetonly"><!-- Target --></relcolspec>
+    </relheader>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="panelwhatsnextfordita-ot-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="whatarewemissingwherewou-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="dcql-theditacascadingque-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="globalization"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="locale-awaresortingandte-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="automaticallycreatetarge-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="html-customization"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="bootstrappingdita-custom-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="usingcsstostylethepdfout-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2markdown"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="markdownsupportinside-ou-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="dita-otdocsdevelopments-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="plugin-coding-conventions"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="managingalargescalebuild-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="generatingsvgsyntaxdiagr-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="ditavalidationandspell-c-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita-v1-3-support"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="accessibilityindita-ot-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="map-first-preproc"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="weshallcallitpreprocess2-2017"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="dita-ot-2017"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

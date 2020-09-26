@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="22.1">
     <meta>
-        <filters directoryPatterns="*gradle, build, out*, temp" filePatterns="all-extension-points.dita, all-parameters.dita, changes.ditamap, error-messages.xml, extension-points-in-*.dita, *gradle*, *.graffle, history.dita, Icon.png, LICENSE*, parameters-*.dita, platform.ditaval, rel*.dita, *.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
+        <filters directoryPatterns="*gradle, build, node_modules, out*, temp" filePatterns="all-extension-points.dita, all-parameters.dita, changes.ditamap, error-messages.xml, extension-points-in-*.dita, *gradle*, *.graffle, history.dita, Icon.png, LICENSE*, parameters-*.dita, platform.ditaval, rel*.dita, *.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
             <serialized version="22.1" xml:space="preserve">
                 <serializableOrderedMap>

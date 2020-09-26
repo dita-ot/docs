@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="dita-command-properties" xml:lang="en">
   <title>Arguments and options for the <cmdname>dita</cmdname> command</title>
   <titlealts>
@@ -369,11 +368,15 @@
           <pd>Convert partial documentation sets by processing input with additional resources.
             <p>For example, to process a single topic file with a map that contains key definitions, use a command like
               this:
-              <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
+              <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
+                >topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname
+                >--format</parmname>=<option>html5</option></codeblock>
             </p>
             <p>To convert a chapter map to HTML5 and insert related links from relationship tables in a separate map,
               use:
-              <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>chapter.ditamap</filepath> <parmname>--resource</parmname>=<filepath>reltables.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
+              <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
+                >chapter.ditamap</filepath> <parmname>--resource</parmname>=<filepath
+                >reltables.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
             </p></pd>
         </plentry>
         <plentry>

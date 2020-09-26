@@ -26,8 +26,8 @@ You must have a JRE and a local installation of DITA-OT. There is no need to dow
 
 ### Steps
 
-1. Open a command prompt, and change to the location of your local repository for the documentation source.
-2. Type a variant of the following command for your operating system, adjust the path to your DITA-OT installation, and press <kbd>Enter</kbd>:
+1.  Open a command prompt, and change to the location of your local repository for the documentation source.
+2.  Type a variant of the following command for your operating system, adjust the path to your DITA-OT installation, and press <kbd>Enter</kbd>:
 
     - On Linux or macOS, use `./gradlew`:
 

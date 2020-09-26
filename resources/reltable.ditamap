@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <map id="reltable">
   <title>Relationship tables</title>
   <reltable>
@@ -378,7 +377,8 @@
         <topicref format="html" href="http://dita-archive.xml.org/wiki/the-dita-open-toolkit" scope="external">
           <topicmeta>
             <linktext>DITA-OT 1.8 - 1.0 Release Notes</linktext>
-            <shortdesc>The DITA-OT project archive at dita-archive.xml.org provides news about earlier toolkit releases, and
+            <shortdesc
+            >The DITA-OT project archive at dita-archive.xml.org provides news about earlier toolkit releases, and
               release notes for legacy versions.</shortdesc>
           </topicmeta>
         </topicref>

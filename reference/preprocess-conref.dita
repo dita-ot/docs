@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="preprocess-conref">
   <title>Resolve content references (conref)</title>
   <shortdesc>The <codeph>conref</codeph> step resolves content references, processing only the DITA maps or topics that
@@ -34,7 +33,9 @@
         values of the <xmlatt>id</xmlatt> and <xmlatt>xref</xmlatt> attributes are updated so that they remain valid in
         the new location. For example, a referenced topic might include a section as in the following example: <fig>
           <title>Referenced topic that contains a section and cross reference</title>
-          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;topic id="referenced_topic">
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;topic id="referenced_topic">
   &lt;title>...&lt;/title>
   &lt;body>
     &lt;section id="sect">

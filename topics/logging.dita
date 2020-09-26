@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="loghandling">
   <title>Logging build information</title>
   <titlealts>
@@ -79,7 +78,9 @@
             <p>To use a custom Ant logger with the <cmdname>dita</cmdname> command, add the logger to the
                 <codeph>ANT_ARGS</codeph> environment variable by calling the following command before calling the
                 <cmdname>dita</cmdname> command:</p>
-            <codeblock outputclass="syntax-bash">export ANT_ARGS="-logger org.apache.tools.ant.listener.AnsiColorLogger"</codeblock>
+            <codeblock
+              outputclass="syntax-bash"
+            >export ANT_ARGS="-logger org.apache.tools.ant.listener.AnsiColorLogger"</codeblock>
             <p>Now you will get colorized messages when the <cmdname>dita</cmdname> command runs.</p>
             <note type="tip">Environment variables can also be set permanently. See
               <xref href="https://www.java.com/en/download/help/path.xml" format="html" scope="external">How do I set or

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="custom-html-properties-file">
   <title>Customizing HTML with a <filepath>.properties</filepath> file</title>
   <titlealts>
@@ -39,7 +38,9 @@
           <p>For example:</p>
           <fig>
             <title>The <filepath>docsrc/samples/properties/sequence-html5.properties</filepath> file</title>
-            <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/sequence-html5.properties"/></codeblock>
+            <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef
+                href="../samples/properties/sequence-html5.properties"
+              /></codeblock>
           </fig>
         </stepxmp>
       </step>
@@ -47,7 +48,9 @@
         <cmd>Reference your <filepath>.properties</filepath> file with the <cmdname>dita</cmdname> command when building
           your output.</cmd>
         <stepxmp>
-          <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5</option> <parmname>--propertyfile</parmname>=<varname>my.properties</varname></codeblock>
+          <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<varname
+            >my.ditamap</varname> <parmname>--format</parmname>=<option>html5</option> <parmname
+            >--propertyfile</parmname>=<varname>my.properties</varname></codeblock>
         </stepxmp>
         <info/>
       </step>

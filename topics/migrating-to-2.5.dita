@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="migrating-to-2.5">
 
   <title>Migrating to release 2.5</title>
@@ -93,7 +92,8 @@
         </tgroup>
       </table>
       <p>To install the legacy PDF plug-in, run the following command:</p>
-      <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<filepath>https://github.com/dita-ot/org.dita.pdf2.legacy/archive/2.5.zip</filepath></codeblock>
+      <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=<filepath
+        >https://github.com/dita-ot/org.dita.pdf2.legacy/archive/2.5.zip</filepath></codeblock>
       <note type="attention">Only install the legacy PDF plug-in if you have a custom PDF plug-in that requires the
         pre–2.5 styles. If your plug-in was designed for DITA-OT 2.4 and does not override these settings, there is no
         need to install the legacy PDF plug-in.</note>

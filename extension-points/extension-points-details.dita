@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="extension-points-details">
   <title>Extension points details</title>
   <shortdesc>This file provides additional details that are pushed to the generated topics to replace the navigation
@@ -18,8 +17,10 @@
   <reference id="base">
     <title>All transformations</title>
     <titlealts>
-      <navtitle conaction="pushreplace" conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/navtitle"
-        >Common processing</navtitle>
+      <navtitle
+        conaction="pushreplace"
+        conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/navtitle"
+      >Common processing</navtitle>
     </titlealts>
     <shortdesc conaction="pushreplace" conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/shortdesc">The
         <codeph>org.dita.base</codeph> plug-in provides common extension points that are available to extend processing
@@ -84,8 +85,10 @@
     <titlealts>
       <navtitle>Eclipse Help (<codeph>org.dita.eclipsehelp</codeph>) </navtitle>
     </titlealts>
-    <shortdesc conaction="pushreplace"
-      conref="extension-points-in-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-ext/shortdesc">Certain extension points
+    <shortdesc
+      conaction="pushreplace"
+      conref="extension-points-in-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-ext/shortdesc"
+    >Certain extension points
       are specific to the Eclipse Help transformation. <ph>
         <indexterm><codeph>org.dita.eclipsehelp</codeph></indexterm>
         <indexterm>extension points
@@ -99,11 +102,15 @@
   <reference id="htmlhelp">
     <title>HTML Help</title>
     <titlealts>
-      <navtitle conaction="pushreplace"
-        conref="extension-points-in-org.dita.htmlhelp.dita#org.dita.htmlhelp-ext/navtitle">HTML Help</navtitle>
+      <navtitle
+        conaction="pushreplace"
+        conref="extension-points-in-org.dita.htmlhelp.dita#org.dita.htmlhelp-ext/navtitle"
+      >HTML Help</navtitle>
     </titlealts>
-    <shortdesc conaction="pushreplace"
-      conref="extension-points-in-org.dita.htmlhelp.dita#org.dita.htmlhelp-ext/shortdesc">Certain extension points are
+    <shortdesc
+      conaction="pushreplace"
+      conref="extension-points-in-org.dita.htmlhelp.dita#org.dita.htmlhelp-ext/shortdesc"
+    >Certain extension points are
       specific to the HTML Help transformation. <ph>
         <indexterm><codeph>org.dita.htmlhelp</codeph></indexterm>
         <indexterm>extension points
@@ -119,8 +126,10 @@
     <titlealts>
       <navtitle>PDF (<codeph>org.dita.pdf2</codeph>) </navtitle>
     </titlealts>
-    <shortdesc conaction="pushreplace" conref="extension-points-in-org.dita.pdf2.dita#org.dita.pdf2-ext/shortdesc"
-      >Certain extension points are specific to the PDF transformation (formerly known as “PDF2”). <ph>
+    <shortdesc
+      conaction="pushreplace"
+      conref="extension-points-in-org.dita.pdf2.dita#org.dita.pdf2-ext/shortdesc"
+    >Certain extension points are specific to the PDF transformation (formerly known as “PDF2”). <ph>
         <indexterm>PDF
           <indexterm><codeph>org.dita.pdf2</codeph></indexterm></indexterm>
         <indexterm><codeph>org.dita.pdf2</codeph></indexterm>

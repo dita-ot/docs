@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="globalization-support">
   <title>Globalization support</title>
   <titlealts>
@@ -46,8 +45,10 @@
         </dlentry>
         <dlentry>
           <dt>Index sorting</dt>
-          <dd>DITA-OT can use only a single language to sort indexes.<draft-comment author="Kristen James Eberlein"
-              time="11 August 2012">What does the ICU for Java provide? Does index sorting occur if ICU for Java is NOT
+          <dd>DITA-OT can use only a single language to sort indexes.<draft-comment
+              author="Kristen James Eberlein"
+              time="11 August 2012"
+            >What does the ICU for Java provide? Does index sorting occur if ICU for Java is NOT
               installed?</draft-comment></dd>
         </dlentry>
         <dlentry>

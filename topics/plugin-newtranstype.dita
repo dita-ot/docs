@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="plugin-newtranstype">
   <title>Adding a new transformation type</title>
   <titlealts>
@@ -42,7 +41,9 @@
       <step>
         <cmd>Create a <filepath>plugin.xml</filepath> with the following content:</cmd>
         <info>
-          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;plugin id="<varname>plugin-id</varname>">
   &lt;transtype name="<varname>new-transtype</varname>"/>
   <b>&lt;feature extension="dita.transtype.print" value="<varname>new-transtype</varname>"/></b>
   &lt;feature extension="ant.import" file="<varname>ant-file</varname>"/>
@@ -69,7 +70,9 @@
         <p>The following <filepath>plugin.xml</filepath> file defines a new transformation type named "print-pdf"; it
           also defines the transformation type to be a print type. The build will look for a
             <parmname>dita2print-pdf</parmname> target.</p>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.print-pdf/plugin.xml"/></codeblock>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
+            href="../samples/plugins/com.example.print-pdf/plugin.xml"
+          /></codeblock>
         <note type="tip">For a complete sample plug-in with all required code, see
           <xref keyref="pdf-customization-example"/>.</note>
       </fig>
@@ -82,7 +85,8 @@
             <xmlelement>transtype</xmlelement> element to extend the common HTML transformation with a new
             <option>html5</option> transformation type and define a new <parmname>nav-toc</parmname> parameter with
           three possible values:</p>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><b>&lt;transtype name="html5" extends="common-html" desc="HTML5"></b>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><b
+          >&lt;transtype name="html5" extends="common-html" desc="HTML5"></b>
   &lt;param name="nav-toc" type="enum" 
          desc="Specifies whether to generate navigation in topic pages.">
     &lt;val default="true" desc="No TOC">none&lt;/val>

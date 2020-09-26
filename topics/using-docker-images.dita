@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="ID">
   <title>Running the <cmdname>dita</cmdname> command from a Docker image</title>
   <titlealts>
@@ -58,8 +57,11 @@
             <codeblock outputclass="syntax-bash">$ <cmdname>brew</cmdname> cask install docker
 <systemoutput>Downloading…</systemoutput></codeblock>
           </choice>
-          <choice platform="linux">On Linux, install Docker Community Edition (CE) via your operating system’s package manager, for
-            example: <codeblock outputclass="syntax-bash">$ <cmdname>sudo</cmdname> apt-get install docker-ce</codeblock></choice>
+          <choice
+            platform="linux"
+          >On Linux, install Docker Community Edition (CE) via your operating system’s package manager, for
+            example: <codeblock outputclass="syntax-bash">$ <cmdname
+              >sudo</cmdname> apt-get install docker-ce</codeblock></choice>
         </choices>
       </step>
       <step>
@@ -71,19 +73,25 @@
                 settings</xref>, create a new personal access token with the <codeph>read:packages</codeph> and
                 <codeph>repo</codeph> scopes.</cmd>
             <info>For more information, see
-              <xref href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line"
-                scope="external" format="html">Creating a personal access token for the command line</xref>.</info>
+              <xref
+                href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line"
+                scope="external"
+                format="html"
+              >Creating a personal access token for the command line</xref>.</info>
           </substep>
           <substep>
             <cmd>On the command line, run the <cmdname>docker</cmdname> command to log in with your GitHub
               credentials.</cmd>
             <stepxmp>
-              <codeblock outputclass="syntax-bash"><cmdname>docker</cmdname> login docker.pkg.github.com -u <varname>USERNAME</varname> -p <varname>PASSWORD/TOKEN</varname></codeblock>
+              <codeblock outputclass="syntax-bash"><cmdname>docker</cmdname> login docker.pkg.github.com -u <varname
+                >USERNAME</varname> -p <varname>PASSWORD/TOKEN</varname></codeblock>
             </stepxmp>
             <info>For more information, see
               <xref
                 href="https://help.github.com/en/articles/configuring-docker-for-use-with-github-package-registry#authenticating-to-github-package-registry"
-                scope="external" format="html">Authenticating to GitHub Package Registry</xref>.</info>
+                scope="external"
+                format="html"
+              >Authenticating to GitHub Package Registry</xref>.</info>
           </substep>
         </substeps>
       </step>
@@ -92,7 +100,9 @@
             <cmdname>dita</cmdname> command.</cmd>
         <stepxmp>
           <codeblock outputclass="syntax-bash">$ <cmdname>docker</cmdname> run -it \
-  -v /Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> \
+  -v /Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword
+              keyref="maintenance-version"
+            /> \
   -i /src/input.ditamap \
   -o /src/out \
   -f html5 -v</codeblock>
@@ -111,7 +121,9 @@
             <p>On Windows, if your <filepath>Users</filepath> directory is on the <filepath>C:\</filepath> drive, use
               <filepath>/c/Users/…</filepath> to map the host directory:</p>
             <codeblock>> C:\Users\username> <cmdname>docker</cmdname> run -it ^
-  -v /c/Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> ^
+  -v /c/Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword
+                keyref="maintenance-version"
+              /> ^
   -i /src/input.ditamap ^
   -o /src/out ^
   -f html5 -v</codeblock>
@@ -119,7 +131,9 @@
         </stepxmp>
         <info>
           <note>The DITA-OT container image uses the <codeph>ENTRYPOINT</codeph> instruction to run the
-              <cmdname>dita</cmdname> command from the <filepath outputclass="preserve-separator">/opt/app/bin/</filepath> directory of the container
+              <cmdname>dita</cmdname> command from the <filepath
+              outputclass="preserve-separator"
+            >/opt/app/bin/</filepath> directory of the container
             automatically, so you there’s no need to include the <cmdname>dita</cmdname> command itself, only the
             arguments and options you need to publish your content.</note>
         </info>

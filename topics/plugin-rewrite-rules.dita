@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="ID">
   <title>Adjusting file names in map-first pre-processing</title>
   <titlealts>
@@ -23,7 +22,9 @@
     <p>For example, set the <parmname>result.rewrite-rule.xsl</parmname> parameter to specify a bundled XSLT stylesheet
       that contains your custom rewrite rules.</p>
     <p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version='1.0' encoding='UTF-8'?>
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;?xml version='1.0' encoding='UTF-8'?>
 &lt;project name="com.example.rewrite.pdf">
   &lt;target name="dita2rewrite.pdf.init">
     &lt;property name="customization.dir"
@@ -38,7 +39,9 @@
     <p>Your plug-in would also include a <filepath>custom-rules.xsl</filepath> file, which might contain templates like
       this to move all image files to an <filepath>images</filepath> subdirectory:</p>
     <p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xsl:template match="node() | @*">
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;xsl:template match="node() | @*">
   &lt;xsl:copy>
     &lt;xsl:apply-template select="node() | @*"/>
   &lt;/xsl:copy>

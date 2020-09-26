@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="custom-html-plugin-webfont">
   <title>Inserting JavaScript in generated HTML</title>
   <titlealts>
@@ -43,7 +42,9 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>plugin.xml</filepath> file</title>
-            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
+                href="../samples/plugins/com.example.html5-javascript/plugin.xml"
+              /></codeblock>
           </fig>
           <note>This plug-in will extend the default HTML5 transformation, so the <xmlelement>require</xmlelement>
             element explicitly defines <filepath>org.dita.html5</filepath> as a dependency.</note>
@@ -59,7 +60,9 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>javascript.ftr.xml</filepath> file</title>
-            <codeblock outputclass="language-javascript normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/include/javascript.ftr.xml"/></codeblock>
+            <codeblock outputclass="language-javascript normalize-space show-line-numbers show-whitespace"><coderef
+                href="../samples/plugins/com.example.html5-javascript/include/javascript.ftr.xml"
+              /></codeblock>
           </fig>
           <p>The division wrapper will be discarded when generating HTML files, and the contents will be inserted into
             the <xmlelement>footer</xmlelement> element of each page.</p>
@@ -72,7 +75,9 @@
         <stepxmp>
           <fig>
             <title>Sample build file: <filepath>build_html5-javascript.xml</filepath></title>
-            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-javascript/build_html5-javascript.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
+                href="../samples/plugins/com.example.html5-javascript/build_html5-javascript.xml"
+              /></codeblock>
           </fig>
         </stepxmp>
       </step>
@@ -80,8 +85,11 @@
     <result>
       <note type="tip">The files for this sample plug-in are included in the DITA-OT installation directory under
           <filepath>docsrc/samples/plugins/com.example.html5-javascript/</filepath> and on
-        <xref href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.html5-javascript"
-          format="html" scope="external">GitHub</xref>.</note>
+        <xref
+          href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.html5-javascript"
+          format="html"
+          scope="external"
+        >GitHub</xref>.</note>
       <p>The plug-in directory has the following layout and files:</p>
       <codeblock>com.example.html5-javascript
 ├── build_html5-javascript.xml
@@ -95,7 +103,8 @@
           <parmname>--install</parmname> to install the plug-in and make the <option>html5-javascript</option>
           transformation available.</li>
         <li>Build output with the new transformation type to verify that the plug-in works as intended.
-          <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5-javascript</option></codeblock></li>
+          <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname
+            >my.ditamap</varname> <parmname>--format</parmname>=<option>html5-javascript</option></codeblock></li>
         <li>Open one of the generated HTML topic files in a modern web browser and check the JavaScript
             <uicontrol>Console</uicontrol>. When the page is loaded, <msgph>Adding Google Analytics tracker</msgph> will
           appear on the console to verify that the sample script is loaded.</li>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="migrating-to-3.5">
 
   <title>Migrating to release 3.5</title>
@@ -113,14 +112,18 @@
       </ul>
       <p>For example, if your plug-in previously used the <codeph>fullditatopicfile</codeph> to select resources in the
         temporary directory like this:</p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt basedir="${dita.temp.dir}"
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;xslt basedir="${dita.temp.dir}"
       destdir="${output.dir}"
       includesfile="${dita.temp.dir}${file.separator}${fullditatopicfile}"
       style="${args.xsl}">
   &lt;!-- ⋮ -->
 &lt;/xslt></codeblock>
       <p> With DITA-OT 2.4 or newer, use the <xmlelement>ditafileset</xmlelement> element instead: </p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt basedir="${dita.temp.dir}"
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;xslt basedir="${dita.temp.dir}"
       destdir="${output.dir}"
       style="${args.xsl}">
   &lt;ditafileset format="dita" processingRole="normal"/>

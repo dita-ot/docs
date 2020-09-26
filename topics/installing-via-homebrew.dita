@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="installing-via-homebrew">
   <title>Installing on macOS via Homebrew</title>
   <titlealts>
@@ -43,7 +42,8 @@ Already up-to-date.</codeblock></stepxmp>
 <systemoutput>dita-ot: stable <keyword keyref="maintenance-version"/>
 DITA Open Toolkit is an implementation of the OASIS DITA specification
 https://www.dita-ot.org/
-/usr/local/Cellar/dita-ot/<keyword keyref="maintenance-version"/> (<varname>number of files</varname>, <varname>package size</varname>) *
+/usr/local/Cellar/dita-ot/<keyword keyref="maintenance-version"/> (<varname>number of files</varname>, <varname
+              >package size</varname>) *
   Built from source on <varname>YYYY-MM-DD</varname> at <varname>hh:mm:ss</varname>
 From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/dita-ot.rb
 ==> Requirements

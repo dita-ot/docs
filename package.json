@@ -18,9 +18,9 @@
   },
   "devDependencies": {
     "@prettier/plugin-xml": "0.12.0",
-    "husky": "4.2.5",
+    "husky": "4.3.0",
     "precise-commits": "1.0.2",
-    "prettier": "2.1.1"
+    "prettier": "2.1.2"
   },
   "precise-commits": {
     "*.{dita*,json,md,scss,xml,yaml,yml}": [

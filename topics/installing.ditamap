@@ -7,6 +7,7 @@
 
   <topicref keyref="prerequisite-software"/>
   <topicref keyref="determining-version-of-ditaot"/>
+  <!-- prettier-ignore-start -->
   <!-- ↓ branch-filter ↓ -->
   <topicref href="using-dita-command.dita"
             keys="first-build-using-dita-command" locktitle="yes">
@@ -20,5 +21,6 @@
     </ditavalref>
   </topicref>
   <!-- ↑ end-filtering ↑ -->
+  <!-- prettier-ignore-end -->
   <topicref keyref="installing-via-homebrew"/>
 </map>

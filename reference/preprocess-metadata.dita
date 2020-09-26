@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "referenceconcept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="preprocess-metadata">
   <title>Move metadata (move-meta-entries) and pull content into maps (mappull) </title>
   <shortdesc>The <codeph>move-meta-entries</codeph> step pushes metadata back and forth between maps and topics. For

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="plugin-xsltparams">
   <title>Adding parameters to existing XSLT steps</title>
   <titlealts>
@@ -45,7 +44,9 @@
       </step>
       <step>
         <cmd>Construct a <filepath>plugin.xml</filepath> file that contains the following content:</cmd>
-        <info><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
+        <info><codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="<varname>extension-point</varname>" file="<varname>file</varname>"/>
 &lt;/plugin></codeblock>where:
           <ul>
@@ -70,7 +71,9 @@
       <p>The following plug-in passes the parameters defined in the <filepath>insertParameters.xml</filepath> file as
         input to the XHTML process. Generally, an additional XSLT override will make use of the parameters to do
         something new with the generated content.</p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.newparam">
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;plugin id="com.example.newparam">
   &lt;feature extension="dita.conductor.xhtml.param" 
            file="insertParameters.xml"/>
 &lt;/plugin></codeblock>

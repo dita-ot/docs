@@ -1,21 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <map>
   <!-- This file was generated from dita-ot-day-ditamap-keys.py found at https://gist.github.com/lief-erickson/4019b6ddf09c154164d4830b0fd6e7e8. -->
   <title>DITA-OT Day 2014</title>
-  <keydef keys="quovadis-2014" href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Quo_vadis" format="html"
-    scope="external">
+  <keydef
+    keys="quovadis-2014"
+    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Quo_vadis"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Quo vadis?</linktext>
       <shortdesc>Discussion about the present and the future of the DITA-OT project.</shortdesc>
       <author>Panel moderated by George Bina</author>
     </topicmeta>
   </keydef>
-  <keydef keys="providingdesignersaflexi-2014"
+  <keydef
+    keys="providingdesignersaflexi-2014"
     href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Providing_designers_a_flexible_way_to_publish_DITA_content_into_Adobe_InDesign"
-    format="html" scope="external">
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Providing Designers a Flexible Way to Publish DITA Content into Adobe InDesign</linktext>
       <shortdesc>This presentation shows how Mekon have implemented a plugin that provides an approach to publishing
@@ -23,9 +29,12 @@
       <author>Mark Poston</author>
     </topicmeta>
   </keydef>
-  <keydef keys="publishingditacontentre--2014"
+  <keydef
+    keys="publishingditacontentre--2014"
     href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Publishing_DITA_content_re-used_in_different_context"
-    format="html" scope="external">
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Publishing DITA Content Re-Used in Different Context in EPUB and Eclipse Infocenter by Using
         DITA-OT</linktext>
@@ -34,9 +43,12 @@
       <author>Gunthilde Sohn</author>
     </topicmeta>
   </keydef>
-  <keydef keys="scormwrapperforditatosco-2014"
-    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#SCORM_wrapper_for_DITA_to_SCORM" format="html"
-    scope="external">
+  <keydef
+    keys="scormwrapperforditatosco-2014"
+    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#SCORM_wrapper_for_DITA_to_SCORM"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>SCORM Wrapper for DITA to SCORM</linktext>
       <shortdesc>Hal Trent of Comtech will present a SCORM wrapper developed for learning and training output, which
@@ -47,9 +59,12 @@
       <author>Hal Trent</author>
     </topicmeta>
   </keydef>
-  <keydef keys="ditaopentoolkitpdfgenera-2014"
+  <keydef
+    keys="ditaopentoolkitpdfgenera-2014"
     href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#DITA_Open_Toolkit_PDF_generation_with_CSS"
-    format="html" scope="external">
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>DITA Open Toolkit PDF Generation with CSS</linktext>
       <shortdesc>How about producing and styling PDFs only by using CSS? Join Radu for an overview of a new, innovative,
@@ -58,9 +73,12 @@
       <author>Radu Coravu</author>
     </topicmeta>
   </keydef>
-  <keydef keys="ditaopentoolkitpdfplugin-2014"
+  <keydef
+    keys="ditaopentoolkitpdfplugin-2014"
     href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#DITA_Open_Toolkit_PDF_plugins_without_fuss_muss_or_writing_XSL-FO"
-    format="html" scope="external">
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>DITA Open Toolkit PDF Plugins Without Fuss, Muss, or Writing XSL-FO</linktext>
       <shortdesc>Did you know that you can create customized PDF plugins using an easy online tool? Join Jarno for an
@@ -69,9 +87,12 @@
       <author>Jarno Elovirta</author>
     </topicmeta>
   </keydef>
-  <keydef keys="pdfsfromtheditaopentoolk-2014"
-    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#PDFs_from_the_DITA_Open_Toolkit" format="html"
-    scope="external">
+  <keydef
+    keys="pdfsfromtheditaopentoolk-2014"
+    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#PDFs_from_the_DITA_Open_Toolkit"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>PDFs from the DITA Open Toolkit: The Easy and the Not-so-Easy</linktext>
       <shortdesc>With a few simple changes, it's possible to give the DITA-OT's default PDF output much of your own look
@@ -81,9 +102,12 @@
       <author>Leigh White</author>
     </topicmeta>
   </keydef>
-  <keydef keys="dita2rdffromtreestotripl-2014"
-    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#dita2rdf_from_trees_to_triples" format="html"
-    scope="external">
+  <keydef
+    keys="dita2rdffromtreestotripl-2014"
+    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#dita2rdf_from_trees_to_triples"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>dita2rdf: from trees to triples</linktext>
       <shortdesc>The dita2rdf plugin is meant to extract metadata from DITA content and produce an RDF/XML output, which
@@ -93,9 +117,12 @@
       <author>Colin Maudry</author>
     </topicmeta>
   </keydef>
-  <keydef keys="extendingtheditaopentool-2014"
-    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Extending_the_DITA_Open_Toolkit" format="html"
-    scope="external">
+  <keydef
+    keys="extendingtheditaopentool-2014"
+    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Extending_the_DITA_Open_Toolkit"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Extending the DITA Open Toolkit: How crazy can you get?</linktext>
       <shortdesc>DITA-OT includes extension points that let you do any number of things. This session will cover what's
@@ -104,9 +131,12 @@
       <author>Robert Anderson</author>
     </topicmeta>
   </keydef>
-  <keydef keys="rngtodtdandxsdusingthedi-2014"
+  <keydef
+    keys="rngtodtdandxsdusingthedi-2014"
     href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#RNG_to_DTD_and_XSD_using_the_DITA_Open_Toolkit"
-    format="html" scope="external">
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>RNG to DTD and XSD using the DITA Open Toolkit</linktext>
       <shortdesc>The new version of DITA, version 1.3, will use Relax NG as the normative grammar to express the DITA
@@ -117,9 +147,12 @@
       <author>Eliot Kimber</author>
     </topicmeta>
   </keydef>
-  <keydef keys="contributingtothetoolkit-2014"
-    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Contributing_to_the_Toolkit_via_GitHub" format="html"
-    scope="external">
+  <keydef
+    keys="contributingtothetoolkit-2014"
+    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Contributing_to_the_Toolkit_via_GitHub"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Contributing to the Toolkit via GitHub</linktext>
       <shortdesc>Now that the toolkit is hosted on GitHub, it's easier than ever to contribute changes to the DITA-OT
@@ -128,9 +161,12 @@
       <author>Roger Fienhold Sheen</author>
     </topicmeta>
   </keydef>
-  <keydef keys="lookingunderthehoodofthe-2014"
+  <keydef
+    keys="lookingunderthehoodofthe-2014"
     href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Looking_under_the_hood_of_the_DITA_Open_Toolkit"
-    format="html" scope="external">
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Looking under the hood of the DITA Open Toolkit</linktext>
       <shortdesc>Participate in a deeper, more technical dive with the primary DITA-OT developer. This session will
@@ -139,9 +175,12 @@
       <author>Jarno Elovirta</author>
     </topicmeta>
   </keydef>
-  <keydef keys="overviewoftheditaopentoo-2014"
-    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Overview_of_the_DITA_Open_Toolkit" format="html"
-    scope="external">
+  <keydef
+    keys="overviewoftheditaopentoo-2014"
+    href="https://www.oxygenxml.com/events/2014/dita-ot_day.html#Overview_of_the_DITA_Open_Toolkit"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Overview of the DITA Open Toolkit</linktext>
       <shortdesc>Are you new to the DITA-OT? Come and get an overview of what it is, how it works, its history, and the

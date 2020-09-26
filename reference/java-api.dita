@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="API">
   <title>Using the Java API</title>
   <shortdesc>DITA Open Toolkit includes a Java Application Programming Interface to allow developers to embed the
@@ -29,7 +28,9 @@
       configuration for the Java application.</note>
     <example>
       <title>Example usage</title>
-      <codeblock outputclass="language-java normalize-space show-line-numbers show-whitespace">// Create a reusable processor factory with DITA-OT base directory
+      <codeblock
+        outputclass="language-java normalize-space show-line-numbers show-whitespace"
+      >// Create a reusable processor factory with DITA-OT base directory
 ProcessorFactory pf = ProcessorFactory.newInstance(ditaDir);
 // and set the temporary directory
 pf.setBaseTempDir(tempDir);
@@ -61,8 +62,11 @@ p.run();</codeblock>
         Maven 2 Central Repository. You can use this mechanism to download the main JAR file and include it in the build
         for other Java projects.</p>
       <p>To locate the latest version,
-        <xref href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.dita-ot%22" format="html" scope="external"
-          >search for the <codeph>org.dita-ot</codeph> group ID</xref>.</p>
+        <xref
+          href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.dita-ot%22"
+          format="html"
+          scope="external"
+        >search for the <codeph>org.dita-ot</codeph> group ID</xref>.</p>
       <note type="important">The <filepath>dost.jar</filepath> file provides only the DITA Open Toolkit base library. It
         does <b>not</b> contain the full DITA-OT distribution and cannot be used to run DITA-OT by itself. You will need
         to ensure that your build installs the other files and directories required for the toolkit along with the

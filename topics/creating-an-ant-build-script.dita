@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="creating-an-ant-build-script">
   <title>Creating an Ant build script</title>
   <shortdesc>Instead of typing the DITA-OT parameters at the command prompt, you might want to create an Ant build
@@ -24,7 +23,9 @@
       <step>
         <cmd>Create an XML file that contains the following content:</cmd>
         <info>
-          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8" ?>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;?xml version="1.0" encoding="UTF-8" ?>
 &lt;project name="%project-name%" default="%default-target%" basedir=".">
 
   &lt;property name="dita.dir" location="%path-to-DITA-OT%"/>
@@ -81,7 +82,9 @@
     <example>
       <p>The following Ant build script generates CHM and PDF output for the sample DITA maps.</p>
       <p>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/ant_sample/build-chm-pdf.xml"/></codeblock></p>
+        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
+            href="../samples/ant_sample/build-chm-pdf.xml"
+          /></codeblock></p>
       <p>In addition to the mandatory parameters (<parmname>args.input</parmname> and <parmname>transtype</parmname>),
         the chm and pdf targets each specify some optional parameters:
         <ul>
@@ -95,7 +98,8 @@
       <p>Finally, the all target simply specifies that both the chm and pdf target should be run.</p>
     </example>
     <postreq>Another resource for learning about Ant scripts are the files in the <filepath
-        conkeyref="conref-task/samples-dir"/><filepath>/ant_sample/</filepath> directory. This
+        conkeyref="conref-task/samples-dir"
+      /><filepath>/ant_sample/</filepath> directory. This
       directory contains sample Ant build files for common output formats, as well as templates that you can use to
       create your own Ant scripts.</postreq>
   </taskbody>

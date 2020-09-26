@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="migrating-to-2.3">
 
   <title>Migrating to release 2.3</title>
@@ -155,7 +154,9 @@
         single <codeph>id</codeph> variable that contains the entire message ID.</p>
       <p>Plug-ins that make use of the <codeph>output-message</codeph> function should be updated to use the single
           <codeph>id</codeph> variable, as
-        in:<codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xsl:call-template name="output-message">
+        in:<codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;xsl:call-template name="output-message">
   &lt;xsl:with-param name="id" select="'FULLMESSAGENUMBER'"/>
   &lt;xsl:with-param name="msgparams">optional-message-parameters&lt;/xsl:with-param>
 &lt;/xsl:call-template></codeblock>

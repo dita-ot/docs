@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="plugin-anttarget">
   <title>Adding a new target to the Ant build process</title>
   <titlealts>
@@ -29,7 +28,9 @@
       </step>
       <step>
         <cmd>Create the <filepath>plugin.xml</filepath> file:</cmd>
-        <stepxmp><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
+        <stepxmp><codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="ant.import" file="<varname>build-file</varname>"/>
 &lt;/plugin></codeblock>where:
           <ul>

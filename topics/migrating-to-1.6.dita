@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="ID" rev="1.6">
 
   <title>Migrating to release 1.6</title>
@@ -88,8 +87,11 @@
         </tgroup>
       </table>
       <p>The remaining plug-ins in the demo folder have been moved to a separate repository at
-        <xref href="https://github.com/dita-ot/ext-plugins" scope="external" format="html"
-          >github.com/dita-ot/ext-plugins</xref>.</p>
+        <xref
+          href="https://github.com/dita-ot/ext-plugins"
+          scope="external"
+          format="html"
+        >github.com/dita-ot/ext-plugins</xref>.</p>
     </section>
     <section>
       <p>The deprecated property <codeph>dita.input.valfile</codeph> should be replaced with the new argument property

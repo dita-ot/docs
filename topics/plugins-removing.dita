@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="plugins-removing" xml:lang="en">
   <title>Removing plug-ins</title>
   <shortdesc>Use the <cmdname>dita uninstall</cmdname> subcommand to remove a plug-in.</shortdesc>
@@ -20,7 +19,8 @@
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
         <info>
-          <codeblock outputclass="syntax-bash"><cmdname>dita uninstall</cmdname> <varname>&lt;plug-in-id&gt;</varname></codeblock>
+          <codeblock outputclass="syntax-bash"><cmdname>dita uninstall</cmdname> <varname
+            >&lt;plug-in-id&gt;</varname></codeblock>
           <p>where:</p>
           <ul>
             <li conkeyref="conref-task/plug-in-id"/>

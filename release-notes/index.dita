@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="ID" rev="3.5">
   <title>DITA Open Toolkit <keyword keyref="release"/> Release Notes</title>
   <titlealts>
@@ -84,15 +83,21 @@
               <li id="docsearch-2364">In addition to the latest development version of the documentation, the site
                 search now returns results from all <cite>Release Notes</cite> from DITA-OT 2.0 forward, to make it
                 easier to find information about the changes in earlier releases.
-                <xref href="https://github.com/algolia/docsearch-configs/pull/2364" format="html" scope="external"
-                  >algolia/docsearch-configs#2364</xref>
+                <xref
+                  href="https://github.com/algolia/docsearch-configs/pull/2364"
+                  format="html"
+                  scope="external"
+                >algolia/docsearch-configs#2364</xref>
               </li>
             </ul>
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
-          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.4+is%3Aclosed" format="html"
-            scope="external">3.5.4 milestone</xref> and
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.4+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.5.4 milestone</xref> and
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.5.3...3.5.4" format="html" scope="external">
             changelog</xref> on GitHub.</p>
       </section>
@@ -120,8 +125,11 @@
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
-          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.3+is%3Aclosed" format="html"
-            scope="external">3.5.3 milestone</xref> and
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.3+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.5.3 milestone</xref> and
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.5.2...3.5.3" format="html" scope="external">
             changelog</xref> on GitHub.</p>
       </section>
@@ -180,8 +188,11 @@
             </ul></li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
-          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.2+is%3Aclosed" format="html"
-            scope="external">3.5.2 milestone</xref> and
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.2+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.5.2 milestone</xref> and
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.5.1...3.5.2" format="html" scope="external">
             changelog</xref> on GitHub.</p>
       </section>
@@ -215,9 +226,15 @@
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3515" format="html" scope="external">#3515</xref>
               </li>
               <li id="3522">The bundled Ant version has been updated to version 1.10.8 to address
-                <xref href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1945" format="html" scope="external"
-                  >CVE-2020-1945</xref>.
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3522" format="html" scope="external"
+                <xref
+                  href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1945"
+                  format="html"
+                  scope="external"
+                >CVE-2020-1945</xref>.
+                <xref
+                  href="https://github.com/dita-ot/dita-ot/issues/3522"
+                  format="html"
+                  scope="external"
                 >#3522</xref></li>
             </ul>
           </li>
@@ -228,8 +245,11 @@
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
-          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.1+is%3Aclosed" format="html"
-            scope="external">3.5.1 milestone</xref> and
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.1+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.5.1 milestone</xref> and
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.5...3.5.1" format="html" scope="external">
             changelog</xref> on GitHub.</p>
       </section>
@@ -317,11 +337,16 @@
           <li id="3412">
             <p>You can now pass additional input resources to the <cmdname>dita</cmdname> command with the
                 <parmname>--resource</parmname> option.
-              <xref href="https://github.com/dita-ot/dita-ot/issues/3412" format="html" scope="external"
+              <xref
+                href="https://github.com/dita-ot/dita-ot/issues/3412"
+                format="html"
+                scope="external"
               >#3412</xref></p>
             <p>For example, to process a single topic file with a map that contains key definitions, use a command like
               this:
-              <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
+              <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname
+                >--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option
+                >html5</option></codeblock>
             </p></li>
           <li id="3413">Two new parameters can be used to dynamically adjust the names and locations of output files in
             transformations that use the map-first pre-processing routine (<codeph>preprocess2</codeph>). <ph>These
@@ -360,7 +385,10 @@
           <li id="3489">
             <p>DITAVAL <xmlatt>style</xmlatt> tokens are now also generated as CSS classes that are added to the
                 <xmlatt>class</xmlatt> attribute values in the generated HTML.
-              <xref href="https://github.com/dita-ot/dita-ot/issues/3489" format="html" scope="external"
+              <xref
+                href="https://github.com/dita-ot/dita-ot/issues/3489"
+                format="html"
+                scope="external"
               >#3489</xref></p>
             <p>Rules with corresponding class selectors have been added to the default stylesheets to implement the same
               appearance that previous versions of DITA-OT achieved with inline styles. You can override these flagging
@@ -528,9 +556,13 @@
           <xref keyref="adding-plugins"/> and
           <xref keyref="custom-plugins"/>.</p>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
-            keyref="release"/>, see the
-          <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.5+is%3Aclosed" format="html"
-            scope="external">
+            keyref="release"
+          />, see the
+          <xref
+            href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.5+is%3Aclosed"
+            format="html"
+            scope="external"
+          >
             <keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
           <xref keyref="docs-contributions"/> by the following people:</p>

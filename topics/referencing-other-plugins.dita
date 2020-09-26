@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="using-plugin-URI-extension">
   <title>Referencing files from other plug-ins</title>
-  <shortdesc>Starting with DITA-OT 1.5.4, you can use the <filepath id="plugin-uri-ext"
-        >plugin:<varname>plugin-id</varname></filepath> URI extension and the <filepath id="antvar"
-        >${dita.plugin.<varname>plugin-id</varname>.dir}</filepath> Ant variable to reference the base path of another
+  <shortdesc>Starting with DITA-OT 1.5.4, you can use the <filepath id="plugin-uri-ext">plugin:<varname
+      >plugin-id</varname></filepath> URI extension and the <filepath id="antvar">${dita.plugin.<varname
+      >plugin-id</varname>.dir}</filepath> Ant variable to reference the base path of another
     installed DITA-OT plug-in.</shortdesc>
   <prolog>
     <metadata>
@@ -33,8 +32,10 @@
     <section>
       <p>Sometimes you need to reference content in another DITA-OT plug-in. However, the path to an installed plug-in
         is not guaranteed to be the same between different installed instances of DITA-OT. The <filepath
-          conref="#using-plugin-URI-extension/plugin-uri-ext"/> URI extension and <filepath
-          conref="#using-plugin-URI-extension/antvar"/> Ant variable are provided so your build and XSLT files always
+          conref="#using-plugin-URI-extension/plugin-uri-ext"
+        /> URI extension and <filepath
+          conref="#using-plugin-URI-extension/antvar"
+        /> Ant variable are provided so your build and XSLT files always
         use the correct path to the plug-in.</p>
       <p>Within a single plug-in, you can safely use relative path references, for example,
           <filepath>xsl/my.xsl</filepath> without specifying the path to the plug-in itself.</p>
@@ -48,7 +49,9 @@
         </info>
         <stepxmp>
           <p>The following example copies CSS files from the HTML5 plug-in:</p>
-          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;copy todir="${dita.temp.dir}/css">
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;copy todir="${dita.temp.dir}/css">
   &lt;fileset dir="${dita.plugin.org.dita.html5.dir}/css" 
            includes="*.css"/>
 &lt;/copy></codeblock>
@@ -63,7 +66,9 @@
         </info>
         <stepxmp>
           <p>The following example imports the base output-message.xsl processing:</p>
-          <codeblock outputclass="language-xml">&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock>
+          <codeblock
+            outputclass="language-xml"
+          >&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock>
         </stepxmp>
         <info>
           <p>To use the URI extension, your plug-in must reference the DITA-OT catalog file. In your Ant build file, add
@@ -71,7 +76,9 @@
               <xmlelement>xslt</xmlelement> element.</p>
         </info>
         <stepxmp>
-          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt style="xsl/my.xsl"
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;xslt style="xsl/my.xsl"
       in="${dita.temp.dir}/input.file" 
       out="${dita.temp.dir}/output.file">
   &lt;xmlcatalog refid="dita.catalog"/>

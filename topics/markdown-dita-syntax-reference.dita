@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <topic id="markdown-dita-syntax-reference">
   <title>Markdown DITA syntax reference</title>
   <titlealts>
@@ -30,30 +29,44 @@
       <codeblock outputclass="language-markdown normalize-space show-line-numbers show-whitespace"># Topic title
 
 ## Nested topic title</codeblock>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;topic id="topic_title"&gt;
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;topic id="topic_title"&gt;
   &lt;title&gt;Topic title&lt;/title&gt;
   &lt;topic id="nested_topic_title"&gt;
     &lt;title&gt;Nested topic title&lt;/title&gt;
   &lt;/topic&gt;
 &lt;/topic&gt;</codeblock>
       <p>Pandoc
-        <xref format="html#extension-header_attributes" href="http://pandoc.org/MANUAL.html#extension-header_attributes"
-          scope="external">header_attributes</xref> can be used to define <codeph>id</codeph> or
+        <xref
+          format="html#extension-header_attributes"
+          href="http://pandoc.org/MANUAL.html#extension-header_attributes"
+          scope="external"
+        >header_attributes</xref> can be used to define <codeph>id</codeph> or
           <codeph>outputclass</codeph> attributes:</p>
-      <codeblock outputclass="language-markdown normalize-space show-line-numbers show-whitespace"># Topic title {#carrot .juice}</codeblock>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;topic id="carrot" outputclass="juice"&gt;
+      <codeblock
+        outputclass="language-markdown normalize-space show-line-numbers show-whitespace"
+      ># Topic title {#carrot .juice}</codeblock>
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;topic id="carrot" outputclass="juice"&gt;
   &lt;title&gt;Topic title&lt;/title&gt;</codeblock>
       <p>If topic ID is not defined using header_attributes, the ID is generated from title contents.</p>
       <p>Pandoc
-        <xref format="html#extension-pandoc_title_block"
-          href="http://pandoc.org/MANUAL.html#extension-pandoc_title_block" scope="external">pandoc_title_block</xref>
+        <xref
+          format="html#extension-pandoc_title_block"
+          href="http://pandoc.org/MANUAL.html#extension-pandoc_title_block"
+          scope="external"
+        >pandoc_title_block</xref>
         extension can be used to group multiple level 1 headers under a common title:</p>
       <codeblock outputclass="language-markdown normalize-space show-line-numbers show-whitespace">% Common title
 
 # Topic title
 
 # Second title</codeblock>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;topic id="common_title"&gt;
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;topic id="common_title"&gt;
   &lt;title&gt;Common title&lt;/title&gt;
   &lt;topic id="topic_title"&gt;
     &lt;title&gt;Topic title&lt;/title&gt;
@@ -70,8 +83,11 @@
     <section id="specialization-types">
       <title>Specialization types</title>
       <p>The following class values in
-        <xref format="html#extension-header_attributes" href="http://pandoc.org/MANUAL.html#extension-header_attributes"
-          scope="external">header_attributes</xref> have a special meaning on level 1 headers:</p>
+        <xref
+          format="html#extension-header_attributes"
+          href="http://pandoc.org/MANUAL.html#extension-header_attributes"
+          scope="external"
+        >header_attributes</xref> have a special meaning on level 1 headers:</p>
       <ul>
         <li>
           <codeph>concept</codeph></li>
@@ -109,8 +125,11 @@ Context
     <section id="sections">
       <title>Sections</title>
       <p>The following class values in
-        <xref format="html#extension-header_attributes" href="http://pandoc.org/MANUAL.html#extension-header_attributes"
-          scope="external">header_attributes</xref> have a special meaning on header levels other than 1:</p>
+        <xref
+          format="html#extension-header_attributes"
+          href="http://pandoc.org/MANUAL.html#extension-header_attributes"
+          scope="external"
+        >header_attributes</xref> have a special meaning on header levels other than 1:</p>
       <ul>
         <li>
           <codeph>section</codeph></li>
@@ -118,16 +137,24 @@ Context
           <codeph>example</codeph></li>
       </ul>
       <p>They are used to generate
-        <xref format="html" href="http://docs.oasis-open.org/dita/v1.2/os/spec/langref/section.html" scope="external"
-            ><codeph>section</codeph></xref> and
-        <xref format="html" href="http://docs.oasis-open.org/dita/v1.2/os/spec/langref/example.html" scope="external"
-            ><codeph>example</codeph></xref> elements:</p>
+        <xref
+          format="html"
+          href="http://docs.oasis-open.org/dita/v1.2/os/spec/langref/section.html"
+          scope="external"
+        ><codeph>section</codeph></xref> and
+        <xref
+          format="html"
+          href="http://docs.oasis-open.org/dita/v1.2/os/spec/langref/example.html"
+          scope="external"
+        ><codeph>example</codeph></xref> elements:</p>
       <codeblock outputclass="language-markdown normalize-space show-line-numbers show-whitespace"># Topic title
 
 ## Section title {.section}
 
 ## Example title {.example}</codeblock>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;topic id="topic_title"&gt;
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;topic id="topic_title"&gt;
   &lt;title&gt;Topic title&lt;/title&gt;
   &lt;body&gt;
     &lt;section&gt;
@@ -146,7 +173,9 @@ Context
           <xmlpi>linebreak</xmlpi> processing instructions.</p>
       <codeblock outputclass="language-markdown normalize-space show-line-numbers show-whitespace">foo··
 baz</codeblock>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;p>foo&lt;?linebreak?>baz&lt;/p></codeblock>
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;p>foo&lt;?linebreak?>baz&lt;/p></codeblock>
     </section>
     <section id="links">
       <title>Links</title>
@@ -188,7 +217,9 @@ baz</codeblock>
 [DITA](test.dita)
 [HTML](test.html)
 [External](http://www.example.com/test.html)</codeblock>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xref href="test.md"&gt;Markdown&lt;/xref&gt;
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;xref href="test.md"&gt;Markdown&lt;/xref&gt;
 &lt;xref href="test.dita"&gt;DITA&lt;/xref&gt;
 &lt;xref href="test.html" format="html"&gt;HTML&lt;/xref&gt;
 &lt;xref href="http://www.example.com/test.html" format="html" scope="external"&gt;External&lt;/xref&gt;</codeblock>
@@ -199,12 +230,16 @@ baz</codeblock>
         <indexterm>Markdown</indexterm></indexterm>
       <p>Images used in inline content will result in inline placement. If a block level image contains a title, it will
         be treated as an image wrapped in figure:</p>
-      <codeblock outputclass="language-markdown normalize-space show-line-numbers show-whitespace">An inline ![Alt](test.jpg).
+      <codeblock
+        outputclass="language-markdown normalize-space show-line-numbers show-whitespace"
+      >An inline ![Alt](test.jpg).
 
 ![Alt](test.jpg)
 
 ![Alt](test.jpg "Title")</codeblock>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;p&gt;An inline &lt;image href="test.jpg"&gt;&lt;alt&gt;Alt&lt;/alt&gt;&lt;/image&gt;.&lt;/p&gt;
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;p&gt;An inline &lt;image href="test.jpg"&gt;&lt;alt&gt;Alt&lt;/alt&gt;&lt;/image&gt;.&lt;/p&gt;
 &lt;image href="test.jpg" placement="break"&gt;
   &lt;alt&gt;Alt&lt;/alt&gt;
 &lt;/image&gt;
@@ -286,7 +321,9 @@ baz</codeblock>
       <p>Tables use
         <xref format="html" href="http://fletcherpenney.net/multimarkdown/" scope="external">MultiMarkdown</xref> table
         extension format:</p>
-      <codeblock outputclass="normalize-space show-line-numbers show-whitespace">| First Header | Second Header | Third Header |
+      <codeblock
+        outputclass="normalize-space show-line-numbers show-whitespace"
+      >| First Header | Second Header | Third Header |
 | ------------ | :-----------: | -----------: |
 | Content      | *Long Cell*                 ||
 | Content      | **Cell**      | Cell         |</codeblock>
@@ -326,9 +363,11 @@ baz</codeblock>
       <indexterm>Pandoc</indexterm>
       <p>
         <xref format="html" href="http://www.yaml.org/" scope="external">YAML</xref> metadata block as defined in Pandoc
-        <xref format="html#extension-yaml_metadata_block"
-          href="http://pandoc.org/MANUAL.html#extension-yaml_metadata_block" scope="external"
-          >pandoc_metadata_block</xref> can be used to specify different metadata elements. The supported elements
+        <xref
+          format="html#extension-yaml_metadata_block"
+          href="http://pandoc.org/MANUAL.html#extension-yaml_metadata_block"
+          scope="external"
+        >pandoc_metadata_block</xref> can be used to specify different metadata elements. The supported elements
         are:</p>
       <ul>
         <li>
@@ -368,7 +407,9 @@ workflow: review
 ---
 
 # Sample with YAML header</codeblock>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;title&gt;Sample with YAML header&lt;/title&gt;
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;title&gt;Sample with YAML header&lt;/title&gt;
 &lt;prolog&gt;
   &lt;author&gt;Author One&lt;/author&gt;
   &lt;author&gt;Author Two&lt;/author&gt;

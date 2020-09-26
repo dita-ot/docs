@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="ID">
   <title>Sample JSON project files</title>
   <titlealts>
@@ -27,17 +26,22 @@
       a single HTML deliverable.</p>
     <fig>
       <title>Sample project file for HTML output</title>
-      <codeblock outputclass="language-json normalize-space show-line-numbers show-whitespace"><coderef href="../samples/project-files/html.json"/></codeblock>
+      <codeblock outputclass="language-json normalize-space show-line-numbers show-whitespace"><coderef
+          href="../samples/project-files/html.json"
+        /></codeblock>
     </fig>
     <p>This file can be used to generate the HTML version of the DITA-OT documentation by running the following command
       from the <filepath>docsrc</filepath> folder of the DITA-OT installation directory:</p>
-    <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname>samples/project-files/html.json</varname></codeblock>
+    <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname
+      >samples/project-files/html.json</varname></codeblock>
     <p>The project file for HTML output imports the common <codeph>html</codeph> context from a shared project context
       defined in the <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/common.json</filepath>
       file, which includes the input map file and the DITAVAL file used to filter the output.</p>
     <fig>
       <title>Sample shared context for HTML-based output</title>
-      <codeblock outputclass="language-json normalize-space show-line-numbers show-whitespace"><coderef href="../samples/project-files/common.json"/></codeblock>
+      <codeblock outputclass="language-json normalize-space show-line-numbers show-whitespace"><coderef
+          href="../samples/project-files/common.json"
+        /></codeblock>
     </fig>
   </conbody>
 </concept>

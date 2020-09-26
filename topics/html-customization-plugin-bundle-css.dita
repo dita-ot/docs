@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="custom-html-plugin-bundle-css">
   <title>Bundling CSS in a custom HTML plug-in</title>
   <titlealts>
@@ -61,7 +60,9 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>plugin.xml</filepath> file</title>
-            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-custom-css/plugin.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
+                href="../samples/plugins/com.example.html5-custom-css/plugin.xml"
+              /></codeblock>
           </fig>
           <note>This plug-in will extend the default HTML5 transformation, so the <xmlelement>require</xmlelement>
             element explicitly defines <filepath>org.dita.html5</filepath> as a dependency.</note>
@@ -77,7 +78,9 @@
         <stepxmp>
           <fig>
             <title>Sample <filepath>custom.css</filepath> file</title>
-            <codeblock outputclass="language-css normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-custom-css/css/custom.css"/></codeblock>
+            <codeblock outputclass="language-css normalize-space show-line-numbers show-whitespace"><coderef
+                href="../samples/plugins/com.example.html5-custom-css/css/custom.css"
+              /></codeblock>
           </fig>
           <note type="tip">When you first create the plug-in, you may want to include a rule in your custom stylesheet
             that makes it readily apparent when the custom styles are applied (the example above will change body text
@@ -91,7 +94,9 @@
         <stepxmp>
           <fig>
             <title>Sample build file: <filepath>build_html5-custom-css.xml</filepath></title>
-            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef href="../samples/plugins/com.example.html5-custom-css/build_html5-custom-css.xml"/></codeblock>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
+                href="../samples/plugins/com.example.html5-custom-css/build_html5-custom-css.xml"
+              /></codeblock>
           </fig>
         </stepxmp>
       </step>
@@ -99,8 +104,11 @@
     <result>
       <note type="tip">The files for this sample plug-in are included in the DITA-OT installation directory under
           <filepath>docsrc/samples/plugins/com.example.html5-custom-css/</filepath> and on
-        <xref href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.html5-custom-css"
-          format="html" scope="external">GitHub</xref>.</note>
+        <xref
+          href="https://github.com/dita-ot/docs/tree/develop/samples/plugins/com.example.html5-custom-css"
+          format="html"
+          scope="external"
+        >GitHub</xref>.</note>
       <p>The plug-in directory has the following layout and files:</p>
       <codeblock>com.example.html5-custom-css
 ├── build_html5-custom-css.xml
@@ -114,7 +122,8 @@
           <parmname>--install</parmname> to install the plug-in and make the <option>html5-custom-css</option>
           transformation available.</li>
         <li>Build output with the new transformation type to verify that the plug-in works as intended.
-          <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>my.ditamap</varname> <parmname>--format</parmname>=<option>html5-custom-css</option></codeblock>
+          <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname
+            >my.ditamap</varname> <parmname>--format</parmname>=<option>html5-custom-css</option></codeblock>
         </li>
         <li>Refine the styles in your <filepath>custom.css</filepath> file as necessary.</li>
       </ol>

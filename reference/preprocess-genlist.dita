@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<reference id="preprocess-genlist" xml:lang="en-US">
+<reference id="preprocess-genlist">
   <title>Generate lists (gen-list)</title>
   <shortdesc>The <codeph>gen-list</codeph> step examines the input files and creates lists of topics, images, document
     properties, or other content. These lists are used by later steps in the pipeline. This step is implemented in

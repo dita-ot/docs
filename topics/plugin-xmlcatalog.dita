@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<task id="plugin-xmlcatalog" xml:lang="en-US">
+<task id="plugin-xmlcatalog">
   <title>Extending an XML catalog file</title>
   <shortdesc>You can update either the main DITA-OT XML catalog or the XML catalog that is used by the PDF plug-in. This
     enables DITA-OT to support new specializations and document-type shells.</shortdesc>

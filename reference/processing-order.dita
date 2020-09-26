@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<concept id="processing-order" xml:lang="en-US">
+<concept id="processing-order">
   <title>Processing order</title>
   <shortdesc>The order of processing is often significant when evaluating DITA content. Although the DITA specification
     does not mandate a specific order for processing, DITA-OT has determined that performing filtering before conref

@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<reference id="plugin-configfile" xml:lang="en-US">
+<reference id="plugin-configfile">
   <title>Plug-in descriptor file</title>
   <shortdesc>The plug-in descriptor file (<filepath>plugin.xml</filepath>) controls all aspects of a plug-in, making
     each extension visible to the rest of the toolkit. The file uses pre-defined extension points to locate changes, and

@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 
-<concept id="plugin-dependencies" xml:lang="en-US">
+<concept id="plugin-dependencies">
   <title>Plug-in dependencies</title>
   <shortdesc>A DITA-OT plug-in can be dependent on other plug-ins. Prerequisite plug-ins are installed first, which
     ensures that DITA-OT handles XSLT overrides correctly.</shortdesc>

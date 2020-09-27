@@ -6,9 +6,7 @@ Basic fonts and typography
 
 body {
   background-color: white;
-  background-image: -webkit-linear-gradient(left, #eee 0%, #fff 300px); /* Chrome10+,Safari5.1+ */
-  background-image:    -moz-linear-gradient(left, #eee 0%, #fff 300px); /* FF3.6+ */
-  background-image:         linear-gradient(left, #eee 0%, #fff 300px); /* W3C */
+  background-image: linear-gradient(to left, #eee 0%, #fff 300px); /* W3C */
   color: #212529;
   margin: 0;
   padding: 1em;
@@ -50,7 +48,7 @@ samp,
 .option,
 .parmname {
   color: #6c757d;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   font-size: 90%;
 }
 
@@ -265,26 +263,26 @@ Navigation
 ****************************************/
 
 /* ↓ nav-coderef ↓ */
-nav[role=toc] {
+nav[role='toc'] {
   float: left;
   width: 300px;
 }
 
-nav[role=toc] li.active > a {
+nav[role='toc'] li.active > a {
   font-weight: bold;
 }
 /* ↑ end-nav-ref ↑ */
 
-nav[role=toc] > ul {
+nav[role='toc'] > ul {
   margin-right: 2em;
 }
 
-nav[role=toc] > ul li {
+nav[role='toc'] > ul li {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
 
-nav[role=toc] > ul > li ul {
+nav[role='toc'] > ul > li ul {
   margin-bottom: 0.5em;
   margin-left: 1.2em;
   margin-top: 0.5em;
@@ -305,12 +303,12 @@ Glossary
 
 .glossAbbreviation::before,
 .glossAcronym::before {
-  content: "Abbreviation: “";
+  content: 'Abbreviation: “';
 }
 
 .glossAbbreviation::after,
 .glossAcronym::after {
-    content: '”';
+  content: '”';
 }
 
 /* Append video icon to DITA-OT Day links in related links and link lists (but not in page footers) */

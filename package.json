@@ -8,7 +8,7 @@
   "scripts": {
     "fmt": "yarn format",
     "format": "yarn prettier --write",
-    "prettier": "prettier \"**/*.{dita*,json,md,scss,xml,yaml,yml}\"",
+    "prettier": "prettier \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "test": "yarn prettier --list-different"
   },
   "husky": {
@@ -17,7 +17,7 @@
     }
   },
   "lint-staged": {
-    "*.{dita*,json,md,scss,xml,yaml,yml}": [
+    "*.{css,dita*,json,md,scss,xml,yaml,yml}": [
       "prettier --write"
     ]
   },

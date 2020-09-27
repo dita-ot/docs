@@ -96,7 +96,7 @@
         /><filepath>/ant_sample/dita-cmd.xml</filepath> file:</p>
       <p>
         <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
-            href="../samples/ant_sample/dita-cmd.xml#line=11,32"
+            href="../samples/ant_sample/dita-cmd.xml#line-range(10,30)"
           /></codeblock></p>
       <p>You can use this macro in your Ant build to call the <cmdname>dita</cmdname> command and pass the
           <parmname>input</parmname>, <parmname>format</parmname> and <parmname>propertyfile</parmname> parameters as

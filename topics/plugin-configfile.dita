@@ -45,7 +45,7 @@
       <fig>
         <title>Sample <xmlelement>plugin</xmlelement> element</title>
         <codeblock outputclass="language-xml"><coderef
-            href="../samples/plugins/com.example.html5-javascript/plugin.xml#line=3,4"
+            href="../samples/plugins/com.example.html5-javascript/plugin.xml#line-range(3,3)"
           /></codeblock>
       </fig>
     </section>
@@ -203,7 +203,7 @@
             <fig>
               <title>Sample <xmlelement>require</xmlelement> element</title>
               <codeblock outputclass="language-xml normalize-space"><coderef
-                  href="../samples/plugins/com.example.html5-javascript/plugin.xml#line=4,5"
+                  href="../samples/plugins/com.example.html5-javascript/plugin.xml#line-range(4,4)"
                 /></codeblock>
             </fig>
           </pd>
@@ -385,7 +385,7 @@
       <codeblock
         outputclass="language-xml normalize-space show-line-numbers show-whitespace"
       >&lt;plugin id="org.metadita.specialization.music">
-  &lt;feature extension="dita.specialization.catalog.relative" 
+  &lt;feature extension="dita.specialization.catalog.relative"
            file="catalog-dita.xml"/>
   &lt;feature extension="dita.xsl.xhtml" file="xsl/music2xhtml.xsl"/>
 &lt;/plugin></codeblock>

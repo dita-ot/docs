@@ -23,7 +23,7 @@ You must have a JRE and a local installation of DITA-OT. There is no need to dow
 
 ### Steps
 
-1.  Open a command prompt, and change to the location of your local repository for the documentation source.
+1.  Open a command prompt, and change to the directory of your docs repository clone.
 2.  Type a variant of the following command for your operating system, adjust the path to your DITA-OT installation, and press <kbd>Enter</kbd>:
 
     - On Linux or macOS, use `./gradlew`:
@@ -81,7 +81,8 @@ The documentation repository uses the following JavaScript tools to keep source 
 To set these tools up:
 
 1. Install Node.js® from [nodejs.org][18]
-2. Open a command prompt, and run `npm install`
+2. Open a command prompt, and change to the directory of your docs repository clone.
+3. Run `npm install`
 
 With these tools in place, any changes you make to the documentation source files will be automatically formatted when you commit them with Git. This ensures that commits contain only related changes, and no extra formatting.
 

@@ -62,6 +62,20 @@ The `develop` branch of the documentation repository may depend on features from
 
 To use these features when building the documentation, you may either download the [latest development version][14] of the distribution package, or clone the [DITA-OT repository][13] and install the [bundled plug-ins][15] via `dita --install`.
 
+## Installing formatting tools
+
+The documentation repository uses the following JavaScript tools to keep source files consistently formatted and ensure that each commit contains only the necessary changes:
+
+- [Prettier](https://prettier.io) is an opinionated code formatter that enforces a consistent style by parsing code and re-printing it with its own rules.
+- [Husky](https://github.com/typicode/husky) uses Git hooks to ensure that **Prettier** runs on all staged changes to format files before committing.
+
+To set these tools up:
+
+1. Install Node.js® from [nodejs.org](https://nodejs.org/en)
+2. Open a command prompt, and run `npm install`.
+
+With these tools in place, any changes you make to the documentation source files will be automatically formatted when you commit them with Git.
+
 [1]: https://travis-ci.org/dita-ot/docs.svg?branch=develop
 [2]: http://slack.dita-ot.org/badge.svg
 [3]: https://www.dita-ot.org/dev/

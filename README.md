@@ -2,6 +2,15 @@
 
 This repository tracks the [documentation][3] source files for the [DITA Open Toolkit project][4].
 
+<!-- MarkdownTOC levels="2" -->
+
+- [Building the documentation output](#building-the-documentation-output)
+- [Building with development versions of DITA Open Toolkit](#building-with-development-versions-of-dita-open-toolkit)
+- [Contribution guidelines](#contribution-guidelines)
+- [Installing formatting tools](#installing-formatting-tools)
+
+<!-- /MarkdownTOC -->
+
 ## Building the documentation output
 
 ⚠️ **Important:** The maps in this repository contain references to additional topics that are created at build time from the toolkit’s plug-in configuration.
@@ -50,7 +59,7 @@ The `develop` branch of the documentation repository may depend on features from
 
 To use these features when building the documentation, you may either download the [latest development version][6] of the distribution package, or clone the [DITA-OT repository][5] and install the [bundled plug-ins][7] via `dita --install`.
 
-## Contribution Guidelines
+## Contribution guidelines
 
 We welcome contributions to the DITA-OT documentation. Please review the [guidelines for contributing][8] to this repository before creating issues or opening pull requests.
 
@@ -62,19 +71,19 @@ For best results, follow the [coding guidelines][9] and [best practices][10] out
 - [Write good commit messages][14]
 - [Sign your work][15]
 
-### Installing formatting tools
+## Installing formatting tools
 
-The documentation repository uses the following JavaScript tools to keep source files consistently formatted and ensure that each commit contains only the necessary changes:
+The documentation repository uses the following JavaScript tools to keep source files consistently formatted:
 
-- [Prettier][16] is an opinionated code formatter that enforces a consistent style by parsing code and re-printing it with its own rules.
-- [Husky][17] uses Git hooks to ensure that **Prettier** runs on all staged changes to format files before committing.
+- [Prettier][16] is an opinionated code formatter that enforces a consistent style by parsing code and re-printing it.
+- [Husky][17] uses Git hooks to ensure that Prettier runs on all staged changes to format files before committing.
 
 To set these tools up:
 
 1. Install Node.js® from [nodejs.org][18]
-2. Open a command prompt, and run `npm install`.
+2. Open a command prompt, and run `npm install`
 
-With these tools in place, any changes you make to the documentation source files will be automatically formatted when you commit them with Git.
+With these tools in place, any changes you make to the documentation source files will be automatically formatted when you commit them with Git. This ensures that commits contain only related changes, and no extra formatting.
 
 [1]: https://travis-ci.org/dita-ot/docs.svg?branch=develop
 [2]: http://slack.dita-ot.org/badge.svg

@@ -28,7 +28,7 @@ You must have a JRE and a local installation of DITA-OT. There is no need to dow
     <details>
     <summary>Using a `dita-ot` repository clone</summary>
 
-    - If you’re using a clone of the [DITA-OT development repository][13] as your toolkit installation alongside your clone of the docs repository, run the build script on **Linux** or **macOS** like this:
+    - If you’re using a clone of the [DITA-OT development repository][5] as your toolkit installation alongside your clone of the docs repository, run the build script on **Linux** or **macOS** like this:
 
             ./gradlew -PditaHome=../dita-ot/src/main
 
@@ -48,30 +48,30 @@ This folder is created automatically if it doesn’t exist. _(Git ignores the co
 
 The `develop` branch of the documentation repository may depend on features from recent development versions of DITA Open Toolkit.
 
-To use these features when building the documentation, you may either download the [latest development version][14] of the distribution package, or clone the [DITA-OT repository][13] and install the [bundled plug-ins][15] via `dita --install`.
+To use these features when building the documentation, you may either download the [latest development version][6] of the distribution package, or clone the [DITA-OT repository][5] and install the [bundled plug-ins][7] via `dita --install`.
 
 ## Contribution Guidelines
 
-We welcome contributions to the DITA-OT documentation. Please review the [guidelines for contributing][5] to this repository before creating issues or opening pull requests.
+We welcome contributions to the DITA-OT documentation. Please review the [guidelines for contributing][8] to this repository before creating issues or opening pull requests.
 
-For best results, follow the [coding guidelines][6] and [best practices][7] outlined in the docs project wiki:
+For best results, follow the [coding guidelines][9] and [best practices][10] outlined in the docs project wiki:
 
-- [Test before committing][8]
-- [Commit related changes][9]
-- [Commit often][10]
-- [Write good commit messages][11]
-- [Sign your work][12]
+- [Test before committing][11]
+- [Commit related changes][12]
+- [Commit often][13]
+- [Write good commit messages][14]
+- [Sign your work][15]
 
 ### Installing formatting tools
 
 The documentation repository uses the following JavaScript tools to keep source files consistently formatted and ensure that each commit contains only the necessary changes:
 
-- [Prettier](https://prettier.io) is an opinionated code formatter that enforces a consistent style by parsing code and re-printing it with its own rules.
-- [Husky](https://github.com/typicode/husky) uses Git hooks to ensure that **Prettier** runs on all staged changes to format files before committing.
+- [Prettier][16] is an opinionated code formatter that enforces a consistent style by parsing code and re-printing it with its own rules.
+- [Husky][17] uses Git hooks to ensure that **Prettier** runs on all staged changes to format files before committing.
 
 To set these tools up:
 
-1. Install Node.js® from [nodejs.org](https://nodejs.org/en)
+1. Install Node.js® from [nodejs.org][18]
 2. Open a command prompt, and run `npm install`.
 
 With these tools in place, any changes you make to the documentation source files will be automatically formatted when you commit them with Git.
@@ -80,14 +80,17 @@ With these tools in place, any changes you make to the documentation source file
 [2]: http://slack.dita-ot.org/badge.svg
 [3]: https://www.dita-ot.org/dev/
 [4]: https://www.dita-ot.org
-[5]: .github/CONTRIBUTING.md
-[6]: https://github.com/dita-ot/docs/wiki/Coding-guidelines
-[7]: https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
-[8]: https://github.com/dita-ot/docs/wiki/Git-workflow#test-before-committing
-[9]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
-[10]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-often
-[11]: https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
-[12]: https://www.dita-ot.org/DCO
-[13]: https://github.com/dita-ot/dita-ot
-[14]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
-[15]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L169-L177
+[5]: https://github.com/dita-ot/dita-ot
+[6]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
+[7]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L169-L177
+[8]: .github/CONTRIBUTING.md
+[9]: https://github.com/dita-ot/docs/wiki/Coding-guidelines
+[10]: https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices
+[11]: https://github.com/dita-ot/docs/wiki/Git-workflow#test-before-committing
+[12]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-related-changes
+[13]: https://github.com/dita-ot/docs/wiki/Git-workflow#commit-often
+[14]: https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
+[15]: https://www.dita-ot.org/DCO
+[16]: https://prettier.io
+[17]: https://github.com/typicode/husky
+[18]: https://nodejs.org

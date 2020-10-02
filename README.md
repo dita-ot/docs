@@ -2,18 +2,6 @@
 
 This repository tracks the [documentation][3] source files for the [DITA Open Toolkit project][4].
 
-## Contribution Guidelines
-
-We welcome contributions to the DITA-OT documentation. Please review the [guidelines for contributing][5] to this repository before creating issues or opening pull requests.
-
-For best results, follow the [coding guidelines][6] and [best practices][7] outlined in the docs project wiki:
-
-- [Test before committing][8]
-- [Commit related changes][9]
-- [Commit often][10]
-- [Write good commit messages][11]
-- [Sign your work][12]
-
 ## Building the documentation output
 
 ⚠️ **Important:** The maps in this repository contain references to additional topics that are created at build time from the toolkit’s plug-in configuration.
@@ -62,7 +50,19 @@ The `develop` branch of the documentation repository may depend on features from
 
 To use these features when building the documentation, you may either download the [latest development version][14] of the distribution package, or clone the [DITA-OT repository][13] and install the [bundled plug-ins][15] via `dita --install`.
 
-## Installing formatting tools
+## Contribution Guidelines
+
+We welcome contributions to the DITA-OT documentation. Please review the [guidelines for contributing][5] to this repository before creating issues or opening pull requests.
+
+For best results, follow the [coding guidelines][6] and [best practices][7] outlined in the docs project wiki:
+
+- [Test before committing][8]
+- [Commit related changes][9]
+- [Commit often][10]
+- [Write good commit messages][11]
+- [Sign your work][12]
+
+### Installing formatting tools
 
 The documentation repository uses the following JavaScript tools to keep source files consistently formatted and ensure that each commit contains only the necessary changes:
 

@@ -6,10 +6,10 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "fmt": "yarn format",
-    "format": "yarn prettier --write",
+    "fmt": "npm run format",
+    "format": "npm run prettier --write",
     "prettier": "prettier \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
-    "test": "yarn prettier --list-different"
+    "test": "npm run prettier --list-different"
   },
   "husky": {
     "hooks": {

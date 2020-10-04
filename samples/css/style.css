@@ -22,10 +22,6 @@
   font-size: 2.5em;
 }
 
-.topictitle2 {
-  font-size: 2em;
-}
-
 body {
   background-color: #fff;
   background-image: linear-gradient(to top, #eee 0%, #fff); /* W3C */
@@ -84,15 +80,6 @@ a {
 a:hover {
   border: 0;
   color: #70a300;
-}
-
-/* Header */
-
-#header {
-  float: left;
-  height: 90px;
-  margin: 20px;
-  width: 960px;
 }
 
 /* Inline Table of Contents */

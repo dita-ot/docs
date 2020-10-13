@@ -80,9 +80,13 @@ The documentation repository uses the following JavaScript tools to keep source 
 
 To set these tools up:
 
-1. Install Node.js® from [nodejs.org][18]
-2. Open a command prompt, and change to the directory of your docs repository clone.
-3. Run `npm install`
+1. Ensure [Git][19] is installed and on `$PATH`.
+
+   The Husky installation may fail with an error message "Cannot read property 'toString' of null" if Git is not found on `$PATH`.
+
+2. Install Node.js® from [nodejs.org][18]
+3. Open a command prompt, and change to the directory of your docs repository clone.
+4. Run `npm install`
 
 With these tools in place, any changes you make to the documentation source files will be automatically formatted when you commit them with Git. This ensures that commits contain only related changes, and no extra formatting.
 
@@ -104,3 +108,4 @@ With these tools in place, any changes you make to the documentation source file
 [16]: https://prettier.io
 [17]: https://github.com/typicode/husky
 [18]: https://nodejs.org
+[19]: https://git-scm.com/downloads

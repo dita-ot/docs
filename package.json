@@ -6,10 +6,11 @@
   },
   "license": "Apache-2.0",
   "scripts": {
+    "check": "prettier --check \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "fmt": "npm run format",
-    "format": "npm run prettier --write",
-    "prettier": "prettier \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
-    "test": "npm run prettier --list-different"
+    "format": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
+    "prettier": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
+    "test": "prettier --list-different \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\""
   },
   "husky": {
     "hooks": {

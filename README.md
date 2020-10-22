@@ -80,13 +80,14 @@ The documentation repository uses the following JavaScript tools to keep source 
 
 ### Prerequisites
 
-You must have a stand-alone installation of Git from [https://git-scm.com/downloads][19]. Git must also be included in the [`PATH`][20] environment variable.
+- You must have a stand-alone installation of Git from [git-scm.com/downloads][18].
+- Include the Git installation location in the [`PATH`][19] environment variable.
 
 ### Steps
 
 To set these tools up:
 
-1. Install Node.js® from [nodejs.org][18]
+1. Install Node.js® from [nodejs.org][20]
 2. Open a command prompt, and change to the directory of your docs repository clone.
 3. Run `npm install`
 
@@ -99,8 +100,7 @@ If the `git` command is not available in your command-line environment, the Husk
 
     "Cannot read property 'toString' of null"
 
-Uninstall Husky (`npm husky uninstall`). Install [Git][19]. Add the installation location to the [`PATH`][20] environment
-variable. Re-run `npm install`.
+_Solution:_ Uninstall Husky via `npm husky uninstall`. Install [Git][18]. Add the installation location to the [`PATH`][19] environment variable. Re-run `npm install`.
 
 </details>
 
@@ -121,6 +121,6 @@ variable. Re-run `npm install`.
 [15]: https://www.dita-ot.org/DCO
 [16]: https://prettier.io
 [17]: https://github.com/typicode/husky
-[18]: https://nodejs.org
-[19]: https://git-scm.com/downloads
-[20]: https://en.wikipedia.org/wiki/PATH_(variable)
+[18]: https://git-scm.com/downloads
+[19]: https://en.wikipedia.org/wiki/PATH_(variable)
+[20]: https://nodejs.org

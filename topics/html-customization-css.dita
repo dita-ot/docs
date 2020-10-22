@@ -42,7 +42,7 @@
       <step>
         <cmd>Set the <parmname>args.css</parmname> parameter to the name of your custom CSS file.</cmd>
         <info>
-          <p>The value of this parameter should be only the file name. The relative path to the file can be specified
+          <p>The value of this parameter should be only the file name. You can specify the absolute path to the file
             with <parmname>args.cssroot</parmname>.</p></info>
       </step>
       <step>
@@ -51,12 +51,7 @@
           <p>This setting ensures that your custom CSS file will be copied to the output directory.</p></info>
       </step>
       <step>
-        <cmd>Set <parmname>args.cssroot</parmname> to the folder path that contains your custom CSS file.</cmd>
-        <info>
-          <p>The value you enter here will be interpreted relative to the location of the input map file. If your map is
-            stored at the root level of your project folder and the CSS file is stored in a subfolder named
-              <filepath>resources</filepath>, set <parmname>args.cssroot</parmname> to
-          <option>resources</option>.</p></info>
+        <cmd>Set <parmname>args.cssroot</parmname> to the absolute path of the folder that contains your custom CSS file.</cmd>
       </step>
       <step importance="optional">
         <cmd>Set <parmname>args.csspath</parmname> to specify the location of the CSS file in the output folder.</cmd>

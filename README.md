@@ -78,6 +78,12 @@ The documentation repository uses the following JavaScript tools to keep source 
 - [Prettier][16] is an opinionated code formatter that enforces a consistent style by parsing code and re-printing it.
 - [Husky][17] uses Git hooks to ensure that Prettier runs on all staged changes to format files before committing.
 
+### Prerequisites
+
+You must have a stand-alone installation of Git from [https://git-scm.com/downloads][19]. Git must also be included in the [`PATH`][20] environment variable.
+
+### Steps
+
 To set these tools up:
 
 1. Install Node.js® from [nodejs.org][18]
@@ -93,7 +99,8 @@ If the `git` command is not available in your command-line environment, the Husk
 
     "Cannot read property 'toString' of null"
 
-Install Git from [git-scm.com/downloads][19], add the installation location to the [`PATH`][20] environment variable, and re-run `npm install`.
+Uninstall Husky (`npm husky uninstall`). Install [Git][19]. Add the installation location to the [`PATH`][20] environment
+variable. Re-run `npm install`.
 
 </details>
 

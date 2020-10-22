@@ -51,7 +51,8 @@
           <p>This setting ensures that your custom CSS file will be copied to the output directory.</p></info>
       </step>
       <step>
-        <cmd>Set <parmname>args.cssroot</parmname> to the absolute path of the folder that contains your custom CSS file.</cmd>
+        <cmd>Set <parmname
+          >args.cssroot</parmname> to the absolute path of the folder that contains your custom CSS file.</cmd>
       </step>
       <step importance="optional">
         <cmd>Set <parmname>args.csspath</parmname> to specify the location of the CSS file in the output folder.</cmd>

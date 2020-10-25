@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><?path2rootmap-uri ../?>
-<!DOCTYPE topic
-  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="store-api" specializations=""><title>Store API</title><shortdesc>Originally DITA-OT assumed all input and output resources were on local disk and addressable with a file path. At some point, support for URI input was added, so HTTPS resources could be used as input. Both temporary and output resources were still file-based. DITA-OT 3.6 introduces a new Store API with preview support for in-memory processing.</shortdesc><body><p>The Store API (<codeph>org.dita.dost.store.Store</codeph>) is a Java abstraction over temporary file operations. So for example instead of reading resources directly with <codeph>FileInputStream</codeph>, the Store API provides operations for this. This abstraction allows implementations of the Store API to choose how they handle resources, enables optimizations or non–file-based storage. Since DITA-OT processes a lot of XML data, the Store API offers operations for XML processing directly. For example, a read method to directly get a DOM <codeph>Document</codeph>, instead of opening a file stream manually, parsing it with an XML parser, and getting the <codeph>Document</codeph> instance from the parser.</p><p>The Store API is extendable using Java's <xref href="https://docs.oracle.com/javase/9/docs/api/java/util/ServiceLoader.html" format="html" scope="external">Resource Loader</xref> with the <codeph>org.dita.dost.store.StoreBuilder</codeph> service. This is a builder interface to get named <codeph>Store</codeph> instances ("a Store").</p><section id="stream-store"><title>Stream Store</title><p>This Store could also be a File Store, since it uses disk and local files for temporary resources. This is the traditional DITA-OT implementation, where temporary XML files are stored under the <codeph>dita.temp.dir</codeph> path.</p><p>The Stream Store can be activated with the <codeph>store-type=file</codeph> property (added and enabled by default in DITA-OT 3.6).</p></section><section id="cache-store"><title>Cache Store</title><p>This Store is an in-memory Store, that keeps all temporary resources in memory. The name comes from the feature of the Store, that it caches the parsed XML after reading. That is, instead of storing XML as a byte array, it keeps it as a DOM <codeph>Document</codeph> or S9api <codeph>XdmNode</codeph>. When the same resource is read again, it doesn't have to parse it again, only return the parsed document. Resources that are not available in the temporary directory are handled with the Stream Store.</p><p>Note that while the Store doesn't write anything to the temporary directory, it will still use URIs where the resources are under the temporary directory. The URIs are simply used for addressing, similarly to URNs. Future releases of DITA-OT may use some other method of addressing, such as a <codeph>tmp</codeph> URI scheme.</p><p>As of DITA-OT 3.6, the Cache Store can be activated by setting the <codeph>store-type</codeph> property to <codeph>memory</codeph>.</p><p>The DITA-OT 3.6 implementation of the Cache Store is provided as a preview to allow integration partners to test this new feature. Not all custom plug-ins will work with the Store, because they may assume files are used and expect direct file access for resource operations.</p></section></body><related-links><linkpool><link format="dita" href="../reference/architecture.dita" role="parent" scope="local" type="concept"><linktext>DITA Open Toolkit Architecture</linktext><desc>DITA Open Toolkit is an open-source implementation of the OASIS specification for the Darwin Information     Typing Architecture. The toolkit uses Ant, XSLT, and Java to transform DITA content (maps and topics) into different     deliverable formats.</desc></link></linkpool></related-links></topic>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<topic id="store-api">
+  <title>Store API</title>
+  <shortdesc>Originally DITA-OT assumed all input and output resources were on local disk and addressable with a file
+    path. At some point, support for URI input was added, so HTTPS resources could be used as input. Both temporary and
+    output resources were still file-based. DITA-OT 3.6 introduces a new Store API with preview support for in-memory
+    processing.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Store API</indexterm>
+        <indexterm>in-memory processing</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body>
+    <p>The Store API (<codeph>org.dita.dost.store.Store</codeph>) is a Java abstraction over temporary file operations.
+      So for example instead of reading resources directly with <codeph>FileInputStream</codeph>, the Store API provides
+      operations for this. This abstraction allows implementations of the Store API to choose how they handle resources,
+      enables optimizations or non–file-based storage. Since DITA-OT processes a lot of XML data, the Store API offers
+      operations for XML processing directly. For example, a read method to directly get a DOM
+      <codeph>Document</codeph>, instead of opening a file stream manually, parsing it with an XML parser, and getting
+      the <codeph>Document</codeph> instance from the parser.</p>
+    <p>The Store API is extendable using Java’s
+      <xref href="https://docs.oracle.com/javase/9/docs/api/java/util/ServiceLoader.html" format="html" scope="external"
+        >Resource Loader</xref> with the <codeph>org.dita.dost.store.StoreBuilder</codeph> service. This is a builder
+      interface to get named <codeph>Store</codeph> instances (“a Store”).</p>
+    <section id="stream-store">
+      <title>Stream Store</title>
+      <p>This Store could also be a File Store, since it uses disk and local files for temporary resources. This is the
+        traditional DITA-OT implementation, where temporary XML files are stored under the
+          <codeph>dita.temp.dir</codeph> path.</p>
+      <p>The Stream Store is activated by setting the <parmname>store-type</parmname> parameter to
+        <option>file</option>.</p>
+      <note>To ensure backwards compatibility, the <option>file</option> Store is the default setting in DITA-OT
+        3.6.</note>
+    </section>
+    <section id="cache-store">
+      <title>Cache Store</title>
+      <p>This Store is an in-memory Store, that keeps all temporary resources in memory. The name comes from the feature
+        of the Store, that it caches the parsed XML after reading. That is, instead of storing XML as a byte array, it
+        keeps it as a DOM <codeph>Document</codeph> or S9api <codeph>XdmNode</codeph>. When the same resource is read
+        again, it doesn't have to parse it again, only return the parsed document. Resources that are not available in
+        the temporary directory are handled with the Stream Store.</p>
+      <p>Note that while the Store doesn't write anything to the temporary directory, it will still use URIs where the
+        resources are under the temporary directory. The URIs are simply used for addressing, similarly to URNs. Future
+        releases of DITA-OT may use some other method of addressing, such as a <codeph>tmp</codeph> URI scheme.</p>
+      <p>As of DITA-OT 3.6, the Cache Store can be activated by setting the <parmname>store-type</parmname> parameter to
+          <option>memory</option>.</p>
+      <p>The initial implementation of the Cache Store is provided in DITA-OT 3.6 as a preview to allow integration
+        partners to test this new feature. Not all custom plug-ins will work with the Store, because they may assume
+        files are used and expect direct file access for resource operations.</p>
+      <note type="tip">To take advantage of the Store API, custom plug-ins must use DITA-OT XSLT modules in custom
+          <xmlelement>pipeline</xmlelement> elements instead of Ant’s built-in <xmlelement>xslt</xmlelement> tasks as
+        recommended in
+        <xref keyref="plugin-coding-conventions"/>.</note>
+    </section>
+  </body>
+</topic>

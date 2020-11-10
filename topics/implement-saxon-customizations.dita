@@ -60,7 +60,6 @@
       style="${dita.plugin.org.dita-community.i18n.dir}/test/xsl/test-extension-functions.xsl"
       out="${basedir}/out/extension-function-test-results.xml"
       >
-
     &lt;/xslt>
   &lt;/pipeline>
 &lt;/target></codeblock></p>

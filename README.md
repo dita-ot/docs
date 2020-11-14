@@ -63,7 +63,7 @@ The `develop` branch of the documentation repository may depend on features from
 To use these features when building the documentation, you may either download the [latest development version][14] of the distribution package, or clone the [DITA-OT repository][13] and install the [bundled plug-ins][15] via `dita --install`.
 
 [1]: https://travis-ci.org/dita-ot/docs.svg?branch=develop
-[2]: http://slack.dita-ot.org/badge.svg
+[2]: https://img.shields.io/badge/Slack-Join%20us!-%234A154B?style=flat&logo=slack
 [3]: https://www.dita-ot.org/dev/
 [4]: https://www.dita-ot.org
 [5]: .github/CONTRIBUTING.md

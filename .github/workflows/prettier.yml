@@ -20,7 +20,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Prettify code
-        uses: infotexture/prettier_xml_action@v3.0.x
+        uses: infotexture/prettier_xml_action@v3.1.x
         with:
           # This part is also where you can pass other options, for example:
           prettier_options: --write **/*.{css,dita*,json,md,scss,xml,yaml,yml}

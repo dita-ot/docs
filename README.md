@@ -8,6 +8,7 @@ This repository tracks the [documentation][3] source files for the [DITA Open To
 - [Building with development versions of DITA Open Toolkit](#building-with-development-versions-of-dita-open-toolkit)
 - [Contribution guidelines](#contribution-guidelines)
 - [Installing formatting tools](#installing-formatting-tools)
+- [Running Prettier](#running-prettier)
 
 <!-- /MarkdownTOC -->
 
@@ -103,6 +104,18 @@ If the `git` command is not available in your command-line environment, the Husk
 _Solution:_ Uninstall Husky via `npm husky uninstall`. Install [Git][18]. Add the installation location to the [`PATH`][19] environment variable. Re-run `npm install`.
 
 </details>
+
+## Running Prettier
+
+If you'd like to check whether your changes are formatted correctly, or format them before committing, you can run Prettier manually from the command line.
+
+### Check formatting
+
+    npm run check
+
+### Format all files
+
+    npm run format
 
 [1]: https://travis-ci.org/dita-ot/docs.svg?branch=develop
 [2]: https://img.shields.io/badge/Slack-Join%20us!-%234A154B?style=flat&logo=slack

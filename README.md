@@ -105,7 +105,7 @@ _Solution:_ Uninstall Husky via `npm husky uninstall`. Install [Git][18]. Add th
 </details>
 
 [1]: https://travis-ci.org/dita-ot/docs.svg?branch=develop
-[2]: http://slack.dita-ot.org/badge.svg
+[2]: https://img.shields.io/badge/Slack-Join%20us!-%234A154B?style=flat&logo=slack
 [3]: https://www.dita-ot.org/dev/
 [4]: https://www.dita-ot.org
 [5]: https://github.com/dita-ot/dita-ot

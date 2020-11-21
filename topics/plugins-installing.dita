@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="plugins-installing" xml:lang="en">
   <title>Installing plug-ins</title>
   <shortdesc>Use the <cmdname>dita install</cmdname> subcommand to install plug-ins.</shortdesc>
@@ -23,7 +22,8 @@
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
         <info>
-          <codeblock outputclass="syntax-bash"><cmdname>dita install</cmdname> <varname>&lt;plug-in&gt;</varname></codeblock>
+          <codeblock outputclass="syntax-bash"><cmdname>dita install</cmdname> <varname
+            >&lt;plug-in&gt;</varname></codeblock>
           <p>where:</p>
           <ul>
             <li conkeyref="conref-task/plug-in"/>

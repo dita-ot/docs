@@ -22,66 +22,66 @@ Follow this process to ensure your contribution meets our expectations and incre
 
 1. [Fork][4] the docs repository, clone your fork, and configure the remotes:
 
-    ```bash
-    # Clone your docs fork into the current directory
-    git clone https://github.com/<your-username>/docs
+   ```bash
+   # Clone your docs fork into the current directory
+   git clone https://github.com/<your-username>/docs
 
-    # Navigate to the newly cloned directory
-    cd docs
+   # Navigate to the newly cloned directory
+   cd docs
 
-    # Assign the original repo to a remote called "upstream"
-    git remote add upstream https://github.com/dita-ot/docs
-    ```
+   # Assign the original repo to a remote called "upstream"
+   git remote add upstream https://github.com/dita-ot/docs
+   ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
 
-    ```bash
-    git checkout develop
-    git pull upstream develop
-    ```
+   ```bash
+   git checkout develop
+   git pull upstream develop
+   ```
 
 3. Create a new feature branch _(off the upstream project’s `develop` branch)_ for your new feature, change, or fix:
 
-    ```bash
-    git checkout -b your-new-branch
-    ```
+   ```bash
+   git checkout -b your-new-branch
+   ```
 
 4. Commit your changes in logical chunks.
 
-    Please be sure to follow the [coding guidelines][5] and [best practices][6] outlined in the docs project wiki:
+   Please be sure to follow the [coding guidelines][5] and [best practices][6] outlined in the docs project wiki:
 
-    * [Test before committing][7]
-    * [Commit related changes][8]
-    * [Commit often][9]
-    * [Write good commit messages][10]
+   - [Test before committing][7]
+   - [Commit related changes][8]
+   - [Commit often][9]
+   - [Write good commit messages][10]
 
-    Use Git’s [interactive rebase][11] feature to tidy up your commits, if necessary, before making them public.
+   Use Git’s [interactive rebase][11] feature to tidy up your commits, if necessary, before making them public.
 
 5. Indicate that you agree to the terms of the Apache License Version 2.0 by "[signing off][12]" your contribution with `git commit -s`.
 
-    This adds a line with your name and e-mail address to your Git commit message:
+   This adds a line with your name and e-mail address to your Git commit message:
 
-    ```bash
-     Signed-off-by: Jane Doe <jane.doe@example.com>
-    ```
+   ```bash
+   Signed-off-by: Jane Doe <jane.doe@example.com>
+   ```
 
 6. Locally merge _(or rebase)_ the upstream `develop` branch into your feature branch:
 
-    ```bash
-    git pull [--rebase] upstream develop
-    ```
+   ```bash
+   git pull [--rebase] upstream develop
+   ```
 
 7. Push your feature branch up to your fork:
 
-    ```bash
-    git push origin your-new-branch
-    ```
+   ```bash
+   git push origin your-new-branch
+   ```
 
 8. [Open a pull request][3] with a clear title and description.
 
-    **Pro tip:** If there’s no corresponding issue for the changes you're proposing, there’s no need to create one first.
-    You can describe the problem and provide the solution all in one step.
-    _(Under the hood, pull requests are just a special type of issue.)_
+   **Pro tip:** If there’s no corresponding issue for the changes you're proposing, there’s no need to create one first.
+   You can describe the problem and provide the solution all in one step.
+   _(Under the hood, pull requests are just a special type of issue.)_
 
 [1]: https://github.com/dita-ot/docs/issues
 [2]: https://github.com/dita-ot/docs/issues/new

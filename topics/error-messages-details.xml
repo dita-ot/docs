@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="errormessages">
   <title conkeyref="error-messages/title" conaction="pushreplace">DITA-OT error messages</title>
   <shortdesc conkeyref="error-messages/shortdesc" conaction="pushreplace">This topic lists each error message generated
@@ -256,14 +255,18 @@
         <stentry conkeyref="error-messages/DOTJ039E-extra" conaction="pushreplace">Please see the topic on
           <xref
             href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute"
-            format="html" scope="external">Conref Push</xref> in the DITA specification for details on expected syntax
+            format="html"
+            scope="external"
+          >Conref Push</xref> in the DITA specification for details on expected syntax
           for this function.</stentry>
       </strow>
       <strow>
         <stentry conkeyref="error-messages/DOTJ040E-extra" conaction="pushreplace">Please see the topic on
           <xref
             href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute"
-            format="html" scope="external">Conref Push</xref> in the DITA specification for details on expected syntax
+            format="html"
+            scope="external"
+          >Conref Push</xref> in the DITA specification for details on expected syntax
           for this function.</stentry>
       </strow>
       <strow>
@@ -271,7 +274,9 @@
           reference to a DITA element. Please see the topic on
           <xref
             href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing"
-            format="html" scope="external">URI-based addressing</xref> in the DITA specification for details on the
+            format="html"
+            scope="external"
+          >URI-based addressing</xref> in the DITA specification for details on the
           expected syntax.</stentry>
       </strow>
       <strow>
@@ -280,7 +285,9 @@
           conref push. See
           <xref
             href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute"
-            format="html" scope="external">Conref Push</xref> in the DITA specification for more information about the
+            format="html"
+            scope="external"
+          >Conref Push</xref> in the DITA specification for more information about the
           conref push "replace" function.</stentry>
       </strow>
       <strow>
@@ -288,7 +295,9 @@
           does not exist; please make sure that the syntax is correct and that the target exists. See the topic on
           <xref
             href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing"
-            format="html" scope="external">URI-based addressing</xref> in the DITA specification for details on the
+            format="html"
+            scope="external"
+          >URI-based addressing</xref> in the DITA specification for details on the
           expected syntax. If the syntax is correct, it is possible that the target was filtered out of your build using
           a DITAVAL file.</stentry>
       </strow>
@@ -296,7 +305,9 @@
         <stentry conkeyref="error-messages/DOTJ044W-extra" conaction="pushreplace">Please see the topic on
           <xref
             href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconactionattribute.html#theconactionattribute"
-            format="html" scope="external">Conref Push</xref> in the DITA specification for details on expected syntax
+            format="html"
+            scope="external"
+          >Conref Push</xref> in the DITA specification for details on expected syntax
           for this function.</stentry>
       </strow>
       <strow>
@@ -308,7 +319,9 @@
         <stentry conkeyref="error-messages/DOTJ046E-extra" conaction="pushreplace">See
           <xref
             href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/langRef/attributes/theconkeyrefattribute.html#theconkeyrefattribute"
-            format="html" scope="external">the conkeyref definition</xref> for details on expected syntax and
+            format="html"
+            scope="external"
+          >the conkeyref definition</xref> for details on expected syntax and
           usage.</stentry>
       </strow>
       <strow>
@@ -438,7 +451,8 @@
       <strow>
         <stentry conkeyref="error-messages/DOTX008W-extra" conaction="pushreplace">To fix the table of contents, specify
           a navigation title in your map or ensure that the referenced file is local and can be accessed. <ph
-            conkeyref="error-messages-details/changeExtension"/>
+            conkeyref="error-messages-details/changeExtension"
+          />
           <indexterm>table of contents
             <indexterm>navigation title</indexterm></indexterm>
           <indexterm>table of contents
@@ -459,7 +473,9 @@
           reference to an existing DITA element. Please see the topic on
           <xref
             href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing"
-            format="html" scope="external">URI-based addressing</xref> in the DITA specification for details on the
+            format="html"
+            scope="external"
+          >URI-based addressing</xref> in the DITA specification for details on the
           expected syntax. <ph id="changeExtension">Note that the name of the file in this message may have be changed
             to use a standard dita topic file extension ('.dita' or '.xml'), instead of the original extension used by
             the file; it may also include a path to the temporary directory rather than to the original.</ph>
@@ -480,14 +496,17 @@
           have a <xmlelement>ph</xmlelement> element that references another phrase, but that phrase itself contains a
           reference to the original. This will result in an infinite loop. The toolkit will stop following the conref
           trail when this is detected; you will need to correct the reference in your source files. <ph
-            conkeyref="error-messages-details/changeExtension"/></stentry>
+            conkeyref="error-messages-details/changeExtension"
+          /></stentry>
       </strow>
       <strow>
         <stentry conkeyref="error-messages/DOTX014E-extra" conaction="pushreplace">The conref attribute must be a URI
           reference to a DITA element. Please see the topic on
           <xref
             href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing"
-            format="html" scope="external">URI-based addressing</xref> in the DITA specification for details on the
+            format="html"
+            scope="external"
+          >URI-based addressing</xref> in the DITA specification for details on the
           expected syntax.</stentry>
       </strow>
       <strow>
@@ -495,7 +514,9 @@
           reference to a DITA element. Please see the topic on
           <xref
             href="http://docs.oasis-open.org/dita/dita/v1.3/os/part1-base/archSpec/base/uri-based-addressing.html#uri-based-addressing"
-            format="html" scope="external">URI-based addressing</xref> in the DITA specification for details on the
+            format="html"
+            scope="external"
+          >URI-based addressing</xref> in the DITA specification for details on the
           expected syntax. <ph conkeyref="error-messages-details/changeExtension"/></stentry>
       </strow>
       <strow>
@@ -753,8 +774,11 @@
           references from maps should either go to DITA Maps, DITA Topics, or any non-DITA resource. References below
           the topic level should only be made from cross references (using <xmlelement>xref</xmlelement> or similar)
           inside of a topic. For details, see the href attribute description in the OASIS standard’s definition of the
-          <xref href="http://docs.oasis-open.org/dita/v1.2/os/spec/langref/topicref.html" format="html" scope="external"
-            >topicref element</xref>.</stentry>
+          <xref
+            href="http://docs.oasis-open.org/dita/v1.2/os/spec/langref/topicref.html"
+            format="html"
+            scope="external"
+          >topicref element</xref>.</stentry>
       </strow>
       <strow>
         <stentry conkeyref="error-messages/DOTX063W-extra" conaction="pushreplace">This will appear when generating PDF

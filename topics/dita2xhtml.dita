@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="dita2xhtml">
   <title>XHTML</title>
   <shortdesc>The <option>xhtml</option> transformation generates XHTML output and a table of contents (TOC) file. This
@@ -34,7 +33,8 @@
     <p>To run the XHTML transformation, set the <parmname>transtype</parmname> parameter to <option>xhtml</option>, or
       pass the <parmname>--format</parmname>=<option>xhtml</option> option to the <cmdname>dita</cmdname> command
       line.</p>
-    <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>xhtml</option></codeblock>
+    <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname
+      >input-file</varname> <parmname>--format</parmname>=<option>xhtml</option></codeblock>
     <p>where:</p>
     <ul>
       <li conkeyref="conref-task/novice-variables"/>

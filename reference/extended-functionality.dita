@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="code-reference">
 
   <title>Extended codeblock processing</title>
@@ -42,8 +41,11 @@
         <xref keyref="configuration-properties-file">configuration.properties</xref> file:</p>
       <codeblock outputclass="language-properties">default.coderef-charset = ISO-8859-1</codeblock>
       <p>The character set values are those supported by the Java
-        <xref format="html" href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html"
-          scope="external">Charset</xref> class.</p>
+        <xref
+          format="html"
+          href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html"
+          scope="external"
+        >Charset</xref> class.</p>
     </section>
 
     <section>
@@ -55,7 +57,9 @@
         last line of the file.</p>
     </section>
     <example>
-      <codeblock outputclass="language-xml">&lt;coderef href="Parser.scala#line-range(5,10)" format="scala"/></codeblock>
+      <codeblock
+        outputclass="language-xml"
+      >&lt;coderef href="Parser.scala#line-range(5,10)" format="scala"/></codeblock>
       <p>Only lines from 5 to 10 will be included in the output.</p>
     </example>
     <section>
@@ -89,13 +93,17 @@
     </section>
     <example>
       <p>Given a Haskell source file named <filepath>fact.hs</filepath> with the following content,</p>
-      <codeblock outputclass="language-haskell normalize-space show-line-numbers show-whitespace"><coderef href="../resources/fact.hs"/></codeblock>
+      <codeblock outputclass="language-haskell normalize-space show-line-numbers show-whitespace"><coderef
+          href="../resources/fact.hs"
+        /></codeblock>
       <p>a range of lines can be referenced as:</p>
       <codeblock outputclass="language-xml">&lt;coderef href="fact.hs#token=START-FACT,END-FACT"/></codeblock>
       <p>to include the range of lines that follows the <codeph>START-FACT</codeph> token on Line 1, up to (but not
         including) the line that contains the <codeph>END-FACT</codeph> token (Line 5). The resulting
           <xmlelement>codeblock</xmlelement> would contain lines 2–4:</p>
-      <codeblock outputclass="language-haskell"><coderef href="../resources/fact.hs#token=START-FACT,END-FACT"/></codeblock>
+      <codeblock outputclass="language-haskell"><coderef
+          href="../resources/fact.hs#token=START-FACT,END-FACT"
+        /></codeblock>
       <note type="tip" id="coderef-by-content-tip">This approach can be used to reference code samples that are
         frequently edited. In these cases, referencing line ranges by line number can be error-prone, as the target line
         range for the reference may shift if preceding lines are added or removed. Specifying ranges by line content

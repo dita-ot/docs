@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="dita2htmlhelp">
   <title>HTML Help</title>
   <shortdesc>The <option>htmlhelp</option> transformation generates HTML output, CSS files, and the control files that
@@ -62,7 +61,8 @@
     <p>To run the HTML Help transformation, set the <parmname>transtype</parmname> parameter to
         <option>htmlhelp</option>, or pass the <parmname>--format</parmname>=<option>htmlhelp</option> option to the
         <cmdname>dita</cmdname> command line.</p>
-    <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>htmlhelp</option></codeblock>
+    <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname
+      >input-file</varname> <parmname>--format</parmname>=<option>htmlhelp</option></codeblock>
     <p>where:</p>
     <ul>
       <li conkeyref="conref-task/novice-variables"/>

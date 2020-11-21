@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <topic id="normalized-dita">
   <title>Normalized DITA</title>
   <shortdesc>The <codeph>dita</codeph> transformation generates normalized topics and maps from DITA input. The
@@ -57,7 +56,8 @@
       <title>Generating normalized DITA output</title>
       <p>Run the <cmdname>dita</cmdname> command and set the value of the output <parmname>--format</parmname> option to
           <option>dita</option>:</p>
-      <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>dita</option></codeblock>
+      <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname
+        >input-file</varname> <parmname>--format</parmname>=<option>dita</option></codeblock>
       <p>where:</p>
       <ul>
         <li conkeyref="conref-task/novice-variables"/>

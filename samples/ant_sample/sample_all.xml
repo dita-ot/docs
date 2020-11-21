@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <project name="sample_all" default="all" basedir=".">
 
   <import file="sample_html5.xml"/>
@@ -12,11 +10,17 @@
 
   <target name="all" depends="samples"/>
 
-  <target name="samples" description="build the sample output"
-    depends="samples.html5, samples.xhtml_plus_css, samples.eclipse, samples.htmlhelp, samples.pdf"/>
+  <target
+    name="samples"
+    description="build the sample output"
+    depends="samples.html5, samples.xhtml_plus_css, samples.eclipse, samples.htmlhelp, samples.pdf"
+  />
 
-  <target name="clean.samples" description="remove the sample output"
-    depends="clean.samples.html5, clean.samples.xhtml_plus_css, clean.samples.eclipse, clean.samples.htmlhelp, clean.samples.pdf">
+  <target
+    name="clean.samples"
+    description="remove the sample output"
+    depends="clean.samples.html5, clean.samples.xhtml_plus_css, clean.samples.eclipse, clean.samples.htmlhelp, clean.samples.pdf"
+  >
     <delete dir="${dita.dir}/out/samples"/>
   </target>
 

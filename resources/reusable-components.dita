@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="ID">
   <title>Re-usable components</title>
   <shortdesc>Warehouse topic used to store re-usable content for concept topics or other constructs that would not be
@@ -52,7 +51,8 @@
           prolog:</p>
         <p><xmlpi>xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"</xmlpi></p>
         <p>If your authoring environment does not apply this schema automatically, point your editor to <filepath
-            id="samples-dir"><varname>dita-ot-dir</varname>/resources/plugin.rnc</filepath> to associate the schema with
+            id="samples-dir"
+          ><varname>dita-ot-dir</varname>/resources/plugin.rnc</filepath> to associate the schema with
           your plug-in file.</p>
       </div>
     </section>

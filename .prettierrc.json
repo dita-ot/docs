@@ -1,0 +1,38 @@
+{
+  "arrowParens": "avoid",
+  "bracketSpacing": false,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "jsxBracketSameLine": false,
+  "printWidth": 120,
+  "proseWrap": "preserve",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": true,
+  "xmlSelfClosingSpace": false,
+  "xmlWhitespaceSensitivity": "strict",
+  "overrides": [
+    {
+      "files": "external-links.ditamap",
+      "options": {
+        "printWidth": 80
+      }
+    },
+    {
+      "files": "source-files.ditamap",
+      "options": {
+        "printWidth": 200
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 200
+      }
+    }
+  ]
+}

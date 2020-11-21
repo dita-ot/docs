@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="plugin-dependencies">
   <title>Plug-in dependencies</title>
   <shortdesc>A DITA-OT plug-in can be dependent on other plug-ins. Prerequisite plug-ins are installed first, which
@@ -45,7 +44,9 @@
       <title>Example: Plug-in with a prerequisite plug-in</title>
       <p>The following plug-in will only be installed if the plug-in with the ID <codeph>com.example.primary</codeph> is
         available. If that plug-in is not available, a warning is generated and the installation operation fails.</p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.builds-on-primary">
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;plugin id="com.example.builds-on-primary">
   &lt;!-- ... Extensions here -->
   &lt;require plugin="com.example.primary"/>
 &lt;/plugin></codeblock>

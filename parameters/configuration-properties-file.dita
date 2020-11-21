@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="configuration" xml:lang="en">
   <title>The <filepath>configuration.properties</filepath> file</title>
   <titlealts>
@@ -147,8 +146,11 @@
           <pt><parmname>default.coderef-charset</parmname></pt>
           <pd>As of DITA-OT 3.3, the default character set for code references can be changed by specifying one of the
             character set values supported by the Java
-            <xref format="html" href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html"
-              scope="external">Charset</xref> class.</pd>
+            <xref
+              format="html"
+              href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html"
+              scope="external"
+            >Charset</xref> class.</pd>
         </plentry>
       </parml>
     </section>

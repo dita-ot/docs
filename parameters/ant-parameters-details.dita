@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="ant-parameters-details">
   <title>Ant parameter details</title>
 
@@ -485,9 +484,11 @@
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.xhtml.classattr.desc"/>
             <pd conaction="pushafter">For example, the <xmlelement>prereq</xmlelement> element (which is specialized
               from <xmlelement>section</xmlelement>) would generate <codeph>class="section prereq"</codeph>. <ph
-                audience="xslt-customizer">Corresponds to the XSLT parameter
+                audience="xslt-customizer"
+              >Corresponds to the XSLT parameter
                 <parmname>PRESERVE-DITA-CLASS</parmname>.</ph><note>Beginning with DITA-OT release 1.5.2, the default
-                value is <option>yes</option>. For release 1.5 and 1.5.1, the default value was <option>no</option>. </note>
+                value is <option>yes</option>. For release 1.5 and 1.5.1, the default value was <option
+                >no</option>. </note>
               <indexterm><xmlelement>prereq</xmlelement></indexterm>
               <indexterm><xmlelement>section</xmlelement></indexterm>
             </pd>

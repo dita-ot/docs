@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="plugin-configfile">
   <title>Plug-in descriptor file</title>
   <shortdesc>The plug-in descriptor file (<filepath>plugin.xml</filepath>) controls all aspects of a plug-in, making
@@ -45,7 +44,9 @@
         required <xmlatt>id</xmlatt> attribute set to the unique plug-in identifier.</p>
       <fig>
         <title>Sample <xmlelement>plugin</xmlelement> element</title>
-        <codeblock outputclass="language-xml"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml#line=3,4"/></codeblock>
+        <codeblock outputclass="language-xml"><coderef
+            href="../samples/plugins/com.example.html5-javascript/plugin.xml#line-range(3,3)"
+          /></codeblock>
       </fig>
     </section>
     <section>
@@ -85,7 +86,9 @@
               defining plug-in and append one or more tokens, for example, <codeph>org.dita.example.pre</codeph>.</note>
             <fig>
               <title>Sample <xmlelement>extension-point</xmlelement> element</title>
-              <codeblock outputclass="language-xml">&lt;extension-point id="dita.xsl.html5" name="HTML5 XSLT import"/></codeblock>
+              <codeblock
+                outputclass="language-xml"
+              >&lt;extension-point id="dita.xsl.html5" name="HTML5 XSLT import"/></codeblock>
             </fig>
           </pd>
         </plentry>
@@ -132,7 +135,9 @@
               <title>Sample <xmlelement>feature</xmlelement> elements</title>
               <p>If more than one <xmlelement>feature</xmlelement> element supplies values to the same extension point,
                 the values are additive. For example, the following are equivalent:</p>
-              <codeblock outputclass="language-xml">&lt;feature extension="org.dita.example.extension-point" value="a,b,c"/></codeblock>
+              <codeblock
+                outputclass="language-xml"
+              >&lt;feature extension="org.dita.example.extension-point" value="a,b,c"/></codeblock>
               <codeblock outputclass="language-xml">&lt;feature extension="org.dita.example.extension-point" value="a"/>
 &lt;feature extension="org.dita.example.extension-point" value="b"/>
 &lt;feature extension="org.dita.example.extension-point" value="c"/></codeblock>
@@ -197,7 +202,9 @@
             </simpletable>
             <fig>
               <title>Sample <xmlelement>require</xmlelement> element</title>
-              <codeblock outputclass="language-xml normalize-space"><coderef href="../samples/plugins/com.example.html5-javascript/plugin.xml#line=4,5"/></codeblock>
+              <codeblock outputclass="language-xml normalize-space"><coderef
+                  href="../samples/plugins/com.example.html5-javascript/plugin.xml#line-range(4,4)"
+                /></codeblock>
             </fig>
           </pd>
         </plentry>
@@ -370,10 +377,15 @@
       <p>This <filepath>plugin.xml</filepath> file would go into a directory such as
           <filepath>DITA-OT/plugins/music/</filepath> and referenced supporting files would also exist in that
         directory. A more extensive sample using these values is available in the actual music plug-in, available on
-        <xref format="html" href="https://sourceforge.net/projects/dita-ot/files/Plug-in_%20Music/" scope="external"
-          >SourceForge</xref>.</p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="org.metadita.specialization.music">
-  &lt;feature extension="dita.specialization.catalog.relative" 
+        <xref
+          format="html"
+          href="https://sourceforge.net/projects/dita-ot/files/Plug-in_%20Music/"
+          scope="external"
+        >SourceForge</xref>.</p>
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;plugin id="org.metadita.specialization.music">
+  &lt;feature extension="dita.specialization.catalog.relative"
            file="catalog-dita.xml"/>
   &lt;feature extension="dita.xsl.xhtml" file="xsl/music2xhtml.xsl"/>
 &lt;/plugin></codeblock>

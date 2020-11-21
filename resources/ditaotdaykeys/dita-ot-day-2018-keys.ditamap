@@ -1,20 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <map>
   <!-- This file was generated from dita-ot-day-ditamap-keys.py found at https://gist.github.com/lief-erickson/4019b6ddf09c154164d4830b0fd6e7e8. -->
   <title>DITA-OT Day 2018</title>
-  <keydef keys="whatsnextfordita-ot-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA_2018_Panel"
-    format="html" scope="external">
+  <keydef
+    keys="whatsnextfordita-ot-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA_2018_Panel"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>What's next for DITA-OT?</linktext>
       <shortdesc/>
       <author>Robert Anderson, Roger Sheen, Jarno Elovirta, George Bina</author>
     </topicmeta>
   </keydef>
-  <keydef keys="whoareyoucallingstale-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#who_are_you_calling" format="html" scope="external">
+  <keydef
+    keys="whoareyoucallingstale-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#who_are_you_calling"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Who are you calling “stale” ‽</linktext>
       <shortdesc>The DITA-OT issue tracker contains a backlog of open issues, many of which have not been updated in
@@ -23,8 +30,12 @@
       <author>Robert Anderson, Roger Sheen, Jarno Elovirta</author>
     </topicmeta>
   </keydef>
-  <keydef keys="twistedxslttricksmakingc-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#twisted_xslt_tricks" format="html" scope="external">
+  <keydef
+    keys="twistedxslttricksmakingc-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#twisted_xslt_tricks"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Twisted XSLT Tricks: Making Column Switching Work for FOP</linktext>
       <shortdesc>Switching from single column to two-column layout is almost impossible using the PDF2 transform and FOP
@@ -37,8 +48,12 @@
       <author>Eliot Kimber</author>
     </topicmeta>
   </keydef>
-  <keydef keys="dita-otanddocops-2018" href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA-OT_and_docOps"
-    format="html" scope="external">
+  <keydef
+    keys="dita-otanddocops-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA-OT_and_docOps"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>DITA-OT and DocOps</linktext>
       <shortdesc>Developing documentation concurrent with the software using DITA-OT in VSTS environment at
@@ -46,9 +61,12 @@
       <author>Quick van Rijt</author>
     </topicmeta>
   </keydef>
-  <keydef keys="validationmeetspublicati-2018"
+  <keydef
+    keys="validationmeetspublicati-2018"
     href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#apply_your_style_guide_rules_during_the_publication"
-    format="html" scope="external">
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Validation meets publication - Apply your style guide rules during the publication</linktext>
       <shortdesc>DITA-OT warns about technical issues in the input. Why not warn about style guide violations? This talk
@@ -57,9 +75,12 @@
       <author>Stefan Eike</author>
     </topicmeta>
   </keydef>
-  <keydef keys="afastpathforbuildingdata-2018"
+  <keydef
+    keys="afastpathforbuildingdata-2018"
     href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#fast_path_for_building_data_assets_from_DITA"
-    format="html" scope="external">
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>A fast path for building data assets from DITA</linktext>
       <shortdesc>Structured content can save the day when product complexity gets in the way. Let's see how DITA content
@@ -68,9 +89,12 @@
       <author>François Violette</author>
     </topicmeta>
   </keydef>
-  <keydef keys="overviewofdita-semiaopen-2018"
+  <keydef
+    keys="overviewofdita-semiaopen-2018"
     href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#overview_of_dita-semia_open-source_plugins_for_DITA-OT"
-    format="html" scope="external">
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Overview of dita-semia open-source plugins for DITA-OT</linktext>
       <shortdesc>I have created some DITA-OT plugins that are available as open-source (github.com/dita-semia). And I'd
@@ -84,9 +108,12 @@
       <author>Patrik Stellmann</author>
     </topicmeta>
   </keydef>
-  <keydef keys="unittestingdita-otplugin-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#unit_testing_DITA-OT_plugin_extensions" format="html"
-    scope="external">
+  <keydef
+    keys="unittestingdita-otplugin-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#unit_testing_DITA-OT_plugin_extensions"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Unit Testing DITA-OT Plugin Extensions</linktext>
       <shortdesc>I have created a Unit Testing Framework for DITA-OT Plugins
@@ -97,9 +124,12 @@
       <author>Jason Fox</author>
     </topicmeta>
   </keydef>
-  <keydef keys="stepbystepimplementation-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#step_by_step_implementation_of_a_DITA" format="html"
-    scope="external">
+  <keydef
+    keys="stepbystepimplementation-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#step_by_step_implementation_of_a_DITA"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Step by step implementation of a DITA Open Toolkit plugin</linktext>
       <shortdesc>There are lots of DITA-OT extension points, maybe list some of the most common ones, then based on 3-4
@@ -110,8 +140,12 @@
       <author>Radu Coravu</author>
     </topicmeta>
   </keydef>
-  <keydef keys="metaditasamplestestingar-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#meta_DITA_samples" format="html" scope="external">
+  <keydef
+    keys="metaditasamplestestingar-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#meta_DITA_samples"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Meta DITA samples: testing around the edge cases</linktext>
       <shortdesc>Over the past few years I've developed a number of test cases that are exhaustive but on very specific
@@ -121,18 +155,24 @@
       <author>Robert Anderson</author>
     </topicmeta>
   </keydef>
-  <keydef keys="plug-ininstallationmadee-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#plug-in_installation_made_easier" format="html"
-    scope="external">
+  <keydef
+    keys="plug-ininstallationmadee-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#plug-in_installation_made_easier"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Plug-in installation made easier</linktext>
       <shortdesc>Description and a demo of the new DITA-OT plug-in repository.</shortdesc>
       <author>Jarno Elovirta</author>
     </topicmeta>
   </keydef>
-  <keydef keys="installingdita-otonmacos-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#installing_DITA-OT_on_macOS_via_homebrew" format="html"
-    scope="external">
+  <keydef
+    keys="installingdita-otonmacos-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#installing_DITA-OT_on_macOS_via_homebrew"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Installing DITA-OT on macOS via Homebrew</linktext>
       <shortdesc>A new alternative installation method can now be used to install DITA-OT on macOS via the platform's
@@ -142,9 +182,12 @@
       <author>Roger Sheen</author>
     </topicmeta>
   </keydef>
-  <keydef keys="comparisonbetweenthedocb-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#comparison_between_the_DocBook_and_DITA" format="html"
-    scope="external">
+  <keydef
+    keys="comparisonbetweenthedocb-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#comparison_between_the_DocBook_and_DITA"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Comparison between the DocBook and DITA publishing systems</linktext>
       <shortdesc>Let's compare side by side look at how the Docbook and DITA publishing systems work. This could give us
@@ -170,8 +213,12 @@
       <author>Radu Coravu</author>
     </topicmeta>
   </keydef>
-  <keydef keys="ditagradleandgitasmallte-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA_gradle_and_git" format="html" scope="external">
+  <keydef
+    keys="ditagradleandgitasmallte-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA_gradle_and_git"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>DITA, Gradle and Git: a small team approach to publishing</linktext>
       <shortdesc>At L-Acoustics we adopted an open source toolchain to automate our publishing process. With the CI
@@ -183,9 +230,12 @@
       <author>Lionel Moizeau</author>
     </topicmeta>
   </keydef>
-  <keydef keys="dita-otwebsitesurveyresu-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA_website_survey_results" format="html"
-    scope="external">
+  <keydef
+    keys="dita-otwebsitesurveyresu-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#DITA_website_survey_results"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>DITA-OT Website Survey Results</linktext>
       <shortdesc>This session presents the results of a survey of www.dita-ot.org website users conducted in summer
@@ -194,9 +244,12 @@
       <author>Lief Erickson</author>
     </topicmeta>
   </keydef>
-  <keydef keys="highlightsinrecentdita-o-2018"
-    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#highlights_in_recent_DITA" format="html"
-    scope="external">
+  <keydef
+    keys="highlightsinrecentdita-o-2018"
+    href="https://www.oxygenxml.com/events/2018/dita-ot_day.html#highlights_in_recent_DITA"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Highlights in recent DITA-OT versions</linktext>
       <shortdesc>The core developers present an overview of the changes in DITA Open Toolkit within the past year and

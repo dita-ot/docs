@@ -22,16 +22,16 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - name: Set up Netflify
+      - name: Set up Netlify
         uses: actions/checkout@master
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
 
-      - name: Checkout docs
+      - name: Check out docs
         uses: actions/checkout@v2
-      - name: Checkout website
+      - name: Check out website
         uses: actions/checkout@v2
         with:
           repository: dita-ot/website
@@ -45,6 +45,7 @@ jobs:
         with:
           path: dita-ot-${{ env.DITA_OT_VERSION }}
           key: ${{ runner.os }}-dita-ot-${{ env.DITA_OT_VERSION }}
+
       - name: Download stable DITA-OT
         run: |
           if [ ! -d "dita-ot-${{ env.DITA_OT_VERSION }}" ]; then
@@ -65,6 +66,7 @@ jobs:
           key: ${{ runner.os }}-dita-ot-develop-${{ hashFiles('dita-ot-develop.etag') }}
           restore-keys: |
             ${{ runner.os }}-dita-ot-develop-
+
       - name: Download develop DITA-OT
         run: |
           if [ ! -d "dita-ot-develop" ]; then
@@ -86,11 +88,13 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
       - name: Build website
         run: |
           cd ${{ github.workspace }}/website && npm ci && npm run install
           cd ${{ github.workspace }}
           echo "::set-env name=PR_ID::$(echo $GITHUB_REF |  cut -d'/' -f 3 )"
+
           # Move website to root
           mv -f ${{ github.workspace }}/website/* ${{ github.workspace }}/
           rm -fr build
@@ -107,6 +111,7 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+
       - name: Install Jekyll
         run: |
           bundle config path vendor/bundle

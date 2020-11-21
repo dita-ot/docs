@@ -272,13 +272,33 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="download.openjdk.azul"
+      href="https://www.azul.com/downloads/zulu/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Azul Zulu</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="download.openjdk.corretto"
       href="https://aws.amazon.com/corretto/"
       scope="external"
       format="html"
     >
       <topicmeta>
-        <linktext>aws.amazon.com/corretto</linktext>
+        <linktext>Amazon Corretto</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="download.openjdk.redhat"
+      href="https://developers.redhat.com/products/openjdk/download"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Red Hat</linktext>
       </topicmeta>
     </keydef>
     <keydef

@@ -17,6 +17,12 @@
   "xmlWhitespaceSensitivity": "strict",
   "overrides": [
     {
+      "files": "external-links.ditamap",
+      "options": {
+        "printWidth": 80
+      }
+    },
+    {
       "files": "source-files.ditamap",
       "options": {
         "printWidth": 200

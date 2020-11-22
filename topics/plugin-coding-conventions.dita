@@ -88,7 +88,10 @@
       <p>In Ant scripts, use the XSLT module from DITA-OT instead of Ant’s built-in <xmlelement>xslt</xmlelement> or
           <xmlelement>style</xmlelement> tasks. </p>
       <p>The XSLT module allows access to DITA-OT features like using the job configuration to select files in the
-        temporary folder based on file metadata and custom XSLT extension functions. </p>
+        temporary folder based on file metadata and custom XSLT extension functions.</p>
+      <note type="important">Future versions of DITA-OT may switch to a new XML resolver or in-memory storage features
+        that are not supported by Ant’s XSLT task. To ensure compatibility with future releases, plug-ins should replace
+        these constructs with custom <xmlelement>pipeline</xmlelement> elements.</note>
       <p>Instead of:</p>
       <p><codeblock
           outputclass="language-xml normalize-space show-line-numbers show-whitespace"

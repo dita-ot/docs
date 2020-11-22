@@ -75,7 +75,7 @@ jobs:
           else
             echo "Use cached dita-ot-develop"
           fi
-          echo "::set-env name=DITA_OT_DEV::$(find dita-ot-develop -name 'dita-ot-*@*' -type d | head -1)"
+          echo "DITA_OT_DEV=$(find dita-ot-develop -name 'dita-ot-*@*' -type d | head -1)" >> $GITHUB_ENV
 
       - name: Run DITA-OT
         run: |
@@ -93,7 +93,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}/website && npm ci && npm run install
           cd ${{ github.workspace }}
-          echo "::set-env name=PR_ID::$(echo $GITHUB_REF |  cut -d'/' -f 3 )"
+          echo "PR_ID=$(echo $GITHUB_REF |  cut -d'/' -f 3 )" >> $GITHUB_ENV
 
           # Move website to root
           mv -f ${{ github.workspace }}/website/* ${{ github.workspace }}/

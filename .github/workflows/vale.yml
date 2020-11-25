@@ -1,0 +1,22 @@
+# https://github.com/errata-ai/vale-action
+
+name: Lint prose with Vale
+on: [push, pull_request]
+
+jobs:
+  prose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Vale
+        uses: errata-ai/vale-action@v1.3.0
+        with:
+          # Check only files that are changed
+          files: __onlyModified
+          # Within those files, only check the changes
+          onlyAnnotateModifiedLines: true
+        env:
+          # Required
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

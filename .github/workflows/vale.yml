@@ -25,7 +25,8 @@ jobs:
           files: '${{ steps.get_changed_files.outputs.all }}'
 
           # Within those files, only check the changes
-          onlyAnnotateModifiedLines: true
+          # https://github.com/errata-ai/vale-action/issues/27#issuecomment-729590633
+          # onlyAnnotateModifiedLines: true
         env:
           # Required
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

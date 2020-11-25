@@ -10,11 +10,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
+      # https://github.com/errata-ai/vale-action/issues/27#issuecomment-729723249
+      - name: Get Changed Files
+        id: get_changed_files
+        uses: lots0logs/gh-action-get-changed-files@2.1.4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Vale
-        uses: errata-ai/vale-action@v1.3.0
+        uses: errata-ai/vale-action@master
         with:
           # Check only files that are changed
-          files: __onlyModified
+          # files: __onlyModified
+          files: '${{ steps.get_changed_files.outputs.all }}'
+
           # Within those files, only check the changes
           onlyAnnotateModifiedLines: true
         env:

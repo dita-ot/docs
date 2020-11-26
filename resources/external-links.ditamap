@@ -79,6 +79,16 @@
         <linktext>pull request</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="plugin-dublin-core"
+      href="https://github.com/dita-ot/org.dita.html5.dublin-core/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>org.dita.html5.dublin-core</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
   <topicset id="dita-ot-rn">
@@ -554,6 +564,16 @@
         </topicmeta>
       </keydef>
     </topicset>
+    <keydef
+      keys="dublin-core"
+      href="https://dublincore.org/specifications/dublin-core/dcmi-terms"
+      format="html"
+      scope="external"
+    >
+      <topicmeta>
+        <linktext>Dublin Core Metadata Element Set</linktext>
+      </topicmeta>
+    </keydef>
     <keydef keys="json" href="https://json.org" scope="external" format="html">
       <topicmeta>
         <linktext>JSON</linktext>

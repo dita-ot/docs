@@ -608,6 +608,22 @@
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/args.xsl.pdf.desc"/>
             <pd conaction="pushafter">You must specify the fully qualified file name.</pd>
           </plentry>
+          <plentry id="org.dita.index.skip">
+            <pt>
+              <parmname>org.dita.index.skip</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-pdf.dita#pdf/org.dita.index.skip.desc"/>
+            <pd conaction="pushafter">
+              <p>Up until DITA-OT 3.4, indexing code was provided in the PDF plug-in and only available for PDF output.
+                In version 3.4 and above, indexing is provided by a separate plug-in to allow other transformations to
+                access the results.</p>
+              <p>If you have overridden PDF index processing via the <codeph>transform.topic2fo</codeph> target in the
+                past, you can set the <parmname>org.dita.index.skip</parmname> property to <option>yes</option> and
+                re-enable the <codeph>transform.topic2fo.index</codeph> target with <xmlelement>feature
+                  extension="depend.org.dita.pdf2.index" value="transform.topic2fo.index"/</xmlelement> in your plug-in
+                configuration.</p>
+            </pd>
+          </plentry>
           <plentry id="org.dita.pdf2.i18n.enabled">
             <pt><parmname>org.dita.pdf2.i18n.enabled</parmname></pt>
             <pd conaction="pushreplace" conref="parameters-pdf.dita#pdf/org.dita.pdf2.i18n.enabled.desc">

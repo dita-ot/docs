@@ -60,6 +60,16 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="dita-ot-gradle"
+      href="https://github.com/eerohele/dita-ot-gradle"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>DITA-OT Gradle Plugin</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="registry-repo"
       href="https://github.com/dita-ot/registry"
       scope="external"
@@ -846,6 +856,16 @@
     >
       <topicmeta>
         <linktext>Gradle</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="gradle-daemon"
+      href="https://docs.gradle.org/current/userguide/gradle_daemon.html"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Gradle Daemon</linktext>
       </topicmeta>
     </keydef>
     <keydef

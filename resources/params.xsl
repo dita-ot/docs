@@ -72,7 +72,7 @@
             <section>
               <parml>
                 <xsl:variable name="params" as="element(param)*">
-                  <xsl:sequence select="current-group()/param"/>
+                  <xsl:sequence select="(current-group() | //transtype[@extends = current-grouping-key()])/param"/>
                   <!--xsl:apply-templates select="." mode="inherit"/-->
                 </xsl:variable>
                 <xsl:for-each-group select="$params" group-by="@name">

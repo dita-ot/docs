@@ -9,10 +9,9 @@
   </titlealts>
 
   <shortdesc>DITA-OT 3.6 includes <ph id="summary">performance enhancements such as processing in parallel and in
-      memory, support for changebars in PDF output generated with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP,
-      and an updated preview of features for the latest draft of the upcoming DITA 2.0 standard, including the
-        <xmlelement>audio</xmlelement> and <xmlelement>video</xmlelement> elements, and the new emphasis
-    domain</ph>.</shortdesc>
+      memory, support for PDF changebars with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP, and an updated preview
+      of features for the latest draft of the upcoming DITA 2.0 standard, including the <xmlelement>audio</xmlelement>
+      and <xmlelement>video</xmlelement> elements, and the new emphasis domain</ph>.</shortdesc>
 
   <refbody>
     <section>
@@ -22,23 +21,31 @@
     </section>
 
     <section id="3.6-parallel-processing">
-      <title/>
-      <p/>
+      <title>Parallel processing</title>
+      <p>Preprocessing module code can now be run in parallel by setting the <parmname>parallel</parmname> parameter to
+          <option>true</option>. The performance benefits this option provides depend heavily on the source file set,
+        the DITA features used in the project, and the computer doing the processing, but under the right circumstances,
+        you may see notable improvements when this option is enabled.</p>
     </section>
 
     <section id="3.6-in-memory-processing">
-      <title/>
-      <p/>
+      <title>In-memory processing</title>
+      <p>DITA-OT 3.6 introduces a new Store API with preview support for in-memory processing. The Cache Store can be
+        activated by setting the <parmname>store-type</parmname> parameter to <option>memory</option>. In-memory
+        processing provides performance advantages in I/O bound environments such as cloud computing platforms, where
+        processing time depends primarily on the time spent waiting for input/output. For more information, see
+        <xref keyref="store-api"/>.</p>
     </section>
 
     <section id="3.6-no-dublin-core">
       <title>Dublin Core metadata removed from HTML5</title>
-      <p>Up to version 3.5, DITA-OT includes the
-        <xref keyref="dublin-core"/> in both XHTML and HTML5. As of DITA-OT 3.6, Dublin Core metadata is no longer
-        included in the default HTML5 output.</p>
+      <p>Up to version 3.5, DITA-OT included the
+        <xref keyref="dublin-core"/> in both XHTML and HTML5 output. DITA-OT 3.6 no longer generates Dublin Core
+        metadata in HTML5 output.</p>
       <note type="tip">If necessary, the
         <xref keyref="plugin-dublin-core"/> plug-in can be installed from the plug-in registry at
         <xref keyref="site-plugin-registry"/> to add Dublin Core metadata to HTML5.</note>
+      <p>To install the plug-in, run the following command:</p>
       <codeblock outputclass="syntax-bash"><cmdname>dita install</cmdname> org.dita.html5.dublin-core</codeblock>
     </section>
 

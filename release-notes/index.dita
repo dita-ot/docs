@@ -38,8 +38,23 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">… , and an updated preview of
-            features for the latest draft of the upcoming DITA 2.0 standard</ph>.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">performance enhancements such
+            as processing in parallel and in memory, support for PDF changebars with <tm
+              trademark="Apache"
+              tmtype="tm"
+            >Apache</tm> FOP, and an updated preview of features for the latest draft of the upcoming DITA 2.0
+            standard, including the <xmlelement>audio</xmlelement> and <xmlelement>video</xmlelement> elements, and the
+            new emphasis domain</ph>.</p>
+      </section>
+
+      <section conkeyref="migrating-to-3.6/3.6-parallel-processing">
+        <title/>
+        <p/>
+      </section>
+
+      <section conkeyref="migrating-to-3.6/3.6-in-memory-processing">
+        <title/>
+        <p/>
       </section>
 
       <section id="dita-2-0-preview">

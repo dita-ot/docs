@@ -3,14 +3,14 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <concept id="ID">
   <title>DITA 2.0 preview support</title>
-  
+
   <titlealts>
     <navtitle>DITA 2.0 preview</navtitle>
   </titlealts>
-  
+
   <shortdesc>DITA Open Toolkit <keyword keyref="release"/> provides an initial preview of features for the upcoming
     OASIS DITA 2.0 specification. This preliminary processing support is provided on the basis of the latest DRAFT
-    versions of the DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of March 2020).</shortdesc>
+    versions of the DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of October 2020).</shortdesc>
 
   <conbody>
     <p id="grammar-files">DITA documents that reference the draft grammar files can be parsed, and where features
@@ -57,6 +57,9 @@
             elements are used in maps.</ph>
         </p>
       </li>
+      <!-- Added in DITA-OT 3.6 -->
+      <li id="added-in-3.6" outputclass="mark">…the <xmlelement>audio</xmlelement> and <xmlelement>video</xmlelement>
+        elements, and the new emphasis domain…</li>
     </ul>
     <note id="more-to-come">Other new or revised features proposed for DITA 2.0 are not yet supported. Additional
       features will be implemented in future versions of DITA-OT as the specification evolves.</note>

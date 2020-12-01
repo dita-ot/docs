@@ -46,12 +46,17 @@
             new emphasis domain</ph>.</p>
       </section>
 
-      <section conkeyref="migrating-to-3.6/3.6-parallel-processing">
+      <section conkeyref="migrating-to-3.6/parallel-processing">
         <title/>
         <p/>
       </section>
 
-      <section conkeyref="migrating-to-3.6/3.6-in-memory-processing">
+      <section conkeyref="migrating-to-3.6/in-memory-processing">
+        <title/>
+        <p/>
+      </section>
+
+      <section conkeyref="migrating-to-3.6/fop-changebars">
         <title/>
         <p/>
       </section>
@@ -78,6 +83,7 @@
         <p>DITA-OT <keyword keyref="release"/> also includes the following new features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
+          <!--
           <li id="3511">Allow FOP to generate changebars
             <xref href="https://github.com/dita-ot/dita-ot/issues/3511" format="html" scope="external">#3511</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3591" format="html" scope="external">#3591</xref>
@@ -85,6 +91,7 @@
           <li id="3606">Add support for running module processing in parallel
             <xref href="https://github.com/dita-ot/dita-ot/issues/3606" format="html" scope="external">#3606</xref>
           </li>
+          -->
           <li id="3616">Add repeat option to CLI to run process N times
             <xref href="https://github.com/dita-ot/dita-ot/issues/3616" format="html" scope="external">#3616</xref>
           </li>
@@ -229,7 +236,7 @@
           improvements to existing topics, along with new information in the following topics:</p>
         <ul>
           <li>
-            <!--<xref keyref="migrating-to-3.6"/>--></li>
+            <xref keyref="migrating-to-3.6"/></li>
           <li>
             <xref keyref="dita-v2-0-support"/></li>
         </ul>

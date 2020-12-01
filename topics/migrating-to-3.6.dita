@@ -20,7 +20,7 @@
         <xref keyref="3.6-release-notes"/>.</note>
     </section>
 
-    <section id="3.6-parallel-processing">
+    <section id="parallel-processing">
       <title>Parallel processing</title>
       <p>Preprocessing module code can now be run in parallel by setting the <parmname>parallel</parmname> parameter to
           <option>true</option>. The performance benefits this option provides depend heavily on the source file set,
@@ -28,7 +28,7 @@
         you may see notable improvements when this option is enabled.</p>
     </section>
 
-    <section id="3.6-in-memory-processing">
+    <section id="in-memory-processing">
       <title>In-memory processing</title>
       <p>DITA-OT 3.6 introduces a new Store API with preview support for in-memory processing. The Cache Store can be
         activated by setting the <parmname>store-type</parmname> parameter to <option>memory</option>. In-memory
@@ -37,7 +37,22 @@
         <xref keyref="store-api"/>.</p>
     </section>
 
-    <section id="3.6-no-dublin-core">
+    <section id="fop-changebars">
+      <title>PDF changebars with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP</title>
+      <p>For DITA-OT 3.4, the bundled Apache™ Formatting Objects Processor library was upgraded to version 2.4, which
+        included support for changebars, but those features were not yet enabled in DITA-OT 3.4 pending further testing.
+        DITA-OT 3.6 removes the FOP-specific overrides that disabled changebars in earlier versions, allowing the
+        default PDF2 flagging routines to be applied when generating PDFs with FOP. For details, see
+        <xref keyref="pdf2-creating-change-bars"/>.</p>
+      <p>Plug-ins that implemented custom FOP flagging by overriding the
+          <filepath>org.dita.pdf2.fop/xsl/fo/flagging_fop.xsl</filepath> stylesheet in prior versions will need to be
+        updated, as this file is no longer available in DITA-OT 3.6.
+        <xref href="https://github.com/dita-ot/dita-ot/issues/3511" format="html" scope="external">#3511</xref>,
+        <xref href="https://github.com/dita-ot/dita-ot/issues/3591" format="html" scope="external">#3591</xref>
+      </p>
+    </section>
+
+    <section id="no-dublin-core">
       <title>Dublin Core metadata removed from HTML5</title>
       <p>Up to version 3.5, DITA-OT included the
         <xref keyref="dublin-core"/> in both XHTML and HTML5 output. DITA-OT 3.6 no longer generates Dublin Core

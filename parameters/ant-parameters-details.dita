@@ -295,6 +295,20 @@
                 <indexterm><parmname>root-chunk-override</parmname></indexterm></indexterm>
             </pd>
           </plentry>
+          <plentry id="store-type">
+            <pt>
+              <parmname>store-type</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/store-type.desc"/>
+            <pd conaction="pushafter">
+              <p>In-memory processing can be enabled to improve performance in I/O bound environments such as cloud
+                computing platforms, where processing time depends primarily on the time spent waiting for input/output.
+                For more information, see
+                <xref keyref="store-api"/>.</p>
+              <note type="important">Custom plug-ins that expect to find certain files on disk in the temporary
+                directory will not work with in-memory processing.</note>
+            </pd>
+          </plentry>
           <plentry id="transtype">
             <pt>
               <parmname>transtype</parmname>

@@ -45,7 +45,7 @@
             standard, including the <xmlelement>audio</xmlelement> and <xmlelement>video</xmlelement> elements, and the
             new emphasis domain</ph>.</p>
       </section>
-
+      <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
       <section conkeyref="migrating-to-3.6/parallel-processing">
         <title/>
         <p/>
@@ -54,6 +54,44 @@
       <section conkeyref="migrating-to-3.6/in-memory-processing">
         <title/>
         <p/>
+      </section>
+
+      <section>
+        <title>Additional performance improvements</title>
+        <p>DITA-OT 3.6 includes a series of related changes designed to improve the performance of DITA
+          transformations.</p>
+        <ul>
+          <li id="3616">
+            <p>A new <parmname>--repeat</parmname> option can be passed to the <cmdname>dita</cmdname> command to run
+              the process a certain number of times. This option can be used by plug-in developers to measure
+              performance. (Timings for the first transformation are often dominated by Java warm-up time.)
+              <xref
+                href="https://github.com/dita-ot/dita-ot/issues/3616"
+                format="html"
+                scope="external"
+              >#3616</xref></p>
+            <p>To run a conversion five times, for example, use <parmname>--repeat</parmname>=<option>5</option>. The
+              duration of each execution will appear in the console when the final transformation is complete.
+              <codeblock outputclass="syntax-bash multi-platform">$ <cmdname>dita</cmdname> <parmname
+                >--input</parmname>=<filepath>docsrc/samples/sequence.ditamap</filepath> <parmname
+                >--format</parmname>=<option>html5</option> <parmname>--repeat</parmname>=<option>5</option>
+1 11281ms
+2 4132ms
+3 3690ms
+4 4337ms
+5 3634ms</codeblock>
+            </p>
+          </li>
+          <li id="3569">The DITA-OT Java code uses a new caching <codeph>DitaClass.getInstance(cls)</codeph> factory
+            method rather than generating <codeph>DitaClass</codeph> instances directly. This allows previously created
+            instances to be re-used, which reduces the number of instances that need to be created.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3569" format="html" scope="external">#3569</xref>
+          </li>
+          <li id="3570">The Java code for several preprocessing modules has been refactored to use concurrent sets or
+            queues. This helps to speed up certain operations during preprocessing, allowing builds to complete faster.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3570" format="html" scope="external">#3570</xref>
+          </li>
+        </ul>
       </section>
 
       <section conkeyref="migrating-to-3.6/fop-changebars">
@@ -75,27 +113,6 @@
           <li conkeyref="dita-v2-0-support/added-in-3.6"/>
         </ul>
         <note conkeyref="dita-v2-0-support/more-to-come"/>
-      </section>
-
-      <section id="features">
-        <title>New features</title>
-        <indexterm/>
-        <p>DITA-OT <keyword keyref="release"/> also includes the following new features:</p>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
-        <ul>
-          <!--
-          <li id="3511">Allow FOP to generate changebars
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3511" format="html" scope="external">#3511</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3591" format="html" scope="external">#3591</xref>
-          </li>
-          <li id="3606">Add support for running module processing in parallel
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3606" format="html" scope="external">#3606</xref>
-          </li>
-          -->
-          <li id="3616">Add repeat option to CLI to run process N times
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3616" format="html" scope="external">#3616</xref>
-          </li>
-        </ul>
       </section>
 
       <section id="enhancements">
@@ -139,12 +156,14 @@
           <li id="3564">Add S9api message listener
             <xref href="https://github.com/dita-ot/dita-ot/issues/3564" format="html" scope="external">#3564</xref>
           </li>
+          <!--
           <li id="3569">Cache DitaClass instances
             <xref href="https://github.com/dita-ot/dita-ot/issues/3569" format="html" scope="external">#3569</xref>
           </li>
           <li id="3570">Use concurrent sets or queues
             <xref href="https://github.com/dita-ot/dita-ot/issues/3570" format="html" scope="external">#3570</xref>
           </li>
+          -->
           <li id="3583">Use BufferedWriter to output Job for 200 fold performance improvement
             <xref href="https://github.com/dita-ot/dita-ot/issues/3583" format="html" scope="external">#3583</xref>
           </li>
@@ -162,13 +181,13 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3602" format="html" scope="external">#3602</xref>
           </li>
           <li id="3603">Remove obsolete key processing from XHTML
-          <!--          
             <xref href="https://github.com/dita-ot/dita-ot/issues/3603" format="html" scope="external">#3603</xref>
           </li>
+          <!--
           <li id="3617">Share latest from oasis-tcs/dita and oasis-tcs/dita-techcomm
-          -->
             <xref href="https://github.com/dita-ot/dita-ot/issues/3617" format="html" scope="external">#3617</xref>
           </li>
+          -->
           <li id="3632">HTML5: Move hard-coded styles to Sass partials
             <xref href="https://github.com/dita-ot/dita-ot/issues/3632" format="html" scope="external">#3632</xref>
           </li>
@@ -235,6 +254,8 @@
         <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
           improvements to existing topics, along with new information in the following topics:</p>
         <ul>
+          <li>
+            <xref keyref="build-using-dita-command"/></li>
           <li>
             <xref keyref="migrating-to-3.6"/></li>
           <li>

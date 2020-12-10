@@ -65,9 +65,6 @@
                   paths (semicolon ‘<codeph>;</codeph>’ on Windows, and colon ‘<codeph>:</codeph>’ on macOS and Linux)
                   and wrap the value in quotes:</p>
                 <p><codeph>--args.filter="filter1.ditaval;filter2.ditaval;filter3.ditaval"</codeph></p>
-                <p>As of DITA-OT 3.6, the <parmname>--filter</parmname> option can be passed multiple times:
-                    <codeph>--filter=filter1.ditaval --filter=filter2.ditaval --filter=filter3.ditaval</codeph>
-                </p>
                 <p>DITAVAL files are evaluated in the order specified, so conditions specified in the first file take
                   precedence over matching conditions specified in later files, just as conditions at the start of a
                   DITAVAL document take precedence over matching conditions later in the same document.</p>

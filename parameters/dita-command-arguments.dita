@@ -293,14 +293,17 @@
           <pt>
             <parmname>--filter</parmname>=<varname>files</varname>
           </pt>
-          <pd>Specifies filter file(s) used to include, exclude, or flag content. </pd>
-          <pd>This argument corresponds to the common parameter <parmname>args.filter</parmname>. Relative paths are
-            resolved against the current directory and internally converted to absolute paths.
+          <pd>
+            <!-- Based on ant-parameters-details.dita#args.filter but not identical. Relative paths & repeat differs -->
+            <p>Specifies filter file(s) used to include, exclude, or flag content. Relative paths are resolved against
+              the current directory and internally converted to absolute paths.</p>
             <note>
               <p>To specify multiple filter files, use the system path separator character to delimit individual file
                 paths (semicolon ‘<codeph>;</codeph>’ on Windows, and colon ‘<codeph>:</codeph>’ on macOS and Linux) and
                 wrap the value in quotes:</p>
               <p><codeph>--filter="filter1.ditaval;filter2.ditaval;filter3.ditaval"</codeph></p>
+              <p>As of DITA-OT 3.6, the <parmname>--filter</parmname> option can also be passed multiple times:</p>
+              <p><codeph>--filter=filter1.ditaval --filter=filter2.ditaval --filter=filter3.ditaval</codeph></p>
               <p>DITAVAL files are evaluated in the order specified, so conditions specified in the first file take
                 precedence over matching conditions specified in later files, just as conditions at the start of a
                 DITAVAL document take precedence over matching conditions later in the same document.</p>

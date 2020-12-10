@@ -150,8 +150,8 @@
     <section>
       <title>Generating error messages</title>
       <p>Previously, the XSLT <codeph>output-message</codeph> named template for generating error messages combined a
-        global variable and two parameters to determine the actual message ID. This function has been updated to use a
-        single <codeph>id</codeph> variable that contains the entire message ID.</p>
+        global <codeph>msgprefix</codeph> variable and two parameters to determine the actual message ID. This function
+        has been updated to use a single <codeph>id</codeph> variable that contains the entire message ID.</p>
       <p>Plug-ins that make use of the <codeph>output-message</codeph> function should be updated to use the single
           <codeph>id</codeph> variable, as
         in:<codeblock
@@ -161,6 +161,8 @@
   &lt;xsl:with-param name="msgparams">optional-message-parameters&lt;/xsl:with-param>
 &lt;/xsl:call-template></codeblock>
       </p>
+      <p>The <codeph>msgprefix</codeph> XSL variable (“DOTX”) has been deprecated and will be removed in an upcoming
+        release.</p>
     </section>
   </refbody>
 </reference>

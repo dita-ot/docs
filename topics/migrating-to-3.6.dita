@@ -98,5 +98,12 @@
       <note type="important">In publishing environments that do not use the default common CSS files, these styles may
         need to be implemented in custom stylesheets.</note>
     </section>
+
+    <section id="no-msgprefix">
+      <title>XSL variable <codeph>msgprefix</codeph> removed</title>
+      <p>The <codeph>msgprefix</codeph> variable (“DOTX”) has been deprecated since DITA-OT 2.3 and is now removed from
+        DITA-OT 3.6. For more information, see
+        <xref keyref="migrating-to-2.3"/>.</p>
+    </section>
   </refbody>
 </reference>

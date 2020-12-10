@@ -122,35 +122,44 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="3448">HTML - Support rotate on entry element
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3448" format="html" scope="external">#3448</xref>
-          </li>
-          <li id="3495">Extract user-facing text to strings file(s)
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3495" format="html" scope="external">#3495</xref>
-          </li>
-          <li id="3506">Add immutable document to store
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3506" format="html" scope="external">#3506</xref>
-          </li>
-          <li id="3523">Extract CLI string into resource bundle
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3523" format="html" scope="external">#3523</xref>
-          </li>
-          <li id="3535">Throw warning on file reference that uses incorrect case
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3535" format="html" scope="external">#3535</xref>
-          </li>
-          <li id="3541">Add rotate outputclass to entry output in HTML5
+          <li id="3448">The <xmlatt>rotate</xmlatt> attribute on table <xmlelement>entry</xmlelement> elements is now
+            respected when generating HTML5 output. The rotation is implemented by setting the CSS
+              <codeph>writing-mode</codeph> property to <codeph>sideways-lr</codeph> to flow content vertically from top
+            to bottom.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3448" format="html" scope="external">#3448</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3541" format="html" scope="external">#3541</xref>
           </li>
-          <li id="3548">Refactor to use store for all temp IO
+          <li id="3495">User-facing text for the <cmdname>dita</cmdname> command line interface has been extracted to a
+            strings file to facilitate editing. The <filepath>cli_en_US.properties</filepath> is provided in the
+              <filepath>resources</filepath> folder as a basis for customization and localization.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3495" format="html" scope="external">#3495</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3523" format="html" scope="external">#3523</xref>
+          </li>
+          <li id="3506">The new <codeph>Store</codeph> implementation that supports in-memory processing includes an
+            immutable document reader method that can be used to request a document that doesn't need to change during
+            processing. This approach facilitates caching and helps to speed up processing.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3506" format="html" scope="external">#3506</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3548" format="html" scope="external">#3548</xref>
           </li>
-          <li id="3556">Add support for multiple filter options in CLI
+          <li id="3535">In earlier versions, variations in reference capitalization could cause unexpected results when
+            building output on case-sensitive file systems. DITA-OT now warns when file references use incorrect case.
+            (For example, if maps reference <filepath>Topic.dita</filepath>, but the filename on disk is actually
+              <filepath>topic.dita</filepath>.) In strict processing mode, this is considered a fatal error; in lax
+            processing mode, the file reference is rewritten to use the same case as the file system.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3535" format="html" scope="external">#3535</xref>
+          </li>
+          <li id="3556">The <parmname>--filter</parmname> option can now be passed to the <cmdname>dita</cmdname>
+            multiple times in a single command-line invocation to apply conditions from several DITAVAL files at once.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3556" format="html" scope="external">#3556</xref>
           </li>
-          <li id="3558">Update to Apache FOP 2.5
+          <li id="3558">The bundled <tm trademark="Apache" tmtype="tm">Apache</tm> Formatting Objects Processor (FOP)
+            has been upgraded to version 2.5, which includes security updates to various embedded libraries.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3558" format="html" scope="external">#3558</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3630" format="html" scope="external">#3630</xref>
           </li>
-          <li id="3562">Remove deprecated msgprefix parameter
+          <li id="3562">The deprecated <codeph>msgprefix</codeph> XSL variable (“DOTX”) has been removed. This variable
+            was originally deprecated in DITA-OT 2.3, but still defined in several stylesheets. Customizing output
+            messages no longer requires this variable to be defined.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3562" format="html" scope="external">#3562</xref>
           </li>
           <li id="3564">Add S9api message listener

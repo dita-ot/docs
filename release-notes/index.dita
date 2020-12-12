@@ -26,7 +26,7 @@
 
   <reference id="v3.6">
     <title>DITA-OT <keyword keyref="release"/>
-      <ph outputclass="small text-muted">released MMM DD, 2020</ph>
+      <ph outputclass="mark small text-muted">released MMM DD, 2020</ph>
     </title>
     <prolog>
       <metadata>
@@ -242,6 +242,8 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
+          <!-- These issues only affected development builds, not any previously released version -->
+          <!--          
           <li id="3589">Build fails unless temp directory is specified
             <xref href="https://github.com/dita-ot/dita-ot/issues/3589" format="html" scope="external">#3589</xref>
           </li>
@@ -251,25 +253,40 @@
           <li id="3609">Fix setting html5.map.url property
             <xref href="https://github.com/dita-ot/dita-ot/issues/3609" format="html" scope="external">#3609</xref>
           </li>
-          <li id="3623">Fix development build folder name
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3623" format="html" scope="external">#3623</xref>
+          -->
+          <li id="2414">
+            <p>Folder names in development build archives previously included the “<codeph>+</codeph>” plus sign, which
+              caused errors when running from the unpacked directory. The snapshot folder name syntax has been updated
+              to use the “<codeph>@</codeph>” at sign instead, which allows builds to run directly from the extracted
+              folder.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/2414" format="html" scope="external">#2414</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3623" format="html" scope="external">#3623</xref>
+            </p></li>
+          <li>The Java code has been refactored to anticipate cases where resources are missing or incorrectly defined.
+            <ul>
+              <li id="3624">The <codeph>File.toURI()</codeph> method has been updated to ensure that the generated URI
+                for a directory will always end in a trailing slash. This prevents unexpected errors in cases when the
+                  <codeph>File</codeph> input points to a path that doesn’t exist.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3621" format="html" scope="external">#3621</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3624" format="html" scope="external">#3624</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3626" format="html" scope="external">#3626</xref>
+              </li>
+              <li id="3625">The <codeph>JobSourceSet</codeph> has been fixed to handle cases where the
+                  <codeph>src</codeph> input is <codeph>null</codeph>.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3625" format="html" scope="external">#3625</xref>
+              </li>
+            </ul>
           </li>
-          <li id="3624">Fix workdir-uri generation bug
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3624" format="html" scope="external">#3624</xref>
-          </li>
-          <li id="3625">Fix JobSourceSet cases where src is null
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3625" format="html" scope="external">#3625</xref>
-          </li>
-          <li id="3626">Fix current file directory URI resolution when file doesn't exist
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3626" format="html" scope="external">#3626</xref>
-          </li>
-          <li id="3627">map2hhcImpl.xsl contains incomplete code (HTMLHelp: Remove invalid code remnant)
+          <li id="3627">In DITA-OT 3.5.4, the HTMLHelp stylesheet <filepath>map2hhcImpl.xsl</filepath> included an
+            invalid code remnant left over from previous edits. The unnecessary line has been removed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3627" format="html" scope="external">#3627</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3634" format="html" scope="external">#3634</xref>
           </li>
+          <!--
           <li id="3636">Fix repeat count in install and uninstall subcommands
             <xref href="https://github.com/dita-ot/dita-ot/issues/3636" format="html" scope="external">#3636</xref>
           </li>
+          -->
         </ul>
       </section>
 

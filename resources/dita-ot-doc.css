@@ -5,8 +5,8 @@ Basic fonts and typography
 ****************************************/
 
 body {
-  background-color: white;
-  background-image: linear-gradient(to left, #eee 0%, #fff 300px); /* W3C */
+  background: white;
+  background: linear-gradient(to right, #eee 0%, #fff 300px);
   color: #212529;
   margin: 0;
   padding: 1em;

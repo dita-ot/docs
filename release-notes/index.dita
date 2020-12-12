@@ -91,6 +91,11 @@
             queues. This helps to speed up certain operations during preprocessing, allowing builds to complete faster.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3570" format="html" scope="external">#3570</xref>
           </li>
+          <li id="3583">The Java code now uses a <codeph>BufferedWriter</codeph> to serialize <codeph>Job</codeph>
+            objects, which significantly improves UTF-8 encoding performance when writing the
+              <filepath>.job.xml</filepath> file.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3583" format="html" scope="external">#3583</xref>
+          </li>
         </ul>
       </section>
 
@@ -124,8 +129,8 @@
         <ul>
           <li id="3448">The <xmlatt>rotate</xmlatt> attribute on table <xmlelement>entry</xmlelement> elements is now
             respected when generating HTML5 output. The rotation is implemented by setting the CSS
-              <codeph>writing-mode</codeph> property to <codeph>sideways-lr</codeph> to flow content vertically from top
-            to bottom.
+              <codeph>writing-mode</codeph> property to <codeph>sideways-lr</codeph> to rotate the cell content 90
+            degrees counterclockwise.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3448" format="html" scope="external">#3448</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3541" format="html" scope="external">#3541</xref>
           </li>
@@ -162,7 +167,9 @@
             messages no longer requires this variable to be defined.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3562" format="html" scope="external">#3562</xref>
           </li>
-          <li id="3564">Add S9api message listener
+          <li id="3564">The <apiname>S9api</apiname> message listener from the Saxon API is now used to forward log
+            messages to the <codeph>DITAOTLogger</codeph>. This allows message levels and error codes to be passed from
+            XSLT to Java code for improved debugging.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3564" format="html" scope="external">#3564</xref>
           </li>
           <!--
@@ -172,24 +179,35 @@
           <li id="3570">Use concurrent sets or queues
             <xref href="https://github.com/dita-ot/dita-ot/issues/3570" format="html" scope="external">#3570</xref>
           </li>
-          -->
           <li id="3583">Use BufferedWriter to output Job for 200 fold performance improvement
             <xref href="https://github.com/dita-ot/dita-ot/issues/3583" format="html" scope="external">#3583</xref>
           </li>
-          <li id="3594">Add generator=DITA-OT metadata to HTML header
+          -->
+          <li id="3594">HTML5 output now includes additional metadata to indicate that the content was produced using
+            DITA Open Toolkit.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3594" format="html" scope="external">#3594</xref>
+            <codeblock outputclass="language-html">&lt;meta name="generator" content="DITA-OT"/&gt;</codeblock>
           </li>
-          <li id="3595">Extract Dublin Core metadata field generation to own plug-in
+          <li id="3595">Up to version 3.5, DITA-OT included the
+            <xref keyref="dublin-core"/> in both XHTML and HTML5 output. For DITA-OT 3.6, this capability was extracted
+            to a separate plugin, and Dublin Core metadata is no longer generated in the default HTML5 output.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3595" format="html" scope="external">#3595</xref>
+            <p>If necessary, the
+              <xref keyref="plugin-dublin-core"/> plug-in can be installed from the plug-in registry at
+              <xref keyref="site-plugin-registry"/> to add Dublin Core metadata to HTML5. To install the plug-in, run
+              the following command:</p>
+            <codeblock outputclass="syntax-bash"><cmdname>dita install</cmdname> org.dita.html5.dublin-core</codeblock>
           </li>
-          <li id="3599">#3599 [fix] note type notice missing from xhtml
+          <li id="3599">In XHTML output, previous versions failed to distinguish <i>Notice</i> note types from regular
+            notes, prefixing both with <b>Note</b>. Support has been backported from HTML5 to XHTML to prefix notices
+            with <b>Notice</b> as expected.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3599" format="html" scope="external">#3599</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3600" format="html" scope="external">#3600</xref>
           </li>
-          <li id="3602">Remove obsolete flag stylesheet and serialization of schemekeydef.xml
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3602" format="html" scope="external">#3602</xref>
-          </li>
-          <li id="3603">Remove obsolete key processing from XHTML
+          <li id="3602">Unused code for flagging and key processing has been removed along with related files that have
+            been deprecated since version 2.1, including the base <filepath>flag.xsl</filepath> stylesheet, the
+            generated <filepath>keydef.xml</filepath> file, and <filepath>schemekeydef.xml</filepath>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3602" format="html" scope="external">#3602</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3603" format="html" scope="external">#3603</xref>
           </li>
           <!--
@@ -197,8 +215,23 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3617" format="html" scope="external">#3617</xref>
           </li>
           -->
-          <li id="3632">HTML5: Move hard-coded styles to Sass partials
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3632" format="html" scope="external">#3632</xref>
+          <li id="3632">
+            <p>Remaining inline style attributes were removed from HTML5 code, which prevented custom plug-ins from
+              overriding the presentation of the corresponding elements, including:
+              <ul>
+                <li><line-through><xmlelement>line-through</xmlelement></line-through> and
+                      <overline><xmlelement>overline</xmlelement></overline> elements</li>
+                <li>syntax diagrams</li>
+                <li>long quote citations</li>
+                <li>Boolean states</li>
+              </ul></p>
+            <p>These changes move the default presentation rules to CSS to allow users to override these styles in
+              custom stylesheets. The output is visually equivalent to the results generated by previous toolkit
+              versions.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3632" format="html" scope="external">#3632</xref>
+            </p>
+            <note type="important">In publishing environments that do not use the default common CSS files, these styles
+              may need to be implemented in custom stylesheets.</note>
           </li>
         </ul>
       </section>

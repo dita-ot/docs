@@ -2,11 +2,13 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <topic id="store-api">
-  <title>Store API</title>
-  <shortdesc>DITA-OT originally assumed that all input and output resources would be available on the local disk and
-    addressable with a file path. At some point, support for URI input was added, so HTTPS resources could be used as
-    input. But temporary and output resources were still file-based. DITA-OT 3.6 introduces a new Store API with preview
-    support for in-memory processing.</shortdesc>
+  <title>Store API – Processing in memory</title>
+  <titlealts>
+    <navtitle>Store API</navtitle>
+  </titlealts>
+  <shortdesc>DITA-OT originally assumed resources would be available on disk and available from file paths. Recent
+    versions added URI input, so HTTPS resources could be used, but temporary and output resources were still
+    file-based. DITA-OT 3.6 introduces a new Store API with preview support for in-memory processing.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -31,7 +33,7 @@
       >Resource Loader</xref> with the <codeph>org.dita.dost.store.StoreBuilder</codeph> service. This is a builder
       interface to get named <codeph>Store</codeph> instances (“a Store”).</p>
     <section id="stream-store">
-      <title>Stream Store</title>
+      <title>Stream Store for file-based processing</title>
       <p>This Store could also be a File Store, since it uses disk and local files for temporary resources. This is the
         traditional DITA-OT implementation, where temporary XML files are stored under the
           <codeph>dita.temp.dir</codeph> path.</p>
@@ -41,7 +43,7 @@
         3.6.</note>
     </section>
     <section id="cache-store">
-      <title>Cache Store</title>
+      <title>Cache Store for in-memory processing</title>
       <p>This Store is an in-memory Store, that keeps all temporary resources in memory. The name comes from the feature
         of the Store, that it caches the parsed XML after reading. That is, instead of storing XML as a byte array, it
         keeps it as a DOM <codeph>Document</codeph> or <apiname>S9api</apiname> <codeph>XdmNode</codeph>. When the same 
@@ -64,7 +66,8 @@
         various modules don’t need to repeat the same type of XML processing code.</p></section>
     <section id="caveats">
       <title>Caveats</title>
-      <p>Not all custom plug-ins will work with the Store, because they may assume files are used and expect direct file
+      <p
+      >Not all custom plug-ins will work with the Cache Store, because they may assume files are used and expect direct file
         access for resource operations.</p>
       <note type="important">To take advantage of the Store API, custom plug-ins must use DITA-OT XSLT modules in custom
           <xmlelement>pipeline</xmlelement> elements instead of Ant’s built-in <xmlelement>xslt</xmlelement> tasks as

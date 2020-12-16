@@ -49,9 +49,7 @@
       <section>
          <title>Enable in-memory processing</title>
          <p>As of DITA-OT 3.6, the Cache Store can be activated by setting the <parmname>store-type</parmname> parameter
-            to <option>memory</option>. In-memory processing provides performance advantages in I/O bound environments
-            such as cloud computing platforms, where processing time depends primarily on the time spent waiting for
-            input/output. For more information, see
+            to <option>memory</option>. <ph conkeyref="migrating-to-3.6/io-bound"/> For more information, see
             <xref keyref="store-api"/>.</p>
       </section>
       <section>

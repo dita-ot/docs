@@ -301,9 +301,8 @@
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/store-type.desc"/>
             <pd conaction="pushafter">
-              <p>In-memory processing can be enabled to improve performance in I/O bound environments such as cloud
-                computing platforms, where processing time depends primarily on the time spent waiting for input/output.
-                For more information, see
+              <p>
+                <ph conkeyref="migrating-to-3.6/io-bound"/> For more information, see
                 <xref keyref="store-api"/>.</p>
               <note type="important">Custom plug-ins that expect to find certain files on disk in the temporary
                 directory will not work with in-memory processing.</note>

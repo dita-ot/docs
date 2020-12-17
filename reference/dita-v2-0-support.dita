@@ -75,7 +75,18 @@
             <xmlelement>i</xmlelement> elements in the highlighting domain.</li>
         <li>The troubleshooting domain has been updated with additional constructs that can be used to provide detailed
           diagnostic information.</li>
-        <li outputclass="mark">Several obsolete elements have been removed, including …</li>
+        <li>Several obsolete elements and attributes have been removed from DITA 2.0, including:
+          <ul>
+            <li><xmlelement>boolean</xmlelement></li>
+            <li><xmlelement>data-about</xmlelement></li>
+            <li><xmlelement>indextermref</xmlelement></li>
+            <li><xmlatt>xtrc</xmlatt></li>
+            <li><xmlatt>xtrf</xmlatt></li>
+            <li>image/<xmlatt>alt</xmlatt></li>
+            <li>topicref/<xmlatt>navtitle</xmlatt></li>
+            <li>topicref/<xmlatt>query</xmlatt></li>
+          </ul>
+        </li>
       </ul>
       <note id="more-to-come">Other new or revised features proposed for DITA 2.0 are not yet supported. Additional
         features will be implemented in future versions of DITA-OT as the specification evolves.</note>
@@ -85,7 +96,7 @@
   </conbody>
 
   <related-links>
-    <!--    
+    <!--
     <link keyref="dita13-spec-all-inclusive"/>
     <link keyref="dita13-spec-all-inclusive-pdf"/>
     <link keyref="dita13-spec-source"/>

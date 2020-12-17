@@ -264,7 +264,15 @@
               folder.
               <xref href="https://github.com/dita-ot/dita-ot/issues/2414" format="html" scope="external">#2414</xref>,
               <xref href="https://github.com/dita-ot/dita-ot/issues/3623" format="html" scope="external">#3623</xref>
-            </p></li>
+            </p>
+          </li>
+          <li id="3608">
+            <p>The license text for the beta DITA 2.0 grammar file plug-in was missing in DITA-OT 3.5 and is now
+              included in the distribution package.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3608" format="html" scope="external">#3608</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3649" format="html" scope="external">#3649</xref>
+            </p>
+          </li>
           <li>The Java code has been refactored to anticipate cases where resources are missing or incorrectly defined.
             <ul>
               <li id="3624">The <codeph>File.toURI()</codeph> method has been updated to ensure that the generated URI

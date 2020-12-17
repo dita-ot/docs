@@ -129,10 +129,13 @@
         <ul>
           <li id="3448">The <xmlatt>rotate</xmlatt> attribute on table <xmlelement>entry</xmlelement> elements is now
             respected when generating HTML5 output. The rotation is implemented by setting the CSS
-              <codeph>writing-mode</codeph> property to <codeph>sideways-lr</codeph> to rotate the cell content 90
-            degrees counterclockwise.
+              <codeph>writing-mode</codeph> property to <codeph>vertical-rl</codeph> to rotate the cell content. This
+            property is rendered correctly in Mozilla Firefox, but unevenly supported by other browsers. The
+              <codeph>rotate</codeph> class is passed to HTML5 output, so custom plug-ins can implement alternative
+            presentation rules in CSS if necessary.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3448" format="html" scope="external">#3448</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3541" format="html" scope="external">#3541</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3541" format="html" scope="external">#3541</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3651" format="html" scope="external">#3651</xref>
           </li>
           <li id="3495">User-facing text for the <cmdname>dita</cmdname> command line interface has been extracted to a
             strings file to facilitate editing. The <filepath>cli_en_US.properties</filepath> is provided in the

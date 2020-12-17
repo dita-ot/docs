@@ -166,8 +166,8 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3630" format="html" scope="external">#3630</xref>
           </li>
           <li id="3562">The deprecated <codeph>msgprefix</codeph> XSL variable (“DOTX”) has been removed. This variable
-            was originally deprecated in DITA-OT 2.3, but still defined in several stylesheets. Customizing output
-            messages no longer requires this variable to be defined.
+            was originally deprecated in DITA-OT 2.3, but still defined in several stylesheets. Importing the common XSL
+            module <filepath>output-message.xsl</filepath> no longer requires this variable to be defined.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3562" format="html" scope="external">#3562</xref>
           </li>
           <li id="3564">The <apiname>S9api</apiname> message listener from the Saxon API is now used to forward log

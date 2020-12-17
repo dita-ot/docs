@@ -80,11 +80,12 @@
             <li><xmlelement>boolean</xmlelement></li>
             <li><xmlelement>data-about</xmlelement></li>
             <li><xmlelement>indextermref</xmlelement></li>
+            <li><xmlatt>alt</xmlatt> on <xmlelement>image</xmlelement></li>
+            <li><xmlatt>navtitle</xmlatt> on <xmlelement>topicref</xmlelement></li>
+            <li><xmlatt>query</xmlatt> on <xmlelement>topicref</xmlelement></li>
+            <li><xmlatt>refcols</xmlatt> on <xmlelement>simpletable</xmlelement></li>
             <li><xmlatt>xtrc</xmlatt></li>
             <li><xmlatt>xtrf</xmlatt></li>
-            <li>image/<xmlatt>alt</xmlatt></li>
-            <li>topicref/<xmlatt>navtitle</xmlatt></li>
-            <li>topicref/<xmlatt>query</xmlatt></li>
           </ul>
         </li>
       </ul>

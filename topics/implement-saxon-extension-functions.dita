@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <topic id="implement-saxon-extension-functions">
   <title>Implementing Saxon extension functions</title>
   <titlealts>
@@ -38,7 +37,8 @@
           <xref keyref="saxon-java-extensions-impl"/> in the Saxon documentation.</li>
         <li>Include a file named <filepath>net.sf.saxon.lib.ExtensionFunctionDefinition</filepath> in the directory
             <filepath>META-INF/services</filepath> in the compiled JAR that your plug-in provides. Each line of the file
-          must be the name of a class that implements <codeph>net.sf.saxon.lib.ExtensionFunctionDefinition</codeph>: <codeblock>com.example.saxon.functions.Add
+          must be the name of a class that implements <codeph
+          >net.sf.saxon.lib.ExtensionFunctionDefinition</codeph>: <codeblock>com.example.saxon.functions.Add
 com.example.saxon.functions.Substract</codeblock>
           <p>You can create the file using <xmlelement>service</xmlelement> elements in an Ant
               <xmlelement>jar</xmlelement>
@@ -57,6 +57,7 @@ com.example.saxon.functions.Substract</codeblock>
                 version="2.0"></codeblock></li>
       </ol></p>
     <p>You should then be able to use the extension functions as you would any other
-      function:<codeblock outputclass="language-xml">&lt;xsl:variable name="test" select="<b>eg:add(1, 2)</b>"/></codeblock></p>
+      function:<codeblock outputclass="language-xml">&lt;xsl:variable name="test" select="<b
+        >eg:add(1, 2)</b>"/></codeblock></p>
   </body>
 </topic>

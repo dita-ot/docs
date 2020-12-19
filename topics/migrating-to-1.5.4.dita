@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="ID" rev="1.5.4">
 
   <title>Migrating to release 1.5.4</title>
@@ -118,7 +117,10 @@
       <title>Plugin URI scheme</title>
       <p>Support for the <keyword>plugin</keyword> URI scheme has been added to XSLT stylesheets. Plug-ins can refer to
         files in other plug-ins without hard-coding relative paths, for example: </p>
-      <codeblock outputclass="language-xml" xml:space="preserve">&lt;xsl:import href="plugin:org.dita.pdf2:xsl/fo/topic2fo_1.0.xsl"/&gt;</codeblock>
+      <codeblock
+        outputclass="language-xml"
+        xml:space="preserve"
+      >&lt;xsl:import href="plugin:org.dita.pdf2:xsl/fo/topic2fo_1.0.xsl"/&gt;</codeblock>
     </section>
     <section>
       <title>XHTML</title>

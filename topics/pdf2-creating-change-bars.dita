@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="concept_gsc_vcf_vs">
   <title>Generating revision bars</title>
-  <shortdesc>If you use Antenna House Formatter or RenderX XEP, you can generate revision bars in your PDF output by
-    using the <xmlatt>changebar</xmlatt> and <xmlatt>color</xmlatt> attributes of the DITAVAL
-      <xmlelement>revprop</xmlelement> element.</shortdesc>
+  <shortdesc>You can generate revision bars in your PDF output by using the <xmlatt>changebar</xmlatt> and
+      <xmlatt>color</xmlatt> attributes of the DITAVAL <xmlelement>revprop</xmlelement> element.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -28,7 +26,9 @@
     </metadata>
   </prolog>
   <conbody>
-    <p>The DITA specification for <xmlatt>changebar</xmlatt> simply says:<lq>
+    <p>The DITA
+      <xref keyref="dita13-spec-revprop">specification</xref> for the <xmlatt>changebar</xmlatt> attribute of the
+        <xmlelement>revprop</xmlelement> element simply says:<lq>
         <dl>
           <dlentry>
             <dt><xmlatt>changebar</xmlatt></dt>

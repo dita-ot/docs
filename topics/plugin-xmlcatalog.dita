@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
-<task id="plugin-xmlcatalog" xml:lang="en-US">
+<task id="plugin-xmlcatalog">
   <title>Extending an XML catalog file</title>
   <shortdesc>You can update either the main DITA-OT XML catalog or the XML catalog that is used by the PDF plug-in. This
     enables DITA-OT to support new specializations and document-type shells.</shortdesc>
@@ -35,7 +34,9 @@
       </step>
       <step>
         <cmd>Create a <filepath>plugin.xml</filepath> file that contains the following content:</cmd>
-        <info><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
+        <info><codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="<varname>extension-point</varname>" file="<varname>file</varname>"/>
 &lt;/plugin></codeblock>where:
           <ul>
@@ -62,7 +63,9 @@
         shells inside this plug-in. The catalog entries in <filepath>catalog-dita.xml</filepath> are relative to the
         catalog itself; when the plug-in is installed, they are added to the core DITA-OT catalog (with the correct
         path).</p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.catalog">
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;plugin id="com.example.catalog">
   &lt;feature extension="dita.specialization.catalog.relative"
            file="catalog-dita.xml"/>
 &lt;/plugin></codeblock>

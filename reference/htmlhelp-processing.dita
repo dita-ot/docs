@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
-<concept id="xhtmlchm" xml:lang="en-US">
+<concept id="xhtmlchm">
   <title>HTML Help processing</title>
   <shortdesc>The <option>htmlhelp</option> transformation creates HTML Help control files. If the build runs on a system
     that has the HTML Help compiler installed, the control files are compiled into a CHM file.</shortdesc>

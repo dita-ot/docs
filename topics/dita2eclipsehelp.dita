@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
-<concept id="dita2eclipsehelp" xml:lang="en-US">
+<concept id="dita2eclipsehelp">
   <title>Eclipse help</title>
   <shortdesc>The <option>eclipsehelp</option> transformation generates XHTML output, CSS files, and the control files
     that are needed for Eclipse help.</shortdesc>
@@ -55,7 +54,8 @@
     <p>To run the Eclipse help transformation, set the <parmname>transtype</parmname> parameter to
         <option>eclipsehelp</option>, or pass the <parmname>--format</parmname>=<option>eclipsehelp</option> option to
       the <cmdname>dita</cmdname> command line.</p>
-    <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<option>eclipsehelp</option></codeblock>
+    <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname
+      >input-file</varname> <parmname>--format</parmname>=<option>eclipsehelp</option></codeblock>
     <p>where:</p>
     <ul>
       <li conkeyref="conref-task/novice-variables"/>

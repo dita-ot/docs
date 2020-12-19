@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <map>
   <title>Source File Key Definitions</title>
   <topicmeta>
@@ -104,6 +103,7 @@
   <keydef keys="migrating-to-3.3" href="../topics/migrating-to-3.3.dita"/>
   <keydef keys="migrating-to-3.4" href="../topics/migrating-to-3.4.dita"/>
   <keydef keys="migrating-to-3.5" href="../topics/migrating-to-3.5.dita"/>
+  <keydef keys="migrating-to-3.6" href="../topics/migrating-to-3.6.dita"/>
   <keydef keys="migration" href="../topics/migration.dita"/>
   <keydef keys="other-errors" href="../topics/other-errors.dita"/>
   <keydef keys="output-formats" href="../topics/output-formats.dita"/>
@@ -189,6 +189,7 @@
   <keydef keys="release-history" href="../topics/release-history.dita"/>
   <keydef keys="release-notes" href="../release-notes/index.dita"/>
   <keydef keys="reusable-components" href="../resources/reusable-components.dita"/>
+  <keydef keys="store-api" href="../reference/store-api.dita"/>
   <keydef keys="third-party-software" href="../reference/third-party-software.dita"/>
   <keydef keys="troubleshooting-overview" href="../topics/troubleshooting-overview.dita"/>
   <keydef keys="using-dita-command" href="../topics/using-dita-command.dita"/>

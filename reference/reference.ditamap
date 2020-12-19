@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <map>
   <title>Reference</title>
   <topicref keyref="architecture">
@@ -9,6 +8,7 @@
     <topicref keyref="map-first-preproc"/>
     <topicref keyref="processing-pipeline-modules"/>
     <topicref keyref="processing-order"/>
+    <topicref keyref="store-api"/>
     <topicref collection-type="sequence" keyref="preprocessing">
       <topicref keyref="preprocess-genlist"/>
       <topicref keyref="preprocess-debugfilter"/>
@@ -49,7 +49,7 @@
     <topicref keyref="docs-dita-features"/>
   </topicref>
   
-  <mapref href="../extension-points/extension-points.ditamap"></mapref>
+  <mapref href="../extension-points/extension-points.ditamap"/>
   <mapref href="license.ditamap"/>
   <mapref href="glossary.ditamap"/>
 

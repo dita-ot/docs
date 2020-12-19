@@ -1,12 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <map>
   <!-- This file was generated from dita-ot-day-ditamap-keys.py found at https://gist.github.com/lief-erickson/4019b6ddf09c154164d4830b0fd6e7e8. -->
   <title>DITA-OT Day 2019</title>
-  <keydef keys="dita-otshoptalk-2019" href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#dita_ot_shop_talk"
-    format="html" scope="external">
+  <keydef
+    keys="dita-otshoptalk-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#dita_ot_shop_talk"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>DITA-OT Shop Talk</linktext>
       <shortdesc>Join us for an inside view of the DITA Open Toolkit project workshop: Who’s on duty; what’s on the
@@ -15,9 +18,12 @@
       <author>Robert Anderson, Roger Sheen, Jarno Elovirta, George Bina</author>
     </topicmeta>
   </keydef>
-  <keydef keys="easyaspiepdfcustomizatio-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#easy_as_pie_pdf_customizations_using_css" format="html"
-    scope="external">
+  <keydef
+    keys="easyaspiepdfcustomizatio-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#easy_as_pie_pdf_customizations_using_css"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Easy as pie PDF customizations using CSS</linktext>
       <shortdesc> CSS can be used to produce quality PDF and using CSS to style the PDF output is much easier than using
@@ -26,8 +32,12 @@
       <author>Radu Coravu</author>
     </topicmeta>
   </keydef>
-  <keydef keys="generatingmetricsfromyou-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#generating_metrics" format="html" scope="external">
+  <keydef
+    keys="generatingmetricsfromyou-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#generating_metrics"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Generating metrics from your DITA project</linktext>
       <shortdesc> The DITA Map Metrics Report plugin can be used to generate all kinds of interesting metrics from your
@@ -36,9 +46,12 @@
       <author>Radu Coravu</author>
     </topicmeta>
   </keydef>
-  <keydef keys="casestudyoftaxonomyandse-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#case_study_of_taxonomy_and_search" format="html"
-    scope="external">
+  <keydef
+    keys="casestudyoftaxonomyandse-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#case_study_of_taxonomy_and_search"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Case Study of Taxonomy and Search for DITA-OT</linktext>
       <shortdesc> The DITA-OT website was the case study organization for my master's thesis. In this session we'll talk
@@ -48,9 +61,12 @@
       <author>Lief Erickson</author>
     </topicmeta>
   </keydef>
-  <keydef keys="documentationdevelopment-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#documentation_developments" format="html"
-    scope="external">
+  <keydef
+    keys="documentationdevelopment-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#documentation_developments"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Documentation Developments</linktext>
       <shortdesc> This talk provides an overview of recent changes to the DITA-OT documentation and project website,
@@ -59,9 +75,12 @@
       <author>Roger Fienhold Sheen</author>
     </topicmeta>
   </keydef>
-  <keydef keys="theartofdoingnothing-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#the_art_of_doing_nothing" format="html"
-    scope="external">
+  <keydef
+    keys="theartofdoingnothing-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#the_art_of_doing_nothing"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>The Art of doing nothing</linktext>
       <shortdesc> Standard DITA-OT pre-processing assumes that all input files are of a processable format (e.g. DITA
@@ -73,9 +92,12 @@
       <author>Jason Fox</author>
     </topicmeta>
   </keydef>
-  <keydef keys="allthecoolkidsareusingth-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#all_the_cool_kids_are_using_the_cloud" format="html"
-    scope="external">
+  <keydef
+    keys="allthecoolkidsareusingth-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#all_the_cool_kids_are_using_the_cloud"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>All the cool kids are using the Cloud</linktext>
       <shortdesc> Demonstration of two new DITA-OT transforms showing how to create novel XML-based intermediate outputs
@@ -85,9 +107,12 @@
       <author>Jason Fox</author>
     </topicmeta>
   </keydef>
-  <keydef keys="allthecoolkidsareusingja-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#all_the_cool_kids_are_using_javascript" format="html"
-    scope="external">
+  <keydef
+    keys="allthecoolkidsareusingja-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#all_the_cool_kids_are_using_javascript"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>All the cool kids are using JavaScript</linktext>
       <shortdesc> Demonstration of a series of DITA-OT plugins combining the use of JavaScript with ANT and XSLT. An
@@ -98,9 +123,12 @@
       <author>Jason Fox</author>
     </topicmeta>
   </keydef>
-  <keydef keys="editingditaopentoolkitpr-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#editing_dita_open_toolkit_project_files" format="html"
-    scope="external">
+  <keydef
+    keys="editingditaopentoolkitpr-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#editing_dita_open_toolkit_project_files"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Editing DITA Open Toolkit Project files</linktext>
       <shortdesc> DITA Open Toolkit project files can store the entire set of main DITA Maps, output formats and
@@ -109,8 +137,12 @@
       <author>George Bina</author>
     </topicmeta>
   </keydef>
-  <keydef keys="onefiletorulethemalldita-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#one_file_to_rule" format="html" scope="external">
+  <keydef
+    keys="onefiletorulethemalldita-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#one_file_to_rule"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>One file to rule them all (DITA Project)</linktext>
       <shortdesc> DITA-OT 3.4 introduces support for project files to define reusable input context and publications. We
@@ -118,9 +150,12 @@
       <author>Jarno Elovirta</author>
     </topicmeta>
   </keydef>
-  <keydef keys="ah-wmldita-to-wordplug-i-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#ah_wml_dita_to_word_plug-in" format="html"
-    scope="external">
+  <keydef
+    keys="ah-wmldita-to-wordplug-i-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#ah_wml_dita_to_word_plug-in"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>AH-WML DITA-to-Word Plug-in</linktext>
       <shortdesc>AH-WML is a DITA-OT plug-in that generates Microsoft Word Document (.docx) from DITA contents. It is a
@@ -130,9 +165,12 @@
       <author>Tony Graham</author>
     </topicmeta>
   </keydef>
-  <keydef keys="varioususefulopensourcep-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#various_useful_open_source_plugins" format="html"
-    scope="external">
+  <keydef
+    keys="varioususefulopensourcep-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#various_useful_open_source_plugins"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Various useful Open source plugins to enhance DITA publishing</linktext>
       <shortdesc> The DITA Open Toolkit publishing engine has support for plugins which can be installed to customize or
@@ -143,9 +181,12 @@
       <author>Radu Coravu</author>
     </topicmeta>
   </keydef>
-  <keydef keys="runningonsomeoneelsescom-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#running_on_someone_else_computer" format="html"
-    scope="external">
+  <keydef
+    keys="runningonsomeoneelsescom-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#running_on_someone_else_computer"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Running on someone else’s computer</linktext>
       <shortdesc> Description and demo of how to deploy DITA-OT on AWS, using Batch, Lambda, DynamoDB, and API Gateway
@@ -153,8 +194,12 @@
       <author>Jarno Elovirta</author>
     </topicmeta>
   </keydef>
-  <keydef keys="trimyourtoolkitwiththiso-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#trim_your_toolkit" format="html" scope="external">
+  <keydef
+    keys="trimyourtoolkitwiththiso-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#trim_your_toolkit"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>Trim your toolkit with this one weird trick!</linktext>
       <shortdesc> DITA-OT has now been under development for over fifteen years. If you started customizing DITA-OT with
@@ -165,8 +210,12 @@
       <author>Robert Anderson</author>
     </topicmeta>
   </keydef>
-  <keydef keys="newsandannouncements-2019"
-    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#news_and_announcements" format="html" scope="external">
+  <keydef
+    keys="newsandannouncements-2019"
+    href="https://www.oxygenxml.com/events/2019/dita-ot_day.html#news_and_announcements"
+    format="html"
+    scope="external"
+  >
     <topicmeta>
       <linktext>News and Announcements</linktext>
       <shortdesc/>

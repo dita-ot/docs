@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
-<reference id="plugin-newextensions" xml:lang="en-US">
+<reference id="plugin-newextensions">
   <title>Creating a new plug-in extension point</title>
   <titlealts>
     <navtitle>New extension points</navtitle>
@@ -133,7 +132,9 @@
       <title>Example</title>
       <p>The following plug-in defines <filepath>myBuildFile_template.xml</filepath> as a new template for extensions,
         and two new extension points.</p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="com.example.new-extensions">
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;plugin id="com.example.new-extensions">
   &lt;extension-point id="com.example.new-extensions.pre"
                    name="Custom target preprocess"/>
   &lt;extension-point id="com.example.new-extensions.content"
@@ -142,7 +143,9 @@
 &lt;/plugin></codeblock>
       <p>When the plug-in is installed, this will be used to recreate <filepath>myBuildFile.xml</filepath>, replacing
         Ant file content based on extension point use.</p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;project xmlns:dita="http://dita-ot.sourceforge.net">
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;project xmlns:dita="http://dita-ot.sourceforge.net">
   &lt;target name="dita2custom"
      dita:depends="dita2custom.init,
                   {com.example.new-extensions.pre},

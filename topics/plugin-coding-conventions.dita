@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="ID">
   <title>Plug-in coding conventions</title>
   <titlealts>
@@ -89,9 +88,14 @@
       <p>In Ant scripts, use the XSLT module from DITA-OT instead of Ant’s built-in <xmlelement>xslt</xmlelement> or
           <xmlelement>style</xmlelement> tasks. </p>
       <p>The XSLT module allows access to DITA-OT features like using the job configuration to select files in the
-        temporary folder based on file metadata and custom XSLT extension functions. </p>
+        temporary folder based on file metadata and custom XSLT extension functions.</p>
+      <note type="important">Future versions of DITA-OT may switch to a new XML resolver or in-memory storage features
+        that are not supported by Ant’s XSLT task. To ensure compatibility with future releases, plug-ins should replace
+        these constructs with custom <xmlelement>pipeline</xmlelement> elements.</note>
       <p>Instead of:</p>
-      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt style="${dita.plugin.example.dir}/custom.xsl"
+      <p><codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;xslt style="${dita.plugin.example.dir}/custom.xsl"
       basedir="${dita.temp.dir}"
       destdir="${dita.output.dir}"
       includesfile="${dita.temp.dir}/${fullditatopicfile}"/></codeblock></p>
@@ -109,9 +113,13 @@
       <p>In Ant scripts, always refer to files in other plug-ins using the
             <codeph>dita.plugin.<varname>plugin-id</varname>.dir</codeph> property.</p>
       <p>Instead of:</p>
-      <p><codeblock outputclass="language-xml">&lt;property name="base" location="../example/custom.xsl"/></codeblock></p>
+      <p><codeblock
+          outputclass="language-xml"
+        >&lt;property name="base" location="../example/custom.xsl"/></codeblock></p>
       <p>use:</p>
-      <p><codeblock outputclass="language-xml">&lt;property name="base" location="${dita.plugin.example.dir}/custom.xsl"/></codeblock></p>
+      <p><codeblock
+          outputclass="language-xml"
+        >&lt;property name="base" location="${dita.plugin.example.dir}/custom.xsl"/></codeblock></p>
       <p>This fixes cases where plug-ins are installed to custom plug-in directories or the plug-in folder name doesn’t
         match the plug-in ID.</p>
       <note type="tip">For details, see
@@ -127,9 +135,13 @@
       <p>In XSLT, use the <codeph>plugin</codeph> URI scheme in <xmlelement>xsl:import</xmlelement> and
           <xmlelement>xsl:include</xmlelement> to reference files in other plug-ins.</p>
       <p>Instead of:</p>
-      <p><codeblock outputclass="language-xml">&lt;xsl:import href="../../org.dita.base/xsl/common/output-message.xsl"/></codeblock></p>
+      <p><codeblock
+          outputclass="language-xml"
+        >&lt;xsl:import href="../../org.dita.base/xsl/common/output-message.xsl"/></codeblock></p>
       <p>use:</p>
-      <p><codeblock outputclass="language-xml">&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock></p>
+      <p><codeblock
+          outputclass="language-xml"
+        >&lt;xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/></codeblock></p>
       <p>As with the plug-in directory property in Ant, this allows plug-ins to resolve to the correct directory even
         when a plug-in moves to a new location. The plug-in is referenced using the syntax
             <codeph>plugin:<varname>plugin-id</varname>:<varname>path/within/plugin/file.xsl</varname></codeph>.</p>
@@ -148,7 +160,9 @@
         <index-see-also>copy-files</index-see-also></indexterm>
       <p>In Ant scripts, use <xmlelement>ditafileset</xmlelement> to select resources in the temporary directory.</p>
       <p>For example, to select all images referenced by input DITA files, instead of:</p>
-      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;copy todir="${copy-image.todir}">
+      <p><codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;copy todir="${copy-image.todir}">
   &lt;fileset dir="${user.input.dir}">
     &lt;includes name="*.jpg"/>
     &lt;includes name="*.jpeg"/>
@@ -158,7 +172,9 @@
   &lt;/fileset>
 &lt;/copy></codeblock></p>
       <p>use:</p>
-      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;copy todir="${copy-image.todir}">
+      <p><codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;copy todir="${copy-image.todir}">
   &lt;ditafileset format="image" />
 &lt;/copy></codeblock>
       </p>

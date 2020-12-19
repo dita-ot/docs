@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="plugin-extension-points-xslt-import">
   <title>XSLT-import extension points</title>
   <shortdesc>You can use these extension points to override XSLT processing steps in pre-processing and certain
@@ -60,78 +59,97 @@
       <dl>
         <dlentry>
           <dt><parmname>dita.map.eclipse.index.pre</parmname></dt>
-          <dd conaction="pushreplace"
+          <dd
+            conaction="pushreplace"
             conref="extension-points-in-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-ext/dita.map.eclipse.index.pre.desc"
-            >Runs an Ant target before the Eclipse index extraction process.</dd>
+          >Runs an Ant target before the Eclipse index extraction process.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.eclipse.plugin</parmname></dt>
-          <dd conaction="pushreplace"
+          <dd
+            conaction="pushreplace"
             conref="extension-points-in-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-ext/dita.xsl.eclipse.plugin.desc"
-            >Overrides the default XSLT step that generates the <filepath>plugin.xml</filepath> file for Eclipse
+          >Overrides the default XSLT step that generates the <filepath>plugin.xml</filepath> file for Eclipse
             Help.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.eclipse.toc</parmname></dt>
-          <dd conaction="pushreplace"
+          <dd
+            conaction="pushreplace"
             conref="extension-points-in-org.dita.eclipsehelp.dita#org.dita.eclipsehelp-ext/dita.xsl.eclipse.toc.desc"
-            >Overrides the default XSLT step that generates the Eclipse Help table of contents (TOC).</dd>
+          >Overrides the default XSLT step that generates the Eclipse Help table of contents (TOC).</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.html.cover</parmname></dt>
-          <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.xhtml.dita#org.dita.xhtml-ext/dita.xsl.html.cover.desc">Overrides the
+          <dd
+            conaction="pushreplace"
+            conref="extension-points-in-org.dita.xhtml.dita#org.dita.xhtml-ext/dita.xsl.html.cover.desc"
+          >Overrides the
             default HTML cover page generation process.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.htmltoc</parmname></dt>
-          <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.xhtml.dita#org.dita.xhtml-ext/dita.xsl.htmltoc.desc">Overrides the
+          <dd
+            conaction="pushreplace"
+            conref="extension-points-in-org.dita.xhtml.dita#org.dita.xhtml-ext/dita.xsl.htmltoc.desc"
+          >Overrides the
             default XSLT step that generates the HTML table of contents (TOC).</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.html5</parmname></dt>
-          <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.html5.dita#org.dita.html5-ext/dita.xsl.html5.desc">Overrides the
+          <dd
+            conaction="pushreplace"
+            conref="extension-points-in-org.dita.html5.dita#org.dita.html5-ext/dita.xsl.html5.desc"
+          >Overrides the
             default HTML5 transformation. The referenced file is integrated directly into the XSLT step that generates
             HTML5.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.html5.cover</parmname></dt>
-          <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.html5.dita#org.dita.html5-ext/dita.xsl.html5.cover.desc">Overrides the
+          <dd
+            conaction="pushreplace"
+            conref="extension-points-in-org.dita.html5.dita#org.dita.html5-ext/dita.xsl.html5.cover.desc"
+          >Overrides the
             default HTML5 cover page generation process.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.html5.toc</parmname></dt>
-          <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.html5.dita#org.dita.html5-ext/dita.xsl.html5.toc.desc">Overrides the
+          <dd
+            conaction="pushreplace"
+            conref="extension-points-in-org.dita.html5.dita#org.dita.html5-ext/dita.xsl.html5.toc.desc"
+          >Overrides the
             default XSLT step that generates the HTML5 table of contents (TOC).</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.htmlhelp.map2hhc</parmname></dt>
-          <dd conaction="pushreplace"
+          <dd
+            conaction="pushreplace"
             conref="extension-points-in-org.dita.htmlhelp.dita#org.dita.htmlhelp-ext/dita.xsl.htmlhelp.map2hhc.desc"
-            >Overrides the default XSLT step that generates the HTML Help contents (<filepath>.hhc</filepath>)
+          >Overrides the default XSLT step that generates the HTML Help contents (<filepath>.hhc</filepath>)
             file.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.htmlhelp.map2hhp</parmname></dt>
-          <dd conaction="pushreplace"
+          <dd
+            conaction="pushreplace"
             conref="extension-points-in-org.dita.htmlhelp.dita#org.dita.htmlhelp-ext/dita.xsl.htmlhelp.map2hhp.desc"
-            >Overrides the default XSLT step that generates the HTML Help project (<filepath>.hhp</filepath>) file.</dd>
+          >Overrides the default XSLT step that generates the HTML Help project (<filepath>.hhp</filepath>) file.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.xhtml</parmname></dt>
-          <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.xhtml.dita#org.dita.xhtml-ext/dita.xsl.xhtml.desc">Overrides the
+          <dd
+            conaction="pushreplace"
+            conref="extension-points-in-org.dita.xhtml.dita#org.dita.xhtml-ext/dita.xsl.xhtml.desc"
+          >Overrides the
             default HTML or XHTML transformation, including HTML Help and Eclipse Help. The referenced file is
             integrated directly into the XSLT step that generates XHTML.</dd>
         </dlentry>
         <dlentry>
           <dt><parmname>dita.xsl.xslfo</parmname></dt>
-          <dd conaction="pushreplace"
-            conref="extension-points-in-org.dita.pdf2.dita#org.dita.pdf2-ext/dita.xsl.xslfo.desc">Overrides the default
+          <dd
+            conaction="pushreplace"
+            conref="extension-points-in-org.dita.pdf2.dita#org.dita.pdf2-ext/dita.xsl.xslfo.desc"
+          >Overrides the default
             PDF transformation. The referenced XSL file is integrated directly into the XSLT step that generates the
             XSL-FO.</dd>
         </dlentry>
@@ -145,14 +163,18 @@
         banner.</p>
       <fig>
         <title>Contents of the <filepath>plugin.xml</filepath> file</title>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+        <codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;plugin id="com.example.brandheader">
   &lt;feature extension="dita.xsl.xhtml" file="xsl/header.xsl"/>
 &lt;/plugin></codeblock>
       </fig>
       <fig>
         <title>Contents of the <filepath>xsl/header.xsl</filepath> file</title>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+        <codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   &lt;xsl:template name="gen-user-header">
     &lt;div>

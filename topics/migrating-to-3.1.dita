@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="migrating-to-3.1">
 
   <title>Migrating to release 3.1</title>
@@ -63,7 +62,9 @@
         occurrences of <codeph>if="property"</codeph> on <xmlelement>param</xmlelement> elements with
             <codeph>if<b>:set</b>="property"</codeph> (and <codeph>unless</codeph> → <codeph>unless<b>:set</b></codeph>
         respectively).</p>
-      <p><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;root xmlns:if="ant:if" xmlns:unless="ant:unless">
+      <p><codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;root xmlns:if="ant:if" xmlns:unless="ant:unless">
   &lt;param name="antProperty" expression="${antProperty}"
          if<b>:set</b>="antProperty"/>
 &lt;/root></codeblock></p>

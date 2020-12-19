@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <concept id="prerequisite-software">
   <title>Prerequisite software</title>
   <shortdesc>The prerequisite software that DITA-OT requires depends on the types of transformations that you want to
@@ -49,7 +48,8 @@
           <dlentry id="antbuild">
             <dt>Apache Ant</dt>
             <dd>Provides the standard setup and sequencing of processing steps. DITA-OT includes Ant version <keyword
-                keyref="tool.ant.version"/>. You can download Ant from
+                keyref="tool.ant.version"
+              />. You can download Ant from
               <xref keyref="download.ant"/>.</dd>
           </dlentry>
           <dlentry>
@@ -81,8 +81,8 @@
           </dlentry>
           <dlentry>
             <dt>XSL-FO processor</dt>
-            <dd>Required for generating PDF output. <tm tmtype="tm">Apache</tm> FOP (Formatting Objects Processor) is
-              included in the distribution package. You can download other versions from
+            <dd>Required for generating PDF output. <tm trademark="Apache" tmtype="tm">Apache</tm> FOP (Formatting
+              Objects Processor) is included in the distribution package. You can download other versions from
               <xref keyref="download.fop"/>. You can also use commercial FO processors such as Antenna House Formatter
               or RenderX XEP.</dd>
           </dlentry>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="dita-command-properties" xml:lang="en">
   <title>Arguments and options for the <cmdname>dita</cmdname> command</title>
   <titlealts>
@@ -206,9 +205,7 @@
           <pt>
             <parmname>--uninstall</parmname>=<varname>ID</varname>
           </pt>
-          <pd>
-            <p>Remove the plug-in with the specified <varname>ID</varname>.</p>
-          </pd>
+          <pd>Remove the plug-in with the specified <varname>ID</varname>.</pd>
           <pd>For a list of the currently installed plug-in IDs, use <cmdname>dita plugins</cmdname>.</pd>
           <pd>
             <note conkeyref="conref-task/plugin-remove-subdir"/>
@@ -296,15 +293,17 @@
           <pt>
             <parmname>--filter</parmname>=<varname>files</varname>
           </pt>
-          <pd>Specifies filter file(s) used to include, exclude, or flag content. </pd>
           <pd>
-            <p>This argument corresponds to the common parameter <parmname>args.filter</parmname>. Relative paths are
-              resolved against the current directory and internally converted to absolute paths.</p>
+            <!-- Based on ant-parameters-details.dita#args.filter but not identical. Relative paths & repeat differs -->
+            <p>Specifies filter file(s) used to include, exclude, or flag content. Relative paths are resolved against
+              the current directory and internally converted to absolute paths.</p>
             <note>
               <p>To specify multiple filter files, use the system path separator character to delimit individual file
                 paths (semicolon ‘<codeph>;</codeph>’ on Windows, and colon ‘<codeph>:</codeph>’ on macOS and Linux) and
                 wrap the value in quotes:</p>
               <p><codeph>--filter="filter1.ditaval;filter2.ditaval;filter3.ditaval"</codeph></p>
+              <p>As of DITA-OT 3.6, the <parmname>--filter</parmname> option can also be passed multiple times:</p>
+              <p><codeph>--filter=filter1.ditaval --filter=filter2.ditaval --filter=filter3.ditaval</codeph></p>
               <p>DITAVAL files are evaluated in the order specified, so conditions specified in the first file take
                 precedence over matching conditions specified in later files, just as conditions at the start of a
                 DITAVAL document take precedence over matching conditions later in the same document.</p>
@@ -342,21 +341,39 @@
           <pt>
             <parmname>-D</parmname><varname>parameter</varname>=<varname>value</varname>
           </pt>
-          <pd>Specify a value for a DITA-OT or Ant build parameter.
-            <p>The GNU-style <parmname>--parameter</parmname>=<varname>value</varname> form is only available for
-              parameters that are configured in the plug-in configuration file; the Java-style <parmname>-D</parmname>
-              form can also be used to specify additional non-configured parameters or set system properties.</p>
-            <p>Parameters not implemented by the specified transformation type or referenced in a
-                <filepath>.properties</filepath> file are ignored.</p>
-            <note conkeyref="conref-task/pass-input-dir"/></pd>
+          <pd>Specify a value for a DITA-OT or Ant build parameter.</pd>
+          <pd>The GNU-style <parmname>--parameter</parmname>=<varname>value</varname> form is only available for
+            parameters that are configured in the plug-in configuration file; the Java-style <parmname>-D</parmname>
+            form can also be used to specify additional non-configured parameters or set system properties.</pd>
+          <pd>Parameters not implemented by the specified transformation type or referenced in a
+              <filepath>.properties</filepath> file are ignored. <note conkeyref="conref-task/pass-input-dir"/>
+          </pd>
         </plentry>
         <plentry>
           <pt>
             <parmname>--propertyfile</parmname>=<varname>file</varname>
           </pt>
-          <pd>Use build parameters defined in the referenced <filepath>.properties</filepath> file.
-            <p>Build parameters specified on the command line override those set in the <filepath>.properties</filepath>
-              file.</p></pd>
+          <pd>Use build parameters defined in the referenced <filepath>.properties</filepath> file.</pd>
+          <pd>Build parameters specified on the command line override those set in the <filepath>.properties</filepath>
+            file.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--repeat</parmname>=<varname>N</varname>
+          </pt>
+          <pd>Repeat the transformation <varname>N</varname> number of times.</pd>
+          <pd>This option can be used by plug-in developers to measure performance. To run a conversion five times, for
+            example, use <parmname>--repeat</parmname>=<option>5</option>. The duration of each execution will appear in
+            the console when the final transformation is complete.
+            <codeblock outputclass="syntax-bash multi-platform">$ <cmdname>dita</cmdname> <parmname
+              >--input</parmname>=<filepath>docsrc/samples/sequence.ditamap</filepath> <parmname
+              >--format</parmname>=<option>html5</option> <parmname>--repeat</parmname>=<option>5</option>
+1 11281ms
+2 4132ms
+3 3690ms
+4 4337ms
+5 3634ms</codeblock>
+          </pd>
         </plentry>
         <plentry>
           <pt>
@@ -366,15 +383,19 @@
             <parmname>-r</parmname>
             <varname>file</varname>
           </pt>
-          <pd>Convert partial documentation sets by processing input with additional resources.
-            <p>For example, to process a single topic file with a map that contains key definitions, use a command like
-              this:
-              <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
-            </p>
-            <p>To convert a chapter map to HTML5 and insert related links from relationship tables in a separate map,
-              use:
-              <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>chapter.ditamap</filepath> <parmname>--resource</parmname>=<filepath>reltables.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
-            </p></pd>
+          <pd>Convert partial documentation sets by processing input with additional resources.</pd>
+          <pd>For example, to process a single topic file with a map that contains key definitions, use a command like
+            this:
+            <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
+              >topic.dita</filepath> <parmname>--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname
+              >--format</parmname>=<option>html5</option></codeblock>
+          </pd>
+          <pd>To convert a chapter map to HTML5 and insert related links from relationship tables in a separate map,
+            use:
+            <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
+              >chapter.ditamap</filepath> <parmname>--resource</parmname>=<filepath
+              >reltables.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
+          </pd>
         </plentry>
         <plentry>
           <pt>

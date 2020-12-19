@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="ID">
   <title>Resources for custom PDF plug-ins</title>
   <titlealts>
@@ -33,8 +32,11 @@
       <p>This online tool, developed and maintained by Jarno Elovirta, enables you to generate a PDF customization
         plug-in automatically.</p>
       <p>The application at
-        <xref href="http://dita-generator.elovirta.com/" format="html" scope="external"
-          >dita-generator.elovirta.com</xref> walks you through the process of creating a custom PDF plug-in and allows
+        <xref
+          href="http://dita-generator.elovirta.com/"
+          format="html"
+          scope="external"
+        >dita-generator.elovirta.com</xref> walks you through the process of creating a custom PDF plug-in and allows
         you to adjust a variety of settings for your PDF output. For example, you can:</p>
       <ul>
         <li>Define the target environment, selecting from the most current and two previous versions of DITA-OT</li>

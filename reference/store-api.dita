@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<topic id="store-api">
+  <title>Store API – Processing in memory</title>
+  <titlealts>
+    <navtitle>Store API</navtitle>
+  </titlealts>
+  <shortdesc>DITA-OT originally assumed resources would be available on disk and available from file paths. Recent
+    versions added URI input, so HTTPS resources could be used, but temporary and output resources were still
+    file-based. DITA-OT 3.6 introduces a new Store API that can process temporary resources in memory instead of writing
+    them to disk.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Store API</indexterm>
+        <indexterm>in-memory processing</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body>
+    <p>The Store API (<codeph>org.dita.dost.store.Store</codeph>) is a Java abstraction over temporary file operations.
+      So for example instead of reading resources directly with <codeph>FileInputStream</codeph>, the Store API provides
+      operations for this. This abstraction allows implementations of the Store API to choose how they handle resources,
+      enables optimizations or non–file-based storage. Since DITA-OT processes a lot of XML data, the Store API offers
+      operations for XML processing directly. For example, a read method to directly get a DOM
+      <codeph>Document</codeph>, instead of opening a file stream manually, parsing it with an XML parser, and getting
+      the <codeph>Document</codeph> instance from the parser.</p>
+    <p>The Store API is extendable using Java’s
+      <xref
+        href="https://docs.oracle.com/javase/9/docs/api/java/util/ServiceLoader.html"
+        format="html"
+        scope="external"
+      >Resource Loader</xref> with the <codeph>org.dita.dost.store.StoreBuilder</codeph> service. This is a builder
+      interface to get named <codeph>Store</codeph> instances (“a Store”).</p>
+    <section id="stream-store">
+      <title>Stream Store for file-based processing</title>
+      <p>This Store could also be a File Store, since it uses disk and local files for temporary resources. This is the
+        traditional DITA-OT implementation, where temporary XML files are stored under the
+          <codeph>dita.temp.dir</codeph> path.</p>
+      <p>The Stream Store is activated by setting the <parmname>store-type</parmname> parameter to
+        <option>file</option>.</p>
+      <note>To ensure backwards compatibility, the <option>file</option> Store is the default setting in DITA-OT
+        3.6.</note>
+    </section>
+    <section id="cache-store">
+      <title>Cache Store for in-memory processing</title>
+      <p>This Store is an in-memory Store, that keeps all temporary resources in memory. The name comes from the feature
+        of the Store, that it caches the parsed XML after reading. That is, instead of storing XML as a byte array, it
+        keeps it as a DOM <codeph>Document</codeph> or <apiname>S9api</apiname> <codeph>XdmNode</codeph>. When the same 
+        resource is re-read later, it doesn't have to parse it again, only return the parsed document. Resources that 
+        are not available in the temporary directory are handled with the Stream Store.</p>
+      <p>While the Store doesn't write anything to the temporary directory, it will still use URIs where the resources
+        are under the temporary directory. The URIs are simply used for addressing, similarly to URNs. Future releases
+        of DITA-OT may use some other method of addressing, such as a <codeph>tmp</codeph> URI scheme.</p>
+      <note type="tip">As of DITA-OT 3.6, the Cache Store can be activated by setting the
+          <parmname>store-type</parmname> parameter to <option>memory</option>.</note>
+    </section>
+    <section id="benefits">
+      <title>Benefits</title>
+      <p>The initial implementation of the Cache Store is provided in DITA-OT 3.6 as a preview to allow integration
+        partners to test this new feature.</p>
+      <p>
+        <ph conkeyref="migrating-to-3.6/io-bound"/></p>
+      <p>The Store API also makes the Saxon <apiname>S9api</apiname> easier to use. It offers an XML document model that
+        is in most cases easier to work with than DOM. The abstraction Store makes it easier to work with XML, so
+        various modules don’t need to repeat the same type of XML processing code.</p></section>
+    <section id="caveats">
+      <title>Caveats</title>
+      <p
+      >Not all custom plug-ins will work with the Cache Store, because they may assume files are used and expect direct file
+        access for resource operations.</p>
+      <note type="important">To take advantage of the Store API, custom plug-ins must use DITA-OT XSLT modules in custom
+          <xmlelement>pipeline</xmlelement> elements instead of Ant’s built-in <xmlelement>xslt</xmlelement> tasks as
+        recommended in <xref keyref="plugin-coding-conventions"/>.</note>
+    </section>
+  </body>
+</topic>

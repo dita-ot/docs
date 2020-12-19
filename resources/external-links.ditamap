@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <map>
   <title>External links</title>
   <!-- Key definitions for external web resources -->
 
-  <topicset
-    id="dita-ot-github">
+  <topicset id="dita-ot-github">
     <topicmeta>
       <navtitle>DITA-OT GitHub Project</navtitle>
     </topicmeta>
@@ -15,7 +13,8 @@
       keys="dita-ot-issues"
       href="https://github.com/dita-ot/dita-ot/issues"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>GitHub issues tracker</linktext>
       </topicmeta>
@@ -24,7 +23,8 @@
       keys="contributions"
       href="https://github.com/dita-ot/dita-ot/graphs/contributors"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>code contributions</linktext>
       </topicmeta>
@@ -33,7 +33,8 @@
       keys="docs-contributions"
       href="https://github.com/dita-ot/docs/graphs/contributors"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>documentation contributions</linktext>
       </topicmeta>
@@ -42,7 +43,8 @@
       keys="dita13-issues"
       href="https://github.com/dita-ot/dita-ot/issues?q=label%3A%22DITA+1.3%22"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA 1.3 label</linktext>
       </topicmeta>
@@ -51,16 +53,28 @@
       keys="dita20-issues"
       href="https://github.com/dita-ot/dita-ot/issues?q=label%3A%22DITA+2.0%22"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA 2.0 label</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="dita-ot-gradle"
+      href="https://github.com/eerohele/dita-ot-gradle"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>DITA-OT Gradle Plugin</linktext>
       </topicmeta>
     </keydef>
     <keydef
       keys="registry-repo"
       href="https://github.com/dita-ot/registry"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>github.com/dita-ot/registry</linktext>
       </topicmeta>
@@ -69,15 +83,25 @@
       keys="pull-request"
       href="https://help.github.com/articles/about-pull-requests/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>pull request</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="plugin-dublin-core"
+      href="https://github.com/dita-ot/org.dita.html5.dublin-core/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>org.dita.html5.dublin-core</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
-  <topicset
-    id="dita-ot-rn">
+  <topicset id="dita-ot-rn">
     <topicmeta>
       <navtitle>DITA-OT Release Notes</navtitle>
     </topicmeta>
@@ -85,7 +109,8 @@
       keys="2.0-release-notes"
       href="https://www.dita-ot.org/2.0/readme/changes/rel2.0.html"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 2.0 Release Notes</linktext>
       </topicmeta>
@@ -94,7 +119,8 @@
       keys="2.1-release-notes"
       href="https://www.dita-ot.org/2.1/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 2.1 Release Notes</linktext>
       </topicmeta>
@@ -103,7 +129,8 @@
       keys="2.2-release-notes"
       href="https://www.dita-ot.org/2.2/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 2.2 Release Notes</linktext>
       </topicmeta>
@@ -112,7 +139,8 @@
       keys="2.3-release-notes"
       href="https://www.dita-ot.org/2.3/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 2.3 Release Notes</linktext>
       </topicmeta>
@@ -121,7 +149,8 @@
       keys="2.4-release-notes"
       href="https://www.dita-ot.org/2.4/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 2.4 Release Notes</linktext>
       </topicmeta>
@@ -130,7 +159,8 @@
       keys="2.5-release-notes"
       href="https://www.dita-ot.org/2.5/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 2.5 Release Notes</linktext>
       </topicmeta>
@@ -139,7 +169,8 @@
       keys="3.0-release-notes"
       href="https://www.dita-ot.org/3.0/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 3.0 Release Notes</linktext>
       </topicmeta>
@@ -148,7 +179,8 @@
       keys="3.1-release-notes"
       href="https://www.dita-ot.org/3.1/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 3.1 Release Notes</linktext>
       </topicmeta>
@@ -157,7 +189,8 @@
       keys="3.2-release-notes"
       href="https://www.dita-ot.org/3.2/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 3.2 Release Notes</linktext>
       </topicmeta>
@@ -166,7 +199,8 @@
       keys="3.3-release-notes"
       href="https://www.dita-ot.org/3.3/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 3.3 Release Notes</linktext>
       </topicmeta>
@@ -175,7 +209,8 @@
       keys="3.4-release-notes"
       href="https://www.dita-ot.org/3.4/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 3.4 Release Notes</linktext>
       </topicmeta>
@@ -184,15 +219,25 @@
       keys="3.5-release-notes"
       href="https://www.dita-ot.org/3.5/release-notes/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>DITA-OT 3.5 Release Notes</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="3.6-release-notes"
+      href="https://www.dita-ot.org/3.6/release-notes/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>DITA-OT 3.6 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
-  <topicset
-    id="downloads">
+  <topicset id="downloads">
     <topicmeta>
       <navtitle>Download links</navtitle>
     </topicmeta>
@@ -200,7 +245,8 @@
       keys="download.ant"
       href="https://ant.apache.org"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>ant.apache.org</linktext>
       </topicmeta>
@@ -209,7 +255,8 @@
       keys="download.dita-ot"
       href="https://www.dita-ot.org/download"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>dita-ot.org/download</linktext>
       </topicmeta>
@@ -218,7 +265,8 @@
       keys="download.fop"
       href="https://xmlgraphics.apache.org/fop/download.html"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>xmlgraphics.apache.org/fop</linktext>
       </topicmeta>
@@ -227,7 +275,8 @@
       keys="download.html-help-workshop"
       href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms669985%28v=vs.85%29.aspx"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>msdn.microsoft.com</linktext>
       </topicmeta>
@@ -236,7 +285,8 @@
       keys="download.icu4j"
       href="http://site.icu-project.org/download"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>icu-project.org/download</linktext>
       </topicmeta>
@@ -245,25 +295,48 @@
       keys="download.openjdk"
       href="https://adoptopenjdk.net"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>adoptopenjdk.net</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="download.openjdk.azul"
+      href="https://www.azul.com/downloads/zulu/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Azul Zulu</linktext>
       </topicmeta>
     </keydef>
     <keydef
       keys="download.openjdk.corretto"
       href="https://aws.amazon.com/corretto/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
-        <linktext>aws.amazon.com/corretto</linktext>
+        <linktext>Amazon Corretto</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="download.openjdk.redhat"
+      href="https://developers.redhat.com/products/openjdk/download"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Red Hat</linktext>
       </topicmeta>
     </keydef>
     <keydef
       keys="download.oracle-jdk"
       href="http://www.oracle.com/technetwork/java/javase/downloads"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>oracle.com/technetwork/java</linktext>
       </topicmeta>
@@ -272,15 +345,15 @@
       keys="download.saxon"
       href="http://saxon.sourceforge.net"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>saxon.sourceforge.net</linktext>
       </topicmeta>
     </keydef>
   </topicset>
 
-  <topicset
-    id="fop">
+  <topicset id="fop">
     <topicmeta>
       <navtitle>FOP links</navtitle>
     </topicmeta>
@@ -288,7 +361,8 @@
       keys="fop-20-rn"
       href="https://xmlgraphics.apache.org/fop/2.0/releaseNotes_2.0.html"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Apache FOP 2.0 Release Notes</linktext>
       </topicmeta>
@@ -297,7 +371,8 @@
       keys="fop-21-rn"
       href="https://xmlgraphics.apache.org/fop/2.1/releaseNotes_2.1.html"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Apache FOP 2.1 Release Notes</linktext>
       </topicmeta>
@@ -306,7 +381,8 @@
       keys="fop-23-rn"
       href="https://xmlgraphics.apache.org/fop/2.3/releaseNotes_2.3.html"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Apache FOP 2.3 Release Notes</linktext>
       </topicmeta>
@@ -315,25 +391,25 @@
       keys="fop-accessibility"
       href="https://xmlgraphics.apache.org/fop/trunk/accessibility.html"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Apache FOP Accessibility</linktext>
       </topicmeta>
     </keydef>
   </topicset>
 
-  <topicset
-    id="specs">
+  <topicset id="specs">
     <topicmeta>
       <navtitle>Specs and RFC links</navtitle>
     </topicmeta>
-    <topicset
-      id="dita13spec">
+    <topicset id="dita13spec">
       <keydef
         keys="dita13-spec"
         href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part0-overview.html"
         scope="external"
-        format="html">
+        format="html"
+      >
         <topicmeta>
           <linktext>DITA 1.3 specification</linktext>
         </topicmeta>
@@ -342,43 +418,52 @@
         keys="dita13-spec-all-inclusive"
         href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part3-all-inclusive.html"
         scope="external"
-        format="html">
+        format="html"
+      >
         <topicmeta>
-          <linktext>DITA 1.3 Part 3 latest errata version: All-Inclusive Edition (HTML)</linktext>
+          <linktext
+          >DITA 1.3 Part 3 latest errata version: All-Inclusive Edition (HTML)</linktext>
         </topicmeta>
       </keydef>
       <keydef
         keys="dita13-spec-all-inclusive-pdf"
         href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part3-all-inclusive.pdf"
         scope="external"
-        format="pdf">
+        format="pdf"
+      >
         <topicmeta>
-          <linktext>DITA 1.3 Part 3 latest errata version: All-Inclusive Edition (PDF)</linktext>
+          <linktext
+          >DITA 1.3 Part 3 latest errata version: All-Inclusive Edition (PDF)</linktext>
         </topicmeta>
       </keydef>
       <keydef
         keys="dita13-spec-source"
         href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part3-all-inclusive/dita-v1.3-errata01-os-part3-all-inclusive-complete-dita.zip"
         scope="external"
-        format="zip">
+        format="zip"
+      >
         <topicmeta>
-          <linktext>DITA Version 1.3 Errata 01 (Distribution ZIP of the DITA source)</linktext>
+          <linktext
+          >DITA Version 1.3 Errata 01 (Distribution ZIP of the DITA source)</linktext>
         </topicmeta>
       </keydef>
       <keydef
         keys="dita13-spec-metadata-cascade"
         href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/cascading-in-a-ditamap.html#cascading-in-a-ditamap"
         scope="external"
-        format="html">
+        format="html"
+      >
         <topicmeta>
-          <linktext>DITA 1.3 specification: Cascading of metadata attributes in a DITA map</linktext>
+          <linktext
+          >DITA 1.3 specification: Cascading of metadata attributes in a DITA map</linktext>
         </topicmeta>
       </keydef>
       <keydef
         keys="dita13-spec-metadata-cascade-example"
         href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/example-how-cascade-att-functions.html"
         scope="external"
-        format="html">
+        format="html"
+      >
         <topicmeta>
           <linktext>Example: How the @cascade attribute functions</linktext>
         </topicmeta>
@@ -387,7 +472,8 @@
         keys="dita13-spec-keyscopes"
         href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/keyScopes.html"
         format="html"
-        scope="external">
+        scope="external"
+      >
         <topicmeta>
           <linktext>DITA 1.3 specification: Scoped keys</linktext>
         </topicmeta>
@@ -396,7 +482,8 @@
         keys="dita13-spec-branch-filter"
         href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/branch-filtering.html"
         format="html"
-        scope="external">
+        scope="external"
+      >
         <topicmeta>
           <linktext>DITA 1.3 specification: Branch filtering</linktext>
         </topicmeta>
@@ -405,28 +492,43 @@
         keys="dita13-spec-conaction"
         href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/langRef/attributes/theconactionattribute.html"
         format="html"
-        scope="external">
+        scope="external"
+      >
         <topicmeta>
-          <linktext>DITA 1.3 specification: The <xmlatt>conaction</xmlatt> attribute</linktext>
+          <linktext>DITA 1.3 specification: The <xmlatt
+            >conaction</xmlatt> attribute</linktext>
         </topicmeta>
       </keydef>
       <keydef
         keys="dita13-spec-profile-groups"
         href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/usage-of-conditional-processing-attributes.html"
         format="html"
-        scope="external">
+        scope="external"
+      >
         <topicmeta>
-          <linktext>DITA 1.3 specification: Groups within profiling attributes</linktext>
+          <linktext
+          >DITA 1.3 specification: Groups within profiling attributes</linktext>
+        </topicmeta>
+      </keydef>
+      <keydef
+        keys="dita13-spec-revprop"
+        href="http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/langRef/ditaval/ditaval-revprop.html#ditaval-revprop"
+        format="html"
+        scope="external"
+      >
+        <topicmeta>
+          <linktext>DITA 1.3 specification: The <xmlelement
+            >revprop</xmlelement> element</linktext>
         </topicmeta>
       </keydef>
     </topicset>
-    <topicset
-      id="dita12">
+    <topicset id="dita12">
       <keydef
         keys="dita12-xhtml"
         href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html"
         scope="external"
-        format="html">
+        format="html"
+      >
         <topicmeta>
           <linktext>DITA 1.2 Specification (XHTML)</linktext>
         </topicmeta>
@@ -435,7 +537,8 @@
         keys="dita12-pdf"
         href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.pdf"
         scope="external"
-        format="pdf">
+        format="pdf"
+      >
         <topicmeta>
           <linktext>DITA 1.2 Specification (PDF)</linktext>
         </topicmeta>
@@ -444,7 +547,8 @@
         keys="dita12-source"
         href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.zip"
         scope="external"
-        format="zip">
+        format="zip"
+      >
         <topicmeta>
           <linktext>DITA 1.2 Specification (DITA source)</linktext>
         </topicmeta>
@@ -453,7 +557,8 @@
         keys="dita12-spec-chunking"
         href="http://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/chunking.html"
         format="html"
-        scope="external">
+        scope="external"
+      >
         <topicmeta>
           <linktext>Chunking definition in the DITA 1.2 specification</linktext>
         </topicmeta>
@@ -462,17 +567,24 @@
         keys="dita12-spec-l10n"
         href="http://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/translation.html"
         format="html"
-        scope="external">
+        scope="external"
+      >
         <topicmeta>
           <linktext>Localization overview in the OASIS DITA standard</linktext>
         </topicmeta>
       </keydef>
     </topicset>
     <keydef
-      keys="json"
-      href="https://json.org"
+      keys="dublin-core"
+      href="https://dublincore.org/specifications/dublin-core/dcmi-terms"
+      format="html"
       scope="external"
-      format="html">
+    >
+      <topicmeta>
+        <linktext>Dublin Core Metadata Element Set</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef keys="json" href="https://json.org" scope="external" format="html">
       <topicmeta>
         <linktext>JSON</linktext>
       </topicmeta>
@@ -481,18 +593,19 @@
       keys="html5-code-highlighting"
       href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-code-element"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>HTML5-compliant syntax highlighting</linktext>
       </topicmeta>
     </keydef>
-    <topicset
-      id="lightweight-dita">
+    <topicset id="lightweight-dita">
       <keydef
         keys="lwdita"
         href="http://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/LwDITA-v1.0-cn01.pdf"
         scope="external"
-        format="pdf">
+        format="pdf"
+      >
         <topicmeta>
           <linktext>Lightweight DITA</linktext>
         </topicmeta>
@@ -502,7 +615,8 @@
       keys="fo-spec.change-bar-begin"
       scope="external"
       format="html"
-      href="http://www.w3.org/TR/xsl/#fo_change-bar-begin">
+      href="http://www.w3.org/TR/xsl/#fo_change-bar-begin"
+    >
       <topicmeta>
         <linktext>XSL-FO fo:change-bar-begin element</linktext>
       </topicmeta>
@@ -511,7 +625,8 @@
       keys="fo-spec.change-bar-style"
       scope="external"
       format="html"
-      href="http://www.w3.org/TR/xsl/#change-bar-style">
+      href="http://www.w3.org/TR/xsl/#change-bar-style"
+    >
       <topicmeta>
         <linktext>@change-bar-style</linktext>
       </topicmeta>
@@ -520,7 +635,8 @@
       keys="rfc3986"
       href="https://tools.ietf.org/html/rfc3986"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>RFC 3986</linktext>
       </topicmeta>
@@ -529,24 +645,20 @@
       keys="rfc5147"
       href="http://tools.ietf.org/html/rfc5147"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>RFC 5147</linktext>
       </topicmeta>
     </keydef>
-    <keydef
-      keys="yaml"
-      href="https://yaml.org"
-      scope="external"
-      format="html">
+    <keydef keys="yaml" href="https://yaml.org" scope="external" format="html">
       <topicmeta>
         <linktext>YAML</linktext>
       </topicmeta>
     </keydef>
   </topicset>
 
-  <topicset
-    id="licenses">
+  <topicset id="licenses">
     <topicmeta>
       <navtitle>Third-party licenses</navtitle>
     </topicmeta>
@@ -554,7 +666,8 @@
       keys="license-apache-2"
       href="https://www.apache.org/licenses/LICENSE-2.0"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Apache License 2.0</linktext>
       </topicmeta>
@@ -563,7 +676,8 @@
       keys="license-EPL"
       href="http://www.eclipse.org/legal/epl-v10.html"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Eclipse Public License 1.0</linktext>
       </topicmeta>
@@ -572,7 +686,8 @@
       keys="license-LGPL"
       href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>GNU Lesser General Public License 2.1</linktext>
       </topicmeta>
@@ -581,7 +696,8 @@
       keys="license-ICU"
       href="http://source.icu-project.org/repos/icu/icu/tags/release-57-1/LICENSE"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>ICU License</linktext>
       </topicmeta>
@@ -590,7 +706,8 @@
       keys="license-MIT"
       href="https://opensource.org/licenses/mit-license.php"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>MIT License</linktext>
       </topicmeta>
@@ -599,7 +716,8 @@
       keys="license-MPL"
       href="https://www.mozilla.org/media/MPL/1.1/index.0c5913925d40.txt"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Mozilla Public License 1.0</linktext>
       </topicmeta>
@@ -608,15 +726,15 @@
       keys="license-W3C"
       href="https://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>W3C Document License</linktext>
       </topicmeta>
     </keydef>
   </topicset>
 
-  <topicset
-    id="websites">
+  <topicset id="websites">
     <topicmeta>
       <navtitle>Other Websites</navtitle>
     </topicmeta>
@@ -624,7 +742,8 @@
       keys="ant-manual"
       href="http://ant.apache.org/manual"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Apache Ant documentation</linktext>
       </topicmeta>
@@ -633,7 +752,8 @@
       keys="dita-tc"
       href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita"
       format="html"
-      scope="external">
+      scope="external"
+    >
       <topicmeta>
         <linktext>OASIS DITA Technical Committee</linktext>
       </topicmeta>
@@ -642,7 +762,8 @@
       keys="dita-adoption-tc"
       href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-adoption"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>OASIS DITA Adoption Technical Committee</linktext>
       </topicmeta>
@@ -651,7 +772,8 @@
       keys="eclipse-website"
       href="http://www.eclipse.org"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Official Eclipse website</linktext>
       </topicmeta>
@@ -660,7 +782,8 @@
       keys="docker"
       href="https://www.docker.com"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Docker</linktext>
       </topicmeta>
@@ -669,7 +792,8 @@
       keys="sass-lang"
       href="http://sass-lang.com"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Sass</linktext>
       </topicmeta>
@@ -678,7 +802,8 @@
       keys="jelovirt-on-pdf2-i18n"
       href="http://www.elovirta.com/2016/02/18/font-configuration-in-pdf2.html"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Font configuration in PDF2</linktext>
       </topicmeta>
@@ -687,7 +812,8 @@
       keys="markdown"
       href="https://daringfireball.net/projects/markdown/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Markdown</linktext>
       </topicmeta>
@@ -696,7 +822,8 @@
       keys="commonmark"
       href="http://commonmark.org"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>CommonMark</linktext>
       </topicmeta>
@@ -705,7 +832,8 @@
       keys="gfm-spec"
       href="https://github.github.com/gfm/"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>GitHub-Flavored Markdown</linktext>
       </topicmeta>
@@ -714,7 +842,8 @@
       keys="semver"
       href="https://semver.org"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>semantic versioning</linktext>
       </topicmeta>
@@ -723,16 +852,28 @@
       keys="gradle"
       href="https://gradle.org"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Gradle</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="gradle-daemon"
+      href="https://docs.gradle.org/current/userguide/gradle_daemon.html"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Gradle Daemon</linktext>
       </topicmeta>
     </keydef>
     <keydef
       keys="homebrew"
       href="https://brew.sh"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Homebrew</linktext>
       </topicmeta>
@@ -741,7 +882,8 @@
       keys="noto-sans-font"
       href="https://fonts.google.com/specimen/Noto+Sans"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Noto Sans</linktext>
       </topicmeta>
@@ -750,7 +892,8 @@
       keys="saxon-java-extensions-impl"
       href="http://www.saxonica.com/html/documentation9.8/extensibility/integratedfunctions"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>Integrated extension functions</linktext>
       </topicmeta>
@@ -759,7 +902,8 @@
       keys="site-plugin-registry"
       href="https://www.dita-ot.org/plugins"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>dita-ot.org/plugins</linktext>
       </topicmeta>
@@ -768,7 +912,8 @@
       keys="signoff"
       href="https://www.dita-ot.org/DCO"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>signing your work</linktext>
       </topicmeta>
@@ -777,7 +922,8 @@
       keys="PATH"
       href="https://en.wikipedia.org/wiki/PATH_(variable)"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext><varname>PATH</varname> environment variable</linktext>
       </topicmeta>
@@ -786,7 +932,8 @@
       keys="prismjs"
       href="https://prismjs.com"
       scope="external"
-      format="html">
+      format="html"
+    >
       <topicmeta>
         <linktext>prism.js</linktext>
       </topicmeta>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="ant-parameters-details">
   <title>Ant parameter details</title>
 
@@ -296,6 +295,19 @@
                 <indexterm><parmname>root-chunk-override</parmname></indexterm></indexterm>
             </pd>
           </plentry>
+          <plentry id="store-type">
+            <pt>
+              <parmname>store-type</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/store-type.desc"/>
+            <pd conaction="pushafter">
+              <p>
+                <ph conkeyref="migrating-to-3.6/io-bound"/> For more information, see
+                <xref keyref="store-api"/>.</p>
+              <note type="important">Custom plug-ins that expect to find certain files on disk in the temporary
+                directory will not work with in-memory processing.</note>
+            </pd>
+          </plentry>
           <plentry id="transtype">
             <pt>
               <parmname>transtype</parmname>
@@ -485,9 +497,11 @@
             <pd conaction="mark" conref="parameters-base-html.dita#base-html/args.xhtml.classattr.desc"/>
             <pd conaction="pushafter">For example, the <xmlelement>prereq</xmlelement> element (which is specialized
               from <xmlelement>section</xmlelement>) would generate <codeph>class="section prereq"</codeph>. <ph
-                audience="xslt-customizer">Corresponds to the XSLT parameter
+                audience="xslt-customizer"
+              >Corresponds to the XSLT parameter
                 <parmname>PRESERVE-DITA-CLASS</parmname>.</ph><note>Beginning with DITA-OT release 1.5.2, the default
-                value is <option>yes</option>. For release 1.5 and 1.5.1, the default value was <option>no</option>. </note>
+                value is <option>yes</option>. For release 1.5 and 1.5.1, the default value was <option
+                >no</option>. </note>
               <indexterm><xmlelement>prereq</xmlelement></indexterm>
               <indexterm><xmlelement>section</xmlelement></indexterm>
             </pd>
@@ -606,6 +620,22 @@
             </pt>
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/args.xsl.pdf.desc"/>
             <pd conaction="pushafter">You must specify the fully qualified file name.</pd>
+          </plentry>
+          <plentry id="org.dita.index.skip">
+            <pt>
+              <parmname>org.dita.index.skip</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-pdf.dita#pdf/org.dita.index.skip.desc"/>
+            <pd conaction="pushafter">
+              <p>Up until DITA-OT 3.4, indexing code was provided in the PDF plug-in and only available for PDF output.
+                In version 3.4 and above, indexing is provided by a separate plug-in to allow other transformations to
+                access the results.</p>
+              <p>If you have overridden PDF index processing via the <codeph>transform.topic2fo</codeph> target in the
+                past, you can set the <parmname>org.dita.index.skip</parmname> property to <option>yes</option> and
+                re-enable the <codeph>transform.topic2fo.index</codeph> target with <xmlelement>feature
+                  extension="depend.org.dita.pdf2.index" value="transform.topic2fo.index"/</xmlelement> in your plug-in
+                configuration.</p>
+            </pd>
           </plentry>
           <plentry id="org.dita.pdf2.i18n.enabled">
             <pt><parmname>org.dita.pdf2.i18n.enabled</parmname></pt>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <reference id="local.properties">
   <title>The <filepath>local.properties</filepath> file</title>
   <titlealts>
@@ -38,7 +37,9 @@
       <p>For example, if you always use the same rendering engine to produce PDF output for all of your projects, you
         could create a <filepath>local.properties</filepath> file in the root directory of your DITA-OT installation to
         set the <parmname>pdf.formatter</parmname> parameter and additional options for the XSL processor:</p>
-      <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"># Use RenderX XEP Engine for PDF output
+      <codeblock
+        outputclass="language-properties normalize-space show-line-numbers show-whitespace"
+      ># Use RenderX XEP Engine for PDF output
 pdf.formatter = xep
 
 # Specify the user configuration file for RenderX
@@ -46,7 +47,9 @@ custom.xep.config = /path/to/custom.config</codeblock>
       <p>Backslash “\” characters in .properties files must be escaped with a second backslash as “\\”. If you use
         Antenna House Formatter on a Windows system, for example, you would set the path to the command using a
         properties file entry like this:</p>
-      <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"># Use Antenna House Formatter for PDF output
+      <codeblock
+        outputclass="language-properties normalize-space show-line-numbers show-whitespace"
+      ># Use Antenna House Formatter for PDF output
 pdf.formatter = ah
 
 # Specify the path to the Antenna House Formatter command

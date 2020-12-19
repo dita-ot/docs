@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <topic id="implement-saxon-collation-uri-resolvers">
   <title>Implementing custom Saxon collation URI resolvers</title>
   <titlealts>
@@ -40,7 +39,9 @@
       plug-ins should not try to resolve the same collation URI. In that case the first one configured will be used at
       run time.</note>
     <p>A typical delegating collation URI resolver looks like
-      this:<codeblock outputclass="language-java">public class DCI18nCollationUriResolver implements DelegatingCollationUriResolver {
+      this:<codeblock
+        outputclass="language-java"
+      >public class DCI18nCollationUriResolver implements DelegatingCollationUriResolver {
 
   public static final String DITA_COMMUNITY_I18N_ZH_CNAWARE_COLLATOR =
       "http://org.dita-community.i18n.zhCNawareCollator";
@@ -80,7 +81,8 @@
         <li>Include a file named <filepath>org.dita.dost.module.saxon.DelegatingCollationUriResolver</filepath> in the
           directory <filepath>META-INF/services</filepath> in the compiled JAR that your plug-in provides. Each line of
           the file must be the name of a class that implements
-            <codeph>org.dita.dost.module.saxon.DelegatingCollationUriResolver</codeph>:<codeblock>org.example.i18n.saxon.MyCollationUriResolver</codeblock>
+            <codeph>org.dita.dost.module.saxon.DelegatingCollationUriResolver</codeph>:<codeblock
+          >org.example.i18n.saxon.MyCollationUriResolver</codeblock>
           <p>You can create the services file using <xmlelement>service</xmlelement> elements in an Ant
               <xmlelement>jar</xmlelement>
             task:<codeblock outputclass="language-xml">&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">

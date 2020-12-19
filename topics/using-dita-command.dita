@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generaltask.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <task id="using-command-line-tool">
   <title>Building output using the <cmdname>dita</cmdname> command</title>
   <shortdesc>You can generate output using the <cmdname>dita</cmdname> command-line tool. Build parameters can be
@@ -40,11 +39,16 @@
       </step>
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
-        <info><codeblock outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname>format</varname> <ph audience="expert">[<varname>options</varname>]</ph></codeblock>
+        <info><codeblock outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname
+            >--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname
+            >format</varname> <ph audience="expert">[<varname>options</varname>]</ph></codeblock>
           <p>where:</p>
           <ul>
-            <li conkeyref="conref-task/novice-variables"
-              conrefend="../resources/conref-task.dita#ID/novice-variables-last" audience="novice"/>
+            <li
+              conkeyref="conref-task/novice-variables"
+              conrefend="../resources/conref-task.dita#ID/novice-variables-last"
+              audience="novice"
+            />
             <li conkeyref="conref-task/novice-variables" audience="expert"/>
             <li conkeyref="conref-task/expert-variables-last" audience="expert"/>
             <li conkeyref="conref-task/options" audience="expert"/>
@@ -55,14 +59,17 @@
     <example audience="novice">
       <p>Run from <filepath conkeyref="conref-task/samples-dir"/>, the following command generates HTML5 output for the
           <filepath>sequence.ditamap</filepath> file:</p>
-      <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
+      <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<filepath
+        >sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
       <indexterm>DITA maps
         <indexterm><cmdname>dita</cmdname> command example</indexterm></indexterm>
     </example>
     <example audience="expert">
       <p>For example, from <filepath conkeyref="conref-task/samples-dir"/>, run:</p>
       <p>
-        <codeblock outputclass="syntax-bash multi-platform"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option> \
+        <codeblock outputclass="syntax-bash multi-platform"><cmdname>dita</cmdname> <parmname
+          >--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option
+          >html5</option> \
      <parmname>--output</parmname>=<filepath>output/sequence</filepath> \
      <parmname>--args.input.dir</parmname>=<filepath conkeyref="conref-task/samples-absolute"/> \
      <parmname>--propertyfile</parmname>=<filepath>properties/sequence-html5.properties</filepath></codeblock>
@@ -71,7 +78,9 @@
         the following additional parameters specified in the <filepath>properties/sequence-html5.properties</filepath>
         file:</p>
       <p>
-        <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef href="../samples/properties/sequence-html5.properties"/></codeblock>
+        <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef
+            href="../samples/properties/sequence-html5.properties"
+          /></codeblock>
       </p>
       <indexterm>DITA maps
         <indexterm><cmdname>dita</cmdname> command example</indexterm></indexterm>

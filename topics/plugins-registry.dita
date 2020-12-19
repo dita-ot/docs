@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
 <topic id="plugin-registry">
   <title>Adding plug-ins via the registry</title>
   <titlealts>
@@ -40,14 +39,17 @@
         <xref keyref="site-plugin-registry"/> and install new plug-ins by name and optional version.</p>
       <p>Search the registry for a plug-in and install it by providing the plug-in name to the <cmdname>dita</cmdname>
         command.</p>
-      <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;</varname></codeblock>
+      <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname
+        >&lt;plugin-name&gt;</varname></codeblock>
       <p>If the registry includes multiple versions of the same plug-in, you can specify the version to install as
         follows:</p>
-      <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname>&lt;plugin-name&gt;@&lt;plugin-version&gt;</varname></codeblock>
+      <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=<varname
+        >&lt;plugin-name&gt;@&lt;plugin-version&gt;</varname></codeblock>
       <p>If the plug-in requires other plug-ins, those are also installed recursively.</p>
       <p>For example, to revert PDF output to the legacy PDF2 layout that was the default in DITA-OT before 2.5, install
         the <filepath>org.dita.pdf2.legacy</filepath> plug-in as follows:</p>
-      <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--install</parmname>=org.dita.pdf2.legacy</codeblock>
+      <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname
+        >--install</parmname>=org.dita.pdf2.legacy</codeblock>
       <p>If a matching plug-in cannot be found, an error message will appear. Possible reasons for failure include:</p>
       <ul>
         <li>A plug-in with the specified name was not found in the registry</li>
@@ -137,7 +139,9 @@
             <varname>&lt;plugin-file&gt;</varname></codeph> on macOS or Linux. With Windows PowerShell, use <codeph>
           <xref
             href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6"
-            format="html" scope="external">Get-FileHash</xref> <varname>&lt;plugin-file&gt;</varname> |
+            format="html"
+            scope="external"
+          >Get-FileHash</xref> <varname>&lt;plugin-file&gt;</varname> |
           Format-List</codeph>.
         <indexterm>macOS
           <indexterm>plug-in registry checksum</indexterm></indexterm>
@@ -170,7 +174,10 @@
               <entry>yes</entry>
               <entry>Required plug-in version in
                 <xref keyref="semver"/> format that may contain
-                <xref href="https://docs.npmjs.com/misc/semver#ranges" format="html" scope="external"
+                <xref
+                  href="https://docs.npmjs.com/misc/semver#ranges"
+                  format="html"
+                  scope="external"
                 >ranges</xref>.</entry>
             </row>
           </tbody>
@@ -189,8 +196,11 @@
       <indexterm>DocBook</indexterm>
       <p>The example below shows an entry for the <codeph>DocBook</codeph> plug-in. The complete file is available in
         the registry as
-        <xref href="https://github.com/dita-ot/registry/blob/master/org.dita.docbook.json" format="json"
-          scope="external">org.dita.docbook.json</xref>.</p>
+        <xref
+          href="https://github.com/dita-ot/registry/blob/master/org.dita.docbook.json"
+          format="json"
+          scope="external"
+        >org.dita.docbook.json</xref>.</p>
       <codeblock outputclass="language-json" xml:space="preserve">[
   {
     "name": "org.dita.docbook",
@@ -255,7 +265,9 @@
           added to the <filepath>config/configuration.properties</filepath> file. Edit the <codeph>registry</codeph> key
           and add the raw GitHub URL for the branch that contains the JSON file. With the example username and branch
           name above, you can add your registry
-          with:<codeblock outputclass="language-properties">registry=https://raw.githubusercontent.com/USERNAME/registry/addPlugin/ http://plugins.dita-ot.org/</codeblock></li>
+          with:<codeblock
+            outputclass="language-properties"
+          >registry=https://raw.githubusercontent.com/USERNAME/registry/addPlugin/ http://plugins.dita-ot.org/</codeblock></li>
         <li>You can now test the plug-in installation with:
           <codeblock><cmdname>dita</cmdname> <parmname>--install</parmname>=org.example.newPlugin</codeblock></li>
         <li>Once you’ve confirmed that the entry works, you can submit a pull request to have your entry added to the

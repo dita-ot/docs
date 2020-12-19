@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
-<concept id="preprocess-topicpull" xml:lang="en-US">
+<concept id="preprocess-topicpull">
   <title>Pull content into topics (topicpull)</title>
   <shortdesc>The <codeph>topicpull</codeph> step pulls content into <xmlelement>xref</xmlelement> and
       <xmlelement>link</xmlelement> elements. This step is implemented in XSLT.</shortdesc>

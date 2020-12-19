@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
-<task id="plugin-javalib" xml:lang="en-US">
+<task id="plugin-javalib">
   <title>Adding a Java library to the <parmname>classpath</parmname></title>
   <titlealts>
     <navtitle>Adding a Java library</navtitle>
@@ -43,7 +42,9 @@
       </step>
       <step>
         <cmd>Create a <filepath>plugin.xml</filepath> file that contains the following code:</cmd>
-        <info><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;plugin id="<varname>plugin-id</varname>">
+        <info><codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;plugin id="<varname>plugin-id</varname>">
   &lt;feature extension="dita.conductor.lib.import" file="<varname>file</varname>"/>
 &lt;/plugin></codeblock>where:
           <ul>
@@ -70,7 +71,9 @@
       <p>The files might look like the following:</p>
       <fig>
         <title><filepath>plugin.xml</filepath> file</title>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+        <codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;plugin id="com.example.samplejava">
   <i>&lt;!-- Add the JAR file to the DITA-OT CLASSPATH --></i>
   <b>&lt;feature extension="dita.conductor.lib.import" 
@@ -84,7 +87,9 @@
       </fig>
       <fig>
         <title><filepath>calljava-antcode.xml</filepath> file</title>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+        <codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;project default="validateWithJava">
   &lt;target name="validateWithJava">
     &lt;java classname="com.example.sampleValidation">

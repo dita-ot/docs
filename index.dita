@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-
-<topic id="dita-otprojecthome" xml:lang="en-US">
+<topic id="dita-otprojecthome">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
   <shortdesc><term>DITA Open Toolkit</term>, or <term>DITA-OT</term> for short, is a set of Java-based, open-source
     tools that provide processing for content authored in the <term>Darwin Information Typing
@@ -47,10 +46,12 @@
           configuration properties.</li>
         <li outputclass="list-group-item list-group-item-action">
           <xref keyref="html-customization" outputclass="stretched-link"/> shows how to <ph
-            conkeyref="html-customization/shortdesc-ph"/>.</li>
+            conkeyref="html-customization/shortdesc-ph"
+          />.</li>
         <li outputclass="list-group-item list-group-item-action">
           <xref keyref="pdf-customization" outputclass="stretched-link"/> explains how to <ph
-            conkeyref="pdf-customization/shortdesc-ph"/>.</li>
+            conkeyref="pdf-customization/shortdesc-ph"
+          />.</li>
         <li outputclass="list-group-item list-group-item-action">
           <xref keyref="adding-plugins" outputclass="stretched-link"/> explains how to install, remove and discover new
           plug-ins.</li>

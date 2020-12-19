@@ -23,9 +23,8 @@
 }
 
 body {
-  background-color: #fff;
-  background-image: linear-gradient(to top, #eee 0%, #fff); /* W3C */
-  background-repeat: no-repeat;
+  background: #fff;
+  background: linear-gradient(to bottom, #eee 0%, #fff);
   color: #666;
   float: left;
   font-family: 'Trebuchet MS', 'Times New Roman', Times, serif;

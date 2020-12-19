@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<reference id="migrating-to-3.6">
+
+  <title>Migrating to release 3.6</title>
+  <titlealts>
+    <navtitle>To 3.6</navtitle>
+  </titlealts>
+
+  <shortdesc>DITA-OT 3.6 includes <ph id="summary">performance enhancements such as processing in parallel and in
+      memory, support for PDF changebars with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP, and an updated preview
+      of features for the latest draft of the upcoming DITA 2.0 standard, including the <xmlelement>audio</xmlelement>
+      and <xmlelement>video</xmlelement> elements, and the new emphasis domain</ph>.</shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 3.6 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="3.6-release-notes"/>.</note>
+    </section>
+
+    <section id="parallel-processing">
+      <title>Parallel processing</title>
+      <indexterm>parallel processing</indexterm>
+      <p>Preprocessing module code can now be run in parallel by setting the <parmname>parallel</parmname> parameter to
+          <option>true</option>. The performance benefits this option provides depend heavily on the source file set,
+        the DITA features used in the project, and the computer doing the processing, but under the right circumstances,
+        you may see notable improvements when this option is enabled.</p>
+    </section>
+
+    <section id="in-memory-processing">
+      <title>In-memory processing</title>
+      <indexterm>in-memory processing</indexterm>
+      <p>DITA-OT 3.6 introduces a new Store API with preview support for in-memory processing. The Cache Store can be
+        activated by setting the <parmname>store-type</parmname> parameter to <option>memory</option>. 
+        <ph id="io-bound">In-memory processing provides performance advantages in I/O bound environments such as cloud
+          computing platforms, where processing time depends primarily on how long it takes to read and write temporary
+          files.</ph> For more information, see
+        <xref keyref="store-api"/>.</p>
+    </section>
+
+    <section>
+      <title>Caching DITA class instances</title>
+      <p>The DITA-OT Java code uses a new caching <codeph>DitaClass.getInstance(cls)</codeph> factory method rather than
+        generating <codeph>DitaClass</codeph> instances directly. This allows previously created instances to be
+        re-used, which reduces the number of instances that need to be created.</p>
+      <note type="important">Custom plug-ins that use the <codeph>DitaClass</codeph> constructor in Java code should be
+        updated to use the <codeph>getInstance</codeph> factory method instead.</note>
+    </section>
+
+    <section id="fop-changebars">
+      <title>PDF changebars with <tm trademark="Apache" tmtype="tm">Apache</tm> FOP</title>
+      <indexterm>Apache FOP
+        <indexterm>change bars</indexterm></indexterm>
+      <indexterm>PDF
+        <indexterm>change bars</indexterm></indexterm>
+      <p>For DITA-OT 3.4, the bundled Apache™ Formatting Objects Processor library was upgraded to version 2.4, which
+        included support for changebars, but those features were not yet enabled in DITA-OT 3.4 pending further testing.
+        DITA-OT 3.6 removes the FOP-specific overrides that disabled changebars in earlier versions, allowing the
+        default PDF2 flagging routines to be applied when generating PDFs with FOP. For details, see
+        <xref keyref="pdf2-creating-change-bars"/>.</p>
+      <p>Plug-ins that implemented custom FOP flagging by overriding the
+          <filepath>org.dita.pdf2.fop/xsl/fo/flagging_fop.xsl</filepath> stylesheet in prior versions will need to be
+        updated, as this file is no longer available in DITA-OT 3.6.
+        <xref href="https://github.com/dita-ot/dita-ot/issues/3511" format="html" scope="external">#3511</xref>,
+        <xref href="https://github.com/dita-ot/dita-ot/issues/3591" format="html" scope="external">#3591</xref>
+      </p>
+    </section>
+
+    <section id="no-dublin-core">
+      <title>Dublin Core metadata removed from HTML5</title>
+      <indexterm>Dublin Core metadata</indexterm>
+      <p>Up to version 3.5, DITA-OT included the
+        <xref keyref="dublin-core"/> in both XHTML and HTML5 output. DITA-OT 3.6 no longer generates Dublin Core
+        metadata in HTML5 output.</p>
+      <note type="tip">If necessary, the
+        <xref keyref="plugin-dublin-core"/> plug-in can be installed from the plug-in registry at
+        <xref keyref="site-plugin-registry"/> to add Dublin Core metadata to HTML5.</note>
+      <p>To install the plug-in, run the following command:</p>
+      <codeblock outputclass="syntax-bash"><cmdname>dita install</cmdname> org.dita.html5.dublin-core</codeblock>
+    </section>
+
+    <section id="3.6-inline-styles">
+      <title>Legacy style attributes moved to CSS</title>
+      <indexterm><xmlelement>line-through</xmlelement> styles</indexterm>
+      <indexterm><xmlelement>overline</xmlelement> styles</indexterm>
+      <p>Remaining inline style attributes were removed from HTML5 code, which prevented custom plug-ins from overriding
+        the presentation of the corresponding elements, including:
+        <ul>
+          <li><line-through><xmlelement>line-through</xmlelement></line-through> and
+                <overline><xmlelement>overline</xmlelement></overline> elements</li>
+          <li>syntax diagrams</li>
+          <li>long quote citations</li>
+          <li>Boolean states</li>
+        </ul></p>
+      <p>These changes move the default presentation rules to CSS to allow users to override these styles in custom
+        stylesheets. The output is visually equivalent to the results generated by previous toolkit versions. </p>
+      <note type="important">In publishing environments that do not use the default common CSS files, these styles may
+        need to be implemented in custom stylesheets.</note>
+    </section>
+
+    <section id="no-msgprefix">
+      <title>XSL variable <codeph>msgprefix</codeph> removed</title>
+      <p>The <codeph>msgprefix</codeph> variable (“DOTX”) has been deprecated since DITA-OT 2.3 and is now removed from
+        DITA-OT 3.6. For more information, see
+        <xref keyref="migrating-to-2.3"/>.</p>
+    </section>
+  </refbody>
+</reference>

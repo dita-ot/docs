@@ -60,6 +60,16 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="dita-ot-gradle"
+      href="https://github.com/eerohele/dita-ot-gradle"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>DITA-OT Gradle Plugin</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="registry-repo"
       href="https://github.com/dita-ot/registry"
       scope="external"
@@ -77,6 +87,16 @@
     >
       <topicmeta>
         <linktext>pull request</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="plugin-dublin-core"
+      href="https://github.com/dita-ot/org.dita.html5.dublin-core/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>org.dita.html5.dublin-core</linktext>
       </topicmeta>
     </keydef>
   </topicset>
@@ -203,6 +223,16 @@
     >
       <topicmeta>
         <linktext>DITA-OT 3.5 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="3.6-release-notes"
+      href="https://www.dita-ot.org/3.6/release-notes/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>DITA-OT 3.6 Release Notes</linktext>
       </topicmeta>
     </keydef>
   </topicset>
@@ -544,6 +574,16 @@
         </topicmeta>
       </keydef>
     </topicset>
+    <keydef
+      keys="dublin-core"
+      href="https://dublincore.org/specifications/dublin-core/dcmi-terms"
+      format="html"
+      scope="external"
+    >
+      <topicmeta>
+        <linktext>Dublin Core Metadata Element Set</linktext>
+      </topicmeta>
+    </keydef>
     <keydef keys="json" href="https://json.org" scope="external" format="html">
       <topicmeta>
         <linktext>JSON</linktext>
@@ -816,6 +856,16 @@
     >
       <topicmeta>
         <linktext>Gradle</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="gradle-daemon"
+      href="https://docs.gradle.org/current/userguide/gradle_daemon.html"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Gradle Daemon</linktext>
       </topicmeta>
     </keydef>
     <keydef

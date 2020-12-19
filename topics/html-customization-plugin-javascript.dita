@@ -116,7 +116,7 @@
         delayed while the script is loaded. If your JavaScript code supports pre-loading and your application targets
         modern browsers that recognize the <codeph>async</codeph> script attribute, you may prefer to insert the
         JavaScript snippet in the <xmlelement>head</xmlelement> element of the generated HTML files using the
-          <parmname>args.hdf</parmname> parameter intead.</note>
+          <parmname>args.hdf</parmname> parameter instead.</note>
     </postreq>
   </taskbody>
 </task>

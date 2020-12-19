@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<reference id="ID" rev="3.5">
+  <title>DITA Open Toolkit 3.5 Release Notes</title>
+  <titlealts>
+    <navtitle>Release Notes</navtitle>
+  </titlealts>
+
+  <abstract>
+    <shortdesc>DITA Open Toolkit 3.5.4 is a maintenance release that fixes issues
+      reported in DITA-OT 3.5, which includes <ph conref="#v3.5/summary"/>.</shortdesc>
+    <p conkeyref="conref-task/semver-info"/>
+    <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
+  </abstract>
+
+  <reference id="requirements">
+    <title>Requirements</title>
+    <refbody>
+      <section>
+        <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
+          since previous release.</draft-comment>
+        <p conkeyref="reusable-components/java-clients"/>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.5.4" outputclass="mark">
+    <title>DITA-OT 3.5.4
+      <ph outputclass="small text-muted">released September 19, 2020</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.5.4 is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <li id="2147">In cases where maps contain references to submaps within key scopes, earlier versions of DITA-OT
+            failed to apply the scopes to relationship tables in the submaps. Processing has been updated to cascade key
+            scope information to the relationship table of the target map, so links between topics in different key
+            scopes work as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2147" format="html" scope="external">#2147</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2393" format="html" scope="external">#2393</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3563" format="html" scope="external">#3563</xref>
+          </li>
+          <li id="2410">In earlier versions, keys in nested key scopes were not resolved correctly. Key processing has
+            been updated to correctly generate key definitions from sibling key scopes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2410" format="html" scope="external">#2410</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3567" format="html" scope="external">#3567</xref>
+          </li>
+          <li id="2981">In previous versions, the <parmname>dita.xsl.html5.cover</parmname> extension point did not
+            work. The corresponding templates have been moved from the
+              <filepath>org.dita.html5/xsl/map2html5-coverImpl_template.xsl</filepath> wrapper to a new
+              <filepath>org.dita.html5/xsl/cover.xsl</filepath> file to allow custom plug-ins to override the HTML5
+            cover page with a custom stylesheet.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2981" format="html" scope="external">#2981</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3579" format="html" scope="external">#3579</xref>
+          </li>
+          <li id="3566">DITA-OT 3.5.2 introduced a regression that caused builds to fail with a Java error when source
+            files contained irregular table markup. Table processing has been updated to normalize tables with multiple
+            groups and emit a <msgnum>DOTJ082E</msgnum> error when invalid table markup prevents processing.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3566" format="html" scope="external">#3566</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3573" format="html" scope="external">#3573</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3575" format="html" scope="external">#3575</xref>
+          </li>
+          <li id="3574">When parsing topics that contain DTD references, public IDs are now preferred when comparing
+            grammar descriptors with those stored in the grammar cache. This speeds up processing in projects with a
+            large number of topics and subfolders by allowing the parser to re-use the DTD grammars between them.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3574" format="html" scope="external">#3574</xref>
+          </li>
+          <li deliveryTarget="html">HTML versions of the documentation include new information in the following topics:
+            <ul>
+              <li id="docs-218">A list of <cite>DITA-OT Day</cite> conference videos has been added to the
+                <xref keyref="dita-and-dita-ot-resources">Resources</xref> section. Where applicable, individual topics
+                include links to relevant presentations from recent events.
+                <xref href="https://github.com/dita-ot/docs/issues/218" format="html" scope="external">#218</xref>,
+                <xref href="https://github.com/dita-ot/docs/pull/304" format="html" scope="external">#304</xref>
+              </li>
+              <li id="docs-305">A new
+                <xref keyref="release-history"/> topic was added for easier access to details on prior releases.
+                <xref href="https://github.com/dita-ot/docs/pull/305" format="html" scope="external">#305</xref>
+              </li>
+              <li id="docsearch-2364">In addition to the latest development version of the documentation, the site
+                search now returns results from all <cite>Release Notes</cite> from DITA-OT 2.0 forward, to make it
+                easier to find information about the changes in earlier releases.
+                <xref
+                  href="https://github.com/algolia/docsearch-configs/pull/2364"
+                  format="html"
+                  scope="external"
+                >algolia/docsearch-configs#2364</xref>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.4+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.5.4 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.5.3...3.5.4" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.5.3">
+    <title>DITA-OT 3.5.3 <ph outputclass="small text-muted">released August 18, 2020</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.5.3 is a maintenance release that includes the following bug fixes.</p>
+        <ul>
+          <li id="3549">In DITA-OT 3.5, certain branch filtering scenarios prevented key references and content key
+            references from resolving correctly in map-first preprocessing, resulting in missing content in PDF output.
+            The Java code for the reader module has been updated to ensure that all filtered and renamed topics contain
+            the correct information.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3549" format="html" scope="external">#3549</xref>
+          </li>
+          <li id="3550">In HTML5 output, a new <xmlelement>div</xmlelement> wrapper element has been added to preserve
+            attributes like <xmlatt>outputclass</xmlatt> or <xmlatt>id</xmlatt> from the <xmlelement>steps</xmlelement>
+            element in single-step tasks. Earlier versions discarded this information when generating output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3550" format="html" scope="external">#3550</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.3+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.5.3 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.5.2...3.5.3" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.5.2">
+    <title>DITA-OT 3.5.2 <ph outputclass="small text-muted">released July 2, 2020</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.5.2 is a maintenance release that includes the following bug fixes.</p>
+        <ul>
+          <li id="3524">DITA-OT 3.5 introduced a regression in key scope processing that saved the effective map too
+            early, before all topic references were updated. In certain cases, keys that were intended to point to
+            different reference targets were merged to a single reference. The keyref processing module has been updated
+            to handle these cases correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3524" format="html" scope="external">#3524</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3542" format="html" scope="external">#3542</xref>
+          </li>
+          <li id="3526">In DITA-OT 3.5.1, generating output from a project file without setting the
+              <parmname>--output</parmname> option caused the build to fail with a NullPointerException. The Java code
+            has been updated to properly initialize the output directory.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3526" format="html" scope="external">#3526</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3531" format="html" scope="external">#3531</xref>
+          </li>
+          <li id="3533">Builds would also fail with a NullPointerException when publishing bookmap chapters with keys to
+            a single file by setting the <xmlatt>chunk</xmlatt> attribute <option>to-content</option>. The metadata push
+            process has been updated to properly handle this case.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3533" format="html" scope="external">#3533</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3534" format="html" scope="external">#3534</xref>
+          </li>
+          <li id="3538">Earlier versions of DITA-OT would sometimes render tables incorrectly when cells were set to
+            span several rows. Processing for <xmlelement>table</xmlelement> and <xmlelement>simpletable</xmlelement>
+            elements has been updated to ensure that cell coordinates are calculated correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3538" format="html" scope="external">#3538</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3539" format="html" scope="external">#3539</xref>
+          </li>
+          <li id="3540">When processing maps with flagging information, temporary files include
+              <xmlelement>ditaval-startprop</xmlelement> elements that contain <xmlelement>prop</xmlelement> elements
+            without <xmlatt>class</xmlatt> attributes, which generated errors in earlier versions. Processing has been
+            updated to ignore foreign content at this stage, allowing Saxon to proceed without errors.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3540" format="html" scope="external">#3540</xref>
+          </li>
+          <li>The documentation includes corrections and new information in the following topics:
+            <ul>
+              <li>
+                <xref keyref="markdown-input"/></li>
+              <li>
+                <xref keyref="markdown-dita-syntax-reference"/></li>
+              <li>
+                <xref keyref="dita2dita"/></li>
+              <li>
+                <xref keyref="lwdita-input"/></li>
+            </ul></li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.2+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.5.2 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.5.1...3.5.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.5.1">
+    <title>DITA-OT 3.5.1 <ph outputclass="small text-muted">released June 4, 2020</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.5.1 is a maintenance release that includes the following bug fixes.</p>
+        <ul>
+          <li id="3508">In DITA-OT 3.5, Markdown builds failed due to an incompatible plug-in version. The LwDITA
+            plug-in has been updated to version 2.4, which is compatible with DITA-OT 2.4 and newer.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3508" format="html" scope="external">#3508</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3512" format="html" scope="external">#3512</xref>
+          </li>
+          <li id="3509">On macOS, DITA-OT 3.5 failed to build output if the input file was specified with a relative
+            path based at the current working directory with the <codeph>./</codeph> notation. Paths specified on the
+            command line are now normalized to support this syntax.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3509" format="html" scope="external">#3509</xref>
+          </li>
+          <li id="3513">Several bundled dependencies have been updated to address security vulnerabilities, including:
+            <ul>
+              <li id="3515">The bundled Jackson data binding library was updated to version 2.11.0 to resolve several
+                vulnerabilities reported in previous versions, including an OWASP false positive for the SnakeYAML
+                library, which has been updated to version 1.27.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3513" format="html" scope="external">#3513</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3515" format="html" scope="external">#3515</xref>
+              </li>
+              <li id="3522">The bundled Ant version has been updated to version 1.10.8 to address
+                <xref
+                  href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1945"
+                  format="html"
+                  scope="external"
+                >CVE-2020-1945</xref>.
+                <xref
+                  href="https://github.com/dita-ot/dita-ot/issues/3522"
+                  format="html"
+                  scope="external"
+                >#3522</xref></li>
+            </ul>
+          </li>
+          <li id="3517">In DITA-OT 3.5, PDF customizations (and other plug-ins that use <xmlelement>xslt</xmlelement>
+            elements within custom <xmlelement>pipeline</xmlelement> elements) failed to properly compile the custom
+            XSLT code. The XSLT module has been corrected to resolve custom code correctly and apply the customizations.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3517" format="html" scope="external">#3517</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5.1+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.5.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.5...3.5.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.5">
+    <title>DITA-OT 3.5
+      <ph outputclass="small text-muted">released April 27, 2020</ph>
+    </title>
+    <prolog>
+      <metadata>
+        <keywords>
+          <indexterm/>
+        </keywords>
+      </metadata>
+    </prolog>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit Release 3.5 includes <ph id="summary">support for additional input
+            resources, an alternative subcommand syntax for the <cmdname>dita</cmdname> command, and an initial preview
+            of features for the latest draft of the upcoming DITA 2.0 standard</ph>.</p>
+      </section>
+
+      <section id="dita-2-0-preview">
+        <title>DITA 2.0 preview</title>
+        <p id="3449">DITA-OT 3.5 includes processing support for the latest DRAFT versions of
+          the DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of April 2020).
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3449" format="html" scope="external">#3449</xref>
+        </p>
+        <p conkeyref="dita-v2-0-support/grammar-files"/>
+        <ul>
+          <li id="3453">
+            <p>
+              <ph conkeyref="dita-v2-0-support/include"/>
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3453" format="html" scope="external">#3453</xref>
+            </p>
+          </li>
+          <li id="3462">
+            <p>
+              <ph conkeyref="dita-v2-0-support/specializations"/>
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3440" format="html" scope="external">#3440</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3462" format="html" scope="external">#3462</xref>
+            </p>
+          </li>
+          <li id="3463">
+            <p>
+              <ph conkeyref="dita-v2-0-support/outputclass"/>
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3463" format="html" scope="external">#3463</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3482" format="html" scope="external">#3482</xref>
+            </p>
+          </li>
+          <li id="3464">
+            <p>
+              <ph conkeyref="dita-v2-0-support/simple-table-titles"/>
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3464" format="html" scope="external">#3464</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3465" format="html" scope="external">#3465</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3479" format="html" scope="external">#3479</xref>
+            </p>
+          </li>
+          <li id="3483">
+            <p>
+              <ph conkeyref="dita-v2-0-support/topic-based-classes"/>
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3483" format="html" scope="external">#3483</xref>
+            </p>
+          </li>
+        </ul>
+        <note conkeyref="dita-v2-0-support/more-to-come"/>
+      </section>
+
+      <section id="features">
+        <title>New features</title>
+        <indexterm><parmname>--resource</parmname></indexterm>
+        <indexterm><parmname>result.rewrite-rule.class</parmname></indexterm>
+        <indexterm><parmname>result.rewrite-rule.xsl</parmname></indexterm>
+        <indexterm><cmdname>deliverables</cmdname> subcommand</indexterm>
+        <indexterm><cmdname>install</cmdname> subcommand</indexterm>
+        <indexterm><cmdname>plugins</cmdname> subcommand</indexterm>
+        <indexterm><cmdname>transtypes</cmdname> subcommand</indexterm>
+        <indexterm><cmdname>uninstall</cmdname> subcommand</indexterm>
+        <indexterm><cmdname>version</cmdname> subcommand</indexterm>
+        <p>DITA-OT 3.5 also includes the following new features:</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
+        <ul>
+          <li id="3412">
+            <p>You can now pass additional input resources to the <cmdname>dita</cmdname> command with the
+                <parmname>--resource</parmname> option.
+              <xref
+                href="https://github.com/dita-ot/dita-ot/issues/3412"
+                format="html"
+                scope="external"
+              >#3412</xref></p>
+            <p>For example, to process a single topic file with a map that contains key definitions, use a command like
+              this:
+              <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>topic.dita</filepath> <parmname
+                >--resource</parmname>=<filepath>keys.ditamap</filepath> <parmname>--format</parmname>=<option
+                >html5</option></codeblock>
+            </p></li>
+          <li id="3413">Two new parameters can be used to dynamically adjust the names and locations of output files in
+            transformations that use the map-first pre-processing routine (<codeph>preprocess2</codeph>). <ph>These
+              parameters can be passed on the command line, or included in a custom plug-in via
+                <xmlelement>property</xmlelement> elements in an Ant script as described in
+              <xref keyref="plugin-rewrite-rules"/>.</ph>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3413" format="html" scope="external">#3413</xref>
+            <ul>
+              <li>Use <parmname>result.rewrite-rule.class</parmname> to rewrite filenames with a Java class that
+                implements the <codeph>org.dita.dost.module.RewriteRule</codeph> interface</li>
+              <li>Use <parmname>result.rewrite-rule.xsl</parmname> to rewrite via an XSLT stylesheet</li>
+            </ul>
+          </li>
+          <li id="3437">
+            <p>The <cmdname>dita</cmdname> command line interface has been refactored to support subcommands for common
+              operations.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3437" format="html" scope="external">#3437</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3492" format="html" scope="external">#3492</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3494" format="html" scope="external">#3494</xref>
+            </p>
+            <dl conkeyref="reusable-components/3.5-subcommands">
+              <dlentry>
+                <dt/>
+                <dd/>
+              </dlentry>
+            </dl>
+            <p>For syntax details, see
+              <xref keyref="dita-command-arguments"/>.</p>
+            <note>The double-hyphen option syntax has been retained for backwards compatibility, so if you use
+                <cmdname>dita</cmdname>
+              <parmname>--install</parmname> in scripts (or out of habit), it will still work.</note>
+            <note type="tip">Each subcommand has its own <parmname>--help</parmname> option, so you can run
+                <cmdname>dita install</cmdname>
+              <parmname>--help</parmname> for details on the available arguments and options.</note>
+          </li>
+          <li id="3489">
+            <p>DITAVAL <xmlatt>style</xmlatt> tokens are now also generated as CSS classes that are added to the
+                <xmlatt>class</xmlatt> attribute values in the generated HTML.
+              <xref
+                href="https://github.com/dita-ot/dita-ot/issues/3489"
+                format="html"
+                scope="external"
+              >#3489</xref></p>
+            <p>Rules with corresponding class selectors have been added to the default stylesheets to implement the same
+              appearance that previous versions of DITA-OT achieved with inline styles. You can override these flagging
+              styles if necessary using the following classes: </p>
+            <ul>
+              <li><codeph>.flag__style--bold</codeph></li>
+              <li><codeph>.flag__style--italics</codeph></li>
+              <li><codeph>.flag__style--overline</codeph></li>
+              <li><codeph>.flag__style--underline</codeph></li>
+              <li><codeph>.flag__style--double-underline</codeph></li>
+            </ul></li>
+        </ul>
+      </section>
+
+      <section id="enhancements">
+        <title>Enhancements and changes</title>
+        <indexterm/>
+        <p>DITA Open Toolkit Release 3.5 includes the following enhancements and changes to
+          existing features:</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
+        <ul>
+          <li id="3383">The Java code has been refactored to generate <codeph>xsl:message</codeph> output using methods
+            that are compatible with Saxon Enterprise Edition.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3383" format="html" scope="external">#3383</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3452" format="html" scope="external">#3452</xref>
+          </li>
+          <li id="3395">Handling for <msgph>UncheckedXPathException</msgph> errors has been improved to provide more
+            details on the source of the error including line and column information.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3395" format="html" scope="external">#3395</xref>
+          </li>
+          <li id="3425">The integration tests for the map-first preprocessing routine (<codeph>preprocess2</codeph>)
+            have been separated from the previous preprocessing tests, with dedicated results defined to evaluate the
+            compliance of map-first preprocessing with the expected output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3425" format="html" scope="external">#3425</xref>
+          </li>
+          <li id="3430">The HTML5 plug-in includes new attribute sets for link lists that make it easier for custom
+            plug-ins to add supplementary classes or other customizations without overriding entire templates. The
+            default output includes the same CSS classes as previous versions of DITA-OT (<codeph>relconcepts</codeph>,
+              <codeph>relinfo</codeph>, <codeph>relref</codeph>, <codeph>reltasks</codeph>), so existing customizations
+            that rely on these classes will behave as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3430" format="html" scope="external">#3430</xref>
+          </li>
+          <li id="3434">Various unused and deprecated Ant properties, list files, and targets have been removed from the
+            preprocessing configuration. Recent DITA-OT versions provide alternative mechanisms to achieve the same
+            results, such as the <xmlelement>ditafileset</xmlelement> element to select resources in the temporary
+            directory.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3434" format="html" scope="external">#3434</xref>
+          </li>
+          <li id="3442">The <codeph>org.dita.eclipsehelp</codeph> plugin, which is still bundled with DITA-OT, is now
+            installed from a separate repository.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3442" format="html" scope="external">#3442</xref>
+          </li>
+          <li id="3471">XSLT processing has been adjusted to use Saxon’s preferred Java API for XSLT, XQuery, XPath, and
+            XML Schema processing (S9API) directly instead of the JAXP wrapper used by previous versions of DITA-OT.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3471" format="html" scope="external">#3471</xref>
+          </li>
+          <li id="3473">Java code has been refactored to use a single instance of XML utilities during processing. This
+            approach allows other XML-related resources to be shared, including Saxon processors and name pools.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3473" format="html" scope="external">#3473</xref>
+          </li>
+        </ul>
+      </section>
+
+      <section id="bugs">
+        <title>Bugs</title>
+        <indexterm/>
+        <p>DITA Open Toolkit Release 3.5 provides fixes for the following bugs:</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.5+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
+        <ul>
+          <li id="1899">The DITA 1.x specification defines cascade behaviors for maps such that
+              <xmlelement>othermeta</xmlelement> and <xmlelement>source</xmlelement> do not cascade to child
+              <xmlelement>topicref</xmlelement> elements. In earlier releases the <codeph>mappull</codeph> stage of
+            processing pushed these to nested elements; that behavior is now corrected to match the specification.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/1899" format="html" scope="external">#1899</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3326" format="html" scope="external">#3326</xref></li>
+          <li id="3232">When <xmlelement>coderef</xmlelement> elements imported code samples with key references via the
+              <xmlatt>keyref</xmlatt> attribute, earlier versions of DITA-OT appended the (temporary) file name of the
+            referenced code sample to the last line of the parent <xmlelement>codeblock</xmlelement> element. Processing
+            has been corrected to ensure that code blocks contain only the referenced code samples.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3232" format="html" scope="external">#3232</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3496" format="html" scope="external">#3496</xref>
+          </li>
+          <li id="3429">To support
+            <xref href="#v3.5/3412">additional resources</xref>, the <codeph>mapref</codeph> preprocessing stage now
+            runs even if the input file is not a map. DITA-OT now checks whether maps with additional resources are
+            available, even if they are not specified as input files.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3429" format="html" scope="external">#3429</xref>
+          </li>
+          <li id="3484">In some earlier releases, a call to an empty stub template for table <xmlatt>summary</xmlatt>
+            attributes was dropped. Calls to that template have been restored, making it available for easy overrides.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3484" format="html" scope="external">#3484</xref>
+          </li>
+          <li id="3497">When key definitions with external scope were defined in maps in subdirectories, earlier
+            versions treated absolute paths beginning with slashes as relative paths, and prefixed the name of the
+            enclosing directory to the output path, resulting in broken links. Map reference processing has been
+            corrected to ensure that absolute paths are recognized as such and passed to the output as intended.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3497" format="html" scope="external">#3497</xref>
+          </li>
+          <li id="3498">If <xmlelement>term</xmlelement> elements pointed to missing topics using the
+              <xmlatt>keyref</xmlatt> attribute, earlier versions of DITA-OT would crash during the build process. An
+            additional check has been implemented to catch these cases, allowing the build to finish and report errors
+            for any unresolved term references.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3498" format="html" scope="external">#3498</xref>
+          </li>
+          <li id="3499">Earlier versions of DITA-OT stripped namespace declarations from <xmlelement>mathml</xmlelement>
+            and <xmlelement>svg</xmlelement> elements in topics based on RELAX NG syntax. Pre-processing has been
+            corrected to preserve the namespaces.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3499" format="html" scope="external">#3499</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3501" format="html" scope="external">#3501</xref>
+          </li>
+          <li id="3502">In HTML5 output, earlier versions of DITA-OT displayed the “Note” label when the
+              <xmlatt>type</xmlatt> attribute of a <xmlelement>note</xmlelement> element was set to
+              <codeph>notice</codeph>. Processing has been updated to ensure that the “Notice” label is correctly
+            applied.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3502" format="html" scope="external">#3502</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3503" format="html" scope="external">#3503</xref>
+          </li>
+          <li id="3505">In previous releases, when <xmlelement>chunk</xmlelement> was used to combine a branch of
+            content, and a file within that branch was missing or invalid, processing within the chunk module could fail
+            with a NullPointerException. This condition has been fixed, and processing will continue without the missing
+            file.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3505" format="html" scope="external">#3505</xref>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contrib">
+        <title>Contributors</title>
+        <p>DITA Open Toolkit Release 3.5 includes
+          <xref keyref="contributions"/> by the following people:</p>
+        <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 3.4..` -->
+        <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
+        <ol>
+          <li>Jarno Elovirta</li>
+          <li>Robert D Anderson</li>
+          <li>Radu Coravu</li>
+          <li>Roger Sheen</li>
+          <li>Lionel Moizeau</li>
+          <li>Stefan Weil</li>
+        </ol>
+        <p>For the complete list of changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.4...3.5" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+
+      <section id="docs">
+        <title>Documentation updates</title>
+        <p>The documentation for DITA Open Toolkit Release 3.5 provides corrections and
+          improvements to existing topics, along with new information in the following topics:</p>
+        <ul>
+          <li>
+            <xref keyref="dita-command-arguments"/></li>
+          <li>
+            <xref keyref="plugins-installing"/></li>
+          <li>
+            <xref keyref="plugins-removing"/></li>
+          <li>
+            <xref keyref="migrating-to-3.5"/></li>
+          <li>
+            <xref keyref="dita-v2-0-support"/></li>
+        </ul>
+        <p>The topic hierarchy has been revised to promote information on common customization scenarios, including
+          <xref keyref="html-customization"/> and
+          <xref keyref="pdf-customization"/>, and how to extend the toolkit by
+          <xref keyref="adding-plugins"/> and
+          <xref keyref="custom-plugins"/>.</p>
+        <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
+            keyref="release"
+          />, see the
+          <xref
+            href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.5+is%3Aclosed"
+            format="html"
+            scope="external"
+          >
+            3.5 milestone</xref> in the documentation repository.</p>
+        <p>DITA Open Toolkit Release 3.5 includes
+          <xref keyref="docs-contributions"/> by the following people:</p>
+        <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>
+        <ol>
+          <li>Roger Sheen</li>
+          <li>Robert D Anderson</li>
+          <li>Jarno Elovirta</li>
+          <li>Shane Taylor</li>
+          <li>Lief Erickson</li>
+          <li>Heston Hoffman</li>
+        </ol>
+        <p>For the complete list of documentation changes since the previous release, see the
+          <xref href="https://github.com/dita-ot/docs/compare/3.4...3.5" format="html" scope="external">
+            changelog</xref>.</p>
+      </section>
+    </refbody>
+  </reference>
+</reference>

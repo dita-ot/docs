@@ -295,6 +295,19 @@
                 <indexterm><parmname>root-chunk-override</parmname></indexterm></indexterm>
             </pd>
           </plentry>
+          <plentry id="store-type">
+            <pt>
+              <parmname>store-type</parmname>
+            </pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/store-type.desc"/>
+            <pd conaction="pushafter">
+              <p>
+                <ph conkeyref="migrating-to-3.6/io-bound"/> For more information, see
+                <xref keyref="store-api"/>.</p>
+              <note type="important">Custom plug-ins that expect to find certain files on disk in the temporary
+                directory will not work with in-memory processing.</note>
+            </pd>
+          </plentry>
           <plentry id="transtype">
             <pt>
               <parmname>transtype</parmname>

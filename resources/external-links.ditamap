@@ -819,6 +819,16 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="gitbook"
+      href="https://www.gitbook.com"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>GitBook</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="gradle-daemon"
       href="https://docs.gradle.org/current/userguide/gradle_daemon.html"
       scope="external"
@@ -856,6 +866,16 @@
     >
       <topicmeta>
         <linktext>Markdown</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="mdbook"
+      href="https://rust-lang.github.io/mdBook/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>mdBook</linktext>
       </topicmeta>
     </keydef>
     <keydef

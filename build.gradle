@@ -96,6 +96,8 @@ task html(type: DitaOtTask, dependsOn: autoGenerate) {
 
     properties {
         property(file: "${projectDir}/samples/properties/docs-build-html5.properties")
+        property(name: 'args.cssroot', value: "${projectDir}/resources/")
+        property(name: 'args.hdr', value: "${projectDir}/resources/header.xml")
     }
 }
 

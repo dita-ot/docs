@@ -84,7 +84,11 @@ task pdf(type: DitaOtTask, dependsOn: autoGenerate) {
     filter "${projectDir}/resources/pdf.ditaval"
 
     properties {
-        property(file: "${projectDir}/samples/properties/docs-build-pdf.properties")
+        property(name: 'args.chapter.layout', value: 'BASIC')
+        property(name: 'args.gen.task.lbl', value: 'YES')
+        property(name: 'include.rellinks', value: 'friend')
+        property(name: 'outputFile.base', value: 'userguide')
+        property(name: 'processing-mode', value: 'strict')
     }
 }
 
@@ -95,9 +99,15 @@ task html(type: DitaOtTask, dependsOn: autoGenerate) {
     filter "${projectDir}/resources/html.ditaval"
 
     properties {
-        property(file: "${projectDir}/samples/properties/docs-build-html5.properties")
+        property(name: 'args.copycss', value: 'yes')
+        property(name: 'args.css', value: 'dita-ot-doc.css')
+        property(name: 'args.csspath', value: 'css')
         property(name: 'args.cssroot', value: "${projectDir}/resources/")
+        property(name: 'args.gen.task.lbl', value: 'YES')
         property(name: 'args.hdr', value: "${projectDir}/resources/header.xml")
+        property(name: 'html5.toc.generate', value: 'no')
+        property(name: 'nav-toc', value: 'partial')
+        property(name: 'processing-mode', value: 'strict')
     }
 }
 
@@ -108,7 +118,12 @@ task htmlhelp(type: DitaOtTask, dependsOn: autoGenerate) {
     filter ditavalFile
 
     properties {
-        property(file: "${projectDir}/samples/properties/docs-build-htmlhelp.properties")
+        property(name: 'args.copycss', value: 'yes')
+        property(name: 'args.css', value: 'dita-ot-doc.css')
+        property(name: 'args.csspath', value: 'css')
+        property(name: 'args.cssroot', value: "${projectDir}/resources/")
+        property(name: 'args.gen.task.lbl', value: 'YES')
+        property(name: 'processing-mode', value: 'strict')
     }
 
     doLast {

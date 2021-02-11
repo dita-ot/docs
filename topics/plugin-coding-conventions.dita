@@ -208,6 +208,12 @@
         </tgroup>
       </table>
     </section>
+    <section id="section_lnf_gsh_p4b">
+      <title>Match elements with their <xmlatt>class</xmlatt> attribute</title>
+      <p>Use the <xmlatt>class</xmlatt> attribute to match elements in XPATH expression instead of element name. </p>
+      <p>For example, instead of:<codeblock>&lt;xsl:template match="p"/></codeblock></p>
+      <p>use:<codeblock>&lt;xsl:template match="*[contains(@class,' topic/p ')]"/></codeblock></p>
+    </section>
 
     <section conkeyref="reusable-components/validating-plugins"/>
 

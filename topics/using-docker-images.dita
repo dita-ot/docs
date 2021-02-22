@@ -69,9 +69,7 @@
             <cmdname>dita</cmdname> command.</cmd>
         <stepxmp>
           <codeblock outputclass="syntax-bash">$ <cmdname>docker</cmdname> run -it \
-  -v /Users/<varname>username</varname>/source:/src ghcr.io/dita-ot/dita-ot:<keyword
-              keyref="maintenance-version"
-            /> \
+  -v /Users/<varname>username</varname>/source:/src ghcr.io/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> \
   -i /src/input.ditamap \
   -o /src/out \
   -f html5 -v</codeblock>

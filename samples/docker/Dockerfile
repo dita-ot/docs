@@ -1,4 +1,4 @@
-# Use the latest official DITA-OT image as parent:   ↓
+# Use the latest DITA-OT image ↓ as parent:
 FROM ghcr.io/dita-ot/dita-ot:3.6
 
 # Install a custom plug-in from a remote location:

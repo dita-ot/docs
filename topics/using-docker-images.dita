@@ -33,12 +33,12 @@
         directories from the host machine.</p>
     </section>
     <prereq>
-      <p>To run the DITA-OT image, you will need to install Docker and log in to the GitHub Package Registry.
+      <p>To run the DITA-OT image, you will need to install Docker and be able to access the GitHub Container Registry.
         <ul>
           <li>To download Docker Desktop, you may be prompted to sign in with your Docker ID (or sign up to create
             one).</li>
-          <li>To retrieve docker images from the GitHub Package Registry, you will also need a GitHub account.</li>
-        </ul></p>
+        </ul>
+      </p>
     </prereq>
     <steps outputclass="multi-platform">
       <step>
@@ -65,44 +65,11 @@
         </choices>
       </step>
       <step>
-        <cmd>Log in to the GitHub Package Registry.</cmd>
-        <substeps>
-          <substep>
-            <cmd>In your
-              <xref href="https://github.com/settings/tokens" format="html" scope="external">GitHub profile
-                settings</xref>, create a new personal access token with the <codeph>read:packages</codeph> and
-                <codeph>repo</codeph> scopes.</cmd>
-            <info>For more information, see
-              <xref
-                href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line"
-                scope="external"
-                format="html"
-              >Creating a personal access token for the command line</xref>.</info>
-          </substep>
-          <substep>
-            <cmd>On the command line, run the <cmdname>docker</cmdname> command to log in with your GitHub
-              credentials.</cmd>
-            <stepxmp>
-              <codeblock outputclass="syntax-bash"><cmdname>docker</cmdname> login docker.pkg.github.com -u <varname
-                >USERNAME</varname> -p <varname>PASSWORD/TOKEN</varname></codeblock>
-            </stepxmp>
-            <info>For more information, see
-              <xref
-                href="https://help.github.com/en/articles/configuring-docker-for-use-with-github-package-registry#authenticating-to-github-package-registry"
-                scope="external"
-                format="html"
-              >Authenticating to GitHub Package Registry</xref>.</info>
-          </substep>
-        </substeps>
-      </step>
-      <step>
         <cmd>To build output, map a host directory to a container volume and specify options for the
             <cmdname>dita</cmdname> command.</cmd>
         <stepxmp>
           <codeblock outputclass="syntax-bash">$ <cmdname>docker</cmdname> run -it \
-  -v /Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword
-              keyref="maintenance-version"
-            /> \
+  -v /Users/<varname>username</varname>/source:/src ghcr.io/dita-ot/dita-ot:<keyword keyref="maintenance-version"/> \
   -i /src/input.ditamap \
   -o /src/out \
   -f html5 -v</codeblock>

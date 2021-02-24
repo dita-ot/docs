@@ -114,8 +114,7 @@
             <pd conaction="mark" conref="parameters-base.dita#base/args.input.desc"/>
             <pd conaction="pushafter">Typically this is a DITA map, however it also can be a DITA topic if you want to
               transform a single DITA file. The path can be absolute, relative to <parmname>args.input.dir</parmname>,
-              or relative to the directory where your project’s Ant build script resides if
-                <parmname>args.input.dir</parmname> is not defined. </pd>
+              or relative to the current directory if <parmname>args.input.dir</parmname> is not defined. </pd>
           </plentry>
           <plentry id="args.rellinks">
             <pt><parmname>args.rellinks</parmname></pt>
@@ -248,7 +247,7 @@
             <pd conaction="pushafter">
               <note type="warning" platform="windows">Microsoft HTML Help Compiler cannot produce HTML Help for
                 documentation projects that use outer content. The content files must reside in or below the directory
-                containing the master DITA map file, and the map file cannot specify ".." at the start of the
+                containing the root map file, and the map file cannot specify ".." at the start of the
                   <xmlatt>href</xmlatt> attributes for <xmlelement>topicref</xmlelement> elements.
                 <indexterm><xmlelement>topicref</xmlelement></indexterm>
                 <indexterm><xmlatt>href</xmlatt></indexterm>

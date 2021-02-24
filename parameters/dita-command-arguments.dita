@@ -127,7 +127,7 @@
             <parmname>-i</parmname>
             <varname>file</varname>
           </pt>
-          <pd id="args.input.desc">Specifies the master file for your documentation project. This argument corresponds
+          <pd id="args.input.desc">Specifies the main file for your documentation project. This argument corresponds
             to the common parameter <parmname>args.input</parmname>. Typically this is a DITA map, however it also can
             be a DITA topic if you want to transform a single DITA file. The path can be absolute, relative to
               <parmname>args.input.dir</parmname>, or relative to the current directory if
@@ -367,7 +367,8 @@
             the console when the final transformation is complete.
             <codeblock outputclass="syntax-bash multi-platform">$ <cmdname>dita</cmdname> <parmname
               >--input</parmname>=<filepath>docsrc/samples/sequence.ditamap</filepath> <parmname
-              >--format</parmname>=<option>html5</option> <parmname>--repeat</parmname>=<option>5</option>
+              >--format</parmname>=<option>html5</option> \
+       <parmname>--repeat</parmname>=<option>5</option>
 1 11281ms
 2 4132ms
 3 3690ms

@@ -1,0 +1,19 @@
+name: CI
+'on':
+  push:
+    branches:
+      - master
+jobs:
+  build-dita:
+    name: Build DITA
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Build HTML5 using DITA-OT
+        uses: dita-ot/dita-ot-action@master
+        with:
+          install: install.sh # This is a script in the root of the repository
+          input: document.ditamap
+          transtype: html5
+          output-path: out

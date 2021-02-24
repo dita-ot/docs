@@ -8,7 +8,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> includes <ph conref="#v3.6/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v3.6/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -24,6 +25,73 @@
     </refbody>
   </reference>
 
+  <reference id="v3.6.1" outputclass="mark">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">(release date)</ph>-->
+    </title>
+    
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <li id="3656">DITA OT 3.6 - NullPointerException in custom ANT target using xslt pipeline
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3656" format="html" scope="external">#3656</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3657" format="html" scope="external">#3657</xref>
+          </li>
+          <li id="3659">Compile CSS with Dart Sass via sass-gradle-plugin
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3659" format="html" scope="external">#3659</xref>
+          </li>
+          <li id="3667">NPE at org.dita.dost.Processor.run(Processor.java:228) Fix calling unset logger
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3667" format="html" scope="external">#3667</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3706" format="html" scope="external">#3706</xref>
+          </li>
+          <li id="3669">Update DOTX037W warning message
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3669" format="html" scope="external">#3669</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3670" format="html" scope="external">#3670</xref>
+          </li>
+          <li id="3677">URI is not hierarchical exception with email reference (DITA OT 3.6) #3677 Take into account URI
+            may not be file when checking its existence
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3677" format="html" scope="external">#3677</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3698" format="html" scope="external">#3698</xref>
+          </li>
+          <li id="3680">Transformation fails with "URI has a fragment component" when calling a &lt;mapref> with a
+            &lt;ditavalref>, Transform URIs which might have anchor
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3680" format="html" scope="external">#3680</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3696" format="html" scope="external">#3696</xref>
+          </li>
+          <li id="3687">Absolute location is not properly computed when merging maps with store-type memory, Properly
+            compute absolute locations in merge map and topic parsers
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3687" format="html" scope="external">#3687</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3699" format="html" scope="external">#3699</xref>
+          </li>
+          <li id="3688">PDF2 custom font mappings are not respected anymore Fix resolution of custom resources in PDF
+            pre processor task
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3688" format="html" scope="external">#3688</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3695" format="html" scope="external">#3695</xref>
+          </li>
+          <li id="3689">The "result.rewrite-rule.xsl" clean preprocessing extension does not work anymore Use sax source
+            directly instead of toString() representation
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3689" format="html" scope="external">#3689</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3697" format="html" scope="external">#3697</xref>
+          </li>
+          <li id="3694">Two-level keyrefs (keyref -> keyref -> keydef) no longer resolve properly. Fix copy of topicmeta
+            between keydef and keyref
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3694" format="html" scope="external">#3694</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3701" format="html" scope="external">#3701</xref>
+          </li>
+        </ul>
+        <!-- TODO: Describe Docker container changes & docs updates -->
+        <!-- <p>The documentation for DITA Open Toolkit Release 3.1 provides corrections and improvements to existing topics,
+          along with new information in the following topics:</p>-->
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6.1+is%3Aclosed" format="html"
+            scope="external">3.6.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.6...3.6.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
   <reference id="v3.6">
     <title>DITA-OT <keyword keyref="release"/>
       <ph outputclass="small text-muted">released December 19, 2020</ph>

@@ -43,7 +43,7 @@
         <cmd>In the <codeph
           >.github/workflows/</codeph> directory, create a new file called dita-ot-build-actions.yml and add the following code.</cmd>
           <stepxmp>
-          <codeblock outputclass="syntax-yaml">name: CI
+          <codeblock outputclass="language-yaml">name: CI
 'on':
   push:
     branches:

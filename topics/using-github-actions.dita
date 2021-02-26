@@ -43,19 +43,7 @@
         <cmd>In the <codeph
           >.github/workflows/</codeph> directory, create a new file called dita-ot-build-actions.yml and add the following code.</cmd>
           <stepxmp>
-          <codeblock outputclass="language-yaml">name: CI
-'on':
-  push:
-    branches:
-      - master
-jobs:
-  build-dita:
-    name: Build DITA
-    runs-on: ubuntu-latest
-    steps:
-      - name: Git checkout
-        uses: actions/checkout@v2
-          </codeblock>
+          <codeblock outputclass="language-yaml" href="../samples/github_action/minimal-action.yaml#line=1,12"/>
         </stepxmp>
         <info>This setup ensures the action runs whenever code is updated on the <codeph>master</codeph> branch and
         checks out the codebase.</info>
@@ -63,12 +51,7 @@ jobs:
       <step>
         <cmd>In the same file add the following code.</cmd>
         <stepxmp>
-          <codeblock outputclass="syntax-yaml"> - name: Build HTML5 using DITA-OT
-  uses: dita-ot/dita-ot-action@master
-  with:
-      input: document.ditamap
-      transtype: html5
-      output-path: out</codeblock>
+          <codeblock outputclass="syntax-yaml" href="../samples/github_action/minimal-action.yaml#line=13,18"/>
           <p>This action specifies the following:
             <ul>
               <li><parmname

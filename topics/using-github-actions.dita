@@ -57,8 +57,8 @@ jobs:
         uses: actions/checkout@v2
           </codeblock>
         </stepxmp>
-        <p>This setup ensures the action runs whenever code is updated on the <codeph>master</codeph> branch and
-        checks out the codebase.</p>
+        <info>This setup ensures the action runs whenever code is updated on the <codeph>master</codeph> branch and
+        checks out the codebase.</info>
       </step>
       <step>
         <cmd>In the same file add the following code.</cmd>

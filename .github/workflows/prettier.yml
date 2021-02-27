@@ -20,9 +20,11 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Prettify code
-        uses: infotexture/prettier_xml_action@v3.1.x
+        uses: creyD/prettier_action@v3.3
         with:
           # This part is also where you can pass other options, for example:
           prettier_options: --write **/*.{css,dita*,json,md,scss,xml,yaml,yml}
+          # Install Prettier XML plugin
+          prettier_plugins: @prettier/plugin-xml
           # Runs the action in dry mode. Files wont get changed and the action fails if there are unprettified files.
           dry: true

@@ -1,0 +1,21 @@
+name: CI
+'on':
+  push:
+    branches:
+      - master
+jobs:
+  build-dita:
+    name: Build DITA
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Build PDF using DITA-OT commands
+        uses: dita-ot/dita-ot-action@master
+        with:
+          install: |
+            dita install fox.jason.extend.css
+            dita install org.doctales.xmltask
+            dita install fox.jason.prismjs
+          build: |
+            dita -i document.ditamap -o out -f pdf --filter=filter1.ditaval

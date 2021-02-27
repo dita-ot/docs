@@ -1,0 +1,20 @@
+name: CI
+'on':
+  push:
+    branches:
+      - master
+jobs:
+  build-dita:
+    name: Build DITA
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Build HTML5 + Bootstrap
+        uses: dita-ot/dita-ot-action@master
+        with:
+          plugins: |
+            net.infotexture.dita-bootstrap
+            org.doctales.xmltask
+          input: document.ditamap
+          transtype: html5-bootstrap

@@ -43,15 +43,19 @@
         <cmd>In the <codeph
           >.github/workflows/</codeph> directory, create a new file called dita-ot-build-actions.yml and add the following code.</cmd>
           <stepxmp>
-          <codeblock outputclass="language-yaml" href="../samples/github_action/minimal-action.yaml#line=1,12"/>
-        </stepxmp>
+          <codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              href="../samples/github_action/minimal-action.yaml#line-range(1,12)"
+            /></codeblock>
+          </stepxmp>
         <info>This setup ensures the action runs whenever code is updated on the <codeph>master</codeph> branch and
         checks out the codebase.</info>
       </step>
       <step>
         <cmd>In the same file add the following code.</cmd>
         <stepxmp>
-          <codeblock outputclass="language-yaml" href="../samples/github_action/minimal-action.yaml#line=13,18"/>
+          <codeblock outputclass="language-yaml show-whitespace"><coderef
+              href="../samples/github_action/minimal-action.yaml#line-range(13,18)"
+            /></codeblock>
           <p>This action specifies the following:
             <ul>
               <li><parmname

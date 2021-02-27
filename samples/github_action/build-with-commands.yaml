@@ -18,4 +18,4 @@ jobs:
             dita install org.doctales.xmltask
             dita install fox.jason.prismjs
           build: |
-            dita -i document.ditamap -o out  -f pdf --filter=filter1.ditaval
+            dita -i document.ditamap -o out -f pdf --filter=filter1.ditaval

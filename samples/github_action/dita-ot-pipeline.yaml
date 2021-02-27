@@ -34,7 +34,7 @@ jobs:
             dita install fox.jason.prismjs
           build: |
             # Use the dita command line
-            dita -i document.ditamap -o out  -f pdf --filter=filter1.ditaval
+            dita -i document.ditamap -o out -f pdf --filter=filter1.ditaval
 
       - name: Upload DITA Output to a ZIP file
         uses: actions/upload-artifact@v2

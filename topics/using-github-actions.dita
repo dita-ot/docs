@@ -45,7 +45,7 @@
             <filepath>dita-ot-build-actions.yml</filepath> and add the following code.</cmd>
           <stepxmp>
           <codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
-              href="../samples/github_action/minimal-action.yaml#line-range(1,12)"
+              href="../samples/github-actions/minimal-action.yaml#line-range(1,12)"
             /></codeblock>
           </stepxmp>
         <info>This setup ensures the action runs whenever code is updated on the <codeph>master</codeph> branch and
@@ -55,7 +55,7 @@
         <cmd>In the same file, add the following code.</cmd>
         <stepxmp>
           <codeblock outputclass="language-yaml show-whitespace"><coderef
-              href="../samples/github_action/minimal-action.yaml#line-range(13,18)"
+              href="../samples/github-actions/minimal-action.yaml#line-range(13,18)"
             /></codeblock>
           <p>This action specifies the following:
             <ul>
@@ -78,9 +78,9 @@
         examples. The following GitHub Action generates styled HTML and PDF outputs.</p>
       <fig>
         <title>Sample GitHub Action: <filepath conkeyref="conref-task/samples-dir"/><filepath
-          >/github_action/dita-ot-pipeline.yaml</filepath></title>
+          >/github-actions/dita-ot-pipeline.yaml</filepath></title>
         <codeblock outputclass="language-yaml normalize-space show-line-numbers show-whitespace"><coderef
-            href="../samples/github_action/dita-ot-pipeline.yaml"
+            href="../samples/github-actions/dita-ot-pipeline.yaml"
           /></codeblock>
       </fig>
       <p>The <cite>Build HTML5 + Bootstrap</cite> step reuses the <parmname>input</parmname>,
@@ -91,7 +91,7 @@
       <p>The <cite>Build PDF</cite> step uses an alternative syntax where the <parmname>install</parmname> and
           <parmname>build</parmname> parameters are used to run arbitrary commands from the command line.</p>
     </example>
-    <postreq>See the <filepath>docsrc/samples/github_action</filepath> folder in the DITA-OT installation directory for
+    <postreq>See the <filepath>docsrc/samples/github-actions</filepath> folder in the DITA-OT installation directory for
       additional examples of GitHub Actions for different scenarios.</postreq>
   </taskbody>
 </task>

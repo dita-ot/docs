@@ -10,8 +10,8 @@
     <ph id="github-actions-desc">
       <xref keyref="github-actions"/> are a CI/CD workflow mechanism attached to GitHub. Each action is an individual
       unit of functionality that can be combined with other GitHub Actions to create workflows, which are triggered in
-      response to certain GitHub events. As of version 3.6, the DITA-OT project provides an official
-        <codeph>dita-ot-build</codeph> action that can be used as a step within a GitHub workflow to publish
+      response to certain GitHub events. As of version 3.6.1, the DITA-OT project provides an official
+      <xref keyref="dita-ot-action"/> that can be used as a step within a GitHub workflow to publish
       documentation as part of your CI/CD pipeline.</ph></shortdesc>
   <prolog>
     <metadata>

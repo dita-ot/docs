@@ -94,6 +94,14 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3694" format="html" scope="external">#3694</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3701" format="html" scope="external">#3701</xref>
           </li>
+          <li id="ghcr">The GitHub Packages Docker registry used to publish DITA-OT Docker images prior to version 3.6
+            has been superseded by the GitHub Container Registry. The new registry offers anonymous access to public
+            container images, so you can use it without a GitHub account. As of DITA-OT 3.6.1, the official image is
+            published to the new registry at <xref href="https://ghcr.io" format="html" scope="external">ghcr.io</xref>.
+            If you’ve pulled from <codeph>docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<varname>version</varname></codeph>
+            in the past, update your workflow to pull from
+            <codeph>ghcr.io/dita-ot/dita-ot:<varname>version</varname></codeph> instead.
+          </li>
         </ul>
         <!-- TODO: Describe Docker container changes & docs updates -->
         <!-- <p>The documentation for DITA Open Toolkit Release 3.1 provides corrections and improvements to existing topics,

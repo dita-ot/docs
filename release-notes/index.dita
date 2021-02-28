@@ -105,10 +105,20 @@
           <li id="gh-action">The DITA-OT project now provides an official
             <xref keyref="dita-ot-action"/> that can be used to publish documentation via
             <xref keyref="github-actions"/> whenever your source files are changed.</li>
+          <li id="docs"> The documentation for DITA Open Toolkit Release 3.6.1 provides corrections and improvements to
+            existing topics, along with new information in the following topics:
+            <ul>
+              <li>
+                <xref keyref="using-github-actions"/></li>
+              <li>
+                <xref keyref="using-docker-images"/></li>
+              <li>
+                <xref keyref="creating-docker-images"/></li>
+              <li>
+                <xref keyref="plugin-coding-conventions"/></li>
+            </ul>
+          </li>
         </ul>
-        <!-- TODO: Describe Docker container changes & docs updates -->
-        <!-- <p>The documentation for DITA Open Toolkit Release 3.1 provides corrections and improvements to existing topics,
-          along with new information in the following topics:</p>-->
         <p>For additional information on the issues resolved since the previous release, see the
           <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6.1+is%3Aclosed" format="html"
             scope="external">3.6.1 milestone</xref> and

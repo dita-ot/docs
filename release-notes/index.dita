@@ -102,6 +102,9 @@
             in the past, update your workflow to pull from
             <codeph>ghcr.io/dita-ot/dita-ot:<varname>version</varname></codeph> instead.
           </li>
+          <li id="gh-action">The DITA-OT project now provides an official
+            <xref keyref="dita-ot-action"/> that can be used to publish documentation via
+            <xref keyref="github-actions"/> whenever your source files are changed.</li>
         </ul>
         <!-- TODO: Describe Docker container changes & docs updates -->
         <!-- <p>The documentation for DITA Open Toolkit Release 3.1 provides corrections and improvements to existing topics,

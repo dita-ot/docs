@@ -60,7 +60,8 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3670" format="html" scope="external">#3670</xref>
           </li>
           <li id="3677">DITA-OT 3.6 failed with an IllegalArgumentException when maps contained topic references to
-            e-mail addresses. Processing has been updated to properly handle non-file references.
+            e-mail addresses or other peer resources that are not accessible at build time. Processing has been updated
+            to properly handle non-file references.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3677" format="html" scope="external">#3677</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3698" format="html" scope="external">#3698</xref>
           </li>

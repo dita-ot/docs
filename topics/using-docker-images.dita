@@ -88,7 +88,7 @@
             <p>On Windows, if your <filepath>Users</filepath> directory is on the <filepath>C:\</filepath> drive, use
               <filepath>/c/Users/…</filepath> to map the host directory:</p>
             <codeblock>> C:\Users\username> <cmdname>docker</cmdname> run -it ^
-  -v /c/Users/<varname>username</varname>/source:/src docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword
+  -v /c/Users/<varname>username</varname>/source:/src ghcr.io/dita-ot/dita-ot:<keyword
                 keyref="maintenance-version"
               /> ^
   -i /src/input.ditamap ^

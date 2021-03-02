@@ -98,7 +98,8 @@
             has been superseded by the GitHub Container Registry. The new registry offers anonymous access to public
             container images, so you can use it without a GitHub account. As of DITA-OT 3.6.1, the official image is
             published to the new registry at <xref href="https://ghcr.io" format="html" scope="external">ghcr.io</xref>.
-            If you’ve pulled from <codeph>docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<varname>version</varname></codeph>
+            If you’ve pulled from <codeph>docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<varname
+              >version</varname></codeph>
             in the past, update your workflow to pull from
             <codeph>ghcr.io/dita-ot/dita-ot:<varname>version</varname></codeph> instead.
           </li>
@@ -120,8 +121,11 @@
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
-          <xref href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6.1+is%3Aclosed" format="html"
-            scope="external">3.6.1 milestone</xref> and
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6.1+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.6.1 milestone</xref> and
           <xref href="https://github.com/dita-ot/dita-ot/compare/3.6...3.6.1" format="html" scope="external">
             changelog</xref> on GitHub.</p>
       </section>
@@ -141,8 +145,10 @@
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">performance enhancements such
-            as processing in parallel and in memory, support for PDF changebars with <tm trademark="Apache" tmtype="tm"
-              >Apache</tm> FOP, and an updated preview of features for the latest draft of the upcoming DITA 2.0
+            as processing in parallel and in memory, support for PDF changebars with <tm
+              trademark="Apache"
+              tmtype="tm"
+            >Apache</tm> FOP, and an updated preview of features for the latest draft of the upcoming DITA 2.0
             standard, including the <xmlelement>audio</xmlelement> and <xmlelement>video</xmlelement> elements, and the
             new emphasis domain</ph>.</p>
       </section>
@@ -166,11 +172,16 @@
             <p>A new <parmname>--repeat</parmname> option can be passed to the <cmdname>dita</cmdname> command to run
               the process a certain number of times. This option can be used by plug-in developers to measure
               performance. (Timings for the first transformation are often dominated by Java warm-up time.)
-              <xref href="https://github.com/dita-ot/dita-ot/issues/3616" format="html" scope="external"
+              <xref
+                href="https://github.com/dita-ot/dita-ot/issues/3616"
+                format="html"
+                scope="external"
               >#3616</xref></p>
             <p>To run a conversion five times, for example, use <parmname>--repeat</parmname>=<option>5</option>. The
               duration of each execution will appear in the console when the final transformation is complete.
-              <codeblock outputclass="syntax-bash multi-platform">$ <cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>docsrc/samples/sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option> <parmname>--repeat</parmname>=<option>5</option>
+              <codeblock outputclass="syntax-bash multi-platform">$ <cmdname>dita</cmdname> <parmname
+                >--input</parmname>=<filepath>docsrc/samples/sequence.ditamap</filepath> <parmname
+                >--format</parmname>=<option>html5</option> <parmname>--repeat</parmname>=<option>5</option>
 1 11281ms
 2 4132ms
 3 3690ms
@@ -437,9 +448,13 @@
             <xref keyref="dita-command-arguments"/></li>
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
-            keyref="release"/>, see the
-          <xref href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.6+is%3Aclosed" format="html"
-            scope="external"><keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
+            keyref="release"
+          />, see the
+          <xref
+            href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.6+is%3Aclosed"
+            format="html"
+            scope="external"
+          ><keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
           <xref keyref="docs-contributions"/> by the following people:</p>
         <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>

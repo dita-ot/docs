@@ -1,6 +1,9 @@
-name: Prettier CI
+# This workflow checks code formatting
+
+name: Run Prettier
 
 # This action works with pull requests and pushes
+
 on:
   pull_request:
   push:

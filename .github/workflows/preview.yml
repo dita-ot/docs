@@ -1,6 +1,6 @@
-# This workflow will build PR changes and push to website repo
+# This workflow builds PR changes and deploys to Netlify
 
-name: DITA-OT CI for website preview
+name: Generate website preview
 
 on:
   pull_request:

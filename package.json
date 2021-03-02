@@ -9,13 +9,10 @@
     "check": "prettier --check \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "fmt": "npm run format",
     "format": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
+    "lint-staged": "lint-staged",
     "prettier": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
-    "test": "prettier --list-different \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\""
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "test": "prettier --list-different \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{css,dita*,json,md,scss,xml,yaml,yml}": [
@@ -24,8 +21,8 @@
   },
   "devDependencies": {
     "@prettier/plugin-xml": "0.13.0",
-    "husky": "4.3.8",
-    "lint-staged": "10.5.3",
+    "husky": "^5.1.2",
+    "lint-staged": "10.5.4",
     "prettier": "2.2.1"
   }
 }

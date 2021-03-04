@@ -208,6 +208,17 @@
         </tgroup>
       </table>
     </section>
+    <section id="match-classes">
+      <title>Match elements with their <xmlatt>class</xmlatt> attribute</title>
+      <p>Use <xmlatt>class</xmlatt> attributes to match elements in XPATH expressions instead of element names.</p>
+      <p>For example, instead of: <codeblock>&lt;xsl:template match="p"/></codeblock></p>
+      <p>use: <codeblock>&lt;xsl:template match="*[contains(@class,' topic/p ')]"/></codeblock></p>
+      <p>Specialization-aware processing uses these classes to distinguish the general class of elements to which the
+        current element belongs.</p>
+      <note type="tip">Matching classes instead of elements ensures that the expression also applies to any specialized
+        elements as well as to their more general ancestors. This means you can define new markup without necessarily
+        requiring new processing rules.</note>
+    </section>
 
     <section conkeyref="reusable-components/validating-plugins"/>
 

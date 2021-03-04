@@ -60,6 +60,16 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="dita-ot-action"
+      href="https://github.com/dita-ot/dita-ot-action"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext><codeph>dita-ot-action</codeph></linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="dita-ot-gradle"
       href="https://github.com/eerohele/dita-ot-gradle"
       scope="external"
@@ -491,8 +501,8 @@
       <keydef
         keys="dita13-spec-conaction"
         href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/langRef/attributes/theconactionattribute.html"
-        format="html"
         scope="external"
+        format="html"
       >
         <topicmeta>
           <linktext>DITA 1.3 specification: The <xmlatt
@@ -502,8 +512,8 @@
       <keydef
         keys="dita13-spec-profile-groups"
         href="http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part1-base/archSpec/base/usage-of-conditional-processing-attributes.html"
-        format="html"
         scope="external"
+        format="html"
       >
         <topicmeta>
           <linktext
@@ -513,8 +523,8 @@
       <keydef
         keys="dita13-spec-revprop"
         href="http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/langRef/ditaval/ditaval-revprop.html#ditaval-revprop"
-        format="html"
         scope="external"
+        format="html"
       >
         <topicmeta>
           <linktext>DITA 1.3 specification: The <xmlelement
@@ -556,8 +566,8 @@
       <keydef
         keys="dita12-spec-chunking"
         href="http://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/chunking.html"
-        format="html"
         scope="external"
+        format="html"
       >
         <topicmeta>
           <linktext>Chunking definition in the DITA 1.2 specification</linktext>
@@ -566,8 +576,8 @@
       <keydef
         keys="dita12-spec-l10n"
         href="http://docs.oasis-open.org/dita/v1.2/os/spec/archSpec/translation.html"
-        format="html"
         scope="external"
+        format="html"
       >
         <topicmeta>
           <linktext>Localization overview in the OASIS DITA standard</linktext>
@@ -577,8 +587,8 @@
     <keydef
       keys="dublin-core"
       href="https://dublincore.org/specifications/dublin-core/dcmi-terms"
-      format="html"
       scope="external"
+      format="html"
     >
       <topicmeta>
         <linktext>Dublin Core Metadata Element Set</linktext>
@@ -613,9 +623,9 @@
     </topicset>
     <keydef
       keys="fo-spec.change-bar-begin"
+      href="http://www.w3.org/TR/xsl/#fo_change-bar-begin"
       scope="external"
       format="html"
-      href="http://www.w3.org/TR/xsl/#fo_change-bar-begin"
     >
       <topicmeta>
         <linktext>XSL-FO fo:change-bar-begin element</linktext>
@@ -623,9 +633,9 @@
     </keydef>
     <keydef
       keys="fo-spec.change-bar-style"
+      href="http://www.w3.org/TR/xsl/#change-bar-style"
       scope="external"
       format="html"
-      href="http://www.w3.org/TR/xsl/#change-bar-style"
     >
       <topicmeta>
         <linktext>@change-bar-style</linktext>
@@ -749,13 +759,13 @@
       </topicmeta>
     </keydef>
     <keydef
-      keys="dita-tc"
-      href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita"
-      format="html"
+      keys="commonmark"
+      href="http://commonmark.org"
       scope="external"
+      format="html"
     >
       <topicmeta>
-        <linktext>OASIS DITA Technical Committee</linktext>
+        <linktext>CommonMark</linktext>
       </topicmeta>
     </keydef>
     <keydef
@@ -769,13 +779,13 @@
       </topicmeta>
     </keydef>
     <keydef
-      keys="eclipse-website"
-      href="http://www.eclipse.org"
+      keys="dita-tc"
+      href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita"
       scope="external"
       format="html"
     >
       <topicmeta>
-        <linktext>Official Eclipse website</linktext>
+        <linktext>OASIS DITA Technical Committee</linktext>
       </topicmeta>
     </keydef>
     <keydef
@@ -789,43 +799,13 @@
       </topicmeta>
     </keydef>
     <keydef
-      keys="sass-lang"
-      href="http://sass-lang.com"
+      keys="eclipse-website"
+      href="http://www.eclipse.org"
       scope="external"
       format="html"
     >
       <topicmeta>
-        <linktext>Sass</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef
-      keys="jelovirt-on-pdf2-i18n"
-      href="http://www.elovirta.com/2016/02/18/font-configuration-in-pdf2.html"
-      scope="external"
-      format="html"
-    >
-      <topicmeta>
-        <linktext>Font configuration in PDF2</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef
-      keys="markdown"
-      href="https://daringfireball.net/projects/markdown/"
-      scope="external"
-      format="html"
-    >
-      <topicmeta>
-        <linktext>Markdown</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef
-      keys="commonmark"
-      href="http://commonmark.org"
-      scope="external"
-      format="html"
-    >
-      <topicmeta>
-        <linktext>CommonMark</linktext>
+        <linktext>Official Eclipse website</linktext>
       </topicmeta>
     </keydef>
     <keydef
@@ -839,16 +819,6 @@
       </topicmeta>
     </keydef>
     <keydef
-      keys="semver"
-      href="https://semver.org"
-      scope="external"
-      format="html"
-    >
-      <topicmeta>
-        <linktext>semantic versioning</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef
       keys="gradle"
       href="https://gradle.org"
       scope="external"
@@ -856,6 +826,16 @@
     >
       <topicmeta>
         <linktext>Gradle</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="gitbook"
+      href="https://www.gitbook.com"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>GitBook</linktext>
       </topicmeta>
     </keydef>
     <keydef
@@ -879,6 +859,36 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="jelovirt-on-pdf2-i18n"
+      href="http://www.elovirta.com/2016/02/18/font-configuration-in-pdf2.html"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Font configuration in PDF2</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="markdown"
+      href="https://daringfireball.net/projects/markdown/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Markdown</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="mdbook"
+      href="https://rust-lang.github.io/mdBook/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>mdBook</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="noto-sans-font"
       href="https://fonts.google.com/specimen/Noto+Sans"
       scope="external"
@@ -886,36 +896,6 @@
     >
       <topicmeta>
         <linktext>Noto Sans</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef
-      keys="saxon-java-extensions-impl"
-      href="http://www.saxonica.com/html/documentation9.8/extensibility/integratedfunctions"
-      scope="external"
-      format="html"
-    >
-      <topicmeta>
-        <linktext>Integrated extension functions</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef
-      keys="site-plugin-registry"
-      href="https://www.dita-ot.org/plugins"
-      scope="external"
-      format="html"
-    >
-      <topicmeta>
-        <linktext>dita-ot.org/plugins</linktext>
-      </topicmeta>
-    </keydef>
-    <keydef
-      keys="signoff"
-      href="https://www.dita-ot.org/DCO"
-      scope="external"
-      format="html"
-    >
-      <topicmeta>
-        <linktext>signing your work</linktext>
       </topicmeta>
     </keydef>
     <keydef
@@ -936,6 +916,66 @@
     >
       <topicmeta>
         <linktext>prism.js</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="sass-lang"
+      href="http://sass-lang.com"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Sass</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="saxon-java-extensions-impl"
+      href="http://www.saxonica.com/html/documentation9.8/extensibility/integratedfunctions"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Integrated extension functions</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="semver"
+      href="https://semver.org"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>semantic versioning</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="signoff"
+      href="https://www.dita-ot.org/DCO"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>signing your work</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="site-plugin-registry"
+      href="https://www.dita-ot.org/plugins"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>dita-ot.org/plugins</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="github-actions"
+      href="https://github.com/features/actions"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>GitHub Actions</linktext>
       </topicmeta>
     </keydef>
   </topicset>

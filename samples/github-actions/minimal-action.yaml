@@ -1,0 +1,18 @@
+name: CI
+'on':
+  push:
+    branches:
+      - master
+jobs:
+  build-dita:
+    name: Build DITA
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Build PDF
+        uses: dita-ot/dita-ot-action@master
+        with:
+          input: document.ditamap
+          transtype: pdf
+          output-path: out

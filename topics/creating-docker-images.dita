@@ -27,7 +27,7 @@
         <cmd>Create a new <filepath>Dockerfile</filepath> and specify the official DITA-OT image in the
             <filepath>FROM</filepath> directive.</cmd>
         <stepxmp>
-          <codeblock outputclass="language-dockerfile normalize-space show-line-numbers show-whitespace"><coderef
+          <codeblock outputclass="language-dockerfile normalize-space show-whitespace"><coderef
               href="../samples/docker/Dockerfile#line-range(1,2)"
             /></codeblock>
         </stepxmp>
@@ -37,7 +37,7 @@
           command from the container to install a custom plug-in, and specify the filename or URL of the plug-in’s
           distribution ZIP file.</cmd>
         <stepxmp>
-          <codeblock outputclass="language-dockerfile normalize-space show-line-numbers show-whitespace"><coderef
+          <codeblock outputclass="language-dockerfile normalize-space show-whitespace"><coderef
               href="../samples/docker/Dockerfile#line-range(4,5)"
             /></codeblock>
         </stepxmp>
@@ -46,7 +46,7 @@
         <cmd>You can also install custom plug-ins from the main DITA-OT plug-in registry at
           <xref keyref="site-plugin-registry"/>, or from your company plug-in registry.</cmd>
         <stepxmp>
-          <codeblock outputclass="language-dockerfile normalize-space show-line-numbers show-whitespace"><coderef
+          <codeblock outputclass="language-dockerfile normalize-space show-whitespace"><coderef
               href="../samples/docker/Dockerfile#line-range(7,8)"
             /></codeblock>
         </stepxmp>
@@ -70,7 +70,7 @@
         /> directory:</p>
       <codeblock outputclass="syntax-bash">$ <cmdname>docker</cmdname> image build -t sample-docker-image:1.0 .
 Sending build context to Docker daemon  2.048kB
-Step 1/3 : FROM docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<keyword keyref="maintenance-version"/>
+Step 1/3 : FROM ghcr.io/dita-ot/dita-ot:<keyword keyref="maintenance-version"/>
  ---> 9abb96827538
 Step 2/3 : RUN dita --install https://github.com/infotexture/dita-bootstrap/archive/3.4.1.zip
  ---> Running in d510f874cae0

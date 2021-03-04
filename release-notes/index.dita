@@ -8,7 +8,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> includes <ph conref="#v3.6/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v3.6/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -24,6 +25,112 @@
     </refbody>
   </reference>
 
+  <reference id="v3.6.1" outputclass="mark">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">(release date)</ph>-->
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <li id="3656">In DITA-OT 3.6, builds failed with a NullPointerException when Ant targets in custom
+              <xmlelement>pipeline</xmlelement> elements were run without passing references to the new Ant project by
+            setting the <xmlatt>inheritRefs</xmlatt> attribute on the <xmlelement>antcall</xmlelement> to
+              <codeph>true</codeph>. This case will no longer cause the build to fail, but custom plug-ins should still
+            set targets to inherit references to ensure that processing runs as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3656" format="html" scope="external">#3656</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3657" format="html" scope="external">#3657</xref>
+          </li>
+          <li id="3659">The <codeph>jsass</codeph> compiler used in the HTML5 plug-in build process up to DITA-OT 3.6
+            relied on LibSass, which has been deprecated in favor of Dart Sass and caused errors when building on the
+            64-bit extension of the ARM architecture. The SCSS source files are now converted to CSS using the official
+            Dart Sass compiler, which allows DITA-OT distribution builds to run on recent Macs and other ARM systems.
+            <xref format="html" href="https://github.com/dita-ot/dita-ot/issues/3659" scope="external">#3659</xref>
+          </li>
+          <li id="3667">In DITA-OT 3.6, builds failed with a NullPointerException when an unset logger was called. A new
+            guard has been added to handle these cases more gracefully.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3667" format="html" scope="external">#3667</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3706" format="html" scope="external">#3706</xref>
+          </li>
+          <li id="3669">The <msgnum>DOTX037W</msgnum> warning message that appears when source documents have no title
+            has been updated to clarify references to the fallback text that will be used for the HTML page title.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3669" format="html" scope="external">#3669</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3670" format="html" scope="external">#3670</xref>
+          </li>
+          <li id="3677">DITA-OT 3.6 failed with an IllegalArgumentException when maps contained topic references to
+            e-mail addresses or other peer resources that are not accessible at build time. Processing has been updated
+            to properly handle non-file references.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3677" format="html" scope="external">#3677</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3698" format="html" scope="external">#3698</xref>
+          </li>
+          <li id="3680">In DITA-OT 3.6, branch filtering with nested subtopics failed with an IllegalArgumentException:
+              <msgph>URI has a fragment component</msgph>. Processing has been updated to correctly transform references
+            that contain anchors.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3680" format="html" scope="external">#3680</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3696" format="html" scope="external">#3696</xref>
+          </li>
+          <li id="3687">DITA-OT 3.6 in-memory processing calculated absolute paths incorrectly when merging maps. The
+            merge map and topic parsers have been updated to properly compute absolute locations.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3687" format="html" scope="external">#3687</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3699" format="html" scope="external">#3699</xref>
+          </li>
+          <li id="3688">DITA-OT 3.6 introduced a regression that prevented PDF2 custom font mappings from resolving
+            properly. The PDF pre-processor task has been updated with a delegating URI resolver to ensure that custom
+            resources in PDF plug-ins are applied as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3688" format="html" scope="external">#3688</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3695" format="html" scope="external">#3695</xref>
+          </li>
+          <li id="3689">Custom rules used to adjust the names and locations of output files in the map-first
+            pre-processing routine were no longer applied in DITA-OT 3.6. Preprocessing has been updated to ensure that
+            stylesheets specified via the <parmname>result.rewrite-rule.xsl</parmname> parameter are correctly applied.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3689" format="html" scope="external">#3689</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3697" format="html" scope="external">#3697</xref>
+          </li>
+          <li id="3694">In DITA-OT 3.6, a regression prevented multi-level key references from resolving properly.
+            Processing has been updated to ensure that topic metadata is correctly copied between key definitions and
+            key references that point to other keys.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3694" format="html" scope="external">#3694</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3701" format="html" scope="external">#3701</xref>
+          </li>
+          <li id="ghcr">The GitHub Packages Docker registry used to publish DITA-OT Docker images prior to version 3.6
+            has been superseded by the GitHub Container Registry. The new registry offers anonymous access to public
+            container images, so you can use it without a GitHub account. As of DITA-OT 3.6.1, the official image is
+            published to the new registry at <xref href="https://ghcr.io" format="html" scope="external">ghcr.io</xref>.
+            If you’ve pulled from <codeph>docker.pkg.github.com/dita-ot/dita-ot/dita-ot:<varname
+              >version</varname></codeph>
+            in the past, update your workflow to pull from
+            <codeph>ghcr.io/dita-ot/dita-ot:<varname>version</varname></codeph> instead.
+          </li>
+          <li id="gh-action">The DITA-OT project now provides an official
+            <xref keyref="dita-ot-action"/> that can be used to publish documentation via
+            <xref keyref="github-actions"/> whenever your source files are changed.</li>
+          <li id="docs"> The documentation for DITA Open Toolkit Release 3.6.1 provides corrections and improvements to
+            existing topics, along with new information in the following topics:
+            <ul>
+              <li>
+                <xref keyref="using-github-actions"/></li>
+              <li>
+                <xref keyref="using-docker-images"/></li>
+              <li>
+                <xref keyref="creating-docker-images"/></li>
+              <li>
+                <xref keyref="plugin-coding-conventions"/></li>
+            </ul>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6.1+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.6.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.6...3.6.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
   <reference id="v3.6">
     <title>DITA-OT <keyword keyref="release"/>
       <ph outputclass="small text-muted">released December 19, 2020</ph>

@@ -2,12 +2,12 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <task id="installing-via-homebrew">
-  <title>Installing on macOS via Homebrew</title>
+  <title>Installing DITA-OT via Homebrew</title>
   <titlealts>
     <navtitle>Installing via Homebrew</navtitle>
   </titlealts>
-  <shortdesc>An alternative installation method can be used to install DITA-OT on macOS via
-    <xref keyref="homebrew"/>, the platform’s most popular open-source package manager.</shortdesc>
+  <shortdesc>An alternative installation method can be used to install DITA-OT via
+    <xref keyref="homebrew"/>, one of the most popular open-source package managers on macOS and Linux.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -25,7 +25,14 @@
         <xref keyref="homebrew"/> according to the instructions at
         <xref keyref="homebrew">brew.sh</xref>.</p>
       <note type="tip">Verify that your
-        <xref keyref="PATH"/> begins with <filepath>/usr/local/bin</filepath> to ensure that Homebrew-installed software
+        <xref keyref="PATH"/> begins with the <filepath>bin</filepath> subfolder of the Homebrew installation directory
+        <fn>Homebrew’s default installation location depends on the operating system architecture:
+          <ul>
+            <li><filepath>/usr/local</filepath> on macOS Intel</li>
+            <li><filepath>/opt/homebrew</filepath> on macOS ARM</li>
+            <li><filepath>/home/linuxbrew/.linuxbrew</filepath> on Linux</li>
+          </ul>
+        </fn> to ensure that Homebrew-installed software
         takes precedence over any programs of the same name elsewhere on the system.</note>
     </prereq>
     <steps>

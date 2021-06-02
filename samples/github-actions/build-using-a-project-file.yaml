@@ -1,0 +1,19 @@
+name: CI
+'on':
+  push:
+    branches:
+      - master
+jobs:
+  build-dita:
+    name: Build DITA using a project file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+      - name: Build HTML5 + Bootstrap
+        uses: dita-ot/dita-ot-action@master
+        with:
+          plugins: |
+            fox.jason.extend.css
+            net.infotexture.dita-bootstrap
+          project: html.xml

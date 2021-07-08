@@ -1,0 +1,7 @@
+extends: substitution
+message: Always hyphenate '%s'
+level: error
+ignorecase: false
+# swap maps tokens in form of bad: good
+swap:
+  DITA OT: DITA-OT

@@ -44,7 +44,7 @@
           <dd>Add new strings to generated text file. </dd>
         </dlentry>
       </dl>
-      <note id="note_gff_13d_fqb">There are two different XML structures for adding new or modifying
+      <note>There are two different XML structures for adding new or modifying
         existing strings. Both can be used with the latest DITA-OT. The new structure (root element
           <xmlelement>vars</xmlelement>) has the benefit to add custom parameters to the string,
         such as the current page number, but the old structure (root element
@@ -53,10 +53,14 @@
           <b>org.dita.pdf2</b>. The following code snippets represent the same information in the
         old and the new structure. If you are interested in the capabilities of the parameter
         mechanism, please have a look at the XML files stored in
-          <filepath>org.dita.pdf2\cfg\common\vars</filepath>.<codeblock id="codeblock_hnb_h3d_fqb" outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="utf-8"?>
+          <filepath>org.dita.pdf2\cfg\common\vars</filepath>.<codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;strings xml:lang="en-US">
   &lt;str name="String1">English generated text&lt;/str>
-&lt;/strings></codeblock><codeblock id="codeblock_lxd_k3d_fqb" outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;/strings></codeblock><codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;vars xmlns="http://www.idiominc.com/opentopic/vars">
   &lt;variable id="String1">English generated text&lt;/variable>
 &lt;/vars></codeblock></note>

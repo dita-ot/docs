@@ -44,33 +44,35 @@
           <dd>Add new strings to generated text file. </dd>
         </dlentry>
       </dl>
-      <note>There are two different XML structures for adding new or modifying
-        existing strings. Both can be used with the latest DITA-OT. The new structure (root element
-          <xmlelement>vars</xmlelement>) has the benefit to add custom parameters to the string,
-        such as the current page number, but the old structure (root element
-          <xmlelement>strings</xmlelement>) is still valid. For example, the old structure is still
-        used in the <b>org.dita.base</b> plugin and the new structure is used in
-          <b>org.dita.pdf2</b>. The following code snippets represent the same information in the
-        old and the new structure. If you are interested in the capabilities of the parameter
-        mechanism, please have a look at the XML files stored in
-          <filepath>org.dita.pdf2\cfg\common\vars</filepath>.<codeblock
+      <note>There are two different XML structures for adding new or modifying existing strings. Both can be used with
+        the latest DITA-OT. The new structure (root element <xmlelement>vars</xmlelement>) has the benefit to add custom
+        parameters to the string, such as the current page number, but the old structure (root element
+          <xmlelement>strings</xmlelement>) is still valid. For example, the old structure is still used in the
+          <b>org.dita.base</b> plugin and the new structure is used in <b>org.dita.pdf2</b>. The following code snippets
+        represent the same information in the old and the new structure. If you are interested in the capabilities of
+        the parameter mechanism, please have a look at the XML files stored in
+          <filepath>org.dita.pdf2\cfg\common\vars</filepath>.
+        <codeblock
           outputclass="language-xml normalize-space show-line-numbers show-whitespace"
         >&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;strings xml:lang="en-US">
   &lt;str name="String1">English generated text&lt;/str>
-&lt;/strings></codeblock><codeblock
+&lt;/strings></codeblock>
+        <codeblock
           outputclass="language-xml normalize-space show-line-numbers show-whitespace"
         >&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;vars xmlns="http://www.idiominc.com/opentopic/vars">
   &lt;variable id="String1">English generated text&lt;/variable>
-&lt;/vars></codeblock></note>
+&lt;/vars></codeblock>
+      </note>
     </section>
     <example>
       <title>Example: adding new strings</title>
       <p>First, copy the file <filepath>xsl/common/strings.xml</filepath> from the base plug-in directory
           <filepath>plugins/org.dita.base</filepath> to your plug-in, and edit it to contain the languages that you are
         providing translations for ("en-US" must be present). For this sample, copy the file into your plug-in as
-          <filepath>xsl/my-new-strings.xml</filepath>. The new strings file will look something like this:</p><codeblock
+          <filepath>xsl/my-new-strings.xml</filepath>. The new strings file will look something like this:</p>
+        <codeblock
         outputclass="language-xml normalize-space show-line-numbers show-whitespace"
       >&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;!-- Provide strings for my plug-in; this plug-in supports
@@ -86,21 +88,24 @@
       <p>Next, copy the file <filepath>xsl/common/strings-en-us.xml</filepath> from the base plug-in directory
           <filepath>plugins/org.dita.base</filepath> to your plug-in, and replace the content with your own strings (be
         sure to give them unique name attributes). Do the same for each language that you are providing a translation
-        for. For example, the file <filepath>mystring-en-us.xml</filepath> might contain:</p><codeblock
+        for. For example, the file <filepath>mystring-en-us.xml</filepath> might contain:</p>
+        <codeblock
         outputclass="language-xml normalize-space show-line-numbers show-whitespace"
       >&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;strings xml:lang="en-US">
   &lt;str name="String1">English generated text&lt;/str>
   &lt;str name="Another String">Another String in English&lt;/str>
 &lt;/strings></codeblock>
-      <p>Use the following extension code to include your strings in the set of generated text: </p><codeblock
+      <p>Use the following extension code to include your strings in the set of generated text:</p>
+        <codeblock
         outputclass="language-xml normalize-space show-line-numbers show-whitespace"
       >&lt;plugin id="com.example.strings">
   &lt;feature extension="dita.xsl.strings" file="xsl/my-new-strings.xml"/>
 &lt;/plugin></codeblock>
       <p>The string is now available to the "getVariable" template used in many DITA-OT XSLT files. For example, if
         processing in a context where the xml:lang value is "en-US", the following call would return "Another String in
-        English":</p><codeblock
+        English":</p>
+        <codeblock
         outputclass="language-xml normalize-space show-line-numbers show-whitespace"
       >&lt;xsl:call-template name="getVariable">
   &lt;xsl:with-param name="id" select="'Another String'"/>
@@ -113,12 +118,13 @@
       <title>Example: modifying existing strings</title>
       <p>The process for modifying existing generated text is exactly the same as for adding new text, except that the
         strings you provide override values that already exist. To begin, set up the
-          <filepath>xsl/my-new-strings.xml</filepath> file in your plug-in as in the previous example. </p>
+          <filepath>xsl/my-new-strings.xml</filepath> file in your plug-in as in the previous example.</p>
       <p>Next, copy the file <filepath>xsl/common/strings-en-us.xml</filepath> from the base plug-in directory
           <filepath>plugins/org.dita.base</filepath> to your plug-in, and choose the strings you wish to change (be sure
         to leave the name attribute unchanged, because this is the key used to look up the string). Create a strings
         file for each language that needs to modify existing strings. For example, the new file
-          <filepath>mystring-en-us.xml</filepath> might contain:</p><codeblock
+          <filepath>mystring-en-us.xml</filepath> might contain:</p>
+        <codeblock
         outputclass="language-xml normalize-space show-line-numbers show-whitespace"
       >&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;strings xml:lang="en-US">

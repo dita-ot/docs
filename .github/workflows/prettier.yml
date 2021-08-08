@@ -28,6 +28,6 @@ jobs:
           # This part is also where you can pass other options, for example:
           prettier_options: --write **/*.{css,dita*,json,md,scss,xml,yaml,yml}
           # Install Prettier XML plugin
-          prettier_plugins: '@prettier/plugin-xml'
+          prettier_plugins: '@prettier/plugin-xml@v0.13.1'
           # Runs the action in dry mode. Files wont get changed and the action fails if there are unprettified files.
           dry: true

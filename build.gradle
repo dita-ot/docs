@@ -1,6 +1,21 @@
 plugins {
-    id 'com.github.eerohele.dita-ot-gradle' version '0.7.0'
-    id 'com.github.eerohele.saxon-gradle' version '0.7.0'
+    id 'com.github.eerohele.dita-ot-gradle' version '0.7.1'
+    id 'com.github.eerohele.saxon-gradle' version '0.9.0-beta4'
+}
+
+// Specify Saxon version per https://github.com/eerohele/saxon-gradle/blob/master/README.md
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    saxon
+}
+
+dependencies {
+    // Use Saxon-HE 10.5 like DITA-OT, instead of the version that comes with `saxon-gradle`
+    saxon 'net.sf.saxon:Saxon-HE:10.5'
 }
 
 import com.github.eerohele.DitaOtTask

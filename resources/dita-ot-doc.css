@@ -967,23 +967,23 @@ Navigation
 ****************************************/
 
 /* ↓ nav-coderef ↓ */
-nav[role='toc'] {
+nav.toc {
   float: left;
   margin-top: 0.5rem;
   width: 300px;
 }
 
-nav[role='toc'] li.active > a {
+nav.toc li.active > a {
   font-weight: var(--font-weight-bold);
 }
 /* ↑ end-nav-ref ↑ */
 
-nav[role='toc'] > ul {
+nav.toc > ul {
   margin-left: -0.4rem;
   margin-right: 2rem;
 }
 
-nav[role='toc'] > ul li {
+nav.toc > ul li {
   line-height: 1.25rem;
 }
 

@@ -82,13 +82,13 @@ a:hover {
 }
 
 /* Inline Table of Contents */
-nav[role='toc'] {
+nav.toc {
   float: right;
   max-width: 200px;
   font-size: small;
   border-left: 1px solid #70a300;
   margin-left: 1em;
 }
-nav[role='toc'] > ul {
+nav.toc > ul {
   margin-top: 0;
 }

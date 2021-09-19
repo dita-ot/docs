@@ -678,7 +678,7 @@ Basic fonts and typography
 
 /* ↓ header-coderef ↓ */
 .header {
-  margin: 0;
+  margin-bottom: 1rem;
   padding: 0 12px;
 }
 
@@ -843,8 +843,10 @@ h2 .codeph {
 Basic identation, padding, and margins
 ****************************************/
 
-main {
-  margin-left: 300px;
+@media screen and (min-width: 992px) {
+  main {
+    margin-left: 300px;
+  }
 }
 
 /****************************************
@@ -967,10 +969,12 @@ Navigation
 ****************************************/
 
 /* ↓ nav-coderef ↓ */
-nav.toc {
-  float: left;
-  margin-top: 0.5rem;
-  width: 300px;
+/* Style ToC nav as sidebar on desktop */
+@media screen and (min-width: 992px) {
+  nav.toc {
+    float: left;
+    width: 300px;
+  }
 }
 
 nav.toc li.active > a {

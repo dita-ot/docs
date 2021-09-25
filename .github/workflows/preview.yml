@@ -39,7 +39,7 @@ jobs:
 
       - name: Download website plug-in
         run: |
-          curl -sL https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -o org.dita-ot.html.zip
+          curl -sL https://github.com/dita-ot/org.dita-ot.html/archive/refs/heads/feature/generate-pt-id.zip -o org.dita-ot.html.zip
       - name: Cache stable DITA-OT
         uses: actions/cache@v2
         with:

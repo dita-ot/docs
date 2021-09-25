@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DITA_OT_VERSION: '3.5.1'
+      WEBSITE_BRANCH: 'master'
+      WEBSITE_PLUGIN_BRANCH: 'master'
     steps:
       - name: Set up JDK 1.8
         uses: actions/setup-java@v1
@@ -35,11 +37,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: dita-ot/website
+          ref: ${{ env.WEBSITE_BRANCH }}
           path: website
 
       - name: Download website plug-in
         run: |
-          curl -sL https://github.com/dita-ot/org.dita-ot.html/archive/master.zip -o org.dita-ot.html.zip
+          curl -sL https://github.com/dita-ot/org.dita-ot.html/archive/refs/heads/${{ env.WEBSITE_PLUGIN_BRANCH }}.zip -o org.dita-ot.html.zip
       - name: Cache stable DITA-OT
         uses: actions/cache@v2
         with:

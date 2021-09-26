@@ -14,8 +14,8 @@ configurations {
 }
 
 dependencies {
-    // Use Saxon-HE 10.5 like DITA-OT, instead of the version that comes with `saxon-gradle`
-    saxon 'net.sf.saxon:Saxon-HE:10.5'
+    // Use Saxon-HE 10.6 like DITA-OT, instead of the version that comes with `saxon-gradle`
+    saxon 'net.sf.saxon:Saxon-HE:10.6'
 }
 
 import com.github.eerohele.DitaOtTask

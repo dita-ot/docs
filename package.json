@@ -10,9 +10,9 @@
     "fmt": "npm run format",
     "format": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "lint-staged": "lint-staged",
+    "prepare": "husky install",
     "prettier": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
-    "test": "prettier --list-different \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
-    "prepare": "husky install"
+    "test": "prettier --list-different \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\""
   },
   "lint-staged": {
     "*.{css,dita*,json,md,scss,xml,yaml,yml}": [

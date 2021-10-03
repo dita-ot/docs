@@ -83,11 +83,11 @@ a:hover {
 
 /* Inline Table of Contents */
 nav.toc {
-  float: right;
-  max-width: 200px;
-  font-size: small;
   border-left: 1px solid #70a300;
+  float: right;
+  font-size: small;
   margin-left: 1em;
+  max-width: 200px;
 }
 nav.toc > ul {
   margin-top: 0;

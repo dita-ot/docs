@@ -30,6 +30,8 @@
   },
   "stylelint": {
     "extends": [
+      "stylelint-config-recommended",
+      "stylelint-config-sass-guidelines",
       "stylelint-config-prettier"
     ],
     "ignoreFiles": [],
@@ -48,6 +50,8 @@
     "lint-staged": "11.1.2",
     "prettier": "2.4.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-prettier": "^8.0.2"
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-config-sass-guidelines": "^8.0.0"
   }
 }

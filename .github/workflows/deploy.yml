@@ -111,9 +111,8 @@ jobs:
           # Commit generated site output
           git commit -a -m "Deploy dita-ot/docs@${COMMIT:0:7} to 'dev' docs"
           # push
-          git remote set-url --push origin https://${COMMITTER_USERNAME}:${COMMITTER_TOKEN}@github.com/dita-ot/website
+          git remote set-url --push origin https://${COMMITTER_TOKEN}@github.com/dita-ot/website.git
           git push -v origin master
         env:
-          COMMITTER_USERNAME: dita-ot-bot
           COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
           COMMIT: ${{ env.GITHUB_SHA }}

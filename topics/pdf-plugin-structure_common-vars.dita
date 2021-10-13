@@ -29,7 +29,8 @@
       it clear how the variable text is being used.</p>
     <p>Some variables contain <xmlelement>param</xmlelement> elements which indicate parameter values that are
       substituted at publish time by the XSL. For example, a page number that is being generated as part of the
-      publishing process might be identified by &amp;lt;param ref-name="number"/&amp;gt; When editing or translating a
+      publishing process might be identified by <codeph
+      >&lt;param ref-name="number"/&gt;</codeph> When editing or translating a
       variable file, these should be included in the translation, though they can be moved and rearranged within the
         <xmlelement>variable</xmlelement> content as needed.</p>
     <p>The best way to start editing a custom variables file is by making a copy of the original from

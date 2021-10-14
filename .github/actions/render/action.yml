@@ -3,10 +3,10 @@ description: 'Render dita-ot/docs into dita-ot/website'
 inputs:
   WEBSITE_PLUGIN_BRANCH:
     description: 'Website plug-in ref'
-    required: true
+    default: 'master'
   DITA_OT_VERSION:
     description: 'DITA-OT version used for rendering'
-    required: true
+    default: '3.6.1'
 runs:
   using: 'composite'
   steps:

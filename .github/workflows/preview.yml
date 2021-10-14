@@ -25,9 +25,6 @@ jobs:
 
       - name: Render website
         uses: ./.github/actions/render
-        with:
-          WEBSITE_PLUGIN_BRANCH: 'master'
-          DITA_OT_VERSION: '3.5.1'
 
       - name: Cache NPM
         uses: actions/cache@v2

@@ -49,8 +49,6 @@ jobs:
           git config user.name "DITA-OT Bot"
           git add --all
           # Commit generated site output
-          git commit -a -m "Deploy dita-ot/docs@${COMMIT:0:7} to 'dev' docs"
+          git commit -a -m "Deploy dita-ot/docs@${GITHUB_SHA:0:7} to 'dev' docs"
           # push
           git push -v origin master
-        env:
-          COMMIT: ${{ env.GITHUB_SHA }}

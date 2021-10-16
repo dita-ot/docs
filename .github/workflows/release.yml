@@ -1,0 +1,49 @@
+# This workflow builds changes to release tag and commits to website repo for release PR
+
+name: Generate website release PR
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Source DITA-OT version'
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out docs
+        uses: actions/checkout@v2
+      - name: Check out website
+        uses: actions/checkout@v2
+        with:
+          repository: dita-ot/website
+          token: ${{ secrets.COMMITTER_TOKEN }}
+          path: website
+
+      - name: Render website
+        uses: ./.github/actions/render-release
+        with:
+          SRC_DITA_OT_VERSION: ${{ inputs.version }}
+
+      - name: Get variables
+        run: |
+          VS=($(echo $VERSION | tr '.' ' '))
+          echo "RELEASE=$VS[1].$VS[2]" >> $GITHUB_ENV
+          echo "GITHUB_SHA_SHORT=${GITHUB_SHA:0:7}" >> $GITHUB_ENV
+        env:
+          VERSION: ${{ inputs.version }}
+
+      - name: Create release PR
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: 'release/${{ env.RELEASE }}'
+          title: 'Release ${{ env.RELEASE }}'
+          body: |
+            Release website for `/${{ env.RELEASE }}'`
+          commit-message: "Deploy dita-ot/docs@${{ env.GITHUB_SHA_SHORT }} to '${{ env.RELEASE }}' docs"
+          committer: 'DITA-OT Bot <ditaotbot@gmail.com>'
+          signoff: true
+          token: ${{ secrets.COMMITTER_TOKEN }}
+          path: 'website'

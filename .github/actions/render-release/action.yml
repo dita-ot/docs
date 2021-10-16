@@ -7,6 +7,9 @@ inputs:
   DITA_OT_VERSION:
     description: 'DITA-OT version used for rendering'
     default: '3.6.1'
+  SRC_DITA_OT_VERSION:
+    description: 'DITA-OT version used as source'
+    required: true
 runs:
   using: 'composite'
   steps:
@@ -18,10 +21,6 @@ runs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6
 
     - name: Download website plug-in
       shell: bash
@@ -44,33 +43,24 @@ runs:
         fi
         dita-ot-${{ inputs.DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip --force -v
 
-    - name: Get develop DITA-OT ETag
+    - name: Download source DITA-OT
       shell: bash
       run: |
-        curl -sI https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip | grep -F ETag | cut -d'"' -f 2 > dita-ot-develop.etag
-    - name: Cache develop DITA-OT
-      uses: actions/cache@v2
-      with:
-        path: dita-ot-develop
-        key: ${{ runner.os }}-dita-ot-develop-${{ hashFiles('dita-ot-develop.etag') }}
-        restore-keys: |
-          ${{ runner.os }}-dita-ot-develop-
-    - name: Download develop DITA-OT
-      shell: bash
-      run: |
-        if [ ! -d "dita-ot-develop" ]; then
-          curl -sL https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip -o dita-ot-develop.zip
-          unzip dita-ot-develop.zip -d dita-ot-develop
-        else
-          echo "Use cached dita-ot-develop"
-        fi
+        curl -sL https://github.com/dita-ot/dita-ot/releases/download/${{ inputs.SRC_DITA_OT_VERSION }}/dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}.zip -o dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}.zip
+        unzip dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}.zip
+        dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip --force -v
         echo "DITA_OT_DEV=$(find dita-ot-develop -name 'dita-ot-*@*' -type d | head -1)" >> $GITHUB_ENV
 
     - name: Run DITA-OT
       shell: bash
       run: |
+        VS=($(echo $VERSION | tr '.' ' '))
+        RELEASE=$VS[1].$VS[2]
         ./gradlew site \
           -PditaHome=${{ github.workspace }}/dita-ot-${{ inputs.DITA_OT_VERSION }} \
-          -PoutputDir=${{ github.workspace }}/website/dev \
+          -PoutputDir=${{ github.workspace }}/website/$RELEASE \
           -PditaHomeSrc=${{ env.DITA_OT_DEV }} \
+          -PnoCommitMeta=true \
           --info --stacktrace --no-daemon
+      env:
+        VERSION: ${{ inputs.SRC_DITA_OT_VERSION }}

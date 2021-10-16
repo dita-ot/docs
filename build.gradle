@@ -181,7 +181,9 @@ task site(type: DitaOtTask) {
     properties {
         property(name: 'args.gen.task.lbl', value: 'YES')
         property(name: 'args.rellinks', value: 'noparent')
-        property(name: 'commit', value: commit)
+        if (!(project.hasProperty('noCommitMeta') && Boolean.parseBoolean(project.property('noCommitMeta')))) {
+          property(name: 'commit', value: commit)
+        }
     }
 }
 

@@ -47,9 +47,9 @@ runs:
       shell: bash
       run: |
         curl -sL https://github.com/dita-ot/dita-ot/releases/download/${{ inputs.SRC_DITA_OT_VERSION }}/dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}.zip -o dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}.zip
-        unzip dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}.zip
-        dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip --force -v
-        echo "DITA_OT_DEV=$(find dita-ot-develop -name 'dita-ot-*@*' -type d | head -1)" >> $GITHUB_ENV
+        unzip dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}.zip -d src-dita-ot
+        src-dita-ot/dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip --force -v
+        echo "DITA_OT_DEV=src-dita-ot/dita-ot-${{ inputs.SRC_DITA_OT_VERSION }}" >> $GITHUB_ENV
 
     - name: Run DITA-OT
       shell: bash

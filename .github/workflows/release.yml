@@ -25,7 +25,7 @@ jobs:
       - name: Render website
         uses: ./.github/actions/render-release
         with:
-          SRC_DITA_OT_VERSION: ${{ inputs.version }}
+          SRC_DITA_OT_VERSION: ${{ github.event.inputs.version }}
 
       - name: Get variables
         run: |
@@ -33,7 +33,7 @@ jobs:
           echo "RELEASE=$VS[1].$VS[2]" >> $GITHUB_ENV
           echo "GITHUB_SHA_SHORT=${GITHUB_SHA:0:7}" >> $GITHUB_ENV
         env:
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ github.event.inputs.version }}
 
       - name: Create release PR
         uses: peter-evans/create-pull-request@v3

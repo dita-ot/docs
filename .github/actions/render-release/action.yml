@@ -55,7 +55,7 @@ runs:
       shell: bash
       run: |
         VS=($(echo $VERSION | tr '.' ' '))
-        RELEASE=$VS[1].$VS[2]
+        RELEASE=${VS[0]}.${VS[1]}
         ./gradlew site \
           -PditaHome=${{ github.workspace }}/dita-ot-${{ inputs.DITA_OT_VERSION }} \
           -PoutputDir=${{ github.workspace }}/website/$RELEASE \

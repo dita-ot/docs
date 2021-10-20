@@ -8,6 +8,9 @@ on:
       dita-ot-version:
         description: 'Source DITA-OT version'
         required: true
+      docs-tag:
+        description: 'Docs tag'
+        required: true
 
 jobs:
   deploy:
@@ -18,12 +21,14 @@ jobs:
     steps:
       - name: Check out docs
         uses: actions/checkout@v2
-        # TODO: Allow building docs for ref other than `master`
+        with:
+          ref: ${{ github.event.inputs.docs-tag }}
       - name: Get variables
         run: |
           TOKENS=($(echo $VERSION | tr '.' ' '))
           echo "RELEASE=${TOKENS[0]}.${TOKENS[1]}" >> $GITHUB_ENV
           echo "GITHUB_SHA_SHORT=${GITHUB_SHA:0:7}" >> $GITHUB_ENV
+
         env:
           VERSION: ${{ github.event.inputs.dita-ot-version }}
       - name: Set up JDK 1.8
@@ -79,7 +84,7 @@ jobs:
           VERSION: ${{ github.event.inputs.dita-ot-version }}
           WEBSITE_DIR: ${{ github.workspace }}/website
           DITA_HOME: ${{ github.workspace }}/dita-ot-${{ env.DITA_OT_VERSION }}
-          DITA_OT_DEV: src-dita-ot/dita-ot-${{ github.event.inputs.dita-ot-version }}
+          DITA_OT_DEV: ${{ github.workspace }}/src-dita-ot/dita-ot-${{ github.event.inputs.dita-ot-version }}
 
       - name: Create release PR
         uses: peter-evans/create-pull-request@v3
@@ -90,7 +95,7 @@ jobs:
             Release website for ${{ env.RELEASE }}.
 
             Built with:
-            * dita-ot/docs@${{ env.GITHUB_SHA_SHORT }} (master)
+            * dita-ot/docs@${{ env.GITHUB_SHA_SHORT }} (${{ github.event.inputs.docs-tag }})
             * dita-ot/dita-ot (${{ github.event.inputs.dita-ot-version }})
             * dita-ot/org.dita-ot.html (${{ env.WEBSITE_PLUGIN_BRANCH }})
           commit-message: "Deploy dita-ot/docs@${{ env.GITHUB_SHA_SHORT }} to '${{ env.RELEASE }}' docs"

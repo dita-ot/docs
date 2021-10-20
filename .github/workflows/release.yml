@@ -5,45 +5,98 @@ name: Generate website release PR
 on:
   workflow_dispatch:
     inputs:
-      version:
+      dita-ot-version:
         description: 'Source DITA-OT version'
         required: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      WEBSITE_PLUGIN_BRANCH: 'master'
+      DITA_OT_VERSION: '3.6.1'
     steps:
       - name: Check out docs
         uses: actions/checkout@v2
+        # TODO: Allow building docs for ref other than `master`
+      - name: Get variables
+        run: |
+          TOKENS=($(echo $VERSION | tr '.' ' '))
+          echo "RELEASE=${TOKENS[0]}.${TOKENS[1]}" >> $GITHUB_ENV
+          echo "GITHUB_SHA_SHORT=${GITHUB_SHA:0:7}" >> $GITHUB_ENV
+        env:
+          VERSION: ${{ github.event.inputs.dita-ot-version }}
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+
       - name: Check out website
         uses: actions/checkout@v2
         with:
           repository: dita-ot/website
           token: ${{ secrets.COMMITTER_TOKEN }}
           path: website
+      #      - name: Get website hash
+      #        run: |
+      #          echo "WEBSITE_SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
-      - name: Render website
-        uses: ./.github/actions/render-release
-        with:
-          SRC_DITA_OT_VERSION: ${{ github.event.inputs.version }}
-
-      - name: Get variables
+      - name: Download website plug-in
         run: |
-          VS=($(echo $VERSION | tr '.' ' '))
-          echo "RELEASE=${VS[0]}.${VS[1]}" >> $GITHUB_ENV
-          echo "GITHUB_SHA_SHORT=${GITHUB_SHA:0:7}" >> $GITHUB_ENV
+          curl -sL https://github.com/dita-ot/org.dita-ot.html/archive/refs/heads/${{ env.WEBSITE_PLUGIN_BRANCH }}.zip -o org.dita-ot.html.zip
+
+      - name: Cache stable DITA-OT
+        uses: actions/cache@v2
+        with:
+          path: dita-ot-${{ env.DITA_OT_VERSION }}
+          key: ${{ runner.os }}-dita-ot-${{ env.DITA_OT_VERSION }}
+      - name: Download stable DITA-OT
+        run: |
+          if [ ! -d "dita-ot-${{ env.DITA_OT_VERSION }}" ]; then
+            curl -sL https://github.com/dita-ot/dita-ot/releases/download/${{ env.DITA_OT_VERSION }}/dita-ot-${{ env.DITA_OT_VERSION }}.zip -o dita-ot-${{ env.DITA_OT_VERSION }}.zip
+            unzip dita-ot-${{ env.DITA_OT_VERSION }}.zip
+          else
+            echo "Use cached dita-ot-${{ env.DITA_OT_VERSION }}"
+          fi
+          dita-ot-${{ env.DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip --force -v
+
+      - name: Download source DITA-OT
+        run: |
+          curl -sL https://github.com/dita-ot/dita-ot/releases/download/$VERSION/dita-ot-$VERSION.zip -o dita-ot-$VERSION.zip
+          unzip dita-ot-$VERSION.zip -d src-dita-ot
         env:
-          VERSION: ${{ github.event.inputs.version }}
+          VERSION: ${{ github.event.inputs.dita-ot-version }}
+
+      - name: Run DITA-OT
+        run: |
+          ./gradlew site \
+            -PditaHome=$DITA_HOME \
+            -PoutputDir=$WEBSITE_DIR/${{ env.RELEASE }} \
+            -PditaHomeSrc=${{ env.DITA_OT_DEV }} \
+            -PnoCommitMeta=true \
+            --info --stacktrace --no-daemon
+        env:
+          VERSION: ${{ github.event.inputs.dita-ot-version }}
+          WEBSITE_DIR: ${{ github.workspace }}/website
+          DITA_HOME: ${{ github.workspace }}/dita-ot-${{ env.DITA_OT_VERSION }}
+          DITA_OT_DEV: src-dita-ot/dita-ot-${{ github.event.inputs.dita-ot-version }}
 
       - name: Create release PR
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: 'release/${{ env.RELEASE }}'
+          branch: release/${{ github.event.inputs.dita-ot-version }}
           title: 'Release ${{ env.RELEASE }}'
           body: |
-            Release website for `/${{ env.RELEASE }}'`
+            Release website for ${{ env.RELEASE }}.
+
+            Built with:
+            * dita-ot/docs@${{ env.GITHUB_SHA_SHORT }} (master)
+            * dita-ot/dita-ot (${{ github.event.inputs.dita-ot-version }})
+            * dita-ot/org.dita-ot.html (${{ env.WEBSITE_PLUGIN_BRANCH }})
           commit-message: "Deploy dita-ot/docs@${{ env.GITHUB_SHA_SHORT }} to '${{ env.RELEASE }}' docs"
           committer: 'DITA-OT Bot <ditaotbot@gmail.com>'
           signoff: true
           token: ${{ secrets.COMMITTER_TOKEN }}
-          path: 'website'
+          path: website
+          labels: |
+            release-updates

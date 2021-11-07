@@ -42,9 +42,20 @@
             outputclass="mark"
           >(marquee features), 
           and an updated preview of features for the latest draft of the upcoming DITA 2.0 standard 
-          including (new elements, domains, etc.)</ph>.</p>
-      </section>
+          including the new “combine” chunk action, and (new elements, domains, etc.)</ph>.</p>
       <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
+      <ul>
+        <!--
+        <li id="3359">Move to Java 11
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3359" format="html" scope="external">#3359</xref>
+        </li>
+        -->
+        <li id="3674">DITA 2.0 combine chunk action
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3674" format="html" scope="external">#3674</xref>
+        </li>
+      </ul>
+      </section>
+
       <!--<section conkeyref="migrating-to-3.7/feature-example">
         <title/>
         <p/>

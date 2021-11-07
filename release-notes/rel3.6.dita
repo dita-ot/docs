@@ -2,14 +2,14 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <reference id="ID" rev="3.6">
-  <title>DITA Open Toolkit <keyword keyref="release"/> Release Notes</title>
+  <title>DITA Open Toolkit 3.6 Release Notes</title>
   <titlealts>
     <navtitle>Release Notes</navtitle>
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
-      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v3.6/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit 3.6.1 is a maintenance release that fixes issues
+      reported in DITA-OT 3.6, which includes <ph conref="#v3.6/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -26,13 +26,13 @@
   </reference>
 
   <reference id="v3.6.1" outputclass="mark">
-    <title>DITA-OT <keyword keyref="maintenance-version"/>
+    <title>DITA-OT 3.6.1
       <ph outputclass="small text-muted">released March 9, 2021</ph>
     </title>
 
     <refbody>
       <section>
-        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+        <p>DITA Open Toolkit 3.6.1 is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
           <li id="3656">In DITA-OT 3.6, builds failed with a NullPointerException when Ant targets in custom
@@ -132,7 +132,7 @@
     </refbody>
   </reference>
   <reference id="v3.6">
-    <title>DITA-OT <keyword keyref="release"/>
+    <title>DITA-OT 3.6
       <ph outputclass="small text-muted">released December 19, 2020</ph>
     </title>
     <prolog>
@@ -144,7 +144,7 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">performance enhancements such
+        <p>DITA Open Toolkit Release 3.6 includes <ph id="summary">performance enhancements such
             as processing in parallel and in memory, support for PDF changebars with <tm
               trademark="Apache"
               tmtype="tm"
@@ -231,7 +231,7 @@
       <section id="enhancements">
         <title>Enhancements and changes</title>
         <indexterm/>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
+        <p>DITA Open Toolkit Release 3.6 includes the following enhancements and changes to
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
@@ -350,7 +350,7 @@
       <section id="bugs">
         <title>Bugs</title>
         <indexterm/>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
+        <p>DITA Open Toolkit Release 3.6 provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.6+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <!-- These issues only affected development builds, not any previously released version -->
@@ -411,7 +411,7 @@
 
       <section id="contrib">
         <title>Contributors</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+        <p>DITA Open Toolkit Release 3.6 includes
           <xref keyref="contributions"/> by the following people:</p>
         <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 3.5.4..` -->
         <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
@@ -429,7 +429,7 @@
 
       <section id="docs">
         <title>Documentation updates</title>
-        <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
+        <p>The documentation for DITA Open Toolkit Release 3.6 provides corrections and
           improvements to existing topics, along with new information in the following topics:</p>
         <ul>
           <li>
@@ -454,8 +454,8 @@
             href="https://github.com/dita-ot/docs/issues?q=milestone%3A3.6+is%3Aclosed"
             format="html"
             scope="external"
-          ><keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+          >3.6 milestone</xref> in the documentation repository.</p>
+        <p>DITA Open Toolkit Release 3.6 includes
           <xref keyref="docs-contributions"/> by the following people:</p>
         <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>
         <ol>

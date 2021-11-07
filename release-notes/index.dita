@@ -164,7 +164,48 @@
           <!--
          
           -->
-          <li/>
+          <li id="3709">Fix: 'Warning' notes could not be styled separately
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3709" format="html" scope="external">#3709</xref>
+          </li>
+          <li id="3715">HTML5 index.html reported as invalid by W3C validator
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3715" format="html" scope="external">#3715</xref>
+          </li>
+          <li id="3733">Key reference in content referenced content not properly expanded when using key scopes
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3733" format="html" scope="external">#3733</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3775" format="html" scope="external">#3775</xref>
+          </li>
+          <li id="3742">PDF: Fix redundant page numbers in German Preface headers
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3742" format="html" scope="external">#3742</xref>
+          </li>
+          <li id="3751">XHTML - Colsep/rowsep ignored on tgroup element
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3751" format="html" scope="external">#3751</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3752" format="html" scope="external">#3752</xref>
+          </li>
+          <li id="3754">Fix typo for service mark in PDF2 I18N configuration
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3754" format="html" scope="external">#3754</xref>
+          </li>
+          <li id="3755">Cannot run integrator on Windows and then use the DITA-OT on Linux
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3755" format="html" scope="external">#3755</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3759" format="html" scope="external">#3759</xref>
+          </li>
+          <li id="3765"><xmlelement>fig</xmlelement> content is processed out of order in PDF2
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3765" format="html" scope="external">#3765</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3766" format="html" scope="external">#3766</xref>
+          </li>
+          <li id="3778">Generate stable id failure for generated elements
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3778" format="html" scope="external">#3778</xref>
+          </li>
+          <li id="3779">Make XHTML object elements valid when there's fallback
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3779" format="html" scope="external">#3779</xref>
+          </li>
+          <li id="3785">SVG lengths having NaN values when scaling SVG images
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3785" format="html" scope="external">#3785</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3786" format="html" scope="external">#3786</xref>
+          </li>
+          <li id="3800">HTML5: Use valid ARIA role for ToC <xmlelement>nav</xmlelement>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3800" format="html" scope="external">#3800</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3801" format="html" scope="external">#3801</xref>
+          </li>
         </ul>
       </section>
 

@@ -4,7 +4,9 @@ name: Generate website preview
 
 on:
   pull_request:
-    branches: [develop]
+    branches:
+      - 'develop'
+      - 'release/*'
     types: [opened, synchronize, reopened]
 
 jobs:

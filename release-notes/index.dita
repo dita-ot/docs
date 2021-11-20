@@ -94,7 +94,8 @@
             <xref href="https://github.com/dita-ot/dita-ot-action" format="html" scope="external">dita-ot-action</xref>
             repository was added to the DITA-OT project with a GitHub action for DITA-OT builds. The GitHub action
             installs DITA-OT and plug-ins into a Docker image and then builds a series of outputs.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref></li>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref>
+          </li>
           <li id="3780">Support fileset for style configuration 
             <xref href="https://github.com/dita-ot/dita-ot/issues/3780" format="html" scope="external">#3780</xref>
           </li>
@@ -185,38 +186,38 @@
           <li>Several bundled dependencies have been upgraded to new versions:
             <ul id="ul_dtr_vkx_prb">
               <li>ANT 1.10.12
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external"
-                >#3821</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
               <li>FOP 2.6
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3774" format="html" scope="external"
-                >#3774</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3774" format="html" scope="external">#3774</xref>
+              </li>
               <li>Gradle 7.2
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3803" format="html" scope="external"
-                >#3803</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3803" format="html" scope="external">#3803</xref>
+              </li>
               <li>ICU4J 70.1
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external"
-                >#3821</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
               <li>Jackson 2.13.0
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external"
-                >#3821</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
               <li>JUnit 4.13.2
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external"
-                >#3821</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
               <li>Logback 1.2.6
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external"
-                >#3821</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
               <li>RenderX XEP 3.6.3
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3813" format="html" scope="external"
-                >#3813</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3813" format="html" scope="external">#3813</xref>
+              </li>
               <li>Saxon 10.5
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3485" format="html" scope="external"
-                >#3485</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3485" format="html" scope="external">#3485</xref>
+              </li>
               <li>SLF4J 1.7.32
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external"
-                >#3821</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
               <li>Xerces 2.12.1
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external"
-                >#3821</xref></li>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
             </ul></li>
           <!-- Consider moving to features section -->
           <li id="3809">Update to latest DITA 2.0 grammars

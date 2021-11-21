@@ -113,18 +113,20 @@
             contribute the same <xmlatt>keyscope</xmlatt> value when the value was defined on both.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3796" format="html" scope="external">#3796</xref>
           </li>
-          <li id="3806">A <codeph>commonattributes</codeph> mode was added to HTML5, PDF, and XHTML plugins to allow for
-            easier extension. This is a backwards compatible change, however, existing plug-ins should be changed to use
-            the new <codeph>commonattributes</codeph> mode.
+          <li id="3806">A <codeph
+            >commonattributes</codeph> mode was added to the HTML5, PDF, and XHTML plug-ins to allow
+            for easier extension. This is a backwards compatible change, however, existing plug-ins should be changed to
+            use the new <codeph>commonattributes</codeph> mode.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3806" format="html" scope="external">#3806</xref>
-            <fig id="fig_jq5_h5h_qrb">
-              <title>Pre-3.7</title>
-              <codeblock id="codeblock_tcz_g5h_qrb">&lt;xsl:template name="commonattributes">
+            <fig>
+              <title>Named template prior to version 3.7</title>
+              <codeblock outputclass="language-xml">&lt;xsl:template name="commonattributes">
   &lt;!-- whole copy of commonattributes named template with customizations -->
 &lt;/xsl:template></codeblock>
-            </fig><fig id="fig_uwr_j5h_qrb">
-              <title>3.7</title>
-              <codeblock id="codeblock_vwr_j5h_qrb">&lt;xsl:template match="@* | node()" mode="commonattributes">
+            </fig>
+            <fig>
+              <title>Template mode as of version 3.7</title>
+              <codeblock outputclass="language-xml">&lt;xsl:template match="@* | node()" mode="commonattributes">
   &lt;xsl:param name="default-output-class" as="xs:string*"/>
   &lt;xsl:next-match>
     &lt;xsl:with-param name="default-output-class" select="$default-output-class"/>
@@ -132,14 +134,32 @@
   &lt;!-- customizations -->
 &lt;/xsl:template></codeblock>
             </fig></li>
-          <li id="3807">The source code for Antenna House Formatter (AXF) and RenderX XEP has been removed from the core
-            repository and extracted to dedicated code repositories. The plug-ins remain available and may be installed.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref>
+          <li id="3807">The source code for the renderer-specific PDF plug-ins for Antenna House Formatter (AXF) and
+            RenderX XEP have been removed from the core repository and extracted to dedicated code repositories.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref> 
+            <p>This allows the plug-ins to be updated separately by commercial software vendors or open source
+              contributors:</p>
+            <ul>
+              <li>
+                <xref keyref="plugin-pdf2-axf"/></li>
+              <li>
+                <xref keyref="plugin-pdf2-xep"/></li>
+            </ul>
           </li>
           <li>HTML5
-            <ul id="ul_opc_3qx_prb">
-              <li id="3770">The order of linked CSS stylesheets in <xmlelement>head</xmlelement> was changed to load
-                custom CSS last to facilitate overrides.
+            <ul>
+              <li id="3770">The order of elements in the <xmlelement>head</xmlelement> element of the HTML template
+                files was changed to facilitate overrides. The common CSS stylesheets and any custom CSS files specified
+                via <parmname>args.css</parmname> now come <b>after</b> the contents of the custom header file specified
+                via <parmname>args.hdf</parmname>. This change better supports use cases in which the custom header file
+                is used to insert references to external CSS stylesheets for frameworks like
+                <xref
+                  href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#css"
+                  format="html"
+                  scope="external"
+                >Bootstrap</xref>. In previous versions of DITA-OT, framework styles took precedence
+                over any equivalent rules in the user’s custom stylesheet. This change allows rules in custom CSS files
+                specified via <parmname>args.css</parmname> to override any of the framework styles as necessary.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3770" format="html" scope="external">#3770</xref>
               </li>
               <li id="3738">The <xmlelement>head</xmlelement> element of the HTML template files was simplified by
@@ -152,11 +172,15 @@
               <li id="3791">Support for Adobe Flash was removed.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3791" format="html" scope="external">#3791</xref>
               </li>
-              <li id="3794">The HTML5 stylesheets were updated to use XSL modes instead of named templates. This is a
-                backwards compatible change, however, existing plug-ins should be changed to use modes instead of named
-                templates for:
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3794" format="html" scope="external">#3794</xref>
-                <ul id="ul_v4w_55f_qrb">
+              <li id="3794">The HTML5 stylesheets were updated to use XSL modes instead of named templates.
+                <xref
+                  href="https://github.com/dita-ot/dita-ot/issues/3794"
+                  format="html"
+                  scope="external"
+                >#3794</xref>                
+                <p>This is a backwards compatible change, however, existing plug-ins should be changed to use modes
+                  instead of named templates for:</p>
+                <ul>
                   <li><codeph>copyright</codeph></li>
                   <li><codeph>gen-endnotes</codeph></li>
                   <li><codeph>generateDefaultMeta</codeph></li>
@@ -167,10 +191,12 @@
                   <li><codeph>processHDR</codeph></li>
                   <li><codeph>processFTR</codeph></li>
                   <li><codeph>generateCharset</codeph></li>
-                </ul></li>
-            </ul></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li>PDF
-            <ul id="ul_bst_gqx_prb">
+            <ul>
               <li id="3660">The new <xmlatt>note__image</xmlatt> attribute set was added to combine attributes for
                 images or icons for notes.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3529" format="html" scope="external">#3529</xref>
@@ -184,8 +210,8 @@
               </li>
             </ul></li>
           <li>Several bundled dependencies have been upgraded to new versions:
-            <ul id="ul_dtr_vkx_prb">
-              <li>ANT 1.10.12
+            <ul>
+              <li>Ant 1.10.12
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
               </li>
               <li>FOP 2.6

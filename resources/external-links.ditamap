@@ -109,6 +109,26 @@
         <linktext>org.dita.html5.dublin-core</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="plugin-pdf2-axf"
+      href="https://github.com/dita-ot/org.dita.pdf2.axf"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>org.dita.pdf2.axf</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="plugin-pdf2-xep"
+      href="https://github.com/dita-ot/org.dita.pdf2.xep"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>org.dita.pdf2.xep</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
   <topicset id="dita-ot-rn">
@@ -766,6 +786,16 @@
     >
       <topicmeta>
         <linktext>Apache Ant documentation</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="bootstrap-css"
+      href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#css"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Bootstrap</linktext>
       </topicmeta>
     </keydef>
     <keydef

@@ -86,61 +86,165 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="3485">Update to Saxon 10.0
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3485" format="html" scope="external">#3485</xref>
-          </li>
-          <li id="3529">PDF2 magic FO attributes on note icon
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3529" format="html" scope="external">#3529</xref>
-          </li>
-          <li id="3658">Migrate Gradle scripts to remove deprecated features
+          <li id="3658">The Gradle build scripts were updated. This change resolves the "[d]eprecated Gradle features
+            were used in this build" log message.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3658" format="html" scope="external">#3658</xref>
           </li>
-          <li id="3660">Create attribute set note__image to store attributes for note image
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3660" format="html" scope="external">#3660</xref>
-          </li>
-          <li id="3665">Update Dockerfile
+          <li id="3665">A new
+            <xref href="https://github.com/dita-ot/dita-ot-action" format="html" scope="external">dita-ot-action</xref>
+            repository was added to the DITA-OT project with a GitHub action for DITA-OT builds. The GitHub action
+            installs DITA-OT and plug-ins into a Docker image and then builds a series of outputs.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref>
-          </li>
-          <li id="3738">Delete charset, pragma
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3738" format="html" scope="external">#3738</xref>
-          </li>
-          <li id="3768">Adopt appropriate Japanese font setting in PDF2
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3768" format="html" scope="external">#3768</xref>
-          </li>
-          <li id="3769">Refine Japanese font assignment for PDF2 output.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3769" format="html" scope="external">#3769</xref>
-          </li>
-          <li id="3770">Load custom CSS last to facilitate overrides
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3770" format="html" scope="external">#3770</xref>
-          </li>
-          <li id="3774">Update PDF2 dependency FOP 2.6
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3774" format="html" scope="external">#3774</xref>
           </li>
           <li id="3780">Support fileset for style configuration 
             <xref href="https://github.com/dita-ot/dita-ot/issues/3780" format="html" scope="external">#3780</xref>
           </li>
-          <li id="3791">Remove HTML5 special case for Adobe Flash
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3791" format="html" scope="external">#3791</xref>
-          </li>
-          <li id="3792">Populate ancestor links during map pull step
+          <li id="3792">The mappull processing step was changed regarding links are generated with
+              <parmname>args.rellinks</parmname>. Starting in 3.7 <option>noparent</option> will not generate any
+            ancestor links and <option>nofamily</option> will not generate sibling, cousin, ancestor, or descendant
+            links. Prior to 3.7 <parmname>args.rellinks </parmname><option>all</option> did not actually include all
+            links. Now it will. If you used <option>all</option> and want to retain the links as they were generated
+            prior to 3.7, you must specify the Ant property  <codeph>include.rellinks="#default parent child sibling
+              friend next previous cousin descendant sample external other"</codeph>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3792" format="html" scope="external">#3792</xref>
           </li>
-          <li id="3794">Use modes instead of named templates in HTML5 stylesheets
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3794" format="html" scope="external">#3794</xref>
-          </li>
-          <li id="3796">merge duplicate @keyscope values between <xmlelement>mapref</xmlelement> and <xmlelement
-            >map</xmlelement>
+          <li id="3796">Mapref processing was improved to remove any duplicate <xmlatt>keyscope</xmlatt> values. Prior
+            to 3.7 it was possible that <xmlelement>mapref</xmlelement> and <xmlelement>map</xmlelement> would
+            contribute the same <xmlatt>keyscope</xmlatt> value when the value was defined on both.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3796" format="html" scope="external">#3796</xref>
           </li>
-          <li id="3803">Update to Gradle 7.2
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3803" format="html" scope="external">#3803</xref>
-          </li>
-          <li id="3806">Add commonattributes mode in HTML5 to allow for easier extension
+          <li id="3806">A <codeph
+            >commonattributes</codeph> mode was added to the HTML5, PDF, and XHTML plug-ins to allow
+            for easier extension. This is a backwards compatible change, however, existing plug-ins should be changed to
+            use the new <codeph>commonattributes</codeph> mode.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3806" format="html" scope="external">#3806</xref>
+            <fig>
+              <title>Named template prior to version 3.7</title>
+              <codeblock outputclass="language-xml">&lt;xsl:template name="commonattributes">
+  &lt;!-- whole copy of commonattributes named template with customizations -->
+&lt;/xsl:template></codeblock>
+            </fig>
+            <fig>
+              <title>Template mode as of version 3.7</title>
+              <codeblock outputclass="language-xml">&lt;xsl:template match="@* | node()" mode="commonattributes">
+  &lt;xsl:param name="default-output-class" as="xs:string*"/>
+  &lt;xsl:next-match>
+    &lt;xsl:with-param name="default-output-class" select="$default-output-class"/>
+  &lt;/xsl:next-match>
+  &lt;!-- customizations -->
+&lt;/xsl:template></codeblock>
+            </fig></li>
+          <li id="3807">The source code for the renderer-specific PDF plug-ins for Antenna House Formatter (AXF) and
+            RenderX XEP have been removed from the core repository and extracted to dedicated code repositories.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref> 
+            <p>This allows the plug-ins to be updated separately by commercial software vendors or open source
+              contributors:</p>
+            <ul>
+              <li>
+                <xref keyref="plugin-pdf2-axf"/></li>
+              <li>
+                <xref keyref="plugin-pdf2-xep"/></li>
+            </ul>
           </li>
-          <li id="3807">Remove PDF2 AXF and RenderX in favour of separate repo
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref>
+          <li>HTML5
+            <ul>
+              <li id="3770">The order of elements in the <xmlelement>head</xmlelement> element of the HTML template
+                files was changed to facilitate overrides. The common CSS stylesheets and any custom CSS files specified
+                via <parmname>args.css</parmname> now come <b>after</b> the contents of the custom header file specified
+                via <parmname>args.hdf</parmname>. This change better supports use cases in which the custom header file
+                is used to insert references to external CSS stylesheets for frameworks like
+                <xref
+                  href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#css"
+                  format="html"
+                  scope="external"
+                >Bootstrap</xref>. In previous versions of DITA-OT, framework styles took precedence
+                over any equivalent rules in the user’s custom stylesheet. This change allows rules in custom CSS files
+                specified via <parmname>args.css</parmname> to override any of the framework styles as necessary.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3770" format="html" scope="external">#3770</xref>
+              </li>
+              <li id="3738">The <xmlelement>head</xmlelement> element of the HTML template files was simplified by
+                removing <codeph>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"></codeph>. This
+                is an older method to specify a character set. A second, simpler <xmlelement>meta</xmlelement> element
+                was also present that defined the UTF-8 character set. The simpler definition remains. The test source
+                files were similarly updated.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3738" format="html" scope="external">#3738</xref>
+              </li>
+              <li id="3791">Support for Adobe Flash was removed.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3791" format="html" scope="external">#3791</xref>
+              </li>
+              <li id="3794">The HTML5 stylesheets were updated to use XSL modes instead of named templates.
+                <xref
+                  href="https://github.com/dita-ot/dita-ot/issues/3794"
+                  format="html"
+                  scope="external"
+                >#3794</xref>                
+                <p>This is a backwards compatible change, however, existing plug-ins should be changed to use modes
+                  instead of named templates for:</p>
+                <ul>
+                  <li><codeph>copyright</codeph></li>
+                  <li><codeph>gen-endnotes</codeph></li>
+                  <li><codeph>generateDefaultMeta</codeph></li>
+                  <li><codeph>generateCssLinks</codeph></li>
+                  <li><codeph>generateChapterTitle</codeph></li>
+                  <li><codeph>processHDF</codeph></li>
+                  <li><codeph>generateBreadcrumbs</codeph></li>
+                  <li><codeph>processHDR</codeph></li>
+                  <li><codeph>processFTR</codeph></li>
+                  <li><codeph>generateCharset</codeph></li>
+                </ul>
+              </li>
+            </ul>
           </li>
+          <li>PDF
+            <ul>
+              <li id="3660">The new <xmlatt>note__image</xmlatt> attribute set was added to combine attributes for
+                images or icons for notes.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3529" format="html" scope="external">#3529</xref>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3660" format="html" scope="external">#3660</xref>
+              </li>
+              <li id="3768">Adopt appropriate Japanese font setting in PDF2
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3768" format="html" scope="external">#3768</xref>
+              </li>
+              <li id="3769">Refine Japanese font assignment for PDF2 output.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3769" format="html" scope="external">#3769</xref>
+              </li>
+            </ul></li>
+          <li>Several bundled dependencies have been upgraded to new versions:
+            <ul>
+              <li>Ant 1.10.12
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
+              <li>FOP 2.6
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3774" format="html" scope="external">#3774</xref>
+              </li>
+              <li>Gradle 7.2
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3803" format="html" scope="external">#3803</xref>
+              </li>
+              <li>ICU4J 70.1
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
+              <li>Jackson 2.13.0
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
+              <li>JUnit 4.13.2
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
+              <li>Logback 1.2.6
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
+              <li>RenderX XEP 3.6.3
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3813" format="html" scope="external">#3813</xref>
+              </li>
+              <li>Saxon 10.5
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3485" format="html" scope="external">#3485</xref>
+              </li>
+              <li>SLF4J 1.7.32
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
+              <li>Xerces 2.12.1
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
+              </li>
+            </ul></li>
           <!-- Consider moving to features section -->
           <li id="3809">Update to latest DITA 2.0 grammars
             <xref href="https://github.com/dita-ot/dita-ot/issues/3809" format="html" scope="external">#3809</xref>

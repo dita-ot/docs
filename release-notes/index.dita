@@ -135,8 +135,9 @@
 &lt;/xsl:template></codeblock>
             </fig></li>
           <li id="3807">The source code for the renderer-specific PDF plug-ins for Antenna House Formatter (AXF) and
-            RenderX XEP have been removed from the core repository and extracted to dedicated code repositories.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref> 
+            RenderX XEP have been extracted to dedicated code repositories.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3813" format="html" scope="external">#3813</xref>
             <p>This allows the plug-ins to be updated separately by commercial software vendors or open source
               contributors:</p>
             <ul>
@@ -248,9 +249,6 @@
           <!-- Consider moving to features section -->
           <li id="3809">Update to latest DITA 2.0 grammars
             <xref href="https://github.com/dita-ot/dita-ot/issues/3809" format="html" scope="external">#3809</xref>
-          </li>
-          <li id="3813">Update PDF2 RenderX to 3.6.3
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3813" format="html" scope="external">#3813</xref>
           </li>
           <li id="3817">Convert old strings files to new format
             <xref href="https://github.com/dita-ot/dita-ot/issues/3817" format="html" scope="external">#3817</xref>

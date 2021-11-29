@@ -94,11 +94,14 @@
             <xref href="https://github.com/dita-ot/dita-ot-action" format="html" scope="external">dita-ot-action</xref>
             repository was added to the DITA-OT project with a GitHub action for DITA-OT builds. The GitHub action
             installs DITA-OT and plug-ins into a Docker image and then builds a series of outputs.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref>
-          </li>
-          <li id="3780">Support fileset for style configuration 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref></li>
+          <li id="3780">Additional support for Ant <xmlelement>style</xmlelement> was added to make custom
+              <xmlelement>pipeline</xmlelement>
+            <xref keyref="plugin-coding-conventions">configurations</xref> more consistent with  XSLT tasks in Ant.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3780" format="html" scope="external">#3780</xref>
-          </li>
+            <p>A stylesheet can be passed as an Ant
+              <xref href="https://ant.apache.org/manual/Types/resources.html" format="html" scope="external"
+                >resource</xref>, providing support for classpath-based plug-in resources.</p></li>
           <li id="3792">The mappull processing step has changed how related links are generated with
               <parmname>args.rellinks</parmname>. Starting in 3.7, <option>noparent</option> will not generate any
             ancestor links and <option>nofamily</option> will not generate sibling, cousin, ancestor, or descendant

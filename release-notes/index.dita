@@ -275,7 +275,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3733" format="html" scope="external">#3733</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3775" format="html" scope="external">#3775</xref>
           </li>
-          <li id="3742">PDF: Fix redundant page numbers in German Preface headers
+          <li id="3742">The German localization of the PDF <cite>Preface</cite> header strings included the page numbers
+            twice, and the <parmname>prodname</parmname> parameter was missing. The default German strings have been
+            aligned to include the product name and page numbers in the same pattern as other languages.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3742" format="html" scope="external">#3742</xref>
           </li>
           <li id="3751">XHTML - Colsep/rowsep ignored on tgroup element
@@ -309,7 +311,11 @@
           <li id="3790">Fix errors for <codeph>&lt;mapref scope="peer"&gt;</codeph> references
             <xref href="https://github.com/dita-ot/dita-ot/issues/3790" format="html" scope="external">#3790</xref>
           </li>
-          <li id="3800">HTML5: Use valid ARIA role for ToC <xmlelement>nav</xmlelement>
+          <li id="3800">Table of contents navigation in HTML5 output used a <xmlelement>nav</xmlelement> element with
+            the ARIA <xmlatt>role</xmlatt> attribute set to <codeph>toc</codeph>. Certain accessibility tools flagged
+            this as an error. The invalid role has been replaced with the <codeph>navigation</codeph> landmark role. A
+            new <codeph>toc</codeph> class allows custom CSS styles to target the ToC navigation. CSS rules that use the
+              <codeph>nav[role='toc']</codeph> selector can be simplified to <codeph>nav.toc</codeph>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3800" format="html" scope="external">#3800</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3801" format="html" scope="external">#3801</xref>
           </li>

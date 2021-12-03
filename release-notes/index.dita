@@ -166,8 +166,7 @@
               <li id="3738">The <xmlelement>head</xmlelement> element of the HTML template files was simplified by
                 removing <codeph>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"></codeph>. This
                 is an older method to specify a character set. A second, simpler <xmlelement>meta</xmlelement> element
-                was also present that defined the UTF-8 character set. The simpler definition remains. The test source
-                files were similarly updated.
+                was also present that defined the UTF-8 character set. The simpler definition remains.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3738" format="html" scope="external">#3738</xref>
               </li>
               <li id="3791">Support for Adobe Flash was removed.

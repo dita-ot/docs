@@ -101,8 +101,11 @@
             <xref keyref="plugin-coding-conventions">configurations</xref> more consistent with  XSLT tasks in Ant.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3780" format="html" scope="external">#3780</xref>
             <p>A stylesheet can be passed as an Ant
-              <xref href="https://ant.apache.org/manual/Types/resources.html" format="html" scope="external"
-                >resource</xref>, providing support for classpath-based plug-in resources.</p></li>
+              <xref
+                href="https://ant.apache.org/manual/Types/resources.html"
+                format="html"
+                scope="external"
+              >resource</xref>, providing support for classpath-based plug-in resources.</p></li>
           <li id="3792">The mappull processing step has changed how related links are generated with
               <parmname>args.rellinks</parmname>. Starting in 3.7, <option>noparent</option> will not generate any
             ancestor links and <option>nofamily</option> will not generate sibling, cousin, ancestor, or descendant

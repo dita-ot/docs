@@ -89,10 +89,6 @@
           </ul>
         </li>
       </ul>
-      <note id="more-to-come">Other new or revised features proposed for DITA 2.0 are not yet supported. Additional
-        features will be implemented in future versions of DITA-OT as the specification evolves.</note>
-      <note type="tip">For the latest status information on DITA 2.0-related features and fixes, see the
-        <xref keyref="dita20-issues"/> in the GitHub issues tracker.</note>
     </section>
     <section>
       <title>DITA-OT 3.7</title>
@@ -124,6 +120,12 @@
             <li><xmlatt>query</xmlatt></li>
           </ul></li>
       </ul>
+    </section>
+    <section>
+      <note id="more-to-come">Other new or revised features proposed for DITA 2.0 are not yet supported. Additional
+        features will be implemented in future versions of DITA-OT as the specification evolves.</note>
+      <note type="tip">For the latest status information on DITA 2.0-related features and fixes, see the
+        <xref keyref="dita20-issues"/> in the GitHub issues tracker.</note>      
     </section>
   </conbody>
 

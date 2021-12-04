@@ -107,16 +107,19 @@
         <li>The new <xmlatt>appid-role</xmlatt> attribute is available. The default is "context-sensitive-help."</li>
         <li>The <xmlatt>keyref</xmlatt> attribute was added to all elements in the highlight domain and the new emphasis
           domain. </li>
+        <li>The <xmlatt>href</xmlatt>, <xmlatt>format</xmlatt>, and <xmlatt>scope </xmlatt> attributes are now
+          consistent for new elements.</li>
         <li> Several obsolete elements and attributes have been removed from DITA 2.0, including:
           <ul id="ul_swh_ntf_5rb">
+            <li><xmlelement>data-about</xmlelement></li>
             <li><xmlelement>longquoteref</xmlelement></li>
             <li><xmlelement>sectiondiv</xmlelement></li>
             <li><xmlatt>copy-to</xmlatt></li>
             <li><xmlatt>href</xmlatt>, <xmlatt>format</xmlatt>, <xmlatt>type</xmlatt>, <xmlatt>scope</xmlatt>,
                 <xmlatt>reftitle</xmlatt> from <xmlelement>lq</xmlelement> (<xmlatt>keyref</xmlatt> remains)</li>
-            <li><xmlatt>locktitle</xmlatt> from <xmlelement>topichead</xmlelement> and
-                <xmlelement>topicgroup</xmlelement></li>
+            <li><xmlatt>locktitle</xmlatt></li>
             <li><xmlatt>longdescref</xmlatt></li>
+            <li><xmlatt>mapkeyref</xmlatt></li>
             <li><xmlatt>print</xmlatt></li>
             <li><xmlatt>query</xmlatt></li>
           </ul></li>

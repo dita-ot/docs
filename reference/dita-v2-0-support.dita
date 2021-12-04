@@ -94,6 +94,37 @@
       <note type="tip">For the latest status information on DITA 2.0-related features and fixes, see the
         <xref keyref="dita20-issues"/> in the GitHub issues tracker.</note>
     </section>
+    <section>
+      <title>DITA-OT 3.7</title>
+      <p>DITA-OT 3.7 adds support for additional DITA 2.0 features.</p>
+      <ul id="added-in-3.7">
+        <!-- Added in DITA-OT 3.7 -->
+        <li>The new <xmlelement>keytext</xmlelement> element can be used to define variable text referenced by
+            <xmlatt>keyref</xmlatt>.</li>
+        <li>The new alternative titles domain and <xmlelement>titlealt</xmlelement> element (separate from the
+            <xmlelement>titlealts</xmlelement> element in DITA 1.3) may be used when you need to use an alternate title,
+          such as for a navigation title, search title, link title, subtitle, or title hint.</li>
+        <li>The new <xmlatt>appid-role</xmlatt> attribute is available. The default is "context-sensitive-help."</li>
+        <li>The <xmlatt>keyref</xmlatt> attribute was added to all elements in the highlight domain and the new emphasis
+          domain. </li>
+        <li>The <xmlatt>href</xmlatt>, <xmlatt>format</xmlatt>, and <xmlatt>scope </xmlatt> attributes are now
+          consistent for new elements.</li>
+        <li> Several obsolete elements and attributes have been removed from DITA 2.0, including:
+          <ul id="ul_swh_ntf_5rb">
+            <li><xmlelement>data-about</xmlelement></li>
+            <li><xmlelement>longquoteref</xmlelement></li>
+            <li><xmlelement>sectiondiv</xmlelement></li>
+            <li><xmlatt>copy-to</xmlatt></li>
+            <li><xmlatt>href</xmlatt>, <xmlatt>format</xmlatt>, <xmlatt>type</xmlatt>, <xmlatt>scope</xmlatt>,
+                <xmlatt>reftitle</xmlatt> from <xmlelement>lq</xmlelement> (<xmlatt>keyref</xmlatt> remains)</li>
+            <li><xmlatt>locktitle</xmlatt></li>
+            <li><xmlatt>longdescref</xmlatt></li>
+            <li><xmlatt>mapkeyref</xmlatt></li>
+            <li><xmlatt>print</xmlatt></li>
+            <li><xmlatt>query</xmlatt></li>
+          </ul></li>
+      </ul>
+    </section>
   </conbody>
 
   <related-links>

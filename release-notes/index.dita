@@ -64,19 +64,20 @@
       <section id="dita-2-0-preview">
         <title>Updated DITA 2.0 preview</title>
         <p>In addition to the
-          <xref
-            keyref="dita-v2-0-support"
-          /> provided in DITA-OT 3.5 and 3.6, this release includes updated processing support
-          for the latest DRAFT versions of the DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of MMMM YYYY).
+          <xref keyref="dita-v2-0-support"/> provided in DITA-OT 3.5 and 3.6, this release includes updated processing
+          support for the latest DRAFT versions of the DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of
+          December 2021).
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3809" format="html" scope="external">#3809</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3833" format="html" scope="external">#3833</xref>
           <!-- Link to PRs that update 2.0 grammar files-->
         </p>
-        <!--
+        
         <ul conkeyref="dita-v2-0-support/added-in-3.7">
           <li/>
         </ul>
         <p conkeyref="dita-v2-0-support/grammar-files"/>
         <note conkeyref="dita-v2-0-support/more-to-come"/>
-        -->
+        
       </section>
 
       <section id="enhancements">
@@ -94,11 +95,17 @@
             <xref href="https://github.com/dita-ot/dita-ot-action" format="html" scope="external">dita-ot-action</xref>
             repository was added to the DITA-OT project with a GitHub action for DITA-OT builds. The GitHub action
             installs DITA-OT and plug-ins into a Docker image and then builds a series of outputs.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref>
-          </li>
-          <li id="3780">Support fileset for style configuration 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref></li>
+          <li id="3780">Additional support for Ant <xmlelement>style</xmlelement> was added to make custom
+              <xmlelement>pipeline</xmlelement>
+            <xref keyref="plugin-coding-conventions">configurations</xref> more consistent with  XSLT tasks in Ant.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3780" format="html" scope="external">#3780</xref>
-          </li>
+            <p>A stylesheet can be passed as an Ant
+              <xref
+                href="https://ant.apache.org/manual/Types/resources.html"
+                format="html"
+                scope="external"
+              >resource</xref>, providing support for classpath-based plug-in resources.</p></li>
           <li id="3792">The mappull processing step has changed how related links are generated with
               <parmname>args.rellinks</parmname>. Starting in 3.7, <option>noparent</option> will not generate any
             ancestor links and <option>nofamily</option> will not generate sibling, cousin, ancestor, or descendant
@@ -135,7 +142,8 @@
 &lt;/xsl:template></codeblock>
             </fig></li>
           <li id="3807">The source code for the renderer-specific PDF plug-ins for Antenna House Formatter (AXF) and
-            RenderX XEP have been extracted to dedicated code repositories.
+            RenderX XEP have been extracted to dedicated code repositories. The renderer specific plug-ins are still
+            distributed with DITA-OT. Only the source code location changed, allowing for easier maintenance.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3813" format="html" scope="external">#3813</xref>
             <p>This allows the plug-ins to be updated separately by commercial software vendors or open source
@@ -242,14 +250,8 @@
               </li>
             </ul></li>
           <!-- Consider moving to features section -->
-          <li id="3809">Update to latest DITA 2.0 grammars
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3809" format="html" scope="external">#3809</xref>
-          </li>
           <li id="3817">Convert old strings files to new format
             <xref href="https://github.com/dita-ot/dita-ot/issues/3817" format="html" scope="external">#3817</xref>
-          </li>
-          <li id="3821">Update dependencies
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3821" format="html" scope="external">#3821</xref>
           </li>
         </ul>
       </section>

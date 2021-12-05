@@ -10,7 +10,8 @@
 
   <shortdesc>DITA Open Toolkit <keyword keyref="release"/> provides a preview of features for the upcoming OASIS DITA
     2.0 specification. This preliminary processing support is provided on the basis of the latest DRAFT versions of the
-    DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of October 2020).</shortdesc>
+    DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of 
+    <keyword keyref="draft-dita-grammar-state"/>).</shortdesc>
 
   <conbody>
     <p id="grammar-files">DITA documents that reference the draft grammar files can be parsed, and where features
@@ -64,7 +65,7 @@
     </section>
     <section>
       <title>DITA-OT 3.6</title>
-      <p>DITA-OT 3.6 adds support for additional DITA 2.0 features.</p>
+      <p>DITA-OT 3.6 added support for additional DITA 2.0 features.</p>
       <ul id="added-in-3.6">
         <li>Where earlier DITA versions relied on the <xmlelement>object</xmlelement> to embed media in DITA source
           files, DITA 2.0 provides new <xmlelement>audio</xmlelement> and <xmlelement>video</xmlelement> elements that

@@ -249,7 +249,10 @@
           <!--
          
           -->
-          <li id="3709">Fix: 'Warning' notes could not be styled separately
+          <li id="3709">In PDF output generated with previous versions, “Warning” note labels used the same attribute
+            set as “Danger” note labels. Processing has been corrected to apply the dedicated attribute set defined for
+            warning note labels. Both attribute sets are empty by default, but this change makes it easier for custom
+            plug-ins to define separate styling for danger and warning notes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3709" format="html" scope="external">#3709</xref>
           </li>
           <li id="3715">HTML5 index.html reported as invalid by W3C validator

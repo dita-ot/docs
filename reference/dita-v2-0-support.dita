@@ -111,8 +111,8 @@
           domain. </li>
         <li>The <xmlatt>href</xmlatt>, <xmlatt>format</xmlatt>, and <xmlatt>scope </xmlatt> attributes are now
           consistent for new elements.</li>
-        <li> Several obsolete elements and attributes have been removed from DITA 2.0, including:
-          <ul id="ul_swh_ntf_5rb">
+        <li>Several obsolete elements and attributes have been removed from DITA 2.0, including:
+          <ul>
             <li><xmlelement>data-about</xmlelement></li>
             <li><xmlelement>longquoteref</xmlelement></li>
             <li><xmlelement>sectiondiv</xmlelement></li>
@@ -124,7 +124,8 @@
             <li><xmlatt>mapkeyref</xmlatt></li>
             <li><xmlatt>print</xmlatt></li>
             <li><xmlatt>query</xmlatt></li>
-          </ul></li>
+          </ul>
+        </li>
       </ul>
     </section>
     <section>

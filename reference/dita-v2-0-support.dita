@@ -93,9 +93,13 @@
       <title>DITA-OT 3.7</title>
       <p>DITA-OT 3.7 adds support for additional DITA 2.0 features.</p>
       <ul id="added-in-3.7">
-        <li>The new “combine” chunk action can be used to merge content into new output documents. When the
-            <xmlatt>chunk</xmlatt> attribute is set to <codeph>combine</codeph> on a map, branch, or map reference, all
-          source DITA documents grouped by that reference will be combined into a single document in the output.</li>
+        <li>The new “combine” chunk action can be used to merge content into new output documents.
+          <p>When the <xmlatt>chunk</xmlatt> attribute is set to <codeph>combine</codeph> on a map, branch, or map
+            reference, all source DITA documents grouped by that reference will be combined into a single document in
+            the output.</p>
+          <p id="chunk-split" outputclass="mark">(Support for the DITA 2.0 “split” chunk action has not yet been
+            implemented.)</p>
+        </li>
         <li>The new <xmlelement>keytext</xmlelement> element can be used to define variable text referenced by
             <xmlatt>keyref</xmlatt>.</li>
         <li>The new alternative titles domain and <xmlelement>titlealt</xmlelement> element (separate from the

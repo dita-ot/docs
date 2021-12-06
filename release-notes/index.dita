@@ -299,17 +299,25 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3765" format="html" scope="external">#3765</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3766" format="html" scope="external">#3766</xref>
           </li>
-          <li id="3778">Generate stable id failure for generated elements
+          <li id="3778">When processing simple tables such as parameter tables with no explicit header elements, earlier
+            versions failed to assign IDs to generated elements. IDs are now generated correctly in these cases.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3778" format="html" scope="external">#3778</xref>
           </li>
-          <li id="3779">Make XHTML object elements valid when there's fallback
+          <li id="3779">XHTML processing has been refined to correct the order of contents within
+              <xmlelement>object</xmlelement> elements. Any <xmlelement>desc</xmlelement> or
+              <xmlelement>longdesc</xmlelement> content is now generated after any <xmlelement>param</xmlelement>
+            element to ensure the resulting XHTML files pass EPUBCheck validation.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3779" format="html" scope="external">#3779</xref>
           </li>
-          <li id="3785">SVG lengths having NaN values when scaling SVG images
+          <li id="3785">HTML output generated from SVG files that specified height or width values in centimeters or
+            inches were not scaled properly. Length values are now converted to pixels to ensure images are scaled
+            correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3785" format="html" scope="external">#3785</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3786" format="html" scope="external">#3786</xref>
           </li>
-          <li id="3790">Fix errors for <codeph>&lt;mapref scope="peer"&gt;</codeph> references
+          <li id="3790">When publishing documents with peer map references, spurious errors were reported for missing
+            files, link text, and navigation titles when the peer maps were not available at processing time. Processing
+            has been updated to relax these requirements for peer maps, and allow processing to complete without errors.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3790" format="html" scope="external">#3790</xref>
           </li>
           <li id="3800">Table of contents navigation in HTML5 output used a <xmlelement>nav</xmlelement> element with

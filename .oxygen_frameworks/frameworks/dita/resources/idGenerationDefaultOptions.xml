@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ID Generation default options for DITA - Extension for DITA-OT Docs project -->
+<idGeneration>
+    <autoGenerate>true</autoGenerate>
+    <idAttribute>id</idAttribute>
+    <idPattern>${localName}_${id}</idPattern>
+    <generateForElement>topic/topic</generateForElement>
+	<!-- LE: Removed from DITA-OT Docs -->
+	<!--
+	<generateForElement>topic/section</generateForElement>
+    <generateForElement>topic/table</generateForElement>
+    <generateForElement>topic/simpletable</generateForElement>
+    <generateForElement>topic/fig</generateForElement>
+    <generateForElement>topic/image</generateForElement>
+    <generateForElement>topic/ul</generateForElement>
+    <generateForElement>topic/ol</generateForElement>
+	<generateForElement>equation-d/equation-block</generateForElement>
+	<generateForElement>topic/pre</generateForElement>
+	<generateForElement>topic/dl</generateForElement>
+	<generateForElement>topic/example</generateForElement>
+	<generateForElement>topic/imagemap</generateForElement>
+	<generateForElement>topic/lines</generateForElement>
+	<generateForElement>topic/lq</generateForElement>
+	<generateForElement>topic/msgblock</generateForElement>
+	<generateForElement>topic/note</generateForElement>
+	<generateForElement>topic/sl</generateForElement>
+	-->
+</idGeneration>

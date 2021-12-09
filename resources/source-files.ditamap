@@ -6,7 +6,9 @@
   <topicmeta>
     <shortdesc>Provides key definitions for each DITA topic in the repository.</shortdesc>
   </topicmeta>
+  <keydef keys="add-new-gentext-language" href="../topics/add-new-gentext-language.dita"/>
   <keydef keys="adding-plugins" href="../topics/adding-plugins.dita"/>
+  <keydef keys="adding-new-strings" href="../topics/adding-new-strings.dita"/>
   <keydef keys="ant" href="../topics/ant.dita"/>
   <keydef keys="ant-parameters-details" href="../parameters/ant-parameters-details.dita"/>
   <keydef keys="architecture" href="../reference/architecture.dita"/>
@@ -108,6 +110,7 @@
   <keydef keys="migration" href="../topics/migration.dita"/>
   <keydef keys="other-errors" href="../topics/other-errors.dita"/>
   <keydef keys="output-formats" href="../topics/output-formats.dita"/>
+  <keydef keys="overriding-a-default-generated-text-string" href="../topics/overriding-a-default-generated-text-string.dita"/>
   <keydef keys="parameters" href="../parameters/index.dita"/>
   <keydef keys="parameters-other" href="../parameters/parameters-other.dita"/>
   <keydef keys="parameters_intro" href="../parameters/parameters_intro.dita"/>

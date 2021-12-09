@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="overriding-a-default-generated-text-string">
+    <title>Overriding a default generated text string</title>
+    <shortdesc>Override the default strings in the toolkit when you want to replace an existing string with one of your
+        own; for example, it could be used to reset the English string "Figure" to "Fig."</shortdesc>
+    <prolog>
+        <metadata>
+            <keywords>
+                <indexterm>generated text, overriding</indexterm>
+                <indexterm>gentext</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Copy <filepath>plugins/org.dita.base/xsl/common/strings.xml</filepath> to your plug-in.</cmd>
+            </step>
+            <step>
+                <cmd>In your plug-in, edit <filepath>xsl/common/strings.xml</filepath> to contain references to the
+                    language files you want to override.</cmd>
+                <info>
+                    <p>
+                        <codeblock
+              outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+            >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;!-- Provide strings for my plug-in; this plug-in supports
+     English and German. -->
+&lt;langlist>
+  &lt;lang xml:lang="en"     filename="strings-en-us.xml"/>
+  &lt;lang xml:lang="en-US"  filename="strings-en-us.xml"/>
+  &lt;lang xml:lang="de"     filename="strings-de-de.xml"/>
+  &lt;lang xml:lang="de-DE"  filename="strings-de-de.xml"/>
+&lt;/langlist></codeblock>
+                    </p>
+                </info>
+            </step>
+            <step id="copy-strings">
+                <cmd>Copy the language file from <filepath>plugins/org.dita.base/xsl/common/</filepath> you want to
+                    override. Paste it into your plug-in's <filepath>xsl/common</filepath> directory.</cmd>
+            </step>
+            <step>
+                <cmd>Open the language file. Remove all of the variables except those you want to override.</cmd>
+                <info>
+                    <p>By removing the variables you will not override, you limit where variables are defined in the
+                        toolkit and while making your file easier to maintain. </p>
+                </info>
+            </step>
+            <step id="change-strings">
+                <cmd>Change the generated text to your desired text.</cmd>
+                <info>
+                    <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;variables>
+   &lt;variable id="Figure">Fig.&lt;/variable>
+&lt;/variables></codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Update your <filepath>plugin.xml</filepath> file to extend the strings available.</cmd>
+                <info>
+                    <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;plugin id="com.example.your-plugin">
+  &lt;feature extension="dita.xsl.strings" file="xsl/common/strings.xml"/>
+&lt;/plugin></codeblock>
+                </info>
+                <stepresult>Your overrides are available to your stylesheets. For example, if processing in a context
+                    where the <xmlatt>xml:lang</xmlatt> value is "en-US", the following call returns "Fig.", because it
+                    was defined as the text for the variable with <xmlatt>id</xmlatt> value of "Figure" in step
+                    <xref href="#./change-strings" format="dita"/>, which overrides the default text found in
+                        <b>org.dita.base</b>.<codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;xsl:call-template name="getVariable">
+  &lt;xsl:with-param name="id" select="Figure"/>
+&lt;/xsl:call-template></codeblock></stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

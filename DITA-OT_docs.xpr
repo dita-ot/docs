@@ -8,7 +8,7 @@
                     <entry>
                         <String>additional.frameworks.directories</String>
                         <String-array>
-                            <String>{$pd}/.oxygen_frameworks</String>
+                            <String>{$pd}/.oxygen</String>
                         </String-array>
                     </entry>
                     <entry>
@@ -47,7 +47,7 @@
                                                         <Integer>0</Integer>
                                                     </field>
                                                     <field name="value">
-                                                        <String>${pdu}/.oxygen_frameworks/frameworks/dita/resources</String>
+                                                        <String>${pdu}/.oxygen/frameworks/dita/resources</String>
                                                     </field>
                                                     <field name="patchHandling">
                                                         <String>addIndex</String>

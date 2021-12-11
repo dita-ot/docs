@@ -6,10 +6,31 @@
             <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
+                        <String>Filename_generation_from_topic_title_options</String>
+                        <titleBasedFileNameGenerationOptions>
+                            <field name="charToReplaceSpacesWith">
+                                <String>-</String>
+                            </field>
+                            <field name="allLowerCase">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="upperCaseFirstLetter">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="howToGenerateFilenameFromTitle">
+                                <Integer>0</Integer>
+                            </field>
+                        </titleBasedFileNameGenerationOptions>
+                    </entry>
+                    <entry>
                         <String>additional.frameworks.directories</String>
                         <String-array>
                             <String>{$pd}/.oxygen</String>
                         </String-array>
+                    </entry>
+                    <entry>
+                        <String>dita.same.topic.frag</String>
+                        <Boolean>true</Boolean>
                     </entry>
                     <entry>
                         <String>document.types</String>
@@ -9076,6 +9097,22 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
                     </entry>
                     <entry>
                         <String>key.editor.format.xml.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.open.option.pane</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.save.option.pane</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.markdown.schematron.validator.option.pane</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.topics.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>

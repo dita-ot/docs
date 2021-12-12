@@ -54,32 +54,7 @@
         string values for each string in each language. Also consider using a naming convention for attributes used to
         look up the string value by using the ID or purpose of your plug-in.</p>
       <p>Generated strings are available to the "getVariable" template used in many DITA-OT XSLT files. </p>
-      <p>Prior to DITA-OT 3.7 there were two different XML structures for adding or modifying generated text strings. In
-        the <b>org.dita.base</b> plug-in the root element <xmlelement>strings</xmlelement> was used. In
-          <b>org.dita.pdf2</b> the root element was <xmlelement>vars</xmlelement>. </p>
-      <codeblock
-        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
-      >&lt;?xml version="1.0" encoding="utf-8"?>
-&lt;strings xml:lang="en-US">
-  &lt;str name="String1">English generated text&lt;/str>
-&lt;/strings></codeblock>
-      <codeblock
-        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
-      >&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;vars xmlns="http://www.idiominc.com/opentopic/vars">
-  &lt;variable id="String1">English generated text&lt;/variable>
-&lt;/vars></codeblock>
-      <p>Starting with DITA-OT 3.7 these structures have been replaced and deprecated (although still valid). All
-        generated text files use a <xmlelement>variables</xmlelement> root element. For <b>org.dita.base</b>, the
-          <xmlelement>str</xmlelement> element was renamed to <xmlelement>variable</xmlelement> and
-          <xmlatt>name</xmlatt> became <xmlatt>id</xmlatt>. </p>
-      <codeblock
-        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
-      >&lt;?xml version="1.0" encoding="UTF-8"?>
-&lt;?xml-model href="strings.rnc" type="application/relax-ng-compact-syntax"?>
-&lt;variables>
-  &lt;variable id="String1">English generated text&lt;/variable>
-&lt;/variables></codeblock>
+      <div conkeyref="reusable-components/gentext-string-structure"/>
       </section>
   </refbody>
 </reference>

@@ -178,5 +178,51 @@
         through 3.3. You may want to start at the oldest version and read forward so you can chronologically follow the
         changes, since it is possible that files or topics have had multiple changes. </p>
     </section>
+    <section>
+      <title>Generated text (gentext) XML structure</title>
+      <div id="gentext-string-structure">
+        <p>Prior to DITA-OT 3.7 there were two different XML structures for adding or modifying generated text
+            (<xmlelement>gentext</xmlelement>)  when the <parmname>dita.strings.xsl</parmname> extension point was used.
+          In the <b>org.dita.base</b> plug-in the root element <xmlelement>strings</xmlelement> was used. In
+            <b>org.dita.pdf2</b> the root element was <xmlelement>vars</xmlelement>. </p>
+        <fig id="fig_fnc_yvq_wrb">
+          <title>org.dita.base XML structure prior to DITA-OT 3.7 </title>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+            id="codeblock_rnc_yvq_wrb"
+          >&lt;?xml version="1.0" encoding="utf-8"?>
+&lt;strings xml:lang="en-US">
+  &lt;str name="String1">English generated text&lt;/str>
+&lt;/strings></codeblock>
+        </fig>
+        <fig id="fig_hpj_cwq_wrb">
+          <title>org.dita.pdf2 XML structure prior to DITA-OT 3.7 </title>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+            id="codeblock_lpj_cwq_wrb"
+          >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;vars xmlns="http://www.idiominc.com/opentopic/vars">
+  &lt;variable id="String1">English generated text&lt;/variable>
+&lt;/vars></codeblock>
+        </fig>
+        <p>Starting with DITA-OT 3.7 these structures have been replaced and deprecated (although still valid). All
+          generated text files use <xmlelement>variables</xmlelement> as the root element. For <b>org.dita.base</b>, the
+            <xmlelement>str</xmlelement> element was renamed to <xmlelement>variable</xmlelement> and
+            <xmlatt>name</xmlatt> became <xmlatt>id</xmlatt>. For <b>org.dita.pdf2</b>, the
+            <xmlelement>vars</xmlelement> element was renamed to <xmlelement>variables</xmlelement>. Plug-in developers
+          should update any generated text files to reflect this structure.</p>
+        <fig id="fig_vwj_fwq_wrb">
+          <title>XML structure for org.dita.base and org.dita.pdf2 as of DITA-OT 3.7 </title>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+            id="codeblock_dxj_fwq_wrb"
+          >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;?xml-model href="strings.rnc" type="application/relax-ng-compact-syntax"?>
+&lt;variables>
+  &lt;variable id="String1">English generated text&lt;/variable>
+&lt;/variables></codeblock>
+        </fig>
+      </div>
+    </section>
   </conbody>
 </concept>

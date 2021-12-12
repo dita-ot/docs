@@ -178,8 +178,9 @@
         through 3.3. You may want to start at the oldest version and read forward so you can chronologically follow the
         changes, since it is possible that files or topics have had multiple changes. </p>
     </section>
-    <section>
-      <title>Generated text (gentext) XML structure</title>
+
+    <section id="strings-format">
+      <title>Common format for generated text</title>
       <div id="gentext-string-structure">
         <p>Prior to DITA-OT 3.7 there were two different XML structures for adding or modifying generated text
             (<xmlelement>gentext</xmlelement>)  when the <parmname>dita.strings.xsl</parmname> extension point was used.

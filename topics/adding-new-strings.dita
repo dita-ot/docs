@@ -69,8 +69,8 @@
             </step>
             <step>
                 <cmd>Repeat step
-                    <xref href="#./copy-strings" format="dita"/> and step
-                    <xref href="#./create-strings" format="dita"/> for each language.</cmd>
+                    <xref href="#./copy-strings"/> and step
+                    <xref href="#./create-strings"/> for each language.</cmd>
             </step>
             <step>
                 <cmd>Update your <filepath>plugin.xml</filepath> file to extend the strings available.</cmd>
@@ -85,7 +85,7 @@
                     context where the <xmlatt>xml:lang</xmlatt> value is "en-US", the following call returns "Another
                     string in English," because it was defined as the text for the variable with <xmlatt>id</xmlatt>
                     value of "Another String" in step
-                    <xref href="#./create-strings" format="dita"/>.<codeblock
+                    <xref href="#./create-strings"/>.<codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
           >&lt;xsl:call-template name="getVariable">
   &lt;xsl:with-param name="id" select="'Another String'"/>

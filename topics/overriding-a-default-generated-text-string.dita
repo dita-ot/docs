@@ -70,7 +70,7 @@
                 <stepresult>Your overrides are available to your stylesheets. For example, if processing in a context
                     where the <xmlatt>xml:lang</xmlatt> value is "en-US", the following call returns "Fig.", because it
                     was defined as the text for the variable with <xmlatt>id</xmlatt> value of "Figure" in step
-                    <xref href="#./change-strings" format="dita"/>, which overrides the default text found in
+                    <xref href="#./change-strings"/>, which overrides the default text found in
                         <b>org.dita.base</b>.<codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
           >&lt;xsl:call-template name="getVariable">

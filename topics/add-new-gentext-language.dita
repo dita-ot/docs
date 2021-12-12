@@ -64,8 +64,8 @@
             </step>
             <step>
                 <cmd>Repeat step
-                    <xref href="#./copy-strings" format="dita"/> to step
-                    <xref href="#./replace-strings" format="dita"/> for each language.</cmd>
+                    <xref href="#./copy-strings"/> to step
+                    <xref href="#./replace-strings"/> for each language.</cmd>
             </step>
             <step>
                 <cmd>Update your <filepath>plugin.xml</filepath> file to extend the strings available.</cmd>

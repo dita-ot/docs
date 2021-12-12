@@ -8,7 +8,7 @@
       <relcell>
         <topicref keyref="plugin-addgeneratedtext">
           <topicmeta>
-            <linktext>How to add support for new languages in HTML</linktext>
+            <linktext>How to add or modify generated text (<xmlelement>gentext</xmlelement>)</linktext>
           </topicmeta>
         </topicref>
       </relcell>
@@ -16,6 +16,11 @@
         <topicref keyref="globalization-languages">
           <topicmeta>
             <linktext>Languages supported by the core toolkit</linktext>
+          </topicmeta>
+        </topicref>
+        <topicref keyref="pdf-plugin-structure_common-vars">
+          <topicmeta>
+            <linktext>Variable overrides for PDF</linktext>
           </topicmeta>
         </topicref>
       </relcell>

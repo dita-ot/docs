@@ -8,18 +8,22 @@
         <metadata>
             <keywords>
                 <indexterm>generated text, adding new</indexterm>
-                <indexterm>gentext</indexterm>
+                <indexterm><xmlelement>gentext</xmlelement></indexterm>
             </keywords>
         </metadata>
     </prolog>
     <taskbody>
         <steps>
             <step>
-                <cmd>Copy <filepath>plugins/org.dita.base/xsl/common/strings.xml</filepath> to your plug-in.</cmd>
+                <cmd>Copy this file to your plug-in.</cmd>
+                <choices>
+                    <choice>non-PDF output: <filepath>plugins/org.dita.base/xsl/common/strings.xml</filepath></choice>
+                    <choice>PDF output: <filepath>plugins/org.dita.pdf2/cfg/common/vars/strings.xml</filepath></choice>
+                </choices>
             </step>
             <step>
-                <cmd>In your plug-in, edit <filepath>xsl/common/strings.xml</filepath> to contain references to the
-                    language files for which you are providing custom strings.</cmd>
+                <cmd>In your plug-in, edit <filepath>strings.xml</filepath> to contain references to the language files
+                    for which you are providing custom strings.</cmd>
                 <info>
                     <p>The "en-US" language must be present; other language files are optional.</p>
                     <p>
@@ -40,8 +44,8 @@
                 </info>
             </step>
             <step id="copy-strings">
-                <cmd>In <filepath>xsl/common</filepath>, create a new file called
-                        <filepath>my-added-strings-en-us.xml</filepath>.</cmd>
+                <cmd>In <filepath>xsl/common</filepath> or <filepath>cfg/common/vars</filepath>, create a new file
+                    called <filepath>my-added-strings-en-us.xml</filepath>.</cmd>
                 <info>
                     <codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"

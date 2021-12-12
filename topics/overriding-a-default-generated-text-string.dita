@@ -2,25 +2,29 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <task id="overriding-a-default-generated-text-string">
-    <title>Overriding a default generated text string</title>
+    <title>Overriding a generated text string</title>
     <shortdesc>Override the default strings in the toolkit when you want to replace an existing string with one of your
         own; for example, it could be used to reset the English string "Figure" to "Fig."</shortdesc>
     <prolog>
         <metadata>
             <keywords>
                 <indexterm>generated text, overriding</indexterm>
-                <indexterm>gentext</indexterm>
+                <indexterm><xmlelement>gentext</xmlelement></indexterm>
             </keywords>
         </metadata>
     </prolog>
     <taskbody>
         <steps>
             <step>
-                <cmd>Copy <filepath>plugins/org.dita.base/xsl/common/strings.xml</filepath> to your plug-in.</cmd>
+                <cmd>Copy this file to your plug-in.</cmd>
+                <choices>
+                    <choice>non-PDF output: <filepath>plugins/org.dita.base/xsl/common/strings.xml</filepath></choice>
+                    <choice>PDF output: <filepath>plugins/org.dita.pdf2/cfg/common/vars/strings.xml</filepath></choice>
+                </choices>
             </step>
             <step>
-                <cmd>In your plug-in, edit <filepath>xsl/common/strings.xml</filepath> to contain references to the
-                    language files you want to override.</cmd>
+                <cmd>In your plug-in, edit <filepath>strings.xml</filepath> to contain references to the language files
+                    you want to override.</cmd>
                 <info>
                     <p>
                         <codeblock
@@ -38,19 +42,27 @@
                 </info>
             </step>
             <step id="copy-strings">
-                <cmd>Copy the language file from <filepath>plugins/org.dita.base/xsl/common/</filepath> you want to
-                    override. Paste it into your plug-in's <filepath>xsl/common</filepath> directory.</cmd>
+                <cmd>Copy the language file from you want to override. Paste it into your plug-in's
+                        <filepath>xsl/common</filepath> or <filepath>cfg/common/vars</filepath> directory.</cmd>
+                <info>
+                    <p>Language files are found in:</p>
+                </info>
+                <choices>
+                    <choice>non-PDF output: <filepath>plugins/org.dita.base/xsl/common/</filepath></choice>
+                    <choice>PDF output: <filepath>plugins/org.dita.pdf2/cfg/common/vars/</filepath></choice>
+                </choices>
             </step>
             <step>
                 <cmd>Open the language file. Remove all of the variables except those you want to override.</cmd>
                 <info>
                     <p>By removing the variables you will not override, you limit where variables are defined in the
-                        toolkit and while making your file easier to maintain. </p>
+                        toolkit while making your file easier to maintain. </p>
                 </info>
             </step>
             <step id="change-strings">
-                <cmd>Change the generated text to your desired text.</cmd>
+                <cmd>Change the contents of the variable to your desired text.</cmd>
                 <info>
+                    <p>Do not modify the <xmlatt>id</xmlatt> attribute.</p>
                     <codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
           >&lt;variables>

@@ -22,6 +22,7 @@
         <indexterm>draft
           <indexterm>localizing generated text</indexterm></indexterm>
         <indexterm>getVariable</indexterm>
+        <indexterm><xmlelement>gentext</xmlelement></indexterm>
         <indexterm><xmlelement>strings</xmlelement></indexterm>
         <indexterm><xmlelement>vars</xmlelement></indexterm>
       </keywords>
@@ -35,17 +36,18 @@
             <dt><codeph>dita.xsl.strings</codeph></dt>
             <dd>Add new strings to generated text file. </dd>
           </dlentry>
-        </dl>The generated text extension point is used to add new strings to the default set of generated text. There
-        are several reasons you may want to use this:
+        </dl>The generated text extension point is used to add new strings to the default set of generated text from
+          <b>org.dita.base</b> for any non-PDF transformation type and from <b>org.dita.pdf2</b> for PDF. It also
+        creates the <xmlelement>gentext</xmlelement> element in the intermediate files used by the toolkit. There are
+        several reasons you may want to use the <parmname>dita.strings.xsl</parmname> extension point:
         <ul>
           <li>It can be used to add new text for your own processing extensions; for example, it could be used to add
             localized versions of the string "User response" to aid in rendering troubleshooting information.</li>
           <li>It can be used to override the default strings in the toolkit; for example, it could be used to reset the
             English string "Figure" to "Fig".</li>
-          <li>It can be used to add support for new languages (for non-PDF transforms only; PDF requires more
-            complicated localization support). For example, it could be used to add support for Vietnamese or Gaelic; it
-            could also be used to support a new variant of a previously supported language, such as Australian
-            English.</li>
+          <li>It can be used to add support for new languages. For example, it could be used to add support for
+            Vietnamese or Gaelic; it could also be used to support a new variant of a previously supported language,
+            such as Australian English.</li>
         </ul></p>
       <p>If two plug-ins define the same string or add support for the same language using different values, the result
         will be non-deterministic. In other words, when the same content is processed multiple times, you may get

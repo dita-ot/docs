@@ -17,12 +17,16 @@
     </prolog>
     <taskbody>
         <steps>
-            <step>
-                <cmd>Copy <filepath>plugins/org.dita.base/xsl/common/strings.xml</filepath> to your plug-in.</cmd>
+            <step id="copy-strings-xml">
+                <cmd>Copy this file to your plug-in.</cmd>
+                <choices>
+                    <choice>non-PDF output: <filepath>plugins/org.dita.base/xsl/common/strings.xml</filepath></choice>
+                    <choice>PDF output: <filepath>plugins/org.dita.pdf2/cfg/common/vars/strings.xml</filepath></choice>
+                </choices>
             </step>
             <step>
-                <cmd>In your plug-in, edit <filepath>xsl/common/strings.xml</filepath> to contain references to the
-                    language files for which you are providing custom strings.</cmd>
+                <cmd>In your plug-in, edit <filepath>strings.xml</filepath> to contain references to the language files
+                    for which you are providing custom strings.</cmd>
                 <info>
                     <p>
                         <codeblock
@@ -39,8 +43,14 @@
                 </info>
             </step>
             <step id="copy-strings">
-                <cmd>Copy <filepath>plugins/org.dita.base/xsl/common/strings-en-us.xml</filepath> to your plug-in's
-                        <filepath>xsl/common</filepath> directory.</cmd>
+                <cmd>Copy this file to your plug-in into the same directory as step <xref
+            href="#./copy-strings-xml"
+          />.</cmd>
+                <choices>
+                    <choice>non-PDF output:
+                        <filepath>plugins/org.dita.base/xsl/common/strings-en-us.xml</filepath></choice>
+                    <choice>PDF output: <filepath>plugins/org.dita.pdf2/cfg/common/vars/en.xml</filepath></choice>
+                </choices>
             </step>
             <step>
                 <cmd>Rename the file to match the language you wish to add (for instance,
@@ -56,6 +66,7 @@
    &lt;variable id="Figure">Hình&lt;/variable>
    &lt;variable id="Table">Bảng&lt;/variable>
    &lt;variable id="Next topic">Chủ đề tiếp theo&lt;/variable>
+    :
     :
    &lt;variable id="Copyright">Bản quyền&lt;/variable>
    &lt;variable id="a11y.and-then"/>
@@ -76,11 +87,11 @@
   &lt;feature extension="dita.xsl.strings" file="xsl/common/strings.xml"/>
 &lt;/plugin></codeblock>
                 </info>
-                <stepresult>Your custom language strings are available to your non-PDF stylesheets. For example, if
-                    processing in a context where the <xmlatt>xml:lang</xmlatt> value is "vi-VN", the following call
-                    returns "Chủ đề tiếp theo," because it was defined as the text for the variable with
-                        <xmlatt>id</xmlatt> value of "Next topic" in step
-                    <xref href="#./replace-strings" format="dita"/>.<codeblock
+                <stepresult>Your custom language strings are available to your stylesheets. For example, if processing
+                    in a context where the <xmlatt>xml:lang</xmlatt> value is "vi-VN", the following call returns "Chủ
+                    đề tiếp theo," because it was defined as the text for the variable with <xmlatt>id</xmlatt> value
+                    of "Next topic" in step
+                    <xref href="#./replace-strings"/>.<codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
           >&lt;xsl:call-template name="getVariable">
   &lt;xsl:with-param name="id" select="'Next topic'"/>

@@ -3,8 +3,8 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <reference id="plugin-addgeneratedtext">
   <title>Customizing generated text</title>
-  <shortdesc>Generated text is the term for strings that are automatically added by the build process, such as "Note"
-    before the contents of a <xmlelement>note</xmlelement> element.</shortdesc>
+  <shortdesc>Generated text is the term for strings that are automatically added by the build process, such as
+      <cite>“Note”</cite> before the contents of a <xmlelement>note</xmlelement> element.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -42,20 +42,23 @@
         several reasons you may want to use the <parmname>dita.strings.xsl</parmname> extension point:
         <ul>
           <li>It can be used to add new text for your own processing extensions; for example, it could be used to add
-            localized versions of the string "User response" to aid in rendering troubleshooting information.</li>
+            localized versions of the string <cite
+            >“User response”</cite> to aid in rendering troubleshooting information.</li>
           <li>It can be used to override the default strings in the toolkit; for example, it could be used to reset the
-            English string "Figure" to "Fig".</li>
+            English string <cite>“Figure”</cite> to <cite>“Fig.”</cite></li>
           <li>It can be used to add support for new languages. For example, it could be used to add support for
             Vietnamese or Gaelic; it could also be used to support a new variant of a previously supported language,
             such as Australian English.</li>
-        </ul></p>
+        </ul>
+      </p>
       <p>If two plug-ins define the same string or add support for the same language using different values, the result
         will be non-deterministic. In other words, when the same content is processed multiple times, you may get
         inconsistent generated text results. This is because the toolkit cannot determine which string to use, since
         more than one match is found. Avoid this possibility by ensuring that only one plug-in defines or overrides
         string values for each string in each language. Also consider using a naming convention for attributes used to
         look up the string value by using the ID or purpose of your plug-in.</p>
-      <p>Generated strings are available to the "getVariable" template used in many DITA-OT XSLT files. </p>
+      <p>Generated strings are available to the <codeph>getVariable</codeph> template used in many DITA-OT XSLT
+        files.</p>
       <div conkeyref="reusable-components/gentext-string-structure"/>
       </section>
   </refbody>

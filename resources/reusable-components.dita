@@ -182,12 +182,13 @@
     <section id="strings-format">
       <title>Common format for generated text</title>
       <div id="gentext-string-structure">
-        <p>Prior to DITA-OT 3.7 there were two different XML structures for adding or modifying generated text
-            (<xmlelement>gentext</xmlelement>)  when the <parmname>dita.strings.xsl</parmname> extension point was used.
-          In the <b>org.dita.base</b> plug-in the root element <xmlelement>strings</xmlelement> was used. In
-            <b>org.dita.pdf2</b> the root element was <xmlelement>vars</xmlelement>. </p>
+        <p>Prior to DITA-OT 3.7, there were two different XML structures for adding or modifying generated text
+          (gentext). The base plug-in <b>org.dita.base</b> and any custom overrides defined via the 
+          <parmname>dita.strings.xsl</parmname> extension point used a root element <xmlelement>strings</xmlelement>,
+          with individual strings in <xmlelement>str</xmlelement> elements with <xmlatt>name</xmlatt> attributes. This
+          format was previously used for HTML, and all other output formats except PDF.</p>
         <fig>
-          <title>org.dita.base XML structure prior to DITA-OT 3.7 </title>
+          <title>Base strings file structure prior to DITA-OT 3.7</title>
           <codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
           >&lt;?xml version="1.0" encoding="utf-8"?>
@@ -195,8 +196,10 @@
   &lt;str name="String1">English generated text&lt;/str>
 &lt;/strings></codeblock>
         </fig>
+        <p>The PDF plug-in <b>org.dita.pdf2</b> used a root element <xmlelement>vars</xmlelement> with an XML namespace,
+          and strings in <xmlelement>variable</xmlelement> elements with <xmlatt>id</xmlatt> attributes.</p>
         <fig>
-          <title>org.dita.pdf2 XML structure prior to DITA-OT 3.7 </title>
+          <title>PDF2 strings file structure prior to DITA-OT 3.7</title>
           <codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
           >&lt;?xml version="1.0" encoding="UTF-8"?>
@@ -204,14 +207,13 @@
   &lt;variable id="String1">English generated text&lt;/variable>
 &lt;/vars></codeblock>
         </fig>
-        <p>Starting with DITA-OT 3.7 these structures have been replaced and deprecated (although still valid). All
-          generated text files use <xmlelement>variables</xmlelement> as the root element. For <b>org.dita.base</b>, the
-            <xmlelement>str</xmlelement> element was renamed to <xmlelement>variable</xmlelement> and
-            <xmlatt>name</xmlatt> became <xmlatt>id</xmlatt>. For <b>org.dita.pdf2</b>, the
-            <xmlelement>vars</xmlelement> element was renamed to <xmlelement>variables</xmlelement>. Plug-in developers
-          should update any generated text files to reflect this structure.</p>
+        <p>Starting with DITA-OT 3.7, these structures have been deprecated and replaced with a new unified format. All
+          files now use <xmlelement>variables</xmlelement> as the root element, with the
+            <xmlelement>variable</xmlelement> elements previously used in PDF strings. The new format supports the XSL
+          parameters used by the earlier PDF strings format to pass dynamic information such as chapter numbers or
+          figure titles.</p>
         <fig>
-          <title>XML structure for org.dita.base and org.dita.pdf2 as of DITA-OT 3.7 </title>
+          <title>New common variable format as of DITA-OT 3.7</title>
           <codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
           >&lt;?xml version="1.0" encoding="UTF-8"?>
@@ -220,6 +222,8 @@
   &lt;variable id="String1">English generated text&lt;/variable>
 &lt;/variables></codeblock>
         </fig>
+        <p>The old formats are still supported, but plug-in developers should update any generated text files to reflect
+          the new structure, as support for the old formats may be removed in a future release.</p>
       </div>
     </section>
   </conbody>

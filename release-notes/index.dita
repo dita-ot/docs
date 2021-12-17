@@ -37,12 +37,18 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary" outputclass="mark">(marquee
-            features), and an updated preview of features for the latest draft of the upcoming DITA 2.0 standard
-            including the new “combine” chunk action, the <xmlelement>keytext</xmlelement> element,
-              <xmlelement>titlealt</xmlelement> element and the alternative titles domain</ph>.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes 
+          <ph id="summary" outputclass="mark">a common variable format for generated text strings, and an updated
+            preview of features for the latest draft of the upcoming DITA 2.0 standard including the new “combine” chunk
+            action, the <xmlelement>keytext</xmlelement> element, <xmlelement>titlealt</xmlelement> element and the
+            alternative titles domain</ph>.</p>
       </section>
 
+      <section conkeyref="reusable-components/strings-format">
+        <title/>
+        <p/>
+      </section>
+      
       <section id="dita-2-0-preview">
         <title>Updated DITA 2.0 preview</title>
         <p>In addition to the

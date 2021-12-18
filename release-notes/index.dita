@@ -129,20 +129,7 @@
   &lt;/xsl:next-match>
   &lt;!-- customizations -->
 &lt;/xsl:template></codeblock>
-            </fig></li>
-          <li id="3807">The source code for the renderer-specific PDF plug-ins for Antenna House Formatter (AXF) and
-            RenderX XEP have been extracted to dedicated code repositories. The renderer specific plug-ins are still
-            distributed with DITA-OT. Only the source code location changed, allowing for easier maintenance.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3813" format="html" scope="external">#3813</xref>
-            <p>This allows the plug-ins to be updated separately by commercial software vendors or open source
-              contributors:</p>
-            <ul>
-              <li>
-                <xref keyref="plugin-pdf2-axf"/></li>
-              <li>
-                <xref keyref="plugin-pdf2-xep"/></li>
-            </ul>
+            </fig>
           </li>
           <li>HTML5
             <ul>
@@ -195,7 +182,22 @@
               <li id="3769">Refine Japanese font assignment for PDF2 output.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3769" format="html" scope="external">#3769</xref>
               </li>
-            </ul></li>
+              <li id="3807">The source code for the renderer-specific PDF plug-ins for Antenna House Formatter (AXF) and
+                RenderX XEP have been extracted to dedicated code repositories. The renderer specific plug-ins are still
+                distributed with DITA-OT. Only the source code location changed, allowing for easier maintenance.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3813" format="html" scope="external">#3813</xref>
+                <p>This allows the plug-ins to be updated separately by commercial software vendors or open source
+                  contributors:</p>
+                <ul>
+                  <li>
+                    <xref keyref="plugin-pdf2-axf"/></li>
+                  <li>
+                    <xref keyref="plugin-pdf2-xep"/></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li>Several bundled dependencies have been upgraded to new versions:
             <ul>
               <li>Ant 1.10.12

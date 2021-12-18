@@ -34,7 +34,6 @@
         >Bootstrap</xref>. In previous versions of DITA-OT, framework styles took precedence
         over any equivalent rules in the user’s custom stylesheet. This change allows rules in custom CSS files
         specified via <parmname>args.css</parmname> to override any of the framework styles as necessary.
-        <xref href="https://github.com/dita-ot/dita-ot/issues/3770" format="html" scope="external">#3770</xref>
       </p>
     </section>
     
@@ -47,7 +46,6 @@
         links. Now it will. If you used <option>all</option> and want to retain the links as they were generated
         prior to 3.7, specify the Ant property <codeph>include.rellinks="#default parent child sibling friend next
           previous cousin descendant sample external other"</codeph>.
-        <xref href="https://github.com/dita-ot/dita-ot/issues/3792" format="html" scope="external">#3792</xref>
       </p>
     </section>
 
@@ -58,8 +56,6 @@
         this as an error. The invalid role has been replaced with the <codeph>navigation</codeph> landmark role. A
         new <codeph>toc</codeph> class allows custom CSS styles to target the ToC navigation. CSS rules that use the
         <codeph>nav[role='toc']</codeph> selector can be simplified to <codeph>nav.toc</codeph>.
-        <xref href="https://github.com/dita-ot/dita-ot/issues/3800" format="html" scope="external">#3800</xref>,
-        <xref href="https://github.com/dita-ot/dita-ot/issues/3801" format="html" scope="external">#3801</xref>
       </p>
     </section>
     
@@ -68,7 +64,6 @@
       <p id="3806">A <codeph>commonattributes</codeph> mode was added to the HTML5, PDF, and XHTML plug-ins to allow
         for easier extension. This is a backwards compatible change, however, existing plug-ins should be changed to
         use the new <codeph>commonattributes</codeph> mode.
-        <xref href="https://github.com/dita-ot/dita-ot/issues/3806" format="html" scope="external">#3806</xref>
         <fig>
           <title>Named template prior to version 3.7</title>
           <codeblock outputclass="language-xml">&lt;xsl:template name="commonattributes">

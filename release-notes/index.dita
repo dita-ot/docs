@@ -76,10 +76,12 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
+          <!--
           <li id="3658">The Gradle build scripts were updated. This change resolves the "[d]eprecated Gradle features
             were used in this build" log message.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3658" format="html" scope="external">#3658</xref>
           </li>
+          -->
           <li id="3665">A new
             <xref href="https://github.com/dita-ot/dita-ot-action" format="html" scope="external">dita-ot-action</xref>
             repository was added to the DITA-OT project with a GitHub action for DITA-OT builds. The GitHub action

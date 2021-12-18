@@ -20,9 +20,9 @@
       <p>DITA-OT core processing uses the following third-party software:</p>
       <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
         <tgroup cols="3">
-          <colspec colname="project" colwidth="1*"/>
+          <colspec colname="project" colwidth="2*"/>
           <colspec colname="version" colwidth="1*"/>
-          <colspec colname="license" colwidth="2*"/>
+          <colspec colname="license" colwidth="3*"/>
           <thead>
             <row>
               <entry>Software</entry>
@@ -66,6 +66,13 @@
               <entry><keyword keyref="tool.icu4j.version"/></entry>
               <entry>
                 <xref keyref="license-ICU"/></entry>
+            </row>
+            <row>
+              <entry>Jackson data binding library
+                <indexterm>Jackson data binding library</indexterm></entry>
+              <entry><keyword keyref="tool.jackson.version"/></entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
             </row>
             <row>
               <entry>Logback Classic Module

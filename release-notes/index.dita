@@ -147,7 +147,8 @@
                 specified via <parmname>args.css</parmname> to override any of the framework styles as necessary.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3770" format="html" scope="external">#3770</xref>
               </li>
-              <li id="3791">Support for Adobe Flash was removed.
+              <li id="3791">Support for the legacy media format Adobe Flash has been removed. All major browser
+                vendors block Flash Player in recent versions, making it difficult to view Shockwave Flash content. 
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3791" format="html" scope="external">#3791</xref>
               </li>
               <li id="3794">The HTML5 stylesheets were updated to use XSL modes instead of named templates.

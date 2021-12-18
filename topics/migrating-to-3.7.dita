@@ -81,7 +81,27 @@
 &lt;/xsl:template></codeblock>
         </fig></p>
     </section>
-
+    
+    <section id="xsl-modes">
+      <title>XSL modes</title>
+      <p>The HTML5 stylesheets were updated to use XSL modes instead of named templates.</p>
+      <p>This is a backwards compatible change, however, existing plug-ins should be changed to use modes instead of
+        named templates for:
+        <ul>
+          <li><codeph>copyright</codeph></li>
+          <li><codeph>gen-endnotes</codeph></li>
+          <li><codeph>generateDefaultMeta</codeph></li>
+          <li><codeph>generateCssLinks</codeph></li>
+          <li><codeph>generateChapterTitle</codeph></li>
+          <li><codeph>processHDF</codeph></li>
+          <li><codeph>generateBreadcrumbs</codeph></li>
+          <li><codeph>processHDR</codeph></li>
+          <li><codeph>processFTR</codeph></li>
+          <li><codeph>generateCharset</codeph></li>
+        </ul>
+      </p>
+    </section>
+    
     <section conkeyref="reusable-components/strings-format">
       <title/>
       <p/>

@@ -111,7 +111,8 @@
         <li>The new alternative titles domain and <xmlelement>titlealt</xmlelement> element (separate from the
             <xmlelement>titlealts</xmlelement> element in DITA 1.3) may be used when you need to use an alternate title,
           such as for a navigation title, search title, link title, subtitle, or title hint.</li>
-        <li>The new <xmlatt>appid-role</xmlatt> attribute is available. The default is "context-sensitive-help."</li>
+        <li>The new <xmlatt>appid-role</xmlatt> attribute is available. The default is <codeph
+          >context-sensitive-help</codeph>.</li>
         <li>The <xmlatt>keyref</xmlatt> attribute was added to all elements in the highlight domain and the new emphasis
           domain. </li>
         <li>The <xmlatt>href</xmlatt>, <xmlatt>format</xmlatt>, and <xmlatt>scope </xmlatt> attributes are now

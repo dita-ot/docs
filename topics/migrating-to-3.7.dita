@@ -19,7 +19,12 @@
         or plug-ins. For more information on changes in this release, see the
         <xref keyref="3.7-release-notes"/>.</note>
     </section>
-   
+
+    <section conkeyref="reusable-components/strings-format">
+      <title/>
+      <p/>
+    </section>
+
     <section id="css-precedence">
       <title>CSS precedence</title>
       <p id="3770">The order of elements in the <xmlelement>head</xmlelement> element of the HTML template
@@ -36,7 +41,7 @@
         specified via <parmname>args.css</parmname> to override any of the framework styles as necessary.
       </p>
     </section>
-    
+
     <section id="ancestor-links">
       <title>Ancestor links</title>
       <p id="3792">The mappull processing step has changed how related links are generated with
@@ -58,7 +63,7 @@
         <codeph>nav[role='toc']</codeph> selector can be simplified to <codeph>nav.toc</codeph>.
       </p>
     </section>
-    
+
     <section id="common-attr-mode">
       <title>Common attributes mode</title>
       <p id="3806">A <codeph>commonattributes</codeph> mode was added to the HTML5, PDF, and XHTML plug-ins to allow
@@ -81,7 +86,7 @@
 &lt;/xsl:template></codeblock>
         </fig></p>
     </section>
-    
+
     <section id="xsl-modes">
       <title>XSL modes</title>
       <p>The HTML5 stylesheets were updated to use XSL modes instead of named templates.</p>
@@ -101,10 +106,6 @@
         </ul>
       </p>
     </section>
-    
-    <section conkeyref="reusable-components/strings-format">
-      <title/>
-      <p/>
-    </section>
+
   </refbody>
 </reference>

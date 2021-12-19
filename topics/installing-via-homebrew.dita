@@ -65,8 +65,9 @@ Required: java >= 1.8 ✔</systemoutput>
 <systemoutput>Downloading…</systemoutput></codeblock></stepxmp>
         <stepresult>
           <p>Homebrew will automatically download the latest version of the toolkit, install it in a subfolder of the
-            local package Cellar and symlink the <cmdname>dita</cmdname> command to
-              <filepath>/usr/local/bin/dita</filepath>.</p></stepresult>
+            local package Cellar and symlink the <cmdname>dita</cmdname> command to the <filepath>bin</filepath>
+            subfolder of the Homebrew installation directory.</p>
+        </stepresult>
       </step>
       <step importance="optional">
         <cmd>Verify the installation:</cmd>

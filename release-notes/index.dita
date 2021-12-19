@@ -196,11 +196,17 @@
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3529" format="html" scope="external">#3529</xref>
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3660" format="html" scope="external">#3660</xref>
               </li>
-              <li id="3768">Adopt appropriate Japanese font setting in PDF2
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3768" format="html" scope="external">#3768</xref>
-              </li>
-              <li id="3769">Refine Japanese font assignment for PDF2 output.
+              <li id="3768">Japanese font mappings have been updated to ensure characters are rendered correctly.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3768" format="html" scope="external">#3768</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3769" format="html" scope="external">#3769</xref>
+                <ul>
+                  <li>The logical font <codeph>Sans</codeph> now prefers MS-Gothic, Hiragino Kaku Gothic Pro,
+                    HiraKakuProN-W3, or YuGothic over Arial Unicode MS.</li>
+                  <li>For <codeph>Serif</codeph> text, MS-Mincho, Hiragino Mincho Pro, HiraMinProN-W3, or YuMincho are
+                    preferred to Arial Unicode MS.</li>
+                  <li>For <codeph>Monospaced</codeph> text, MS-Gothic, Hiragino Kaku Gothic Pro, HiraKakuProN-W3,
+                    YuGothic, or Arial Unicode MS are used.</li>
+                </ul>
               </li>
               <li id="3807">The source code for the renderer-specific PDF plug-ins for Antenna House Formatter (AXF) and
                 RenderX XEP have been extracted to dedicated code repositories. The renderer specific plug-ins are still

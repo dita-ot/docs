@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-<reference id="plugin-addgeneratedtext">
+<reference id="gentext">
   <title>Customizing generated text</title>
   <shortdesc>Generated text is the term for strings that are automatically added by the build process, such as
       <cite>“Note”</cite> before the contents of a <xmlelement>note</xmlelement> element.</shortdesc>

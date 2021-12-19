@@ -5,11 +5,11 @@
   <title>Globalizing DITA content</title>
   <topicref keyref="globalization">
     <topicref keyref="globalization-support"/>
+    <topicref keyref="globalization-languages"/>
     <topicref keyref="plugin-addgeneratedtext" chunk="to-content">
       <topicref keyref="adding-new-strings" type="task"/>
       <topicref keyref="overriding-strings" type="task"/>
       <topicref keyref="adding-new-languages" type="task"/>
     </topicref>
-    <topicref keyref="globalization-languages"/>
   </topicref>
 </map>

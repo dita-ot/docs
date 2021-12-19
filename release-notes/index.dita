@@ -90,13 +90,14 @@
           <li id="3780">Additional support for Ant <xmlelement>style</xmlelement> was added to make custom
               <xmlelement>pipeline</xmlelement>
             <xref keyref="plugin-coding-conventions">configurations</xref> more consistent with  XSLT tasks in Ant.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3780" format="html" scope="external">#3780</xref>
-            <p>A stylesheet can be passed as an Ant
+            A stylesheet can be passed as an Ant
               <xref
-                href="https://ant.apache.org/manual/Types/resources.html"
-                format="html"
-                scope="external"
-              >resource</xref>, providing support for classpath-based plug-in resources.</p></li>
+              href="https://ant.apache.org/manual/Types/resources.html"
+              format="html"
+              scope="external"
+            >resource</xref>, providing support for classpath-based plug-in resources.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3780" format="html" scope="external">#3780</xref>
+          </li>
           <li id="3792">The mappull processing step has changed how related links are generated with
               <parmname>args.rellinks</parmname>. Starting in 3.7, <option>noparent</option> will not generate any
             ancestor links and <option>nofamily</option> will not generate sibling, cousin, ancestor, or descendant
@@ -164,7 +165,6 @@
                   <li><codeph>gen-user-styles</codeph> → use <parmname>args.css</parmname></li>
                 </ul>
               </li>
-              
               <li id="3791">Support for the legacy media format Adobe Flash has been removed. All major browser
                 vendors block Flash Player in recent versions, making it difficult to view Shockwave Flash content. 
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3791" format="html" scope="external">#3791</xref>
@@ -172,19 +172,20 @@
               <li id="3794">The HTML5 stylesheets were updated to use XSL modes instead of named templates.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3794" format="html" scope="external">#3794</xref>
                 <p>This is a backwards compatible change, however, existing plug-ins should be changed to use modes
-                  instead of named templates for:</p>
-                <ul>
-                  <li><codeph>copyright</codeph></li>
-                  <li><codeph>gen-endnotes</codeph></li>
-                  <li><codeph>generateDefaultMeta</codeph></li>
-                  <li><codeph>generateCssLinks</codeph></li>
-                  <li><codeph>generateChapterTitle</codeph></li>
-                  <li><codeph>processHDF</codeph></li>
-                  <li><codeph>generateBreadcrumbs</codeph></li>
-                  <li><codeph>processHDR</codeph></li>
-                  <li><codeph>processFTR</codeph></li>
-                  <li><codeph>generateCharset</codeph></li>
-                </ul>
+                  instead of named templates for:
+                  <ul>
+                    <li><codeph>copyright</codeph></li>
+                    <li><codeph>gen-endnotes</codeph></li>
+                    <li><codeph>generateDefaultMeta</codeph></li>
+                    <li><codeph>generateCssLinks</codeph></li>
+                    <li><codeph>generateChapterTitle</codeph></li>
+                    <li><codeph>processHDF</codeph></li>
+                    <li><codeph>generateBreadcrumbs</codeph></li>
+                    <li><codeph>processHDR</codeph></li>
+                    <li><codeph>processFTR</codeph></li>
+                    <li><codeph>generateCharset</codeph></li>
+                  </ul>
+                </p>
               </li>
             </ul>
           </li>
@@ -207,13 +208,14 @@
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3813" format="html" scope="external">#3813</xref>
                 <p>This allows the plug-ins to be updated separately by commercial software vendors or open source
-                  contributors:</p>
-                <ul>
-                  <li>
-                    <xref keyref="plugin-pdf2-axf"/></li>
-                  <li>
-                    <xref keyref="plugin-pdf2-xep"/></li>
-                </ul>
+                  contributors:
+                  <ul>
+                    <li>
+                      <xref keyref="plugin-pdf2-axf"/></li>
+                    <li>
+                      <xref keyref="plugin-pdf2-xep"/></li>
+                  </ul>
+                </p>
               </li>
             </ul>
           </li>

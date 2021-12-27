@@ -262,6 +262,12 @@
               </li>
             </ul>
           </li>
+          <li id="3841">Up until DITA-OT 2.4, the <codeph>log4j</codeph> logging library was bundled as a dependency of
+            the Apache™ Formatting Objects Processor (FOP). DITA-OT 2.4 upgraded FOP to version 2.1, and removed the
+            <codeph>log4j</codeph> library, but left the corresponding configuration files behind. The obsolete
+            <filepath>log4j.properties</filepath> files have now been removed from the distribution package.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3841" format="html" scope="external">#3841</xref>
+          </li>
         </ul>
       </section>
 

@@ -217,12 +217,12 @@
                 </ul>
               </li>
               <li id="3807">The source code for the renderer-specific PDF plug-ins for Antenna House Formatter (AXF) and
-                RenderX XEP have been extracted to dedicated code repositories. The renderer specific plug-ins are still
+                RenderX XEP have been extracted to dedicated code repositories. The renderer-specific plug-ins are still
                 distributed with DITA-OT. Only the source code location changed, allowing for easier maintenance.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3807" format="html" scope="external">#3807</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3813" format="html" scope="external">#3813</xref>
                 <p>This allows the plug-ins to be updated separately by commercial software vendors or open source
-                  contributors:
+                  contributors independent of the DITA-OT release cycle:
                   <ul>
                     <li>
                       <xref keyref="plugin-pdf2-axf"/></li>

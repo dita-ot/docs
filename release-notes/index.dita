@@ -288,10 +288,6 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <!-- Comment out any issues that only affected development builds, not any previously released version -->
-          <!--
-         
-          -->
           <li id="3709">In PDF output generated with previous versions, “Warning” note labels used the same attribute
             set as “Danger” note labels. Processing has been corrected to apply the dedicated attribute set defined for
             warning note labels. Both attribute sets are empty by default, but this change makes it easier for custom

@@ -223,7 +223,9 @@
 &lt;/variables></codeblock>
         </fig>
         <p>The old formats are still supported, but plug-in developers should update any generated text files to reflect
-          the new structure, as support for the old formats may be removed in a future release.</p>
+          the new structure, as support for the old formats may be removed in a future release.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3817" format="html" scope="external">#3817</xref>
+        </p>
       </div>
     </section>
   </conbody>

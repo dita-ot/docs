@@ -135,6 +135,13 @@
 &lt;/xsl:template></codeblock>
             </fig>
           </li>
+          <li id="3811">
+            <p>The <codeph>copy-to</codeph> preprocessing module has been updated to preserve fragment-only links. This
+              ensures that any local anchors do not change when original topic resources are copied to new resources
+              defined by the <xmlatt>copy-to</xmlatt> attribute.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3811" format="html" scope="external">#3811</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3832" format="html" scope="external">#3832</xref>
+            </p></li>
           <li>HTML5
             <ul>
               <li id="3770">The order of elements in the <xmlelement>head</xmlelement> element of the HTML template

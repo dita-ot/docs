@@ -382,6 +382,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3800" format="html" scope="external">#3800</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3801" format="html" scope="external">#3801</xref>
           </li>
+          <li id="3842">A 17-year-old bug in the content reference implementation has been resolved. When the original
+            conref code was updated to XSLT 2.0 years ago, the syntax was not adjusted to account for the differences
+            between XSLT 1.0 and 2.0, which caused errors in the selection of the first topic in a document.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3842" format="html" scope="external">#3842</xref>
+          </li>
         </ul>
       </section>
 

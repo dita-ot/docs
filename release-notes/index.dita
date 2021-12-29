@@ -300,6 +300,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3733" format="html" scope="external">#3733</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3775" format="html" scope="external">#3775</xref>
           </li>
+          <li id="3741">The command line interface now respects the convention to disable colored output when either the
+              <codeph>TERM=dumb</codeph> or <codeph>NO_COLOR</codeph> environment variables are set, or the
+              <parmname>--no-color</parmname> option is passed to the <cmdname>dita</cmdname> command.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3741" format="html" scope="external">#3741</xref>
+          </li>
           <li id="3742">The German localization of the PDF <cite>Preface</cite> header strings included the page numbers
             twice, and the <parmname>prodname</parmname> parameter was missing. The default German strings have been
             aligned to include the product name and page numbers in the same pattern as other languages.

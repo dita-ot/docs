@@ -83,10 +83,14 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3658" format="html" scope="external">#3658</xref>
           </li>
           -->
-          <li id="3665">A new
-            <xref href="https://github.com/dita-ot/dita-ot-action" format="html" scope="external">dita-ot-action</xref>
-            repository was added to the DITA-OT project with a GitHub action for DITA-OT builds. The GitHub action
-            installs DITA-OT and plug-ins into a Docker image and then builds a series of outputs.
+          <li id="3665">The
+            <xref href="https://github.com/dita-ot/dita-ot/blob/master/Dockerfile" format="html" scope="external">
+              <filepath>Dockerfile</filepath></xref> has been updated to better support the official
+            <xref keyref="dita-ot-action"/> that was introduced in 3.6.1 to publish documentation via
+            <xref keyref="github-actions"/> whenever your source files are changed. The <filepath>Dockerfile</filepath>
+            adds the <cmdname>SHELL</cmdname> command and installs the <codeph>locales</codeph> and
+              <codeph>tzdata</codeph> packages as part of the base image, so custom actions can be simplified to a
+            series of scripting hooks.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref></li>
           <li id="3736" outputclass="mark">In earlier versions, IDs defined on elements in reusable components were not
             preserved when the parent element was included in other topics via content reference. In this case, element

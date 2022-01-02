@@ -88,12 +88,12 @@
             repository was added to the DITA-OT project with a GitHub action for DITA-OT builds. The GitHub action
             installs DITA-OT and plug-ins into a Docker image and then builds a series of outputs.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref></li>
-          <li id="3736">In earlier versions, IDs defined on elements in reusable components were not preserved when the
-            parent element was included in other topics via content reference. In this case, element IDs were always
-            randomized to prevent duplicate IDs, but this made it difficult to cross-reference reused content. The
-              <codeph>conref</codeph> preprocessing module has been updated to retain the original IDs whenever
-            possible, and only generate a randomized ID if the original would not be unique in the new context. This
-            ensures that content references produce stable anchors in HTML and named destinations in PDF output.
+          <li id="3736" outputclass="mark">In earlier versions, IDs defined on elements in reusable components were not
+            preserved when the parent element was included in other topics via content reference. In this case, element
+            IDs were always randomized to prevent duplicate IDs, but this made it difficult to cross-reference reused
+            content. The <codeph>conref</codeph> preprocessing module has been updated to retain the original IDs
+            whenever possible, and only generate a randomized ID if the original would not be unique in the new context.
+            This ensures that content references produce stable anchors in HTML and named destinations in PDF output.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3736" format="html" scope="external">#3736</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3739" format="html" scope="external">#3739</xref>
           </li>

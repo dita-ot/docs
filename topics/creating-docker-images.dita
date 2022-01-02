@@ -75,8 +75,8 @@
  => [internal] load .dockerignore                                                                                                                                             0.0s
  => => transferring context: 2B                                                                                                                                               0.0s
  => [internal] load metadata for ghcr.io/dita-ot/dita-ot:<keyword keyref="maintenance-version"/>
- => [1/3] FROM ghcr.io/dita-ot/dita-ot:3.6.1@sha256:<varname>&lt;hash></varname>
- => => resolve ghcr.io/dita-ot/dita-ot:3.6.1@sha256:<varname>&lt;hash></varname>
+ => [1/3] FROM ghcr.io/dita-ot/dita-ot:<keyword keyref="maintenance-version"/>@sha256:<varname>&lt;hash></varname>
+ => => resolve ghcr.io/dita-ot/dita-ot:<keyword keyref="maintenance-version"/>@sha256:<varname>&lt;hash></varname>
 Step 2/3 : RUN dita --install https://github.com/infotexture/dita-bootstrap/archive/master.zip
  ---> Running in d510f874cae0
 Added net.infotexture.dita-bootstrap

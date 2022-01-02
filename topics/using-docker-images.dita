@@ -45,11 +45,11 @@
         <cmd>Install Docker for your operating system.</cmd>
         <choices>
           <choice platform="windows">
-            <xref href="https://docs.docker.com/docker-for-windows/install/" scope="external" format="html">Install
+            <xref href="https://docs.docker.com/docker-for-windows/install/" format="html" scope="external">Install
               Docker Desktop on Windows</xref>
           </choice>
           <choice platform="mac">
-            <xref href="https://docs.docker.com/docker-for-mac/install" scope="external" format="html">Install Docker
+            <xref href="https://docs.docker.com/docker-for-mac/install" format="html" scope="external">Install Docker
               Desktop on Mac</xref>
           </choice>
           <choice platform="mac">On macOS, you can also install Docker Desktop via

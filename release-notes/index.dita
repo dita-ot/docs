@@ -38,10 +38,10 @@
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes 
-          <ph id="summary" outputclass="mark">a common variable format for generated text strings, and an updated
-            preview of features for the latest draft of the upcoming DITA 2.0 standard including the new “combine” chunk
-            action, the <xmlelement>keytext</xmlelement> element, <xmlelement>titlealt</xmlelement> element and the
-            alternative titles domain</ph>.</p>
+          <ph id="summary" outputclass="mark">stable IDs in re-used content, a common variable format for generated text
+            strings, and an updated preview of features for the latest draft of the upcoming DITA 2.0 standard, such as
+            the new “combine” chunk action, the <xmlelement>keytext</xmlelement> element,
+              <xmlelement>titlealt</xmlelement> element and the alternative titles domain</ph>.</p>
       </section>
 
       <section conkeyref="reusable-components/strings-format" id="3817">
@@ -88,6 +88,15 @@
             repository was added to the DITA-OT project with a GitHub action for DITA-OT builds. The GitHub action
             installs DITA-OT and plug-ins into a Docker image and then builds a series of outputs.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref></li>
+          <li id="3736">In earlier versions, IDs defined on elements in reusable components were not preserved when the
+            parent element was included in other topics via content reference. In this case, element IDs were always
+            randomized to prevent duplicate IDs, but this made it difficult to cross-reference reused content. The
+              <codeph>conref</codeph> preprocessing module has been updated to retain the original IDs whenever
+            possible, and only generate a randomized ID if the original would not be unique in the new context. This
+            ensures that content references produce stable anchors in HTML and named destinations in PDF output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3736" format="html" scope="external">#3736</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3739" format="html" scope="external">#3739</xref>
+          </li>
           <li id="3780">Additional support for Ant <xmlelement>style</xmlelement> was added to make custom
               <xmlelement>pipeline</xmlelement>
             <xref keyref="plugin-coding-conventions">configurations</xref> more consistent with  XSLT tasks in Ant.

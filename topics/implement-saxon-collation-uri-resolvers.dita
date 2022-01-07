@@ -86,11 +86,11 @@
           <p>You can create the services file using <xmlelement>service</xmlelement> elements in an Ant
               <xmlelement>jar</xmlelement>
             task:<codeblock outputclass="language-xml">&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">
-  ⋮
+  [...]
   &lt;service type="org.dita.dost.module.saxon.DelegatingCollationUriResolver">
     &lt;provider classname="org.example.i18n.saxon.MyCollationUriResolver"/>
   &lt;/service>
-  ⋮
+  [...]
 &lt;/jar></codeblock></p></li>
         <li>To use the collator in XSLT style sheets, specify the collation URI on <xmlatt>xsl:sort</xmlatt> elements
           (or anywhere a collator URI can be

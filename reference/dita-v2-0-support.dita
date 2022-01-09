@@ -67,9 +67,9 @@
       <title>DITA-OT 3.6</title>
       <p>DITA-OT 3.6 added support for additional DITA 2.0 features.</p>
       <ul id="added-in-3.6">
-        <li>Where earlier DITA versions relied on the <xmlelement>object</xmlelement> to embed media in DITA source
-          files, DITA 2.0 provides new <xmlelement>audio</xmlelement> and <xmlelement>video</xmlelement> elements that
-          correspond to their HTML5 equivalents.</li>
+        <li>Where earlier DITA versions relied on the <xmlelement>object</xmlelement> element to embed media in DITA
+          source files, DITA 2.0 provides new <xmlelement>audio</xmlelement> and <xmlelement>video</xmlelement> elements
+          that correspond to their HTML5 equivalents.</li>
         <li>For HTML5 compatibility, the new emphasis domain adds support for the <xmlelement>strong</xmlelement> and
             <xmlelement>em</xmlelement> elements in addition to the existing <xmlelement>b</xmlelement> and
             <xmlelement>i</xmlelement> elements in the highlighting domain.</li>
@@ -101,7 +101,7 @@
           <p id="chunk-split" outputclass="mark">(Support for the DITA 2.0 “split” chunk action has not yet been
             implemented.)</p>
           <note>The new chunk action is only applied if the root map has a DITA 2.0 doctype, such as:
-            <p><codeph>&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 2.0 Base Map//EN" "basemap.dtd"></codeph></p>
+            <p><codeph>&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 2.0 Map//EN" "map.dtd"></codeph></p>
             <p>If the root map uses an unversioned (or 1.x) doctype, DITA 1.3 processing will be applied, and 2.0 chunk
               actions will be ignored. With a 2.0 root map, any 1.3 chunk actions are ignored.</p>
           </note>
@@ -113,8 +113,8 @@
           such as for a navigation title, search title, link title, subtitle, or title hint.</li>
         <li>The new <xmlatt>appid-role</xmlatt> attribute is available. The default is <codeph
           >context-sensitive-help</codeph>.</li>
-        <li>The <xmlatt>keyref</xmlatt> attribute was added to all elements in the highlight domain and the new emphasis
-          domain. </li>
+        <li>The <xmlatt>keyref</xmlatt> attribute was added to all elements in the highlighting domain and the new
+          emphasis domain.</li>
         <li>The <xmlatt>href</xmlatt>, <xmlatt>format</xmlatt>, and <xmlatt>scope </xmlatt> attributes are now
           consistent for new elements.</li>
         <li>Several obsolete elements and attributes have been removed from DITA 2.0, including:

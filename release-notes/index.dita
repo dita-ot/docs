@@ -37,10 +37,9 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes 
-          <ph id="summary" outputclass="mark">stable IDs in re-used content, a common variable format for generated text
-            strings, and an updated preview of features for the latest draft of the upcoming DITA 2.0 standard, such as
-            the new “combine” chunk action, the <xmlelement>keytext</xmlelement> element,
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">stable IDs
+            in re-used content, a common variable format for generated text strings, and an updated preview of features
+            for the latest draft of the upcoming DITA 2.0 standard, such as the new “combine” chunk action and
               <xmlelement>titlealt</xmlelement> element and the alternative titles domain</ph>.</p>
       </section>
 
@@ -59,8 +58,8 @@
           <xref href="https://github.com/dita-ot/dita-ot/issues/3674" format="html" scope="external">#3674</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/3760" format="html" scope="external">#3760</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/3809" format="html" scope="external">#3809</xref>,
-          <xref href="https://github.com/dita-ot/dita-ot/issues/3833" format="html" scope="external">#3833</xref>
-        </p>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3833" format="html" scope="external">#3833</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3847" format="html" scope="external">#3847</xref></p>
 
         <ul conkeyref="dita-v2-0-support/added-in-3.7">
           <li/>
@@ -92,7 +91,7 @@
               <codeph>tzdata</codeph> packages as part of the base image, so custom actions can be simplified to a
             series of scripting hooks.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3665" format="html" scope="external">#3665</xref></li>
-          <li id="3736" outputclass="mark">In earlier versions, IDs defined on elements in reusable components were not
+          <li id="3736">In earlier versions, IDs defined on elements in reusable components were not
             preserved when the parent element was included in other topics via content reference. In this case, element
             IDs were always randomized to prevent duplicate IDs, but this made it difficult to cross-reference reused
             content. The <codeph>conref</codeph> preprocessing module has been updated to retain the original IDs
@@ -398,8 +397,7 @@
           </li>
           <li id="3843">DITA 1.3 grammar files have been updated to include hotfixes from the latest OASIS errata
             branch, which resolve issues with the available attributes on <xmlelement>change-historylist</xmlelement>
-            and <xmlelement>colspec</xmlelement> elements, and fix a syntax error in the RELAX NG grammar for the
-            release management domain.
+            and <xmlelement>colspec</xmlelement> elements.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3843" format="html" scope="external">#3843</xref>
           </li>
         </ul>

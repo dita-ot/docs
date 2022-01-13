@@ -98,8 +98,7 @@
           <p>When the <xmlatt>chunk</xmlatt> attribute is set to <codeph>combine</codeph> on a map, branch, or map
             reference, all source DITA documents grouped by that reference will be combined into a single document in
             the output.</p>
-          <p id="chunk-split" outputclass="mark">(Support for the DITA 2.0 “split” chunk action has not yet been
-            implemented.)</p>
+          <p id="chunk-split">(Support for the DITA 2.0 “split” chunk action has not yet been implemented.)</p>
           <note>The new chunk action is only applied if the root map has a DITA 2.0 doctype, such as:
             <p><codeph>&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 2.0 Map//EN" "map.dtd"></codeph></p>
             <p>If the root map uses an unversioned (or 1.x) doctype, DITA 1.3 processing will be applied, and 2.0 chunk

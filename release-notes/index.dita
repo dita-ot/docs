@@ -116,10 +116,10 @@
               <parmname>args.rellinks</parmname>. Starting in 3.7, <option>noparent</option> will not generate any
             ancestor links and <option>nofamily</option> will not generate sibling, cousin, ancestor, or descendant
             links. Prior to 3.7, <parmname>args.rellinks</parmname>=<option>all</option> did not actually include all
-            links. Now it will. If you used <option>all</option> and want to retain the links as they were generated
-            prior to 3.7, specify the Ant property <codeph>include.rellinks="#default parent child sibling friend next
-              previous cousin descendant sample external other"</codeph>.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3792" format="html" scope="external">#3792</xref>
+            links. Now it will. As in previous versions, the default value for PDF output is <option>nofamily</option>,
+            and other output formats include all link roles except <codeph>ancestor</codeph> links.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3792" format="html" scope="external">#3792</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3850" format="html" scope="external">#3850</xref>
           </li>
           <li id="3796">Mapref processing was improved to remove any duplicate <xmlatt>keyscope</xmlatt> values. Prior
             to 3.7 it was possible that <xmlelement>mapref</xmlelement> and <xmlelement>map</xmlelement> would

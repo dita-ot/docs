@@ -63,13 +63,13 @@
     <section id="ancestor-links">
       <title>Ancestor links</title>
       <p id="3792">The mappull processing step has changed how related links are generated with
-        <parmname>args.rellinks</parmname>. Starting in 3.7, <option>noparent</option> will not generate any
-        ancestor links and <option>nofamily</option> will not generate sibling, cousin, ancestor, or descendant
-        links. Prior to 3.7, <parmname>args.rellinks</parmname>=<option>all</option> did not actually include all
-        links. Now it will. If you used <option>all</option> and want to retain the links as they were generated
-        prior to 3.7, specify the Ant property <codeph>include.rellinks="#default parent child sibling friend next
-          previous cousin descendant sample external other"</codeph>.
-      </p>
+          <parmname>args.rellinks</parmname>. Starting in 3.7, <option>noparent</option> will not generate any ancestor
+        links and <option>nofamily</option> will not generate sibling, cousin, ancestor, or descendant links.</p>
+      <p>Prior to 3.7, <parmname>args.rellinks</parmname>=<option>all</option> did not actually include all links. Now
+        it will. As in previous versions, the default value for PDF output is <option>nofamily</option>, and other
+        output formats include all link roles except <codeph>ancestor</codeph> links.</p>
+      <p>The default processing sets the internal Ant property <parmname>include.rellinks</parmname> to <codeph>#default
+          parent child sibling friend next previous cousin descendant sample external other</codeph>.</p>
     </section>
 
     <section id="toc-role">

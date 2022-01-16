@@ -120,8 +120,8 @@
             <pt><parmname>args.rellinks</parmname></pt>
             <pd conaction="mark" conref="parameters-base.dita#base/args.rellinks.desc"/>
             <pd conaction="pushafter">
-              <p>For PDF output, the default value is <option>nofamily</option>. For all other formats, the default
-                value is <option>all</option>.
+              <p>For PDF output, the default value is <option>nofamily</option>. Other formats include all link roles
+                except <codeph>ancestor</codeph> links.
                 <indexterm>args.rellinks</indexterm>
                 <indexterm>PDF
                   <indexterm>related links</indexterm>

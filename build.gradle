@@ -120,6 +120,7 @@ task html(type: DitaOtTask, dependsOn: autoGenerate) {
         property(name: 'args.cssroot', value: "${projectDir}/resources/")
         property(name: 'args.gen.task.lbl', value: 'YES')
         property(name: 'args.hdr', value: "${projectDir}/resources/header.xml")
+        property(name: 'args.rellinks', value: 'noparent')
         property(name: 'html5.toc.generate', value: 'no')
         property(name: 'nav-toc', value: 'partial')
         property(name: 'processing-mode', value: 'strict')

@@ -1,0 +1,21 @@
+# List of commits to ignore during blame
+
+# Set your local config to use this file
+# $ git config blame.ignoreRevsFile .github/.git-blame-ignore-revs
+
+# Format: 1 unabbreviated SHA-1 per line
+
+# Batch format & indent files 2019-11-13
+530b8c28ae4d24b392c77b81ca45605cc09a8427
+
+# Initial Prettier setup run: 2020-09-26
+76c423f4b020096626d803db1afea3896033413e
+
+# Subsequent Prettier formatting commits
+b2d430307b1cae70e391cbc71cf7e9cdd02652e5
+c734de7bcabac40513752fb0a9c4ce79869be7da
+b79e3346415ba66544bd7fe8439272f6e130ce3c
+71b3285875cb65b3bd23dc98152f03752cd6f08d
+
+# [1]: https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revltrevgt
+# [2]: https://black.readthedocs.io/en/hello-furo/guides/introducing_black_to_your_project.html#avoiding-ruining-git-blame

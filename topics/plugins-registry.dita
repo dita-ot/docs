@@ -226,15 +226,15 @@
       <codeblock outputclass="language-json">[
   {
     "name": "org.example.myplugin",
-     ⋮
+     [...]
     "vers": "1.0.1",
-     ⋮
+     [...]
   }<b>,</b>
   {
     "name": "org.example.myplugin",
-     ⋮
+     [...]
     "vers": "2.1.0",
-     ⋮
+     [...]
   }
 ]</codeblock>
       <note type="tip">To publish a new version of your plug-in to the registry, add a new entry to the array in the

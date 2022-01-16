@@ -43,12 +43,12 @@ com.example.saxon.functions.Substract</codeblock>
           <p>You can create the file using <xmlelement>service</xmlelement> elements in an Ant
               <xmlelement>jar</xmlelement>
             task:<codeblock outputclass="language-xml">&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">
-  ⋮
+  [...]
   &lt;service type="net.sf.saxon.lib.ExtensionFunctionDefinition">
     &lt;provider classname="com.example.saxon.functions.Add"/>
     &lt;provider classname="com.example.saxon.functions.Subtract"/>
   &lt;/service>
-  ⋮
+  [...]
 &lt;/jar></codeblock></p></li>
         <li>In your XSLT transformations, declare the namespace the functions are bound
           to:<codeblock outputclass="language-xml">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<task id="adding_new_strings">
+  <title>Adding new strings</title>
+  <shortdesc>Add new generated strings to your plug-in for the toolkit to include in your output.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>generated text, adding new</indexterm>
+        <indexterm><xmlelement>gentext</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps>
+      <step>
+        <cmd>Copy this file to your plug-in.</cmd>
+        <choices>
+          <choice>non-PDF output: <filepath>plugins/org.dita.base/xsl/common/strings.xml</filepath></choice>
+          <choice>PDF output: <filepath>plugins/org.dita.pdf2/cfg/common/vars/strings.xml</filepath></choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>In your plug-in, edit <filepath>strings.xml</filepath> to contain references to the language files for
+          which you are providing custom strings.</cmd>
+        <info>
+          <p>The <codeph>en-US</codeph> language must be present; other language files are optional.</p>
+          <p>
+            <codeblock
+              outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+            >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;!-- Provide strings for my plug-in; this plug-in supports
+     English, Icelandic, and Russian. -->
+&lt;langlist>
+  &lt;lang xml:lang="en"     filename="my-added-strings-en-us.xml"/>
+  &lt;lang xml:lang="en-US"  filename="my-added-strings-en-us.xml"/>
+  &lt;lang xml:lang="is"     filename="my-added-strings-is-is.xml"/>
+  &lt;lang xml:lang="is-IS"  filename="my-added-strings-is-is.xml"/>
+  &lt;lang xml:lang="ru"     filename="my-added-strings-ru-ru.xml"/>
+  &lt;lang xml:lang="ru-RU"  filename="my-added-strings-ru-ru.xml"/>
+&lt;/langlist></codeblock>
+          </p>
+        </info>
+      </step>
+      <step id="copy-strings">
+        <cmd>In <filepath>xsl/common</filepath> or <filepath>cfg/common/vars</filepath>, create a new file called
+            <filepath>my-added-strings-en-us.xml</filepath>.</cmd>
+        <info>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;variables>
+
+&lt;/variables></codeblock>
+        </info>
+      </step>
+      <step id="create-strings">
+        <cmd>For each new string you want, add a <xmlelement>variable</xmlelement> element with an <xmlatt>id</xmlatt>
+          attribute and the text you want the toolkit to use. </cmd>
+        <info>The <xmlatt>id</xmlatt> attribute value must be unique in the file and should reflect the purpose of the
+          generated text.
+          <p>The toolkit uses the text found inside the element when inserting generated text.</p>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;variables>
+  &lt;variable id="String1">English generated text&lt;/variable>
+  &lt;variable id="Another String">Another string in English&lt;/variable>
+&lt;/variables></codeblock>
+        </info>
+      </step>
+      <step>
+        <cmd>Repeat step
+          <xref href="#./copy-strings"/> and step
+          <xref href="#./create-strings"/> for each language.</cmd>
+      </step>
+      <step>
+        <cmd>Update your <filepath>plugin.xml</filepath> file to extend the strings available.</cmd>
+        <info>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;plugin id="com.example.your-plugin">
+  &lt;feature extension="dita.xsl.strings" file="xsl/common/strings.xml"/>
+&lt;/plugin></codeblock>
+        </info>
+        <stepresult>Your custom strings are available to your stylesheets. For example, if processing in a context where
+          the <xmlatt>xml:lang</xmlatt> value is <codeph>en-US</codeph>, the following call returns <cite>“Another
+            string in English”</cite> because it was defined as the text for the variable with <xmlatt>id</xmlatt> value
+          of <codeph>Another String</codeph> in step
+          <xref href="#./create-strings"/>.
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;xsl:call-template name="getVariable">
+  &lt;xsl:with-param name="id" select="'Another String'"/>
+&lt;/xsl:call-template></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

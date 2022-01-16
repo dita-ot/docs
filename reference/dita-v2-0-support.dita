@@ -10,7 +10,8 @@
 
   <shortdesc>DITA Open Toolkit <keyword keyref="release"/> provides a preview of features for the upcoming OASIS DITA
     2.0 specification. This preliminary processing support is provided on the basis of the latest DRAFT versions of the
-    DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of October 2020).</shortdesc>
+    DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of 
+    <keyword keyref="draft-dita-grammar-state"/>).</shortdesc>
 
   <conbody>
     <p id="grammar-files">DITA documents that reference the draft grammar files can be parsed, and where features
@@ -64,12 +65,11 @@
     </section>
     <section>
       <title>DITA-OT 3.6</title>
-      <p>DITA-OT 3.6 adds support for additional DITA 2.0 features.</p>
+      <p>DITA-OT 3.6 added support for additional DITA 2.0 features.</p>
       <ul id="added-in-3.6">
-        <!-- Added in DITA-OT 3.6 -->
-        <li>Where earlier DITA versions relied on the <xmlelement>object</xmlelement> to embed media in DITA source
-          files, DITA 2.0 provides new <xmlelement>audio</xmlelement> and <xmlelement>video</xmlelement> elements that
-          correspond to their HTML5 equivalents.</li>
+        <li>Where earlier DITA versions relied on the <xmlelement>object</xmlelement> element to embed media in DITA
+          source files, DITA 2.0 provides new <xmlelement>audio</xmlelement> and <xmlelement>video</xmlelement> elements
+          that correspond to their HTML5 equivalents.</li>
         <li>For HTML5 compatibility, the new emphasis domain adds support for the <xmlelement>strong</xmlelement> and
             <xmlelement>em</xmlelement> elements in addition to the existing <xmlelement>b</xmlelement> and
             <xmlelement>i</xmlelement> elements in the highlighting domain.</li>
@@ -89,10 +89,72 @@
           </ul>
         </li>
       </ul>
+    </section>
+    <section>
+      <title>DITA-OT 3.7</title>
+      <p>DITA-OT 3.7 adds support for additional DITA 2.0 features.</p>
+      <ul id="added-in-3.7">
+        <li>The new “combine” chunk action can be used to merge content into new output documents.
+          <p>When the <xmlatt>chunk</xmlatt> attribute is set to <codeph>combine</codeph> on a map, branch, or map
+            reference, all source DITA documents grouped by that reference will be combined into a single document in
+            the output.</p>
+          <p id="chunk-split">(Support for the DITA 2.0 “split” chunk action has not yet been implemented.)</p>
+          <note>The new chunk action is only applied if the root map has a DITA 2.0 doctype, such as:
+            <p><codeph>&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA 2.0 Map//EN" "map.dtd"></codeph></p>
+            <p>If the root map uses an unversioned (or 1.x) doctype, DITA 1.3 processing will be applied, and 2.0 chunk
+              actions will be ignored. With a 2.0 root map, any 1.3 chunk actions are ignored.</p>
+          </note>
+        </li>
+        <li>The new <xmlelement>keytext</xmlelement> element can be used to define variable text referenced by
+            <xmlatt>keyref</xmlatt>. Although the DITA 2.0 grammar files in this release support the use of
+            <xmlelement>keytext</xmlelement> in authored files, DITA-OT 3.7 does not yet have processing support for the
+          element.  </li>
+        <li>The new alternative titles domain and <xmlelement>titlealt</xmlelement> element (separate from the
+            <xmlelement>titlealts</xmlelement> element in DITA 1.3) may be used when you need to use an alternate title,
+          such as for a navigation title, search title, link title, subtitle, or title hint.</li>
+        <li>The new <xmlatt>appid-role</xmlatt> attribute is available on <xmlelement>resourceid</xmlelement>. The
+          default is <codeph>context-sensitive-help</codeph>.</li>
+        <li>The <xmlatt>keyref</xmlatt> attribute was added to all elements in the highlighting domain and the new
+          emphasis domain.</li>
+        <li>The <xmlatt>href</xmlatt>, <xmlatt>format</xmlatt>, and <xmlatt>scope </xmlatt> attributes are now used
+          consistently for linking elements.</li>
+        <li>Several obsolete elements and attributes have been removed from DITA 2.0, including:
+          <ul>
+            <li><xmlelement>anchor</xmlelement></li>
+            <li><xmlelement>anchorref</xmlelement></li>
+            <li><xmlelement>data-about</xmlelement></li>
+            <li><xmlelement>hasInstance</xmlelement></li>
+            <li><xmlelement>hasKind</xmlelement></li>
+            <li><xmlelement>hasNarrower</xmlelement></li>
+            <li><xmlelement>hasPart</xmlelement></li>
+            <li><xmlelement>hasRelated</xmlelement></li>
+            <li><xmlelement>longquoteref</xmlelement></li>
+            <li><xmlelement>relatedSubjects</xmlelement></li>
+            <li><xmlelement>sectiondiv</xmlelement></li>
+            <li><xmlelement>subjectRel</xmlelement></li>
+            <li><xmlelement>subjectRelHeader</xmlelement></li>
+            <li><xmlelement>subjectRelTable</xmlelement></li>
+            <li><xmlelement>subjectRole</xmlelement></li>
+            <li><xmlatt>anchorref</xmlatt> from <xmlelement>map</xmlelement></li>
+            <li><xmlatt>copy-to</xmlatt></li>
+            <li><xmlatt>href</xmlatt>, <xmlatt>format</xmlatt>, <xmlatt>type</xmlatt>, <xmlatt>scope</xmlatt>,
+                <xmlatt>reftitle</xmlatt> from <xmlelement>lq</xmlelement> (<xmlatt>keyref</xmlatt> remains)</li>
+            <li><xmlatt>locktitle</xmlatt></li>
+            <li><xmlatt>longdescref</xmlatt></li>
+            <li><xmlatt>mapkeyref</xmlatt></li>
+            <li><xmlatt>print</xmlatt></li>
+            <li><xmlatt>query</xmlatt></li>
+            <li><xmlatt>specentry</xmlatt> from <xmlelement>stentry</xmlelement></li>
+            <li><xmlatt>spectitle</xmlatt></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
       <note id="more-to-come">Other new or revised features proposed for DITA 2.0 are not yet supported. Additional
         features will be implemented in future versions of DITA-OT as the specification evolves.</note>
       <note type="tip">For the latest status information on DITA 2.0-related features and fixes, see the
-        <xref keyref="dita20-issues"/> in the GitHub issues tracker.</note>
+        <xref keyref="dita20-issues"/> in the GitHub issues tracker.</note>      
     </section>
   </conbody>
 

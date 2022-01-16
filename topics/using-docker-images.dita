@@ -45,17 +45,22 @@
         <cmd>Install Docker for your operating system.</cmd>
         <choices>
           <choice platform="windows">
-            <xref href="https://docs.docker.com/docker-for-windows/install/" scope="external" format="html">Install
+            <xref href="https://docs.docker.com/desktop/windows/install/" format="html" scope="external">Install
               Docker Desktop on Windows</xref>
           </choice>
           <choice platform="mac">
-            <xref href="https://docs.docker.com/docker-for-mac/install" scope="external" format="html">Install Docker
+            <xref href="https://docs.docker.com/desktop/mac/install/" format="html" scope="external">Install Docker
               Desktop on Mac</xref>
           </choice>
           <choice platform="mac">On macOS, you can also install Docker Desktop via
             <xref keyref="homebrew"/>:
-            <codeblock outputclass="syntax-bash">$ <cmdname>brew</cmdname> cask install docker
+            <codeblock outputclass="syntax-bash">$ <cmdname>brew</cmdname> install homebrew/cask/docker
 <systemoutput>Downloading…</systemoutput></codeblock>
+          </choice>
+          <choice platform="mac windows">
+            When you first run the Docker Desktop application, you may be prompted to grant privileged access to allow
+            Docker to install its networking components and links to the Docker apps. Grant this access and accept the
+            service agreement to proceed.
           </choice>
           <choice
             platform="linux"

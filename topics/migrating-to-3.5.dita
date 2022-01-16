@@ -118,7 +118,7 @@
       destdir="${output.dir}"
       includesfile="${dita.temp.dir}${file.separator}${fullditatopicfile}"
       style="${args.xsl}">
-  &lt;!-- ⋮ -->
+  [...]
 &lt;/xslt></codeblock>
       <p> With DITA-OT 2.4 or newer, use the <xmlelement>ditafileset</xmlelement> element instead: </p>
       <codeblock
@@ -127,14 +127,14 @@
       destdir="${output.dir}"
       style="${args.xsl}">
   &lt;ditafileset format="dita" processingRole="normal"/>
-  &lt;!-- ⋮ -->
+  [...]
 &lt;/xslt></codeblock>
       <p>If your plug-in previously used the <codeph>user.input.file.listfile</codeph> to process the start map like
         this:</p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt …
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt [...]
       includesfile="${dita.temp.dir}${file.separator}${user.input.file.listfile}"/></codeblock>
       <p>Use the <xmlelement>ditafileset</xmlelement> element as follows:</p>
-      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt … >
+      <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;xslt [...] >
   &lt;ditafileset input="true" format="ditamap"/>
 &lt;/xslt></codeblock>
     </section>

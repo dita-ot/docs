@@ -2,6 +2,8 @@
 
 /* Based on almond.css by Alvaro Montoro */
 
+/* stylelint-disable -- Ignore stylelint rules on almond.css */
+
 /*
   Copyright (c) 2019 - Alvaro Montoro (alvaromontoro@gmail.com)
 
@@ -625,29 +627,31 @@ video {
 
 /* ↑ end almond.lite.css ↑ */
 
+/* stylelint-enable */
+
 /* ↓ add extension.images ↓ */
 
-a[rel~="external"],
+a[rel~='external'],
 a[download] {
+  background-position: 0 50%;
   background-repeat: no-repeat;
   background-size: 1rem 1rem;
-  background-position: 0rem 50%;
   display: inline-block;
   padding-left: 1.25rem; }
 
 a[download] {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M5,2 28,2 35,9 35,38 5,38Z M28,2 28,9 35,9 M20,10 20,30 M11,21 20,30 29,21' fill='none' stroke='%23999' stroke-width='2'/></svg>"); }
 
-a[rel~="external"] {
+a[rel~='external'] {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M28,4 39,4 39,15 M39,4 23,20 M28,9 7,9 7,34 35,34 35,15' fill='none' stroke='%23999' stroke-width='2'/></svg>"); }
 
 /* ↑ end extension.images ↑ */
 
 /* ---------------------------------------------------------------------------------------------- */
 
-:root {
+:root { /* stylelint-disable-line */
 
-  /* DITA Open Toolkit overrides to Almond styles */
+  /* DITA Open Toolkit overrides to Almond :root styles */
 
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
@@ -678,7 +682,7 @@ Basic fonts and typography
 
 /* ↓ header-coderef ↓ */
 .header {
-  margin: 0;
+  margin-bottom: 1rem;
   padding: 0 12px;
 }
 
@@ -749,8 +753,8 @@ pre code {
 
 .syntaxdiagram blockquote {
   background-color: var(--pre-bg);
-  border-radius: 4px;
   border: 1px solid var(--pre-border-color);
+  border-radius: 4px;
   font-size: 0.8125rem;
   line-height: 1.5rem;
   margin: 1rem;
@@ -758,12 +762,12 @@ pre code {
 }
 
 .syntaxdiagram blockquote::before {
-  content: "";
+  content: '';
 }
 
 .syntaxdiagram kbd {
   background: none;
-  border: none;
+  border: 0;
   color: var(--code-color);
   padding: 0;
 }
@@ -803,8 +807,8 @@ h1 .cmdname,
 h1 .filepath,
 h2 .filepath,
 h3 .filepath {
-  font-weight: var(--font-weight-bold);
   font-size: 0.9em;
+  font-weight: var(--font-weight-bold);
 }
 
 h1 .filepath {
@@ -843,8 +847,10 @@ h2 .codeph {
 Basic identation, padding, and margins
 ****************************************/
 
-main {
-  margin-left: 300px;
+@media screen and (min-width: 992px) {
+  main {
+    margin-left: 300px;
+  }
 }
 
 /****************************************
@@ -874,6 +880,7 @@ Links
 .related-links {
   color: var(--code-color);
 }
+
 .related-links strong a {
   font-weight: var(--font-weight-bold);
 }
@@ -926,7 +933,7 @@ tr {
   border-right-color: var(--secondary-light);
 }
 
-th {
+th { /* stylelint-disable-line no-duplicate-selectors -- Override almond.css */
   text-align: left;
 }
 
@@ -967,23 +974,25 @@ Navigation
 ****************************************/
 
 /* ↓ nav-coderef ↓ */
-nav[role='toc'] {
-  float: left;
-  margin-top: 0.5rem;
-  width: 300px;
+/* Style ToC nav as sidebar on desktop */
+@media screen and (min-width: 992px) {
+  nav.toc {
+    float: left;
+    width: 300px;
+  }
 }
 
-nav[role='toc'] li.active > a {
+nav.toc li.active > a {
   font-weight: var(--font-weight-bold);
 }
 /* ↑ end-nav-ref ↑ */
 
-nav[role='toc'] > ul {
+nav.toc > ul {
   margin-left: -0.4rem;
   margin-right: 2rem;
 }
 
-nav[role='toc'] > ul li {
+nav.toc > ul li {
   line-height: 1.25rem;
 }
 
@@ -1021,11 +1030,11 @@ Video link icons for DITA-OT Day talks
 /* Append video icon to DITA-OT Day links in related links and link lists (but not in page footers) */
 a.link[href*='dita-ot_day']::after,
 .link a[href*='dita-ot_day']::after {
-  display: inline;
-  content: '    ';
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill="%233563ab" fill-rule="evenodd" d="M16 3.75a.75.75 0 00-1.136-.643L11 5.425V4.75A1.75 1.75 0 009.25 3h-7.5A1.75 1.75 0 000 4.75v6.5C0 12.216.784 13 1.75 13h7.5A1.75 1.75 0 0011 11.25v-.675l3.864 2.318A.75.75 0 0016 12.25v-8.5zm-5 5.075l3.5 2.1v-5.85l-3.5 2.1v1.65zM9.5 6.75v-2a.25.25 0 00-.25-.25h-7.5a.25.25 0 00-.25.25v6.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-4.5z"></path></svg>');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
+  content: '    ';
+  display: inline;
   margin-left: 6px;
 }

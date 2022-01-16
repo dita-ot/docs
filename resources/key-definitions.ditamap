@@ -16,7 +16,7 @@
   <keydef keys="release">
     <topicmeta>
       <keywords>
-        <keyword>3.6</keyword>
+        <keyword>3.7</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -26,11 +26,19 @@
   <keydef keys="maintenance-version">
     <topicmeta>
       <keywords>
-        <keyword>3.6.1</keyword>
+        <keyword>3.7</keyword>
       </keywords>
     </topicmeta>
   </keydef>
   <!-- ↑ end-excerpt ↑ -->
+
+  <keydef keys="draft-dita-grammar-state">
+    <topicmeta>
+      <keywords>
+        <keyword>January 2022</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
 
   <!--VERSION NUMBERS: OTHER APPLICATIONS-->
 
@@ -38,7 +46,7 @@
   <keydef keys="tool.ant.version">
     <topicmeta>
       <keywords>
-        <keyword>1.10.9</keyword>
+        <keyword>1.10.12</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -70,7 +78,15 @@
   <keydef keys="tool.icu4j.version">
     <topicmeta>
       <keywords>
-        <keyword>61.1</keyword>
+        <keyword>70.1</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Java-->
+  <keydef keys="tool.jackson.version">
+    <topicmeta>
+      <keywords>
+        <keyword>2.13.0</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -86,7 +102,7 @@
   <keydef keys="tool.logback.version">
     <topicmeta>
       <keywords>
-        <keyword>1.2.3</keyword>
+        <keyword>1.2.8</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -94,7 +110,7 @@
   <keydef keys="tool.SLF4J.version">
     <topicmeta>
       <keywords>
-        <keyword>1.7.25</keyword>
+        <keyword>1.7.32</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -102,7 +118,7 @@
   <keydef keys="tool.xerces.version">
     <topicmeta>
       <keywords>
-        <keyword>2.12.0</keyword>
+        <keyword>2.12.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -141,7 +157,7 @@
   <keydef keys="tool.saxon.version">
     <topicmeta>
       <keywords>
-        <keyword>9.9.1.4</keyword>
+        <keyword>10.6</keyword>
       </keywords>
     </topicmeta>
   </keydef>

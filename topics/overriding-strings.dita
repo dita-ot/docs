@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<task id="overriding-strings">
+  <title>Overriding strings</title>
+  <shortdesc>Override the default strings in the toolkit when you want to replace an existing string with one of your
+    own; for example, it could be used to reset the English string <cite>“Figure”</cite> to 
+        <cite>“Fig.”</cite></shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>generated text, overriding</indexterm>
+        <indexterm><xmlelement>gentext</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps>
+      <step>
+        <cmd>Copy this file to your plug-in.</cmd>
+        <choices>
+          <choice>non-PDF output: <filepath>plugins/org.dita.base/xsl/common/strings.xml</filepath></choice>
+          <choice>PDF output: <filepath>plugins/org.dita.pdf2/cfg/common/vars/strings.xml</filepath></choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>In your plug-in, edit <filepath>strings.xml</filepath> to contain references to the language files you want
+          to override.</cmd>
+        <info>
+          <p>
+            <codeblock
+              outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+            >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;!-- Provide strings for my plug-in; this plug-in supports
+     English and German. -->
+&lt;langlist>
+  &lt;lang xml:lang="en"     filename="strings-en-us.xml"/>
+  &lt;lang xml:lang="en-US"  filename="strings-en-us.xml"/>
+  &lt;lang xml:lang="de"     filename="strings-de-de.xml"/>
+  &lt;lang xml:lang="de-DE"  filename="strings-de-de.xml"/>
+&lt;/langlist></codeblock>
+          </p>
+        </info>
+      </step>
+      <step id="copy-strings">
+        <cmd>Copy the language file from you want to override. Paste it into your plug-in's
+            <filepath>xsl/common</filepath> or <filepath>cfg/common/vars</filepath> directory.</cmd>
+        <info>
+          <p>Language files are found in:</p>
+        </info>
+        <choices>
+          <choice>non-PDF output: <filepath>plugins/org.dita.base/xsl/common/</filepath></choice>
+          <choice>PDF output: <filepath>plugins/org.dita.pdf2/cfg/common/vars/</filepath></choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>Open the language file. Remove all of the variables except those you want to override.</cmd>
+        <info>
+          <p>By removing the variables you will not override, you limit where variables are defined in the toolkit while
+            making your file easier to maintain. </p>
+        </info>
+      </step>
+      <step id="change-strings">
+        <cmd>Change the contents of the variable to your desired text.</cmd>
+        <info>
+          <p>Do not modify the <xmlatt>id</xmlatt> attribute.</p>
+          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;variables>
+   &lt;variable id="Figure">Fig.&lt;/variable>
+&lt;/variables></codeblock>
+        </info>
+      </step>
+      <step>
+        <cmd>Update your <filepath>plugin.xml</filepath> file to extend the strings available.</cmd>
+        <info>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;plugin id="com.example.your-plugin">
+  &lt;feature extension="dita.xsl.strings" file="xsl/common/strings.xml"/>
+&lt;/plugin></codeblock>
+        </info>
+        <stepresult>Your overrides are available to your stylesheets. For example, if processing in a context where the
+            <xmlatt>xml:lang</xmlatt> value is <codeph>en-US</codeph>, the following call returns <cite>“Fig.”</cite>,
+          because it was defined as the text for the variable with <xmlatt>id</xmlatt> value of <codeph>Figure</codeph>
+          in step
+          <xref href="#./change-strings"/>, which overrides the default text found in <b>org.dita.base</b>.
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;xsl:call-template name="getVariable">
+  &lt;xsl:with-param name="id" select="Figure"/>
+&lt;/xsl:call-template></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

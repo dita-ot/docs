@@ -6,7 +6,9 @@
   <topicmeta>
     <shortdesc>Provides key definitions for each DITA topic in the repository.</shortdesc>
   </topicmeta>
+  <keydef keys="adding-new-languages" href="../topics/adding-new-languages.dita"/>
   <keydef keys="adding-plugins" href="../topics/adding-plugins.dita"/>
+  <keydef keys="adding-new-strings" href="../topics/adding-new-strings.dita"/>
   <keydef keys="ant" href="../topics/ant.dita"/>
   <keydef keys="ant-parameters-details" href="../parameters/ant-parameters-details.dita"/>
   <keydef keys="architecture" href="../reference/architecture.dita"/>
@@ -104,9 +106,11 @@
   <keydef keys="migrating-to-3.4" href="../topics/migrating-to-3.4.dita"/>
   <keydef keys="migrating-to-3.5" href="../topics/migrating-to-3.5.dita"/>
   <keydef keys="migrating-to-3.6" href="../topics/migrating-to-3.6.dita"/>
+  <keydef keys="migrating-to-3.7" href="../topics/migrating-to-3.7.dita"/>
   <keydef keys="migration" href="../topics/migration.dita"/>
   <keydef keys="other-errors" href="../topics/other-errors.dita"/>
   <keydef keys="output-formats" href="../topics/output-formats.dita"/>
+  <keydef keys="overriding-strings" href="../topics/overriding-strings.dita"/>
   <keydef keys="parameters" href="../parameters/index.dita"/>
   <keydef keys="parameters-other" href="../parameters/parameters-other.dita"/>
   <keydef keys="parameters_intro" href="../parameters/parameters_intro.dita"/>

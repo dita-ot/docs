@@ -3,7 +3,8 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <reference id="ant-properties">
   <title>Internal Ant properties</title>
-  <shortdesc>Reference list of Ant properties used by DITA-OT internally.</shortdesc>
+  <shortdesc>DITA-OT uses these Ant properties in certain internal operations. They are not intended for general use,
+    but may be adjusted by plug-in developers to configure custom transform types.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -20,36 +21,43 @@
   </prolog>
   <refbody>
     <section>
+      <note type="attention">Internal properties are subject to change from one version of DITA-OT to another.</note>
       <parml>
         <plentry>
           <pt><codeph>include.rellinks</codeph></pt>
-          <pd>A space-separated list of link roles to be output; the <codeph>#default</codeph> value token represents
-            links without an explicit role (those for which no <xmlatt>role</xmlatt> attribute is defined). Defined by
-              <codeph>args.rellinks</codeph>, but may be overridden directly. Valid roles include:
-            <ul>
-              <li>parent </li>
-              <li>child </li>
-              <li>sibling </li>
-              <li>friend </li>
-              <li>next </li>
-              <li>previous </li>
-              <li>cousin </li>
-              <li>ancestor </li>
-              <li>descendant </li>
-              <li>sample </li>
-              <li>external </li>
-              <li>other</li>
-            </ul></pd>
+          <pd>
+            <p>A space-separated list of link roles to be output; the <codeph>#default</codeph> value token represents
+              links without an explicit role (those for which no <xmlatt>role</xmlatt> attribute is defined). Defined by
+                <codeph>args.rellinks</codeph>, but may be overridden directly.</p>
+            <p>Valid roles include:
+              <ul>
+                <li>parent </li>
+                <li>child </li>
+                <li>sibling </li>
+                <li>friend </li>
+                <li>next </li>
+                <li>previous </li>
+                <li>cousin </li>
+                <li>ancestor </li>
+                <li>descendant </li>
+                <li>sample </li>
+                <li>external </li>
+                <li>other</li>
+              </ul>
+            </p>
+          </pd>
         </plentry>
         <plentry>
           <pt><codeph>temp.output.dir.name</codeph></pt>
-          <pd>An internal property for use with custom transform types; this property can be used to place all output in
-            an internal directory, so that a final step in the transform type can do some form of post-processing before
-            the files are placed in the specified output directory.
+          <pd>
+            <p>This property can be used to place all output in an internal directory, so that a final step in the
+              transform type can do some form of post-processing before the files are placed in the specified output
+              directory.</p>
             <p>For example, if a custom HTML5 transform sets the property to <codeph>zip_dir</codeph>, all output files
               (including HTML, images, and CSS) will be placed within the directory <filepath>zip_dir</filepath> in the
               temporary processing directory. A final step can then be used to add more files, zip the directory, and
-              return that zip to the designated output directory.</p></pd>
+              return that zip to the designated output directory.</p>
+          </pd>
         </plentry>
       </parml>
     </section>

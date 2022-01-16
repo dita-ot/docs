@@ -109,6 +109,26 @@
         <linktext>org.dita.html5.dublin-core</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="plugin-pdf2-axf"
+      href="https://github.com/dita-ot/org.dita.pdf2.axf"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>org.dita.pdf2.axf</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="plugin-pdf2-xep"
+      href="https://github.com/dita-ot/org.dita.pdf2.xep"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>org.dita.pdf2.xep</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
   <topicset id="dita-ot-rn">
@@ -245,6 +265,16 @@
         <linktext>DITA-OT 3.6 Release Notes</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="3.7-release-notes"
+      href="https://www.dita-ot.org/3.7/release-notes/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>DITA-OT 3.7 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
   <topicset id="downloads">
@@ -303,17 +333,17 @@
     </keydef>
     <keydef
       keys="download.openjdk"
-      href="https://adoptopenjdk.net"
+      href="https://adoptium.net/?variant=openjdk8"
       scope="external"
       format="html"
     >
       <topicmeta>
-        <linktext>adoptopenjdk.net</linktext>
+        <linktext>adoptium.net</linktext>
       </topicmeta>
     </keydef>
     <keydef
       keys="download.openjdk.azul"
-      href="https://www.azul.com/downloads/zulu/"
+      href="https://www.azul.com/downloads/"
       scope="external"
       format="html"
     >
@@ -343,12 +373,12 @@
     </keydef>
     <keydef
       keys="download.oracle-jdk"
-      href="http://www.oracle.com/technetwork/java/javase/downloads"
+      href="https://www.oracle.com/java/technologies/downloads/"
       scope="external"
       format="html"
     >
       <topicmeta>
-        <linktext>oracle.com/technetwork/java</linktext>
+        <linktext>oracle.com/java</linktext>
       </topicmeta>
     </keydef>
     <keydef
@@ -594,7 +624,7 @@
         <linktext>Dublin Core Metadata Element Set</linktext>
       </topicmeta>
     </keydef>
-    <keydef keys="json" href="https://json.org" scope="external" format="html">
+    <keydef keys="json" href="https://json.org" format="html" scope="external">
       <topicmeta>
         <linktext>JSON</linktext>
       </topicmeta>
@@ -661,7 +691,7 @@
         <linktext>RFC 5147</linktext>
       </topicmeta>
     </keydef>
-    <keydef keys="yaml" href="https://yaml.org" scope="external" format="html">
+    <keydef keys="yaml" href="https://yaml.org" format="html" scope="external">
       <topicmeta>
         <linktext>YAML</linktext>
       </topicmeta>
@@ -756,6 +786,16 @@
     >
       <topicmeta>
         <linktext>Apache Ant documentation</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="bootstrap-css"
+      href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#css"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Bootstrap</linktext>
       </topicmeta>
     </keydef>
     <keydef

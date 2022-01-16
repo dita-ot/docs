@@ -33,8 +33,8 @@
          <p>DITA-OT keeps topic and map files as separate files and processes each file multiple times during
             preprocessing. Thus reading from disk, parsing XML, serializing XML, and writing to disk makes processing
             quite I/O intensive. Use either an
-            <xref href="http://en.wikipedia.org/wiki/Solid-state_drive" scope="external" format="html">SSD</xref> or a
-            <xref href="http://en.wikipedia.org/wiki/RAM_drive" scope="external" format="html">RAM disk</xref> for
+            <xref href="http://en.wikipedia.org/wiki/Solid-state_drive" format="html" scope="external">SSD</xref> or a
+            <xref href="http://en.wikipedia.org/wiki/RAM_drive" format="html" scope="external">RAM disk</xref> for
             temporary files, and never use a temporary directory that is not located on the same machine as where the
             processing takes place.</p>
       </section>
@@ -73,10 +73,10 @@
    <related-links>
       <linklist>
          <title>Collected links</title>
-         <link href="http://en.wikipedia.org/wiki/Solid-state_drive" scope="external" format="html">
+         <link href="http://en.wikipedia.org/wiki/Solid-state_drive" format="html" scope="external">
             <linktext>SSD</linktext>
          </link>
-         <link href="http://en.wikipedia.org/wiki/RAM_drive" scope="external" format="html">
+         <link href="http://en.wikipedia.org/wiki/RAM_drive" format="html" scope="external">
             <linktext>RAM disk</linktext>
          </link>
       </linklist>

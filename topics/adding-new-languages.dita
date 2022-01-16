@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<task id="adding-new-languages">
+  <title>Adding new languages</title>
+  <shortdesc>Extend the toolkit’s generated text capabilities by adding new language files.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>
+          <indexterm>languages
+            <indexterm>adding support for</indexterm></indexterm></indexterm>
+        <indexterm>generated text</indexterm>
+        <indexterm>gentext</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps>
+      <step id="copy-strings-xml">
+        <cmd>Copy this file to your plug-in.</cmd>
+        <choices>
+          <choice>non-PDF output: <filepath>plugins/org.dita.base/xsl/common/strings.xml</filepath></choice>
+          <choice>PDF output: <filepath>plugins/org.dita.pdf2/cfg/common/vars/strings.xml</filepath></choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>In your plug-in, edit <filepath>strings.xml</filepath> to contain references to the language files for
+          which you are providing custom strings.</cmd>
+        <info>
+          <p>
+            <codeblock
+              outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+            >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;!-- Provide new languages for Gaelic and Vietnamese. -->
+&lt;langlist>
+  &lt;lang xml:lang="ga"     filename="strings-ga-ga.xml"/>
+  &lt;lang xml:lang="ga-GA"  filename="strings-ga-ga.xml"/>
+  &lt;lang xml:lang="vi"     filename="strings-vi-vn.xml"/>
+  &lt;lang xml:lang="vi-VN"  filename="strings-vi-vn.xml"/>
+&lt;/langlist></codeblock>
+          </p>
+        </info>
+      </step>
+      <step id="copy-strings">
+        <cmd>Copy this file to your plug-in into the same directory as step
+          <xref href="#./copy-strings-xml"/>.</cmd>
+        <choices>
+          <choice>non-PDF output: <filepath>plugins/org.dita.base/xsl/common/strings-en-us.xml</filepath></choice>
+          <choice>PDF output: <filepath>plugins/org.dita.pdf2/cfg/common/vars/en.xml</filepath></choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>Rename the file to match the language you wish to add (for instance,
+          <filepath>strings-vi-vn.xml</filepath>).</cmd>
+      </step>
+      <step id="replace-strings">
+        <cmd>Without changing the <xmlatt>id</xmlatt> value, replace the generated text string for each variable.</cmd>
+        <info>
+          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;variables>
+   &lt;variable id="Figure">Hình&lt;/variable>
+   &lt;variable id="Table">Bảng&lt;/variable>
+   &lt;variable id="Next topic">Chủ đề tiếp theo&lt;/variable>
+     [...]
+   &lt;variable id="Copyright">Bản quyền&lt;/variable>
+   &lt;variable id="a11y.and-then"/>
+&lt;/variables></codeblock>
+        </info>
+      </step>
+      <step>
+        <cmd>Repeat step
+          <xref href="#./copy-strings"/> to step
+          <xref href="#./replace-strings"/> for each language.</cmd>
+      </step>
+      <step>
+        <cmd>Update your <filepath>plugin.xml</filepath> file to extend the strings available.</cmd>
+        <info>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;plugin id="com.example.your-plugin">
+  &lt;feature extension="dita.xsl.strings" file="xsl/common/strings.xml"/>
+&lt;/plugin></codeblock>
+        </info>
+        <stepresult>Your custom language strings are available to your stylesheets. For example, if processing in a
+          context where the <xmlatt>xml:lang</xmlatt> value is <codeph>vi-VN</codeph>, the following call returns
+            <cite>“Chủ đề tiếp theo”</cite> because it was defined as the text for the variable with
+            <xmlatt>id</xmlatt> value of <codeph>Next topic</codeph> in step
+          <xref href="#./replace-strings"/>.
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;xsl:call-template name="getVariable">
+  &lt;xsl:with-param name="id" select="'Next topic'"/>
+&lt;/xsl:call-template></codeblock>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<reference id="migrating-to-3.7">
+
+  <title>Migrating to release 3.7</title>
+  <titlealts>
+    <navtitle>To 3.7</navtitle>
+  </titlealts>
+
+  <shortdesc>DITA-OT 3.7 includes 
+    <ph id="summary">stable IDs in re-used content, a common variable format for generated text strings, and an updated
+      preview of features for the latest draft of the upcoming DITA 2.0 standard, such as the new “combine” chunk
+      action, the <xmlelement>titlealt</xmlelement> element, and the alternative titles domain</ph>.
+  </shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 3.7 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="3.7-release-notes"/>.</note>
+    </section>
+
+    <section conkeyref="reusable-components/strings-format" id="strings-format">
+      <title/>
+      <p/>
+    </section>
+
+    <section id="css-precedence">
+      <title>CSS precedence</title>
+      <p id="3770">The order of elements in the <xmlelement>head</xmlelement> element of the HTML template
+        files was changed to facilitate overrides. The common CSS stylesheets and any custom CSS files specified
+        via <parmname>args.css</parmname> now come <b>after</b> the contents of the custom header file specified
+        via <parmname>args.hdf</parmname>. This change better supports use cases in which the custom header file
+        is used to insert references to external CSS stylesheets for frameworks like
+        <xref
+          href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#css"
+          format="html"
+          scope="external"
+        >Bootstrap</xref>. In previous versions of DITA-OT, framework styles took precedence
+        over any equivalent rules in the user’s custom stylesheet. This change allows rules in custom CSS files
+        specified via <parmname>args.css</parmname> to override any of the framework styles as necessary.
+      </p>
+    </section>
+
+    <section id="deprecated-templates">
+      <title>Deprecated legacy <codeph>gen-user</codeph> templates</title>
+      <p>The legacy <codeph>gen-user</codeph> templates that were originally used to add content to
+        the <xmlelement>head</xmlelement> element have been deprecated and will be removed in a future release.
+        For each of these templates, parameter-based customizations are available that can be used to specify
+        files that contain content that extends the default processing.
+        <xref href="https://github.com/dita-ot/dita-ot/issues/3835" format="html" scope="external">#3835</xref>
+        <ul>
+          <li><codeph>gen-user-head</codeph> → use <parmname>args.hdf</parmname> instead</li>
+          <li><codeph>gen-user-header</codeph> → use <parmname>args.hdr</parmname></li>
+          <li><codeph>gen-user-footer</codeph> → use <parmname>args.ftr</parmname></li>
+          <li><codeph>gen-user-scripts</codeph> → use <parmname>args.hdf</parmname></li>
+          <li><codeph>gen-user-styles</codeph> → use <parmname>args.css</parmname></li>
+        </ul>
+      </p>
+    </section>
+
+    <section id="ancestor-links">
+      <title>Ancestor links</title>
+      <p id="3792">The mappull processing step has changed how related links are generated with
+          <parmname>args.rellinks</parmname>. Starting in 3.7, <option>noparent</option> will not generate any ancestor
+        links and <option>nofamily</option> will not generate sibling, cousin, ancestor, or descendant links.</p>
+      <p>Prior to 3.7, <parmname>args.rellinks</parmname>=<option>all</option> did not actually include all links. Now
+        it will. As in previous versions, the default value for PDF output is <option>nofamily</option>, and other
+        output formats include all link roles except <codeph>ancestor</codeph> links.</p>
+      <p>The default processing sets the internal Ant property <parmname>include.rellinks</parmname> to <codeph>#default
+          parent child sibling friend next previous cousin descendant sample external other</codeph>.</p>
+    </section>
+
+    <section id="toc-role">
+      <title>ToC navigation role</title>
+      <p id="3800">Table of contents navigation in HTML5 output used a <xmlelement>nav</xmlelement> element with
+        the ARIA <xmlatt>role</xmlatt> attribute set to <codeph>toc</codeph>. Certain accessibility tools flagged
+        this as an error. The invalid role has been replaced with the <codeph>navigation</codeph> landmark role. A
+        new <codeph>toc</codeph> class allows custom CSS styles to target the ToC navigation. CSS rules that use the
+        <codeph>nav[role='toc']</codeph> selector can be simplified to <codeph>nav.toc</codeph>.
+      </p>
+    </section>
+
+    <section id="common-attr-mode">
+      <title>Common attributes mode</title>
+      <p id="3806">A <codeph>commonattributes</codeph> mode was added to the HTML5, PDF, and XHTML plug-ins to allow
+        for easier extension. This is a backwards compatible change, however, existing plug-ins should be changed to
+        use the new <codeph>commonattributes</codeph> mode.
+        <fig>
+          <title>Named template prior to version 3.7</title>
+          <codeblock outputclass="language-xml">&lt;xsl:template name="commonattributes">
+  &lt;!-- whole copy of commonattributes named template with customizations -->
+&lt;/xsl:template></codeblock>
+        </fig>
+        <fig>
+          <title>Template mode as of version 3.7</title>
+          <codeblock outputclass="language-xml">&lt;xsl:template match="@* | node()" mode="commonattributes">
+  &lt;xsl:param name="default-output-class" as="xs:string*"/>
+  &lt;xsl:next-match>
+    &lt;xsl:with-param name="default-output-class" select="$default-output-class"/>
+  &lt;/xsl:next-match>
+  &lt;!-- customizations -->
+&lt;/xsl:template></codeblock>
+        </fig></p>
+    </section>
+
+    <section id="xsl-modes">
+      <title>XSL modes</title>
+      <p>The HTML5 stylesheets were updated to use XSL modes instead of named templates.</p>
+      <p>This is a backwards compatible change, however, existing plug-ins should be changed to use modes instead of
+        named templates for:
+        <ul>
+          <li><codeph>copyright</codeph></li>
+          <li><codeph>gen-endnotes</codeph></li>
+          <li><codeph>generateDefaultMeta</codeph></li>
+          <li><codeph>generateCssLinks</codeph></li>
+          <li><codeph>generateChapterTitle</codeph></li>
+          <li><codeph>processHDF</codeph></li>
+          <li><codeph>generateBreadcrumbs</codeph></li>
+          <li><codeph>processHDR</codeph></li>
+          <li><codeph>processFTR</codeph></li>
+          <li><codeph>generateCharset</codeph></li>
+        </ul>
+      </p>
+    </section>
+
+  </refbody>
+</reference>

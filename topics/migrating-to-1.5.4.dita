@@ -135,12 +135,12 @@
       <title>PDF</title>
       <p>Support for mirrored page layout was added. The default is the unmirrored layout. The following XSLT
         configuration variables have been deprecated:</p>
-      <ul id="ul_hkv_oyj_bd">
+      <ul>
         <li><codeph>page-margin-left</codeph></li>
         <li><codeph>page-margin-right</codeph></li>
       </ul>
       <p>The following variables should be used instead to control page margins:</p>
-      <ul id="ul_yda_wyj_bd">
+      <ul>
         <li><codeph>page-margin-outside</codeph></li>
         <li><codeph>page-margin-inside</codeph></li>
       </ul>

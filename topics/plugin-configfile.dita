@@ -278,14 +278,14 @@
             <fig>
               <title>Sample <xmlelement>transtype</xmlelement> element</title>
               <codeblock outputclass="language-xml">&lt;transtype name="base" abstract="true" desc="Common">
-  &lt;!-- ⋮ -->
+  [...]
   &lt;param name="link-crawl"
          desc="Specifies whether to crawl only topic links found in maps, or all discovered topic links."
          type="enum">
     &lt;val>map&lt;/val>
     &lt;val default="true">topic&lt;/val>
   &lt;/param>
-  &lt;!-- ⋮ -->
+  [...]
 &lt;/transtype>
 </codeblock>
             </fig>

@@ -107,9 +107,9 @@
         <ul>
           <li>You can download the Oracle JRE or JDK from
             <xref keyref="download.oracle-jdk"/> under commercial license.</li>
-          <li>OpenJDK is a free open-source implementation of Java available from
+          <li>Eclipse Temurin is the free OpenJDK distribution available from
             <xref keyref="download.openjdk"/>.</li>
-          <li>Free OpenJDK distributions are also available from other vendors, including
+          <li>Free OpenJDK distributions are also provided by
             <xref keyref="download.openjdk.corretto"/>,
             <xref keyref="download.openjdk.azul"/>, and
             <xref keyref="download.openjdk.redhat"/>.</li>
@@ -177,6 +177,55 @@
         For instance, if you're currently on 2.2 and want to move to 3.3, you should review all of the changes in 2.3
         through 3.3. You may want to start at the oldest version and read forward so you can chronologically follow the
         changes, since it is possible that files or topics have had multiple changes. </p>
+    </section>
+
+    <section id="strings-format">
+      <title>Common format for generated text</title>
+      <div id="gentext-string-structure">
+        <p>Prior to DITA-OT 3.7, there were two different XML structures for adding or modifying generated text
+          (gentext). The base plug-in <b>org.dita.base</b> and any custom overrides defined via the 
+          <parmname>dita.strings.xsl</parmname> extension point used a root element <xmlelement>strings</xmlelement>,
+          with individual strings in <xmlelement>str</xmlelement> elements with <xmlatt>name</xmlatt> attributes. This
+          format was previously used for HTML, and all other output formats except PDF.</p>
+        <fig>
+          <title>Base strings file structure prior to DITA-OT 3.7</title>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;?xml version="1.0" encoding="utf-8"?>
+&lt;strings xml:lang="en-US">
+  &lt;str name="String1">English generated text&lt;/str>
+&lt;/strings></codeblock>
+        </fig>
+        <p>The PDF plug-in <b>org.dita.pdf2</b> used a root element <xmlelement>vars</xmlelement> with an XML namespace,
+          and strings in <xmlelement>variable</xmlelement> elements with <xmlatt>id</xmlatt> attributes.</p>
+        <fig>
+          <title>PDF2 strings file structure prior to DITA-OT 3.7</title>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;vars xmlns="http://www.idiominc.com/opentopic/vars">
+  &lt;variable id="String1">English generated text&lt;/variable>
+&lt;/vars></codeblock>
+        </fig>
+        <p>Starting with DITA-OT 3.7, these structures have been deprecated and replaced with a new unified format. All
+          files now use <xmlelement>variables</xmlelement> as the root element, with the
+            <xmlelement>variable</xmlelement> elements previously used in PDF strings. The new format supports the XSL
+          parameters used by the earlier PDF strings format to pass dynamic information such as chapter numbers or
+          figure titles.</p>
+        <fig>
+          <title>New common variable format as of DITA-OT 3.7</title>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;variables>
+  &lt;variable id="String1">English generated text&lt;/variable>
+&lt;/variables></codeblock>
+        </fig>
+        <p>The old formats are still supported, but plug-in developers should update any generated text files to reflect
+          the new structure, as support for the old formats may be removed in a future release.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3817" format="html" scope="external">#3817</xref>
+        </p>
+      </div>
     </section>
   </conbody>
 </concept>

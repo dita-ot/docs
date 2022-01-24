@@ -94,7 +94,22 @@
           >&lt;xsl:call-template name="getVariable">
   &lt;xsl:with-param name="id" select="'Another String'"/>
 &lt;/xsl:call-template></codeblock>
-        </stepresult>
+          <note id="note_wdm_3ty_3sb">You can also use the same strings in multiple
+            languages.<codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace" id="codeblock_v4v_lty_3sb">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;langlist>
+  &lt;lang xml:lang="en"     filename="my-added-strings-en-us.xml"/>
+  &lt;lang xml:lang="en-US"  filename="my-added-strings-en-us.xml"/>
+  <b>&lt;lang xml:lang="en"     filename="my-added-strings-mul.xml"/></b>
+  <b>&lt;lang xml:lang="en-US"  filename="my-added-strings-mul.xml"/></b>
+  &lt;lang xml:lang="is"     filename="my-added-strings-is-is.xml"/>
+  &lt;lang xml:lang="is-IS"  filename="my-added-strings-is-is.xml"/>
+  <b>&lt;lang xml:lang="is"     filename="my-added-strings-mul.xml"/></b>
+  <b>&lt;lang xml:lang="is-IS"  filename="my-added-strings-mul.xml"/></b>
+  &lt;lang xml:lang="ru"     filename="my-added-strings-ru-ru.xml"/>
+  &lt;lang xml:lang="ru-RU"  filename="my-added-strings-ru-ru.xml"/>
+  <b>&lt;lang xml:lang="ru"     filename="my-added-strings-mul.xml"/></b>
+  <b>&lt;lang xml:lang="ru-RU"  filename="my-added-strings-mul.xml"/></b>
+&lt;/langlist></codeblock></note></stepresult>
       </step>
     </steps>
   </taskbody>

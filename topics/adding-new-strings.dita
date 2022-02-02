@@ -94,8 +94,10 @@
           >&lt;xsl:call-template name="getVariable">
   &lt;xsl:with-param name="id" select="'Another String'"/>
 &lt;/xsl:call-template></codeblock>
-          <note id="note_wdm_3ty_3sb">You can also use the same strings in multiple
-            languages.<codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace" id="codeblock_v4v_lty_3sb">&lt;?xml version="1.0" encoding="UTF-8"?>
+          <note>You can also use the same strings in multiple
+            languages.<codeblock
+              outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+            >&lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;langlist>
   &lt;lang xml:lang="en"     filename="my-added-strings-en-us.xml"/>
   &lt;lang xml:lang="en-US"  filename="my-added-strings-en-us.xml"/>

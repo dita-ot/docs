@@ -8,7 +8,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> includes <ph conref="#v3.7/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v3.7/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -20,6 +21,62 @@
         <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
           since previous release.</draft-comment>
         <p conkeyref="reusable-components/java-clients"/>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.7.1" outputclass="mark">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">(release date)</ph>-->
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <li id="3846">HTML5 Output fails when having links between inner topics and chunk="to-content select-topic" 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3846" format="html" scope="external">#3846</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3881" format="html" scope="external">#3881</xref>
+          </li>
+          <li id="3857">Updated used Xerces version to 2.12.2
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3857" format="html" scope="external">#3857</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3860" format="html" scope="external">#3860</xref>
+          </li>
+          <li id="3858">Strict mode doesn't cause failure when images are missing, though it reports that as an ERROR
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3858" format="html" scope="external">#3858</xref>
+          </li>
+          <li id="3861">PDF2 i18n-postprocess extension point not working
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3861" format="html" scope="external">#3861</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3862" format="html" scope="external">#3862</xref>
+          </li>
+          <li id="3867">Child navigation links to nested topics are incorrect/missing if there is a &lt;ph keyref/>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3867" format="html" scope="external">#3867</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3874" format="html" scope="external">#3874</xref>
+          </li>
+          <li id="3871">In preprocess2 fail on missing image in strict mode
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3871" format="html" scope="external">#3871</xref>
+          </li>
+          <li id="3877">Build log should provide the name of the file where the issue was found
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3877" format="html" scope="external">#3877</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3884" format="html" scope="external">#3884</xref>
+          </li>
+          <li id="3886">Publishing to html5 fails when an image path has query
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3886" format="html" scope="external">#3886</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3892" format="html" scope="external">#3892</xref>
+          </li>
+        </ul>
+        <!-- TODO: Describe docs updates -->
+        <!-- <p>The documentation for DITA Open Toolkit Release 3.7.1 provides corrections and improvements to existing topics,
+          along with new information in the following topics:</p>-->
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.1+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.7.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.7...3.7.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>

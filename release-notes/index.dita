@@ -35,6 +35,10 @@
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
+          <li id="3750">Updated force unique filter to work with references to separate topics inside the same file 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3750" format="html" scope="external">#3750</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3894" format="html" scope="external">#3894</xref>
+          </li>          
           <li id="3846">HTML5 Output fails when having links between inner topics and chunk="to-content select-topic" 
             <xref href="https://github.com/dita-ot/dita-ot/issues/3846" format="html" scope="external">#3846</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3881" format="html" scope="external">#3881</xref>

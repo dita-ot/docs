@@ -35,37 +35,74 @@
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
-          <li id="3750">Updated force unique filter to work with references to separate topics inside the same file 
+          <li id="3750">When publishing documents with nested topics or multiple glossary entries in the same file,
+            generating <xmlatt>copy-to</xmlatt> attributes with <parmname>force-unique</parmname>=<option>true</option>
+            caused earlier versions of DITA-OT to create redundant copies of each file. The
+              <codeph>ForceUniqueFilter</codeph> has been updated to properly handle references to separate topics
+            within the same file.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3750" format="html" scope="external">#3750</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3894" format="html" scope="external">#3894</xref>
           </li>          
-          <li id="3846">HTML5 Output fails when having links between inner topics and chunk="to-content select-topic" 
+          <li id="3846">Earlier versions failed with errors when generating HTML5 output for chunked topics that include
+            links between inner topics. Chunk processing has been updated to ensure that links between nested topics are
+            generated correctly when the <xmlatt>chunk</xmlatt> attribute is defined with 
+            <codeph>to-content select-topic</codeph>. 
             <xref href="https://github.com/dita-ot/dita-ot/issues/3846" format="html" scope="external">#3846</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3881" format="html" scope="external">#3881</xref>
           </li>
-          <li id="3857">Updated used Xerces version to 2.12.2
+          <li id="3857">The bundled <tm trademark="Apache Xerces" tmtype="tm">Apache Xerces</tm> XML parser has been
+            upgraded to version 2.12.2, which includes security updates to mitigate the vulnerability described in
+            <xref
+              href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-23437"
+              format="html"
+              scope="external"
+            >CVE-2022-23437</xref> when handling specially crafted XML document payloads.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3857" format="html" scope="external">#3857</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3860" format="html" scope="external">#3860</xref>
           </li>
-          <li id="3858">Strict mode doesn't cause failure when images are missing, though it reports that as an ERROR
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3858" format="html" scope="external">#3858</xref>
+          <li id="3858">Strict processing mode has been updated to stop processing when images are missing. Earlier
+            versions reported errors in this case, but allowed processing to continue.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3858" format="html" scope="external">#3858</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3871" format="html" scope="external">#3871</xref>
           </li>
-          <li id="3861">PDF2 i18n-postprocess extension point not working
+          <li id="3861">In earlier versions, the PDF2 <codeph>dita.xsl.xslfo.i18n-postprocess</codeph> extension point
+            did not work, because the extension point and the XSLT templates were defined in the same place. The
+            templates have been moved to a new file to ensure that templates in custom plug-ins take precedence when
+            using the extension point.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3861" format="html" scope="external">#3861</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3862" format="html" scope="external">#3862</xref>
           </li>
-          <li id="3867">Child navigation links to nested topics are incorrect/missing if there is a &lt;ph keyref/>
+          <li id="3867">Earlier versions generated incorrect links to nested topics when the parent topic contained a
+            key reference and was re-used in different key scopes. Processing has been updated to preserve the fragment
+            identifiers and ensure that links are generated correctly when topics are duplicated for each key scope.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3867" format="html" scope="external">#3867</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3874" format="html" scope="external">#3874</xref>
           </li>
-          <li id="3871">In preprocess2 fail on missing image in strict mode
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3871" format="html" scope="external">#3871</xref>
-          </li>
-          <li id="3877">Build log should provide the name of the file where the issue was found
+          <li id="3877">Messages in build logs now contain location information when available.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3877" format="html" scope="external">#3877</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3884" format="html" scope="external">#3884</xref>
+            <p>The following error messages now include the name of the file where the issue was found:
+              <ul>
+                <li><msgnum>DOTJ041E</msgnum></li>
+                <li><msgnum>DOTJ045I</msgnum></li>
+                <li><msgnum>DOTJ046E</msgnum></li>
+                <li><msgnum>DOTJ052E</msgnum></li>
+                <li><msgnum>DOTJ060W</msgnum></li>
+                <li><msgnum>DOTJ074W</msgnum></li>
+                <li><msgnum>DOTJ077F</msgnum></li>
+                <li><msgnum>DOTX008E</msgnum></li>
+                <li><msgnum>DOTX065W</msgnum></li>
+              </ul>
+            </p>
           </li>
-          <li id="3886">Publishing to html5 fails when an image path has query
+          <li id="3882">The German and French translations for Caution, Notice, and Remember note labels have been
+            updated to align with the signal words defined in ANSI Z535.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3882" format="html" scope="external">#3882</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3883" format="html" scope="external">#3883</xref>
+          </li>
+          <li id="3886">When publishing to HTML, builds would fail when an image paths contained a <codeph>?</codeph>
+            query component or <codeph>#</codeph> fragment identifier. Processing has been updated to handle these
+            references correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3886" format="html" scope="external">#3886</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3892" format="html" scope="external">#3892</xref>
           </li>

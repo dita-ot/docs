@@ -384,7 +384,10 @@
             <parmname>-r</parmname>
             <varname>file</varname>
           </pt>
-          <pd>Convert partial documentation sets by processing input with additional resources.</pd>
+          <pd conkeyref="parameters-base/args.resources.desc"/>
+          <pd>This argument corresponds to the common parameter <parmname>args.resources</parmname>.</pd>
+          <pd>Resource files can be used to convert partial documentation sets by processing input with additional
+            information.</pd>
           <pd>For example, to process a single topic file with a map that contains key definitions, use a command like
             this:
             <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath

@@ -131,6 +131,26 @@
                   <indexterm>args.rellinks</indexterm></indexterm>
               </p></pd>
           </plentry>
+          <plentry id="args.resources">
+            <pt><parmname>args.resources</parmname></pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/args.resources.desc"/>
+            <pd conaction="pushafter">
+              <p>This parameter corresponds to the command-line argument <parmname>--resource</parmname>.</p>
+              <p>Resource files can be used to convert partial documentation sets by processing input with additional
+                information.</p>
+              <p>For example, to process a single topic file with a map that contains key definitions, use a command
+                like this:
+                <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
+                  >topic.dita</filepath> <parmname>--format</parmname>=<option>html5</option> <parmname
+                  >--args.resources</parmname>=<filepath>keys.ditamap</filepath></codeblock>
+              </p>
+              <p>To convert a chapter map to HTML5 and insert related links from relationship tables in a separate map,
+                use:
+                <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
+                  >chapter.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option> <parmname
+                  >--args.resources</parmname>=<filepath>reltables.ditamap</filepath></codeblock>
+              </p></pd>
+          </plentry>
           <plentry id="args.tablelink.style">
             <pt>
               <parmname>args.tablelink.style</parmname>
@@ -173,8 +193,8 @@
               <parmname>dita.temp.dir</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/dita.temp.dir.desc"/>
-            <pd conaction="pushafter">The temporary directory is where DITA-OT writes temporary files that are generated
-              during the transformation process.</pd>
+            <pd conaction="pushafter">The temporary directory is where DITA-OT writes intermediate files that are
+              generated during the transformation process.</pd>
           </plentry>
           <plentry id="dita.input.valfile" importance="deprecated">
             <pt>

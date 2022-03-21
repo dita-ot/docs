@@ -35,8 +35,8 @@
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
-          <li id="2884">In earlier versions, topic filenames with typewriter apostrophes “<codeph>'</codeph>” or tilde
-              “<codeph>~</codeph>” characters caused HTML builds to fail. Processing has been updated to ensure that
+          <li id="2884">In earlier versions, paths or filenames with typewriter apostrophes “<codeph>'</codeph>” or
+            tilde “<codeph>~</codeph>” characters caused HTML builds to fail. Processing has been updated to ensure that
             these characters are handled correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2844" format="html" scope="external">#2844</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3880" format="html" scope="external">#3880</xref>

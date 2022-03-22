@@ -42,7 +42,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3880" format="html" scope="external">#3880</xref>
           </li>
           <li id="3635">On Windows, referencing images on another disk drive caused builds to fail. Resources with
-            different drive letter paths now handled correctly.
+            different drive letter paths are now handled correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3635" format="html" scope="external">#3635</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3885" format="html" scope="external">#3885</xref>
           </li>
@@ -126,9 +126,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3882" format="html" scope="external">#3882</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3883" format="html" scope="external">#3883</xref>
           </li>
-          <li id="3886">When publishing to HTML, builds would fail when an image paths contained a <codeph>?</codeph>
-            query component or <codeph>#</codeph> fragment identifier. Processing has been updated to handle these
-            references correctly.
+          <li id="3886">When publishing to HTML, builds would fail when image paths contained a <codeph>?</codeph> query
+            component or <codeph>#</codeph> fragment identifier. Processing has been updated to handle these references
+            correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3886" format="html" scope="external">#3886</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3892" format="html" scope="external">#3892</xref>
           </li>

@@ -120,20 +120,21 @@
       <indexterm><parmname>-f</parmname></indexterm>
       <p>Each transformation requires you to specify at least the file to transform and the desired output format.</p>
       <parml>
-        <plentry>
+        <plentry id="input">
           <pt>
             <parmname>--input</parmname>=<varname>file</varname></pt>
           <pt>
             <parmname>-i</parmname>
             <varname>file</varname>
           </pt>
-          <pd id="args.input.desc">Specifies the main file for your documentation project. This argument corresponds
-            to the common parameter <parmname>args.input</parmname>. Typically this is a DITA map, however it also can
-            be a DITA topic if you want to transform a single DITA file. The path can be absolute, relative to
-              <parmname>args.input.dir</parmname>, or relative to the current directory if
-              <parmname>args.input.dir</parmname> is not defined.</pd>
+          <pd>Specifies the main file for your documentation project.</pd>
+          <pd>This argument corresponds to the common parameter
+            <xref keyref="parameters-base/args.input"/>.</pd>
+          <pd>Typically this is a DITA map, however it also can be a DITA topic if you want to transform a single DITA
+            file. The path can be absolute, relative to <parmname>args.input.dir</parmname>, or relative to the current
+            directory if <parmname>args.input.dir</parmname> is not defined.</pd>
         </plentry>
-        <plentry>
+        <plentry id="format">
           <pt>
             <parmname>--format</parmname>=<varname>name</varname></pt>
           <pt>
@@ -141,7 +142,8 @@
             <varname>name</varname>
           </pt>
           <pd conkeyref="parameters-base/transtype.desc"/>
-          <pd>This argument corresponds to the common parameter <parmname>transtype</parmname>.</pd>
+          <pd>This argument corresponds to the common parameter 
+            <xref keyref="parameters-base/transtype"/>.</pd>
           <pd>To list the formats that are currently available in your environment, use <cmdname>dita
               transtypes</cmdname>.</pd>
           <pd>
@@ -275,18 +277,20 @@
             resources and can slow down the build process, so it should only be enabled when further details are
             required to diagnose problems.</pd>
         </plentry>
-        <plentry>
+        <plentry id="output">
           <pt>
             <parmname>--output</parmname>=<varname>dir</varname></pt>
           <pt>
             <parmname>-o</parmname>
             <varname>dir</varname>
           </pt>
-          <pd id="output.dir.desc">
+          <pd>
             <p>Specifies the path of the output directory; the path can be absolute or relative to the current
               directory.</p>
-            <p>This argument corresponds to the common parameter <parmname>output.dir</parmname>. By default, the output
-              is written to the <filepath>out</filepath> subdirectory of the current directory.</p>
+            <p>This option corresponds to the common parameter
+              <xref keyref="parameters-base/output.dir"/>.</p>
+            <p>By default, the output is written to the <filepath>out</filepath> subdirectory of the current
+              directory.</p>
           </pd>
         </plentry>
         <plentry>
@@ -376,7 +380,7 @@
 5 3634ms</codeblock>
           </pd>
         </plentry>
-        <plentry>
+        <plentry id="resource">
           <pt>
             <parmname>--resource</parmname>=<varname>file</varname>
           </pt>
@@ -384,7 +388,11 @@
             <parmname>-r</parmname>
             <varname>file</varname>
           </pt>
-          <pd>Convert partial documentation sets by processing input with additional resources.</pd>
+          <pd conkeyref="parameters-base/args.resources.desc"/>
+          <pd>This argument corresponds to the common parameter 
+            <xref keyref="parameters-base/args.resources"/>.</pd>
+          <pd>Resource files can be used to convert partial documentation sets by processing input with additional
+            information.</pd>
           <pd>For example, to process a single topic file with a map that contains key definitions, use a command like
             this:
             <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
@@ -398,7 +406,7 @@
               >reltables.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
           </pd>
         </plentry>
-        <plentry>
+        <plentry id="temp">
           <pt>
             <parmname>--temp</parmname>=<varname>dir</varname></pt>
           <pt>
@@ -406,7 +414,10 @@
             <varname>dir</varname>
           </pt>
           <pd conkeyref="parameters-base/dita.temp.dir.desc"/>
-          <pd>This argument corresponds to the common parameter <parmname>dita.temp.dir</parmname>.</pd>
+          <pd>This option corresponds to the common parameter 
+            <xref keyref="parameters-base/dita.temp.dir"/>.</pd>
+          <pd>The temporary directory is where DITA-OT writes intermediate files that are generated during the
+            transformation process.</pd>
         </plentry>
         <plentry>
           <pt>

@@ -47,13 +47,13 @@
     }
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "1.1.0",
+    "@prettier/plugin-xml": "1.2.0",
     "husky": "^7.0.2",
-    "lint-staged": "12.1.2",
+    "lint-staged": "12.3.4",
     "prettier": "2.5.1",
-    "stylelint": "^14.1.0",
+    "stylelint": "^14.3.0",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-recommended": "^7.0.0",
     "stylelint-config-sass-guidelines": "^9.0.1"
   }
 }

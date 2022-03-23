@@ -112,9 +112,12 @@
               <parmname>args.input</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/args.input.desc"/>
-            <pd conaction="pushafter">Typically this is a DITA map, however it also can be a DITA topic if you want to
-              transform a single DITA file. The path can be absolute, relative to <parmname>args.input.dir</parmname>,
-              or relative to the current directory if <parmname>args.input.dir</parmname> is not defined. </pd>
+            <pd conaction="pushafter">
+              <p>This parameter corresponds to the command-line argument
+                <xref keyref="dita-command-arguments/input">--input</xref>.</p>
+              <p>Typically this is a DITA map, however it also can be a DITA topic if you want to transform a single
+                DITA file. The path can be absolute, relative to <parmname>args.input.dir</parmname>, or relative to the
+                current directory if <parmname>args.input.dir</parmname> is not defined.</p></pd>
           </plentry>
           <plentry id="args.rellinks">
             <pt><parmname>args.rellinks</parmname></pt>
@@ -129,6 +132,27 @@
                 <indexterm>HTML5
                   <indexterm>related links</indexterm>
                   <indexterm>args.rellinks</indexterm></indexterm>
+              </p></pd>
+          </plentry>
+          <plentry id="args.resources">
+            <pt><parmname>args.resources</parmname></pt>
+            <pd conaction="mark" conref="parameters-base.dita#base/args.resources.desc"/>
+            <pd conaction="pushafter">
+              <p>This parameter corresponds to the command-line option 
+                <xref keyref="dita-command-arguments/resource">--resource</xref>.</p>
+              <p>Resource files can be used to convert partial documentation sets by processing input with additional
+                information.</p>
+              <p>For example, to process a single topic file with a map that contains key definitions, use a command
+                like this:
+                <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
+                  >topic.dita</filepath> <parmname>--format</parmname>=<option>html5</option> <parmname
+                  >--args.resources</parmname>=<filepath>keys.ditamap</filepath></codeblock>
+              </p>
+              <p>To convert a chapter map to HTML5 and insert related links from relationship tables in a separate map,
+                use:
+                <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
+                  >chapter.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option> <parmname
+                  >--args.resources</parmname>=<filepath>reltables.ditamap</filepath></codeblock>
               </p></pd>
           </plentry>
           <plentry id="args.tablelink.style">
@@ -173,8 +197,11 @@
               <parmname>dita.temp.dir</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/dita.temp.dir.desc"/>
-            <pd conaction="pushafter">The temporary directory is where DITA-OT writes temporary files that are generated
-              during the transformation process.</pd>
+            <pd conaction="pushafter">
+              <p>This parameter corresponds to the command-line option
+                <xref keyref="dita-command-arguments/temp">--temp</xref>.</p>
+              <p>The temporary directory is where DITA-OT writes intermediate files that are generated during the
+                transformation process.</p></pd>
           </plentry>
           <plentry id="dita.input.valfile" importance="deprecated">
             <pt>
@@ -259,8 +286,11 @@
               <parmname>output.dir</parmname>
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/output.dir.desc"/>
-            <pd conaction="pushafter">By default, the output is written to
-                <filepath><varname>DITA-dir</varname>/out</filepath>.</pd>
+            <pd conaction="pushafter">
+              <p>This parameter corresponds to the command-line option
+                <xref keyref="dita-command-arguments/output">--output</xref>.</p>
+              <p>By default, the output is written to
+                <filepath><varname>DITA-dir</varname>/out</filepath>.</p></pd>
           </plentry>
           <plentry id="result.rewrite-rule.class">
             <pt>
@@ -313,6 +343,8 @@
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/transtype.desc"/>
             <pd conaction="pushafter">
+              <p>This parameter corresponds to the command-line argument
+                <xref keyref="dita-command-arguments/format">--format</xref>.</p>
               <p conkeyref="conref-task/transtypes"/>
             </pd>
           </plentry>

@@ -57,7 +57,8 @@
               </dl><note>The <codeph>FATAL</codeph> value throws a fatal error message in XSLT and an exception in
                 Java.</note>
               <note type="tip">If the <xmlatt>id</xmlatt> attribute of your message is equal to the <xmlatt>id</xmlatt>
-                of a default DITA-OT message, your message will override the default one.</note></li>
+                of a default DITA-OT message, your message will override the default one.
+                An override cannot change the severity of the overridden message.</note></li>
           </ul></info>
       </step>
       <step>
@@ -90,6 +91,17 @@
   &lt;xsl:with-param name="id"><varname>prefix</varname><varname>number</varname><varname
         >letter</varname>&lt;/xsl:with-param>
   &lt;xsl:with-param name="msg">Message text and parameters.&lt;/xsl:with-param>
+&lt;/xsl:call-template></codeblock>
+      <p>You can also pass custom parameters to the template by using the <xmlatt>msgparams</xmlatt> parameter. The
+        value of <xmlatt>msgparams</xmlatt> is a semicolon separated list of strings, where each token consists of a
+        percent sign prefixed parameter index, equals sign and parameter value.</p>
+      <codeblock
+        outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+      >&lt;xsl:call-template name="output-message">
+  &lt;xsl:with-param name="id"><varname>prefix</varname><varname>number</varname><varname
+        >letter</varname>&lt;/xsl:with-param>
+  &lt;xsl:with-param name="msgparams"><varname>%1=MyFirstValue</varname><varname>;</varname><varname
+        >%2=MySecondValue</varname>&lt;/xsl:with-param>
 &lt;/xsl:call-template></codeblock>
       <p>Use the <codeph>ctx</codeph> parameter if calling from a function.</p>
     </postreq>

@@ -66,6 +66,20 @@
           </fig>
           <p>The division wrapper will be discarded when generating HTML files, and the contents will be inserted into
             the <xmlelement>footer</xmlelement> element of each page.</p>
+          <p>The file contents must be well-formed XML. If your JavaScript snippets include attributes without values
+            (such as the <codeph>async</codeph> script attribute), use valid XML syntax to define the empty
+            attribute:</p>
+          <p>Instead of:
+            <codeblock outputclass="language-javascript normalize-space show-line-numbers show-whitespace">&lt;script>
+  &lt;script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">&lt;/script>
+&lt;/script></codeblock>
+          </p>
+          <p>use:
+            <codeblock outputclass="language-javascript normalize-space show-line-numbers show-whitespace">&lt;script>
+  &lt;script id="MathJax-script" <b
+              >async=""</b> src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">&lt;/script>
+&lt;/script></codeblock>
+          </p>        
         </stepxmp>
       </step>
       <step>
@@ -80,6 +94,11 @@
               /></codeblock>
           </fig>
         </stepxmp>
+        <info>
+          <note>When defining the path to the footer file from the Ant script, use the plug-in directory property with
+            the <varname>plugin-id</varname> as shown in the example above:
+                <codeph>${dita.plugin.<varname>plugin-id</varname>.dir}</codeph>.</note>
+        </info>
       </step>
     </steps>
     <result>

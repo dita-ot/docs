@@ -25,15 +25,70 @@
     </refbody>
   </reference>
 
-  <reference id="v3.7.1" outputclass="mark">
+  <reference id="v3.7.2" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released March 23, 2022</ph>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
     </title>
 
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <ul>
+          <!--https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.2+is%3Aclosed+sort%3Acreated-asc+ -->
+          <li id="3730">In earlier versions, processing failed when URLs contained certain unexpected character
+            sequences. The URL processing and validation filters in the Java code have been updated to support
+            additional edge cases, including commas in 
+            <xmlatt>href</xmlatt> values, <codeph>mailto:</codeph> links, and custom protocol schemes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3730" format="html" scope="external">#3730</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3912" format="html" scope="external">#3912</xref>
+          </li>
+          <li id="3905">The DITA 1.3 grammar files have been updated to allow the <xmlatt>outputclass</xmlatt> attribute
+            on the <xmlelement>change-historylist</xmlelement> element.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3905" format="html" scope="external">#3905</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3911" format="html" scope="external">#3911</xref>
+          </li>
+          <li id="3913">Processing will now report an error when a project file <codeph>param</codeph> is used to define
+            a parameter that should be set with a dedicated key instead.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3913" format="html" scope="external">#3913</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3915" format="html" scope="external">#3915</xref>
+          </li>
+          <li id="3917">When parallel processing was enabled with <parmname>parallel</parmname>= <option>true</option>,
+            some files were occasionally skipped with “<msgph>folder could not be created</msgph>” errors. Processing
+            has been updated to better handle concurrent directory creation. If the directory already exists, processing
+            will now continue without errors.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3917" format="html" scope="external">#3917</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3925" format="html" scope="external">#3925</xref>
+          </li>
+          <li id="3923">The <codeph>jackson-databind</codeph> library has been updated to the latest patch version
+            2.13.2.2 to address a reported security vulnerability:
+            <xref
+              href="https://github.com/advisories/GHSA-57j2-w4cx-62h2"
+              format="html"
+              scope="external"
+            >CVE-2020-36518</xref>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3923" format="html" scope="external">#3923</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.2+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.7.2 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.7.1...3.7.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.7.1">
+    <title>DITA-OT 3.7.1 <ph outputclass="small text-muted">released March 23, 2022</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.7.1 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <li id="2884">In earlier versions, paths or filenames with typewriter apostrophes “<codeph>'</codeph>” or
             tilde “<codeph>~</codeph>” characters caused HTML builds to fail. Processing has been updated to ensure that

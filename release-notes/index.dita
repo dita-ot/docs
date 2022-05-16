@@ -36,10 +36,9 @@
           following bug fixes.</p>
         <ul>
           <!--https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.2+is%3Aclosed+sort%3Acreated-asc+ -->
-          <li id="3730">In earlier versions, processing failed when URLs contained certain unexpected character
-            sequences. The URL processing and validation filters in the Java code have been updated to support
-            additional edge cases, including commas in 
-            <xmlatt>href</xmlatt> values, <codeph>mailto:</codeph> links, and custom protocol schemes.
+          <li id="3730">In earlier versions, processing failed when link targets contained unexpected syntax. The URL
+            processing and validation filters in the Java code have been updated to support <codeph>mailto:</codeph>
+            links and additional URI schemes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3730" format="html" scope="external">#3730</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3912" format="html" scope="external">#3912</xref>
           </li>

@@ -55,8 +55,8 @@
           </li>
           <li id="3917">When parallel processing was enabled with <parmname>parallel</parmname>= <option>true</option>,
             some files were occasionally skipped with “<msgph>folder could not be created</msgph>” errors. Processing
-            has been updated to better handle concurrent directory creation. If the directory already exists, processing
-            will now continue without errors.
+            has been updated to handle concurrent directory creation. If the directory already exists, processing will
+            now continue without errors.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3917" format="html" scope="external">#3917</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3925" format="html" scope="external">#3925</xref>
           </li>

@@ -147,12 +147,15 @@
             an empty manifest in the root folder. The unnecessary Java archive has been removed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3864" format="html" scope="external">#3864</xref>
           </li>
+          <!-- ↓ Ported to 3.7.3 with https://github.com/dita-ot/dita-ot/pull/3945 ↓ -->
+          <!--
           <li id="3867">Earlier versions generated incorrect links to nested topics when the parent topic contained a
             key reference and was re-used in different key scopes. Processing has been updated to preserve the fragment
             identifiers and ensure that links are generated correctly when topics are duplicated for each key scope.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3867" format="html" scope="external">#3867</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3874" format="html" scope="external">#3874</xref>
           </li>
+          -->
           <li id="3875">In earlier versions, the branch filtering routine did not handle nested subtopics correctly.
             Processing has been corrected to properly re-write topic references with ditavalrefs and inner topics.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3875" format="html" scope="external">#3875</xref>,

@@ -145,9 +145,9 @@
           </pd>
         </plentry>
         <plentry>
-          <pt><xmlelement>meta</xmlelement></pt>
+          <pt><xmlelement>metadata</xmlelement></pt>
           <pd>
-            <indexterm><xmlelement>meta</xmlelement></indexterm>
+            <indexterm><xmlelement>metadata</xmlelement></indexterm>
             <p>An optional element that defines metadata.</p>
             <p>The following attributes are supported:</p>
             <simpletable keycol="1">
@@ -158,7 +158,7 @@
               </sthead>
               <strow>
                 <stentry>type</stentry>
-                <stentry>Metadata name </stentry>
+                <stentry>Metadata name</stentry>
                 <stentry>Yes</stentry>
               </strow>
               <strow>
@@ -168,8 +168,8 @@
               </strow>
             </simpletable>
             <fig>
-              <title>Sample <xmlelement>meta</xmlelement> element</title>
-              <codeblock outputclass="language-xml">&lt;meta type="foo" value="bar"/></codeblock>
+              <title>Sample <xmlelement>metadata</xmlelement> element</title>
+              <codeblock outputclass="language-xml">&lt;metadata type="foo" value="bar"/></codeblock>
             </fig>
           </pd>
         </plentry>

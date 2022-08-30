@@ -25,15 +25,104 @@
     </refbody>
   </reference>
 
-  <reference id="v3.7.2" outputclass="mark">
+  <reference id="v3.7.3" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released May 17, 2022</ph>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
     </title>
 
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.3+is%3Aclosed+sort%3Acreated-asc+ -->
+          <li
+            id="2704"
+          >Avoid renaming non-DITA resources used in branch filtering with dvrResourceSuffix or dvrResourcePrefix specified
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2704" format="html" scope="external">#2704</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3947" format="html" scope="external">#3947</xref>
+          </li>
+          <li id="3353">Images referenced via keyrefs have improper format value in job.xml 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3353" format="html" scope="external">#3353</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3963" format="html" scope="external">#3963</xref>
+          </li>
+          <li id="3366">NullPointerException in FileUtils.getRelativePath
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3366" format="html" scope="external">#3366</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3977" format="html" scope="external">#3977</xref>
+          </li>
+          <li id="3597">NPE in NormalizeTableFilter 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3597" format="html" scope="external">#3597</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3962" format="html" scope="external">#3962</xref>
+          </li>
+          <li id="3724">Error in mapref stage when passing dita map as resource 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3724" format="html" scope="external">#3724</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3964" format="html" scope="external">#3964</xref>
+          </li>
+          <li id="3727">Fix for #3727 Allow Saxon to decide configuration class
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3727" format="html" scope="external">#3727</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3949" format="html" scope="external">#3949</xref>
+          </li>
+          <!-- ↓ Originally intended for 3.7.1, ported from `develop` to 3.7.3 with № 3945 ↓ -->
+          <li id="3867">Earlier versions generated incorrect links to nested topics when the parent topic contained a
+            key reference and was re-used in different key scopes. Processing has been updated to preserve the fragment
+            identifiers and ensure that links are generated correctly when topics are duplicated for each key scope.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3867" format="html" scope="external">#3867</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3874" format="html" scope="external">#3874</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3945" format="html" scope="external">#3945</xref>
+          </li>
+          <li id="3932">Publishing speed slower with Java 17 than with Java 1.8 [Windows]
+            Fix Windows transformation slowdown for Java 12+
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3932" format="html" scope="external">#3932</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3933" format="html" scope="external">#3933</xref>
+          </li>
+          <li id="3934">DITA-OT 3.6 or above can't handle Input file of non-ASCII path
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3934" format="html" scope="external">#3934</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3943" format="html" scope="external">#3943</xref>
+          </li>
+          <li id="3959">Guard against possible NPE in XMLUtils.toErrorReporter(DITAOTLogger)
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3959" format="html" scope="external">#3959</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3960" format="html" scope="external">#3960</xref>
+          </li>
+          <li id="3969"><xmlelement>xsl:message</xmlelement> of an XML element also recursively prints its descendants
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3969" format="html" scope="external">#3969</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3978" format="html" scope="external">#3978</xref>
+          </li>
+          <li id="3972">Remove a Unicode quote character in the DOTJ085E message
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3972" format="html" scope="external">#3972</xref>
+          </li>
+          <li id="3976">Conref to topic element is not resolved when publishing to HTML
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3976" format="html" scope="external">#3976</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3979" format="html" scope="external">#3979</xref>
+          </li>
+          <li id="3980">Transformation crashes if map element doesn't have class attribute
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3980" format="html" scope="external">#3980</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3981" format="html" scope="external">#3981</xref>
+          </li>
+          <li id="3991">Relax possibility for named template to return an empty sequence
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3991" format="html" scope="external">#3991</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3992" format="html" scope="external">#3992</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.3+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.7.3 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.7.2...3.7.3" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.7.2">
+    <title>DITA-OT 3.7.2
+      <ph outputclass="small text-muted">released May 17, 2022</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.7.2 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <!--https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.2+is%3Aclosed+sort%3Acreated-asc+ -->
           <li id="3730">In version 3.7.1, processing failed when link targets contained unexpected syntax. The URL
@@ -147,15 +236,6 @@
             an empty manifest in the root folder. The unnecessary Java archive has been removed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3864" format="html" scope="external">#3864</xref>
           </li>
-          <!-- ↓ Ported to 3.7.3 with https://github.com/dita-ot/dita-ot/pull/3945 ↓ -->
-          <!--
-          <li id="3867">Earlier versions generated incorrect links to nested topics when the parent topic contained a
-            key reference and was re-used in different key scopes. Processing has been updated to preserve the fragment
-            identifiers and ensure that links are generated correctly when topics are duplicated for each key scope.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3867" format="html" scope="external">#3867</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3874" format="html" scope="external">#3874</xref>
-          </li>
-          -->
           <li id="3875">In earlier versions, the branch filtering routine did not handle nested subtopics correctly.
             Processing has been corrected to properly re-write topic references with ditavalrefs and inner topics.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3875" format="html" scope="external">#3875</xref>,

@@ -68,6 +68,16 @@
          <p>DITA-OT 2.0 to 2.3 require Java 7, and DITA-OT 2.4 and newer require Java 8. However, using a newer version
             of Java may further reduce processing time, depending on your operating system.</p>
       </section>
+      <section>
+         <title>Re-enable Java file caching</title>
+         <p>As of Java 12, the file canonicalization cache is no longer enabled by default (see
+            <xref keyref="JDK-8207005"/>). On Windows, this results in significantly longer build times, and slight
+            increases on Linux. To re-enable file caching, add <codeph
+        >-Dsun.io.useCanonCaches=true </codeph> to the Java
+            invocation command in the <filepath>dita.bat</filepath> and <filepath>ant.bat</filepath> wrapper
+            scripts.</p>
+         <note>As of DITA-OT 3.7.3, this system property is set by default in the bundled wrapper scripts.</note>
+      </section>
    </body>
 
    <related-links>

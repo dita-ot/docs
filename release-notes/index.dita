@@ -36,29 +36,41 @@
           following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.3+is%3Aclosed+sort%3Acreated-asc+ -->
-          <li
-            id="2704"
-          >Avoid renaming non-DITA resources used in branch filtering with dvrResourceSuffix or dvrResourcePrefix specified
+          <li id="2704">In earlier versions, links to non-DITA resources were broken in branch filtering scenarios that
+            used the <xmlelement>dvrResourcePrefix</xmlelement> or <xmlelement>dvrResourceSuffix</xmlelement> elements
+            to adjust the names of filtered topic files. Processing has been corrected to only rename DITA resources,
+            and preserve the original names of non-DITA resources like images or other assets.
             <xref href="https://github.com/dita-ot/dita-ot/issues/2704" format="html" scope="external">#2704</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3947" format="html" scope="external">#3947</xref>
           </li>
-          <li id="3353">Images referenced via keyrefs have improper format value in job.xml 
+          <li id="3353">The image metadata processing failed to determine the height and width of images referenced via
+            keyrefs. The original <xmlatt>format</xmlatt> attribute value is now preserved in the temporary
+              <filepath>.job.xml</filepath> file along with the <codeph>image</codeph> format keyword, so the image
+            dimensions can be read from the file metadata.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3353" format="html" scope="external">#3353</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3963" format="html" scope="external">#3963</xref>
           </li>
-          <li id="3366">NullPointerException in FileUtils.getRelativePath
+          <li id="3366">In earlier versions, builds failed with a NullPointerException when projects contained
+            references with absolute paths pointing outside the folder where the DITA map is located. A new guard has
+            been added to handle these cases more gracefully.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3366" format="html" scope="external">#3366</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3977" format="html" scope="external">#3977</xref>
           </li>
-          <li id="3597">NPE in NormalizeTableFilter 
+          <li id="3597">In DITA-OT 3.5.4 and later, builds failed with a NullPointerException when parsing specialized
+            topics containing only table rows or cells. The table normalization filter has been updated to process these
+            cases correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3597" format="html" scope="external">#3597</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3962" format="html" scope="external">#3962</xref>
           </li>
-          <li id="3724">Error in mapref stage when passing dita map as resource 
+          <li id="3724">When passing DITA maps as <option>--resource</option> files with absolute paths on Windows, the
+            temporary files folder path was added to the map path, resulting in invalid references. Processing has been
+            updated to properly compute the file path for map resources with absolute paths.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3724" format="html" scope="external">#3724</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3964" format="html" scope="external">#3964</xref>
           </li>
-          <li id="3727">Fix for #3727 Allow Saxon to decide configuration class
+          <li id="3727">DITA-OT 3.6 always used the bundled open-source Saxon Home Edition (HE), even when a license for
+            Saxon Professional Edition (PE) or Enterprise Edition (EE) was available in the DITA-OT classpath. The
+            configuration has been updated to allow the Saxon XSLT engine to use a licensed processor if present.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3727" format="html" scope="external">#3727</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3949" format="html" scope="external">#3949</xref>
           </li>
@@ -70,35 +82,48 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3874" format="html" scope="external">#3874</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3945" format="html" scope="external">#3945</xref>
           </li>
-          <li id="3932">Publishing speed slower with Java 17 than with Java 1.8 [Windows]
-            Fix Windows transformation slowdown for Java 12+
+          <li id="3932">On Windows, publishing speed was slower when running DITA-OT with recent Java versions, because
+            the file canonicalization cache is no longer enabled by default in Java 12 and newer (see
+            <xref keyref="JDK-8207005"/>). The Java commands in the <filepath>dita.bat</filepath> and
+              <filepath>ant.bat</filepath> wrapper scripts have been updated to re-enable caching.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3932" format="html" scope="external">#3932</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3933" format="html" scope="external">#3933</xref>
           </li>
-          <li id="3934">DITA-OT 3.6 or above can't handle Input file of non-ASCII path
+          <li id="3934">On Windows, DITA-OT 3.6 failed to build output when input file paths contained non-ASCII
+            characters. The encoding of the <filepath>.job.xml</filepath> file in the temporary directory has been
+            explicitly set to UTF-8 to ensure that builds complete regardless of the operating system locale and input
+            file path encoding.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3934" format="html" scope="external">#3934</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3943" format="html" scope="external">#3943</xref>
           </li>
-          <li id="3959">Guard against possible NPE in XMLUtils.toErrorReporter(DITAOTLogger)
+          <li id="3959">In earlier versions, builds failed with a NullPointerException when custom plug-ins referenced
+            missing stylesheets. A new guard has been added to handle these cases more gracefully.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3959" format="html" scope="external">#3959</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3960" format="html" scope="external">#3960</xref>
           </li>
-          <li id="3969"><xmlelement>xsl:message</xmlelement> of an XML element also recursively prints its descendants
+          <li id="3969">When writing messages to the console in DITA-OT 3.6, <xmlelement>xsl:message</xmlelement>
+            references to an XML element recursively printed its descendants. The logging code has been updated to
+            properly serialize the nodes in XSL messages.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3969" format="html" scope="external">#3969</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3978" format="html" scope="external">#3978</xref>
           </li>
-          <li id="3972">Remove a Unicode quote character in the DOTJ085E message
+          <li id="3972">The <msgnum>DOTJ085E</msgnum> error message has been aligned for consistency with other
+            messages. 
             <xref href="https://github.com/dita-ot/dita-ot/issues/3972" format="html" scope="external">#3972</xref>
           </li>
-          <li id="3976">Conref to topic element is not resolved when publishing to HTML
+          <li id="3976">In DITA-OT 3.7, content references to topic elements were not resolved when publishing to HTML.
+            Processing has been corrected to ensure that topic conrefs are handled correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3976" format="html" scope="external">#3976</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3979" format="html" scope="external">#3979</xref>
           </li>
-          <li id="3980">Transformation crashes if map element doesn't have class attribute
+          <li id="3980">In earlier verions, builds failed with a NullPointerException when processing maps that
+            contained elements without <xmlatt>class</xmlatt> attributes, such inside <xmlelement>foreign</xmlelement>
+            elements. Processing has been updated to handle these situations correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3980" format="html" scope="external">#3980</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3981" format="html" scope="external">#3981</xref>
           </li>
-          <li id="3991">Relax possibility for named template to return an empty sequence
+          <li id="3991">In earlier versions, builds would fail with XSLT errors when named templates returned an empty
+            sequence. Processing has been relaxed to allow processing to continue under these circumstances.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3991" format="html" scope="external">#3991</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3992" format="html" scope="external">#3992</xref>
           </li>

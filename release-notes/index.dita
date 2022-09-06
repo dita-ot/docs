@@ -116,8 +116,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3979" format="html" scope="external">#3979</xref>
           </li>
           <li id="3980">In earlier verions, builds failed with a NullPointerException when processing maps that
-            contained elements without <xmlatt>class</xmlatt> attributes, such inside <xmlelement>foreign</xmlelement>
-            elements. Processing has been updated to handle these situations correctly.
+            contained elements without <xmlatt>class</xmlatt> attributes, such as inside
+              <xmlelement>foreign</xmlelement> elements. Processing has been updated to handle these situations
+            correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3980" format="html" scope="external">#3980</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3981" format="html" scope="external">#3981</xref>
           </li>

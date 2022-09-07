@@ -127,6 +127,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3991" format="html" scope="external">#3991</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3992" format="html" scope="external">#3992</xref>
           </li>
+          <li id="3999">The bundled Jackson data format dependency was updated to resolve a security vulnerability in
+            the SnakeYAML library, which has been updated to version 1.31.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3999" format="html" scope="external">#3999</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4000" format="html" scope="external">#4000</xref>
+          </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
           <xref

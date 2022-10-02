@@ -1,0 +1,88 @@
+# Sample PDF theme
+#
+# https://github.com/jelovirt/pdf-generator/wiki/Theme
+
+# https://github.com/jelovirt/pdf-generator/wiki/Theme#variables
+brand:
+  primary-color: navy
+# font:
+#   header: Helvetica
+# style:
+#  topic:
+#    color: $brand-primary-color
+#  font-family: $brand-font-header
+
+page:
+  size: A4
+
+# https://github.com/jelovirt/pdf-generator/wiki/How-to#duplex-header-and-footer
+
+# Generate duplex header and footer
+mirror_page_margins: true
+header:
+  color: gray
+  display-align: before
+  end-indent: 10mm
+  font-family: Helvetica
+  padding-after: 6pt
+  padding-before: 12pt
+  start-indent: 10mm
+  odd:
+    content: '{chapter}'
+    # On odd/right/recto pages horizontally align content to end/right side.
+    text-align: end
+  even:
+    content: '{title}'
+    # On even/left/verso pages horizontally align content to start/left side.
+    text-align: start
+footer:
+  color: gray
+  end-indent: 10mm
+  font-family: Helvetica
+  padding-after: 12pt
+  padding-before: 6pt
+  start-indent: 10mm
+  odd:
+    content: '{folio}'
+    font-weight: bold
+    text-align: end
+  even:
+    content: '{folio}'
+    font-weight: bold
+    text-align: start
+
+style:
+  h1: # Part/Chapter
+    border-after: solid 1pt gray
+    color: $brand-primary-color
+    font-size: 18pt
+    font-weight: bold
+    title-numbering: true
+  h2:
+    color: $brand-primary-color
+    font-size: 16pt
+    font-style: italic
+    title-numbering: true
+  h3:
+    color: $brand-primary-color
+    font-size: 14pt
+    font-weight: bold
+  #   title-numbering: true
+  h4:
+    font-size: 12pt
+    font-style: italic
+  #   title-numbering: true
+  toc_1:
+    color: $brand-primary-color
+    start-indent: 0
+  toc_2:
+    color: black
+    space-before: 4pt
+    start-indent: 5pt
+  toc_3:
+    color: black
+    space-before: 2pt
+    start-indent: 24pt
+  toc_4:
+    color: black
+    start-indent: 36pt

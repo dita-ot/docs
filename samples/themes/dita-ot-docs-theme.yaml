@@ -70,8 +70,9 @@ style:
     font-size: 12pt
     font-style: italic
   #   title-numbering: true
-  toc_1:
+  toc_1: # next levels inherit these settings unless overrridden
     color: $brand-color-primary
+    font-family: $brand-font-sans
     start-indent: 0
   toc_2:
     color: black
@@ -83,4 +84,5 @@ style:
     start-indent: 24pt
   toc_4:
     color: black
-    start-indent: 36pt
+    space-before: 2pt
+    start-indent: 40pt

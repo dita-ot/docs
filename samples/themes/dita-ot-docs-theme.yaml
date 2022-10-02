@@ -67,10 +67,12 @@ style:
     color: $brand-color-primary
     font-size: 14pt
     font-weight: bold
+    space-before: 14pt
   #   title-numbering: true
   h4:
     font-size: 12pt
     font-style: italic
+    space-before: 12pt
   #   title-numbering: true
   link:
     color: $brand-color-primary

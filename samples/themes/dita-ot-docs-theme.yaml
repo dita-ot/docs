@@ -50,6 +50,8 @@ footer:
     text-align: start
 
 style:
+  body:
+    start-indent: 50pt
   h1: # Part/Chapter
     border-after: solid 1pt $brand-color-secondary
     color: $brand-color-primary

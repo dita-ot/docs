@@ -71,13 +71,16 @@ style:
     space-before: 20cm
   h1: # Part/Chapter
     border-after-style: solid
-    border-after-width: 1pt
-    border-after-color: $brand-color-secondary
+    border-after-width: 2pt
+    border-after-color: $brand-color-inverse
     color: $brand-color-primary
     font-size: 18pt
     font-weight: bold
     title-numbering: true
   h2:
+    border-after-style: solid
+    border-after-width: 1pt
+    border-after-color: $brand-color-inverse
     color: $brand-color-primary
     font-size: 16pt
     font-style: italic

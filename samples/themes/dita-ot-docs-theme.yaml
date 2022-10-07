@@ -54,6 +54,10 @@ footer:
 style:
   body:
     start-indent: 50pt
+  codeblock:
+    background-color: $brand-color-inverse
+    border: solid 1pt $brand-color-secondary
+    font-size: 8pt
   cover:
     background-image: dita-ot-logo-inverse.svg
     background-repeat: no-repeat

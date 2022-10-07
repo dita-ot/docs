@@ -69,7 +69,9 @@ style:
     line-height: 1.5
     space-before: 20cm
   h1: # Part/Chapter
-    border-after: solid 1pt $brand-color-secondary
+    border-after-style: solid
+    border-after-width: 1pt
+    border-after-color: $brand-color-secondary
     color: $brand-color-primary
     font-size: 18pt
     font-weight: bold

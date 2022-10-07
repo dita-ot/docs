@@ -75,6 +75,9 @@ style:
     border-after-color: $brand-color-inverse
     color: $brand-color-primary
     font-size: 18pt
+    space-before: 0pt # Same as PDF2
+    padding-top: 0pt # Reset to align to top of page, as these always start on new pages anyway
+    space-after: 9pt # PDF2: 16.8pt
     font-weight: bold
     title-numbering: true
   h2:
@@ -84,12 +87,15 @@ style:
     color: $brand-color-primary
     font-size: 16pt
     font-style: italic
+    space-before: 16pt # PDF2: 12pt
+    space-after: 8pt # PDF2: 5pt
     title-numbering: true
   h3:
     color: $brand-color-primary
     font-size: 14pt
     font-weight: bold
-    space-before: 14pt
+    space-before: 21pt # PDF2: 12pt
+    space-after: 7pt # PDF2: 2pt
   #   title-numbering: true
   h4:
     font-size: 12pt

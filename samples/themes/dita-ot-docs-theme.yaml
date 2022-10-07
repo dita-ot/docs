@@ -54,6 +54,16 @@ footer:
 style:
   body:
     start-indent: 50pt
+  cover:
+    background-image: dita-ot-logo-inverse.svg
+    background-repeat: no-repeat
+    height: 25.7cm
+  cover_title:
+    color: $brand-color-primary
+    font-size: 36pt
+    font-weight: bold
+    line-height: 1.5
+    space-before: 20cm
   h1: # Part/Chapter
     border-after: solid 1pt $brand-color-secondary
     color: $brand-color-primary

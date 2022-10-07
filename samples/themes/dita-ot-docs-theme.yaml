@@ -5,9 +5,10 @@
 # https://github.com/jelovirt/pdf-generator/wiki/Theme#variables
 brand:
   color:
-    primary: '#1d365d'
-    secondary: silver
-    inverse: '#e9ecef'
+    primary: '#1d365d' # Headings
+    secondary: '#778899' # LightSlateGray – Headers, footers, § titles
+    tertiary: silver #  – H1 & codeblock borders
+    inverse: '#e9ecef' # H2 borders & codeblock backgrounds
     links: navy
   font:
     sans: Helvetica
@@ -56,7 +57,7 @@ style:
     start-indent: 50pt
   codeblock:
     background-color: $brand-color-inverse
-    border: solid 1pt $brand-color-secondary
+    border: solid 1pt $brand-color-tertiary
     font-size: 8pt
   cover:
     background-image: dita-ot-logo-inverse.svg
@@ -94,6 +95,8 @@ style:
   #   title-numbering: true
   link:
     color: $brand-color-links
+  section_title:
+    color: $brand-color-secondary
   toc_1: # next levels inherit these settings unless overrridden
     color: $brand-color-primary
     font-family: $brand-font-sans

@@ -5,10 +5,10 @@
 # https://github.com/jelovirt/pdf-generator/wiki/Theme#variables
 brand:
   color:
-    primary: '#1d365d' # Headings
-    secondary: '#778899' # LightSlateGray – Headers, footers, § titles
-    tertiary: silver #  – H1 & codeblock borders
-    inverse: '#e9ecef' # H2 borders & codeblock backgrounds
+    primary: '#1d365d' # Cover text, headings & ToC sections
+    secondary: '#778899' # Headers, footers, § titles
+    tertiary: silver # Codeblock borders
+    inverse: '#e9ecef' # Cover logo, H1 & H2 borders, codeblock backgrounds
     links: navy
   font:
     sans: Helvetica

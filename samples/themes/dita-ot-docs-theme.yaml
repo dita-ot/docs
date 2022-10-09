@@ -70,9 +70,7 @@ style:
     line-height: 1.5
     space-before: 20cm
   h1: # Part/Chapter
-    border-after-style: solid
-    border-after-width: 2pt
-    border-after-color: $brand-color-inverse
+    border-after: solid 2pt $brand-color-inverse
     color: $brand-color-primary
     font-size: 18pt
     space-before: 0pt # Same as PDF2
@@ -81,9 +79,7 @@ style:
     font-weight: bold
     title-numbering: true
   h2:
-    border-after-style: solid
-    border-after-width: 1pt
-    border-after-color: $brand-color-inverse
+    border-after: solid 1pt $brand-color-inverse
     color: $brand-color-primary
     font-size: 16pt
     font-style: italic

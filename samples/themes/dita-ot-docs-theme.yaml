@@ -19,7 +19,7 @@ page:
 # https://github.com/jelovirt/pdf-generator/wiki/How-to#duplex-header-and-footer
 
 # Generate duplex header and footer
-mirror_page_margins: true
+mirror-page-margins: true
 header:
   color: $brand-color-secondary
   display-align: before
@@ -63,7 +63,7 @@ style:
     background-image: dita-ot-logo-inverse.svg
     background-repeat: no-repeat
     height: 25.7cm
-  cover_title:
+  cover-title:
     color: $brand-color-primary
     font-size: 36pt
     font-weight: bold
@@ -100,21 +100,21 @@ style:
   #   title-numbering: true
   link:
     color: $brand-color-links
-  section_title:
+  section-title:
     color: $brand-color-secondary
-  toc_1: # next levels inherit these settings unless overrridden
+  toc-1: # next levels inherit these settings unless overrridden
     color: $brand-color-primary
     font-family: $brand-font-sans
     start-indent: 0
-  toc_2:
+  toc-2:
     color: black
     space-before: 4pt
     start-indent: 5pt
-  toc_3:
+  toc-3:
     color: black
     space-before: 2pt
     start-indent: 24pt
-  toc_4:
+  toc-4:
     color: black
     space-before: 2pt
     start-indent: 40pt

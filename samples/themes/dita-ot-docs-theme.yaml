@@ -69,6 +69,12 @@ style:
     font-weight: bold
     line-height: 1.5
     space-before: 20cm
+  fig:
+    caption:
+      color: $brand-color-secondary
+      font-size: 9pt
+      font-style: italic
+      font-weight: normal
   h1: # Part/Chapter
     border-after: solid 2pt $brand-color-inverse
     color: $brand-color-primary
@@ -102,6 +108,12 @@ style:
     color: $brand-color-links
   section-title:
     color: $brand-color-secondary
+  table:
+    caption:
+      color: $brand-color-secondary
+      font-size: 9pt
+      font-style: italic
+      font-weight: normal
   toc-1: # next levels inherit these settings unless overrridden
     color: $brand-color-primary
     font-family: $brand-font-sans

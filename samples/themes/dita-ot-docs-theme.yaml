@@ -116,6 +116,9 @@ style:
   note:
     background-color: $brand-color-note-background-info
     border: solid 1pt $brand-color-tertiary
+    label:
+      font-family: $brand-font-sans
+      space-end: 2pt
     padding-start: 6pt
     start-indent: '6pt + from-parent(start-indent)'
     space-before: 6pt

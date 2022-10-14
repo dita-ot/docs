@@ -209,7 +209,8 @@
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/dita.input.valfile.desc"/>
             <pd conaction="pushafter">
-              <note type="notice">Deprecated in favor of the <parmname>args.filter</parmname> parameter.</note>
+              <note type="notice">This parameter is deprecated in favor of the <parmname>args.filter</parmname>
+                parameter.</note>
             </pd>
           </plentry>
           <plentry id="filter-stage">

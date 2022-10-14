@@ -10,6 +10,12 @@ brand:
     tertiary: '#bac8d1' # Codeblock borders
     inverse: '#e9ecef' # Cover logo, H1 & H2 borders, codeblock backgrounds
     links: navy
+    note:
+      background:
+        attention: '#fff3cd'
+        caution: '#f8d7da'
+        info: '#dce4f0'
+        tip: '#d1e7dd'
   font:
     sans: Helvetica
 
@@ -107,6 +113,27 @@ style:
   #   title-numbering: true
   link:
     color: $brand-color-links
+  note:
+    background-color: $brand-color-note-background-info
+    border: solid 1pt $brand-color-tertiary
+    padding-start: 6pt
+    start-indent: '6pt + from-parent(start-indent)'
+    space-before: 6pt
+    space-after: 12pt
+    attention:
+      background-color: $brand-color-note-background-attention
+    caution:
+      background-color: $brand-color-note-background-caution
+    important:
+      background-color: $brand-color-note-background-attention
+    notice:
+      background-color: $brand-color-note-background-attention
+    restriction:
+      background-color: $brand-color-note-background-attention
+    tip:
+      background-color: $brand-color-note-background-tip
+    warning:
+      background-color: $brand-color-note-background-caution
   section-title:
     color: $brand-color-secondary
   table:

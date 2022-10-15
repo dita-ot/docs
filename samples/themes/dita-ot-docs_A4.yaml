@@ -1,0 +1,7 @@
+# Sample PDF theme that changes page size for printing on A4 paper
+#
+# https://github.com/jelovirt/pdf-generator/wiki/Theme#extending-themes
+
+extends: ./dita-ot-docs-theme.yaml
+page:
+  size: A4

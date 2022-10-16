@@ -146,7 +146,9 @@ style:
       font-size: 9pt
       font-style: italic
       font-weight: normal
-  toc-1: # next levels inherit these settings unless overrridden
+    header:
+      background-color: $brand-color-inverse
+  toc-1: # next levels inherit these settings unless overridden
     color: $brand-color-primary
     font-family: $brand-font-sans
     start-indent: 0

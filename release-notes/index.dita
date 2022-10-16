@@ -25,15 +25,62 @@
     </refbody>
   </reference>
 
-  <reference id="v3.7.3" outputclass="mark">
+  <reference id="v3.7.4" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released September 6, 2022</ph>
+      <ph outputclass="small text-muted">🚧 work in progress… <!--released mmmm D, yyyy--></ph>
     </title>
 
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.4+is%3Aclosed+sort%3Acreated-asc+ -->
+          <li id="3937">Bug processing <xmlelement>abbreviated-form</xmlelement> elements to PDF 
+            <xref href="https://github.com/orgs/dita-ot/discussions/3937" format="html" scope="external">#3937</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4002" format="html" scope="external">#4002</xref>
+          </li>
+          <li id="3940">Processing-role="resource-only" does not cascade downward in map
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3940" format="html" scope="external">#3940</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4003" format="html" scope="external">#4003</xref>
+          </li>
+          <li id="3951">Do not call dita-ot:matches-linktext-class() for <xmlelement>prop</xmlelement> or 
+            <xmlelement>revprop</xmlelement>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3951" format="html" scope="external">#3951</xref>
+          </li>
+          <li id="3967">Cross-reference to footnote is double-wrapped in <xmlelement>sup</xmlelement>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3967" format="html" scope="external">#3967</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3968" format="html" scope="external">#3968</xref>
+          </li>
+          <li id="3989">Consider @filter-copy-to (from branch filtering) when creating links 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3989" format="html" scope="external">#3989</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3993" format="html" scope="external">#3993</xref>
+          </li>
+          <li id="4007">NullPointerException crash occurs when a peer mapref and local mapref use the same keyscope
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4007" format="html" scope="external">#4007</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4010" format="html" scope="external">#4010</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.4+is%3Aclosed"
+            format="html"
+            scope="external"
+          >3.7.4 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/3.7.3...3.7.4" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v3.7.3">
+    <title>DITA-OT 3.7.3
+      <ph outputclass="small text-muted">released September 6, 2022</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 3.7.3 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A3.7.3+is%3Aclosed+sort%3Acreated-asc+ -->
           <li id="2704">In earlier versions, links to non-DITA resources were broken in branch filtering scenarios that

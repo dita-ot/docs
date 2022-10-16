@@ -21,11 +21,10 @@ brand:
 
 page:
   size: PA4 # 21 × 28 cm transitional format suitable for printing on both A4 and US Letter
+  # Generate duplex header and footer
+  mirror-margins: true
+  # https://github.com/jelovirt/pdf-generator/wiki/How-to#duplex-header-and-footer
 
-# https://github.com/jelovirt/pdf-generator/wiki/How-to#duplex-header-and-footer
-
-# Generate duplex header and footer
-mirror-page-margins: true
 header:
   color: $brand-color-secondary
   display-align: before

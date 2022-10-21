@@ -155,6 +155,7 @@ style:
       font-style: italic
       font-weight: normal
     font-family: $pdf2-font-sans
+    font-size: 9pt
     header:
       background-color: $brand-color-inverse
   toc-1: # next levels inherit these settings unless overridden

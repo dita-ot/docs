@@ -16,8 +16,13 @@ brand:
         caution: '#f8d7da'
         info: '#dce4f0'
         tip: '#d1e7dd'
+
+# Default font stacks from `org.dita.pdf2`
+pdf2:
   font:
-    sans: Helvetica
+    sans: 'Helvetica, Arial Unicode MS, Tahoma, Batang, SimSun'
+    serif: 'Times New Roman, Times, Arial Unicode MS, Tahoma, Batang, SimSun'
+    monospaced: 'Courier New, Courier, Arial Unicode MS, Tahoma, Batang, SimSun'
 
 page:
   size: PA4 # 21 × 28 cm transitional format suitable for printing on both A4 and US Letter
@@ -29,7 +34,7 @@ header:
   color: $brand-color-secondary
   display-align: before
   end-indent: 10mm
-  font-family: $brand-font-sans
+  font-family: $pdf2-font-sans
   padding-after: 6pt
   padding-before: 12pt
   start-indent: 10mm
@@ -44,7 +49,7 @@ header:
 footer:
   color: $brand-color-secondary
   end-indent: 10mm
-  font-family: $brand-font-sans
+  font-family: $pdf2-font-sans
   padding-after: 12pt
   padding-before: 6pt
   start-indent: 10mm
@@ -58,11 +63,14 @@ footer:
     text-align: start
 
 style:
+  base:
+    font-family: $pdf2-font-serif
   body:
     start-indent: 50pt
   codeblock:
     background-color: $brand-color-inverse
     border: solid 1pt $brand-color-tertiary
+    font-family: $pdf2-font-monospaced
     font-size: 8pt
     space-after: 8pt
   cover:
@@ -118,7 +126,7 @@ style:
     background-color: $brand-color-note-background-info
     border: solid 1pt $brand-color-tertiary
     label:
-      font-family: $brand-font-sans
+      font-family: $pdf2-font-sans
       space-end: 2pt
     padding-start: 6pt
     start-indent: '6pt + from-parent(start-indent)'
@@ -146,11 +154,12 @@ style:
       font-size: 9pt
       font-style: italic
       font-weight: normal
+    font-family: $pdf2-font-sans
     header:
       background-color: $brand-color-inverse
   toc-1: # next levels inherit these settings unless overridden
     color: $brand-color-primary
-    font-family: $brand-font-sans
+    font-family: $pdf2-font-sans
     start-indent: 0
   toc-2:
     color: black

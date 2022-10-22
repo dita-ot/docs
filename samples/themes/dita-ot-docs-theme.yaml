@@ -2,7 +2,8 @@
 #
 # https://github.com/jelovirt/pdf-generator/wiki/Theme
 
-# https://github.com/jelovirt/pdf-generator/wiki/Theme#variables
+# Brand color variables
+# https://github.com/jelovirt/pdf-generator/wiki/Variables
 brand:
   color:
     primary: '#1d365d' # Cover text, headings & ToC sections
@@ -47,6 +48,7 @@ header:
     content: '{title}'
     # On even/left/verso pages horizontally align content to start/left side.
     text-align: start
+
 footer:
   color: $brand-color-secondary
   end-indent: 10mm
@@ -62,6 +64,8 @@ footer:
     content: '{folio}'
     font-weight: bold
     text-align: start
+
+# https://github.com/jelovirt/pdf-generator/wiki/Styles
 
 style:
   base:
@@ -120,12 +124,10 @@ style:
     font-weight: bold
     space-before: 21pt # PDF2: 12pt
     space-after: 7pt # PDF2: 2pt
-  #   title-numbering: true
   h4:
     font-size: 12pt
     font-style: italic
     space-before: 12pt
-  #   title-numbering: true
   link:
     color: $brand-color-links
   note:

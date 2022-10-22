@@ -66,6 +66,8 @@ style:
   base:
     font-family: $pdf2-font-serif
   body:
+    font-size: 11pt
+    line-height: 1.2
     start-indent: 50pt
   codeblock:
     background-color: $brand-color-inverse

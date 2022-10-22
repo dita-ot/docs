@@ -10,6 +10,7 @@ brand:
     tertiary: '#bac8d1' # Codeblock borders
     inverse: '#e9ecef' # Cover logo, H1 & H2 borders, codeblock backgrounds
     links: navy
+    code: '#6c757d'
     note:
       background:
         attention: '#fff3cd'
@@ -75,6 +76,9 @@ style:
     font-family: $pdf2-font-monospaced
     font-size: 8pt
     space-after: 8pt
+  codeph:
+    font-size: '0.9 * from-parent(font-size)'
+    color: $brand-color-code
   cover:
     background-image: dita-ot-logo-inverse.svg
     background-repeat: no-repeat

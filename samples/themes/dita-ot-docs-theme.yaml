@@ -136,6 +136,8 @@ style:
       space-end: 2pt
     padding-start: 6pt
     start-indent: '6pt + from-parent(start-indent)'
+    padding-end: 6pt
+    end-indent: '6pt + from-parent(end-indent)'
     space-before: 6pt
     space-after: 12pt
     attention:

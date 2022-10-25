@@ -4,12 +4,14 @@
   <deliverable id="pdf">
     <context name="User Guide">
       <input href="../../userguide-book.ditamap"/>
+      <profile>
+        <ditaval href="../../resources/pdf.ditaval"/>
+      </profile>
     </context>
     <output href="."/>
     <publication transtype="pdf2">
       <param name="args.chapter.layout" value="BASIC"/>
       <param name="args.gen.task.lbl" value="YES"/>
-      <param name="include.rellinks" value="friend"/>
       <param name="outputFile.base" value="userguide"/>
       <param name="processing-mode" value="strict"/>
     </publication>

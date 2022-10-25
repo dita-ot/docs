@@ -58,7 +58,7 @@ This folder is created automatically if it doesn’t exist. _(Git ignores the co
 
 The `develop` branch of the documentation repository may depend on features from recent development versions of DITA Open Toolkit.
 
-To use these features when building the documentation, you may either download the [latest development version][6] of the distribution package, or clone the [DITA-OT repository][5] and install the [bundled plug-ins][7] via `dita --install`.
+To use these features when building the documentation, you may either download the [latest development version][6] of the distribution package, or clone the [DITA-OT repository][5] and install the [bundled plug-ins][7] via `dita install`.
 
 ## Contribution guidelines
 
@@ -123,7 +123,7 @@ If you'd like to check whether your changes are formatted correctly, or format t
 [4]: https://www.dita-ot.org
 [5]: https://github.com/dita-ot/dita-ot
 [6]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
-[7]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L179-L189
+[7]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L181-L191
 [8]: .github/CONTRIBUTING.md
 [9]: https://github.com/dita-ot/docs/wiki/Coding-guidelines
 [10]: https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices

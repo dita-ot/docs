@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <concept id="preprocess-maplink">
-  <title>Map based linking (maplink)</title>
+  <title>Map-based linking (maplink)</title>
   <shortdesc>This step collects links based on a map and moves those links into the referenced topics. The links are
     created based on hierarchy in the DITA map, the <xmlatt>collection-type</xmlatt> attribute, and relationship tables.
     This step is implemented in XSLT and Java.</shortdesc>

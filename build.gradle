@@ -101,7 +101,6 @@ task pdf(type: DitaOtTask, dependsOn: autoGenerate) {
     properties {
         property(name: 'args.chapter.layout', value: 'BASIC')
         property(name: 'args.gen.task.lbl', value: 'YES')
-        property(name: 'include.rellinks', value: 'friend')
         property(name: 'outputFile.base', value: 'userguide')
         property(name: 'processing-mode', value: 'strict')
         property(name: 'theme', value: "${projectDir}/samples/themes/dita-ot-docs-theme.yaml")

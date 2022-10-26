@@ -102,7 +102,7 @@
         elements will have no impact on a transform. If desired, flagging support may be integrated at any time in the
         future.</p>
       <p>The processing described above runs as part of the common preprocess, so any transform that uses the default
-        preprocess will get the topic updates. To support generating flags as images, XSLT based transforms can use
+        preprocess will get the topic updates. To support generating flags as images, XSLT-based transforms can use
         default fallthrough processing in most cases. For example, if a paragraph is flagged, the first child of
           <xmlelement>p</xmlelement> will contain the start flag information; adding a rule to handle images in
           <xmlelement>ditaval-startprop</xmlelement> will cause the image to appear at the start of the paragraph

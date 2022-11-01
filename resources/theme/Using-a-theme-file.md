@@ -7,6 +7,8 @@ dita --project=samples/project-files/pdf.xml \
      --theme=/path/to/custom-theme-file.yaml
 ```
 
+The following topics provide details on the theme file formats and supported configuration options.
+
 ## Theme file
 
 A theme file can be written in either [JSON] or [YAML] format.

@@ -97,9 +97,25 @@
         <indexterm/>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
           existing features:</p>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li/>
+          
+          <li id="3757">Separate temporary files folders for each deliverable
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3757" format="html" scope="external">#3757</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3898" format="html" scope="external">#3898</xref>
+          </li>
+          <li id="3830">Refactor attribute generation in XSLT
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3830" format="html" scope="external">#3830</xref>
+          </li>
+          <li id="3895">Add profiles to publication project file 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3895" format="html" scope="external">#3895</xref>
+          </li>
+          <li id="3926">Grammar caching and validation for RNG-based topics
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3926" format="html" scope="external">#3926</xref>
+          </li>
+          <li id="3974">Use #current in mode where possible 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3974" format="html" scope="external">#3974</xref>
+          </li>
         </ul>
       </section>
 

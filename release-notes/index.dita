@@ -123,13 +123,24 @@
         <title>Bugs</title>
         <indexterm/>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <!-- Comment out any issues that only affected development builds, not any previously released version -->
           <!--
          
           -->
-          <li/>
+          <li id="2641">Integrator should fail more often
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2641" format="html" scope="external">#2641</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3825" format="html" scope="external">#3825</xref>
+          </li>
+          <li id="3303">table/@frame="none" is not properly implemented
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3303" format="html" scope="external">#3303</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3852" format="html" scope="external">#3852</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3854" format="html" scope="external">#3854</xref>
+          </li>
+          <li id="3684">Namespaced content in chunked topics
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3684" format="html" scope="external">#3684</xref>
+          </li>
         </ul>
       </section>
 

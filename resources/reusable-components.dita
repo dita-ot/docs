@@ -96,9 +96,10 @@
 
     <section id="java">
       <title>Supported Java versions</title>
-      <p id="java-clients">DITA-OT is designed to run on Java version <keyword keyref="tool.java.version"/> or later and
-        built and tested with the Open Java Development Kit (OpenJDK). Compatible Java distributions are available from
-        multiple sources:
+      <p id="java-clients">DITA-OT <keyword keyref="release"/> is designed to run on Java version <keyword
+          keyref="tool.java.version"
+        /> or later and built and tested with the Open Java Development Kit (OpenJDK).
+        Compatible Java distributions are available from multiple sources:
         <indexterm>Java
           <indexterm>versions</indexterm></indexterm>
         <indexterm>Amazon Corretto</indexterm>

@@ -1,4 +1,4 @@
-Keys under `style` fall into block and in-line categories. Each category takes XSL-FO key definitions and keys specific to that style.
+The presentation of various block and inline elements can be adjusted by setting `style` keys. Each category takes XSL-FO key definitions and keys specific to that style.
 
 While the style keys may look like CSS, the keys are XSL-FO properties and the underlying PDF2 plug-in does not use CSS compatibility properties.
 
@@ -7,7 +7,7 @@ While the style keys may look like CSS, the keys are XSL-FO properties and the u
 
 [refine-margin-space-indent]: https://www.w3.org/TR/xsl11/#refine-margin-space-indent
 
-There is no default theme that defines base key values. Instead, a theme extends the PDF2 default styling. If you want to set sane defaults, use [`extends` key](#extending-themes) to set defaults.
+There is no default theme that defines base key values. Instead, a theme extends the PDF2 default styling. If you want to define common settings, create a theme file for shared settings, and use the [`extends` key](#extending-themes) in other themes to build on the common foundation.
 
 ```yaml
 style:
@@ -16,7 +16,7 @@ style:
     font-size: 12pt
     space-after: 6pt
     space-before: 6pt
-    start-indent: 25py
+    start-indent: 25pt
   topic:
     font-family: sans-serif
     font-size: 26pt

@@ -1,4 +1,6 @@
-The `content` key in `header` or `footer` can be fixed text or can reference fields using curly braces. Supported fields are:
+The `content` key in `header` or `footer` can be used to add text to running header or footer content. Content can include static text, or reference variables using curly braces.
+
+The following variable fields are currently supported:
 
 - `title`: Map title
 - `chapter`: Map chapter title
@@ -14,7 +16,7 @@ header:
   border-after: solid 1pt black
 ```
 
-For separate header or footer definition for recto and verso pages, use `odd` and `even` keys.
+To define separate headers or footers for recto (right) and verso (left) pages, use the `odd` and `even` keys.
 
 ```yaml
 header:

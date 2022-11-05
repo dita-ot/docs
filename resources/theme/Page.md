@@ -1,4 +1,4 @@
-Page size and orientation can be set with `size` and `orientation` keys. Page margins are set with `top`, `outside`, `bottom`, and `inside` keys.
+Page size and orientation can be set with the `size` and `orientation` keys. Page margins are set with the `top`, `outside`, `bottom`, and `inside` keys.
 
 ```yaml
 page:
@@ -25,4 +25,8 @@ The `size` key supports the following values:
 
 If a required page size is not supported, `height` and `width` keys can be used to define the page size.
 
-Mirror pages are set with `mirror-margins` key; mirror margins defaults to `false`.
+Use the `mirror-margins` key to set up facing pages for double-sided documents.
+
+When this key is set to `true`, the margins of the left page are a mirror image of those on the right page. The `inside` margins of left and right pages are the same, and the `outside` margins of left and right pages are identical.
+
+The mirror margins setting defaults to `false`.

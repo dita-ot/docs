@@ -1,4 +1,4 @@
-A theme can extend another theme using `extends` key. The value of `extends` is a URL to the theme being extended.
+A theme can extend another theme using the `extends` key. The value of `extends` is a relative path from the current theme file to the theme being extended.
 
 `base.yaml`
 

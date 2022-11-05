@@ -7,11 +7,10 @@
 brand:
   color:
     primary: '#1d365d' # Cover text, headings & ToC sections
-    secondary: '#778899' # Headers, footers, § titles
-    tertiary: '#bac8d1' # Codeblock borders
+    secondary: '#6c757d' # Captions, code, headers, footers, § titles
+    tertiary: '#bac8d1' # Codeblock & note borders
     inverse: '#e9ecef' # Cover logo, H1 & H2 borders, codeblock backgrounds
     links: navy
-    code: '#6c757d'
     note:
       background:
         attention: '#fff3cd'
@@ -82,7 +81,7 @@ style:
     space-after: 8pt
   codeph:
     font-size: '0.9 * from-parent(font-size)'
-    color: $brand-color-code
+    color: $brand-color-secondary
   cover:
     background-image: dita-ot-logo-inverse.svg
     background-repeat: no-repeat

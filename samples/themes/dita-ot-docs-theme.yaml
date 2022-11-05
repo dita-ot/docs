@@ -71,7 +71,7 @@ style:
     font-family: $pdf2-font-serif
   body:
     font-size: 11pt
-    line-height: 1.2
+    line-height: 1.3
     start-indent: 50pt
   codeblock:
     background-color: $brand-color-inverse
@@ -157,6 +157,10 @@ style:
       background-color: $brand-color-note-background-caution
   section-title:
     color: $brand-color-secondary
+  shortdesc:
+    color: $brand-color-secondary
+    font-size: 13pt
+    line-height: 1.3
   table:
     caption:
       color: $brand-color-secondary

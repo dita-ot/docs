@@ -406,11 +406,10 @@
             </entry>
           </row>
           <row>
-            <entry conkeyref="error-messages/DOTJ071E-extra" conaction="pushreplace">
-              <p>Ensure that the DITAVAL file exists. If more than one DITAVAL file is specified, ensure that the paths
-                are delimited using the file path separator character appropriate for your operating system (semicolon
-                  ‘<codeph>;</codeph>’ on Windows, or colon ‘<codeph>:</codeph>’ on macOS or Linux).</p>
-            </entry>
+            <entry conkeyref="error-messages/DOTJ071E-extra" conaction="pushreplace">Ensure that the DITAVAL file
+              exists. If more than one DITAVAL file is specified, ensure that the paths are delimited using the file
+              path separator character appropriate for your operating system (semicolon ‘<codeph>;</codeph>’ on Windows,
+              or colon ‘<codeph>:</codeph>’ on macOS or Linux).</entry>
           </row>
           <row>
             <entry conkeyref="error-messages/DOTX001W-extra" conaction="pushreplace">This build uses generated text,

@@ -1,5 +1,7 @@
 The `com.elovirta.pdf` plug-in for DITA-OT extends the built-in PDF2 plug-in by adding support for the `theme` property. The `theme` property takes a path to a theme file and changes the styling of the PDF2 output without needing to extend the transtype with XSLT.
 
+Themes can be used to adjust basic settings like cover page images, page sizes, numbering, font properties, background colors and borders, spacing, and running content like page headers and footers.
+
 To generate PDF output with a custom theme, pass the path to the theme file to the `dita` command with the `--theme` option:
 
 ```shell
@@ -12,6 +14,8 @@ The following topics provide details on the theme file formats and supported con
 ## Theme file
 
 A theme file can be written in either [JSON] or [YAML] format.
+
+The examples provided here are all in YAML format, which is generally more compact and readable than JSON.
 
 ```yaml
 page:

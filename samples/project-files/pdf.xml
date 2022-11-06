@@ -15,6 +15,7 @@
       <param name="include.rellinks" value="#default external"/>
       <param name="outputFile.base" value="userguide"/>
       <param name="processing-mode" value="strict"/>
+      <param name="theme" path="../themes/dita-ot-docs-theme.yaml"/>
     </publication>
   </deliverable>
 </project>

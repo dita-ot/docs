@@ -49,41 +49,51 @@
       <refbody>
         <section id="overview"><p>Plug-ins may be used to add additional error messages into the toolkit;
           for more information, see <cite>Customizing DITA-OT</cite>.</p></section>
-        <simpletable>
-          <xsl:attribute name="relcolwidth">1.5* 1.5* 3* 4*</xsl:attribute>
-          <sthead>
-              <stentry>Message&#xA0;ID</stentry>
-              <stentry>Severity</stentry>
-              <stentry>Message text</stentry>
-              <stentry>Additional details</stentry>
-          </sthead>
-          <xsl:for-each select="/*/message">
-            <xsl:sort select="@id"/>
-            <strow id="{@id}">
-              <stentry><msgnum><xsl:value-of select="@id"/></msgnum><indexterm><msgnum><xsl:value-of
-                select="@id"/></msgnum></indexterm></stentry>
-              <stentry>
-                <xsl:choose>
-                  <xsl:when test="@type='INFO'">Info</xsl:when>
-                  <xsl:when test="@type='WARN'">Warning</xsl:when>
-                  <xsl:when test="@type='ERROR'">Error</xsl:when>
-                  <xsl:when test="@type='FATAL'">Fatal</xsl:when>
-                  <xsl:otherwise><xsl:value-of select="@type"/></xsl:otherwise>
-                </xsl:choose>
-              </stentry>
-              <stentry>
-                <xsl:call-template name="format-message">
-                  <xsl:with-param name="text" select="string(reason)"/>
-                </xsl:call-template>
-                <xsl:text> </xsl:text>
-                <xsl:call-template name="format-message">
-                  <xsl:with-param name="text" select="string(response)"/>
-                </xsl:call-template>
-              </stentry>
-              <stentry id="{@id}-extra">&#xA0;</stentry>
-            </strow>
-          </xsl:for-each>
-        </simpletable>
+        <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
+          <title>DITA-OT error messages</title>
+          <tgroup cols="4">
+            <colspec colname="message" colwidth="1.5*"/>
+            <colspec colname="severity" colwidth="1.5*"/>
+            <colspec colname="text" colwidth="3*"/>
+            <colspec colname="details" colwidth="4*"/>
+            <thead>
+              <row>
+                <entry>Message&#xA0;ID</entry>
+                <entry>Severity</entry>
+                <entry>Message text</entry>
+                <entry>Additional details</entry>
+              </row>
+            </thead>
+            <tbody>
+            <xsl:for-each select="/*/message">
+              <xsl:sort select="@id"/>
+              <row id="{@id}">
+                <entry><msgnum><xsl:value-of select="@id"/></msgnum><indexterm><msgnum><xsl:value-of
+                  select="@id"/></msgnum></indexterm></entry>
+                <entry>
+                  <xsl:choose>
+                    <xsl:when test="@type='INFO'">Info</xsl:when>
+                    <xsl:when test="@type='WARN'">Warning</xsl:when>
+                    <xsl:when test="@type='ERROR'">Error</xsl:when>
+                    <xsl:when test="@type='FATAL'">Fatal</xsl:when>
+                    <xsl:otherwise><xsl:value-of select="@type"/></xsl:otherwise>
+                  </xsl:choose>
+                </entry>
+                <entry>
+                  <xsl:call-template name="format-message">
+                    <xsl:with-param name="text" select="string(reason)"/>
+                  </xsl:call-template>
+                  <xsl:text> </xsl:text>
+                  <xsl:call-template name="format-message">
+                    <xsl:with-param name="text" select="string(response)"/>
+                  </xsl:call-template>
+                </entry>
+                <entry id="{@id}-extra">&#xA0;</entry>
+              </row>
+            </xsl:for-each>
+            </tbody>
+          </tgroup>
+        </table>
       </refbody>
     </reference>
   </xsl:template>

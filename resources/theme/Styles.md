@@ -103,7 +103,7 @@ Definition list element.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
-- `dl-type = 'table' | 'list' | 'html'` — style definition list as bulleted list or intended list
+- `dl-type = 'table' | 'list' | 'html'` — style definition list as bulleted list or indented list
 
 ### `example`
 

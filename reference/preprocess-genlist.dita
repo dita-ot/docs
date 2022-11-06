@@ -34,7 +34,7 @@
         is provided for each generated list, in this case “conreflist”.</p>
       <p>The result of this step is a set of several list files in the temporary directory, including
           <filepath>dita.list</filepath> and <filepath>dita.xml.properties</filepath>.</p>
-      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+      <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
         <tgroup cols="3">
           <colspec colwidth="2*"/>
           <colspec colwidth="3*"/>

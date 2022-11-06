@@ -12,6 +12,7 @@
     <publication transtype="pdf2">
       <param name="args.chapter.layout" value="BASIC"/>
       <param name="args.gen.task.lbl" value="YES"/>
+      <param name="include.rellinks" value="#default external"/>
       <param name="outputFile.base" value="userguide"/>
       <param name="processing-mode" value="strict"/>
     </publication>

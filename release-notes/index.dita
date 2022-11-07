@@ -139,6 +139,24 @@
         </ul>
       </section>
 
+      <section id="lwdita">
+        <title>Lightweight DITA updates</title>
+        <p>The <codeph>org.lwdita</codeph> plug-in has been updated to version <keyword keyref="tool.lwdita.version"/>,
+          which includes Markdown processing improvements.</p>
+        <ul>
+          <li>Add support for Markdown files without first-level headings</li>
+          <li>Better support for
+            <xref keyref="python-markdown-attlists"/></li>
+          <li>Markdown input improvements:
+            <ul>
+              <li>Improve subscript and superscript support</li>
+              <li>Fix backslash escapes in code phrases</li>
+              <li>Add support for table spanning</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
       <section id="dita-2-0-preview">
         <title>Updated DITA 2.0 preview</title>
         <p>In addition to the

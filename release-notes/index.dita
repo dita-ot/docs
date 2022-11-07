@@ -62,10 +62,10 @@
           <li id="3891">Log invalid character in file include
             <xref href="https://github.com/dita-ot/dita-ot/issues/3891" format="html" scope="external">#3891</xref>
           </li>
+          <!--
           <li id="3907">Add param to publication ref element
             <xref href="https://github.com/dita-ot/dita-ot/issues/3907" format="html" scope="external">#3907</xref>
           </li>
-          <!--
           <li id="3942">Add support for DITA 2.0 split chunking
             <xref href="https://github.com/dita-ot/dita-ot/issues/3942" format="html" scope="external">#3942</xref>
           </li>
@@ -77,6 +77,67 @@
         <title/>
         <p/>
       </section>-->
+
+      <section id="project-files">
+        <title>Project file improvements</title>
+        <ul>
+          <li id="3682">
+            <p>The re-usable <xmlelement>publication</xmlelement> element in DITA-OT project files can now be overridden
+              with additional parameters (or modified parameter settings) by adding new <xmlelement>param</xmlelement>
+              elements to the referencing element.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3682" format="html" scope="external">#3682</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3907" format="html" scope="external">#3907</xref>
+            </p>
+            <p>This allows common publications to be defined in one place, re-used in others, and overlaid with local
+              variations when the common settings need to be adjusted in certain cases.</p>
+            <codeblock
+              outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+            >&lt;project xmlns="https://www.dita-ot.org/project">
+  &lt;publication transtype="html5" id="common-html5">
+    &lt;param name="nav-toc" value="partial"/>
+  &lt;/publication>
+  &lt;deliverable>
+    &lt;context>
+      &lt;input href="root.ditamap"/>
+    &lt;/context>
+    &lt;output href="./out"/>
+    &lt;publication idref="common-html5">
+      &lt;!-- Define publication-specific parameter settings -->
+      &lt;param name="nav-toc" value="full"/>
+    &lt;/publication>
+  &lt;/deliverable>
+&lt;/project></codeblock></li>
+          <li id="3690">
+            <p>The <xmlelement>publication</xmlelement> element in DITA-OT project files now supports nested
+                <xmlelement>profile</xmlelement> elements. When both context and publication contain profiles, they are
+              applied in order: publication profiles first, context profiles second.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3690" format="html" scope="external">#3690</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/3895" format="html" scope="external">#3895</xref>
+            </p>
+            <p>This allows publications to define filter criteria that are applied to the content of the individual
+              publication (in addition to those specified for the entire deliverable context).</p>
+            <codeblock
+              outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+            >&lt;project xmlns="https://www.dita-ot.org/project">
+  &lt;deliverable name="Name" id="site">
+    &lt;context name="Site" id="site">
+      &lt;input href="site.ditamap"/>
+      &lt;profile>
+        &lt;ditaval href="site.ditaval"/>
+      &lt;/profile>
+    &lt;/context>
+    &lt;output href="./site"/>
+    &lt;publication transtype="html5" id="sitePub" name="Site">
+      &lt;profile>
+        &lt;!-- Define publication-specific filters -->
+        &lt;ditaval href="site-html5.ditaval"/>
+      &lt;/profile>
+    &lt;/publication>
+  &lt;/deliverable>
+&lt;/project></codeblock>
+          </li>
+        </ul>
+      </section>
 
       <section id="dita-2-0-preview">
         <title>Updated DITA 2.0 preview</title>
@@ -109,9 +170,6 @@
           </li>
           <li id="3830">Refactor attribute generation in XSLT
             <xref href="https://github.com/dita-ot/dita-ot/issues/3830" format="html" scope="external">#3830</xref>
-          </li>
-          <li id="3895">Add profiles to publication project file 
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3895" format="html" scope="external">#3895</xref>
           </li>
           <li id="3926">Grammar caching and validation for RNG-based topics
             <xref href="https://github.com/dita-ot/dita-ot/issues/3926" format="html" scope="external">#3926</xref>

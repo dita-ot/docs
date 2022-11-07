@@ -116,6 +116,12 @@
             <xref keyref="download.openjdk.redhat"/>.</li>
         </ul>
       </p>
+      <p id="java-bc">
+        <note>The Java virtual machine is generally backwards compatible, so class files built with earlier versions
+          should still run correctly with Java 17 and DITA-OT <keyword keyref="release"/>. If your DITA-OT installation
+          contains plug-ins with custom Java code, you may need to recompile these with Java 17 — but in most cases,
+          this step should not be necessary.</note>
+      </p>
     </section>
 
     <section id="preprocess2">

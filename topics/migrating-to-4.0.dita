@@ -19,6 +19,12 @@
         <xref keyref="4.0-release-notes"/>.</note>
     </section>
 
+    <section id="java-17">
+      <title>DITA-OT now requires Java 17</title>
+      <p conkeyref="reusable-components/java-clients"/>
+      <p conkeyref="reusable-components/java-bc"/>
+    </section>
+
     <section id="deprecated-templates">
       <title>Deprecated legacy templates</title>
       <p>

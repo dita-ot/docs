@@ -14,12 +14,13 @@
   </abstract>
 
   <reference id="requirements">
-    <title>Requirements</title>
+    <title>Requirements: Java 17</title>
     <refbody>
       <section>
         <draft-comment author="Roger">Add info on new minimum Java version or any other requirements that have changed
           since previous release.</draft-comment>
         <p conkeyref="reusable-components/java-clients"/>
+        <p conkeyref="reusable-components/java-bc"/>
       </section>
     </refbody>
   </reference>
@@ -45,10 +46,12 @@
           including (new elements, domains, etc.)</ph>.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
+          <!--
           <li id="3359">Move to Java 17
             <xref href="https://github.com/dita-ot/dita-ot/issues/3359" format="html" scope="external">#3359</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3653" format="html" scope="external">#3653</xref>
           </li>
+          -->
           <li id="3827">Replace attribute-set reflection in PDF2
             <xref href="https://github.com/dita-ot/dita-ot/issues/3827" format="html" scope="external">#3827</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3829" format="html" scope="external">#3829</xref>

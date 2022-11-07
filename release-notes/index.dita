@@ -8,7 +8,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> includes <ph conref="#v4.0/summary"/>.</shortdesc>
+    <shortdesc>DITA-OT <keyword keyref="release"/> requires Java 17 and includes <ph conref="#v4.0/summary"/>.
+    </shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -38,12 +39,10 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph
-            id="summary"
-            outputclass="mark"
-          >(marquee features), 
-          and an updated preview of features for the latest draft of the upcoming DITA 2.0 standard 
-          including (new elements, domains, etc.)</ph>.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes 
+          <ph id="summary" outputclass="mark">a new plug-in for easier PDF customization, project file improvements,
+            updates to LwDITA processing, and support for the split chunking feature in the latest drafts of the
+            upcoming DITA 2.0 standard<!-- (and new elements, domains, etc.)--></ph>.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
           <!--

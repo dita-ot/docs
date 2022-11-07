@@ -8,8 +8,10 @@
     <navtitle>To 4.0</navtitle>
   </titlealts>
 
-  <shortdesc>DITA-OT 4.0 includes 
-    <ph id="summary"><!-- Copy summary phrase from Release Notes --></ph>.
+  <shortdesc>DITA-OT 4.0 requires Java 17 and includes 
+    <ph id="summary">a new plug-in for easier PDF customization, project file improvements,
+      updates to LwDITA processing, and support for the split chunking feature in the latest draft of the upcoming
+      DITA 2.0 standard<!-- (and new elements, domains, etc.)--></ph>.
   </shortdesc>
 
   <refbody>

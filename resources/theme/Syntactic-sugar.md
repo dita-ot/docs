@@ -1,4 +1,4 @@
-The theme files can contain [syntactic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar) to make writing files easier. When theme files are read, they are "desugared" before passing the theme files to the stylesheet generator.
+Theme files can use [syntactic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar) to make them easier to read and write. When theme files are read, any shorthand keys are “desugared” to their more verbose equivalents before they are passed to the stylesheet generator.
 
 ## Content
 

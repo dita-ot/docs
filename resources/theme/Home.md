@@ -14,3 +14,4 @@ The following topics provide details on the theme file formats and supported con
   - [Styles](Styles)
   - [Variables](Variables)
   - [Extending themes](Extending-themes)
+  - [Syntactic sugar](Syntactic-sugar)

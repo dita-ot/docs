@@ -5,28 +5,28 @@
   <title>Sample theme file</title>
   <shortdesc>Theme files can be written in either
     <xref keyref="json"/> or
-    <xref keyref="yaml"/> format. The <filepath>docsrc/samples/themes/</filepath> folder in the DITA-OT installation
-    directory provides several examples, including the theme used to produce the PDF output for the DITA-OT
-    documentation.</shortdesc>
+    <xref keyref="yaml"/> format. The <filepath>docsrc/samples/themes</filepath> folder in the DITA-OT installation
+    directory provides several examples.</shortdesc>
   <conbody>
     <note>The examples provided here are all in YAML format, which is generally more compact and readable than
       JSON.</note>
-    
-    <codeblock xml:space="preserve" outputclass="language-yaml">page:
-  size: A4
-header:
-  content: '{title}'
-  border-after: solid 1pt black
-footer:
-  content: '{folio}'
-  text-align: center
-style:
-  body:
-    font-family: Times New Roman
-  topic:
-    font-family: Arial
-    font-size: 26pt
-    font-weight: bold
-    color: gray</codeblock>
+    <p>The YAML theme file used to produce the PDF output for the DITA-OT documentation is included in the installation
+      directory as <filepath conkeyref="conref-task/samples-dir"/><filepath
+      >/themes/dita-ot-docs-theme.yaml</filepath>.</p>
+    <p>This file includes a series of common customizations that can be adapted for your own requirements.</p>
+    <example>
+      <title>Setting custom colors</title>
+      <p>You can use
+        <xref keyref="variables"/> to define brand colors and re-use these values in other
+        <xref keyref="styles"/> using semantic references such as <codeph>$brand-color-primary</codeph>.</p>
+      <fig>
+        <title>Color variables in <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs-theme.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs-theme.yaml#token=add-brand-colors,end-brand-colors"
+            /></codeblock></p>
+      </fig>
+    </example>
   </conbody>
 </concept>

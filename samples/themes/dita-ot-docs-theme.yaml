@@ -2,7 +2,7 @@
 #
 # https://github.com/jelovirt/pdf-generator/wiki/Theme
 
-# Brand color variables
+# ↓ add-brand-colors ↓
 brand:
   color:
     primary: '#1d365d'
@@ -16,6 +16,7 @@ brand:
         caution: '#f8d7da'
         info: '#dce4f0'
         tip: '#d1e7dd'
+# ↑ end-brand-colors ↑
 
 # Default font stacks from `org.dita.pdf2`
 pdf2:

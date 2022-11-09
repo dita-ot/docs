@@ -9,7 +9,7 @@ This plug-in extends the built-in PDF2 plug-in by adding support for the `theme`
 The following topics provide details on the theme file formats and supported configuration options.
 
 - [Using a theme file](Using-a-theme-file)
-  - [Page](Page)
+  - [Page settings](Page-settings)
   - [Header and footer](Header-and-footer)
   - [Styles](Styles)
   - [Variables](Variables)

@@ -73,10 +73,13 @@
         </ul>
       </section>
 
-      <!--<section conkeyref="migrating-to-4.0/feature-example">
-        <title/>
-        <p/>
-      </section>-->
+      <section id="new-pdf-plugin">
+        <title>New PDF theme plug-in</title>
+        <p><ph conkeyref="pdf-themes/shortdesc-ph"/></p>
+        <div conkeyref="pdf-themes/intro"/>
+        <note type="tip">For information on the available theming options and a sample YAML theme, see
+          <xref keyref="pdf-themes"/>.</note>
+      </section>
 
       <section id="project-files">
         <title>Project file improvements</title>

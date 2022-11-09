@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-<concept id="using-a-theme-file">
-  <title>Using a theme file</title>
-  <shortdesc>The <codeph
-    >com.elovirta.pdf</codeph> plug-in for DITA-OT extends the built-in PDF2 plug-in by adding support for
-    the <codeph>theme</codeph> property. The <codeph>theme</codeph> property takes a path to a theme file and changes
-    the styling of the PDF2 output without needing to extend the transtype with XSLT.</shortdesc>
+<concept id="ID">
+  <title>PDF themes</title>
+  <shortdesc>DITA-OT 4.0 includes the <codeph>com.elovirta.pdf</codeph> plug-in, which extends the default PDF2 plug-in
+    with a new <parmname>theme</parmname> parameter. The <parmname>--theme</parmname> option takes a path to a theme
+    file and changes the styling of the PDF output without requiring changes to XSLT stylesheets.</shortdesc>
   <conbody>
     <p>Themes can be used to adjust basic settings like cover page images, page sizes, numbering, font properties,
       background colors and borders, spacing, and running content like page headers and footers.</p>

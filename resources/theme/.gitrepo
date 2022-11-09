@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/jelovirt/pdf-generator.wiki.git
+	branch = master
+	commit = bbe0f659e5ed52972783cbd479561ac9e1186018
+	parent = 83da5fccf4d3a9bc585f0d8f515ddd0b5dec4061
+	method = merge
+	cmdver = 0.4.5

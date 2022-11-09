@@ -72,7 +72,7 @@
       <p>If you have a custom PDF plug-in that explicitly depends on the previous default settings for the
         aforementioned styles, the <codeph>org.dita.pdf2.legacy</codeph> plug-in can be used to restore the pre–2.5
         styles.</p>
-      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+      <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
         <tgroup cols="2">
           <colspec colwidth="1*"/>
           <colspec colwidth="1*"/>

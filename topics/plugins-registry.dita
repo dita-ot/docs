@@ -70,7 +70,7 @@
       <p>The version entries for each plug-in are stored in a file that is named after the plug-in ID as
           <codeph>&lt;plugin-name&gt;.json</codeph>. The file contains an array of entries with a pre-defined structure.
         You should have one entry for each supported version of the plug-in.</p>
-      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+      <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
         <title>Plug-in version entry structure</title>
         <tgroup cols="3">
           <colspec colwidth="1*"/>
@@ -150,7 +150,7 @@
         <indexterm>Windows
           <indexterm>plug-in registry checksum</indexterm></indexterm>
       </note>
-      <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+      <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
         <title>Structure for dependency entries</title>
         <tgroup cols="3">
           <colspec colwidth="1*"/>

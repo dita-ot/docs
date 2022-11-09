@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<concept id="using-a-theme-file">
+  <title>Using a theme file</title>
+  <shortdesc>The <codeph
+    >com.elovirta.pdf</codeph> plug-in for DITA-OT extends the built-in PDF2 plug-in by adding support for
+    the <codeph>theme</codeph> property. The <codeph>theme</codeph> property takes a path to a theme file and changes
+    the styling of the PDF2 output without needing to extend the transtype with XSLT.</shortdesc>
+  <conbody>
+    <p>Themes can be used to adjust basic settings like cover page images, page sizes, numbering, font properties,
+      background colors and borders, spacing, and running content like page headers and footers.</p>
+    <p>To generate PDF output with a custom theme, pass the path to the theme file to the <codeph>dita</codeph> command
+      with the <codeph>--theme</codeph> option:</p>
+    <codeblock xml:space="preserve" outputclass="language-bash">dita --project=samples/project-files/pdf.xml \
+     --theme=/path/to/custom-theme-file.yaml</codeblock>
+    <p>The following topics provide details on the theme file formats and supported configuration options.</p>
+  </conbody>
+  <concept id="theme-file">
+    <title>Theme file</title>
+    <conbody>
+      <p>A theme file can be written in either
+        <xref keyref="json"/> or
+        <xref keyref="yaml"/> format.</p>
+      <p>The examples provided here are all in YAML format, which is generally more compact and readable than JSON.</p>
+      <codeblock xml:space="preserve" outputclass="language-yaml">page:
+  size: A4
+header:
+  content: '{title}'
+  border-after: solid 1pt black
+footer:
+  content: '{folio}'
+  text-align: center
+style:
+  body:
+    font-family: Times New Roman
+  topic:
+    font-family: Arial
+    font-size: 26pt
+    font-weight: bold
+    color: gray</codeblock>
+    </conbody>
+  </concept>
+</concept>

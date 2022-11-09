@@ -67,9 +67,8 @@ footer:
 # https://github.com/jelovirt/pdf-generator/wiki/Styles
 
 style:
-  base:
-    font-family: $pdf2-font-serif
   body:
+    font-family: $pdf2-font-serif
     font-size: 11pt
     line-height: 1.3
     start-indent: 50pt

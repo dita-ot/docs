@@ -80,6 +80,7 @@ style:
     border: solid 1pt $brand-color-tertiary
     font-family: $pdf2-font-monospaced
     font-size: 8pt
+    keep-together.within-page: always
     space-after: 8pt
   codeph:
     color: $brand-color-secondary
@@ -136,6 +137,7 @@ style:
   note:
     background-color: $brand-color-note-background-info
     border: solid 1pt $brand-color-tertiary
+    keep-together.within-page: always
     label:
       font-family: $pdf2-font-sans
       space-end: 2pt

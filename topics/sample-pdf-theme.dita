@@ -28,5 +28,25 @@
             /></codeblock></p>
       </fig>
     </example>
+    <example>
+      <title>Defining custom font stacks</title>
+      <p>You can use
+        <xref keyref="variables"/> to specify a prioritized list of one or more font family names and reference these
+        values in the <codeph>font-family</codeph> property of other
+        <xref keyref="styles">style</xref> keys.</p>
+      <fig>
+        <title>Font families in <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs-theme.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs-theme.yaml#token=add-font-stacks,end-font-stacks"
+            /></codeblock></p>
+      </fig>
+      <p>This theme uses the default font stacks from the default <codeph>org.dita.pdf2</codeph> plug-in, but the same
+        approach can be used to define other font families as required by your corporate identity.</p>
+      <p>The font variables defined here under the <codeph>pdf2</codeph> prefix could just as well be added to the
+          <codeph>brand</codeph> key, or under a company name prefix and re-used elsewhere with references such as
+          <codeph>$company-font-sans</codeph>.</p>
+    </example>
   </conbody>
 </concept>

@@ -18,12 +18,13 @@ brand:
         tip: '#d1e7dd'
 # ↑ end-brand-colors ↑
 
-# Default font stacks from `org.dita.pdf2`
+# ↓ add-font-stacks ↓
 pdf2:
   font:
     sans: 'Helvetica, Arial Unicode MS, Tahoma, Batang, SimSun'
     serif: 'Times New Roman, Times, Arial Unicode MS, Tahoma, Batang, SimSun'
     monospaced: 'Courier New, Courier, Arial Unicode MS, Tahoma, Batang, SimSun'
+# ↑ end-font-stacks ↑
 
 page:
   size: PA4 # 21 × 28 cm transitional format suitable for printing on both A4 and US Letter

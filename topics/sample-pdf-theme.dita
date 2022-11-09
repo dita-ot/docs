@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<concept id="ID">
+  <title>Sample theme file</title>
+  <shortdesc>Theme files can be written in either
+    <xref keyref="json"/> or
+    <xref keyref="yaml"/> format. The <filepath>docsrc/samples/themes/</filepath> folder in the DITA-OT installation
+    directory provides several examples, including the theme used to produce the PDF output for the DITA-OT
+    documentation.</shortdesc>
+  <conbody>
+    <note>The examples provided here are all in YAML format, which is generally more compact and readable than
+      JSON.</note>
+    
+    <codeblock xml:space="preserve" outputclass="language-yaml">page:
+  size: A4
+header:
+  content: '{title}'
+  border-after: solid 1pt black
+footer:
+  content: '{folio}'
+  text-align: center
+style:
+  body:
+    font-family: Times New Roman
+  topic:
+    font-family: Arial
+    font-size: 26pt
+    font-weight: bold
+    color: gray</codeblock>
+  </conbody>
+</concept>

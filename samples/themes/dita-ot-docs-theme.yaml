@@ -3,13 +3,12 @@
 # https://github.com/jelovirt/pdf-generator/wiki/Theme
 
 # Brand color variables
-# https://github.com/jelovirt/pdf-generator/wiki/Variables
 brand:
   color:
-    primary: '#1d365d' # Cover text, headings & ToC sections
-    secondary: '#6c757d' # Captions, code, headers, footers, § titles
-    tertiary: '#bac8d1' # Codeblock & note borders
-    inverse: '#e9ecef' # Cover logo, H1 & H2 borders, codeblock backgrounds
+    primary: '#1d365d'
+    secondary: '#6c757d'
+    tertiary: '#bac8d1'
+    inverse: '#e9ecef'
     links: navy
     note:
       background:
@@ -29,7 +28,6 @@ page:
   size: PA4 # 21 × 28 cm transitional format suitable for printing on both A4 and US Letter
   # Generate duplex header and footer
   mirror-margins: true
-  # https://github.com/jelovirt/pdf-generator/wiki/How-to#duplex-header-and-footer
 
 header:
   color: $brand-color-secondary
@@ -41,11 +39,9 @@ header:
   start-indent: 10mm
   odd:
     content: '{chapter}'
-    # On odd/right/recto pages horizontally align content to end/right side.
     text-align: end
   even:
     content: '{title}'
-    # On even/left/verso pages horizontally align content to start/left side.
     text-align: start
 
 footer:
@@ -63,8 +59,6 @@ footer:
     content: '{folio}'
     font-weight: bold
     text-align: start
-
-# https://github.com/jelovirt/pdf-generator/wiki/Styles
 
 style:
   body:
@@ -105,13 +99,13 @@ style:
       font-weight: normal
   filepath:
     color: $brand-color-secondary
-  h1: # Part/Chapter
+  h1:
     border-after: solid 2pt $brand-color-inverse
     color: $brand-color-primary
     font-size: 18pt
-    space-before: 0pt # Same as PDF2
-    padding-top: 0pt # Reset to align to top of page, as these always start on new pages anyway
-    space-after: 9pt # PDF2: 16.8pt
+    space-before: 0pt
+    padding-top: 0pt
+    space-after: 9pt
     font-weight: bold
     title-numbering: true
   h2:
@@ -119,15 +113,15 @@ style:
     color: $brand-color-primary
     font-size: 16pt
     font-style: italic
-    space-before: 16pt # PDF2: 12pt
-    space-after: 8pt # PDF2: 5pt
+    space-before: 16pt
+    space-after: 8pt
     title-numbering: true
   h3:
     color: $brand-color-primary
     font-size: 14pt
     font-weight: bold
-    space-before: 21pt # PDF2: 12pt
-    space-after: 7pt # PDF2: 2pt
+    space-before: 21pt
+    space-after: 7pt
   h4:
     font-size: 12pt
     font-style: italic
@@ -177,7 +171,7 @@ style:
     font-size: 9pt
     header:
       background-color: $brand-color-inverse
-  toc-1: # next levels inherit these settings unless overridden
+  toc-1:
     color: $brand-color-primary
     font-family: $pdf2-font-sans
     start-indent: 0

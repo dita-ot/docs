@@ -48,5 +48,23 @@
           <codeph>brand</codeph> key, or under a company name prefix and re-used elsewhere with references such as
           <codeph>$company-font-sans</codeph>.</p>
     </example>
+    <example>
+      <title>Defining page sizes</title>
+      <p>
+        <xref keyref="page-settings"/> include page <codeph>size</codeph>, <codeph
+        >orientation</codeph>, and margins.</p>
+      <fig>
+        <title>Page settings in <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs-theme.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs-theme.yaml#token=add-page-settings,end-page-settings"
+            /></codeblock></p>
+      </fig>
+      <p>The DITA-OT documentation theme uses the <codeph>PA4</codeph> page size, a 21 × 28 cm transitional format 
+        suitable for printing on both A4 and US Letter paper.</p>
+      <p>The <codeph>mirror-margins</codeph> key sets up facing pages for double-sided documents, so the margins of the
+        left page are a mirror image of those on the right.</p>
+    </example>
   </conbody>
 </concept>

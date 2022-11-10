@@ -26,10 +26,11 @@ pdf2:
     monospaced: 'Courier New, Courier, Arial Unicode MS, Tahoma, Batang, SimSun'
 # ↑ end-font-stacks ↑
 
+# ↓ add-page-settings ↓
 page:
-  size: PA4 # 21 × 28 cm transitional format suitable for printing on both A4 and US Letter
-  # Generate duplex header and footer
+  size: PA4
   mirror-margins: true
+# ↑ end-page-settings ↑
 
 header:
   color: $brand-color-secondary

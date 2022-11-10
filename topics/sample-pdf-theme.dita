@@ -66,5 +66,32 @@
       <p>The <codeph>mirror-margins</codeph> key sets up facing pages for double-sided documents, so the margins of the
         left page are a mirror image of those on the right.</p>
     </example>
+    <example>
+      <title>Extending and overriding themes</title>
+      <p>You can
+        <xref keyref="extending-themes">extend</xref> one theme with another. The samples in the DITA-OT installation
+        directory include additional theme files that can be used to override the <codeph>PA4</codeph> page size in the
+        documentation theme with either A4 or Letter.</p>
+      <fig>
+        <title>Switching page size to A4 with <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs_A4.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs_A4.yaml"
+            /></codeblock></p>
+      </fig>
+      <fig>
+        <title>Switching page size to Letter with <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs_Letter.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs_Letter.yaml"
+            /></codeblock></p>
+      </fig>
+      <p>When one of these theme extensions is passed to the <cmdname>dita</cmdname> command via the
+          <parmname>--theme</parmname> option, the <codeph>page-size</codeph> value in the extending theme takes
+        precedence over the original value in <filepath>dita-ot-docs-theme.yaml</filepath>.</p>
+      <p>If you add new keys to a theme extension, they will be overlaid onto the keys from the extended theme.</p>
+    </example>
   </conbody>
 </concept>

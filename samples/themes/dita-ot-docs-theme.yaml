@@ -82,6 +82,7 @@ style:
   codeph:
     color: $brand-color-secondary
     font-size: '0.9 * from-parent(font-size)'
+  # ↓ set-cover-page ↓
   cover:
     background-image: dita-ot-logo-inverse.svg
     background-repeat: no-repeat
@@ -92,6 +93,7 @@ style:
     font-weight: bold
     line-height: 1.5
     space-before: 195mm
+  # ↑ end-cover-page ↑
   example-title:
     color: $brand-color-secondary
   fig:

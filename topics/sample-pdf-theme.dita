@@ -93,5 +93,22 @@
         precedence over the original value in <filepath>dita-ot-docs-theme.yaml</filepath>.</p>
       <p>If you add new keys to a theme extension, they will be overlaid onto the keys from the extended theme.</p>
     </example>
+    <example>
+      <title>Adding an image to the cover page</title>
+      <p>The <codeph>cover</codeph> and <codeph>cover-title</codeph>
+        <xref keyref="styles"/> can be used to add a background image and adjust the formatting and placement of the
+        document title.</p>
+      <fig>
+        <title>Cover page settings in <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs-theme.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs-theme.yaml#token=set-cover-page,end-cover-page"
+            /></codeblock></p>
+      </fig>
+      <p>The DITA-OT documentation theme references a background image stored in the same folder as the theme file, 
+        and places the title at the bottom of the page by
+        setting the <codeph>space-before</codeph> property for the <codeph>cover-title</codeph>.</p>
+    </example>
   </conbody>
 </concept>

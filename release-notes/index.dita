@@ -44,7 +44,7 @@
             updates to LwDITA processing, and support for the split chunking feature in the latest drafts of the
             upcoming DITA 2.0 standard<!-- (and new elements, domains, etc.)--></ph>.</p>
       </section>
-
+      <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
       <section id="new-pdf-plugin">
         <title>New PDF theme plug-in</title>
         <p><ph conkeyref="pdf-themes/shortdesc-ph"/></p>
@@ -154,42 +154,24 @@
         <indexterm/>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
           existing features:</p>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
-        <ul>
-          <!--
-          <li id="3359">Move to Java 17
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3359" format="html" scope="external">#3359</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3653" format="html" scope="external">#3653</xref>
-          </li>
-          -->
-          <li id="3827">Replace attribute-set reflection in PDF2
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3827" format="html" scope="external">#3827</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3829" format="html" scope="external">#3829</xref>
-          </li>
-          <li id="3845">Better design for "skip" properties
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3845" format="html" scope="external">#3845</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3851" format="html" scope="external">#3851</xref>
-          </li>
-          <li id="3891">Log invalid character in file include
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3891" format="html" scope="external">#3891</xref>
-          </li>
-          <!--
-          <li id="3907">Add param to publication ref element
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3907" format="html" scope="external">#3907</xref>
-          </li>
-          <li id="3942">Add support for DITA 2.0 split chunking
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3942" format="html" scope="external">#3942</xref>
-          </li>
-          -->
-        </ul>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
           <li id="3757">Separate temporary files folders for each deliverable
             <xref href="https://github.com/dita-ot/dita-ot/issues/3757" format="html" scope="external">#3757</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3898" format="html" scope="external">#3898</xref>
           </li>
+          <li id="3827">
+            <ph conkeyref="migrating-to-4.0/reflection"/>
+          </li>
           <li id="3830">Refactor attribute generation in XSLT
             <xref href="https://github.com/dita-ot/dita-ot/issues/3830" format="html" scope="external">#3830</xref>
+          </li>
+          <li id="3851">Better design for "skip" properties
+        <!--<xref href="https://github.com/dita-ot/dita-ot/issues/3845" format="html" scope="external">#3845</xref>,-->
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3851" format="html" scope="external">#3851</xref>
+          </li>
+          <li id="3891">Log invalid character in file include
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3891" format="html" scope="external">#3891</xref>
           </li>
           <li id="3926">Grammar caching and validation for RNG-based topics
             <xref href="https://github.com/dita-ot/dita-ot/issues/3926" format="html" scope="external">#3926</xref>

@@ -135,10 +135,9 @@
       <section id="dita-2-0-preview">
         <title>Updated DITA 2.0 preview</title>
         <p>In addition to the
-          <xref keyref="dita-v2-0-support"/> provided in previous releases (3.5, 3.6, and 3.7), DITA-OT <keyword
-            keyref="release"
-          /> includes updated processing support for the latest drafts of the DITA 2.0 DTD and
-          RELAX NG grammar files from OASIS (as of <keyword keyref="draft-dita-grammar-state"/>).
+          <xref keyref="dita-v2-0-support">DITA 2.0 preview support</xref> provided in previous releases (3.5, 3.6, and
+          3.7), DITA-OT <keyword keyref="release"/> includes updated processing support for the latest drafts of the
+          DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of <keyword keyref="draft-dita-grammar-state"/>). 
           <!-- Link to PRs that update 2.0 grammar files-->
           <xref href="https://github.com/dita-ot/dita-ot/issues/4040" format="html" scope="external">#4040</xref>
         </p>

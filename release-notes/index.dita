@@ -156,7 +156,10 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="3757">Separate temporary files folders for each deliverable
+          <li id="3757">When
+            <xref keyref="using-project-files">publishing with project files</xref>, separate temporary folders are now
+            created for each deliverable in the project. This facilitates debugging and troubleshooting, as it makes it
+            easier to inspect the temporary files that have been created for each deliverable.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3757" format="html" scope="external">#3757</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3898" format="html" scope="external">#3898</xref>
           </li>

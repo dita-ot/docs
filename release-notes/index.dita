@@ -175,7 +175,9 @@
         <!--<xref href="https://github.com/dita-ot/dita-ot/issues/3845" format="html" scope="external">#3845</xref>,-->
             <xref href="https://github.com/dita-ot/dita-ot/issues/3851" format="html" scope="external">#3851</xref>
           </li>
-          <li id="3891">Log invalid character in file include
+          <li id="3891">When an included file uses a character set that is neither the system default or matches the
+            explicit character set definition in the include, reading the file may fail. A new <msgnum>DOTJ084E</msgnum>
+            error message makes it easier to debug character set encoding issues like this in source files.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3891" format="html" scope="external">#3891</xref>
           </li>
           <li id="3926">Grammar caching and validation for RNG-based topics

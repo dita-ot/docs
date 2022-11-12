@@ -115,10 +115,12 @@
       </section>
 
       <section id="lwdita">
-        <title>Lightweight DITA updates</title>
+        <title>Lightweight DITA and Markdown updates</title>
         <p>The <codeph>org.lwdita</codeph> plug-in has been updated to version <keyword keyref="tool.lwdita.version"/>,
           which includes Markdown processing improvements.</p>
         <ul>
+          <li>DITA-OT 4.0 includes processing updates to reflect recent changes to the latest drafts of the LwDITA
+            profile from OASIS</li>
           <li>Add support for Markdown files without first-level headings</li>
           <li>Better support for
             <xref keyref="python-markdown-attlists"/></li>

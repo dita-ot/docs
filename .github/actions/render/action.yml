@@ -43,6 +43,8 @@ runs:
           echo "Use cached dita-ot-${{ inputs.DITA_OT_VERSION }}"
         fi
         dita-ot-${{ inputs.DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip --force -v
+        dita-ot-${{ inputs.DITA_OT_VERSION }}/bin/dita uninstall org.lwdita -v
+        dita-ot-${{ inputs.DITA_OT_VERSION }}/bin/dita install https://github.com/jelovirt/org.lwdita/releases/download/3.3.0/org.lwdita-3.3.0.zip --force -v
 
     - name: Get develop DITA-OT ETag
       shell: bash

@@ -176,7 +176,9 @@
               <xmlelement>xsl:attribute select="…"/</xmlelement>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3830" format="html" scope="external">#3830</xref>
           </li>
-          <li id="3851">Better design for "skip" properties
+          <li id="3851">Many Ant targets refer to <codeph>skip</codeph> properties that can be used to skip
+            preprocessing steps. In earlier releases, these properties were not set or named consistently; these
+            properties are now generated automatically with more consistent naming and behavior. 
         <!--<xref href="https://github.com/dita-ot/dita-ot/issues/3845" format="html" scope="external">#3845</xref>,-->
             <xref href="https://github.com/dita-ot/dita-ot/issues/3851" format="html" scope="external">#3851</xref>
           </li>

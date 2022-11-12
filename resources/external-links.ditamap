@@ -275,6 +275,16 @@
         <linktext>DITA-OT 3.7 Release Notes</linktext>
       </topicmeta>
     </keydef>
+    <keydef
+      keys="4.0-release-notes"
+      href="https://www.dita-ot.org/4.0/release-notes/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>DITA-OT 4.0 Release Notes</linktext>
+      </topicmeta>
+    </keydef>
   </topicset>
 
   <topicset id="downloads">
@@ -333,7 +343,7 @@
     </keydef>
     <keydef
       keys="download.openjdk"
-      href="https://adoptium.net/?variant=openjdk8"
+      href="https://adoptium.net/temurin/releases/?version=17"
       scope="external"
       format="html"
     >
@@ -559,6 +569,17 @@
         <topicmeta>
           <linktext>DITA 1.3 specification: The <xmlelement
             >revprop</xmlelement> element</linktext>
+        </topicmeta>
+      </keydef>
+      <keydef
+        keys="dita13-spec-scope-att"
+        href="http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/langRef/attributes/thescopeattribute.html#thescopeattribute"
+        scope="external"
+        format="html"
+      >
+        <topicmeta>
+          <linktext>DITA 1.3 specification: The <xmlatt
+            >scope</xmlatt> attribute</linktext>
         </topicmeta>
       </keydef>
     </topicset>
@@ -976,6 +997,16 @@
     >
       <topicmeta>
         <linktext>Sass</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="python-markdown-attlists"
+      href="https://python-markdown.github.io/extensions/attr_list/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Python-Markdown Attribute Lists</linktext>
       </topicmeta>
     </keydef>
     <keydef

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<reference id="migrating-to-4.0">
+
+  <title>Migrating to release 4.0</title>
+  <titlealts>
+    <navtitle>To 4.0</navtitle>
+  </titlealts>
+
+  <shortdesc>DITA-OT 4.0 requires Java 17 and includes 
+    <ph id="summary">a new plug-in for easier PDF customization, project file improvements,
+      updates to LwDITA processing, and support for the split chunking feature in the latest draft of the upcoming
+      DITA 2.0 standard<!-- (and new elements, domains, etc.)--></ph>.
+  </shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 4.0 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="4.0-release-notes"/>.</note>
+    </section>
+
+    <section id="java-17">
+      <title>DITA-OT now requires Java 17</title>
+      <p conkeyref="reusable-components/java-clients"/>
+      <p conkeyref="reusable-components/java-bc"/>
+    </section>
+
+    <section id="attribute-set-reflection">
+      <title>Deprecated attribute set reflection in PDF2</title>
+      <p>
+        <ph id="reflection">The legacy attribute set reflection in PDF2 has been replaced with code that generates new
+          attribute sets directly. This change is backwards-compatible as the old attribute set reflection code has
+          been retained, but PDF2 now uses the new attribute set generation mechanism everywhere reflection was used.
+          Custom plug-ins that still use reflection should be updated to the new approach, as the legacy code may be
+          removed in a future version.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3827" format="html" scope="external">#3827</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3829" format="html" scope="external">#3829</xref>
+        </ph>
+      </p>
+    </section>
+
+    <section id="UTF8-coderef">
+      <title>Code references now default to UTF-8 encoding</title>
+      <p>The default character set for code references has been changed from the system default encoding to UTF-8.</p>
+      <p>This allows a wider range of characters to be used without needing to specify the <xmlatt>format</xmlatt>
+        attribute on the <xmlelement>coderef</xmlelement> element as described in
+        <xref keyref="extended-functionality/coderef-charset">character set definition</xref> or change the default
+        encoding in the
+        <xref keyref="configuration-properties-file"><filepath>configuration.properties</filepath> file</xref>.
+        <xref href="https://github.com/dita-ot/dita-ot/issues/4046" format="html" scope="external">#4046</xref>
+        <note>If you have code references that require a different encoding, use either of these mechanisms to specify
+          the character set explicitly.</note>
+      </p>
+    </section>
+  </refbody>
+</reference>

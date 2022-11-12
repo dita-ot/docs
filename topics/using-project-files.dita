@@ -58,7 +58,8 @@
                   <ul>
                     <li>an <codeph>id</codeph> used to refer to this context from other projects</li>
                     <li>a series of <codeph>input</codeph> files (DITA maps)</li>
-                    <li>a <codeph>profile</codeph> with a series of DITAVAL files used to filter the content</li>
+                    <li>a <codeph>profile</codeph> with a series of DITAVAL files used to filter the content of all
+                      publications in the deliverable</li>
                   </ul>
                 </p>
               </li>
@@ -70,6 +71,8 @@
                   <li>an output format via <codeph>transtype</codeph>, and</li>
                   <li>a series of parameters to set for this transformation type, specified via <codeph>name</codeph>
                     and either <codeph>href</codeph>, <codeph>path</codeph>, or <codeph>value</codeph></li>
+                  <li>a <codeph>profile</codeph> with any additional DITAVAL files used to filter the content of the
+                    publication (in addition to those specified for the deliverable context)</li>
                 </ul>
               </li>
             </ul>

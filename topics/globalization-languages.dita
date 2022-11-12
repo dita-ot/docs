@@ -68,7 +68,7 @@
         DITA-OT processing is not case sensitive when reading these values from the <xmlatt>xml:lang</xmlatt>
         attribute.</note>
     </refsyn>
-    <table outputclass="table-hover" frame="none" colsep="0" rowsep="1">
+    <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
       <title>Supported languages</title>
       <tgroup cols="3">
         <colspec colwidth="3*" colname="language"/>

@@ -93,6 +93,31 @@
             <note conref="#configuration/protected-config-props"/>
           </pd>
         </plentry>
+        <plentry id="filter-attributes" rev="3.0">
+          <pt><parmname>filter-attributes</parmname></pt>
+          <pd>
+            <p>Specifies additional attributes to be used for filtering, in addition to those defined in the DITA
+              specification. The value is a comma-separated list of attribute QNames in Clark notation.</p>
+            <p>For example, to permit filtering by <xmlatt>importance</xmlatt> and <xmlatt>status</xmlatt> attributes,
+              set:</p>
+            <codeblock outputclass="language-properties">filter-attributes = importance, status</codeblock>
+          </pd>
+        </plentry>
+        <plentry id="flag-attributes" rev="3.0">
+          <pt><parmname>flag-attributes</parmname></pt>
+          <pd>
+            <p>Specifies additional attributes to be used for flagging, in addition to those defined in the DITA
+              specification. The value is a comma-separated list of attribute QNames in Clark notation.</p>
+            <p>For example, to enable flagging based on a custom <xmlatt>cms:review</xmlatt> attribute,
+              set:</p>
+            <codeblock outputclass="language-properties">flag-attributes = {http://www.cms.com/}review</codeblock>
+            <p>With this setting, a DITAVAL file could be used to flag content marked as <codeph>new</codeph> with a
+              purple background:</p>
+            <codeblock outputclass="language-xml">&lt;val xmlns:cms="http://www.cms.com/">
+  &lt;prop action="flag" att="cms:review" val="new" backcolor="purple"/>
+&lt;/val></codeblock>
+          </pd>
+        </plentry>
         <plentry id="cli-color" rev="2.5">
           <pt><parmname>cli.color</parmname></pt>
           <pd>
@@ -102,6 +127,12 @@
               <xref href="https://en.wikipedia.org/wiki/ANSI_escape_code" format="html" scope="external">ANSI escape
                 codes</xref>, such as on Linux or macOS. Set to <option>false</option> to disable the color. (Colored
               output is not supported on Windows consoles such as <cmdname>cmd.exe</cmdname> or PowerShell).</p>
+          </pd>
+        </plentry>
+        <plentry id="default-coderef-charset" rev="3.0">
+          <pt><parmname>default.coderef-charset</parmname></pt>
+          <pd>
+            <p>Specifies the default character set for code references.</p>
           </pd>
         </plentry>
         <plentry id="plugindirs">

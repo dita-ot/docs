@@ -96,9 +96,10 @@
 
     <section id="java">
       <title>Supported Java versions</title>
-      <p id="java-clients">DITA-OT is designed to run on Java version <keyword keyref="tool.java.version"/> or later and
-        built and tested with the Open Java Development Kit (OpenJDK). Compatible Java distributions are available from
-        multiple sources:
+      <p id="java-clients">DITA-OT <keyword keyref="release"/> is designed to run on Java version <keyword
+          keyref="tool.java.version"
+        /> or later and built and tested with the Open Java Development Kit (OpenJDK).
+        Compatible Java distributions are available from multiple sources:
         <indexterm>Java
           <indexterm>versions</indexterm></indexterm>
         <indexterm>Amazon Corretto</indexterm>
@@ -114,6 +115,12 @@
             <xref keyref="download.openjdk.azul"/>, and
             <xref keyref="download.openjdk.redhat"/>.</li>
         </ul>
+      </p>
+      <p id="java-bc">
+        <note>The Java virtual machine is generally backwards compatible, so class files built with earlier versions
+          should still run correctly with Java 17 and DITA-OT <keyword keyref="release"/>. If your DITA-OT installation
+          contains plug-ins with custom Java code, you may need to recompile these with Java 17 — but in most cases,
+          this step should not be necessary.</note>
       </p>
     </section>
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<concept id="ID">
+  <title>PDF themes</title>
+  <shortdesc><ph id="shortdesc-ph">DITA-OT 4.0 includes the <codeph>com.elovirta.pdf</codeph> plug-in, which extends the
+      default PDF2 plug-in with a new <parmname>theme</parmname> parameter. The <parmname>--theme</parmname> option
+      takes a path to a theme file and changes the styling of the PDF output without requiring changes to XSLT
+      stylesheets.</ph></shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>transformations
+          <indexterm>PDF</indexterm></indexterm>
+        <indexterm>PDF
+          <indexterm>themes</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <div id="intro">
+      <p>Themes can be used to adjust basic settings like cover page images, page sizes, numbering, font properties,
+        background colors and borders, spacing, and running content like page headers and footers.</p>
+      <p>To generate PDF output with a custom theme, pass the theme file to the <cmdname>dita</cmdname> command with the
+          <parmname>--theme</parmname> option:</p>
+      <codeblock outputclass="syntax-bash"><cmdname>dita</cmdname> <parmname>--project</parmname>=<filepath
+        >samples/project-files/pdf.xml</filepath> \
+     <parmname>--theme</parmname>=<filepath>path/to/custom-theme-file.yaml</filepath></codeblock>
+    </div>
+    <p>The following topics provide details on the theme file formats and supported configuration options.</p>
+  </conbody>
+</concept>

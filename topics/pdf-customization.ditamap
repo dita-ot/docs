@@ -6,6 +6,8 @@
   <topicref keyref="pdf-customization-approaches"/>
   <topicref keyref="pdf2-creating-change-bars"/>
 
+  <mapref href="pdf-themes.ditamap"/>
+
   <reltable>
     <title>Bi-directional links</title>
     <relrow>
@@ -16,6 +18,23 @@
       </relcell>
       <relcell>
         <topicref keyref="pdf-customization-plugins"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="pdf-customization"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="books"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="pdf-customization-approaches"/>
+        <topicref keyref="pdf-customization-plugins"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="pdf-themes"/>
       </relcell>
     </relrow>
   </reltable>

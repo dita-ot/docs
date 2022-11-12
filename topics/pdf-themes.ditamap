@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<map>
+  <title>PDF themes</title>
+  <topicref keyref="pdf-themes">
+    <topicref keyref="sample-pdf-theme"/>
+    <topicref keyref="page-settings"/>
+    <topicref keyref="header-and-footer"/>
+    <topicref keyref="styles"/>
+    <topicref keyref="variables"/>
+    <topicref keyref="extending-themes"/>
+    <topicref keyref="syntactic-sugar"/>
+  </topicref>
+</map>

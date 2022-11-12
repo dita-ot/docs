@@ -16,17 +16,17 @@
   <keydef keys="release">
     <topicmeta>
       <keywords>
-        <keyword>3.7</keyword>
+        <keyword>4.0</keyword>
       </keywords>
     </topicmeta>
   </keydef>
 
-  <!-- DITA-OT: Latest maintenance version (normally 3 digits, 2 for initial minor release) -->
+  <!-- DITA-OT: Latest maintenance version (normally 3 digits, 2 for initial major/minor releases) -->
   <!-- ↓ excerpt-version ↓ -->
   <keydef keys="maintenance-version">
     <topicmeta>
       <keywords>
-        <keyword>3.7.4</keyword>
+        <keyword>4.0</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -35,7 +35,7 @@
   <keydef keys="draft-dita-grammar-state">
     <topicmeta>
       <keywords>
-        <keyword>January 2022</keyword>
+        <keyword>November 7, 2022</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -94,7 +94,7 @@
   <keydef keys="tool.java.version">
     <topicmeta>
       <keywords>
-        <keyword>8u101</keyword>
+        <keyword>17</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -103,6 +103,14 @@
     <topicmeta>
       <keywords>
         <keyword>1.2.8</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Lightweight DITA plug-in version-->
+  <keydef keys="tool.lwdita.version">
+    <topicmeta>
+      <keywords>
+        <keyword>3.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>

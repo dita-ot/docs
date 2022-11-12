@@ -1,0 +1,197 @@
+# Sample PDF theme
+#
+# https://github.com/jelovirt/pdf-generator/wiki/Theme
+
+# ↓ add-brand-colors ↓
+brand:
+  color:
+    primary: '#1d365d'
+    secondary: '#6c757d'
+    tertiary: '#bac8d1'
+    inverse: '#e9ecef'
+    links: '#3563ab'
+    note:
+      background:
+        attention: '#fff3cd'
+        caution: '#f8d7da'
+        info: '#dce4f0'
+        tip: '#d1e7dd'
+# ↑ end-brand-colors ↑
+
+# ↓ add-font-stacks ↓
+pdf2:
+  font:
+    sans: 'Helvetica, Arial Unicode MS, Tahoma, Batang, SimSun'
+    serif: 'Times New Roman, Times, Arial Unicode MS, Tahoma, Batang, SimSun'
+    monospaced: 'Courier New, Courier, Arial Unicode MS, Tahoma, Batang, SimSun'
+# ↑ end-font-stacks ↑
+
+# ↓ add-page-settings ↓
+page:
+  size: PA4
+  mirror-margins: true
+# ↑ end-page-settings ↑
+
+header:
+  color: $brand-color-secondary
+  display-align: before
+  end-indent: 10mm
+  font-family: $pdf2-font-sans
+  padding-after: 6pt
+  padding-before: 12pt
+  start-indent: 10mm
+  odd:
+    content: '{chapter}'
+    text-align: end
+  even:
+    content: '{title}'
+    text-align: start
+
+footer:
+  color: $brand-color-secondary
+  end-indent: 10mm
+  font-family: $pdf2-font-sans
+  padding-after: 12pt
+  padding-before: 6pt
+  start-indent: 10mm
+  odd:
+    content: '{folio}'
+    font-weight: bold
+    text-align: end
+  even:
+    content: '{folio}'
+    font-weight: bold
+    text-align: start
+
+style:
+  body:
+    font-family: $pdf2-font-serif
+    font-size: 11pt
+    line-height: 1.3
+    start-indent: 50pt
+  cmdname:
+    color: $brand-color-primary
+    font-weight: bold
+  codeblock:
+    background-color: $brand-color-inverse
+    border: solid 1pt $brand-color-tertiary
+    font-family: $pdf2-font-monospaced
+    font-size: 8pt
+    keep-together.within-page: always
+    space-after: 8pt
+  codeph:
+    color: $brand-color-secondary
+    font-size: '0.9 * from-parent(font-size)'
+  # ↓ set-cover-page ↓
+  cover:
+    background-image: dita-ot-logo-inverse.svg
+    background-repeat: no-repeat
+    height: 25.7cm
+  cover-title:
+    color: $brand-color-primary
+    font-size: 36pt
+    font-weight: bold
+    line-height: 1.5
+    space-before: 195mm
+  # ↑ end-cover-page ↑
+  example-title:
+    color: $brand-color-secondary
+  fig:
+    caption:
+      color: $brand-color-secondary
+      font-size: 9pt
+      font-style: italic
+      font-weight: normal
+  filepath:
+    color: $brand-color-secondary
+  h1:
+    border-after: solid 2pt $brand-color-inverse
+    color: $brand-color-primary
+    font-size: 18pt
+    space-before: 0pt
+    padding-top: 0pt
+    space-after: 9pt
+    font-weight: bold
+    title-numbering: true
+  h2:
+    border-after: solid 1pt $brand-color-inverse
+    color: $brand-color-primary
+    font-size: 16pt
+    font-style: italic
+    space-before: 16pt
+    space-after: 8pt
+    title-numbering: true
+  h3:
+    color: $brand-color-primary
+    font-size: 14pt
+    font-weight: bold
+    space-before: 21pt
+    space-after: 7pt
+  h4:
+    font-size: 12pt
+    font-style: italic
+    space-before: 12pt
+  link:
+    color: $brand-color-links
+  note:
+    background-color: $brand-color-note-background-info
+    border: solid 1pt $brand-color-tertiary
+    keep-together.within-page: always
+    label:
+      font-family: $pdf2-font-sans
+      space-end: 2pt
+    padding-start: 6pt
+    start-indent: '6pt + from-parent(start-indent)'
+    padding-end: 6pt
+    end-indent: '6pt + from-parent(end-indent)'
+    space-before: 6pt
+    space-after: 12pt
+    attention:
+      background-color: $brand-color-note-background-attention
+    caution:
+      background-color: $brand-color-note-background-caution
+    important:
+      background-color: $brand-color-note-background-attention
+    notice:
+      background-color: $brand-color-note-background-attention
+    restriction:
+      background-color: $brand-color-note-background-attention
+    tip:
+      background-color: $brand-color-note-background-tip
+    warning:
+      background-color: $brand-color-note-background-caution
+  section-title:
+    color: $brand-color-secondary
+  shortdesc:
+    color: $brand-color-secondary
+    font-size: 13pt
+    line-height: 1.3
+  table:
+    caption:
+      color: $brand-color-secondary
+      font-size: 9pt
+      font-style: italic
+      font-weight: normal
+    font-family: $pdf2-font-sans
+    font-size: 9pt
+    header:
+      background-color: $brand-color-inverse
+  toc-1:
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
+    start-indent: 0
+  toc-2:
+    color: black
+    space-before: 4pt
+    start-indent: 5pt
+  toc-3:
+    color: black
+    space-before: 2pt
+    start-indent: 24pt
+  toc-4:
+    color: black
+    space-before: 2pt
+    start-indent: 40pt
+  varname:
+    color: $brand-color-secondary
+    font-style: italic

@@ -7,8 +7,8 @@
     <shortdesc>Provides key definitions for each DITA topic in the repository.</shortdesc>
   </topicmeta>
   <keydef keys="adding-new-languages" href="../topics/adding-new-languages.dita"/>
-  <keydef keys="adding-plugins" href="../topics/adding-plugins.dita"/>
   <keydef keys="adding-new-strings" href="../topics/adding-new-strings.dita"/>
+  <keydef keys="adding-plugins" href="../topics/adding-plugins.dita"/>
   <keydef keys="ant" href="../topics/ant.dita"/>
   <keydef keys="ant-parameters-details" href="../parameters/ant-parameters-details.dita"/>
   <keydef keys="architecture" href="../reference/architecture.dita"/>
@@ -107,6 +107,7 @@
   <keydef keys="migrating-to-3.5" href="../topics/migrating-to-3.5.dita"/>
   <keydef keys="migrating-to-3.6" href="../topics/migrating-to-3.6.dita"/>
   <keydef keys="migrating-to-3.7" href="../topics/migrating-to-3.7.dita"/>
+  <keydef keys="migrating-to-4.0" href="../topics/migrating-to-4.0.dita"/>
   <keydef keys="migration" href="../topics/migration.dita"/>
   <keydef keys="other-errors" href="../topics/other-errors.dita"/>
   <keydef keys="output-formats" href="../topics/output-formats.dita"/>
@@ -127,6 +128,7 @@
   <keydef keys="pdf-plugin-structure_fo-attrs" href="../topics/pdf-plugin-structure_fo-attrs.dita"/>
   <keydef keys="pdf-plugin-structure_fo-i18n" href="../topics/pdf-plugin-structure_fo-i18n.dita"/>
   <keydef keys="pdf-plugin-structure_fo-xsl" href="../topics/pdf-plugin-structure_fo-xsl.dita"/>
+  <keydef keys="pdf-themes" href="../topics/pdf-themes.dita"/>
   <keydef keys="pdf-transform" href="../reference/pdf-transform.dita"/>
   <keydef keys="pdf-transformation-history" href="../reference/pdf-transformation-history.dita"/>
   <keydef keys="pdf2-creating-change-bars" href="../topics/pdf2-creating-change-bars.dita"/>
@@ -193,6 +195,7 @@
   <keydef keys="release-history" href="../topics/release-history.dita"/>
   <keydef keys="release-notes" href="../release-notes/index.dita"/>
   <keydef keys="reusable-components" href="../resources/reusable-components.dita"/>
+  <keydef keys="sample-pdf-theme" href="../topics/sample-pdf-theme.dita"/>
   <keydef keys="store-api" href="../reference/store-api.dita"/>
   <keydef keys="third-party-software" href="../reference/third-party-software.dita"/>
   <keydef keys="troubleshooting-overview" href="../topics/troubleshooting-overview.dita"/>
@@ -212,6 +215,7 @@
   <keydef keys="extension-points-in-org.dita.htmlhelp" href="../extension-points/extension-points-in-org.dita.htmlhelp.dita"/>
   <keydef keys="extension-points-in-org.dita.pdf2" href="../extension-points/extension-points-in-org.dita.pdf2.dita"/>
   <keydef keys="extension-points-in-org.dita.xhtml" href="../extension-points/extension-points-in-org.dita.xhtml.dita"/>
+  <keydef keys="extension-points-in-org.lwdita" href="../extension-points/extension-points-in-org.lwdita.dita"/>
   <keydef keys="parameters-base" href="../parameters/parameters-base.dita"/>
   <keydef keys="parameters-base-html" href="../parameters/parameters-base-html.dita"/>
   <keydef keys="parameters-eclipsehelp" href="../parameters/parameters-eclipsehelp.dita"/>
@@ -219,5 +223,13 @@
   <keydef keys="parameters-htmlhelp" href="../parameters/parameters-htmlhelp.dita"/>
   <keydef keys="parameters-pdf" href="../parameters/parameters-pdf.dita"/>
   <keydef keys="parameters-xhtml" href="../parameters/parameters-xhtml.dita"/>
+
+  <!-- PDF Plug-in Generator wiki (cloned as subrepo to `resources/theme`) -->
+  <keydef format="wikidocs" keys="extending-themes" href="../resources/theme/Extending-themes.md"/>
+  <keydef format="wikidocs" keys="header-and-footer" href="../resources/theme/Header-and-footer.md"/>
+  <keydef format="wikidocs" keys="page-settings" href="../resources/theme/Page-settings.md"/>
+  <keydef format="wikidocs" keys="styles" href="../resources/theme/Styles.md"/>
+  <keydef format="wikidocs" keys="syntactic-sugar" href="../resources/theme/Syntactic-sugar.md"/>
+  <keydef format="wikidocs" keys="variables" href="../resources/theme/Variables.md"/>
 
 </map>

@@ -45,6 +45,7 @@
             <filepath>dita-ot-build-actions.yml</filepath> and add the following code.</cmd>
           <stepxmp>
           <codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
               href="../samples/github-actions/minimal-action.yaml#line-range(1,12)"
             /></codeblock>
           </stepxmp>
@@ -55,6 +56,7 @@
         <cmd>In the same file, add the following code.</cmd>
         <stepxmp>
           <codeblock outputclass="language-yaml show-whitespace"><coderef
+              format="yaml"
               href="../samples/github-actions/minimal-action.yaml#line-range(13,18)"
             /></codeblock>
           <p>This action specifies the following:

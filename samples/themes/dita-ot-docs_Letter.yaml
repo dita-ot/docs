@@ -1,0 +1,4 @@
+# Sample PDF theme that changes page size for printing on US Letter paper
+extends: ./dita-ot-docs-theme.yaml
+page:
+  size: Letter

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<concept id="ID">
+  <title>Sample theme file</title>
+  <shortdesc>Theme files can be written in either
+    <xref keyref="json"/> or
+    <xref keyref="yaml"/> format. The <filepath>docsrc/samples/themes</filepath> folder in the DITA-OT installation
+    directory provides several examples.</shortdesc>
+  <conbody>
+    <note>The examples provided here are all in YAML format, which is generally more compact and readable than
+      JSON.</note>
+    <p>The YAML theme file used to produce the PDF output for the DITA-OT documentation is included in the installation
+      directory as <filepath conkeyref="conref-task/samples-dir"/><filepath
+      >/themes/dita-ot-docs-theme.yaml</filepath>.</p>
+    <p>The examples below include excerpts from this theme that show common customizations. You can adapt these examples
+      for your own requirements.</p>
+    <note type="tip">For an overview of the elements and other settings that the theme plug-in supports, see
+      <xref keyref="styles"/>,
+      <xref keyref="page-settings"/>,
+      <xref keyref="header-and-footer"/>, and
+      <xref keyref="variables"/>.</note>
+    <example>
+      <title>Setting custom colors</title>
+      <p>Like in CSS or
+        <xref keyref="sass-lang"/>, you can use
+        <xref keyref="variables"/> to define brand colors and other shared values, and re-use these them in other
+        <xref keyref="styles"/> using semantic references such as <codeph>$brand-color-primary</codeph>.</p>
+      <fig>
+        <title>Color variables in <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs-theme.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs-theme.yaml#token=add-brand-colors,end-brand-colors"
+            /></codeblock></p>
+      </fig>
+    </example>
+    <example>
+      <title>Defining custom font stacks</title>
+      <p>You can also use
+        <xref keyref="variables"/> to specify a prioritized list of one or more font family names and reference these
+        values in the <codeph>font-family</codeph> property of other
+        <xref keyref="styles">style</xref> keys.</p>
+      <fig>
+        <title>Font families in <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs-theme.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs-theme.yaml#token=add-font-stacks,end-font-stacks"
+            /></codeblock></p>
+      </fig>
+      <p>This theme uses the default font stacks from the default <codeph>org.dita.pdf2</codeph> plug-in, but the same
+        approach can be used to define other font families as required by your corporate identity.</p>
+      <p>The font variables defined here under the <codeph>pdf2</codeph> prefix could just as well be added to the
+          <codeph>brand</codeph> key, or under a company name prefix and re-used elsewhere with references such as
+          <codeph>$company-font-sans</codeph>.</p>
+    </example>
+    <example>
+      <title>Defining page sizes</title>
+      <p>
+        <xref keyref="page-settings"/> include page <codeph>size</codeph>, <codeph
+        >orientation</codeph>, and margins.</p>
+      <fig>
+        <title>Page settings in <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs-theme.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs-theme.yaml#token=add-page-settings,end-page-settings"
+            /></codeblock></p>
+      </fig>
+      <p>The DITA-OT documentation theme uses the <codeph>PA4</codeph> page size, a 21 × 28 cm transitional format 
+        suitable for printing on both A4 and US Letter paper.</p>
+      <p>The <codeph>mirror-margins</codeph> key sets up facing pages for double-sided documents, so the margins of the
+        left page are a mirror image of those on the right.</p>
+    </example>
+    <example>
+      <title>Extending and overriding themes</title>
+      <p>You can
+        <xref keyref="extending-themes">extend</xref> one theme with another. The samples in the DITA-OT installation
+        directory include additional theme files that can be used to override the <codeph>PA4</codeph> page size in the
+        documentation theme with either A4 or Letter.</p>
+      <fig>
+        <title>Switching page size to A4 with <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs_A4.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs_A4.yaml"
+            /></codeblock></p>
+      </fig>
+      <fig>
+        <title>Switching page size to Letter with <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs_Letter.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs_Letter.yaml"
+            /></codeblock></p>
+      </fig>
+      <p>When one of these theme extensions is passed to the <cmdname>dita</cmdname> command via the
+          <parmname>--theme</parmname> option, the <codeph>page-size</codeph> value in the extending theme takes
+        precedence over the original value in <filepath>dita-ot-docs-theme.yaml</filepath>.</p>
+      <p>If you add any new keys to a theme extension, they will be overlaid onto the keys from the extended theme.</p>
+    </example>
+    <example>
+      <title>Adding an image to the cover page</title>
+      <p>The <codeph>cover</codeph> and <codeph>cover-title</codeph>
+        <xref keyref="styles"/> can be used to add a background image and adjust the formatting and placement of the
+        document title.</p>
+      <fig>
+        <title>Cover page settings in <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs-theme.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs-theme.yaml#token=set-cover-page,end-cover-page"
+            /></codeblock></p>
+      </fig>
+      <p>The DITA-OT documentation theme references a background image stored in the same folder as the theme file, 
+        and places the title at the bottom of the page by
+        setting the <codeph>space-before</codeph> property for the <codeph>cover-title</codeph>.</p>
+    </example>
+  </conbody>
+</concept>

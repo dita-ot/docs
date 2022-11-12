@@ -165,7 +165,9 @@
           <li id="3827">
             <ph conkeyref="migrating-to-4.0/reflection"/>
           </li>
-          <li id="3830">Refactor attribute generation in XSLT
+          <li id="3830">Attribute generation routines in XSLT stylesheets have been refactored from the old XSLT 1.0
+            style <xmlelement>xsl:value-of select="…"</xmlelement> to the modern XSLT 2 notation:
+              <xmlelement>xsl:attribute select="…"/</xmlelement>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3830" format="html" scope="external">#3830</xref>
           </li>
           <li id="3851">Better design for "skip" properties

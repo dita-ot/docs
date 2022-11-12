@@ -125,7 +125,8 @@
           <li>Markdown input improvements:
             <ul>
               <li>Improve subscript and superscript support</li>
-              <li>Fix backslash escapes in code phrases</li>
+              <li>Fix backslash escapes in code phrases (applies only to
+                  <xmlatt>format</xmlatt>=<codeph>markdown</codeph>, as MDITA does not support code phrases)</li>
               <li>Add support for table spanning</li>
             </ul>
           </li>

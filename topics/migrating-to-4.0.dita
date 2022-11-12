@@ -41,5 +41,18 @@
       </p>
     </section>
 
+    <section id="UTF8-coderef">
+      <title>Code references now default to UTF-8 encoding</title>
+      <p>The default character set for code references has been changed from the system default encoding to UTF-8.</p>
+      <p>This allows a wider range of characters to be used without needing to specify the <xmlatt>format</xmlatt>
+        attribute on the <xmlelement>coderef</xmlelement> element as described in
+        <xref keyref="extended-functionality/coderef-charset">character set definition</xref> or change the default
+        encoding in the
+        <xref keyref="configuration-properties-file"><filepath>configuration.properties</filepath> file</xref>.
+        <xref href="https://github.com/dita-ot/dita-ot/issues/4046" format="html" scope="external">#4046</xref>
+        <note>If you have code references that require a different encoding, use either of these mechanisms to specify
+          the character set explicitly.</note>
+      </p>
+    </section>
   </refbody>
 </reference>

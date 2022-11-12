@@ -129,6 +129,12 @@
               output is not supported on Windows consoles such as <cmdname>cmd.exe</cmdname> or PowerShell).</p>
           </pd>
         </plentry>
+        <plentry id="default-coderef-charset" rev="3.0">
+          <pt><parmname>default.coderef-charset</parmname></pt>
+          <pd>
+            <p>Specifies the default character set for code references.</p>
+          </pd>
+        </plentry>
         <plentry id="plugindirs">
           <pt><parmname>plugindirs</parmname></pt>
           <pd id="plugindirs.desc">

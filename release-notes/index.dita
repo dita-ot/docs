@@ -218,6 +218,11 @@
           <li id="3684">Namespaced content in chunked topics
             <xref href="https://github.com/dita-ot/dita-ot/issues/3684" format="html" scope="external">#3684</xref>
           </li>
+          <li id="4018">The <codeph>FINALOUTPUTTYPE</codeph> XSLT parameter has been removed from
+              <filepath>maplinkImpl.xsl</filepath> and <filepath>mappullImpl.xsl</filepath>; this parameter is a legacy
+            of very early code and has never been used by DITA-OT.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4018" format="html" scope="external">#4018</xref>
+          </li>
           <li id="4032">In DITA-OT 3.7.4, publishing failed with an IllegalArgumentException when images were referenced
             with an HTTP URI scheme. Processing has been corrected to set the missing <xmlatt>scope</xmlatt> attribute 
             to <codeph>external</codeph> per <xref keyref="dita13-spec-scope-att"/>.

@@ -132,6 +132,11 @@
               <li>Add support for table spanning</li>
             </ul>
           </li>
+          <li>In previous releases, standard Markdown syntax could be used to indicate a span of code by wrapping it
+            with backtick quotes (<codeph>`</codeph>). These constructs were converted to DITA
+              <xmlelement>codeph</xmlelement> elements on import, and rendered as <xmlelement>code</xmlelement> elements
+            in HTML output. This support has been removed from MDITA processing to align with LwDITA, which does not
+            support code phrase markup.</li>
         </ul>
       </section>
 

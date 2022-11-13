@@ -196,6 +196,8 @@
           </li>
           <li id="3926">Grammar caching and validation has been added for RELAX NG–based DITA topics and maps. Together
             these enhancements make publishing faster and more reliable for RNG-based content.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3253" format="html" scope="external">#3253</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3661" format="html" scope="external">#3661</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3926" format="html" scope="external">#3926</xref>
           </li>
           <li id="3974">Many XSLT files have been updated to use <codeph>#current</codeph> for the processing mode. This

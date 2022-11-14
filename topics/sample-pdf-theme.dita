@@ -100,7 +100,7 @@
         precedence over the original value in <filepath>dita-ot-docs-theme.yaml</filepath>.</p>
       <p>If you add any new keys to a theme extension, they will be overlaid onto the keys from the extended theme.</p>
     </example>
-    <example>
+    <example id="headers-footers">
       <title>Setting up headers and footers</title>
       <p>The documentation theme includes sample customizations to adjust the content of the running headers and footers
         that appear on each page.</p>

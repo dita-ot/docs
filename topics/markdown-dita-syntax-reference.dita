@@ -212,7 +212,7 @@ baz</codeblock>
         </tgroup>
       </table>
       <p>All other link targets use <codeph>format</codeph> from file extension and are treated as non-DITA files.
-        Absolute links targets are treated as external scope links:</p>
+        Absolute link targets are treated as external scope links:</p>
       <codeblock outputclass="language-markdown normalize-space show-line-numbers show-whitespace">[Markdown](test.md)
 [DITA](test.dita)
 [HTML](test.html)

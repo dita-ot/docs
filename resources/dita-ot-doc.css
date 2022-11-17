@@ -910,11 +910,18 @@ Tables
 
 table,
 .table {
-  border: 1px solid var(--secondary-light);
+  border-bottom: 1px solid var(--secondary-light);
+  border-top: 1px solid var(--secondary-light);
   font-size: 0.9rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
   padding: 0.5rem;
+}
+
+.frame-all,
+.frame-topbot {
+  border-bottom: 1px solid var(--secondary-light);
+  border-top: 1px solid var(--secondary-light);
 }
 
 .stentry,
@@ -930,7 +937,7 @@ tr {
 }
 
 .stentry {
-  border-right-color: var(--secondary-light);
+  border-right: 0;
 }
 
 th { /* stylelint-disable-line no-duplicate-selectors -- Override almond.css */

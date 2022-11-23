@@ -4,5 +4,12 @@ updates:
     directory: '/'
     schedule:
       interval: monthly
-      time: '07:00'
+      time: '12:00'
+      timezone: 'Europe/Berlin'
     open-pull-requests-limit: 10
+  - package-ecosystem: github-actions
+    directory: '/'
+    schedule:
+      interval: monthly
+      time: '12:00'
+      timezone: 'Europe/Berlin'

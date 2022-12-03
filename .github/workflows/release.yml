@@ -49,7 +49,7 @@ jobs:
           curl -sL https://github.com/dita-ot/org.dita-ot.html/archive/refs/heads/${{ env.WEBSITE_PLUGIN_BRANCH }}.zip -o org.dita-ot.html.zip
 
       - name: Cache render DITA-OT
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: dita-ot-${{ env.DITA_OT_VERSION }}
           key: ${{ runner.os }}-dita-ot-${{ env.DITA_OT_VERSION }}

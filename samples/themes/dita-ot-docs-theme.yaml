@@ -1,6 +1,6 @@
 # Sample PDF theme
 #
-# https://github.com/jelovirt/pdf-generator/wiki/Theme
+# https://www.dita-ot.org/dev/topics/sample-pdf-theme.html
 
 # ↓ add-brand-colors ↓
 brand:
@@ -32,6 +32,7 @@ page:
   mirror-margins: true
 # ↑ end-page-settings ↑
 
+# ↓ add-header-setup ↓
 header:
   color: $brand-color-secondary
   display-align: before
@@ -46,7 +47,9 @@ header:
   even:
     content: '{title}'
     text-align: start
+# ↑ end-header-setup ↑
 
+# ↓ add-footer-setup ↓
 footer:
   color: $brand-color-secondary
   end-indent: 10mm
@@ -62,6 +65,7 @@ footer:
     content: '{folio}'
     font-weight: bold
     text-align: start
+# ↑ end-footer-setup ↑
 
 style:
   body:

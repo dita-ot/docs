@@ -54,7 +54,7 @@
     <section>
       <title>New plug-in extension points </title>
       <p>New plug-in extension points have been added allow configuring DITA-OT behavior based on file extensions.</p>
-      <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
+      <table outputclass="table-hover" frame="topbot" colsep="0" rowsep="1">
         <tgroup cols="3">
           <colspec colwidth="1*"/>
           <colspec colwidth="1*"/>
@@ -92,7 +92,7 @@
       </table>
       <p>Both HTML and resource file extensions are used to determine if a file in source is copied to output.</p>
       <p>A new plug-in extension point has been added to declare transformation types as print types.</p>
-      <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
+      <table outputclass="table-hover" frame="topbot" colsep="0" rowsep="1">
         <tgroup cols="2">
           <colspec colwidth="1*"/>
           <colspec colwidth="1*"/>
@@ -147,7 +147,7 @@
       <p>The <parmname>args.bookmap-order</parmname> property has been added to control how front and back matter are
         processed in bookmaps. The default is to reorder the frontmatter content as in previous releases.</p>
       <p>A new extension point has been added to add mappings to the PDF configuration catalog file.</p>
-      <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
+      <table outputclass="table-hover" frame="topbot" colsep="0" rowsep="1">
         <tgroup cols="2">
           <colspec colwidth="1*"/>
           <colspec colwidth="1*"/>

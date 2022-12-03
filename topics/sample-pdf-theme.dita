@@ -20,7 +20,7 @@
       <xref keyref="page-settings"/>,
       <xref keyref="header-and-footer"/>, and
       <xref keyref="variables"/>.</note>
-    <example>
+    <example id="colors">
       <title>Setting custom colors</title>
       <p>Like in CSS or
         <xref keyref="sass-lang"/>, you can use
@@ -35,7 +35,7 @@
             /></codeblock></p>
       </fig>
     </example>
-    <example>
+    <example id="fonts">
       <title>Defining custom font stacks</title>
       <p>You can also use
         <xref keyref="variables"/> to specify a prioritized list of one or more font family names and reference these
@@ -55,7 +55,7 @@
           <codeph>brand</codeph> key, or under a company name prefix and re-used elsewhere with references such as
           <codeph>$company-font-sans</codeph>.</p>
     </example>
-    <example>
+    <example id="page-size">
       <title>Defining page sizes</title>
       <p>
         <xref keyref="page-settings"/> include page <codeph>size</codeph>, <codeph
@@ -73,7 +73,7 @@
       <p>The <codeph>mirror-margins</codeph> key sets up facing pages for double-sided documents, so the margins of the
         left page are a mirror image of those on the right.</p>
     </example>
-    <example>
+    <example id="overrides">
       <title>Extending and overriding themes</title>
       <p>You can
         <xref keyref="extending-themes">extend</xref> one theme with another. The samples in the DITA-OT installation
@@ -100,7 +100,36 @@
         precedence over the original value in <filepath>dita-ot-docs-theme.yaml</filepath>.</p>
       <p>If you add any new keys to a theme extension, they will be overlaid onto the keys from the extended theme.</p>
     </example>
-    <example>
+    <example id="headers-footers">
+      <title>Setting up headers and footers</title>
+      <p>The documentation theme includes sample customizations to adjust the content of the running headers and footers
+        that appear on each page.</p>
+      <fig>
+        <title>Formatting headers and running content in <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs-theme.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs-theme.yaml#token=add-header-setup,end-header-setup"
+            /></codeblock></p>
+      </fig>
+      <p>These settings use the secondary brand color for page headers (as defined above under
+        <xref href="#./colors"/>), the sans-serif font families defined above under
+        <xref href="#./fonts"/>, and position the content with indentation and padding.</p>
+      <fig>
+        <title>Formatting footers and page numbers in <filepath conkeyref="conref-task/samples-dir"/><filepath
+          >/themes/dita-ot-docs-theme.yaml</filepath></title>
+        <p><codeblock outputclass="language-yaml normalize-space show-whitespace"><coderef
+              format="yaml"
+              href="../samples/themes/dita-ot-docs-theme.yaml#token=add-footer-setup,end-footer-setup"
+            /></codeblock></p>
+      </fig>
+      <p>These settings use the <codeph>{folio}</codeph> field to place the current page number on the outside edges of
+        each page footer. The <codeph>content</codeph> key may include combinations of static text, or reference
+        variables using curly braces. For details on the available options, see
+        <xref keyref="header-and-footer"/> and
+        <xref keyref="variables"/>.</p>
+    </example>
+    <example id="cover-page">
       <title>Adding an image to the cover page</title>
       <p>The <codeph>cover</codeph> and <codeph>cover-title</codeph>
         <xref keyref="styles"/> can be used to add a background image and adjust the formatting and placement of the
@@ -116,6 +145,12 @@
       <p>The DITA-OT documentation theme references a background image stored in the same folder as the theme file, 
         and places the title at the bottom of the page by
         setting the <codeph>space-before</codeph> property for the <codeph>cover-title</codeph>.</p>
+      <note type="tip">The latest version of the documentation theme is available on GitHub:
+        <xref
+          format="html"
+          scope="external"
+          href="https://github.com/dita-ot/docs/blob/develop/samples/themes/dita-ot-docs-theme.yaml"
+        >dita-ot-docs-theme.yaml</xref>.</note>
     </example>
   </conbody>
 </concept>

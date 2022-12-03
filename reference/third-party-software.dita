@@ -18,7 +18,7 @@
     <section>
       <title>DITA-OT <keyword keyref="release"/></title>
       <p>DITA-OT core processing uses the following third-party software:</p>
-      <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
+      <table outputclass="table-hover" frame="topbot" colsep="0" rowsep="1">
         <tgroup cols="3">
           <colspec colname="project" colwidth="2*"/>
           <colspec colname="version" colwidth="1*"/>
@@ -128,7 +128,7 @@
       <title>PDF plug-in</title>
       <p>The <codeph>org.dita.pdf2</codeph> plug-in relies on additional third-party software to generate PDF
         output:</p>
-      <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
+      <table outputclass="table-hover" frame="topbot" colsep="0" rowsep="1">
         <tgroup cols="3">
           <colspec colname="project" colwidth="1*"/>
           <colspec colname="version" colwidth="1*"/>

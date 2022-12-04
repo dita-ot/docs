@@ -8,8 +8,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA-OT <keyword keyref="release"/> requires Java 17 and includes <ph conref="#v4.0/summary"/>.
-    </shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v4.0/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -22,6 +22,55 @@
           since previous release.</draft-comment>
         <p conkeyref="reusable-components/java-clients"/>
         <p conkeyref="reusable-components/java-bc"/>
+      </section>
+    </refbody>
+  </reference>
+  
+  <reference id="v4.0.1" outputclass="mark">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <ph outputclass="small text-muted"> work in progress… <!--released mmmm D, yyyy--></ph>
+    </title>
+    
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0.1+is%3Aclosed+sort%3Acreated-asc -->
+          <li id="3435">Comment or deprecate "place-tbl-lbl" named template 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3435" format="html" scope="external">#3435</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4056" format="html" scope="external">#4056</xref>
+          </li>
+          <li id="4015">Property 'args.html5.toc.class' does not work in HTML5 transformation
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4015" format="html" scope="external">#4015</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4065" format="html" scope="external">#4065</xref>
+          </li>
+          <li id="4016">Security problem in Jackson libraries
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4016" format="html" scope="external">#4016</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4058" format="html" scope="external">#4058</xref>
+          </li>
+          <li id="4017">PDF2 renders index entries in link text
+            filter <xmlelement>indexterm</xmlelement> elements when computing <xmlelement>xref</xmlelement>
+            target text for pdf2
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4017" format="html" scope="external">#4017</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4030" format="html" scope="external">#4030</xref>
+          </li>
+          <li id="4021">Syntax Diagram ID attribute doesn't propagate into HTML output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4021" format="html" scope="external">#4021</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4057" format="html" scope="external">#4057</xref>
+          </li>
+          <li id="4029">Fix typo in DOTX034E (can't generate link text for xref to unordered list item)
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4029" format="html" scope="external">#4029</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0.1+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.0.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.0...4.0.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>

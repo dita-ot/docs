@@ -54,5 +54,17 @@
           the character set explicitly.</note>
       </p>
     </section>
+    
+    <section id="deprecated-templates">
+      <title>Deprecated <codeph>place-tbl-lbl</codeph> template in HTML5</title>
+      <p>
+        <ph id="place-tbl-lbl">The <codeph>place-tbl-lbl</codeph> template that was originally used to define table
+          titles in XHTML has been deprecated in HTML5 processing and will be removed in a future release. This template
+          was carried over from XHTML code (which still has a copy that is used), but the copy in HTML5 is not called.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3435" format="html" scope="external">#3435</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4056" format="html" scope="external">#4056</xref>
+        </ph>
+      </p>
+    </section>
   </refbody>
 </reference>

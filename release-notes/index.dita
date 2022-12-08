@@ -25,12 +25,12 @@
       </section>
     </refbody>
   </reference>
-  
+
   <reference id="v4.0.1" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted"> work in progress… <!--released mmmm D, yyyy--></ph>
+      <!--<ph outputclass="small text-muted"> released mmmm D, yyyy</ph>-->
     </title>
-    
+
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
@@ -68,6 +68,11 @@
           <li id="4029">A spelling mistake has been corrected in the <msgnum>DOTX034E</msgnum> message that appears when
             unordered list items are cross-referenced without specifying link text.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4029" format="html" scope="external">#4029</xref>
+          </li>
+          <li id="4043">In earlier versions, conditional processing did not work as expected when specialized attributes
+            were used for flagging. The flagging module has been updated to work correctly with specialized attributes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4043" format="html" scope="external">#4043</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4053" format="html" scope="external">#4053</xref>
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the

@@ -33,7 +33,7 @@
   <conbody>
     <p>In addition to the HTML output and CSS files, this transformation returns the following files, where
         <varname>mapname</varname> is the name of the root map.</p>
-    <simpletable outputclass="table-hover" frame="all" relcolwidth="2* 3*">
+    <simpletable outputclass="table-hover" frame="topbot" relcolwidth="2* 3*">
       <sthead>
         <stentry>File name</stentry>
         <stentry>Description</stentry>

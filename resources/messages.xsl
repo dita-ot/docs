@@ -49,7 +49,7 @@
       <refbody>
         <section id="overview"><p>Plug-ins may be used to add additional error messages into the toolkit;
           for more information, see <cite>Customizing DITA-OT</cite>.</p></section>
-        <table outputclass="table-hover" frame="bottom" colsep="0" rowsep="1">
+        <table outputclass="table-hover" frame="topbot" colsep="0" rowsep="1">
           <title>DITA-OT error messages</title>
           <tgroup cols="4">
             <colspec colname="message" colwidth="1.5*"/>

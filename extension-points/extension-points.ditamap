@@ -13,11 +13,11 @@
     <topicref keyref="extension-points-by-plugin">
       <!-- Include only topics for plug-ins that actually provide extension points. -->
       <topicref keyref="extension-points-in-org.dita.base"/>
-      <topicref keyref="extension-points-in-org.dita.eclipsehelp"/>
-      <topicref keyref="extension-points-in-org.dita.html5"/>
-      <topicref keyref="extension-points-in-org.dita.htmlhelp"/>
       <topicref keyref="extension-points-in-org.dita.pdf2"/>
       <topicref keyref="extension-points-in-org.dita.xhtml"/>
+      <topicref keyref="extension-points-in-org.dita.html5"/>
+      <topicref keyref="extension-points-in-org.dita.htmlhelp"/>
+      <topicref keyref="extension-points-in-org.dita.eclipsehelp"/>
       <topicref keyref="extension-points-in-org.lwdita"/>
     </topicref>
     <topicref keyref="extension-points-details" processing-role="resource-only" toc="no"/>

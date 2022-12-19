@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<map>
+  <title>DITA-OT Day 2022</title>
+  <topicref keyref="dita-ot-day-videos-intro-2022" locktitle="yes">
+    <topicmeta>
+      <navtitle>2022 Rotterdam</navtitle>
+      <linktext>Rotterdam 2022</linktext>
+    </topicmeta>
+    <!-- This ditaval prevents duplicate titles in TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
+    <!-- See https://github.com/dita-ot/dita-ot/issues/3581 -->
+    <topicref keyref="makingthemigrationleapju-2022" toc="no"/>
+    <topicref keyref="technicalvalues-2022" toc="no"/>
+    <topicref keyref="avoidingduplicateeffortw-2022" toc="no"/>
+    <topicref keyref="ditaandmarkdownanddocker-2022" toc="no"/>
+    <topicref keyref="scalingtheditaopentoolki-2022" toc="no"/>
+    <topicref keyref="simplercustompdfs-theuse-2022" toc="no"/>
+    <topicref keyref="simplercustompdfs-thetec-2022" toc="no"/>
+    <topicref keyref="variousditapublishingide-2022" toc="no"/>
+    <topicref keyref="pushingsquarepegsintorou-2022" toc="no"/>
+    <topicref keyref="extendingdoctalesrevealj-2022" toc="no"/>
+    <topicref keyref="superchargingdita-otwebh-2022" toc="no"/>
+    <topicref keyref="ourexperiencehelpingthed-2022" toc="no"/>
+    <topicref keyref="ditahtmlstylingviabootst-2022" toc="no"/>    
+  </topicref>
+  <reltable>
+    <relheader>
+      <relcolspec linking="sourceonly"><!-- Source --></relcolspec>
+      <relcolspec linking="targetonly"><!-- Target --></relcolspec>
+    </relheader>
+    <relrow>
+      <relcell><topicref keyref="bootstrappingdita-custom-2017" toc="no"/></relcell>
+      <relcell>
+        <topicref keyref="ditahtmlstylingviabootst-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="ourexperiencehelpingthed-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="superchargingdita-otwebh-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="extendingdoctalesrevealj-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="pushingsquarepegsintorou-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="variousditapublishingide-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell><topicref keyref="pdf-themes" toc="no"/></relcell>
+      <relcell>
+        <topicref keyref="simplercustompdfs-thetec-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="pdf-themes" toc="no"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="simplercustompdfs-theuse-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="scalingtheditaopentoolki-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="using-docker-images" toc="no"/>
+        <topicref keyref="markdown-dita-syntax-reference"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="ditaandmarkdownanddocker-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="avoidingduplicateeffortw-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell>
+        <topicref keyref="technicalvalues-2022" toc="no"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="migration" toc="no"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="makingthemigrationleapju-2022" toc="no"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

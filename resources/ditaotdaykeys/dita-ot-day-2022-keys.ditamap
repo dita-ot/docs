@@ -11,9 +11,9 @@
   >
     <topicmeta>
       <linktext>DITA HTML Styling via Bootstrap 5</linktext>
-      <shortdesc> A code walkthrough of the updated html-bootstrap plugin demonstrating newly supported
+      <shortdesc>A code walkthrough of the updated html-bootstrap plugin demonstrating newly supported
         components and accessibility options, and discussing the challenges of mapping DITA to structured HTML using XSL
-        transforms. </shortdesc>
+        transforms.</shortdesc>
       <author>Jason Fox</author>
     </topicmeta>
   </keydef>
@@ -25,9 +25,9 @@
   >
     <topicmeta>
       <linktext>Our experience helping the DITA-OT project as a commercial company - Radu Coravu</linktext>
-      <shortdesc> I will cover the various ways in which Oxygen XML Editor tries to help the DITA Open Toolkit project
+      <shortdesc>I will cover the various ways in which Oxygen XML Editor tries to help the DITA Open Toolkit project
         (by adding issues, opening pull requests, adding documentation issues, helping people with DITA OT related
-        questions on various channels, attending in the DITA OT meetings and sponsoring the DITA OT Day events). </shortdesc>
+        questions on various channels, attending in the DITA OT meetings and sponsoring the DITA OT Day events).</shortdesc>
       <author>Radu Coravu</author>
     </topicmeta>
   </keydef>
@@ -39,11 +39,11 @@
   >
     <topicmeta>
       <linktext>Supercharging DITA-OT Webhelp creation</linktext>
-      <shortdesc> DITA is all about reuse, but when it comes to publishing, none of the existing output makes it into
+      <shortdesc>DITA is all about reuse, but when it comes to publishing, none of the existing output makes it into
         the new publication. In this lightning talk, I will demonstrate how Webhelp (or any HTML-based) output creation
         can be made 1000 times faster by only recompiling the DITA files that have changed. Using technology that
         existed even before the birth of XML in a way that nobody has tried before. Conceptual talk, but including proof
-        of concept with fully working demo. Fasten your seatbelts before takeoff. </shortdesc>
+        of concept with fully working demo. Fasten your seatbelts before takeoff.</shortdesc>
       <author>Jang Graat</author>
     </topicmeta>
   </keydef>
@@ -55,9 +55,9 @@
   >
     <topicmeta>
       <linktext>Extending Doctales reveal.js with CSS Grid - Lief Erickson</linktext>
-      <shortdesc> The Doctales plugin creates web presentations using the reveal.js framework. By default the reveal
+      <shortdesc>The Doctales plugin creates web presentations using the reveal.js framework. By default the reveal
         framework does not support CSS Grid or viewport overflow. I'll cover how I extended the XSLT in a new plugin and
-        added a new theme with CSS grid and other features using SCSS. </shortdesc>
+        added a new theme with CSS grid and other features using SCSS.</shortdesc>
       <author>Lief Erickson</author>
     </topicmeta>
   </keydef>
@@ -69,11 +69,11 @@
   >
     <topicmeta>
       <linktext>Pushing square pegs into round holes</linktext>
-      <shortdesc> Topic based structured writing doesn’t require DITA or XML. It can be done with a pen and paper. What
+      <shortdesc>Topic based structured writing doesn’t require DITA or XML. It can be done with a pen and paper. What
         is required, however, is a lot of discipline. What happens when people are sold an authoring format that allows
         you to write DITA and that technology will not hold your hand and help you to stick to the rules and guidelines?
         A description of what happens in one DITA processor when it’s given something that is not DITA but the user
-        really, really wants it to work. </shortdesc>
+        really, really wants it to work.</shortdesc>
       <author>Jarno Elovirta</author>
     </topicmeta>
   </keydef>
@@ -85,11 +85,11 @@
   >
     <topicmeta>
       <linktext>Various DITA publishing ideas experimented on the Oxygen XML Blog - Radu Coravu</linktext>
-      <shortdesc> I will discuss about various articles we wrote on the Oxygen XML Blog in the last years about various
+      <shortdesc>I will discuss about various articles we wrote on the Oxygen XML Blog in the last years about various
         ways to enhance DITA publishing: Generating Google Structured Data Generating content for the Google Chatbot
         Converting OpenAPI to DITA content Showing consecutive codeblocks in separate tabs Generating an RSS feed
         Tagging certain articles with labels Embedding diagrams in DITA content Creating Link Graphs From DITA Maps
-        Publishing DITA Content Using the MKDocs Web Site Generator and others. </shortdesc>
+        Publishing DITA Content Using the MKDocs Web Site Generator and others.</shortdesc>
       <author>Radu Coravu</author>
     </topicmeta>
   </keydef>
@@ -101,9 +101,9 @@
   >
     <topicmeta>
       <linktext>Simpler custom PDFs - The technical details</linktext>
-      <shortdesc> Technical description of how the new theme plug-in processes theme files to produce PDF output. We go
+      <shortdesc>Technical description of how the new theme plug-in processes theme files to produce PDF output. We go
         through how code generation is used to produce XSLT templates that build on PDF2 processing and how that allows
-        us to produce PDFs without coding XSLT. No prior experience with PDF2 customization is required. </shortdesc>
+        us to produce PDFs without coding XSLT. No prior experience with PDF2 customization is required.</shortdesc>
       <author>Jarno Elovirta</author>
     </topicmeta>
   </keydef>
@@ -115,13 +115,13 @@
   >
     <topicmeta>
       <linktext>Simpler custom PDFs - The user perspective</linktext>
-      <shortdesc> Many tech writers find it hard to customize the DITA Open Toolkit’s default PDF output. Even
+      <shortdesc>Many tech writers find it hard to customize the DITA Open Toolkit’s default PDF output. Even
         relatively minor adjustments require knowledge of XSLT, attribute sets, DITA-OT plug-ins, and a bit of research
         to figure out what you need to change. What if there were an easier way? The DITA-OT project team has been
         working on an alternative mechanism that can be used to configure basic formatting in a simple plain-text theme
         file. This approach makes it easier to adjust page sizes, headers and footers, and various attributes for common
         elements. While complex customizations would still require a custom plug-in, if you just need to tweak a few
-        font families and colors to approximate your company branding, this new alternative might be all you need. </shortdesc>
+        font families and colors to approximate your company branding, this new alternative might be all you need.</shortdesc>
       <author>Roger Sheen</author>
     </topicmeta>
   </keydef>
@@ -133,7 +133,7 @@
   >
     <topicmeta>
       <linktext>Scaling the DITA Open Toolkit for Enterprise Use - Robert Anderson</linktext>
-      <shortdesc> Moderated discussion about scaling the DITA Open Toolkit for use in big companies. </shortdesc>
+      <shortdesc>Moderated discussion about scaling the DITA Open Toolkit for use in big companies.</shortdesc>
       <author>Robert Anderson</author>
     </topicmeta>
   </keydef>
@@ -145,7 +145,7 @@
   >
     <topicmeta>
       <linktext>DITA and Markdown and Docker, oh my…</linktext>
-      <shortdesc> Nokia’s Cloud and Network Services is one of three major business groups in Nokia, all of which use
+      <shortdesc>Nokia’s Cloud and Network Services is one of three major business groups in Nokia, all of which use
         DITA and DITA-OT for the great majority of customer-facing documentation. Unlike Nokia’s Mobile Networks or
         Network Infrastructure groups, CNS focuses entirely on software for both cloud and core network solutions and
         services. With the advent of co-authoring between DITA content from Technical Writers and Markdown content from
@@ -160,7 +160,7 @@
         customizations is accomplished using a combination of XSpec, AntUnit and Jenkins. The next wave of OT plugins
         will support OpenAPI3 conversion to DITA in a pre-process plugin and to Markdown. We will also be enriching our
         content to better support modern presentation solutions, including the application of machine learning and
-        AI-assisted solutions. </shortdesc>
+        AI-assisted solutions.</shortdesc>
       <author>John Kirkilis</author>
     </topicmeta>
   </keydef>
@@ -172,9 +172,9 @@
   >
     <topicmeta>
       <linktext>Avoiding duplicate effort with post-preprocessing - Tim Grantham </linktext>
-      <shortdesc> If you have publishing requirements, such as custom styling or content restructuring, that applies to
+      <shortdesc>If you have publishing requirements, such as custom styling or content restructuring, that applies to
         multiple outputs (such as PDF and HTML), use post-preprocessing to restructure content before it heads further
-        down the pipeline. </shortdesc>
+        down the pipeline.</shortdesc>
       <author>Tim Grantham </author>
     </topicmeta>
   </keydef>
@@ -186,8 +186,8 @@
   >
     <topicmeta>
       <linktext>Technical values - Stefan Jung</linktext>
-      <shortdesc> This talk shows how to single-source technical values in a complex environment with a product
-        information management system and how to convert it to various different formats on-the-fly. </shortdesc>
+      <shortdesc>This talk shows how to single-source technical values in a complex environment with a product
+        information management system and how to convert it to various different formats on-the-fly.</shortdesc>
       <author>Stefan Jung</author>
     </topicmeta>
   </keydef>
@@ -199,14 +199,14 @@
   >
     <topicmeta>
       <linktext>Making the migration leap: jumping across versions to the latest DITA-OT - Robert D. Anderson</linktext>
-      <shortdesc> Many DITA-OT implementations are unable or unwilling to move off of obsolete versions. Some shops
+      <shortdesc>Many DITA-OT implementations are unable or unwilling to move off of obsolete versions. Some shops
         continue to run version 1.8.5, released 8 years back (and 15 major versions behind the latest). Why is that the
         case? What is preventing teams from moving to a more recent, full featured, and supported release? In this
         session we will discuss what’s involved in moving off of older releases from 1.x, 2.x, and now early 3.x. Most
         importantly, is it worth it? What would you get from upgrading? When you decide to move, should you go one
         version at a time, or jump to the latest? Attendees who have gone through this migration in the last few years
         are encouraged to discuss their experience; attendees who are still running older releases are likewise
-        encouraged to discuss their concerns or share any upgrade plans. </shortdesc>
+        encouraged to discuss their concerns or share any upgrade plans.</shortdesc>
       <author>Robert D. Anderson</author>
     </topicmeta>
   </keydef>

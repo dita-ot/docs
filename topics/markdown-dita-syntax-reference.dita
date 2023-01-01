@@ -169,7 +169,7 @@ Context
     <section id="hard-line-breaks">
       <title>Hard line breaks</title>
       <p>A line break that is preceded by two or more spaces is parsed as a hard line break. Because DITA doesn't have a
-          <codeph>&lt;br&gt;</codeph> element for line break, hard line breaks are converted into
+          <xmlelement>br</xmlelement> element for line break, hard line breaks are converted into
           <xmlpi>linebreak</xmlpi> processing instructions.</p>
       <codeblock outputclass="language-markdown normalize-space show-line-numbers show-whitespace">foo··
 baz</codeblock>

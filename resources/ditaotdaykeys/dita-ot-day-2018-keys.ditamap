@@ -134,9 +134,9 @@
       <linktext>Step by step implementation of a DITA Open Toolkit plugin</linktext>
       <shortdesc>There are lots of DITA-OT extension points, maybe list some of the most common ones, then based on 3-4
         use cases implement small plugins which use those extension points. For example: a plugin which changes the
-        default label value for "Note"a plugin which adds an XHTML customization matching a DITA element with a certain
-        @status attribute value and producing a certain HTML spana plugin which customizes the PDF processing in some
-        waya plugin which adds a specialization DTD with an XML catalog</shortdesc>
+        default label value for "Note"; a plugin which adds an XHTML customization matching a DITA element with a
+        certain <xmlatt>status</xmlatt> attribute value and producing a certain HTML span; a plugin which customizes the
+        PDF processing in some way; a plugin which adds a specialization DTD with an XML catalog</shortdesc>
       <author>Radu Coravu</author>
     </topicmeta>
   </keydef>

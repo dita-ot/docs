@@ -205,4 +205,6 @@ style:
     start-indent: 40pt
   varname:
     color: $brand-color-secondary
+    font-family: $pdf2-font-monospaced
     font-style: italic
+    font-weight: bold

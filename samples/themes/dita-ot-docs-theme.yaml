@@ -164,6 +164,12 @@ style:
       background-color: $brand-color-note-background-tip
     warning:
       background-color: $brand-color-note-background-caution
+  option:
+    color: $brand-color-secondary
+    font-family: $pdf2-font-monospaced
+  parmname:
+    color: $brand-color-primary
+    font-family: $pdf2-font-monospaced
   section-title:
     color: $brand-color-secondary
   shortdesc:

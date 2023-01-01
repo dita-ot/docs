@@ -85,7 +85,6 @@ style:
     space-after: 8pt
   codeph:
     color: $brand-color-secondary
-    font-size: '0.9 * from-parent(font-size)'
   # ↓ set-cover-page ↓
   cover:
     background-image: dita-ot-logo-inverse.svg

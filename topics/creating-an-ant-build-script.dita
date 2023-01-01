@@ -86,7 +86,7 @@
             href="../samples/ant_sample/build-chm-pdf.xml"
           /></codeblock></p>
       <p>In addition to the mandatory parameters (<parmname>args.input</parmname> and <parmname>transtype</parmname>),
-        the chm and pdf targets each specify some optional parameters:
+        the <codeph>chm</codeph> and <codeph>pdf</codeph> targets each specify some optional parameters:
         <ul>
           <li>The <parmname>args.gen.task.lbl</parmname> property is set to YES, which ensures that headings are
             automatically generated for the sections of task topics.</li>

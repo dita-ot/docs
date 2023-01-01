@@ -167,9 +167,11 @@ style:
   option:
     color: $brand-color-secondary
     font-family: $pdf2-font-monospaced
+    font-weight: bold
   parmname:
     color: $brand-color-primary
     font-family: $pdf2-font-monospaced
+    font-weight: bold
   section-title:
     color: $brand-color-secondary
   shortdesc:

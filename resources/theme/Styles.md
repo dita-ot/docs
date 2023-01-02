@@ -202,8 +202,8 @@ Code block element.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
-- `line-numbering = boolean` – line numbering.
-- `show-whitespace = boolean` – show whitespace characters.
+- `line-numbering = boolean` — line numbering.
+- `show-whitespace = boolean` — show whitespace characters.
 
 ### `table`
 

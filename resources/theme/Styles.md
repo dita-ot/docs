@@ -221,7 +221,7 @@ Table caption.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
-- `content`: Contents of table caption. Supported fields are:
+- `content = content-template` — Contents of table caption. Supported fields are:
   - `number`: caption number
   - `title`: caption contents
 
@@ -263,7 +263,19 @@ Link elements.
 
 The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
 
-- `link-url = 'true' | 'false'` — output URL for external links after explicitly defined link text.
+- `link-url = 'true' | 'false'` — Output URL for external links after explicitly defined link text. Defaults to `false`.
+- `link-page-number = 'true' | 'false'` — Generate page number reference after link text. Defaults to `true`.
+- `content = content-template` — Link text template. Supported fields are:
+  - `link-text`: link text
+  - `pagenum`: page number reference
+
+### `link-external`
+
+External link elements.
+
+- `content = content-template` — Link text template. Supported fields are:
+  - `link-text`: link text
+  - `url`: link URL
 
 ### `tm`
 

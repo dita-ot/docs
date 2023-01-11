@@ -8,7 +8,19 @@
   </titlealts>
   <shortdesc>DITA Open Toolkit provides a series of extension points that can be used to integrate changes into the core
     code. Extension points are defined in the <filepath>plugin.xml</filepath> file for each plug-in. When plug-ins are
-    installed, DITA-OT makes each extension visible to the rest of the toolkit.</shortdesc>
+    installed, DITA-OT makes each extension visible to the rest of the toolkit.
+  <draft-comment
+            author="markgif">This means that when you use an extension point in your custom plug-in,
+            that extension point might also run when completely separate plug-ins are run. You might
+            have to conditionalize the action in your plugin to keep it from running with other
+            plugins. (I can give a couple examples of how to do this if you want.)<p>By the way,
+                when I clicked the Edit this page button on this page:
+                https://www.dita-ot.org/dev/extension-points/plugin-extension-points.html, it opened
+                the Oxygen Web Author, and I made my comment. But then I could not save it because I
+                did not have commit access, and there was no way I could find to fork the repo at
+                that point. So it seems like the Edit this page button is not very usable, unless I
+                missed something. I had to trace back to where the docs repo was, fork it, and then
+                make my comment manually.</p></draft-comment></shortdesc>
   <prolog>
     <metadata>
       <keywords>

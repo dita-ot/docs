@@ -26,9 +26,54 @@
     </refbody>
   </reference>
 
-  <reference id="v4.0.1" outputclass="mark">
+  <reference id="v4.0.2" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted"> released December 9, 2022</ph>
+      <ph outputclass="small text-muted"> work in progress… <!--released mmmm D, yyyy--></ph>
+    </title>
+    
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0.2+is%3Aclosed+sort%3Acreated-asc -->
+          <li id="4080">Resolve <xmlelement>longdescref</xmlelement> <xmlatt>keyref</xmlatt> references to <xmlatt
+            >href</xmlatt>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4080" format="html" scope="external">#4080</xref>
+          </li>
+          <li id="4104">Setting ditamap as args.resources makes the process replacing it by its temporary version
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4104" format="html" scope="external">#4104</xref>
+          </li>
+          <li id="4106">DITA OT enables full debug logging for all Java packages
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4106" format="html" scope="external">#4106</xref>
+          </li>
+          <li id="4110">Properly compute topic id when using copy-to with keydefs
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4110" format="html" scope="external">#4110</xref>
+          </li>
+          <li id="4112">Avoid overwriting input files
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4112" format="html" scope="external">#4112</xref>
+          </li>
+          <li id="4114">Disable debug logging for non-DITA-OT loggers
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4114" format="html" scope="external">#4114</xref>
+          </li>
+          <li id="4118">Remove obsolete Travis configuration
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4118" format="html" scope="external">#4118</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0.2+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.0.2 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.0.1...4.0.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.0.1">
+    <title>DITA-OT 4.0.1 <ph outputclass="small text-muted"> released December 9, 2022</ph>
     </title>
 
     <refbody>

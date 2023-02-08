@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <concept id="preprocess-copyfiles">
-  <title>Copy related files (copy-files)</title>
+  <title>Copy related files (<codeph>copy-files</codeph>)</title>
   <shortdesc>The <codeph>copy-files</codeph> step copies non-DITA resources to the output directory, such as HTML files
     that are referenced in a map or images that are referenced by a DITAVAL file. Which files are copied depends on the
     transformation type.</shortdesc>

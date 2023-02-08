@@ -2,9 +2,9 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <concept id="preprocess-chunk">
-  <title>Chunk topics (chunk)</title>
-  <shortdesc>The <codeph>chunk</codeph> step breaks apart and assembles referenced DITA content based on the @chunk
-    attribute in maps. This step is implemented in Java.</shortdesc>
+  <title>Chunk topics (<codeph>chunk</codeph>)</title>
+  <shortdesc>The <codeph>chunk</codeph> step breaks apart and assembles referenced DITA content based on the
+      <xmlatt>chunk</xmlatt> attribute in maps. This step is implemented in Java.</shortdesc>
   <prolog>
     <metadata>
       <keywords>

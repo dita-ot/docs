@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <concept id="preprocess-copy-to">
-  <title>Copy topics (copy-to)</title>
+  <title>Copy topics (<codeph>copy-to</codeph>)</title>
   <shortdesc>The <codeph>copy-to</codeph> step makes a copy of original topic resources to new resources defined by the
       <xmlatt>copy-to</xmlatt> attribute.</shortdesc>
   <prolog>

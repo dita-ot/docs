@@ -31,8 +31,8 @@
     </fig>
     <p>This file can be used to generate the HTML version of the DITA-OT documentation by running the following command
       from the <filepath>docsrc</filepath> folder of the DITA-OT installation directory:</p>
-    <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname
-      >samples/project-files/html.xml</varname></codeblock>
+    <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<filepath
+      >samples/project-files/html.xml</filepath></codeblock>
     <p>The project file for HTML output imports the common <codeph>html</codeph> context from a shared project context
       defined in the <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/common.xml</filepath> file,
       which includes the input map file and the DITAVAL file used to filter the output.</p>
@@ -61,8 +61,8 @@
     </fig>
     <p>This file can be used to generate the PDF version of the DITA-OT documentation by running the following command
       from the <filepath>docsrc</filepath> folder of the DITA-OT installation directory:</p>
-    <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname
-      >samples/project-files/pdf.xml</varname></codeblock>
+    <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<filepath
+      >samples/project-files/pdf.xml</filepath></codeblock>
     <p>The <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/distribution-docs.xml</filepath> file
       includes both the HTML and PDF projects as follows:</p>
     <codeblock outputclass="language-xml normalize-space show-whitespace"><coderef
@@ -70,8 +70,8 @@
       /></codeblock>
     <p>To build both the HTML and PDF versions of the documentation as included in the distribution package, run the
       following command from the <filepath>docsrc</filepath> folder of the DITA-OT installation directory:</p>
-    <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<varname
-      >samples/project-files/distribution-docs.xml</varname></codeblock>
+    <codeblock><cmdname>dita</cmdname> <parmname>--project</parmname>=<filepath
+      >samples/project-files/distribution-docs.xml</filepath></codeblock>
     <p>The <filepath conkeyref="conref-task/samples-dir"/><filepath>/project-files/all.xml</filepath> file includes all
       three project deliverables as follows:</p>
     <codeblock outputclass="language-xml normalize-space show-whitespace"><coderef

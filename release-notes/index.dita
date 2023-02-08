@@ -30,33 +30,42 @@
     <title>DITA-OT <keyword keyref="maintenance-version"/>
       <ph outputclass="small text-muted"> work in progress… <!--released mmmm D, yyyy--></ph>
     </title>
-    
+
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0.2+is%3Aclosed+sort%3Acreated-asc -->
-          <li id="4080">Resolve <xmlelement>longdescref</xmlelement> <xmlatt>keyref</xmlatt> references to <xmlatt
-            >href</xmlatt>
+          <li id="4071">Earlier versions of DITA-OT did not respect key references defined on long descriptions within
+            image elements. Processing has been updated to ensure that <xmlatt>keyref</xmlatt> attributes on
+              <xmlelement>longdescref</xmlelement> elements are resolved to the resource defined by the
+              <xmlatt>href</xmlatt> attribute on the key.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4071" format="html" scope="external">#4071</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4080" format="html" scope="external">#4080</xref>
           </li>
-          <li id="4104">Setting ditamap as args.resources makes the process replacing it by its temporary version
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4104" format="html" scope="external">#4104</xref>
-          </li>
-          <li id="4106">DITA OT enables full debug logging for all Java packages
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4106" format="html" scope="external">#4106</xref>
-          </li>
-          <li id="4110">Properly compute topic id when using copy-to with keydefs
+          <li id="4076">If <xmlatt>copy-to</xmlatt> attributes were used to create duplicate versions of topics,
+            previous versions did not resolve key references to content inside the topic copies correctly. Key reference
+            processing has been corrected to ensure that topic IDs for copied topics are properly adjusted when
+            calculating link targets.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4076" format="html" scope="external">#4076</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4110" format="html" scope="external">#4110</xref>
           </li>
-          <li id="4112">Avoid overwriting input files
+          <li id="4104">When an auxiliary map resource was passed to the <cmdname>dita</cmdname> command with the
+              <parmname>--resource</parmname> option or the <parmname>args.resources</parmname> parameter, the resource
+            map was replaced with a temporary version. These maps are now copied instead of overwritten in-place, and
+            the key values they contain are correctly resolved from the copies in the temporary folder.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4104" format="html" scope="external">#4104</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4112" format="html" scope="external">#4112</xref>
           </li>
-          <li id="4114">Disable debug logging for non-DITA-OT loggers
+          <li id="4106">In earlier versions, the DITA-OT logging configuration mistakenly enabled full debug logging for
+            all Java packages in any of the installed plug-ins. This error has been corrected to preserve the default
+              <codeph>INFO</codeph> level for custom plug-ins, and only enable debug logging for Java code in DITA-OT
+            itself.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4106" format="html" scope="external">#4106</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4114" format="html" scope="external">#4114</xref>
           </li>
-          <li id="4118">Remove obsolete Travis configuration
+          <li id="4118">Obsolete Travis configuration files have been removed from the DITA-OT repository.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4118" format="html" scope="external">#4118</xref>
           </li>
         </ul>

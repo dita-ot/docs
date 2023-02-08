@@ -14,9 +14,11 @@ This repository tracks the [documentation][3] source files for the [DITA Open To
 
 ## Building the documentation output
 
-⚠️ **Important:** The maps in this repository contain references to additional topics that are created at build time from the toolkit’s plug-in configuration.
-
-To generate the missing topics and build the HTML and PDF versions of the documentation, run the Gradle build script from the root level of the `docs` repository and pass the path to your DITA-OT installation as a parameter.
+> **Note**
+>
+> The maps in this repository contain references to additional topics that are created at build time from the toolkit’s plug-in configuration.
+>
+> To generate the missing topics and build the HTML and PDF versions of the documentation, run the Gradle build script from the root level of the `docs` repository and pass the path to your DITA-OT installation as a parameter.
 
 ### Prerequisites
 

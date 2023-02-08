@@ -1,4 +1,4 @@
-# DITA Open Toolkit Docs [![Build Status][1]](https://github.com/dita-ot/docs/actions/workflows/deploy.yml) [![Slack][2]](http://slack.dita-ot.org/)
+# DITA Open Toolkit Docs [![Build Status][1]](https://github.com/dita-ot/docs/actions/workflows/deploy.yml) [![DITA-OT Discussions][2]](https://github.com/orgs/dita-ot/discussions)
 
 This repository tracks the [documentation][3] source files for the [DITA Open Toolkit project][4].
 
@@ -120,7 +120,7 @@ If you'd like to check whether your changes are formatted correctly, or format t
     npm run format
 
 [1]: https://github.com/dita-ot/docs/actions/workflows/deploy.yml/badge.svg
-[2]: https://img.shields.io/badge/Slack-Join%20us!-%234A154B?style=flat&logo=slack
+[2]: https://img.shields.io/github/discussions/dita-ot/dita-ot?label=DITA-OT%20Discussions
 [3]: https://www.dita-ot.org/dev/
 [4]: https://www.dita-ot.org
 [5]: https://github.com/dita-ot/dita-ot

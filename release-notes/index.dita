@@ -53,8 +53,9 @@
           </li>
           <li id="4104">When an auxiliary map resource was passed to the <cmdname>dita</cmdname> command with the
               <parmname>--resource</parmname> option or the <parmname>args.resources</parmname> parameter, the resource
-            map was replaced with a temporary version. These maps are now copied instead of overwritten in-place, and
-            the key values they contain are correctly resolved from the copies in the temporary folder.
+            map was overwritten with its temporary version from preprocessing. These maps are now copied instead of
+            overwritten in-place, and the key values they contain are correctly resolved from the copies in the
+            temporary folder.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4104" format="html" scope="external">#4104</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4112" format="html" scope="external">#4112</xref>
           </li>

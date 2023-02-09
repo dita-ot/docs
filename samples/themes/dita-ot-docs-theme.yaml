@@ -16,6 +16,7 @@ brand:
         caution: '#f8d7da'
         info: '#dce4f0'
         tip: '#d1e7dd'
+    xml-domain: '#639'
 # ↑ end-brand-colors ↑
 
 # ↓ add-font-stacks ↓
@@ -208,3 +209,9 @@ style:
     font-family: $pdf2-font-monospaced
     font-style: italic
     font-weight: bold
+  xmlatt:
+    color: $brand-color-xml-domain
+  xmlelement:
+    color: $brand-color-xml-domain
+  xmlnsname:
+    color: $brand-color-xml-domain

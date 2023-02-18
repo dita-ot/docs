@@ -103,7 +103,7 @@ Definition list element.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
-- `dl-type = 'table' | 'list' | 'html'` — style definition list as bulleted list or indented list
+- `dl-type = 'table' | 'list' | 'html'` — Style definition list as bulleted list or indented list.
 
 ### `example`
 
@@ -123,8 +123,8 @@ Figure element.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
-- `caption-number = 'chapter' | 'document'` — number figures with chapter prefix or use whole document numbering.
-- `caption-position = 'before' | 'after'` — place figure caption before or after figure.
+- `caption-number = 'chapter' | 'document'` — Number figures with chapter prefix or use whole document numbering.
+- `caption-position = 'before' | 'after'` — Place figure caption before or after figure.
 
 ### `fig-caption`
 
@@ -148,7 +148,7 @@ Label for note elements.
 
 The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
 
-- `content` — content template.
+- `content` — Content template.
 
 ### `note-<type>`
 
@@ -176,7 +176,7 @@ Label for note elements with `@type`.
 
 The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
 
-- `content` — content template.
+- `content` — Content template.
 
 ### `ol`
 
@@ -202,8 +202,8 @@ Code block element.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
-- `line-numbering = boolean` – line numbering.
-- `show-whitespace = boolean` – show whitespace characters.
+- `line-numbering = boolean` — Line numbering.
+- `show-whitespace = boolean` — Show whitespace characters.
 
 ### `table`
 
@@ -211,9 +211,9 @@ Table element.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
-- `caption-number = 'chapter' | 'document'` — number figures with chapter prefix or use whole document numbering.
-- `caption-position = 'before' | 'after'` — place figure caption before or after figure.
-- `table-continued = boolean` — output "table continued" when table breaks across pages.
+- `caption-number = 'chapter' | 'document'` — Number figures with chapter prefix or use whole document numbering.
+- `caption-position = 'before' | 'after'` — Place figure caption before or after figure.
+- `table-continued = boolean` — Output "table continued" when table breaks across pages.
 
 ### `table-caption`
 
@@ -221,7 +221,7 @@ Table caption.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
-- `content`: Contents of table caption. Supported fields are:
+- `content = content-template` — Contents of table caption. Supported fields are:
   - `number`: caption number
   - `title`: caption contents
 
@@ -263,7 +263,19 @@ Link elements.
 
 The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
 
-- `link-url = 'true' | 'false'` — output URL for external links after explicitly defined link text.
+- `link-url = 'true' | 'false'` — Output URL for external links after explicitly defined link text. Defaults to `false`.
+- `link-page-number = 'true' | 'false'` — Generate page number reference after link text. Defaults to `true`.
+- `content = content-template` — Link text template. Supported fields are:
+  - `link-text`: link text
+  - `pagenum`: page number reference
+
+### `link-external`
+
+External link elements.
+
+- `content = content-template` — Link text template. Supported fields are:
+  - `link-text`: link text
+  - `url`: link URL
 
 ### `tm`
 
@@ -271,7 +283,7 @@ Trademark element.
 
 The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
 
-- `symbol-scope = 'always' | 'chapter' | 'never'` — output trademark symbol always, once per chapter, or never.
+- `symbol-scope = 'always' | 'chapter' | 'never'` — Output trademark symbol always, once per chapter, or never.
 
 ### `keyword`
 

@@ -186,7 +186,7 @@
             <varname>{ ID | URL | file }</varname></pt>
           <pt>
             <parmname>--install</parmname>=<varname>{ ID | URL | file }</varname></pt>
-          <pd>Install a single plug-in <varname>ID </varname>from the registry at
+          <pd>Install a single plug-in <varname>ID</varname> from the registry at
             <xref keyref="site-plugin-registry"/> (or a local registry), from a remote <varname>URL</varname>, or a
             local ZIP <varname>file</varname>.</pd>
         </plentry>

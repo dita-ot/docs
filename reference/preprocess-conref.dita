@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <concept id="preprocess-conref">
-  <title>Resolve content references (conref)</title>
+  <title>Resolve content references (<codeph>conref</codeph>)</title>
   <shortdesc>The <codeph>conref</codeph> step resolves content references, processing only the DITA maps or topics that
     use the <xmlatt>conref</xmlatt> attribute. This step is implemented in XSLT.</shortdesc>
   <prolog>

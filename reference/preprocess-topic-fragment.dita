@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <concept id="preprocess-topic-fragment">
-  <title>Resolve topic fragments and code references (topic-fragment)</title>
+  <title>Resolve topic fragments and code references (<codeph>topic-fragment</codeph>)</title>
   <shortdesc>The <codeph>topic-fragment</codeph> step expands content references to elements in the same topic and
     resolves references made with the <xmlelement>coderef</xmlelement> element. This step is implemented in SAX
     pipes.</shortdesc>

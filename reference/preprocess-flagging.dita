@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <reference id="flagging" rev="1.7">
-  <title>Flagging (flag-module)</title>
+  <title>Flagging (<codeph>flag-module</codeph>)</title>
   <shortdesc>Beginning with DITA-OT 1.7, flagging support is implemented as a common <codeph>flag-module</codeph>
     preprocessing step. The module evaluates the DITAVAL against all flagging attributes, and adds DITA-OT–specific
     hints to the topic when flags are active. Any extended transformation type may use these hints to support flagging

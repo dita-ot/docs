@@ -66,6 +66,12 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4106" format="html" scope="external">#4106</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4114" format="html" scope="external">#4114</xref>
           </li>
+          <li id="4117">Content key references in map titles were not resolved if they pointed to phrase elements that
+            contained another <xmlelement>ph</xmlelement> element. Key references are now handled correctly, even when
+              <xmlatt>conkeyref</xmlatt> targets contain nested phrase elements.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4117" format="html" scope="external">#4117</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4120" format="html" scope="external">#4120</xref>
+          </li>
           <li id="4118">Obsolete Travis configuration files have been removed from the DITA-OT repository.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4118" format="html" scope="external">#4118</xref>
           </li>

@@ -21,18 +21,26 @@ jobs:
       WEBSITE_PLUGIN_BRANCH: 'master'
       DITA_OT_VERSION: '4.0.1'
     steps:
-      - name: Get variables
+      - name: Get arguments
         run: |
-          readonly TOKENS=($(echo $VERSION | tr '.' ' '))
+          if [[ -z "${{ github.event.client_payload.dita_ot_version }}" ]]; then
+            readonly TOKENS=($(echo "${{ github.event.client_payload.dita_ot_version }}" | tr '.' ' '))
+          else
+            readonly TOKENS=($(echo "${{ github.event.inputs.dita-ot-version }}" | tr '.' ' '))
+          fi
           echo "RELEASE=${TOKENS[0]}.${TOKENS[1]}" >> $GITHUB_ENV
-          echo "GITHUB_SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
-          echo "TAG=${{ github.event.inputs.docs-tag }}" >> $GITHUB_ENV
-        env:
-          VERSION: ${{ github.event.inputs.dita-ot-version }}
+          if [[ -z "${{ github.event.client_payload.docs_tag }}" ]]; then
+            echo "TAG=${{ github.event.client_payload.docs_tag }}" >> $GITHUB_ENV
+          else
+            echo "TAG=${{ github.event.inputs.docs-tag }}" >> $GITHUB_ENV
+          fi
       - name: Check out docs
         uses: actions/checkout@v3
         with:
           ref: ${{ env.TAG }}
+      - name: Get variables
+        run: |
+          echo "GITHUB_SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - name: Debug
         run: |
           echo "${{ env.TAG }}"

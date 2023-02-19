@@ -49,12 +49,13 @@ Already up-to-date.</codeblock></stepxmp>
 <systemoutput>dita-ot: stable <keyword keyref="maintenance-version"/>
 DITA Open Toolkit is an implementation of the OASIS DITA specification
 https://www.dita-ot.org/
-/usr/local/Cellar/dita-ot/<keyword keyref="maintenance-version"/> (<varname>number of files</varname>, <varname
+/opt/homebrew/Cellar/dita-ot/<keyword keyref="maintenance-version"/> (<varname>number of files</varname>, <varname
               >package size</varname>) *
-  Built from source on <varname>YYYY-MM-DD</varname> at <varname>hh:mm:ss</varname>
+  Poured from bottle using the formulae.brew.sh API on <varname>YYYY-MM-DD</varname> at <varname>hh:mm:ss</varname>
 From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/dita-ot.rb
-==> Requirements
-Required: java >= 1.8 ✔</systemoutput>
+License: Apache-2.0
+==> Dependencies
+Required: <b>openjdk</b> ✔</systemoutput>
 </codeblock></stepxmp>
         <stepresult>
           <p>The version of the DITA-OT formula is shown, along with basic information on the package.</p></stepresult>
@@ -72,7 +73,7 @@ Required: java >= 1.8 ✔</systemoutput>
       <step importance="optional">
         <cmd>Verify the installation:</cmd>
         <stepxmp><codeblock outputclass="syntax-bash">$ <cmdname>which dita</cmdname>
-<systemoutput>/usr/local/bin/dita</systemoutput></codeblock></stepxmp>
+<systemoutput>/opt/homebrew/bin/dita</systemoutput></codeblock></stepxmp>
         <stepresult>
           <p>The response confirms that the system will use the Homebrew-installed version of DITA-OT.</p></stepresult>
       </step>

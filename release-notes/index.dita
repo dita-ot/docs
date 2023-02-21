@@ -26,9 +26,70 @@
     </refbody>
   </reference>
 
-  <reference id="v4.0.1" outputclass="mark">
+  <reference id="v4.0.2" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted"> released December 9, 2022</ph>
+      <ph outputclass="small text-muted"> released February 18, 2023</ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0.2+is%3Aclosed+sort%3Acreated-asc -->
+          <li id="4071">Earlier versions of DITA-OT did not respect key references defined on long descriptions within
+            image elements. Processing has been updated to ensure that <xmlatt>keyref</xmlatt> attributes on
+              <xmlelement>longdescref</xmlelement> elements are resolved to the resource defined by the
+              <xmlatt>href</xmlatt> attribute on the key.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4071" format="html" scope="external">#4071</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4080" format="html" scope="external">#4080</xref>
+          </li>
+          <li id="4076">If <xmlatt>copy-to</xmlatt> attributes were used to create duplicate versions of topics,
+            previous versions did not resolve key references to content inside the topic copies correctly. Key reference
+            processing has been corrected to ensure that topic IDs for copied topics are properly adjusted when
+            calculating link targets.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4076" format="html" scope="external">#4076</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4110" format="html" scope="external">#4110</xref>
+          </li>
+          <li id="4104">In certain cases, when a context map resource was passed to the <cmdname>dita</cmdname> command
+            with the <parmname>--resource</parmname> option or the <parmname>args.resources</parmname> parameter, the
+            resource map was overwritten with its temporary version from preprocessing. These maps are now copied and
+            processed to the temporary files folder instead of being overwritten in-place, and the key values they
+            contain are correctly resolved from the copies in the temporary folder.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4104" format="html" scope="external">#4104</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4112" format="html" scope="external">#4112</xref>
+          </li>
+          <li id="4106">In earlier versions, the DITA-OT logging configuration mistakenly enabled full debug logging for
+            all Java packages in any of the installed plug-ins. This error has been corrected to preserve the default
+              <codeph>INFO</codeph> level for custom plug-ins, and only enable debug logging for Java code in DITA-OT
+            itself.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4106" format="html" scope="external">#4106</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4114" format="html" scope="external">#4114</xref>
+          </li>
+          <li id="4117">Content key references in map titles were not resolved if they pointed to phrase elements that
+            contained another <xmlelement>ph</xmlelement> element. Key references are now handled correctly, even when
+              <xmlatt>conkeyref</xmlatt> targets contain nested phrase elements.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4117" format="html" scope="external">#4117</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4120" format="html" scope="external">#4120</xref>
+          </li>
+          <li id="4118">Obsolete Travis configuration files have been removed from the DITA-OT repository.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4118" format="html" scope="external">#4118</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.0.2+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.0.2 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.0.1...4.0.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.0.1">
+    <title>DITA-OT 4.0.1 <ph outputclass="small text-muted"> released December 9, 2022</ph>
     </title>
 
     <refbody>

@@ -11,6 +11,8 @@ on:
       docs-tag:
         description: 'Docs tag'
         required: true
+  repository_dispatch:
+    types: [release]
 
 jobs:
   deploy:
@@ -19,18 +21,29 @@ jobs:
       WEBSITE_PLUGIN_BRANCH: 'master'
       DITA_OT_VERSION: '4.0.1'
     steps:
+      - name: Parse arguments
+        run: |
+          if [[ -n "${{ github.event.client_payload.dita_ot_version }}" ]]; then
+            readonly TOKENS=($(echo "${{ github.event.client_payload.dita_ot_version }}" | tr '.' ' '))
+          else
+            readonly TOKENS=($(echo "${{ github.event.inputs.dita-ot-version }}" | tr '.' ' '))
+          fi
+          echo "RELEASE=${TOKENS[0]}.${TOKENS[1]}" >> $GITHUB_ENV
+          if [[ -n "${{ github.event.client_payload.docs_tag }}" ]]; then
+            echo "TAG=${{ github.event.client_payload.docs_tag }}" >> $GITHUB_ENV
+          else
+            echo "TAG=${{ github.event.inputs.docs-tag }}" >> $GITHUB_ENV
+          fi
+
       - name: Check out docs
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.event.inputs.docs-tag }}
-      - name: Get variables
+          ref: ${{ env.TAG }}
+
+      - name: Set variables
         run: |
-          TOKENS=($(echo $VERSION | tr '.' ' '))
-          echo "RELEASE=${TOKENS[0]}.${TOKENS[1]}" >> $GITHUB_ENV
           echo "GITHUB_SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
-        env:
-          VERSION: ${{ github.event.inputs.dita-ot-version }}
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:

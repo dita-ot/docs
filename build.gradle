@@ -19,7 +19,7 @@ dependencies {
 }
 
 import com.github.eerohele.DitaOtTask
-import com.github.eerohele.SaxonXsltTask
+import com.nwalsh.gradle.saxon.SaxonXsltTask
 
 def getPropertyOrDefault(String name, def defaultValue) {
     hasProperty(name) ? findProperty(name) : defaultValue

@@ -381,12 +381,6 @@ Apiname element.
 
 The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
 
-### `codeph`
-
-Codeph element.
-
-The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
-
 ### `option`
 
 Option element.
@@ -576,12 +570,6 @@ The styling properties that can be used are listed in [XSL fo:inline](https://ww
 ### `screen`
 
 Screen element.
-
-The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
-
-### `filepath`
-
-Filepath element.
 
 The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
 

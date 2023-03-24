@@ -41,7 +41,7 @@ The styling properties that can be used are listed in [XSL fo:block](https://www
 
 ### `h1`
 
-First level topic titles.
+First-level topic titles.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
@@ -49,7 +49,7 @@ The styling properties that can be used are listed in [XSL fo:block](https://www
 
 ### `h2`
 
-Second level topic titles.
+Second-level topic titles.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
@@ -57,7 +57,7 @@ The styling properties that can be used are listed in [XSL fo:block](https://www
 
 ### `h3`
 
-Third level topic titles.
+Third-level topic titles.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
@@ -65,7 +65,7 @@ The styling properties that can be used are listed in [XSL fo:block](https://www
 
 ### `h4`
 
-Fourth level topic titles.
+Fourth-level topic titles.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
@@ -233,25 +233,25 @@ The styling properties that can be used are listed in [XSL fo:block](https://www
 
 ### `toc-1`
 
-First level TOC entry.
+First-level TOC entry.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
 ### `toc-2`
 
-Second level TOC entry.
+Second-level TOC entry.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
 ### `toc-3`
 
-Third level TOC entry.
+Third-level TOC entry.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
 ### `toc-4`
 
-Fourth level TOC entry.
+Fourth-level TOC entry.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 

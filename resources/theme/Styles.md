@@ -255,6 +255,48 @@ Fourth level TOC entry.
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
+### `parml`
+
+Parml element.
+
+The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
+
+### `plentry`
+
+Plentry element.
+
+The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
+
+### `pt`
+
+Pt element.
+
+The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
+
+### `pd`
+
+Pd element.
+
+The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
+
+### `hazardstatement`
+
+Hazard statement element.
+
+The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
+
+### `hazardstatement-label`
+
+Hazard statement label element.
+
+The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
+
+### `hazardstatement-<type>-label`
+
+Label for hazard statement elements with `@type`.
+
+The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
+
 ## Inline keys
 
 ### `link`
@@ -330,5 +372,263 @@ The styling properties that can be used are listed in [XSL fo:inline](https://ww
 ### `systemoutput`
 
 System output element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `apiname`
+
+Apiname element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `codeph`
+
+Codeph element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `option`
+
+Option element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `parmname`
+
+Parmname element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `synph`
+
+Synph element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `syntaxdiagram`
+
+Syntaxdiagram element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `groupseq`
+
+Groupseq element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `groupchoice`
+
+Groupchoice element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `groupcomp`
+
+Groupcomp element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `fragment`
+
+Fragment element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `fragref`
+
+Fragref element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `synblk`
+
+Synblk element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `synnote`
+
+Synnote element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `synnoteref`
+
+Synnoteref element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `kwd`
+
+Kwd element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `var`
+
+Var element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `oper`
+
+Oper element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `delim`
+
+Delim element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `sep`
+
+Sep element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `repsep`
+
+Repsep element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `b`
+
+B element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `i`
+
+I element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `u`
+
+U element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `tt`
+
+Tt element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `sup`
+
+Sup element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `sub`
+
+Sub element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `line-through`
+
+Line-through element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `overline`
+
+Overline element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `markupname`
+
+Markupname element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `uicontrol`
+
+Uicontrol element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `wintitle`
+
+Wintitle element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `menucascade`
+
+Menucascade element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `shortcut`
+
+Shortcut element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `screen`
+
+Screen element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `filepath`
+
+Filepath element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `filepath`
+
+Filepath element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `xmlelement`
+
+XML element element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `xmlatt`
+
+XML attribute element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `textentity`
+
+XML text entity element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `parameterentity`
+
+XML parameter entity element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `numcharref`
+
+XML character referenceelement.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `xmlnsname`
+
+XML namespace name element.
+
+The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).
+
+### `xmlpi`
+
+XML processing instruction element.
 
 The styling properties that can be used are listed in [XSL fo:inline](https://www.w3.org/TR/xsl11/#fo_inline).

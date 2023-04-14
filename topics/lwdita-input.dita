@@ -94,6 +94,13 @@
       <note type="attention">The HDITA map format is not yet supported. To include HDITA content, use an XDITA map or a
         DITA 1.3 map.</note>
     </section>
+    <section id="section_z1k_hmk_dxb">
+      <title>Using conditional processing in MDITA and HDITA</title>
+      <p>When you setup conditional processing in MDITA and HDITA, use the
+          <xmlatt>data-props</xmlatt> attribute name in the element that will have the conditional
+        processing applied. In the <filepath>.ditaval</filepath> file, however, use the
+          <xmlatt>props</xmlatt> attribute name.</p>
+    </section>
     <section>
       <title>Converting lightweight formats to DITA XML</title>
       <p>When you add LwDITA topics to a DITA publication, the content is temporarily converted to DITA in the

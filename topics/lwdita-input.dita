@@ -96,10 +96,9 @@
     </section>
     <section id="conditional-processing">
       <title>Using conditional processing in MDITA and HDITA</title>
-      <p>When you setup conditional processing in MDITA and HDITA, use the
-          <xmlatt>data-props</xmlatt> attribute name in the element that will have the conditional
-        processing applied. In the <filepath>.ditaval</filepath> file, however, use the
-          <xmlatt>props</xmlatt> attribute name.</p>
+      <p>When you set up conditional processing in MDITA and HDITA, use the <xmlatt>data-props</xmlatt> attribute in the
+        element that will have the conditional processing applied. In the <filepath>.ditaval</filepath> file, however,
+        use the <xmlatt>props</xmlatt> attribute.</p>
     </section>
     <section>
       <title>Converting lightweight formats to DITA XML</title>

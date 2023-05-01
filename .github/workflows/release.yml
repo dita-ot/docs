@@ -98,7 +98,7 @@ jobs:
           RELEASE_DITA_OT: ${{ github.workspace }}/src-dita-ot/dita-ot-${{ github.event.inputs.dita-ot-version }}
 
       - name: Create release PR
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           branch: release/${{ github.event.inputs.dita-ot-version }}
           title: 'Update site for ${{ github.event.inputs.dita-ot-version }}'

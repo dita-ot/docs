@@ -8,7 +8,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "check": "npm run prettier-check && npm run stylelint-check && npm run stylelint",
+    "check": "npm run prettier-check && npm run && npm run stylelint",
     "fix:style": "stylelint \"**/*.css\" --fix",
     "fmt": "npm run format",
     "format": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
@@ -17,7 +17,6 @@
     "prettier": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "prettier-check": "prettier --check \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "stylelint": "stylelint \"**/*.css\"",
-    "stylelint-check": "stylelint-config-prettier-check",
     "test": "prettier --list-different \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\""
   },
   "lint-staged": {
@@ -31,8 +30,7 @@
   "stylelint": {
     "extends": [
       "stylelint-config-recommended",
-      "stylelint-config-sass-guidelines",
-      "stylelint-config-prettier"
+      "stylelint-config-sass-guidelines"
     ],
     "ignoreFiles": [
       "out/**/*.css"
@@ -51,8 +49,7 @@
     "husky": "^8.0.3",
     "lint-staged": "13.2.2",
     "prettier": "2.8.8",
-    "stylelint": "^15.6.0",
-    "stylelint-config-prettier": "^9.0.5",
+    "stylelint": "^15.6.1",
     "stylelint-config-recommended": "^12.0.0",
     "stylelint-config-sass-guidelines": "^10.0.0"
   }

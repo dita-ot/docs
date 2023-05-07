@@ -93,7 +93,7 @@
             conaction="pushreplace"
             conref="extension-points-in-org.dita.base.dita#org.dita.base-ext/dita.transtype.print.desc"
           >Defines a
-            transformation as a print type.<draft-comment author="Kristen Eberlein" time="31 March 2013">What does this
+            transformation as a print type. <draft-comment author="Kristen Eberlein" time="2013-03-31">What does this
               actually do? Does this interact with using the deprecated <xmlatt>print</xmlatt>
               attribute?</draft-comment></dd>
         </dlentry>

@@ -568,10 +568,9 @@
             <pd conaction="mark" conref="parameters-eclipsehelp.dita#eclipsehelp/args.eclipsehelp.country.desc"/>
             <pd conaction="pushafter">For example, <option>us</option>, <option>ca</option>, and <option>gb</option>
               would clarify a value of <option>en</option> set for the <parmname>args.eclipsehelp.language</parmname>
-              parameter. The content will be moved into the appropriate directory structure for an Eclipse
-                fragment.<draft-comment author="Kristen James Eberlein" time="11 August 2012">What does "The content
-                will be moved into the appropriate directory structure for an Eclipse fragment"
-              mean?</draft-comment></pd>
+              parameter. The content will be moved into the appropriate directory structure for an Eclipse fragment.
+                <draft-comment author="Kristen James Eberlein" time="2012-08-11">What does "The content will be moved
+                into the appropriate directory structure for an Eclipse fragment" mean?</draft-comment></pd>
           </plentry>
           <plentry id="args.eclipsehelp.language">
             <pt>
@@ -613,7 +612,7 @@
                 <indexterm><xmlatt>id</xmlatt>
                   <indexterm><parmname>args.eclipse.symbolic.name</parmname></indexterm></indexterm>
               </note>
-              <draft-comment author="Kristen James Eberlein" time="11 August 2012">I'm not clear what this means. Is the
+              <draft-comment author="Kristen James Eberlein" time="2012-08-11">I'm not clear what this means. Is the
                 default value for the <parmname>args.eclipse.symbolic.name</parmname> parameter the value of the
                   <xmlatt>id</xmlatt> attribute on the <xmlelement>map</xmlelement> or <xmlelement>plugin</xmlelement>
                 element, if provided, and the <option>org.sample.help.doc</option> if there is not a value for the

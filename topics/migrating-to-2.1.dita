@@ -126,9 +126,6 @@
 
     <section>
       <title>HTML-based output formats</title>
-      <draft-comment author="Roger" time="2016-04-03 18:30">
-        <p>Further information required on recommended replacements for deprecated items.</p>
-      </draft-comment>
       <p>The <varname>keydefs</varname> variable and the following XSL parameters have been deprecated:
         <ul>
           <li><parmname>KEYREF-FILE</parmname></li>

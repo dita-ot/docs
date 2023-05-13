@@ -16,6 +16,7 @@ brand:
         caution: '#f8d7da'
         info: '#dce4f0'
         tip: '#d1e7dd'
+    xml-domain: '#639'
 # ↑ end-brand-colors ↑
 
 # ↓ add-font-stacks ↓
@@ -85,7 +86,6 @@ style:
     space-after: 8pt
   codeph:
     color: $brand-color-secondary
-    font-size: '0.9 * from-parent(font-size)'
   # ↓ set-cover-page ↓
   cover:
     background-image: dita-ot-logo-inverse.svg
@@ -164,6 +164,14 @@ style:
       background-color: $brand-color-note-background-tip
     warning:
       background-color: $brand-color-note-background-caution
+  option:
+    color: $brand-color-secondary
+    font-family: $pdf2-font-monospaced
+    font-weight: bold
+  parmname:
+    color: $brand-color-primary
+    font-family: $pdf2-font-monospaced
+    font-weight: bold
   section-title:
     color: $brand-color-secondary
   shortdesc:
@@ -198,4 +206,12 @@ style:
     start-indent: 40pt
   varname:
     color: $brand-color-secondary
+    font-family: $pdf2-font-monospaced
     font-style: italic
+    font-weight: bold
+  xmlatt:
+    color: $brand-color-xml-domain
+  xmlelement:
+    color: $brand-color-xml-domain
+  xmlnsname:
+    color: $brand-color-xml-domain

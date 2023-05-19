@@ -135,6 +135,9 @@ style:
     font-size: 12pt
     font-style: italic
     space-before: 12pt
+  li:
+    label:
+      color: $brand-color-secondary
   link:
     color: $brand-color-links
   note:

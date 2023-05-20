@@ -126,7 +126,7 @@ public class AcmeSchemaProvider implements SchemaProvider {
                 .set(TablesExtension.APPEND_MISSING_COLUMNS, false)
                 .set(TablesExtension.DISCARD_EXTRA_COLUMNS, true)
                 .set(TablesExtension.HEADER_SEPARATOR_COLUMN_MATCH, true)
-                // See https://github.com/jelovirt/org.lwdita/wiki/Configuring-Options
+                // See https://github.com/jelovirt/org.lwdita/wiki/Configuration-options
                 .set(DitaRenderer.FIX_ROOT_HEADING, false)
                 .set(DitaRenderer.SHORTDESC_PARAGRAPH, false)
                 .set(DitaRenderer.ID_FROM_YAML, false)

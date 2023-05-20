@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<concept id="ID">
+  <title>Markdown DITA syntax</title>
+  <shortdesc>
+    <ph id="shortdesc-ph">The following topics show how DITA XML constructs are represented in <cite>Markdown</cite> and
+        <cite>MDITA</cite>, provide details on common syntax, differences between the <codeph>markdown</codeph> and
+        <codeph>mdita</codeph> formats, and describe additional configuration options.</ph>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlatt>format</xmlatt></indexterm>
+        <indexterm>authoring formats
+          <indexterm>Markdown</indexterm></indexterm>
+        <indexterm>authoring formats
+          <indexterm>MDITA</indexterm></indexterm>
+        <indexterm>Markdown</indexterm>
+        <indexterm>MDITA</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <div id="intro">
+      <p>In 2015, the original <cite>DITA-OT Markdown</cite> plug-in introduced a series of conventions to facilitate
+        conversion of Markdown content to DITA, and vice-versa. This Markdown flavor was called <cite>Markdown
+          DITA</cite>, a representation of DITA content in Markdown. This format served as the foundation for the
+        toolkit’s Markdown support, and has since evolved further.</p>
+      <p>In 2017, the original Markdown plug-in was superseded by the <cite>LwDITA</cite> plug-in, which was bundled
+        with DITA-OT 3.0, and adds additional features to support Lightweight DITA, including the <cite>MDITA</cite>
+        format proposed in the latest specification drafts.</p>
+    </div>
+  </conbody>
+</concept>

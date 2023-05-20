@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<map>
+  <title>Markdown DITA syntax</title>
+  <topicref keyref="markdown-dita-syntax" collection-type="family">
+    <topicref keyref="markdown-syntax-reference"/>
+    <topicref keyref="mdita-syntax-reference"/>
+    <topicref keyref="markdown-schema"/>
+    <topicref keyref="configuring-options"/>
+  </topicref>
+
+  <reltable>
+    <relrow>
+      <relcell>
+        <topicref keyref="markdown-input"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="markdown-syntax-reference"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="lwdita-input"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="mdita-syntax-reference"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

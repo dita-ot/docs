@@ -27,5 +27,14 @@
         <topicref keyref="mdita-syntax-reference"/>
       </relcell>
     </relrow>
+    <relrow>
+      <relcell linking="targetonly">
+        <topicref keyref="markdown-input"/>
+        <topicref keyref="lwdita-input"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="markdown-dita-syntax"/>
+      </relcell>
+    </relrow>
   </reltable>
 </map>

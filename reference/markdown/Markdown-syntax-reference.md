@@ -1,8 +1,4 @@
-[Markdown] is a lightweight markup language that allows you to write using an easy-to-read plain text format and convert to structurally valid markup as necessary.
-
-In addition to the [MDITA](./MDITA-Syntax-Reference.md) format for [Lightweight DITA][LwDITA], the Markdown parser included in the `org.lwdita` plug-in also supports additional constructs to represent DITA content in Markdown as described in this syntax reference.
-
-The _Markdown DITA_ format uses [CommonMark] as the underlying markup language.
+In 2015, the original _DITA-OT Markdown_ plug-in introduced a series of conventions to convert [Markdown] content to DITA, and vice-versa. This Markdown flavor was called _“Markdown DITA”_. The `markdown` format adds several complementary constructs to represent DITA content in Markdown, beyond those proposed for the [MDITA](./MDITA-syntax-reference.md) format in the [Lightweight DITA][LwDITA] specification drafts.
 
 To add a Markdown topic to a DITA publication, create a topic reference in your map and set the `@format` attribute to `markdown` so the toolkit will recognize the source file as Markdown and convert it to DITA:
 
@@ -14,15 +10,11 @@ To add a Markdown topic to a DITA publication, create a topic reference in your 
 
 In this case, the first paragraph in the topic will be treated as a body paragraph, and each heading level will generate a nested topic.
 
-## Markdown DITA Syntax
+The _Markdown DITA_ format uses [CommonMark] as the underlying markup language, with several extensions as noted below. Markdown DITA files must be UTF-8 encoded.
 
-The Markdown DITA format supports additional constructs that are not included in LwDITA. This format pre-dates Lightweight DITA and was designed to accept a wider range of content and Markdown syntax constructs.
+## Markdown DITA syntax
 
-> **Note**
->
-> Setting the `@format` attribute to `markdown` triggers more lenient parsing than the stricter approach that is applied to `mdita` documents.
-
-Markdown DITA files must be UTF-8 encoded.
+The following Markdown constructs are parsed differently when the `@format` attribute is set to `markdown`.
 
 ### Titles and document structure
 

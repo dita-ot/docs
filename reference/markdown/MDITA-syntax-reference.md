@@ -1,12 +1,6 @@
-MDITA is the [Lightweight DITA][LwDITA] authoring format based on [Markdown].
+In 2017, the Markdown plug-in was superseded by the _LwDITA_ plug-in, which was bundled with DITA-OT 3.0, and added new formats for [Lightweight DITA][LwDITA]. The `mdita` format implements the subset of Markdown features proposed in the latest specification drafts, but differs in some ways from the original [Markdown DITA](./Markdown-syntax-reference.md) format.
 
-It is designed for users who want to write structured content with the minimum of overhead, but who also want to take advantage of the reuse mechanisms associated with the DITA standard and the multi-channel publishing afforded by standard DITA tooling.
-
-The _MDITA_ format uses [CommonMark] as the underlying markup language.
-
-The MDITA parser included in the `org.lwdita` plug-in provides preliminary support for MDITA and additional Markdown constructs as described in this syntax reference.
-
-To apply LwDITA-specific processing to Markdown topics, set the `@format` attribute to `mdita`:
+To apply the stricter LwDITA-specific processing to a Markdown topic, create a topic reference in your map and set the `@format` attribute to `mdita`:
 
 ```xml
 <map>
@@ -16,15 +10,13 @@ To apply LwDITA-specific processing to Markdown topics, set the `@format` attrib
 
 In this case, the first paragraph in the topic will be treated as a short description, and tables will be converted to DITA `<simpletable>` elements.
 
+The _MDITA_ format uses [CommonMark] as the underlying markup language. MDITA files must be UTF-8 encoded.
+
 ## MDITA Syntax
 
 The MDITA parser processes topics according to the MDITA _“Extended profile”_ proposed for LwDITA. The _"Core profile"_ can be enabled for custom parser configurations.
 
-> **Note**
->
-> Setting the `@format` attribute to `mdita` triggers stricter parsing than the more lenient approach that is applied to `markdown` documents.
-
-MDITA files must be UTF-8 encoded.
+The following Markdown constructs are parsed differently when the `@format` attribute is set to `mdita`.
 
 ### Titles and document structure
 

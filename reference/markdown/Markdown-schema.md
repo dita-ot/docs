@@ -1,6 +1,4 @@
-> Since 5.0
-
-The `MarkdownReader` class supports `$schema` YAML key to define parsing and conversion to DITA.
+As of version 5.0, the _LwDITA_ plug-in provides the `MarkdownReader` class that supports a new `$schema` key in the YAML front matter block. This key can be used to define parsing options in topic files for more control over how Markdown content is converted to DITA.
 
 ```markdown
 ---

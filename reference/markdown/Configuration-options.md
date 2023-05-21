@@ -1,4 +1,4 @@
-Configuration options for Markdown parsing and conversion to DITA.
+You can create a custom plug-in to set different configuration options for Markdown parsing and conversion to DITA.
 
 ## Parsing
 

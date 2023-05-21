@@ -535,5 +535,5 @@ workflow: review
 [YAML]: https://www.yaml.org/ 'YAML'
 [link reference definitions]: https://spec.commonmark.org/0.30/#link-reference-definition
 [shortcut reference links]: https://spec.commonmark.org/0.30/#shortcut-reference-link
-[schema]: Markdown-Schema
-[built-in schemas]: Markdown-Schema#built-in-schemas
+[schema]: Markdown-schema
+[built-in schemas]: Markdown-schema#built-in-schemas

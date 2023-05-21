@@ -21,15 +21,5 @@
       </keywords>
     </metadata>
   </prolog>
-  <conbody>
-    <div id="intro">
-      <p>In 2015, the original <cite>DITA-OT Markdown</cite> plug-in introduced a series of conventions to facilitate
-        conversion of Markdown content to DITA, and vice-versa. This Markdown flavor was called <cite>Markdown
-          DITA</cite>, a representation of DITA content in Markdown. This format served as the foundation for the
-        toolkit’s Markdown support, and has since evolved further.</p>
-      <p>In 2017, the original Markdown plug-in was superseded by the <cite>LwDITA</cite> plug-in, which was bundled
-        with DITA-OT 3.0, and adds additional features to support Lightweight DITA, including the <cite>MDITA</cite>
-        format proposed in the latest specification drafts.</p>
-    </div>
-  </conbody>
+  <conbody/>
 </concept>

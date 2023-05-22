@@ -35,7 +35,7 @@ Each header level will generate a topic and associated title:
 </topic>
 ```
 
-Pandoc [header_attributes] or PHP Markdown Extra [special Attributes] can be used to define `id` or `outputclass` attributes:
+Pandoc [header_attributes] or PHP Markdown Extra [special attributes] can be used to define `id` or `outputclass` attributes:
 
 ```markdown
 # Topic title {#carrot .juice audience=novice}
@@ -528,7 +528,7 @@ workflow: review
 [CommonMark]: https://commonmark.org/ 'CommonMark'
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/LwDITA-v1.0-cn01.html
 [header_attributes]: https://pandoc.org/MANUAL.html#extension-header_attributes 'header_attributes'
-[special Attributes]: https://michelf.ca/projects/php-markdown/extra/#spe-attr
+[special attributes]: https://michelf.ca/projects/php-markdown/extra/#spe-attr
 [pandoc_title_block]: https://pandoc.org/MANUAL.html#extension-pandoc_title_block 'pandoc_title_block'
 [pandoc_metadata_block]: https://pandoc.org/MANUAL.html#extension-yaml_metadata_block 'pandoc_metadata_block'
 [MultiMarkdown]: https://fletcherpenney.net/multimarkdown/ 'MultiMarkdown'

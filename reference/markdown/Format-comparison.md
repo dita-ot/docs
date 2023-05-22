@@ -14,12 +14,12 @@ The following table provides an overview of differences between the `markdown` a
 | LwDITA                   | –                               | ✔                          |
 | First ¶                  | Body ¶                          | Short description          |
 | Subeadings               | Nested topics                   | Sections                   |
-| Topic IDs                | Attributes or title             | Generated from title       |
-| Output class             | Defined via attributes          | –                          |
-| Profiling atts           | Defined via attributes          | –                          |
-| Topic types              | Defined via attributes          | –                          |
+| Topic IDs                | Special attributes or title     | Generated from title       |
+| Output class             | Special attributes block        | –                          |
+| Profiling atts           | Special attributes block        | –                          |
+| Topic types              | Special attributes block        | –                          |
 | Schemas                  | YAML frontmatter                | –                          |
-| Tables                   | CALS                            | Simpletable                |
+| Tables                   | OASIS exchange table model      | Simpletable                |
 | Cell alignment           | ✔                               | –                          |
 | Sections                 | Defined via attributes          | –                          |
 | Examples                 | Defined via attributes          | –                          |

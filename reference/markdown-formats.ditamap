@@ -4,9 +4,12 @@
 <map>
   <title>Markdown formats</title>
   <topicref keyref="markdown-formats" collection-type="family">
-    <topicref keyref="markdown-dita-syntax"/>
-    <topicref keyref="mdita-syntax"/>
-    <topicref keyref="common-syntax"/>
+    <topicref keyref="markdown-dita-syntax" chunk="to-content">
+      <topicref keyref="common-syntax"/>
+    </topicref>
+    <topicref keyref="mdita-syntax" chunk="to-content">
+      <topicref keyref="common-syntax"/>
+    </topicref>
     <topicref keyref="format-comparison"/>
     <topicref keyref="markdown-schema"/>
     <topicref keyref="configuration-options"/>

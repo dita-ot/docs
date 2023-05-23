@@ -4,8 +4,8 @@
 <map>
   <title>Markdown formats</title>
   <topicref keyref="markdown-formats" collection-type="family">
-    <topicref keyref="markdown-syntax-reference"/>
-    <topicref keyref="mdita-syntax-reference"/>
+    <topicref keyref="markdown-dita-syntax"/>
+    <topicref keyref="mdita-syntax"/>
     <topicref keyref="common-syntax"/>
     <topicref keyref="format-comparison"/>
     <topicref keyref="markdown-schema"/>
@@ -18,7 +18,7 @@
         <topicref keyref="markdown-input"/>
       </relcell>
       <relcell>
-        <topicref keyref="markdown-syntax-reference"/>
+        <topicref keyref="markdown-dita-syntax"/>
       </relcell>
     </relrow>
     <relrow>
@@ -26,7 +26,7 @@
         <topicref keyref="lwdita-input"/>
       </relcell>
       <relcell>
-        <topicref keyref="mdita-syntax-reference"/>
+        <topicref keyref="mdita-syntax"/>
       </relcell>
     </relrow>
     <relrow>

@@ -148,12 +148,15 @@ They are used to generate [`section`](https://docs.oasis-open.org/dita/v1.2/os/s
 
 Tables use [MultiMarkdown] table extension format:
 
+<!-- Prevent Prettier from “fixing” cell span -->
+<!-- prettier-ignore-start -->
 ```markdown
 | First Header | Second Header | Third Header |
 | ------------ | :-----------: | -----------: |
-| Content      |  _Long Cell_  |              |
+| Content      |          _Long Cell_        ||
 | Content      |   **Cell**    |         Cell |
 ```
+<!-- prettier-ignore-end -->
 
 ```xml
 <table>

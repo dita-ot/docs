@@ -3,7 +3,7 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <map>
   <title>Markdown formats</title>
-  <topicref keyref="markdown-formats" collection-type="family">
+  <topicref keyref="markdown-formats">
     <topicref keyref="markdown-dita-syntax" chunk="to-content">
       <topicref keyref="common-syntax"/>
     </topicref>
@@ -20,7 +20,7 @@
       <relcell>
         <topicref keyref="markdown-input"/>
       </relcell>
-      <relcell>
+      <relcell linking="targetonly">
         <topicref keyref="markdown-dita-syntax"/>
       </relcell>
     </relrow>
@@ -28,7 +28,7 @@
       <relcell>
         <topicref keyref="lwdita-input"/>
       </relcell>
-      <relcell>
+      <relcell linking="targetonly">
         <topicref keyref="mdita-syntax"/>
       </relcell>
     </relrow>

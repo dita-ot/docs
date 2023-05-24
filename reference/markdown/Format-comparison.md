@@ -8,27 +8,27 @@ Although the original [Markdown DITA](./Markdown-DITA-syntax.md) format and the 
 
 The following table provides an overview of differences between the `markdown` and `mdita` formats.
 
-| Features                 | Markdown DITA                        | MDITA (LwDITA)             |
-| ------------------------ | ------------------------------------ | -------------------------- |
-| Format                   | `markdown`                           | `mdita`                    |
-| LwDITA                   | –                                    | ✔                          |
-| First ¶                  | Body ¶                               | Short description          |
-| Subeadings               | Nested topics                        | Sections                   |
-| Topic IDs                | Special attributes or title          | Generated from title       |
-| Output class             | Special attributes block             | –                          |
-| Profiling atts           | Special attributes block             | –                          |
-| Topic types              | Special attributes block             | –                          |
-| Schemas                  | YAML frontmatter                     | –                          |
-| Tables                   | OASIS exchange table model ^ 1^ [^1] | Simpletable                |
-| Cell alignment           | ✔                                    | –                          |
-| Sections                 | Defined via attributes               | –                          |
-| Examples                 | Defined via attributes               | –                          |
-| Notes                    | MkDocs Material admonitions          | –                          |
-| Markdown maps            | Map schema                           | `.mditamap` extension      |
-| Maps: topic sequences    | OL in Markdown map                   | –                          |
-| Maps: key definitions    | Link reference definition            | –                          |
-| Maps: reltables          | MultiMarkdown tables with links      | –                          |
-| Key references in topics | ✔ Shortcut reference links           | ✔ Shortcut reference links |
+| Features                     | Markdown DITA                        | MDITA (LwDITA)             |
+| ---------------------------- | ------------------------------------ | -------------------------- |
+| DITA map `@format` attribute | `markdown` or `md`                   | `mdita`                    |
+| LwDITA                       | –                                    | ✔                          |
+| First ¶                      | Body ¶                               | Short description          |
+| Subeadings                   | Nested topics                        | Sections                   |
+| Topic IDs                    | Special attributes or title          | Generated from title       |
+| Output class                 | Special attributes block             | –                          |
+| Profiling atts               | Special attributes block             | –                          |
+| Topic types                  | Special attributes block             | –                          |
+| Schemas                      | YAML frontmatter                     | –                          |
+| Tables                       | OASIS exchange table model ^ 1^ [^1] | Simpletable                |
+| Cell alignment               | ✔                                    | –                          |
+| Sections                     | Defined via attributes               | –                          |
+| Examples                     | Defined via attributes               | –                          |
+| Notes                        | MkDocs Material admonitions          | –                          |
+| Markdown maps                | Map schema                           | `.mditamap` extension      |
+| Maps: topic sequences        | OL in Markdown map                   | –                          |
+| Maps: key definitions        | Link reference definition            | –                          |
+| Maps: reltables              | MultiMarkdown tables with links      | –                          |
+| Key references in topics     | ✔ Shortcut reference links           | ✔ Shortcut reference links |
 
 [Markdown]: https://daringfireball.net/projects/markdown/
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/

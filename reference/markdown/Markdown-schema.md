@@ -12,7 +12,7 @@ Shortdesc content.
 Body content.
 ```
 
-The `$schema` value is URI that is mapped to a parser configuration. This defined which the document should be parsed, i.e. which Markdown flavour it uses. Markdown schema definition is similar to XML document type declaration or `<?xml-model?>` processing instruction where the document defines how it should be optionally validated.
+The `$schema` value is URI that is mapped to a parser configuration. This defines how the document should be parsed, i.e. which Markdown flavor it uses. Markdown schema definition is similar to XML document type declaration or `<?xml-model?>` processing instruction where the document defines how it should be optionally validated.
 
 The `$schema` key must be the first key in the YAML header.
 

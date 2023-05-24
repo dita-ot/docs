@@ -12,13 +12,11 @@ In this case, the first paragraph in the topic will be treated as a short descri
 
 The _MDITA_ format uses [CommonMark] as the underlying markup language. MDITA files must be UTF-8 encoded.
 
-## MDITA Syntax
-
 The MDITA parser processes topics according to the MDITA _“Extended profile”_ proposed for LwDITA. The _"Core profile"_ can be enabled for custom parser configurations.
 
 The following Markdown constructs are parsed differently when the `@format` attribute is set to `mdita`.
 
-### Titles and document structure
+## Titles and document structure
 
 The first header level will generate a topic and the second header level a section:
 
@@ -41,7 +39,7 @@ The first header level will generate a topic and the second header level a secti
 
 The ID is generated from title contents.
 
-### Topic content
+## Topic content
 
 The first paragraph is treated as a `shortdesc` element.
 
@@ -63,7 +61,7 @@ Second paragraph.
 </topic>
 ```
 
-### Tables
+## Tables
 
 Tables use [MultiMarkdown] table extension format:
 

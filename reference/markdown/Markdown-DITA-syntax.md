@@ -12,11 +12,9 @@ In this case, the first paragraph in the topic will be treated as a body paragra
 
 The _Markdown DITA_ format uses [CommonMark] as the underlying markup language, with several extensions as noted below. Markdown DITA files must be UTF-8 encoded.
 
-## Markdown DITA syntax
-
 The following Markdown constructs are parsed differently when the `@format` attribute is set to `markdown`.
 
-### Titles and document structure
+## Titles and document structure
 
 Each header level will generate a topic and associated title:
 
@@ -50,7 +48,7 @@ If topic ID is not defined using header_attributes, the ID is generated from tit
 
 If the Markdown document doesn't contain level 1 header, one will be generated based on YAML metadata or from document file name.
 
-### Topic content
+## Topic content
 
 In Markdown document all paragraphs appear inside the `body` element.
 
@@ -72,7 +70,7 @@ Second paragraph.
 </topic>
 ```
 
-### Specialization types
+## Specialization types
 
 The following class values in [header_attributes] have a special meaning on level 1 headers:
 
@@ -113,7 +111,7 @@ Context
 
 The other way to use specialization types is by defining a [schema] for the document. See [built-in schemas].
 
-### Sections
+## Sections
 
 The following class values in [header_attributes] have a special meaning on header levels other than 1:
 
@@ -144,7 +142,7 @@ They are used to generate [`section`](https://docs.oasis-open.org/dita/v1.2/os/s
 </topic>
 ```
 
-### Tables
+## Tables
 
 Tables use [MultiMarkdown] table extension format:
 
@@ -188,7 +186,7 @@ Tables use [MultiMarkdown] table extension format:
 
 Table cells may only contain inline content and column spans; block content and row spans are not supported by Markdown DITA.
 
-### Notes
+## Notes
 
 > Since 5.0
 
@@ -248,7 +246,7 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
 
 Bulleted list items create `topicref` elements. Ordered list items create `topicref` elements with `collection-type="sequence"`.
 
-### Key Definitions
+## Key Definitions
 
 Key definitions are written in using [link reference definitions].
 
@@ -266,7 +264,7 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
 </map>
 ```
 
-### Relationship Tables
+## Relationship Tables
 
 Relationship tables are tables with links inside cells.
 

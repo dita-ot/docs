@@ -109,7 +109,7 @@ Context
 </task>
 ```
 
-The other way to use specialization types is by defining a [schema] for the document. See [built-in schemas].
+The other way to use specialization types is by defining a [schema] for the document.
 
 ## Sections
 
@@ -306,5 +306,4 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
 [special attributes]: https://michelf.ca/projects/php-markdown/extra/#spe-attr
 [MultiMarkdown]: https://fletcherpenney.net/multimarkdown/ 'MultiMarkdown'
 [link reference definitions]: https://spec.commonmark.org/0.30/#link-reference-definition
-[schema]: Markdown-schema
-[built-in schemas]: Markdown-schema#built-in-schemas
+[schema]: Markdown-schema.md

@@ -140,9 +140,9 @@ Ordered can be marked up with either number or number sign, followed by a period
     <ol>
       <li>three</li>
       <li>four</li>
-    </ul>
+    </ol>
   </li>
-</ul>
+</ol>
 ```
 
 Definition lists use the [PHP Markdown Extra](https://michelf.com/projects/php-markdown/extra/#def-list) format:

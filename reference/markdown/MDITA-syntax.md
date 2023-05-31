@@ -137,6 +137,5 @@ Bulleted and ordered list items create `topicref` elements.
 MDITA files also support the [common Markdown syntax](Common-syntax.md) constructs.
 
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/LwDITA-v1.0-cn01.html
-[Markdown]: https://daringfireball.net/projects/markdown/
 [CommonMark]: https://commonmark.org/ 'CommonMark'
 [MultiMarkdown]: https://fletcherpenney.net/multimarkdown/ 'MultiMarkdown'

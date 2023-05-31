@@ -308,7 +308,6 @@ Markdown DITA files also support the [common Markdown syntax](Common-syntax.md) 
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/LwDITA-v1.0-cn01.html
 [header_attributes]: https://pandoc.org/MANUAL.html#extension-header_attributes 'header_attributes'
 [special attributes]: https://michelf.ca/projects/php-markdown/extra/#spe-attr
-[pandoc_title_block]: https://pandoc.org/MANUAL.html#extension-pandoc_title_block 'pandoc_title_block'
 [MultiMarkdown]: https://fletcherpenney.net/multimarkdown/ 'MultiMarkdown'
 [link reference definitions]: https://spec.commonmark.org/0.30/#link-reference-definition
 [schema]: Markdown-schema

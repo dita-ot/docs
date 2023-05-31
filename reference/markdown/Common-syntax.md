@@ -221,3 +221,7 @@ workflow: review
   <data name="workflow" value="review"/>
 </prolog>
 ```
+
+[pandoc_metadata_block]: https://pandoc.org/MANUAL.html#extension-yaml_metadata_block 'pandoc_metadata_block'
+[shortcut reference links]: https://spec.commonmark.org/0.30/#shortcut-reference-link
+[YAML]: https://www.yaml.org/ 'YAML'

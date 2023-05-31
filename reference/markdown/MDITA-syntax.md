@@ -140,4 +140,3 @@ MDITA files also support the [common Markdown syntax](Common-syntax.md) construc
 [Markdown]: https://daringfireball.net/projects/markdown/
 [CommonMark]: https://commonmark.org/ 'CommonMark'
 [MultiMarkdown]: https://fletcherpenney.net/multimarkdown/ 'MultiMarkdown'
-[shortcut reference links]: https://spec.commonmark.org/0.30/#shortcut-reference-link

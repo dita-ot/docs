@@ -309,10 +309,7 @@ Markdown DITA files also support the [common Markdown syntax](Common-syntax.md) 
 [header_attributes]: https://pandoc.org/MANUAL.html#extension-header_attributes 'header_attributes'
 [special attributes]: https://michelf.ca/projects/php-markdown/extra/#spe-attr
 [pandoc_title_block]: https://pandoc.org/MANUAL.html#extension-pandoc_title_block 'pandoc_title_block'
-[pandoc_metadata_block]: https://pandoc.org/MANUAL.html#extension-yaml_metadata_block 'pandoc_metadata_block'
 [MultiMarkdown]: https://fletcherpenney.net/multimarkdown/ 'MultiMarkdown'
-[YAML]: https://www.yaml.org/ 'YAML'
 [link reference definitions]: https://spec.commonmark.org/0.30/#link-reference-definition
-[shortcut reference links]: https://spec.commonmark.org/0.30/#shortcut-reference-link
 [schema]: Markdown-schema
 [built-in schemas]: Markdown-schema#built-in-schemas

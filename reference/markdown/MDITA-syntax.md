@@ -110,7 +110,7 @@ Table cells may only contain inline content.
 
 ## Markdown DITA Map Syntax
 
-> Since 5.2, requires DITA-OT 4.1 or newer.
+_(Since 5.2, requires DITA-OT 4.1 or newer.)_
 
 DITA Map documents in MDITA syntax need to use file name extension `mditamap`:
 

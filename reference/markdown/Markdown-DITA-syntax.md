@@ -299,10 +299,6 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
 </map>
 ```
 
-## Common syntax
-
-Markdown DITA files also support the [common Markdown syntax](Common-syntax.md) constructs.
-
 [Markdown]: https://daringfireball.net/projects/markdown/
 [CommonMark]: https://commonmark.org/ 'CommonMark'
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/LwDITA-v1.0-cn01.html

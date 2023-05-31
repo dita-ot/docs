@@ -105,12 +105,15 @@ _italic_
 
 Unordered can be marked up with either hyphen or asterisk:
 
+<!-- Prevent Prettier from “fixing” mixed list items -->
+<!-- prettier-ignore-start -->
 ```markdown
-- one
-- two
+* one
+* two
   - three
   - four
 ```
+<!-- prettier-ignore-end -->
 
 ```xml
 <ul>

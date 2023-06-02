@@ -188,9 +188,11 @@ Table cells may only contain inline content and column spans; block content and 
 
 ## Notes
 
-_(Since 5.0, requires DITA-OT 4.1 or newer.)_
-
 Notes can be written using [admonition extension](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) of Material for MkDocs.
+
+<!-- Since 5.0 -->
+
+> **Note:** Requires DITA-OT 4.1 or newer.
 
 ```markdown
 !!! note
@@ -220,9 +222,11 @@ Different note types can be defined by changing the type qualifier.
 
 ## Markdown DITA map syntax
 
-_(Since 5.1, requires DITA-OT 4.1 or newer.)_
-
 DITA maps can be written in Markdown using standard Markdown syntax for links and lists.
+
+<!-- Since 5.1 -->
+
+> **Note:** Requires DITA-OT 4.1 or newer.
 
 In Markdown DITA, maps use the [schema] key in the YAML front matter block to define the file as a map:
 

@@ -110,9 +110,11 @@ Table cells may only contain inline content.
 
 ## MDITA map syntax
 
-_(Since 5.2, requires DITA-OT 4.1 or newer.)_
-
 DITA maps can be written in MDITA using standard Markdown syntax for links and lists.
+
+<!-- Since 5.2 -->
+
+> **Note:** Requires DITA-OT 4.1 or newer.
 
 In MDITA, maps use the file name extension `mditamap` to define the file as a map:
 

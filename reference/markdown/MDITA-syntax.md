@@ -108,7 +108,7 @@ MultiMarkdown tables are converted to DITA `<simpletable>` elements.
 
 Table cells may only contain inline content.
 
-## Markdown DITA Map Syntax
+## Markdown DITA map syntax
 
 _(Since 5.2, requires DITA-OT 4.1 or newer.)_
 

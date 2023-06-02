@@ -218,7 +218,7 @@ Different note types can be defined by changing the type qualifier.
 </note>
 ```
 
-## Markdown DITA Map Syntax
+## Markdown DITA map syntax
 
 _(Since 5.1, requires DITA-OT 4.1 or newer.)_
 
@@ -246,7 +246,7 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
 
 Bulleted list items create `topicref` elements. Ordered list items create `topicref` elements with `collection-type="sequence"`.
 
-## Key Definitions
+## Key definitions
 
 Key definitions are written in using [link reference definitions].
 
@@ -264,7 +264,7 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
 </map>
 ```
 
-## Relationship Tables
+## Relationship tables
 
 Relationship tables are tables with links inside cells.
 

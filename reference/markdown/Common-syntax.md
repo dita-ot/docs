@@ -69,7 +69,7 @@ An inline ![Alt](test.jpg).
 
 ## Key references
 
-Key reference can be used with [shortcut reference links]:
+Keys can be referenced using standard Markdown syntax for [shortcut reference links]:
 
 ```markdown
 [key]

@@ -254,7 +254,7 @@ Unordered list items create `<topicref>` elements, and ordered list items create
 
 ## Key definitions
 
-Key definitions are written in using [link reference definitions].
+Keys can be defined using standard Markdown syntax for [link reference definitions].
 
 ```markdown
 ---

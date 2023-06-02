@@ -188,7 +188,7 @@ Table cells may only contain inline content and column spans; block content and 
 
 ## Notes
 
-Notes can be written using [admonition extension](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) of Material for MkDocs.
+Notes can be written using the syntax defined in the Material for MkDocs [admonition extension](https://squidfunk.github.io/mkdocs-material/reference/admonitions/).
 
 <!-- Since 5.0 -->
 
@@ -206,7 +206,7 @@ Notes can be written using [admonition extension](https://squidfunk.github.io/mk
 </note>
 ```
 
-Different note types can be defined by changing the type qualifier.
+Different note types can be defined by changing the type qualifier keyword.
 
 ```markdown
 !!! info

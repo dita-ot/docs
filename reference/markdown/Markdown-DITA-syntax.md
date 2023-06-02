@@ -222,7 +222,9 @@ Different note types can be defined by changing the type qualifier.
 
 _(Since 5.1, requires DITA-OT 4.1 or newer.)_
 
-DITA Map documents in Markdown syntax are written using [schema] for maps:
+DITA maps can be written in Markdown using standard Markdown syntax for links and lists.
+
+In Markdown DITA, maps use the [schema] key in the YAML front matter block to define the file as a map:
 
 ```markdown
 ---
@@ -244,7 +246,7 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
 </map>
 ```
 
-Bulleted list items create `topicref` elements. Ordered list items create `topicref` elements with `collection-type="sequence"`.
+Unordered list items create `<topicref>` elements, and ordered list items create `<topicref>` elements with `collection-type="sequence"`.
 
 ## Key definitions
 

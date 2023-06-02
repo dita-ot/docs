@@ -108,11 +108,13 @@ MultiMarkdown tables are converted to DITA `<simpletable>` elements.
 
 Table cells may only contain inline content.
 
-## Markdown DITA map syntax
+## MDITA map syntax
 
 _(Since 5.2, requires DITA-OT 4.1 or newer.)_
 
-DITA Map documents in MDITA syntax need to use file name extension `mditamap`:
+DITA maps can be written in MDITA using standard Markdown syntax for links and lists.
+
+In MDITA, maps use the file name extension `mditamap` to define the file as a map:
 
 ```markdown
 # Map title
@@ -130,7 +132,7 @@ DITA Map documents in MDITA syntax need to use file name extension `mditamap`:
 </map>
 ```
 
-Bulleted and ordered list items create `topicref` elements.
+In MDITA, both ordered and unordered list items create `<topicref>` elements.
 
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/LwDITA-v1.0-cn01.html
 [CommonMark]: https://commonmark.org/ 'CommonMark'

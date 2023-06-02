@@ -2,10 +2,10 @@ The following common Markdown constructs are processed in the same way for both 
 
 ## Hard line breaks
 
-A line break that is preceded by two or more spaces is parsed as a hard line break. Because DITA doesn't have a `<br>` element for line break, hard line breaks are converted into `<?linebreak?>` processing instruction.
+A line break that is preceded by two or more spaces is parsed as a hard line break. Because DITA doesn’t have a `<br>` element for line break, hard line breaks are converted into `<?linebreak?>` processing instructions.
 
 ```markdown
-foo· ·
+foo··
 baz
 ```
 
@@ -13,7 +13,7 @@ baz
 <p>foo<?linebreak?>baz</p>
 ```
 
-LwDITA plug-in contains extensions for HTML5 and PDF outputs to generate the line break.
+The LwDITA plug-in contains extensions for HTML5 and PDF outputs to generate line breaks.
 
 ## Links
 

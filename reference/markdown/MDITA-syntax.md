@@ -18,7 +18,7 @@ The following Markdown constructs are parsed differently when the `@format` attr
 
 ## Titles and document structure
 
-The first header level will generate a topic and the second header level a section:
+The first heading level will generate a topic and the second heading level a section:
 
 ```markdown
 # Topic title

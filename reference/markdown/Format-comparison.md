@@ -13,7 +13,7 @@ The following table provides an overview of differences between the `markdown` a
 | DITA map `@format` attribute | `markdown` or `md`                   | `mdita`                    |
 | LwDITA                       | –                                    | ✔                          |
 | First ¶                      | Body ¶                               | Short description          |
-| Subeadings                   | Nested topics                        | Sections                   |
+| Subheadings                  | Nested topics                        | Sections                   |
 | Topic IDs                    | Special attributes or title          | Generated from title       |
 | Output class                 | Special attributes block             | –                          |
 | Profiling atts               | Special attributes block             | –                          |

@@ -16,7 +16,7 @@ The following Markdown constructs are parsed differently when the `@format` attr
 
 ## Titles and document structure
 
-Each header level will generate a topic and associated title:
+Each heading level will generate a topic and associated title:
 
 ```markdown
 # Topic title
@@ -33,7 +33,7 @@ Each header level will generate a topic and associated title:
 </topic>
 ```
 
-Pandoc [header_attributes] or PHP Markdown Extra [special attributes] can be used to define `id` or `outputclass` attributes:
+Pandoc [header attributes] or PHP Markdown Extra [special attributes] can be used to define `id` or `outputclass` attributes:
 
 ```markdown
 # Topic title {#carrot .juice audience=novice}
@@ -44,13 +44,13 @@ Pandoc [header_attributes] or PHP Markdown Extra [special attributes] can be use
   <title>Topic title</title>
 ```
 
-If topic ID is not defined using header_attributes, the ID is generated from title contents.
+If topic ID is not defined using header attributes, the ID is generated from title contents.
 
-If the Markdown document doesn't contain level 1 header, one will be generated based on YAML metadata or from document file name.
+If the Markdown document doesn’t contain a level 1 heading, one will be generated based on YAML metadata or from the document file name.
 
 ## Topic content
 
-In Markdown document all paragraphs appear inside the `body` element.
+In Markdown DITA documents, all paragraphs appear inside the `body` element.
 
 ```markdown
 # Topic title
@@ -72,7 +72,7 @@ Second paragraph.
 
 ## Specialization types
 
-The following class values in [header_attributes] have a special meaning on level 1 headers:
+The following class values in [header attributes] have a special meaning on level 1 headings:
 
 - `concept`
 - `task`
@@ -113,7 +113,7 @@ The other way to use specialization types is by defining a [schema] for the docu
 
 ## Sections
 
-The following class values in [header_attributes] have a special meaning on header levels other than 1:
+The following class values in [header attributes] have a special meaning on heading levels other than 1:
 
 - `section`
 - `example`
@@ -144,7 +144,7 @@ They are used to generate [`section`](https://docs.oasis-open.org/dita/v1.2/os/s
 
 ## Tables
 
-Tables use [MultiMarkdown] table extension format:
+Tables use the [MultiMarkdown] table extension format:
 
 <!-- Prevent Prettier from “fixing” cell span -->
 <!-- prettier-ignore-start -->
@@ -184,7 +184,7 @@ Tables use [MultiMarkdown] table extension format:
 </table>
 ```
 
-Table cells may only contain inline content and column spans; block content and row spans are not supported by Markdown DITA.
+Table cells may only contain inline content and column spans; block content and row spans are not supported in Markdown DITA.
 
 ## Notes
 
@@ -308,7 +308,7 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
 [Markdown]: https://daringfireball.net/projects/markdown/
 [CommonMark]: https://commonmark.org/ 'CommonMark'
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/LwDITA-v1.0-cn01.html
-[header_attributes]: https://pandoc.org/MANUAL.html#extension-header_attributes 'header_attributes'
+[header attributes]: https://pandoc.org/MANUAL.html#extension-header_attributes
 [special attributes]: https://michelf.ca/projects/php-markdown/extra/#spe-attr
 [MultiMarkdown]: https://fletcherpenney.net/multimarkdown/ 'MultiMarkdown'
 [link reference definitions]: https://spec.commonmark.org/0.30/#link-reference-definition

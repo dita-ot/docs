@@ -157,10 +157,10 @@ Term
 
 ```xml
 <dl>
-  <delentry>
+  <dlentry>
     <dt>Term</dt>
     <dd>Defintion.</dd>
-  </delentry>
+  </dlentry>
 </dl>
 ```
 

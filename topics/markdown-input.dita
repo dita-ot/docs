@@ -25,7 +25,7 @@
       that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been
       marked up with tags or formatting instructions.”</lq>
 
-    <p>DITA Open Toolkit now allows you to use Markdown files directly in topic references and export DITA content as
+    <p>DITA Open Toolkit allows you to use Markdown files directly in topic references and export DITA content as
       Markdown.</p>
 
     <p>These features enable lightweight authoring scenarios that allow subject matter experts to contribute to DITA
@@ -34,6 +34,13 @@
 
     <section>
       <title>Adding Markdown topics</title>
+      <p>In 2015, the original <term>DITA-OT Markdown</term> plug-in introduced a series of conventions to convert
+        Markdown content to DITA, and vice-versa. This Markdown flavor was called
+        <xref keyref="markdown-dita-syntax">Markdown DITA</xref>. The <codeph>markdown</codeph> format adds several
+        complementary constructs to represent DITA content in Markdown, beyond those proposed for the
+        <xref keyref="mdita-syntax">MDITA</xref> format in the
+        <xref keyref="lwdita-input">Lightweight DITA</xref> specification drafts.</p>
+      <note conkeyref="reusable-components/md-formats"/>
       <p>To add a Markdown topic to a DITA publication, create a topic reference in your map and set the
           <xmlatt>format</xmlatt> attribute to <codeph>markdown</codeph> so the toolkit will recognize the source file
         as Markdown and convert it to DITA:</p>
@@ -44,10 +51,6 @@
 &lt;map>
   &lt;topicref href="markdown-dita-topic.md" <b>format="markdown"</b>/>
 &lt;/map></codeblock></p>
-      <p>The <codeph>markdown</codeph> format uses a relatively lenient document parsing approach to support a wide
-        range of content and Markdown syntax constructs.</p>
-      <note>The Markdown support is based on
-        <xref keyref="commonmark"/>, a strongly defined, highly compatible specification of Markdown.</note>
       <p>When you add Markdown topics to a DITA publication as described above, the content is temporarily converted to
         DITA in the background when generating other output formats like HTML or PDF, but the Markdown source files
         remain unchanged.</p>

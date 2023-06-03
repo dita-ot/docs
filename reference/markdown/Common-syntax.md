@@ -26,7 +26,7 @@ The format of local link targets is detected based on file name extension. The f
 | `.md`       | `markdown` |
 | `.markdown` | `markdown` |
 
-All other link targets use `format` from file name extension and are treated as non-DITA files. Absolute links targets are treated as external scope links:
+All other link targets detect the `format` from the file name extension and are treated as non-DITA files. Absolute link targets are treated as external scope links:
 
 ```markdown
 [Markdown](test.md)
@@ -44,7 +44,7 @@ All other link targets use `format` from file name extension and are treated as 
 
 ## Images
 
-Images used in inline content will result in inline placement. If a block level image contains a title, it will be treated as an image wrapped in figure:
+Images used in inline content will result in inline placement. If a block-level image contains a title, it will be treated as an image wrapped in a figure element:
 
 ```markdown
 An inline ![Alt](test.jpg).
@@ -103,7 +103,9 @@ _italic_
 
 ## Lists
 
-Unordered can be marked up with either hyphen or asterisk:
+Standard Markdown syntax is used for both ordered (numbered) and unordered (bulleted) lists.
+
+Unordered list items can be marked up using either asterisks “`*`” or hyphens “`-`” as list markers:
 
 <!-- Prevent Prettier from “fixing” mixed list items -->
 <!-- prettier-ignore-start -->
@@ -127,7 +129,7 @@ Unordered can be marked up with either hyphen or asterisk:
 </ul>
 ```
 
-Ordered can be marked up with either number or number sign, followed by a period:
+Ordered lists use either numbers or number signs “`#`”, followed by a period:
 
 ```markdown
 1.  one
@@ -148,7 +150,7 @@ Ordered can be marked up with either number or number sign, followed by a period
 </ol>
 ```
 
-Definition lists use the [PHP Markdown Extra](https://michelf.com/projects/php-markdown/extra/#def-list) format:
+Definition lists use the [PHP Markdown Extra](https://michelf.com/projects/php-markdown/extra/#def-list) format with a single-line term followed by a colon and the definition:
 
 ```markdown
 Term
@@ -164,11 +166,13 @@ Term
 </dl>
 ```
 
-Each definition entry must have only one term and contain only inline content.
+Each definition list entry must have only one term and contain only inline content.
 
 ## Metadata
 
-[YAML] metadata block as defined in Pandoc [pandoc_metadata_block] can be used to specify different metadata elements. The supported elements are:
+A [YAML] metadata block as defined in the [pandoc_metadata_block] extension can be used to specify metadata elements for the DITA prolog.
+
+The supported elements are:
 
 - `author`
 - `source`
@@ -179,7 +183,7 @@ Each definition entry must have only one term and contain only inline content.
 - `keyword`
 - `resourceid`
 
-Unrecognized keys are output using `data` element.
+Any unrecognized keys are output using the `<data>` element.
 
 ```markdown
 ---

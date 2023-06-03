@@ -314,4 +314,4 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
 [special attributes]: https://michelf.ca/projects/php-markdown/extra/#spe-attr
 [MultiMarkdown]: https://fletcherpenney.net/multimarkdown/ 'MultiMarkdown'
 [link reference definitions]: https://spec.commonmark.org/0.30/#link-reference-definition
-[schema]: Markdown-schema.md
+[schema]: Markdown-schemas.md

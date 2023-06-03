@@ -37,11 +37,11 @@ The first heading level will generate a topic and the second heading level a sec
 </topic>
 ```
 
-The ID is generated from title contents.
+The ID is generated automatically from the title content.
 
 ## Topic content
 
-The first paragraph is treated as a `shortdesc` element.
+The first paragraph is treated as a `<shortdesc>` element.
 
 ```markdown
 # Topic title
@@ -63,7 +63,7 @@ Second paragraph.
 
 ## Tables
 
-Tables use [MultiMarkdown] table extension format:
+Tables use the [MultiMarkdown] table extension format:
 
 ```markdown
 | First Header | Second Header | Third Header |
@@ -72,10 +72,7 @@ Tables use [MultiMarkdown] table extension format:
 | Content      |   **Cell**    |         Cell |
 ```
 
-MultiMarkdown tables are converted to DITA `<simpletable>` elements.
-
-> **Note**  
-> Cell alignment information is not preserved, as the `@align` attribute is are not available for `<simpletable>` elements.
+Tables in MDITA files are converted to DITA `<simpletable>` elements:
 
 ```xml
 <simpletable>
@@ -105,6 +102,9 @@ MultiMarkdown tables are converted to DITA `<simpletable>` elements.
   </strow>
 </simpletable>
 ```
+
+> **Note**
+> Cell alignment information is not preserved, as the `@align` attribute is are not available for `<simpletable>` elements.
 
 Table cells may only contain inline content.
 

@@ -19,7 +19,7 @@ The following table provides an overview of differences between the `markdown` a
 | Profiling atts               | Special attributes block             | –                          |
 | Topic types                  | Special attributes block             | –                          |
 | Schemas                      | YAML frontmatter                     | –                          |
-| Tables                       | OASIS exchange table model ^ 1^ [^1] | Simpletable                |
+| Tables                       | OASIS exchange table model ^ 1^ [^1] | DITA `<simpletable>`       |
 | Cell alignment               | ✔                                    | –                          |
 | Sections                     | Defined via attributes               | –                          |
 | Examples                     | Defined via attributes               | –                          |

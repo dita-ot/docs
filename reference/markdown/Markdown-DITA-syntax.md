@@ -156,6 +156,8 @@ Tables use the [MultiMarkdown] table extension format:
 ```
 <!-- prettier-ignore-end -->
 
+Tables in Markdown DITA files are converted to the [OASIS exchange table model](https://www.oasis-open.org/specs/tm9901.html):
+
 ```xml
 <table>
   <tgroup cols="3">

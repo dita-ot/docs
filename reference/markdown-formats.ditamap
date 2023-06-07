@@ -16,11 +16,20 @@
   </topicref>
 
   <reltable>
+    <title>Source and target</title>
+    <relheader>
+      <relcolspec linking="sourceonly">
+        <title>Sourceonly: links to →</title>
+      </relcolspec>
+      <relcolspec linking="targetonly">
+        <title>Targetonly</title>
+      </relcolspec>
+    </relheader>
     <relrow>
       <relcell>
         <topicref keyref="markdown-input"/>
       </relcell>
-      <relcell linking="targetonly">
+      <relcell>
         <topicref keyref="markdown-dita-syntax"/>
       </relcell>
     </relrow>
@@ -28,17 +37,29 @@
       <relcell>
         <topicref keyref="lwdita-input"/>
       </relcell>
-      <relcell linking="targetonly">
+      <relcell>
         <topicref keyref="mdita-syntax"/>
       </relcell>
     </relrow>
     <relrow>
-      <relcell linking="targetonly">
+      <relcell>
+        <topicref keyref="markdown-formats"/>
+      </relcell>
+      <relcell>
         <topicref keyref="markdown-input"/>
         <topicref keyref="lwdita-input"/>
       </relcell>
+    </relrow>
+  </reltable>
+
+  <reltable>
+    <title>Reciprocal links</title>
+    <relrow>
       <relcell>
-        <topicref keyref="markdown-formats"/>
+        <topicref keyref="dita2markdown"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="markdown-input"/>
       </relcell>
     </relrow>
   </reltable>

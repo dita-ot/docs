@@ -36,7 +36,10 @@
         <p>To publish Markdown DITA files, use the <option>markdown</option> transtype.</p></li>
       <li>
         <p>To generate
-          <xref keyref="gfm-spec"/> files, use the <option>markdown_github</option> transtype.</p></li>
+          <xref keyref="gfm-spec"/> files, use the <option>markdown_github</option> transtype.</p>
+        <note>Since the GitHub format does not support definition lists, they are converted to unordered lists with bold
+          terms. Attribute blocks with IDs, class names, and other custom attributes are also omitted, as GitHub does
+          not support Pandoc header attributes or PHP Markdown Extra special attributes.</note></li>
       <li>
         <p>To publish GitHub-Flavored Markdown and generate a <filepath>SUMMARY.md</filepath> table of contents file for
           publication via

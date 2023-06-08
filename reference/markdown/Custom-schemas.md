@@ -102,6 +102,7 @@ The following configuration options can be specified in custom schemas:
 | Static Field                            | Default | Description                                                                                      |
 | --------------------------------------- | ------- | ------------------------------------------------------------------------------------------------ |
 | `DitaRenderer.SHORTDESC_PARAGRAPH`      | `false` | Convert first paragraph to shortdesc.                                                            |
+| `DitaRenderer.TIGHT_LIST`               | `true`  | Support tight lists.                                                                             |
 | `DitaRenderer.ID_FROM_YAML`             | `false` | Use `id` key from YAML header for topic @id.                                                     |
 | `DitaRenderer.LW_DITA`                  | `false` | Convert to XDITA instead of DITA. Deprecated, use `DitaRenderer.MDITA_EXTENDED_PROFILE` instead. |
 | `DitaRenderer.SPECIALIZATION`           | `false` | Convert to concept/task/reference if root heading has matching class.                            |

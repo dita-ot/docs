@@ -150,6 +150,8 @@ Ordered lists use either numbers or number signs “`#`”, followed by a period
 </ol>
 ```
 
+> **Note:** Markdown DITA supports both loose and [tight] list spacing (with no blank lines between list items). MDITA treats all lists as [loose], and wraps each list item in a paragraph (`<li><p>item</p></li>`).
+
 Definition lists use the [PHP Markdown Extra](https://michelf.com/projects/php-markdown/extra/#def-list) format with a single-line term followed by a colon and the definition:
 
 ```markdown
@@ -229,6 +231,8 @@ workflow: review
 </prolog>
 ```
 
+[loose]: https://spec.commonmark.org/0.30/#loose
 [pandoc_metadata_block]: https://pandoc.org/MANUAL.html#extension-yaml_metadata_block 'pandoc_metadata_block'
 [shortcut reference links]: https://spec.commonmark.org/0.30/#shortcut-reference-link
+[tight]: https://spec.commonmark.org/0.30/#tight
 [YAML]: https://www.yaml.org/ 'YAML'

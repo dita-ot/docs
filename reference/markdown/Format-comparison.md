@@ -29,8 +29,11 @@ The following table provides an overview of differences between the `markdown` a
 | Maps: key definitions        | Link reference definition            | –                          |
 | Maps: reltables              | MultiMarkdown tables with links      | –                          |
 | Key references in topics     | ✔ Shortcut reference links           | ✔ Shortcut reference links |
+| List spacing                 | [loose] or [tight] (no blank lines)  | [loose] only (¶ per item)  |
 
 [Markdown]: https://daringfireball.net/projects/markdown/
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/
+[loose]: https://spec.commonmark.org/0.30/#loose
+[tight]: https://spec.commonmark.org/0.30/#tight
 
 [^1]: <https://www.oasis-open.org/specs/tm9901.html>

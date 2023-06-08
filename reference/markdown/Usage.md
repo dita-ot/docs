@@ -17,7 +17,7 @@ A more lenient document parsing should use `@format` value `markdown` or `md`.
 </map>
 ```
 
-The `@format` attribute value must be set to `mdita`, `markdown`, or `md` in order to recognize files as Markdown DITA; The `@format` attribute value must be set to `hdita` in order to recognize files as HTML DITA. The file extension is not used to recognize format.
+The `@format` attribute value must be set to `markdown` or `md` to recognize files as Markdown DITA. For LwDITA-compatible documents, set the `@format` attribute value to `mdita` to process files as MDITA, or `hdita` for HTML DITA.
 
 See [Markdown DITA syntax](Markdown-DITA-syntax) for XML and Markdown DITA correspondence.
 

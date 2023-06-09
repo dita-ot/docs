@@ -4,9 +4,6 @@
   <deliverable id="pdf">
     <context name="User Guide">
       <input href="../../userguide-book.ditamap"/>
-      <profile>
-        <ditaval href="../../resources/pdf.ditaval"/>
-      </profile>
     </context>
     <output href="."/>
     <publication transtype="pdf2">
@@ -16,6 +13,9 @@
       <param name="outputFile.base" value="userguide"/>
       <param name="processing-mode" value="strict"/>
       <param name="theme" path="../themes/dita-ot-docs-theme.yaml"/>
+      <profile>
+        <ditaval href="../../resources/pdf.ditaval"/>
+      </profile>
     </publication>
   </deliverable>
 </project>

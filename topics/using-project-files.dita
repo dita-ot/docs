@@ -6,11 +6,10 @@
   <titlealts>
     <navtitle>Using a project file</navtitle>
   </titlealts>
-  <shortdesc><ph id="projects-desc">DITA-OT 3.4 introduces new project files to define publication projects with
-      multiple deliverables. Projects specify a context, output folder, and publication for each deliverable. A
-      re-usable context groups source files and filters, and a publication defines an output format with transformation
-      parameters. You can pass a project file to the <cmdname>dita</cmdname> command to publish multiple deliverables at
-      once.</ph></shortdesc>
+  <shortdesc>DITA-OT 3.4 introduced project files that allow you to publish multiple deliverables at once. Each
+    deliverable specifies a re-usable source <codeph>context</codeph> that groups the maps or topics you want to
+    publish, an <codeph>output</codeph> folder, and a <codeph>publication</codeph> format (such as HTML, or PDF) with
+    transformation parameters.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -33,8 +32,10 @@
         otherwise equivalent to the XML syntax.</note>
       <p id="projects-advantages">Whereas <filepath>.properties</filepath> files can only be used to set parameters,
         project files go further, allowing you to define multiple deliverables with separate input files and output
-        folders and formats for each publication. A project file can also refer to other project files, so you can
-        re-use common configuration structures across projects.</p>
+        folders and formats for each publication. A project file can also refer to other project files with
+          <codeph>include</codeph> statements. Deliverables, contexts, and publications can either be entirely
+        self-contained, or reference others with <codeph>idref</codeph> attributes, so you can re-use common
+        configuration structures across (and within) projects.</p>
       <p id="projects-relpaths">Another advantage of project files over <filepath>.properties</filepath> files is that
         they allow you to specify paths relative to the project file, even for parameters that require absolute paths,
         such as:
@@ -45,50 +46,67 @@
           <li><codeph>args.hdr</codeph></li>
         </ul>
       </p>
+    </section>
+    <section>
+      <title>Syntax</title>
       <p id="projects-structure">Though the exact syntax differs slightly, the basic structure of project files is
         similar in all supported formats.</p>
+      <p>The following settings can be defined for each <codeph>deliverable</codeph>:</p>
       <ul compact="yes">
         <li>
-          <p>You can link to other project files with <codeph>include(s)</codeph></p></li>
-        <li>
-          <p>Projects can define multiple <codeph>deliverables</codeph>, which consist of:
-            <ul>
-              <li>
-                <p>a publication <codeph>context</codeph> that may include:
-                  <ul>
-                    <li>an <codeph>id</codeph> used to refer to this context from other projects</li>
-                    <li>a series of <codeph>input</codeph> files (DITA maps)</li>
-                    <li>a <codeph>profile</codeph> with a series of DITAVAL files used to filter the content of all
-                      publications in the deliverable</li>
-                  </ul>
-                </p>
-              </li>
-              <li>
-                <p>an <codeph>output</codeph> location (relative to the CLI <parmname>--output</parmname>
-                directory)</p></li>
-              <li>a <codeph>publication</codeph> that defines:
-                <ul compact="yes">
-                  <li>an output format via <codeph>transtype</codeph>, and</li>
-                  <li>a series of parameters to set for this transformation type, specified via <codeph>name</codeph>
-                    and either <codeph>href</codeph>, <codeph>path</codeph>, or <codeph>value</codeph></li>
-                  <li>a <codeph>profile</codeph> with any additional DITAVAL files used to filter the content of the
-                    publication (in addition to those specified for the deliverable context)</li>
-                </ul>
-              </li>
+          <p>a source <codeph>context</codeph> that may include:
+            <ul compact="yes">
+              <li>an <codeph>id</codeph> that allows you to refer to this context from other contexts or projects</li>
+              <li>an <codeph>idref</codeph> that refers to another context</li>
+              <li>a series of <codeph>input</codeph> files (the DITA maps or topics you want to publish)</li>
+              <li>a <codeph>profile</codeph> with a series of DITAVAL files used to filter the content of all
+                publications in the deliverable</li>
             </ul>
-          </p></li>
+          </p>
+        </li>
+        <li>
+          <p>an <codeph>output</codeph> location (relative to the CLI <parmname>--output</parmname> directory)</p></li>
+        <li>
+          <p>a <codeph>publication</codeph> type that defines:
+            <ul compact="yes">
+              <li>an <codeph>id</codeph> that allows you to refer to this publication from other publications or
+                projects</li>
+              <li>an <codeph>idref</codeph> that refers to another publication</li>
+              <li>a <codeph>transtype</codeph> that specifies an output format (such as HTML, or PDF)</li>
+              <li>a series of <codeph>param</codeph> elements, with any parameters to set for this transformation type,
+                specified via <codeph>name</codeph> and either <codeph>href</codeph>, <codeph>path</codeph>, or
+                  <codeph>value</codeph></li>
+              <li>a <codeph>profile</codeph> with any additional DITAVAL files used to filter the content of the
+                publication (in addition to any filters defined in the map context)</li>
+            </ul></p>
+          <p>Parameters defined in a publication can override those in other publications that are referenced via
+              <codeph>idref</codeph>.</p></li>
       </ul>
       <note type="tip">
         <ul>
           <li>Use <codeph>href</codeph> for web addresses and other resources that should resolve to an absolute
-            URI.</li>
+            URI. Relative references are resolved using the project file as a base directory.</li>
           <li>Use <codeph>path</codeph> for parameters that require an absolute value, like
               <parmname>args.cssroot</parmname>. Paths may be defined relative to the project file, but are always
             expanded to an absolute system path.</li>
           <li>Use <codeph>value</codeph> to define strings and relative values for properties like
-              <parmname>args.csspath</parmname>, which is used to describe a relative path in the output folder.</li>
+              <parmname>args.csspath</parmname>, which is used to describe a relative path in the output folder. String
+            values are passed as is.</li>
         </ul>
       </note>
+    </section>
+    <section id="project-filtering">
+      <title>Project filtering</title>
+      <p>As of DITA-OT 4.0, you can add DITAVAL filters to both contexts and publications. If a set of filter conditions
+        applies to most or all of your deliverables, then it should probably be defined in a publication, rather than in
+        contexts.</p>
+      <p> For example, consider a case with 100 maps that have multiple <xmlatt>product</xmlatt> variants, but every one
+        of which is published in two <xmlatt>audience</xmlatt> conditions (internal or external). If
+          <xmlatt>audience</xmlatt> is varied in publications, the structure is orthogonal and well-organized: <fig>
+          <title>Sample filtering scenario</title>
+          <image href="../reference/images/sample-project-filtering-scenario.svg"/>
+        </fig>
+      </p>
     </section>
     <steps>
       <step>

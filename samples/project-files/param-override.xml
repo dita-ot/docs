@@ -1,0 +1,14 @@
+<project xmlns="https://www.dita-ot.org/project">
+  <publication transtype="html5" id="common-html5">
+    <param name="nav-toc" value="partial"/>
+  </publication>
+  <deliverable>
+    <context>
+      <input href="root.ditamap"/>
+    </context>
+    <output href="./out"/>
+    <publication idref="common-html5">
+      <param name="nav-toc" value="full"/> <!-- override common HTML publication -->
+    </publication>
+  </deliverable>
+</project>

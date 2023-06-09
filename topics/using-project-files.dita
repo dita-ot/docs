@@ -80,7 +80,16 @@
                 publication (in addition to any filters defined in the map context)</li>
             </ul></p>
           <p>Parameters defined in a publication can override those in other publications that are referenced via
-              <codeph>idref</codeph>.</p></li>
+              <codeph>idref</codeph>.</p>
+          <fig>
+            <title>Sample project file with publication parameter overrides: <filepath
+                conkeyref="conref-task/samples-dir"
+              /><filepath>/project-files/param-override.xml</filepath></title>
+            <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
+                href="../samples/project-files/param-override.xml"
+              /></codeblock>
+          </fig>
+        </li>
       </ul>
       <note type="tip">
         <ul>

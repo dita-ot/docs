@@ -41,8 +41,21 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary" outputclass="mark">(marquee
             features), and an updated preview of features for the latest draft of the upcoming DITA 2.0 standard
             including (new elements, domains, etc.)</ph>.</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
+        <ul>
+          <li/>
+          <li id="4137">Add version info to plugins subcommand output
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4137" format="html" scope="external">#4137</xref>, 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4141" format="html" scope="external">#4141</xref>
+          </li>
+          <li id="4159">Support custom parse for start map
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4159" format="html" scope="external">#4159</xref>
+          </li>
+          <li id="4205">Support SAX properties for custom parsers
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4205" format="html" scope="external">#4205</xref>
+          </li>
+        </ul>
       </section>
-      <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
 
       <section id="lwdita">
         <title>Lightweight DITA and Markdown updates</title>

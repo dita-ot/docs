@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<concept id="ID">
+  <title>Markdown formats</title>
+  <shortdesc>
+    <ph id="shortdesc-ph">The following topics show how DITA XML constructs are represented in <cite>Markdown</cite> and
+        <term>MDITA</term>, provide details on common syntax, differences between the <codeph>markdown</codeph> and
+        <codeph>mdita</codeph> formats, and describe additional configuration options.</ph>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm><xmlatt>format</xmlatt></indexterm>
+        <indexterm>authoring formats
+          <indexterm>Markdown</indexterm></indexterm>
+        <indexterm>authoring formats
+          <indexterm>MDITA</indexterm></indexterm>
+        <indexterm>Markdown</indexterm>
+        <indexterm>MDITA</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody/>
+</concept>

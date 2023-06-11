@@ -111,11 +111,11 @@
         contexts.</p>
       <p> For example, consider a case with 100 maps that have multiple <xmlatt>product</xmlatt> variants, but every one
         of which is published in two <xmlatt>audience</xmlatt> conditions (internal or external). If
-          <xmlatt>audience</xmlatt> is varied in publications, the structure is orthogonal and well-organized: <fig>
-          <title>Sample filtering scenario</title>
-          <image href="../reference/images/sample-project-filtering-scenario.svg"/>
-        </fig>
-      </p>
+          <xmlatt>audience</xmlatt> is varied in publications, the structure is orthogonal and well-organized:</p>
+      <fig>
+        <title>Sample filtering scenario</title>
+        <image href="../reference/images/sample-project-filtering-scenario.svg" placement="break" width="6.5in"/>
+      </fig>
     </section>
     <steps>
       <step>

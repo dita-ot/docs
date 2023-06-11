@@ -43,11 +43,17 @@
             including (new elements, domains, etc.)</ph>.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
-          <li id="4137">Add version info to plugins subcommand output
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4137" format="html" scope="external">#4137</xref>, 
+          <li id="4137">Since DITA-OT 3.5, the <cmdname>dita</cmdname>
+            <parmname>plugins</parmname> subcommand shows a list of the currently installed plug-ins by plug-in ID. To
+            make it easier to determine which version of each plug-in is installed, the output now includes the version
+            number for each plug-in as specified in the <filepath>plugin.xml</filepath> file.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4137" format="html" scope="external">#4137</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4141" format="html" scope="external">#4141</xref>
           </li>
-          <li id="4159">Support custom parse for start map
+          <li id="4159">Previously only files referenced from the start map could be parsed using a custom parser. The
+            start map itself was always processed as DITA XML. As of DITA-OT 4.1, processing has been updated to also
+            allow the start map to use a custom parser. This change allows recent versions of the LwDITA plug-in to
+            process Markdown maps.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4159" format="html" scope="external">#4159</xref>
           </li>
           <li id="4205">Support SAX properties for custom parsers

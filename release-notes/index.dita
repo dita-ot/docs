@@ -67,23 +67,49 @@
       <section id="lwdita">
         <title>Lightweight DITA and Markdown updates</title>
         <p>The <codeph>org.lwdita</codeph> plug-in has been updated to version <keyword keyref="tool.lwdita.version"/>,
-          which includes Markdown processing improvements.</p>
+          which includes performance improvements and significant updates to Markdown processing.</p>
         <ul>
           <li>DITA-OT <keyword keyref="release"/> includes processing updates to reflect recent changes to the latest
             drafts of the LwDITA profile from OASIS</li>
-          <li/>
+          <li>The flexmark Markdown parsing library has been updated to version 0.64.</li>
           <li>Markdown input improvements:
             <ul>
-              <li/>
+              <li>Standard Markdown syntax can now be used to indicate a span of code by wrapping it with backtick
+                quotes (<codeph>`</codeph>). In Markdown DITA input, these constructs are converted to DITA
+                  <xmlelement>codeph</xmlelement> elements on import, and rendered as <xmlelement>code</xmlelement>
+                elements in HTML output. In MDITA input, this syntax is converted to teletype
+                  <xmlelement>tt</xmlelement> elements to align with LwDITA, which supports teletype highlighting in
+                XDITA.</li>
+              <li>The LwDITA plug-in supports a new <codeph>$schema</codeph> key in the YAML front matter block. This
+                key can be used to define parsing options in topic files for more control over how Markdown content is
+                converted to DITA. For more information, see
+                <xref keyref="markdown-schemas"/>.</li>
+              <li>Earlier versions of the plug-in failed to parse certain Markdown tables correctly. Table parsing has
+                been improved to ensure these cases are properly processed.</li>
+              <li>The MDITA core profile can now be specified via the new schema key in the YAML front matter
+                block.</li>
+              <li>DITA maps can now be written in Markdown DITA using standard Markdown syntax for links and lists. The
+                schema key in the YAML front matter block is used to define the file as a map. Unordered list items
+                create <xmlelement>topicref</xmlelement> elements, and ordered list items create
+                  <xmlelement>topicref</xmlelement> elements with
+                  <xmlatt>collection-type</xmlatt>=<option>sequence</option>. List items without a link are treated as
+                topic head elements in Markdown DITA maps, and ignored in MDITA maps.</li>
+              <li>Any <xmlpi>linefeed</xmlpi> processing instructions in Markdown input are now converted to line feeds
+                in HTML5 and PDF output.</li>
+              <li>Markdown DITA supports both loose and
+                <xref href="https://spec.commonmark.org/0.30/#tight" format="html" scope="external">tight</xref> list
+                spacing (with no blank lines between list items). MDITA treats all lists as loose, and wraps each list
+                item in a paragraph: <codeph>&lt;li>&lt;p>item&lt;/p>&lt;/li></codeph>.</li>
             </ul>
           </li>
-          <!--
-          <li>In previous releases, standard Markdown syntax could be used to indicate a span of code by wrapping it
-            with backtick quotes (<codeph>`</codeph>). These constructs were converted to DITA
-              <xmlelement>codeph</xmlelement> elements on import, and rendered as <xmlelement>code</xmlelement> elements
-            in HTML output. This support has been removed from MDITA processing to align with LwDITA, which does not
-            support code phrase markup.</li>
-          -->
+          <li>Markdown output improvements:
+            <ul>
+              <li>When generating Markdown output, the less-than “&lt;” and greater-than “&gt;” characters are now added
+                to <xmlelement>xmlelement</xmlelement> content as in HTML and PDF output.</li>
+              <li>Markdown output now treats programming and software domain elements as code spans and wraps the
+                content in backtick quotes (<codeph>`</codeph>) for better correspondence with HTML5 output, which wraps
+                these elements in <xmlelement>code</xmlelement>.</li>
+            </ul></li>
         </ul>
       </section>
 

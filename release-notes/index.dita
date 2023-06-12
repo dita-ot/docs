@@ -56,7 +56,9 @@
             process Markdown maps.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4159" format="html" scope="external">#4159</xref>
           </li>
-          <li id="4205">Support SAX properties for custom parsers
+          <li id="4205">Plug-in developers can now configure custom parsers via SAX properties that provide a list of
+            formats and processing mode. The LwDITA plug-in uses this mechanism to configure the options supported for
+            Markdown and MDITA.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4205" format="html" scope="external">#4205</xref>
           </li>
         </ul>

@@ -67,12 +67,20 @@
       <section id="lwdita">
         <title>Lightweight DITA and Markdown updates</title>
         <p>The <codeph>org.lwdita</codeph> plug-in has been updated to version <keyword keyref="tool.lwdita.version"/>,
-          which includes performance improvements and significant updates to Markdown processing.</p>
+          which includes performance improvements and updates to Markdown processing to reflect recent changes to the
+          latest drafts of the LwDITA profile from OASIS.</p>
         <ul>
-          <li>DITA-OT <keyword keyref="release"/> includes processing updates to reflect recent changes to the latest
-            drafts of the LwDITA profile from OASIS</li>
-          <li>The flexmark Markdown parsing library has been updated to version 0.64.</li>
-          <li>Markdown input improvements:
+          <li>
+            <p><b>Markdown output</b></p>
+            <ul>
+              <li>When generating Markdown output, the less-than “&lt;” and greater-than “&gt;” characters are now added
+                to <xmlelement>xmlelement</xmlelement> content as in HTML and PDF output.</li>
+              <li>Markdown output now treats programming and software domain elements as code spans and wraps the
+                content in backtick quotes (<codeph>`</codeph>) for better correspondence with HTML5 output, which wraps
+                these elements in <xmlelement>code</xmlelement>.</li>
+            </ul></li>
+          <li>
+            <p><b>Markdown input</b></p>
             <ul>
               <li>Standard Markdown syntax can now be used to indicate a span of code by wrapping it with backtick
                 quotes (<codeph>`</codeph>). In Markdown DITA input, these constructs are converted to DITA
@@ -88,6 +96,12 @@
                 been improved to ensure these cases are properly processed.</li>
               <li>The MDITA core profile can now be specified via the new schema key in the YAML front matter
                 block.</li>
+              <li>Any <xmlpi>linefeed</xmlpi> processing instructions in Markdown input are now converted to line feeds
+                in HTML5 and PDF output.</li>
+              <li>Markdown DITA supports both loose and
+                <xref href="https://spec.commonmark.org/0.30/#tight" format="html" scope="external">tight</xref> list
+                spacing (with no blank lines between list items). MDITA treats all lists as loose, and wraps each list
+                item in a paragraph: <codeph>&lt;li>&lt;p>item&lt;/p>&lt;/li></codeph>.</li>
               <li>DITA maps can now be written in Markdown using standard Markdown syntax for links and lists.
                 <ul>
                   <li>In Markdown DITA, the schema key in the YAML front matter block is used to define the file as a
@@ -100,22 +114,9 @@
                     unlinked topic heads are ignored.</li>
                 </ul>
               </li>
-              <li>Any <xmlpi>linefeed</xmlpi> processing instructions in Markdown input are now converted to line feeds
-                in HTML5 and PDF output.</li>
-              <li>Markdown DITA supports both loose and
-                <xref href="https://spec.commonmark.org/0.30/#tight" format="html" scope="external">tight</xref> list
-                spacing (with no blank lines between list items). MDITA treats all lists as loose, and wraps each list
-                item in a paragraph: <codeph>&lt;li>&lt;p>item&lt;/p>&lt;/li></codeph>.</li>
             </ul>
           </li>
-          <li>Markdown output improvements:
-            <ul>
-              <li>When generating Markdown output, the less-than “&lt;” and greater-than “&gt;” characters are now added
-                to <xmlelement>xmlelement</xmlelement> content as in HTML and PDF output.</li>
-              <li>Markdown output now treats programming and software domain elements as code spans and wraps the
-                content in backtick quotes (<codeph>`</codeph>) for better correspondence with HTML5 output, which wraps
-                these elements in <xmlelement>code</xmlelement>.</li>
-            </ul></li>
+          <li>The flexmark Markdown parsing library has been updated to version 0.64.</li>
         </ul>
       </section>
 

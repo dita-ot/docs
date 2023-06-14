@@ -41,6 +41,9 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary" outputclass="mark">(marquee
             features), and an updated preview of features for the latest draft of the upcoming DITA 2.0 standard
             including (new elements, domains, etc.)</ph>.</p>
+      </section>
+      <section>
+        <title>Plug-in development features</title>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
         <ul>
           <li id="4137">Since DITA-OT 3.5, the <cmdname>dita</cmdname>

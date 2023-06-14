@@ -88,12 +88,18 @@
                 been improved to ensure these cases are properly processed.</li>
               <li>The MDITA core profile can now be specified via the new schema key in the YAML front matter
                 block.</li>
-              <li>DITA maps can now be written in Markdown DITA using standard Markdown syntax for links and lists. The
-                schema key in the YAML front matter block is used to define the file as a map. Unordered list items
-                create <xmlelement>topicref</xmlelement> elements, and ordered list items create
-                  <xmlelement>topicref</xmlelement> elements with
-                  <xmlatt>collection-type</xmlatt>=<option>sequence</option>. List items without a link are treated as
-                topic head elements in Markdown DITA maps, and ignored in MDITA maps.</li>
+              <li>DITA maps can now be written in Markdown using standard Markdown syntax for links and lists.
+                <ul>
+                  <li>In Markdown DITA, the schema key in the YAML front matter block is used to define the file as a
+                    map. Unordered list items create <xmlelement>topicref</xmlelement> elements, and ordered list items
+                    create <xmlelement>topicref</xmlelement> elements with
+                      <xmlatt>collection-type</xmlatt>=<option>sequence</option>. List items without a link are treated
+                    as topic heads.</li>
+                  <li>In MDITA, maps use the file name extension <filepath>mditamap</filepath> to define the file as a
+                    map. Both ordered and unordered list items create <xmlelement>topicref</xmlelement>, and any
+                    unlinked topic heads are ignored.</li>
+                </ul>
+              </li>
               <li>Any <xmlpi>linefeed</xmlpi> processing instructions in Markdown input are now converted to line feeds
                 in HTML5 and PDF output.</li>
               <li>Markdown DITA supports both loose and

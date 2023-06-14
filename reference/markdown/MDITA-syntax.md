@@ -8,7 +8,7 @@ To apply the stricter LwDITA-specific processing to a Markdown topic, create a t
 </map>
 ```
 
-In this case, the first paragraph in the topic will be treated as a short description, and tables will be converted to DITA `<simpletable>` elements.
+In this case, the first paragraph in the topic is treated as a short description, and tables are converted to DITA `<simpletable>` elements.
 
 The _MDITA_ format uses [CommonMark] as the underlying markup language. MDITA files must be UTF-8 encoded.
 
@@ -18,7 +18,7 @@ The following Markdown constructs are parsed differently when the `@format` attr
 
 ## Titles and document structure
 
-The first heading level will generate a topic and the second heading level a section:
+The first heading level generates a topic and the second heading level a section:
 
 ```markdown
 # Topic title

@@ -1,6 +1,6 @@
 In 2015, the original _DITA-OT Markdown_ plug-in introduced a series of conventions to convert [Markdown] content to DITA, and vice-versa. This Markdown flavor was called _“Markdown DITA”_. The `markdown` format adds several complementary constructs to represent DITA content in Markdown, beyond those proposed for the [MDITA](./MDITA-syntax.md) format in the [Lightweight DITA][LwDITA] specification drafts.
 
-To add a Markdown topic to a DITA publication, create a topic reference in your map and set the `@format` attribute to `markdown` so the toolkit will recognize the source file as Markdown and convert it to DITA:
+To add a Markdown topic to a DITA publication, create a topic reference in your map and set the `@format` attribute to `markdown`. This allows the toolkit to recognize the source file as Markdown and convert it to DITA:
 
 ```xml
 <map>
@@ -8,7 +8,7 @@ To add a Markdown topic to a DITA publication, create a topic reference in your 
 </map>
 ```
 
-In this case, the first paragraph in the topic will be treated as a body paragraph, and each heading level will generate a nested topic.
+In this case, the first paragraph in the topic is treated as a body paragraph, and each heading level generates a nested topic.
 
 The _Markdown DITA_ format uses [CommonMark] as the underlying markup language, with several extensions as noted below. Markdown DITA files must be UTF-8 encoded.
 
@@ -16,7 +16,7 @@ The following Markdown constructs are parsed differently when the `@format` attr
 
 ## Titles and document structure
 
-Each heading level will generate a topic and associated title:
+Each heading level generates a topic and associated title:
 
 ```markdown
 # Topic title
@@ -46,7 +46,7 @@ Pandoc [header attributes] or PHP Markdown Extra [special attributes] can be use
 
 If topic ID is not defined using header attributes, the ID is generated from title contents.
 
-If the Markdown document doesn’t contain a level 1 heading, one will be generated based on YAML metadata or from the document file name.
+If the Markdown document doesn’t contain a level 1 heading, one is generated based on YAML metadata or from the document file name.
 
 ## Topic content
 

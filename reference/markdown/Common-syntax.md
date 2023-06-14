@@ -44,7 +44,7 @@ All other link targets detect the `format` from the file name extension and are 
 
 ## Images
 
-Images used in inline content will result in inline placement. If a block-level image contains a title, it will be treated as an image wrapped in a figure element:
+Images used in inline content are processed with inline placement. If a block-level image contains a title, it is treated as an image wrapped in a figure element:
 
 ```markdown
 An inline ![Alt](test.jpg).

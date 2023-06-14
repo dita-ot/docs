@@ -38,9 +38,9 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary" outputclass="mark">(marquee
-            features), and an updated preview of features for the latest draft of the upcoming DITA 2.0 standard
-            including (new elements, domains, etc.)</ph>.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary" outputclass="mark">a new
+            version of the Lightweight DITA plug-in with significant updates to Markdown processing, and updates for the
+            latest DITA 2.0 draft standard</ph>.</p>
       </section>
       <section>
         <title>Plug-in development features</title>
@@ -71,7 +71,7 @@
         <title>Lightweight DITA and Markdown updates</title>
         <p>The <codeph>org.lwdita</codeph> plug-in has been updated to version <keyword keyref="tool.lwdita.version"/>,
           which includes performance improvements and updates to Markdown processing to reflect recent changes to the
-          latest drafts of the LwDITA profile from OASIS.</p>
+          latest LwDITA drafts from OASIS.</p>
         <ul>
           <li>
             <p><b>Markdown output</b></p>
@@ -126,9 +126,10 @@
       <section id="dita-2-0-preview">
         <title>Updated DITA 2.0 preview</title>
         <p>In addition to the
-          <xref keyref="dita-v2-0-support"/> provided in DITA-OT 3.5 – 4.0, this release includes updated processing
-          support for the latest DRAFT versions of the DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of
-            <keyword keyref="draft-dita-grammar-state"/>). <!-- Link to PRs that update 2.0 grammar files-->
+          <xref keyref="dita-v2-0-support"/> provided in DITA-OT 3.5 – 4.0, this release includes updated processing for
+          the latest draft versions of the DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of <keyword
+            keyref="draft-dita-grammar-state"
+          />). <!-- Link to PRs that update 2.0 grammar files-->
         </p>
         <ul conkeyref="dita-v2-0-support/added-in-4.1">
           <li/>

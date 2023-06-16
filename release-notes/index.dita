@@ -205,37 +205,60 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <li id="3903">Branch filtering processes nested-topic topic files multiple times
+          <li id="3242">Earlier versions of
+            <xref keyref="map-first-preproc"/> (preprocess2) failed to copy non-DITA files to the output directory.
+            Processing has been updated to copy media files and other linked assets.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3242" format="html" scope="external">#3242</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3966" format="html" scope="external">#3966</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4132" format="html" scope="external">#4132</xref>
+          </li>
+          <li id="3903">When a map contained references to nested subtopics within the same topic file, earlier versions
+            would process the file multiple times during branch filtering. The output was correct but runtime was
+            increased. This issue has been fixed so that the topic file is only filtered once.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3903" format="html" scope="external">#3903</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4152" format="html" scope="external">#4152</xref>
           </li>
-          <li id="3967">Cross-reference to footnote is double-wrapped in <xmlelement>sup</xmlelement>
+          <li id="3967">In earlier versions, cross-references to <xmlelement>fn</xmlelement> footnote elements without
+            target text were rendered with two levels of <xmlelement>sup</xmlelement> superscript formatting in XHTML
+            and HTML5 output. Now, these links are only superscripted once.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3967" format="html" scope="external">#3967</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/3968" format="html" scope="external">#3968</xref>
           </li>
-          <li id="4131">Don't log about missing target when target is external
+          <li id="4131">When generating PDF output, earlier versions failed with the <msgnum>PDFX005F</msgnum> error
+            when topic references targeted external resources with the <xmlatt>scope</xmlatt> attribute set to
+              <codeph>external</codeph>. Processing has been updated to properly recognize external resources and allow
+            builds to complete.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4131" format="html" scope="external">#4131</xref>
           </li>
-          <li id="4132">Preprocess2 non-dita files not copied correctly to output dir
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4132" format="html" scope="external">#4132</xref>
-          </li>
-          <li id="4144">Techcomm includes still reference the non-pubid URNs
+          <li id="4144">Earlier versions included DITA 2.0 grammar files from OASIS that referenced non-public URNs. The
+            files have been updated to the latest versions (as of <keyword keyref="draft-dita-grammar-state"/>), which
+            include updated references in the RELAX NG files.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4144" format="html" scope="external">#4144</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4177" format="html" scope="external">#4177</xref>
           </li>
-          <li id="4165">Support empty @specializations attribute value 
+          <li id="4165">Earlier versions reported errors when processing DITA 2.0 content with empty
+              <xmlatt>specializations</xmlatt> attribute values. Processing has been updated to handle these cases
+            correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4165" format="html" scope="external">#4165</xref>
           </li>
-          <li id="4184">Circular <xmlelement>xref</xmlelement> references inside <xmlelement>shortdesc</xmlelement>
-            causes infinite XSLT recursion during topicpull target text computation 
-            (fix: avoid creating nested <xmlelement>desc</xmlelement> elements)
+          <li id="4181">When generating HTMLHelp with DITA-OT 4.0, builds failed with the <msgnum>DOTA015F</msgnum>
+            error. HTMLHelp has been updated to replace the outdated <codeph>preprocess.copy-image.skip</codeph>
+            property with the corresponding DITA 4.0 <codeph>build-step.copy-image</codeph> property for compatibility
+            with recent toolkit versions.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4181" format="html" scope="external">#4181</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4186" format="html" scope="external">#4186</xref>
+          </li>
+          <li id="4184">When topic short descriptions contain cross-reference links that point to one another in
+            circular references across topics, earlier versions would fail with an infinite-recursion stylesheet loop.
+            Now, <xmlelement
+            >shortdesc</xmlelement> descriptions in referenced elements are processed only one level deep.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4184" format="html" scope="external">#4184</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4185" format="html" scope="external">#4185</xref>
           </li>
-          <li id="4186">Fix DITA-OT 4.x compatibility with HTMLHelp
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4186" format="html" scope="external">#4186</xref>
-          </li>
-          <li id="4187">Throw exception In strict processing mode when error is logged from XSLT
+          <li id="4187">In earlier versions, setting the <parmname>processing-mode</parmname> parameter to
+              <option>strict</option> would only stop processing if errors were reported from the Java code. Any XSLT
+            errors were logged to the console, but processing continued. Now, XSLT errors will also stop processing, so
+              <option>strict</option> mode is a bit … <i>stricter</i>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4187" format="html" scope="external">#4187</xref>
           </li>
         </ul>

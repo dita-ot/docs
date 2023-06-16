@@ -39,8 +39,8 @@
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary" outputclass="mark">a new
-            version of the Lightweight DITA plug-in with significant updates to Markdown processing, and updates for the
-            latest DITA 2.0 draft standard</ph>.</p>
+            version of the Lightweight DITA plug-in with significant enhancements to Markdown processing, and updates
+            for the latest DITA 2.0 draft standard</ph>.</p>
       </section>
       <section>
         <title>Plug-in development features</title>
@@ -145,59 +145,56 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="4020">Improve the way emails are presented
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4020" format="html" scope="external">#4020</xref>
-          </li>
-          <li id="4048">Warn about profiled DITA content that is not affected by any DITAVAL filtering rule
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4048" format="html" scope="external">#4048</xref>
-          </li>
-          <li id="4073">Do not issue information messages if the filter has default exclude rules
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4073" format="html" scope="external">#4073</xref>
-          </li>
-          <li id="4082">Update syntax elements for DITA 2.0 class att
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4082" format="html" scope="external">#4082</xref>
-          </li>
-          <li id="4089">remove "mailto:" prefix from default "mailto:" link target text
+          <li id="4020">When publishing to HTML and PDF, email links no longer include the <codeph>mailto:</codeph> 
+            prefix in the default link text.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4020" format="html" scope="external">#4020</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4089" format="html" scope="external">#4089</xref>
           </li>
-          <li id="4090">Refactor for Java 11 migration
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4090" format="html" scope="external">#4090</xref>
+          <li id="4048">When filtering profiled content with DITAVAL files that exclude content by default, the
+              <msgnum>DOTJ031I</msgnum> message no longer appears when no rule is specified for a certain attribute.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4048" format="html" scope="external">#4048</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4073" format="html" scope="external">#4073</xref>
           </li>
-          <li id="4091">Refactor to use Java 17 features
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4091" format="html" scope="external">#4091</xref>
-          </li>
-          <li id="4092">Fix Javadoc issues
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4092" format="html" scope="external">#4092</xref>
-          </li>
-          <li id="4121">Refactor Java code to improve code
+          <li id="4090">The Java code has been refactored to use new language and library features from recent Java
+            versions. These changes make the code more future-proof and easier to maintain.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4090" format="html" scope="external">#4090</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4091" format="html" scope="external">#4091</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4092" format="html" scope="external">#4092</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4121" format="html" scope="external">#4121</xref>
           </li>
-          <li id="4140">Update normalize plug-in to version 1.1 
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4140" format="html" scope="external">#4140</xref>
+          <li>The following bundled plug-ins have been upgraded to the latest versions:
+            <ul>
+              <li id="4140">The Normalized DITA plug-in version 1.1 now removes unnecessary key artefacts like
+                  <xmlatt>keys</xmlatt>, <xmlatt>keyref</xmlatt> or <xmlelement>keydef</xmlelement> after key
+                resolution, and <xmlelement>ditavalref</xmlelement> elements after branch filter resolution.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4140" format="html" scope="external">#4140</xref>
+              </li>
+              <li id="4210">The Lightweight DITA plug-in version 5.5 includes the
+                <xref href="#./lwdita"/> described above.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4167" format="html" scope="external">#4167</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4178" format="html" scope="external">#4178</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4210" format="html" scope="external">#4210</xref>
+              </li>
+              <li id="4194">The PDF Theme plug-in version 0.7.0 adds support for tasks, and the hazard, highlight,
+                markup, UI, and XML domains, so you can now style these elements in a YAML theme file without building a
+                custom PDF plug-in.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4194" format="html" scope="external">#4194</xref>
+              </li>
+            </ul>
           </li>
-          <li id="4167">Update bundled LwDITA plug-in to 5.2.1 
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4167" format="html" scope="external">#4167</xref>
-          </li>
-          <li id="4177">Bump OASIS to latest draft 2.0 grammars #4144 
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4177" format="html" scope="external">#4177</xref>
-          </li>
-          <li id="4178">Update to LwDITA 5.4
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4178" format="html" scope="external">#4178</xref>
-          </li>
-          <li id="4182">Update to Ant 1.10.13
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4182" format="html" scope="external">#4182</xref>
-          </li>
-          <li id="4183">Update to FOP 2.8
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4183" format="html" scope="external">#4183</xref>
-          </li>
-          <li id="4194">Update PDF Theme plug-in to version 0.7.0
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4194" format="html" scope="external">#4194</xref>
-          </li>
-          <li id="4197">Update Gradle wrapper to 7.6.1 
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4197" format="html" scope="external">#4197</xref>
-          </li>
-          <li id="4210">Update bundled LwDITA plug-in to version 5.5
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4210" format="html" scope="external">#4210</xref>
+          <li>Several bundled dependencies have been upgraded to the latest versions:
+            <ul>
+              <li id="4182">Ant 1.10.13
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4182" format="html" scope="external">#4182</xref>
+              </li>
+              <li id="4183">FOP 2.8
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4183" format="html" scope="external">#4183</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4011" format="html" scope="external">#4011</xref>
+              </li>
+              <li id="4197">Gradle wrapper 7.6.1
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4197" format="html" scope="external">#4197</xref>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -223,7 +220,8 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4132" format="html" scope="external">#4132</xref>
           </li>
           <li id="4144">Techcomm includes still reference the non-pubid URNs
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4144" format="html" scope="external">#4144</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4144" format="html" scope="external">#4144</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4177" format="html" scope="external">#4177</xref>
           </li>
           <li id="4165">Support empty @specializations attribute value 
             <xref href="https://github.com/dita-ot/dita-ot/issues/4165" format="html" scope="external">#4165</xref>

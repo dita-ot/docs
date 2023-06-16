@@ -293,11 +293,11 @@
           <li>
             <xref keyref="using-project-files"/></li>
           <li>
-            <xref keyref="plugin-extension-points"/></li>
-          <li>
             <xref keyref="markdown-input"/></li>
           <li>
             <xref keyref="dita2markdown"/></li>
+          <li>
+            <xref keyref="plugin-extension-points"/></li>
           <li>
             <xref keyref="markdown-formats"/>
             <ul>
@@ -313,12 +313,6 @@
                 <xref keyref="custom-schemas"/></li>
             </ul>
           </li>
-          <!--
-          <li>
-            <xref keyref="migrating-to-4.1/></li>
-          <li>
-            <xref keyref="dita-v2-0-support"/></li>
-          -->
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"

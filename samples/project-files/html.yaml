@@ -21,6 +21,8 @@ deliverables:
           value: 'YES'
         - name: 'args.hdr'
           href: '../../resources/header.xml'
+        - name: 'args.rellinks'
+          value: 'noparent'
         - name: 'html5.toc.generate'
           value: 'no'
         - name: 'nav-toc'

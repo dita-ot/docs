@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <variables>
   <!-- Remove dot from list number -->
-  <variable id="Ordered List Number">
+  <variable id="Ordered List Number 1">
     <param ref-name="number"/>
   </variable>
   <!-- Change unordered list bullet to an em dash -->
-  <variable id="Unordered List bullet">&#x2014;</variable>
+  <variable id="Unordered List bullet 1">&#x2014;</variable>
 </variables>

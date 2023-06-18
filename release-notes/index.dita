@@ -119,7 +119,14 @@
               </li>
             </ul>
           </li>
-          <li>The flexmark Markdown parsing library has been updated to version 0.64.</li>
+          <li>
+            <p>The flexmark Markdown parsing library has been updated to version 0.64.</p></li>
+          <li>
+            <p>The XDITA plug-in has been updated to version <keyword keyref="tool.xdita.version"/>, which includes
+              recent changes to the grammar files from OASIS (as of <keyword keyref="draft-xdita-grammar-state"/>).
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4214" format="html" scope="external">#4214</xref>
+            </p>
+          </li>
         </ul>
       </section>
 
@@ -127,7 +134,7 @@
         <title>Updated DITA 2.0 preview</title>
         <p>In addition to the
           <xref keyref="dita-v2-0-support"/> provided in DITA-OT 3.5 – 4.0, this release includes updated processing for
-          the latest draft versions of the DITA 2.0 DTD and RELAX NG grammar files from OASIS (as of <keyword
+          the latest draft versions of the DITA 2.0 grammar files from OASIS (as of <keyword
             keyref="draft-dita-grammar-state"
           />). <!-- Link to PRs that update 2.0 grammar files-->
         </p>

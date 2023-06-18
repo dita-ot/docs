@@ -39,6 +39,13 @@
       </keywords>
     </topicmeta>
   </keydef>
+  <keydef keys="draft-xdita-grammar-state">
+    <topicmeta>
+      <keywords>
+        <keyword>June 18, 2023</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
 
   <!--VERSION NUMBERS: OTHER APPLICATIONS-->
 
@@ -169,5 +176,12 @@
       </keywords>
     </topicmeta>
   </keydef>
-
+  <!-- XDITA plug-in version-->
+  <keydef keys="tool.xdita.version">
+    <topicmeta>
+      <keywords>
+        <keyword>0.3.0</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
 </map>

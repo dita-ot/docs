@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/jelovirt/org.lwdita.wiki.git
+	branch = master
+	commit = 2afab7a21c4b85c17c041c6f70fc1a86fd10b76b
+	parent = 0f640e8426701c877d679187cfe17d6579b68672
+	method = merge
+	cmdver = 0.4.6

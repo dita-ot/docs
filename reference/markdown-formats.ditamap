@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<map>
+  <title>Markdown formats</title>
+  <topicref keyref="markdown-formats" collection-type="family">
+    <topicref keyref="markdown-dita-syntax" chunk="to-content">
+      <topicref keyref="common-syntax"/>
+    </topicref>
+    <topicref keyref="mdita-syntax" chunk="to-content">
+      <topicref keyref="common-syntax"/>
+    </topicref>
+    <topicref keyref="format-comparison"/>
+    <topicref keyref="markdown-schemas"/>
+    <topicref keyref="custom-schemas"/>
+  </topicref>
+
+  <reltable>
+    <title>Source and target</title>
+    <relheader>
+      <relcolspec linking="sourceonly">
+        <title>Sourceonly: links to →</title>
+      </relcolspec>
+      <relcolspec linking="targetonly">
+        <title>Targetonly</title>
+      </relcolspec>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref keyref="markdown-input"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="markdown-dita-syntax"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="lwdita-input"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="mdita-syntax"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref keyref="markdown-formats"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="markdown-input"/>
+        <topicref keyref="lwdita-input"/>
+      </relcell>
+    </relrow>
+  </reltable>
+
+  <reltable>
+    <title>Reciprocal links</title>
+    <relrow>
+      <relcell>
+        <topicref keyref="dita2markdown"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="markdown-input"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

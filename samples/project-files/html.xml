@@ -12,9 +12,9 @@
       <param name="args.cssroot" path="../../resources"/>
       <param name="args.gen.task.lbl" value="YES"/>
       <param name="args.hdr" href="../../resources/header.xml"/>
+      <param name="args.rellinks" value="noparent"/>
       <param name="html5.toc.generate" value="no"/>
       <param name="nav-toc" value="partial"/>
-      <param name="processing-mode" value="strict"/>
     </publication>
   </deliverable>
 </project>

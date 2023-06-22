@@ -24,8 +24,8 @@
       <p>The <cmdname>dita</cmdname> command line interface has been refactored to support subcommands for common
         operations.</p>
       <note type="important">The new subcommands supersede the deprecated X-Toolkit–style single-hyphen keyword variants
-        (such as <option>-install</option>), and the corresponding GNU-style option keywords preceded by two hyphens
-        (such as <option>--install</option>).</note>
+        (such as <parmname>-install</parmname>), and the corresponding GNU-style option keywords preceded by two hyphens
+        (such as <parmname>--install</parmname>).</note>
       <dl>
         <dlentry conkeyref="reusable-components/install-subcommand" conrefend="default.dita#ID/version-subcommand">
           <dt/>

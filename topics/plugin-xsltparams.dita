@@ -37,9 +37,6 @@
   &lt;param name="paramNameinXSLT" expression="${antProperty}" 
          if="antProperty"/>
 &lt;/dummy></codeblock>
-          <draft-comment author="Kristen Eberlein" time="31 March 2013">Need a better example here, or replace the
-              <xmlelement>stepxmp</xmlelement> with a generic code sample in an <xmlelement>info</xmlelement>
-            element.</draft-comment>
         </stepxmp>
       </step>
       <step>

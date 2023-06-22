@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
 ;
 [subrepo]
-	remote = https://github.com/jelovirt/pdf-generator.wiki.git
+	remote = https://github.com/jelovirt/org.lwdita.wiki.git
 	branch = master
-	commit = 8aa491a8ba27666eedd46e4293de8955020a86e7
-	parent = 6122da3959a61d2fd8cf5a1959198189129ae9bc
+	commit = 2afab7a21c4b85c17c041c6f70fc1a86fd10b76b
+	parent = 0f640e8426701c877d679187cfe17d6579b68672
 	method = merge
-	cmdver = 0.4.5
+	cmdver = 0.4.6

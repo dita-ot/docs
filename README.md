@@ -125,7 +125,7 @@ If you'd like to check whether your changes are formatted correctly, or format t
 [4]: https://www.dita-ot.org
 [5]: https://github.com/dita-ot/dita-ot
 [6]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
-[7]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L181-L191
+[7]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L181-L192
 [8]: .github/CONTRIBUTING.md
 [9]: https://github.com/dita-ot/docs/wiki/Coding-guidelines
 [10]: https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices

@@ -6,8 +6,7 @@
   <taskbody>
     <context>
       <p id="semver-info">DITA-OT releases follow
-        <xref keyref="semver"/> guidelines. Version numbers use the
-            <codeph><varname>major</varname>.<varname>minor</varname>.<varname>patch</varname></codeph> syntax, where
+        <xref keyref="semver"/> guidelines. Version numbers use the <varname>major.minor.patch</varname> syntax, where
           <varname>major</varname> versions may include incompatible API changes, <varname>minor</varname> versions add
         functionality in a backwards-compatible manner and <varname>patch</varname> versions are maintenance releases
         that include backwards-compatible bug fixes.</p>

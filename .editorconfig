@@ -18,3 +18,7 @@ trim_trailing_whitespace = true
 
 [*.md, *.mdown, *.markdown]
 trim_trailing_whitespace = false
+
+[.git/config]
+# Prevent mixed indentation in Git config (Git commands insert tabs)
+indent_style = tab

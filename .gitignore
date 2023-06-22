@@ -1,6 +1,7 @@
 # This file specifies intentionally untracked files that Git should ignore
 
 ## Directories generated during builds
+.gradle/
 build/
 logs/
 node_modules/

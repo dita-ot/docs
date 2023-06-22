@@ -87,7 +87,7 @@
   <keydef keys="logging" href="../topics/logging.dita"/>
   <keydef keys="lwdita-input" href="../topics/lwdita-input.dita"/>
   <keydef keys="map-first-preproc" href="../reference/map-first-preprocessing.dita"/>
-  <keydef keys="markdown-dita-syntax-reference" href="../topics/markdown-dita-syntax-reference.dita"/>
+  <keydef keys="markdown-formats" href="../reference/markdown-formats.dita"/>
   <keydef keys="markdown-input" href="../topics/markdown-input.dita"/>
   <keydef keys="migrating-ant-to-dita" href="../topics/migrating-ant-to-dita.dita"/>
   <keydef keys="migrating-to-1.5.4" href="../topics/migrating-to-1.5.4.dita"/>
@@ -232,5 +232,13 @@
   <keydef format="wikidocs" keys="styles" href="../resources/theme/Styles.md"/>
   <keydef format="wikidocs" keys="syntactic-sugar" href="../resources/theme/Syntactic-sugar.md"/>
   <keydef format="wikidocs" keys="variables" href="../resources/theme/Variables.md"/>
+
+  <!-- LwDITA plug-in wiki (cloned as subrepo to `reference/markdown`) -->
+  <keydef format="wikidocs" keys="common-syntax" href="../reference/markdown/Common-syntax.md"/>
+  <keydef format="wikidocs" keys="custom-schemas" href="../reference/markdown/Custom-schemas.md"/>
+  <keydef format="wikidocs" keys="format-comparison" href="../reference/markdown/Format-comparison.md"/>
+  <keydef format="wikidocs" keys="markdown-dita-syntax" href="../reference/markdown/Markdown-DITA-syntax.md"/>
+  <keydef format="wikidocs" keys="markdown-schemas" href="../reference/markdown/Markdown-schemas.md"/>
+  <keydef format="wikidocs" keys="mdita-syntax" href="../reference/markdown/MDITA-syntax.md"/>
 
 </map>

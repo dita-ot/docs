@@ -39,7 +39,7 @@
         >dita-generator.elovirta.com</xref> walks you through the process of creating a custom PDF plug-in and allows
         you to adjust a variety of settings for your PDF output. For example, you can:</p>
       <ul>
-        <li>Define the target environment, selecting from the most current and two previous versions of DITA-OT</li>
+        <li>Define the target environment by selecting a version of DITA-OT</li>
         <li>Select the XSL formatting engine (FOP, Antenna House Formatter, or RenderX XEP)</li>
         <li>Specify page size, columns, and margins</li>
         <li>Select from (limited) options for headers and footers</li>
@@ -54,10 +54,7 @@
             <li>Lists (unordered, ordered, and definition)</li>
             <li>Code blocks and pre-formatted text</li>
             <li>Inline elements such as links and trademarks</li>
-          </ul><draft-comment author="Kristen Eberlein" time="13 February 2016">
-            <p>Given the technical level of our audience here, should we list DITA elements rather than the generic
-              categories?</p>
-          </draft-comment>
+          </ul>
           <p>For each component, you can specify: </p>
           <ul>
             <li>Font family, size, weight, and style</li>

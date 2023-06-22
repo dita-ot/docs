@@ -20,15 +20,6 @@
     </metadata>
   </prolog>
   <conbody>
-    <draft-comment author="Kristen Eberlein" time="24 February 2016">
-      <p>I'm not entirely happy with this topic as it currently is, but want to move forward with the overall
-        rework.</p>
-      <p>The original topic was quite a mixture of task, concept, and reference. While it could have been reworked as a
-        task topic, it really was about working with a <filepath>plugin.xml</filepath> file, not using an extension
-        point.</p>
-      <p>I still wonder whether this topic would be better of as a reference topic in the reference section for the
-        topic cluster.</p>
-    </draft-comment>
     <section>
       <p>The <xmlelement>require</xmlelement> element in the <filepath>plugin.xml</filepath> file specifies whether the
         plug-in has dependencies. Use <xmlelement>require</xmlelement> elements to specify prerequisite plug-ins, in
@@ -60,7 +51,7 @@
   &lt;!-- ...extensions here -->
   &lt;require plugin="pluginA|pluginB" importance="optional"/>
 &lt;/plugin></codeblock>
-      <draft-comment author="Kristen Eberlein" time="24 February 2016">
+      <draft-comment author="Kristen Eberlein" time="2016-02-24">
         <p>We need to check this example against the toolkit. Text in the original topic was wrong, but I have not
           tested this.</p>
       </draft-comment>

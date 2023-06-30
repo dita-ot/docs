@@ -21,7 +21,7 @@
   </prolog>
   <refbody>
     <section>
-      <p>The file is located in the <filepath>lib/org.dita.dost.platform</filepath> directory of the DITA-OT
+      <p>The file is located in the <filepath>config/org.dita.dost.platform</filepath> directory of the DITA-OT
         installation and stores a cached version of the plug-in configuration used by the Java code.</p>
       <p>The contents of this file depend on the installed plug-ins. Each plug-in may contribute properties such as the
         path to the plug-in folder, supported extensions and print transformation types.</p>

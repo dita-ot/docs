@@ -136,6 +136,9 @@
             necessary.</note>
         </info>
       </step>
+      <step id="install-plugin">
+        <cmd>Install the plug-in.</cmd>
+      </step>
     </steps>
     <postreq>
       <note type="tip" id="template-properties">Copy <filepath conref="#ID/samples-dir"/><filepath

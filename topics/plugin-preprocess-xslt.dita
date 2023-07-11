@@ -3,6 +3,9 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <task id="plugin-xsltparams">
   <title>Processing topics with XSLT in preprocess</title>
+  <titlealts>
+    <navtitle>Processing topics with XSLT</navtitle>
+  </titlealts>
   <shortdesc>You can pass parameters from the Ant build to existing XSLT steps in both the pre-processing pipeline and
     certain DITA-OT transformations. This can be useful if you want to make the parameters available as global
       <xmlelement>xsl:param</xmlelement> values within XSLT overrides.</shortdesc>
@@ -23,8 +26,8 @@
         </stepxmp>
       </step>
       <step>
-        <cmd>Create Ant buildfile <filepath>build.xml</filepath> with a target to process all DITA topics in temporary
-          directory.</cmd>
+        <cmd>Create an Ant buildfile <filepath>build.xml</filepath> with a target to process all DITA topics in the
+          temporary directory.</cmd>
         <stepxmp>
           <codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
@@ -42,7 +45,7 @@
         </stepxmp>
       </step>
       <step>
-        <cmd>Create XSLT stylesheet <filepath>filter.xsl</filepath> to filter topic content.</cmd>
+        <cmd>Create an XSLT stylesheet <filepath>filter.xsl</filepath> to filter topic content.</cmd>
         <stepxmp>
           <codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"

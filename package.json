@@ -8,7 +8,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "check": "npm run prettier-check && npm run && npm run stylelint",
+    "check": "npm run prettier-check && npm run stylelint",
     "fix:style": "stylelint \"**/*.css\" --fix",
     "fmt": "npm run format",
     "format": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",

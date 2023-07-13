@@ -6,14 +6,14 @@
   <titlealts>
     <navtitle>Processing topics with XSLT</navtitle>
   </titlealts>
-  <shortdesc>You can pass parameters from the Ant build to existing XSLT steps in both the pre-processing pipeline and
-    certain DITA-OT transformations. This can be useful if you want to make the parameters available as global
-      <xmlelement>xsl:param</xmlelement> values within XSLT overrides.</shortdesc>
+  <shortdesc>You can add an Ant target to the end of pre-processing pipeline that transforms all topics. This is useful
+    to if you want to modify the topic before transtype specific processing, for example to modularize the code or reuse
+    the same processing in multiple transtypes.</shortdesc>
   <taskbody>
     <steps>
       <step>
         <cmd>Create a plug-in descriptor file <filepath>plugin.xml</filepath> that imports a new Ant buildfile
-            <filepath>build.xml</filepath>.</cmd>
+            <filepath>build.xml</filepath> and adds an Ant target after pre-processing.</cmd>
         <stepxmp>
           <codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
@@ -21,7 +21,7 @@
 &lt;?xml-model href="https://www.dita-ot.org/rng/plugin.rnc" type="application/relax-ng-compact-syntax"?>
 &lt;plugin id="plugin-id">
   &lt;feature extension="ant.import" file="build.xml"/>
-  &lt;feature extension="depend.preprocess.post" value="target-name"/>
+  &lt;feature extension="depend.preprocess.post" value="uniform-decimals"/>
 &lt;/plugin></codeblock>
         </stepxmp>
       </step>
@@ -33,7 +33,7 @@
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
           >&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;project>
-  &lt;target name="target-name">
+  &lt;target name="uniform-decimals">
     &lt;pipeline taskname="xslt">
       &lt;xslt basedir="${dita.temp.dir}"
             style="${dita.plugin.plugin-id.dir}/filter.xsl">
@@ -50,18 +50,33 @@
           <codeblock
             outputclass="language-xml normalize-space show-line-numbers show-whitespace"
           >&lt;?xml version="1.0" encoding="utf-8"?>
-&lt;xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  &lt;xsl:template match="???">
+&lt;xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
+
+  &lt;!-- Format keywords with a decimal number with at least two decimal points -->
+  &lt;xsl:template match="*[contains(@class, ' topic/keyword ')]">
     &lt;xsl:copy>
-      &lt;!--TODO: come up with some example processing -->
-      &lt;xsl:apply-templates select="@* | node()"/>
+      &lt;xsl:apply-templates select="@*"/>
+      &lt;xsl:variable name="num" select="number(.)" as="xs:double"/>
+      &lt;xsl:choose>
+        &lt;xsl:when test="$num = $num and contains(., '.')">
+          &lt;xsl:attribute name="orig" select="."/>
+          &lt;xsl:value-of select="format-number($num, '0.00#')"/>
+        &lt;/xsl:when>
+        &lt;xsl:otherwise>
+          &lt;xsl:apply-templates select="node()"/>
+        &lt;/xsl:otherwise>
+      &lt;/xsl:choose>
     &lt;/xsl:copy>
-  &lt;xsl:template>
+  &lt;/xsl:template>
+
+  &lt;!-- Identity template -->
   &lt;xsl:template match="@* | node()">
     &lt;xsl:copy>
       &lt;xsl:apply-templates select="@* | node()"/>
     &lt;/xsl:copy>
-  &lt;xsl:template>
+  &lt;/xsl:template>
+
 &lt;/xsl:stylesheet></codeblock>
         </stepxmp>
       </step>

@@ -6,9 +6,9 @@
   <titlealts>
     <navtitle>Processing topics with XSLT</navtitle>
   </titlealts>
-  <shortdesc>You can add an Ant target to the end of pre-processing pipeline that transforms all topics. This is useful
-    to if you want to modify the topic before transtype specific processing, for example to modularize the code or reuse
-    the same processing in multiple transtypes.</shortdesc>
+  <shortdesc>You can add an Ant target to the end of the pre-processing pipeline that transforms all topics. This is
+    useful if you want to modify topics before transtype-specific processing, for example to modularize the code or
+    reuse the same processing in multiple transformation types.</shortdesc>
   <taskbody>
     <steps>
       <step>

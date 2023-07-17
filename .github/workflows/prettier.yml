@@ -22,12 +22,16 @@ jobs:
           # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.ref }}
 
-      - name: Prettify code
-        uses: creyD/prettier_action@v4.3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          # This part is also where you can pass other options, for example:
-          prettier_options: --write **/*.{css,dita*,json,md,scss,xml,yaml,yml}
-          # Install Prettier XML plugin
-          prettier_plugins: '@prettier/plugin-xml'
-          # Runs the action in dry mode. Files wont get changed and the action fails if there are unprettified files.
-          dry: true
+          node-version: '18.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+
+      - name: Prettify code
+        run: |
+          npm run check

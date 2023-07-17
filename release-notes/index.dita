@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-<reference id="ID" rev="4.0">
+<reference id="ID" rev="4.1">
   <title>DITA Open Toolkit <keyword keyref="release"/> Release Notes</title>
   <titlealts>
     <navtitle>Release Notes</navtitle>
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> includes <ph conref="#v4.1/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v4.1/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -21,6 +22,50 @@
           since previous release.</draft-comment>
         <p conkeyref="reusable-components/java-clients"/>
         <p conkeyref="reusable-components/java-bc"/>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.1.1" outputclass="mark">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <ph outputclass="small text-muted"> work in progress… <!--released mmmm D, yyyy--></ph>
+    </title>
+
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.1+is%3Aclosed+sort%3Acreated-asc -->
+          <li id="4216">The bundled Jackson dependencies have been updated to version <keyword
+              keyref="tool.jackson.version"
+            /> to resolve multiple security vulnerabilities in the SnakeYAML library.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4216" format="html" scope="external">#4216</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4228" format="html" scope="external">#4228</xref>
+          </li>
+          <li id="4218">URIResolver throws an exception when resolving custom header files
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4218" format="html" scope="external">#4218</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4226" format="html" scope="external">#4226</xref>
+          </li>
+          <li id="4230">Fix running JUnit5 tests in Gradle
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4230" format="html" scope="external">#4230</xref>
+          </li>
+          <li id="4234">Can no longer publish XSD-based DITA Maps with DITA OT 4.1
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4234" format="html" scope="external">#4234</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4238" format="html" scope="external">#4238</xref>
+          </li>
+          <li id="4240">DITAOTXMLErrorHandler no longer shows line/column number for error messages
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4240" format="html" scope="external">#4240</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.1+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.1.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.1...4.1.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>

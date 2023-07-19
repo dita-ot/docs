@@ -28,7 +28,7 @@
 
   <reference id="v4.1.1" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted"> work in progress… <!--released mmmm D, yyyy--></ph>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
     </title>
 
     <refbody>
@@ -37,26 +37,41 @@
           following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.1+is%3Aclosed+sort%3Acreated-asc -->
-          <li id="4155">Insert <xmlpi>ditaot dita-ot:usershortdesc</xmlpi> in cases where it was missing
+          <li id="4155">In previous releases, there were some cases in which a <xmlelement>desc</xmlelement> element
+            inside an <xmlelement>xref</xmlelement> or <xmlelement>link</xmlelement> element was not annotated with the
+            expected <xmlpi>ditaot usershortdesc</xmlpi> processing instruction during preprocessing. These omissions
+            have been corrected to aid in debugging. (This change is relevant only within preprocessing, as these
+            processing instructions are deleted when preprocessing completes.)
             <xref href="https://github.com/dita-ot/dita-ot/issues/4155" format="html" scope="external">#4155</xref>
           </li>
-          <li id="4218">URIResolver throws an exception when resolving custom header files
+          <li id="4218">When building HTML output, earlier versions reported XSLT errors while resolving custom header
+            files if paths used Windows backslash characters “<codeph>\</codeph>” as separators. Path separators in
+              <parmname>args.ftr</parmname>, <parmname>args.hdf</parmname>, and <parmname>args.hdr</parmname> parameter
+            values are now converted to the forward slash character “<codeph>/</codeph>” to ensure URLs are valid before
+            they are passed to XSLT.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4218" format="html" scope="external">#4218</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4226" format="html" scope="external">#4226</xref>
           </li>
-          <li id="4221">Cross-references to topics containing <xmlelement>shortdesc</xmlelement> elements with
-            cross-references sometimes result in <msgnum>DOTX031E</msgnum> (file not available) errors
+          <li id="4221">For cross-references to a topic, the target topic’s short description is processed to create a
+            link description. When that <xmlelement>shortdesc</xmlelement> element contained another cross-reference,
+            earlier versions did not process it correctly, and reported <msgnum>DOTX031E</msgnum> (file not available)
+            errors during processing. This issue is now fixed, and link descriptions are created correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4221" format="html" scope="external">#4221</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4239" format="html" scope="external">#4239</xref>
           </li>
-          <li id="4230">Fix running JUnit5 tests in Gradle
+          <li id="4230">Build scripts have been updated to ensure unit tests run correctly during Gradle builds.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4230" format="html" scope="external">#4230</xref>
           </li>
-          <li id="4234">Can no longer publish XSD-based DITA Maps with DITA OT 4.1
+          <li id="4234">The RELAX NG grammar caching changes in DITA-OT 4.0 introduced a configuration bug that
+            accidentally disabled XML Schema Definition validation. Processing and tests have been updated to ensure
+            that XSD-based maps and topic files can be published correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3926" format="html" scope="external">#3926</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4234" format="html" scope="external">#4234</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4238" format="html" scope="external">#4238</xref>
           </li>
-          <li id="4240">DITAOTXMLErrorHandler no longer shows line/column number for error messages
+          <li id="4240">When logging was changed to use processing mode in DITA-OT 4.0.3, the change logged the
+            exception without location. Logging code has been corrected to restore the location information to the
+            exception, so errors once again show the line/column number where the problem appears.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4240" format="html" scope="external">#4240</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4248" format="html" scope="external">#4248</xref>
           </li>

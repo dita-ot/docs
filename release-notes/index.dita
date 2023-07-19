@@ -37,14 +37,8 @@
           following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.1+is%3Aclosed+sort%3Acreated-asc -->
-          <li id="4155">Insert <xmlpi>?ditaot dita-ot:usershortdesc?</xmlpi> in cases where it was missing
+          <li id="4155">Insert <xmlpi>ditaot dita-ot:usershortdesc</xmlpi> in cases where it was missing
             <xref href="https://github.com/dita-ot/dita-ot/issues/4155" format="html" scope="external">#4155</xref>
-          </li>
-          <li id="4216">The bundled Jackson dependencies have been updated to version <keyword
-              keyref="tool.jackson.version"
-            /> to resolve multiple security vulnerabilities in the SnakeYAML library.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4216" format="html" scope="external">#4216</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4228" format="html" scope="external">#4228</xref>
           </li>
           <li id="4218">URIResolver throws an exception when resolving custom header files
             <xref href="https://github.com/dita-ot/dita-ot/issues/4218" format="html" scope="external">#4218</xref>,
@@ -54,10 +48,6 @@
             cross-references sometimes result in <msgnum>DOTX031E</msgnum> (file not available) errors
             <xref href="https://github.com/dita-ot/dita-ot/issues/4221" format="html" scope="external">#4221</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4239" format="html" scope="external">#4239</xref>
-          </li>
-          <li id="4227">Update to newer Guava version
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4227" format="html" scope="external">#4227</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4245" format="html" scope="external">#4245</xref>
           </li>
           <li id="4230">Fix running JUnit5 tests in Gradle
             <xref href="https://github.com/dita-ot/dita-ot/issues/4230" format="html" scope="external">#4230</xref>
@@ -70,11 +60,25 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4240" format="html" scope="external">#4240</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4248" format="html" scope="external">#4248</xref>
           </li>
-          <li id="4241">Update to Saxon 12.3
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4241" format="html" scope="external">#4241</xref>
-          </li>
-          <li id="4246">Update Logback and SLF4J 
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4246" format="html" scope="external">#4246</xref>
+          <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues in
+            bundled libraries:
+            <ul>
+              <li id="4227">Guava 32.1.1
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4227" format="html" scope="external">#4227</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4245" format="html" scope="external">#4245</xref>
+              </li>
+              <li id="4216">Jackson 2.15.2
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4216" format="html" scope="external">#4216</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4228" format="html" scope="external">#4228</xref>
+              </li>
+              <li id="4246">Logback 1.4.8 and SLF4J 2.0.7
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4246" format="html" scope="external">#4246</xref>
+              </li>
+              <li id="4241">Saxon 12.3
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4241" format="html" scope="external">#4241</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4247" format="html" scope="external">#4247</xref>
+              </li>
+            </ul>
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
@@ -264,6 +268,9 @@
               </li>
               <li id="4197">Gradle wrapper 7.6.1
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4197" format="html" scope="external">#4197</xref>
+              </li>
+              <li id="4130">Saxon 12.2
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4130" format="html" scope="external">#4130</xref>
               </li>
             </ul>
           </li>

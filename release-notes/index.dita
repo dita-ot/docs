@@ -37,6 +37,9 @@
           following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.1+is%3Aclosed+sort%3Acreated-asc -->
+          <li id="4155">Insert <xmlpi>?ditaot dita-ot:usershortdesc?</xmlpi> in cases where it was missing
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4155" format="html" scope="external">#4155</xref>
+          </li>
           <li id="4216">The bundled Jackson dependencies have been updated to version <keyword
               keyref="tool.jackson.version"
             /> to resolve multiple security vulnerabilities in the SnakeYAML library.
@@ -47,6 +50,15 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4218" format="html" scope="external">#4218</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4226" format="html" scope="external">#4226</xref>
           </li>
+          <li id="4221">Cross-references to topics containing <xmlelement>shortdesc</xmlelement> elements with
+            cross-references sometimes result in <msgnum>DOTX031E</msgnum> (file not available) errors
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4221" format="html" scope="external">#4221</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4239" format="html" scope="external">#4239</xref>
+          </li>
+          <li id="4227">Update to newer Guava version
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4227" format="html" scope="external">#4227</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4245" format="html" scope="external">#4245</xref>
+          </li>
           <li id="4230">Fix running JUnit5 tests in Gradle
             <xref href="https://github.com/dita-ot/dita-ot/issues/4230" format="html" scope="external">#4230</xref>
           </li>
@@ -55,7 +67,14 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4238" format="html" scope="external">#4238</xref>
           </li>
           <li id="4240">DITAOTXMLErrorHandler no longer shows line/column number for error messages
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4240" format="html" scope="external">#4240</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4240" format="html" scope="external">#4240</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4248" format="html" scope="external">#4248</xref>
+          </li>
+          <li id="4241">Update to Saxon 12.3
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4241" format="html" scope="external">#4241</xref>
+          </li>
+          <li id="4246">Update Logback and SLF4J 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4246" format="html" scope="external">#4246</xref>
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the

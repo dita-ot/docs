@@ -58,8 +58,8 @@
           <p>Exclude the content that is highlighted in bold if the transformation is not intended for print.</p>
         </info>
       </step>
-      <step>
-        <cmd>Install the plug-in.</cmd>
+      <step conkeyref="conref-task/install-plugin">
+        <cmd/>
       </step>
     </steps>
     <result>You now can use the new transformation.</result>

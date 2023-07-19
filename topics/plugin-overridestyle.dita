@@ -41,8 +41,8 @@
                 <filepath>xsl/header.xsl</filepath>. </li>
           </ul></info>
       </step>
-      <step>
-        <cmd>Install the plug-in.</cmd>
+      <step conkeyref="conref-task/install-plugin">
+        <cmd/>
       </step>
     </steps>
     <result>The plug-in installer adds an XSL import statement to the default DITA-OT code, so that the XSL override

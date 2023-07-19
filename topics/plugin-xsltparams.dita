@@ -57,8 +57,8 @@
             </li>
           </ul></info>
       </step>
-      <step>
-        <cmd>Install the plug-in.</cmd>
+      <step conkeyref="conref-task/install-plugin">
+        <cmd/>
       </step>
     </steps>
     <result>The <filepath>plugin.xml</filepath> file passes the parameters to the specified transformation or

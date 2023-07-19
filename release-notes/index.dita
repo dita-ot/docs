@@ -69,12 +69,13 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4234" format="html" scope="external">#4234</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4238" format="html" scope="external">#4238</xref>
           </li>
-          <li id="4240">When logging was changed to use processing mode in DITA-OT 4.0.3, the change logged the
-            exception without location. Logging code has been corrected to restore the location information to the
-            exception, so errors once again show the line/column number where the problem appears.
+          <li id="4240">When logging was changed to use processing mode in DITA-OT 4.1, the change logged the exception
+            without location. Logging code has been corrected to restore the location information to the exception, so
+            errors once again show the line/column number where the problem appears.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4187" format="html" scope="external">#4187</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4240" format="html" scope="external">#4240</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4248" format="html" scope="external">#4248</xref>
-          </li>
+          </li>          
           <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues in
             bundled libraries:
             <ul>

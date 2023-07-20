@@ -42,8 +42,8 @@
             <li><varname>Ant-target</varname> is the name of the Ant target.</li>
           </ul></info>
       </step>
-      <step>
-        <cmd>Install the plug-in.</cmd>
+      <step conkeyref="conref-task/install-plugin">
+        <cmd/>
       </step>
     </steps>
     <result>The new target is added to the Ant dependency list. The new target is now always run in conjunction with the

@@ -52,8 +52,8 @@
         <cmd>Save the new XML catalog file to your plug-in. Be sure that the local file references are relative to the
           location of the catalog and plug-in.</cmd>
       </step>
-      <step>
-        <cmd>Install the plug-in.</cmd>
+      <step conkeyref="conref-task/install-plugin">
+        <cmd/>
       </step>
     </steps>
     <result>The catalog entries inside of the new catalog file are added to the core DITA-OT catalog file.</result>

@@ -79,8 +79,8 @@
           </ul>
         </info>
       </step>
-      <step>
-        <cmd>Install the plug-in.</cmd>
+      <step conkeyref="conref-task/install-plugin">
+        <cmd/>
       </step>
     </steps>
     <postreq>

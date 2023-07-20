@@ -118,9 +118,7 @@
     </result>
     <postreq>
       <ol>
-        <li>Run <filepath conkeyref="conref-task/dita-cmd"/>
-          <parmname>--install</parmname> to install the plug-in and make the <option>html5-javascript</option>
-          transformation available.</li>
+        <li conkeyref="conref-task/install-plugin-postreq-li"/>
         <li>Build output with the new transformation type to verify that the plug-in works as intended.
           <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<varname
             >my.ditamap</varname> <parmname>--format</parmname>=<option>html5-javascript</option></codeblock></li>

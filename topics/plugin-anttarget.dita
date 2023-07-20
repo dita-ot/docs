@@ -39,8 +39,8 @@
             <li><varname>build-file</varname> is the Ant project file that contains the new build target(s).</li>
           </ul></stepxmp>
       </step>
-      <step>
-        <cmd>Install the plug-in.</cmd>
+      <step conkeyref="conref-task/install-plugin">
+        <cmd/>
       </step>
     </steps>
     <result>

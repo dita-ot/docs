@@ -54,8 +54,8 @@
               <filepath>myJavaLibrary.jar</filepath>. </li>
           </ul></info>
       </step>
-      <step>
-        <cmd>Install the plug-in.</cmd>
+      <step conkeyref="conref-task/install-plugin">
+        <cmd/>
       </step>
     </steps>
     <result>The Ant or XSLT code now can make use of the Java code.</result>

@@ -136,6 +136,12 @@
             necessary.</note>
         </info>
       </step>
+      <step id="install-plugin">
+        <cmd>Use the <cmdname>dita install</cmdname> subcommand to install the plug-in.</cmd>
+        <info>
+          <note>For more information, see
+            <xref keyref="plugins-installing"/>.</note></info>
+      </step>
     </steps>
     <postreq>
       <note type="tip" id="template-properties">Copy <filepath conref="#ID/samples-dir"/><filepath
@@ -149,6 +155,13 @@
           <indexterm>.properties file</indexterm></indexterm>
         <indexterm>args.input.dir</indexterm>
       </note>
+      <ol>
+        <li id="install-plugin-postreq-li">
+          <p>Use the <cmdname>dita install</cmdname> subcommand to install the plug-in.</p>
+          <note>For more information, see
+            <xref keyref="plugins-installing"/>.</note>
+        </li>
+      </ol>
     </postreq>
   </taskbody>
 </task>

@@ -174,7 +174,7 @@
               <li>Standard Markdown syntax can now be used to indicate a span of code by wrapping it with backtick
                 quotes (<codeph>`</codeph>). In Markdown DITA input, these constructs are converted to DITA
                   <xmlelement>codeph</xmlelement> elements on import, and rendered as <xmlelement>code</xmlelement>
-                elements in HTML output. In MDITA input, this syntax is converted to teletype
+                elements in HTML output. In MDITA input, backtick code spans are parsed as teletype
                   <xmlelement>tt</xmlelement> elements to align with LwDITA, which supports teletype highlighting in
                 XDITA.</li>
               <li>The LwDITA plug-in supports a new <codeph>$schema</codeph> key in the YAML front matter block. This

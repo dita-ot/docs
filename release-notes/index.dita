@@ -26,15 +26,121 @@
     </refbody>
   </reference>
 
-  <reference id="v4.1.1" outputclass="mark">
+  <reference id="v4.1.2" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released July 20, 2023</ph>
+      <ph outputclass="small text-muted">(work in progress)</ph>
     </title>
-
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.2+is%3Aclosed+sort%3Acreated-asc -->
+          <li id="2420">Can no longer use conref in keydef metadata [DOT 2.3]
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2420" format="html" scope="external">#2420</xref>
+          </li>
+          <li id="3007">NullPointerException in AbstractReaderModule
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3007" format="html" scope="external">#3007</xref>
+          </li>
+          <li id="3281">Preprocess2 does not report validation error
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3281" format="html" scope="external">#3281</xref>
+          </li>
+          <li id="3446">PDF - Stage "preprocess2" does not report not resolved conrefs
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3446" format="html" scope="external">#3446</xref>
+          </li>
+          <li id="3514">preprocess2 is not compatible with chunk=to-content
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3514" format="html" scope="external">#3514</xref>
+          </li>
+          <li id="3546">@keyref isn't resolved when contained in @conref
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3546" format="html" scope="external">#3546</xref>
+          </li>
+          <li id="3718">PDF2 build breakes due to an invalid xref's URI
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3718" format="html" scope="external">#3718</xref>
+          </li>
+          <li id="4064">Chunk to content on DITA Map fails when the DITA Map has spaces in file name
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4064" format="html" scope="external">#4064</xref>
+          </li>
+          <li id="4237">Fix preprocess2 bugs
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4237" format="html" scope="external">#4237</xref>
+          </li>
+          <li id="4252">Fix PI generation in preprocess2
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4252" format="html" scope="external">#4252</xref>
+          </li>
+          <li id="4254">HTML5: Teletype output contains inline style attributes
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4254" format="html" scope="external">#4254</xref>
+          </li>
+          <li id="4255">Fix validating network file URI
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4255" format="html" scope="external">#4255</xref>
+          </li>
+          <li id="4257">Fix getting file name from URI with space in file name #4064
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4257" format="html" scope="external">#4257</xref>
+          </li>
+          <li id="4258">Fix conref in keydef value in preprocess2
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4258" format="html" scope="external">#4258</xref>
+          </li>
+          <li id="4259">Improve preprocess unit tests
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4259" format="html" scope="external">#4259</xref>
+          </li>
+          <li id="4261">Process map conref during preprocess2 topic stage before keyref
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4261" format="html" scope="external">#4261</xref>
+          </li>
+          <li id="4264">Add preprocess integration test for subject scheme
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4264" format="html" scope="external">#4264</xref>
+          </li>
+          <li id="4267">Move teletype styling to Sass partial
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4267" format="html" scope="external">#4267</xref>
+          </li>
+          <li id="4268">Clean preprocess2 tests
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4268" format="html" scope="external">#4268</xref>
+          </li>
+          <li id="4269">Footnote in <xmlelement>title</xmlelement>, footnote text appears in <xmlelement
+            >xref</xmlelement>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4269" format="html" scope="external">#4269</xref>
+          </li>
+          <li id="4275">Different topicmeta/navtitle should keep their value even if the target file is the same
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4275" format="html" scope="external">#4275</xref>
+          </li>
+          <li id="4276">ignore <xmlelement>fn</xmlelement> elements when computing link text for a target element 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4276" format="html" scope="external">#4276</xref>
+          </li>
+          <li id="4280">Add tests for cascading metadata in duplicate topicrefs
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4280" format="html" scope="external">#4280</xref>
+          </li>
+          <li id="4283">Refactor metadata cascade code
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4283" format="html" scope="external">#4283</xref>
+          </li>
+          <li id="4284">Fix metadata cascade 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4284" format="html" scope="external">#4284</xref>
+          </li>
+          <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues in
+            bundled libraries:
+            <ul>
+              <li id="4274">XML Resolver 5.2.1
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4274" format="html" scope="external">#4274</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4279" format="html" scope="external">#4279</xref>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.2+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.1.2 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.1.1...4.1.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.1.1">
+    <title>DITA-OT 4.1.1
+      <ph outputclass="small text-muted">released July 20, 2023</ph>
+    </title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 4.1.1 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.1+is%3Aclosed+sort%3Acreated-asc -->
           <li id="4155">In previous releases, there were some cases in which a <xmlelement>desc</xmlelement> element

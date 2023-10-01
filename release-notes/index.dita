@@ -89,14 +89,13 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/3718" format="html" scope="external">#3718</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4255" format="html" scope="external">#4255</xref>
           </li>
-          <li id="4064">Chunk to content on DITA Map fails when the DITA Map has spaces in file name
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4064" format="html" scope="external">#4064</xref>
+          <li id="4064">Chunk-to-content publishing failed on DITA map files whose paths included spaces. The chunk map
+            reader module now normalizes map file paths to allow publishing to continue in these cases.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4064" format="html" scope="external">#4064</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4257" format="html" scope="external">#4257</xref>
           </li>
           <li id="4254">HTML5: Teletype output contains inline style attributes
             <xref href="https://github.com/dita-ot/dita-ot/issues/4254" format="html" scope="external">#4254</xref>
-          </li>
-          <li id="4257">Fix getting file name from URI with space in file name #4064
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4257" format="html" scope="external">#4257</xref>
           </li>
           <li id="4259">Improve preprocess unit tests
             <xref href="https://github.com/dita-ot/dita-ot/issues/4259" format="html" scope="external">#4259</xref>

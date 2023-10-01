@@ -79,17 +79,21 @@
               </li>
             </ul>
           </li>
-          <li id="3718">PDF2 build breakes due to an invalid xref's URI
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3718" format="html" scope="external">#3718</xref>
+          <li id="3718">Network file URI validation has been fixed to allow builds to continue when cross-references
+            point to invalid URIs. Up until DITA-OT 3.6, the non-standard 2-slash format could be used to represent the
+            server name in Windows UNC filenames such as <filepath>\\server\folder\file.pdf</filepath> using the
+            Authority part of the URI as <filepath>file://server/folder/file.pdf</filepath>. Recent versions of DITA-OT
+            required the correct 3-slash notation with an explicitly empty authority component
+              (<filepath>file:///server/folder/file.pdf</filepath>), or builds would fail. Validation has been relaxed
+            to restore support for the 2-slash format.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3718" format="html" scope="external">#3718</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4255" format="html" scope="external">#4255</xref>
           </li>
           <li id="4064">Chunk to content on DITA Map fails when the DITA Map has spaces in file name
             <xref href="https://github.com/dita-ot/dita-ot/issues/4064" format="html" scope="external">#4064</xref>
           </li>
           <li id="4254">HTML5: Teletype output contains inline style attributes
             <xref href="https://github.com/dita-ot/dita-ot/issues/4254" format="html" scope="external">#4254</xref>
-          </li>
-          <li id="4255">Fix validating network file URI
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4255" format="html" scope="external">#4255</xref>
           </li>
           <li id="4257">Fix getting file name from URI with space in file name #4064
             <xref href="https://github.com/dita-ot/dita-ot/issues/4257" format="html" scope="external">#4257</xref>

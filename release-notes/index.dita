@@ -115,13 +115,16 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4269" format="html" scope="external">#4269</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4276" format="html" scope="external">#4276</xref>
           </li>
-          <li id="4275">Different topicmeta/navtitle should keep their value even if the target file is the same
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4275" format="html" scope="external">#4275</xref>
-          </li>
-          <li id="4283">Refactor metadata cascade code
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4283" format="html" scope="external">#4283</xref>
-          </li>
-          <li id="4284">Fix metadata cascade 
+          <li id="4275">When maps point to the same resource in multiple topic references with different navigation
+            titles (or other topic metadata), older versions of DITA-OT used the metadata from the first reference for
+            all subsequent instances. The original code was written to cascade metadata within the map and also collect
+            metadata to be pushed to topics. This code worked when each topic was only referenced once. When there were
+            duplicates, only the first topic reference got the correct cascaded metadata; the second reference was
+            processed with the cascaded metadata, but also with the metadata from the first topicref. The code has been
+            refactored to separate metadata cascading within maps from the collection of metadata to push to topics, so
+            subsequent references to the same resource now retain the correct metadata for each instance.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4275" format="html" scope="external">#4275</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4283" format="html" scope="external">#4283</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4284" format="html" scope="external">#4284</xref>
           </li>
           <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues in

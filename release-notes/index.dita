@@ -108,15 +108,15 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4264" format="html" scope="external">#4264</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4280" format="html" scope="external">#4280</xref>
           </li>
-          <li id="4269">Footnote in <xmlelement>title</xmlelement>, footnote text appears in <xmlelement
-            >xref</xmlelement>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4269" format="html" scope="external">#4269</xref>
+          <li id="4269">In earlier versions, cross-references or other links to titles that contained footnotes included
+            the footnote text. For a link to a target element that has no explicit link text, DITA-OT computes default
+            link text from the target element. Link text computation now ignores any <xmlelement>fn</xmlelement>
+            elements it encounters, so the link shows only the text from the <xmlelement>title</xmlelement> element.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4269" format="html" scope="external">#4269</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4276" format="html" scope="external">#4276</xref>
           </li>
           <li id="4275">Different topicmeta/navtitle should keep their value even if the target file is the same
             <xref href="https://github.com/dita-ot/dita-ot/issues/4275" format="html" scope="external">#4275</xref>
-          </li>
-          <li id="4276">ignore <xmlelement>fn</xmlelement> elements when computing link text for a target element 
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4276" format="html" scope="external">#4276</xref>
           </li>
           <li id="4283">Refactor metadata cascade code
             <xref href="https://github.com/dita-ot/dita-ot/issues/4283" format="html" scope="external">#4283</xref>

@@ -153,11 +153,21 @@
       </keywords>
     </topicmeta>
   </keydef>
-  <!-- XML Resolver: Bundled version-->
+  <!-- Old Apache XML Resolver (used by Ant): Bundled version-->
+  <!-- https://xerces.apache.org/xml-commons/components/resolver/ -->
   <keydef keys="tool.resolver.version">
     <topicmeta>
       <keywords>
         <keyword>1.2</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- New XML Resolver by Norm Walsh: Bundled version-->
+  <!-- https://xmlresolver.org -->
+  <keydef keys="tool.xml.resolver.version">
+    <topicmeta>
+      <keywords>
+        <keyword>5.2.1</keyword>
       </keywords>
     </topicmeta>
   </keydef>

@@ -127,14 +127,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4283" format="html" scope="external">#4283</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4284" format="html" scope="external">#4284</xref>
           </li>
-          <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues in
-            bundled libraries:
-            <ul>
-              <li id="4274">XML Resolver 5.2.1
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4274" format="html" scope="external">#4274</xref>,
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4279" format="html" scope="external">#4279</xref>
-              </li>
-            </ul>
+          <li id="4274">The bundled XML Resolver has been upgraded to version 5.2.1, which no longer fails on invalid
+            URI characters like spaces or Windows backslashes, and now also runs in environments with a restrictive
+            security manager.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4274" format="html" scope="external">#4274</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4279" format="html" scope="external">#4279</xref>
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the

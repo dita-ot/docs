@@ -102,11 +102,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4254" format="html" scope="external">#4254</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4267" format="html" scope="external">#4267</xref>
           </li>          
-          <li id="4259">Improve preprocess unit tests
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4259" format="html" scope="external">#4259</xref>
-          </li>
-          <li id="4264">Add preprocess integration test for subject scheme
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4264" format="html" scope="external">#4264</xref>
+          <li id="4259">Test coverage has been improved to include unit tests for preprocessing, integration tests for
+            subject schemes, and unit tests for cascading metadata in duplicate topicrefs.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4259" format="html" scope="external">#4259</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4264" format="html" scope="external">#4264</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4280" format="html" scope="external">#4280</xref>
           </li>
           <li id="4269">Footnote in <xmlelement>title</xmlelement>, footnote text appears in <xmlelement
             >xref</xmlelement>
@@ -117,9 +117,6 @@
           </li>
           <li id="4276">ignore <xmlelement>fn</xmlelement> elements when computing link text for a target element 
             <xref href="https://github.com/dita-ot/dita-ot/issues/4276" format="html" scope="external">#4276</xref>
-          </li>
-          <li id="4280">Add tests for cascading metadata in duplicate topicrefs
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4280" format="html" scope="external">#4280</xref>
           </li>
           <li id="4283">Refactor metadata cascade code
             <xref href="https://github.com/dita-ot/dita-ot/issues/4283" format="html" scope="external">#4283</xref>

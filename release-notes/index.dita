@@ -57,12 +57,14 @@
                 Map-first preprocessing has been updated to validate files correctly.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3281" format="html" scope="external">#3281</xref>
               </li>
-              <li id="3446">Earlier versions of map-first preprocessing failed to report unresolved content references
-                to topics that were not referenced in the map. In the past, this issue could be avoided by adding
-                content reference targets to the map with the <xmlatt>processing-role</xmlatt> attribute set to
-                  <codeph>resource-only</codeph>, but this workaround is no longer necessary. Unresolved references
-                should now be reported even if the target topics are not referenced in the map.
-                <xref href="https://github.com/dita-ot/dita-ot/issues/3446" format="html" scope="external">#3446</xref>
+              <li id="3446">In DITA-OT 3.5 to 4.1, map-first preprocessing failed to report unresolved content
+                references to topics that were not referenced in the map, and any key references they contained were not
+                expanded. In the past, this issue could be avoided by adding content reference targets to the map with
+                the <xmlatt>processing-role</xmlatt> attribute set to <codeph>resource-only</codeph>, but this
+                workaround is no longer necessary. Unresolved references should now be reported, and keys expanded even
+                if the target topics are not referenced in the map.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3446" format="html" scope="external">#3446</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3546" format="html" scope="external">#3546</xref>
               </li>
               <li id="3514">Earlier versions of map-first preprocessing set incorrect values for the
                   <xmlpi>path2project</xmlpi>, <xmlpi>path2project-uri</xmlpi>, and <xmlpi>path2rootmap-uri</xmlpi>
@@ -76,9 +78,6 @@
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4268" format="html" scope="external">#4268</xref>
               </li>
             </ul>
-          </li>
-          <li id="3546">@keyref isn't resolved when contained in @conref
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3546" format="html" scope="external">#3546</xref>
           </li>
           <li id="3718">PDF2 build breakes due to an invalid xref's URI
             <xref href="https://github.com/dita-ot/dita-ot/issues/3718" format="html" scope="external">#3718</xref>

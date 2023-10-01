@@ -46,10 +46,10 @@
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4258" format="html" scope="external">#4258</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4261" format="html" scope="external">#4261</xref>
               </li>
-              <li id="3007">In earlier versions, key references to duplicate topics created via <xmlatt>copy-to</xmlatt>
-                attributes caused builds to fail. This issue was initially resolved for the original preprocessing
-                routine in DITA-OT 3.1.1. The original source information is now also correctly recorded for copy-to
-                targets in <codeph>preprocess2</codeph>, allowing builds to continue.
+              <li id="3007">Key references to duplicate topics created via <xmlatt>copy-to</xmlatt> attributes caused
+                builds to fail. This issue was initially resolved for the original preprocessing routine in DITA-OT
+                3.1.1. The original source information is now also correctly recorded for copy-to targets in
+                  <codeph>preprocess2</codeph>, allowing builds to continue.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3007" format="html" scope="external">#3007</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3015" format="html" scope="external">#3015</xref>
               </li>
@@ -66,10 +66,10 @@
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3446" format="html" scope="external">#3446</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3546" format="html" scope="external">#3546</xref>
               </li>
-              <li id="3514">Earlier versions of map-first preprocessing set incorrect values for the
-                  <xmlpi>path2project</xmlpi>, <xmlpi>path2project-uri</xmlpi>, and <xmlpi>path2rootmap-uri</xmlpi>
-                processing instructions. In <codeph>preprocess2</codeph>, they are now set with correct values that
-                match the original preprocess output.
+              <li id="3514">Map-first preprocessing set incorrect values for the <xmlpi>path2project</xmlpi>,
+                  <xmlpi>path2project-uri</xmlpi>, and <xmlpi>path2rootmap-uri</xmlpi> processing instructions. In
+                  <codeph>preprocess2</codeph>, they are now set with correct values that match the original preprocess
+                output.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/3514" format="html" scope="external">#3514</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4252" format="html" scope="external">#4252</xref>
               </li>

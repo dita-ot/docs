@@ -26,15 +26,135 @@
     </refbody>
   </reference>
 
-  <reference id="v4.1.1" outputclass="mark">
+  <reference id="v4.1.2" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
+      <!--<ph outputclass="small text-muted">released MMMM DD, YYYY</ph>-->
     </title>
-
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.2+is%3Aclosed+sort%3Acreated-asc -->
+          <li id="4237">Various issues in map-first preprocessing have been resolved in this release.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4237" format="html" scope="external">#4237</xref>
+            <ul>
+              <li id="2420">Earlier versions failed to expand content references that were specified in key definitions.
+                In <codeph>preprocess2</codeph>, content references are now expanded before key references to ensure
+                that all topics are available when the map is processed.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/2420" format="html" scope="external">#2420</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4258" format="html" scope="external">#4258</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4261" format="html" scope="external">#4261</xref>
+              </li>
+              <li id="3007">Key references to duplicate topics created via <xmlatt>copy-to</xmlatt> attributes caused
+                builds to fail. This issue was initially resolved for the original preprocessing routine in DITA-OT
+                3.1.1. The original source information is now also correctly recorded for copy-to targets in
+                  <codeph>preprocess2</codeph>, allowing builds to continue.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3007" format="html" scope="external">#3007</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3015" format="html" scope="external">#3015</xref>
+              </li>
+              <li id="3281">Earlier versions failed to catch certain validation errors in <codeph>preprocess2</codeph>.
+                Map-first preprocessing has been updated to validate files correctly.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3281" format="html" scope="external">#3281</xref>
+              </li>
+              <li id="3446">In DITA-OT 3.5 to 4.1, map-first preprocessing failed to report unresolved content
+                references to topics that were not referenced in the map, and any key references they contained were not
+                expanded. In the past, this issue could be avoided by adding content reference targets to the map with
+                the <xmlatt>processing-role</xmlatt> attribute set to <codeph>resource-only</codeph>, but this
+                workaround is no longer necessary. Unresolved references should now be reported, and keys expanded even
+                if the target topics are not referenced in the map.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3446" format="html" scope="external">#3446</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3546" format="html" scope="external">#3546</xref>
+              </li>
+              <li id="3514">Map-first preprocessing set incorrect values for the <xmlpi>path2project</xmlpi>,
+                  <xmlpi>path2project-uri</xmlpi>, and <xmlpi>path2rootmap-uri</xmlpi> processing instructions. In
+                  <codeph>preprocess2</codeph>, they are now set with correct values that match the original preprocess
+                output.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/3514" format="html" scope="external">#3514</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4252" format="html" scope="external">#4252</xref>
+              </li>
+              <li id="4268">The map-first preprocessing test code has been simplified to use the same expected output
+                for the original preprocessing routines and <codeph>preprocess2</codeph>.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4268" format="html" scope="external">#4268</xref>
+              </li>
+            </ul>
+          </li>
+          <li id="3718">Network file URI validation has been fixed to allow builds to continue when cross-references
+            point to invalid URIs. Up until DITA-OT 3.6, the non-standard 2-slash format could be used to represent the
+            server name in Windows UNC filenames such as <filepath>\\server\folder\file.pdf</filepath> using the
+            Authority part of the URI as <filepath>file://server/folder/file.pdf</filepath>. Recent versions of DITA-OT
+            required the correct 3-slash notation with an explicitly empty authority component
+              (<filepath>file:///server/folder/file.pdf</filepath>), or builds would fail. Validation has been relaxed
+            to restore support for the 2-slash format.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3718" format="html" scope="external">#3718</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4255" format="html" scope="external">#4255</xref>
+          </li>
+          <li id="4064">Chunk-to-content publishing failed on DITA map files whose paths included spaces. The chunk map
+            reader module now normalizes map file paths to allow publishing to continue in these cases.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4064" format="html" scope="external">#4064</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4257" format="html" scope="external">#4257</xref>
+          </li>
+          <li id="4254">The HTML5 plug-in has been updated to remove the remaining inline style attributes that
+            prevented custom plug-ins from overriding the monospace font presentation of teletype
+              <xmlelement>tt</xmlelement> elements. These changes move the default teletype styling to CSS to allow
+            users to override the presentation in custom stylesheets. The output is visually equivalent to the results
+            generated by previous toolkit versions.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4254" format="html" scope="external">#4254</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4267" format="html" scope="external">#4267</xref>
+            <note type="important">In publishing environments that do not use the default common CSS files, these styles
+              may need to be implemented in custom stylesheets.</note>
+          </li>
+          <li id="4259">Test coverage has been improved to include unit tests for preprocessing, integration tests for
+            subject schemes, and unit tests for cascading metadata in duplicate topicrefs.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4259" format="html" scope="external">#4259</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4264" format="html" scope="external">#4264</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4280" format="html" scope="external">#4280</xref>
+          </li>
+          <li id="4269">In earlier versions, cross-references or other links to titles that contained footnotes included
+            the footnote text. For a link to a target element that has no explicit link text, DITA-OT computes default
+            link text from the target element. Link text computation now ignores any <xmlelement>fn</xmlelement>
+            elements it encounters, so the link shows only the text from the <xmlelement>title</xmlelement> element.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4269" format="html" scope="external">#4269</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4276" format="html" scope="external">#4276</xref>
+          </li>
+          <li id="4275">When maps point to the same resource in multiple topic references with different navigation
+            titles (or other topic metadata), older versions of DITA-OT used the metadata from the first reference for
+            all subsequent instances. The original code was written to cascade metadata within the map and also collect
+            metadata to be pushed to topics. This code worked when each topic was only referenced once. When there were
+            duplicates, only the first topic reference got the correct cascaded metadata; the second reference was
+            processed with the cascaded metadata, but also with the metadata from the first topicref. The code has been
+            refactored to separate metadata cascading within maps from the collection of metadata to push to topics, so
+            subsequent references to the same resource now retain the correct metadata for each instance.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4275" format="html" scope="external">#4275</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4283" format="html" scope="external">#4283</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4284" format="html" scope="external">#4284</xref>
+          </li>
+          <li id="4274">The bundled XML Resolver has been upgraded to version 5.2.1, which no longer fails on invalid
+            URI characters like spaces or Windows backslashes, and now also runs in environments with a restrictive
+            security manager.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4274" format="html" scope="external">#4274</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4279" format="html" scope="external">#4279</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.2+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.1.2 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.1.1...4.1.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.1.1">
+    <title>DITA-OT 4.1.1
+      <ph outputclass="small text-muted">released July 20, 2023</ph>
+    </title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 4.1.1 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.1.1+is%3Aclosed+sort%3Acreated-asc -->
           <li id="4155">In previous releases, there were some cases in which a <xmlelement>desc</xmlelement> element
@@ -75,7 +195,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4187" format="html" scope="external">#4187</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4240" format="html" scope="external">#4240</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4248" format="html" scope="external">#4248</xref>
-          </li>          
+          </li>
           <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues in
             bundled libraries:
             <ul>
@@ -174,7 +294,7 @@
               <li>Standard Markdown syntax can now be used to indicate a span of code by wrapping it with backtick
                 quotes (<codeph>`</codeph>). In Markdown DITA input, these constructs are converted to DITA
                   <xmlelement>codeph</xmlelement> elements on import, and rendered as <xmlelement>code</xmlelement>
-                elements in HTML output. In MDITA input, this syntax is converted to teletype
+                elements in HTML output. In MDITA input, backtick code spans are parsed as teletype
                   <xmlelement>tt</xmlelement> elements to align with LwDITA, which supports teletype highlighting in
                 XDITA.</li>
               <li>The LwDITA plug-in supports a new <codeph>$schema</codeph> key in the YAML front matter block. This

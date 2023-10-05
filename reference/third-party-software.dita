@@ -54,6 +54,13 @@
                 <xref keyref="license-apache-2"/></entry>
             </row>
             <row>
+              <entry>Apache XML Commons Resolver
+                <indexterm>Apache XML Commons Resolver</indexterm></entry>
+              <entry><keyword keyref="tool.resolver.version"/></entry>
+              <entry>
+                <xref keyref="license-apache-2"/></entry>
+            </row>
+            <row>
               <entry>Guava
                 <indexterm>Guava</indexterm></entry>
               <entry><keyword keyref="tool.guava.version"/></entry>
@@ -115,7 +122,7 @@
             <row>
               <entry>XML Resolver
                 <indexterm>XML Resolver</indexterm></entry>
-              <entry><keyword keyref="tool.resolver.version"/></entry>
+              <entry><keyword keyref="tool.xml.resolver.version"/></entry>
               <entry>
                 <xref keyref="license-apache-2"/></entry>
             </row>

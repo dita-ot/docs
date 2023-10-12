@@ -107,14 +107,15 @@
           </groupseq>
         </fragment>
       </syntaxdiagram>
-      <p>The <cmdname>dita</cmdname> command uses a network connection for installing and downloading content. In
-        environments where an HTTP proxy is used to establish a network connection, provide the proxy configuration via
-        the <parmname>ANT_OPTS</parmname> environment variable:<codeblock><parmname
-          >ANT_OPTS</parmname>='-Dhttp.proxySet=true -Dhttps.proxyHost=<varname
-          >&lt;HTTPS proxy IP address></varname> -Dhttp.proxyHost=<varname
-          >&lt;HTTP proxy IP address></varname> -Dhttp.proxyPort=<varname
-          >&lt;HTTP proxy port></varname> -Dhttps.proxyPort=<varname>&lt;HTTPS proxy port></varname>' <cmdname
-          >dita</cmdname> <parmname>install</parmname> <varname>&lt;plug-in></varname></codeblock></p>
+      <p>The <cmdname>dita</cmdname> command uses a network connection for installing and
+        downloading content. In environments where an HTTP proxy is used to establish a network
+        connection, provide the proxy configuration via the <parmname>ANT_OPTS</parmname>
+        environment variable:<codeblock><parmname>ANT_OPTS</parmname>="-Dhttp.proxySet=true \
+-Dhttps.proxyHost=<varname>&lt;HTTPS proxy IP address></varname> \
+-Dhttp.proxyHost=<varname>&lt;HTTP proxy IP address></varname> \
+-Dhttp.proxyPort=<varname>&lt;HTTP proxy port></varname> \
+-Dhttps.proxyPort=<varname>&lt;HTTPS proxy port></varname>" <cmdname>dita</cmdname> <parmname
+          >install</parmname> <varname>&lt;plug-in></varname></codeblock></p>
       <note type="attention">Prior to DITA-OT 3.5, subcommands were specified with the double-hyphen option syntax,
         which is still supported for backwards compatibility. (For example, <cmdname>dita</cmdname>
         <parmname>--install</parmname> will still work.)</note>

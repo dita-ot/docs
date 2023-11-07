@@ -112,7 +112,38 @@ jobs:
           commit-message: 'Update ‘${{ env.RELEASE }}’ docs for ${{ github.event.inputs.dita-ot-version }}'
           committer: 'DITA-OT Bot <ditaotbot@gmail.com>'
           signoff: true
-          token: ${{ secrets.COMMITTER_TOKEN }}
+          token: ${{ secrets.DOCS_RELEASE_TOKEN }}
           path: website
+          labels: |
+            release-updates
+
+  update-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out docs
+        uses: actions/checkout@v4
+        with:
+          ref: develop
+
+      - name: Update GitHub Actions release workflow
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq -i '.jobs.deploy.env.DITA_OT_VERSION = "${{ github.event.inputs.dita-ot-version }}"' '.github/workflows/release.yml'
+      - name: Update GitHub Actions render action
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq -i '.inputs.DITA_OT_VERSION.default = "${{ github.event.inputs.dita-ot-version }}"' '.github/actions/render/action.yml'
+
+      - name: Create release PR
+        uses: peter-evans/create-pull-request@v5
+        with:
+          branch: feature/update-github-actions-${{ github.event.inputs.dita-ot-version }}
+          title: 'Update docs GitHub Actions for ${{ github.event.inputs.dita-ot-version }}'
+          body: |
+            Update docs GitHub Actions for ${{ github.event.inputs.dita-ot-version }}.
+          commit-message: 'Update GitHub Actions for ${{ github.event.inputs.dita-ot-version }}'
+          committer: 'DITA-OT Bot <ditaotbot@gmail.com>'
+          signoff: true
+          token: ${{ secrets.DOCS_RELEASE_TOKEN }}
           labels: |
             release-updates

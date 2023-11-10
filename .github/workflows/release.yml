@@ -1,7 +1,6 @@
 # This workflow builds changes to release tag and commits to website repo for release PR
 
 name: Generate website release PR
-
 on:
   workflow_dispatch:
     inputs:
@@ -13,7 +12,6 @@ on:
         required: true
   repository_dispatch:
     types: [release]
-
 jobs:
   #  deploy:
   #    runs-on: ubuntu-latest
@@ -116,13 +114,11 @@ jobs:
   #          path: website
   #          labels: |
   #            release-updates
-
   update-ci:
     runs-on: ubuntu-latest
     steps:
       - name: Check out docs
         uses: actions/checkout@v4
-
       - name: Update GitHub Actions release workflow
         uses: mikefarah/yq@master
         with:
@@ -131,7 +127,6 @@ jobs:
         uses: mikefarah/yq@master
         with:
           cmd: yq -i '.inputs.DITA_OT_VERSION.default = "${{ github.event.inputs.dita-ot-version }}"' '.github/actions/render/action.yml'
-
       - name: Create release PR
         uses: peter-evans/create-pull-request@v5
         with:
@@ -145,3 +140,6 @@ jobs:
           token: ${{ secrets.DOCS_RELEASE_TOKEN }}
           labels: |
             release-updates
+  deploy:
+    env:
+      DITA_OT_VERSION: 4.1.2

@@ -6,7 +6,7 @@ inputs:
     default: 'master'
   DITA_OT_VERSION:
     description: 'DITA-OT version used for rendering'
-    default: '4.0.1'
+    default: '4.1.2'
 runs:
   using: 'composite'
   steps:
@@ -23,7 +23,6 @@ runs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6
-
     - name: Download website plug-in
       shell: bash
       run: |
@@ -33,7 +32,6 @@ runs:
       with:
         path: dita-ot-${{ inputs.DITA_OT_VERSION }}
         key: ${{ runner.os }}-dita-ot-${{ inputs.DITA_OT_VERSION }}
-
     - name: Download stable DITA-OT
       shell: bash
       run: |
@@ -44,7 +42,6 @@ runs:
           echo "Use cached dita-ot-${{ inputs.DITA_OT_VERSION }}"
         fi
         dita-ot-${{ inputs.DITA_OT_VERSION }}/bin/dita install org.dita-ot.html.zip --force -v
-
     - name: Get develop DITA-OT ETag
       shell: bash
       run: |
@@ -66,7 +63,6 @@ runs:
           echo "Use cached dita-ot-develop"
         fi
         echo "DITA_OT_DEV=$(find dita-ot-develop -name 'dita-ot-*@*' -type d | head -1)" >> $GITHUB_ENV
-
     - name: Run DITA-OT
       shell: bash
       run: |

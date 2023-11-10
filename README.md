@@ -38,7 +38,7 @@ You must have a JRE and a local installation of DITA-OT. There is no need to dow
           gradlew.bat -PditaHome=C:\path\to\dita-ot
 
 <details>
-<summary><strong>Alternative:</strong> Using a `dita-ot` repository clone</summary>
+<summary><strong>Alternative:</strong> Using a DITA-OT repository clone</summary>
 
 If you’re using a clone of the [DITA-OT development repository][5] as your toolkit installation alongside your clone of the `docs` repository:
 

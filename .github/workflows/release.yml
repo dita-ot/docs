@@ -109,6 +109,14 @@ jobs:
   update-ci:
     runs-on: ubuntu-latest
     steps:
+      - name: Parse arguments
+        run: |
+          if [[ -n "${{ github.event.client_payload.dita_ot_version }}" ]]; then
+            echo "VERSION=${{ github.event.client_payload.dita_ot_version }}" >> $GITHUB_ENV
+          else
+            echo "VERSION=${{ github.event.inputs.dita-ot-version }}" >> $GITHUB_ENV
+          fi
+
       - name: Check out docs
         uses: actions/checkout@v4
         with:
@@ -117,20 +125,20 @@ jobs:
       - name: Update GitHub Actions release workflow
         uses: mikefarah/yq@master
         with:
-          cmd: yq -i '.jobs.deploy.env.DITA_OT_VERSION = "${{ github.event.inputs.dita-ot-version }}"' '.github/workflows/release.yml'
+          cmd: yq -i '.jobs.deploy.env.DITA_OT_VERSION = "${{ env.VERSION }}"' '.github/workflows/release.yml'
       - name: Update GitHub Actions render action
         uses: mikefarah/yq@master
         with:
-          cmd: yq -i '.inputs.DITA_OT_VERSION.default = "${{ github.event.inputs.dita-ot-version }}"' '.github/actions/render/action.yml'
+          cmd: yq -i '.inputs.DITA_OT_VERSION.default = "${{ env.VERSION }}"' '.github/actions/render/action.yml'
 
       - name: Create release PR
         uses: peter-evans/create-pull-request@v5
         with:
-          branch: feature/update-github-actions-${{ github.event.inputs.dita-ot-version }}
-          title: 'Update docs GitHub Actions for ${{ github.event.inputs.dita-ot-version }}'
+          branch: feature/update-github-actions-${{ env.VERSION }}
+          title: 'Update docs GitHub Actions for ${{ env.VERSION }}'
           body: |
-            Update docs GitHub Actions for ${{ github.event.inputs.dita-ot-version }}.
-          commit-message: 'Update GitHub Actions for ${{ github.event.inputs.dita-ot-version }}'
+            Update docs GitHub Actions for ${{ env.VERSION }}.
+          commit-message: 'Update GitHub Actions for ${{ env.VERSION }}'
           committer: 'DITA-OT Bot <ditaotbot@gmail.com>'
           signoff: true
           token: ${{ secrets.DOCS_RELEASE_TOKEN }}

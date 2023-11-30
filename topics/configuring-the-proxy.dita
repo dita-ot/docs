@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<task id="configuring-the-proxy">
+  <title>Configuring the proxy</title>
+  <titlealts>
+    <navtitle>Configuring the proxy</navtitle>
+  </titlealts>
+  <shortdesc>Certain commands, for example, the <cmdname>dita install</cmdname> command, use a
+    network connection for installing and downloading content. In environments where an HTTP proxy
+    is used to establish a network connection, provide the proxy configuration via the
+      <codeph>ANT_OPTS</codeph> environment variable. </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>macOS <indexterm>configure proxy</indexterm></indexterm>
+        <indexterm>Linux <indexterm>configure proxy</indexterm></indexterm>
+        <indexterm>Windows <indexterm>configure proxy</indexterm></indexterm>
+        <indexterm>command line <indexterm>configure proxy</indexterm></indexterm>
+        <indexterm>operating system
+          <index-see>Linux</index-see>
+          <index-see>macOS</index-see>
+          <index-see>Windows</index-see></indexterm>
+        <indexterm>Java <indexterm>network</indexterm></indexterm>
+        <indexterm><codeph>ANT_OPTS</codeph></indexterm>
+        <indexterm>Java
+          <indexterm><codeph>ANT_OPTS</codeph></indexterm></indexterm>
+        <indexterm>metadata
+          <indexterm>network connection error</indexterm></indexterm>
+        <indexterm>metadata
+          <indexterm>connection timed out</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps-unordered>
+      <step>
+        <cmd>To configure the proxy for a specific session, from the command prompt, issue the
+          following command:</cmd>
+        <choicetable outputclass="multi-platform">
+          <chhead>
+            <choptionhd>Platform</choptionhd>
+            <chdeschd>Command</chdeschd>
+          </chhead>
+          <chrow platform="unix">
+            <choption>Linux or macOS&#xA0;</choption>
+            <chdesc><codeph>export ANT_OPTS="-Dhttp.proxySet=true \
+                  -Dhttps.proxyHost=<varname>&lt;HTTPS proxy IP address></varname> \
+                  -Dhttp.proxyHost=<varname>&lt;HTTP proxy IP address></varname> \
+                  -Dhttp.proxyPort=<varname>&lt;HTTP proxy port></varname> \
+                  -Dhttps.proxyPort=<varname>&lt;HTTPS proxy port></varname>"</codeph></chdesc>
+          </chrow>
+          <chrow platform="windows">
+            <choption>Windows</choption>
+            <chdesc><codeph>set ANT_OPTS=%ANT_OPTS% -Dhttp.proxySet=true \
+                  -Dhttps.proxyHost=<varname>&lt;HTTPS proxy IP address></varname> \
+                  -Dhttp.proxyHost=<varname>&lt;HTTP proxy IP address></varname> \
+                  -Dhttp.proxyPort=<varname>&lt;HTTP proxy port></varname> \
+                  -Dhttps.proxyPort=<varname>&lt;HTTPS proxy port></varname></codeph></chdesc>
+          </chrow>
+        </choicetable>
+      </step>
+      <step>
+        <cmd>To persistently change the value, change the value allocated to the
+            <codeph>ANT_OPTS</codeph> environment variable on your system.</cmd>
+      </step>
+    </steps-unordered>
+    <postreq>If a command has previously failed due to a connection timeout, issue the command
+      again. For
+      example:<codeblock><cmdname>dita</cmdname> <parmname>install</parmname> <varname
+        >&lt;plug-in></varname></codeblock></postreq>
+    
+  </taskbody>
+</task>

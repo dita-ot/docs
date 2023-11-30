@@ -194,7 +194,7 @@
               from the configured registry or process remote referenced resources. In environments where an HTTP proxy
               is used to establish a network connection, you can provide the proxy configuration via the
                 <codeph>ANT_OPTS</codeph> environment variable. For more information, see
-              <xref keyref="configuring-the-proxy"/>.</note>
+              <xref keyref="configuring-proxies"/>.</note>
           </pd>
         </plentry>
         <plentry>

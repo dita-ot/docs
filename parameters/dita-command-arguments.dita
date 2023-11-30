@@ -107,10 +107,11 @@
           </groupseq>
         </fragment>
       </syntaxdiagram>
-      <note type="tip">The <cmdname>dita install</cmdname> command uses a network connection for
-        installing and downloading content. In environments where an HTTP proxy is used to establish
-        a network connection, provide the proxy configuration via the <codeph>ANT_OPTS</codeph>
-        environment variable. For more information, see <cite>Configuring the proxy</cite>.</note>
+      <note type="tip">The <cmdname>dita install</cmdname> command uses a network connection to install plug-ins from
+        the configured registry or process remote referenced resources. In environments where an HTTP proxy is used to
+        establish a network connection, you can provide the proxy configuration via the <codeph>ANT_OPTS</codeph>
+        environment variable. For more information, see
+        <xref keyref="configuring-the-proxy"/>.</note>
       <note type="attention">Prior to DITA-OT 3.5, subcommands were specified with the double-hyphen option syntax,
         which is still supported for backwards compatibility. (For example, <cmdname>dita</cmdname>
         <parmname>--install</parmname> will still work.)</note>

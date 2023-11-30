@@ -6,9 +6,9 @@
   <titlealts>
     <navtitle>Configuring the proxy</navtitle>
   </titlealts>
-  <shortdesc>Certain commands, for example, the <cmdname>dita install</cmdname> command, use a
-    network connection for installing and downloading content. In environments where an HTTP proxy
-    is used to establish a network connection, provide the proxy configuration via the
+  <shortdesc>Certain commands, for example, the <cmdname>dita install</cmdname> command, use a network connection to
+    install plug-ins from the configured registry or process remote referenced resources. In environments where an HTTP
+    proxy is used to establish a network connection, you can provide the proxy configuration via the
       <codeph>ANT_OPTS</codeph> environment variable. </shortdesc>
   <prolog>
     <metadata>

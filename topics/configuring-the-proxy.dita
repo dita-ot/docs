@@ -44,19 +44,19 @@
           </chhead>
           <chrow platform="unix">
             <choption>Linux or macOS&#xA0;</choption>
-            <chdesc><codeph>export ANT_OPTS="-Dhttp.proxySet=true \
-                  -Dhttps.proxyHost=<varname>&lt;HTTPS proxy IP address></varname> \
-                  -Dhttp.proxyHost=<varname>&lt;HTTP proxy IP address></varname> \
-                  -Dhttp.proxyPort=<varname>&lt;HTTP proxy port></varname> \
-                  -Dhttps.proxyPort=<varname>&lt;HTTPS proxy port></varname>"</codeph></chdesc>
+            <chdesc><codeblock outputclass="syntax-bash multi-platform">export ANT_OPTS="-Dhttp.proxySet=true \
+                 -Dhttps.proxyHost=<varname>&lt;HTTPS proxy IP address></varname> \
+                 -Dhttp.proxyHost=<varname>&lt;HTTP proxy IP address></varname> \
+                 -Dhttp.proxyPort=<varname>&lt;HTTP proxy port></varname> \
+                 -Dhttps.proxyPort=<varname>&lt;HTTPS proxy port></varname>"</codeblock></chdesc>
           </chrow>
           <chrow platform="windows">
             <choption>Windows</choption>
-            <chdesc><codeph>set ANT_OPTS=%ANT_OPTS% -Dhttp.proxySet=true \
-                  -Dhttps.proxyHost=<varname>&lt;HTTPS proxy IP address></varname> \
-                  -Dhttp.proxyHost=<varname>&lt;HTTP proxy IP address></varname> \
-                  -Dhttp.proxyPort=<varname>&lt;HTTP proxy port></varname> \
-                  -Dhttps.proxyPort=<varname>&lt;HTTPS proxy port></varname></codeph></chdesc>
+            <chdesc><codeblock outputclass="syntax-bash multi-platform">set ANT_OPTS=%ANT_OPTS% -Dhttp.proxySet=true ^
+                        -Dhttps.proxyHost=<varname>&lt;HTTPS proxy IP address></varname> ^
+                        -Dhttp.proxyHost=<varname>&lt;HTTP proxy IP address></varname> ^
+                        -Dhttp.proxyPort=<varname>&lt;HTTP proxy port></varname> ^
+                        -Dhttps.proxyPort=<varname>&lt;HTTPS proxy port></varname></codeblock></chdesc>
           </chrow>
         </choicetable>
       </step>

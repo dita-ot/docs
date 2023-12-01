@@ -190,6 +190,10 @@
             <xref keyref="site-plugin-registry"/> (or a local registry), from a remote <varname>URL</varname>, or a
             local ZIP <varname>file</varname>.</pd>
           <pd>
+            <note>The <parmname>--force</parmname> option can be passed as an additional option to the installation
+              subcommand to force-install an existing plug-in: <cmdname>dita
+                install</cmdname> <varname>plug-in-zip</varname> <parmname>--force</parmname>.</note></pd>
+          <pd>
             <note type="tip">The <cmdname>dita install</cmdname> command uses a network connection to install plug-ins
               from the configured registry or process remote referenced resources. In environments where an HTTP proxy
               is used to establish a network connection, you can provide the proxy configuration via the
@@ -320,14 +324,6 @@
                 DITAVAL document take precedence over matching conditions later in the same document.</p>
             </note>
           </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--force</parmname>
-          </pt>
-          <pd>Force-install an existing plug-in.</pd>
-          <pd>Passed as an additional option to the installation subcommand: <cmdname>dita
-              install</cmdname> <varname>plug-in-zip</varname> <parmname>--force</parmname></pd>
         </plentry>
         <plentry>
           <pt>

@@ -2,10 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <task id="configuring-proxies">
-  <title>Configuring the proxy</title>
-  <titlealts>
-    <navtitle>Configuring the proxy</navtitle>
-  </titlealts>
+  <title>Configuring proxies</title>
   <shortdesc>Certain commands, for example, the <cmdname>dita install</cmdname> command, use a network connection to
     install plug-ins from the configured registry or process remote referenced resources. In environments where an HTTP
     proxy is used to establish a network connection, you can provide the proxy configuration via the
@@ -13,10 +10,12 @@
   <prolog>
     <metadata>
       <keywords>
-        <indexterm>macOS <indexterm>configure proxy</indexterm></indexterm>
-        <indexterm>Linux <indexterm>configure proxy</indexterm></indexterm>
-        <indexterm>Windows <indexterm>configure proxy</indexterm></indexterm>
-        <indexterm>command line <indexterm>configure proxy</indexterm></indexterm>
+        <indexterm>macOS <indexterm>configuring proxies</indexterm></indexterm>
+        <indexterm>Linux <indexterm>configuring proxies</indexterm></indexterm>
+        <indexterm>Windows <indexterm>configuring proxies</indexterm></indexterm>
+        <indexterm>command line <indexterm>configuring proxies</indexterm></indexterm>
+        <indexterm>proxies</indexterm>
+        <indexterm>HTTP proxies</indexterm>
         <indexterm>operating system
           <index-see>Linux</index-see>
           <index-see>macOS</index-see>

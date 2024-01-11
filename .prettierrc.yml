@@ -27,7 +27,7 @@ overrides:
   - files: source-files.ditamap
     options:
       printWidth: 200
-  - files: "*.json"
+  - files: '*.json'
     options:
       printWidth: 200
 

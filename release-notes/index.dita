@@ -199,7 +199,41 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <li/>
+          <li id="4244">Cross-references to topics containing <xmlelement>shortdesc</xmlelement> elements with 
+            cross-references sometimes get link descriptions of ***
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4244" format="html" scope="external">#4244</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4266" format="html" scope="external">#4266</xref>
+          </li>
+          <li id="4298">Use @class="compact" instead of @compact="yes" for HTML outputs
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4298" format="html" scope="external">#4298</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4303" format="html" scope="external">#4303</xref>
+          </li>
+          <li id="4305">Fix NPE bugs and integration tests
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4305" format="html" scope="external">#4305</xref>
+          </li>
+          <li id="4307">Fix -dita-use-conref-target in preprocess2
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4307" format="html" scope="external">#4307</xref>
+          </li>
+          <li id="4311">Rewrite usr.input.file.list in preprocess2 cleanup
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4311" format="html" scope="external">#4311</xref>
+          </li>
+          <li id="4315">Missing translations for "on page" for different languages
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4315" format="html" scope="external">#4315</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4320" format="html" scope="external">#4320</xref>
+          </li>
+          <li id="4328">Separate install and uninstall subcommand classpath 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4328" format="html" scope="external">#4328</xref>
+          </li>
+          <li id="4351">Generate HTML5 metadata attributes in the index.html TOC file
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4351" format="html" scope="external">#4351</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4352" format="html" scope="external">#4352</xref>
+          </li>
+          <li id="4353">Fix non-DITA map references
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4353" format="html" scope="external">#4353</xref>
+          </li>
+          <li id="4357">Simplify docsrc/ exclude patterns in dist builds
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4357" format="html" scope="external">#4357</xref>
+          </li>
         </ul>
       </section>
 

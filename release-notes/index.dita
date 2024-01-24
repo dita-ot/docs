@@ -87,7 +87,8 @@
           <xref keyref="dita-v2-0-support"/> provided in DITA-OT 3.5 – 4.1, this release includes updated processing for
           the latest draft versions of the DITA 2.0 grammar files from OASIS (as of <keyword
             keyref="draft-dita-grammar-state"
-          />). <!-- Link to PRs that update 2.0 grammar files-->
+          />). <xref href="https://github.com/dita-ot/dita-ot/issues/4359" format="html" scope="external">#4359</xref>
+
         </p>
         <ul conkeyref="dita-v2-0-support/added-in-4.1">
           <li/>
@@ -103,9 +104,61 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
+          <li id="3973">Change log message copy to use consistent language
+            <xref href="https://github.com/dita-ot/dita-ot/issues/3973" format="html" scope="external">#3973</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4287" format="html" scope="external">#4287</xref>
+          </li>
+          <li id="4093">Remove unreferenced XSLT variables
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4093" format="html" scope="external">#4093</xref>
+          </li>
+          <li id="4151">Add some informative comments in <filepath>maprefImpl.xsl</filepath>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4151" format="html" scope="external">#4151</xref>
+          </li>
+          <li id="4176">Improve some comments related to topicpull XSLT parameters
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4176" format="html" scope="external">#4176</xref>
+          </li>
+          <li id="4199">Refactor CLI error message and usage print
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4199" format="html" scope="external">#4199</xref>
+          </li>
+          <li id="4209">Add markers where named templates can be converted to moded templates
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4209" format="html" scope="external">#4209</xref>
+          </li>
+          <li id="4217">Add support for <filepath>.ditaotrc</filepath>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4217" format="html" scope="external">#4217</xref>
+          </li>
+          <li id="4296">Add unit test for subject scheme reader
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4296" format="html" scope="external">#4296</xref>
+          </li>
+          <li id="4297">Refactor subject scheme reader
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4297" format="html" scope="external">#4297</xref>
+          </li>
+          <li id="4302">Move map specific reader code to map module
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4302" format="html" scope="external">#4302</xref>
+          </li>
+          <li id="4306">Use S9API instead of DOM in subject scheme processing
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4306" format="html" scope="external">#4306</xref>
+          </li>
+          <li id="4310">Improve unit test coverage for onlytopic.in.map
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4310" format="html" scope="external">#4310</xref>
+          </li>
+          <li id="4313">Refactor preprocess2 post tasks to own target
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4313" format="html" scope="external">#4313</xref>
+          </li>
+          <li id="4329">Refactor to remove Ant from install and uninstall process 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4329" format="html" scope="external">#4329</xref>
+          </li>
+          <li id="4330">Centralize heading level computation in HTML outputs
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4330" format="html" scope="external">#4330</xref>
+          </li>
+          <li id="4338">Use XSLT3 for stylesheets
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4338" format="html" scope="external">#4338</xref>
+          </li>
+          <li id="4358">Deprecate compact attributes with Sass @warn rules
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4358" format="html" scope="external">#4358</xref>
+          </li>
           <li>The following bundled plug-ins have been upgraded to the latest versions:
-            <!--
             <ul>
+              <!--
               <li id="4140">The Normalized DITA plug-in version 1.1 now removes unnecessary key artefacts like
                   <xmlatt>keys</xmlatt>, <xmlatt>keyref</xmlatt> or <xmlelement>keydef</xmlelement> after key
                 resolution, and <xmlelement>ditavalref</xmlelement> elements after branch filter resolution.
@@ -117,17 +170,24 @@
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4178" format="html" scope="external">#4178</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4210" format="html" scope="external">#4210</xref>
               </li>
-              <li id="4194">The PDF Theme plug-in version 0.7.0 adds support for tasks, and the hazard, highlight,
-                markup, UI, and XML domains, so you can now style these elements in a YAML theme file without building a
-                custom PDF plug-in.
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4194" format="html" scope="external">#4194</xref>
+              -->
+              <li id="4194">The PDF Theme plug-in version 0.7.1 adds support for …
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4289" format="html" scope="external">#4289</xref>
               </li>
             </ul>
-            -->
           </li>
           <li>Several bundled dependencies have been upgraded to the latest versions:
             <ul>
-              <li/>
+              <li id="4272">The bundled <tm
+                  trademark="Apache"
+                  tmtype="tm"
+                >Apache</tm> FOP version has been updated to <ph
+                  keyref="tool.fop.version"
+                />. (For details on recent changes, see the
+                <xref keyref="fop-29-rn"/>.)
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4272" format="html" scope="external">#4272</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4288" format="html" scope="external">#4288</xref>
+              </li>
             </ul>
           </li>
         </ul>

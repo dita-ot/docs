@@ -64,6 +64,11 @@
       <subjectdef keys="language-svg"/>
       <subjectdef keys="language-xml"/>
       <subjectdef keys="language-yaml"/>
+      <!-- Fenced code blocks in GitHub wiki -->
+      <subjectdef keys="java"/>
+      <subjectdef keys="markdown"/>
+      <subjectdef keys="xml"/>
+      <subjectdef keys="yaml"/>
     </subjectdef>
     <subjectdef keys="codeblock-syntax">
       <topicmeta>

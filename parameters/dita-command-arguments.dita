@@ -112,7 +112,7 @@
         <parmname>--install</parmname> will still work.)</note>
     </section>
 
-    <section>
+    <section id="args">
       <title>Arguments</title>
       <indexterm><parmname>--input</parmname></indexterm>
       <indexterm><parmname>-i</parmname></indexterm>
@@ -150,10 +150,18 @@
             <p conkeyref="conref-task/transtypes"/>
           </pd>
         </plentry>
+        <plentry id="project">
+          <pt>
+            <parmname>--project</parmname>=<varname>file</varname>
+          </pt>
+          <pd>Publish a project file with multiple deliverables.</pd>
+          <pd>For more information, see
+            <xref keyref="using-project-files"/>.</pd>
+        </plentry>
       </parml>
     </section>
 
-    <section>
+    <section id="subcommands">
       <title>Subcommands</title>
       <indexterm><cmdname>deliverables</cmdname> subcommand</indexterm>
       <indexterm><cmdname>install</cmdname> subcommand</indexterm>
@@ -254,7 +262,7 @@
         </plentry>
       </parml>
     </section>
-    <section>
+    <section id="options">
       <title>Options</title>
       <indexterm><parmname>-o</parmname></indexterm>
       <indexterm><parmname>--output</parmname></indexterm>
@@ -287,22 +295,6 @@
             filters, parameters, and stages, and the complete build sequence. Debug logging requires additional
             resources and can slow down the build process, so it should only be enabled when further details are
             required to diagnose problems.</pd>
-        </plentry>
-        <plentry id="output">
-          <pt>
-            <parmname>--output</parmname>=<varname>dir</varname></pt>
-          <pt>
-            <parmname>-o</parmname>
-            <varname>dir</varname>
-          </pt>
-          <pd>
-            <p>Specifies the path of the output directory; the path can be absolute or relative to the current
-              directory.</p>
-            <p>This option corresponds to the common parameter
-              <xref keyref="parameters-base/output.dir"/>.</p>
-            <p>By default, the output is written to the <filepath>out</filepath> subdirectory of the current
-              directory.</p>
-          </pd>
         </plentry>
         <plentry>
           <pt>
@@ -341,6 +333,31 @@
             <varname>file</varname>
           </pt>
           <pd>Write logging messages to a file.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--no-color</parmname>
+          </pt>
+          <pd>By default, DITA-OT prints certain log messages to the console in color. In terminal environments that do
+            not support colored output, the ANSI color escape codes will be shown instead. To deactivate colored output,
+            pass the <parmname>--no-color</parmname> option to the <cmdname>dita</cmdname> command, or set the
+              <codeph>TERM=dumb</codeph> or <codeph>NO_COLOR</codeph> environment variables.</pd>
+        </plentry>
+        <plentry id="output">
+          <pt>
+            <parmname>--output</parmname>=<varname>dir</varname></pt>
+          <pt>
+            <parmname>-o</parmname>
+            <varname>dir</varname>
+          </pt>
+          <pd>
+            <p>Specifies the path of the output directory; the path can be absolute or relative to the current
+              directory.</p>
+            <p>This option corresponds to the common parameter
+              <xref keyref="parameters-base/output.dir"/>.</p>
+            <p>By default, the output is written to the <filepath>out</filepath> subdirectory of the current
+              directory.</p>
+          </pd>
         </plentry>
         <plentry>
           <pt>

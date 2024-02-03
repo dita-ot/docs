@@ -170,25 +170,37 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4302" format="html" scope="external">#4302</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4306" format="html" scope="external">#4306</xref>
           </li>
-          <li id="4310">Improve unit test coverage for onlytopic.in.map
+          <li id="4310">The test coverage for the <parmname>onlytopic.in.map</parmname> parameter has been improved
+            using unit tests instead of integration tests.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4310" format="html" scope="external">#4310</xref>
           </li>
-          <li id="4313">Refactor preprocess2 post tasks to own target
+          <li id="4313">The tasks that run after the map-first preprocessing pipeline have been refactored to a
+            dedicated <codeph>preprocess2.post</codeph> target to make it easier to add custom steps in between the
+            built-in steps.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4313" format="html" scope="external">#4313</xref>
           </li>
-          <li id="4329">Refactor to remove Ant from install and uninstall process 
+          <li id="4329">The plug-in integration code has been refactored to remove the redundant Ant layer from the
+            install and uninstall processes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4329" format="html" scope="external">#4329</xref>
           </li>
-          <li id="4330">Centralize heading level computation in HTML outputs
+          <li id="4330">For HTML-based output formats, a new <codeph>dita2html:is-heading-level</codeph> template mode
+            allows plug-ins to declare their own elements that contribute to heading levels (<codeph>h1</codeph> through
+              <codeph>h6</codeph>). For example, a specialization of <xmlelement>bodydiv</xmlelement> could declare
+            itself as a heading level and create its own HTML heading (by calling
+              <codeph>dita2html:section-heading</codeph> with the <codeph>defaulttitle</codeph> parameter), and any
+              <xmlelement>section</xmlelement> or <xmlelement>example</xmlelement> elements inside will adjust their
+            heading levels accordingly. As part of this change, the parameter interface of the template for
+              <codeph>(section|example)/title</codeph> elements has changed — the <codeph>headLevel</codeph> parameter
+            is now an integer (1 through 6) instead of a string (<codeph>h1</codeph> through <codeph>h6</codeph>).
+            Existing custom code that uses this interface must be modified.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4330" format="html" scope="external">#4330</xref>
           </li>
-          <li id="4338">Use XSLT3 for stylesheets
+          <li id="4338">XSLT stylesheet headers have been updated from XSLT version 1.0 and 2.0 to version 3.0 to make
+            way for the use of XSLT3 features in future toolkit versions.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4338" format="html" scope="external">#4338</xref>
           </li>
-          <li id="4358">Deprecate compact attributes with Sass @warn rules
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4358" format="html" scope="external">#4358</xref>
-          </li>
-          <li id="4364">Remove deprecated table classes 
+          <li id="4364">Legacy table presentation classes that were deprecated in DITA-OT 2.3 have now been removed from
+            the common CSS files.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4364" format="html" scope="external">#4364</xref>
           </li>
           <li><p>The following bundled plug-ins have been upgraded to the latest versions:</p>
@@ -246,8 +258,13 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4266" format="html" scope="external">#4266</xref>
           </li>
           <li id="4298">Use @class="compact" instead of @compact="yes" for HTML outputs
+            
+            Rules with the legacy <xmlatt>compact</xmlatt> list attributes have been marked as deprecated
+            with Sass <xmlatt>warn</xmlatt> rules in the common CSS files. These rules will be removed from a future
+            version of DITA-OT.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4298" format="html" scope="external">#4298</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4303" format="html" scope="external">#4303</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4303" format="html" scope="external">#4303</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4358" format="html" scope="external">#4358</xref>
           </li>
           <li id="4305">Fix NPE bugs and integration tests
             <xref href="https://github.com/dita-ot/dita-ot/issues/4305" format="html" scope="external">#4305</xref>

@@ -29,7 +29,7 @@ jobs:
         uses: ./.github/actions/render
 
       - name: Cache NPM
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -47,7 +47,7 @@ jobs:
           rm -fr build
 
       - name: Cache gems
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}

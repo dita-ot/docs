@@ -344,7 +344,7 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>-no-color</parmname>
+            <parmname>--no-color</parmname>
           </pt>
           <pd>By default, the DITA-OT outputs certain logging messages wrapped in special characters to get a colored
             output. If you prefer a clean output, you can set this parameter to deactivate the colored logging

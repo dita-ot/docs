@@ -160,19 +160,14 @@
             <xref keyref="map-first-preproc"/>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4225" format="html" scope="external">#4225</xref>
           </li>
-          <li id="4296">Add unit test for subject scheme reader
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4296" format="html" scope="external">#4296</xref>
-          </li>
-          <li id="4297">Refactor subject scheme reader
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4297" format="html" scope="external">#4297</xref>
-          </li>
-          <li id="4300">Refactor subject scheme processing
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4300" format="html" scope="external">#4300</xref>
-          </li>
-          <li id="4302">Move map specific reader code to map module
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4302" format="html" scope="external">#4302</xref>
-          </li>
-          <li id="4306">Use S9API instead of DOM in subject scheme processing
+          <li id="4296">Subject scheme processing has been refactored to support multiple keys in a single
+              <xmlatt>keys</xmlatt> attribute on the <xmlelement>subjectdef</xmlelement> element, and use the S9API
+            instead of DOM. A new unit test has been added to verify changes in the subject scheme reader code, and the
+            map-first preprocessing pipeline now supports additional subject scheme features.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4296" format="html" scope="external">#4296</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4297" format="html" scope="external">#4297</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4300" format="html" scope="external">#4300</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4302" format="html" scope="external">#4302</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4306" format="html" scope="external">#4306</xref>
           </li>
           <li id="4310">Improve unit test coverage for onlytopic.in.map

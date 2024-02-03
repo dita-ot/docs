@@ -344,6 +344,15 @@
         </plentry>
         <plentry>
           <pt>
+            <parmname>--no-color</parmname>
+          </pt>
+          <pd>By default, DITA-OT prints certain log messages to the console in color. In terminal environments that do
+            not support colored output, the ANSI color escape codes will be shown instead. To deactivate colored output,
+            pass the <parmname>--no-color</parmname> option to the <cmdname>dita</cmdname> command, or set the
+              <codeph>TERM=dumb</codeph> or <codeph>NO_COLOR</codeph> environment variables.</pd>
+        </plentry>
+        <plentry>
+          <pt>
             <parmname>--parameter</parmname>=<varname>value</varname></pt>
           <pt>
             <parmname>-D</parmname><varname>parameter</varname>=<varname>value</varname>

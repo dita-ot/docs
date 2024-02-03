@@ -346,10 +346,10 @@
           <pt>
             <parmname>--no-color</parmname>
           </pt>
-          <pd>By default, the DITA-OT outputs certain logging messages wrapped in special characters to get a colored
-            output. If you prefer a clean output, you can set this parameter to deactivate the colored logging
-            output.<codeblock
-            >�[31m[move-meta] Failed to read file:/tmp/abc.dita: Failed to parse /tmp/abc.dita:Failed to read document: XML document structures must start and end within the same entity.�[0m</codeblock></pd>
+          <pd>By default, DITA-OT prints certain log messages to the console in color. In terminal environments that do
+            not support colored output, the ANSI color escape codes will be shown instead. To deactivate colored output,
+            pass the <parmname>--no-color</parmname> option to the <cmdname>dita</cmdname> command, or set the
+              <codeph>TERM=dumb</codeph> or <codeph>NO_COLOR</codeph> environment variables.</pd>
         </plentry>
         <plentry>
           <pt>

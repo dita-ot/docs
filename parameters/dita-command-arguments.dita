@@ -344,6 +344,15 @@
         </plentry>
         <plentry>
           <pt>
+            <parmname>-no-color</parmname>
+          </pt>
+          <pd>By default, the DITA-OT outputs certain logging messages wrapped in special characters to get a colored
+            output. If you prefer a clean output, you can set this parameter to deactivate the colored logging
+            output.<codeblock
+            >�[31m[move-meta] Failed to read file:/tmp/abc.dita: Failed to parse /tmp/abc.dita:Failed to read document: XML document structures must start and end within the same entity.�[0m</codeblock></pd>
+        </plentry>
+        <plentry>
+          <pt>
             <parmname>--parameter</parmname>=<varname>value</varname></pt>
           <pt>
             <parmname>-D</parmname><varname>parameter</varname>=<varname>value</varname>
@@ -430,12 +439,6 @@
           </pt>
           <pd>Verbose logging prints additional information to the console, including directory settings, effective
             values for Ant properties, input/output files, and informational messages to assist in troubleshooting.</pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>-no-color</parmname>
-          </pt>
-          <pd>By default, the DITA-OT outputs certain logging messages wrapped in special characters to get a colored output. If you prefer a clean output, you can set this parameter to deactivate the colored logging output.<codeblock>�[31m[move-meta] Failed to read file:/tmp/abc.dita: Failed to parse /tmp/abc.dita:Failed to read document: XML document structures must start and end within the same entity.�[0m</codeblock></pd>
         </plentry>
       </parml>
     </section>

@@ -150,6 +150,14 @@
             <p conkeyref="conref-task/transtypes"/>
           </pd>
         </plentry>
+        <plentry id="project">
+          <pt>
+            <parmname>--project</parmname>=<varname>file</varname>
+          </pt>
+          <pd>Publish a project file with multiple deliverables.</pd>
+          <pd>For more information, see
+            <xref keyref="using-project-files"/>.</pd>
+        </plentry>
       </parml>
     </section>
 

@@ -85,6 +85,12 @@ The styling properties that can be used are listed in [XSL fo:block](https://www
 
 - `content = content-template`
 
+### `cover-titlealt`
+
+Cover page subtitle or alternative title.
+
+The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
+
 ### `section`
 
 Section element.

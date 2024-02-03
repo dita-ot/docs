@@ -112,7 +112,7 @@
         <parmname>--install</parmname> will still work.)</note>
     </section>
 
-    <section>
+    <section id="args">
       <title>Arguments</title>
       <indexterm><parmname>--input</parmname></indexterm>
       <indexterm><parmname>-i</parmname></indexterm>
@@ -153,7 +153,7 @@
       </parml>
     </section>
 
-    <section>
+    <section id="subcommands">
       <title>Subcommands</title>
       <indexterm><cmdname>deliverables</cmdname> subcommand</indexterm>
       <indexterm><cmdname>install</cmdname> subcommand</indexterm>
@@ -254,7 +254,7 @@
         </plentry>
       </parml>
     </section>
-    <section>
+    <section id="options">
       <title>Options</title>
       <indexterm><parmname>-o</parmname></indexterm>
       <indexterm><parmname>--output</parmname></indexterm>

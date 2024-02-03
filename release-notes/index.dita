@@ -133,22 +133,26 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="3955">wrap <xmlelement>note</xmlelement> body content in its own DIV (to match the note title
+          <li id="3955">HTML5 processing for <xmlelement>note</xmlelement> elements now wraps the note body in a
+              <xmlelement>div</xmlelement> element with the <codeph>note__body</codeph> class, allowing it to be styled
+            separately from the note title. For backwards compatibility, the common CSS files have been updated to
+            display the note body inline with the note title to avoid a new line break before the content division
+            element.
             <xref href="https://github.com/dita-ot/dita-ot/issues/3955" format="html" scope="external">#3955</xref>
           </li>
-          <li id="4093">Remove unreferenced XSLT variables
+          <li id="4093">Unreferenced XSLT variables in <xmlelement>xsl:template</xmlelement> blocks have been removed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4093" format="html" scope="external">#4093</xref>
           </li>
-          <li id="4115">Save submap metadata inside <xmlelement>mapref</xmlelement> elements
+          <li id="4115">Earlier versions of DITA-OT preserved metadata in submaps, but dropped any
+              <xmlelement>topicmeta</xmlelement> content defined within <xmlelement>mapref</xmlelement> elements. Submap
+            metadata in <xmlelement>mapref</xmlelement> elements is now preserved in a temporary
+              <xmlelement>mapref-topicmeta-container</xmlelement>, which is removed when preprocessing is complete.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4115" format="html" scope="external">#4115</xref>
           </li>
-          <li id="4151">Add some informative comments in <filepath>maprefImpl.xsl</filepath>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4151" format="html" scope="external">#4151</xref>
-          </li>
-          <li id="4176">Improve some comments related to topicpull XSLT parameters
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4176" format="html" scope="external">#4176</xref>
-          </li>
-          <li id="4209">Add markers where named templates can be converted to moded templates
+          <li id="4151">Several preprocessing stylesheets have been extended with additional comments to better explain
+            how processing works, and to mark cases where named templates can be replaced with template modes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4151" format="html" scope="external">#4151</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4176" format="html" scope="external">#4176</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4209" format="html" scope="external">#4209</xref>
           </li>
           <li id="4296">Add unit test for subject scheme reader

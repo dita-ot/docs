@@ -45,7 +45,7 @@
             enhancements to Markdown processing, and updates for the latest DITA 2.0 draft standard</ph>.</p>
       </section>
       <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
-      <section id="4217">
+      <section id="ditaotrc">
         <title>New configuration file</title>
         <p>A new <filepath>.ditaotrc</filepath> configuration file can be used to store DITA-OT runtime configurations
           in multiple places.</p>
@@ -58,8 +58,35 @@
           <xref href="https://github.com/dita-ot/dita-ot/issues/4217" format="html" scope="external">#4217</xref>
         </p>
       </section>
-      
-      <section>
+
+      <section id="messages">
+        <title>CLI message improvements</title>
+        <p id="3973">The log messages that appear in the command line interface have been revised to use more consistent
+          language, better explain the cause, and how the issue can be resolved.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/3973" format="html" scope="external">#3973</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4287" format="html" scope="external">#4287</xref>
+        </p>
+        <p id="4199">The code that generates CLI error messages has been refactored to make it easier to override and
+          extend messages. The generated messages file is now sorted by ID to make it easier to locate individual
+          messages, and any duplicates are removed during the integration process.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4199" format="html" scope="external">#4199</xref>
+        </p>
+        <p id="4362">Log messages can now be partially overridden or completely replaced. Custom plug-ins can supply new
+          messages via the <codeph>dita.xsl.messages</codeph> extension point as in previous versions, but now this same
+          approach can also be used to override the contents or change the severity level of any of the default
+          messages.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4362" format="html" scope="external">#4362</xref>
+        </p>
+        <ul>
+          <li>The only required information is the <xmlatt>id</xmlatt> attribute, which is used to identify the message
+            you are overriding.</li>
+          <li>To change the message content, specify a new <xmlelement>reason</xmlelement> or
+              <xmlelement>response</xmlelement>.</li>
+          <li>To change the severity level, set a new value for the <xmlatt>type</xmlatt> attribute
+              (<codeph>INFO</codeph>, <codeph>WARN</codeph>, <codeph>ERROR</codeph>, or <codeph>FATAL</codeph>).</li>
+          <li>You can omit <xmlatt>type</xmlatt>, <xmlelement>reason</xmlelement> or <xmlelement>response</xmlelement>,
+            in which case the previous declaration of the message will provide that value.</li>
+        </ul>
       </section>
 
       <section id="lwdita">
@@ -121,10 +148,6 @@
           <li id="3955">wrap <xmlelement>note</xmlelement> body content in its own DIV (to match the note title
             <xref href="https://github.com/dita-ot/dita-ot/issues/3955" format="html" scope="external">#3955</xref>
           </li>
-          <li id="3973">Change log message copy to use consistent language
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3973" format="html" scope="external">#3973</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4287" format="html" scope="external">#4287</xref>
-          </li>
           <li id="4093">Remove unreferenced XSLT variables
             <xref href="https://github.com/dita-ot/dita-ot/issues/4093" format="html" scope="external">#4093</xref>
           </li>
@@ -136,9 +159,6 @@
           </li>
           <li id="4176">Improve some comments related to topicpull XSLT parameters
             <xref href="https://github.com/dita-ot/dita-ot/issues/4176" format="html" scope="external">#4176</xref>
-          </li>
-          <li id="4199">Refactor CLI error message and usage print
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4199" format="html" scope="external">#4199</xref>
           </li>
           <li id="4209">Add markers where named templates can be converted to moded templates
             <xref href="https://github.com/dita-ot/dita-ot/issues/4209" format="html" scope="external">#4209</xref>
@@ -175,9 +195,6 @@
           </li>
           <li id="4358">Deprecate compact attributes with Sass @warn rules
             <xref href="https://github.com/dita-ot/dita-ot/issues/4358" format="html" scope="external">#4358</xref>
-          </li>
-          <li id="4362">Rewrite messages.xml in integration to support overriding and deduplication
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4362" format="html" scope="external">#4362</xref>
           </li>
           <li id="4364">Remove deprecated table classes 
             <xref href="https://github.com/dita-ot/dita-ot/issues/4364" format="html" scope="external">#4364</xref>

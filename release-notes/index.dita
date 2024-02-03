@@ -201,12 +201,10 @@
           </li>
           <li><p>The following bundled plug-ins have been upgraded to the latest versions:</p>
             <ul>
-              <!--
-              <li id="4140">The Normalized DITA plug-in version 1.1 now removes unnecessary key artefacts like
-                  <xmlatt>keys</xmlatt>, <xmlatt>keyref</xmlatt> or <xmlelement>keydef</xmlelement> after key
-                resolution, and <xmlelement>ditavalref</xmlelement> elements after branch filter resolution.
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4140" format="html" scope="external">#4140</xref>
+              <li id="4382">The Normalized DITA plug-in version 2.0 now uses map-first preprocessing for normalization.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4382" format="html" scope="external">#4382</xref>
               </li>
+              <!--
               <li id="4210">The Lightweight DITA plug-in version 5.5 includes the
                 <xref href="#./lwdita"/> described above.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4167" format="html" scope="external">#4167</xref>,

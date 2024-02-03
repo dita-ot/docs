@@ -155,6 +155,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4176" format="html" scope="external">#4176</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4209" format="html" scope="external">#4209</xref>
           </li>
+          <li id="4225">The HTML5 transformation has been updated to use the map-first preprocessing routine that was
+            previously enabled for PDF and HTML Help in DITA-OT 3.0. For details, see
+            <xref keyref="map-first-preproc"/>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4225" format="html" scope="external">#4225</xref>
+          </li>
           <li id="4296">Add unit test for subject scheme reader
             <xref href="https://github.com/dita-ot/dita-ot/issues/4296" format="html" scope="external">#4296</xref>
           </li>

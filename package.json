@@ -13,7 +13,7 @@
     "fmt": "npm run format",
     "format": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "lint-staged": "lint-staged --no-stash",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prettier": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "prettier-check": "prettier --check \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "stylelint": "stylelint \"**/*.css\"",

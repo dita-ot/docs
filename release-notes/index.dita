@@ -32,22 +32,34 @@
     <prolog>
       <metadata>
         <keywords>
-          <indexterm/>
+          <indexterm>files
+            <indexterm>.ditaotrc</indexterm></indexterm>
+          <indexterm><filepath>.ditaotrc</filepath> file</indexterm>
         </keywords>
       </metadata>
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">a new version of the
-            Lightweight DITA plug-in with significant enhancements to Markdown processing, and updates for the latest
-            DITA 2.0 draft standard</ph>.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">a new local configuration
+            file, better CLI messages with support for overrides, a new version of the Lightweight DITA plug-in with
+            enhancements to Markdown processing, and updates for the latest DITA 2.0 draft standard</ph>.</p>
       </section>
+      <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
+      <section id="4217">
+        <title>New configuration file</title>
+        <p>A new <filepath>.ditaotrc</filepath> configuration file can be used to store DITA-OT runtime configurations
+          in multiple places.</p>
+        <p>DITA-OT now looks for this file in the current directory first, then in the user’s home directory, and
+          finally in the root directory of the DITA-OT installation. These files are read in order and combined with the
+          contents of the <filepath>local.properties</filepath> file in the toolkit directory. The first occurrence of a
+          property takes precedence. This approach can be used to define multiple layers of configuration, so personal
+          defaults that apply to multiple projects can be stored in the home folder, with local overrides in project
+          folders.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4217" format="html" scope="external">#4217</xref>
+        </p>
+      </section>
+      
       <section>
-        <title>New features</title>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
-        <ul>
-          <li/>
-        </ul>
       </section>
 
       <section id="lwdita">
@@ -130,9 +142,6 @@
           </li>
           <li id="4209">Add markers where named templates can be converted to moded templates
             <xref href="https://github.com/dita-ot/dita-ot/issues/4209" format="html" scope="external">#4209</xref>
-          </li>
-          <li id="4217">Add support for <filepath>.ditaotrc</filepath>
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4217" format="html" scope="external">#4217</xref>
           </li>
           <li id="4296">Add unit test for subject scheme reader
             <xref href="https://github.com/dita-ot/dita-ot/issues/4296" format="html" scope="external">#4296</xref>

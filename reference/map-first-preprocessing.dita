@@ -6,16 +6,17 @@
   <titlealts>
     <navtitle>Map-first preprocessing</navtitle>
   </titlealts>
-  <shortdesc><ph id="map-first-preproc-desc">DITA-OT 3.0 provides a map-first preprocessing option as an alternative to
-      the default <codeph>preprocess</codeph> operation. The method, which was introduced in DITA-OT 2.5 as an
-      experimental feature, has been improved and is ready for use in many production scenarios. Map-first-preprocessing
-      provides the same functionality as the default <codeph>preprocess</codeph>, but takes a different
+  <shortdesc><ph id="map-first-preproc-desc">DITA-OT provides a map-first preprocessing option as an alternative to the
+      default <codeph>preprocess</codeph> operation. The method, which was introduced in DITA-OT 2.5 as an experimental
+      feature, has since been improved and is ready for use in production scenarios. Map-first-preprocessing provides
+      the same functionality as the default <codeph>preprocess</codeph>, but takes a different
     approach.</ph></shortdesc>
   <prolog>
     <metadata>
       <keywords>
         <indexterm>filters
           <indexterm>map-first preprocessing</indexterm></indexterm>
+        <indexterm>map-first preprocessing</indexterm>
         <indexterm>preprocessing
           <indexterm>map first</indexterm></indexterm>
         <indexterm>DITA 1.0</indexterm>

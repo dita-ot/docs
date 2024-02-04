@@ -8,7 +8,7 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> includes <ph conref="#v4.2/summary"/>.</shortdesc>
+    <shortdesc><ph conref="#v4.2/summary"/></shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -40,11 +40,23 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">a new local configuration
-            file, better CLI messages with support for overrides, a new version of the Lightweight DITA plug-in with
-            enhancements to Markdown processing, and updates for the latest DITA 2.0 draft standard</ph>.</p>
+        <p><ph id="summary">DITA Open Toolkit Release <keyword keyref="release"/> uses map-first preprocessing for HTML5
+            output and includes a new local configuration file, better CLI messages with support for overrides, a new
+            version of the Lightweight DITA plug-in with enhancements to Markdown processing, and updates for the latest
+            DITA 2.0 draft standard.</ph></p>
       </section>
+
       <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->
+
+      <section id="html5-preprocess2">
+        <title>Map-first HTML5</title>
+        <p id="4225">The HTML5 transformation has been updated to use the map-first preprocessing pipeline that was
+          previously enabled for PDF and HTML Help in DITA-OT 3.0. For details, see
+          <xref keyref="map-first-preproc"/>.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4225" format="html" scope="external">#4225</xref>
+        </p>
+      </section>
+
       <section id="ditaotrc">
         <title>New configuration file</title>
         <p>A new <filepath>.ditaotrc</filepath> configuration file can be used to store DITA-OT runtime configurations
@@ -154,11 +166,6 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4151" format="html" scope="external">#4151</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4176" format="html" scope="external">#4176</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4209" format="html" scope="external">#4209</xref>
-          </li>
-          <li id="4225">The HTML5 transformation has been updated to use the map-first preprocessing routine that was
-            previously enabled for PDF and HTML Help in DITA-OT 3.0. For details, see
-            <xref keyref="map-first-preproc"/>.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4225" format="html" scope="external">#4225</xref>
           </li>
           <li id="4296">Subject scheme processing has been refactored to support multiple keys in a single
               <xmlatt>keys</xmlatt> attribute on the <xmlelement>subjectdef</xmlelement> element, and use the S9API

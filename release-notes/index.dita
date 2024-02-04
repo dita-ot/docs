@@ -145,13 +145,7 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="3955">HTML5 processing for <xmlelement>note</xmlelement> elements now wraps the note body in a
-              <xmlelement>div</xmlelement> element with the <codeph>note__body</codeph> class, allowing it to be styled
-            separately from the note title. For backwards compatibility, the common CSS files have been updated to
-            display the note body inline with the note title to avoid a new line break before the content division
-            element.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/3955" format="html" scope="external">#3955</xref>
-          </li>
+          <li id="3955" conkeyref="migrating-to-4.2/3955"/>
           <li id="4093">Unreferenced XSLT variables in <xmlelement>xsl:template</xmlelement> blocks have been removed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4093" format="html" scope="external">#4093</xref>
           </li>
@@ -206,10 +200,7 @@
             way for the use of XSLT3 features in future toolkit versions.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4338" format="html" scope="external">#4338</xref>
           </li>
-          <li id="4364">Legacy table presentation classes that were deprecated in DITA-OT 2.3 have now been removed from
-            the common CSS files.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4364" format="html" scope="external">#4364</xref>
-          </li>
+          <li id="4364" conkeyref="migrating-to-4.2/4364"/>
           <li><p>The following bundled plug-ins have been upgraded to the latest versions:</p>
             <ul>
               <li id="4382">The Normalized DITA plug-in version 2.0 now uses map-first preprocessing for normalization.
@@ -264,15 +255,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4244" format="html" scope="external">#4244</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4266" format="html" scope="external">#4266</xref>
           </li>
-          <li id="4298">Use @class="compact" instead of @compact="yes" for HTML outputs
-            
-            Rules with the legacy <xmlatt>compact</xmlatt> list attributes have been marked as deprecated
-            with Sass <xmlatt>warn</xmlatt> rules in the common CSS files. These rules will be removed from a future
-            version of DITA-OT.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4298" format="html" scope="external">#4298</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4303" format="html" scope="external">#4303</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4358" format="html" scope="external">#4358</xref>
-          </li>
+          <li id="4298" conkeyref="migrating-to-4.2/4298"/>
           <li id="4305">Fix NPE bugs and integration tests
             <xref href="https://github.com/dita-ot/dita-ot/issues/4305" format="html" scope="external">#4305</xref>
           </li>

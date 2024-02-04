@@ -250,36 +250,53 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <li id="4244">Cross-references to topics containing <xmlelement>shortdesc</xmlelement> elements with 
-            cross-references sometimes get link descriptions of ***
+          <li id="4244">For cross-references to a topic, the target topic’s short description is processed to create a
+            link description. When that <xmlelement>shortdesc</xmlelement> element contained another cross-reference to
+            a file in a different directory, the second link’s description would contain <codeph>***</codeph> instead of
+            the expected link text. Processing has been corrected to ensure that link text is generated as expected.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4244" format="html" scope="external">#4244</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4266" format="html" scope="external">#4266</xref>
           </li>
           <li id="4298" conkeyref="migrating-to-4.2/4298"/>
-          <li id="4305">Fix NPE bugs and integration tests
+          <li id="4305">In earlier versions, builds failed with a NullPointerException under certain conditions in
+            map-first preprocessing. The issues have been resolved and integration tests have been updated to catch
+            related errors in the future.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4305" format="html" scope="external">#4305</xref>
           </li>
-          <li id="4307">Fix -dita-use-conref-target in preprocess2
+          <li id="4307">The map-first preprocessing pipeline in earlier versions treated <xmlatt>href</xmlatt> attribute
+            values set to <codeph>-dita-use-conref-target</codeph> as resources during the initial parse and rewrote
+            the attribute values. Processing has been corrected to pass these values through unchanged.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4307" format="html" scope="external">#4307</xref>
           </li>
-          <li id="4311">Rewrite usr.input.file.list in preprocess2 cleanup
+          <li id="4311">Earlier versions of the map-first preprocessing pipeline failed to update the
+              <codeph>usr.input.file.list</codeph> with temporary file names. The list is now generated correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4311" format="html" scope="external">#4311</xref>
           </li>
-          <li id="4315">Missing translations for "on page" for different languages
+          <li id="4315">Missing translations for the <cite>“on page”</cite> variable have been added to the Bosnian,
+            Finnish, Montenegrin, Romanian, Russian, Swedish, and Simplified Chinese PDF localizations.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4315" format="html" scope="external">#4315</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4320" format="html" scope="external">#4320</xref>
           </li>
-          <li id="4328">Separate install and uninstall subcommand classpath 
+          <li id="4328">The classpaths for the <cmdname>install</cmdname> and <cmdname>uninstall</cmdname> subcommands
+            have been separated to allow plug-ins to be removed even if plug-in JAR files have been opened. Earlier
+            versions would fail to delete plug-ins in this case.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4328" format="html" scope="external">#4328</xref>
           </li>
-          <li id="4351">Generate HTML5 metadata attributes in the index.html TOC file
+          <li id="4351">In earlier versions, the HTML5 transformation published metadata to
+              <xmlelement>meta</xmlelement> elements in topic-level HTML files, but not in the table of contents file
+              <filepath>index.html</filepath>. Now, it also adds metadata from the root map’s
+              <xmlelement>topicmeta</xmlelement> to the ToC file.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4351" format="html" scope="external">#4351</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4352" format="html" scope="external">#4352</xref>
           </li>
-          <li id="4353">Fix non-DITA map references
+          <li id="4353">Earlier versions did not support non-DITA map references. Processing has been extended to allow
+              <xmlelement>mapref</xmlelement> elements to refer to non-DITA maps, such as Markdown maps that are parsed
+            as DITA.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4353" format="html" scope="external">#4353</xref>
           </li>
-          <li id="4357">Simplify docsrc/ exclude patterns in dist builds
+          <li id="4357">The <filepath>docsrc</filepath> folder in the DITA-OT 4.1.1 and 4.1.2 release packages contained
+            several unnecessary files. The build scripts have been updated to ensure that these files are no longer
+            included.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4357" format="html" scope="external">#4357</xref>
           </li>
         </ul>
@@ -314,6 +331,8 @@
         <ul>
           <li>
             <xref keyref="error-messages"/></li>
+          <li>
+            <xref keyref="migrating-to-4.2"/></li>
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"

@@ -76,7 +76,9 @@
         <p id="3973">The log messages that appear in the command line interface have been revised to use more consistent
           language, better explain the cause, and how the issue can be resolved.
           <xref href="https://github.com/dita-ot/dita-ot/issues/3973" format="html" scope="external">#3973</xref>,
-          <xref href="https://github.com/dita-ot/dita-ot/issues/4287" format="html" scope="external">#4287</xref>
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4287" format="html" scope="external">#4287</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4376" format="html" scope="external">#4376</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4387" format="html" scope="external">#4387</xref>
         </p>
         <p id="4199">The code that generates CLI error messages has been refactored to make it easier to override and
           extend messages. The generated messages file is now sorted by ID to make it easier to locate individual
@@ -128,14 +130,16 @@
           <xref keyref="dita-v2-0-support"/> provided in DITA-OT 3.5 – 4.1, this release includes updated processing for
           the latest draft versions of the DITA 2.0 grammar files from OASIS (as of <keyword
             keyref="draft-dita-grammar-state"
-          />). <xref href="https://github.com/dita-ot/dita-ot/issues/4359" format="html" scope="external">#4359</xref>
-
+          />).
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4359" format="html" scope="external">#4359</xref>
         </p>
+        <!--
         <ul conkeyref="dita-v2-0-support/added-in-4.2">
           <li/>
         </ul>
         <p conkeyref="dita-v2-0-support/grammar-files"/>
         <note conkeyref="dita-v2-0-support/more-to-come"/>
+        -->
       </section>
 
       <section id="enhancements">
@@ -194,7 +198,8 @@
               <codeph>(section|example)/title</codeph> elements has changed — the <codeph>headLevel</codeph> parameter
             is now an integer (1 through 6) instead of a string (<codeph>h1</codeph> through <codeph>h6</codeph>).
             Existing custom code that uses this interface must be modified.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4330" format="html" scope="external">#4330</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4330" format="html" scope="external">#4330</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4368" format="html" scope="external">#4368</xref>
           </li>
           <li id="4338">XSLT stylesheet headers have been updated from XSLT version 1.0 and 2.0 to version 3.0 to make
             way for the use of XSLT3 features in future toolkit versions.
@@ -206,18 +211,14 @@
               <li id="4382">The Normalized DITA plug-in version 2.0 now uses map-first preprocessing for normalization.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4382" format="html" scope="external">#4382</xref>
               </li>
-              <!--
-              <li id="4210">The Lightweight DITA plug-in version 5.5 includes the
+              <li id="4388">The Lightweight DITA plug-in version 5.7 includes the
                 <xref href="#./lwdita"/> described above.
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4167" format="html" scope="external">#4167</xref>,
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4178" format="html" scope="external">#4178</xref>,
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4210" format="html" scope="external">#4210</xref>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4388" format="html" scope="external">#4388</xref>
               </li>
-              -->
-              <li id="4194">The PDF Theme plug-in version 0.7.2 applies the body <codeph>line-height</codeph> attribute
+              <li id="4389">The PDF Theme plug-in version 0.7.2 applies the body <codeph>line-height</codeph> attribute
                 to block elements and provides basic styling support for table entries and cover page subtitles or
                 alternative titles.
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4289" format="html" scope="external">#4289</xref>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4389" format="html" scope="external">#4389</xref>
               </li>
             </ul>
           </li>
@@ -298,6 +299,14 @@
             several unnecessary files. The build scripts have been updated to ensure that these files are no longer
             included.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4357" format="html" scope="external">#4357</xref>
+          </li>
+          <li id="4369">In cases where key definitions were branch-filtered with
+              <xmlelement>dvrResourcePrefix</xmlelement>, earlier versions of the map-first preprocessing pipeline
+            failed to apply the resource prefix to the target file names. Key resolution code has been corrected to use
+            the <xmlatt>filter-copy-to</xmlatt> attribute instead of the <xmlatt>href</xmlatt> attribute. Once applied,
+            this temporary preprocessing attribute is removed during the map clean step.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4369" format="html" scope="external">#4369</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4381" format="html" scope="external">#4381</xref>
           </li>
         </ul>
       </section>

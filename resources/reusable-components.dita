@@ -154,7 +154,7 @@
       <p id="no-internal-preprocess2-ext">The internal extension points that run before or after individual steps in the
         original <codeph>preprocess</codeph> pipeline (<codeph>preprocess.*.pre/preprocess.*.post</codeph>) are not
         available in the newer map-first preprocessing pipeline (<codeph>preprocess2</codeph>), which is used in the PDF
-        and HTML Help transformations as of DITA-OT 3.0, and in HTML5 as of DITA-OT 4.2.</p>
+        and HTML Help transformations as of DITA-OT 3.0, and in HTML5 and Normalized DITA output as of DITA-OT 4.2.</p>
     </section>
 
     <section id="legacy-plugins">

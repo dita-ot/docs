@@ -308,6 +308,11 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4369" format="html" scope="external">#4369</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4381" format="html" scope="external">#4381</xref>
           </li>
+          <li id="4386">The missing <parmname>--deliverable</parmname> option has been added to the CLI
+              <cmdname>help</cmdname> output. This option can be used to publish a single deliverable in the specified
+            project.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4386" format="html" scope="external">#4386</xref>
+          </li>
         </ul>
       </section>
 

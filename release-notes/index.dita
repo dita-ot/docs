@@ -169,9 +169,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4209" format="html" scope="external">#4209</xref>
           </li>
           <li id="4296">Subject scheme processing has been refactored to support multiple keys in a single
-              <xmlatt>keys</xmlatt> attribute on the <xmlelement>subjectdef</xmlelement> element, and use the S9API
-            instead of DOM. A new unit test has been added to verify changes in the subject scheme reader code, and the
-            map-first preprocessing pipeline now supports additional subject scheme features.
+              <xmlatt>keys</xmlatt> attribute on the <xmlelement>subjectdef</xmlelement> element. It now uses the S9API
+            (Saxon’s preferred Java API for XSLT, XQuery, XPath, and XML Schema processing) instead of the Document
+            Object Model (DOM). A new unit test has been added to verify changes in the subject scheme reader code, and
+            the map-first preprocessing pipeline now supports additional subject scheme features.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4296" format="html" scope="external">#4296</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4297" format="html" scope="external">#4297</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4300" format="html" scope="external">#4300</xref>,
@@ -205,7 +206,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4368" format="html" scope="external">#4368</xref>
           </li>
           <li id="4338">XSLT stylesheet headers have been updated from XSLT version 1.0 and 2.0 to version 3.0 to make
-            way for the use of XSLT3 features in future toolkit versions.
+            way for the use of XSLT3 features in future toolkit versions. This is a backwards-compatible change, as
+            there are no changes to the actual code; only the stylesheet headers have been modified for now. To ensure
+            plug-ins remain compatible with future versions of DITA-OT and Saxon-HE, the DITA Open Toolkit project
+            recommends upgrading all stylesheets to XSLT 3.0.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4338" format="html" scope="external">#4338</xref>
           </li>
           <li id="4364" conkeyref="migrating-to-4.2/4364"/>

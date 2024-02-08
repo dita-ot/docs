@@ -18,7 +18,7 @@
           <indexterm><codeph>transform.fo2pdf</codeph></indexterm>
           <indexterm><filepath>topic.fo</filepath></indexterm></indexterm>
         <indexterm>PDF
-          <indexterm>preprocessing</indexterm></indexterm>
+          <indexterm>pre-processing</indexterm></indexterm>
         <indexterm>targets
           <indexterm>PDF</indexterm></indexterm>
         <indexterm>XSLT
@@ -76,7 +76,7 @@
         </dlentry>
         <dlentry>
           <dt><codeph>transform.topic2fo.flagging</codeph></dt>
-          <dd>Sets up preprocessing for flagging based on a DITAVAL file. This step generates the file
+          <dd>Sets up pre-processing for flagging based on a DITAVAL file. This step generates the file
               <filepath>stage1a.xml</filepath> in the temporary processing directory.</dd>
         </dlentry>
         <dlentry>

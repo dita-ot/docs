@@ -23,7 +23,7 @@
     <section id="parallel-processing">
       <title>Parallel processing</title>
       <indexterm>parallel processing</indexterm>
-      <p>Preprocessing module code can now be run in parallel by setting the <parmname>parallel</parmname> parameter to
+      <p>Pre-processing module code can now be run in parallel by setting the <parmname>parallel</parmname> parameter to
           <option>true</option>. The performance benefits this option provides depend heavily on the source file set,
         the DITA features used in the project, and the computer doing the processing, but under the right circumstances,
         you may see notable improvements when this option is enabled.</p>

@@ -8,7 +8,7 @@
     <navtitle>To 4.2</navtitle>
   </titlealts>
 
-  <shortdesc>DITA-OT 4.2 <ph id="summary">uses map-first preprocessing for HTML5 output and includes a new local
+  <shortdesc>DITA-OT 4.2 <ph id="summary">uses map-first pre-processing for HTML5 output and includes a new local
       configuration file, better CLI messages with support for overrides, a new version of the Lightweight DITA plug-in
       with enhancements to Markdown processing, and updates for the latest DITA 2.0 draft standard.</ph></shortdesc>
 
@@ -16,9 +16,9 @@
     <metadata>
       <keywords>
         <indexterm>filters
-          <indexterm>map-first preprocessing</indexterm></indexterm>
-        <indexterm>map-first preprocessing</indexterm>
-        <indexterm>preprocessing
+          <indexterm>map-first pre-processing</indexterm></indexterm>
+        <indexterm>map-first pre-processing</indexterm>
+        <indexterm>pre-processing
           <indexterm>map first</indexterm></indexterm>
         <indexterm>pipelines
           <indexterm>map first</indexterm></indexterm>
@@ -81,11 +81,13 @@
     <section conkeyref="reusable-components/use-xslt3"/>
 
     <section id="map-first">
-      <title>Map-first preprocessing</title>
+      <title>Map-first pre-processing</title>
       <p><ph conkeyref="map-first-preproc/map-first-preproc-desc"/></p>
       <p conkeyref="reusable-components/no-internal-preprocess2-ext"/>
       <note type="tip">See
-        <xref keyref="map-first-preproc"/> for information on how to use (or test) map-first preprocessing, or revert to
+        <xref
+          keyref="map-first-preproc"
+        /> for information on how to use (or test) map-first pre-processing, or revert to
         the legacy <codeph>preprocess</codeph> target.</note>
     </section>
 

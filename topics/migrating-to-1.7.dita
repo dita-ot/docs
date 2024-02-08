@@ -8,7 +8,7 @@
     <navtitle>To 1.7</navtitle>
   </titlealts>
 
-  <shortdesc>In DITA-OT 1.7, a new preprocessing step implements flagging for HTML-based output formats. PDF processing
+  <shortdesc>In DITA-OT 1.7, a new pre-processing step implements flagging for HTML-based output formats. PDF processing
     was corrected with regard to <codeph>shortdesc</codeph> handling, and a new XSLT template mode was introduced for
     HTML TOC processing. Several stylesheets were moved to plug-in specific folders and deprecated properties and XSLT
     variables were removed.</shortdesc>
@@ -61,8 +61,8 @@
         instance methods.</p>
     </section>
     <section>
-      <title>Preprocessing</title>
-      <p>The preprocessing Ant dependency chain has been cleaned up. Tasks no longer depend on the previous task in the
+      <title>Pre-processing</title>
+      <p>The pre-processing Ant dependency chain has been cleaned up. Tasks no longer depend on the previous task in the
         default chain, but rather the whole preprocess dependency chain is defined by the <codeph>preprocess</codeph>
         task.</p>
     </section>

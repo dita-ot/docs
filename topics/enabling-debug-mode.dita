@@ -4,7 +4,7 @@
 <task id="t-enabling-debug-mode">
   <title>Enabling debug mode</title>
   <shortdesc>Debug logging prints considerably more additional information. The debug log includes all information from
-    the verbose log, plus details on Java classes, additional Ant properties and overrides, preprocessing filters,
+    the verbose log, plus details on Java classes, additional Ant properties and overrides, pre-processing filters,
     parameters, and stages, and the complete build sequence. The debug log can help you determine the root cause of a
     problem.</shortdesc>
   <prolog>

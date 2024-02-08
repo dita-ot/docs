@@ -40,7 +40,9 @@
     </prolog>
     <refbody>
       <section>
-        <p><ph id="summary">DITA Open Toolkit Release <keyword keyref="release"/> uses map-first preprocessing for HTML5
+        <p><ph id="summary">DITA Open Toolkit Release <keyword
+              keyref="release"
+            /> uses map-first pre-processing for HTML5
             output and includes a new local configuration file, better CLI messages with support for overrides, a new
             version of the Lightweight DITA plug-in with enhancements to Markdown processing, and updates for the latest
             DITA 2.0 draft standard.</ph></p>
@@ -50,7 +52,7 @@
 
       <section id="html5-preprocess2">
         <title>Map-first HTML5</title>
-        <p id="4225">The HTML5 transformation has been updated to use the map-first preprocessing pipeline that was
+        <p id="4225">The HTML5 transformation has been updated to use the map-first pre-processing pipeline that was
           previously enabled for PDF and HTML Help in DITA-OT 3.0. For details, see
           <xref keyref="map-first-preproc"/>.
           <xref href="https://github.com/dita-ot/dita-ot/issues/4225" format="html" scope="external">#4225</xref>
@@ -159,10 +161,10 @@
           <li id="4115">Earlier versions of DITA-OT preserved metadata in submaps, but dropped any
               <xmlelement>topicmeta</xmlelement> content defined within <xmlelement>mapref</xmlelement> elements. Submap
             metadata in <xmlelement>mapref</xmlelement> elements is now preserved in a temporary
-              <xmlelement>mapref-topicmeta-container</xmlelement>, which is removed when preprocessing is complete.
+              <xmlelement>mapref-topicmeta-container</xmlelement>, which is removed when pre-processing is complete.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4115" format="html" scope="external">#4115</xref>
           </li>
-          <li id="4151">Several preprocessing stylesheets have been extended with additional comments to better explain
+          <li id="4151">Several pre-processing stylesheets have been extended with additional comments to better explain
             how processing works, and to mark cases where named templates can be replaced with template modes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4151" format="html" scope="external">#4151</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4176" format="html" scope="external">#4176</xref>,
@@ -172,7 +174,7 @@
               <xmlatt>keys</xmlatt> attribute on the <xmlelement>subjectdef</xmlelement> element. It now uses the S9API
             (Saxon’s preferred Java API for XSLT, XQuery, XPath, and XML Schema processing) instead of the Document
             Object Model (DOM). A new unit test has been added to verify changes in the subject scheme reader code, and
-            the map-first preprocessing pipeline now supports additional subject scheme features.
+            the map-first pre-processing pipeline now supports additional subject scheme features.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4296" format="html" scope="external">#4296</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4297" format="html" scope="external">#4297</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4300" format="html" scope="external">#4300</xref>,
@@ -183,7 +185,7 @@
             using unit tests instead of integration tests.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4310" format="html" scope="external">#4310</xref>
           </li>
-          <li id="4313">The tasks that run after the map-first preprocessing pipeline have been refactored to a
+          <li id="4313">The tasks that run after the map-first pre-processing pipeline have been refactored to a
             dedicated <codeph>preprocess2.post</codeph> target to make it easier to add custom steps in between the
             built-in steps.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4313" format="html" scope="external">#4313</xref>
@@ -215,7 +217,7 @@
           <li id="4364" conkeyref="migrating-to-4.2/4364"/>
           <li><p>The following bundled plug-ins have been upgraded to the latest versions:</p>
             <ul>
-              <li id="4382">The Normalized DITA plug-in version 2.0 now uses map-first preprocessing for normalization.
+              <li id="4382">The Normalized DITA plug-in version 2.0 now uses map-first pre-processing for normalization.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4382" format="html" scope="external">#4382</xref>
               </li>
               <li id="4388">The Lightweight DITA plug-in version 5.7 includes the
@@ -283,16 +285,17 @@
           </li>
           <li id="4298" conkeyref="migrating-to-4.2/4298"/>
           <li id="4305">In earlier versions, builds failed with a NullPointerException under certain conditions in
-            map-first preprocessing. The issues have been resolved and integration tests have been updated to catch
+            map-first pre-processing. The issues have been resolved and integration tests have been updated to catch
             related errors in the future.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4305" format="html" scope="external">#4305</xref>
           </li>
-          <li id="4307">The map-first preprocessing pipeline in earlier versions treated <xmlatt>href</xmlatt> attribute
+          <li id="4307">The map-first pre-processing pipeline in earlier versions treated <xmlatt
+            >href</xmlatt> attribute
             values set to <codeph>-dita-use-conref-target</codeph> as resources during the initial parse and rewrote
             the attribute values. Processing has been corrected to pass these values through unchanged.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4307" format="html" scope="external">#4307</xref>
           </li>
-          <li id="4311">Earlier versions of the map-first preprocessing pipeline failed to update the
+          <li id="4311">Earlier versions of the map-first pre-processing pipeline failed to update the
               <codeph>usr.input.file.list</codeph> with temporary file names. The list is now generated correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4311" format="html" scope="external">#4311</xref>
           </li>
@@ -324,10 +327,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4357" format="html" scope="external">#4357</xref>
           </li>
           <li id="4369">In cases where key definitions were branch-filtered with
-              <xmlelement>dvrResourcePrefix</xmlelement>, earlier versions of the map-first preprocessing pipeline
+              <xmlelement>dvrResourcePrefix</xmlelement>, earlier versions of the map-first pre-processing pipeline
             failed to apply the resource prefix to the target file names. Key resolution code has been corrected to use
             the <xmlatt>filter-copy-to</xmlatt> attribute instead of the <xmlatt>href</xmlatt> attribute. Once applied,
-            this temporary preprocessing attribute is removed during the map clean step.
+            this temporary pre-processing attribute is removed during the map clean step.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4369" format="html" scope="external">#4369</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4381" format="html" scope="external">#4381</xref>
           </li>

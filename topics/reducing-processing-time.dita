@@ -31,7 +31,7 @@
       <section>
          <title>Use a fast disk for the temporary directory</title>
          <p>DITA-OT keeps topic and map files as separate files and processes each file multiple times during
-            preprocessing. Thus reading from disk, parsing XML, serializing XML, and writing to disk makes processing
+            pre-processing. Thus reading from disk, parsing XML, serializing XML, and writing to disk makes processing
             quite I/O intensive. Use either an
             <xref href="http://en.wikipedia.org/wiki/Solid-state_drive" format="html" scope="external">SSD</xref> or a
             <xref href="http://en.wikipedia.org/wiki/RAM_drive" format="html" scope="external">RAM disk</xref> for
@@ -40,7 +40,7 @@
       </section>
       <section>
          <title>Enable parallel processing</title>
-         <p>As of DITA-OT 3.6, preprocessing module code can be run in parallel by setting the
+         <p>As of DITA-OT 3.6, pre-processing module code can be run in parallel by setting the
                <parmname>parallel</parmname> parameter to <option>true</option>. The performance benefits this option
             provides depend heavily on the source file set, the DITA features used in the project, and the computer
             doing the processing, but under the right circumstances, you may see notable improvements when this option

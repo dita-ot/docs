@@ -61,13 +61,14 @@
         <title>New configuration file</title>
         <p>A new <filepath>.ditaotrc</filepath> configuration file can be used to store DITA-OT runtime configurations
           in multiple places.</p>
-        <p>DITA-OT now looks for this file in the current directory first, then in the user’s home directory, and
-          finally in the root directory of the DITA-OT installation. These files are read in order and combined with the
-          contents of the <filepath>local.properties</filepath> file in the toolkit directory. The first occurrence of a
-          property takes precedence. This approach can be used to define multiple layers of configuration, so personal
-          defaults that apply to multiple projects can be stored in the home folder, with local overrides in project
-          folders.
-          <xref href="https://github.com/dita-ot/dita-ot/issues/4217" format="html" scope="external">#4217</xref>
+        <p>DITA-OT now looks for this file in the current directory or any ancestor directory first, then in the user’s
+          home directory, and finally in the root directory of the DITA-OT installation. These files are read in order
+          and combined with the contents of the <filepath>local.properties</filepath> file in the toolkit directory. The
+          first occurrence of a property takes precedence. This approach can be used to define multiple layers of
+          configuration, so personal defaults that apply to multiple projects can be stored in the home folder, with
+          local overrides in project folders.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4217" format="html" scope="external">#4217</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4391" format="html" scope="external">#4391</xref>
         </p>
       </section>
 

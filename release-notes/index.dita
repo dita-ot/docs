@@ -97,7 +97,8 @@
           <li>To change the message content, specify a new <xmlelement>reason</xmlelement> or
               <xmlelement>response</xmlelement>.</li>
           <li>To change the severity level, set a new value for the <xmlatt>type</xmlatt> attribute
-              (<codeph>INFO</codeph>, <codeph>WARN</codeph>, <codeph>ERROR</codeph>, or <codeph>FATAL</codeph>).</li>
+              (<codeph>INFO</codeph>, <codeph>WARN</codeph>, <codeph>ERROR</codeph>, <codeph>FATAL</codeph>, or
+              <codeph>DEBUG</codeph>).</li>
           <li>You can omit <xmlatt>type</xmlatt>, <xmlelement>reason</xmlelement> or <xmlelement>response</xmlelement>,
             in which case the previous declaration of the message will provide that value.</li>
         </ul>

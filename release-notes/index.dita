@@ -242,6 +242,22 @@
               </li>
             </ul>
           </li>
+          <li
+            id="4390"
+          >Several Java dependencies have been upgraded to include the latest utility versions and fix security issues in
+            bundled libraries.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4390" format="html" scope="external">#4390</xref>
+            <ul>
+              <li>Ant 1.10.14</li>
+              <li>ICU4J 74.2 </li>
+              <li>Jackson 2.16.1</li>
+              <li>Jing 20220510</li>
+              <li>JUnit 5.10.2</li>
+              <li>Saxon 12.4</li>
+              <li>SLF4J 2.0.12</li>
+              <li>XML Resolver 5.2.3</li>
+            </ul>
+          </li>
         </ul>
       </section>
 

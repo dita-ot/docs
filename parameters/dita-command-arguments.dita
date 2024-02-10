@@ -112,7 +112,7 @@
         <parmname>--install</parmname> will still work.)</note>
     </section>
 
-    <section>
+    <section id="args">
       <title>Arguments</title>
       <indexterm><parmname>--input</parmname></indexterm>
       <indexterm><parmname>-i</parmname></indexterm>
@@ -150,10 +150,20 @@
             <p conkeyref="conref-task/transtypes"/>
           </pd>
         </plentry>
+        <plentry id="project">
+          <pt>
+            <parmname>--project</parmname>=<varname>file</varname>
+          </pt>
+          <pd>Publish a project file with multiple deliverables.</pd>
+          <pd>You can add the <parmname>--deliverable</parmname> option to specify a single deliverable in the
+            project.</pd>
+          <pd>For more information, see
+            <xref keyref="using-project-files"/>.</pd>
+        </plentry>
       </parml>
     </section>
 
-    <section>
+    <section id="subcommands">
       <title>Subcommands</title>
       <indexterm><cmdname>deliverables</cmdname> subcommand</indexterm>
       <indexterm><cmdname>install</cmdname> subcommand</indexterm>
@@ -189,6 +199,17 @@
           <pd>Install a single plug-in <varname>ID</varname> from the registry at
             <xref keyref="site-plugin-registry"/> (or a local registry), from a remote <varname>URL</varname>, or a
             local ZIP <varname>file</varname>.</pd>
+          <pd>
+            <note>The <parmname>--force</parmname> option can be passed as an additional option to the installation
+              subcommand to force-install an existing plug-in: <cmdname>dita
+                install</cmdname> <varname>plug-in-zip</varname> <parmname>--force</parmname>.</note></pd>
+          <pd>
+            <note type="tip">The <cmdname>dita install</cmdname> command uses a network connection to install plug-ins
+              from the configured registry or process remote referenced resources. In environments where an HTTP proxy
+              is used to establish a network connection, you can provide the proxy configuration via the
+                <codeph>ANT_OPTS</codeph> environment variable. For more information, see
+              <xref keyref="configuring-proxies"/>.</note>
+          </pd>
         </plentry>
         <plentry>
           <pt>
@@ -243,7 +264,7 @@
         </plentry>
       </parml>
     </section>
-    <section>
+    <section id="options">
       <title>Options</title>
       <indexterm><parmname>-o</parmname></indexterm>
       <indexterm><parmname>--output</parmname></indexterm>
@@ -272,26 +293,10 @@
             <parmname>-d</parmname>
           </pt>
           <pd>Debug logging prints considerably more additional information. The debug log includes all information from
-            the verbose log, plus details on Java classes, additional Ant properties and overrides, preprocessing
+            the verbose log, plus details on Java classes, additional Ant properties and overrides, pre-processing
             filters, parameters, and stages, and the complete build sequence. Debug logging requires additional
             resources and can slow down the build process, so it should only be enabled when further details are
             required to diagnose problems.</pd>
-        </plentry>
-        <plentry id="output">
-          <pt>
-            <parmname>--output</parmname>=<varname>dir</varname></pt>
-          <pt>
-            <parmname>-o</parmname>
-            <varname>dir</varname>
-          </pt>
-          <pd>
-            <p>Specifies the path of the output directory; the path can be absolute or relative to the current
-              directory.</p>
-            <p>This option corresponds to the common parameter
-              <xref keyref="parameters-base/output.dir"/>.</p>
-            <p>By default, the output is written to the <filepath>out</filepath> subdirectory of the current
-              directory.</p>
-          </pd>
         </plentry>
         <plentry>
           <pt>
@@ -316,14 +321,6 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--force</parmname>
-          </pt>
-          <pd>Force-install an existing plug-in.</pd>
-          <pd>Passed as an additional option to the installation subcommand: <cmdname>dita
-              install</cmdname> <varname>plug-in-zip</varname> <parmname>--force</parmname></pd>
-        </plentry>
-        <plentry>
-          <pt>
             <parmname>--help</parmname></pt>
           <pt>
             <parmname>-h</parmname>
@@ -338,6 +335,31 @@
             <varname>file</varname>
           </pt>
           <pd>Write logging messages to a file.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--no-color</parmname>
+          </pt>
+          <pd>By default, DITA-OT prints certain log messages to the console in color. In terminal environments that do
+            not support colored output, the ANSI color escape codes will be shown instead. To deactivate colored output,
+            pass the <parmname>--no-color</parmname> option to the <cmdname>dita</cmdname> command, or set the
+              <codeph>TERM=dumb</codeph> or <codeph>NO_COLOR</codeph> environment variables.</pd>
+        </plentry>
+        <plentry id="output">
+          <pt>
+            <parmname>--output</parmname>=<varname>dir</varname></pt>
+          <pt>
+            <parmname>-o</parmname>
+            <varname>dir</varname>
+          </pt>
+          <pd>
+            <p>Specifies the path of the output directory; the path can be absolute or relative to the current
+              directory.</p>
+            <p>This option corresponds to the common parameter
+              <xref keyref="parameters-base/output.dir"/>.</p>
+            <p>By default, the output is written to the <filepath>out</filepath> subdirectory of the current
+              directory.</p>
+          </pd>
         </plentry>
         <plentry>
           <pt>
@@ -419,7 +441,15 @@
           <pd>The temporary directory is where DITA-OT writes intermediate files that are generated during the
             transformation process.</pd>
         </plentry>
-        <plentry>
+        <plentry id="theme">
+          <pt>
+            <parmname>--theme</parmname>=<varname>file</varname>
+          </pt>
+          <pd>Publish PDF output with a theme configuration file.</pd>
+          <pd>For more information, see
+            <xref keyref="pdf-themes"/>.</pd>
+        </plentry>
+        <plentry id="verbose">
           <pt>
             <parmname>--verbose</parmname></pt>
           <pt>

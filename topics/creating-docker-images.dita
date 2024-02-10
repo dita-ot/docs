@@ -96,7 +96,7 @@ Successfully tagged sample-docker-image:1.0
     <example>
       <title>Running the new container</title>
       <p>You can then start a container based on your new image:</p>
-      <codeblock outputclass="syntax-bash">$ <cmdname>docker</cmdname> container run -it \
+      <codeblock outputclass="syntax-bash">$ <cmdname>docker</cmdname> container run --rm \
   -v /path/to/dita-ot-dir/docsrc:/src sample-docker-image:1.0 \
   -i /src/userguide.ditamap \
   -o /src/out/dita-bootstrap \

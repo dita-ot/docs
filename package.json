@@ -12,8 +12,8 @@
     "fix:style": "stylelint \"**/*.css\" --fix",
     "fmt": "npm run format",
     "format": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
-    "lint-staged": "lint-staged",
-    "prepare": "husky install",
+    "lint-staged": "lint-staged --no-stash",
+    "prepare": "husky",
     "prettier": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "prettier-check": "prettier --check \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "stylelint": "stylelint \"**/*.css\"",
@@ -45,11 +45,11 @@
     }
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "3.2.1",
-    "husky": "^8.0.3",
-    "lint-staged": "14.0.1",
-    "prettier": "3.0.3",
-    "stylelint": "^15.10.3",
+    "@prettier/plugin-xml": "3.2.2",
+    "husky": "^9.0.10",
+    "lint-staged": "15.2.1",
+    "prettier": "3.2.4",
+    "stylelint": "^15.11.0",
     "stylelint-config-recommended": "^13.0.0",
     "stylelint-config-sass-guidelines": "^10.0.0"
   }

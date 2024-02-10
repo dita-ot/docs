@@ -29,7 +29,7 @@ You must have a JRE and a local installation of DITA-OT. There is no need to dow
 1.  Open a command prompt, and change to the directory of your docs repository clone.
 2.  Type a variant of the following command for your operating system, adjust the path to your DITA-OT installation, and press <kbd>Enter</kbd>:
 
-    - On Linux or macOS, use `./gradlew`:
+    - On **Linux**, **macOS**, or **Git Bash**, use `./gradlew`:
 
           ./gradlew -PditaHome=/path/to/dita-ot
 
@@ -37,18 +37,31 @@ You must have a JRE and a local installation of DITA-OT. There is no need to dow
 
           gradlew.bat -PditaHome=C:\path\to\dita-ot
 
-    <details>
-    <summary>Using a `dita-ot` repository clone</summary>
+<details>
+<summary><strong>Alternative:</strong> Using a DITA-OT repository clone</summary>
 
-    - If you’re using a clone of the [DITA-OT development repository][5] as your toolkit installation alongside your clone of the docs repository, run the build script on **Linux** or **macOS** like this:
+If you’re using a clone of the [DITA-OT development repository][5] as your toolkit installation alongside your clone of the `docs` repository:
 
-            ./gradlew -PditaHome=../dita-ot/src/main
+1.  In the root directory of your `dita-ot` repository, run Gradle to compile the Java code and install plugins.
 
-    - You can also specify a single output format. To build HTML output, enter the following on the command line:
+    - On **Linux**, **macOS**, or **Git Bash**, use `./gradlew`.
+    - On **Windows**, use `gradlew.bat`.
 
-            ./gradlew -PditaHome=../dita-ot/src/main html
+2.  Then run the Gradle build in the `docs` repository to generate topics and build the documentation output.
 
-    </details>
+    - On **Linux**, **macOS**, or **Git Bash**, run the build script like this:
+
+          ./gradlew -PditaHome=../dita-ot/src/main
+
+    - On **Windows**, use `gradlew.bat`:
+
+          gradlew.bat -PditaHome=C:\path\to\dita-ot\src\main
+
+</details>
+
+You can also specify a single output format. To build HTML for example, add `html` to the end of the command:
+
+    ./gradlew -PditaHome=/path/to/dita-ot html
 
 ### Results
 
@@ -125,7 +138,7 @@ If you'd like to check whether your changes are formatted correctly, or format t
 [4]: https://www.dita-ot.org
 [5]: https://github.com/dita-ot/dita-ot
 [6]: https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip
-[7]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L181-L192
+[7]: https://github.com/dita-ot/dita-ot/blob/develop/build.gradle#L206-L217
 [8]: .github/CONTRIBUTING.md
 [9]: https://github.com/dita-ot/docs/wiki/Coding-guidelines
 [10]: https://github.com/dita-ot/docs/wiki/Git-workflow#best-practices

@@ -88,7 +88,7 @@
     </section>
 
     <section>
-      <title>Preprocessing</title>
+      <title>Pre-processing</title>
       <p>The following Ant properties and generated list files have been deprecated:</p>
       <ul>
         <li><parmname>imagefile</parmname> property and <codeph>image.list</codeph> file</li>
@@ -102,7 +102,7 @@
           before the <codeph>copy-subsidiary</codeph> step in the pre-processing stage.</li>
       </ul>
       <p>A new<systemoutput>dita.parser</systemoutput> extension point has been added to allow plug-ins to contribute a
-        custom parser for DITA files. If a custom DITA parser is defined, the preprocessing routines will use it during
+        custom parser for DITA files. If a custom DITA parser is defined, the pre-processing routines will use it during
         the gen-list and debug-filter stages to output DITA XML.</p>
     </section>
 
@@ -147,7 +147,7 @@
       <indexterm>keydef</indexterm>
       <p>The <codeph>dita.<b>out.</b>map.xhtml.toc</codeph> target has been deprecated and should be replaced with the
         updated <codeph>dita.map.xhtml.toc</codeph> equivalent.</p>
-      <p>Keydef processing has been removed from the XHTML rendering code. Keys are now resolved in one preprocessing
+      <p>Keydef processing has been removed from the XHTML rendering code. Keys are now resolved in one pre-processing
         step, whereas in earlier versions of DITA-OT, the XHTML code returned to the <filepath>keydef.xml</filepath>
         file to look up targets for phrase elements and pull in text when needed.</p>
       <p>This change affects non-linking elements that can’t take <xmlatt>href</xmlatt> attributes, such as

@@ -85,7 +85,7 @@
       <indexterm>images
         <indexterm>scaling</indexterm></indexterm>
       <p>If both height and width attributes are given, the image is scaled non-uniformly.</p>
-      <p>If the scale attribute is not an unsigned integer, no error or warning is thrown during preprocessing.</p>
+      <p>If the scale attribute is not an unsigned integer, no error or warning is thrown during pre-processing.</p>
     </section>
     <section>
       <title>Map processing</title>

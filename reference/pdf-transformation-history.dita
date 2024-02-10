@@ -32,7 +32,7 @@
   <conbody>
     <p>When IBM developed the code that later became DITA-OT, it included only a proof-of-concept PDF transformation.
       IBM had their own processing chain for producing PDFs from SGML, which they had developed over several decades, so
-      resources were focused primarily on XHTML output and preprocessing.</p>
+      resources were focused primarily on XHTML output and pre-processing.</p>
     <p>Since the initial proof-of-concept transformation was not robust enough for production-grade output, companies
       began to develop their own PDF transformations. One company, Idiom Technologies, made their transformation (known
       as the “pdf2” transformation) available as open source on 23 February 2006. The Idiom plug-in was initially

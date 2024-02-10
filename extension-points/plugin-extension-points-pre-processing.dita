@@ -32,7 +32,7 @@
       <title>Legacy pre-processing extensions</title>
       <p>The following extension points are available in the original <codeph>preprocess</codeph> pipeline that was used
         by default for all transformations prior to DITA-OT 3.0. These extensions are not available in the newer
-        <xref keyref="map-first-preproc">map-first preprocessing</xref> pipeline (<codeph>preprocess2</codeph>), which
+        <xref keyref="map-first-preproc">map-first pre-processing</xref> pipeline (<codeph>preprocess2</codeph>), which
         is used in the PDF and HTML Help transformations as of DITA-OT 3.0.</p>
       <note conkeyref="conref-task/caution-extend-within-preprocessing"/>
       <dl>

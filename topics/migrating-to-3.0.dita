@@ -9,7 +9,7 @@
   </titlealts>
 
   <shortdesc>DITA-OT 3.0 <ph id="summary">adds support for Markdown, normalized DITA output, and the alternative
-      authoring formats proposed for Lightweight DITA. The map-first preprocessing approach provides a modern
+      authoring formats proposed for Lightweight DITA. The map-first pre-processing approach provides a modern
       alternative to the default <codeph>preprocess</codeph> operation.</ph></shortdesc>
 
   <prolog>
@@ -66,12 +66,14 @@
     </section>
 
     <section id="map-first">
-      <title>Map-first preprocessing</title>
+      <title>Map-first pre-processing</title>
       <p><ph conkeyref="map-first-preproc/map-first-preproc-desc"/></p>
       <p conkeyref="reusable-components/no-internal-preprocess2-ext"/>
       <note type="tip">See
-        <xref keyref="map-first-preproc"/> for information on how to use (or test) map-first preprocessing, or revert to
-        the default <codeph>preprocess</codeph> target.</note>
+        <xref
+          keyref="map-first-preproc"
+        /> for information on how to use (or test) map-first pre-processing, or revert to
+        the legacy <codeph>preprocess</codeph> target.</note>
     </section>
 
     <section>

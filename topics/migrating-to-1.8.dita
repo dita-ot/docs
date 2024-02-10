@@ -61,7 +61,7 @@
       </ul>
     </section>
     <section>
-      <title>Preprocessing</title>
+      <title>Pre-processing</title>
       <p>The following deprecated Ant properties have been removed:</p>
       <ul>
         <li><codeph>dita.script.dir</codeph>, use <codeph>${dita.plugin.<varname>id</varname>.dir}</codeph> instead</li>
@@ -74,7 +74,7 @@
     <section>
       <title>XHTML</title>
       <p>XSLT Java extension <codeph>ImgUtils</codeph> has been removed from stylesheets and been replaced with
-        preprocessing module <codeph>ImageMetadataModule</codeph>. The old <codeph>ImgUtils</codeph> Java classes are
+        pre-processing module <codeph>ImageMetadataModule</codeph>. The old <codeph>ImgUtils</codeph> Java classes are
         still included in the build.</p>
     </section>
     <section>

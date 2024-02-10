@@ -4,7 +4,7 @@
   <include file="dita-cmd.xml"/><!-- defines the <dita-cmd> macro -->
   <target name="all" depends="pre,main,post"/>
   <target name="pre">
-    <description>Preprocessing steps</description>
+    <description>Pre-processing steps</description>
   </target>
   <target name="main">
     <description>Build the CHM and PDF with the dita command</description>

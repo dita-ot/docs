@@ -132,7 +132,8 @@
             pre-processing.</note>
           <note id="caution-extend-within-preprocessing" type="caution">The internal order of preprocessing steps is
             subject to change between versions of DITA-OT. New versions may remove, reorder, combine, or add steps to
-            the process, so the extension points <b>within</b> the preprocessing stage should only be used if absolutely
+            the process, so the extension points <b
+            >within</b> the pre-processing stage should only be used if absolutely
             necessary.</note>
         </info>
       </step>

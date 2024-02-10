@@ -155,6 +155,8 @@
             <parmname>--project</parmname>=<varname>file</varname>
           </pt>
           <pd>Publish a project file with multiple deliverables.</pd>
+          <pd>You can add the <parmname>--deliverable</parmname> option to specify a single deliverable in the
+            project.</pd>
           <pd>For more information, see
             <xref keyref="using-project-files"/>.</pd>
         </plentry>
@@ -291,7 +293,7 @@
             <parmname>-d</parmname>
           </pt>
           <pd>Debug logging prints considerably more additional information. The debug log includes all information from
-            the verbose log, plus details on Java classes, additional Ant properties and overrides, preprocessing
+            the verbose log, plus details on Java classes, additional Ant properties and overrides, pre-processing
             filters, parameters, and stages, and the complete build sequence. Debug logging requires additional
             resources and can slow down the build process, so it should only be enabled when further details are
             required to diagnose problems.</pd>
@@ -439,7 +441,15 @@
           <pd>The temporary directory is where DITA-OT writes intermediate files that are generated during the
             transformation process.</pd>
         </plentry>
-        <plentry>
+        <plentry id="theme">
+          <pt>
+            <parmname>--theme</parmname>=<varname>file</varname>
+          </pt>
+          <pd>Publish PDF output with a theme configuration file.</pd>
+          <pd>For more information, see
+            <xref keyref="pdf-themes"/>.</pd>
+        </plentry>
+        <plentry id="verbose">
           <pt>
             <parmname>--verbose</parmname></pt>
           <pt>

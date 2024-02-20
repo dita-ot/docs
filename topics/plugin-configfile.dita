@@ -10,7 +10,7 @@
     <metadata>
       <keywords>
         <indexterm>plug-ins
-          <indexterm>identfiers</indexterm></indexterm>
+          <indexterm>identifiers</indexterm></indexterm>
         <indexterm>plug-ins
           <indexterm><filepath>plugin.xml</filepath></indexterm></indexterm>
         <indexterm>metadata
@@ -82,7 +82,7 @@
             </simpletable>
             <p id="extension-point-ids">Like plug-in identifiers, extension point identifiers are composed of one or
               more dot-delimited tokens.</p>
-            <note id="entension-point-ids-note">Extension point identifiers should begin with the identifier of the
+            <note id="extension-point-ids-note">Extension point identifiers should begin with the identifier of the
               defining plug-in and append one or more tokens, for example, <codeph>org.dita.example.pre</codeph>.</note>
             <fig>
               <title>Sample <xmlelement>extension-point</xmlelement> element</title>

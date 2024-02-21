@@ -39,7 +39,7 @@
             <filepath>META-INF/services</filepath> in the compiled JAR that your plug-in provides. Each line of the file
           must be the name of a class that implements <codeph
           >net.sf.saxon.lib.ExtensionFunctionDefinition</codeph>: <codeblock>com.example.saxon.functions.Add
-com.example.saxon.functions.Substract</codeblock>
+com.example.saxon.functions.Subtract</codeblock>
           <p>You can create the file using <xmlelement>service</xmlelement> elements in an Ant
               <xmlelement>jar</xmlelement>
             task:<codeblock outputclass="language-xml">&lt;jar destfile="${basedir}/target/lib/example-saxon.jar">

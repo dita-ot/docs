@@ -163,7 +163,7 @@ Term
 <dl>
   <dlentry>
     <dt>Term</dt>
-    <dd>Defintion.</dd>
+    <dd>Definition.</dd>
   </dlentry>
 </dl>
 ```

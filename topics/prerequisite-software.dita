@@ -59,8 +59,9 @@
       <p>Depending on the type of output that you want to generate, you might need the following applications:
         <dl>
           <dlentry>
-            <dt>Microsoft Help Workshop</dt>
-            <dd>Required for generating HTML help. You can download the Help Workshop from
+            <dt>HTML Help Workshop</dt>
+            <dd>Microsoft no longer provides the software required for generating Compiled HTML Help (.chm) files. You
+              can download an archived copy of the HTML Help Workshop from the Internet Archive’s Wayback Machine at
               <xref keyref="download.html-help-workshop"/>.</dd>
           </dlentry>
           <dlentry>

@@ -25,6 +25,58 @@
     </refbody>
   </reference>
 
+  <reference id="v4.2.1">
+    <title>DITA-OT 4.2.1</title>
+    <refbody>
+      <section id="bugs">
+        <title>Bug fixes</title>
+        <indexterm/>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.1+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
+        <ul>
+          <li id="4401">Fix temporary directory initialization when using in-memory store and running preprocess2.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4401" format="html" scope="external">#4401</xref>
+          </li>
+          <li id="4402">Fix NullPointerException that occurs when using in-memory store and running preprocess2.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4402" format="html" scope="external">#4402</xref>
+          </li>
+          <li id="4405">Remove keyword metadata from nested topic references in HTML5 <filepath>index.html</filepath>
+            and only use top level map keyword metadata.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4405" format="html" scope="external">#4405</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4418" format="html" scope="external">#4418</xref>
+          </li>
+          <li id="4406">In CLI, print logging level prefix when not using color output.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4406" format="html" scope="external">#4406</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4409" format="html" scope="external">#4409</xref>
+          </li>
+          <li id="4416">In CLI, only remove logging level from log message when content matches supported level names
+            like <codeph>INFO</codeph>INFO or <codeph>WARN</codeph>. Previous implementation removed anything that was
+            between <codeph>][</codeph> and <codeph>]</codeph>.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4416" format="html" scope="external">#4416</xref>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contrib">
+        <title>Contributors</title>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+          <xref keyref="contributions"/> by the following people:</p>
+        <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 4.2..` -->
+        <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
+        <ol>
+          <li>Jarno Elovirta</li>
+          <li>Chris Papademetrious</li>
+        </ol>
+        <p>For the complete list of changes since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/compare/4.2...4.2.1"
+            format="html"
+            scope="external"
+          >changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
   <reference id="v4.2">
     <title>DITA-OT <keyword keyref="release"/>
       <ph outputclass="small text-muted"> released February 11, 2024</ph>

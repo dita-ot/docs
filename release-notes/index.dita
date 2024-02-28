@@ -26,12 +26,13 @@
   </reference>
 
   <reference id="v4.2.1" outputclass="mark">
-    <title>DITA-OT 4.2.1</title>
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <ph outputclass="small text-muted">(work in progress)</ph>
+    </title>
     <refbody>
       <section id="bugs">
-        <title>Bug fixes</title>
-        <indexterm/>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.1+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <li id="4401">Fix temporary directory initialization when using in-memory store and running preprocess2.

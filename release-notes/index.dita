@@ -57,24 +57,6 @@
           </li>
         </ul>
       </section>
-
-      <section id="contrib">
-        <title>Contributors</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
-          <xref keyref="contributions"/> by the following people:</p>
-        <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 4.2..` -->
-        <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
-        <ol>
-          <li>Jarno Elovirta</li>
-          <li>Chris Papademetrious</li>
-        </ol>
-        <p>For the complete list of changes since the previous release, see the
-          <xref
-            href="https://github.com/dita-ot/dita-ot/compare/4.2...4.2.1"
-            format="html"
-            scope="external"
-          >changelog</xref> on GitHub.</p>
-      </section>
     </refbody>
   </reference>
 

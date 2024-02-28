@@ -8,7 +8,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc><ph conref="#v4.2/summary"/></shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which <ph conref="#v4.2/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -83,12 +84,10 @@
     </prolog>
     <refbody>
       <section>
-        <p><ph id="summary">DITA Open Toolkit Release <keyword
-              keyref="release"
-            /> uses map-first pre-processing for HTML5
-            output and includes a new local configuration file, better CLI messages with support for overrides, a new
-            version of the Lightweight DITA plug-in with enhancements to Markdown processing, and updates for the latest
-            DITA 2.0 draft standard.</ph></p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/>
+          <ph id="summary">uses map-first pre-processing for HTML5 output and includes a new local configuration file,
+            better CLI messages with support for overrides, a new version of the Lightweight DITA plug-in with
+            enhancements to Markdown processing, and updates for the latest DITA 2.0 draft standard</ph>.</p>
       </section>
 
       <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->

@@ -673,7 +673,7 @@
             <pd conaction="pushreplace" conref="parameters-pdf.dita#pdf/org.dita.pdf2.i18n.enabled.desc">
               <p>Enables internationalization (I18N) font processing to provide per-character font selection for FO
                 renderers that do not support the <codeph>font-selection-strategy</codeph> property (such as Apache
-                FOP).
+                FOP prior to version 2.9).
                 <indexterm>Apache FOP
                   <indexterm>I18N</indexterm></indexterm>
                 <indexterm>FOP
@@ -692,9 +692,10 @@
                 <li><option>true</option> (default) — Enables font mapping</li>
                 <li><option>false</option> — Disables font mapping</li>
               </ul>
-              <note type="tip">If you don’t use custom character mappings, turning off font mapping makes it easier to
-                define custom fonts simply by changing font names in the XSL attributes files of your custom PDF
-                plug-in. For details, see
+              <note type="tip">DITA-OT 4.2 includes FOP 2.9, which supports <codeph>font-selection-strategy</codeph>. As
+                of this version (or if you don’t use custom character mappings), you can turn off font mapping and
+                specify fonts directly in the XSL attributes files of your custom PDF plug-in. For background
+                information, see
                 <xref keyref="jelovirt-on-pdf2-i18n"/>.</note>
             </pd>
           </plentry>

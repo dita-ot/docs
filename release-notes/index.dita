@@ -35,24 +35,32 @@
           following bug fixes.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.1+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <li id="4401">Fix temporary directory initialization when using in-memory store and running preprocess2.
+          <li id="4401">When using the in-memory store, earlier versions of the map-first pre-processing pipeline failed
+            to initialize the temporary directory. The directory is now created to ensure that files are processed
+            correctly.
             <xref href="https://github.com/dita-ot/dita-ot/pull/4401" format="html" scope="external">#4401</xref>
           </li>
-          <li id="4402">Fix NullPointerException that occurs when using in-memory store and running preprocess2.
+          <li id="4402">A NullPointerException that occured when using the in-memory store with map-first
+            pre-processing has also been fixed.
             <xref href="https://github.com/dita-ot/dita-ot/pull/4402" format="html" scope="external">#4402</xref>
           </li>
-          <li id="4405">Remove keyword metadata from nested topic references in HTML5 <filepath>index.html</filepath>
-            and only use top level map keyword metadata.
+          <li id="4405">In DITA-OT 4.2, the HTML5 transformation was updated to include map-level
+              <xmlelement>keywords</xmlelement> metadata in the table-of-contents file <filepath>index.html</filepath>.
+            However, this inadvertently also included variable definition keywords from nested topic references.
+            Processing has been updated to only include top-level map keyword metadata.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4405" format="html" scope="external">#4405</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/pull/4418" format="html" scope="external">#4418</xref>
           </li>
-          <li id="4406">In CLI, print logging level prefix when not using color output.
+          <li id="4406">The command-line interface in DITA-OT 4.2 prints colored messages in several additional cases,
+            but these changes accidentally removed the logging level prefixes in terminal environments that don’t
+            support color. These message prefixes now appear in all environments, regardless of color support.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4406" format="html" scope="external">#4406</xref>
             <xref href="https://github.com/dita-ot/dita-ot/pull/4409" format="html" scope="external">#4409</xref>
           </li>
-          <li id="4416">In CLI, only remove logging level from log message when content matches supported level names
-            like <codeph>INFO</codeph>INFO or <codeph>WARN</codeph>. Previous implementation removed anything that was
-            between <codeph>][</codeph> and <codeph>]</codeph>.
+          <li id="4416">DITA-OT 4.2 pruned logging level prefixes from messages by removing anything that appeared
+            between square brackets <codeph>][</codeph> and <codeph>]</codeph>, but this also dropped custom prefixes.
+            Logging has been updated to only remove prefixes that match the default level names like
+              <codeph>INFO</codeph> or <codeph>WARN</codeph>.
             <xref href="https://github.com/dita-ot/dita-ot/pull/4416" format="html" scope="external">#4416</xref>
           </li>
         </ul>

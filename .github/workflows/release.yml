@@ -23,8 +23,10 @@ jobs:
         run: |
           if [[ -n "${{ github.event.client_payload.dita_ot_version }}" ]]; then
             readonly TOKENS=($(echo "${{ github.event.client_payload.dita_ot_version }}" | tr '.' ' '))
+            echo "RELEASE_VERSION=${{ github.event.client_payload.dita_ot_version }}" >> $GITHUB_ENV
           else
             readonly TOKENS=($(echo "${{ github.event.inputs.dita-ot-version }}" | tr '.' ' '))
+            echo "RELEASE_VERSION=${{ github.event.inputs.dita-ot-version }}" >> $GITHUB_ENV
           fi
           echo "RELEASE=${TOKENS[0]}.${TOKENS[1]}" >> $GITHUB_ENV
           if [[ -n "${{ github.event.client_payload.docs_tag }}" ]]; then
@@ -73,7 +75,7 @@ jobs:
           curl -sL https://github.com/dita-ot/dita-ot/releases/download/$VERSION/dita-ot-$VERSION.zip -o dita-ot-$VERSION.zip
           unzip dita-ot-$VERSION.zip -d src-dita-ot
         env:
-          VERSION: ${{ github.event.inputs.dita-ot-version }}
+          VERSION: ${{ env.RELEASE_VERSION }}
       - name: Run DITA-OT
         run: |
           ./gradlew site \
@@ -83,23 +85,23 @@ jobs:
             -PnoCommitMeta=true \
             --info --stacktrace --no-daemon
         env:
-          VERSION: ${{ github.event.inputs.dita-ot-version }}
+          VERSION: ${{ env.RELEASE_VERSION }}
           WEBSITE_DIR: ${{ github.workspace }}/website
           DITA_HOME: ${{ github.workspace }}/dita-ot-${{ env.DITA_OT_VERSION }}
-          RELEASE_DITA_OT: ${{ github.workspace }}/src-dita-ot/dita-ot-${{ github.event.inputs.dita-ot-version }}
+          RELEASE_DITA_OT: ${{ github.workspace }}/src-dita-ot/dita-ot-${{ env.RELEASE_VERSION }}
       - name: Create release PR
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: release/${{ github.event.inputs.dita-ot-version }}
-          title: 'Update site for ${{ github.event.inputs.dita-ot-version }}'
+          branch: release/${{ env.RELEASE_VERSION }}
+          title: 'Update site for ${{ env.RELEASE_VERSION }}'
           body: |
-            Update DITA-OT ${{ github.event.inputs.dita-ot-version }} docs to `/${{ env.RELEASE }}`.
+            Update DITA-OT ${{ env.RELEASE_VERSION }} docs to `/${{ env.RELEASE }}`.
 
             Built from commits:
             * dita-ot/docs@${{ env.GITHUB_SHA_SHORT }} (${{ github.event.inputs.docs-tag }})
-            * dita-ot/dita-ot (${{ github.event.inputs.dita-ot-version }})
+            * dita-ot/dita-ot (${{ env.RELEASE_VERSION }})
             * dita-ot/org.dita-ot.html (${{ env.WEBSITE_PLUGIN_BRANCH }})
-          commit-message: 'Update ‘${{ env.RELEASE }}’ docs for ${{ github.event.inputs.dita-ot-version }}'
+          commit-message: 'Update ‘${{ env.RELEASE }}’ docs for ${{ env.RELEASE_VERSION }}'
           committer: 'DITA-OT Bot <ditaotbot@gmail.com>'
           signoff: true
           token: ${{ secrets.DOCS_RELEASE_TOKEN }}
@@ -112,9 +114,9 @@ jobs:
       - name: Parse arguments
         run: |
           if [[ -n "${{ github.event.client_payload.dita_ot_version }}" ]]; then
-            echo "VERSION=${{ github.event.client_payload.dita_ot_version }}" >> $GITHUB_ENV
+            echo "RELEASE_VERSION=${{ github.event.client_payload.dita_ot_version }}" >> $GITHUB_ENV
           else
-            echo "VERSION=${{ github.event.inputs.dita-ot-version }}" >> $GITHUB_ENV
+            echo "RELEASE_VERSION=${{ github.event.inputs.dita-ot-version }}" >> $GITHUB_ENV
           fi
       - name: Check out docs
         uses: actions/checkout@v4
@@ -123,19 +125,19 @@ jobs:
       - name: Update GitHub Actions release workflow
         uses: mikefarah/yq@master
         with:
-          cmd: yq -i '.jobs.deploy.env.DITA_OT_VERSION = "${{ env.VERSION }}"' '.github/workflows/release.yml'
+          cmd: yq -i '.jobs.deploy.env.DITA_OT_VERSION = "${{ env.RELEASE_VERSION }}"' '.github/workflows/release.yml'
       - name: Update GitHub Actions render action
         uses: mikefarah/yq@master
         with:
-          cmd: yq -i '.inputs.DITA_OT_VERSION.default = "${{ env.VERSION }}"' '.github/actions/render/action.yml'
+          cmd: yq -i '.inputs.DITA_OT_VERSION.default = "${{ env.RELEASE_VERSION }}"' '.github/actions/render/action.yml'
       - name: Create release PR
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: feature/update-github-actions-${{ env.VERSION }}
-          title: 'Update docs GitHub Actions for ${{ env.VERSION }}'
+          branch: feature/update-github-actions-${{ env.RELEASE_VERSION }}
+          title: 'Update docs GitHub Actions for ${{ env.RELEASE_VERSION }}'
           body: |
-            Update docs GitHub Actions for ${{ env.VERSION }}.
-          commit-message: 'Update GitHub Actions for ${{ env.VERSION }}'
+            Update docs GitHub Actions for ${{ env.RELEASE_VERSION }}.
+          commit-message: 'Update GitHub Actions for ${{ env.RELEASE_VERSION }}'
           committer: 'DITA-OT Bot <ditaotbot@gmail.com>'
           signoff: true
           token: ${{ secrets.DOCS_RELEASE_TOKEN }}

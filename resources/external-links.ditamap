@@ -343,12 +343,12 @@
     </keydef>
     <keydef
       keys="download.html-help-workshop"
-      href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms669985%28v=vs.85%29.aspx"
+      href="http://web.archive.org/web/20160201063255/http://download.microsoft.com/download/0/A/9/0A939EF6-E31C-430F-A3DF-DFAE7960D564/htmlhelp.exe"
       scope="external"
       format="html"
     >
       <topicmeta>
-        <linktext>msdn.microsoft.com</linktext>
+        <linktext>web.archive.org</linktext>
       </topicmeta>
     </keydef>
     <keydef
@@ -860,6 +860,16 @@
       </topicmeta>
     </keydef>
     <keydef
+      keys="chocolatey"
+      href="https://chocolatey.org/"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>Chocolatey</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
       keys="dita-adoption-tc"
       href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita-adoption"
       scope="external"
@@ -1027,6 +1037,16 @@
     >
       <topicmeta>
         <linktext>Sass</linktext>
+      </topicmeta>
+    </keydef>
+    <keydef
+      keys="sdkman"
+      href="https://sdkman.io/jdks"
+      scope="external"
+      format="html"
+    >
+      <topicmeta>
+        <linktext>SDKMAN!</linktext>
       </topicmeta>
     </keydef>
     <keydef

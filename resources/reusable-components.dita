@@ -131,7 +131,7 @@
         <indexterm>OpenJDK</indexterm>
         <indexterm>Oracle JDK</indexterm>
         <ul>
-          <li>You can download the Oracle JRE or JDK from
+          <li>You can download Oracle distributions from
             <xref keyref="download.oracle-jdk"/> under commercial license.</li>
           <li>Eclipse Temurin is the free OpenJDK distribution available from
             <xref keyref="download.openjdk"/>.</li>
@@ -139,6 +139,10 @@
             <xref keyref="download.openjdk.corretto"/>,
             <xref keyref="download.openjdk.azul"/>, and
             <xref keyref="download.openjdk.redhat"/>.</li>
+          <li>Java versions are also available via package managers such as
+            <xref keyref="chocolatey"/>,
+            <xref keyref="homebrew"/>, or
+            <xref keyref="sdkman"/></li>
         </ul>
       </p>
       <p id="java-bc">

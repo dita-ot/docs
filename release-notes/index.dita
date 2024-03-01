@@ -8,7 +8,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc><ph conref="#v4.2/summary"/></shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which <ph conref="#v4.2/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -21,6 +22,49 @@
           since previous release.</draft-comment>
         <p conkeyref="reusable-components/java-clients"/>
         <p conkeyref="reusable-components/java-bc"/>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.2.1" outputclass="mark">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">released MMMM DD, YYYY</ph>-->
+    </title>
+    <refbody>
+      <section id="bugs">
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.1+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
+        <ul>
+          <li id="4401">When using the in-memory store, earlier versions of the map-first pre-processing pipeline failed
+            to initialize the temporary directory. The directory is now created to ensure that files are processed
+            correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4401" format="html" scope="external">#4401</xref>
+          </li>
+          <li id="4402">A NullPointerException that occured when using the in-memory store with map-first
+            pre-processing has also been fixed.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4402" format="html" scope="external">#4402</xref>
+          </li>
+          <li id="4405">In DITA-OT 4.2, the HTML5 transformation was updated to include map-level
+              <xmlelement>keywords</xmlelement> metadata in the table-of-contents file <filepath>index.html</filepath>.
+            However, this inadvertently also included variable definition keywords from nested topic references.
+            Processing has been updated to only include top-level map keyword metadata.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4405" format="html" scope="external">#4405</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4418" format="html" scope="external">#4418</xref>
+          </li>
+          <li id="4406">The command-line interface in DITA-OT 4.2 prints colored messages in several additional cases,
+            but these changes accidentally removed the logging level prefixes in terminal environments that don’t
+            support color. These message prefixes now appear in all environments, regardless of color support.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4406" format="html" scope="external">#4406</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4409" format="html" scope="external">#4409</xref>
+          </li>
+          <li id="4416">DITA-OT 4.2 pruned logging level prefixes from messages by removing anything that appeared
+            between square brackets <codeph>][</codeph> and <codeph>]</codeph>, but this also dropped custom prefixes.
+            Logging has been updated to only remove prefixes that match the default level names like
+              <codeph>INFO</codeph> or <codeph>WARN</codeph>.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4416" format="html" scope="external">#4416</xref>
+          </li>
+        </ul>
       </section>
     </refbody>
   </reference>
@@ -40,12 +84,10 @@
     </prolog>
     <refbody>
       <section>
-        <p><ph id="summary">DITA Open Toolkit Release <keyword
-              keyref="release"
-            /> uses map-first pre-processing for HTML5
-            output and includes a new local configuration file, better CLI messages with support for overrides, a new
-            version of the Lightweight DITA plug-in with enhancements to Markdown processing, and updates for the latest
-            DITA 2.0 draft standard.</ph></p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/>
+          <ph id="summary">uses map-first pre-processing for HTML5 output and includes a new local configuration file,
+            better CLI messages with support for overrides, a new version of the Lightweight DITA plug-in with
+            enhancements to Markdown processing, and updates for the latest DITA 2.0 draft standard</ph>.</p>
       </section>
 
       <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Afeature+sort%3Acreated-asc -->

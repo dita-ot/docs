@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<map>
+  <title>DITA-OT Day 2024</title>
+  <topicref keyref="dita-ot-day-videos-intro-2024" locktitle="yes">
+    <topicmeta>
+      <navtitle>2024 Helsinki</navtitle>
+      <linktext>Helsinki 2024</linktext>
+    </topicmeta>
+    <!-- This ditaval prevents duplicate titles in TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
+    <!-- See https://github.com/dita-ot/dita-ot/issues/3581 -->
+    <topicref keyref="searchstyleandmore-exten-2024" toc="no"/>
+    <topicref keyref="lessonslearnedmigratingd-2024" toc="no"/>
+    <topicref keyref="syntaxdiagramsifyoucanta-2024" toc="no"/>
+    <topicref keyref="usingditaopentoolkitproj-2024" toc="no"/>
+    <topicref keyref="extendedpdfoutput-theezr-2024" toc="no"/>
+    <topicref keyref="dita-othowfarcanyougo-2024" toc="no"/>
+    <topicref keyref="pdf5-mlpluginupdate-2024" toc="no"/>
+    <topicref keyref="dita-otandensuringditama-2024" toc="no"/>
+    <topicref keyref="ditaandmarkdowninteroper-2024" toc="no"/>
+    <topicref keyref="publishingwithiirdsfromd-2024" toc="no"/>
+    <topicref keyref="dita-otplug-inforworkins-2024" toc="no"/>
+    <topicref keyref="deployingandmaintainingd-2024" toc="no"/>
+    <topicref keyref="cheapandeasycross-delive-2024" toc="no"/>
+    <topicref keyref="fromzerotodita-otheroast-2024" toc="no"/>
+    <topicref keyref="ibmworkflowmanageranauto-2024" toc="no"/>
+    <topicref keyref="documentationdevelopment-2024" toc="no"/>
+    <topicref keyref="movinganhtmlplugintoprep-2024" toc="no"/>
+    <topicref keyref="retrospective-dita-otimp-2024" toc="no"/>    
+  </topicref>
+</map>

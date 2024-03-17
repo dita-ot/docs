@@ -26,9 +26,52 @@
     </refbody>
   </reference>
 
-  <reference id="v4.2.1" outputclass="mark">
+  <reference id="v4.2.2" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
       <!--<ph outputclass="small text-muted">released MMMM DD, YYYY</ph>-->
+    </title>
+    <refbody>
+      <section id="bugs">
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.2+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
+        <ul>
+          <li
+            id="4383"
+          >In map-first pre-processing skip XLST transformation or SAX filter pipe if source file doesn't exist.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4383" format="html" scope="external">#4383</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4435" format="html" scope="external">#4435</xref>
+          </li>
+          <li id="4419">Fix URI input on Windows in CLI.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4419" format="html" scope="external">#4419</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4425" format="html" scope="external">#4425</xref>
+          </li>
+          <li id="4430">Fix passing exceptions in loggers to output stacktrace on debug logging in CLI.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4430" format="html" scope="external">#4430</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4436" format="html" scope="external">#4436</xref>
+          </li>
+          <li id="4431">Incorrect translation for 'on page' term for sv.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4431" format="html" scope="external">#4431</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4433" format="html" scope="external">#4433</xref>
+          </li>
+          <li
+            id="4380"
+          >Fix map-first pre-processing where duplicate branches are incorrectly processed when topic references include fragments.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4380" format="html" scope="external">#4380</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4427" format="html" scope="external">#4427</xref>
+          </li>
+          <li id="4412">Fix input URI that contains escaped characters, for example space characters.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4412" format="html" scope="external">#4412</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4440" format="html" scope="external">#4440</xref>
+          </li>
+        </ul>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.2.1">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <ph outputclass="small text-muted"> released March 1, 2024</ph>
     </title>
     <refbody>
       <section id="bugs">
@@ -285,7 +328,7 @@
                 <p>(For details on recent changes, see the
                   <xref keyref="fop-29-rn"/>.)</p>
               </li>
-              <li id="4346">The logback libraries have been updated to <ph keyref="tool.logback.version"/> to 
+              <li id="4346">The logback libraries have been updated to <ph keyref="tool.logback.version"/> to
                 resolve a serialization vulnerability in the logback receiver component reported as <xref
                   href="https://nvd.nist.gov/vuln/detail/CVE-2023-6378"
                   format="html"

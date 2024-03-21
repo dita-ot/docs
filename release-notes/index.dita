@@ -70,13 +70,12 @@
   </reference>
 
   <reference id="v4.2.1">
-    <title>DITA-OT <keyword keyref="maintenance-version"/>
+    <title>DITA-OT 4.2.1
       <ph outputclass="small text-muted"> released March 1, 2024</ph>
     </title>
     <refbody>
       <section id="bugs">
-        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
-          following bug fixes.</p>
+        <p>DITA Open Toolkit 4.2.1 is a maintenance release that includes the following bug fixes.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.1+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <li id="4401">When using the in-memory store, earlier versions of the map-first pre-processing pipeline failed

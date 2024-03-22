@@ -487,7 +487,10 @@
                 instead of the original extension used by the file; it may also include a path to the temporary
                 directory rather than to the original.</ph>
               <p>If the target element exists in your source file, check to make sure it is not filtered out of the
-                build with a DITAVAL file (which will remove the target before conref processing runs).</p></entry>
+                build with a DITAVAL file (which will remove the target before conref processing runs).</p>
+              <p>This message may also appear if the path to either the source file or the content reference target
+                exceeds the platform’s maximum path length in bytes.</p>
+            </entry>
           </row>
           <row>
             <entry conkeyref="error-messages/DOTX011W-extra" conaction="pushreplace">When pulling content with a

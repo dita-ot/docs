@@ -26,14 +26,63 @@
     </refbody>
   </reference>
 
-  <reference id="v4.2.1" outputclass="mark">
+  <reference id="v4.2.2" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released March 1, 2024</ph>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
     </title>
     <refbody>
       <section id="bugs">
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.2+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
+        <ul>
+          <li id="4380">In earlier versions, the map-first pre-processing routine created extra HTML files in the output
+            folder when branch filtering topic references that include fragments. Duplicate branches are now handled
+            correctly and links are resolved as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4380" format="html" scope="external">#4380</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4427" format="html" scope="external">#4427</xref>
+          </li>
+          <li id="4383">Earlier versions of map-first pre-processing would sometimes attempt to access topics that were
+            excluded in DITAVAL files, which resulted in spurious errors. XLST transformations and SAX filter pipes are
+            now skipped for any source files that don’t exist.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4383" format="html" scope="external">#4383</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4435" format="html" scope="external">#4435</xref>
+          </li>
+          <li id="4419">In earlier versions, passing a URL as an input file on the Windows command line resulted in an
+              <msgph>InvalidPathException</msgph> error. URI input is now handled correctly on Windows.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4419" format="html" scope="external">#4419</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4425" format="html" scope="external">#4425</xref>
+          </li>
+          <li id="4430">In debug logging mode, DITA-OT 4.2 no longer passed exceptions to the CLI output. Logging has
+            been corrected to ensure that errors from Ant tasks once again include the stack trace as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4430" format="html" scope="external">#4430</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4436" format="html" scope="external">#4436</xref>
+          </li>
+          <li id="4431">When missing translations for the PDF <cite>“on page”</cite> variable were added in DITA-OT 4.2,
+            the Montenegrin translation <cite>“na stranici”</cite> was accidentally copied to the Swedish language file.
+            The Swedish translation has been updated to use <cite>“på sidan”</cite> as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4431" format="html" scope="external">#4431</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4433" format="html" scope="external">#4433</xref>
+          </li>
+          <li id="4412">When project files contained input map names with URI-escaped characters like spaces, earlier
+            versions of DITA-OT used the escape character sequences like <codeph>%20</codeph> in the output file name.
+            The map-first pre-processing routine has been updated to construct the output base file name using the
+            unescaped equivalents.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4412" format="html" scope="external">#4412</xref>
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4440" format="html" scope="external">#4440</xref>
+          </li>
+        </ul>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.2.1">
+    <title>DITA-OT 4.2.1
+      <ph outputclass="small text-muted"> released March 1, 2024</ph>
+    </title>
+    <refbody>
+      <section id="bugs">
+        <p>DITA Open Toolkit 4.2.1 is a maintenance release that includes the following bug fixes.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.1+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <li id="4401">When using the in-memory store, earlier versions of the map-first pre-processing pipeline failed
@@ -285,7 +334,7 @@
                 <p>(For details on recent changes, see the
                   <xref keyref="fop-29-rn"/>.)</p>
               </li>
-              <li id="4346">The logback libraries have been updated to <ph keyref="tool.logback.version"/> to 
+              <li id="4346">The logback libraries have been updated to <ph keyref="tool.logback.version"/> to
                 resolve a serialization vulnerability in the logback receiver component reported as <xref
                   href="https://nvd.nist.gov/vuln/detail/CVE-2023-6378"
                   format="html"
@@ -344,7 +393,7 @@
               <codeph>usr.input.file.list</codeph> with temporary file names. The list is now generated correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4311" format="html" scope="external">#4311</xref>
           </li>
-          <li id="4315">Missing translations for the <cite>“on page”</cite> variable have been added to the Bosnian,
+          <li id="4315">Missing translations for the PDF <cite>“on page”</cite> variable have been added to the Bosnian,
             Finnish, Montenegrin, Romanian, Russian, Swedish, and Simplified Chinese PDF localizations.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4315" format="html" scope="external">#4315</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4320" format="html" scope="external">#4320</xref>

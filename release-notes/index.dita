@@ -26,14 +26,31 @@
     </refbody>
   </reference>
 
-  <reference id="v4.2.2" outputclass="mark">
+  <reference id="v4.2.3" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
+    </title>
+    <refbody>
+      <section id="bugs">
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes a regression in
+          DITA-OT 4.2.2, which failed with a NullPointerException when maps referred to topics that didn’t exist and
+          other topics contained key references to the missing files. Processing now proceeds, and warns about any
+          missing files.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4449" format="html" scope="external">#4449</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4454" format="html" scope="external">#4454</xref>
+        </p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.3+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
+      </section>
+    </refbody>
+  </reference>
+  
+  <reference id="v4.2.2">
+    <title>DITA-OT 4.2.2
       <ph outputclass="small text-muted">released March 24, 2024</ph>
     </title>
     <refbody>
       <section id="bugs">
-        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
-          following bug fixes.</p>
+        <p>DITA Open Toolkit 4.2.2 is a maintenance release that includes the following bug fixes.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.2+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <li id="4380">In earlier versions, the map-first pre-processing routine created extra HTML files in the output

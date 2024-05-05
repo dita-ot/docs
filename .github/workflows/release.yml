@@ -103,6 +103,7 @@ jobs:
             * dita-ot/org.dita-ot.html (${{ env.WEBSITE_PLUGIN_BRANCH }})
           commit-message: 'Update ‘${{ env.RELEASE }}’ docs for ${{ env.RELEASE_VERSION }}'
           committer: 'DITA-OT Bot <ditaotbot@gmail.com>'
+          author: 'DITA-OT Bot <ditaotbot@gmail.com>'
           signoff: true
           token: ${{ secrets.DOCS_RELEASE_TOKEN }}
           path: website
@@ -139,6 +140,7 @@ jobs:
             Update docs GitHub Actions for ${{ env.RELEASE_VERSION }}.
           commit-message: 'Update GitHub Actions for ${{ env.RELEASE_VERSION }}'
           committer: 'DITA-OT Bot <ditaotbot@gmail.com>'
+          author: 'DITA-OT Bot <ditaotbot@gmail.com>'
           signoff: true
           token: ${{ secrets.DOCS_RELEASE_TOKEN }}
           labels: |

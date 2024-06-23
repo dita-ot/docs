@@ -327,14 +327,18 @@
           </pt>
           <pd>Print a list of available arguments, options, and subcommands.</pd>
         </plentry>
-        <plentry>
+        <plentry id="logfile">
           <pt>
             <parmname>--logfile</parmname>=<varname>file</varname></pt>
           <pt>
             <parmname>-l</parmname>
             <varname>file</varname>
           </pt>
-          <pd>Write logging messages to a file.</pd>
+          <pd>Write logging messages to a file. 
+            <note>If processing is successful, nothing is written to the log, so the file will be empty if there are no
+              errors or warnings. To include informational messages in the log, add the
+              <xref href="#./verbose"><parmname>--verbose</parmname></xref> option (or <parmname>-v</parmname>).</note>
+          </pd>
         </plentry>
         <plentry>
           <pt>

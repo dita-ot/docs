@@ -107,9 +107,6 @@
           </groupseq>
         </fragment>
       </syntaxdiagram>
-      <note type="attention">Prior to DITA-OT 3.5, subcommands were specified with the double-hyphen option syntax,
-        which is still supported for backwards compatibility. (For example, <cmdname>dita</cmdname>
-        <parmname>--install</parmname> will still work.)</note>
     </section>
 
     <section id="args">
@@ -194,8 +191,6 @@
           <pt>
             <parmname>install</parmname>
             <varname>{ ID | URL | file }</varname></pt>
-          <pt>
-            <parmname>--install</parmname>=<varname>{ ID | URL | file }</varname></pt>
           <pd>Install a single plug-in <varname>ID</varname> from the registry at
             <xref keyref="site-plugin-registry"/> (or a local registry), from a remote <varname>URL</varname>, or a
             local ZIP <varname>file</varname>.</pd>
@@ -215,18 +210,12 @@
           <pt>
             <parmname>install</parmname>
           </pt>
-          <pt>
-            <parmname>--install</parmname>
-          </pt>
           <pd><ph conkeyref="conref-task/plugin-integrate-all"/></pd>
         </plentry>
         <plentry>
           <pt>
             <parmname>uninstall</parmname>
             <varname>ID</varname>
-          </pt>
-          <pt>
-            <parmname>--uninstall</parmname>=<varname>ID</varname>
           </pt>
           <pd>Remove the plug-in with the specified <varname>ID</varname>.</pd>
           <pd>For a list of the currently installed plug-in IDs, use <cmdname>dita plugins</cmdname>.</pd>
@@ -238,17 +227,11 @@
           <pt>
             <parmname>plugins</parmname>
           </pt>
-          <pt>
-            <parmname>--plugins</parmname>
-          </pt>
           <pd>Show a list of the currently installed plug-ins.</pd>
         </plentry>
         <plentry>
           <pt>
             <parmname>transtypes</parmname>
-          </pt>
-          <pt>
-            <parmname>--transtypes</parmname>
           </pt>
           <pd>Show a list of the available output formats (transformation types).</pd>
           <pd>The entries in this list may be passed as values to the <parmname>--format</parmname> argument.</pd>
@@ -256,9 +239,6 @@
         <plentry>
           <pt>
             <parmname>version</parmname>
-          </pt>
-          <pt>
-            <parmname>--version</parmname>
           </pt>
           <pd>Print version information and exit.</pd>
         </plentry>

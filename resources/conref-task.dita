@@ -53,12 +53,6 @@
               <li><note id="plugin-remove-subdir" type="attention">The <cmdname>uninstall</cmdname> subcommand also
                   removes the corresponding plug-in directory from the <filepath>plugins</filepath> folder.
                   <indexterm>uninstalling</indexterm></note></li>
-              <li><note>
-                  <ph id="pre-subcommands-2-4-ph">In earlier versions of DITA-OT (2.4–3.4), use the double-hyphen option
-                    syntax <cmdname>dita</cmdname></ph>
-                  <parmname>--uninstall</parmname>. <ph id="pre-subcommands-2-0-ph">In DITA-OT 2.0–2.3, use the
-                    single-hyphen form: <cmdname>dita</cmdname></ph>
-                </note></li>
             </ul>
           </dd>
         </dlentry>

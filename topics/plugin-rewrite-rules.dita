@@ -43,7 +43,7 @@
         outputclass="language-xml normalize-space show-line-numbers show-whitespace"
       >&lt;xsl:template match="node() | @*">
   &lt;xsl:copy>
-    &lt;xsl:apply-template select="node() | @*"/>
+    &lt;xsl:apply-templates select="node() | @*"/>
   &lt;/xsl:copy>
 &lt;/xsl:template>
 

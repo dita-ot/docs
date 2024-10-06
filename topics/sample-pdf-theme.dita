@@ -34,6 +34,10 @@
               href="../samples/themes/dita-ot-docs-theme.yaml#token=add-brand-colors,end-brand-colors"
             /></codeblock></p>
       </fig>
+      <p>The primary and secondary brand colors defined above are used in the examples below under
+        <xref href="#./headers-footers"/> and
+        <xref href="#./cover-page"/>. The theme sample also defines custom brand colors for links, note backgrounds, and
+        XML domain markup.</p>
     </example>
     <example id="fonts">
       <title>Defining custom font stacks</title>

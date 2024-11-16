@@ -26,14 +26,45 @@
     </refbody>
   </reference>
 
-  <reference id="v4.2.3" outputclass="mark">
+  <reference id="v4.2.4" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released May 5, 2024</ph>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
     </title>
     <refbody>
       <section id="bugs">
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.4+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
+        <ul>
+          <li id="4526">The bundled <tm trademark="Apache Commons IO" tmtype="tm">Apache Commons IO</tm> library has
+            been upgraded to version 2.14.0, which includes security updates to mitigate the vulnerability described in
+            <xref
+              href="https://nvd.nist.gov/vuln/detail/CVE-2024-47554"
+              format="html"
+              scope="external"
+            >CVE-2024-47554</xref>, a possible denial of service attack on untrusted input to
+              <codeph>XmlStreamReader</codeph>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4526" format="html" scope="external">#4526</xref>
+          </li>
+          <li id="4532">In previous releases, the HTML5 transformation did not provide a mechanism for creating HTML5
+            metadata from <xmlelement>data</xmlelement>, <xmlelement>data-about</xmlelement>, and
+              <xmlelement>resourceid</xmlelement> elements. In this release, no metadata is created for these elements
+            by default, but placeholders have been added to the <codeph>getMeta</codeph> processing mode to allow custom
+            plug-ins to override the placeholders and generate metadata for these elements as needed.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4532" format="html" scope="external">#4532</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4533" format="html" scope="external">#4533</xref>
+          </li>
+        </ul>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.2.3">
+    <title>DITA-OT 4.2.3 <ph outputclass="small text-muted">released May 5, 2024</ph>
+    </title>
+    <refbody>
+      <section id="bugs">
+        <p>DITA Open Toolkit 4.2.3 is a maintenance release that includes the following bug fixes.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.3+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <li id="4449">DITA-OT 4.2.2 included a regression bug that caused the map-first pre-processing routine to fail
@@ -46,7 +77,7 @@
       </section>
     </refbody>
   </reference>
-  
+
   <reference id="v4.2.2">
     <title>DITA-OT 4.2.2
       <ph outputclass="small text-muted">released March 24, 2024</ph>

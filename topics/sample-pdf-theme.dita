@@ -5,7 +5,7 @@
   <title>Sample theme file</title>
   <shortdesc>Theme files can be written in either
     <xref keyref="json"/> or
-    <xref keyref="yaml"/> format. The <filepath>docsrc/samples/themes</filepath> folder in the DITA-OT installation
+    <xref keyref="yaml-home"/> format. The <filepath>docsrc/samples/themes</filepath> folder in the DITA-OT installation
     directory provides several examples.</shortdesc>
   <conbody>
     <note>The examples provided here are all in YAML format, which is generally more compact and readable than
@@ -34,6 +34,10 @@
               href="../samples/themes/dita-ot-docs-theme.yaml#token=add-brand-colors,end-brand-colors"
             /></codeblock></p>
       </fig>
+      <p>The primary and secondary brand colors defined above are used in the examples below under
+        <xref href="#./headers-footers"/> and
+        <xref href="#./cover-page"/>. The theme sample also defines custom brand colors for links, note backgrounds, and
+        XML domain markup.</p>
     </example>
     <example id="fonts">
       <title>Defining custom font stacks</title>

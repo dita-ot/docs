@@ -54,6 +54,15 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4532" format="html" scope="external">#4532</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4533" format="html" scope="external">#4533</xref>
           </li>
+          <li id="4543">
+            <draft-comment author="jelovirt">DITA-OT had a bug that made it incorrectly process keyreffing elements
+            that has only whitespace, when per DITA spec it should have skipped those elements. This bug has been
+            fixed, but the fix has not been enabled. The existing broken behaviour is retained in order to not
+            break exising user content that rely on this buggy behaviour. The new
+            <codeph>compatibility.keyref.treat-blank-as-empty</codeph> property is can be used to switch off the
+            incorrect behaviour. The fix will be enabled by default in the next minor or major version.</draft-comment>
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4543" format="html" scope="external">#4543</xref>
+          </li>
         </ul>
       </section>
     </refbody>

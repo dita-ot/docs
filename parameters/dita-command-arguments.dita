@@ -74,14 +74,12 @@
           <groupseq>
             <kwd>dita</kwd>
             <kwd>init</kwd>
-            <groupchoice>
-              <var>template</var>
-            </groupchoice>
-            <groupchoice importance="optional">
+            <var>template</var>
+            <groupcomp importance="optional">
               <kwd>--output</kwd>
               <oper>=</oper>
               <var>dir</var>
-            </groupchoice>
+            </groupcomp>
             <groupcomp importance="optional">
               <var>options</var>
             </groupcomp>

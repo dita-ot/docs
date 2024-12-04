@@ -36,6 +36,13 @@
           following bug fixes.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.4+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
+          <li id="4525">On Windows, earlier versions of the <cmdname>dita.bat</cmdname> command failed when options were
+            specified with straight quotation marks (<codeph>" "</codeph>). The batch script syntax has been updated to
+            enable delayed expansion, which ensures that quotation marks are parsed correctly. The order of commands has
+            also been adjusted to allow <codeph>ANT_OPTS</codeph> to override CLI parameters.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4525" format="html" scope="external">#4525</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4545" format="html" scope="external">#4545</xref>
+          </li>
           <li id="4526">The bundled <tm trademark="Apache Commons IO" tmtype="tm">Apache Commons IO</tm> library has
             been upgraded to version 2.14.0, which includes security updates to mitigate the vulnerability described in
             <xref
@@ -53,6 +60,12 @@
             plug-ins to override the placeholders and generate metadata for these elements as needed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4532" format="html" scope="external">#4532</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4533" format="html" scope="external">#4533</xref>
+          </li>
+          <li id="4540">Earlier versions did not generate links in HTML output when software elements such as
+              <xmlelement>cmdname</xmlelement> and <xmlelement>msgnum</xmlelement> were used in key references.
+            These elements are now processed as keywords to ensure that links are created as expected.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4540" format="html" scope="external">#4540</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4547" format="html" scope="external">#4547</xref>
           </li>
           <li id="4543">
             <draft-comment author="jelovirt">DITA-OT had a bug that made it incorrectly process keyreffing elements

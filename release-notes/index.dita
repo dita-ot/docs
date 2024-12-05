@@ -67,12 +67,13 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4540" format="html" scope="external">#4540</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4547" format="html" scope="external">#4547</xref>
           </li>
-          <li id="4543">Previous versions of DITA-OT incorrectly processed keyreffing elements that contain only
-            whitespace characters, where the DITA specification requires them to be skipped. This bug has been fixed,
-            but the fix is not yet enabled. The incorrect behavior is retained for backwards compatibility to ensure
-            that existing content that relies on this behavior will be processed in the same way.
-              A new <codeph>compatibility.keyref.treat-blank-as-empty</codeph> property can be used to switch off the
-            incorrect behavior. The fix will be enabled by default in the next minor or major version.
+          <li id="4543">Previous versions of DITA-OT incorrectly processed key references that contain only whitespace
+            characters, where the DITA specification requires them to be skipped. This bug has been fixed, but the fix
+            is not yet enabled. The incorrect behavior is retained for backwards compatibility to ensure that existing
+            content that relies on this behavior will be processed in the same way as in earlier versions.
+              A new <codeph>compatibility.keyref.treat-blank-as-empty</codeph> property can be set in
+            <xref keyref="configuration-properties-file">configuration.properties</xref> to switch off the incorrect
+            behavior. The fix will be enabled by default in the next minor or major version.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4543" format="html" scope="external">#4543</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4544" format="html" scope="external">#4544</xref>
           </li>

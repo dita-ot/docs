@@ -38,8 +38,7 @@
         <ul>
           <li id="4525">On Windows, earlier versions of the <cmdname>dita.bat</cmdname> command failed when options were
             specified with straight quotation marks (<codeph>" "</codeph>). The batch script syntax has been updated to
-            enable delayed expansion, which ensures that quotation marks are parsed correctly. The order of commands has
-            also been adjusted to allow <codeph>ANT_OPTS</codeph> to override CLI parameters.
+            enable delayed expansion, which ensures that quotation marks are parsed correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4525" format="html" scope="external">#4525</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4545" format="html" scope="external">#4545</xref>
           </li>
@@ -76,6 +75,11 @@
             behavior. The fix will be enabled by default in the next minor or major version.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4543" format="html" scope="external">#4543</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4544" format="html" scope="external">#4544</xref>
+          </li>
+          <li id="4551">The order of arguments in the <cmdname>dita</cmdname> command scripts has been adjusted to allow
+            the content of the <codeph>ANT_OPTS</codeph> environment variable to override CLI parameters.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4545" format="html" scope="external">#4545</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4551" format="html" scope="external">#4551</xref>
           </li>
         </ul>
       </section>

@@ -58,6 +58,9 @@ axf.cmd=C:\\Program Files\\Antenna House\\AHFormatterV62</codeblock>
     <section>
       <note>This file can only be used to set Ant property values that can be passed as argument parameters to the
         command line. The DITA-OT Java code does not read this file.</note>
+      <note type="attention">The <filepath>local.properties</filepath> file is still supported for backwards
+        compatibility, but as of DITA-OT 4.2, any local configurations should be migrated to
+        <xref keyref="dot-ditaotrc-file"><filepath>.ditaotrc</filepath> configuration files</xref>.</note>
     </section>
   </refbody>
 </reference>

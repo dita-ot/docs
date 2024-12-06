@@ -229,9 +229,10 @@
       </section>
 
       <section id="ditaotrc">
-        <title>New configuration file</title>
-        <p>A new <filepath>.ditaotrc</filepath> configuration file can be used to store DITA-OT runtime configurations
-          in multiple places.</p>
+        <title>New runtime configurations</title>
+        <p>New
+          <xref keyref="dot-ditaotrc-file"><filepath>.ditaotrc</filepath> configuration files</xref> can be used to
+          store DITA-OT runtime configurations in multiple places.</p>
         <p>DITA-OT now looks for this file in the current directory or any ancestor directory first, then in the user’s
           home directory, and finally in the root directory of the DITA-OT installation. These files are read in order
           and combined with the contents of the <filepath>local.properties</filepath> file in the toolkit directory. The
@@ -545,6 +546,8 @@
             <xref keyref="error-messages"/></li>
           <li>
             <xref keyref="migrating-to-4.2"/></li>
+          <li>
+            <xref keyref="dot-ditaotrc-file"/></li>
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"

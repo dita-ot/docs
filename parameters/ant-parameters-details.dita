@@ -121,6 +121,16 @@
           </plentry>
           <plentry id="args.rellinks">
             <pt><parmname>args.rellinks</parmname></pt>
+            <pd conaction="pushreplace" conref="parameters-base.dita#base/args.rellinks.desc"> Specifies which related
+              links to include in the output. The following values are supported:
+              <ul>
+                <li><option>none</option> – No links are included.</li>
+                <li><option>all</option> – All links are included.</li>
+                <li><option>noparent</option> – Ancestor and parent links are not included.</li>
+                <li><option>nofamily</option> – Parent, ancestor, child, descendant, sibling, next, previous, and cousin
+                  links are not included.</li>
+              </ul>
+            </pd>
             <pd conaction="mark" conref="parameters-base.dita#base/args.rellinks.desc"/>
             <pd conaction="pushafter">
               <p>For PDF output, the default value is <option>nofamily</option>. Other formats include all link roles
@@ -132,7 +142,11 @@
                 <indexterm>HTML5
                   <indexterm>related links</indexterm>
                   <indexterm>args.rellinks</indexterm></indexterm>
-              </p></pd>
+              </p>
+              <note type="tip">For more precise control over related links output, set the internal Ant property
+                <xref keyref="internal-ant-properties">
+                  <codeph>include.rellinks</codeph></xref> and specify which link roles to include.</note>
+            </pd>
           </plentry>
           <plentry id="args.resources">
             <pt><parmname>args.resources</parmname></pt>

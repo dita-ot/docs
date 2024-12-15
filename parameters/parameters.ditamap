@@ -20,6 +20,7 @@
     <topicref keyref="ant-parameters-details" keys="parameters-push" processing-role="resource-only" toc="no"/>
   </topicref>
   <topicref keyref="configuration-properties">
+    <topicref keyref="dot-ditaotrc-file"/>
     <topicref keyref="local-properties-file"/>
     <topicref keyref="plugin-properties-file"/>
     <topicref keyref="configuration-properties-file"/>

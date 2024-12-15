@@ -73,6 +73,18 @@
         configuration in the <codeph>dost-configuration.jar</codeph> file when the plug-in integration process runs. The
         following properties are typically set in this file:</p>
       <parml>
+        <plentry id="compatibility-keyref-treat-blank-as-empty">
+          <pt><parmname>compatibility.keyref.treat-blank-as-empty</parmname></pt>
+          <pd>
+            <p>When set to <codeph>true</codeph>, this property enables a compatibility mode that processes key
+              references that contain only whitespace characters like earlier versions of DITA-OT (prior to version
+              4.2.4). This behavior is not correct according to the DITA specification, but this setting ensures that
+              existing content that relies on this behavior will be processed in the same way as in earlier versions.
+              Set this property to <codeph>false</codeph> to skip these references as intended in the DITA
+              specification.</p>
+            <note type="warning">This property can only be set in
+                <filepath>configuration.properties</filepath>.</note></pd>
+        </plentry>
         <plentry id="default-cascade">
           <pt><parmname>default.cascade</parmname></pt>
           <pd>

@@ -34,9 +34,12 @@
   </prolog>
   <refbody>
     <example>
-      <p>For example, if you always use the same rendering engine to produce PDF output for all of your projects, you
-        could create a <filepath>local.properties</filepath> file in the root directory of your DITA-OT installation to
-        set the <parmname>pdf.formatter</parmname> parameter and additional options for the XSL processor:</p>
+      <note type="attention">The <filepath>local.properties</filepath> file is still supported for backwards
+        compatibility, but as of DITA-OT 4.2, any local configurations should be migrated to
+        <xref keyref="dot-ditaotrc-file"><filepath>.ditaotrc</filepath> configuration files</xref>.</note>
+      <p>If you always use the same rendering engine to produce PDF output for all of your projects, you could create a
+          <filepath>local.properties</filepath> file in the root directory of your DITA-OT installation to set the
+          <parmname>pdf.formatter</parmname> parameter and additional options for the XSL processor:</p>
       <codeblock
         outputclass="language-properties normalize-space show-line-numbers show-whitespace"
       ># Use RenderX XEP Engine for PDF output

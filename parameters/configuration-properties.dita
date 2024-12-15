@@ -35,6 +35,8 @@
         <li>Any property passed to Ant from the command line with <parmname>-Dproperty</parmname> or
             <parmname>--property</parmname>=<option>value</option></li>
         <li>A custom property file passed with <parmname>--propertyfile</parmname></li>
+        <li>A <filepath>.ditaotrc</filepath> configuration file in the current directory or any ancestor directory, in
+          the user’s home directory, or in the root directory of the DITA-OT installation</li>
         <li>A <filepath>local.properties</filepath> file in the root directory of the DITA-OT installation</li>
         <li>The <filepath>lib/org.dita.dost.platform/plugin.properties</filepath> file</li>
         <li>The <filepath>configuration.properties</filepath> file</li>
@@ -43,7 +45,7 @@
         property are ignored.</p>
       <p>You can use this mechanism to override DITA-OT default settings for your environment by passing parameters to
         the <cmdname>dita</cmdname> command with <parmname>--property</parmname>=<option>value</option>, or using
-        entries in <filepath>.properties</filepath> files.</p>
+        entries in runtime configurations or <filepath>.properties</filepath> files.</p>
     </section>
   </refbody>
 </reference>

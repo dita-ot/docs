@@ -185,6 +185,7 @@
         </li>
       </ul>
     </section>
+    <!--
     <section id="v4.2">
       <title>DITA-OT 4.2</title>
       <p>DITA-OT 4.2 adds support for additional DITA 2.0 features.</p>
@@ -192,11 +193,12 @@
         <li/>
       </ul>
     </section>
+    -->
     <section>
       <note id="more-to-come">Other new or revised features proposed for DITA 2.0 are not yet supported. Additional
         features will be implemented in future versions of DITA-OT as the specification evolves.</note>
       <note type="tip">For the latest status information on DITA 2.0-related features and fixes, see the
-        <xref keyref="dita20-issues"/> in the GitHub issues tracker.</note>      
+        <xref keyref="dita20-issues"/> in the GitHub issues tracker.</note>
     </section>
   </conbody>
 

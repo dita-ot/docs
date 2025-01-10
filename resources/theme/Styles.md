@@ -176,6 +176,19 @@ Note element with `@type`. Type values are:
 
 The styling properties that can be used are listed in [XSL fo:block](https://www.w3.org/TR/xsl11/#fo_block).
 
+To add an image to a note, use the `background-image` property.
+
+```yaml
+style:
+  note-other:
+    background-image: legal.svg
+    background-repeat: no-repeat
+    # image width plus padding
+    padding-start: 60pt + 1em
+    # image width plus parent indentation
+    start-indent: 60pt + from-parent(start-indent)
+```
+
 ### `note-<type>-label`
 
 Label for note elements with `@type`.

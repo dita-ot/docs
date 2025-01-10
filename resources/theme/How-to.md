@@ -21,17 +21,6 @@ style:
 
 Examples of theme files.
 
-## Page size
-
-```yaml
-page:
-  size: A4
-  top: 20mm
-  outside: 20mm
-  bottom: 20mm
-  inside: 20mm
-```
-
 ## Simple header and footer
 
 ```yaml

@@ -93,6 +93,22 @@ The styling properties that can be used are listed in [XSL fo:block] and [XSL ex
 
 - `title-numbering = boolean`
 
+### `chapter`
+
+Chapter title.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
+- `title-numbering = boolean`
+
+### `part`
+
+Part title.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
+- `title-numbering = boolean`
+
 ### `cover`
 
 Cover page.

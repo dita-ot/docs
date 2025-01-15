@@ -191,22 +191,23 @@ style:
     font-size: 9pt
     header:
       background-color: $brand-color-inverse
-  toc-1:
-    color: $brand-color-primary
-    font-family: $pdf2-font-sans
-    start-indent: 0
-  toc-2:
-    color: black
-    space-before: 4pt
-    start-indent: 20pt
-  toc-3:
-    color: black
-    space-before: 2pt
-    start-indent: 42pt
-  toc-4:
-    color: black
-    space-before: 2pt
-    start-indent: 64pt
+  toc:
+    1:
+      color: $brand-color-primary
+      font-family: $pdf2-font-sans
+      start-indent: 0
+    2:
+      color: black
+      space-before: 4pt
+      start-indent: 20pt
+    3:
+      color: black
+      space-before: 2pt
+      start-indent: 42pt
+    4:
+      color: black
+      space-before: 2pt
+      start-indent: 64pt
   varname:
     color: $brand-color-secondary
     font-family: $pdf2-font-monospaced

@@ -2,6 +2,9 @@
 #
 # https://www.dita-ot.org/dev/topics/sample-pdf-theme.html
 
+# Apply default theme settings
+extends: default
+
 # ↓ add-brand-colors ↓
 brand:
   color:

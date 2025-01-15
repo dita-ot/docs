@@ -5,6 +5,10 @@
 # Apply default theme settings
 extends: default
 
+# Add part/chapter ToCs
+chapter-layout: MINITOC
+part-layout: MINITOC
+
 # ↓ add-brand-colors ↓
 brand:
   color:

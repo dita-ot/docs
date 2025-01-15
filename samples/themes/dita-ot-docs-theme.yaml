@@ -40,6 +40,8 @@ page:
   mirror-margins: true
 # ↑ end-page-settings ↑
 
+force-page-count: even
+
 # ↓ add-header-setup ↓
 header:
   color: $brand-color-secondary

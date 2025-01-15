@@ -204,25 +204,27 @@ style:
       space-before: 1em
     chapter:
       color: $brand-color-primary
-      start-indent: 20pt
+      font-size: 12pt
+      start-indent: 45pt
     appendix:
+      color: $brand-color-secondary
       space-before: 1em
     1:
       color: $brand-color-primary
       font-family: $pdf2-font-sans
-      start-indent: 0
+      start-indent: 45pt
     2:
       color: black
       space-before: 4pt
-      start-indent: 20pt
+      start-indent: 112pt
     3:
       color: black
       space-before: 2pt
-      start-indent: 42pt
+      start-indent: 140pt
     4:
       color: black
       space-before: 2pt
-      start-indent: 64pt
+      start-indent: 160pt
   varname:
     color: $brand-color-secondary
     font-family: $pdf2-font-monospaced

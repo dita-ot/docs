@@ -199,6 +199,14 @@ style:
     header:
       background-color: $brand-color-inverse
   toc:
+    part:
+      color: $brand-color-secondary
+      space-before: 1em
+    chapter:
+      color: $brand-color-primary
+      start-indent: 20pt
+    appendix:
+      space-before: 1em
     1:
       color: $brand-color-primary
       font-family: $pdf2-font-sans

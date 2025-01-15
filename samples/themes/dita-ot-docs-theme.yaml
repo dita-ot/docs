@@ -133,13 +133,14 @@ style:
     font-style: italic
     space-before: 16pt
     space-after: 8pt
-    title-numbering: true
+    title-numbering: false
   h3:
     color: $brand-color-primary
     font-size: 14pt
     font-weight: bold
     space-before: 21pt
     space-after: 7pt
+    title-numbering: false
   h4:
     font-size: 12pt
     font-style: italic

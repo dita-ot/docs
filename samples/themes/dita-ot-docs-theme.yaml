@@ -208,6 +208,7 @@ style:
     header:
       background-color: $brand-color-inverse
   toc:
+    maximum-level: 4
     part:
       color: $brand-color-secondary
       space-before: 1em

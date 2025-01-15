@@ -182,6 +182,12 @@ style:
     color: $brand-color-primary
     font-family: $pdf2-font-monospaced
     font-weight: bold
+  part:
+    toc:
+      1:
+        start-indent: 50pt
+      maximum-level: 1
+      space-before: 2em
   section-title:
     color: $brand-color-secondary
   shortdesc:

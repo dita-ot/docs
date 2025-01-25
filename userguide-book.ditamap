@@ -16,17 +16,14 @@
       <toc/>
     </booklists>
   </frontmatter>
+  <part keyref="intro">
+    <chapter format="ditamap" href="topics/intro.ditamap"/>
+  </part>
   <part keyref="installing">
     <chapter format="ditamap" href="topics/installing.ditamap"/>
   </part>
   <part keyref="building-output">
     <chapter href="topics/publishing.ditamap" format="ditamap"/>
-  </part>
-  <part keyref="input-formats">
-    <chapter href="topics/input-formats.ditamap" format="ditamap"/>
-  </part>
-  <part keyref="output-formats">
-    <chapter href="topics/transformations.ditamap" format="ditamap"/>
   </part>
   <part keyref="parameters">
     <chapter href="parameters/parameters.ditamap" format="ditamap"/>

@@ -4,16 +4,8 @@
 <map xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
 
-  <topicref keyref="landing-page" linking="targetonly">
-    <topicref keyref="release-notes">
-      <topicref keyref="release-history"/>
-    </topicref>
-    <topicref keyref="input-formats" collection-type="family" linking="normal">
-      <mapref href="../topics/input-formats.ditamap"/>
-    </topicref>
-    <topicref keyref="output-formats" linking="normal">
-      <mapref href="../topics/transformations.ditamap"/>
-    </topicref>
+  <topicref keyref="intro" linking="targetonly">
+    <mapref href="../topics/intro.ditamap"/>
   </topicref>
   <topicref keyref="installing">
     <mapref href="../topics/installing.ditamap"/>

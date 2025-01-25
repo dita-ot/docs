@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<task id="transforming-dita-content">
+  <title>Publishing DITA content</title>
+  <titlealts>
+    <navtitle>Publishing</navtitle>
+  </titlealts>
+  <shortdesc>You can use the <cmdname>dita</cmdname> command, Ant, or the Java API to publish DITA content to other
+    formats, or build output from a containerized environment such as Docker or GitHub Actions.</shortdesc>
+</task>

@@ -45,49 +45,9 @@ Shortdesc and abstract styles.
 
 The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
 
-### `h1`
+### `h<n>`
 
-First-level topic titles.
-
-The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
-
-- `title-numbering = boolean`
-
-### `h2`
-
-Second-level topic titles.
-
-The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
-
-- `title-numbering = boolean`
-
-### `h3`
-
-Third-level topic titles.
-
-The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
-
-- `title-numbering = boolean`
-
-### `h4`
-
-Fourth-level topic titles.
-
-The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
-
-- `title-numbering = boolean`
-
-### `h5`
-
-Fifth-level topic titles.
-
-The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
-
-- `title-numbering = boolean`
-
-### `h6`
-
-Sixth-level topic titles.
+Topic titles. `<n>` is a number ranging from 1 to 6, representing each of the six heading levels.
 
 The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
 
@@ -101,6 +61,18 @@ The styling properties that can be used are listed in [XSL fo:block] and [XSL ex
 
 - `title-numbering = boolean`
 
+### `chapter-toc`
+
+Chapter table of contents.
+
+- `maximum-level = number` — number of TOC levels to show
+
+### `chapter-toc-<n>`
+
+TOC entry in chapter TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
 ### `part`
 
 Part title.
@@ -108,6 +80,46 @@ Part title.
 The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
 
 - `title-numbering = boolean`
+
+### `part-toc`
+
+Part table of contents.
+
+- `maximum-level = number` — number of TOC levels to show
+
+### `part-toc-chapter`
+
+Bookmap chapter TOC entry in part TOC.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
+### `part-toc-<n>`
+
+TOC entry in part TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
+### `appendix`
+
+Appendix title.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
+<!--
+- `title-numbering = boolean`
+-->
+
+### `appendix-toc`
+
+Appendix table of contents.
+
+- `maximum-level = number` — number of TOC levels to show
+
+### `appendix-toc-<n>`
+
+TOC entry in appendix TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
 
 ### `cover`
 
@@ -140,14 +152,6 @@ The styling properties that can be used are listed in [XSL fo:block] and [XSL ex
 Section element title.
 
 The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
-
-### `dl`
-
-Definition list element.
-
-The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
-
-- `dl-type = 'table' | 'list' | 'html'` — Style definition list as bulleted list or indented list.
 
 ### `example`
 
@@ -235,6 +239,14 @@ The styling properties that can be used are listed in [XSL fo:inline] and [XSL e
 
 - `content` — Content template.
 
+### `dl`
+
+Definition list element.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
+- `dl-type = 'table' | 'list' | 'html'` — Style definition list as bulleted list or indented list.
+
 ### `ol`
 
 Ordered list.
@@ -244,6 +256,30 @@ The styling properties that can be used are listed in [XSL fo:block] and [XSL ex
 ### `ul`
 
 Unordered list.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
+### `parml`
+
+Parameter list element.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
+### `plentry`
+
+Parameter list entry element.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
+### `pt`
+
+Parameter term element within a parameter list entry.
+
+The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+
+### `pd`
+
+Parameter definition element within a parameter list entry.
 
 The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
 
@@ -288,51 +324,33 @@ Table header row
 
 The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
 
-### `toc-1`
+### `toc`
 
-First-level TOC entry.
+Table of contents.
 
-The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
+- `maximum-level = number` — number of TOC levels to show
 
-### `toc-2`
+### `toc-appendix`
 
-Second-level TOC entry.
-
-The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
-
-### `toc-3`
-
-Third-level TOC entry.
+Bookmap appendix TOC entry.
 
 The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
 
-### `toc-4`
+### `toc-chapter`
 
-Fourth-level TOC entry.
-
-The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
-
-### `parml`
-
-Parameter list element.
+Bookmap chapter TOC entry.
 
 The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
 
-### `plentry`
+### `toc-part`
 
-Parameter list entry element.
-
-The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
-
-### `pt`
-
-Parameter term element within a parameter list entry.
+Bookmap part TOC entry.
 
 The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
 
-### `pd`
+### `toc-<n>`
 
-Parameter definition element within a parameter list entry.
+TOC entry in main TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
 
 The styling properties that can be used are listed in [XSL fo:block] and [XSL extensions].
 
@@ -617,6 +635,8 @@ The styling properties that can be used are listed in [XSL fo:inline] and [XSL e
 Menu cascade element used to document a series of menu choices.
 
 The styling properties that can be used are listed in [XSL fo:inline] and [XSL extensions].
+
+- `separator-content = content-template` — Separator between uicontrol elements, defaults to `" > "`.
 
 ### `shortcut`
 

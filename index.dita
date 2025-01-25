@@ -24,9 +24,12 @@
       <p>The DITA Open Toolkit documentation provides information about installing, running, configuring and extending
         the toolkit.</p>
       <ul outputclass="list-group mb-5">
-        <li outputclass="list-group-item list-group-item-action">See the
-          <xref keyref="release-notes" outputclass="stretched-link"/> for information on the changes in the current
-          release.</li>
+        <li outputclass="list-group-item list-group-item-action">This first part includes
+          <xref keyref="release-notes">Release Notes</xref> with information on the changes in the current release, and
+          the
+          <xref keyref="input-formats"/> and
+          <xref keyref="output-formats"/> that are provided in the default installation of DITA-OT 
+          <keyword keyref="release"/>.</li>
         <li outputclass="list-group-item list-group-item-action">
           <xref keyref="installing" outputclass="stretched-link"/> shows how to install the toolkit and run a
           build to verify the installation.</li>
@@ -34,13 +37,6 @@
           <xref keyref="building-output" outputclass="stretched-link"/> explains the methods that can be used to
           transform DITA content to other formats, including the <cmdname>dita</cmdname> command, Ant, and the Java API,
           along with information on publishing DITA content from a containerized environment.</li>
-        <li outputclass="list-group-item list-group-item-action">
-          <xref keyref="input-formats" outputclass="stretched-link"/> provides information on supported input formats,
-          including standard DITA XML, Markdown and the Lightweight DITA formats (<term>XDITA</term>, <term>MDITA</term>
-          and <term>HDITA</term>).</li>
-        <li outputclass="list-group-item list-group-item-action">
-          <xref keyref="output-formats" outputclass="stretched-link">Output formats</xref> describes the core
-          transformations that convert DITA to other formats.</li>
         <li outputclass="list-group-item list-group-item-action">
           <xref keyref="parameters" outputclass="stretched-link"/> explains how to adjust the behavior of DITA Open
           Toolkit via <cmdname>dita</cmdname> command arguments and options, DITA-OT parameter settings, and
@@ -63,7 +59,7 @@
           <xref keyref="troubleshooting-overview" outputclass="stretched-link"/> contains information about resolving
           problems that you might encounter.</li>
         <li outputclass="list-group-item list-group-item-action">
-          <xref keyref="reference" outputclass="stretched-link"/> topics provide additional information about the
+          <xref keyref="reference"/> topics provide additional information about the
           <xref keyref="architecture"/>,
           <xref keyref="dita-spec-support"/>, a
           <xref keyref="glossary"/> and other

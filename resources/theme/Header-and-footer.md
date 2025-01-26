@@ -3,7 +3,15 @@ The `content` key in `header` or `footer` can be used to add text to running hea
 The following variable fields are currently supported:
 
 - `title`: Map title
-- `chapter`: Map chapter title
+- `chapter`: Map chapter number and title
+- `chapter-title`: Map chapter title
+- `chapter-number`: Map chapter number
+- `part`: Map part number and title
+- `part-title`: Map part title
+- `part-number`: Map part number
+- `appendix`: Map appendix number and title
+- `appendix-title`: Map appendix title
+- `appendix-number`: Map appendix number
 - `folio`: current page number
 - `folio-with-total`: current page number with total number of pages
 - `page-number`: current page number

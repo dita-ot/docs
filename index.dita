@@ -50,11 +50,8 @@
             conkeyref="pdf-customization/shortdesc-ph"
           />.</li>
         <li outputclass="list-group-item list-group-item-action">
-          <xref keyref="extending" outputclass="stretched-link"/> explains how to install, remove, and discover new
-          plug-ins.</li>
-        <li outputclass="list-group-item list-group-item-action">
-          <xref keyref="custom-plugins" outputclass="stretched-link"/> provides information on extending DITA-OT with
-          plug-ins of your own.</li>
+          <xref keyref="extending" outputclass="stretched-link"/> explains how to install, remove, and discover
+          plug-ins, and create custom plug-ins to change the default transformations or add new output formats.</li>
         <li outputclass="list-group-item list-group-item-action">
           <xref keyref="troubleshooting-overview" outputclass="stretched-link"/> contains information about resolving
           problems that you might encounter.</li>

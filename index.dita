@@ -21,15 +21,15 @@
 
     <section>
       <title>DITA-OT documentation</title>
-      <p>The DITA Open Toolkit documentation provides information about installing, running, configuring and extending
+      <p>The DITA Open Toolkit documentation provides information about installing, running, configuring, and extending
         the toolkit.</p>
       <ul outputclass="list-group mb-5">
         <li outputclass="list-group-item list-group-item-action">This first part includes
           <xref keyref="release-notes">Release Notes</xref> with information on the changes in the current release, and
           the
-          <xref keyref="input-formats"/> and
-          <xref keyref="output-formats"/> that are provided in the default installation of DITA-OT 
-          <keyword keyref="release"/>.</li>
+          <xref keyref="input-formats">Authoring formats</xref> and
+          <xref keyref="output-formats">Output formats</xref> that are provided in the default installation of DITA-OT
+            <keyword keyref="release"/>.</li>
         <li outputclass="list-group-item list-group-item-action">
           <xref keyref="installing" outputclass="stretched-link"/> shows how to install the toolkit and run a
           build to verify the installation.</li>
@@ -59,11 +59,10 @@
           <xref keyref="troubleshooting-overview" outputclass="stretched-link"/> contains information about resolving
           problems that you might encounter.</li>
         <li outputclass="list-group-item list-group-item-action">
-          <xref keyref="reference"/> topics provide additional information about the
-          <xref keyref="architecture"/>,
-          <xref keyref="dita-spec-support"/>, a
-          <xref keyref="glossary"/> and other
-          <xref keyref="dita-and-dita-ot-resources"/>.</li>
+          <xref keyref="reference">Reference</xref> topics provide additional information about the
+          <xref keyref="architecture">DITA Open Toolkit Architecture</xref>,
+          <xref keyref="dita-spec-support">DITA specification support</xref>, and other
+          <xref keyref="dita-and-dita-ot-resources">DITA and DITA-OT resources</xref>.</li>
       </ul>
     </section>
   </body>

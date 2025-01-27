@@ -46,13 +46,6 @@
   <part keyref="reference">
     <chapter href="reference/reference.ditamap" format="ditamap"/>
   </part>
-  <appendices>
-    <appendix keyref="dita-and-dita-ot-resources">
-      <topicref keyref="web-based-resources" print="yes"/>
-      <topicref keyref="books"/>
-    </appendix>
-    <appendix keyref="release-notes"/>
-  </appendices>
   <backmatter>
     <booklists>
       <indexlist/>

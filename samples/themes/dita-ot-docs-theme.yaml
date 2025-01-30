@@ -52,10 +52,10 @@ header:
   padding-before: 12pt
   start-indent: 10mm
   odd:
-    content: '{chapter}'
+    content: '{chapter-title}'
     text-align: end
   even:
-    content: '{title}'
+    content: '{part-title}'
     text-align: start
 # ↑ end-header-setup ↑
 

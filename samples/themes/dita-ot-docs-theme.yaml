@@ -2,19 +2,9 @@
 #
 # https://www.dita-ot.org/dev/topics/sample-pdf-theme.html
 
-# Apply default theme settings
-extends: default
-
-# Add part/chapter ToCs
-chapter-layout: MINITOC
-part-layout: MINITOC
-
 # ↓ add-brand-colors ↓
 brand:
   color:
-    primary: '#1d365d'
-    secondary: '#6c757d'
-    tertiary: '#bac8d1'
     inverse: '#e9ecef'
     links: '#3563ab'
     note:
@@ -23,22 +13,35 @@ brand:
         caution: '#f8d7da'
         info: '#dce4f0'
         tip: '#d1e7dd'
+    primary: '#1d365d'
+    secondary: '#6c757d'
+    tertiary: '#bac8d1'
     xml-domain: '#639'
 # ↑ end-brand-colors ↑
 
-# ↓ add-font-stacks ↓
-pdf2:
-  font:
-    sans: 'Helvetica, Arial Unicode MS, Tahoma, Batang, SimSun'
-    serif: 'Times New Roman, Times, Arial Unicode MS, Tahoma, Batang, SimSun'
-    monospaced: 'Courier New, Courier, Arial Unicode MS, Tahoma, Batang, SimSun'
-# ↑ end-font-stacks ↑
+# Add part/chapter ToCs
+chapter-layout: MINITOC
 
-# ↓ add-page-settings ↓
-page:
-  size: PA4
-  mirror-margins: true
-# ↑ end-page-settings ↑
+# Apply default theme settings
+extends: default
+
+# ↓ add-footer-setup ↓
+footer:
+  color: $brand-color-secondary
+  end-indent: 10mm
+  even:
+    content: '{folio}'
+    font-weight: bold
+    text-align: start
+  font-family: $pdf2-font-sans
+  odd:
+    content: '{folio}'
+    font-weight: bold
+    text-align: end
+  padding-after: 12pt
+  padding-before: 6pt
+  start-indent: 10mm
+# ↑ end-footer-setup ↑
 
 force-page-count: even
 
@@ -47,35 +50,34 @@ header:
   color: $brand-color-secondary
   display-align: before
   end-indent: 10mm
-  font-family: $pdf2-font-sans
-  padding-after: 6pt
-  padding-before: 12pt
-  start-indent: 10mm
-  odd:
-    content: '{chapter-title}'
-    text-align: end
   even:
     content: '{part-title}'
     text-align: start
+  font-family: $pdf2-font-sans
+  odd:
+    content: '{chapter-title}'
+    text-align: end
+  padding-after: 6pt
+  padding-before: 12pt
+  start-indent: 10mm
 # ↑ end-header-setup ↑
 
-# ↓ add-footer-setup ↓
-footer:
-  color: $brand-color-secondary
-  end-indent: 10mm
-  font-family: $pdf2-font-sans
-  padding-after: 12pt
-  padding-before: 6pt
-  start-indent: 10mm
-  odd:
-    content: '{folio}'
-    font-weight: bold
-    text-align: end
-  even:
-    content: '{folio}'
-    font-weight: bold
-    text-align: start
-# ↑ end-footer-setup ↑
+# ↓ add-page-settings ↓
+page:
+  mirror-margins: true
+  size: PA4
+# ↑ end-page-settings ↑
+
+# Add part ToC links
+part-layout: MINITOC
+
+# ↓ add-font-stacks ↓
+pdf2:
+  font:
+    monospaced: 'Courier New, Courier, Arial Unicode MS, Tahoma, Batang, SimSun'
+    sans: 'Helvetica, Arial Unicode MS, Tahoma, Batang, SimSun'
+    serif: 'Times New Roman, Times, Arial Unicode MS, Tahoma, Batang, SimSun'
+# ↑ end-font-stacks ↑
 
 style:
   body:
@@ -122,24 +124,24 @@ style:
   h1:
     color: $brand-color-primary
     font-size: 18pt
-    space-before: 0pt
+    font-weight: bold
     padding-top: 0pt
     space-after: 9pt
-    font-weight: bold
+    space-before: 0pt
     title-numbering: true
   h2:
     color: $brand-color-primary
     font-size: 16pt
     font-style: italic
-    space-before: 16pt
     space-after: 8pt
+    space-before: 16pt
     title-numbering: false
   h3:
     color: $brand-color-primary
     font-size: 14pt
     font-weight: bold
-    space-before: 21pt
     space-after: 7pt
+    space-before: 21pt
     title-numbering: false
   h4:
     font-size: 12pt
@@ -151,28 +153,28 @@ style:
   link:
     color: $brand-color-links
   note:
+    attention:
+      background-color: $brand-color-note-background-attention
     background-color: $brand-color-note-background-info
     border: solid 1pt $brand-color-tertiary
+    caution:
+      background-color: $brand-color-note-background-caution
+    end-indent: '6pt + from-parent(end-indent)'
+    important:
+      background-color: $brand-color-note-background-attention
     keep-together.within-page: always
     label:
       font-family: $pdf2-font-sans
       space-end: 2pt
-    padding-start: 6pt
-    start-indent: '6pt + from-parent(start-indent)'
-    padding-end: 6pt
-    end-indent: '6pt + from-parent(end-indent)'
-    space-before: 6pt
-    space-after: 12pt
-    attention:
-      background-color: $brand-color-note-background-attention
-    caution:
-      background-color: $brand-color-note-background-caution
-    important:
-      background-color: $brand-color-note-background-attention
     notice:
       background-color: $brand-color-note-background-attention
+    padding-end: 6pt
+    padding-start: 6pt
     restriction:
       background-color: $brand-color-note-background-attention
+    space-after: 12pt
+    space-before: 6pt
+    start-indent: '6pt + from-parent(start-indent)'
     tip:
       background-color: $brand-color-note-background-tip
     warning:
@@ -209,17 +211,6 @@ style:
     header:
       background-color: $brand-color-inverse
   toc:
-    maximum-level: 4
-    part:
-      color: $brand-color-secondary
-      space-before: 1em
-    chapter:
-      color: $brand-color-primary
-      font-size: 12pt
-      start-indent: 45pt
-    appendix:
-      color: $brand-color-secondary
-      space-before: 1em
     1:
       color: $brand-color-primary
       font-family: $pdf2-font-sans
@@ -236,6 +227,17 @@ style:
       color: black
       space-before: 2pt
       start-indent: 160pt
+    appendix:
+      color: $brand-color-secondary
+      space-before: 1em
+    chapter:
+      color: $brand-color-primary
+      font-size: 12pt
+      start-indent: 45pt
+    maximum-level: 4
+    part:
+      color: $brand-color-secondary
+      space-before: 1em
   varname:
     color: $brand-color-secondary
     font-family: $pdf2-font-monospaced

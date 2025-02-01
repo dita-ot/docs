@@ -26,7 +26,7 @@ Chapter title.
 
 Chapter table of contents.
 
-- `maximum-level: number` — number of TOC levels to show
+- `maximum-level: <n>` — Number of TOC levels to show
 
 ### `chapter-toc-<n>`
 
@@ -42,7 +42,7 @@ Part title.
 
 Part table of contents.
 
-- `maximum-level: number` — number of TOC levels to show
+- `maximum-level: <n>` — Number of TOC levels to show
 
 ### `part-toc-chapter`
 
@@ -64,7 +64,7 @@ Appendix title.
 
 Appendix table of contents.
 
-- `maximum-level: number` — number of TOC levels to show
+- `maximum-level: <n>` — Number of TOC levels to show
 
 ### `appendix-toc-<n>`
 
@@ -227,7 +227,7 @@ Table header row
 
 Table of contents.
 
-- `maximum-level: number` — number of TOC levels to show
+- `maximum-level: <n>` — Number of TOC levels to show
 
 ### `toc-appendix`
 

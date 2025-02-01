@@ -14,13 +14,13 @@ Short description and abstract styles.
 
 Topic titles. `<n>` is a number ranging from 1 to 6, representing each of the six heading levels.
 
-- `title-numbering: boolean`
+- `title-numbering: 'true' | 'false'`
 
 ### `chapter`
 
 Chapter title.
 
-- `title-numbering: boolean`
+- `title-numbering: 'true' | 'false'`
 
 ### `chapter-toc`
 
@@ -36,7 +36,7 @@ TOC entry in chapter TOC. `<n>` is a number ranging from 1 to 6, representing ea
 
 Part title.
 
-- `title-numbering: boolean`
+- `title-numbering: 'true' | 'false'`
 
 ### `part-toc`
 
@@ -57,7 +57,7 @@ TOC entry in part TOC. `<n>` is a number ranging from 1 to 6, representing each 
 Appendix title.
 
 <!--
-- `title-numbering: boolean`
+- `title-numbering: 'true' | 'false'`
 -->
 
 ### `appendix-toc`
@@ -200,8 +200,8 @@ Preformatted element.
 
 Code block element.
 
-- `line-numbering: boolean` — Line numbering.
-- `show-whitespace: boolean` — Show whitespace characters.
+- `line-numbering: 'true' | 'false'` — Line numbering.
+- `show-whitespace: 'true' | 'false'` — Show whitespace characters.
 
 ### `table`
 
@@ -209,7 +209,7 @@ Table element.
 
 - `caption-number: 'chapter' | 'document'` — Number figures with chapter prefix or use whole document numbering.
 - `caption-position: 'before' | 'after'` — Place figure caption before or after figure.
-- `table-continued: boolean` — Output "table continued" when table breaks across pages.
+- `table-continued: 'true' | 'false'` — Output "table continued" when table breaks across pages.
 
 ### `table-caption`
 

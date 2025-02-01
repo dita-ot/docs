@@ -208,8 +208,9 @@
             <parmname>init</parmname>
             <varname>template</varname>
           </pt>
-          <pd>Initialize project. If <parmname>--output</parmname> parameter is not used to define output directory,
-            the project is generated into current directory.</pd>
+          <pd>Initialize a project with the folder hierarchy defined in the specified template. If the 
+              <parmname>--output</parmname> option is not used to define the output directory, the project is generated
+            in the current working directory.</pd>
         </plentry>
         <plentry>
           <pt>
@@ -217,7 +218,7 @@
             <parmname>--list</parmname>
           </pt>
           <pd>Show a list of the available project templates.</pd>
-          <pd>The entries in this list may be passed as argument to the <parmname>init</parmname> subcommand.</pd>
+          <pd>The entries in this list may be passed as arguments to the <parmname>init</parmname> subcommand.</pd>
         </plentry>
         <plentry>
           <pt>

@@ -227,17 +227,6 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>uninstall</parmname>
-            <varname>ID</varname>
-          </pt>
-          <pd>Remove the plug-in with the specified <varname>ID</varname>.</pd>
-          <pd>For a list of the currently installed plug-in IDs, use <cmdname>dita plugins</cmdname>.</pd>
-          <pd>
-            <note conkeyref="conref-task/plugin-remove-subdir"/>
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
             <parmname>plugins</parmname>
           </pt>
           <pd>Show a list of the currently installed plug-ins.</pd>
@@ -248,6 +237,17 @@
           </pt>
           <pd>Show a list of the available output formats (transformation types).</pd>
           <pd>The entries in this list may be passed as values to the <parmname>--format</parmname> argument.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>uninstall</parmname>
+            <varname>ID</varname>
+          </pt>
+          <pd>Remove the plug-in with the specified <varname>ID</varname>.</pd>
+          <pd>For a list of the currently installed plug-in IDs, use <cmdname>dita plugins</cmdname>.</pd>
+          <pd>
+            <note conkeyref="conref-task/plugin-remove-subdir"/>
+          </pd>
         </plentry>
         <plentry>
           <pt>

@@ -4,47 +4,26 @@
 <map xml:lang="en-US">
   <title>DITA Open Toolkit <keyword keyref="release"/></title>
 
-  <topicref keyref="landing-page"/>
-  <topicref keyref="release-notes">
-    <topicref keyref="release-history"/>
+  <topicref keyref="intro" linking="targetonly">
+    <mapref href="../topics/intro.ditamap"/>
   </topicref>
-  <topicref keyref="installing-client">
+  <topicref keyref="installing">
     <mapref href="../topics/installing.ditamap"/>
   </topicref>
-  <topicref keyref="building-output">
+  <topicref keyref="publishing">
     <mapref href="../topics/publishing.ditamap"/>
-  </topicref>
-  <topicref keyref="input-formats" collection-type="family">
-    <mapref href="../topics/input-formats.ditamap"/>
-  </topicref>
-  <topicref keyref="output-formats">
-    <mapref href="../topics/transformations.ditamap"/>
   </topicref>
   <topicref keyref="parameters">
     <mapref href="../parameters/parameters.ditamap"/>
   </topicref>
-  <topicref keyref="html-customization" collection-type="family">
-    <mapref href="../topics/html-customization.ditamap"/>
-  </topicref>
-  <topicref keyref="pdf-customization">
-    <mapref href="../topics/pdf-customization.ditamap"/>
-  </topicref>
-  <topicref keyref="adding-plugins">
+  <topicref keyref="extending">
     <mapref href="../topics/using-plugins.ditamap"/>
-  </topicref>
-  <topicref keyref="custom-plugins">
-    <mapref href="../topics/creating-plugins.ditamap"/>
   </topicref>
   <topicref keyref="troubleshooting-overview">
     <mapref href="../topics/troubleshooting.ditamap"/>
   </topicref>
   <topicref keyref="reference">
     <mapref href="../reference/reference.ditamap"/>
-  </topicref>
-  <topicref keyref="dita-and-dita-ot-resources">
-    <mapref href="../topics/dita-resources.ditamap" toc="no"/>
-    <mapref href="../topics/dita-ot-day-videos.ditamap"/>
-    <topicref keyref="books" toc="yes"/>
   </topicref>
 
   <topicgroup processing-role="resource-only">

@@ -8,12 +8,10 @@
   </topicmeta>
   <keydef keys="adding-new-languages" href="../topics/adding-new-languages.dita"/>
   <keydef keys="adding-new-strings" href="../topics/adding-new-strings.dita"/>
-  <keydef keys="adding-plugins" href="../topics/adding-plugins.dita"/>
   <keydef keys="ant" href="../topics/ant.dita"/>
   <keydef keys="ant-parameters-details" href="../parameters/ant-parameters-details.dita"/>
   <keydef keys="architecture" href="../reference/architecture.dita"/>
   <keydef keys="books" href="../reference/books.dita"/>
-  <keydef keys="building-output" href="../topics/building-output.dita"/>
   <keydef keys="building-with-ant" href="../topics/building-with-ant.dita"/>
   <keydef keys="common-html-processing" href="../reference/common-html-processing.dita"/>
   <keydef keys="configuration-properties" href="../parameters/configuration-properties.dita"/>
@@ -56,6 +54,7 @@
   <keydef keys="error-messages messages" href="../topics/error-messages.xml"/>
   <keydef keys="error-messages-details messages-push" href="../topics/error-messages-details.xml"/>
   <keydef keys="extended-functionality" href="../reference/extended-functionality.dita"/>
+  <keydef keys="extending" href="../topics/extending.dita"/>
   <keydef keys="extension-points-by-plugin" href="../extension-points/extension-points-by-plugin.dita"/>
   <keydef keys="extension-points-details" href="../extension-points/extension-points-details.dita"/>
   <keydef keys="flagging-migration" href="../reference/flagging-migration.dita"/>
@@ -80,11 +79,11 @@
   <keydef keys="implementation-dependent-features" href="../reference/implementation-dependent-features.dita"/>
   <keydef keys="increasing-the-jvm" href="../topics/increasing-the-jvm.dita"/>
   <keydef keys="input-formats" href="../topics/input-formats.dita"/>
-  <keydef keys="installing-client" href="../topics/installing-client.dita"/>
+  <keydef keys="installing" href="../topics/installing.dita"/>
   <keydef keys="installing-via-homebrew" href="../topics/installing-via-homebrew.dita"/>
   <keydef keys="internal-ant-properties" href="../parameters/internal-ant-properties.dita"/>
+  <keydef keys="intro" href="../index.dita"/>
   <keydef keys="java-api" href="../reference/java-api.dita"/>
-  <keydef keys="landing-page" href="../index.dita"/>
   <keydef keys="license" href="../reference/license.dita"/>
   <keydef keys="local-properties-file" href="../parameters/local-properties-file.dita"/>
   <keydef keys="logging" href="../topics/logging.dita"/>
@@ -194,6 +193,7 @@
   <keydef keys="project-files-json" href="../topics/project-files-json.dita"/>
   <keydef keys="project-files-xml" href="../topics/project-files-xml.dita"/>
   <keydef keys="project-files-yaml" href="../topics/project-files-yaml.dita"/>
+  <keydef keys="publishing" href="../topics/publishing.dita"/>
   <keydef keys="publishing-with-ant" href="../topics/publishing-with-ant.dita"/>
   <keydef keys="rebuilding-docs" href="../topics/rebuilding-docs.dita"/>
   <keydef keys="reducing-processing-time" href="../topics/reducing-processing-time.dita"/>

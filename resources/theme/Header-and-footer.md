@@ -2,22 +2,22 @@ The `content` key in `header` or `footer` can be used to add text to running hea
 
 The following variable fields are currently supported:
 
-- `title`: Map title
-- `chapter-or-part-or-appendix`: Map chapter, part, or appendix number and title
-- `chapter`: Map chapter number and title
-- `chapter-title`: Map chapter title
-- `chapter-number`: Map chapter number
-- `part`: Map part number and title
-- `part-title`: Map part title
-- `part-number`: Map part number
-- `appendix`: Map appendix number and title
-- `appendix-title`: Map appendix title
-- `appendix-number`: Map appendix number
-- `folio`: current page number
-- `folio-with-total`: current page number with total number of pages
-- `page-number`: current page number
-- `page-count`: total number of pages
-- `year`: current year
+- `{title}`: Map title
+- `{chapter-or-part-or-appendix}`: Map chapter, part, or appendix number and title
+- `{chapter}`: Map chapter number and title
+- `{chapter-title}`: Map chapter title
+- `{chapter-number}`: Map chapter number
+- `{part}`: Map part number and title
+- `{part-title}`: Map part title
+- `{part-number}`: Map part number
+- `{appendix}`: Map appendix number and title
+- `{appendix-title}`: Map appendix title
+- `{appendix-number}`: Map appendix number
+- `{folio}`: Current page number
+- `{folio-with-total}`: Current page number with total number of pages
+- `{page-number}`: Current page number
+- `{page-count}`: Total number of pages
+- `{year}`: Current year
 
 ```yaml
 header:

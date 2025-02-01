@@ -182,7 +182,7 @@ Window or dialog title element.
 
 Menu cascade element used to document a series of menu choices.
 
-- `separator-content: content-template` — Separator between uicontrol elements, defaults to `" > "`.
+- `separator-content: content-template` — Separator between **uicontrol** elements, defaults to “`>`”.
 
 ### `shortcut`
 

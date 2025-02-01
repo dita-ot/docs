@@ -73,6 +73,21 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
+            <kwd>init</kwd>
+            <var>template</var>
+            <groupcomp importance="optional">
+              <kwd>--output</kwd>
+              <oper>=</oper>
+              <var>dir</var>
+            </groupcomp>
+            <groupcomp importance="optional">
+              <var>options</var>
+            </groupcomp>
+          </groupseq>
+        </fragment>
+        <fragment>
+          <groupseq>
+            <kwd>dita</kwd>
             <kwd>install</kwd>
             <groupchoice importance="optional">
               <var>ID</var>
@@ -178,6 +193,7 @@
       <indexterm><parmname>--help</parmname></indexterm>
       <indexterm><parmname>-h</parmname></indexterm>
       <indexterm><cmdname>version</cmdname> subcommand</indexterm>
+      <indexterm><cmdname>init</cmdname> subcommand</indexterm>
       <indexterm><parmname>--version</parmname>
         <index-see><cmdname>version</cmdname> subcommand</index-see></indexterm>
       <parml>
@@ -186,6 +202,23 @@
             <parmname>deliverables</parmname>
             <varname>file</varname></pt>
           <pd>Show a list of the available deliverables in the specified project <varname>file</varname>.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>init</parmname>
+            <varname>template</varname>
+          </pt>
+          <pd>Initialize a project with the folder hierarchy defined in the specified template. If the 
+              <parmname>--output</parmname> option is not used to define the output directory, the project is generated
+            in the current working directory.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>init</parmname>
+            <parmname>--list</parmname>
+          </pt>
+          <pd>Show a list of the available project templates.</pd>
+          <pd>The entries in this list may be passed as arguments to the <parmname>init</parmname> subcommand.</pd>
         </plentry>
         <plentry>
           <pt>

@@ -14,19 +14,19 @@ Short description and abstract styles.
 
 Topic titles. `<n>` is a number ranging from 1 to 6, representing each of the six heading levels.
 
-- `title-numbering = boolean`
+- `title-numbering: boolean`
 
 ### `chapter`
 
 Chapter title.
 
-- `title-numbering = boolean`
+- `title-numbering: boolean`
 
 ### `chapter-toc`
 
 Chapter table of contents.
 
-- `maximum-level = number` — number of TOC levels to show
+- `maximum-level: number` — number of TOC levels to show
 
 ### `chapter-toc-<n>`
 
@@ -36,13 +36,13 @@ TOC entry in chapter TOC. `<n>` is a number ranging from 1 to 6, representing ea
 
 Part title.
 
-- `title-numbering = boolean`
+- `title-numbering: boolean`
 
 ### `part-toc`
 
 Part table of contents.
 
-- `maximum-level = number` — number of TOC levels to show
+- `maximum-level: number` — number of TOC levels to show
 
 ### `part-toc-chapter`
 
@@ -57,14 +57,14 @@ TOC entry in part TOC. `<n>` is a number ranging from 1 to 6, representing each 
 Appendix title.
 
 <!--
-- `title-numbering = boolean`
+- `title-numbering: boolean`
 -->
 
 ### `appendix-toc`
 
 Appendix table of contents.
 
-- `maximum-level = number` — number of TOC levels to show
+- `maximum-level: number` — number of TOC levels to show
 
 ### `appendix-toc-<n>`
 
@@ -78,7 +78,7 @@ Cover page.
 
 Cover page title.
 
-- `content = content-template`
+- `content: content-template`
 
 ### `cover-titlealt`
 
@@ -104,8 +104,8 @@ Example element title.
 
 Figure element.
 
-- `caption-number = 'chapter' | 'document'` — Number figures with chapter prefix or use whole document numbering.
-- `caption-position = 'before' | 'after'` — Place figure caption before or after figure.
+- `caption-number: 'chapter' | 'document'` — Number figures with chapter prefix or use whole document numbering.
+- `caption-position: 'before' | 'after'` — Place figure caption before or after figure.
 
 ### `fig-caption`
 
@@ -166,7 +166,7 @@ Label for note elements with `@type`.
 
 Definition list element.
 
-- `dl-type = 'table' | 'list' | 'html'` — Style definition list as bulleted list or indented list.
+- `dl-type: 'table' | 'list' | 'html'` — Style definition list as bulleted list or indented list.
 
 ### `ol`
 
@@ -200,22 +200,22 @@ Preformatted element.
 
 Code block element.
 
-- `line-numbering = boolean` — Line numbering.
-- `show-whitespace = boolean` — Show whitespace characters.
+- `line-numbering: boolean` — Line numbering.
+- `show-whitespace: boolean` — Show whitespace characters.
 
 ### `table`
 
 Table element.
 
-- `caption-number = 'chapter' | 'document'` — Number figures with chapter prefix or use whole document numbering.
-- `caption-position = 'before' | 'after'` — Place figure caption before or after figure.
-- `table-continued = boolean` — Output "table continued" when table breaks across pages.
+- `caption-number: 'chapter' | 'document'` — Number figures with chapter prefix or use whole document numbering.
+- `caption-position: 'before' | 'after'` — Place figure caption before or after figure.
+- `table-continued: boolean` — Output "table continued" when table breaks across pages.
 
 ### `table-caption`
 
 Table caption.
 
-- `content = content-template` — Contents of table caption. Supported fields are:
+- `content: content-template` — Contents of table caption. Supported fields are:
   - `number`: caption number
   - `title`: caption contents
 
@@ -227,7 +227,7 @@ Table header row
 
 Table of contents.
 
-- `maximum-level = number` — number of TOC levels to show
+- `maximum-level: number` — number of TOC levels to show
 
 ### `toc-appendix`
 
@@ -261,7 +261,7 @@ Label for hazard statement elements with `@type`.
 
 Themes support XSL-FO extension properties implemented by XSL formatters:
 
-- `background-size = [ <length> | <percentage> | auto ]{1,2}` — Size of background image.
+- `background-size: [ <length> | <percentage> | auto ]{1,2}` — Size of background image.
 
 [XSL fo:block]: https://www.w3.org/TR/xsl11/#fo_block
 [XSL extensions]: #xsl-fo-extension-properties

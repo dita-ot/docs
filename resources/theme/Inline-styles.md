@@ -6,9 +6,9 @@ The presentation of inline elements can be adjusted by setting `style` keys. Inl
 
 Link elements.
 
-- `link-url = 'true' | 'false'` — Output URL for external links after explicitly defined link text. Defaults to `false`.
-- `link-page-number = 'true' | 'false'` — Generate page number reference after link text. Defaults to `true`.
-- `content = content-template` — Link text template. Supported fields are:
+- `link-url: 'true' | 'false'` — Output URL for external links after explicitly defined link text. Defaults to `false`.
+- `link-page-number: 'true' | 'false'` — Generate page number reference after link text. Defaults to `true`.
+- `content: content-template` — Link text template. Supported fields are:
   - `link-text`: link text
   - `pagenum`: page number reference
 
@@ -16,7 +16,7 @@ Link elements.
 
 External link elements.
 
-- `content = content-template` — Link text template. Supported fields are:
+- `content: content-template` — Link text template. Supported fields are:
   - `link-text`: link text
   - `url`: link URL
 
@@ -24,7 +24,7 @@ External link elements.
 
 Trademark element.
 
-- `symbol-scope = 'always' | 'chapter' | 'never'` — Output trademark symbol always, once per chapter, or never.
+- `symbol-scope: 'always' | 'chapter' | 'never'` — Output trademark symbol always, once per chapter, or never.
 
 ### `keyword`
 
@@ -182,7 +182,7 @@ Window or dialog title element.
 
 Menu cascade element used to document a series of menu choices.
 
-- `separator-content = content-template` — Separator between uicontrol elements, defaults to `" > "`.
+- `separator-content: content-template` — Separator between uicontrol elements, defaults to `" > "`.
 
 ### `shortcut`
 
@@ -228,7 +228,7 @@ XML processing instruction element.
 
 Themes support XSL-FO extension properties implemented by XSL formatters:
 
-- `background-size = [ <length> | <percentage> | auto ]{1,2}` — Size of background image.
+- `background-size: [ <length> | <percentage> | auto ]{1,2}` — Size of background image.
 
 [XSL fo:inline]: https://www.w3.org/TR/xsl11/#fo_inline
 [XSL fo:block]: https://www.w3.org/TR/xsl11/#fo_block

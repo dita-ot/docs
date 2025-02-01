@@ -3,6 +3,7 @@ The `content` key in `header` or `footer` can be used to add text to running hea
 The following variable fields are currently supported:
 
 - `title`: Map title
+- `chapter-or-part-or-appendix`: Map chapter, part, or appendix number and title
 - `chapter`: Map chapter number and title
 - `chapter-title`: Map chapter title
 - `chapter-number`: Map chapter number

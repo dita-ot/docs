@@ -103,6 +103,18 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
+            <kwd>validate</kwd>
+            <kwd>--input</kwd>
+            <oper>=</oper>
+            <var>file</var>
+            <groupcomp importance="optional">
+              <var>options</var>
+            </groupcomp>
+          </groupseq>
+        </fragment>
+        <fragment>
+          <groupseq>
+            <kwd>dita</kwd>
             <kwd>version</kwd>
           </groupseq>
         </fragment>
@@ -177,6 +189,7 @@
         <index-see><cmdname>transtypes</cmdname> subcommand</index-see></indexterm>
       <indexterm><parmname>--help</parmname></indexterm>
       <indexterm><parmname>-h</parmname></indexterm>
+      <indexterm><cmdname>validate</cmdname> subcommand</indexterm>
       <indexterm><cmdname>version</cmdname> subcommand</indexterm>
       <indexterm><parmname>--version</parmname>
         <index-see><cmdname>version</cmdname> subcommand</index-see></indexterm>
@@ -235,6 +248,12 @@
           </pt>
           <pd>Show a list of the available output formats (transformation types).</pd>
           <pd>The entries in this list may be passed as values to the <parmname>--format</parmname> argument.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>validate</parmname>
+          </pt>
+          <pd>Validate input file. No output is generated.</pd>
         </plentry>
         <plentry>
           <pt>

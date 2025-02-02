@@ -69,7 +69,7 @@ header:
 
 ## Topic titles
 
-Style keys `h1`, `h2`, `h3`, and `h4` are desugared to `topic`, `topic-topic`, `topic-topic-topic`, and `topic-topic-topic-topic`, respectively.
+Style keys `h1`, `h2`, `h3`, `h4`, `h5`, and `h6` are desugared to `topic`, `topic-topic`, `topic-topic-topic`, `topic-topic-topic-topic`, `topic-topic-topic-topic-topic`, and `topic-topic-topic-topic-topic-topic`, respectively.
 
 ```yaml
 style:

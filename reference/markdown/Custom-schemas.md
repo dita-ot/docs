@@ -96,6 +96,7 @@ The following configuration options can be specified in custom schemas:
 | Static Field                    | Default | Description                                                                             |
 | ------------------------------- | ------- | --------------------------------------------------------------------------------------- |
 | `DitaRenderer.FIX_ROOT_HEADING` | `false` | If root heading is missing, generate based on `title` key from YAML header or filename. |
+| `DitaRenderer.RAW_DITA`         | `true`  | Support raw DITA in Markdown.                                                           |
 
 ## Conversion to DITA
 

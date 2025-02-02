@@ -30,6 +30,7 @@ The following table provides an overview of differences between the `markdown` a
 | Maps: reltables              | MultiMarkdown tables with links      | –                           |
 | Key references in topics     | ✔ Shortcut reference links          | ✔ Shortcut reference links |
 | List spacing                 | [loose] or [tight] (no blank lines)  | [loose] only (¶ per item)   |
+| Raw DITA                     | ✔                                   | -                           |
 
 [Markdown]: https://daringfireball.net/projects/markdown/
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/

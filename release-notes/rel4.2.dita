@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-<reference id="ID" rev="4.1">
-  <title>DITA Open Toolkit <keyword keyref="release"/> Release Notes</title>
+<reference id="ID" rev="4.2">
+  <title>DITA Open Toolkit 4.2 Release Notes</title>
   <titlealts>
     <navtitle>Release Notes</navtitle>
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
-      reported in DITA-OT <keyword keyref="release"/>, which <ph conref="#v4.2/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit 4.2.4 is a maintenance release that fixes issues
+      reported in DITA-OT 4.2, which <ph conref="#v4.2/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -27,12 +27,12 @@
   </reference>
 
   <reference id="v4.2.4" outputclass="mark">
-    <title>DITA-OT <keyword keyref="maintenance-version"/>
+    <title>DITA-OT 4.2.4
       <ph outputclass="small text-muted">released December 15, 2024</ph>
     </title>
     <refbody>
       <section id="bugs">
-        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+        <p>DITA Open Toolkit 4.2.4 is a maintenance release that includes the
           following bug fixes.</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2.4+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
@@ -197,7 +197,7 @@
   </reference>
 
   <reference id="v4.2">
-    <title>DITA-OT <keyword keyref="release"/>
+    <title>DITA-OT 4.2
       <ph outputclass="small text-muted"> released February 11, 2024</ph>
     </title>
     <prolog>
@@ -211,7 +211,7 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/>
+        <p>DITA Open Toolkit Release 4.2
           <ph id="summary">uses map-first pre-processing for HTML5 output and includes a new local configuration file,
             better CLI messages with support for overrides, a new version of the Lightweight DITA plug-in with
             enhancements to Markdown processing, and updates for the latest DITA 2.0 draft standard</ph>.</p>
@@ -320,7 +320,7 @@
       <section id="enhancements">
         <title>Enhancements and changes</title>
         <indexterm/>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
+        <p>DITA Open Toolkit Release 4.2 includes the following enhancements and changes to
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
@@ -446,7 +446,7 @@
       <section id="bugs">
         <title>Bug fixes</title>
         <indexterm/>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
+        <p>DITA Open Toolkit Release 4.2 provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.2+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <li id="4244">For cross-references to a topic, the target topic’s short description is processed to create a
@@ -517,7 +517,7 @@
 
       <section id="contrib">
         <title>Contributors</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+        <p>DITA Open Toolkit Release 4.2 includes
           <xref keyref="contributions"/> by the following people:</p>
         <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 4.1..` -->
         <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
@@ -539,7 +539,7 @@
 
       <section id="docs">
         <title>Documentation updates</title>
-        <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
+        <p>The documentation for DITA Open Toolkit Release 4.2 provides corrections and
           improvements to existing topics, along with new information in the following topics:</p>
         <ul>
           <li>
@@ -556,8 +556,8 @@
             href="https://github.com/dita-ot/docs/issues?q=milestone%3A4.2+is%3Aclosed"
             format="html"
             scope="external"
-          ><keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+          >4.2 milestone</xref> in the documentation repository.</p>
+        <p>DITA Open Toolkit Release 4.2 includes
           <xref keyref="docs-contributions"/> by the following people:</p>
         <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>
         <ol>

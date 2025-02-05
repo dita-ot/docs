@@ -114,6 +114,33 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
+          <li id="4001">Lazy loading for external images
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4001" format="html" scope="external">#4001</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4005" format="html" scope="external">#4005</xref>
+          </li>
+          <li id="4396">Move warning about not using validation to Ant
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4396" format="html" scope="external">#4396</xref>
+          </li>
+          <li id="4404">Add Javadoc for map-first preprocessing
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4404" format="html" scope="external">#4404</xref>
+          </li>
+          <li id="4407">Refactor Java
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4407" format="html" scope="external">#4407</xref>
+          </li>
+          <li id="4441">Clean plug-in parser
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4441" format="html" scope="external">#4441</xref>
+          </li>
+          <li id="4442">Refactor integration
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4442" format="html" scope="external">#4442</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4498" format="html" scope="external">#4498</xref>
+          </li>
+          <li id="4444">Use less Guava
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4444" format="html" scope="external">#4444</xref>
+          </li>
+          <li id="4542">Protect against billion laughs attack
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4542" format="html" scope="external">#4542</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4556" format="html" scope="external">#4556</xref>
+          </li>
           <li>The following bundled plug-ins have been upgraded to the latest versions:
             <!--
             <ul>
@@ -138,7 +165,12 @@
           </li>
           <li>Several bundled dependencies have been upgraded to the latest versions:
             <ul>
-              <li/>
+              <li id="4519"><keyword keyref="tool.fop.tm"/>
+                <keyword keyref="tool.fop.version"/>
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4519" format="html" scope="external">#4519</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4565" format="html" scope="external">#4565</xref>
+              </li>
+              
             </ul>
           </li>
         </ul>

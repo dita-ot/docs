@@ -272,6 +272,8 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
 </map>
 ```
 
+Note that unlike in XML DITA, Markdown doesn't support defining keys in topic references.
+
 ## Relationship tables
 
 Relationship tables are tables with links inside cells.
@@ -306,6 +308,97 @@ $schema: urn:oasis:names:tc:dita:xsd:map.xsd
   </reltable>
 </map>
 ```
+
+## HTML
+
+Raw HTML blocks are supported with some limitations.
+
+```markdown
+<figure>
+  <img src="image1.png">
+  <img src="image2.png">
+</figure>
+```
+
+```xml
+<fig>
+  <image href="image1.png"/>
+  <image href="image2.png"/>
+</fig>
+```
+
+HTML elements are converted to the equivalent DITA elements.
+
+The current implementation has several limitations:
+
+1. All open tags must be closed in the same block.
+
+   If the tags are not opened in the same block, the output will not be as expected. (Close any open block tags before adding empty lines.)
+
+   ```markdown
+   <figure>
+     <img src="image1.png">
+
+   Interlaced Markdown.
+
+     <img src="image2.png">
+   </figure>
+   ```
+
+   ```xml
+   <fig>
+     <image href="image1.png"/>
+   </fig>
+   <p>Interlaced Markdown.</p>
+   <image href="image2.png"/>
+   ```
+
+## DITA
+
+Raw DITA blocks are supported with some limitations.
+
+```markdown
+<sl>
+  <sli>
+    Simple list item
+  </sli>
+</sl>
+```
+
+```xml
+<sl>
+  <sli>
+    Simple list item
+  </sli>
+</sl>
+```
+
+The current implementation has several limitations:
+
+1. All open tags must be closed in the same DITA block.
+
+   If the tags are not opened in the same block, the output will not be as expected. (Close any open block tags before adding empty lines.)
+
+   ```markdown
+   <sl>
+     <sli>
+
+   Simple list item
+
+     </sli>
+   </sl>
+   ```
+
+   ```xml
+   <sl>
+     <sli></sli>
+   </sl>
+   <p>Simple list item</p>
+   ```
+
+2. DITA tables are not supported because of the tag name conflict with HTML.
+
+   (Use the [MultiMarkdown] table extension format, or HTML tables instead.)
 
 [Markdown]: https://daringfireball.net/projects/markdown/
 [CommonMark]: https://commonmark.org/ 'CommonMark'

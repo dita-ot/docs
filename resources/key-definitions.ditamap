@@ -16,7 +16,7 @@
   <keydef keys="release">
     <topicmeta>
       <keywords>
-        <keyword>4.2</keyword>
+        <keyword>4.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -26,7 +26,7 @@
   <keydef keys="maintenance-version">
     <topicmeta>
       <keywords>
-        <keyword>4.2.4</keyword>
+        <keyword>4.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -137,11 +137,19 @@
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- FOP: Trademark reference -->
+  <keydef keys="tool.fop.tm">
+    <topicmeta>
+      <keywords>
+        <keyword><tm trademark="Apache" tmtype="tm">Apache</tm> FOP</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
   <!-- FOP: Bundled version -->
   <keydef keys="tool.fop.version">
     <topicmeta>
       <keywords>
-        <keyword>2.9</keyword>
+        <keyword>2.10</keyword>
       </keywords>
     </topicmeta>
   </keydef>

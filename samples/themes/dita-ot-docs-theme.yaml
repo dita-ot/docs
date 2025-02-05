@@ -88,7 +88,9 @@ style:
   chapter:
     border-after: solid 2pt $brand-color-inverse
     toc:
-      maximum-level: 3
+      1:
+        start-indent: 50pt
+      maximum-level: 1
   cmdname:
     color: $brand-color-primary
     font-weight: bold

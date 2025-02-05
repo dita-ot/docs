@@ -152,6 +152,10 @@ style:
     font-style: italic
     space-before: 12pt
     title-numbering: false
+  index:
+    border-after: solid 2pt $brand-color-inverse
+    color: $brand-color-primary
+    font-family: $pdf2-font-sans
   li:
     label:
       color: $brand-color-secondary

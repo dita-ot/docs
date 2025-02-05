@@ -182,7 +182,13 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <li/>
+          <li id="4354">Installing plugin from directory with '@' character results in error
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4354" format="html" scope="external">#4354</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4558" format="html" scope="external">#4558</xref>
+          </li>
+          <li id="4377">In preprocess2, DOTJ037W shows up twice when validate is set to false
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4377" format="html" scope="external">#4377</xref>
+          </li>
         </ul>
       </section>
 

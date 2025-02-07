@@ -2,13 +2,15 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <task id="migrating-ant-to-dita">
-  <title>Migrating Ant builds to use the <cmdname>dita</cmdname> command</title>
+  <title>Migrating Ant builds to the <cmdname>dita</cmdname> command</title>
   <titlealts>
     <navtitle>Migrating Ant builds</navtitle>
   </titlealts>
-  <shortdesc>Although DITA Open Toolkit still supports Ant builds, switching to the <cmdname>dita</cmdname> command
-    offers a simpler command interface, sets all required environment variables and allows you to run DITA-OT without
-    setting up anything beforehand.</shortdesc>
+  <shortdesc>
+    <ph id="ant-caveat">DITA-OT still supports Ant builds, but
+      <xref keyref="build-using-dita-command">the <cmdname>dita</cmdname> command</xref> offers a simpler command
+      interface, sets all required environment variables, and allows you to run DITA-OT without setting up anything
+      beforehand.</ph></shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -28,7 +30,10 @@
   <taskbody>
     <context>
       <p>Building output with the <cmdname>dita</cmdname> command is often easier than using Ant. In particular, you can
-        use <filepath>.properties</filepath> files to specify sets of DITA-OT parameters for each build.</p>
+        use
+        <xref keyref="using-dita-properties-file"><filepath>.properties</filepath> files</xref> to specify sets of
+        parameters for each build, or create a
+        <xref keyref="using-project-files">project file</xref> that defines multiple deliverables at once.</p>
       <p>You can include the <cmdname>dita</cmdname> command in shell scripts to perform multiple builds.</p>
       <note type="tip">Add the absolute path for the <filepath>bin</filepath> folder of the DITA-OT installation
         directory to the

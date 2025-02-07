@@ -38,9 +38,10 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">a new version of the
-            Lightweight DITA plug-in with significant enhancements to Markdown processing, and updates for the latest
-            DITA 2.0 draft standard</ph>.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes 
+          <ph id="summary">support for publishing multiple formats on the command line, a new version of the Lightweight
+            DITA plug-in with significant enhancements to Markdown processing, and updates for the latest DITA 2.0 draft
+            standard</ph>.</p>
       </section>
       <section>
         <title>New features</title>
@@ -53,8 +54,25 @@
           <li id="4408">Add message for generic parsing exceptions
             <xref href="https://github.com/dita-ot/dita-ot/issues/4408" format="html" scope="external">#4408</xref>
           </li>
-          <li id="4486">Multiple format in CLI
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4486" format="html" scope="external">#4486</xref>
+          <li id="4486">
+            <p>You can now publish multiple formats at once from a single <cmdname>dita</cmdname> command sequence.
+              <xref
+                href="https://github.com/dita-ot/dita-ot/issues/4486"
+                format="html"
+                scope="external"
+              >#4486</xref></p>
+            <p>To produce several output formats from a single build, pass the <parmname>--format</parmname> option for
+              each transformation, or use the <parmname>-f</parmname> shorthand. For example:
+              <codeblock outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname
+                >-i</parmname> sample.ditamap <parmname>-f</parmname> html5 <parmname>-f</parmname> pdf</codeblock>
+              The result will be the same as if you had issued separate commands for each format:
+              <codeblock outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname
+                >--input</parmname>=sample.ditamap <parmname>--format</parmname>=html5
+<filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=sample.ditamap <parmname
+                >--format</parmname>=pdf</codeblock>
+            </p>
+            <p>This can be used as a simple alternative to a DITA-OT
+              <xref keyref="using-project-files">project file</xref> that defines multiple deliverables.</p>
           </li>
           <li id="4509">Add init subcommand
             <xref href="https://github.com/dita-ot/dita-ot/issues/4509" format="html" scope="external">#4509</xref>,

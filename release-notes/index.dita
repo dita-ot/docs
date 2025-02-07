@@ -39,7 +39,8 @@
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes 
-          <ph id="summary">support for publishing multiple formats on the command line, a new version of the Lightweight
+          <ph id="summary">a new <cmdname
+            >validate</cmdname> subcommand, support for publishing multiple formats on the command line, a new version of the Lightweight
             DITA plug-in with significant enhancements to Markdown processing, and updates for the latest DITA 2.0 draft
             standard</ph>.</p>
       </section>
@@ -47,10 +48,15 @@
         <title>New features</title>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3%20is%3Aclosed%20label%3Afeature%20sort%3Acreated-asc -->
         <ul>
-          <li id="4397">Add validate subcommand
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4397" format="html" scope="external">#4397</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4400" format="html" scope="external">#4400</xref>
-          </li>
+          <li id="4397">
+            <p>A new <cmdname>validate</cmdname> subcommand can be used to check input files for errors before
+              publishing.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/4397" format="html" scope="external">#4397</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/4400" format="html" scope="external">#4400</xref>
+            </p>
+            <p>This command runs the pre-processing routines in strict mode and reports any errors or warnings. You can
+              use this in continuous integration scenarios to quickly check contributions for errors without building
+              output.</p></li>
           <li id="4408">
             <p>A new error message makes it easier to identify XML parsing exceptions in the log.
               <xref href="https://github.com/dita-ot/dita-ot/issues/4408" format="html" scope="external">#4408</xref>

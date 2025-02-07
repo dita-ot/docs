@@ -51,9 +51,14 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4397" format="html" scope="external">#4397</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4400" format="html" scope="external">#4400</xref>
           </li>
-          <li id="4408">Add message for generic parsing exceptions
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4408" format="html" scope="external">#4408</xref>
-          </li>
+          <li id="4408">
+            <p>A new error message makes it easier to identify XML parsing exceptions in the log.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/4408" format="html" scope="external">#4408</xref>
+            </p>
+            <p>The <msgnum>DOTJ088E</msgnum> error appears when the input is in some way invalid but can still be
+              parsed. The message content begins with “<msgph>XML parsing error:</msgph>” and provides additional
+              context from the parser in the <xmlelement>reason</xmlelement>. As with other error messages, custom
+              plug-ins may override the message content or severity. </p></li>
           <li id="4486">
             <p>You can now publish multiple formats at once from a single <cmdname>dita</cmdname> command sequence.
               <xref

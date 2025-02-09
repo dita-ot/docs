@@ -228,24 +228,25 @@ style:
       background-color: $brand-color-inverse
   toc:
     1:
-      color: $brand-color-primary
+      color: black
       font-family: $pdf2-font-sans
-      start-indent: 45pt
+      space-before: 2pt
+      start-indent: 112pt
     2:
       color: black
       font-family: $pdf2-font-sans
-      space-before: 4pt
-      start-indent: 112pt
+      space-before: 2pt
+      start-indent: 130pt
     3:
       color: black
       font-family: $pdf2-font-sans
       space-before: 2pt
-      start-indent: 140pt
+      start-indent: 148pt
     4:
       color: black
       font-family: $pdf2-font-sans
       space-before: 2pt
-      start-indent: 160pt
+      start-indent: 166pt
     appendix:
       color: $brand-color-secondary
       font-family: $pdf2-font-sans
@@ -256,7 +257,7 @@ style:
       font-weight: bold
       font-size: 12pt
       start-indent: 45pt
-    maximum-level: 4
+    maximum-level: 3
     part:
       color: $brand-color-secondary
       font-family: $pdf2-font-sans

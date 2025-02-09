@@ -90,6 +90,8 @@ style:
     toc:
       1:
         start-indent: 50pt
+      3:
+        color: $brand-color-links
       maximum-level: 1
   cmdname:
     color: $brand-color-primary
@@ -201,6 +203,8 @@ style:
     toc:
       1:
         start-indent: 50pt
+      chapter:
+        color: $brand-color-links
       maximum-level: 1
       space-before: 2em
   section-title:

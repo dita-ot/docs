@@ -92,6 +92,7 @@ style:
         start-indent: 50pt
       3:
         color: $brand-color-links
+        font-size: 12pt
       maximum-level: 1
   cmdname:
     color: $brand-color-primary
@@ -205,13 +206,15 @@ style:
         start-indent: 50pt
       chapter:
         color: $brand-color-links
+        font-size: 12pt
+        space-before: 0
       maximum-level: 1
       space-before: 2em
   section-title:
     color: $brand-color-secondary
   shortdesc:
     color: $brand-color-secondary
-    font-size: 13pt
+    font-size: 12pt
     line-height: 1.3
   table:
     caption:

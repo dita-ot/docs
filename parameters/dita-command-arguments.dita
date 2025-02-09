@@ -221,9 +221,12 @@
             <parmname>init</parmname>
             <varname>template</varname>
           </pt>
-          <pd>Initialize a project with the folder hierarchy defined in the specified template. If the 
-              <parmname>--output</parmname> option is not used to define the output directory, the project is generated
-            in the current working directory.</pd>
+          <pd>Initialize a project with files from the specified template.</pd>
+          <pd>
+            <ph id="init-desc">The folder hierarchy in the template will be copied to the current working directory by
+              default. To write the files to a different location, add the <parmname>--output</parmname> option and
+              specify the desired path. The directory will be created if it doesn’t exist. If any of the template files
+              are already present, an error will appear.</ph></pd>
         </plentry>
         <plentry>
           <pt>

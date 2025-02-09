@@ -39,10 +39,10 @@
     <refbody>
       <section>
         <p>DITA Open Toolkit Release <keyword keyref="release"/> includes 
-          <ph id="summary">a new <cmdname
-            >validate</cmdname> subcommand, support for publishing multiple formats on the command line, a new version of the Lightweight
-            DITA plug-in with significant enhancements to Markdown processing, and updates for the latest DITA 2.0 draft
-            standard</ph>.</p>
+          <ph id="summary">new <cmdname>init</cmdname> and <cmdname>validate</cmdname> subcommands that can be used to
+            set up projects from a template and check files for errors before publishing. You can now publish multiple
+            formats on the command line at once, and a new message makes it easier to identify any XML parsing
+            errors</ph>.</p>
       </section>
       <section>
         <title>New features</title>
@@ -85,9 +85,31 @@
             <p>This can be used as a simple alternative to a DITA-OT
               <xref keyref="using-project-files">project file</xref> that defines multiple deliverables.</p>
           </li>
-          <li id="4509">Add init subcommand
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4509" format="html" scope="external">#4509</xref>,
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4523" format="html" scope="external">#4523</xref>
+          <li id="4509">
+            <p><b outputclass="badge badge-primary">Preview</b> The new <cmdname>init</cmdname> subcommand initializes a
+              project with files from a template.
+              <xref href="https://github.com/dita-ot/dita-ot/issues/4509" format="html" scope="external">#4509</xref>,
+              <xref href="https://github.com/dita-ot/dita-ot/issues/4523" format="html" scope="external">#4523</xref>
+            </p>
+            <p>The initial implementation is a preview feature designed to illustrate how project templates work. You
+              can use them as a starting point for new publications with required metadata, media assets, or custom
+              stylesheets, or provide examples of your organization’s preferred markup.</p>
+            <ul>
+              <li>For a list of available templates, run <filepath conkeyref="conref-task/dita-cmd"/>
+                <cmdname>init</cmdname>
+                <parmname>--list</parmname></li>
+              <li>To add files from a template to the current working directory, run <filepath
+                  conkeyref="conref-task/dita-cmd"
+                />
+                <cmdname>init</cmdname>
+                <varname>template</varname></li>
+            </ul>
+            <p><ph conkeyref="dita-command-arguments/init-desc"/></p>
+            <note type="tip">Sample project templates are provided in the
+              <xref href="https://github.com/dita-ot/org.dita.init" format="html" scope="external">new
+                  <codeph>org.dita.init</codeph> plug-in</xref>. If you have a common project structure that would be
+              useful beyond your organization, you can contribute new templates to future DITA-OT versions, or create a
+              custom plug-in with company-specific project templates.</note>
           </li>
         </ul>
       </section>

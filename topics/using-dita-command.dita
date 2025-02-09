@@ -3,8 +3,9 @@
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <task id="using-command-line-tool">
   <title>Building output using the <cmdname>dita</cmdname> command</title>
-  <shortdesc>You can generate output using the <cmdname>dita</cmdname> command-line tool. Build parameters can be
-    specified on the command line or with <filepath>.properties</filepath> files.</shortdesc>
+  <shortdesc>You can publish output using the <cmdname>dita</cmdname> command-line tool. Build parameters can be
+    specified on the command line, with <filepath>.properties</filepath> files, or in project files that define multiple
+    deliverables.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -88,7 +89,7 @@
     <postreq>
       <p audience="novice">Most builds require you to specify more options than are described in this topic.</p>
       <p audience="expert">Usually, you will want to specify a set of reusable build parameters in a
-          <filepath>.properties</filepath> file.</p>
+          <filepath>.properties</filepath> file, or or create a project file that defines multiple deliverables.</p>
     </postreq>
   </taskbody>
 </task>

@@ -49,6 +49,14 @@
 
   <!--VERSION NUMBERS: OTHER APPLICATIONS-->
 
+  <!-- Ant: Trademark reference -->
+  <keydef keys="tool.ant.tm">
+    <topicmeta>
+      <keywords>
+        <keyword><tm trademark="Apache Ant" tmtype="tm">Apache Ant</tm></keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
   <!-- Ant: Bundled version -->
   <keydef keys="tool.ant.version">
     <topicmeta>

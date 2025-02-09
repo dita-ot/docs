@@ -2,10 +2,13 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <concept id="ant">
-  <title>Ant</title>
-  <shortdesc>Ant is a Java-based, open-source tool that is provided by the Apache Foundation. It can be used to declare
-    a sequence of build actions. It is well suited for both development and document builds. The toolkit ships with a
-    copy of Ant.</shortdesc>
+  <title><keyword keyref="tool.ant.tm"/></title>
+  <shortdesc>
+    <keyword
+      keyref="tool.ant.tm"
+    /> is a Java-based, open-source build tool provided by the Apache Foundation. It can be used
+    to declare a sequence of build actions. It is well suited for both development and document builds. The toolkit
+    ships with a copy of Ant.</shortdesc>
   <prolog>
     <metadata>
       <keywords>

@@ -6,7 +6,7 @@
   <titlealts>
     <navtitle>Using Ant</navtitle>
   </titlealts>
-  <shortdesc>You can use Ant to invoke DITA Open Toolkit and generate output. You can use the complete set of parameters
+  <shortdesc>You can use Ant to run DITA Open Toolkit and generate output. You can use the complete set of parameters
     that the toolkit supports.</shortdesc>
   <prolog>
     <metadata>
@@ -16,4 +16,9 @@
       </keywords>
     </metadata>
   </prolog>
+  <taskbody>
+    <context>
+      <note><ph conkeyref="migrating-ant-to-dita/ant-caveat"/></note>
+    </context>
+  </taskbody>
 </task>

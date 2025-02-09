@@ -226,26 +226,34 @@ style:
       start-indent: 45pt
     2:
       color: black
+      font-family: $pdf2-font-sans
       space-before: 4pt
       start-indent: 112pt
     3:
       color: black
+      font-family: $pdf2-font-sans
       space-before: 2pt
       start-indent: 140pt
     4:
       color: black
+      font-family: $pdf2-font-sans
       space-before: 2pt
       start-indent: 160pt
     appendix:
       color: $brand-color-secondary
+      font-family: $pdf2-font-sans
       space-before: 1em
     chapter:
       color: $brand-color-primary
+      font-family: $pdf2-font-sans
+      font-weight: bold
       font-size: 12pt
       start-indent: 45pt
     maximum-level: 4
     part:
       color: $brand-color-secondary
+      font-family: $pdf2-font-sans
+      font-size: 14pt
       space-before: 1em
   varname:
     color: $brand-color-secondary

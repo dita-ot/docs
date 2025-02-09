@@ -262,6 +262,7 @@ style:
       color: $brand-color-secondary
       font-family: $pdf2-font-sans
       font-size: 14pt
+      keep-with-next.within-page: always
       space-before: 1.5em
   varname:
     color: $brand-color-secondary

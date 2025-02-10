@@ -45,6 +45,9 @@
       </step>
       <step>
         <cmd>Extract the contents of the package to the directory where you want to install DITA-OT.</cmd>
+        <info>
+          <note>The documentation refers to this location as the <cite>DITA-OT installation directory</cite>, or
+              <filepath conkeyref="conref-task/ot-dir"/>.</note></info>
       </step>
       <step>
         <cmd>Add the absolute path for the <filepath>bin</filepath> folder of the DITA-OT installation directory to the

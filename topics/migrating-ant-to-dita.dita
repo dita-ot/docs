@@ -82,7 +82,7 @@
         <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef
             href="../samples/properties/pdf.properties"
           /></codeblock></p>
-      <p>Run from <filepath conkeyref="conref-task/samples-dir"/>:</p>
+      <p>Sample <cmdname>dita</cmdname> command sequence:</p>
       <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname
         >--format</parmname>=<option>htmlhelp</option> \
      <parmname>--propertyfile</parmname>=<filepath>properties/chm.properties</filepath>

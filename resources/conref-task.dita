@@ -20,6 +20,7 @@
           <dd><filepath id="ot-dir"><varname>dita-ot-dir</varname></filepath></dd>
           <dd><filepath id="dita-cmd"><cmdname>dita</cmdname></filepath></dd>
           <dd><filepath id="docsrc-dir"><varname>dita-ot-dir</varname>/docsrc</filepath></dd>
+          <dd><filepath id="docsrc-absolute"><varname>/absolute/path/to/dita-ot-dir</varname>/docsrc</filepath></dd>
           <dd><filepath id="samples-dir"><varname>dita-ot-dir</varname>/docsrc/samples</filepath></dd>
           <dd><filepath id="samples-absolute"><varname
               >/absolute/path/to/dita-ot-dir</varname>/docsrc/samples</filepath></dd>
@@ -112,11 +113,6 @@
               </parml></li>
           </ul>
         </info>
-        <stepresult id="running-ditaot-results">
-          <p>If processing is successful, nothing is printed in the terminal window. The built output is written to the
-            specified output directory (by default, in the <filepath>out</filepath> subdirectory of the current
-            directory).</p>
-        </stepresult>
       </step>
       <step>
         <cmd>Extending pre-processing</cmd>

@@ -44,74 +44,76 @@
             formats on the command line at once, and a new message makes it easier to identify any XML parsing
             errors</ph>.</p>
       </section>
-      <section>
-        <title>New features</title>
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3%20is%3Aclosed%20label%3Afeature%20sort%3Acreated-asc -->
-        <ul>
-          <li id="4397">
-            <p>A new <cmdname>validate</cmdname> subcommand can be used to check input files for errors before
-              publishing.
-              <xref href="https://github.com/dita-ot/dita-ot/issues/4397" format="html" scope="external">#4397</xref>,
-              <xref href="https://github.com/dita-ot/dita-ot/issues/4400" format="html" scope="external">#4400</xref>
-            </p>
-            <p>This command runs the pre-processing routines in strict mode and reports any errors or warnings. You can
-              use this in continuous integration scenarios to quickly check contributions for errors without building
-              output.</p></li>
-          <li id="4408">
-            <p>A new error message makes it easier to identify XML parsing exceptions in the log.
-              <xref href="https://github.com/dita-ot/dita-ot/issues/4408" format="html" scope="external">#4408</xref>
-            </p>
-            <p>The <msgnum>DOTJ088E</msgnum> error appears when the input is in some way invalid but can still be
-              parsed. The message content begins with “<msgph>XML parsing error:</msgph>” and provides additional
-              context from the parser in the <xmlelement>reason</xmlelement>. As with other error messages, custom
-              plug-ins may override the message content or severity. </p></li>
-          <li id="4486">
-            <p>You can now publish multiple formats at once from a single <cmdname>dita</cmdname> command sequence.
-              <xref
-                href="https://github.com/dita-ot/dita-ot/issues/4486"
-                format="html"
-                scope="external"
-              >#4486</xref></p>
-            <p>To produce several output formats from a single build, pass the <parmname>--format</parmname> option for
-              each transformation, or use the <parmname>-f</parmname> shorthand. For example:
-              <codeblock outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname
-                >-i</parmname> sample.ditamap <parmname>-f</parmname> html5 <parmname>-f</parmname> pdf</codeblock>
-              The result will be the same as if you had issued separate commands for each format:
-              <codeblock outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname
-                >--input</parmname>=sample.ditamap <parmname>--format</parmname>=html5
+
+      <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3%20is%3Aclosed%20label%3Afeature%20sort%3Acreated-asc -->
+
+      <section id="validate">
+        <title>Validate subcommand</title>
+        <p id="4397">A new <cmdname>validate</cmdname> subcommand can be used to check input files for errors before
+          publishing.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4397" format="html" scope="external">#4397</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4400" format="html" scope="external">#4400</xref>
+        </p>
+        <p>This command runs the pre-processing routines in strict mode and reports any errors or warnings. You can use
+          this in continuous integration scenarios to quickly check contributions for errors without building
+          output.</p>
+      </section>
+
+      <section id="xml-parsing">
+        <title>XML parsing exceptions</title>
+        <p id="4408">A new error message makes it easier to identify XML parsing exceptions in the log.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4408" format="html" scope="external">#4408</xref>
+        </p>
+        <p>The <msgnum>DOTJ088E</msgnum> error appears when the input is in some way invalid but can still be parsed.
+          The message content begins with “<msgph>XML parsing error:</msgph>” and provides additional context from the
+          parser in the <xmlelement>reason</xmlelement>. As with other error messages, custom plug-ins may override the
+          message content or severity.</p>
+      </section>
+
+      <section id="cli-multiformat">
+        <title>Multiple output formats from CLI</title>
+        <p id="4486">You can now publish multiple formats at once from a single <cmdname>dita</cmdname> command
+          sequence.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4486" format="html" scope="external">#4486</xref></p>
+        <p>To produce several output formats from a single build, pass the <parmname>--format</parmname> option for each
+          transformation, or use the <parmname>-f</parmname> shorthand. For example:
+          <codeblock outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname
+            >-i</parmname> sample.ditamap <parmname>-f</parmname> html5 <parmname>-f</parmname> pdf</codeblock>
+          The result will be the same as if you had issued separate commands for each format:
+          <codeblock outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname
+            >--input</parmname>=sample.ditamap <parmname>--format</parmname>=html5
 <filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=sample.ditamap <parmname
-                >--format</parmname>=pdf</codeblock>
-            </p>
-            <p>This can be used as a simple alternative to a DITA-OT
-              <xref keyref="using-project-files">project file</xref> that defines multiple deliverables.</p>
-          </li>
-          <li id="4509">
-            <p><b outputclass="badge badge-primary">Preview</b> The new <cmdname>init</cmdname> subcommand initializes a
-              project with files from a template.
-              <xref href="https://github.com/dita-ot/dita-ot/issues/4509" format="html" scope="external">#4509</xref>,
-              <xref href="https://github.com/dita-ot/dita-ot/issues/4523" format="html" scope="external">#4523</xref>
-            </p>
-            <p>The initial implementation is a preview feature designed to illustrate how project templates work. You
-              can use them as a starting point for new publications with required metadata, media assets, or custom
-              stylesheets, or provide examples of your organization’s preferred markup.</p>
-            <ul>
-              <li>For a list of available templates, run <filepath conkeyref="conref-task/dita-cmd"/>
-                <cmdname>init</cmdname>
-                <parmname>--list</parmname></li>
-              <li>To add files from a template to the current working directory, run <filepath
-                  conkeyref="conref-task/dita-cmd"
-                />
-                <cmdname>init</cmdname>
-                <varname>template</varname></li>
-            </ul>
-            <p><ph conkeyref="dita-command-arguments/init-desc"/></p>
-            <note type="tip">Sample project templates are provided in the
-              <xref href="https://github.com/dita-ot/org.dita.init" format="html" scope="external">new
-                  <codeph>org.dita.init</codeph> plug-in</xref>. If you have a common project structure that would be
-              useful beyond your organization, you can contribute new templates to future DITA-OT versions, or create a
-              custom plug-in with company-specific project templates.</note>
-          </li>
+            >--format</parmname>=pdf</codeblock>
+        </p>
+        <p>This can be used as a simple alternative to a DITA-OT
+          <xref keyref="using-project-files">project file</xref> that defines multiple deliverables.</p>
+      </section>
+
+      <section id="init-preview">
+        <title><b outputclass="badge badge-primary">Preview</b> Init subcommand</title>
+        <p id="4509">The new <cmdname>init</cmdname> subcommand initializes a project with files from a template.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4509" format="html" scope="external">#4509</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4523" format="html" scope="external">#4523</xref>
+        </p>
+        <p>The initial implementation is a preview feature designed to illustrate how project templates work. You can
+          use them as a starting point for new publications with required metadata, media assets, or custom stylesheets,
+          or provide examples of your organization’s preferred markup.</p>
+        <ul>
+          <li>For a list of available templates, run <filepath conkeyref="conref-task/dita-cmd"/>
+            <cmdname>init</cmdname>
+            <parmname>--list</parmname></li>
+          <li>To add files from a template to the current working directory, run <filepath
+              conkeyref="conref-task/dita-cmd"
+            />
+            <cmdname>init</cmdname>
+            <varname>template</varname></li>
         </ul>
+        <p><ph conkeyref="dita-command-arguments/init-desc"/></p>
+        <note type="tip">Sample project templates are provided in the
+          <xref href="https://github.com/dita-ot/org.dita.init" format="html" scope="external">new
+              <codeph>org.dita.init</codeph> plug-in</xref>. If you have a common project structure that would be useful
+          beyond your organization, you can contribute new templates to future DITA-OT versions, or create a custom
+          plug-in with company-specific project templates.</note>
       </section>
 
       <section id="lwdita">

@@ -90,10 +90,9 @@ style:
     toc:
       1:
         start-indent: 50pt
-      3:
         color: $brand-color-links
         font-size: 12pt
-      maximum-level: 1
+      maximum-level: 0
   cmdname:
     color: $brand-color-primary
     font-weight: bold
@@ -202,14 +201,13 @@ style:
   part:
     border-after: solid 4pt $brand-color-inverse
     toc:
-      1:
-        start-indent: 50pt
       chapter:
         color: $brand-color-links
         font-size: 12pt
         space-before: 0
-      maximum-level: 1
-      space-before: 2em
+        start-indent: 50pt
+      maximum-level: 0
+      space-before: 1.5em
   section-title:
     color: $brand-color-secondary
   shortdesc:
@@ -228,24 +226,25 @@ style:
       background-color: $brand-color-inverse
   toc:
     1:
-      color: $brand-color-primary
+      color: black
       font-family: $pdf2-font-sans
-      start-indent: 45pt
+      space-before: 2pt
+      start-indent: 112pt
     2:
       color: black
       font-family: $pdf2-font-sans
-      space-before: 4pt
-      start-indent: 112pt
+      space-before: 2pt
+      start-indent: 130pt
     3:
       color: black
       font-family: $pdf2-font-sans
       space-before: 2pt
-      start-indent: 140pt
+      start-indent: 148pt
     4:
       color: black
       font-family: $pdf2-font-sans
       space-before: 2pt
-      start-indent: 160pt
+      start-indent: 166pt
     appendix:
       color: $brand-color-secondary
       font-family: $pdf2-font-sans
@@ -256,11 +255,12 @@ style:
       font-weight: bold
       font-size: 12pt
       start-indent: 45pt
-    maximum-level: 4
+    maximum-level: 3
     part:
       color: $brand-color-secondary
       font-family: $pdf2-font-sans
       font-size: 14pt
+      keep-with-next.within-page: always
       space-before: 1.5em
   varname:
     color: $brand-color-secondary

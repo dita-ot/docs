@@ -90,10 +90,9 @@ style:
     toc:
       1:
         start-indent: 50pt
-      3:
         color: $brand-color-links
         font-size: 12pt
-      maximum-level: 1
+      maximum-level: 0
   cmdname:
     color: $brand-color-primary
     font-weight: bold
@@ -202,14 +201,13 @@ style:
   part:
     border-after: solid 4pt $brand-color-inverse
     toc:
-      1:
-        start-indent: 50pt
       chapter:
         color: $brand-color-links
         font-size: 12pt
         space-before: 0
-      maximum-level: 1
-      space-before: 2em
+        start-indent: 50pt
+      maximum-level: 0
+      space-before: 1.5em
   section-title:
     color: $brand-color-secondary
   shortdesc:

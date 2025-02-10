@@ -80,27 +80,44 @@
       </step>
     </steps>
     <example>
-      <p>The following Ant build script generates CHM and PDF output for the sample DITA maps.</p>
+      <p>The following Ant build script generates CHM and PDF output for two sample DITA maps.</p>
       <p>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
-            href="../samples/ant_sample/build-chm-pdf.xml"
-          /></codeblock></p>
+        <codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;project name="build-chm-pdf" default="all" basedir=".">
+  &lt;property name="dita.dir" location="${basedir}/../../.."/>
+  &lt;target name="all" description="build CHM and PDF" depends="chm,pdf"/>
+  &lt;target name="chm" description="build CHM">
+    &lt;ant antfile="${dita.dir}/build.xml">
+      &lt;property name="args.input" location="../sequence.ditamap"/>
+      &lt;property name="transtype" value="htmlhelp"/>
+      &lt;property name="output.dir" location="../out/chm"/>
+      &lt;property name="args.gen.task.lbl" value="YES"/>
+    &lt;/ant>
+  &lt;/target>
+  &lt;target name="pdf" description="build PDF">
+    &lt;ant antfile="${dita.dir}/build.xml">
+      &lt;property name="args.input" location="../taskbook.ditamap"/>
+      &lt;property name="transtype" value="pdf"/>
+      &lt;property name="output.dir" location="../out/pdf"/>
+      &lt;property name="args.gen.task.lbl" value="YES"/>
+      &lt;property name="args.rellinks" value="nofamily"/>
+    &lt;/ant>
+  &lt;/target>
+&lt;/project></codeblock></p>
       <p>In addition to the mandatory parameters (<parmname>args.input</parmname> and <parmname>transtype</parmname>),
         the <codeph>chm</codeph> and <codeph>pdf</codeph> targets each specify some optional parameters:
         <ul>
-          <li>The <parmname>args.gen.task.lbl</parmname> property is set to YES, which ensures that headings are
-            automatically generated for the sections of task topics.</li>
+          <li>The <parmname>args.gen.task.lbl</parmname> property is set to <codeph>YES</codeph>, which ensures that
+            headings are automatically generated for the sections of task topics.</li>
           <li>The <parmname>output.dir</parmname> property specifies where DITA-OT writes the output of the
             transformations.</li>
         </ul></p>
-      <p>The pdf target also specifies that related links should be generated in the PDF, but only those links that are
-        created by relationship tables and <xmlelement>link</xmlelement> elements.</p>
-      <p>Finally, the all target simply specifies that both the chm and pdf target should be run.</p>
+      <p>The <codeph>pdf</codeph> target also specifies that related links should be generated in the PDF, but only
+        those links that are created by relationship tables and <xmlelement>link</xmlelement> elements.</p>
+      <p>Finally, the <codeph>all</codeph> target specifies that both the <codeph>chm</codeph> and <codeph>pdf</codeph>
+        target should be run.</p>
     </example>
-    <postreq>Another resource for learning about Ant scripts are the files in the <filepath
-        conkeyref="conref-task/samples-dir"
-      /><filepath>/ant_sample/</filepath> directory. This
-      directory contains sample Ant build files for common output formats, as well as templates that you can use to
-      create your own Ant scripts.</postreq>
   </taskbody>
 </task>

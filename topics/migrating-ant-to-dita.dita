@@ -61,11 +61,31 @@
     <example>
       <title>Example: Ant build</title>
       <p>Prior to DITA-OT 2.0, an Ant build like this was typically used to define the properties for each target.</p>
-      <p>Sample build file: <filepath id="samples-dir"><varname>dita-ot-dir</varname>/docsrc/samples</filepath><filepath
-        >/ant_sample/build-chm-pdf.xml</filepath>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
-            href="../samples/ant_sample/build-chm-pdf.xml"
-          /></codeblock></p></example>
+      <p>Sample build file: <filepath>build-chm-pdf.xml</filepath>
+        <codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;project name="build-chm-pdf" default="all" basedir=".">
+  &lt;property name="dita.dir" location="${basedir}/../../.."/>
+  &lt;target name="all" description="build CHM and PDF" depends="chm,pdf"/>
+  &lt;target name="chm" description="build CHM">
+    &lt;ant antfile="${dita.dir}/build.xml">
+      &lt;property name="args.input" location="../sequence.ditamap"/>
+      &lt;property name="transtype" value="htmlhelp"/>
+      &lt;property name="output.dir" location="../out/chm"/>
+      &lt;property name="args.gen.task.lbl" value="YES"/>
+    &lt;/ant>
+  &lt;/target>
+  &lt;target name="pdf" description="build PDF">
+    &lt;ant antfile="${dita.dir}/build.xml">
+      &lt;property name="args.input" location="../taskbook.ditamap"/>
+      &lt;property name="transtype" value="pdf"/>
+      &lt;property name="output.dir" location="../out/pdf"/>
+      &lt;property name="args.gen.task.lbl" value="YES"/>
+      &lt;property name="args.rellinks" value="nofamily"/>
+    &lt;/ant>
+  &lt;/target>
+&lt;/project></codeblock></p></example>
     <example>
       <title>Example: <filepath>.properties</filepath> files with <cmdname>dita</cmdname> command</title>
       <p>The following <filepath>.properties</filepath> files and <cmdname>dita</cmdname> commands are equivalent to the
@@ -82,7 +102,7 @@
         <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef
             href="../samples/properties/pdf.properties"
           /></codeblock></p>
-      <p>Run from <filepath conkeyref="conref-task/samples-dir"/>:</p>
+      <p>Sample <cmdname>dita</cmdname> command sequence:</p>
       <codeblock><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname
         >--format</parmname>=<option>htmlhelp</option> \
      <parmname>--propertyfile</parmname>=<filepath>properties/chm.properties</filepath>
@@ -96,13 +116,31 @@
         also want the convenience of using the <cmdname>dita</cmdname> command with <filepath>.properties</filepath>
         files to define the parameters for each build. This can be accomplished with Ant’s <xmlelement>exec</xmlelement>
         task.</p>
-      <p>This example uses a <xmlelement>dita-cmd</xmlelement> Ant macro defined in the <filepath
-          conkeyref="conref-task/samples-dir"
-        /><filepath>/ant_sample/dita-cmd.xml</filepath> file:</p>
+      <p>This example defines a <xmlelement>dita-cmd</xmlelement> Ant macro:</p>
       <p>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
-            href="../samples/ant_sample/dita-cmd.xml#line-range(10,30)"
-          /></codeblock></p>
+        <codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;macrodef name="dita-cmd">
+  &lt;attribute name="input"/>
+  &lt;attribute name="format"/>
+  &lt;attribute name="propertyfile"/>
+  &lt;sequential>
+    &lt;!-- For Unix run the DITA executable-->
+    &lt;exec taskname="dita-cmd" executable="${dita.dir}/bin/dita" osfamily="unix" failonerror="true">
+      &lt;arg value="--input"/>
+      &lt;arg value="@{input}"/>
+      &lt;arg value="--format"/>
+      &lt;arg value="@{format}"/>
+      &lt;arg value="--propertyfile"/>
+      &lt;arg value="@{propertyfile}"/>
+    &lt;/exec>
+    &lt;!-- For Windows run DITA from a DOS command -->
+    &lt;exec taskname="dita-cmd" dir="${dita.dir}/bin" executable="cmd" osfamily="windows" failonerror="true">
+      &lt;arg value="/C"/>
+      &lt;arg value="dita --input @{input} --format @{format} --propertyfile=@{propertyfile}"/>
+    &lt;/exec>
+  &lt;/sequential>
+&lt;/macrodef></codeblock></p>
       <p>You can use this macro in your Ant build to call the <cmdname>dita</cmdname> command and pass the
           <parmname>input</parmname>, <parmname>format</parmname> and <parmname>propertyfile</parmname> parameters as
         follows:
@@ -116,12 +154,36 @@
       <note>The attributes defined in the Ant macro are required and must be supplied each time the task is run. To set
         optional parameters in one build (but not another), use different <filepath>.properties</filepath> files for
         each build.</note>
-      <p>Sample build file: <filepath conkeyref="conref-task/samples-dir"/><filepath
-        >/ant_sample/build-chm-pdf-hybrid.xml</filepath></p>
+      <p>Sample build file: <filepath>build-chm-pdf-hybrid.xml</filepath></p>
       <p>
-        <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace"><coderef
-            href="../samples/ant_sample/build-chm-pdf-hybrid.xml"
-          /></codeblock>
+        <codeblock
+          outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+        >&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;project name="build-chm-pdf-hybrid" default="all" basedir=".">
+  &lt;description>An Ant build that calls the dita command&lt;/description>
+  &lt;include file="dita-cmd.xml"/>&lt;!-- defines the &lt;dita-cmd> macro -->
+  &lt;target name="all" depends="pre,main,post"/>
+  &lt;target name="pre">
+    &lt;description>Pre-processing steps&lt;/description>
+  &lt;/target>
+  &lt;target name="main">
+    &lt;description>Build the CHM and PDF with the dita command&lt;/description>
+    &lt;property name="absolute.path.base" location="../"/>
+    &lt;dita-cmd
+      input="${absolute.path.base}/sequence.ditamap"
+      format="htmlhelp"
+      propertyfile="${absolute.path.base}/properties/chm.properties"
+    />
+    &lt;dita-cmd
+      input="${absolute.path.base}/taskbook.ditamap"
+      format="pdf"
+      propertyfile="${absolute.path.base}/properties/pdf.properties"
+    />
+  &lt;/target>
+  &lt;target name="post">
+    &lt;description>Postprocessing steps&lt;/description>
+  &lt;/target>
+&lt;/project></codeblock>
       </p>
     </example>
   </taskbody>

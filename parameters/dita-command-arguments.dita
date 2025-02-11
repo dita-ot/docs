@@ -431,8 +431,8 @@
             example, use <parmname>--repeat</parmname>=<option>5</option>. The duration of each execution will appear in
             the console when the final transformation is complete.
             <codeblock outputclass="syntax-bash multi-platform">$ <cmdname>dita</cmdname> <parmname
-              >--input</parmname>=<filepath>docsrc/samples/sequence.ditamap</filepath> <parmname
-              >--format</parmname>=<option>html5</option> \
+              >--input</parmname>=<filepath>path/to/sample.ditamap</filepath> <parmname>--format</parmname>=<option
+              >html5</option> \
        <parmname>--repeat</parmname>=<option>5</option>
 1 11281ms
 2 4132ms

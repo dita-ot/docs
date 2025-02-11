@@ -2,7 +2,10 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generaltask.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <task id="using-command-line-tool">
-  <title>Building output using the <cmdname>dita</cmdname> command</title>
+  <title>
+    <ph audience="novice">First build with the <cmdname>dita</cmdname> command</ph>
+    <ph audience="expert">Publishing with the <cmdname>dita</cmdname> command</ph>
+  </title>
   <shortdesc>You can publish output using the <cmdname>dita</cmdname> command-line tool. Build parameters can be
     specified on the command line, with <filepath>.properties</filepath> files, or in project files that define multiple
     deliverables.</shortdesc>
@@ -21,9 +24,9 @@
     </metadata>
   </prolog>
   <taskbody>
-    <context audience="novice">The DITA-OT client is a command-line tool with no graphical user interface. To verify
-      that your installation works correctly, you can build output using the sample files included in the distribution
-      package.</context>
+    <context audience="novice">
+      <p>The DITA-OT client is a command-line tool with no graphical user interface. To verify that your installation
+        works correctly, you can build the HTML version of the documentation you are reading now.</p></context>
     <steps>
       <step audience="novice">
         <cmd>Open a terminal window by typing the following in the search bar:</cmd>
@@ -38,56 +41,63 @@
           </chrow>
         </choicetable>
       </step>
+      <step audience="novice">
+        <cmd>Change directories to the <filepath>docsrc/samples</filepath> subfolder of the DITA-OT installation
+          directory:</cmd>
+        <info><codeblock outputclass="syntax-bash"><cmdname>cd</cmdname> <filepath
+              conkeyref="conref-task/samples-dir"
+            /></codeblock></info>
+      </step>
       <step>
         <cmd>At the command-line prompt, enter the following command:</cmd>
-        <info><codeblock outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname
+        <info>
+          <codeblock audience="novice" outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname
+            >--project</parmname>=<varname>project-files/html.xml</varname></codeblock>
+          <codeblock audience="expert" outputclass="syntax-bash"><filepath conkeyref="conref-task/dita-cmd"/> <parmname
             >--input</parmname>=<varname>input-file</varname> <parmname>--format</parmname>=<varname
-            >format</varname> <ph audience="expert">[<varname>options</varname>]</ph></codeblock>
-          <p>where:</p>
-          <ul>
-            <li
-              conkeyref="conref-task/novice-variables"
-              conrefend="../resources/conref-task.dita#ID/novice-variables-last"
-              audience="novice"
-            />
-            <li conkeyref="conref-task/novice-variables" audience="expert"/>
-            <li conkeyref="conref-task/expert-variables-last" audience="expert"/>
-            <li conkeyref="conref-task/options" audience="expert"/>
-          </ul></info>
-        <stepresult conkeyref="conref-task/running-ditaot-results"/>
+            >format</varname> [<varname>options</varname>]</codeblock>
+          <p audience="expert">where:
+            <ul>
+              <li conkeyref="conref-task/novice-variables"/>
+              <li conkeyref="conref-task/expert-variables-last"/>
+              <li conkeyref="conref-task/options"/>
+            </ul>
+          </p>
+        </info>
+        <stepresult id="running-ditaot-results">
+          <p audience="novice">The HTML version of the documentation is generated in the
+              <filepath>docsrc/samples/out</filepath> folder.</p>
+          <p audience="expert">If processing is successful, nothing is printed in the terminal window. The built output
+            is written to the specified output directory (by default, in the <filepath>out</filepath> subdirectory of
+            the current directory).</p>
+        </stepresult>
       </step>
     </steps>
-    <example audience="novice">
-      <p>Run from <filepath conkeyref="conref-task/samples-dir"/>, the following command generates HTML5 output for the
-          <filepath>sequence.ditamap</filepath> file:</p>
-      <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <parmname>--input</parmname>=<filepath
-        >sequence.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
-      <indexterm>DITA maps
-        <indexterm><cmdname>dita</cmdname> command example</indexterm></indexterm>
-    </example>
     <example audience="expert">
-      <p>For example, from <filepath conkeyref="conref-task/samples-dir"/>, run:</p>
+      <p>For example, from <filepath conkeyref="conref-task/docsrc-dir"/>, run:</p>
       <p>
         <codeblock outputclass="syntax-bash multi-platform"><cmdname>dita</cmdname> <parmname
-          >--input</parmname>=<filepath>sequence.ditamap</filepath> <parmname>--format</parmname>=<option
+          >--input</parmname>=<filepath>userguide.ditamap</filepath> <parmname>--format</parmname>=<option
           >html5</option> \
-     <parmname>--output</parmname>=<filepath>output/sequence</filepath> \
-     <parmname>--args.input.dir</parmname>=<filepath conkeyref="conref-task/samples-absolute"/> \
-     <parmname>--propertyfile</parmname>=<filepath>properties/sequence-html5.properties</filepath></codeblock>
+     <parmname>--output</parmname>=<filepath>out/docs-html5</filepath> \
+     <parmname>--args.input.dir</parmname>=<filepath conkeyref="conref-task/docsrc-absolute"/> \
+     <parmname>--propertyfile</parmname>=<filepath>properties/docs-build-html5.properties</filepath></codeblock>
       </p>
-      <p>This builds <filepath>sequence.ditamap</filepath> to HTML5 output in <filepath>output/sequence</filepath> using
-        the following additional parameters specified in the <filepath>properties/sequence-html5.properties</filepath>
+      <p>This builds <filepath>userguide.ditamap</filepath> to HTML5 output in <filepath>out/docs-html5</filepath> using
+        the following additional parameters specified in the <filepath>properties/docs-build-html5.properties</filepath>
         file:</p>
       <p>
         <codeblock outputclass="language-properties normalize-space show-line-numbers show-whitespace"><coderef
-            href="../samples/properties/sequence-html5.properties"
+            href="../samples/properties/docs-build-html5.properties"
           /></codeblock>
       </p>
       <indexterm>DITA maps
         <indexterm><cmdname>dita</cmdname> command example</indexterm></indexterm>
     </example>
     <postreq>
-      <p audience="novice">Most builds require you to specify more options than are described in this topic.</p>
+      <p audience="novice">Most builds require you to specify more options than are described in this topic. For
+        more information, see 
+        <xref keyref="build-using-dita-command">Publishing with the <cmdname>dita</cmdname> command</xref>.</p>
       <p audience="expert">Usually, you will want to specify a set of reusable build parameters in a
           <filepath>.properties</filepath> file, or or create a project file that defines multiple deliverables.</p>
     </postreq>

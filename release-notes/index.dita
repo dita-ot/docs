@@ -197,9 +197,9 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4444" format="html" scope="external">#4444</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4498" format="html" scope="external">#4498</xref>
           </li>
-          <li id="4542">DITA-OT uses the Xerces SecurityManager to protect against the so-called “
-            <xref href="https://en.wikipedia.org/wiki/Billion_laughs_attack" format="html" scope="external">billion
-              laughs attack</xref>”, an entity expansion technique that can cause XML parsers to run out of memory and
+          <li id="4542">DITA-OT uses the Xerces SecurityManager to protect against the so-called
+            <xref href="https://en.wikipedia.org/wiki/Billion_laughs_attack" format="html" scope="external">“billion
+              laughs attack”</xref>, an entity expansion technique that can cause XML parsers to run out of memory and
             overload the CPU when parsing maliciously crafted files. DITA-OT will now stop parsing and report an error
             when processing any files that exceed the entity limit imposed by the security manager library.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4542" format="html" scope="external">#4542</xref>,

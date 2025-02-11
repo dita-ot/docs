@@ -205,6 +205,10 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4542" format="html" scope="external">#4542</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4556" format="html" scope="external">#4556</xref>
           </li>
+          <li id="4570">HTML5 processing now supports the <xmlatt>height</xmlatt> and <xmlatt>width</xmlatt> attributes
+            on the DITA 2.0 <xmlelement>video</xmlelement> element to ensure that videos are scaled correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4570" format="html" scope="external">#4570</xref>
+          </li>
           <li>The following bundled plug-ins have been upgraded to the latest versions:
             <ul>
               <li id="4210">The Lightweight DITA plug-in version <keyword keyref="tool.lwdita.version"/> includes the

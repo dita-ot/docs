@@ -117,33 +117,29 @@
       <section id="lwdita">
         <title>Lightweight DITA and Markdown updates</title>
         <p>The <codeph>org.lwdita</codeph> plug-in has been updated to version <keyword keyref="tool.lwdita.version"/>,
-          which includes <ph
-            outputclass="mark"
-          >[…] and updates to Markdown processing to reflect recent changes to the latest LwDITA drafts
-          from OASIS</ph>.</p>
-        <ul outputclass="mark">
-          <li>
-            <p><b>Markdown output</b></p>
-            <ul>
-              <li/>
-            </ul>
+          which includes a series of bug fixes and support for additional DITA constructs in Markdown input,
+          including:</p>
+        <ul>
+          <li>Language identifiers in fenced code blocks can now be processed with an optional prefix to enable syntax
+            highlighting in environments that require different keywords. For example, if Markdown files contain code
+            blocks with JavaScript code, they may start with <codeph>```js</codeph> to display the code block with
+            syntax highlighting on GitHub. The plug-in can now add a prefix like <codeph>language-</codeph> to the DITA
+              <xmlatt>outputclass</xmlatt> value, included in HTML5 as <codeph>class="language-js"</codeph> for
+            <xref keyref="html5-code-highlighting"/> with libraries like
+            <xref keyref="prismjs"/>.
+            <xref href="https://github.com/jelovirt/org.lwdita/pull/228" format="html" scope="external">#228</xref>
           </li>
-          <li>
-            <p><b>Markdown input</b></p>
-            <ul>
-              <li/>
-            </ul>
+          <li>Admonition types are no longer case-sensitive, so both <codeph>!!! note</codeph> and <codeph>!!!
+              Note</codeph> will be rendered as DITA <xmlelement>note</xmlelement> elements, regardless of the
+            capitalization of the <xmlatt>type</xmlatt> keyword.
+            <xref href="https://github.com/jelovirt/org.lwdita/pull/229" format="html" scope="external">#229</xref>
           </li>
-          <!--
-          <li>
-            <p>The flexmark Markdown parsing library has been updated to version 0.64.</p></li>
-          <li>
-            <p>The XDITA plug-in has been updated to version <keyword keyref="tool.xdita.version"/>, which includes
-              recent changes to the grammar files from OASIS (as of <keyword keyref="draft-xdita-grammar-state"/>).
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4214" format="html" scope="external">#4214</xref>
-            </p>
+          <li>If you need to include DITA content that has no equivalent markup in
+            <xref keyref="markdown-dita-syntax"/>, you can now use raw DITA XML directly in Markdown files. You can use
+            this approach to include things like <xmlelement>xmlelement</xmlelement> or
+              <xmlelement>hazardstatement</xmlelement>, which would otherwise be impossible to express in Markdown.
+            <xref href="https://github.com/jelovirt/org.lwdita/pull/217" format="html" scope="external">#217</xref>
           </li>
-          -->
         </ul>
       </section>
 
@@ -151,9 +147,9 @@
         <title>Updated DITA 2.0 preview</title>
         <p>In addition to the
           <xref keyref="dita-v2-0-support"/> provided in DITA-OT 3.5 – 4.2, this release includes updated processing for
-          the latest draft versions of the DITA 2.0 grammar files from OASIS <ph outputclass="mark">(as of <keyword
-              keyref="draft-dita-grammar-state"
-            />)</ph>. <!-- Link to PRs that update 2.0 grammar files-->
+          the latest draft versions of the DITA 2.0 grammar files from OASIS (as of <keyword
+            keyref="draft-dita-grammar-state"
+          />). <!-- Link to PRs that update 2.0 grammar files-->
         </p>
         <ul conkeyref="dita-v2-0-support/added-in-4.3">
           <li/>

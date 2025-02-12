@@ -140,6 +140,11 @@
               <xmlelement>hazardstatement</xmlelement>, which would otherwise be impossible to express in Markdown.
             <xref href="https://github.com/jelovirt/org.lwdita/pull/217" format="html" scope="external">#217</xref>
           </li>
+          <li>Earlier versions would crash when processing Markdown files that did not begin with a heading. These files
+            are now converted to valid DITA with an empty <xmlelement>title</xmlelement> element, and an error message
+            appears in the log to aid in debugging.
+            <xref href="https://github.com/jelovirt/org.lwdita/pull/223" format="html" scope="external">#223</xref>
+          </li>
         </ul>
       </section>
 

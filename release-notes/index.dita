@@ -149,16 +149,15 @@
 
       <section id="dita-2-0-preview">
         <title>Updated DITA 2.0 preview</title>
-        <p outputclass="mark">In addition to the
+        <p>In addition to the
           <xref keyref="dita-v2-0-support"/> provided in DITA-OT 3.5 – 4.2, this release includes updated processing for
-          the latest draft versions of the DITA 2.0 grammar files from OASIS (as of […]
-          <!--<keyword keyref="draft-dita-grammar-state"/>-->). <!-- Link to PRs that update 2.0 grammar files-->
+          the latest draft versions of the DITA 2.0 grammar files from OASIS <ph outputclass="mark">(as of <keyword
+              keyref="draft-dita-grammar-state"
+            />)</ph>. <!-- Link to PRs that update 2.0 grammar files-->
         </p>
-        <!--
         <ul conkeyref="dita-v2-0-support/added-in-4.3">
           <li/>
         </ul>
-        -->
         <p conkeyref="dita-v2-0-support/grammar-files"/>
         <note conkeyref="dita-v2-0-support/more-to-come"/>
       </section>
@@ -204,10 +203,6 @@
             when processing any files that exceed the entity limit imposed by the security manager library.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4542" format="html" scope="external">#4542</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4556" format="html" scope="external">#4556</xref>
-          </li>
-          <li id="4570">HTML5 processing now supports the <xmlatt>height</xmlatt> and <xmlatt>width</xmlatt> attributes
-            on the DITA 2.0 <xmlelement>video</xmlelement> element to ensure that videos are scaled correctly.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4570" format="html" scope="external">#4570</xref>
           </li>
           <li>The following bundled plug-ins have been upgraded to the latest versions:
             <ul>

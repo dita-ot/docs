@@ -205,23 +205,6 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4542" format="html" scope="external">#4542</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4556" format="html" scope="external">#4556</xref>
           </li>
-          <li>The following bundled plug-ins have been upgraded to the latest versions:
-            <ul>
-              <li id="4210">The Lightweight DITA plug-in version <keyword keyref="tool.lwdita.version"/> includes the
-                <xref href="#./lwdita"/> described above.
-            <!--
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4167" format="html" scope="external">#4167</xref>,
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4178" format="html" scope="external">#4178</xref>,
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4210" format="html" scope="external">#4210</xref>
-            -->
-              </li>
-              <li id="4194">The PDF Theme plug-in version 0.8.0 adds support for […], 
-                so you can now style these elements in a YAML theme file without building a
-                custom PDF plug-in.
-                <!--<xref href="https://github.com/dita-ot/dita-ot/issues/4194" format="html" scope="external">#4194</xref>-->
-              </li>
-            </ul>
-          </li>
           <li>Several bundled dependencies have been upgraded to the latest versions:
             <ul>
               <li id="4519"><keyword keyref="tool.fop.tm"/>

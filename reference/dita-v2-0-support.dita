@@ -193,6 +193,10 @@
           on the DITA 2.0 <xmlelement>video</xmlelement> element to ensure that videos are scaled correctly.
           <xref href="https://github.com/dita-ot/dita-ot/issues/4570" format="html" scope="external">#4570</xref>
         </li>
+        <li id="4571">HTML5 and PDF processing has been updated to support the new DITA 2.0 emphasis domain elements:
+            <xmlelement>em</xmlelement> for emphasis and <xmlelement>strong</xmlelement> for strong emphasis.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4571" format="html" scope="external">#4571</xref>
+        </li>
       </ul>
     </section>
     <section>

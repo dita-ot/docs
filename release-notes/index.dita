@@ -296,10 +296,20 @@
 
       <section id="docs">
         <title>Documentation updates</title>
-        <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> provides corrections and
-          improvements to existing topics, along with new information in the following topics:</p>
+        <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> has been reorganized to simplify
+          the navigation in HTML versions and reduce the number of parts in PDF output. All of the content from previous
+          versions is still available, though arranged slightly differently. The diagram in
+          <xref href="#v4.3/43-docs-ia"/> shows the previous structure on the left, and the new locations on the
+          right.</p>
+        <fig>
+          <title id="43-docs-ia">DITA-OT <keyword keyref="release"/> navigation changes</title>
+          <image href="../reference/images/dita-ot-docs-nav-ia-reorg_v4.3.svg" placement="break" width="6.5in"/>
+        </fig>
+        <p>The latest version provides corrections and improvements to existing topics, along with new information in
+          the following topics:</p>
         <ul>
-          <li/>
+          <li>
+            <xref keyref="dita-v2-0-support"/></li>
         </ul>
         <p>For additional information on documentation issues resolved in DITA Open Toolkit Release <keyword
             keyref="release"

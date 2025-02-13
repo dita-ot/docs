@@ -54,9 +54,9 @@
           <xref href="https://github.com/dita-ot/dita-ot/issues/4397" format="html" scope="external">#4397</xref>,
           <xref href="https://github.com/dita-ot/dita-ot/issues/4400" format="html" scope="external">#4400</xref>
         </p>
-        <p>This command runs the pre-processing routines in strict mode and reports any errors or warnings. You can use
-          this in continuous integration scenarios to quickly check contributions for errors without building
-          output.</p>
+        <p>This command runs the pre-processing routines in strict mode and reports any errors or warnings. This is
+          ideal for continuous integration scenarios, as it allows you to quickly check contributions for errors without
+          building output.</p>
       </section>
 
       <section id="cli-multiformat">
@@ -85,8 +85,8 @@
           <xref href="https://github.com/dita-ot/dita-ot/issues/4523" format="html" scope="external">#4523</xref>
         </p>
         <p>The initial implementation is a preview feature designed to illustrate how project templates work. You can
-          use them as a starting point for new publications with required metadata, media assets, or custom stylesheets,
-          or provide examples of your organization’s preferred markup.</p>
+          use templates as a starting point for new publications with required metadata, media assets, or custom
+          stylesheets, or provide examples of your organization’s preferred markup.</p>
         <ul>
           <li>For a list of available templates, run <filepath conkeyref="conref-task/dita-cmd"/>
             <cmdname>init</cmdname>
@@ -107,9 +107,10 @@
         <title>Bookmap support in PDF themes</title>
         <p>The PDF theme plug-in <codeph>com.elovirta.pdf</codeph> has been updated to version <keyword
             keyref="tool.theme.version"
-          /> for better bookmap support. You can now style additional bookmap elements in a
-          YAML theme file without building a custom PDF plug-in.
+          /> for better bookmap support.
           <xref href="https://github.com/jelovirt/pdf-generator/pull/111" format="html" scope="external">#111</xref>
+          You can now style the following bookmap elements in a YAML or JSON theme without building a custom PDF
+          plug-in:
           <ul>
             <li><xmlelement>part</xmlelement></li>
             <li><xmlelement>chapter</xmlelement></li>

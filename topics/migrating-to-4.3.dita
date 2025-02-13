@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<reference id="migrating-to-4.3">
+
+  <title>Migrating to release 4.3</title>
+  <titlealts>
+    <navtitle>To 4.3</navtitle>
+  </titlealts>
+
+  <shortdesc>DITA-OT 4.3 includes <ph id="summary">new <cmdname>init</cmdname> and <cmdname>validate</cmdname>
+      subcommands that can be used to set up projects from a template and check files for errors before publishing. You
+      can now publish multiple formats on the command line at once, add raw DITA to Markdown files, and publish bookmaps
+      with PDF themes</ph>.</shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 4.3 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="4.3-release-notes"/>.</note>
+    </section>
+
+    <section id="legacy-samples">
+      <title>Legacy sample files removed</title>
+      <indexterm><codeph>ant_sample</codeph> class</indexterm>
+      <indexterm>Ant samples</indexterm>
+      <indexterm>garage samples</indexterm>
+      <indexterm>restoring samples</indexterm>
+      <indexterm>samples, restoring</indexterm>
+      <p id="restoring-samples">The legacy Ant samples and garage sample files have been removed from the
+          <filepath>docsrc/samples</filepath> subfolder of the installation directory. If your workflow relies on these
+        files, you can restore them to the original location with the new <cmdname>init</cmdname> subcommand:
+        <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <cmdname>init</cmdname> samples <filepath><varname
+            >path/to/dita-ot-dir</varname>/docsrc/samples</filepath></codeblock>
+      </p>
+    </section>
+
+  </refbody>
+</reference>

@@ -47,6 +47,31 @@
 
       <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3%20is%3Aclosed%20label%3Afeature%20sort%3Acreated-asc -->
 
+      <section id="init-preview">
+        <title><b outputclass="badge badge-primary">Preview</b> Init subcommand</title>
+        <p id="4509">The new <cmdname>init</cmdname> subcommand initializes a project with files from a template.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4509" format="html" scope="external">#4509</xref>,
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4523" format="html" scope="external">#4523</xref>
+        </p>
+        <p>The initial implementation is a preview feature designed to illustrate how project templates work. You can
+          use templates as a starting point for new publications with required metadata, media assets, or custom
+          stylesheets, or provide examples of your organization’s preferred markup.</p>
+        <ul>
+          <li>For a list of available templates, run <filepath conkeyref="conref-task/dita-cmd"/>
+            <cmdname>init</cmdname>
+            <parmname>--list</parmname></li>
+          <li>To add files from a template to the current directory, run <filepath conkeyref="conref-task/dita-cmd"/>
+            <cmdname>init</cmdname>
+            <varname>template</varname></li>
+        </ul>
+        <p><ph conkeyref="dita-command-arguments/init-desc"/></p>
+        <note type="tip">Sample project templates are provided in the
+          <xref href="https://github.com/dita-ot/org.dita.init" format="html" scope="external">new
+              <codeph>org.dita.init</codeph> plug-in</xref>. If you have a common project structure that would be useful
+          beyond your organization, you can contribute new templates to future DITA-OT versions, or create a custom
+          plug-in with company-specific project templates.</note>
+      </section>
+
       <section id="validate">
         <title>Validate subcommand</title>
         <p id="4397">A new <cmdname>validate</cmdname> subcommand can be used to check input files for errors before
@@ -78,31 +103,6 @@
           <xref keyref="using-project-files">project file</xref> that defines multiple deliverables.</p>
       </section>
 
-      <section id="init-preview">
-        <title><b outputclass="badge badge-primary">Preview</b> Init subcommand</title>
-        <p id="4509">The new <cmdname>init</cmdname> subcommand initializes a project with files from a template.
-          <xref href="https://github.com/dita-ot/dita-ot/issues/4509" format="html" scope="external">#4509</xref>,
-          <xref href="https://github.com/dita-ot/dita-ot/issues/4523" format="html" scope="external">#4523</xref>
-        </p>
-        <p>The initial implementation is a preview feature designed to illustrate how project templates work. You can
-          use templates as a starting point for new publications with required metadata, media assets, or custom
-          stylesheets, or provide examples of your organization’s preferred markup.</p>
-        <ul>
-          <li>For a list of available templates, run <filepath conkeyref="conref-task/dita-cmd"/>
-            <cmdname>init</cmdname>
-            <parmname>--list</parmname></li>
-          <li>To add files from a template to the current directory, run <filepath conkeyref="conref-task/dita-cmd"/>
-            <cmdname>init</cmdname>
-            <varname>template</varname></li>
-        </ul>
-        <p><ph conkeyref="dita-command-arguments/init-desc"/></p>
-        <note type="tip">Sample project templates are provided in the
-          <xref href="https://github.com/dita-ot/org.dita.init" format="html" scope="external">new
-              <codeph>org.dita.init</codeph> plug-in</xref>. If you have a common project structure that would be useful
-          beyond your organization, you can contribute new templates to future DITA-OT versions, or create a custom
-          plug-in with company-specific project templates.</note>
-      </section>
-      
       <section id="bookmap-themes">
         <title>Bookmap support in PDF themes</title>
         <p>The PDF theme plug-in <codeph>com.elovirta.pdf</codeph> has been updated to version <keyword

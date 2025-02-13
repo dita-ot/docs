@@ -20,6 +20,36 @@
         <xref keyref="4.3-release-notes"/>.</note>
     </section>
 
+    <section id="bookmap-themes">
+      <title>Bookmap support in PDF themes</title>
+      <p>The PDF theme plug-in <codeph>com.elovirta.pdf</codeph> has been updated to version <keyword
+          keyref="tool.theme.version"
+        /> for better bookmap support.
+        <xref href="https://github.com/jelovirt/pdf-generator/pull/111" format="html" scope="external">#111</xref>
+        You can now style the following bookmap elements in a YAML or JSON theme without building a custom PDF plug-in:
+        <ul>
+          <li><xmlelement>part</xmlelement></li>
+          <li><xmlelement>chapter</xmlelement></li>
+          <li><xmlelement>appendix</xmlelement></li>
+          <li><xmlelement>index</xmlelement></li>
+        </ul>
+      </p>
+      <p>Table of contents (ToC) styles have moved to the root <codeph>style</codeph> key. ToC styling has also been
+        extended for better bookmap support, so you can now specify styles for each level with dedicated keys such as
+          <codeph>style-toc-part</codeph>, <codeph>style-toc-chapter</codeph>, etc.</p>
+      <p>Parts and chapters now also support their own local contents listings, which you can enable by setting the
+        corresponding layout key, for example <codeph>chapter-layout: MINITOC</codeph>. You can then define styling for
+        each level via keys like <codeph>style-part-toc-chapter</codeph>, or <codeph>style-chapter-toc-1</codeph>.</p>
+      <p>A new <codeph>default</codeph> theme provides basic styling such as font settings, indentation, and title
+        numbering for a range of commonly used elements. This theme is not intended for publishing as is, but can serve
+        as a foundation for custom themes, and reduce the number of elements you need to style yourself. To use the
+        default theme as the baseline for your own custom theme, add <codeph>extends: default</codeph> to your theme
+        file.
+        <xref href="https://github.com/jelovirt/pdf-generator/pull/112" format="html" scope="external">#112</xref>,
+        <xref href="https://github.com/jelovirt/pdf-generator/pull/114" format="html" scope="external">#114</xref>
+      </p>
+    </section>
+
     <section id="legacy-samples">
       <title>Legacy sample files removed</title>
       <indexterm><codeph>ant_sample</codeph> class</indexterm>

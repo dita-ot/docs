@@ -59,17 +59,6 @@
           output.</p>
       </section>
 
-      <section id="xml-parsing">
-        <title>XML parsing exceptions</title>
-        <p id="4408">A new error message makes it easier to identify XML parsing exceptions in the log.
-          <xref href="https://github.com/dita-ot/dita-ot/issues/4408" format="html" scope="external">#4408</xref>
-        </p>
-        <p>The <msgnum>DOTJ088E</msgnum> error appears when the input is in some way invalid but can still be parsed.
-          The message content begins with “<msgph>XML parsing error:</msgph>” and provides additional context from the
-          parser in the <xmlelement>reason</xmlelement>. As with other error messages, custom plug-ins may override the
-          message content or severity.</p>
-      </section>
-
       <section id="cli-multiformat">
         <title>Multiple output formats from CLI</title>
         <p id="4486">You can now publish multiple formats at once from a single <cmdname>dita</cmdname> command
@@ -228,6 +217,13 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4444" format="html" scope="external">#4444</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4498" format="html" scope="external">#4498</xref>
           </li>
+          <li id="4408">A new <msgnum>DOTJ088E</msgnum> error message makes it easier to identify XML parsing
+            exceptions in the log.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4408" format="html" scope="external">#4408</xref>
+            The error appears when the input is in some way invalid but can still be parsed. The message content begins
+            with “<msgph>XML parsing error:</msgph>” and provides additional context from the parser in the
+              <xmlelement>reason</xmlelement>. As with other error messages, custom plug-ins may override the message
+            content or severity.</li>
           <li id="4542">DITA-OT uses the Xerces SecurityManager to protect against the so-called
             <xref href="https://en.wikipedia.org/wiki/Billion_laughs_attack" format="html" scope="external">“billion
               laughs attack”</xref>, an entity expansion technique that can cause XML parsers to run out of memory and

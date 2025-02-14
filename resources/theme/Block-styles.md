@@ -2,56 +2,6 @@ The presentation of block elements can be adjusted by setting `style` keys. Bloc
 
 ## Block keys
 
-### `body`
-
-Default body text, for example `<p>` elements.
-
-### `shortdesc`
-
-Short description and abstract styles.
-
-### `h<n>`
-
-Topic titles. `<n>` is a number ranging from 1 to 6, representing each of the six heading levels.
-
-- `title-numbering: 'true' | 'false'`
-
-### `chapter`
-
-Chapter title.
-
-- `title-numbering: 'true' | 'false'`
-
-### `chapter-toc`
-
-Chapter table of contents.
-
-- `maximum-level: <n>` — Number of TOC levels to show
-
-### `chapter-toc-<n>`
-
-TOC entry in chapter TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
-
-### `part`
-
-Part title.
-
-- `title-numbering: 'true' | 'false'`
-
-### `part-toc`
-
-Part table of contents.
-
-- `maximum-level: <n>` — Number of TOC levels to show
-
-### `part-toc-chapter`
-
-Bookmap chapter TOC entry in part TOC.
-
-### `part-toc-<n>`
-
-TOC entry in part TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
-
 ### `appendix`
 
 Appendix title.
@@ -70,6 +20,33 @@ Appendix table of contents.
 
 TOC entry in appendix TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
 
+### `body`
+
+Default body text, for example `<p>` elements.
+
+### `chapter`
+
+Chapter title.
+
+- `title-numbering: 'true' | 'false'`
+
+### `chapter-toc`
+
+Chapter table of contents.
+
+- `maximum-level: <n>` — Number of TOC levels to show
+
+### `chapter-toc-<n>`
+
+TOC entry in chapter TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
+
+### `codeblock`
+
+Code block element.
+
+- `line-numbering: 'true' | 'false'` — Line numbering.
+- `show-whitespace: 'true' | 'false'` — Show whitespace characters.
+
 ### `cover`
 
 Cover page.
@@ -84,13 +61,11 @@ Cover page title.
 
 Cover page subtitle or alternative title.
 
-### `section`
+### `dl`
 
-Section element.
+Definition list element.
 
-### `section-title`
-
-Section element title.
+- `dl-type: 'table' | 'list' | 'html'` — Style definition list as bulleted list or indented list.
 
 ### `example`
 
@@ -114,6 +89,32 @@ Figure caption.
 - `content`: Contents of figure caption. Supported fields are:
   - `number`: caption number
   - `title`: caption contents
+
+### `glossary`
+
+Glossary title.
+
+### `h<n>`
+
+Topic titles. `<n>` is a number ranging from 1 to 6, representing each of the six heading levels.
+
+- `title-numbering: 'true' | 'false'`
+
+### `hazardstatement`
+
+Hazard statement element.
+
+### `hazardstatement-label`
+
+Hazard statement label element.
+
+### `hazardstatement-<type>-label`
+
+Label for hazard statement elements with `@type`.
+
+### `index`
+
+Index title.
 
 ### `note`
 
@@ -162,46 +163,61 @@ Label for note elements with `@type`.
 
 - `content` — Content template.
 
-### `dl`
-
-Definition list element.
-
-- `dl-type: 'table' | 'list' | 'html'` — Style definition list as bulleted list or indented list.
-
 ### `ol`
 
 Ordered list.
-
-### `ul`
-
-Unordered list.
 
 ### `parml`
 
 Parameter list element.
 
-### `plentry`
+### `part`
 
-Parameter list entry element.
+Part title.
 
-### `pt`
+- `title-numbering: 'true' | 'false'`
 
-Parameter term element within a parameter list entry.
+### `part-toc`
+
+Part table of contents.
+
+- `maximum-level: <n>` — Number of TOC levels to show
+
+### `part-toc-chapter`
+
+Bookmap chapter TOC entry in part TOC.
+
+### `part-toc-<n>`
+
+TOC entry in part TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
 
 ### `pd`
 
 Parameter definition element within a parameter list entry.
 
+### `plentry`
+
+Parameter list entry element.
+
 ### `pre`
 
 Preformatted element.
 
-### `codeblock`
+### `pt`
 
-Code block element.
+Parameter term element within a parameter list entry.
 
-- `line-numbering: 'true' | 'false'` — Line numbering.
-- `show-whitespace: 'true' | 'false'` — Show whitespace characters.
+### `section`
+
+Section element.
+
+### `section-title`
+
+Section element title.
+
+### `shortdesc`
+
+Short description and abstract styles.
 
 ### `table`
 
@@ -222,6 +238,10 @@ Table caption.
 ### `table-header`
 
 Table header row
+
+### `task-labels`
+
+Boolean key to generate default section labels for tasks.
 
 ### `toc`
 
@@ -245,23 +265,9 @@ Bookmap part TOC entry.
 
 TOC entry in main TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
 
-### `hazardstatement`
+### `ul`
 
-Hazard statement element.
-
-### `hazardstatement-label`
-
-Hazard statement label element.
-
-### `hazardstatement-<type>-label`
-
-Label for hazard statement elements with `@type`.
-
-## XSL-FO extension properties
-
-Themes support XSL-FO extension properties implemented by XSL formatters:
-
-- `background-size: [ <length> | <percentage> | auto ]{1,2}` — Size of background image.
+Unordered list.
 
 [XSL fo:block]: https://www.w3.org/TR/xsl11/#fo_block
-[XSL extensions]: #xsl-fo-extension-properties
+[XSL extensions]: ./Styles.md#xsl-fo-extension-properties

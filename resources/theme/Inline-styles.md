@@ -2,6 +2,66 @@ The presentation of inline elements can be adjusted by setting `style` keys. Inl
 
 ## Inline keys
 
+### `apiname`
+
+API name element.
+
+### `b`
+
+Bold highlighting element.
+
+### `cmdname`
+
+Comment name element.
+
+### `codeph`
+
+Code phrase element.
+
+### `delim`
+
+Syntax delimiter character element.
+
+### `filepath`
+
+File path element.
+
+### `fragment`
+
+Syntax fragment element.
+
+### `fragref`
+
+Syntax fragment reference element.
+
+### `groupchoice`
+
+Group choice element.
+
+### `groupcomp`
+
+Group composite element.
+
+### `groupseq`
+
+Group sequence element.
+
+### `i`
+
+Italic highlighting element.
+
+### `keyword`
+
+Keyword element.
+
+### `kwd`
+
+Syntax keyword element.
+
+### `line-through`
+
+Strikethrough highlighting element.
+
 ### `link`
 
 Link elements.
@@ -20,83 +80,63 @@ External link elements.
   - `link-text`: link text
   - `url`: link URL
 
-### `tm`
+### `markupname`
 
-Trademark element.
+Named markup token element.
 
-- `symbol-scope: 'always' | 'chapter' | 'never'` — Output trademark symbol always, once per chapter, or never.
+### `menucascade`
 
-### `keyword`
+Menu cascade element used to document a series of menu choices.
 
-Keyword element.
+- `separator-content: content-template` — Separator between **uicontrol** elements, defaults to “`>`”.
 
-### `term`
+### `numcharref`
 
-Term element.
+XML character reference element.
 
-### `codeph`
+### `oper`
 
-Code phrase element.
-
-### `filepath`
-
-File path element.
-
-### `cmdname`
-
-Comment name element.
-
-### `varname`
-
-Variable name element.
-
-### `userinput`
-
-User input element.
-
-### `systemoutput`
-
-System output element.
-
-### `apiname`
-
-API name element.
+Syntax operator element.
 
 ### `option`
 
 Option element.
 
+### `overline`
+
+Overline highlighting element.
+
+### `parameterentity`
+
+XML parameter entity element.
+
 ### `parmname`
 
 Parameter name element.
 
-### `synph`
+### `repsep`
 
-Syntax phrase element.
+Syntax repeat separator character element.
 
-### `syntaxdiagram`
+### `screen`
 
-Syntax diagram element.
+Screen element.
 
-### `groupseq`
+### `sep`
 
-Group sequence element.
+Syntax separator character element.
 
-### `groupchoice`
+### `shortcut`
 
-Group choice element.
+Keyboard shortcut element.
 
-### `groupcomp`
+### `sub`
 
-Group composite element.
+Subscript highlighting element.
 
-### `fragment`
+### `sup`
 
-Syntax fragment element.
-
-### `fragref`
-
-Syntax fragment reference element.
+Superscript highlighting element.
 
 ### `synblk`
 
@@ -110,111 +150,67 @@ Syntax note element.
 
 Syntax note reference element.
 
-### `kwd`
+### `synph`
 
-Syntax keyword element.
+Syntax phrase element.
 
-### `var`
+### `syntaxdiagram`
 
-Syntax variable element.
+Syntax diagram element.
 
-### `oper`
+### `systemoutput`
 
-Syntax operator element.
+System output element.
 
-### `delim`
+### `term`
 
-Syntax delimiter character element.
-
-### `sep`
-
-Syntax separator character element.
-
-### `repsep`
-
-Syntax repeat separator character element.
-
-### `b`
-
-Bold highlighting element.
-
-### `i`
-
-Italic highlighting element.
-
-### `u`
-
-Underline highlighting element.
-
-### `tt`
-
-Teletype highlighting element.
-
-### `sup`
-
-Superscript highlighting element.
-
-### `sub`
-
-Subscript highlighting element.
-
-### `line-through`
-
-Strikethrough highlighting element.
-
-### `overline`
-
-Overline highlighting element.
-
-### `markupname`
-
-Named markup token element.
-
-### `uicontrol`
-
-User interface control element.
-
-### `wintitle`
-
-Window or dialog title element.
-
-### `menucascade`
-
-Menu cascade element used to document a series of menu choices.
-
-- `separator-content: content-template` — Separator between **uicontrol** elements, defaults to “`>`”.
-
-### `shortcut`
-
-Keyboard shortcut element.
-
-### `screen`
-
-Screen element.
-
-### `filepath`
-
-File path element.
-
-### `xmlelement`
-
-XML element element.
-
-### `xmlatt`
-
-XML attribute element.
+Term element.
 
 ### `textentity`
 
 XML text entity element.
 
-### `parameterentity`
+### `tm`
 
-XML parameter entity element.
+Trademark element.
 
-### `numcharref`
+- `symbol-scope: 'always' | 'chapter' | 'never'` — Output trademark symbol always, once per chapter, or never.
 
-XML character reference element.
+### `tt`
+
+Teletype highlighting element.
+
+### `u`
+
+Underline highlighting element.
+
+### `uicontrol`
+
+User interface control element.
+
+### `userinput`
+
+User input element.
+
+### `var`
+
+Syntax variable element.
+
+### `varname`
+
+Variable name element.
+
+### `wintitle`
+
+Window or dialog title element.
+
+### `xmlatt`
+
+XML attribute element.
+
+### `xmlelement`
+
+XML element element.
 
 ### `xmlnsname`
 

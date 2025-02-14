@@ -23,4 +23,10 @@ style:
     text-decoration: underline
 ```
 
+## XSL-FO extension properties
+
+In addition to the block and inline styles, themes support XSL-FO extension properties implemented by XSL formatters:
+
+- `background-size: [ <length> | <percentage> | auto ]{1,2}` — Size of background image.
+
 [refine-margin-space-indent]: https://www.w3.org/TR/xsl11/#refine-margin-space-indent

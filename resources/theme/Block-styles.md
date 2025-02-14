@@ -269,11 +269,5 @@ TOC entry in main TOC. `<n>` is a number ranging from 1 to 6, representing each 
 
 Unordered list.
 
-## XSL-FO extension properties
-
-Themes support XSL-FO extension properties implemented by XSL formatters:
-
-- `background-size: [ <length> | <percentage> | auto ]{1,2}` — Size of background image.
-
 [XSL fo:block]: https://www.w3.org/TR/xsl11/#fo_block
-[XSL extensions]: #xsl-fo-extension-properties
+[XSL extensions]: ./Styles.md#xsl-fo-extension-properties

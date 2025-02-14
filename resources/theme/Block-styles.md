@@ -52,6 +52,14 @@ Bookmap chapter TOC entry in part TOC.
 
 TOC entry in part TOC. `<n>` is a number ranging from 1 to 6, representing each of the six TOC entry levels.
 
+### `glossary`
+
+Glossary title.
+
+### `index`
+
+Index title.
+
 ### `appendix`
 
 Appendix title.
@@ -99,6 +107,10 @@ Example element.
 ### `example-title`
 
 Example element title.
+
+### `task-labels`
+
+Boolean key to generate default section labels for tasks.
 
 ### `fig`
 

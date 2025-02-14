@@ -231,5 +231,4 @@ Themes support XSL-FO extension properties implemented by XSL formatters:
 - `background-size: [ <length> | <percentage> | auto ]{1,2}` — Size of background image.
 
 [XSL fo:inline]: https://www.w3.org/TR/xsl11/#fo_inline
-[XSL fo:block]: https://www.w3.org/TR/xsl11/#fo_block
 [XSL extensions]: #xsl-fo-extension-properties

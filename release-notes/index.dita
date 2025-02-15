@@ -82,6 +82,9 @@
         <p>This command runs the pre-processing routines in strict mode and reports any errors or warnings. This is
           ideal for continuous integration scenarios, as it allows you to quickly check contributions for errors without
           building output.</p>
+        <p>A new <parmname>depend.validate</parmname> extension point defines an Ant target to run with the
+            <cmdname>dita validate</cmdname> subcommand after pre-processing, so you can extend the default validation
+          mechanisms with your own checks.</p>
       </section>
 
       <section id="cli-multiformat">

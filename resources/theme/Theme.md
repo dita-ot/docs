@@ -36,5 +36,7 @@ style:
     color: gray
 ```
 
+Keys can be divided and nested wherever a hyphen (`-`) appears in the name. For example, the key `page-size` can be expressed as the `size` key under the `page` category key. This nested structure is for organizational purposes and not required. All keys are flatted when the theme is loaded.
+
 [json]: https://json.org
 [yaml]: https://yaml.org

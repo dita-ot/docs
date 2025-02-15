@@ -140,5 +140,38 @@
     <refbody/>
   </reference>
 
+  <reference id="validate">
+    <title>Validation extension points</title>
+    <shortdesc
+      conaction="pushreplace"
+      conref="extension-points-in-org.dita.validate.dita#org.dita.validate-ext/shortdesc"
+    > The
+        <codeph>org.dita.validate</codeph> plug-in provides extension points to modify the validation routines that run
+      with the <cmdname>dita validate</cmdname> subcommand. <ph>
+        <indexterm><codeph>org.dita.validate</codeph></indexterm>
+        <indexterm>extension points
+          <indexterm><codeph>org.dita.validate</codeph></indexterm>
+          <indexterm>validation</indexterm>
+        </indexterm>
+        <indexterm>validation</indexterm>
+      </ph>
+    </shortdesc>
+    <refbody>
+      <section>
+        <dl>
+          <dlentry id="depend.validate">
+            <dt><parmname>depend.validate</parmname></dt>
+            <!--
+            <dd id="depend.validate.desc">Validation target</dd>
+            -->
+            <dd
+              conaction="pushreplace"
+              conref="extension-points-in-org.dita.validate.dita#org.dita.validate-ext/depend.validate.desc"
+            >Defines an
+              Ant target to run with the <cmdname>dita validate</cmdname> subcommand after pre-processing.</dd>
+          </dlentry>
+        </dl></section>
+    </refbody>
+  </reference>
 
 </reference>

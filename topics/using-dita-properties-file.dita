@@ -2,14 +2,13 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <task id="using-dita-properties-file">
-  <title>Setting build parameters with <filepath>.properties</filepath> files</title>
+  <title>Setting parameters with <filepath>.properties</filepath> files</title>
   <titlealts>
     <navtitle>Using a properties file</navtitle>
   </titlealts>
-  <shortdesc>Usually, DITA builds require setting a number of parameters that do not change frequently. You can
-    reference a set of build parameters defined in a <filepath>.properties</filepath> file when building output with the
-      <cmdname>dita</cmdname> command. If needed, you can override any parameter by specifying it explicitly as an
-    argument to the <cmdname>dita</cmdname> command.</shortdesc>
+  <shortdesc>DITA builds usually require a set of parameters that don’t change frequently. You can define these settings
+    in a <filepath>.properties</filepath> file, and reference it when building output with the <cmdname>dita</cmdname>
+    command. You can override any of the properties by specifying them as command-line arguments.</shortdesc>
   <prolog>
     <metadata>
       <keywords>

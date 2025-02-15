@@ -42,6 +42,16 @@ All other link targets detect the `format` from the file name extension and are 
 <xref href="http://www.example.com/test.html" format="html" scope="external">External</xref>
 ```
 
+Links to DITA or Markdown files use the [URI-based addressing] as defined in the DITA specification, not HTML5 linking. This means that [links to non-topic elements] follow the DITA fragment identifier syntax:
+
+```markdown
+[Section](filename.md#topicID/sectionID)
+```
+
+```xml
+<xref href="filename.md#topicID/sectionID">Section</xref>
+```
+
 ## Images
 
 Images used in inline content are processed with inline placement. If a block-level image contains a title, it is treated as an image wrapped in a figure element:
@@ -236,3 +246,5 @@ workflow: review
 [shortcut reference links]: https://spec.commonmark.org/0.30/#shortcut-reference-link
 [tight]: https://spec.commonmark.org/0.30/#tight
 [YAML]: https://www.yaml.org/ 'YAML'
+[URI-based addressing]: http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/base/uri-based-addressing.html
+[links to non-topic elements]: http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/base/uri-based-addressing.html#uri-based-addressing__non-topic-with-uri

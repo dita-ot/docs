@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<map>
+  <title>Intro topics</title>
+
+  <topicref keyref="release-notes">
+    <topicref keyref="release-history" deliveryTarget="html"/>
+  </topicref>
+  <topicref keyref="input-formats" collection-type="family" linking="normal">
+    <mapref href="input-formats.ditamap"/>
+  </topicref>
+  <topicref keyref="output-formats" linking="normal">
+    <mapref href="transformations.ditamap"/>
+  </topicref>
+
+</map>

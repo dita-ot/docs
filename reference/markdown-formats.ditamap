@@ -18,12 +18,8 @@
   <reltable>
     <title>Source and target</title>
     <relheader>
-      <relcolspec linking="sourceonly">
-        <title>Sourceonly: links to →</title>
-      </relcolspec>
-      <relcolspec linking="targetonly">
-        <title>Targetonly</title>
-      </relcolspec>
+      <relcolspec linking="sourceonly"/>
+      <relcolspec linking="targetonly"/>
     </relheader>
     <relrow>
       <relcell>

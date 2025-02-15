@@ -68,7 +68,7 @@
     </section>
     <section id="skip-properties">
       <title>Deprecated <codeph>skip</codeph> properties</title>
-      <p>Many Ant targets refer to <codeph>skip</codeph> properties that can be used to disable preprocessing steps. In
+      <p>Many Ant targets refer to <codeph>skip</codeph> properties that can be used to disable pre-processing steps. In
         earlier releases, these properties were not set or named consistently; they are now generated automatically with
         more consistent naming and behavior.
         <xref href="https://github.com/dita-ot/dita-ot/issues/3845" format="html" scope="external">#3845</xref>,

@@ -49,7 +49,7 @@ runs:
       run: |
         curl -sI https://s3-eu-west-1.amazonaws.com/dita-ot/dita-ot-develop.zip | grep -F ETag | cut -d'"' -f 2 > dita-ot-develop.etag
     - name: Cache develop DITA-OT
-      uses: actions/cache@v2
+      uses: actions/cache@v4
       with:
         path: dita-ot-develop
         key: ${{ runner.os }}-dita-ot-develop-${{ hashFiles('dita-ot-develop.etag') }}

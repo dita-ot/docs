@@ -54,7 +54,16 @@
   <mapref href="markdown-formats.ditamap"/>
 
   <mapref href="license.ditamap"/>
-  <mapref href="glossary.ditamap"/>
+
+  <topicref keyref="dita-and-dita-ot-resources">
+    <topicgroup deliveryTarget="html">
+      <mapref href="../topics/dita-resources.ditamap" toc="no"/>
+      <mapref href="../topics/dita-ot-day-videos.ditamap"/>
+    </topicgroup>
+    <topicref keyref="web-based-resources" deliveryTarget="pdf" print="yes"/>
+    <topicref keyref="books" toc="yes"/>
+    <mapref href="glossary.ditamap"/>
+  </topicref>
 
   <reltable>
     <relrow>

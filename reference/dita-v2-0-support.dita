@@ -185,15 +185,20 @@
         </li>
       </ul>
     </section>
-    <!--
-    <section id="v4.2">
-      <title>DITA-OT 4.2</title>
-      <p>DITA-OT 4.2 adds support for additional DITA 2.0 features.</p>
-      <ul id="added-in-4.2">
-        <li/>
+    <section id="v4.3">
+      <title>DITA-OT 4.3</title>
+      <p>DITA-OT 4.3 adds support for additional DITA 2.0 features.</p>
+      <ul id="added-in-4.3">
+        <li id="4570">HTML5 processing now supports the <xmlatt>height</xmlatt> and <xmlatt>width</xmlatt> attributes
+          on the DITA 2.0 <xmlelement>video</xmlelement> element to ensure that videos are scaled correctly.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4570" format="html" scope="external">#4570</xref>
+        </li>
+        <li id="4571">HTML5 and PDF processing has been updated to support the new DITA 2.0 emphasis domain elements:
+            <xmlelement>em</xmlelement> for emphasis and <xmlelement>strong</xmlelement> for strong emphasis.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4571" format="html" scope="external">#4571</xref>
+        </li>
       </ul>
     </section>
-    -->
     <section>
       <note id="more-to-come">Other new or revised features proposed for DITA 2.0 are not yet supported. Additional
         features will be implemented in future versions of DITA-OT as the specification evolves.</note>

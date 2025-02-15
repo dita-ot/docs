@@ -2,7 +2,7 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <map>
-  <title>Parameter Reference</title>
+  <title>Configuration</title>
   <topicref keyref="dita-command-arguments"/>
   <topicref keyref="parameters_intro" keys="dita-ot-params">
     <topicref keyref="parameters-base"/>
@@ -25,5 +25,11 @@
     <topicref keyref="plugin-properties-file"/>
     <topicref keyref="configuration-properties-file"/>
     <topicref keyref="internal-ant-properties"/>
+  </topicref>
+  <topicref keyref="html-customization" collection-type="family">
+    <mapref href="../topics/html-customization.ditamap"/>
+  </topicref>
+  <topicref keyref="pdf-customization">
+    <mapref href="../topics/pdf-customization.ditamap"/>
   </topicref>
 </map>

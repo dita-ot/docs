@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
-<task id="installing-client">
+<task id="installing">
   <title>Installing DITA Open Toolkit</title>
   <titlealts>
-    <navtitle>Installing DITA-OT</navtitle>
+    <navtitle>Installing</navtitle>
   </titlealts>
-  <shortdesc id="what-is-client">The DITA-OT distribution package can be installed on Linux, macOS, and Windows. It
-    contains everything that you need to run the toolkit except for Java.</shortdesc>
+  <shortdesc>The DITA-OT distribution package can be installed on Linux, macOS, and Windows. It contains everything that
+    you need to run the toolkit except for Java.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -45,6 +45,9 @@
       </step>
       <step>
         <cmd>Extract the contents of the package to the directory where you want to install DITA-OT.</cmd>
+        <info>
+          <note>The documentation refers to this location as the <cite>DITA-OT installation directory</cite>, or
+              <filepath conkeyref="conref-task/ot-dir"/>.</note></info>
       </step>
       <step>
         <cmd>Add the absolute path for the <filepath>bin</filepath> folder of the DITA-OT installation directory to the

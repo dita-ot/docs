@@ -66,5 +66,38 @@
         </ph>
       </p>
     </section>
+    <section id="skip-properties">
+      <title>Deprecated <codeph>skip</codeph> properties</title>
+      <p>Many Ant targets refer to <codeph>skip</codeph> properties that can be used to disable pre-processing steps. In
+        earlier releases, these properties were not set or named consistently; they are now generated automatically with
+        more consistent naming and behavior.
+        <xref href="https://github.com/dita-ot/dita-ot/issues/3845" format="html" scope="external">#3845</xref>,
+        <xref href="https://github.com/dita-ot/dita-ot/issues/3851" format="html" scope="external">#3851</xref>
+      </p>
+      <p>As of DITA-OT 4.0, direct use of these internal properties is deprecated, and will stop the build with an
+        error:</p>
+      <p><msgnum>[DOTA015F]</msgnum> <msgph>Internal property preprocess.copy-flag.skip may not be set directly.
+        Use property build-step.copy-flag instead.</msgph>
+      </p>
+      <p>
+        <ul>
+          <li>For example, if your custom plug-ins previously used <codeph>skip</codeph> properties to disable
+            pre-processing steps,
+            <ul>
+              <li><codeph>&lt;property name="preprocess.copy-image.skip" value="true"/></codeph></li>
+              <li><codeph>&lt;property name="preprocess.copy-html.skip" value="true"/></codeph></li>
+              <li><codeph>&lt;property name="preprocess.copy-flag.skip" value="true"/></codeph></li>
+            </ul>
+          </li>
+          <li>use the new Boolean <codeph>build-step</codeph> properties instead.
+            <ul>
+              <li><codeph>&lt;property name="build-step.copy-image" value="false"/></codeph></li>
+              <li><codeph>&lt;property name="build-step.copy-html" value="false"/></codeph></li>
+              <li><codeph>&lt;property name="build-step.copy-flag" value="false"/> </codeph></li>
+            </ul>
+          </li>
+        </ul>
+      </p>
+    </section>
   </refbody>
 </reference>

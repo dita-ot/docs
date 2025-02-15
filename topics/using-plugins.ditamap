@@ -7,6 +7,9 @@
   <topicref keyref="plugins-installing"/>
   <topicref keyref="plugins-removing"/>
   <topicref keyref="plugins-registry"/>
+  <topicref keyref="custom-plugins">
+    <mapref href="../topics/creating-plugins.ditamap"/>
+  </topicref>
   <topicref keyref="rebuilding-docs"/>
 
   <reltable>

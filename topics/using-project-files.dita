@@ -6,9 +6,9 @@
   <titlealts>
     <navtitle>Using a project file</navtitle>
   </titlealts>
-  <shortdesc>DITA-OT 3.4 introduced project files that allow you to publish multiple deliverables at once. Each
-    deliverable specifies a re-usable source <codeph>context</codeph> that groups the maps or topics you want to
-    publish, an <codeph>output</codeph> folder, and a <codeph>publication</codeph> format (such as HTML, or PDF) with
+  <shortdesc>DITA-OT project files allow you to publish multiple deliverables at once. Each deliverable specifies a
+    re-usable source <codeph>context</codeph> that groups the maps or topics you want to publish, an
+     <codeph>output</codeph> folder, and a <codeph>publication</codeph> format (such as HTML, or PDF) with
     transformation parameters.</shortdesc>
   <prolog>
     <metadata>

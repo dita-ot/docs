@@ -16,7 +16,7 @@ The following table provides an overview of differences between the `markdown` a
 | Subheadings                  | Nested topics                        | Sections                    |
 | Topic IDs                    | Special attributes or title          | Generated from title        |
 | Output class                 | Special attributes block             | –                           |
-| Profiling atts               | Special attributes block             | –                           |
+| Profiling attributes         | Special attributes block             | –                           |
 | Topic types                  | Special attributes block             | –                           |
 | Schemas                      | YAML frontmatter                     | –                           |
 | Tables                       | OASIS exchange table model ^ 1^ [^1] | DITA `<simpletable>`        |
@@ -30,6 +30,7 @@ The following table provides an overview of differences between the `markdown` a
 | Maps: reltables              | MultiMarkdown tables with links      | –                           |
 | Key references in topics     | ✔ Shortcut reference links          | ✔ Shortcut reference links |
 | List spacing                 | [loose] or [tight] (no blank lines)  | [loose] only (¶ per item)   |
+| Raw DITA                     | ✔                                   | –                           |
 
 [Markdown]: https://daringfireball.net/projects/markdown/
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/

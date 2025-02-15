@@ -73,6 +73,21 @@
         <fragment>
           <groupseq>
             <kwd>dita</kwd>
+            <kwd>init</kwd>
+            <var>template</var>
+            <groupcomp importance="optional">
+              <kwd>--output</kwd>
+              <oper>=</oper>
+              <var>dir</var>
+            </groupcomp>
+            <groupcomp importance="optional">
+              <var>options</var>
+            </groupcomp>
+          </groupseq>
+        </fragment>
+        <fragment>
+          <groupseq>
+            <kwd>dita</kwd>
             <kwd>install</kwd>
             <groupchoice importance="optional">
               <var>ID</var>
@@ -98,6 +113,18 @@
             <kwd>dita</kwd>
             <kwd>uninstall</kwd>
             <var>ID</var>
+          </groupseq>
+        </fragment>
+        <fragment>
+          <groupseq>
+            <kwd>dita</kwd>
+            <kwd>validate</kwd>
+            <kwd>--input</kwd>
+            <oper>=</oper>
+            <var>file</var>
+            <groupcomp importance="optional">
+              <var>options</var>
+            </groupcomp>
           </groupseq>
         </fragment>
         <fragment>
@@ -177,7 +204,9 @@
         <index-see><cmdname>transtypes</cmdname> subcommand</index-see></indexterm>
       <indexterm><parmname>--help</parmname></indexterm>
       <indexterm><parmname>-h</parmname></indexterm>
+      <indexterm><cmdname>validate</cmdname> subcommand</indexterm>
       <indexterm><cmdname>version</cmdname> subcommand</indexterm>
+      <indexterm><cmdname>init</cmdname> subcommand</indexterm>
       <indexterm><parmname>--version</parmname>
         <index-see><cmdname>version</cmdname> subcommand</index-see></indexterm>
       <parml>
@@ -186,6 +215,26 @@
             <parmname>deliverables</parmname>
             <varname>file</varname></pt>
           <pd>Show a list of the available deliverables in the specified project <varname>file</varname>.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>init</parmname>
+            <varname>template</varname>
+          </pt>
+          <pd>Initialize a project with files from the specified template.</pd>
+          <pd>
+            <ph id="init-desc">The folder hierarchy in the template will be copied to the current working directory by
+              default. To write the files to a different location, add the <parmname>--output</parmname> option and
+              specify the desired path. The directory will be created if it doesn’t exist. If any of the template files
+              are already present, an error will appear.</ph></pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>init</parmname>
+            <parmname>--list</parmname>
+          </pt>
+          <pd>Show a list of the available project templates.</pd>
+          <pd>The entries in this list may be passed as arguments to the <parmname>init</parmname> subcommand.</pd>
         </plentry>
         <plentry>
           <pt>
@@ -214,6 +263,19 @@
         </plentry>
         <plentry>
           <pt>
+            <parmname>plugins</parmname>
+          </pt>
+          <pd>Show a list of the currently installed plug-ins.</pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>transtypes</parmname>
+          </pt>
+          <pd>Show a list of the available output formats (transformation types).</pd>
+          <pd>The entries in this list may be passed as values to the <parmname>--format</parmname> argument.</pd>
+        </plentry>
+        <plentry>
+          <pt>
             <parmname>uninstall</parmname>
             <varname>ID</varname>
           </pt>
@@ -225,16 +287,9 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>plugins</parmname>
+            <parmname>validate</parmname>
           </pt>
-          <pd>Show a list of the currently installed plug-ins.</pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>transtypes</parmname>
-          </pt>
-          <pd>Show a list of the available output formats (transformation types).</pd>
-          <pd>The entries in this list may be passed as values to the <parmname>--format</parmname> argument.</pd>
+          <pd>Validate input file. No output is generated.</pd>
         </plentry>
         <plentry>
           <pt>
@@ -376,8 +431,8 @@
             example, use <parmname>--repeat</parmname>=<option>5</option>. The duration of each execution will appear in
             the console when the final transformation is complete.
             <codeblock outputclass="syntax-bash multi-platform">$ <cmdname>dita</cmdname> <parmname
-              >--input</parmname>=<filepath>docsrc/samples/sequence.ditamap</filepath> <parmname
-              >--format</parmname>=<option>html5</option> \
+              >--input</parmname>=<filepath>path/to/sample.ditamap</filepath> <parmname>--format</parmname>=<option
+              >html5</option> \
        <parmname>--repeat</parmname>=<option>5</option>
 1 11281ms
 2 4132ms

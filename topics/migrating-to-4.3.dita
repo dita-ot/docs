@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<reference id="migrating-to-4.3">
+
+  <title>Migrating to release 4.3</title>
+  <titlealts>
+    <navtitle>To 4.3</navtitle>
+  </titlealts>
+
+  <shortdesc>DITA-OT 4.3 includes <ph id="summary">new <cmdname>init</cmdname> and <cmdname>validate</cmdname>
+      subcommands that can be used to set up projects from a template and check files for errors before publishing. You
+      can now publish multiple formats on the command line at once, add raw DITA to Markdown files, and publish bookmaps
+      with PDF themes</ph>.</shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 4.3 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="4.3-release-notes"/>.</note>
+    </section>
+
+    <section id="bookmap-themes">
+      <title>Bookmap support in PDF themes</title>
+      <p>The PDF theme plug-in <codeph>com.elovirta.pdf</codeph> has been updated to version <keyword
+          keyref="tool.theme.version"
+        /> for better bookmap support.
+        <xref href="https://github.com/jelovirt/pdf-generator/pull/111" format="html" scope="external">#111</xref>
+        You can now style the following bookmap elements in a YAML or JSON theme without building a custom PDF plug-in:
+        <ul>
+          <li><xmlelement>part</xmlelement></li>
+          <li><xmlelement>chapter</xmlelement></li>
+          <li><xmlelement>appendix</xmlelement></li>
+          <li><xmlelement>index</xmlelement></li>
+        </ul>
+      </p>
+      <p>Table of contents (ToC) styles have moved to the root <codeph>style</codeph> key. ToC styling has also been
+        extended for better bookmap support, so you can now specify styles for each level with dedicated keys such as
+          <codeph>style-toc-part</codeph>, <codeph>style-toc-chapter</codeph>, etc.</p>
+      <p>Parts and chapters now also support their own local contents listings, which you can enable by setting the
+        corresponding layout key, for example <codeph>chapter-layout: MINITOC</codeph>. You can then define styling for
+        each level via keys like <codeph>style-part-toc-chapter</codeph>, or <codeph>style-chapter-toc-1</codeph>.</p>
+      <p>A new <codeph>default</codeph> theme provides basic styling such as font settings, indentation, and title
+        numbering for a range of commonly used elements. This theme is not intended for publishing as is, but can serve
+        as a foundation for custom themes, and reduce the number of elements you need to style yourself. To use the
+        default theme as the baseline for your own custom theme, add <codeph>extends: default</codeph> to your theme
+        file.
+        <xref href="https://github.com/jelovirt/pdf-generator/pull/112" format="html" scope="external">#112</xref>,
+        <xref href="https://github.com/jelovirt/pdf-generator/pull/114" format="html" scope="external">#114</xref>
+      </p>
+    </section>
+
+    <section id="legacy-samples">
+      <title>Legacy sample files removed</title>
+      <indexterm><codeph>ant_sample</codeph> class</indexterm>
+      <indexterm>Ant samples</indexterm>
+      <indexterm>garage samples</indexterm>
+      <indexterm>restoring samples</indexterm>
+      <indexterm>samples, restoring</indexterm>
+      <p id="restoring-samples">The legacy Ant samples and garage sample files have been removed from the
+          <filepath>docsrc/samples</filepath> subfolder of the installation directory. If your workflow relies on these
+        files, you can restore them to the original location with the new <cmdname>init</cmdname> subcommand:
+        <codeblock><filepath conkeyref="conref-task/dita-cmd"/> <cmdname>init</cmdname> samples <filepath><varname
+            >path/to/dita-ot-dir</varname>/docsrc/samples</filepath></codeblock>
+      </p>
+    </section>
+
+  </refbody>
+</reference>

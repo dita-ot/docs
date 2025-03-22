@@ -69,13 +69,15 @@
           <li id="4606">Fix basedir with uplevels resource-only resources
             <xref href="https://github.com/dita-ot/dita-ot/issues/4606" format="html" scope="external">#4606</xref>
           </li>
-          <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues in
-            bundled libraries:
+          <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues:
             <ul>
-              <li id="4588">Update logback version for security fixes
+              <li id="4595">Ant 1.10.15
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4595" format="html" scope="external">#4595</xref>
+              </li>
+              <li id="4588">Logback 1.5.17
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4588" format="html" scope="external">#4588</xref>
               </li>
-              <li id="4595">Update Saxon and Ant dependencies
+              <li>Saxon 12.5
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4595" format="html" scope="external">#4595</xref>
               </li>
             </ul>

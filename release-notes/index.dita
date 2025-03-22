@@ -8,7 +8,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> includes <ph conref="#v4.3/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v4.3/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -21,6 +22,73 @@
           since previous release.</draft-comment>
         <p conkeyref="reusable-components/java-clients"/>
         <p conkeyref="reusable-components/java-bc"/>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.3.1" outputclass="mark">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
+    </title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.1%20sort%3Acreated-asc -->
+          <li id="4564">html5 index.html navigation toc broken links when using copy-to or force-unique option
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4564" format="html" scope="external">#4564</xref>
+          </li>
+          <li id="4569">Enhance LinkFilter to support the copy-to attribute as priority over href attribute
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4569" format="html" scope="external">#4569</xref>
+          </li>
+          <li id="4589">Default output directory incorrect in 4.3.0
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4589" format="html" scope="external">#4589</xref>
+          </li>
+          <li id="4590">The "validate" transtype should work to be invoked also with the "-f" flag
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4590" format="html" scope="external">#4590</xref>
+          </li>
+          <li id="4592">Support format option for validate
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4592" format="html" scope="external">#4592</xref>
+          </li>
+          <li id="4593">Build Docker image for both linux/amd64 and linux/arm64
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4593" format="html" scope="external">#4593</xref>
+          </li>
+          <li id="4594">Fix CLI default output directory
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4594" format="html" scope="external">#4594</xref>
+          </li>
+          <li id="4596">Lines element in paragraph leads to nested paragraphs in HTML
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4596" format="html" scope="external">#4596</xref>
+          </li>
+          <li id="4602">New validate subcommand clashes with validate=Yes|No option
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4602" format="html" scope="external">#4602</xref>
+          </li>
+          <li id="4603">Fix subcommand backwards compatibility bug
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4603" format="html" scope="external">#4603</xref>
+          </li>
+          <li id="4606">Fix basedir with uplevels resource-only resources
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4606" format="html" scope="external">#4606</xref>
+          </li>
+          <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues in
+            bundled libraries:
+            <ul>
+              <li id="4588">Update logback version for security fixes
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4588" format="html" scope="external">#4588</xref>
+              </li>
+              <li id="4595">Update Saxon and Ant dependencies
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4595" format="html" scope="external">#4595</xref>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.1+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.3.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.3...4.3.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
       </section>
     </refbody>
   </reference>

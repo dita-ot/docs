@@ -8,7 +8,8 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> includes <ph conref="#v4.3/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
+      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v4.3/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -25,9 +26,85 @@
     </refbody>
   </reference>
 
+  <reference id="v4.3.1" outputclass="mark">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
+    </title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.1%20sort%3Acreated-asc -->
+          <li id="4564">DITA-OT 4.2 and later versions produced broken links in the navigation ToC when the
+              <xmlatt>copy-to</xmlatt> attribute was defined on topic references, or the
+              <parmname>force-unique</parmname> option was used. Generated temporary file names were used instead of
+            the <xmlatt>copy-to</xmlatt> attribute value. The <xmlatt>copy-to</xmlatt> attribute value is now respected
+            to ensure the correct links are written to the ToC.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4564" format="html" scope="external">#4564</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4569" format="html" scope="external">#4569</xref>
+          </li>
+          <li id="4589">DITA-OT 4.3 included a regression bug that generated output in the <filepath>out</filepath>
+            subdirectory of the DITA-OT installation directory if the output location was not explicitly specified. In
+            this case, output is now generated in the <filepath>out</filepath> subdirectory of the current directory as
+            in DITA-OT 4.2.4 and earlier versions.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4589" format="html" scope="external">#4589</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4594" format="html" scope="external">#4594</xref>
+          </li>
+          <li id="4590">The new <cmdname>validate</cmdname> subcommand introduced in DITA-OT 4.3 can now also be run by
+            setting the <parmname>-f</parmname> or <parmname>--format</parmname> options to <codeph>validate</codeph>.
+            The <cmdname>dita</cmdname> command line interface has also been updated to prevent conflicts between the
+              <cmdname>validate</cmdname> subcommand and the existing <parmname>validate</parmname> parameter.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4590" format="html" scope="external">#4590</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4592" format="html" scope="external">#4592</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4602" format="html" scope="external">#4602</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4603" format="html" scope="external">#4603</xref>
+          </li>
+          <li id="4593">DITA-OT Docker images can now be built for both 64-bit Linux AMD and ARM architectures. No
+            changes are required to benefit from this enhancement. Docker should automatically select the image that
+            corresponds to the current machine architecture.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4593" format="html" scope="external">#4593</xref>
+          </li>
+          <li id="4596">Earlier versions of DITA-OT generated invalid nested paragraphs in HTML output when the
+            <xmlelement>lines</xmlelement> element was used in a paragraph. Processing has been updated to ensure that
+            lines content is treated as a block element and rendered in separate paragraphs.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4596" format="html" scope="external">#4596</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4599" format="html" scope="external">#4599</xref>
+          </li>
+          <li id="4606">Earlier versions of DITA-OT miscalculated the base directory when publications included
+            resource-only topics that were outside of the root map directory. Resource-only topics are now ignored in
+            this process to ensure that relative paths between resources are generated correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4606" format="html" scope="external">#4606</xref>
+          </li>
+          <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues:
+            <ul>
+              <li id="4595">Ant 1.10.15
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4595" format="html" scope="external">#4595</xref>
+              </li>
+              <li id="4588">Logback 1.5.17
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4588" format="html" scope="external">#4588</xref>
+              </li>
+              <li>Saxon 12.5
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4595" format="html" scope="external">#4595</xref>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.1+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.3.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.3...4.3.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
   <reference id="v4.3">
     <title>DITA-OT <keyword keyref="release"/>
-      <ph outputclass="small text-muted"> work in progress… <!--released mmmm D, yyyy--></ph>
+      <ph outputclass="small text-muted"> released February 15, 2025</ph>
     </title>
     <prolog>
       <metadata>

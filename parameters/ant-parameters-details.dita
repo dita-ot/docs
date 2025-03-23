@@ -304,8 +304,8 @@
             <pd conaction="pushafter">
               <p>This parameter corresponds to the command-line option
                 <xref keyref="dita-command-arguments/output">--output</xref>.</p>
-              <p>By default, the output is written to
-                <filepath><varname>DITA-dir</varname>/out</filepath>.</p></pd>
+              <p>By default, the output is written to the <filepath>out</filepath> subdirectory of the current
+                directory.</p></pd>
           </plentry>
           <plentry id="result.rewrite-rule.class">
             <pt>

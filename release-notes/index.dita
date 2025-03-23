@@ -38,8 +38,8 @@
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.1%20sort%3Acreated-asc -->
           <li id="4564">DITA-OT 4.2 and later versions produced broken links in the navigation ToC when the
               <xmlatt>copy-to</xmlatt> attribute was defined on topic references, or the
-              <parmname>force-unique</parmname> option was used. (Generated temporary file names were used instead of
-            the <xmlatt>copy-to</xmlatt> attribute value). The <xmlatt>copy-to</xmlatt> attribute value is now respected
+              <parmname>force-unique</parmname> option was used. Generated temporary file names were used instead of
+            the <xmlatt>copy-to</xmlatt> attribute value. The <xmlatt>copy-to</xmlatt> attribute value is now respected
             to ensure the correct links are written to the ToC.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4564" format="html" scope="external">#4564</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4569" format="html" scope="external">#4569</xref>

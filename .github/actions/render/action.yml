@@ -6,7 +6,7 @@ inputs:
     default: 'master'
   DITA_OT_VERSION:
     description: 'DITA-OT version used for rendering'
-    default: '4.3'
+    default: '4.3.1'
 runs:
   using: 'composite'
   steps:
@@ -16,10 +16,10 @@ runs:
         distribution: temurin
         java-version: 17
         cache: 'gradle'
-    - name: Set Node.js version 12.x
+    - name: Set Node.js version
       uses: actions/setup-node@v4
       with:
-        node-version: '20.x'
+        node-version: '22'
         cache: 'npm'
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1

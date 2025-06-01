@@ -47,6 +47,13 @@
             support multi-platform builds and push the resulting platform-specific images to Docker Hub.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4609" format="html" scope="external">#4609</xref>
           </li>
+          <li id="4620">Table processing has been updated to improve handling for broken tables. If the
+              <xmlatt>morerows</xmlatt> attribute value is not an integer, strict processing mode will now report an
+            exception. If a row has fewer columns than the preceding row, processing will continue instead of failing
+            with a Java exception.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4620" format="html" scope="external">#4620</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4628" format="html" scope="external">#4628</xref>
+          </li>
           <li id="4625">Earlier versions of the map-first pre-processing routines in <codeph>preprocess2</codeph> did
             not apply stylesheets and parameters that were passed to the <codeph>mapref</codeph> processing phase by
             custom plug-ins. The <codeph>mapref</codeph> module configuration has been updated to ensure that
@@ -54,19 +61,21 @@
             <xref href="https://github.com/orgs/dita-ot/discussions/4624" format="html" scope="external">#4624</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4625" format="html" scope="external">#4625</xref>
           </li>
-          <!--
           <li>Several dependencies have been upgraded to include the latest utility versions and fix security issues in
-            bundled libraries:
+            bundled libraries.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4632" format="html" scope="external">#4632</xref>
             <ul>
-              <li id="4588">Update logback version for security fixes
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4588" format="html" scope="external">#4588</xref>
-              </li>
-              <li id="4595">Update Saxon and Ant dependencies
-                <xref href="https://github.com/dita-ot/dita-ot/issues/4595" format="html" scope="external">#4595</xref>
-              </li>
+              <li>Apache Commons IO 2.19.0</li>
+              <li>ICU4J 77.1</li>
+              <li>Guava 33.4.8-jre</li>
+              <li>Jackson data binding library 2.19.0</li>
+              <li>Jing 20241231</li>
+              <li>Logback Classic Module 1.5.18</li>
+              <li>Saxon 12.7</li>
+              <li>SLF4J 2.0.17</li>
+              <li>XML Resolver 5.3.3</li>
             </ul>
           </li>
-          -->
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
           <xref

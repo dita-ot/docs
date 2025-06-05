@@ -76,6 +76,13 @@
               <li>XML Resolver 5.3.3</li>
             </ul>
           </li>
+          <li id="4623">The bundled <tm trademark="Apache" tmtype="tm">Apache</tm> FOP version has been updated to
+            <ph keyref="tool.fop.version"/>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4623" format="html" scope="external">#4623</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4634" format="html" scope="external">#4634</xref>
+            <p>(For details on recent changes, see the
+              <xref keyref="fop-211-rn"/>.)</p>
+          </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
           <xref

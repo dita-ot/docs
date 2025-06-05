@@ -89,6 +89,22 @@
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- FOP: Trademark reference -->
+  <keydef keys="tool.fop.tm">
+    <topicmeta>
+      <keywords>
+        <keyword><tm trademark="Apache" tmtype="tm">Apache</tm> FOP</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- FOP: Bundled version -->
+  <keydef keys="tool.fop.version">
+    <topicmeta>
+      <keywords>
+        <keyword>2.11</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
   <!-- Guava: Bundled version -->
   <keydef keys="tool.guava.version">
     <topicmeta>
@@ -137,69 +153,12 @@
       </keywords>
     </topicmeta>
   </keydef>
-  <!-- Simple Logging Facade for Java (SLF4J) used by OT Java API -->
-  <keydef keys="tool.SLF4J.version">
-    <topicmeta>
-      <keywords>
-        <keyword>2.0.17</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- PDF generator (theme) plug-in version -->
-  <keydef keys="tool.theme.version">
-    <topicmeta>
-      <keywords>
-        <keyword>0.8</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- Xerces: Bundled version -->
-  <keydef keys="tool.xerces.version">
-    <topicmeta>
-      <keywords>
-        <keyword>2.12.2</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- FOP: Trademark reference -->
-  <keydef keys="tool.fop.tm">
-    <topicmeta>
-      <keywords>
-        <keyword><tm trademark="Apache" tmtype="tm">Apache</tm> FOP</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- FOP: Bundled version -->
-  <keydef keys="tool.fop.version">
-    <topicmeta>
-      <keywords>
-        <keyword>2.11</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- XML APIs: Bundled version -->
-  <keydef keys="tool.xmlapis.version">
-    <topicmeta>
-      <keywords>
-        <keyword>1.4.01</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
   <!-- Old Apache XML Commons Resolver (used by Ant): Bundled version -->
   <!-- https://xerces.apache.org/xml-commons/components/resolver/ -->
   <keydef keys="tool.resolver.version">
     <topicmeta>
       <keywords>
         <keyword>1.2</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- New XML Resolver by Norm Walsh: Bundled version -->
-  <!-- https://xmlresolver.org -->
-  <keydef keys="tool.xml.resolver.version">
-    <topicmeta>
-      <keywords>
-        <keyword>5.3.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -218,11 +177,60 @@
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- Simple Logging Facade for Java (SLF4J) used by OT Java API -->
+  <keydef keys="tool.SLF4J.version">
+    <topicmeta>
+      <keywords>
+        <keyword>2.0.17</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- PDF generator (theme) plug-in version -->
+  <keydef keys="tool.theme.version">
+    <topicmeta>
+      <keywords>
+        <keyword>0.8</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
   <!-- XDITA plug-in version -->
   <keydef keys="tool.xdita.version">
     <topicmeta>
       <keywords>
         <keyword>0.3.2</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Xerces: Bundled version -->
+  <keydef keys="tool.xerces.version">
+    <topicmeta>
+      <keywords>
+        <keyword>2.12.2</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- XML APIs: Bundled version -->
+  <keydef keys="tool.xml.apis.version">
+    <topicmeta>
+      <keywords>
+        <keyword>1.4.01</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- XML Graphics Commons: Trademark reference -->
+  <keydef keys="tool.xml.graphics.tm">
+    <topicmeta>
+      <keywords>
+        <keyword><tm trademark="Apache" tmtype="tm">Apache</tm> XML Graphics Commons</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- New XML Resolver by Norm Walsh: Bundled version -->
+  <!-- https://xmlresolver.org -->
+  <keydef keys="tool.xml.resolver.version">
+    <topicmeta>
+      <keywords>
+        <keyword>5.3.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>

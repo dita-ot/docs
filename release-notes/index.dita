@@ -76,8 +76,10 @@
               <li>XML Resolver 5.3.3</li>
             </ul>
           </li>
-          <li id="4623">The bundled <tm trademark="Apache" tmtype="tm">Apache</tm> FOP version has been updated to
-            <ph keyref="tool.fop.version"/>.
+          <li id="4623">The bundled <keyword keyref="tool.fop.tm"/> version has been updated to 2.11, which includes
+            PDFBox 3 and the latest versions of the <keyword keyref="tool.batik.tm"/> and <keyword
+              keyref="tool.xml.graphics.tm"
+            /> libraries.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4623" format="html" scope="external">#4623</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4634" format="html" scope="external">#4634</xref>
             <p>(For details on recent changes, see the
@@ -354,12 +356,11 @@
           </li>
           <li>Several bundled dependencies have been upgraded to the latest versions:
             <ul>
-              <li id="4519"><keyword keyref="tool.fop.tm"/>
-                <keyword keyref="tool.fop.version"/> (including the Apache XML Graphics and Batik libraries)
+              <li id="4519"><keyword keyref="tool.fop.tm"/> 2.10 (including the <keyword keyref="tool.batik.tm"/> and
+                  <keyword keyref="tool.xml.graphics.tm"/> libraries)
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4519" format="html" scope="external">#4519</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4565" format="html" scope="external">#4565</xref>
               </li>
-              
             </ul>
           </li>
         </ul>

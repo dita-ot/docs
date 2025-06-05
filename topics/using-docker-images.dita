@@ -31,6 +31,10 @@
       <p>When a container is stopped, any changes made within the container are lost, so source files and generated
         output should be stored outside the container. These resources are attached to the container by mounting
         directories from the host machine.</p>
+      <note>If you use
+        <xref href="https://podman.io/" format="html" scope="external">Podman</xref> to manage and run your containers,
+        you can substitute <cmdname>podman</cmdname> for the <cmdname>docker</cmdname> command in the instructions
+        below.</note>
     </section>
     <prereq>
       <p>To run the DITA-OT image, you will need to install Docker and be able to access the GitHub Container Registry.

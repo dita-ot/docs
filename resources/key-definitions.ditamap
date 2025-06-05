@@ -26,7 +26,7 @@
   <keydef keys="maintenance-version">
     <topicmeta>
       <keywords>
-        <keyword>4.3.1</keyword>
+        <keyword>4.3.2</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -65,6 +65,14 @@
       </keywords>
     </topicmeta>
   </keydef>
+  <!-- Batik: Trademark reference -->
+  <keydef keys="tool.batik.tm">
+    <topicmeta>
+      <keywords>
+        <keyword><tm trademark="Apache" tmtype="tm">Apache</tm> Batik SVG Toolkit</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
   <!-- Apache Commons Codec: Bundled version -->
   <keydef keys="tool.codec.version">
     <topicmeta>
@@ -77,79 +85,7 @@
   <keydef keys="tool.io.version">
     <topicmeta>
       <keywords>
-        <keyword>2.8.0</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- Guava: Bundled version -->
-  <keydef keys="tool.guava.version">
-    <topicmeta>
-      <keywords>
-        <keyword>32.1.1-jre</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- ICU for Java: Bundled version -->
-  <keydef keys="tool.icu4j.version">
-    <topicmeta>
-      <keywords>
-        <keyword>74.2</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- Java-->
-  <keydef keys="tool.jackson.version">
-    <topicmeta>
-      <keywords>
-        <keyword>2.16.1</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- Java-->
-  <keydef keys="tool.java.version">
-    <topicmeta>
-      <keywords>
-        <keyword>17</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- Logback Classic Module used by OT Java API -->
-  <keydef keys="tool.logback.version">
-    <topicmeta>
-      <keywords>
-        <keyword>1.5.17</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- Lightweight DITA plug-in version -->
-  <keydef keys="tool.lwdita.version">
-    <topicmeta>
-      <keywords>
-        <keyword>5.9</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- Simple Logging Facade for Java (SLF4J) used by OT Java API -->
-  <keydef keys="tool.SLF4J.version">
-    <topicmeta>
-      <keywords>
-        <keyword>2.0.12</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- PDF generator (theme) plug-in version -->
-  <keydef keys="tool.theme.version">
-    <topicmeta>
-      <keywords>
-        <keyword>0.8</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- Xerces: Bundled version -->
-  <keydef keys="tool.xerces.version">
-    <topicmeta>
-      <keywords>
-        <keyword>2.12.2</keyword>
+        <keyword>2.19.0</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -165,15 +101,55 @@
   <keydef keys="tool.fop.version">
     <topicmeta>
       <keywords>
-        <keyword>2.10</keyword>
+        <keyword>2.11</keyword>
       </keywords>
     </topicmeta>
   </keydef>
-  <!-- XML APIs: Bundled version -->
-  <keydef keys="tool.xmlapis.version">
+  <!-- Guava: Bundled version -->
+  <keydef keys="tool.guava.version">
     <topicmeta>
       <keywords>
-        <keyword>1.4.01</keyword>
+        <keyword>33.4.8-jre</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- ICU for Java: Bundled version -->
+  <keydef keys="tool.icu4j.version">
+    <topicmeta>
+      <keywords>
+        <keyword>77.1</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Java-->
+  <keydef keys="tool.jackson.version">
+    <topicmeta>
+      <keywords>
+        <keyword>2.19.0</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Java-->
+  <keydef keys="tool.java.version">
+    <topicmeta>
+      <keywords>
+        <keyword>17</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Logback Classic Module used by OT Java API -->
+  <keydef keys="tool.logback.version">
+    <topicmeta>
+      <keywords>
+        <keyword>1.5.18</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Lightweight DITA plug-in version -->
+  <keydef keys="tool.lwdita.version">
+    <topicmeta>
+      <keywords>
+        <keyword>5.9</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -183,15 +159,6 @@
     <topicmeta>
       <keywords>
         <keyword>1.2</keyword>
-      </keywords>
-    </topicmeta>
-  </keydef>
-  <!-- New XML Resolver by Norm Walsh: Bundled version -->
-  <!-- https://xmlresolver.org -->
-  <keydef keys="tool.xml.resolver.version">
-    <topicmeta>
-      <keywords>
-        <keyword>5.2.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -206,7 +173,23 @@
   <keydef keys="tool.saxon.version">
     <topicmeta>
       <keywords>
-        <keyword>12.5</keyword>
+        <keyword>12.7</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Simple Logging Facade for Java (SLF4J) used by OT Java API -->
+  <keydef keys="tool.SLF4J.version">
+    <topicmeta>
+      <keywords>
+        <keyword>2.0.17</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- PDF generator (theme) plug-in version -->
+  <keydef keys="tool.theme.version">
+    <topicmeta>
+      <keywords>
+        <keyword>0.8</keyword>
       </keywords>
     </topicmeta>
   </keydef>
@@ -215,6 +198,39 @@
     <topicmeta>
       <keywords>
         <keyword>0.3.2</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- Xerces: Bundled version -->
+  <keydef keys="tool.xerces.version">
+    <topicmeta>
+      <keywords>
+        <keyword>2.12.2</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- XML APIs: Bundled version -->
+  <keydef keys="tool.xml.apis.version">
+    <topicmeta>
+      <keywords>
+        <keyword>1.4.01</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- XML Graphics Commons: Trademark reference -->
+  <keydef keys="tool.xml.graphics.tm">
+    <topicmeta>
+      <keywords>
+        <keyword><tm trademark="Apache" tmtype="tm">Apache</tm> XML Graphics Commons</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <!-- New XML Resolver by Norm Walsh: Bundled version -->
+  <!-- https://xmlresolver.org -->
+  <keydef keys="tool.xml.resolver.version">
+    <topicmeta>
+      <keywords>
+        <keyword>5.3.3</keyword>
       </keywords>
     </topicmeta>
   </keydef>

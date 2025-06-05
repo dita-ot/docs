@@ -42,7 +42,7 @@
               <p conkeyref="reusable-components/java-clients"/>
               <note>This is the <i>only</i> prerequisite that you need to install. All other required software is
                 provided in the distribution package, including
-                <xref keyref="download.ant"><tm trademark="Apache Ant" tmtype="tm">Apache Ant</tm></xref>
+                <xref keyref="download.ant"><keyword keyref="tool.ant.tm"/></xref>
                 <keyword keyref="tool.ant.version"/>,
                 <xref keyref="download.saxon">Saxon</xref>
                 <keyword keyref="tool.saxon.version"/>, and
@@ -66,11 +66,12 @@
           </dlentry>
           <dlentry>
             <dt>XSL-FO processor</dt>
-            <dd>Required for generating PDF output. <tm trademark="Apache" tmtype="tm">Apache</tm> FOP <cite>(Formatting
-              Objects Processor)</cite> <keyword keyref="tool.fop.version"/> is included in the distribution package. 
-              You can download other versions from 
-              <xref keyref="download.fop"/>. 
-              You can also use commercial FO processors such as Antenna House Formatter or RenderX XEP.</dd>
+            <dd>Required for generating PDF output. <keyword keyref="tool.fop.tm"/>
+              <cite>(Formatting Objects Processor)</cite>
+              <keyword keyref="tool.fop.version"/> is included in the distribution package. You can download other
+              versions from
+              <xref keyref="download.fop"/>. You can also use commercial FO processors such as Antenna House Formatter
+              or RenderX XEP.</dd>
           </dlentry>
         </dl>
       </p>

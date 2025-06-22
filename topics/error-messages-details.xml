@@ -9,31 +9,37 @@
     this list by rebuilding the DITA-OT documentation.</shortdesc>
   <refbody>
     <section id="overview" conkeyref="error-messages/overview" conaction="pushreplace">
-      <p>Each message ID is composed of a message prefix, a message number, and a letter that indicates the severity
-        level (I, W, E, or F). </p>
+      <p
+      >Each message ID is composed of a message prefix, a message number, and a letter that indicates the severity.</p>
       <p>The toolkit uses the following severity scale:</p>
       <dl id="severity-levels">
         <dlentry>
-          <dt>Info (I)</dt>
-          <dd>Informational messages highlight the progress of transformation and call attention to conditions of which
-            you should be aware. For example, draft comments are enabled and will be rendered in the output.</dd>
+          <dt><codeph>INFO</codeph></dt>
+          <dd><cite>Informational</cite> messages are indicated with the letter <codeph>I</codeph> at the end of the
+            message ID. They highlight the progress of transformation and call attention to conditions of which you
+            should be aware. For example, draft comments are enabled and will be rendered in the output.</dd>
         </dlentry>
         <dlentry>
-          <dt>Warning (W)</dt>
-          <dd>The toolkit encountered a problem that should be corrected. Processing will continue, but the output might
-            not be as expected.</dd>
+          <dt><codeph>WARN</codeph></dt>
+          <dd><cite>Warnings</cite> are issued when the toolkit encounters a problem that should be corrected.
+            Processing will continue, but the output might not be as expected. Warnings are indicated with the letter
+              <codeph>W</codeph> at the end of the message ID.</dd>
         </dlentry>
         <dlentry>
-          <dt>Error (E)</dt>
-          <dd>The toolkit encountered a more severe problem, and the output is affected. For example, some content is
-            missing or invalid, or the content is not rendered in the output</dd>
+          <dt><codeph>ERROR</codeph></dt>
+          <dd><cite>Error</cite> messages are issued when the toolkit encounters a more severe problem, and the output
+            is affected. For example, some content is missing or invalid, or the content is not rendered in the output.
+            Errors are indicated with the letter <codeph>E</codeph> at the end of the message ID.</dd>
         </dlentry>
         <dlentry>
-          <dt>Fatal (F)</dt>
-          <dd>The toolkit encountered a severe condition, processing stopped, and no output is generated.</dd>
+          <dt><codeph>FATAL</codeph></dt>
+          <dd><cite>Fatal</cite> errors appear when the toolkit encounters a severe condition, processing stops, and no
+            output is generated. Fatal errors are indicated with the letter <codeph>F</codeph> at the end of the message
+            ID.</dd>
         </dlentry>
       </dl>
-      <p>Plug-ins may be used to add additional messages to the toolkit; for more information, see
+      <p>Plug-ins may be used to add additional messages to the toolkit. For more information, see
+        <xref keyref="plugin-messages"/> and
         <xref keyref="rebuilding-docs"/>.</p>
     </section>
     <table>

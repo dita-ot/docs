@@ -26,7 +26,7 @@
     </refbody>
   </reference>
 
-  <reference id="v4.3.2" outputclass="mark">
+  <reference id="v4.3.3" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
       <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
     </title>
@@ -34,6 +34,34 @@
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.3%20sort%3Acreated-asc -->
+          <li id="4645">Earlier versions of DITA-OT did not always cascade map-level attributes such as
+              <xmlatt>format</xmlatt> or <xmlatt>scope</xmlatt> correctly. Processing has been updated to ensure that
+            map metadata cascades as mandated by §2.2.4.4 of the
+            <xref keyref="dita13-spec-metadata-cascade"/>.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4645" format="html" scope="external">#4645</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.3+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.3.3 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.3.2...4.3.3" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.3.2">
+    <title>DITA-OT 4.3.2
+      <ph outputclass="small text-muted">released June 5, 2025</ph>
+    </title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 4.3.2 is a maintenance release that includes the following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.2%20sort%3Acreated-asc -->
           <li id="4609">The GitHub release workflow was updated in DITA-OT 4.3.1 to build Docker images for both

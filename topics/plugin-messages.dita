@@ -33,7 +33,7 @@
         <info><codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;messages>
   <i>&lt;!-- See resources/messages.xml for the details. --></i>
   &lt;message id="<varname>Prefix</varname><varname>Number</varname><varname>Letter</varname>" type="<varname
-            >error-severity</varname>">
+            >Severity</varname>">
     &lt;reason>Message text&lt;/reason>
     &lt;response>How to resolve&lt;/response>
   &lt;/message>
@@ -42,12 +42,13 @@
             <li><varname>Prefix</varname> is a sequence of four capital letters.<note>By convention, the toolkit
                 messages use <codeph>DOTX</codeph> but any sequence can be used by plug-in developers.</note></li>
             <li><varname>Number</varname> is a three-digit integer.</li>
-            <li><varname>Letter</varname> is one of the following upper-case letters: I, W, E, F. It should match the
-              value that is specified for the <xmlatt>type</xmlatt> attribute.<note>As the <xmlatt>id</xmlatt> attribute
-                is used as a whole and not decomposed by recent versions of the toolkit, you could use any sequence as
-                the message identifier. Nevertheless, to facilitate reuse of the plug-in and make it more readable by
-                other users, we recommend following these guidelines.</note></li>
-            <li><varname>error-severity</varname> specifies the severity of the error. It must be one of the following
+            <li><varname>Letter</varname> is one of the following upper-case letters: <codeph>I</codeph>,
+                <codeph>W</codeph>, <codeph>E</codeph>, or <codeph>F</codeph>. It should match the
+                <varname>Severity</varname> level specified for the <xmlatt>type</xmlatt> attribute.<note>As the
+                  <xmlatt>id</xmlatt> attribute is used as a whole and not decomposed by recent versions of the toolkit,
+                you could use any sequence as the message identifier. Nevertheless, to facilitate reuse of the plug-in
+                and make it more readable by other users, we recommend following these guidelines.</note></li>
+            <li><varname>Severity</varname> specifies the gravity of the error. It must be one of the following
               values:
               <dl conkeyref="messages-push/severity-levels">
                 <dlentry>

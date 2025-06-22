@@ -548,6 +548,16 @@
         </topicmeta>
       </keydef>
       <keydef
+        keys="dita13-spec-branch-filter"
+        href="https://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part1-base/archSpec/base/branch-filtering.html"
+        format="html"
+        scope="external"
+      >
+        <topicmeta>
+          <linktext>DITA 1.3 specification: Branch filtering</linktext>
+        </topicmeta>
+      </keydef>
+      <keydef
         keys="dita13-spec-chunking"
         href="https://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part3-all-inclusive/archSpec/base/chunking.html"
         scope="external"
@@ -555,6 +565,27 @@
       >
         <topicmeta>
           <linktext>DITA 1.3 specification: Chunking</linktext>
+        </topicmeta>
+      </keydef>
+      <keydef
+        keys="dita13-spec-conaction"
+        href="https://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part1-base/langRef/attributes/theconactionattribute.html"
+        scope="external"
+        format="html"
+      >
+        <topicmeta>
+          <linktext>DITA 1.3 specification: The <xmlatt
+            >conaction</xmlatt> attribute</linktext>
+        </topicmeta>
+      </keydef>
+      <keydef
+        keys="dita13-spec-keyscopes"
+        href="https://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part1-base/archSpec/base/keyScopes.html"
+        format="html"
+        scope="external"
+      >
+        <topicmeta>
+          <linktext>DITA 1.3 specification: Scoped keys</linktext>
         </topicmeta>
       </keydef>
       <keydef
@@ -587,37 +618,6 @@
       >
         <topicmeta>
           <linktext>Example: How the @cascade attribute functions</linktext>
-        </topicmeta>
-      </keydef>
-      <keydef
-        keys="dita13-spec-keyscopes"
-        href="https://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part1-base/archSpec/base/keyScopes.html"
-        format="html"
-        scope="external"
-      >
-        <topicmeta>
-          <linktext>DITA 1.3 specification: Scoped keys</linktext>
-        </topicmeta>
-      </keydef>
-      <keydef
-        keys="dita13-spec-branch-filter"
-        href="https://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part1-base/archSpec/base/branch-filtering.html"
-        format="html"
-        scope="external"
-      >
-        <topicmeta>
-          <linktext>DITA 1.3 specification: Branch filtering</linktext>
-        </topicmeta>
-      </keydef>
-      <keydef
-        keys="dita13-spec-conaction"
-        href="https://docs.oasis-open.org/dita/dita/v1.3/errata02/os/complete/part1-base/langRef/attributes/theconactionattribute.html"
-        scope="external"
-        format="html"
-      >
-        <topicmeta>
-          <linktext>DITA 1.3 specification: The <xmlatt
-            >conaction</xmlatt> attribute</linktext>
         </topicmeta>
       </keydef>
       <keydef

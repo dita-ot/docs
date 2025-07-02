@@ -28,7 +28,6 @@ You must have a JRE and a local installation of DITA-OT. There is no need to dow
 
 1.  Open a command prompt, and change to the directory of your docs repository clone.
 2.  Type a variant of the following command for your operating system, adjust the path to your DITA-OT installation, and press <kbd>Enter</kbd>:
-
     - On **Linux**, **macOS**, or **Git Bash**, use `./gradlew`:
 
           ./gradlew -PditaHome=/path/to/dita-ot
@@ -43,12 +42,10 @@ You must have a JRE and a local installation of DITA-OT. There is no need to dow
 If you’re using a clone of the [DITA-OT development repository][5] as your toolkit installation alongside your clone of the `docs` repository:
 
 1.  In the root directory of your `dita-ot` repository, run Gradle to compile the Java code and install plugins.
-
     - On **Linux**, **macOS**, or **Git Bash**, use `./gradlew`.
     - On **Windows**, use `gradlew.bat`.
 
 2.  Then run the Gradle build in the `docs` repository to generate topics and build the documentation output.
-
     - On **Linux**, **macOS**, or **Git Bash**, run the build script like this:
 
           ./gradlew -PditaHome=../dita-ot/src/main

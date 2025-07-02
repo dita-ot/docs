@@ -49,7 +49,6 @@ Follow this process to ensure your contribution meets our expectations and incre
 4. Commit your changes in logical chunks.
 
    Please be sure to follow the [coding guidelines][5] and [best practices][6] outlined in the docs project wiki:
-
    - [Test before committing][7]
    - [Commit related changes][8]
    - [Commit often][9]

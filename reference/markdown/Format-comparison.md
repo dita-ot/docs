@@ -9,7 +9,7 @@ Although the original [Markdown DITA](./Markdown-DITA-syntax.md) format and the 
 The following table provides an overview of differences between the `markdown` and `mdita` formats.
 
 | Features                     | Markdown DITA                        | MDITA (LwDITA)                        |
-| ---------------------------- | ------------------------------------ | --------------------------------------|
+| ---------------------------- | ------------------------------------ | ------------------------------------- |
 | DITA map `@format` attribute | `markdown` or `md`                   | `mdita`                               |
 | LwDITA                       | –                                    | ✔                                     |
 | First ¶                      | Body ¶                               | Short description                     |
@@ -23,7 +23,7 @@ The following table provides an overview of differences between the `markdown` a
 | Cell alignment               | ✔                                   |  -                                     |
 | Sections                     | Defined via attributes               | Level 2 (`##`) headers                |
 | Examples                     | Defined via attributes               | –                                     |
-| Notes                        | MkDocs Material admonitions          | HDITA `<div data-class="note">` tag   |  
+| Notes                        | MkDocs Material admonitions          | HDITA `<div data-class="note">` tag   |
 | Markdown maps                | Map schema                           | `.mditamap` extension                 |
 | Maps: topic sequences        | OL in Markdown map                   | –                                     |
 | Maps: key definitions        | Link reference definition            | HDITA `<div data-class="keydef">` tag |

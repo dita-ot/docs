@@ -39,14 +39,21 @@
           <li id="4478">In earlier versions, links to content outside the map directory were not generated correctly in
             HTML5 output when the <parmname>nav-toc</parmname> parameter was set to <option>full</option> or
               <option>partial</option> and the <parmname>generate.copy.outer</parmname> parameter was set to
-              <option>3</option> to shift the output directory. Processing has been updated to follow files to their new
-            locations and write links with correct paths regardless of any folder shifts.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4478" format="html" scope="external">#4478</xref>
+              <option>3</option> to shift the output directory. Processing now follows topics and common stylesheets to
+            their new locations and writes links with correct paths even if the folders move.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4478" format="html" scope="external">#4478</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4641" format="html" scope="external">#4641</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4667" format="html" scope="external">#4667</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4675" format="html" scope="external">#4675</xref>
           </li>
           <li id="4660">Additional tests have been added to verify the correct behavior of the
               <parmname>nav-toc</parmname> parameter, and existing tests have been consolidated and parameterized for
             easier maintenance.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4660" format="html" scope="external">#4660</xref>
+          </li>
+          <li id="4662">Unit tests have been updated to resolve Windows-specific issues with line endings, file path
+            separators, and temporary file mappings. 
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4662" format="html" scope="external">#4662</xref>
           </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the

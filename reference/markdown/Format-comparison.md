@@ -11,7 +11,7 @@ The following table provides an overview of differences between the `markdown` a
 | Features                     | Markdown DITA                        | MDITA (LwDITA)                        |
 | ---------------------------- | ------------------------------------ | ------------------------------------- |
 | DITA map `@format` attribute | `markdown` or `md`                   | `mdita`                               |
-| LwDITA                       | –                                    | ✔                                     |
+| LwDITA                       | –                                    | ✔                                    |
 | First ¶                      | Body ¶                               | Short description                     |
 | Subheadings                  | Nested topics                        | Sections                              |
 | Topic IDs                    | Special attributes or title          | Generated from title                  |
@@ -20,7 +20,7 @@ The following table provides an overview of differences between the `markdown` a
 | Topic types                  | Special attributes block             | –                                     |
 | Schemas                      | YAML frontmatter                     | –                                     |
 | Tables                       | OASIS exchange table model ^ 1^ [^1] | DITA `<simpletable>`                  |
-| Cell alignment               | ✔                                   |  -                                     |
+| Cell alignment               | ✔                                   | -                                     |
 | Sections                     | Defined via attributes               | Level 2 (`##`) headers                |
 | Examples                     | Defined via attributes               | –                                     |
 | Notes                        | MkDocs Material admonitions          | HDITA `<div data-class="note">` tag   |
@@ -28,9 +28,9 @@ The following table provides an overview of differences between the `markdown` a
 | Maps: topic sequences        | OL in Markdown map                   | –                                     |
 | Maps: key definitions        | Link reference definition            | HDITA `<div data-class="keydef">` tag |
 | Maps: reltables              | MultiMarkdown tables with links      | –                                     |
-| Key references in topics     | ✔ Shortcut reference links          | ✔ Shortcut reference links            |
+| Key references in topics     | ✔ Shortcut reference links          | ✔ Shortcut reference links           |
 | List spacing                 | [loose] or [tight] (no blank lines)  | [loose] only (¶ per item)             |
-| Raw DITA                     | ✔                                   | –                                      |
+| Raw DITA                     | ✔                                   | –                                     |
 
 [Markdown]: https://daringfireball.net/projects/markdown/
 [LwDITA]: https://docs.oasis-open.org/dita/LwDITA/v1.0/cn01/

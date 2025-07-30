@@ -6,7 +6,7 @@ inputs:
     default: 'master'
   DITA_OT_VERSION:
     description: 'DITA-OT version used for rendering'
-    default: '4.3.3'
+    default: '4.3.4'
 runs:
   using: 'composite'
   steps:

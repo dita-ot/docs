@@ -32,10 +32,12 @@
         <cmd>Create an XML file that contains one or more Ant <xmlelement>param</xmlelement> elements nested within a
             <xmlelement>dummy</xmlelement> wrapper element.</cmd>
         <stepxmp>
-          <codeblock outputclass="language-xml normalize-space show-line-numbers show-whitespace">&lt;dummy>
+          <codeblock
+            outputclass="language-xml normalize-space show-line-numbers show-whitespace"
+          >&lt;dummy xmlns:if="ant:if" xmlns:unless="ant:unless">
   <i>&lt;!-- Any Ant code allowed in xslt task is possible. Example: --></i>
   &lt;param name="paramNameinXSLT" expression="${antProperty}" 
-         if="antProperty"/>
+         if:set="antProperty"/>
 &lt;/dummy></codeblock>
         </stepxmp>
       </step>

@@ -381,7 +381,7 @@
             <parmname>--logger</parmname>=<varname>json</varname>
           </pt>
           <pd>
-            <p>Generate a strucured log in JSON format. Each log message generated a JSON object on its own line. JSON
+            <p>Generate a structured log in JSON format. Each log message generates a JSON object on its own line. JSON
               log disabled colored output.</p>
             <p>If log is written to a file with <parmname
               >--logfile</parmname>, the log will be generated as a JSON array

@@ -4,7 +4,6 @@
 <map>
   <title>PDF themes</title>
   <topicref keyref="pdf-themes">
-    <topicref keyref="sample-pdf-theme"/>
     <topicref keyref="page-settings"/>
     <topicref keyref="header-and-footer"/>
     <topicref keyref="styles">
@@ -14,5 +13,6 @@
     <topicref keyref="variables"/>
     <topicref keyref="extending-themes"/>
     <topicref keyref="syntactic-sugar"/>
+    <topicref keyref="sample-pdf-theme"/>
   </topicref>
 </map>

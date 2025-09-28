@@ -101,14 +101,12 @@ The following inline elements are supported:
 **bold**
 _italic_
 `code`
-~~strikethrough~~
 ```
 
 ```xml
 <b>bold</b>
 <i>italic</i>
 <codeph>code</codeph>
-<ph status="deleted">strikethrough</ph>
 ```
 
 ## Lists

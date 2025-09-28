@@ -26,16 +26,45 @@
     </refbody>
   </reference>
 
-  <reference id="v4.3.4" outputclass="mark">
+  <reference id="v4.3.5" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
-      <ph outputclass="small text-muted">released July 30, 2025</ph>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
     </title>
     <refbody>
       <section>
         <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
-          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.3%20sort%3Acreated-asc -->
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.5%20sort%3Acreated-asc -->
+          <li id="4701">In DITA-OT 4.3.3, filtered, flagged, or duplicated topics were not copied to the temporary
+            directory, which caused builds to fail. The merge map parser and force unique filter modules have been
+            updated to ensure that attributes are correctly applied, so the topics are processed as intended.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4701" format="html" scope="external">#4701</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4704" format="html" scope="external">#4704</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4708" format="html" scope="external">#4708</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.5+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.3.5 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.3.4...4.3.5" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.3.4">
+    <title>DITA-OT 4.3.4
+      <ph outputclass="small text-muted">released July 30, 2025</ph>
+    </title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit 4.3.4 is a maintenance release that includes the following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.4%20sort%3Acreated-asc -->
           <li id="4478">In earlier versions, links to content outside the map directory were not generated correctly in
             HTML5 output when the <parmname>nav-toc</parmname> parameter was set to <option>full</option> or
               <option>partial</option> and the <parmname>generate.copy.outer</parmname> parameter was set to
@@ -52,7 +81,7 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4660" format="html" scope="external">#4660</xref>
           </li>
           <li id="4662">Unit tests have been updated to resolve Windows-specific issues with line endings, file path
-            separators, and temporary file mappings. 
+            separators, and temporary file mappings.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4662" format="html" scope="external">#4662</xref>
           </li>
         </ul>
@@ -255,7 +284,7 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes 
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
           <ph id="summary">new <cmdname>init</cmdname> and <cmdname>validate</cmdname> subcommands that can be used to
             set up projects from a template and check files for errors before publishing. You can now publish multiple
             formats on the command line at once, add raw DITA to Markdown files, and publish bookmaps with PDF
@@ -356,7 +385,7 @@
           </li>
         </ul>
       </section>
-      
+
       <section conkeyref="migrating-to-4.3/bookmap-themes" id="bookmap-themes"/>
 
       <section id="dita-2-0-preview">

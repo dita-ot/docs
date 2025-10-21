@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       WEBSITE_PLUGIN_BRANCH: 'master'
-      DITA_OT_VERSION: '4.3.4'
+      DITA_OT_VERSION: '4.3.5'
     steps:
       - name: Parse arguments
         run: |

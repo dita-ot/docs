@@ -41,10 +41,6 @@ String toURI(String path) {
     file(path).toURI().toString()
 }
 
-// Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
-ditaOt.dir ditaHome
-// > Could not get unknown property 'ditaOt' for root project 'docs' of type org.gradle.api.Project.
-
 task messages(type: SaxonXsltTask) {
     input "${configDir}/messages.xml"
     output "${projectDirPath}/topics/error-messages.xml"
@@ -101,6 +97,8 @@ task autoGenerate(dependsOn: [messages, params, extensionPoints, generatePlatfor
 }
 
 task pdf(type: DitaOtTask, dependsOn: autoGenerate) {
+    // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
+    ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input "${projectDirPath}/userguide-book.ditamap"
     output outputDir
     transtype 'pdf'
@@ -116,6 +114,8 @@ task pdf(type: DitaOtTask, dependsOn: autoGenerate) {
 }
 
 task html(type: DitaOtTask, dependsOn: autoGenerate) {
+    // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
+    ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input "${projectDirPath}/userguide.ditamap"
     output outputDir
     transtype 'html5'
@@ -135,6 +135,8 @@ task html(type: DitaOtTask, dependsOn: autoGenerate) {
 }
 
 task htmlhelp(type: DitaOtTask, dependsOn: autoGenerate) {
+    // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
+    ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input "${projectDirPath}/userguide.ditamap"
     output outputDir
     transtype 'htmlhelp'
@@ -202,6 +204,8 @@ task gitMetadata {
 task site(type: DitaOtTask) {
     dependsOn 'messages', 'params', 'extensionPoints', 'gitMetadata'
 
+    // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
+    ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input file("${projectDirPath}/site.ditamap")
     output getPropertyOrDefault('outputDir', "${buildDir}/site")
     filter "${projectDirPath}/resources/site.ditaval"

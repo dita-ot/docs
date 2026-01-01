@@ -223,8 +223,7 @@
             </pt>
             <pd conaction="mark" conref="parameters-base.dita#base/dita.input.valfile.desc"/>
             <pd conaction="pushafter">
-              <note type="notice">This parameter is deprecated in favor of the <parmname>args.filter</parmname>
-                parameter.</note>
+              <note type="notice">This parameter is deprecated; use <parmname>args.filter</parmname> instead.</note>
             </pd>
           </plentry>
           <plentry id="filter-stage">
@@ -522,8 +521,7 @@
             <pd conaction="pushafter">
               <div id="args.hide.parent.link.details">
                 <ph audience="xslt-customizer">Corresponds to the XSLT parameter <parmname>NOPARENTLINK</parmname>.</ph>
-                <note type="notice">This parameter is deprecated in favor of the <parmname>args.rellinks</parmname>
-                  parameter.</note>
+                <note type="notice">This parameter is deprecated; use <parmname>args.rellinks</parmname> instead.</note>
               </div></pd>
           </plentry>
           <plentry id="args.outext">
@@ -747,9 +745,10 @@
             </pt>
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/publish.required.cleanup.desc"/>
             <pd conaction="pushafter">The default value is the value of the <parmname>args.draft</parmname> parameter.
-                <ph audience="xslt-customizer">Corresponds to the XSLT parameter
-                  <parmname>publishRequiredCleanup</parmname>.</ph><note type="notice">This parameter is deprecated in
-                favor of the <parmname>args.draft</parmname> parameter.</note></pd>
+              <ph audience="xslt-customizer">Corresponds to the XSLT parameter
+                  <parmname>publishRequiredCleanup</parmname>.</ph>
+              <note type="notice">This parameter is deprecated; use
+                  <parmname>args.draft</parmname> instead.</note></pd>
           </plentry>
         </parml>
       </section>

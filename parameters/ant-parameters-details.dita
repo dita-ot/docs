@@ -711,15 +711,21 @@
                 <xref keyref="jelovirt-on-pdf2-i18n"/>.</note>
             </pd>
           </plentry>
-          <plentry id="outputFile.base">
+          <plentry id="outputFile.base" importance="deprecated">
             <pt>
               <parmname>outputFile.base</parmname>
+              <ph>
+                <indexterm>deprecated features
+                  <indexterm><parmname>outputFile.base</parmname></indexterm></indexterm></ph>
             </pt>
             <pd conaction="mark" conref="parameters-pdf.dita#pdf/outputFile.base.desc"/>
             <pd conaction="pushafter">By default, the PDF file uses the base filename of the input
                 <filepath>.ditamap</filepath> file.
               <indexterm>DITA maps
-                <indexterm>PDF file name</indexterm></indexterm></pd>
+                <indexterm>PDF file name</indexterm></indexterm>
+              <note type="notice">This parameter is deprecated since DITA-OT 3.0; use
+                <parmname>args.output.base</parmname> instead.</note>
+            </pd>
           </plentry>
           <plentry id="pdf.formatter">
             <pt>

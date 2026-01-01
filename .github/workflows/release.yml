@@ -35,7 +35,7 @@ jobs:
             echo "TAG=${{ github.event.inputs.docs-tag }}" >> $GITHUB_ENV
           fi
       - name: Check out docs
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ env.TAG }}
       - name: Set variables
@@ -48,7 +48,7 @@ jobs:
           java-version: 17
           cache: 'gradle'
       - name: Check out website
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           repository: dita-ot/website
           token: ${{ secrets.COMMITTER_TOKEN }}
@@ -120,7 +120,7 @@ jobs:
             echo "RELEASE_VERSION=${{ github.event.inputs.dita-ot-version }}" >> $GITHUB_ENV
           fi
       - name: Check out docs
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: develop
       - name: Update GitHub Actions release workflow

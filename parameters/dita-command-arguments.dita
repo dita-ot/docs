@@ -309,6 +309,7 @@
       <indexterm><parmname>-t</parmname></indexterm>
       <indexterm><parmname>--verbose</parmname></indexterm>
       <indexterm><parmname>-v</parmname></indexterm>
+      <indexterm><parmname>--stacktrace</parmname></indexterm>
       <indexterm><parmname>--debug</parmname></indexterm>
       <indexterm><parmname>-d</parmname></indexterm>
       <indexterm><parmname>--logfile</parmname></indexterm>
@@ -466,6 +467,14 @@
               >chapter.ditamap</filepath> <parmname>--resource</parmname>=<filepath
               >reltables.ditamap</filepath> <parmname>--format</parmname>=<option>html5</option></codeblock>
           </pd>
+        </plentry>
+        <plentry id="stacktrace">
+          <pt>
+            <parmname>--stacktrace</parmname>
+          </pt>
+          <pd>When processing fails on an error condition, Java stack trace is printed for debugging. Only applies when
+            <parmname>--verbose</parmname> or <parmname>--debug</parmname> options are set.</pd>
+          <pd/>
         </plentry>
         <plentry id="temp">
           <pt>

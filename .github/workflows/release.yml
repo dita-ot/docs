@@ -90,7 +90,7 @@ jobs:
           DITA_HOME: ${{ github.workspace }}/dita-ot-${{ env.DITA_OT_VERSION }}
           RELEASE_DITA_OT: ${{ github.workspace }}/src-dita-ot/dita-ot-${{ env.RELEASE_VERSION }}
       - name: Create release PR
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: release/${{ env.RELEASE_VERSION }}
           title: 'Update site for ${{ env.RELEASE_VERSION }}'
@@ -132,7 +132,7 @@ jobs:
         with:
           cmd: yq -i '.inputs.DITA_OT_VERSION.default = "${{ env.RELEASE_VERSION }}"' '.github/actions/render/action.yml'
       - name: Create release PR
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: feature/update-github-actions-${{ env.RELEASE_VERSION }}
           title: 'Update docs GitHub Actions for ${{ env.RELEASE_VERSION }}'

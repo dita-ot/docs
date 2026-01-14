@@ -83,8 +83,8 @@
             >export ANT_ARGS="-logger org.apache.tools.ant.listener.AnsiColorLogger"</codeblock>
             <p>Now you will get colorized messages when the <cmdname>dita</cmdname> command runs.</p>
             <note type="tip">Environment variables can also be set permanently. See
-              <xref href="https://www.java.com/en/download/help/path.xml" format="html" scope="external">How do I set or
-                change the PATH system variable?</xref> for information on how to set the
+              <xref href="https://www.java.com/en/download/help/path.html" format="html" scope="external">How do I set
+                or change the PATH system variable?</xref> for information on how to set the
               <xref keyref="PATH"/>. You can set the <codeph>ANT_ARGS</codeph> environment variable in the same
               way.</note>
           </dd>

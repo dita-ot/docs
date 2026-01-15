@@ -1,26 +1,105 @@
-plugins {
-    id 'io.github.jyjeanne.dita-ot-gradle' version '2.3.2'
-    id 'com.github.eerohele.saxon-gradle' version '0.9.0-beta4'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'net.sf.saxon:Saxon-HE:10.6'
+    }
 }
 
-// Specify Saxon version per https://github.com/eerohele/saxon-gradle/blob/master/README.md
+plugins {
+    id 'io.github.jyjeanne.dita-ot-gradle' version '2.3.2'
+    // Removed: 'com.github.eerohele.saxon-gradle' - not Configuration Cache compatible
+    // Replaced with: inline XsltTransformTask class below
+}
 
 repositories {
     mavenCentral()
 }
 
-configurations {
-    saxon
-}
+import org.gradle.api.DefaultTask
+import org.gradle.api.file.RegularFileProperty
+import org.gradle.api.provider.MapProperty
+import org.gradle.api.tasks.*
+import net.sf.saxon.s9api.Processor
+import net.sf.saxon.s9api.QName
+import net.sf.saxon.s9api.XdmAtomicValue
+import javax.xml.transform.stream.StreamSource
 
-dependencies {
-    // Use Saxon-HE 10.6 like DITA-OT, instead of the version that comes with `saxon-gradle`
-    saxon 'net.sf.saxon:Saxon-HE:10.6'
+/**
+ * Gradle 9 compatible XSLT transformation task using Saxon-HE.
+ * Replaces eerohele/saxon-gradle which is not Configuration Cache compatible.
+ */
+@CacheableTask
+abstract class XsltTransformTask extends DefaultTask {
+
+    @InputFile
+    @PathSensitive(PathSensitivity.RELATIVE)
+    abstract RegularFileProperty getInputFile()
+
+    @InputFile
+    @PathSensitive(PathSensitivity.RELATIVE)
+    abstract RegularFileProperty getStylesheetFile()
+
+    @OutputFile
+    abstract RegularFileProperty getOutputFile()
+
+    @Input
+    @Optional
+    abstract MapProperty<String, String> getParameters()
+
+    @TaskAction
+    void transform() {
+        def inputPath = inputFile.get().asFile
+        def stylesheetPath = stylesheetFile.get().asFile
+        def outputPath = outputFile.get().asFile
+
+        try {
+            outputPath.parentFile?.mkdirs()
+
+            def processor = new Processor(false)
+            def compiler = processor.newXsltCompiler()
+            def executable = compiler.compile(new StreamSource(stylesheetPath))
+            def transformer = executable.load30()
+
+            def params = parameters.getOrElse([:])
+            if (!params.isEmpty()) {
+                params.each { name, value ->
+                    transformer.setStylesheetParameters(
+                        Collections.singletonMap(new QName(name), new XdmAtomicValue(value))
+                    )
+                }
+            }
+
+            transformer.transform(new StreamSource(inputPath), processor.newSerializer(outputPath))
+            logger.lifecycle("Generated: ${outputPath.name}")
+        } catch (Exception e) {
+            throw new GradleException("XSLT transformation failed: ${inputPath.name} -> ${outputPath.name}\n" +
+                "Stylesheet: ${stylesheetPath.name}\n" +
+                "Cause: ${e.message}", e)
+        }
+    }
+
+    // DSL methods for backward compatibility with saxon-gradle syntax
+    // Using layout API for Configuration Cache compatibility
+    void input(Object path) {
+        inputFile.set(project.layout.projectDirectory.file(path.toString()))
+    }
+
+    void output(Object path) {
+        outputFile.set(project.layout.projectDirectory.file(path.toString()))
+    }
+
+    void stylesheet(Object path) {
+        stylesheetFile.set(project.layout.projectDirectory.file(path.toString()))
+    }
+
+    void parameters(Map<String, String> params) {
+        parameters.putAll(params)
+    }
 }
 
 import com.github.jyjeanne.DitaOtTask
-import com.github.eerohele.SaxonXsltTask
-import org.gradle.process.ExecOperations
 
 def getPropertyOrDefault(String name, def defaultValue) {
     providers.gradleProperty(name).getOrElse(defaultValue)
@@ -33,7 +112,12 @@ String ditaHome = getPropertyOrDefault('ditaHome', layout.projectDirectory.asFil
 String ditaHomeSrc = getPropertyOrDefault('ditaHomeSrc', ditaHome)
 String configDir = "${ditaHomeSrc}/config"
 String ditavalFile = "${projectDirPath}/platform.ditaval"
-Boolean toolkitBuild = file("${projectDirPath}/../lib/dost.jar").exists()
+
+// Defer file existence check for Configuration Cache compatibility
+Boolean toolkitBuild = providers.provider {
+    file("${projectDirPath}/../lib/dost.jar").exists()
+}.get()
+
 String samplesDir = toolkitBuild ? "${ditaHome}/docsrc/samples" : "${projectDirPath}/samples"
 String outputDir = getPropertyOrDefault('outputDir', toolkitBuild ? "${ditaHome}/doc" : "${projectDirPath}/out")
 
@@ -41,13 +125,17 @@ String toURI(String path) {
     file(path).toURI().toString()
 }
 
-task messages(type: SaxonXsltTask) {
+task messages(type: XsltTransformTask) {
+    group = 'generation'
+    description = 'Generate error messages documentation from DITA-OT config.'
     input "${configDir}/messages.xml"
     output "${projectDirPath}/topics/error-messages.xml"
     stylesheet "${projectDirPath}/resources/messages.xsl"
 }
 
-task params(type: SaxonXsltTask) {
+task params(type: XsltTransformTask) {
+    group = 'generation'
+    description = 'Generate parameters documentation from DITA-OT plugins config.'
     input "${configDir}/plugins.xml"
     output "${projectDirPath}/parameters/all-parameters.dita"
     stylesheet "${projectDirPath}/resources/params.xsl"
@@ -55,7 +143,9 @@ task params(type: SaxonXsltTask) {
     outputs.dir "${projectDirPath}/parameters"
 }
 
-task extensionPoints(type: SaxonXsltTask) {
+task extensionPoints(type: XsltTransformTask) {
+    group = 'generation'
+    description = 'Generate extension points documentation from DITA-OT plugins config.'
     input "${configDir}/plugins.xml"
     output "${projectDirPath}/extension-points/all-extension-points.dita"
     stylesheet "${projectDirPath}/resources/extension-points.xsl"
@@ -64,17 +154,16 @@ task extensionPoints(type: SaxonXsltTask) {
 }
 
 task generatePlatformFilter {
+    group = 'generation'
+    description = 'Generate platform-specific DITAVAL filter file.'
     def outputFile = layout.projectDirectory.file(ditavalFile)
     outputs.file(outputFile)
 
     doLast {
-        // Use Gradle's built-in OS detection instead of Ant
-        def platformName = 'unix'  // default
-        if (org.gradle.internal.os.OperatingSystem.current().isWindows()) {
-            platformName = 'windows'
-        } else if (org.gradle.internal.os.OperatingSystem.current().isMacOsX()) {
-            platformName = 'mac'
-        }
+        // Use System properties for OS detection (public API)
+        def osName = System.getProperty('os.name').toLowerCase()
+        def platformName = osName.contains('win') ? 'windows' :
+                          osName.contains('mac') ? 'mac' : 'unix'
 
         // Generate the ditaval file using modern Gradle file operations
         outputFile.asFile.text = """<?xml version="1.0" encoding="UTF-8"?>
@@ -86,17 +175,22 @@ task generatePlatformFilter {
     }
 }
 
-task generatePropertiesTemplate(type: SaxonXsltTask) {
+task generatePropertiesTemplate(type: XsltTransformTask) {
+    group = 'generation'
+    description = 'Generate properties template file from DITA-OT plugins config.'
     input "${configDir}/plugins.xml"
     output "${samplesDir}/properties/template.properties"
     stylesheet "${projectDirPath}/resources/properties-file.xsl"
 }
 
 task autoGenerate(dependsOn: [messages, params, extensionPoints, generatePlatformFilter, generatePropertiesTemplate]) {
+    group = 'generation'
     description = 'Run tasks that generate content from resource files and the build environment.'
 }
 
 task pdf(type: DitaOtTask, dependsOn: autoGenerate) {
+    group = 'documentation'
+    description = 'Build PDF documentation.'
     // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
     ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input "${projectDirPath}/userguide-book.ditamap"
@@ -104,16 +198,17 @@ task pdf(type: DitaOtTask, dependsOn: autoGenerate) {
     transtype 'pdf'
     filter "${projectDirPath}/resources/pdf.ditaval"
 
-    properties {
-        property(name: 'args.chapter.layout', value: 'BASIC')
-        property(name: 'args.gen.task.lbl', value: 'YES')
-        property(name: 'include.rellinks', value: '#default external')
-        property(name: 'outputFile.base', value: 'userguide')
-        property(name: 'theme', value: "${projectDirPath}/samples/themes/dita-ot-docs-theme.yaml")
-    }
+    // Use ditaProperties MapProperty directly for v2.3.0 compatibility
+    ditaProperties.put('args.chapter.layout', 'BASIC')
+    ditaProperties.put('args.gen.task.lbl', 'YES')
+    ditaProperties.put('include.rellinks', '#default external')
+    ditaProperties.put('outputFile.base', 'userguide')
+    ditaProperties.put('theme', "${projectDirPath}/samples/themes/dita-ot-docs-theme.yaml")
 }
 
 task html(type: DitaOtTask, dependsOn: autoGenerate) {
+    group = 'documentation'
+    description = 'Build HTML5 documentation.'
     // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
     ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input "${projectDirPath}/userguide.ditamap"
@@ -121,20 +216,21 @@ task html(type: DitaOtTask, dependsOn: autoGenerate) {
     transtype 'html5'
     filter "${projectDirPath}/resources/html.ditaval"
 
-    properties {
-        property(name: 'args.copycss', value: 'yes')
-        property(name: 'args.css', value: 'dita-ot-doc.css')
-        property(name: 'args.csspath', value: 'css')
-        property(name: 'args.cssroot', value: "${projectDirPath}/resources/")
-        property(name: 'args.gen.task.lbl', value: 'YES')
-        property(name: 'args.hdr', value: "${projectDirPath}/resources/header.xml")
-        property(name: 'args.rellinks', value: 'noparent')
-        property(name: 'html5.toc.generate', value: 'no')
-        property(name: 'nav-toc', value: 'partial')
-    }
+    // Use ditaProperties MapProperty directly for v2.3.0 compatibility
+    ditaProperties.put('args.copycss', 'yes')
+    ditaProperties.put('args.css', 'dita-ot-doc.css')
+    ditaProperties.put('args.csspath', 'css')
+    ditaProperties.put('args.cssroot', "${projectDirPath}/resources/")
+    ditaProperties.put('args.gen.task.lbl', 'YES')
+    ditaProperties.put('args.hdr', "${projectDirPath}/resources/header.xml")
+    ditaProperties.put('args.rellinks', 'noparent')
+    ditaProperties.put('html5.toc.generate', 'no')
+    ditaProperties.put('nav-toc', 'partial')
 }
 
 task htmlhelp(type: DitaOtTask, dependsOn: autoGenerate) {
+    group = 'documentation'
+    description = 'Build HTML Help (.chm) documentation.'
     // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
     ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input "${projectDirPath}/userguide.ditamap"
@@ -142,13 +238,12 @@ task htmlhelp(type: DitaOtTask, dependsOn: autoGenerate) {
     transtype 'htmlhelp'
     filter ditavalFile
 
-    properties {
-        property(name: 'args.copycss', value: 'yes')
-        property(name: 'args.css', value: 'dita-ot-doc.css')
-        property(name: 'args.csspath', value: 'css')
-        property(name: 'args.cssroot', value: "${projectDirPath}/resources/")
-        property(name: 'args.gen.task.lbl', value: 'YES')
-    }
+    // Use ditaProperties MapProperty directly for v2.3.0 compatibility
+    ditaProperties.put('args.copycss', 'yes')
+    ditaProperties.put('args.css', 'dita-ot-doc.css')
+    ditaProperties.put('args.csspath', 'css')
+    ditaProperties.put('args.cssroot', "${projectDirPath}/resources/")
+    ditaProperties.put('args.gen.task.lbl', 'YES')
 
     doLast {
         // Move .chm files using modern Gradle file operations
@@ -165,36 +260,27 @@ task htmlhelp(type: DitaOtTask, dependsOn: autoGenerate) {
     }
 }
 
-task cleanUp {
+task cleanOutput {
+    group = 'build'
+    description = 'Delete the output directory.'
     doLast {
         delete outputDir
     }
 }
 
-// Get git commit hash at configuration time for tasks that need it
-def getGitCommitHash() {
-    try {
-        def result = new ByteArrayOutputStream()
-        exec {
-            workingDir = layout.projectDirectory.asFile
-            commandLine 'git', 'rev-parse', 'HEAD'
-            standardOutput = result
-            ignoreExitValue = true
-        }
-        return result.toString().trim()
-    } catch (Exception e) {
-        logger.warn("Could not get git commit hash: ${e.message}")
-        return 'unknown'
-    }
-}
-
-// Store git commit for use by tasks
-def gitCommitHash = getGitCommitHash()
+// Get git commit hash using Gradle 9 compatible Provider API
+// Uses providers.exec() instead of deprecated project.exec()
+def gitCommitHash = providers.exec {
+    commandLine 'git', 'rev-parse', 'HEAD'
+    ignoreExitValue = true
+}.standardOutput.asText.map { it.trim() }.getOrElse('unknown')
 
 task gitMetadata {
+    group = 'build'
+    description = 'Log git commit metadata.'
     // This task just logs the git commit for reference
     doLast {
-        logger.info("Git commit: ${gitCommitHash}")
+        logger.lifecycle("Git commit: ${gitCommitHash}")
     }
 
     // Mark outputs to help with up-to-date checking
@@ -202,12 +288,14 @@ task gitMetadata {
 }
 
 task site(type: DitaOtTask) {
+    group = 'documentation'
+    description = 'Build website documentation.'
     dependsOn 'messages', 'params', 'extensionPoints', 'gitMetadata'
 
     // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
     ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input file("${projectDirPath}/site.ditamap")
-    output getPropertyOrDefault('outputDir', "${buildDir}/site")
+    output getPropertyOrDefault('outputDir', layout.buildDirectory.dir("site").get().asFile.path)
     filter "${projectDirPath}/resources/site.ditaval"
 
     transtype 'org.dita-ot.html'
@@ -215,17 +303,23 @@ task site(type: DitaOtTask) {
     // Evaluate the noCommitMeta flag at configuration time
     def includeCommitMeta = !providers.gradleProperty('noCommitMeta').map { Boolean.parseBoolean(it) }.getOrElse(false)
 
-    properties {
-        property(name: 'args.gen.task.lbl', value: 'YES')
-        property(name: 'args.rellinks', value: 'noparent')
-        if (includeCommitMeta) {
-            // Use the git commit hash obtained at configuration time
-            property(name: 'commit', value: gitCommitHash)
-        }
+    // Use ditaProperties MapProperty directly for v2.3.0 compatibility
+    ditaProperties.put('args.gen.task.lbl', 'YES')
+    ditaProperties.put('args.rellinks', 'noparent')
+    if (includeCommitMeta) {
+        // Use the git commit hash obtained at configuration time
+        ditaProperties.put('commit', gitCommitHash)
     }
 }
 
-task all(dependsOn: [pdf, html, htmlhelp])
-task dist(dependsOn: [pdf, html])
+task all(dependsOn: [pdf, html, htmlhelp]) {
+    group = 'documentation'
+    description = 'Build all documentation formats (PDF, HTML, HTMLHelp).'
+}
+
+task dist(dependsOn: [pdf, html]) {
+    group = 'documentation'
+    description = 'Build distribution documentation (PDF and HTML).'
+}
 
 defaultTasks 'dist'

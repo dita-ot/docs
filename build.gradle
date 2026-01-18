@@ -13,10 +13,6 @@ plugins {
     // Replaced with: inline XsltTransformTask class below
 }
 
-repositories {
-    mavenCentral()
-}
-
 import org.gradle.api.DefaultTask
 import org.gradle.api.file.RegularFileProperty
 import org.gradle.api.provider.MapProperty

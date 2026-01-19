@@ -2,14 +2,14 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
 <reference id="ID" rev="4.3">
-  <title>DITA Open Toolkit <keyword keyref="release"/> Release Notes</title>
+  <title>DITA Open Toolkit 4.3 Release Notes</title>
   <titlealts>
     <navtitle>Release Notes</navtitle>
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that fixes issues
-      reported in DITA-OT <keyword keyref="release"/>, which includes <ph conref="#v4.3/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit 4.3.5 is a maintenance release that fixes issues
+      reported in DITA-OT 4.3, which includes <ph conref="#v4.3/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -27,12 +27,12 @@
   </reference>
 
   <reference id="v4.3.5" outputclass="mark">
-    <title>DITA-OT <keyword keyref="maintenance-version"/>
+    <title>DITA-OT 4.3.5
       <ph outputclass="small text-muted">released October 21, 2025</ph>
     </title>
     <refbody>
       <section>
-        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+        <p>DITA Open Toolkit 4.3.5 is a maintenance release that includes the
           following bug fixes.</p>
         <ul>
           <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3.5%20sort%3Acreated-asc -->
@@ -272,7 +272,7 @@
   </reference>
 
   <reference id="v4.3">
-    <title>DITA-OT <keyword keyref="release"/>
+    <title>DITA-OT 4.3
       <ph outputclass="small text-muted"> released February 15, 2025</ph>
     </title>
     <prolog>
@@ -284,7 +284,7 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+        <p>DITA Open Toolkit Release 4.3 includes
           <ph id="summary">new <cmdname>init</cmdname> and <cmdname>validate</cmdname> subcommands that can be used to
             set up projects from a template and check files for errors before publishing. You can now publish multiple
             formats on the command line at once, add raw DITA to Markdown files, and publish bookmaps with PDF
@@ -406,7 +406,7 @@
       <section id="enhancements">
         <title>Enhancements and changes</title>
         <indexterm/>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes the following enhancements and changes to
+        <p>DITA Open Toolkit Release 4.3 includes the following enhancements and changes to
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
@@ -467,7 +467,7 @@
       <section id="bugs">
         <title>Bug fixes</title>
         <indexterm/>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
+        <p>DITA Open Toolkit Release 4.3 provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.3+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
           <li id="4354">In earlier versions, installing a plug-in from a path that contained the at-sign character
@@ -487,7 +487,7 @@
 
       <section id="contrib">
         <title>Contributors</title>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+        <p>DITA Open Toolkit Release 4.3 includes
           <xref keyref="contributions"/> by the following people:</p>
         <!--  https://github.com/tj/git-extras/blob/master/Commands.md#git-summary – `git summary 4.2..` -->
         <draft-comment author="Roger">NOTE: This lists contributions to the core toolkit, not docs.</draft-comment>
@@ -511,13 +511,13 @@
 
       <section id="docs">
         <title>Documentation updates</title>
-        <p>The documentation for DITA Open Toolkit Release <keyword keyref="release"/> has been reorganized to simplify
+        <p>The documentation for DITA Open Toolkit Release 4.3 has been reorganized to simplify
           the navigation in HTML versions and reduce the number of parts in PDF output. All of the content from previous
           versions is still available, though arranged slightly differently. The diagram in
           <xref href="#v4.3/43-docs-ia"/> shows the previous structure on the left, and the new locations on the
           right.</p>
         <fig>
-          <title id="43-docs-ia">DITA-OT <keyword keyref="release"/> navigation changes</title>
+          <title id="43-docs-ia">DITA-OT 4.3 navigation changes</title>
           <image href="../reference/images/dita-ot-docs-nav-ia-reorg_v4.3.svg" width="6.5in"/>
         </fig>
         <p conkeyref="migrating-to-4.3/restoring-samples"/>
@@ -528,8 +528,8 @@
             href="https://github.com/dita-ot/docs/issues?q=milestone%3A4.3+is%3Aclosed"
             format="html"
             scope="external"
-          ><keyword keyref="release"/> milestone</xref> in the documentation repository.</p>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
+          >4.3 milestone</xref> in the documentation repository.</p>
+        <p>DITA Open Toolkit Release 4.3 includes
           <xref keyref="docs-contributions"/> by the following people:</p>
         <draft-comment author="Roger">NOTE: This lists contributions to docs, not to the core toolkit.</draft-comment>
         <ol>

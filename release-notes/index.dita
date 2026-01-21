@@ -90,89 +90,110 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
-          <li id="4579">Add stacktrace CLI option
+          <li id="4579">A new <parmname
+            >--stacktrace</parmname> command-line option has been added to print the full Java
+            stack trace when an error occurs. This option is useful for debugging and troubleshooting, and can help
+            developers and support teams diagnose issues more quickly. By default, stack traces are no longer included
+            in verbose logging output to reduce noise for end users.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4579" format="html" scope="external">#4579</xref>
           </li>
-          <li id="4583">Add support for multiple deliverable options
+          <li id="4583">The <parmname>--deliverable</parmname> option can now be specified multiple times on the command
+            line to publish several deliverables from a project file in a single build. This allows you to select
+            specific deliverables without publishing all deliverables defined in the project.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4583" format="html" scope="external">#4583</xref>
           </li>
-          <li id="4600">Move simple DITA 1.3 chunking to DITA 2.0 chunking module
+          <li id="4600">Simple chunking cases in DITA 1.x maps can now be processed using the DITA 2.0 chunking module
+            in compatibility mode. For example, a DITA 1.3 map with <codeph>chunk="to-content"</codeph> is now processed
+            as if it used the DITA 2.0 <codeph>chunk="combine"</codeph> action. This refactoring improves reliability by
+            leveraging the newer chunking code, which has fewer bugs than the legacy implementation. Note that this may
+            change how splitting operations generate file names.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4600" format="html" scope="external">#4600</xref>
           </li>
-          <li id="4630">Support HTML5 attribute group passthrough (#4488)
+          <li id="4630">In previous releases, DITAVAL <codeph>passthrough</codeph> actions in HTML5 transformations
+            supported only simple (ungrouped) profiling attribute values. Passthrough support has been extended to
+            profiling attribute groups. When an HTML5 <codeph>data-*</codeph> passthrough attribute is created for a
+            value in a group, it is named after the group name. Per the DITA 2.0 specification, the <xmlatt>att</xmlatt>
+            value of a <codeph>passthrough</codeph> action can match either a profiling attribute name or a group name,
+            and ungrouped values belong to an implicit group named after the attribute.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4630" format="html" scope="external">#4630</xref>
           </li>
-          <li id="4631">add a CSS comment explaining why 'display: inline' is applied to note body (#4629)
+          <li id="4631">In HTML5 transformations, note bodies are rendered as <xmlelement>div</xmlelement> elements with
+            <codeph>display: inline</codeph> applied to allow single-line note rendering for inline note content. A CSS
+            comment has been added to explain this styling choice.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4631" format="html" scope="external">#4631</xref>
           </li>
-          <li id="4635">Rename DITAVAL @outputclass to @add-outputclass
+          <li id="4635">The DITAVAL <xmlatt>outputclass</xmlatt> attribute has been renamed to
+            <xmlatt>add-outputclass</xmlatt> to match the DITA 2.0 specification. Support for the old attribute name is
+            retained for backwards compatibility, but a <msgnum>DOTA014W</msgnum> warning message is now generated when
+            the deprecated <xmlatt>outputclass</xmlatt> attribute is used.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4635" format="html" scope="external">#4635</xref>
           </li>
-          <li id="4637">Refactor keyref parser
+          <li id="4637">The keyref parser has been refactored to improve code quality and prepare for future feature
+            additions.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4637" format="html" scope="external">#4637</xref>
           </li>
-          <li id="4638">Cache topic IDs in keyref processing
+          <li id="4638">Topic ID values are now cached during keyref resolution as a performance optimization. This
+            cache is used for key definitions that point to a file without a topic ID in the fragment identifier. Key
+            definitions that include a topic ID (such as <codeph>href="topic.dita#id"</codeph>) are not affected.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4638" format="html" scope="external">#4638</xref>
           </li>
-          <li id="4657">Fix test class name
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4657" format="html" scope="external">#4657</xref>
-          </li>
-          <li id="4663">Use Files methods to create file streams
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4663" format="html" scope="external">#4663</xref>
-          </li>
-          <li id="4664">Add unit tests for coderef
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4664" format="html" scope="external">#4664</xref>
-          </li>
-          <li id="4665">Upgrade XSpec
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4665" format="html" scope="external">#4665</xref>
-          </li>
-          <li id="4666">#4447 follow-up /refactor_gradle
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4666" format="html" scope="external">#4666</xref>
-          </li>
-          <li id="4672">fix missing task description in xhtml build
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4672" format="html" scope="external">#4672</xref>
-          </li>
-          <li id="4673">Improve integration test results
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4673" format="html" scope="external">#4673</xref>
-          </li>
-          <li id="4676">refactor integration tests, modularize, rename
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4676" format="html" scope="external">#4676</xref>
-          </li>
-          <li id="4677">Intorduce more uplevels tests
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4677" format="html" scope="external">#4677</xref>
-          </li>
-          <li id="4678">check output image paths in integration tests
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4678" format="html" scope="external">#4678</xref>
-          </li>
-          <li id="4679">fix overlapping paths in integration test folders
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4679" format="html" scope="external">#4679</xref>
-          </li>
-          <li id="4680">Clean CleanPreprocessModule
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4680" format="html" scope="external">#4680</xref>
-          </li>
-          <li id="4684">Refactor clean preprocess
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4684" format="html" scope="external">#4684</xref>
-          </li>
-          <li id="4690">unify @BeforeAll method names in tests
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4690" format="html" scope="external">#4690</xref>
-          </li>
-          <li id="4711">Improve chunk processing
+          <li id="4711">DITA 2.0 chunk processing has been improved to support multiple operation tokens. This
+            refactoring work lays the groundwork for future support of select tokens in DITA 2.0 chunk processing.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4711" format="html" scope="external">#4711</xref>
           </li>
-          <li id="4712">Update to Saxon 12.9
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4712" format="html" scope="external">#4712</xref>
-          </li>
-          <li id="4718">Generic refactoring
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4718" format="html" scope="external">#4718</xref>
-          </li>
-          <li id="4724">Refactor intergrator
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4724" format="html" scope="external">#4724</xref>
-          </li>
-          <li id="4734">Add support for OASIS linktitle and navtitle elements
+          <li id="4734">DITA-OT now supports the DITA 2.0 <xmlelement>linktitle</xmlelement> element and recognizes both
+            the DITA 1.3 and DITA 2.0 class attributes for <xmlelement>navtitle</xmlelement>. When using a DITA 2.0 root
+            map, the preprocessed map will contain both <xmlelement>linktext</xmlelement> (for DITA 1.3 compatibility)
+            and <xmlelement>linktitle</xmlelement> (for DITA 2.0) elements. Plug-ins that handle
+            <xmlelement>navtitle</xmlelement> or <xmlelement>linktext</xmlelement> may need to be updated to handle
+            these new elements.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4734" format="html" scope="external">#4734</xref>
           </li>
-          <li id="4739">Update to Saxon-HE 12.9
+          <li>Saxon has been updated to version 12.9, which includes minor bug fixes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4712" format="html" scope="external">#4712</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4739" format="html" scope="external">#4739</xref>
+          </li>
+          <li>XSpec has been upgraded to version 3.2.2, which improves XSLT test capabilities and now reports all
+            failing tests in a file instead of just the first one.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4665" format="html" scope="external">#4665</xref>
+          </li>
+          <li>Several internal code improvements have been made to enhance code quality, test coverage, and
+            maintainability:
+            <ul>
+              <li>Test class names now consistently use a <codeph>Test</codeph> suffix
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4657" format="html" scope="external">#4657</xref>
+              </li>
+              <li>File stream creation now uses the modern <codeph>Files</codeph> API
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4663" format="html" scope="external">#4663</xref>
+              </li>
+              <li>Unit tests have been added for coderef processing
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4664" format="html" scope="external">#4664</xref>
+              </li>
+              <li>Gradle build scripts have been refactored
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4666" format="html" scope="external">#4666</xref>
+              </li>
+              <li>Debug output now includes task descriptions for XHTML builds
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4672" format="html" scope="external">#4672</xref>
+              </li>
+              <li>Integration test result reporting has been improved
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4673" format="html" scope="external">#4673</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4676" format="html" scope="external">#4676</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4677" format="html" scope="external">#4677</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4678" format="html" scope="external">#4678</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4679" format="html" scope="external">#4679</xref>
+              </li>
+              <li>Preprocessing modules have been refactored for better readability
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4680" format="html" scope="external">#4680</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4684" format="html" scope="external">#4684</xref>
+              </li>
+              <li>Test method naming conventions have been standardized
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4690" format="html" scope="external">#4690</xref>
+              </li>
+              <li>General code refactoring for improved quality and performance
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4718" format="html" scope="external">#4718</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4724" format="html" scope="external">#4724</xref>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -183,46 +204,59 @@
         <p>DITA Open Toolkit Release <keyword keyref="release"/> provides fixes for the following bugs:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Abug+sort%3Acreated-asc -->
         <ul>
-          <li id="4036">NullPointerException when using the root-chunk-override with the new DITA 2.0 "combine" value
+          <li id="4036">Earlier versions of DITA-OT threw a <codeph>NullPointerException</codeph> when using the
+            <parmname>--root-chunk-override</parmname> option with the DITA 2.0 <codeph>combine</codeph> value. Chunk
+            processing has been updated to handle this case correctly.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4036" format="html" scope="external">#4036</xref>
           </li>
-          <li
-            id="4464"
-          >DITAVAL "passthough" action does not work for profiling applied to top-level (root) topic element
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4464" format="html" scope="external">#4464</xref>
-          </li>
-          <li id="4488">DITAVAL "passthough" action does not work for profiling applied to an attribute group
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4488" format="html" scope="external">#4488</xref>
-          </li>
-          <li id="4511">NullPointerException with --root-chunk-override=combine and xref in Dita 2.0 content
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4511" format="html" scope="external">#4511</xref>
-          </li>
-          <li id="4513">SAXParseException with --root-chunk-override=combine and table in Dita 2.0 content
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4513" format="html" scope="external">#4513</xref>
-          </li>
-          <li id="4639">support HTML5 attribute passthrough on root topic elements (#4464)
+          <li id="4464">In previous releases, DITAVAL <codeph>passthrough</codeph> actions in HTML5 transformations were
+            not applied to top-level (root) <xmlelement>topic</xmlelement> elements, even though they worked correctly
+            for nested topics. The root-topic template has been updated to generate the expected
+            <codeph>data-<varname>attname</varname></codeph> passthrough attributes on the HTML5 <xmlelement
+            >body</xmlelement> element.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4464" format="html" scope="external">#4464</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4639" format="html" scope="external">#4639</xref>
           </li>
-          <li id="4688">fix node executable path on Windows
+          <li id="4488">DITAVAL <codeph>passthrough</codeph> actions were not being applied to profiling attribute
+            groups in HTML5 output. For example, a value like <codeph>audience="llm(keep)"</codeph> would not generate
+            the expected passthrough attribute, even when a matching <xmlelement>prop</xmlelement> rule was defined. 
+            Processing has been updated so passthrough attributes are created using the group name.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4488" format="html" scope="external">#4488</xref>
+          </li>
+          <li id="4511">Using the <parmname>--root-chunk-override=combine</parmname> option with DITA 2.0 content that
+            contained <xmlelement>xref</xmlelement> elements caused a <codeph>NullPointerException</codeph> during link
+            rewriting. Chunk processing has been updated to handle cross-references correctly.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4511" format="html" scope="external">#4511</xref>
+          </li>
+          <li id="4513">Using the <parmname>--root-chunk-override=combine</parmname> option with DITA 2.0 content that
+            contained tables caused a <codeph>SAXParseException</codeph> due to unbound namespace prefixes. The
+            namespace prefix tracking has been fixed to ensure that internal attributes are correctly handled when links
+            are inserted during chunk processing.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4513" format="html" scope="external">#4513</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4738" format="html" scope="external">#4738</xref>
+          </li>
+          <li id="4688">The Gradle build configuration has been updated to correctly locate the Node.js executable path
+            on Windows systems.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4688" format="html" scope="external">#4688</xref>
           </li>
-          <li id="4695">DITA 2.0: HTML5 ignores navtitle element
+          <li id="4695">When using a DITA 2.0 map schema, the <xmlelement>navtitle</xmlelement> element within
+            <xmlelement>topicref</xmlelement> was ignored, causing navigation entries to be suppressed or flattened in
+            HTML5 output. The transformation now matches both the DITA 1.3 and DITA 2.0 class values for
+            <xmlelement>navtitle</xmlelement>.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4695" format="html" scope="external">#4695</xref>
           </li>
-          <li id="4698">Fix DITA 2.0 root map chunk
+          <li id="4698">Combine chunking for the root map in DITA 2.0 has been fixed.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4698" format="html" scope="external">#4698</xref>
           </li>
-          <li id="4705">Fix force unique filter attribute stack
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4705" format="html" scope="external">#4705</xref>
-          </li>
-          <li id="4706">Fix attribute stack bug
+          <li id="4701">The attribute stack in the force-unique filter and merge-map parser modules was not being
+            correctly maintained, which could cause attributes to be incorrectly applied during processing. The stack
+            management has been fixed to ensure attributes are properly tracked.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4705" format="html" scope="external">#4705</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4706" format="html" scope="external">#4706</xref>
           </li>
-          <li id="4733">Remove stale `args.logdir` reference from test code
+          <li id="4733">A stale reference to the deprecated <parmname>args.logdir</parmname> parameter has been removed
+            from test code. This parameter was deprecated in DITA-OT 2.5 and removed in 3.4.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4733" format="html" scope="external">#4733</xref>
-          </li>
-          <li id="4738">Fix namespace prefix bug in move links
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4738" format="html" scope="external">#4738</xref>
           </li>
         </ul>
       </section>

@@ -45,16 +45,42 @@
           >something old, something new, something borrowed, and something blue</ph>.</p>
       </section>
 
-      <section id="features">
-        <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext%20is%3Aclosed%20label%3Afeature%20sort%3Acreated-asc -->
+      <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext%20is%3Aclosed%20label%3Afeature%20sort%3Acreated-asc -->
+
+      <section id="4644">
+        <title>DITA 2.0 keytext</title>
+        <p>DITA-OT now supports the DITA 2.0 <xmlelement>keytext</xmlelement> element and implements the updated
+          <xref
+            href="https://dita-lang.org/dita/archspec/base/processing-keyref-for-text"
+            format="html"
+            scope="external"
+          >DITA 2.0 rules</xref> for generating key variable text.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4644" format="html" scope="external">#4644</xref>
+        </p>
+        <p>In DITA 2.0, the <xmlelement>keytext</xmlelement> element provides a more flexible way to define the text
+          content for key references. When a key is defined with <xmlelement>keytext</xmlelement>, this content is used
+          to populate key references that resolve to text.</p>
+        <p>Key processing now determines the DITA version of the map that declared each key and applies the appropriate
+          resolution rules. When you combine DITA 1.x and DITA 2.0 maps in a single publication:</p>
         <ul>
-          <li id="4644">Support for DITA 2.0 keytext
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4644" format="html" scope="external">#4644</xref>
-          </li>
-          <li id="4716">Add directed graph for URIs 
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4716" format="html" scope="external">#4716</xref>
-          </li>
+          <li>Key references to keys defined in DITA 1.x maps use the <xmlelement>keyword</xmlelement> element for text
+            resolution (as in previous versions).</li>
+          <li>Key references to keys defined in DITA 2.0 maps use the <xmlelement>keytext</xmlelement> element for text
+            resolution (following the DITA 2.0 specification).</li>
         </ul>
+        <p>This approach allows you to gradually migrate content to DITA 2.0 without rewriting existing key definitions.
+          However, mixing DITA versions in a single publication is not generally recommended.</p>
+      </section>
+
+      <section id="4716">
+        <title>URI dependency tracking</title>
+        <p>A new directed graph data structure has been added to track dependencies between resources identified by URI.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4716" format="html" scope="external">#4716</xref>
+        </p>
+        <p>This internal infrastructure improvement provides a foundation for more sophisticated link and dependency
+          tracking between files and topics. The new <codeph>Graph</codeph> and <codeph>UriGraph</codeph> classes enable
+          DITA-OT to model and traverse relationships between resources, which will support future enhancements to
+          content processing and validation.</p>
       </section>
 
       <section id="enhancements">

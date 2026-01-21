@@ -38,11 +38,10 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes
-          <ph
-            id="summary"
-            outputclass="mark"
-          >something old, something new, something borrowed, and something blue</ph>.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary" outputclass="mark">support
+            for additional features in the upcoming DITA 2.0 standard, including the <xmlelement>keytext</xmlelement>
+            and <xmlelement>linktitle</xmlelement> elements, new class attributes for <xmlelement>navtitle</xmlelement>,
+            and new chunking code</ph>.</p>
       </section>
 
       <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext%20is%3Aclosed%20label%3Afeature%20sort%3Acreated-asc -->

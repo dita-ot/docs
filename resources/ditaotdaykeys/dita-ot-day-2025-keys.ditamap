@@ -11,7 +11,6 @@
   >
     <topicmeta>
       <linktext>Future Plans</linktext>
-      <shortdesc>No description.</shortdesc>
       <author>DITA-OT Day Team</author>
     </topicmeta>
   </keydef>
@@ -50,7 +49,7 @@
     <topicmeta>
       <linktext>Providing content to AI engines using DITA OT plugins</linktext>
       <shortdesc
-      >Content from a DITA XML project can be used to provide information to an AI engine. In this presentation I will present two possible DITA OT plugin implementation: A DITA Open Toolkit plugin which creates fine tune material for AI engines using style guides.A DITA Open Toolkit plugin which uploads generated content to a vector store to be used by an AI Assistant.Apply AI checks to preprocessed DITA XML content.Preprocessing content using AI The presentation will also give us the possibility to look into how DITA-OT plugins are built.</shortdesc>
+      >Content from a DITA XML project can be used to provide information to an AI engine. In this presentation I will present two possible DITA OT plugin implementations: A DITA Open Toolkit plugin which creates fine tune material for AI engines using style guides. A DITA Open Toolkit plugin which uploads generated content to a vector store to be used by an AI Assistant. Apply AI checks to preprocessed DITA XML content.Preprocessing content using AI The presentation will also give us the possibility to look into how DITA-OT plugins are built.</shortdesc>
       <author>Radu Coravu</author>
     </topicmeta>
   </keydef>

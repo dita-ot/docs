@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <!-- This file was generated from a DITA-OT Day keys-map generator script. -->
+  <title>DITA-OT Day 2025</title>
+  <keydef
+    keys="futureplans-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_14"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Future Plans</linktext>
+      <shortdesc>No description.</shortdesc>
+      <author>DITA-OT Day Team</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="singlesourcepublishingbur-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_13"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Single Source Publishing? Bury the Hatchet with DITA-OT</linktext>
+      <shortdesc
+      >Our team has been leveraging DITA-OT for quite some time, and it has become an invaluable tool in our single-source publishing workflow.</shortdesc>
+      <author>Snehal Borole, Ritu Saxena</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="automatingcomplianceverif-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_12"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Automating Compliance Verification for Documentation Standards Using AI</linktext>
+      <shortdesc
+      >Ensuring that technical documentation adheres to industry standards, such as IEC 60335, can be a daunting task given the extensive and detailed nature of these standards. This presentation explores an innovative approach to automate the compliance verification process using AI agents.</shortdesc>
+      <author>Alex Jitianu</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="providingcontenttoaiengin-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_11"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Providing content to AI engines using DITA OT plugins</linktext>
+      <shortdesc
+      >Content from a DITA XML project can be used to provide information to an AI engine. In this presentation I will present two possible DITA OT plugin implementation: A DITA Open Toolkit plugin which creates fine tune material for AI engines using style guides.A DITA Open Toolkit plugin which uploads generated content to a vector store to be used by an AI Assistant.Apply AI checks to preprocessed DITA XML content.Preprocessing content using AI The presentation will also give us the possibility to look into how DITA-OT plugins are built.</shortdesc>
+      <author>Radu Coravu</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="dita-otintheageofaibridgi-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_10"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>DITA-OT in the Age of AI: Bridging Technical Writing and Artificial Intelligence</linktext>
+      <shortdesc
+      >The DITA Open Toolkit (DITA-OT) empowers technical writing by transforming traditional authoring practices into strategic content development. Learn how Technical Writers can create content with specifics to feed AI systems with high-quality, context-rich data. This enhances AI RAG (Retrieval-Augmented Generation) models and LLMs (Large Language Models) by providing them with accurate, intent-specific information for improved training and response delivery. This session explores the critical role of DITA-OT in enabling proactive content authoring practices that align technical writing with AI enablement. Key discussion points include: How DITA-OT facilitates the transformation of structured content into AI-ready assets. The importance of metadata and taxonomy in enhancing context and intent for AI-driven applications. Best practices for transitioning from reactive to proactive content strategies using DITA-OT. Attendees will gain insights into how DITA-OT integrates technical writing with AI, driving superior user experiences and maximizing the value of knowledge-based systems.</shortdesc>
+      <author>Amit Siddhartha</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="buildinganantbasedenviron-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_9"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Building an Ant based environment around the DITA OT</linktext>
+      <shortdesc
+      >In our customer deployments we have built an Ant-based environment around the DITA OT which allows us to extract and prepare the content before it's sent to OT processing. We will discuss how this design could be replicated on disk without the use of a CCMS.</shortdesc>
+      <author>Eric Sirois</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="learningassessmentqtioutp-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_8"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Learning Assessment QTI Output</linktext>
+      <shortdesc
+      >Working with DITA in a learning/training group, a challenging content type to work with is the &lt;learningAssessment&gt; topic. Sourcing these questions in DITA is ideal to facilitate reuse across content types and to allow them to be output to multiple formats. For many learning/training groups, the primary output of learning assessment content is a platform that delivers and scores electronic exams. Most of these systems work with an import of QTI (Question &amp; Test Interoperability) XML. While each system’s implementation of QTI varies, there is a common structure that can be used as a starting point.</shortdesc>
+      <author>Brianna Stevens-Russell</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="replacementkeyspaceconstr-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_7"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Replacement keyspace constructor for Open Toolkit</linktext>
+      <shortdesc
+      >As of OT 4.2, the key space construct implementation works fine for smaller key spaces but fails with larger key spaces (10s or 100s of 1000s of keys). This paper presents an alternative key space construction implementation that handles arbitrarily large key spaces with reasonable performance and memory consumption.</shortdesc>
+      <author>Eliot Kimber</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="welcometodita-otcommunity-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_6"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Welcome to DITA-OT Community: Where Code meets Passion</linktext>
+      <shortdesc
+      >Imagine a scenario where you are facing challenges while working with DITA Open Toolkit. You search for solutions online, check various forums and groups, but find no answers. You feel like you have no one else to turn to. However, there’s one group you haven’t reached out to yet – the DITA-OT community. A “hidden” network of DITA-OT experts, eager to share their knowledge and help you solve your problems. But how do you find them? Who are they? Who belongs to the DITA-OT community? What do we truly know about each other?</shortdesc>
+      <author>Justyna Hietala</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="documentationdevelopments-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_5"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Documentation Developments</linktext>
+      <shortdesc
+      >This talk provides an overview of the recent changes to the DITA-OT documentation and project website, points out open issues, highlights ideas for future improvements, and closes with room for suggestions from the community and a call for contributions.</shortdesc>
+      <author>Roger Sheen</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="dita-otanddita20whosdonew-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_4"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>DITA-OT and DITA 2.0: who’s done what now?</linktext>
+      <shortdesc
+      >DITA-OT is not part of the OASIS standards organization, but the project does its best to keep up with changes in the standard. In this session, we’ll talk about what we expect from OASIS with DITA 2.0, what you can already make use of in DITA-OT, and what you can do to help make the rest of the features a reality.</shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="dita-otnewfeaturesandenha-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_3"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>DITA-OT New Features and Enhancements</linktext>
+      <shortdesc
+      >We'll go through the list of features and enhancements made to the DITA OT in the newest releases.</shortdesc>
+      <author>Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="newsandannouncements-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_2"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>News and announcements</linktext>
+      <shortdesc>No description.</shortdesc>
+      <author>DITA-OT Day Team</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="welcomeandsponsorpresenta-2025"
+    href="https://www.oxygenxml.com/events/2025/dita-ot_day.html#video_1"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Welcome and sponsor presentation</linktext>
+      <shortdesc>No description.</shortdesc>
+      <author>Sponsor Presentation</author>
+    </topicmeta>
+  </keydef>
+</map>

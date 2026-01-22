@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<map>
+  <title>DITA-OT Day 2025</title>
+  <topicref keyref="dita-ot-day-videos-intro-2025" locktitle="yes">
+    <topicmeta>
+      <navtitle>2025 Copenhagen</navtitle>
+      <linktext>Copenhagen 2025</linktext>
+    </topicmeta>
+    <!-- This ditaval prevents duplicate titles in TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
+    <!-- See https://github.com/dita-ot/dita-ot/issues/3581 -->
+    <topicref keyref="ditaotnewfeaturesandenhan-2025" toc="no"/>
+    <topicref keyref="dita-otanddita20whosdonew-2025" toc="no"/>
+    <topicref keyref="documentationdevelopments-2025" toc="no"/>
+    <topicref keyref="welcometodita-otcommunity-2025" toc="no"/>
+    <topicref keyref="replacementkeyspaceconstr-2025" toc="no"/>
+    <topicref keyref="learningassessmentqtioutp-2025" toc="no"/>
+    <topicref keyref="buildinganantbasedenviron-2025" toc="no"/>
+    <topicref keyref="dita-otintheageofaibridgi-2025" toc="no"/>
+    <topicref keyref="providingcontenttoaiengin-2025" toc="no"/>
+    <topicref keyref="automatingcomplianceverif-2025" toc="no"/>
+    <topicref keyref="singlesourcepublishingbur-2025" toc="no"/>
+    <topicref keyref="futureplans-2025" toc="no"/>
+  </topicref>
+</map>

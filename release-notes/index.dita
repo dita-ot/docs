@@ -271,6 +271,13 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4705" format="html" scope="external">#4705</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4706" format="html" scope="external">#4706</xref>
           </li>
+          <li id="4731">From the initial public release of DITA-OT, section titles in HTML output have been styled with
+            a CSS <codeph>color</codeph> property that set text color to black. This creates problems in inverted color
+            schemes like dark mode themes, where section titles did not have sufficient contrast with the background. No
+            other heading levels specify text color, so this version removes the color property to allow themes to
+            modify section title color along with other headings and text.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4731" format="html" scope="external">#4731</xref>
+          </li>
           <li id="4733">A stale reference to the deprecated <parmname>args.logdir</parmname> parameter has been removed
             from test code. This parameter was deprecated in DITA-OT 2.5 and removed in 3.4.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4733" format="html" scope="external">#4733</xref>

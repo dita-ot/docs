@@ -8,7 +8,7 @@ buildscript {
 }
 
 plugins {
-    id 'io.github.jyjeanne.dita-ot-gradle' version '2.3.2'
+    id 'io.github.jyjeanne.dita-ot-gradle' version '2.8.1'
     // Removed: 'com.github.eerohele.saxon-gradle' - not Configuration Cache compatible
     // Replaced with: inline XsltTransformTask class below
 }
@@ -96,6 +96,8 @@ abstract class XsltTransformTask extends DefaultTask {
 }
 
 import com.github.jyjeanne.DitaOtTask
+import com.github.jyjeanne.DitaOtValidateTask
+import com.github.jyjeanne.DitaLinkCheckTask
 
 def getPropertyOrDefault(String name, def defaultValue) {
     providers.gradleProperty(name).getOrElse(defaultValue)
@@ -187,14 +189,12 @@ task autoGenerate(dependsOn: [messages, params, extensionPoints, generatePlatfor
 task pdf(type: DitaOtTask, dependsOn: autoGenerate) {
     group = 'documentation'
     description = 'Build PDF documentation.'
-    // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
     ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input "${projectDirPath}/userguide-book.ditamap"
     output outputDir
     transtype 'pdf'
     filter "${projectDirPath}/resources/pdf.ditaval"
 
-    // Use ditaProperties MapProperty directly for v2.3.0 compatibility
     ditaProperties.put('args.chapter.layout', 'BASIC')
     ditaProperties.put('args.gen.task.lbl', 'YES')
     ditaProperties.put('include.rellinks', '#default external')
@@ -205,14 +205,12 @@ task pdf(type: DitaOtTask, dependsOn: autoGenerate) {
 task html(type: DitaOtTask, dependsOn: autoGenerate) {
     group = 'documentation'
     description = 'Build HTML5 documentation.'
-    // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
     ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input "${projectDirPath}/userguide.ditamap"
     output outputDir
     transtype 'html5'
     filter "${projectDirPath}/resources/html.ditaval"
 
-    // Use ditaProperties MapProperty directly for v2.3.0 compatibility
     ditaProperties.put('args.copycss', 'yes')
     ditaProperties.put('args.css', 'dita-ot-doc.css')
     ditaProperties.put('args.csspath', 'css')
@@ -227,45 +225,26 @@ task html(type: DitaOtTask, dependsOn: autoGenerate) {
 task htmlhelp(type: DitaOtTask, dependsOn: autoGenerate) {
     group = 'documentation'
     description = 'Build HTML Help (.chm) documentation.'
-    // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
     ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input "${projectDirPath}/userguide.ditamap"
     output outputDir
     transtype 'htmlhelp'
     filter ditavalFile
 
-    // Use ditaProperties MapProperty directly for v2.3.0 compatibility
     ditaProperties.put('args.copycss', 'yes')
     ditaProperties.put('args.css', 'dita-ot-doc.css')
     ditaProperties.put('args.csspath', 'css')
     ditaProperties.put('args.cssroot', "${projectDirPath}/resources/")
     ditaProperties.put('args.gen.task.lbl', 'YES')
-
-    doLast {
-        // Move .chm files using modern Gradle file operations
-        def htmlhelpDir = file("${outputDir}/htmlhelp")
-        if (htmlhelpDir.exists()) {
-            copy {
-                from htmlhelpDir
-                into outputDir
-                include '*.chm'
-            }
-            // Clean up the htmlhelp directory
-            delete htmlhelpDir
-        }
-    }
 }
 
-task cleanOutput {
+task cleanOutput(type: Delete) {
     group = 'build'
     description = 'Delete the output directory.'
-    doLast {
-        delete outputDir
-    }
+    delete file(outputDir)
 }
 
 // Get git commit hash using Gradle 9 compatible Provider API
-// Uses providers.exec() instead of deprecated project.exec()
 def gitCommitHash = providers.exec {
     commandLine 'git', 'rev-parse', 'HEAD'
     ignoreExitValue = true
@@ -274,13 +253,10 @@ def gitCommitHash = providers.exec {
 task gitMetadata {
     group = 'build'
     description = 'Log git commit metadata.'
-    // This task just logs the git commit for reference
     doLast {
         logger.lifecycle("Git commit: ${gitCommitHash}")
     }
-
-    // Mark outputs to help with up-to-date checking
-    outputs.upToDateWhen { false } // Always run since git commit changes frequently
+    outputs.upToDateWhen { false }
 }
 
 task site(type: DitaOtTask) {
@@ -288,25 +264,59 @@ task site(type: DitaOtTask) {
     description = 'Build website documentation.'
     dependsOn 'messages', 'params', 'extensionPoints', 'gitMetadata'
 
-    // Set DITA-OT directory: pass as parameter -PditaHome or fall back to parent when run in core repo.
     ditaOt file(findProperty('ditaHome') ?: ditaHome)
     input file("${projectDirPath}/site.ditamap")
     output getPropertyOrDefault('outputDir', layout.buildDirectory.dir("site").get().asFile.path)
     filter "${projectDirPath}/resources/site.ditaval"
-
     transtype 'org.dita-ot.html'
 
     // Evaluate the noCommitMeta flag at configuration time
     def includeCommitMeta = !providers.gradleProperty('noCommitMeta').map { Boolean.parseBoolean(it) }.getOrElse(false)
 
-    // Use ditaProperties MapProperty directly for v2.3.0 compatibility
     ditaProperties.put('args.gen.task.lbl', 'YES')
     ditaProperties.put('args.rellinks', 'noparent')
     if (includeCommitMeta) {
-        // Use the git commit hash obtained at configuration time
         ditaProperties.put('commit', gitCommitHash)
     }
 }
+
+// =============================================================================
+// Verification Tasks (v2.8.1 features)
+// =============================================================================
+
+task validateDita(type: DitaOtValidateTask) {
+    group = 'verification'
+    description = 'Validate DITA content without full transformation.'
+    ditaOtDir = file(findProperty('ditaHome') ?: ditaHome)
+    inputFiles = files(
+        "${projectDirPath}/userguide.ditamap",
+        "${projectDirPath}/userguide-book.ditamap",
+        "${projectDirPath}/site.ditamap"
+    )
+    strictMode = false
+    failOnError = true
+}
+
+task checkLinks(type: DitaLinkCheckTask) {
+    group = 'verification'
+    description = 'Check for broken internal and external links.'
+    inputFiles = files(
+        "${projectDirPath}/userguide.ditamap",
+        "${projectDirPath}/userguide-book.ditamap"
+    )
+    checkExternal = false  // Set to true to also check external URLs
+    failOnBroken = true
+    recursive = true
+}
+
+task verify(dependsOn: [validateDita, checkLinks]) {
+    group = 'verification'
+    description = 'Run all verification tasks (validate DITA and check links).'
+}
+
+// =============================================================================
+// Aggregate Tasks
+// =============================================================================
 
 task all(dependsOn: [pdf, html, htmlhelp]) {
     group = 'documentation'

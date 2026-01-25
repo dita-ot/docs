@@ -742,15 +742,25 @@
                 <indexterm>formatter</indexterm></indexterm>
             </pd>
           </plentry>
-          <plentry id="publish.required.cleanup" importance="deprecated">
+          <plentry
+            id="publish.required.cleanup"
+            importance="deprecated"
+            conaction="pushreplace"
+            conref="parameters-pdf.dita#pdf/publish.required.cleanup"
+          >
+            <!-- Replace entire plentry element to pick up deprecated status (not currently marked as such in code) -->
             <pt>
               <parmname>publish.required.cleanup</parmname>
               <ph>
                 <indexterm>deprecated features
+                  <indexterm><parmname>publish.required.cleanup</parmname></indexterm></indexterm>
+                <indexterm>parameters
                   <indexterm><parmname>publish.required.cleanup</parmname></indexterm></indexterm></ph>
             </pt>
-            <pd conaction="mark" conref="parameters-pdf.dita#pdf/publish.required.cleanup.desc"/>
-            <pd conaction="pushafter">The default value is the value of the <parmname>args.draft</parmname> parameter.
+            <pd id="publish.required.cleanup.desc">Specifies whether draft-comment and required-cleanup elements are
+              included in the output. The allowed values are <option>yes</option>, and <option>no</option>.</pd>
+            <!-- Add context previously pushed after .desc -->
+            <pd>The default value is the value of the <parmname>args.draft</parmname> parameter.
               <ph audience="xslt-customizer">Corresponds to the XSLT parameter
                   <parmname>publishRequiredCleanup</parmname>.</ph>
               <note type="notice">This parameter is deprecated; use

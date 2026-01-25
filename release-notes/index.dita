@@ -8,7 +8,7 @@
   </titlealts>
 
   <abstract>
-    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> includes <ph conref="#v4.4/summary"/>.</shortdesc>
+    <shortdesc>DITA Open Toolkit <keyword keyref="release"/> provides <ph conref="#v4.4/summary"/>.</shortdesc>
     <p conkeyref="conref-task/semver-info"/>
     <note type="tip"><ph conkeyref="conref-task/download-ot"/></note>
   </abstract>
@@ -38,10 +38,10 @@
     </prolog>
     <refbody>
       <section>
-        <p>DITA Open Toolkit Release <keyword keyref="release"/> includes <ph id="summary">support for additional
-            features in the upcoming DITA 2.0 standard, including the <xmlelement>keytext</xmlelement> and
-              <xmlelement>linktitle</xmlelement> elements, new class attributes for <xmlelement>navtitle</xmlelement>,
-            and new chunking code</ph>.</p>
+        <p>DITA Open Toolkit Release <keyword keyref="release"/> provides 
+          <ph id="summary">a new JSON log option and support for additional features in the upcoming DITA 2.0 standard,
+            including the <xmlelement>keytext</xmlelement> and <xmlelement>linktitle</xmlelement> elements, new class
+            attributes for <xmlelement>navtitle</xmlelement>, and new chunking code</ph>.</p>
       </section>
 
       <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext%20is%3Aclosed%20label%3Afeature%20sort%3Acreated-asc -->
@@ -50,14 +50,23 @@
         <title><b outputclass="badge badge-primary">Preview</b> DITA 2.0 updates</title>
         <p>In addition to the
           <xref keyref="dita-v2-0-support"/> provided in DITA-OT 3.5 – 4.3, this release includes updated processing for
-          the latest draft versions of the DITA 2.0 grammar files from OASIS (as of <keyword
-            keyref="draft-dita-grammar-state"
-          />).</p>
+          the latest draft versions of the DITA 2.0 grammar files from OASIS.</p>
         <ul conkeyref="dita-v2-0-support/added-in-4.4">
           <li/>
         </ul>
         <p conkeyref="dita-v2-0-support/grammar-files"/>
         <note conkeyref="dita-v2-0-support/more-to-come"/>
+      </section>
+
+      <section id="4581">
+        <title>JSON logging</title>
+        <p>A new <parmname>--logger=json</parmname> option enables structured JSON log output for easier log processing
+          and analysis.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4581" format="html" scope="external">#4581</xref>
+        </p>
+        <p>When logging to standard output, each line is a separate JSON object. When logging to a file, the output is
+          formatted as a JSON array. This structured format simplifies integration with log aggregation tools and
+          automated build pipelines that need to parse DITA-OT output programmatically.</p>
       </section>
 
       <section id="4716">
@@ -69,6 +78,9 @@
           tracking between files and topics. The new <codeph>Graph</codeph> and <codeph>UriGraph</codeph> classes enable
           DITA-OT to model and traverse relationships between resources, which will support future enhancements to
           content processing and validation.</p>
+        <p id="4685">A generic rose tree data structure has also been added to replace earlier ad hoc implementations.
+          <xref href="https://github.com/dita-ot/dita-ot/issues/4685" format="html" scope="external">#4685</xref>
+        </p>
       </section>
 
       <section id="enhancements">
@@ -120,6 +132,16 @@
           </li>
           <li>Several bundled dependencies have been upgraded to the latest versions:
             <ul>
+              <li>Gradle has been updated to version 9.3.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4727" format="html" scope="external">#4727</xref>,
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4740" format="html" scope="external">#4740</xref>
+              </li>
+              <li>JUnit has been updated to version 6.0.2.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4740" format="html" scope="external">#4740</xref>
+              </li>
+              <li>Logback core has been updated to 1.5.19 to address a security vulnerability.
+                <xref href="https://github.com/dita-ot/dita-ot/issues/4743" format="html" scope="external">#4743</xref>
+              </li>
               <li>Saxon has been updated to version 12.9, which includes minor bug fixes.
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4712" format="html" scope="external">#4712</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4739" format="html" scope="external">#4739</xref>
@@ -234,6 +256,15 @@
             other heading levels specify text color, so this version removes the color property to allow themes to
             modify section title color along with other headings and text.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4731" format="html" scope="external">#4731</xref>
+          </li>
+          <li id="4732">The PDF2 parameter <parmname>outputFile.base</parmname> has been marked as deprecated. (Use
+              <parmname>args.output.base</parmname> instead.)
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4732" format="html" scope="external">#4732</xref>,
+            <xref
+              href="https://github.com/dita-ot/docs/issues/648"
+              format="html"
+              scope="external"
+            >dita-ot/docs#648</xref>
           </li>
           <li id="4733">A stale reference to the deprecated <parmname>args.logdir</parmname> parameter has been removed
             from test code. This parameter was deprecated in DITA-OT 2.5 and removed in 3.4.

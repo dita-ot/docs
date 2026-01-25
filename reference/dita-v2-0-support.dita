@@ -268,6 +268,27 @@
             these new elements.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4734" format="html" scope="external">#4734</xref>
           </p></li>
+        <li>
+          <p id="4744">DITA 2.0 grammar files have been updated to the latest draft versions from OASIS (as of <keyword
+              keyref="draft-dita-grammar-state"
+            />). This update removes the <xmlelement>state</xmlelement> and
+              <xmlelement>unknown</xmlelement> elements from the base grammar, changes the new
+              <xmlatt>outputclass</xmlatt> attribute in DITAVAL to <xmlatt>add-outputclass</xmlatt>, and modifies how
+            default values are set for <xmlatt>title-role</xmlatt> in the Alternative Titles RNG module, for improved
+            editing experience.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4744" format="html" scope="external">#4744</xref>
+          </p>
+          <p>In the technical content grammar, several elements have been removed from the Glossary Entry module:
+            <ul>
+              <li><xmlelement>glossAbbreviation</xmlelement></li>
+              <li><xmlelement>glossAlternateFor</xmlelement></li>
+              <li><xmlelement>glossPartOfSpeech</xmlelement></li>
+              <li><xmlelement>glossProperty</xmlelement></li>
+              <li><xmlelement>glossScopeNote</xmlelement></li>
+              <li><xmlelement>glossShortForm</xmlelement></li>
+              <li><xmlelement>glossStatus</xmlelement></li>
+            </ul>
+          </p></li>
       </ul>
     </section>
     <section>

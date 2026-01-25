@@ -98,6 +98,10 @@
             and ungrouped values belong to an implicit group named after the attribute.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4630" format="html" scope="external">#4630</xref>
           </li>
+          <li id="4742">HTML5 output now supports passthrough for the <xmlatt>importance</xmlatt> attribute, allowing
+            this metadata to be passed through to the output HTML for use in downstream processing or styling.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4742" format="html" scope="external">#4742</xref>
+          </li>
           <li id="4631">In HTML5 transformations, note bodies are rendered as <xmlelement>div</xmlelement> elements with
             <codeph>display: inline</codeph> applied to allow single-line note rendering for inline note content. A CSS
             comment has been added to the default stylesheets to explain this styling choice.
@@ -221,6 +225,13 @@
             management has been fixed to ensure attributes are properly tracked.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4705" format="html" scope="external">#4705</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4706" format="html" scope="external">#4706</xref>
+          </li>
+          <li id="4686">In XHTML and Eclipse Help output, trademark symbols in related links caused processing to fail
+            because the <codeph>key()</codeph> function was called on an intermediate tree without a document node. This
+            fix ports an earlier HTML5 correction to the XHTML transformation, passing the original root node as a
+            tunnel parameter for key lookups.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4686" format="html" scope="external">#4686</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4717" format="html" scope="external">#4717</xref>
           </li>
           <li id="4731">From the initial public release of DITA-OT, section titles in HTML output have been styled with
             a CSS <codeph>color</codeph> property that set text color to black. This creates problems in inverted color

@@ -150,7 +150,8 @@
           </li>
           <li id="4631">In HTML5 transformations, note bodies are rendered as <xmlelement>div</xmlelement> elements with
             <codeph>display: inline</codeph> applied to allow single-line note rendering for inline note content. A CSS
-            comment has been added to explain this styling choice.
+            comment has been added to the default stylesheets to explain this styling choice.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4629" format="html" scope="external">#4629</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4631" format="html" scope="external">#4631</xref>
           </li>
           <li id="4637">The keyref parser has been refactored to improve code quality and prepare for future feature

@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'net.sf.saxon:Saxon-HE:10.6'
+        classpath 'net.sf.saxon:Saxon-HE:12.9'
     }
 }
 

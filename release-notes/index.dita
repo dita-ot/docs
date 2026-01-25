@@ -78,6 +78,19 @@
           existing features:</p>
         <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3ANext+is%3Aclosed+label%3Aenhancement+sort%3Acreated-asc -->
         <ul>
+          <li id="4488">In previous releases, DITAVAL <codeph>passthrough</codeph> actions in HTML5 transformations
+            supported only simple (ungrouped) profiling attribute values. Passthrough support has been extended to
+            profiling attribute groups. When an HTML5 <codeph>data-*</codeph> passthrough attribute is created for a
+            value in a group, it is named after the group name. Per the DITA 2.0 specification, the <xmlatt>att</xmlatt>
+            value of a <codeph>passthrough</codeph> action can match either a profiling attribute name or a group name,
+            and ungrouped values belong to an implicit group named after the attribute.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4488" format="html" scope="external">#4488</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4630" format="html" scope="external">#4630</xref>
+          </li>
+          <li id="4742">HTML5 output now also supports passthrough for the <xmlatt>importance</xmlatt> attribute,
+            allowing this metadata to be passed through to the output HTML for use in downstream processing or styling.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4742" format="html" scope="external">#4742</xref>
+          </li>
           <li id="4579">A new <parmname
             >--stacktrace</parmname> command-line option has been added to print the full Java
             stack trace when an error occurs. This option is useful for debugging and troubleshooting, and can help
@@ -89,18 +102,6 @@
             line to publish several deliverables from a project file in a single build. This allows you to select
             specific deliverables without publishing all deliverables defined in the project.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4583" format="html" scope="external">#4583</xref>
-          </li>
-          <li id="4630">In previous releases, DITAVAL <codeph>passthrough</codeph> actions in HTML5 transformations
-            supported only simple (ungrouped) profiling attribute values. Passthrough support has been extended to
-            profiling attribute groups. When an HTML5 <codeph>data-*</codeph> passthrough attribute is created for a
-            value in a group, it is named after the group name. Per the DITA 2.0 specification, the <xmlatt>att</xmlatt>
-            value of a <codeph>passthrough</codeph> action can match either a profiling attribute name or a group name,
-            and ungrouped values belong to an implicit group named after the attribute.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4630" format="html" scope="external">#4630</xref>
-          </li>
-          <li id="4742">HTML5 output now supports passthrough for the <xmlatt>importance</xmlatt> attribute, allowing
-            this metadata to be passed through to the output HTML for use in downstream processing or styling.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4742" format="html" scope="external">#4742</xref>
           </li>
           <li id="4631">In HTML5 transformations, note bodies are rendered as <xmlelement>div</xmlelement> elements with
             <codeph>display: inline</codeph> applied to allow single-line note rendering for inline note content. A CSS
@@ -188,12 +189,6 @@
             >body</xmlelement> element.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4464" format="html" scope="external">#4464</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4639" format="html" scope="external">#4639</xref>
-          </li>
-          <li id="4488">DITAVAL <codeph>passthrough</codeph> actions were not being applied to profiling attribute
-            groups in HTML5 output. For example, a value like <codeph>audience="llm(keep)"</codeph> would not generate
-            the expected passthrough attribute, even when a matching <xmlelement>prop</xmlelement> rule was defined. 
-            Processing has been updated so passthrough attributes are created using the group name.
-            <xref href="https://github.com/dita-ot/dita-ot/issues/4488" format="html" scope="external">#4488</xref>
           </li>
           <li id="4511">Using the <parmname>--root-chunk-override=combine</parmname> option with DITA 2.0 content that
             contained <xmlelement>xref</xmlelement> elements caused a <codeph>NullPointerException</codeph> during link

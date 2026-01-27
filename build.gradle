@@ -96,8 +96,6 @@ abstract class XsltTransformTask extends DefaultTask {
 }
 
 import com.github.jyjeanne.DitaOtTask
-import com.github.jyjeanne.DitaOtValidateTask
-import com.github.jyjeanne.DitaLinkCheckTask
 
 def getPropertyOrDefault(String name, def defaultValue) {
     providers.gradleProperty(name).getOrElse(defaultValue)
@@ -297,36 +295,6 @@ task site(type: DitaOtTask) {
 // =============================================================================
 // Verification Tasks (v2.8.1 features)
 // =============================================================================
-
-task validateDita(type: DitaOtValidateTask) {
-    group = 'verification'
-    description = 'Validate DITA content without full transformation.'
-    ditaOtDir = file(findProperty('ditaHome') ?: ditaHome)
-    inputFiles = files(
-        "${projectDirPath}/userguide.ditamap",
-        "${projectDirPath}/userguide-book.ditamap",
-        "${projectDirPath}/site.ditamap"
-    )
-    strictMode = false
-    failOnError = true
-}
-
-task checkLinks(type: DitaLinkCheckTask) {
-    group = 'verification'
-    description = 'Check for broken internal and external links.'
-    inputFiles = files(
-        "${projectDirPath}/userguide.ditamap",
-        "${projectDirPath}/userguide-book.ditamap"
-    )
-    checkExternal = false  // Set to true to also check external URLs
-    failOnBroken = true
-    recursive = true
-}
-
-task verify(dependsOn: [validateDita, checkLinks]) {
-    group = 'verification'
-    description = 'Run all verification tasks (validate DITA and check links).'
-}
 
 // =============================================================================
 // Aggregate Tasks

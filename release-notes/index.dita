@@ -69,20 +69,6 @@
           automated build pipelines that need to parse DITA-OT output programmatically.</p>
       </section>
 
-      <section id="4716">
-        <title>URI dependency tracking</title>
-        <p>A new directed graph data structure has been added to track dependencies between resources identified by URI.
-          <xref href="https://github.com/dita-ot/dita-ot/issues/4716" format="html" scope="external">#4716</xref>
-        </p>
-        <p>This internal infrastructure improvement provides a foundation for more sophisticated link and dependency
-          tracking between files and topics. The new <codeph>Graph</codeph> and <codeph>UriGraph</codeph> classes enable
-          DITA-OT to model and traverse relationships between resources, which will support future enhancements to
-          content processing and validation.</p>
-        <p id="4685">A generic rose tree data structure has also been added to replace earlier ad hoc implementations.
-          <xref href="https://github.com/dita-ot/dita-ot/issues/4685" format="html" scope="external">#4685</xref>
-        </p>
-      </section>
-
       <section id="enhancements">
         <title>Enhancements and changes</title>
         <indexterm/>
@@ -188,6 +174,25 @@
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4718" format="html" scope="external">#4718</xref>,
                 <xref href="https://github.com/dita-ot/dita-ot/issues/4724" format="html" scope="external">#4724</xref>
               </li>
+              <li id="4685">
+                <p>A new directed graph data structure has been added to track dependencies between resources identified
+                  by URI. A generic rose tree data structure has also been added to replace earlier ad hoc
+                  implementations.
+                  <xref
+                    href="https://github.com/dita-ot/dita-ot/issues/4685"
+                    format="html"
+                    scope="external"
+                  >#4685</xref>,
+                  <xref
+                    href="https://github.com/dita-ot/dita-ot/issues/4716"
+                    format="html"
+                    scope="external"
+                  >#4716</xref></p>
+                <p id="4716">These internal infrastructure improvements provide a foundation for more sophisticated link
+                  and dependency tracking between files and topics. The new <codeph>Graph</codeph> and
+                    <codeph>UriGraph</codeph> classes enable DITA-OT to model and traverse relationships between
+                  resources, which will support future enhancements to content processing and validation.</p>
+              </li>
             </ul>
           </li>
         </ul>
@@ -283,7 +288,7 @@
           <li>Jarno Elovirta</li>
           <li>Dávid Bertalan</li>
           <li>Roger Sheen</li>
-          <li>Robert D Anderson</li>
+          <li>Robert D. Anderson</li>
           <li>Chris Papademetrious</li>
           <li>Joshua Johnson</li>
           <li>Julien Lacour</li>

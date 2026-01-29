@@ -9,8 +9,6 @@ buildscript {
 
 plugins {
     id 'io.github.jyjeanne.dita-ot-gradle' version '2.8.2'
-    // Removed: 'com.github.eerohele.saxon-gradle' - not Configuration Cache compatible
-    // Replaced with: inline XsltTransformTask class below
 }
 
 import org.gradle.api.DefaultTask
@@ -24,7 +22,7 @@ import javax.xml.transform.stream.StreamSource
 
 /**
  * Gradle 9 compatible XSLT transformation task using Saxon-HE.
- * Replaces eerohele/saxon-gradle which is not Configuration Cache compatible.
+ * Replaces eerohele/saxon-gradle, which is not configuration cache compatible.
  */
 @CacheableTask
 abstract class XsltTransformTask extends DefaultTask {
@@ -77,7 +75,7 @@ abstract class XsltTransformTask extends DefaultTask {
     }
 
     // DSL methods for backward compatibility with saxon-gradle syntax
-    // Using layout API for Configuration Cache compatibility
+    // Using layout API for configuration cache compatibility
     void input(Object path) {
         inputFile.set(project.layout.projectDirectory.file(path.toString()))
     }
@@ -109,7 +107,7 @@ String ditaHomeSrc = getPropertyOrDefault('ditaHomeSrc', ditaHome)
 String configDir = "${ditaHomeSrc}/config"
 String ditavalFile = "${projectDirPath}/platform.ditaval"
 
-// Defer file existence check for Configuration Cache compatibility
+// Defer file existence check for configuration cache compatibility
 Boolean toolkitBuild = providers.provider {
     file("${projectDirPath}/../lib/dost.jar").exists()
 }.get()
@@ -159,7 +157,7 @@ task generatePlatformFilter {
         // Use System properties for OS detection (public API)
         def osName = System.getProperty('os.name').toLowerCase()
         def platformName = osName.contains('win') ? 'windows' :
-                          osName.contains('mac') ? 'mac' : 'unix'
+                           osName.contains('mac') ? 'mac' : 'unix'
 
         // Generate the ditaval file using modern Gradle file operations
         outputFile.asFile.text = """<?xml version="1.0" encoding="UTF-8"?>
@@ -256,7 +254,7 @@ task cleanOutput(type: Delete) {
     delete file(outputDir)
 }
 
-// Get git commit hash using Gradle 9 compatible Provider API
+// Get Git commit hash using Gradle 9 compatible Provider API
 def gitCommitHash = providers.exec {
     commandLine 'git', 'rev-parse', 'HEAD'
     ignoreExitValue = true
@@ -291,14 +289,6 @@ task site(type: DitaOtTask) {
         ditaProperties.put('commit', gitCommitHash)
     }
 }
-
-// =============================================================================
-// Verification Tasks (v2.8.1 features)
-// =============================================================================
-
-// =============================================================================
-// Aggregate Tasks
-// =============================================================================
 
 task all(dependsOn: [pdf, html, htmlhelp]) {
     group = 'documentation'

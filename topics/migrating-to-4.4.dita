@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<reference id="migrating-to-4.4">
+
+  <title>Migrating to release 4.4</title>
+  <titlealts>
+    <navtitle>To 4.4</navtitle>
+  </titlealts>
+
+  <shortdesc>DITA-OT 4.4 includes <ph id="summary">support for additional features in the upcoming DITA 2.0 standard,
+      including the <xmlelement>keytext</xmlelement> and <xmlelement>linktitle</xmlelement> elements, new class
+      attributes for <xmlelement>navtitle</xmlelement>, and new chunking code</ph>.</shortdesc>
+
+  <refbody>
+    <section>
+      <note>This topic provides a summary of changes in DITA-OT 4.4 that may require modifications to custom stylesheets
+        or plug-ins. For more information on changes in this release, see the
+        <xref keyref="4.4-release-notes"/>.</note>
+    </section>
+
+    <section id="dita-2-0-preview">
+      <title><b outputclass="badge badge-primary">Preview</b> DITA 2.0 updates</title>
+      <p>In addition to the
+        <xref keyref="dita-v2-0-support"/> provided in DITA-OT 3.5 – 4.3, this release includes updated processing for
+        the latest draft versions of the DITA 2.0 grammar files from OASIS (as of <keyword
+          keyref="draft-dita-grammar-state"
+        />).</p>
+      <note type="tip">Consider updating your documents and/or customizations to take advantage of the new features and
+        prepare for the transition to DITA 2.0.</note>
+      <p conkeyref="dita-v2-0-support/4600"/>
+      <p conkeyref="dita-v2-0-support/4635"/>
+      <p conkeyref="dita-v2-0-support/4644"/>
+      <p conkeyref="dita-v2-0-support/4734"/>
+      <note conkeyref="dita-v2-0-support/more-to-come"/>
+    </section>
+
+  </refbody>
+</reference>

@@ -17,7 +17,9 @@
     <p id="grammar-files">DITA documents that reference the draft grammar files can be parsed, and where features
       overlap with DITA 1.3, those features will work as expected.</p>
     <section id="v3.5">
-      <title>DITA-OT 3.5</title>
+      <title>DITA-OT 3.5
+        <ph outputclass="small text-muted">released April 27, 2020</ph>
+      </title>
       <p>DITA-OT 3.5 provided an initial preview of DITA 2.0 features.</p>
       <ul id="added-in-3.5">
         <li id="3453">
@@ -64,7 +66,9 @@
       </ul>
     </section>
     <section id="v3.6">
-      <title>DITA-OT 3.6</title>
+      <title>DITA-OT 3.6
+        <ph outputclass="small text-muted">released December 19, 2020</ph>
+      </title>
       <p>DITA-OT 3.6 added support for additional DITA 2.0 features.</p>
       <ul id="added-in-3.6">
         <li>Where earlier DITA versions relied on the <xmlelement>object</xmlelement> element to embed media in DITA
@@ -91,7 +95,9 @@
       </ul>
     </section>
     <section id="v3.7">
-      <title>DITA-OT 3.7</title>
+      <title>DITA-OT 3.7
+        <ph outputclass="small text-muted">released January 17, 2022</ph>
+      </title>
       <p>DITA-OT 3.7 added support for additional DITA 2.0 features.</p>
       <ul id="added-in-3.7">
         <li>The new “combine” chunk action can be used to merge content into new output documents.
@@ -152,7 +158,9 @@
       </ul>
     </section>
     <section id="v4.0">
-      <title>DITA-OT 4.0</title>
+      <title>DITA-OT 4.0
+        <ph outputclass="small text-muted">released November 12, 2022</ph>
+      </title>
       <p>DITA-OT 4.0 added support for additional DITA 2.0 features.</p>
       <ul id="added-in-4.0">
         <li>The new “split” chunk action can be used to break content into new output documents.
@@ -169,7 +177,9 @@
       </ul>
     </section>
     <section id="v4.1">
-      <title>DITA-OT 4.1</title>
+      <title>DITA-OT 4.1
+        <ph outputclass="small text-muted">released June 22, 2023</ph>
+      </title>
       <p>DITA-OT 4.1 added support for additional DITA 2.0 features.</p>
       <ul id="added-in-4.1">
         <li>
@@ -186,8 +196,10 @@
       </ul>
     </section>
     <section id="v4.3">
-      <title>DITA-OT 4.3</title>
-      <p>DITA-OT 4.3 adds support for additional DITA 2.0 features.</p>
+      <title>DITA-OT 4.3
+        <ph outputclass="small text-muted"> released February 15, 2025</ph>
+      </title>
+      <p>DITA-OT 4.3 added support for additional DITA 2.0 features.</p>
       <ul id="added-in-4.3">
         <li id="4570">HTML5 processing now supports the <xmlatt>height</xmlatt> and <xmlatt>width</xmlatt> attributes
           on the DITA 2.0 <xmlelement>video</xmlelement> element to ensure that videos are scaled correctly.
@@ -197,6 +209,86 @@
             <xmlelement>em</xmlelement> for emphasis and <xmlelement>strong</xmlelement> for strong emphasis.
           <xref href="https://github.com/dita-ot/dita-ot/issues/4571" format="html" scope="external">#4571</xref>
         </li>
+      </ul>
+    </section>
+    <section id="v4.4">
+      <title>DITA-OT 4.4</title>
+      <p>DITA-OT 4.4 adds support for additional DITA 2.0 features.</p>
+      <ul id="added-in-4.4">
+        <li>
+          <p id="4644">DITA-OT now supports the DITA 2.0 <xmlelement>keytext</xmlelement> element and implements the
+            updated
+            <xref
+              href="https://dita-lang.org/dita/archspec/base/processing-keyref-for-text"
+              format="html"
+              scope="external"
+            >DITA 2.0 rules</xref> for generating key variable text.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4644" format="html" scope="external">#4644</xref>
+          </p>
+          <p>In DITA 2.0, the <xmlelement>keytext</xmlelement> element provides a more flexible way to define the text
+            content for key references. When a key is defined with <xmlelement>keytext</xmlelement>, this content is
+            used to populate key references that resolve to text.</p>
+          <p>Key processing now determines the DITA version of the map that declared each key and applies the
+            appropriate resolution rules. When you combine DITA 1.x and DITA 2.0 maps in a single publication:</p>
+          <ul>
+            <li>Key references to keys defined in DITA 1.x maps use the <xmlelement>keyword</xmlelement> element for
+              text resolution (as in previous versions).</li>
+            <li>Key references to keys defined in DITA 2.0 maps use the <xmlelement>keytext</xmlelement> element for
+              text resolution (following the DITA 2.0 specification).</li>
+          </ul>
+          <p>This approach allows you to gradually migrate content to DITA 2.0 without rewriting existing key
+            definitions. However, mixing DITA versions in a single publication is not generally recommended.</p>
+        </li>
+        <li>
+          <p id="4600">Simple chunking cases in DITA 1.x maps can now be processed using the DITA 2.0 chunking module
+            in compatibility mode. For example, a DITA 1.3 map with <codeph>chunk="to-content"</codeph> is now
+            processed as if it used the DITA 2.0 <codeph>chunk="combine"</codeph> action. This refactoring improves
+            reliability by leveraging the newer chunking code, which has fewer bugs than the legacy implementation.
+            Note that this may change how splitting operations generate file names.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4600" format="html" scope="external">#4600</xref>
+          </p></li>
+        <li>
+          <p id="4635">The DITAVAL <xmlatt>outputclass</xmlatt> attribute has been renamed to
+            <xmlatt>add-outputclass</xmlatt> to match the DITA 2.0 specification. Support for the old attribute name
+            is retained for backwards compatibility, but a <msgnum>DOTA014W</msgnum> warning message is now generated
+            when the deprecated <xmlatt>outputclass</xmlatt> attribute is used.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4635" format="html" scope="external">#4635</xref>
+          </p></li>
+        <li>
+          <p id="4711">DITA 2.0 chunk processing has been improved to support multiple operation tokens. This
+            refactoring work lays the groundwork for future support of select tokens in DITA 2.0 chunk processing.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4711" format="html" scope="external">#4711</xref>
+          </p></li>
+        <li>
+          <p id="4734">DITA-OT now supports the DITA 2.0 <xmlelement>linktitle</xmlelement> element and recognizes
+            both the DITA 1.3 and DITA 2.0 class attributes for <xmlelement>navtitle</xmlelement>. When using a DITA
+            2.0 root map, the preprocessed map will contain both <xmlelement>linktext</xmlelement> (for DITA 1.3
+            compatibility) and <xmlelement>linktitle</xmlelement> (for DITA 2.0) elements. Plug-ins that handle
+            <xmlelement>navtitle</xmlelement> or <xmlelement>linktext</xmlelement> may need to be updated to handle
+            these new elements.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4734" format="html" scope="external">#4734</xref>
+          </p></li>
+        <li>
+          <p id="4744">DITA 2.0 grammar files have been updated to the latest draft versions from OASIS (as of <keyword
+              keyref="draft-dita-grammar-state"
+            />). This update removes the <xmlelement>state</xmlelement> and
+              <xmlelement>unknown</xmlelement> elements from the base grammar, changes the new
+              <xmlatt>outputclass</xmlatt> attribute in DITAVAL to <xmlatt>add-outputclass</xmlatt>, and modifies how
+            default values are set for <xmlatt>title-role</xmlatt> in the Alternative Titles RNG module, for improved
+            editing experience.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4744" format="html" scope="external">#4744</xref>
+          </p>
+          <p>In the technical content grammar, several elements have been removed from the Glossary Entry module:
+            <ul>
+              <li><xmlelement>glossAbbreviation</xmlelement></li>
+              <li><xmlelement>glossAlternateFor</xmlelement></li>
+              <li><xmlelement>glossPartOfSpeech</xmlelement></li>
+              <li><xmlelement>glossProperty</xmlelement></li>
+              <li><xmlelement>glossScopeNote</xmlelement></li>
+              <li><xmlelement>glossShortForm</xmlelement></li>
+              <li><xmlelement>glossStatus</xmlelement></li>
+            </ul>
+          </p></li>
       </ul>
     </section>
     <section>

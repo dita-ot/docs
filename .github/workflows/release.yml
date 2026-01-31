@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       WEBSITE_PLUGIN_BRANCH: 'master'
-      DITA_OT_VERSION: '4.3.4'
+      DITA_OT_VERSION: '4.3.5'
     steps:
       - name: Parse arguments
         run: |
@@ -35,7 +35,7 @@ jobs:
             echo "TAG=${{ github.event.inputs.docs-tag }}" >> $GITHUB_ENV
           fi
       - name: Check out docs
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ env.TAG }}
       - name: Set variables
@@ -48,7 +48,7 @@ jobs:
           java-version: 17
           cache: 'gradle'
       - name: Check out website
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           repository: dita-ot/website
           token: ${{ secrets.COMMITTER_TOKEN }}
@@ -57,7 +57,7 @@ jobs:
         run: |
           curl -sL https://github.com/dita-ot/org.dita-ot.html/archive/refs/heads/${{ env.WEBSITE_PLUGIN_BRANCH }}.zip -o org.dita-ot.html.zip
       - name: Cache render DITA-OT
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: dita-ot-${{ env.DITA_OT_VERSION }}
           key: ${{ runner.os }}-dita-ot-${{ env.DITA_OT_VERSION }}
@@ -90,7 +90,7 @@ jobs:
           DITA_HOME: ${{ github.workspace }}/dita-ot-${{ env.DITA_OT_VERSION }}
           RELEASE_DITA_OT: ${{ github.workspace }}/src-dita-ot/dita-ot-${{ env.RELEASE_VERSION }}
       - name: Create release PR
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: release/${{ env.RELEASE_VERSION }}
           title: 'Update site for ${{ env.RELEASE_VERSION }}'
@@ -120,7 +120,7 @@ jobs:
             echo "RELEASE_VERSION=${{ github.event.inputs.dita-ot-version }}" >> $GITHUB_ENV
           fi
       - name: Check out docs
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: develop
       - name: Update GitHub Actions release workflow
@@ -132,7 +132,7 @@ jobs:
         with:
           cmd: yq -i '.inputs.DITA_OT_VERSION.default = "${{ env.RELEASE_VERSION }}"' '.github/actions/render/action.yml'
       - name: Create release PR
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: feature/update-github-actions-${{ env.RELEASE_VERSION }}
           title: 'Update docs GitHub Actions for ${{ env.RELEASE_VERSION }}'

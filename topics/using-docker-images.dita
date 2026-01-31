@@ -31,10 +31,17 @@
       <p>When a container is stopped, any changes made within the container are lost, so source files and generated
         output should be stored outside the container. These resources are attached to the container by mounting
         directories from the host machine.</p>
-      <note>If you use
+      <note type="important">If you use
         <xref href="https://podman.io/" format="html" scope="external">Podman</xref> to manage and run your containers,
-        you can substitute <cmdname>podman</cmdname> for the <cmdname>docker</cmdname> command in the instructions
-        below.</note>
+        <xref
+          href="https://github.com/containers/podman/blob/main/docs/tutorials/rootless_tutorial.md#using-volumes"
+          format="html"
+          scope="external"
+        >you must substitute</xref>
+        <userinput>podman --userns=keep-id:uid=<varname>UID</varname>,gid=<varname>GID</varname></userinput> for the
+          <cmdname>docker</cmdname> command in the instructions below. For DITA-OT versions 4.2.3 and earlier, both
+          <varname>UID</varname> and <varname>GID</varname> are <userinput>1000</userinput>. For all later DITA-OT
+        versions, both values are <userinput>1001</userinput>.</note>
     </section>
     <prereq>
       <p>To run the DITA-OT image, you will need to install Docker and be able to access the GitHub Container Registry.

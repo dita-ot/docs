@@ -789,6 +789,24 @@ pre code {
   font-size: 0.8125rem;
 }
 
+/* Mark deprecated elements */
+
+[data-importance='deprecated'],
+[data-importance='deprecated'] + dd,
+[data-importance='deprecated'] .parmname {
+  color: var(--code-color);
+}
+
+dt[data-importance='deprecated'] .parmname::after {
+  border-radius: 0.25rem;
+  content: 'DEPRECATED';
+  font-size: 75%;
+  margin-left: 0.5em;
+  padding: 0.25em 0.4em;
+  background-color: var(--code-color);
+  color: var(--secondary-bg);
+}
+
 /****************************************
 Headings
 ****************************************/

@@ -3,5 +3,6 @@
 <val>
   <prop action="include" att="deliveryTarget" val="html"/>
   <prop action="exclude" att="deliveryTarget" val="pdf"/>
+  <prop action="passthrough" att="importance"/>
   <prop action="passthrough" att="platform"/>
 </val>

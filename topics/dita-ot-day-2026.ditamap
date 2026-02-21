@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<!--  This file is part of the DITA Open Toolkit project. See the accompanying LICENSE file for applicable license.  -->
+<map>
+  <title>DITA-OT Day 2026</title>
+  <topicref keyref="dita-ot-day-videos-intro-2026" locktitle="yes">
+    <topicmeta>
+      <navtitle>2026 Brussels</navtitle>
+      <linktext>Brussels 2026</linktext>
+    </topicmeta>
+    <!-- This ditaval prevents duplicate titles in TOC and duplicated titles and shortdescs in the "mini-TOC" pages -->
+    <ditavalref href="../resources/ditaotdaykeys/all-conferences.ditaval"/>
+    <!-- See https://github.com/dita-ot/dita-ot/issues/3581 -->
+    <topicref keyref="newsandannouncements-2026" toc="no"/>
+    <topicref keyref="tenyearsofditaopentoolkit-2026" toc="no"/>
+    <topicref keyref="confessionsofadita-otuser-2026" toc="no"/>
+    <topicref keyref="whatwillthiscostme-evalua-2026" toc="no"/>
+    <topicref keyref="buildingtofluidtopicshoww-2026" toc="no"/>
+    <topicref keyref="makingtheditaotaddupmathm-2026" toc="no"/>
+    <topicref keyref="adecadeofdocs-2026" toc="no"/>
+    <topicref keyref="anewgradleplugintoenhance-2026" toc="no"/>
+    <topicref keyref="funpracticalmetadataplug--2026" toc="no"/>
+    <topicref keyref="sometimesitsjusthardtoimp-2026" toc="no"/>
+    <topicref keyref="paynoattentiontothechunke-2026" toc="no"/>
+    <topicref keyref="frommapstomodelshowdita-o-2026" toc="no"/>
+    <topicref keyref="usingtheditaotdocswithait-2026" toc="no"/>
+    <topicref keyref="tenyearsofdita-otday-2026" toc="no"/>
+  </topicref>
+</map>

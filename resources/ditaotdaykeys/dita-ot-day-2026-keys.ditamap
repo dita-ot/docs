@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <!-- This file was generated from a DITA-OT Day keys-map generator script. -->
+  <title>DITA-OT Day 2026</title>
+  <keydef
+    keys="newsandannouncements-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_1"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>News and announcements</linktext>
+      <shortdesc>No description.</shortdesc>
+      <author>DITA-OT Day Team</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="tenyearsofditaopentoolkit-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_2"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Ten Years of DITA Open Toolkit</linktext>
+      <shortdesc
+      >Since this conference series began, the toolkit has gone through many changes and added a long list of new features. In this session, we will look back at some of the big features that should be of interest. This session will be particularly useful to those who may not always update their version right away; if your upgrade schedule runs a couple of years behind the official release, new feature announcements will already be long gone and those features are easy to miss.</shortdesc>
+      <author>DITA-OT Day Team</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="confessionsofadita-otuser-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_3"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Confessions of a DITA-OT User – What in the XML are you doing?</linktext>
+      <shortdesc
+      >"We’ve all heard stories about how people use DITA-OT… but how much do we actually know? Different backgrounds, different teams, different needs — and all the ways DITA-OT fits into daily work. It’s time to find out how everyone’s really using DITA-OT. Whether you’re a beginner or a seasoned professional, we want to hear from you. Join this interactive session to share your experience, see where you fit in the bigger picture, and discover just how wonderfully diverse the DITA-OT community really is. Bring your phone and an open mind! This session has been organized with the help of the core DITA-OT developers — and yes, you’ll get your turn to ask them a few questions too."</shortdesc>
+      <author>Justyna Hietala</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="whatwillthiscostme-evalua-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_4"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>What will this cost me - evaluating the work ahead for a migration to 2.0</linktext>
+      <shortdesc
+      >DITA 2.0 is coming, and you will need to migrate if you want to take advantage of any new features. But what will that migration cost? This session will present a DITA-OT plugin that you can run over your content to get a report on the changes ahead. It will create a report of any content structures that need to be migrated, to help you determine how much (or how little) work is ahead.</shortdesc>
+      <author>Robert D. Anderson</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="buildingtofluidtopicshoww-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_5"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Building to Fluid Topics: How we did it and why</linktext>
+      <shortdesc
+      >Outlines how our new Fluid Topics FTML build process works, including constructing pretty URLs using classifications applied externally and capturing the URLs in order to track URL changes over time.</shortdesc>
+      <author>Eliot Kimber</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="makingtheditaotaddupmathm-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_6"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Making the DITA OT Add Up: MathML Support</linktext>
+      <shortdesc
+      >MathML has been a part of the DITA specification v1.3 but has never been natively supported in the DITA Open Toolkit. Bentley Systems developed a plugin to support MathML output for HTML and PDF as well as implementing a means to provide high-quality output using MathJax rendering into SVG graphics during publishing time. This reduces the need for end uses to rely on CDNs or other JavaScript in HTML. This methodology can extend to other areas outside of MathML, as well.</shortdesc>
+      <author>Jason Coleman</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="adecadeofdocs-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_7"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>A decade of docs</linktext>
+      <shortdesc
+      >This year’s DITA-OT Day marks the 10th edition of this community event. We'll take this opportunity to reflect on how the DITA-OT documentation has evolved over the years, and where it could go from here.</shortdesc>
+      <author>Roger Sheen</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="anewgradleplugintoenhance-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_8"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>A new Gradle plugin to enhance your Dita OT plugin development</linktext>
+      <shortdesc
+      >The new plugin brings significant improvements in terms of performance (Configuration Cache), developer experience (type-safe Kotlin DSL, better logging), and maintenance (modern Kotlin code). Migration is straightforward, with near-full API compatibility. I would strongly recommend migrating to the new plugin to take advantage of these enhancements, especially if you are already using modern Gradle (6.5+) and Kotlin DSL.</shortdesc>
+      <author>Jeremy Jeanne</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="funpracticalmetadataplug--2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_9"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Fun &amp; practical metadata plug-ins</linktext>
+      <shortdesc
+      >Discover practical ways to leverage metadata with DITA Open Toolkit plug-ins. Go beyond HTML or PDF outputs — imagine plug-ins that generate QR codes for instant reference in a PDF file, create Excel summaries for clear analysis, and JSON outputs that integrate with your delivery platforms.</shortdesc>
+      <author>Pieterjan Vandenweghe</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="sometimesitsjusthardtoimp-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_10"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Sometimes It’s Just Hard (to Implement): Why Some DITA-OT Features Remain Out of Reach</linktext>
+      <shortdesc
+      >Ever wondered why certain highly requested features—like running DITA Open Toolkit from a single JAR, true incremental publishing, or other long-desired capabilities—still aren’t available in DITA-OT? This talk takes a candid look at the technical and community challenges behind these “missing” features. We’ll explore specific examples, break down the complexities that make them difficult to implement, and discuss the real-world constraints faced by open source projects with limited contributors.</shortdesc>
+      <author>Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="paynoattentiontothechunke-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_11"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Pay No Attention to the Chunker Behind the Curtain</linktext>
+      <shortdesc
+      >DITA 1.x chunking code is hard to maintain. DITA 2.0 code is cleaner and easier to reason about. The solution? Detect when 1.x documents are compatible with 2.0 chunking and silently use the better implementation. We're replacing engines mid-flight, swapping horses mid-stream, and refactoring production code—all the things they tell you never to do. Learn how we're routing compatible content through the better chunker while keeping the old one on standby for edge cases.</shortdesc>
+      <author>Jarno Elovirta</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="frommapstomodelshowdita-o-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_12"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext
+      >From Maps to Models: How DITA-OT Powers Ontology-Ready Content for AI and Beyond. Making Topic Maps First-Class Graph Models</linktext>
+      <shortdesc
+      >During this presentation, I will speak about gaps and open problems with DITA-OT. While DITA-OT is mature, there are still non-visible gaps when applying it for ontology-based information architecture for different business domains. This presentation will create opportunities for the community members to strengthen DITA-OT’s role in the Linked Data ecosystem and how they can participate in future roadmap discussions.</shortdesc>
+      <author>Amit Siddhartha</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="usingtheditaotdocswithait-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_13"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Using the DITA OT Docs with AI to Create Plugins</linktext>
+      <shortdesc
+      >A model context protocol server can be created over a WebHelp site published from the DITA Open Toolkit documentation. An application using the MCP support can thus be instructed to create a DITA Open Toolkit plugin by searching for related content in the DITA Open Toolkit documentation.</shortdesc>
+      <author>Radu Coravu</author>
+    </topicmeta>
+  </keydef>
+  <keydef
+    keys="tenyearsofdita-otday-2026"
+    href="https://www.oxygenxml.com/events/2026/dita-ot_day.html#video_14"
+    format="html"
+    scope="external"
+  >
+    <topicmeta>
+      <linktext>Ten Years of DITA-OT Day</linktext>
+      <shortdesc
+      >When SyncroSoft proposed the first DITA-OT Day, many of the core developers were not sure how many people would come. Now in our tenth year, it is incredible to look back and see how many people have come and presented their own work around the project. This session will summarize and look back at what we've learned at our ten conferences — what types of plugins have our contributors made available? How many different ways is the toolkit being used? What is the best way to learn from our past events?</shortdesc>
+      <author>Robert Anderson</author>
+    </topicmeta>
+  </keydef>
+</map>

@@ -11,7 +11,7 @@
   >
     <topicmeta>
       <linktext>News and announcements</linktext>
-      <shortdesc>No description.</shortdesc>
+      <shortdesc>Announcing DITA-OT 4.4.</shortdesc>
       <author>DITA-OT Day Team</author>
     </topicmeta>
   </keydef>
@@ -37,7 +37,7 @@
     <topicmeta>
       <linktext>Confessions of a DITA-OT User – What in the XML are you doing?</linktext>
       <shortdesc
-      >"We’ve all heard stories about how people use DITA-OT… but how much do we actually know? Different backgrounds, different teams, different needs — and all the ways DITA-OT fits into daily work. It’s time to find out how everyone’s really using DITA-OT. Whether you’re a beginner or a seasoned professional, we want to hear from you. Join this interactive session to share your experience, see where you fit in the bigger picture, and discover just how wonderfully diverse the DITA-OT community really is. Bring your phone and an open mind! This session has been organized with the help of the core DITA-OT developers — and yes, you’ll get your turn to ask them a few questions too."</shortdesc>
+      >We’ve all heard stories about how people use DITA-OT… but how much do we actually know? Different backgrounds, different teams, different needs — and all the ways DITA-OT fits into daily work. It’s time to find out how everyone’s really using DITA-OT. Whether you’re a beginner or a seasoned professional, we want to hear from you. Join this interactive session to share your experience, see where you fit in the bigger picture, and discover just how wonderfully diverse the DITA-OT community really is. Bring your phone and an open mind! This session has been organized with the help of the core DITA-OT developers — and yes, you’ll get your turn to ask them a few questions too.</shortdesc>
       <author>Justyna Hietala</author>
     </topicmeta>
   </keydef>
@@ -74,7 +74,7 @@
     scope="external"
   >
     <topicmeta>
-      <linktext>Making the DITA OT Add Up: MathML Support</linktext>
+      <linktext>Making DITA-OT Add Up: MathML Support</linktext>
       <shortdesc
       >MathML has been a part of the DITA specification v1.3 but has never been natively supported in the DITA Open Toolkit. Bentley Systems developed a plugin to support MathML output for HTML and PDF as well as implementing a means to provide high-quality output using MathJax rendering into SVG graphics during publishing time. This reduces the need for end uses to rely on CDNs or other JavaScript in HTML. This methodology can extend to other areas outside of MathML, as well.</shortdesc>
       <author>Jason Coleman</author>
@@ -166,7 +166,7 @@
     scope="external"
   >
     <topicmeta>
-      <linktext>Using the DITA OT Docs with AI to Create Plugins</linktext>
+      <linktext>Using the DITA-OT Docs with AI to Create Plugins</linktext>
       <shortdesc
       >A model context protocol server can be created over a WebHelp site published from the DITA Open Toolkit documentation. An application using the MCP support can thus be instructed to create a DITA Open Toolkit plugin by searching for related content in the DITA Open Toolkit documentation.</shortdesc>
       <author>Radu Coravu</author>

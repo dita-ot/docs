@@ -66,6 +66,14 @@
             against the DITA 2.0 preview grammar should update to pick up these changes.
             <xref href="https://github.com/dita-ot/dita-ot/issues/4781" format="html" scope="external">#4781</xref>
           </li>
+          <li id="4747">In earlier versions, HTML5 templates in the <codeph>related-links:result-group</codeph> mode
+            declared a return type of <codeph>element()</codeph>, even though the underlying logic could return no
+            results. When a topic had no related links to display, this caused a runtime failure during processing.
+            The template signatures in the concept, task, and related-links stylesheets have been corrected to
+            <codeph>element()?</codeph> to allow an empty result, so processing no longer fails when there are no
+            related links to render.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4747" format="html" scope="external">#4747</xref>
+          </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
           <xref

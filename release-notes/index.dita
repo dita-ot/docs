@@ -25,6 +25,68 @@
     </refbody>
   </reference>
 
+  <reference id="v4.4.1" outputclass="mark">
+    <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
+    </title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.4.1%20sort%3Acreated-asc -->
+          <li id="2962">In earlier versions, table entries with a <xmlatt>scope</xmlatt> attribute set to
+            <codeph>row</codeph> or <codeph>col</codeph> were not rendered as header cells (<xmlelement
+            >th</xmlelement>) in HTML5 output, and the <xmlatt>scope</xmlatt> value itself was not carried through to
+            the generated markup. The table templates have been updated to promote these entries to header cells and
+            preserve the <xmlatt>scope</xmlatt> value, improving accessibility for complex tables that rely on explicit
+            header associations.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/2962" format="html" scope="external">#2962</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4776" format="html" scope="external">#4776</xref>
+          </li>
+          <li id="4777">Several bundled dependencies have been updated to address reported CVEs. Jackson has been
+            updated to version 2.21.4 to address <xref
+              href="https://nvd.nist.gov/vuln/detail/CVE-2026-54512"
+              format="html"
+              scope="external"
+            >CVE-2026-54512</xref>, and Logback and SLF4J have been updated to versions 1.5.37 and 2.0.18 to address
+            <xref
+              href="https://nvd.nist.gov/vuln/detail/CVE-2026-13006"
+              format="html"
+              scope="external"
+            >CVE-2026-13006</xref>. DITA-OT is not known to be affected by either vulnerability, but the dependencies
+            have been updated proactively so they are no longer flagged by CVE scanners.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4777" format="html" scope="external">#4777</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4778" format="html" scope="external">#4778</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4779" format="html" scope="external">#4779</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4780" format="html" scope="external">#4780</xref>
+          </li>
+          <li id="4781">The pre-release DITA 2.0 grammar files have been updated to the latest draft published by
+            OASIS, which includes fixes and minor updates since the previous update. Anyone building or testing content
+            against the DITA 2.0 preview grammar should update to pick up these changes.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4781" format="html" scope="external">#4781</xref>
+          </li>
+          <li id="4747">In earlier versions, HTML5 templates in the <codeph>related-links:result-group</codeph> mode
+            declared a return type of <codeph>element()</codeph>, even though the underlying logic could return no
+            results. When a topic had no related links to display, this caused a runtime failure during processing.
+            The template signatures in the concept, task, and related-links stylesheets have been corrected to
+            <codeph>element()?</codeph> to allow an empty result, so processing no longer fails when there are no
+            related links to render.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4747" format="html" scope="external">#4747</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.4.1+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.4.1 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.4...4.4.1" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
   <reference id="v4.4">
     <title>DITA-OT <keyword keyref="release"/>
       <ph outputclass="small text-muted"> released January 31, 2026</ph>

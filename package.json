@@ -12,20 +12,19 @@
     "fix:style": "stylelint \"**/*.css\" --fix",
     "fmt": "npm run format",
     "format": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
-    "lint-staged": "lint-staged --no-stash",
-    "prepare": "husky",
+    "nano-staged": "nano-staged",
+    "prepare": "simple-git-hooks",
     "prettier": "prettier --write \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "prettier-check": "prettier --check \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\"",
     "stylelint": "stylelint \"**/*.css\"",
     "test": "prettier --list-different \"**/*.{css,dita*,json,md,scss,xml,yaml,yml}\""
   },
-  "lint-staged": {
-    "*.{css,dita*,json,md,scss,xml,yaml,yml}": [
-      "prettier --write"
-    ],
-    "*.{css,scss}": [
-      "stylelint"
-    ]
+  "nano-staged": {
+    "*.{css,dita*,json,md,scss,xml,yaml,yml}": "prettier --write",
+    "*.{css,scss}": "stylelint"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx nano-staged"
   },
   "stylelint": {
     "extends": [
@@ -46,9 +45,9 @@
   },
   "devDependencies": {
     "@prettier/plugin-xml": "3.4.2",
-    "husky": "^9.1.7",
-    "lint-staged": "16.2.7",
+    "nano-staged": "^1.0.2",
     "prettier": "3.8.1",
+    "simple-git-hooks": "^2.14.0",
     "stylelint": "^16.26.1",
     "stylelint-config-recommended": "^17.0.0",
     "stylelint-config-sass-guidelines": "^12.1.0"

@@ -1,5 +1,5 @@
 # Use the latest DITA-OT image ↓ as parent:
-FROM ghcr.io/dita-ot/dita-ot:4.4.1
+FROM ghcr.io/dita-ot/dita-ot:4.4.2
 
 # Install a custom plug-in from a remote location:
 RUN dita install https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip

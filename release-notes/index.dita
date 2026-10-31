@@ -25,8 +25,65 @@
     </refbody>
   </reference>
 
-  <reference id="v4.4.1" outputclass="mark">
+  <reference id="v4.4.2" outputclass="mark">
     <title>DITA-OT <keyword keyref="maintenance-version"/>
+      <!--<ph outputclass="small text-muted">released mmmm D, yyyy</ph>-->
+    </title>
+    <refbody>
+      <section>
+        <p>DITA Open Toolkit <keyword keyref="maintenance-version"/> is a maintenance release that includes the
+          following bug fixes.</p>
+        <ul>
+          <!-- https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.4.2%20sort%3Acreated-asc -->
+          <li id="4563">In earlier versions, specializations of the <xmlatt>props</xmlatt> attribute, such as
+            <xmlatt>deliveryTarget</xmlatt>, were not cascaded within maps. When a <xmlelement>topicgroup</xmlelement>
+            or other map element set a value for one of these attributes, the value was lost when the group was
+            unwrapped during preprocessing, so DITAVAL <codeph>passthrough</codeph> actions did not produce the
+            expected output for nested topic references. Specializations of <xmlatt>props</xmlatt> are now cascaded
+            within maps as required by the DITA specification. Cascading from maps to topics is not yet covered by this
+            change.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4563" format="html" scope="external">#4563</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4640" format="html" scope="external">#4640</xref>
+          </li>
+          <li id="4794">In DITA-OT 4.4 and 4.4.1, builds failed with an error from
+            <codeph>dita-ot:relativize.strip-and-prefix()</codeph> when content pulled in with a same-file
+            <xmlatt>conref</xmlatt> contained a cross-reference to a fragment-only URL, such as
+            <codeph>href="#topic-id"</codeph>. This pattern worked in DITA-OT 3.x. URL handling for same-file
+            references has been corrected so that these builds succeed and the cross-reference is written to the output
+            as a same-file link.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4794" format="html" scope="external">#4794</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4815" format="html" scope="external">#4815</xref>
+          </li>
+          <li id="4807">In earlier versions, DITA-OT filtered and flagged each element using only the profiling
+            attribute values authored on that element. The DITA specification requires the <xmlatt>audience</xmlatt>,
+            <xmlatt>platform</xmlatt>, <xmlatt>product</xmlatt>, <xmlatt>otherprops</xmlatt>, <xmlatt>rev</xmlatt>, and
+            <xmlatt>props</xmlatt> attributes (and specializations of <xmlatt>props</xmlatt>) to cascade, so filtering
+            and flagging now use the cascaded values. With the default <codeph>cascade="merge"</codeph> setting, a
+            child element is evaluated using its own values together with those of its ancestors, so content that was
+            previously filtered out can now remain in the output. For example, if a parent has
+            <codeph>product="x y"</codeph>, a child has <codeph>product="x"</codeph>, and a DITAVAL file excludes
+            <codeph>x</codeph>, the child is now retained because its effective value includes <codeph>y</codeph>. To
+            restore the earlier behavior, set <codeph>default.cascade = nomerge</codeph> in the
+            <filepath>configuration.properties</filepath> file and remove any <codeph>cascade="merge"</codeph> settings
+            from source maps, or set <codeph>cascade="nomerge"</codeph> on individual maps.
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4807" format="html" scope="external">#4807</xref>,
+            <xref href="https://github.com/dita-ot/dita-ot/issues/4808" format="html" scope="external">#4808</xref>
+          </li>
+        </ul>
+        <p>For additional information on the issues resolved since the previous release, see the
+          <xref
+            href="https://github.com/dita-ot/dita-ot/issues?q=milestone%3A4.4.2+is%3Aclosed"
+            format="html"
+            scope="external"
+          >4.4.2 milestone</xref> and
+          <xref href="https://github.com/dita-ot/dita-ot/compare/4.4.1...4.4.2" format="html" scope="external">
+            changelog</xref> on GitHub.</p>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="v4.4.1">
+    <title>DITA-OT 4.4.1
       <ph outputclass="small text-muted">released August 21, 2026</ph>
     </title>
     <refbody>

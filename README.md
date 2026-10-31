@@ -89,7 +89,9 @@ For best results, follow the [coding guidelines][9] and [best practices][10] out
 The documentation repository uses the following JavaScript tools to keep source files consistently formatted:
 
 - [Prettier][16] is an opinionated code formatter that enforces a consistent style by parsing code and re-printing it.
-- [Husky][17] uses Git hooks to ensure that Prettier runs on all staged changes to format files before committing.
+- [Stylelint][21] checks stylesheets for errors and style violations.
+- [nano-staged][17] runs Prettier on all staged files to format them, and Stylelint on staged stylesheets, before committing.
+- [simple-git-hooks][22] installs the Git pre-commit hook that runs nano-staged.
 
 ### Prerequisites
 
@@ -104,16 +106,27 @@ To set these tools up:
 2. Open a command prompt, and change to the directory of your docs repository clone.
 3. Run `npm install`
 
-With these tools in place, any changes you make to the documentation source files will be automatically formatted when you commit them with Git. This ensures that commits contain only related changes, and no extra formatting.
+With these tools in place, any changes you make to the documentation source files will be automatically formatted (and stylesheets linted) when you commit them with Git. This ensures that commits contain only related changes, and no extra formatting.
 
 <details>
 <summary>Troubleshooting</summary>
 
-If the `git` command is not available in your command-line environment, the Husky installation may fail with an error message:
+If the `git` command is not available in your command-line environment, the simple-git-hooks installation may fail, and the pre-commit hook will not be set up.
 
-    "Cannot read property 'toString' of null"
+_Solution:_ Uninstall the hooks via `node node_modules/simple-git-hooks/uninstall.js`. Install [Git][18]. Add the installation location to the [`PATH`][19] environment variable. Re-run `npm install`.
 
-_Solution:_ Uninstall Husky via `npm husky uninstall`. Install [Git][18]. Add the installation location to the [`PATH`][19] environment variable. Re-run `npm install`.
+If you installed the repository's dependencies before it switched from Husky to simple-git-hooks, the pre-commit hook may not run. Husky configured Git to look for hooks in the `.husky/_` directory, which no longer exists, and this setting takes precedence over the `.git/hooks` directory where simple-git-hooks installs its hooks.
+
+_Solution:_ Check whether the hooks path is still set:
+
+    git config core.hooksPath
+
+If the command prints `.husky/_`, unset it and re-install the hooks:
+
+    git config --unset core.hooksPath
+    npm install
+
+You can also delete the leftover `.husky` directory, if it still exists in your clone.
 
 </details>
 
@@ -145,7 +158,9 @@ If you'd like to check whether your changes are formatted correctly, or format t
 [14]: https://github.com/dita-ot/docs/wiki/Git-workflow#writing-good-commit-messages
 [15]: https://www.dita-ot.org/DCO
 [16]: https://prettier.io
-[17]: https://github.com/typicode/husky
+[17]: https://github.com/usmanyunusov/nano-staged
 [18]: https://git-scm.com/downloads
 [19]: https://en.wikipedia.org/wiki/PATH_(variable)
 [20]: https://nodejs.org
+[21]: https://stylelint.io
+[22]: https://github.com/toplenboren/simple-git-hooks

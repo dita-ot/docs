@@ -17,9 +17,9 @@ jobs:
       WEBSITE_BRANCH: 'master'
     steps:
       - name: Check out docs
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Check out website
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: dita-ot/website
           ref: ${{ env.WEBSITE_BRANCH }}

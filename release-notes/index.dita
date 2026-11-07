@@ -69,6 +69,15 @@
             <xref href="https://github.com/dita-ot/dita-ot/issues/4807" format="html" scope="external">#4807</xref>,
             <xref href="https://github.com/dita-ot/dita-ot/issues/4808" format="html" scope="external">#4808</xref>
           </li>
+          <li id="4816">The pre-release DITA 2.0 grammar files have been updated to the latest beta files published by
+            OASIS. The <xmlatt>status</xmlatt> and <xmlatt>importance</xmlatt> attributes have been added to the
+              <xmlelement>title</xmlelement> element in the base grammar and to specializations of
+              <xmlelement>title</xmlelement> in the technical content grammar files. In addition, the default values of
+            the <xmlatt>format</xmlatt> and <xmlatt>processing-role</xmlatt> attributes on the
+              <xmlelement>ditavalref</xmlelement> element are now fixed values. Anyone building or testing content
+            against the DITA 2.0 preview grammar should update to pick up these changes.
+            <xref href="https://github.com/dita-ot/dita-ot/pull/4816" format="html" scope="external">#4816</xref>
+          </li>
         </ul>
         <p>For additional information on the issues resolved since the previous release, see the
           <xref
